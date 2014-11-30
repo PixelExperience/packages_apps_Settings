@@ -148,6 +148,12 @@
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="wake_when_plugged_or_unplugged"
+        android:title="@string/wake_when_plugged_or_unplugged_title"
+        android:summary="@string/wake_when_plugged_or_unplugged_summary"
+        android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
+
     <SwitchPreference
         android:key="proximity_on_wake"
         android:title="@string/proximity_wake_title"
