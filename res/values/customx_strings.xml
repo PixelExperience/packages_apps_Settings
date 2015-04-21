@@ -350,4 +350,8 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">notifications, notification log</string>
 
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Pop-up notifications</string>
+    <string name="heads_up_notifications_enabled_summary">Display priority notifications in a small floating window</string>
+
 </resources>

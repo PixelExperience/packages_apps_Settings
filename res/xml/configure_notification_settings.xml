@@ -115,6 +115,13 @@
             android:title="@string/battery_light_title"
             settings:controller="com.android.settings.notification.BatteryLightPreferenceController"/>
 
+        <!-- Heads up -->
+        <SwitchPreference
+            android:key="heads_up_notifications_enabled"
+            android:title="@string/heads_up_notifications_enabled_title"
+            android:summary="@string/heads_up_notifications_enabled_summary"
+            settings:controller="com.android.settings.notification.HeadsUpPreferenceController" />
+
         <!-- Default notification ringtone -->
         <com.android.settings.DefaultRingtonePreference
             android:key="notification_default_ringtone"
