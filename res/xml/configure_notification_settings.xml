@@ -161,6 +161,12 @@
             android:title="@string/notification_badging_title"
             settings:controller="com.android.settings.notification.BadgingNotificationPreferenceController"/>
 
+        <!-- Heads up -->
+        <com.android.settings.custom.preference.GlobalSettingSwitchPreference
+            android:key="heads_up_notifications_enabled"
+            android:title="@string/heads_up_notifications_enabled_title"
+            android:summary="@string/heads_up_notifications_enabled_summary" />
+
         <!-- Pulse notification light, on devices that support it -->
         <SwitchPreference
             android:key="notification_pulse"
