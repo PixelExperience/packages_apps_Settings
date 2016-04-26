@@ -23,6 +23,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import android.os.SystemProperties;
 import android.provider.Settings;
 import android.support.v4.app.NotificationCompat;
 import android.telephony.SubscriptionInfo;
@@ -36,6 +39,8 @@ import com.android.settings.Settings.SimSettingsActivity;
 import com.android.settings.Utils;
 
 import java.util.List;
+
+import org.codeaurora.internal.IExtTelephony;
 
 public class SimSelectNotification extends BroadcastReceiver {
     private static final String TAG = "SimSelectNotification";
@@ -51,8 +56,24 @@ public class SimSelectNotification extends BroadcastReceiver {
         final SubscriptionManager subscriptionManager = SubscriptionManager.from(context);
         final int numSlots = telephonyManager.getSimCount();
 
+        boolean skipUserSelection =
+                !SystemProperties.getBoolean("persist.radio.aosp_usr_pref_sel", false);
+        IExtTelephony extTelephony =
+                IExtTelephony.Stub.asInterface(ServiceManager.getService("extphone"));
+        try {
+            if (extTelephony != null &&
+                    !extTelephony.isVendorApkAvailable("com.qualcomm.qti.simsettings")) {
+                skipUserSelection = false;
+            }
+        } catch (RemoteException e) {
+            skipUserSelection = false;
+        }
+
         // Do not create notifications on single SIM devices or when provisioning i.e. Setup Wizard.
-        if (numSlots < 2 || !Utils.isDeviceProvisioned(context)) {
+        // or User selection of fallback user preference is disabled.
+        if (numSlots < 2 || !Utils.isDeviceProvisioned(context) || skipUserSelection) {
+            Log.d(TAG, " no of slots " + numSlots +
+                   " provision = " + Utils.isDeviceProvisioned(context));
             return;
         }
 
