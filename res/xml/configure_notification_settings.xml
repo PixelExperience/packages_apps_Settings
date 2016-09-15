@@ -33,11 +33,6 @@
         android:key="notification_badging"
         android:title="@string/notification_badging_title"/>
 
-    <!-- Pulse notification light -->
-    <SwitchPreference
-        android:key="notification_pulse"
-        android:title="@string/notification_pulse_title"/>
-
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="notification_default_ringtone"
@@ -61,4 +56,23 @@
             android:summary="@string/summary_placeholder"/>
 
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="leds"
+        android:title="@string/leds_category_title"/>
+
+        <SwitchPreference
+            android:key="notification_pulse"
+            android:title="@string/notification_pulse_title"/>
+
+        <PreferenceScreen
+            android:key="notification_light"
+            android:title="@string/notification_light_title"
+            android:fragment="com.android.settings.custom.fragments.batterylight.NotificationLightSettings" />
+
+        <PreferenceScreen
+            android:key="charging_light"
+            android:title="@string/battery_light_settings"
+            android:fragment="com.android.settings.custom.fragments.batterylight.BatteryLightSettings" />
+
 </PreferenceScreen>
