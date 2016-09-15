@@ -31,11 +31,6 @@
         android:title="@string/notification_badging_title"
         settings:controller="com.android.settings.notification.BadgingNotificationPreferenceController"/>
 
-    <!-- Pulse notification light -->
-    <SwitchPreference
-        android:key="notification_pulse"
-        android:title="@string/notification_pulse_title"/>
-
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="notification_default_ringtone"
@@ -56,6 +51,24 @@
         settings:useAdminDisabledSummary="true"
         android:fragment="com.android.settings.notification.ZenModeSettings"
         settings:allowDividerAbove="false" />
+
+    <!-- Lights settings -->
+    <PreferenceCategory
+        android:key="lights_category"
+        android:title="@string/notification_pulse_title"
+        settings:allowDividerAbove="false"
+        android:order="17">
+        <!-- Pulse notification light -->
+        <SwitchPreference
+            android:key="notification_pulse"
+            android:title="@string/configure_notification_settings"
+            android:order="18"/>
+        <!-- Battery light -->
+        <SwitchPreference
+            android:key="battery_light_enabled"
+            android:title="@string/power_usage_summary_title"
+            android:order="19"/>
+    </PreferenceCategory>
 
     <!-- Empty category to draw divider -->
     <PreferenceCategory
