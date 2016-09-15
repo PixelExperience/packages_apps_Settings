@@ -20,4 +20,9 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Locate the fingerprint sensor on the left side of your phone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Locate the fingerprint sensor on the right side of your phone.</string>
 
+    <!-- Notification light settings -->
+    <string name="lights_category_title">Light settings</string>
+    <string name="notification_light_title">Notification light</string>
+    <string name="battery_light_title">Battery light</string>
+
 </resources>
