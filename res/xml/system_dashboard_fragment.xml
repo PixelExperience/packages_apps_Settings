@@ -43,6 +43,14 @@
         android:order="-249"
         android:fragment="com.android.settings.custom.buttons.ButtonSettings"/>
 
+    <!-- Statusbar Settings -->
+    <Preference
+        android:key="statusbar_settings"
+        android:title="@string/status_bar_title"
+        android:icon="@drawable/ic_settings_statusbar"
+        android:order="-248"
+        android:fragment="com.android.settings.custom.statusbar.StatusBarSettings" />
+
     <Preference
         android:key="date_time_settings"
         android:title="@string/date_and_time"
