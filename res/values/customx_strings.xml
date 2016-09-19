@@ -52,4 +52,8 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Display music visualizer</string>
 
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Advanced restart</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
+
 </resources>
