@@ -29,10 +29,14 @@ public class PowerMenuPreferenceController extends BasePreferenceController {
 
     @Override
     public CharSequence getSummary() {
-        if (PowerMenuSettingsUtils.isLongPressPowerForAssistantEnabled(mContext)) {
-            return mContext.getText(R.string.power_menu_summary_long_press_for_assistant);
+        return getPrefSummary(mContext);
+    }
+
+    public static String getPrefSummary(Context context){
+        if (PowerMenuSettingsUtils.isLongPressPowerForAssistantEnabled(context)) {
+            return context.getString(R.string.power_menu_summary_long_press_for_assistant);
         } else {
-            return mContext.getText(R.string.power_menu_summary_long_press_for_power_menu);
+            return context.getString(R.string.power_menu_summary_long_press_for_power_menu);
         }
     }
 
