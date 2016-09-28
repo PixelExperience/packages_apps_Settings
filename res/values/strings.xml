@@ -10099,4 +10099,9 @@
     <!-- Title for Connected device shortcut [CHAR LIMIT=30] -->
     <string name="devices_title">Devices</string>
     <string name="select_sim_card">Select SIM card</string>
+    <string name="qtifeedback_settings_title">Hardware Feedback</string>
+    <string name="qtifeedback_settings_subtitle">Qualcomm Technologies, Inc Reporting</string>
+    <string name="qtifeedback_intent_action">com.qti.smq.snapdragonSettings</string>
+    <string name="qtifeedback_package">com.qti.smq.Feedback</string>
+    <string name="qtifeedback_activity">com.qti.smq.ui.QtiFeedbackActivity</string>
 </resources>

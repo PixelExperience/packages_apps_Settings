@@ -3933,6 +3933,8 @@
       <item quantity="one">1 segundo</item>
     </plurals>
     <string name="automatic_storage_manager_settings" msgid="7819434542155181607">"Gestionar almacenamiento"</string>
+    <string name="qtifeedback_settings_title">Comentarios sobre el hardware</string>
+    <string name="qtifeedback_settings_subtitle">Informes de Qualcomm Technologies, Inc</string>
     <string name="automatic_storage_manager_text" msgid="4562950476680600604">"Para liberar espacio, el Administrador de Almacenamiento borrará de tu dispositivo las fotos y vídeos que tengan copia de seguridad."</string>
     <string name="automatic_storage_manager_days_title" msgid="2017913896160914647">"Borrar fotos y vídeos"</string>
     <string name="automatic_storage_manager_preference_title" msgid="5753702798151073383">"Administrador de Almacenamiento"</string>

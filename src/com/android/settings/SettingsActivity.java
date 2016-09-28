@@ -161,6 +161,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private CharSequence mInitialTitle;
     private int mInitialTitleResId;
+    private SmqSettings mSMQ;
 
     private BroadcastReceiver mDevelopmentSettingsListener;
 
@@ -252,6 +253,8 @@ public class SettingsActivity extends SettingsDrawerActivity
         if (intent.hasExtra(EXTRA_UI_OPTIONS)) {
             getWindow().setUiOptions(intent.getIntExtra(EXTRA_UI_OPTIONS, 0));
         }
+
+        mSMQ = new SmqSettings(getApplicationContext());
 
         // Getting Intent properties can only be done after the super.onCreate(...)
         final String initialFragmentName = intent.getStringExtra(EXTRA_SHOW_FRAGMENT);
@@ -584,6 +587,15 @@ public class SettingsActivity extends SettingsDrawerActivity
      */
     private Fragment switchToFragment(String fragmentName, Bundle args, boolean validate,
             boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
+
+        if (fragmentName.equals(getString(R.string.qtifeedback_intent_action))){
+             final Intent newIntent = new Intent(getString(R.string.qtifeedback_intent_action));
+             newIntent.addCategory("android.intent.category.DEFAULT");
+             startActivity(newIntent);
+             finish();
+             return null;
+        }
+
         Log.d(LOG_TAG, "Switching to fragment " + fragmentName);
         IExtTelephony extTelephony =
                 IExtTelephony.Stub.asInterface(ServiceManager.getService("extphone"));
@@ -666,6 +678,9 @@ public class SettingsActivity extends SettingsDrawerActivity
                 pm.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH), isAdmin)
                 || somethingChanged;
 
+        if(mSMQ.isShowSmqSettings()){
+            somethingChanged = setTileEnabled(changedList, new ComponentName(packageName, Settings.SMQQtiFeedbackActivity.class.getName()), mSMQ.isShowSmqSettings(), isAdmin) || somethingChanged;
+        }
 
         // Enable DataUsageSummaryActivity if the data plan feature flag is turned on otherwise
         // enable DataPlanUsageSummaryActivity.

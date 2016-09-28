@@ -4151,4 +4151,6 @@
     <string name="pref_title_network_details" msgid="7186418845727358964">"รายละเอียดเครือข่าย"</string>
     <string name="about_phone_device_name_warning" msgid="8885670415541365348">"แอปในโทรศัพท์จะเห็นชื่อของอุปกรณ์ และคนอื่นก็อาจเห็นเช่นกันหากคุณเชื่อมต่อกับอุปกรณ์บลูทูธหรือตั้งค่าฮอตสปอต Wi-Fi"</string>
     <string name="devices_title" msgid="7701726109334110391">"อุปกรณ์"</string>
+    <string name="qtifeedback_settings_title">ความคิดเห็นเกี่ยวกับฮาร์ดแวร์</string>
+    <string name="qtifeedback_settings_subtitle">Qualcomm Technologies, Inc การรายงาน</string>
 </resources>
