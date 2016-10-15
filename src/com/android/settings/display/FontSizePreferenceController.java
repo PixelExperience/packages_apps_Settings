@@ -47,8 +47,8 @@ public class FontSizePreferenceController extends AbstractPreferenceController i
         final float currentScale = Settings.System.getFloat(mContext.getContentResolver(),
                 Settings.System.FONT_SCALE, 1.0f);
         final Resources res = mContext.getResources();
-        final String[] entries = res.getStringArray(R.array.entries_font_size);
-        final String[] strEntryValues = res.getStringArray(R.array.entryvalues_font_size);
+        final String[] entries = res.getStringArray(R.array.entries_font_size_percent_custom);
+        final String[] strEntryValues = res.getStringArray(R.array.entryvalues_font_size_custom);
         final int index = ToggleFontSizePreferenceFragment.fontSizeValueToIndex(currentScale,
                 strEntryValues);
         preference.setSummary(entries[index]);
