@@ -584,6 +584,20 @@ public class WifiConfigController implements TextWatcher,
             case AccessPoint.SECURITY_EAP:
                 config.allowedKeyManagement.set(KeyMgmt.WPA_EAP);
                 config.allowedKeyManagement.set(KeyMgmt.IEEE8021X);
+                if (mAccessPoint.isFils256Supported()) {
+                    config.allowedKeyManagement.set(KeyMgmt.FILS_SHA256);
+                }
+                if (mAccessPoint.isFils384Supported()) {
+                    config.allowedKeyManagement.set(KeyMgmt.FILS_SHA384);
+                }
+                if (mAccessPoint.isSuiteBSupported()) {
+                    config.allowedKeyManagement.set(KeyMgmt.SUITE_B_192);
+                    config.requirePMF = true;
+		    config.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.GCMP);
+                    config.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.GCMP);
+                    config.allowedGroupMgmtCiphers.set(WifiConfiguration.GroupMgmtCipher.GMAC);
+		    config.allowedSuiteBCiphers.set(WifiConfiguration.SuiteBCipher.ECDHE_RSA);
+                }
                 config.enterpriseConfig = new WifiEnterpriseConfig();
                 int eapMethod = mEapMethodSpinner.getSelectedItemPosition();
                 int phase2Method = mPhase2Spinner.getSelectedItemPosition();
@@ -691,6 +705,32 @@ public class WifiConfigController implements TextWatcher,
                     // clear password
                     config.enterpriseConfig.setPassword(mPasswordView.getText().toString());
                 }
+                if (mAccessPoint.isFils256Supported() || mAccessPoint.isFils384Supported()) {
+                    config.enterpriseConfig.setFieldValue(WifiEnterpriseConfig.EAP_ERP, "1");
+                }
+                break;
+
+            case AccessPoint.SECURITY_DPP:
+                config.allowedKeyManagement.set(KeyMgmt.DPP);
+                config.requirePMF = true;
+                break;
+
+            case AccessPoint.SECURITY_SAE:
+                config.allowedKeyManagement.set(KeyMgmt.SAE);
+                config.requirePMF = true;
+                if (mPasswordView.length() != 0) {
+                    String password = mPasswordView.getText().toString();
+                    if (password.matches("[0-9A-Fa-f]{64}")) {
+                        config.preSharedKey = password;
+                    } else {
+                        config.preSharedKey = '"' + password + '"';
+                    }
+                }
+                break;
+
+            case AccessPoint.SECURITY_OWE:
+                config.allowedKeyManagement.set(KeyMgmt.OWE);
+                config.requirePMF = true;
                 break;
             default:
                 return null;
@@ -839,7 +879,9 @@ public class WifiConfigController implements TextWatcher,
     }
 
     private void showSecurityFields() {
-        if (mAccessPointSecurity == AccessPoint.SECURITY_NONE) {
+        if (mAccessPointSecurity == AccessPoint.SECURITY_NONE ||
+                mAccessPointSecurity == AccessPoint.SECURITY_DPP ||
+                    mAccessPointSecurity == AccessPoint.SECURITY_OWE) {
             mView.findViewById(R.id.security_fields).setVisibility(View.GONE);
             return;
         }
