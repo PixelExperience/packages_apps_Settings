@@ -20,6 +20,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -173,6 +174,11 @@ public class HighPowerDetail extends InstrumentedDialogFragment implements OnCli
         args.putBoolean(ARG_DEFAULT_ON, defaultToOn);
         fragment.setArguments(args);
         fragment.setTargetFragment(caller, requestCode);
-        fragment.show(caller.getFragmentManager(), HighPowerDetail.class.getSimpleName());
+        if(caller != null){
+            FragmentManager fmg =  caller.getFragmentManager();
+            if(fmg != null && !fmg.isStateSaved() && !fmg.isDestroyed()){
+                fragment.show(fmg, HighPowerDetail.class.getSimpleName());
+            }
+        }
     }
 }
