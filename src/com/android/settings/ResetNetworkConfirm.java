@@ -148,7 +148,8 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
                 }
             }
 
-            ImsManager.factoryReset(context);
+            ImsManager.getInstance(context,
+                     SubscriptionManager.getPhoneId(mSubId)).factoryReset();
             restoreDefaultApn(context);
             esimFactoryReset(context, context.getPackageName());
         }
