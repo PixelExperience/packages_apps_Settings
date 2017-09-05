@@ -185,6 +185,13 @@
           android:title="@string/vibrate_on_touch_title"
           android:summary="@string/vibrate_on_touch_summary" />
 
+        <!-- In-call feedback -->
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+          android:key="incall_feeedback_vibrate"
+          android:title="@string/incall_feeedback_vibrate_title"
+          android:defaultValue="false"
+          settings:controller="com.android.settings.sound.IncallFeedbackPreferenceController" />
+
         <!-- Dock speaker plays -->
         <DropDownPreference
           android:key="dock_audio_media"
