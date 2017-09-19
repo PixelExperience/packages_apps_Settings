@@ -39,16 +39,16 @@
         </Preference>
 
         <!-- Legal Information -->
-        <Preference
+        <!--Preference
                 android:key="legal_container"
                 android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
+                android:fragment="com.android.settings.LegalSettings" /-->
 
-        <Preference
+        <!--Preference
                 android:key="regulatory_info"
                 android:title="@string/regulatory_labels">
             <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
-        </Preference>
+        </Preference-->
 
         <Preference
                 android:key="safety_info"
