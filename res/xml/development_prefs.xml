@@ -89,19 +89,19 @@
         android:key="ota_disable_automatic_update"
         android:title="@string/ota_disable_automatic_update" />
 
-    <Preference
+    <!--Preference
         android:key="demo_mode"
         android:title="@string/demo_mode">
         <intent android:action="com.android.settings.action.DEMO_MODE" />
-    </Preference>
+    </Preference-->
 
-    <Preference
+    <!--Preference
         android:key="quick_settings_tiles"
         android:title="@string/quick_settings_developer_tiles">
         <intent
             android:targetPackage="com.android.settings"
             android:targetClass="com.android.settings.qstile.DevelopmentTileConfigActivity" />
-    </Preference>
+    </Preference-->
 
     <PreferenceCategory android:key="debug_debugging_category"
             android:title="@string/debug_debugging_category">
