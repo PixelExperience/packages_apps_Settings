@@ -185,6 +185,14 @@
           android:title="@string/vibrate_on_touch_title"
           android:summary="@string/vibrate_on_touch_summary" />
 
+        <!-- Fingerprint authentication vibration -->
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+          android:key="fp_success_auth_vib"
+          android:title="@string/fp_success_auth_vib_title"
+          android:summary="@string/fp_success_auth_vib_summary"
+          android:defaultValue="true"
+          settings:controller="com.android.settings.sound.FpSuccessAuthVibPreferenceController" />
+
         <!-- In-call feedback -->
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
           android:key="incall_feeedback_vibrate"
