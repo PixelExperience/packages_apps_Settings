@@ -167,4 +167,8 @@
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrate to indicate call status</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">Fingerprint authentication</string>
+    <string name="fp_success_auth_vib_summary">Vibrate on successful fingerprint authentication</string>
+
 </resources>
