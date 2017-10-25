@@ -84,6 +84,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_ASSIST = "assist_key";
     private static final String CATEGORY_APPSWITCH = "app_switch_key";
     private static final String CATEGORY_CAMERA = "camera_key";
+    private static final String CATEGORY_OTHER_SETTINGS = "others_settings_category";
 
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
@@ -188,6 +189,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final PreferenceCategory backlightCat = findPreference(CATEGORY_BACKLIGHT);
         final PreferenceCategory swapCapacitiveKeysCat = findPreference(CATEGORY_SWAP_CAPACITIVE_KEYS);
         final PreferenceCategory powerCategory = prefScreen.findPreference(CATEGORY_POWER);
+        final PreferenceCategory otherSettingsCat = prefScreen.findPreference(CATEGORY_OTHER_SETTINGS);
+        if (otherSettingsCat.getPreferenceCount() == 0) {
+            prefScreen.removePreference(otherSettingsCat);
+        }
 
         mHandler = new Handler();
 
