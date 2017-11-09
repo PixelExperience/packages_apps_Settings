@@ -46,6 +46,10 @@
             android:title="@string/doze_title"
             android:summary="@string/doze_summary" />
 
+        <Preference
+            android:key="ambient_display_custom"
+            android:title="@string/advanced_settings" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
