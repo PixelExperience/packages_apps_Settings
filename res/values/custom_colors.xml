@@ -14,4 +14,8 @@
 <resources>
     <!-- Storage bar -->
     <color name="storage_bar_private_tint_color">@*android:color/accent_device_default_light</color>
+
+    <!-- Suggestion/condition colors -->
+    <color name="suggestion_tile_background">@*android:color/white</color>
+
 </resources>
