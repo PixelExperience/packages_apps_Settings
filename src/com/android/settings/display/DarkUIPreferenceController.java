@@ -23,6 +23,7 @@ import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
 
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settings.core.PreferenceControllerMixin;
 
 import libcore.util.Objects;
 import java.util.ArrayList;
@@ -30,7 +31,7 @@ import java.util.List;
 
 
 public class DarkUIPreferenceController extends AbstractPreferenceController implements
-        Preference.OnPreferenceChangeListener {
+        PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
 
     private static final String SYSTEM_UI_THEME = "systemui_theme_style";
     private ListPreference mSystemUiThemeStyle;
