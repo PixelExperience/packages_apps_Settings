@@ -573,6 +573,12 @@
             android:title="@string/notification_bubbles_title"
             android:summary="@string/notification_bubbles_developer_setting_summary"/>
 
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="kill_app_longpress_back"
+            android:title="@string/kill_app_longpress_back"
+            android:summary="@string/kill_app_longpress_back_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <com.android.settings.development.autofill.AutofillPreferenceCategory
