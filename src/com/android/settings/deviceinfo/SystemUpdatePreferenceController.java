@@ -16,22 +16,17 @@
 package com.android.settings.deviceinfo;
 
 import android.content.Context;
-import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Build;
-import android.os.PersistableBundle;
 import android.os.UserManager;
+import android.os.SystemProperties;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
-import android.telephony.CarrierConfigManager;
-import android.text.TextUtils;
-import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
-
-import static android.content.Context.CARRIER_CONFIG_SERVICE;
 
 public class SystemUpdatePreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin {
@@ -42,6 +37,9 @@ public class SystemUpdatePreferenceController extends AbstractPreferenceControll
 
     private final UserManager mUm;
 
+    private static final String OTA_BUILD_TYPE_PROP = "org.pixelexperience.build_type";
+    private static final String OTA_APP_PACKAGE = "org.pixelexperience.ota";
+
     public SystemUpdatePreferenceController(Context context, UserManager um) {
         super(context);
         mUm = um;
@@ -49,7 +47,17 @@ public class SystemUpdatePreferenceController extends AbstractPreferenceControll
 
     @Override
     public boolean isAvailable() {
-        return mUm.isAdminUser();
+        String buildtype = SystemProperties.get(OTA_BUILD_TYPE_PROP,"unofficial");
+        if (!mUm.isAdminUser() || !buildtype.equalsIgnoreCase("official")){
+            return false;
+        }
+        try {
+            PackageManager pm = mContext.getPackageManager();
+            pm.getPackageInfo(OTA_APP_PACKAGE, PackageManager.GET_ACTIVITIES);
+        } catch (Exception e) {
+            return false;
+        }
+        return true;
     }
 
     @Override
@@ -71,12 +79,7 @@ public class SystemUpdatePreferenceController extends AbstractPreferenceControll
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
         if (KEY_SYSTEM_UPDATE_SETTINGS.equals(preference.getKey())) {
-            CarrierConfigManager configManager =
-                    (CarrierConfigManager) mContext.getSystemService(CARRIER_CONFIG_SERVICE);
-            PersistableBundle b = configManager.getConfig();
-            if (b != null && b.getBoolean(CarrierConfigManager.KEY_CI_ACTION_ON_SYS_UPDATE_BOOL)) {
-                ciActionOnSysUpdate(b);
-            }
+            // TODO: Launch Pixel Experience OTA
         }
         // always return false here because this handler does not want to block other handlers.
         return false;
@@ -86,27 +89,5 @@ public class SystemUpdatePreferenceController extends AbstractPreferenceControll
     public void updateState(Preference preference) {
         preference.setSummary(mContext.getString(R.string.about_summary,
                 Build.VERSION.RELEASE));
-    }
-
-    /**
-     * Trigger client initiated action (send intent) on system update
-     */
-    private void ciActionOnSysUpdate(PersistableBundle b) {
-        String intentStr = b.getString(CarrierConfigManager.
-                KEY_CI_ACTION_ON_SYS_UPDATE_INTENT_STRING);
-        if (!TextUtils.isEmpty(intentStr)) {
-            String extra = b.getString(CarrierConfigManager.
-                    KEY_CI_ACTION_ON_SYS_UPDATE_EXTRA_STRING);
-            String extraVal = b.getString(CarrierConfigManager.
-                    KEY_CI_ACTION_ON_SYS_UPDATE_EXTRA_VAL_STRING);
-
-            Intent intent = new Intent(intentStr);
-            if (!TextUtils.isEmpty(extra)) {
-                intent.putExtra(extra, extraVal);
-            }
-            Log.d(TAG, "ciActionOnSysUpdate: broadcasting intent " + intentStr +
-                    " with extra " + extra + ", " + extraVal);
-            mContext.getApplicationContext().sendBroadcast(intent);
-        }
     }
 }
