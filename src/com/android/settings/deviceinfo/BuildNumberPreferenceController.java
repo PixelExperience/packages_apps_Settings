@@ -29,6 +29,7 @@ import android.text.BidiFormatter;
 import android.text.TextUtils;
 import android.util.Pair;
 import android.widget.Toast;
+import android.os.SystemProperties;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -82,12 +83,25 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
         final Preference preference = screen.findPreference(KEY_BUILD_NUMBER);
         if (preference != null) {
             try {
-                preference.setSummary(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
+                StringBuilder sb = new StringBuilder();
+                sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
+                String pixelExperienceVersion = getPixelExperienceVersion();
+                if (!pixelExperienceVersion.equals("")){
+                sb.append("\n");
+                sb.append(pixelExperienceVersion);
+                }
+                preference.setSummary(sb.toString());
                 preference.setEnabled(true);
             } catch (Exception e) {
                 preference.setSummary(R.string.device_info_default);
             }
         }
+    }
+
+    private String getPixelExperienceVersion(){
+        String buildDate = SystemProperties.get("org.pixelexperience.build_date","");
+        String buildType = SystemProperties.get("org.pixelexperience.build_type","unofficial").toUpperCase();
+        return buildDate.equals("") ? "" : "PixelExperience-" + buildDate + "-" + buildType;
     }
 
     @Override
