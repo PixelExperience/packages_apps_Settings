@@ -1,17 +1,12 @@
-com.android.settings.location.LocationMode
 com.android.settings.accessibility.ToggleScreenMagnificationPreferenceFragment
-com.android.settings.deviceinfo.SimStatus
 com.android.settings.deviceinfo.PrivateVolumeForget
 com.android.settings.inputmethod.SpellCheckersSettings
 com.android.settings.inputmethod.KeyboardLayoutPickerFragment
-com.android.settings.notification.ZenModeEventRuleSettings
 com.android.settings.fuelgauge.InactiveApps
 com.android.settings.accessibility.CaptionPropertiesFragment
 com.android.settings.accessibility.AccessibilitySettingsForSetupWizard
-com.android.settings.deviceinfo.ImeiInformation
 com.android.settings.datausage.DataUsageList
 com.android.settings.vpn2.AppManagementFragment
-com.android.settings.display.NightDisplaySettings
 com.android.settings.vpn2.VpnSettings
 com.android.settings.fingerprint.FingerprintSettings$FingerprintSettingsFragment
 com.android.settings.applications.ProcessStatsDetail
@@ -23,7 +18,7 @@ com.android.settings.datausage.AppDataUsage
 com.android.settings.datausage.DataPlanUsageSummary
 com.android.settings.accessibility.FontSizePreferenceFragmentForSetupWizard
 com.android.settings.applications.ManageDomainUrls
-com.android.settings.applications.WriteSettingsDetails
+com.android.settings.applications.appinfo.WriteSettingsDetails
 com.android.settings.applications.ProcessStatsSummary
 com.android.settings.users.RestrictedProfileSettings
 com.android.settings.accounts.ChooseAccountActivity
@@ -31,7 +26,6 @@ com.android.settings.accounts.ManagedProfileSettings
 com.android.settings.accessibility.ToggleAutoclickPreferenceFragment
 com.android.settings.applications.AppLaunchSettings
 com.android.settings.applications.ProcessStatsUi
-com.android.settings.notification.ZenModeScheduleRuleSettings
 com.android.settings.datausage.BillingCycleSettings
 com.android.settings.notification.NotificationStation
 com.android.settings.print.PrintJobSettingsFragment
@@ -40,7 +34,7 @@ com.android.settings.accessibility.ToggleSelectToSpeakPreferenceFragmentForSetup
 com.android.settings.accounts.AccountSyncSettings
 com.android.settings.notification.RedactionInterstitial$RedactionInterstitialFragment
 com.android.settings.inputmethod.InputMethodAndSubtypeEnabler
-com.android.settings.applications.DrawOverlayDetails
+com.android.settings.applications.appinfo.DrawOverlayDetails
 com.android.settings.backup.ToggleBackupSettingFragment
 com.android.settings.users.UserDetailsSettings
 com.android.settings.datausage.UnrestrictedDataAccess
@@ -52,7 +46,6 @@ com.android.settings.deviceinfo.PublicVolumeSettings
 com.android.settings.applications.InstalledAppDetails
 com.android.settings.accessibility.ToggleAccessibilityServicePreferenceFragment
 com.android.settings.print.PrintServiceSettingsFragment
-com.android.settings.wfd.WifiDisplaySettings
 com.android.settings.deviceinfo.PrivateVolumeSettings
 com.android.settings.users.AppRestrictionsFragment
 com.android.settings.deviceinfo.PrivateVolumeUnmount
@@ -64,9 +57,9 @@ com.android.settings.applications.AppStorageSettings
 com.android.settings.notification.NotificationAccessSettings
 com.android.settings.accessibility.ToggleDaltonizerPreferenceFragment
 com.android.settings.localepicker.LocaleListEditor
-com.android.settings.applications.ExternalSourcesDetails
-com.android.settings.applications.PictureInPictureSettings
-com.android.settings.applications.PictureInPictureDetails
+com.android.settings.applications.appinfo.ExternalSourcesDetails
+com.android.settings.applications.appinfo.PictureInPictureSettings
+com.android.settings.applications.appinfo.PictureInPictureDetails
 com.android.settings.ApnSettings
 com.android.settings.PrivacySettings
 com.android.settings.WifiCallingSettings

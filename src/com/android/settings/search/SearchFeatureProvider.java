@@ -17,11 +17,16 @@
 package com.android.settings.search;
 
 import android.annotation.NonNull;
+import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
+import android.util.FeatureFlagUtils;
 import android.util.Pair;
 import android.view.View;
+import android.widget.Toolbar;
 
+import com.android.settings.core.FeatureFlags;
 import com.android.settings.dashboard.SiteMapManager;
 
 import java.util.List;
@@ -33,10 +38,7 @@ import java.util.concurrent.FutureTask;
  */
 public interface SearchFeatureProvider {
 
-    /**
-     * @return true to use the new version of search
-     */
-    boolean isEnabled(Context context);
+    Intent SEARCH_UI_INTENT = new Intent("com.android.settings.action.SETTINGS_SEARCH");
 
     /**
      * Ensures the caller has necessary privilege to launch search result page.
@@ -163,5 +165,27 @@ public interface SearchFeatureProvider {
      */
     default FutureTask<List<Pair<String, Float>>> getRankerTask(Context context, String query) {
         return null;
+    }
+
+    default boolean isSearchV2Enabled(Context context) {
+        return FeatureFlagUtils.isEnabled(context, FeatureFlags.SEARCH_V2);
+    }
+
+    /**
+     * Initializes the search toolbar.
+     */
+    default void initSearchToolbar(Activity activity, Toolbar toolbar) {
+        if (activity == null || toolbar == null) {
+            return;
+        }
+        toolbar.setOnClickListener(tb -> {
+            final Intent intent;
+            if (isSearchV2Enabled(activity)) {
+                intent = SEARCH_UI_INTENT;
+            } else {
+                intent = new Intent(activity, SearchActivity.class);
+            }
+            activity.startActivityForResult(intent, 0 /* requestCode */);
+        });
     }
 }

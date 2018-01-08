@@ -42,6 +42,7 @@ import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityManager;
 
+import com.android.internal.accessibility.AccessibilityShortcutController;
 import com.android.internal.content.PackageMonitor;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.view.RotationPolicy;
@@ -57,6 +58,7 @@ import com.android.settingslib.RestrictedPreference;
 import com.android.settingslib.accessibility.AccessibilityUtils;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -95,6 +97,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
             "toggle_lock_screen_rotation_preference";
     private static final String TOGGLE_LARGE_POINTER_ICON =
             "toggle_large_pointer_icon";
+    private static final String TOGGLE_DISABLE_ANIMATIONS = "toggle_disable_animations";
     private static final String TOGGLE_MASTER_MONO =
             "toggle_master_mono";
     private static final String SELECT_LONG_PRESS_TIMEOUT_PREFERENCE =
@@ -132,6 +135,14 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
     // to generate the AccessibilityServiceInfo we need for proper
     // presentation.
     private static final long DELAY_UPDATE_SERVICES_MILLIS = 1000;
+
+    // Settings that should be changed when toggling animations
+    private static final String[] TOGGLE_ANIMATION_TARGETS = {
+            Settings.Global.WINDOW_ANIMATION_SCALE, Settings.Global.TRANSITION_ANIMATION_SCALE,
+            Settings.Global.ANIMATOR_DURATION_SCALE
+    };
+    private static final String ANIMATION_ON_VALUE = "1";
+    private static final String ANIMATION_OFF_VALUE = "0";
 
     private final Map<String, String> mLongPressTimeoutValueToTitleMap = new HashMap<>();
 
@@ -172,13 +183,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
         }
     };
 
-    private final SettingsContentObserver mSettingsContentObserver =
-            new SettingsContentObserver(mHandler) {
-                @Override
-                public void onChange(boolean selfChange, Uri uri) {
-                    updateServicePreferences();
-                }
-            };
+    private final SettingsContentObserver mSettingsContentObserver;
 
     private final RotationPolicyListener mRotationPolicyListener = new RotationPolicyListener() {
         @Override
@@ -198,6 +203,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mTogglePowerButtonEndsCallPreference;
     private SwitchPreference mToggleLockScreenRotationPreference;
     private SwitchPreference mToggleLargePointerIconPreference;
+    private SwitchPreference mToggleDisableAnimationsPreference;
     private SwitchPreference mToggleMasterMonoPreference;
     private ListPreference mSelectLongPressTimeoutPreference;
     private Preference mNoServicesMessagePreference;
@@ -224,13 +230,29 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
                 .getBoolean(com.android.internal.R.bool.config_setColorTransformAccelerated);
     }
 
+    public AccessibilitySettings() {
+        // Observe changes to anything that the shortcut can toggle, so we can reflect updates
+        final Collection<AccessibilityShortcutController.ToggleableFrameworkFeatureInfo> features =
+                AccessibilityShortcutController.getFrameworkShortcutFeaturesMap().values();
+        final List<String> shortcutFeatureKeys = new ArrayList<>(features.size());
+        for (AccessibilityShortcutController.ToggleableFrameworkFeatureInfo feature : features) {
+            shortcutFeatureKeys.add(feature.getSettingKey());
+        }
+        mSettingsContentObserver = new SettingsContentObserver(mHandler, shortcutFeatureKeys) {
+            @Override
+            public void onChange(boolean selfChange, Uri uri) {
+                updateAllPreferences();
+            }
+        };
+    }
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.ACCESSIBILITY;
     }
 
     @Override
-    protected int getHelpResource() {
+    public int getHelpResource() {
         return R.string.help_uri_accessibility;
     }
 
@@ -305,6 +327,9 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
         } else if (mToggleLargePointerIconPreference == preference) {
             handleToggleLargePointerIconPreferenceClick();
             return true;
+        } else if (mToggleDisableAnimationsPreference == preference) {
+            handleToggleDisableAnimations();
+            return true;
         } else if (mToggleMasterMonoPreference == preference) {
             handleToggleMasterMonoPreferenceClick();
             return true;
@@ -335,6 +360,14 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
         Settings.Secure.putInt(getContentResolver(),
                 Settings.Secure.ACCESSIBILITY_LARGE_POINTER_ICON,
                 mToggleLargePointerIconPreference.isChecked() ? 1 : 0);
+    }
+
+    private void handleToggleDisableAnimations() {
+        String newAnimationValue = mToggleDisableAnimationsPreference.isChecked()
+                ? ANIMATION_OFF_VALUE : ANIMATION_ON_VALUE;
+        for (String animationPreference : TOGGLE_ANIMATION_TARGETS) {
+            Settings.Global.putString(getContentResolver(), animationPreference, newAnimationValue);
+        }
     }
 
     private void handleToggleMasterMonoPreferenceClick() {
@@ -376,6 +409,9 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
         // Large pointer icon.
         mToggleLargePointerIconPreference =
                 (SwitchPreference) findPreference(TOGGLE_LARGE_POINTER_ICON);
+
+        mToggleDisableAnimationsPreference =
+                (SwitchPreference) findPreference(TOGGLE_DISABLE_ANIMATIONS);
 
         // Master Mono
         mToggleMasterMonoPreference =
@@ -521,9 +557,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
             extras.putString(EXTRA_PREFERENCE_KEY, preference.getKey());
             extras.putBoolean(EXTRA_CHECKED, serviceEnabled);
             extras.putString(EXTRA_TITLE, title);
-            if (usePreferenceScreenTitle()) {
-                extras.putParcelable(EXTRA_RESOLVE_INFO, resolveInfo);
-            }
+            extras.putParcelable(EXTRA_RESOLVE_INFO, resolveInfo);
 
             String description = info.loadDescription(getPackageManager());
             if (TextUtils.isEmpty(description)) {
@@ -610,6 +644,8 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
         mToggleLargePointerIconPreference.setChecked(Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.ACCESSIBILITY_LARGE_POINTER_ICON, 0) != 0);
 
+        updateDisableAnimationsToggle();
+
         // Master mono
         updateMasterMono();
 
@@ -690,6 +726,19 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
             mToggleLockScreenRotationPreference.setChecked(
                     !RotationPolicy.isRotationLocked(context));
         }
+    }
+
+    private void updateDisableAnimationsToggle() {
+        boolean allAnimationsDisabled = true;
+        for (String animationSetting : TOGGLE_ANIMATION_TARGETS) {
+            if (!TextUtils.equals(
+                    Settings.Global.getString(getContentResolver(), animationSetting),
+                    ANIMATION_OFF_VALUE)) {
+                allAnimationsDisabled = false;
+                break;
+            }
+        }
+        mToggleDisableAnimationsPreference.setChecked(allAnimationsDisabled);
     }
 
     private void updateMasterMono() {

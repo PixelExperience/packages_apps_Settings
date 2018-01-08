@@ -32,7 +32,6 @@ import com.android.settings.R;
 import com.android.settings.TestConfig;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
-import com.android.settings.testutils.shadow.SettingsShadowSystemProperties;
 import com.android.settings.testutils.shadow.ShadowDoubleTwistPreferenceController;
 import com.android.settings.testutils.shadow.ShadowSecureSettings;
 

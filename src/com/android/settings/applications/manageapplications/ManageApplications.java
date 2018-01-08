@@ -50,6 +50,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.ArraySet;
+import android.util.FeatureFlagUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -88,17 +89,18 @@ import com.android.settings.applications.AppStateUsageBridge.UsageState;
 import com.android.settings.applications.AppStateWriteSettingsBridge;
 import com.android.settings.applications.AppStorageSettings;
 import com.android.settings.applications.DefaultAppSettings;
-import com.android.settings.applications.DrawOverlayDetails;
-import com.android.settings.applications.ExternalSourcesDetails;
 import com.android.settings.applications.InstalledAppCounter;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.NotificationApps;
 import com.android.settings.applications.UsageAccessDetails;
-import com.android.settings.applications.WriteSettingsDetails;
+import com.android.settings.applications.appinfo.AppInfoDashboardFragment;
+import com.android.settings.applications.appinfo.DrawOverlayDetails;
+import com.android.settings.applications.appinfo.ExternalSourcesDetails;
+import com.android.settings.applications.appinfo.WriteSettingsDetails;
+import com.android.settings.core.FeatureFlags;
 import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.fuelgauge.HighPowerDetail;
-import com.android.settings.fuelgauge.PowerWhitelistBackend;
 import com.android.settings.notification.AppNotificationSettings;
 import com.android.settings.notification.ConfigureNotificationSettings;
 import com.android.settings.notification.NotificationBackend;
@@ -111,6 +113,7 @@ import com.android.settingslib.applications.ApplicationsState.AppFilter;
 import com.android.settingslib.applications.ApplicationsState.CompoundFilter;
 import com.android.settingslib.applications.ApplicationsState.VolumeFilter;
 import com.android.settingslib.applications.StorageStatsSource;
+import com.android.settingslib.fuelgauge.PowerWhitelistBackend;
 import com.android.settingslib.utils.ThreadUtils;
 import com.android.settingslib.wrapper.PackageManagerWrapper;
 
@@ -293,7 +296,7 @@ public class ManageApplications extends InstrumentedPreferenceFragment
 
         mResetAppsHelper = new ResetAppsHelper(activity);
 
-        if (usePreferenceScreenTitle() && screenTitle > 0) {
+        if (screenTitle > 0) {
             activity.setTitle(screenTitle);
         }
     }
@@ -538,7 +541,13 @@ public class ManageApplications extends InstrumentedPreferenceFragment
             // process ahead of time, to avoid a long load of data when user clicks on a managed
             // app. Maybe when they load the list of apps that contains managed profile apps.
             default:
-                startAppInfoFragment(InstalledAppDetails.class, R.string.application_info_label);
+                if (FeatureFlagUtils.isEnabled(getContext(), FeatureFlags.APP_INFO_V2)) {
+                    startAppInfoFragment(
+                            AppInfoDashboardFragment.class, R.string.application_info_label);
+                } else {
+                    startAppInfoFragment(
+                            InstalledAppDetails.class, R.string.application_info_label);
+                }
                 break;
         }
     }

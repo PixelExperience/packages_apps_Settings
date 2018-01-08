@@ -38,7 +38,6 @@ import android.app.NotificationChannel;
 import android.app.NotificationChannelGroup;
 import android.app.NotificationManager;
 import android.content.Context;
-import android.os.Build;
 import android.os.UserManager;
 import android.support.v7.preference.Preference;
 
@@ -57,7 +56,7 @@ import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowApplication;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = Build.VERSION_CODES.O)
+@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class NotificationPreferenceControllerTest {
 
     @Mock(answer = Answers.RETURNS_DEEP_STUBS)
@@ -273,6 +272,7 @@ public class NotificationPreferenceControllerTest {
         NotificationBackend.AppRow appRow = new NotificationBackend.AppRow();
         appRow.systemApp = false;
         NotificationChannelGroupWrapper group = mock(NotificationChannelGroupWrapper.class);
+        when(group.getGroup()).thenReturn(mock(NotificationChannelGroup.class));
         when(group.isBlocked()).thenReturn(false);
 
         mController.onResume(appRow, null, group, null);
@@ -284,6 +284,7 @@ public class NotificationPreferenceControllerTest {
         NotificationBackend.AppRow appRow = new NotificationBackend.AppRow();
         appRow.systemApp = true;
         NotificationChannelGroupWrapper group = mock(NotificationChannelGroupWrapper.class);
+        when(group.getGroup()).thenReturn(mock(NotificationChannelGroup.class));
         when(group.isBlocked()).thenReturn(false);
 
         mController.onResume(appRow, null, group, null);
@@ -295,6 +296,7 @@ public class NotificationPreferenceControllerTest {
         NotificationBackend.AppRow appRow = new NotificationBackend.AppRow();
         appRow.systemApp = true;
         NotificationChannelGroupWrapper group = mock(NotificationChannelGroupWrapper.class);
+        when(group.getGroup()).thenReturn(mock(NotificationChannelGroup.class));
         when(group.isBlocked()).thenReturn(true);
 
         mController.onResume(appRow, null, group, null);

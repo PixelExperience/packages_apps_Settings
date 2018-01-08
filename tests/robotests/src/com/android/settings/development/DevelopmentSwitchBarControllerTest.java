@@ -16,8 +16,14 @@
 
 package com.android.settings.development;
 
+import static android.arch.lifecycle.Lifecycle.Event.ON_START;
+import static android.arch.lifecycle.Lifecycle.Event.ON_STOP;
+
 import static com.google.common.truth.Truth.assertThat;
+
 import static org.mockito.Mockito.when;
+
+import android.content.Context;
 
 import com.android.settings.TestConfig;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
@@ -45,9 +51,8 @@ import java.util.ArrayList;
 public class DevelopmentSwitchBarControllerTest {
 
     @Mock
-    private DevelopmentSettings mSettings;
-    @Mock
-    private DevelopmentSettingsDashboardFragment mNewSettings;
+    private DevelopmentSettingsDashboardFragment mSettings;
+    private Context mContext;
     private Lifecycle mLifecycle;
     private SwitchBar mSwitchBar;
     private DevelopmentSwitchBarController mController;
@@ -55,8 +60,10 @@ public class DevelopmentSwitchBarControllerTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        mLifecycle = new Lifecycle();
-        mSwitchBar = new SwitchBar(RuntimeEnvironment.application);
+        mContext = RuntimeEnvironment.application;
+        mLifecycle = new Lifecycle(() -> mLifecycle);
+        mSwitchBar = new SwitchBar(mContext);
+        when(mSettings.getContext()).thenReturn(mContext);
     }
 
     @After
@@ -65,33 +72,18 @@ public class DevelopmentSwitchBarControllerTest {
     }
 
     @Test
-    public void runThroughLifecycle_isMonkeyRun_shouldNotRegisterListener() {
+    public void runThroughLifecycle_v2_isMonkeyRun_shouldNotRegisterListener() {
         ShadowUtils.setIsUserAMonkey(true);
         mController = new DevelopmentSwitchBarController(mSettings, mSwitchBar,
                 true /* isAvailable */, mLifecycle);
         final ArrayList<SwitchBar.OnSwitchChangeListener> listeners =
                 ReflectionHelpers.getField(mSwitchBar, "mSwitchChangeListeners");
 
-        mLifecycle.onStart();
+        mLifecycle.handleLifecycleEvent(ON_START);
         assertThat(listeners).doesNotContain(mSettings);
 
-        mLifecycle.onStop();
+        mLifecycle.handleLifecycleEvent(ON_STOP);
         assertThat(listeners).doesNotContain(mSettings);
-    }
-
-    @Test
-    public void runThroughLifecycle_v2_isMonkeyRun_shouldNotRegisterListener() {
-        ShadowUtils.setIsUserAMonkey(true);
-        mController = new DevelopmentSwitchBarController(mNewSettings, mSwitchBar,
-                true /* isAvailable */, mLifecycle);
-        final ArrayList<SwitchBar.OnSwitchChangeListener> listeners =
-                ReflectionHelpers.getField(mSwitchBar, "mSwitchChangeListeners");
-
-        mLifecycle.onStart();
-        assertThat(listeners).doesNotContain(mNewSettings);
-
-        mLifecycle.onStop();
-        assertThat(listeners).doesNotContain(mNewSettings);
     }
 
     @Test
@@ -102,27 +94,27 @@ public class DevelopmentSwitchBarControllerTest {
         final ArrayList<SwitchBar.OnSwitchChangeListener> listeners =
                 ReflectionHelpers.getField(mSwitchBar, "mSwitchChangeListeners");
 
-        mLifecycle.onStart();
+        mLifecycle.handleLifecycleEvent(ON_START);
         assertThat(listeners).contains(mSettings);
 
-        mLifecycle.onStop();
+        mLifecycle.handleLifecycleEvent(ON_STOP);
         assertThat(listeners).doesNotContain(mSettings);
     }
 
     @Test
     public void runThroughLifecycle_v2_isNotMonkeyRun_shouldRegisterAndRemoveListener() {
-        when(mNewSettings.getContext()).thenReturn(RuntimeEnvironment.application);
+        when(mSettings.getContext()).thenReturn(RuntimeEnvironment.application);
         ShadowUtils.setIsUserAMonkey(false);
-        mController = new DevelopmentSwitchBarController(mNewSettings, mSwitchBar,
+        mController = new DevelopmentSwitchBarController(mSettings, mSwitchBar,
                 true /* isAvailable */, mLifecycle);
         final ArrayList<SwitchBar.OnSwitchChangeListener> listeners =
                 ReflectionHelpers.getField(mSwitchBar, "mSwitchChangeListeners");
 
-        mLifecycle.onStart();
-        assertThat(listeners).contains(mNewSettings);
+        mLifecycle.handleLifecycleEvent(ON_START);
+        assertThat(listeners).contains(mSettings);
 
-        mLifecycle.onStop();
-        assertThat(listeners).doesNotContain(mNewSettings);
+        mLifecycle.handleLifecycleEvent(ON_STOP);
+        assertThat(listeners).doesNotContain(mSettings);
     }
 
     @Test

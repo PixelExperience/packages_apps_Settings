@@ -16,7 +16,7 @@
 
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:key="special_app_access_screen"
         android:title="@string/special_access">
 
@@ -68,7 +68,7 @@
     <Preference
         android:key="picture_in_picture"
         android:title="@string/picture_in_picture_title"
-        android:fragment="com.android.settings.applications.PictureInPictureSettings"
+        android:fragment="com.android.settings.applications.appinfo.PictureInPictureSettings"
         settings:keywords="@string/picture_in_picture_keywords" />
 
     <Preference

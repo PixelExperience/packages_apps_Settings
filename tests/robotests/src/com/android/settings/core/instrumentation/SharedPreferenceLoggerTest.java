@@ -15,13 +15,24 @@
  */
 package com.android.settings.core.instrumentation;
 
+import static com.android.internal.logging.nano.MetricsProto.MetricsEvent.ACTION_SETTINGS_PREFERENCE_CHANGE;
+import static com.android.internal.logging.nano.MetricsProto.MetricsEvent.FIELD_SETTINGS_PREFERENCE_CHANGE_FLOAT_VALUE;
+import static com.android.internal.logging.nano.MetricsProto.MetricsEvent.FIELD_SETTINGS_PREFERENCE_CHANGE_INT_VALUE;
+import static com.android.internal.logging.nano.MetricsProto.MetricsEvent.FIELD_SETTINGS_PREFERENCE_CHANGE_NAME;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyInt;
+import static org.mockito.Matchers.argThat;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Pair;
 
-import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.TestConfig;
 import com.android.settings.testutils.FakeFeatureFactory;
+import com.android.settings.testutils.SettingsRobolectricTestRunner;
 
 import com.google.common.truth.Platform;
 
@@ -33,21 +44,6 @@ import org.mockito.ArgumentMatcher;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.annotation.Config;
-
-import static com.android.internal.logging.nano.MetricsProto.MetricsEvent
-        .ACTION_SETTINGS_PREFERENCE_CHANGE;
-import static com.android.internal.logging.nano.MetricsProto.MetricsEvent
-        .FIELD_SETTINGS_PREFERENCE_CHANGE_FLOAT_VALUE;
-import static com.android.internal.logging.nano.MetricsProto.MetricsEvent
-        .FIELD_SETTINGS_PREFERENCE_CHANGE_INT_VALUE;
-import static com.android.internal.logging.nano.MetricsProto.MetricsEvent
-        .FIELD_SETTINGS_PREFERENCE_CHANGE_NAME;
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyInt;
-import static org.mockito.Matchers.argThat;
-import static org.mockito.Matchers.eq;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
 
 @RunWith(SettingsRobolectricTestRunner.class)
 @Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
@@ -67,8 +63,7 @@ public class SharedPreferenceLoggerTest {
     @Before
     public void init() {
         MockitoAnnotations.initMocks(this);
-        FakeFeatureFactory.setupForTest(mContext);
-        mFactory = (FakeFeatureFactory) FakeFeatureFactory.getFactory(mContext);
+        mFactory = FakeFeatureFactory.setupForTest();
         mMetricsFeature = mFactory.metricsFeatureProvider;
 
         mSharedPrefLogger = new SharedPreferencesLogger(mContext, TEST_TAG);

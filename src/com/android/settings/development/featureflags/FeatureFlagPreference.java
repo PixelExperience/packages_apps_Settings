@@ -29,13 +29,13 @@ public class FeatureFlagPreference extends SwitchPreference {
         mKey = key;
         setKey(key);
         setTitle(key);
-        setCheckedInternal(FeatureFlagUtils.isEnabled(mKey));
+        setCheckedInternal(FeatureFlagUtils.isEnabled(context, mKey));
     }
 
     @Override
     public void setChecked(boolean isChecked) {
         setCheckedInternal(isChecked);
-        FeatureFlagUtils.setEnabled(mKey, isChecked);
+        FeatureFlagUtils.setEnabled(getContext(), mKey, isChecked);
     }
 
     private void setCheckedInternal(boolean isChecked) {

@@ -34,7 +34,7 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION_O,
+@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION,
         shadows = {
                 ShadowUserManager.class
         })
@@ -46,16 +46,18 @@ public class RestrictedEncryptionPreferenceControllerTest {
     private InstallCredentialsPreferenceController mInstallCredentialsPreferenceController;
     private ResetCredentialsPreferenceController mResetCredentialsPreferenceController;
     private UserCredentialsPreferenceController mUserCredentialsPreferenceController;
+    private Lifecycle mLifecycle;
 
     @Before
     public void setUp() {
         mContext = RuntimeEnvironment.application;
+        mLifecycle = new Lifecycle(() -> mLifecycle);
         mCredentialStoragePreferenceController =
                 new CredentialStoragePreferenceController(mContext);
         mInstallCredentialsPreferenceController =
                 new InstallCredentialsPreferenceController(mContext);
         mResetCredentialsPreferenceController =
-                new ResetCredentialsPreferenceController(mContext, new Lifecycle());
+                new ResetCredentialsPreferenceController(mContext, mLifecycle);
         mUserCredentialsPreferenceController =
                 new UserCredentialsPreferenceController(mContext);
         mUserManager = ShadowUserManager.getShadow();

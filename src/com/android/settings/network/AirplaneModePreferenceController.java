@@ -81,7 +81,7 @@ public class AirplaneModePreferenceController extends AbstractPreferenceControll
                         mMetricsFeatureProvider);
             }
         } else {
-            removePreference(screen, getPreferenceKey());
+            setVisible(screen, getPreferenceKey(), false /* visible */);
         }
     }
 
@@ -91,7 +91,7 @@ public class AirplaneModePreferenceController extends AbstractPreferenceControll
     }
 
     public static boolean isAvailable(Context context) {
-        return !context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEVISION);
+        return !context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_LEANBACK);
     }
 
     @Override
@@ -100,12 +100,16 @@ public class AirplaneModePreferenceController extends AbstractPreferenceControll
     }
 
     public void onResume() {
-        mAirplaneModeEnabler.resume();
+        if (mAirplaneModeEnabler != null) {
+            mAirplaneModeEnabler.resume();
+        }
     }
 
     @Override
     public void onPause() {
-        mAirplaneModeEnabler.pause();
+        if (mAirplaneModeEnabler != null) {
+            mAirplaneModeEnabler.pause();
+        }
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

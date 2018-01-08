@@ -23,13 +23,11 @@ import android.os.Bundle;
 import android.os.SystemProperties;
 import android.support.annotation.VisibleForTesting;
 import android.text.TextUtils;
-import android.util.FeatureFlagUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
 import com.android.internal.logging.nano.MetricsProto;
-import com.android.settings.DeviceInfoSettings;
 import com.android.settings.R;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
 
@@ -59,12 +57,7 @@ public class HardwareInfoDialogFragment extends InstrumentedDialogFragment {
                 DeviceModelPreferenceController.getDeviceModel());
 
         // Serial number
-        if (FeatureFlagUtils.isEnabled(DeviceInfoSettings.DEVICE_INFO_V2_FEATURE_FLAG)) {
-            setText(content, R.id.serial_number_label, R.id.serial_number_value, getSerialNumber());
-        } else {
-            content.findViewById(R.id.serial_number_label).setVisibility(View.GONE);
-            content.findViewById(R.id.serial_number_value).setVisibility(View.GONE);
-        }
+        setText(content, R.id.serial_number_label, R.id.serial_number_value, getSerialNumber());
 
         // Hardware rev
         setText(content, R.id.hardware_rev_label, R.id.hardware_rev_value,
@@ -73,7 +66,7 @@ public class HardwareInfoDialogFragment extends InstrumentedDialogFragment {
         return builder.setView(content).create();
     }
 
-    @VisibleForTesting(otherwise = VisibleForTesting.PRIVATE)
+    @VisibleForTesting
     void setText(View content, int labelViewId, int valueViewId, String value) {
         if (content == null) {
             return;

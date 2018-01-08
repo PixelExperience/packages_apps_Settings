@@ -15,6 +15,15 @@
  */
 package com.android.settings.bluetooth;
 
+import static com.google.common.truth.Truth.assertThat;
+
+import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
@@ -22,10 +31,10 @@ import android.os.UserManager;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
-import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.TestConfig;
 import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.testutils.FakeFeatureFactory;
+import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
 import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 
@@ -38,19 +47,11 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.util.ReflectionHelpers;
 
-import static com.google.common.truth.Truth.assertThat;
-
-import static org.mockito.Mockito.doAnswer;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.spy;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
 @RunWith(SettingsRobolectricTestRunner.class)
 @Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION,
         shadows = SettingsShadowResources.class)
 public class BluetoothDevicePreferenceTest {
+    private static final boolean SHOW_DEVICES_WITHOUT_NAMES = true;
 
     private Context mContext;
     @Mock
@@ -66,11 +67,10 @@ public class BluetoothDevicePreferenceTest {
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         mContext = spy(RuntimeEnvironment.application.getApplicationContext());
-        FakeFeatureFactory.setupForTest(mContext);
-        mFakeFeatureFactory = (FakeFeatureFactory) FakeFeatureFactory.getFactory(mContext);
+        mFakeFeatureFactory = FakeFeatureFactory.setupForTest();
         mMetricsFeatureProvider = mFakeFeatureFactory.getMetricsFeatureProvider();
         mPreference = new BluetoothDevicePreference(mContext, mCachedBluetoothDevice,
-                mDeviceListPreferenceFragment);
+                SHOW_DEVICES_WITHOUT_NAMES);
     }
 
     @Test
@@ -177,47 +177,22 @@ public class BluetoothDevicePreferenceTest {
     }
 
     @Test
-    public void testVisible_notVisibleThenVisible() {
-        when(mDeviceListPreferenceFragment.shouldShowDevicesWithoutNames()).thenReturn(false);
-        final boolean[] humanReadableName = {false};
-        doAnswer(invocation -> humanReadableName[0]).when(mCachedBluetoothDevice)
-                .hasHumanReadableName();
+    public void testVisible_showDeviceWithoutNames_visible() {
+        doReturn(false).when(mCachedBluetoothDevice).hasHumanReadableName();
         BluetoothDevicePreference preference =
                 new BluetoothDevicePreference(mContext, mCachedBluetoothDevice,
-                        mDeviceListPreferenceFragment);
-        assertThat(preference.isVisible()).isFalse();
-        humanReadableName[0] = true;
-        preference.onDeviceAttributesChanged();
+                        SHOW_DEVICES_WITHOUT_NAMES);
+
         assertThat(preference.isVisible()).isTrue();
     }
 
     @Test
-    public void testVisible_visibleThenNotVisible() {
-        when(mDeviceListPreferenceFragment.shouldShowDevicesWithoutNames()).thenReturn(false);
-        final boolean[] humanReadableName = {true};
-        doAnswer(invocation -> humanReadableName[0]).when(mCachedBluetoothDevice)
-                .hasHumanReadableName();
+    public void testVisible_hideDeviceWithoutNames_invisible() {
+        doReturn(false).when(mCachedBluetoothDevice).hasHumanReadableName();
         BluetoothDevicePreference preference =
                 new BluetoothDevicePreference(mContext, mCachedBluetoothDevice,
-                        mDeviceListPreferenceFragment);
-        assertThat(preference.isVisible()).isTrue();
-        humanReadableName[0] = false;
-        preference.onDeviceAttributesChanged();
-        assertThat(preference.isVisible()).isFalse();
-    }
+                        false);
 
-    @Test
-    public void testVisible_alwaysVisibleWhenEnabled() {
-        when(mDeviceListPreferenceFragment.shouldShowDevicesWithoutNames()).thenReturn(true);
-        final boolean[] humanReadableName = {true};
-        doAnswer(invocation -> humanReadableName[0]).when(mCachedBluetoothDevice)
-                .hasHumanReadableName();
-        BluetoothDevicePreference preference =
-                new BluetoothDevicePreference(mContext, mCachedBluetoothDevice,
-                        mDeviceListPreferenceFragment);
-        assertThat(preference.isVisible()).isTrue();
-        humanReadableName[0] = false;
-        preference.onDeviceAttributesChanged();
-        assertThat(preference.isVisible()).isTrue();
+        assertThat(preference.isVisible()).isFalse();
     }
 }

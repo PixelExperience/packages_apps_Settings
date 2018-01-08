@@ -63,7 +63,7 @@
 
     <style name="GlifV2Theme" parent="SuwThemeGlifV2">
         <!-- For all Alert Dialogs -->
-        <item name="android:alertDialogTheme">@style/ThemeOverlay.AlertDialog</item>
+        <item name="android:alertDialogTheme">@style/GlifV2ThemeAlertDialog</item>
         <item name="android:windowBackground">?android:attr/colorBackground</item>
         <item name="*android:preferencePanelStyle">@*android:style/PreferencePanel.Dialog</item>
         <item name="fingerprint_layout_theme">@style/FingerprintLayoutTheme</item>
@@ -83,7 +83,7 @@
 
     <style name="GlifV2Theme.Light" parent="SuwThemeGlifV2.Light">
         <!-- For all Alert Dialogs -->
-        <item name="android:alertDialogTheme">@style/ThemeOverlay.AlertDialog</item>
+        <item name="android:alertDialogTheme">@style/GlifV2ThemeAlertDialog.Light</item>
         <item name="android:windowBackground">?android:attr/colorBackground</item>
         <item name="*android:preferencePanelStyle">@*android:style/PreferencePanel.Dialog</item>
         <item name="fingerprint_layout_theme">@style/FingerprintLayoutTheme</item>
@@ -113,6 +113,21 @@
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowAnimationStyle">@null</item>
     </style>
+
+    <style name="GlifV2Theme.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="GlifV2Theme.Light.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
 
     <style name="SuwSuggestionThemeGlif.Light" parent="SuwThemeGlif.Light">
         <item name="android:windowAnimationStyle">@android:style/Animation.Activity</item>
@@ -239,6 +254,14 @@
     </style>
 
     <style name="ThemeOverlay.AlertDialog" parent="@android:style/ThemeOverlay.Material.Dialog.Alert">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="GlifV2ThemeAlertDialog" parent="SuwAlertDialogTheme">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="GlifV2ThemeAlertDialog.Light" parent="SuwAlertDialogTheme.Light">
         <item name="android:windowSoftInputMode">adjustResize</item>
     </style>
 

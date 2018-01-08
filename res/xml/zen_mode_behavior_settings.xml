@@ -17,7 +17,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="zen_mode_behavior_settings_page"
     android:title="@string/zen_mode_behavior_settings_title"
     settings:initialExpandedChildrenCount="7">
@@ -34,7 +34,8 @@
        <!-- Media -->
        <SwitchPreference
            android:key="zen_mode_media"
-           android:title="@string/zen_mode_media_system_other"/>
+           android:title="@string/zen_mode_media_system_other"
+           android:summary="@string/zen_mode_media_system_other_secondary_text"/>
 
        <!-- Reminders -->
        <SwitchPreference
@@ -46,17 +47,16 @@
            android:key="zen_mode_events"
            android:title="@string/zen_mode_events"/>
 
-       <!-- Messages -->
-       <DropDownPreference
+       <Preference
            android:key="zen_mode_messages"
            android:title="@string/zen_mode_messages"
-           android:summary="%s" />
+           android:fragment="com.android.settings.notification.ZenModeMessagesSettings" />
 
        <!-- Calls -->
-       <DropDownPreference
+       <Preference
            android:key="zen_mode_calls"
            android:title="@string/zen_mode_calls"
-           android:summary="%s" />
+           android:fragment="com.android.settings.notification.ZenModeCallsSettings" />
 
        <!-- Repeat callers -->
        <SwitchPreference
@@ -76,7 +76,8 @@
         <SwitchPreference android:key="zen_mode_screen_off"
                           android:title="@string/zen_mode_screen_off"
                           android:summary="@string/zen_mode_screen_off_summary" />
-
     </PreferenceCategory>
+
+    <com.android.settingslib.widget.FooterPreference />
 
 </PreferenceScreen>

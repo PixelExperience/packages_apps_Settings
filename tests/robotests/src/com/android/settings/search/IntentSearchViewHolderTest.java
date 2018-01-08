@@ -18,6 +18,7 @@
 package com.android.settings.search;
 
 import static com.google.common.truth.Truth.assertThat;
+import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.doReturn;
@@ -32,6 +33,7 @@ import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.UserHandle;
 import android.view.LayoutInflater;
@@ -75,20 +77,17 @@ public class IntentSearchViewHolderTest {
     private FakeFeatureFactory mFeatureFactory;
     private IntentSearchViewHolder mHolder;
     private Drawable mIcon;
-    private Drawable mBadgedIcon;
 
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        FakeFeatureFactory.setupForTest(mContext);
-        mFeatureFactory = (FakeFeatureFactory) FakeFeatureFactory.getFactory(mContext);
+        mFeatureFactory = FakeFeatureFactory.setupForTest();
 
         final Context context = RuntimeEnvironment.application;
         final View view = LayoutInflater.from(context).inflate(R.layout.search_intent_item, null);
         mHolder = new IntentSearchViewHolder(view);
 
         mIcon = context.getDrawable(R.drawable.ic_search_24dp);
-        mBadgedIcon = context.getDrawable(R.drawable.ic_add);
         when(mFragment.getActivity().getPackageManager()).thenReturn(mPackageManager);
     }
 
@@ -189,6 +188,9 @@ public class IntentSearchViewHolderTest {
 
     @Test
     public void testBindViewElements_appSearchResult() {
+        mHolder = spy(mHolder);
+        doReturn(new ColorDrawable(0)).when(mHolder).getBadgedIcon(any(ApplicationInfo.class),
+                anyInt());
         when(mPackageManager.getUserBadgedLabel(any(CharSequence.class),
                 eq(new UserHandle(USER_ID)))).thenReturn(BADGED_LABEL);
 

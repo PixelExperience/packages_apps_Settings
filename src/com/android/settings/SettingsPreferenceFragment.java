@@ -39,8 +39,6 @@ import android.text.TextUtils;
 import android.util.ArrayMap;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -49,10 +47,12 @@ import com.android.settings.applications.LayoutPreference;
 import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.core.instrumentation.Instrumentable;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
+import com.android.settings.search.actionbar.SearchMenuController;
+import com.android.settings.support.actionbar.HelpMenuController;
+import com.android.settings.support.actionbar.HelpResourceProvider;
 import com.android.settings.widget.LoadingViewController;
 import com.android.settingslib.CustomDialogPreference;
 import com.android.settingslib.CustomEditTextPreference;
-import com.android.settingslib.HelpUtils;
 import com.android.settingslib.widget.FooterPreferenceMixin;
 
 import java.util.UUID;
@@ -61,13 +61,7 @@ import java.util.UUID;
  * Base class for Settings fragments, with some helper functions and dialog management.
  */
 public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceFragment
-        implements DialogCreatable {
-
-    /**
-     * The Help Uri Resource key. This can be passed as an extra argument when creating the
-     * Fragment.
-     **/
-    public static final String HELP_URI_RESOURCE_KEY = "help_uri_resource";
+        implements DialogCreatable, HelpResourceProvider {
 
     private static final String TAG = "SettingsPreference";
 
@@ -79,13 +73,11 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
     protected final FooterPreferenceMixin mFooterPreferenceMixin =
             new FooterPreferenceMixin(this, getLifecycle());
 
-    private SettingsDialogFragment mDialogFragment;
-
-    private String mHelpUri;
 
     private static final int ORDER_FIRST = -1;
     private static final int ORDER_LAST = Integer.MAX_VALUE -1;
 
+    private SettingsDialogFragment mDialogFragment;
     // Cache the content resolver for async callbacks
     private ContentResolver mContentResolver;
 
@@ -144,21 +136,23 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        SearchMenuController.init(this /* host */);
+        HelpMenuController.init(this /* host */);
 
         if (icicle != null) {
             mPreferenceHighlighted = icicle.getBoolean(SAVE_HIGHLIGHTED_KEY);
         }
+        final Bundle arguments = getArguments();
 
-        // Prepare help url and enable menu if necessary
-        Bundle arguments = getArguments();
-        int helpResource;
-        if (arguments != null && arguments.containsKey(HELP_URI_RESOURCE_KEY)) {
-            helpResource = arguments.getInt(HELP_URI_RESOURCE_KEY);
-        } else {
-            helpResource = getHelpResource();
-        }
-        if (helpResource != 0) {
-            mHelpUri = getResources().getString(helpResource);
+        // Check if we should keep the preferences expanded.
+        if (arguments != null) {
+            mPreferenceKey = arguments.getString(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY);
+            if (!TextUtils.isEmpty(mPreferenceKey)) {
+                final PreferenceScreen screen = getPreferenceScreen();
+                if (screen != null) {
+                    screen.setInitialExpandedChildrenCount(Integer.MAX_VALUE);
+                }
+            }
         }
     }
 
@@ -166,8 +160,8 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         final View root = super.onCreateView(inflater, container, savedInstanceState);
-        mPinnedHeaderFrameLayout = (ViewGroup) root.findViewById(R.id.pinned_header);
-        mButtonBar = (ViewGroup) root.findViewById(R.id.button_bar);
+        mPinnedHeaderFrameLayout = root.findViewById(R.id.pinned_header);
+        mButtonBar = root.findViewById(R.id.button_bar);
         return root;
     }
 
@@ -224,9 +218,7 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
     public void onResume() {
         super.onResume();
 
-        final Bundle args = getArguments();
-        if (args != null) {
-            mPreferenceKey = args.getString(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY);
+        if (mPreferenceKey != null) {
             highlightPreferenceIfNeeded();
         }
     }
@@ -454,22 +446,6 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
             }
         }
         return false;
-    }
-
-    /**
-     * Override this if you want to show a help item in the menu, by returning the resource id.
-     * @return the resource id for the help url
-     */
-    protected int getHelpResource() {
-        return R.string.help_uri_default;
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
-        if (mHelpUri != null && getActivity() != null) {
-            HelpUtils.prepareHelpMenuItem(getActivity(), menu, mHelpUri, getClass().getName());
-        }
     }
 
     /*

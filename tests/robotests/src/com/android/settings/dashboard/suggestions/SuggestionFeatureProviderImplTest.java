@@ -42,6 +42,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Settings.NightDisplaySuggestionActivity;
 import com.android.settings.TestConfig;
+import com.android.settings.core.FeatureFlags;
 import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
@@ -97,8 +98,7 @@ public class SuggestionFeatureProviderImplTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        FakeFeatureFactory.setupForTest(mContext);
-        mFactory = (FakeFeatureFactory) FakeFeatureFactory.getFactory(mContext);
+        mFactory = FakeFeatureFactory.setupForTest();
         when(mContext.getPackageManager()).thenReturn(mPackageManager);
         // Explicit casting to object due to MockitoCast bug
         when((Object) mContext.getSystemService(FingerprintManager.class))
@@ -136,7 +136,7 @@ public class SuggestionFeatureProviderImplTest {
     public void isSuggestionV2Enabled_isNotLowMemoryDevice_sysPropOn_shouldReturnTrue() {
         when(mActivityManager.isLowRamDevice()).thenReturn(false);
         SettingsShadowSystemProperties.set(
-                FeatureFlagUtils.FFLAG_PREFIX + mProvider.FEATURE_FLAG_SUGGESTIONS_V2, "true");
+                FeatureFlagUtils.FFLAG_PREFIX + FeatureFlags.SUGGESTIONS_V2, "true");
         assertThat(mProvider.isSuggestionV2Enabled(mContext)).isTrue();
     }
 

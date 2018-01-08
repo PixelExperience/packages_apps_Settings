@@ -17,33 +17,25 @@ package com.android.settings.connecteddevice;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.provider.SearchIndexableResource;
 import android.support.annotation.VisibleForTesting;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
-import com.android.settings.SettingsActivity;
-import com.android.settings.bluetooth.BluetoothMasterSwitchPreferenceController;
-import com.android.settings.bluetooth.Utils;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.dashboard.SummaryLoader;
-import com.android.settings.deviceinfo.UsbBackend;
 import com.android.settings.nfc.NfcPreferenceController;
-import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ConnectedDeviceDashboardFragment extends DashboardFragment {
 
     private static final String TAG = "ConnectedDeviceFrag";
-    private UsbModePreferenceController mUsbPrefController;
 
     @Override
     public int getMetricsCategory() {
@@ -56,7 +48,7 @@ public class ConnectedDeviceDashboardFragment extends DashboardFragment {
     }
 
     @Override
-    protected int getHelpResource() {
+    public int getHelpResource() {
         return R.string.help_url_connected_devices;
     }
 
@@ -69,25 +61,10 @@ public class ConnectedDeviceDashboardFragment extends DashboardFragment {
     protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         final Lifecycle lifecycle = getLifecycle();
-        final NfcPreferenceController nfcPreferenceController =
-                new NfcPreferenceController(context);
-        lifecycle.addObserver(nfcPreferenceController);
-        controllers.add(nfcPreferenceController);
-        mUsbPrefController = new UsbModePreferenceController(context, new UsbBackend(context));
-        lifecycle.addObserver(mUsbPrefController);
-        controllers.add(mUsbPrefController);
-        final BluetoothMasterSwitchPreferenceController bluetoothPreferenceController =
-                new BluetoothMasterSwitchPreferenceController(
-                        context, Utils.getLocalBtManager(context), this,
-                        (SettingsActivity) getActivity());
-        lifecycle.addObserver(bluetoothPreferenceController);
-        controllers.add(bluetoothPreferenceController);
 
-        SmsMirroringFeatureProvider smsMirroringFeatureProvider =
-                FeatureFactory.getFactory(context).getSmsMirroringFeatureProvider();
-        AbstractPreferenceController smsMirroringController =
-                smsMirroringFeatureProvider.getController(context);
-        controllers.add(smsMirroringController);
+        controllers.add(new ConnectedDeviceGroupController(this, lifecycle));
+        controllers.add(new SavedDeviceGroupController(this, lifecycle));
+
         return controllers;
     }
 
@@ -131,33 +108,26 @@ public class ConnectedDeviceDashboardFragment extends DashboardFragment {
     /**
      * For Search.
      */
+    //TODO(b/69333961): update the index for this new fragment
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override
                 public List<SearchIndexableResource> getXmlResourcesToIndex(
                         Context context, boolean enabled) {
-                    final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.connected_devices;
-                    return Arrays.asList(sir);
+                    return new ArrayList<>();
                 }
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
-                    final List<String> keys = super.getNonIndexableKeys(context);
-                    PackageManager pm = context.getPackageManager();
-                    if (!pm.hasSystemFeature(PackageManager.FEATURE_NFC)) {
-                        keys.add(NfcPreferenceController.KEY_TOGGLE_NFC);
-                        keys.add(NfcPreferenceController.KEY_ANDROID_BEAM_SETTINGS);
-                    }
-                    keys.add(BluetoothMasterSwitchPreferenceController.KEY_TOGGLE_BLUETOOTH);
 
-                    SmsMirroringFeatureProvider smsMirroringFeatureProvider =
-                            FeatureFactory.getFactory(context).getSmsMirroringFeatureProvider();
-                    SmsMirroringPreferenceController smsMirroringController =
-                            smsMirroringFeatureProvider.getController(context);
-                    smsMirroringController.updateNonIndexableKeys(keys);
+                    return new ArrayList<>();
+                }
 
-                    return keys;
+                @Override
+                public List<AbstractPreferenceController> getPreferenceControllers(
+                        Context context) {
+                    //TODO(b/69333961): update the index for controllers
+                    return super.getPreferenceControllers(context);
                 }
             };
 }

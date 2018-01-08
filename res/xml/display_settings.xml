@@ -16,7 +16,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="display_settings_screen"
     android:title="@string/display_settings"
     settings:keywords="@string/keywords_display"
@@ -26,7 +26,7 @@
         android:key="brightness"
         android:title="@string/brightness"
         settings:keywords="@string/keywords_display_brightness_level">
-        <intent android:action="com.android.intent.action.SHOW_BRIGHTNESS_DIALOG" />
+    <intent android:action="com.android.intent.action.SHOW_BRIGHTNESS_DIALOG" />
     </Preference>
 
     <com.android.settings.display.NightDisplayPreference
@@ -42,7 +42,8 @@
         android:key="auto_brightness"
         android:title="@string/auto_brightness_title"
         settings:keywords="@string/keywords_display_auto_brightness"
-        android:summary="@string/auto_brightness_summary" />
+        android:summary="@string/auto_brightness_summary"
+        settings:controller="com.android.settings.display.AutoBrightnessPreferenceController" />
 
     <com.android.settingslib.RestrictedPreference
         android:key="wallpaper"

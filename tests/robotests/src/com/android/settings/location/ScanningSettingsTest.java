@@ -40,7 +40,6 @@ public class ScanningSettingsTest {
     private Context mContext;
     private ScanningSettings mSettings;
 
-
     @Before
     public void setUp() {
         mContext = RuntimeEnvironment.application;

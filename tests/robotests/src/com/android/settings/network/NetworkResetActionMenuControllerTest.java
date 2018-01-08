@@ -43,6 +43,7 @@ import org.robolectric.util.ReflectionHelpers;
 @Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class NetworkResetActionMenuControllerTest {
 
+    private static final int MENU_ID = Menu.FIRST;
     private Context mContext;
     private NetworkResetActionMenuController mController;
     @Mock
@@ -56,7 +57,7 @@ public class NetworkResetActionMenuControllerTest {
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         mContext = RuntimeEnvironment.application;
-        mController = new NetworkResetActionMenuController(mContext);
+        mController = new NetworkResetActionMenuController(mContext, MENU_ID);
         ReflectionHelpers.setField(mController, "mRestrictionChecker", mRestrictionChecker);
         when(mMenu.add(anyInt(), anyInt(), anyInt(), anyInt())).thenReturn(mMenuItem);
     }

@@ -16,6 +16,8 @@
 
 package com.android.settings.dashboard.suggestions;
 
+import static android.arch.lifecycle.Lifecycle.Event.ON_START;
+import static android.arch.lifecycle.Lifecycle.Event.ON_STOP;
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -33,9 +35,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Answers;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
 @RunWith(SettingsRobolectricTestRunner.class)
@@ -45,19 +47,18 @@ import org.robolectric.annotation.Config;
         })
 public class SuggestionControllerMixinTest {
 
-    @Mock(answer = Answers.RETURNS_DEEP_STUBS)
-    private Context mContext;
     @Mock
     private SuggestionControllerMixin.SuggestionControllerHost mHost;
+    private Context mContext;
     private Lifecycle mLifecycle;
     private SuggestionControllerMixin mMixin;
 
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        FakeFeatureFactory.setupForTest(mContext);
-        mLifecycle = new Lifecycle();
-        when(mContext.getApplicationContext()).thenReturn(mContext);
+        mContext = RuntimeEnvironment.application;
+        FakeFeatureFactory.setupForTest();
+        mLifecycle = new Lifecycle(() -> mLifecycle);
     }
 
     @After
@@ -69,10 +70,10 @@ public class SuggestionControllerMixinTest {
     public void goThroughLifecycle_onStartStop_shouldStartStopController() {
         mMixin = new SuggestionControllerMixin(mContext, mHost, mLifecycle);
 
-        mLifecycle.onStart();
+        mLifecycle.handleLifecycleEvent(ON_START);
         assertThat(ShadowSuggestionController.sStartCalled).isTrue();
 
-        mLifecycle.onStop();
+        mLifecycle.handleLifecycleEvent(ON_STOP);
         assertThat(ShadowSuggestionController.sStopCalled).isTrue();
     }
 
@@ -106,5 +107,18 @@ public class SuggestionControllerMixinTest {
         mMixin.onServiceDisconnected();
 
         verify(mHost).getLoaderManager();
+    }
+
+    @Test
+    public void doneLoadingg_shouldSetSuggestionLoaded() {
+        mMixin = new SuggestionControllerMixin(mContext, mHost, mLifecycle);
+
+        mMixin.onLoadFinished(mock(SuggestionLoader.class), null);
+
+        assertThat(mMixin.isSuggestionLoaded()).isTrue();
+
+        mMixin.onLoaderReset(mock(SuggestionLoader.class));
+
+        assertThat(mMixin.isSuggestionLoaded()).isFalse();
     }
 }

@@ -17,59 +17,60 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="device_info_pref_screen"
-    android:title="@string/about_settings"
-    settings:initialExpandedChildrenCount="6">
+    android:title="@string/about_settings">
 
     <!-- Phone number -->
     <Preference
         android:key="phone_number"
+        android:order="0"
         android:title="@string/status_number"
         android:summary="@string/summary_placeholder"/>
 
-    <!-- SIM status Sim Slot 1 -->
+    <!-- SIM status -->
     <Preference
-        android:key="sim_status_sim_1"
+        android:key="sim_status"
+        android:order="10"
         android:title="@string/sim_status_title"
+        settings:keywords="@string/keywords_sim_status"
         android:summary="@string/summary_placeholder"/>
-
-    <!-- SIM status Sim Slot 2-->
-    <Preference
-        android:key="sim_status_sim_2"
-        android:title="@string/sim_status_title_sim_slot_2"
-        android:summary="@string/summary_placeholder"/>
-
 
     <!-- Model & hardware -->
     <Preference
         android:key="device_model"
+        android:order="21"
         android:title="@string/hardware_info"
+        settings:keywords="@string/keywords_model_and_hardware"
         android:summary="@string/summary_placeholder"/>
 
-    <!-- IMEI Sim Slot 1 -->
+    <!-- IMEI -->
     <Preference
-        android:key="imei_info_sim_slot_1"
+        android:key="imei_info"
+        android:order="22"
         android:title="@string/status_imei"
-        settings:keywords="@string/keywords_imei_info"
-        android:summary="@string/summary_placeholder"/>
-
-    <!-- IMEI Sim Slot 2 -->
-    <Preference
-        android:key="imei_info_sim_slot_2"
-        android:title="@string/imei_multi_sim_slot_2"
         settings:keywords="@string/keywords_imei_info"
         android:summary="@string/summary_placeholder"/>
 
     <!-- Android version -->
     <Preference
         android:key="firmware_version"
+        android:order="32"
         android:title="@string/firmware_version"
+        settings:keywords="@string/keywords_android_version"
+        android:summary="@string/summary_placeholder"/>
+
+    <!-- IMS registration -->
+    <Preference
+        android:key="ims_reg_state"
+        android:order="33"
+        android:title="@string/ims_reg_title"
         android:summary="@string/summary_placeholder"/>
 
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"
+        android:order="34"
         android:title="@string/wifi_ip_address"
         android:summary="@string/summary_placeholder"
         settings:allowDividerAbove="true"/>
@@ -77,12 +78,14 @@
     <!-- Wi-Fi MAC address -->
     <Preference
         android:key="wifi_mac_address"
+        android:order="35"
         android:title="@string/status_wifi_mac_address"
         android:summary="@string/summary_placeholder"/>
 
     <!-- Bluetooth address -->
     <Preference
         android:key="bt_address"
+        android:order="36"
         android:title="@string/status_bt_address"
         android:summary="@string/summary_placeholder"/>
 
@@ -90,6 +93,7 @@
     <!-- Legal information -->
     <Preference
         android:key="legal_container"
+        android:order="37"
         android:title="@string/legal_information"
         android:fragment="com.android.settings.LegalSettings"
         settings:allowDividerAbove="true"/>
@@ -97,6 +101,7 @@
     <!-- Regulatory labels -->
     <Preference
         android:key="regulatory_info"
+        android:order="38"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
     </Preference>
@@ -104,13 +109,36 @@
     <!-- Safety & regulatory manual -->
     <Preference
         android:key="safety_info"
+        android:order="39"
         android:title="@string/safety_and_regulatory_info">
         <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
     </Preference>
 
+    <!-- Manual -->
+    <Preference
+        android:key="manual"
+        android:order="40"
+        android:title="@string/manual">
+        <intent android:action="android.settings.SHOW_MANUAL"/>
+    </Preference>
+
+    <!-- Feedback on the device -->
+    <Preference
+        android:key="device_feedback"
+        android:order="41"
+        android:title="@string/device_feedback"/>
+
+    <!-- Device FCC equipment id -->
+    <Preference
+        android:key="fcc_equipment_id"
+        android:order="42"
+        android:title="@string/fcc_equipment_id"
+        android:summary="@string/summary_placeholder"/>
+
     <!-- Build number -->
     <Preference
         android:key="build_number"
+        android:order="43"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
         settings:allowDividerAbove="true"/>

@@ -23,6 +23,7 @@ import android.util.Log;
 import com.android.settings.R;
 import com.android.settings.TimeoutListPreference;
 import com.android.settings.core.PreferenceControllerMixin;
+import com.android.settings.wrapper.DevicePolicyManagerWrapper;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.core.AbstractPreferenceController;
 
@@ -59,13 +60,12 @@ public class TimeoutPreferenceController extends AbstractPreferenceController im
         final long currentTimeout = Settings.System.getLong(mContext.getContentResolver(),
                 SCREEN_OFF_TIMEOUT, FALLBACK_SCREEN_TIMEOUT_VALUE);
         timeoutListPreference.setValue(String.valueOf(currentTimeout));
-        final DevicePolicyManager dpm = (DevicePolicyManager) mContext.getSystemService(
-                Context.DEVICE_POLICY_SERVICE);
+        final DevicePolicyManagerWrapper dpm = DevicePolicyManagerWrapper.from(mContext);
         if (dpm != null) {
             final RestrictedLockUtils.EnforcedAdmin admin =
                     RestrictedLockUtils.checkIfMaximumTimeToLockIsSet(mContext);
             final long maxTimeout =
-                    dpm.getMaximumTimeToLockForUserAndProfiles(UserHandle.myUserId());
+                    dpm.getMaximumTimeToLock(null /* admin */, UserHandle.myUserId());
             timeoutListPreference.removeUnusableTimeouts(maxTimeout, admin);
         }
         updateTimeoutPreferenceDescription(timeoutListPreference, currentTimeout);

@@ -59,7 +59,6 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
-import org.robolectric.util.ReflectionHelpers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -160,12 +159,15 @@ public class LanguageAndInputSettingsTest {
         final Context context = spy(RuntimeEnvironment.application);
         final Resources res = spy(RuntimeEnvironment.application.getResources());
         //(InputManager) context.getSystemService(Context.INPUT_SERVICE);
-        InputManager manager = mock(InputManager.class);
-        when(manager.getInputDeviceIds()).thenReturn(new int[]{});
-        doReturn(manager).when(context).getSystemService(Context.INPUT_SERVICE);
+        final InputManager inputManager = mock(InputManager.class);
+        final TextServicesManager textServicesManager = mock(TextServicesManager.class);
+        when(inputManager.getInputDeviceIds()).thenReturn(new int[]{});
+        doReturn(inputManager).when(context).getSystemService(Context.INPUT_SERVICE);
+        doReturn(textServicesManager).when(context).getSystemService(
+                Context.TEXT_SERVICES_MANAGER_SERVICE);
         doReturn(res).when(context).getResources();
         doReturn(false).when(res)
-            .getBoolean(com.android.internal.R.bool.config_supportSystemNavigationKeys);
+                .getBoolean(com.android.internal.R.bool.config_supportSystemNavigationKeys);
         final List<String> niks = LanguageAndInputSettings.SEARCH_INDEX_DATA_PROVIDER
                 .getNonIndexableKeys(context);
         LanguageAndInputSettings settings = new LanguageAndInputSettings();
@@ -178,7 +180,10 @@ public class LanguageAndInputSettingsTest {
 
     @Test
     public void testPreferenceControllers_getPreferenceKeys_existInPreferenceScreen() {
-        final Context context = RuntimeEnvironment.application;
+        final Context context = spy(RuntimeEnvironment.application);
+        final TextServicesManager textServicesManager = mock(TextServicesManager.class);
+        doReturn(textServicesManager).when(context).getSystemService(
+                Context.TEXT_SERVICES_MANAGER_SERVICE);
         final LanguageAndInputSettings fragment = new LanguageAndInputSettings();
         final List<String> preferenceScreenKeys = XmlTestUtils.getKeysFromPreferenceXml(context,
                 fragment.getPreferenceScreenResId());
@@ -210,7 +215,7 @@ public class LanguageAndInputSettingsTest {
         }
 
         @Override
-        protected Lifecycle getLifecycle() {
+        public Lifecycle getLifecycle() {
             if (mLifecycle == null) {
                 return super.getLifecycle();
             }

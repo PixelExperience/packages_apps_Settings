@@ -35,10 +35,13 @@ import static com.android.settings.deviceinfo.simstatus.SimStatusDialogControlle
 import static com.android.settings.deviceinfo.simstatus.SimStatusDialogController
         .SERVICE_STATE_VALUE_ID;
 import static com.android.settings.deviceinfo.simstatus.SimStatusDialogController
+        .SIGNAL_STRENGTH_LABEL_ID;
+import static com.android.settings.deviceinfo.simstatus.SimStatusDialogController
         .SIGNAL_STRENGTH_VALUE_ID;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
@@ -91,14 +94,16 @@ public class SimStatusDialogControllerTest {
 
     private SimStatusDialogController mController;
     private Context mContext;
+    private Lifecycle mLifecycle;
 
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
         mContext = RuntimeEnvironment.application;
         when(mDialog.getContext()).thenReturn(mContext);
+        mLifecycle = new Lifecycle(() -> mLifecycle);
         mController = spy(
-                new SimStatusDialogController(mDialog, new Lifecycle(), 0 /* phone id */));
+                new SimStatusDialogController(mDialog, mLifecycle, 0 /* phone id */));
         doReturn(mServiceState).when(mController).getCurrentServiceState();
         doReturn(0).when(mController).getDbm(any());
         doReturn(0).when(mController).getAsuLevel(any());
@@ -155,6 +160,9 @@ public class SimStatusDialogControllerTest {
     @Test
     public void initialize_updateDataStateWithPowerOff_shouldUpdateSettingAndResetSignalStrength() {
         when(mServiceState.getState()).thenReturn(ServiceState.STATE_POWER_OFF);
+        when(mPersistableBundle.getBoolean(
+                CarrierConfigManager.KEY_SHOW_SIGNAL_STRENGTH_IN_SIM_STATUS_BOOL)).thenReturn(
+                true);
 
         mController.initialize();
 
@@ -170,6 +178,9 @@ public class SimStatusDialogControllerTest {
         final int signalAsu = 50;
         doReturn(signalDbm).when(mController).getDbm(mSignalStrength);
         doReturn(signalAsu).when(mController).getAsuLevel(mSignalStrength);
+        when(mPersistableBundle.getBoolean(
+                CarrierConfigManager.KEY_SHOW_SIGNAL_STRENGTH_IN_SIM_STATUS_BOOL)).thenReturn(
+                true);
 
         mController.initialize();
 
@@ -219,6 +230,30 @@ public class SimStatusDialogControllerTest {
 
         mController.initialize();
 
+        verify(mDialog).removeSettingFromScreen(ICCID_INFO_LABEL_ID);
+        verify(mDialog).removeSettingFromScreen(ICCID_INFO_VALUE_ID);
+    }
+
+    @Test
+    public void initialize_doNotShowSignalStrength_shouldRemoveSignalStrengthSetting() {
+        when(mPersistableBundle.getBoolean(
+                CarrierConfigManager.KEY_SHOW_SIGNAL_STRENGTH_IN_SIM_STATUS_BOOL)).thenReturn(
+                false);
+
+        mController.initialize();
+
+        verify(mDialog).removeSettingFromScreen(SIGNAL_STRENGTH_LABEL_ID);
+        verify(mDialog).removeSettingFromScreen(SIGNAL_STRENGTH_VALUE_ID);
+    }
+
+    @Test
+    public void initialize_showSignalStrengthAndIccId_shouldShowSignalStrengthAndIccIdSetting() {
+        // getConfigForSubId is nullable, so make sure the default behavior is correct
+        when(mCarrierConfigManager.getConfigForSubId(anyInt())).thenReturn(null);
+
+        mController.initialize();
+
+        verify(mDialog).setText(eq(SIGNAL_STRENGTH_VALUE_ID), any());
         verify(mDialog).removeSettingFromScreen(ICCID_INFO_LABEL_ID);
         verify(mDialog).removeSettingFromScreen(ICCID_INFO_VALUE_ID);
     }

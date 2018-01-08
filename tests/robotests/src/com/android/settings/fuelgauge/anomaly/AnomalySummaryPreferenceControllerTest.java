@@ -30,6 +30,7 @@ import android.app.FragmentTransaction;
 import android.content.Context;
 import android.support.v14.preference.PreferenceFragment;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 
 import com.android.settings.SettingsActivity;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
@@ -38,7 +39,6 @@ import com.android.settings.TestConfig;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Answers;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
@@ -56,7 +56,7 @@ public class AnomalySummaryPreferenceControllerTest {
     private static final String DISPLAY_NAME = "appName";
     private static final int UID = 111;
 
-    @Mock(answer = Answers.RETURNS_DEEP_STUBS)
+    @Mock
     private PreferenceFragment mFragment;
     @Mock
     private FragmentManager mFragmentManager;
@@ -64,6 +64,9 @@ public class AnomalySummaryPreferenceControllerTest {
     private FragmentTransaction mFragmentTransaction;
     @Mock
     private SettingsActivity mSettingsActivity;
+    @Mock
+    private PreferenceScreen mPreferenceScreen;
+
     private AnomalySummaryPreferenceController mAnomalySummaryPreferenceController;
     private Preference mPreference;
     private Context mContext;
@@ -76,11 +79,12 @@ public class AnomalySummaryPreferenceControllerTest {
         mContext = RuntimeEnvironment.application;
         mPreference = new Preference(mContext);
         mPreference.setKey(AnomalySummaryPreferenceController.ANOMALY_KEY);
-        when(mFragment.getPreferenceScreen().findPreference(any())).thenReturn(mPreference);
+        when(mFragment.getPreferenceScreen()).thenReturn(mPreferenceScreen);
         when(mFragment.getFragmentManager()).thenReturn(mFragmentManager);
         when(mFragmentManager.beginTransaction()).thenReturn(mFragmentTransaction);
         when(mFragment.getContext()).thenReturn(mContext);
         when(mSettingsActivity.getApplicationContext()).thenReturn(mContext);
+        when(mPreferenceScreen.findPreference(any())).thenReturn(mPreference);
 
         mAnomalyList = new ArrayList<>();
 

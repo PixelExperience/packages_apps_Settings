@@ -135,6 +135,15 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
     }
 
     @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+        if (Utils.isMonkeyRunning()) {
+            getActivity().finish();
+            return;
+        }
+    }
+
+    @Override
     public void onActivityCreated(Bundle icicle) {
         super.onActivityCreated(icicle);
         // Apply page-level restrictions
@@ -248,15 +257,15 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
 
     @Override
     public void onDisableLogPersistDialogConfirmed() {
-        final LogPersistPreferenceControllerV2 controller = getDevelopmentOptionsController(
-                LogPersistPreferenceControllerV2.class);
+        final LogPersistPreferenceController controller = getDevelopmentOptionsController(
+                LogPersistPreferenceController.class);
         controller.onDisableLogPersistDialogConfirmed();
     }
 
     @Override
     public void onDisableLogPersistDialogRejected() {
-        final LogPersistPreferenceControllerV2 controller = getDevelopmentOptionsController(
-                LogPersistPreferenceControllerV2.class);
+        final LogPersistPreferenceController controller = getDevelopmentOptionsController(
+                LogPersistPreferenceController.class);
         controller.onDisableLogPersistDialogRejected();
     }
 
@@ -283,18 +292,21 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
     }
 
     @Override
-    protected int getHelpResource() {
+    public int getHelpResource() {
         return 0;
     }
 
     @Override
     protected int getPreferenceScreenResId() {
-        Log.d(TAG, "Creating pref screen");
-        return R.xml.development_prefs;
+        return Utils.isMonkeyRunning()? R.xml.placeholder_prefs : R.xml.development_settings;
     }
 
     @Override
     protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+        if (Utils.isMonkeyRunning()) {
+            mPreferenceControllers = new ArrayList<>();
+            return null;
+        }
         mPreferenceControllers = buildPreferenceControllers(context, getActivity(), getLifecycle(),
                 this /* devOptionsDashboardFragment */,
                 new BluetoothA2dpConfigStore());
@@ -317,6 +329,9 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
     }
 
     private void enableDeveloperOptions() {
+        if (Utils.isMonkeyRunning()) {
+            return;
+        }
         DevelopmentSettingsEnabler.setDevelopmentSettingsEnabled(getContext(), true);
         for (AbstractPreferenceController controller : mPreferenceControllers) {
             if (controller instanceof DeveloperOptionsPreferenceController) {
@@ -326,6 +341,9 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
     }
 
     private void disableDeveloperOptions() {
+        if (Utils.isMonkeyRunning()) {
+            return;
+        }
         DevelopmentSettingsEnabler.setDevelopmentSettingsEnabled(getContext(), false);
         final SystemPropPoker poker = SystemPropPoker.getInstance();
         poker.blockPokes();
@@ -353,7 +371,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
             BluetoothA2dpConfigStore bluetoothA2dpConfigStore) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new MemoryUsagePreferenceController(context));
-        controllers.add(new BugReportPreferenceControllerV2(context));
+        controllers.add(new BugReportPreferenceController(context));
         controllers.add(new LocalBackupPasswordPreferenceController(context));
         controllers.add(new StayAwakePreferenceController(context, lifecycle));
         controllers.add(new HdcpCheckingPreferenceController(context));
@@ -361,23 +379,23 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new OemUnlockPreferenceController(context, activity, fragment));
         controllers.add(new FileEncryptionPreferenceController(context));
         controllers.add(new PictureColorModePreferenceController(context, lifecycle));
-        controllers.add(new WebViewAppPreferenceControllerV2(context));
+        controllers.add(new WebViewAppPreferenceController(context));
         controllers.add(new CoolColorTemperaturePreferenceController(context));
         controllers.add(new DisableAutomaticUpdatesPreferenceController(context));
         controllers.add(new AdbPreferenceController(context, fragment));
         controllers.add(new ClearAdbKeysPreferenceController(context, fragment));
         controllers.add(new LocalTerminalPreferenceController(context));
-        controllers.add(new BugReportInPowerPreferenceControllerV2(context));
+        controllers.add(new BugReportInPowerPreferenceController(context));
         controllers.add(new MockLocationAppPreferenceController(context, fragment));
         controllers.add(new DebugViewAttributesPreferenceController(context));
         controllers.add(new SelectDebugAppPreferenceController(context, fragment));
         controllers.add(new WaitForDebuggerPreferenceController(context));
-        controllers.add(new VerifyAppsOverUsbPreferenceControllerV2(context));
-        controllers.add(new LogdSizePreferenceControllerV2(context));
-        controllers.add(new LogPersistPreferenceControllerV2(context, fragment, lifecycle));
-        controllers.add(new ConnectivityMonitorPreferenceControllerV2(context));
-        controllers.add(new CameraLaserSensorPreferenceControllerV2(context));
-        controllers.add(new CameraHalHdrplusPreferenceControllerV2(context));
+        controllers.add(new EnableGpuDebugLayersPreferenceController(context));
+        controllers.add(new VerifyAppsOverUsbPreferenceController(context));
+        controllers.add(new LogdSizePreferenceController(context));
+        controllers.add(new LogPersistPreferenceController(context, fragment, lifecycle));
+        controllers.add(new ConnectivityMonitorPreferenceController(context));
+        controllers.add(new CameraLaserSensorPreferenceController(context));
         controllers.add(new WifiDisplayCertificationPreferenceController(context));
         controllers.add(new WifiVerboseLoggingPreferenceController(context));
         controllers.add(new WifiAggressiveHandoverPreferenceController(context));
@@ -428,6 +446,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new ResizableActivityPreferenceController(context));
         controllers.add(new FreeformWindowsPreferenceController(context));
         controllers.add(new ShortcutManagerThrottlingPreferenceController(context));
+        controllers.add(new EnableGnssRawMeasFullTrackingPreferenceController(context));
         return controllers;
     }
 
@@ -452,7 +471,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
                         Context context, boolean enabled) {
 
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.development_prefs;
+                    sir.xmlResId = R.xml.development_settings;
                     return Arrays.asList(sir);
                 }
 

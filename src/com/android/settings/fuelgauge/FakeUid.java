@@ -51,6 +51,11 @@ public class FakeUid extends Uid {
     }
 
     @Override
+    public Timer getMulticastWakelockStats() {
+        return null;
+    }
+
+    @Override
     public ArrayMap<String, ? extends Timer> getSyncStats() {
         return null;
     }
@@ -354,6 +359,16 @@ public class FakeUid extends Uid {
 
     @Override
     public long[] getScreenOffCpuFreqTimes(int which) {
+        return null;
+    }
+
+    @Override
+    public long[] getCpuFreqTimes(int procState, int which) {
+        return null;
+    }
+
+    @Override
+    public long[] getScreenOffCpuFreqTimes(int procState, int which) {
         return null;
     }
 }

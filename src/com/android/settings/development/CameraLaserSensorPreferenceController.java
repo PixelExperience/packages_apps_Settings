@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+
 package com.android.settings.development;
 
 import android.content.Context;
@@ -21,19 +22,16 @@ import android.os.SystemProperties;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
-import android.widget.Toast;
+import android.text.TextUtils;
 
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.settings.R;
 import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.development.DeveloperOptionsPreferenceController;
 
-/**
- * deprecated in favor of {@link CameraLaserSensorPreferenceControllerV2}
- */
-@Deprecated
-public class CameraLaserSensorPreferenceController extends AbstractPreferenceController
-        implements PreferenceControllerMixin {
+public class CameraLaserSensorPreferenceController extends
+        DeveloperOptionsPreferenceController implements
+        Preference.OnPreferenceChangeListener, PreferenceControllerMixin {
 
     private static final String KEY_CAMERA_LASER_SENSOR_SWITCH = "camera_laser_sensor_switch";
     @VisibleForTesting
@@ -44,6 +42,12 @@ public class CameraLaserSensorPreferenceController extends AbstractPreferenceCon
     static final int ENABLED = 0;
     @VisibleForTesting
     static final int DISABLED = 2;
+    @VisibleForTesting
+    static final String USERDEBUG_BUILD = "userdebug";
+    @VisibleForTesting
+    static final String ENG_BUILD = "eng";
+    @VisibleForTesting
+    static final String USER_BUILD = "user";
 
     private SwitchPreference mPreference;
 
@@ -52,10 +56,11 @@ public class CameraLaserSensorPreferenceController extends AbstractPreferenceCon
     }
 
     @Override
-    public void displayPreference(PreferenceScreen screen) {
-        super.displayPreference(screen);
-        mPreference = (SwitchPreference) screen.findPreference(KEY_CAMERA_LASER_SENSOR_SWITCH);
-        updatePreference();
+    public boolean isAvailable() {
+        final String buildType = SystemProperties.get(BUILD_TYPE);
+        return mContext.getResources().getBoolean(R.bool.config_show_camera_laser_sensor) &&
+                (TextUtils.equals(USERDEBUG_BUILD, buildType) || TextUtils.equals(ENG_BUILD,
+                        buildType));
     }
 
     @Override
@@ -64,45 +69,42 @@ public class CameraLaserSensorPreferenceController extends AbstractPreferenceCon
     }
 
     @Override
-    public boolean isAvailable() {
-        String buildType = SystemProperties.get(BUILD_TYPE);
-        return mContext.getResources().getBoolean(R.bool.config_show_camera_laser_sensor) &&
-               (buildType.equals("userdebug") || buildType.equals("eng"));
+    public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
+
+        mPreference = (SwitchPreference) screen.findPreference(getPreferenceKey());
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        final boolean isEnabled = (Boolean) newValue;
+        String value = Integer.toString(isEnabled ? ENABLED : DISABLED);
+        SystemProperties.set(PROPERTY_CAMERA_LASER_SENSOR, value);
+        return true;
     }
 
     @Override
     public void updateState(Preference preference) {
-        updatePreference();
+        final boolean enabled = isLaserSensorEnabled();
+        mPreference.setChecked(enabled);
     }
 
     @Override
-    public boolean handlePreferenceTreeClick(Preference preference) {
-        if (KEY_CAMERA_LASER_SENSOR_SWITCH.equals(preference.getKey())) {
-            final SwitchPreference switchPreference = (SwitchPreference)preference;
-            String value = Integer.toString(switchPreference.isChecked() ? ENABLED : DISABLED);
-            SystemProperties.set(PROPERTY_CAMERA_LASER_SENSOR, value);
-            return true;
-        }
-        return false;
+    protected void onDeveloperOptionsSwitchEnabled() {
+        mPreference.setEnabled(true);
     }
 
-    public void enablePreference(boolean enabled) {
-        if (isAvailable()) {
-            mPreference.setEnabled(enabled);
-        }
-    }
-
-    public boolean updatePreference() {
-        if (!isAvailable()) {
-            return false;
-        }
-        final boolean enabled = isLaserSensorEnabled();
-        mPreference.setChecked(enabled);
-        return enabled;
+    @Override
+    protected void onDeveloperOptionsSwitchDisabled() {
+        SystemProperties.set(PROPERTY_CAMERA_LASER_SENSOR, Integer.toString(DISABLED));
+        mPreference.setChecked(false);
+        mPreference.setEnabled(false);
     }
 
     private boolean isLaserSensorEnabled() {
-        String prop = SystemProperties.get(PROPERTY_CAMERA_LASER_SENSOR, Integer.toString(ENABLED));
-        return prop.equals(Integer.toString(ENABLED));
+        final String prop = SystemProperties.get(PROPERTY_CAMERA_LASER_SENSOR,
+                Integer.toString(ENABLED));
+        return TextUtils.equals(Integer.toString(ENABLED), prop);
     }
+
 }

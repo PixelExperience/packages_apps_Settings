@@ -21,13 +21,12 @@ import static com.android.settings.utils.FileSizeFormatter.MEGABYTE_IN_BYTES;
 import static com.google.common.truth.Truth.assertThat;
 
 import static org.mockito.Matchers.anyString;
+import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.content.Context;
 import android.content.pm.UserInfo;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
@@ -37,7 +36,6 @@ import android.util.SparseArray;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.TestConfig;
 import com.android.settings.wrapper.UserManagerWrapper;
-import com.android.settingslib.R;
 import com.android.settingslib.applications.StorageStatsSource;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.drawable.UserIconDrawable;
@@ -90,7 +88,7 @@ public class SecondaryUserControllerTest {
 
         final ArgumentCaptor<Preference> argumentCaptor = ArgumentCaptor.forClass(Preference.class);
         verify(mGroup).addPreference(argumentCaptor.capture());
-        Preference preference = argumentCaptor.getValue();
+        final Preference preference = argumentCaptor.getValue();
         assertThat(preference.getTitle()).isEqualTo(TEST_NAME);
     }
 
@@ -103,17 +101,17 @@ public class SecondaryUserControllerTest {
 
         verify(mGroup).addPreference(argumentCaptor.capture());
 
-        Preference preference = argumentCaptor.getValue();
+        final Preference preference = argumentCaptor.getValue();
         assertThat(preference.getSummary()).isEqualTo("0.01 GB");
     }
 
     @Test
     public void noSecondaryUserAddedIfNoneExist() throws Exception {
-        ArrayList<UserInfo> userInfos = new ArrayList<>();
+        final ArrayList<UserInfo> userInfos = new ArrayList<>();
         userInfos.add(mPrimaryUser);
         when(mUserManager.getPrimaryUser()).thenReturn(mPrimaryUser);
         when(mUserManager.getUsers()).thenReturn(userInfos);
-        List<AbstractPreferenceController> controllers =
+        final List<AbstractPreferenceController> controllers =
                 SecondaryUserController.getSecondaryUserControllers(mContext, mUserManager);
 
         assertThat(controllers).hasSize(1);
@@ -123,15 +121,15 @@ public class SecondaryUserControllerTest {
 
     @Test
     public void secondaryUserAddedIfHasDistinctId() throws Exception {
-        ArrayList<UserInfo> userInfos = new ArrayList<>();
-        UserInfo secondaryUser = new UserInfo();
+        final ArrayList<UserInfo> userInfos = new ArrayList<>();
+        final UserInfo secondaryUser = new UserInfo();
         secondaryUser.id = 10;
         secondaryUser.profileGroupId = 101010; // this just has to be something not 0
         userInfos.add(mPrimaryUser);
         userInfos.add(secondaryUser);
         when(mUserManager.getPrimaryUser()).thenReturn(mPrimaryUser);
         when(mUserManager.getUsers()).thenReturn(userInfos);
-        List<AbstractPreferenceController> controllers =
+        final List<AbstractPreferenceController> controllers =
                 SecondaryUserController.getSecondaryUserControllers(mContext, mUserManager);
 
         assertThat(controllers).hasSize(1);
@@ -140,15 +138,15 @@ public class SecondaryUserControllerTest {
 
     @Test
     public void profilesOfPrimaryUserAreNotIgnored() throws Exception {
-        ArrayList<UserInfo> userInfos = new ArrayList<>();
-        UserInfo secondaryUser = new UserInfo();
+        final ArrayList<UserInfo> userInfos = new ArrayList<>();
+        final UserInfo secondaryUser = new UserInfo();
         secondaryUser.id = mPrimaryUser.id;
         userInfos.add(mPrimaryUser);
         userInfos.add(secondaryUser);
         when(mUserManager.getPrimaryUser()).thenReturn(mPrimaryUser);
         when(mUserManager.getUsers()).thenReturn(userInfos);
 
-        List<AbstractPreferenceController> controllers =
+        final List<AbstractPreferenceController> controllers =
                 SecondaryUserController.getSecondaryUserControllers(mContext, mUserManager);
 
         assertThat(controllers).hasSize(2);
@@ -161,9 +159,9 @@ public class SecondaryUserControllerTest {
         mPrimaryUser.name = TEST_NAME;
         mPrimaryUser.id = 10;
         mController.displayPreference(mScreen);
-        StorageAsyncLoader.AppsStorageResult userResult =
+        final StorageAsyncLoader.AppsStorageResult userResult =
                 new StorageAsyncLoader.AppsStorageResult();
-        SparseArray<StorageAsyncLoader.AppsStorageResult> result = new SparseArray<>();
+        final SparseArray<StorageAsyncLoader.AppsStorageResult> result = new SparseArray<>();
         userResult.externalStats =
                 new StorageStatsSource.ExternalStorageStats(
                         MEGABYTE_IN_BYTES * 30,
@@ -175,23 +173,23 @@ public class SecondaryUserControllerTest {
         mController.handleResult(result);
         final ArgumentCaptor<Preference> argumentCaptor = ArgumentCaptor.forClass(Preference.class);
         verify(mGroup).addPreference(argumentCaptor.capture());
-        Preference preference = argumentCaptor.getValue();
+        final Preference preference = argumentCaptor.getValue();
 
         assertThat(preference.getSummary()).isEqualTo("0.03 GB");
     }
 
     @Test
     public void dontAddPrimaryProfileAsASecondaryProfile() throws Exception {
-        ArrayList<UserInfo> userInfos = new ArrayList<>();
+        final ArrayList<UserInfo> userInfos = new ArrayList<>();
         // The primary UserInfo may be a different object with a different name... but represent the
         // same user!
-        UserInfo primaryUserRenamed = new UserInfo();
+        final UserInfo primaryUserRenamed = new UserInfo();
         primaryUserRenamed.name = "Owner";
         primaryUserRenamed.flags = UserInfo.FLAG_PRIMARY;
         userInfos.add(primaryUserRenamed);
         when(mUserManager.getPrimaryUser()).thenReturn(mPrimaryUser);
         when(mUserManager.getUsers()).thenReturn(userInfos);
-        List<AbstractPreferenceController> controllers =
+        final List<AbstractPreferenceController> controllers =
                 SecondaryUserController.getSecondaryUserControllers(mContext, mUserManager);
 
         assertThat(controllers).hasSize(1);
@@ -201,34 +199,29 @@ public class SecondaryUserControllerTest {
 
     @Test
     public void iconCallbackChangesPreferenceIcon() throws Exception {
-        SparseArray<Drawable> icons = new SparseArray<>();
-        Bitmap userBitmap =
-                BitmapFactory.decodeResource(
-                        RuntimeEnvironment.application.getResources(), R.drawable.home);
-        UserIconDrawable drawable = new UserIconDrawable(100 /* size */).setIcon(userBitmap).bake();
-        icons.put(10, drawable);
+        final SparseArray<Drawable> icons = new SparseArray<>();
+        final UserIconDrawable drawable = mock(UserIconDrawable.class);
+        when(drawable.mutate()).thenReturn(drawable);
         mPrimaryUser.name = TEST_NAME;
         mPrimaryUser.id = 10;
+        icons.put(mPrimaryUser.id, drawable);
         mController.displayPreference(mScreen);
 
         mController.handleUserIcons(icons);
 
         final ArgumentCaptor<Preference> argumentCaptor = ArgumentCaptor.forClass(Preference.class);
         verify(mGroup).addPreference(argumentCaptor.capture());
-        Preference preference = argumentCaptor.getValue();
+        final Preference preference = argumentCaptor.getValue();
         assertThat(preference.getIcon()).isEqualTo(drawable);
     }
 
     @Test
     public void setIcon_doesntNpeOnNullPreference() throws Exception {
-        SparseArray<Drawable> icons = new SparseArray<>();
-        Bitmap userBitmap =
-                BitmapFactory.decodeResource(
-                        RuntimeEnvironment.application.getResources(), R.drawable.home);
-        UserIconDrawable drawable = new UserIconDrawable(100 /* size */).setIcon(userBitmap).bake();
-        icons.put(10, drawable);
+        final SparseArray<Drawable> icons = new SparseArray<>();
+        final UserIconDrawable drawable = mock(UserIconDrawable.class);
         mPrimaryUser.name = TEST_NAME;
         mPrimaryUser.id = 10;
+        icons.put(mPrimaryUser.id, drawable);
 
         mController.handleUserIcons(icons);
 

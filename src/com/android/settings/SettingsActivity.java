@@ -55,14 +55,12 @@ import com.android.internal.util.ArrayUtils;
 import com.android.settings.Settings.WifiSettingsActivity;
 import com.android.settings.applications.manageapplications.ManageApplications;
 import com.android.settings.backup.BackupSettingsActivity;
-import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.core.gateway.SettingsGateway;
 import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.core.instrumentation.SharedPreferencesLogger;
 import com.android.settings.dashboard.DashboardFeatureProvider;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.overlay.FeatureFactory;
-import com.android.settings.search.SearchActivity;
 import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.widget.SwitchBar;
 import com.android.settingslib.development.DevelopmentSettingsEnabler;
@@ -76,7 +74,7 @@ import java.util.Set;
 public class SettingsActivity extends SettingsDrawerActivity
         implements PreferenceManager.OnPreferenceTreeClickListener,
         PreferenceFragment.OnPreferenceStartFragmentCallback,
-        ButtonBarHandler, FragmentManager.OnBackStackChangedListener, OnClickListener {
+        ButtonBarHandler, FragmentManager.OnBackStackChangedListener {
 
     private static final String LOG_TAG = "Settings";
 
@@ -210,12 +208,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     @Override
     public boolean onPreferenceStartFragment(PreferenceFragment caller, Preference pref) {
-        if (InstrumentedPreferenceFragment.usePreferenceScreenTitle()) {
-            startPreferencePanel(caller, pref.getFragment(), pref.getExtras(), -1, null, null, 0);
-        } else {
-            startPreferencePanel(caller, pref.getFragment(), pref.getExtras(), -1, pref.getTitle(),
-                    null, 0);
-        }
+        startPreferencePanel(caller, pref.getFragment(), pref.getExtras(), -1, null, null, 0);
         return true;
     }
 
@@ -329,8 +322,9 @@ public class SettingsActivity extends SettingsDrawerActivity
         if (mIsShowingDashboard) {
             findViewById(R.id.search_bar).setVisibility(View.VISIBLE);
             findViewById(R.id.action_bar).setVisibility(View.GONE);
-            Toolbar toolbar = findViewById(R.id.search_action_bar);
-            toolbar.setOnClickListener(this);
+            final Toolbar toolbar = findViewById(R.id.search_action_bar);
+            FeatureFactory.getFactory(this).getSearchFeatureProvider()
+                    .initSearchToolbar(this, toolbar);
             setActionBar(toolbar);
 
             // Please forgive me for what I am about to do.
@@ -346,6 +340,7 @@ public class SettingsActivity extends SettingsDrawerActivity
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(mDisplayHomeAsUpEnabled);
             actionBar.setHomeButtonEnabled(mDisplayHomeAsUpEnabled);
+            actionBar.setDisplayShowTitleEnabled(!mIsShowingDashboard);
         }
         mSwitchBar = findViewById(R.id.switch_bar);
         if (mSwitchBar != null) {
@@ -631,13 +626,8 @@ public class SettingsActivity extends SettingsDrawerActivity
     public void startPreferencePanel(Fragment caller, String fragmentClass, Bundle args,
             int titleRes, CharSequence titleText, Fragment resultTo, int resultRequestCode) {
         String title = null;
-        if (titleRes < 0) {
-            if (titleText != null) {
-                title = titleText.toString();
-            } else if (!InstrumentedPreferenceFragment.usePreferenceScreenTitle()) {
-                // There not much we can do in that case
-                title = "";
-            }
+        if (titleRes < 0 && titleText != null) {
+            title = titleText.toString();
         }
         Utils.startWithFragment(this, fragmentClass, args, resultTo, resultRequestCode,
                 titleRes, title, mIsShortcut, mMetricsFeatureProvider.getMetricsCategory(caller));
@@ -800,14 +790,37 @@ public class SettingsActivity extends SettingsDrawerActivity
                 Utils.isBandwidthControlEnabled() /* enabled */,
                 isAdmin) || somethingChanged;
 
+        final boolean isConnectedDeviceV2Enabled =
+                Settings.ConnectedDeviceDashboardActivity.isEnabled();
+        // Enable new connected page if v2 enabled
+        somethingChanged = setTileEnabled(
+                new ComponentName(packageName,
+                        Settings.ConnectedDeviceDashboardActivity.class.getName()),
+                isConnectedDeviceV2Enabled && !UserManager.isDeviceInDemoMode(this) /* enabled */,
+                isAdmin) || somethingChanged;
+        // Enable old connected page if v2 disabled
+        somethingChanged = setTileEnabled(
+                new ComponentName(packageName,
+                        Settings.ConnectedDeviceDashboardActivityOld.class.getName()),
+                !isConnectedDeviceV2Enabled && !UserManager.isDeviceInDemoMode(this) /* enabled */,
+                isAdmin) || somethingChanged;
+
         somethingChanged = setTileEnabled(new ComponentName(packageName,
                         Settings.SimSettingsActivity.class.getName()),
                 Utils.showSimCardTile(this), isAdmin)
                 || somethingChanged;
 
+        final boolean isBatterySettingsV2Enabled = FeatureFactory.getFactory(this)
+                .getPowerUsageFeatureProvider(this)
+                .isBatteryV2Enabled();
+        // Enable new battery page if v2 enabled
         somethingChanged = setTileEnabled(new ComponentName(packageName,
                         Settings.PowerUsageSummaryActivity.class.getName()),
-                mBatteryPresent, isAdmin) || somethingChanged;
+                mBatteryPresent && isBatterySettingsV2Enabled, isAdmin) || somethingChanged;
+        // Enable legacy battery page if v2 disabled
+        somethingChanged = setTileEnabled(new ComponentName(packageName,
+                        Settings.PowerUsageSummaryLegacyActivity.class.getName()),
+                mBatteryPresent && !isBatterySettingsV2Enabled, isAdmin) || somethingChanged;
 
         somethingChanged = setTileEnabled(new ComponentName(packageName,
                         Settings.UserSettingsActivity.class.getName()),
@@ -817,11 +830,6 @@ public class SettingsActivity extends SettingsDrawerActivity
 
         somethingChanged = setTileEnabled(new ComponentName(packageName,
                         Settings.NetworkDashboardActivity.class.getName()),
-                !UserManager.isDeviceInDemoMode(this), isAdmin)
-                || somethingChanged;
-
-        somethingChanged = setTileEnabled(new ComponentName(packageName,
-                        Settings.ConnectedDeviceDashboardActivity.class.getName()),
                 !UserManager.isDeviceInDemoMode(this), isAdmin)
                 || somethingChanged;
 
@@ -836,17 +844,12 @@ public class SettingsActivity extends SettingsDrawerActivity
                 || somethingChanged;
 
         final boolean showDev = DevelopmentSettingsEnabler.isDevelopmentSettingsEnabled(this)
-                && !um.hasUserRestriction(UserManager.DISALLOW_DEBUGGING_FEATURES);
-        final boolean useDevOptionV1 = Settings.DevelopmentSettingsActivity.isEnabled();
-        // Enable old Dev option if v2 is disabled
-        somethingChanged = setTileEnabled(new ComponentName(packageName,
-                        Settings.DevelopmentSettingsActivity.class.getName()),
-                showDev && useDevOptionV1, isAdmin)
-                || somethingChanged;
-        // Enable new Dev option if v2 is enable
+                && !um.hasUserRestriction(UserManager.DISALLOW_DEBUGGING_FEATURES)
+                && !Utils.isMonkeyRunning();
+
         somethingChanged = setTileEnabled(new ComponentName(packageName,
                         Settings.DevelopmentSettingsDashboardActivity.class.getName()),
-                showDev && !useDevOptionV1, isAdmin)
+                showDev, isAdmin)
                 || somethingChanged;
 
         // Enable/disable backup settings depending on whether the user is admin.
@@ -958,11 +961,5 @@ public class SettingsActivity extends SettingsDrawerActivity
         drawable.draw(canvas);
 
         return bitmap;
-    }
-
-    @Override
-    public void onClick(View v) {
-        Intent intent = new Intent(this, SearchActivity.class);
-        startActivity(intent);
     }
 }

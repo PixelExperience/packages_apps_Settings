@@ -16,7 +16,7 @@
 
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:key="wifi_configure_settings_screen"
         android:title="@string/wifi_configure_settings_preference_title">
 
@@ -52,12 +52,6 @@
             <extra android:name="install_as_uid" android:value="1010"/>
         </intent>
     </Preference>
-
-    <Preference
-            android:key="wifi_calling_settings"
-            android:title="@string/wifi_calling_settings_title"
-            android:fragment="com.android.settings.WifiCallingSettings"
-            settings:keywords="@string/keywords_wifi_calling"/>
 
     <Preference
             android:key="network_scorer_picker"

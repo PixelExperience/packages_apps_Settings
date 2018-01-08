@@ -22,6 +22,7 @@ import android.app.AlarmManager;
 import android.app.ListFragment;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.VisibleForTesting;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -34,11 +35,11 @@ import android.widget.TextView;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
-import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.core.instrumentation.Instrumentable;
 import com.android.settings.core.instrumentation.VisibilityLoggerMixin;
 import com.android.settingslib.datetime.ZoneGetter;
 
+import java.text.Collator;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -165,9 +166,7 @@ public class ZonePicker extends ListFragment implements Instrumentable {
         // Sets the adapter
         setSorting(true);
         setHasOptionsMenu(true);
-        if (InstrumentedPreferenceFragment.usePreferenceScreenTitle()) {
-            activity.setTitle(R.string.date_time_set_timezone);
-        }
+        activity.setTitle(R.string.date_time_set_timezone);
     }
 
     @Override
@@ -261,15 +260,21 @@ public class ZonePicker extends ListFragment implements Instrumentable {
         mVisibilityLoggerMixin.onPause();
     }
 
-    private static class MyComparator implements Comparator<Map<?, ?>> {
+    @VisibleForTesting
+    static class MyComparator implements Comparator<Map<?, ?>> {
+        private final Collator mCollator;
         private String mSortingKey;
+        private boolean mSortedByName;
 
         public MyComparator(String sortingKey) {
+            mCollator = Collator.getInstance();
             mSortingKey = sortingKey;
+            mSortedByName = ZoneGetter.KEY_DISPLAY_LABEL.equals(sortingKey);
         }
 
         public void setSortingKey(String sortingKey) {
             mSortingKey = sortingKey;
+            mSortedByName = ZoneGetter.KEY_DISPLAY_LABEL.equals(sortingKey);
         }
 
         public int compare(Map<?, ?> map1, Map<?, ?> map2) {
@@ -286,7 +291,11 @@ public class ZonePicker extends ListFragment implements Instrumentable {
                 return -1;
             }
 
-            return ((Comparable) value1).compareTo(value2);
+            if (mSortedByName) {
+                return mCollator.compare(value1, value2);
+            } else {
+                return ((Comparable) value1).compareTo(value2);
+            }
         }
 
         private boolean isComparable(Object value) {

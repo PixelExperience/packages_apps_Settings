@@ -20,7 +20,6 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
-import android.view.View;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.Switch;
 
@@ -42,17 +41,13 @@ public class ToggleDaltonizerPreferenceFragment extends ToggleFeaturePreferenceF
     }
 
     @Override
-    protected int getHelpResource() {
+    public int getHelpResource() {
         return R.string.help_url_color_correction;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        if (!usePreferenceScreenTitle()) {
-            addPreferencesFromResource(R.xml.accessibility_daltonizer_settings);
-        }
 
         mType = (ListPreference) findPreference("type");
 
@@ -81,15 +76,6 @@ public class ToggleDaltonizerPreferenceFragment extends ToggleFeaturePreferenceF
         }
 
         return true;
-    }
-
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        if (!usePreferenceScreenTitle()) {
-            setTitle(getString(R.string.accessibility_display_daltonizer_preference_title));
-        }
     }
 
     @Override

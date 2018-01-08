@@ -73,6 +73,7 @@ import com.android.settings.security.trustagent.TrustAgentManager.TrustAgentComp
 import com.android.settings.widget.GearPreference;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedPreference;
+import com.android.settingslib.RestrictedSwitchPreference;
 import com.android.settingslib.drawer.CategoryKey;
 
 import java.util.ArrayList;
@@ -144,7 +145,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private ManagedLockPasswordProvider mManagedPasswordProvider;
 
     private SwitchPreference mVisiblePatternProfile;
-    private SwitchPreference mUnifyProfile;
+    private RestrictedSwitchPreference mUnifyProfile;
 
     private SwitchPreference mShowPassword;
 
@@ -319,7 +320,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
         mVisiblePatternProfile =
                 (SwitchPreference) root.findPreference(KEY_VISIBLE_PATTERN_PROFILE);
-        mUnifyProfile = (SwitchPreference) root.findPreference(KEY_UNIFICATION);
+        mUnifyProfile = (RestrictedSwitchPreference) root.findPreference(KEY_UNIFICATION);
 
         // Append the rest of the settings
         addPreferencesFromResource(R.xml.security_settings_misc);
@@ -560,10 +561,17 @@ public class SecuritySettings extends SettingsPreferenceFragment
         mLocationcontroller.updateSummary();
     }
 
-    private void updateUnificationPreference() {
+    @VisibleForTesting
+    void updateUnificationPreference() {
         if (mUnifyProfile != null) {
-            mUnifyProfile.setChecked(!mLockPatternUtils.isSeparateProfileChallengeEnabled(
-                    mProfileChallengeUserId));
+            final boolean separate =
+                    mLockPatternUtils.isSeparateProfileChallengeEnabled(mProfileChallengeUserId);
+            mUnifyProfile.setChecked(!separate);
+            if (separate) {
+                mUnifyProfile.setDisabledByAdmin(RestrictedLockUtils.checkIfRestrictionEnforced(
+                        getContext(), UserManager.DISALLOW_UNIFIED_PASSWORD,
+                        mProfileChallengeUserId));
+            }
         }
     }
 
@@ -749,7 +757,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     }
 
     @Override
-    protected int getHelpResource() {
+    public int getHelpResource() {
         return R.string.help_url_security;
     }
 
@@ -823,6 +831,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
             SearchIndexableRaw data = new SearchIndexableRaw(context);
             data.title = screenTitle;
+            data.key = "security_settings_screen";
             data.screenTitle = screenTitle;
             result.add(data);
 
@@ -834,11 +843,13 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 // This catches the title which can be overloaded in an overlay
                 data = new SearchIndexableRaw(context);
                 data.title = res.getString(R.string.security_settings_fingerprint_preference_title);
+                data.key = "security_fingerprint";
                 data.screenTitle = screenTitle;
                 result.add(data);
                 // Fallback for when the above doesn't contain "fingerprint"
                 data = new SearchIndexableRaw(context);
                 data.title = res.getString(R.string.fingerprint_manage_category_title);
+                data.key = "security_managed_fingerprint";
                 data.screenTitle = screenTitle;
                 result.add(data);
             }
@@ -853,22 +864,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
                                 profileUserId)) {
                     data = new SearchIndexableRaw(context);
                     data.title = res.getString(R.string.lock_settings_profile_unification_title);
-                    data.screenTitle = screenTitle;
-                    result.add(data);
-                }
-            }
-
-            // Advanced
-            if (lockPatternUtils.isSecure(MY_USER_ID)) {
-                final TrustAgentManager trustAgentManager =
-                    FeatureFactory.getFactory(context).getSecurityFeatureProvider()
-                        .getTrustAgentManager();
-                final List<TrustAgentComponentInfo> agents =
-                        trustAgentManager.getActiveTrustAgents(context, lockPatternUtils);
-                for (int i = 0; i < agents.size(); i++) {
-                    final TrustAgentComponentInfo agent = agents.get(i);
-                    data = new SearchIndexableRaw(context);
-                    data.title = agent.title;
+                    data.key = "security_use_one_lock";
                     data.screenTitle = screenTitle;
                     result.add(data);
                 }
@@ -942,14 +938,11 @@ public class SecuritySettings extends SettingsPreferenceFragment
                     .setPositiveButton(
                             compliant ? R.string.lock_settings_profile_unification_dialog_confirm
                             : R.string.lock_settings_profile_unification_dialog_uncompliant_confirm,
-                            new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int whichButton) {
-                                    if (compliant) {
-                                        parentFragment.launchConfirmDeviceLockForUnification();
-                                    }    else {
-                                        parentFragment.unifyUncompliantLocks();
-                                    }
+                            (dialog, whichButton) -> {
+                                if (compliant) {
+                                    parentFragment.launchConfirmDeviceLockForUnification();
+                                }    else {
+                                    parentFragment.unifyUncompliantLocks();
                                 }
                             }
                     )

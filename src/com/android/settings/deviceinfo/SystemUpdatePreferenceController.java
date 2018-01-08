@@ -15,6 +15,8 @@
  */
 package com.android.settings.deviceinfo;
 
+import static android.content.Context.CARRIER_CONFIG_SERVICE;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -28,13 +30,9 @@ import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.Utils;
-import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settings.core.BasePreferenceController;
 
-import static android.content.Context.CARRIER_CONFIG_SERVICE;
-
-public class SystemUpdatePreferenceController extends AbstractPreferenceController implements
-        PreferenceControllerMixin {
+public class SystemUpdatePreferenceController extends BasePreferenceController {
 
     private static final String TAG = "SysUpdatePrefContr";
 
@@ -42,35 +40,31 @@ public class SystemUpdatePreferenceController extends AbstractPreferenceControll
 
     private final UserManager mUm;
 
-    public SystemUpdatePreferenceController(Context context, UserManager um) {
-        super(context);
-        mUm = um;
+    public SystemUpdatePreferenceController(Context context) {
+        super(context, KEY_SYSTEM_UPDATE_SETTINGS);
+        mUm = UserManager.get(context);
     }
 
     @Override
-    public boolean isAvailable() {
-        return mUm.isAdminUser();
-    }
-
-    @Override
-    public String getPreferenceKey() {
-        return KEY_SYSTEM_UPDATE_SETTINGS;
+    public int getAvailabilityStatus() {
+        return mUm.isAdminUser()
+                ? AVAILABLE
+                : DISABLED_UNSUPPORTED;
     }
 
     @Override
     public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
         if (isAvailable()) {
             Utils.updatePreferenceToSpecificActivityOrRemove(mContext, screen,
-                    KEY_SYSTEM_UPDATE_SETTINGS,
+                    getPreferenceKey(),
                     Utils.UPDATE_PREFERENCE_FLAG_SET_TITLE_TO_MATCHING_ACTIVITY);
-        } else {
-            removePreference(screen, KEY_SYSTEM_UPDATE_SETTINGS);
         }
     }
 
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
-        if (KEY_SYSTEM_UPDATE_SETTINGS.equals(preference.getKey())) {
+        if (TextUtils.equals(getPreferenceKey(), preference.getKey())) {
             CarrierConfigManager configManager =
                     (CarrierConfigManager) mContext.getSystemService(CARRIER_CONFIG_SERVICE);
             PersistableBundle b = configManager.getConfig();

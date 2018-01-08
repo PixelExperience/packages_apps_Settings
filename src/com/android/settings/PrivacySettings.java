@@ -63,7 +63,6 @@ public class PrivacySettings extends SettingsPreferenceFragment {
     @VisibleForTesting
     static final String DATA_MANAGEMENT = "data_management";
     private static final String BACKUP_INACTIVE = "backup_inactive";
-    private static final String FACTORY_RESET = "factory_reset";
     private static final String TAG = "PrivacySettings";
     private IBackupManager mBackupManager;
     private Preference mBackup;
@@ -221,7 +220,7 @@ public class PrivacySettings extends SettingsPreferenceFragment {
     }
 
     @Override
-    protected int getHelpResource() {
+    public int getHelpResource() {
         return R.string.help_url_backup_reset;
     }
 
@@ -244,10 +243,6 @@ public class PrivacySettings extends SettingsPreferenceFragment {
             nonVisibleKeys.add(BACKUP_DATA);
             nonVisibleKeys.add(AUTO_RESTORE);
             nonVisibleKeys.add(CONFIGURE_ACCOUNT);
-        }
-        if (RestrictedLockUtils.hasBaseUserRestriction(context,
-                UserManager.DISALLOW_FACTORY_RESET, UserHandle.myUserId())) {
-            nonVisibleKeys.add(FACTORY_RESET);
         }
     }
 }

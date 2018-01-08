@@ -27,7 +27,6 @@ import android.content.Context;
 import android.hardware.display.DisplayManager;
 import android.media.MediaRouter;
 import android.net.wifi.p2p.WifiP2pManager;
-import android.os.ServiceManager;
 
 import com.android.settings.R;
 import com.android.settings.TestConfig;

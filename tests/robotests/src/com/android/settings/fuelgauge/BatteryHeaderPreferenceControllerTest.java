@@ -17,7 +17,10 @@
 
 package com.android.settings.fuelgauge;
 
+import static android.arch.lifecycle.Lifecycle.Event.ON_START;
+
 import static com.google.common.truth.Truth.assertThat;
+
 import static org.mockito.ArgumentMatchers.nullable;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.eq;
@@ -40,6 +43,7 @@ import com.android.settings.TestConfig;
 import com.android.settings.applications.LayoutPreference;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
+import com.android.settings.testutils.shadow.SettingsShadowResourcesImpl;
 import com.android.settings.testutils.shadow.ShadowEntityHeaderController;
 import com.android.settings.widget.EntityHeaderController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -58,6 +62,7 @@ import org.robolectric.annotation.Config;
         sdk = TestConfig.SDK_VERSION,
         shadows = {
                 SettingsShadowResources.class,
+                SettingsShadowResourcesImpl.class,
                 SettingsShadowResources.SettingsShadowTheme.class,
                 ShadowEntityHeaderController.class
         })
@@ -90,7 +95,7 @@ public class BatteryHeaderPreferenceControllerTest {
     public void setUp() {
         MockitoAnnotations.initMocks(this);
 
-        mLifecycle = new Lifecycle();
+        mLifecycle = new Lifecycle(() -> mLifecycle);
         mContext = spy(RuntimeEnvironment.application);
         mBatteryMeterView = new BatteryMeterView(mContext);
         mBatteryPercentText = new TextView(mContext);
@@ -170,7 +175,7 @@ public class BatteryHeaderPreferenceControllerTest {
                 .thenReturn(mEntityHeaderController);
 
         mController.displayPreference(mPreferenceScreen);
-        mLifecycle.onStart();
+        mLifecycle.handleLifecycleEvent(ON_START);
 
         verify(mEntityHeaderController).styleActionBar(mActivity);
     }

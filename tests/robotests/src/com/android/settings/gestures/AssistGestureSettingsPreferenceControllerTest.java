@@ -17,7 +17,6 @@
 package com.android.settings.gestures;
 
 import static com.google.common.truth.Truth.assertThat;
-
 import static org.mockito.Mockito.when;
 
 import android.content.ContentResolver;
@@ -60,8 +59,7 @@ public class AssistGestureSettingsPreferenceControllerTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        FakeFeatureFactory.setupForTest(mContext);
-        mFactory = (FakeFeatureFactory) FakeFeatureFactory.getFactory(mContext);
+        mFactory = FakeFeatureFactory.setupForTest();
         mController = new AssistGestureSettingsPreferenceController(mContext, null, KEY_ASSIST,
                 false);
     }

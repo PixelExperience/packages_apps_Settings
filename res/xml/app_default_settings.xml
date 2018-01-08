@@ -17,7 +17,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="app_default_settings_screen"
     android:title="@string/app_default_dashboard_title">
 
@@ -33,7 +33,7 @@
         <extra android:name="for_work" android:value="false" />
     </com.android.settings.widget.AppPreference>
 
-    <com.android.settings.widget.AppPreference
+    <com.android.settings.widget.GearPreference
         android:key="default_home"
         android:title="@string/home_app"
         android:fragment="com.android.settings.applications.defaultapps.DefaultHomePicker"

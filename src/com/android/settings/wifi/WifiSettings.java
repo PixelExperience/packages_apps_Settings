@@ -21,13 +21,9 @@ import static android.os.UserManager.DISALLOW_CONFIG_WIFI;
 import android.annotation.NonNull;
 import android.app.Activity;
 import android.app.Dialog;
-import android.app.admin.DevicePolicyManager;
-import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -68,7 +64,6 @@ import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.wifi.AccessPoint;
 import com.android.settingslib.wifi.AccessPoint.AccessPointListener;
 import com.android.settingslib.wifi.AccessPointPreference;
-import com.android.settingslib.wifi.WifiSavedConfigUtils;
 import com.android.settingslib.wifi.WifiTracker;
 import com.android.settingslib.wifi.WifiTrackerFactory;
 
@@ -492,7 +487,7 @@ public class WifiSettings extends RestrictedSettingsFragment
 
                 WifiConfiguration config = mSelectedAccessPoint.getConfig();
                 // Some configs are ineditable
-                if (isEditabilityLockedDown(getActivity(), config)) {
+                if (WifiUtils.isNetworkLockedDown(getActivity(), config)) {
                     return;
                 }
 
@@ -595,7 +590,7 @@ public class WifiSettings extends RestrictedSettingsFragment
     private void showDialog(AccessPoint accessPoint, int dialogMode) {
         if (accessPoint != null) {
             WifiConfiguration config = accessPoint.getConfig();
-            if (isEditabilityLockedDown(getActivity(), config) && accessPoint.isActive()) {
+            if (WifiUtils.isNetworkLockedDown(getActivity(), config) && accessPoint.isActive()) {
                 RestrictedLockUtils.sendShowAdminSupportDetailsIntent(getActivity(),
                         RestrictedLockUtils.getDeviceOwner(getActivity()));
                 return;
@@ -886,7 +881,7 @@ public class WifiSettings extends RestrictedSettingsFragment
             SettingsActivity activity = (SettingsActivity) WifiSettings.this.getActivity();
             activity.startPreferencePanel(this,
                     WifiNetworkDetailsFragment.class.getName(), pref.getExtras(),
-                    R.string.wifi_details_title, null, null, 0);
+                    -1 /* resId */, pref.getTitle(), null, 0 /* resultRequestCode */);
         });
 
         pref.refresh();
@@ -1076,7 +1071,7 @@ public class WifiSettings extends RestrictedSettingsFragment
     }
 
     @Override
-    protected int getHelpResource() {
+    public int getHelpResource() {
         return R.string.help_url_wifi;
     }
 
@@ -1117,77 +1112,9 @@ public class WifiSettings extends RestrictedSettingsFragment
                 data.key = DATA_KEY_REFERENCE;
                 result.add(data);
 
-                // Add saved Wi-Fi access points
-                final List<AccessPoint> accessPoints =
-                        WifiSavedConfigUtils.getAllConfigs(context,
-                                context.getSystemService(WifiManager.class));
-                for (AccessPoint accessPoint : accessPoints) {
-                    data = new SearchIndexableRaw(context);
-                    data.title = accessPoint.getSsidStr();
-                    data.screenTitle = res.getString(R.string.wifi_settings);
-                    data.enabled = enabled;
-                    result.add(data);
-                }
-
                 return result;
             }
         };
-
-    /**
-     * Returns true if the config is not editable through Settings.
-     * @param context Context of caller
-     * @param config The WiFi config.
-     * @return true if the config is not editable through Settings.
-     */
-    public static boolean isEditabilityLockedDown(Context context, WifiConfiguration config) {
-        return !canModifyNetwork(context, config);
-    }
-
-    /**
-     * This method is a stripped version of WifiConfigStore.canModifyNetwork.
-     * TODO: refactor to have only one method.
-     * @param context Context of caller
-     * @param config The WiFi config.
-     * @return true if Settings can modify the config.
-     */
-    static boolean canModifyNetwork(Context context, WifiConfiguration config) {
-        if (config == null) {
-            return true;
-        }
-
-        final DevicePolicyManager dpm = (DevicePolicyManager) context.getSystemService(
-                Context.DEVICE_POLICY_SERVICE);
-
-        // Check if device has DPM capability. If it has and dpm is still null, then we
-        // treat this case with suspicion and bail out.
-        final PackageManager pm = context.getPackageManager();
-        if (pm.hasSystemFeature(PackageManager.FEATURE_DEVICE_ADMIN) && dpm == null) {
-            return false;
-        }
-
-        boolean isConfigEligibleForLockdown = false;
-        if (dpm != null) {
-            final ComponentName deviceOwner = dpm.getDeviceOwnerComponentOnAnyUser();
-            if (deviceOwner != null) {
-                final int deviceOwnerUserId = dpm.getDeviceOwnerUserId();
-                try {
-                    final int deviceOwnerUid = pm.getPackageUidAsUser(deviceOwner.getPackageName(),
-                            deviceOwnerUserId);
-                    isConfigEligibleForLockdown = deviceOwnerUid == config.creatorUid;
-                } catch (NameNotFoundException e) {
-                    // don't care
-                }
-            }
-        }
-        if (!isConfigEligibleForLockdown) {
-            return true;
-        }
-
-        final ContentResolver resolver = context.getContentResolver();
-        final boolean isLockdownFeatureEnabled = Settings.Global.getInt(resolver,
-                Settings.Global.WIFI_DEVICE_OWNER_CONFIGS_LOCKDOWN, 0) != 0;
-        return !isLockdownFeatureEnabled;
-    }
 
     private static class SummaryProvider
             implements SummaryLoader.SummaryProvider, OnSummaryChangeListener {

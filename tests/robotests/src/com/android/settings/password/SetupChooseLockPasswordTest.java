@@ -34,6 +34,7 @@ import com.android.settings.password.ChooseLockPassword.IntentBuilder;
 import com.android.settings.password.SetupChooseLockPassword.SetupChooseLockPasswordFragment;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
+import com.android.settings.testutils.shadow.SettingsShadowResourcesImpl;
 import com.android.settings.testutils.shadow.ShadowEventLogWriter;
 import com.android.settings.testutils.shadow.ShadowUtils;
 
@@ -60,6 +61,7 @@ import java.util.List;
         sdk = TestConfig.SDK_VERSION,
         shadows = {
                 SettingsShadowResources.class,
+                SettingsShadowResourcesImpl.class,
                 SettingsShadowResources.SettingsShadowTheme.class,
                 ShadowEventLogWriter.class,
                 ShadowUtils.class

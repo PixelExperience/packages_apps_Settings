@@ -28,16 +28,22 @@ import android.support.v7.preference.PreferenceManager;
 import android.support.v7.preference.PreferenceScreen;
 
 import com.android.settings.R;
+import com.android.settings.TestConfig;
+import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import org.junit.Before;
+import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
+import org.robolectric.annotation.Config;
 
+@RunWith(SettingsRobolectricTestRunner.class)
+@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class BluetoothDetailsControllerTestBase {
-    protected Context mContext = RuntimeEnvironment.application;
+    protected Context mContext;
     protected Lifecycle mLifecycle;
     protected DeviceConfig mDeviceConfig;
     protected BluetoothDevice mDevice;
@@ -58,6 +64,7 @@ public class BluetoothDetailsControllerTestBase {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
+        mContext = RuntimeEnvironment.application;
         mPreferenceManager = new PreferenceManager(mContext);
         mScreen = mPreferenceManager.createPreferenceScreen(mContext);
         mDeviceConfig = makeDefaultDeviceConfig();
@@ -66,7 +73,7 @@ public class BluetoothDetailsControllerTestBase {
         when(mFragment.getContext()).thenReturn(mContext);
         when(mFragment.getPreferenceManager()).thenReturn(mPreferenceManager);
         when(mFragment.getPreferenceScreen()).thenReturn(mScreen);
-        mLifecycle = spy(new Lifecycle());
+        mLifecycle = spy(new Lifecycle(() -> mLifecycle));
         mBluetoothManager = new BluetoothManager(mContext);
         mBluetoothAdapter = mBluetoothManager.getAdapter();
     }

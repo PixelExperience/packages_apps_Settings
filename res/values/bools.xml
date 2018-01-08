@@ -48,4 +48,13 @@
 
     <!--Whether help links are defined. -->
     <bool name="config_has_help">false</bool>
+
+    <!-- Whether location mode is available or not. -->
+    <bool name="config_location_mode_available">true</bool>
+
+    <!-- Whether wallpaper attribution should be shown or not. -->
+    <bool name="config_show_wallpaper_attribution">true</bool>
+
+    <!-- Whether default_home should be shown or not. -->
+    <bool name="config_show_default_home">true</bool>
 </resources>

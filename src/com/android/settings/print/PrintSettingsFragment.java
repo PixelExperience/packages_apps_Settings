@@ -24,6 +24,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.Loader;
 import android.content.pm.PackageManager;
+import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -54,7 +55,6 @@ import com.android.settings.R;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import com.android.settings.search.SearchIndexableRaw;
 import com.android.settings.utils.ProfileSettingsPreferenceFragment;
 
 import java.text.DateFormat;
@@ -98,7 +98,7 @@ public class PrintSettingsFragment extends ProfileSettingsPreferenceFragment
     }
 
     @Override
-    protected int getHelpResource() {
+    public int getHelpResource() {
         return R.string.help_uri_printing;
     }
 
@@ -359,15 +359,29 @@ public class PrintSettingsFragment extends ProfileSettingsPreferenceFragment
                                     printJob.getCreationTime(), printJob.getCreationTime(),
                                     DateFormat.SHORT, DateFormat.SHORT)));
 
+                    TypedArray a = getActivity().obtainStyledAttributes(new int[]{
+                            android.R.attr.colorControlNormal});
+                    int tintColor = a.getColor(0, 0);
+                    a.recycle();
+
                     switch (printJob.getState()) {
                         case PrintJobInfo.STATE_QUEUED:
-                        case PrintJobInfo.STATE_STARTED:
-                            preference.setIcon(R.drawable.ic_print);
+                        case PrintJobInfo.STATE_STARTED: {
+                            Drawable icon = getActivity().getDrawable(
+                                    com.android.internal.R.drawable.ic_print);
+                            icon.setTint(tintColor);
+                            preference.setIcon(icon);
                             break;
+                        }
+
                         case PrintJobInfo.STATE_FAILED:
-                        case PrintJobInfo.STATE_BLOCKED:
-                            preference.setIcon(R.drawable.ic_print_error);
+                        case PrintJobInfo.STATE_BLOCKED: {
+                            Drawable icon = getActivity().getDrawable(
+                                    com.android.internal.R.drawable.ic_print_error);
+                            icon.setTint(tintColor);
+                            preference.setIcon(icon);
                             break;
+                        }
                     }
 
                     Bundle extras = preference.getExtras();
@@ -601,49 +615,11 @@ public class PrintSettingsFragment extends ProfileSettingsPreferenceFragment
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
-        @Override
-        public List<SearchIndexableRaw> getRawDataToIndex(Context context, boolean enabled) {
-            List<SearchIndexableRaw> indexables = new ArrayList<SearchIndexableRaw>();
-
-            PackageManager packageManager = context.getPackageManager();
-            PrintManager printManager = (PrintManager) context.getSystemService(
-                    Context.PRINT_SERVICE);
-
-            String screenTitle = context.getResources().getString(R.string.print_settings);
-            SearchIndexableRaw data = new SearchIndexableRaw(context);
-            data.title = screenTitle;
-            data.screenTitle = screenTitle;
-            indexables.add(data);
-
-            // Indexing all services, regardless if enabled. Please note that the index will not be
-            // updated until this function is called again
-            List<PrintServiceInfo> services =
-                    printManager.getPrintServices(PrintManager.ALL_SERVICES);
-
-            if (services != null) {
-                final int serviceCount = services.size();
-                for (int i = 0; i < serviceCount; i++) {
-                    PrintServiceInfo service = services.get(i);
-
-                    ComponentName componentName = new ComponentName(
-                            service.getResolveInfo().serviceInfo.packageName,
-                            service.getResolveInfo().serviceInfo.name);
-
-                    data = new SearchIndexableRaw(context);
-                    data.key = componentName.flattenToString();
-                    data.title = service.getResolveInfo().loadLabel(packageManager).toString();
-                    data.screenTitle = screenTitle;
-                    indexables.add(data);
-                }
-            }
-
-            return indexables;
-        }
 
         @Override
         public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
                 boolean enabled) {
-            List<SearchIndexableResource> indexables = new ArrayList<SearchIndexableResource>();
+            List<SearchIndexableResource> indexables = new ArrayList<>();
             SearchIndexableResource indexable = new SearchIndexableResource(context);
             indexable.xmlResId = R.xml.print_settings;
             indexables.add(indexable);

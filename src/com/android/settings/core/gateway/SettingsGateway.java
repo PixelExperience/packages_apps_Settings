@@ -40,36 +40,34 @@ import com.android.settings.accounts.ManagedProfileSettings;
 import com.android.settings.accounts.UserAndAccountDashboardFragment;
 import com.android.settings.applications.AppAndNotificationDashboardFragment;
 import com.android.settings.applications.DefaultAppSettings;
-import com.android.settings.applications.DrawOverlayDetails;
-import com.android.settings.applications.ExternalSourcesDetails;
 import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageDomainUrls;
 import com.android.settings.applications.NotificationApps;
-import com.android.settings.applications.PictureInPictureDetails;
-import com.android.settings.applications.PictureInPictureSettings;
 import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.VrListenerSettings;
-import com.android.settings.applications.WriteSettingsDetails;
+import com.android.settings.applications.appinfo.AppInfoDashboardFragment;
+import com.android.settings.applications.appinfo.DrawOverlayDetails;
+import com.android.settings.applications.appinfo.ExternalSourcesDetails;
+import com.android.settings.applications.appinfo.PictureInPictureDetails;
+import com.android.settings.applications.appinfo.PictureInPictureSettings;
+import com.android.settings.applications.appinfo.WriteSettingsDetails;
 import com.android.settings.applications.assist.ManageAssist;
 import com.android.settings.applications.manageapplications.ManageApplications;
 import com.android.settings.bluetooth.BluetoothDeviceDetailsFragment;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment;
+import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragmentOld;
 import com.android.settings.dashboard.SupportFragment;
 import com.android.settings.datausage.DataPlanUsageSummary;
 import com.android.settings.datausage.DataUsageList;
 import com.android.settings.datausage.DataUsageSummary;
 import com.android.settings.deletionhelper.AutomaticStorageManagerSettings;
-import com.android.settings.development.DevelopmentSettings;
 import com.android.settings.development.DevelopmentSettingsDashboardFragment;
-import com.android.settings.deviceinfo.ImeiInformation;
 import com.android.settings.deviceinfo.PrivateVolumeForget;
 import com.android.settings.deviceinfo.PrivateVolumeSettings;
 import com.android.settings.deviceinfo.PublicVolumeSettings;
-import com.android.settings.deviceinfo.SimStatus;
-import com.android.settings.deviceinfo.Status;
 import com.android.settings.deviceinfo.StorageDashboardFragment;
 import com.android.settings.deviceinfo.StorageSettings;
 import com.android.settings.display.NightDisplaySettings;
@@ -78,6 +76,7 @@ import com.android.settings.enterprise.EnterprisePrivacySettings;
 import com.android.settings.fuelgauge.AdvancedPowerUsageDetail;
 import com.android.settings.fuelgauge.BatterySaverSettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
+import com.android.settings.fuelgauge.PowerUsageSummaryLegacy;
 import com.android.settings.gestures.AssistGestureSettings;
 import com.android.settings.gestures.DoubleTapPowerSettings;
 import com.android.settings.gestures.DoubleTapScreenSettings;
@@ -176,11 +175,11 @@ public class SettingsGateway {
             PrivateVolumeForget.class.getName(),
             PrivateVolumeSettings.class.getName(),
             PublicVolumeSettings.class.getName(),
-            DevelopmentSettings.class.getName(),
             DevelopmentSettingsDashboardFragment.class.getName(),
             AndroidBeam.class.getName(),
             WifiDisplaySettings.class.getName(),
             PowerUsageSummary.class.getName(),
+            PowerUsageSummaryLegacy.class.getName(),
             AccountSyncSettings.class.getName(),
             AssistGestureSettings.class.getName(),
             SwipeToNotificationSettings.class.getName(),
@@ -208,6 +207,7 @@ public class SettingsGateway {
             ChooseLockPassword.ChooseLockPasswordFragment.class.getName(),
             ChooseLockPattern.ChooseLockPatternFragment.class.getName(),
             InstalledAppDetails.class.getName(),
+            AppInfoDashboardFragment.class.getName(),
             BatterySaverSettings.class.getName(),
             AppNotificationSettings.class.getName(),
             ChannelNotificationSettings.class.getName(),
@@ -232,9 +232,6 @@ public class SettingsGateway {
             ManagedProfileSettings.class.getName(),
             ChooseAccountActivity.class.getName(),
             IccLockSettings.class.getName(),
-            ImeiInformation.class.getName(),
-            SimStatus.class.getName(),
-            Status.class.getName(),
             TestingSettings.class.getName(),
             WifiAPITest.class.getName(),
             WifiInfo.class.getName(),
@@ -248,6 +245,7 @@ public class SettingsGateway {
             SystemDashboardFragment.class.getName(),
             NetworkDashboardFragment.class.getName(),
             ConnectedDeviceDashboardFragment.class.getName(),
+            ConnectedDeviceDashboardFragmentOld.class.getName(),
             AppAndNotificationDashboardFragment.class.getName(),
             UserAndAccountDashboardFragment.class.getName(),
             EnterprisePrivacySettings.class.getName(),
@@ -261,11 +259,13 @@ public class SettingsGateway {
             // Home page
             Settings.NetworkDashboardActivity.class.getName(),
             Settings.ConnectedDeviceDashboardActivity.class.getName(),
+            Settings.ConnectedDeviceDashboardActivityOld.class.getName(),
             Settings.AppAndNotificationDashboardActivity.class.getName(),
             Settings.DisplaySettingsActivity.class.getName(),
             Settings.SoundSettingsActivity.class.getName(),
             Settings.StorageDashboardActivity.class.getName(),
             Settings.PowerUsageSummaryActivity.class.getName(),
+            Settings.PowerUsageSummaryLegacyActivity.class.getName(),
             Settings.UserAndAccountDashboardActivity.class.getName(),
             Settings.SecuritySettingsActivity.class.getName(),
             Settings.AccessibilitySettingsActivity.class.getName(),

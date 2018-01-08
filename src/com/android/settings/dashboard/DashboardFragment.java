@@ -87,9 +87,11 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
         // Set ComparisonCallback so we get better animation when list changes.
         getPreferenceManager().setPreferenceComparisonCallback(
                 new PreferenceManager.SimplePreferenceComparisonCallback());
-        // Upon rotation configuration change we need to update preference states before any
-        // editing dialog is recreated (that would happen before onResume is called).
-        updatePreferenceStates();
+        if (icicle != null) {
+            // Upon rotation configuration change we need to update preference states before any
+            // editing dialog is recreated (that would happen before onResume is called).
+            updatePreferenceStates();
+        }
     }
 
     @Override
@@ -305,7 +307,7 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
             Log.d(TAG, "NO dashboard tiles for " + TAG);
             return;
         }
-        List<Tile> tiles = category.tiles;
+        final List<Tile> tiles = category.getTiles();
         if (tiles == null) {
             Log.d(TAG, "tile list is empty, skipping category " + category.title);
             return;

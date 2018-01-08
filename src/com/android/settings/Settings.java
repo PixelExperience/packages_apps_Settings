@@ -16,6 +16,9 @@
 
 package com.android.settings;
 
+import static com.android.settings.core.FeatureFlags.BATTERY_SETTINGS_V2;
+import static com.android.settings.core.FeatureFlags.CONNECTED_DEVICE_V2;
+
 import android.os.Bundle;
 import android.util.FeatureFlagUtils;
 
@@ -58,16 +61,6 @@ public class Settings extends SettingsActivity {
     public static class HighPowerApplicationsActivity extends SettingsActivity { /* empty */ }
     public static class BackgroundCheckSummaryActivity extends SettingsActivity { /* empty */ }
     public static class StorageUseActivity extends SettingsActivity { /* empty */ }
-
-    /**
-     * @deprecated in favor of {@link DevelopmentSettingsDashboardActivity}.
-     */
-    @Deprecated
-    public static class DevelopmentSettingsActivity extends SettingsActivity {
-        public static final boolean isEnabled() {
-            return FeatureFlagUtils.isEnabled("dev_option_v1");
-        }
-    }
     public static class DevelopmentSettingsDashboardActivity extends SettingsActivity { /* empty */ }
     public static class AccessibilitySettingsActivity extends SettingsActivity { /* empty */ }
     public static class CaptioningSettingsActivity extends SettingsActivity { /* empty */ }
@@ -80,7 +73,6 @@ public class Settings extends SettingsActivity {
     public static class PrivacySettingsActivity extends SettingsActivity { /* empty */ }
     public static class FactoryResetActivity extends SettingsActivity { /* empty */ }
     public static class RunningServicesActivity extends SettingsActivity { /* empty */ }
-    public static class PowerUsageSummaryActivity extends SettingsActivity { /* empty */ }
     public static class BatterySaverSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AccountSyncSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AccountSyncSettingsInAddAccountActivity extends SettingsActivity { /* empty */ }
@@ -156,9 +148,6 @@ public class Settings extends SettingsActivity {
     public static class ApnEditorActivity extends SettingsActivity { /* empty */ }
     public static class ChooseAccountActivity extends SettingsActivity { /* empty */ }
     public static class IccLockSettingsActivity extends SettingsActivity { /* empty */ }
-    public static class ImeiInformationActivity extends SettingsActivity { /* empty */ }
-    public static class SimStatusActivity extends SettingsActivity { /* empty */ }
-    public static class StatusActivity extends SettingsActivity { /* empty */ }
     public static class TestingSettingsActivity extends SettingsActivity { /* empty */ }
     public static class WifiAPITestActivity extends SettingsActivity { /* empty */ }
     public static class WifiInfoActivity extends SettingsActivity { /* empty */ }
@@ -176,7 +165,14 @@ public class Settings extends SettingsActivity {
 
     // Top level categories for new IA
     public static class NetworkDashboardActivity extends SettingsActivity {}
-    public static class ConnectedDeviceDashboardActivity extends SettingsActivity {}
+    public static class ConnectedDeviceDashboardActivity extends SettingsActivity {
+        public static final boolean isEnabled() {
+            return FeatureFlagUtils.isEnabled(null /* context */, CONNECTED_DEVICE_V2);
+        }
+    }
+    public static class ConnectedDeviceDashboardActivityOld extends SettingsActivity {}
+    public static class PowerUsageSummaryActivity extends SettingsActivity { /* empty */ }
+    public static class PowerUsageSummaryLegacyActivity extends SettingsActivity { /* empty */ }
     public static class AppAndNotificationDashboardActivity extends SettingsActivity {}
     public static class StorageDashboardActivity extends SettingsActivity {}
     public static class UserAndAccountDashboardActivity extends SettingsActivity {}
