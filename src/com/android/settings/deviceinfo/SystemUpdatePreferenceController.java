@@ -78,9 +78,6 @@ public class SystemUpdatePreferenceController extends AbstractPreferenceControll
 
     @Override
     public boolean handlePreferenceTreeClick(Preference preference) {
-        if (KEY_SYSTEM_UPDATE_SETTINGS.equals(preference.getKey())) {
-            // TODO: Launch Pixel Experience OTA
-        }
         // always return false here because this handler does not want to block other handlers.
         return false;
     }
