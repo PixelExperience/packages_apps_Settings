@@ -21,8 +21,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.BatteryManager;
 import android.os.BatteryStats;
 import android.os.Bundle;
@@ -347,6 +345,17 @@ public class BatteryUtils {
 
     }
 
+    /**
+     * Calculate the screen usage time since last full charge.
+     * @param batteryStatsHelper utility class that contains the screen usage data
+     * @return time in millis
+     */
+    public long calculateScreenUsageTime(BatteryStatsHelper batteryStatsHelper) {
+        final BatterySipper sipper = findBatterySipperByType(
+                batteryStatsHelper.getUsageList(), BatterySipper.DrainType.SCREEN);
+        return sipper != null ? sipper.usageTimeMs : 0;
+    }
+
     public static void logRuntime(String tag, String message, long startTime) {
         Log.d(tag, message + ": " + (System.currentTimeMillis() - startTime) + "ms");
     }
@@ -410,19 +419,19 @@ public class BatteryUtils {
         final boolean discharging = batteryBroadcast.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1)
                 == 0;
         // Get enhanced prediction if available and discharging, otherwise use the old code
-        Cursor cursor = null;
+        Estimate estimate = null;
         if (discharging && mPowerUsageFeatureProvider != null &&
                 mPowerUsageFeatureProvider.isEnhancedBatteryPredictionEnabled(mContext)) {
-            final Uri queryUri = mPowerUsageFeatureProvider.getEnhancedBatteryPredictionUri();
-            cursor = mContext.getContentResolver().query(queryUri, null, null, null, null);
+            estimate = mPowerUsageFeatureProvider.getEnhancedBatteryPrediction(mContext);
         }
         final BatteryStats stats = statsHelper.getStats();
         BatteryUtils.logRuntime(tag, "BatteryInfoLoader post query", startTime);
-        if (cursor != null && cursor.moveToFirst()) {
-            long enhancedEstimate = mPowerUsageFeatureProvider.getTimeRemainingEstimate(cursor);
+
+        if (estimate != null) {
             batteryInfo = BatteryInfo.getBatteryInfo(mContext, batteryBroadcast, stats,
                     elapsedRealtimeUs, false /* shortString */,
-                    BatteryUtils.convertMsToUs(enhancedEstimate), true /* basedOnUsage */);
+                    BatteryUtils.convertMsToUs(estimate.estimateMillis),
+                    estimate.isBasedOnUsage);
         } else {
             batteryInfo = BatteryInfo.getBatteryInfo(mContext, batteryBroadcast, stats,
                     elapsedRealtimeUs, false /* shortString */,
@@ -432,6 +441,20 @@ public class BatteryUtils {
         BatteryUtils.logRuntime(tag, "BatteryInfoLoader.loadInBackground", startTime);
 
         return batteryInfo;
+    }
+
+    /**
+     * Find the {@link BatterySipper} with the corresponding {@link BatterySipper.DrainType}
+     */
+    public BatterySipper findBatterySipperByType(List<BatterySipper> usageList,
+            BatterySipper.DrainType type) {
+        for (int i = 0, size = usageList.size(); i < size; i++) {
+            final BatterySipper sipper = usageList.get(i);
+            if (sipper.drainType == type) {
+                return sipper;
+            }
+        }
+        return null;
     }
 
     private boolean isDataCorrupted() {

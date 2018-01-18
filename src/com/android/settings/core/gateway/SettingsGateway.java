@@ -20,7 +20,6 @@ import com.android.settings.ApnEditor;
 import com.android.settings.ApnSettings;
 import com.android.settings.DateTimeSettings;
 import com.android.settings.DeviceAdminSettings;
-import com.android.settings.DeviceInfoSettings;
 import com.android.settings.DisplaySettings;
 import com.android.settings.IccLockSettings;
 import com.android.settings.MasterClear;
@@ -59,12 +58,12 @@ import com.android.settings.bluetooth.BluetoothDeviceDetailsFragment;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment;
 import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragmentOld;
-import com.android.settings.dashboard.SupportFragment;
 import com.android.settings.datausage.DataPlanUsageSummary;
 import com.android.settings.datausage.DataUsageList;
 import com.android.settings.datausage.DataUsageSummary;
 import com.android.settings.deletionhelper.AutomaticStorageManagerSettings;
 import com.android.settings.development.DevelopmentSettingsDashboardFragment;
+import com.android.settings.deviceinfo.DeviceInfoSettings;
 import com.android.settings.deviceinfo.PrivateVolumeForget;
 import com.android.settings.deviceinfo.PrivateVolumeSettings;
 import com.android.settings.deviceinfo.PublicVolumeSettings;
@@ -115,6 +114,7 @@ import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.security.CryptKeeperSettings;
 import com.android.settings.security.LockscreenDashboardFragment;
 import com.android.settings.security.SecuritySettings;
+import com.android.settings.security.SecuritySettingsV2;
 import com.android.settings.sim.SimSettings;
 import com.android.settings.support.SupportDashboardActivity;
 import com.android.settings.system.ResetDashboardFragment;
@@ -163,6 +163,7 @@ public class SettingsGateway {
             NotificationStation.class.getName(),
             LocationSettings.class.getName(),
             SecuritySettings.class.getName(),
+            SecuritySettingsV2.class.getName(),
             UsageAccessDetails.class.getName(),
             PrivacySettings.class.getName(),
             DeviceAdminSettings.class.getName(),
@@ -240,7 +241,6 @@ public class SettingsGateway {
             NightDisplaySettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
-            SupportFragment.class.getName(),
             StorageDashboardFragment.class.getName(),
             SystemDashboardFragment.class.getName(),
             NetworkDashboardFragment.class.getName(),
@@ -268,6 +268,7 @@ public class SettingsGateway {
             Settings.PowerUsageSummaryLegacyActivity.class.getName(),
             Settings.UserAndAccountDashboardActivity.class.getName(),
             Settings.SecuritySettingsActivity.class.getName(),
+            Settings.SecuritySettingsActivityV2.class.getName(),
             Settings.AccessibilitySettingsActivity.class.getName(),
             Settings.SystemDashboardActivity.class.getName(),
             SupportDashboardActivity.class.getName(),

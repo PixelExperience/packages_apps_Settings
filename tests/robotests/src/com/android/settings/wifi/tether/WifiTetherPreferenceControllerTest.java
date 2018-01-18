@@ -26,6 +26,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import android.arch.lifecycle.LifecycleOwner;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -78,12 +79,14 @@ public class WifiTetherPreferenceControllerTest {
 
     private WifiTetherPreferenceController mController;
     private Lifecycle mLifecycle;
+    private LifecycleOwner mLifecycleOwner;
     private MasterSwitchPreference mPreference;
 
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        mLifecycle = new Lifecycle(() -> mLifecycle);
+        mLifecycleOwner = () -> mLifecycle;
+        mLifecycle = new Lifecycle(mLifecycleOwner);
         FakeFeatureFactory.setupForTest();
         mPreference = new MasterSwitchPreference(RuntimeEnvironment.application);
         when(mContext.getSystemService(Context.CONNECTIVITY_SERVICE))
@@ -137,7 +140,6 @@ public class WifiTetherPreferenceControllerTest {
         mController.displayPreference(mScreen);
         mLifecycle.handleLifecycleEvent(ON_START);
 
-        assertThat(ShadowWifiTetherSwitchBarController.onStartCalled).isTrue();
         verify(mContext).registerReceiver(eq(receiver), any(IntentFilter.class));
         verify(pref).setChecked(false);
     }

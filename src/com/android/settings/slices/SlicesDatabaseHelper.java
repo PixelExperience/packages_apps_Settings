@@ -104,7 +104,7 @@ public class SlicesDatabaseHelper extends SQLiteOpenHelper {
 
     public static synchronized SlicesDatabaseHelper getInstance(Context context) {
         if (sSingleton == null) {
-            sSingleton = new SlicesDatabaseHelper(context);
+            sSingleton = new SlicesDatabaseHelper(context.getApplicationContext());
         }
         return sSingleton;
     }
@@ -136,7 +136,7 @@ public class SlicesDatabaseHelper extends SQLiteOpenHelper {
         mContext.getSharedPreferences(SHARED_PREFS_TAG, Context.MODE_PRIVATE)
                 .edit()
                 .clear()
-                .commit();
+                .apply();
         dropTables(db);
         createDatabases(db);
     }

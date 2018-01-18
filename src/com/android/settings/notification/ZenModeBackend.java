@@ -82,7 +82,6 @@ public class ZenModeBackend {
         mZenMode = zenMode;
     }
 
-    /** gets last zen mode set by setZenMode or updateZenMode **/
     protected int getZenMode() {
         mZenMode = Settings.Global.getInt(mContext.getContentResolver(),
                 Settings.Global.ZEN_MODE, mZenMode);
@@ -104,11 +103,18 @@ public class ZenModeBackend {
     }
 
     protected int getPriorityCallSenders() {
-        return mPolicy.priorityCallSenders;
+        if (isPriorityCategoryEnabled(NotificationManager.Policy.PRIORITY_CATEGORY_CALLS)) {
+            return mPolicy.priorityCallSenders;
+        }
+
+        return SOURCE_NONE;
     }
 
     protected int getPriorityMessageSenders() {
-        return mPolicy.priorityMessageSenders;
+        if (isPriorityCategoryEnabled(NotificationManager.Policy.PRIORITY_CATEGORY_MESSAGES)) {
+            return mPolicy.priorityMessageSenders;
+        }
+        return SOURCE_NONE;
     }
 
     protected void saveVisualEffectsPolicy(int category, boolean canBypass) {

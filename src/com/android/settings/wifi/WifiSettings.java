@@ -167,7 +167,7 @@ public class WifiSettings extends RestrictedSettingsFragment
     private LinkablePreference mStatusMessagePreference;
 
     // For Search
-    private static final String DATA_KEY_REFERENCE = "main_toggle_wifi";
+    public static final String DATA_KEY_REFERENCE = "main_toggle_wifi";
 
     /**
      * Tracks whether the user initiated a connection via clicking in order to autoscroll to the
@@ -190,6 +190,9 @@ public class WifiSettings extends RestrictedSettingsFragment
                     .findViewById(R.id.progress_bar_animation);
             setProgressBarVisible(false);
         }
+        ((SettingsActivity) activity).getSwitchBar().setSwitchBarText(
+                R.string.wifi_settings_master_switch_title,
+                R.string.wifi_settings_master_switch_title);
     }
 
     @Override
@@ -1104,13 +1107,15 @@ public class WifiSettings extends RestrictedSettingsFragment
                 final List<SearchIndexableRaw> result = new ArrayList<>();
                 final Resources res = context.getResources();
 
-                // Add fragment title
-                SearchIndexableRaw data = new SearchIndexableRaw(context);
-                data.title = res.getString(R.string.wifi_settings);
-                data.screenTitle = res.getString(R.string.wifi_settings);
-                data.keywords = res.getString(R.string.keywords_wifi);
-                data.key = DATA_KEY_REFERENCE;
-                result.add(data);
+                // Add fragment title if we are showing this fragment
+                if (res.getBoolean(R.bool.config_show_wifi_settings)) {
+                    SearchIndexableRaw data = new SearchIndexableRaw(context);
+                    data.title = res.getString(R.string.wifi_settings);
+                    data.screenTitle = res.getString(R.string.wifi_settings);
+                    data.keywords = res.getString(R.string.keywords_wifi);
+                    data.key = DATA_KEY_REFERENCE;
+                    result.add(data);
+                }
 
                 return result;
             }

@@ -18,11 +18,14 @@ package com.android.settings.fuelgauge.batterytip;
 
 import android.content.Context;
 import android.support.annotation.VisibleForTesting;
+import android.support.v14.preference.PreferenceFragment;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
 
+import com.android.settings.SettingsActivity;
 import com.android.settings.core.BasePreferenceController;
+import com.android.settings.fuelgauge.batterytip.actions.BatteryTipAction;
 import com.android.settings.fuelgauge.batterytip.tips.BatteryTip;
 import com.android.settings.fuelgauge.batterytip.tips.SummaryTip;
 
@@ -34,23 +37,31 @@ import java.util.Map;
  * Controller in charge of the battery tip group
  */
 public class BatteryTipPreferenceController extends BasePreferenceController {
+    private static final String TAG = "BatteryTipPreferenceController";
+    private static final int REQUEST_ANOMALY_ACTION = 0;
+
     private BatteryTipListener mBatteryTipListener;
     private List<BatteryTip> mBatteryTips;
     private Map<String, BatteryTip> mBatteryTipMap;
+    private SettingsActivity mSettingsActivity;
     @VisibleForTesting
     PreferenceGroup mPreferenceGroup;
     @VisibleForTesting
     Context mPrefContext;
+    PreferenceFragment mFragment;
 
     public BatteryTipPreferenceController(Context context, String preferenceKey) {
-        this(context, preferenceKey, null);
+        this(context, preferenceKey, null, null, null);
     }
 
     public BatteryTipPreferenceController(Context context, String preferenceKey,
+            SettingsActivity settingsActivity, PreferenceFragment fragment,
             BatteryTipListener batteryTipListener) {
         super(context, preferenceKey);
         mBatteryTipListener = batteryTipListener;
         mBatteryTipMap = new HashMap<>();
+        mFragment = fragment;
+        mSettingsActivity = settingsActivity;
     }
 
     @Override
@@ -96,9 +107,16 @@ public class BatteryTipPreferenceController extends BasePreferenceController {
         final BatteryTip batteryTip = mBatteryTipMap.get(preference.getKey());
         if (batteryTip != null) {
             if (batteryTip.shouldShowDialog()) {
-                // build and show the dialog
+                BatteryTipDialogFragment dialogFragment = BatteryTipDialogFragment.newInstance(
+                        batteryTip);
+                dialogFragment.setTargetFragment(mFragment, REQUEST_ANOMALY_ACTION);
+                dialogFragment.show(mFragment.getFragmentManager(), TAG);
             } else {
-                batteryTip.action();
+                final BatteryTipAction action = BatteryTipUtils.getActionForBatteryTip(batteryTip,
+                        mSettingsActivity, mFragment);
+                if (action != null) {
+                    action.handlePositiveAction();
+                }
                 if (mBatteryTipListener != null) {
                     mBatteryTipListener.onBatteryTipHandled(batteryTip);
                 }

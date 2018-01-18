@@ -19,7 +19,6 @@ package com.android.settings.search;
 import android.support.annotation.VisibleForTesting;
 
 import com.android.settings.DateTimeSettings;
-import com.android.settings.DeviceInfoSettings;
 import com.android.settings.DisplaySettings;
 import com.android.settings.LegalSettings;
 import com.android.settings.accessibility.AccessibilitySettings;
@@ -36,10 +35,10 @@ import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.connecteddevice.AdvancedConnectedDeviceDashboardFragment;
 import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment;
 import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragmentOld;
-import com.android.settings.datausage.DataUsageMeteredSettings;
 import com.android.settings.datausage.DataUsageSummary;
 import com.android.settings.deletionhelper.AutomaticStorageManagerSettings;
 import com.android.settings.development.DevelopmentSettingsDashboardFragment;
+import com.android.settings.deviceinfo.DeviceInfoSettings;
 import com.android.settings.deviceinfo.StorageDashboardFragment;
 import com.android.settings.deviceinfo.StorageSettings;
 import com.android.settings.display.AmbientDisplaySettings;
@@ -50,6 +49,7 @@ import com.android.settings.enterprise.EnterprisePrivacySettings;
 import com.android.settings.fuelgauge.BatterySaverSettings;
 import com.android.settings.fuelgauge.PowerUsageAdvanced;
 import com.android.settings.fuelgauge.PowerUsageSummary;
+import com.android.settings.fuelgauge.SmartBatterySettings;
 import com.android.settings.gestures.AssistGestureSettings;
 import com.android.settings.gestures.DoubleTapPowerSettings;
 import com.android.settings.gestures.DoubleTapScreenSettings;
@@ -75,7 +75,7 @@ import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.security.EncryptionAndCredential;
 import com.android.settings.security.LockscreenDashboardFragment;
 import com.android.settings.security.ScreenPinningSettings;
-import com.android.settings.security.SecuritySettings;
+import com.android.settings.security.SecuritySettingsV2;
 import com.android.settings.security.screenlock.ScreenLockSettings;
 import com.android.settings.sim.SimSettings;
 import com.android.settings.support.SupportDashboardActivity;
@@ -110,7 +110,6 @@ public final class SearchIndexableResources {
         addIndex(BluetoothSettings.class);
         addIndex(SimSettings.class);
         addIndex(DataUsageSummary.class);
-        addIndex(DataUsageMeteredSettings.class);
         addIndex(ScreenZoomSettings.class);
         addIndex(DisplaySettings.class);
         addIndex(AmbientDisplaySettings.class);
@@ -135,7 +134,7 @@ public final class SearchIndexableResources {
         addIndex(LocationSettings.class);
         addIndex(LocationMode.class);
         addIndex(ScanningSettings.class);
-        addIndex(SecuritySettings.class);
+        addIndex(SecuritySettingsV2.class);
         addIndex(ScreenLockSettings.class);
         addIndex(EncryptionAndCredential.class);
         addIndex(ScreenPinningSettings.class);
@@ -174,10 +173,13 @@ public final class SearchIndexableResources {
         addIndex(ZenModeBehaviorSettings.class);
         addIndex(ZenModeAutomationSettings.class);
         addIndex(NightDisplaySettings.class);
+        addIndex(SmartBatterySettings.class);
     }
 
     private SearchIndexableResources() {
     }
 
-    public static Collection<Class> providerValues() { return sProviders;}
+    public static Collection<Class> providerValues() {
+        return sProviders;
+    }
 }

@@ -21,8 +21,6 @@ import static com.android.settings.core.FeatureFlags.BATTERY_SETTINGS_V2;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Process;
 import android.util.FeatureFlagUtils;
 import android.util.SparseIntArray;
@@ -95,8 +93,8 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
     }
 
     @Override
-    public long getEnhancedBatteryPrediction(Context context) {
-        return -1;
+    public Estimate getEnhancedBatteryPrediction(Context context) {
+        return null;
     }
 
     @Override
@@ -107,16 +105,6 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
     @Override
     public boolean isEnhancedBatteryPredictionEnabled(Context context) {
         return false;
-    }
-
-    @Override
-    public Uri getEnhancedBatteryPredictionUri() {
-        return null;
-    }
-
-    @Override
-    public long getTimeRemainingEstimate(Cursor cursor) {
-        return 0;
     }
 
     @Override
@@ -142,5 +130,10 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
     @Override
     public boolean isBatteryV2Enabled() {
         return FeatureFlagUtils.isEnabled(mContext, BATTERY_SETTINGS_V2);
+    }
+
+    @Override
+    public boolean getEarlyWarningSignal(Context context, String id) {
+        return false;
     }
 }

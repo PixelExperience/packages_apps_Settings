@@ -84,10 +84,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
 
     private static final String KEY_SCREEN_USAGE = "screen_usage";
     private static final String KEY_TIME_SINCE_LAST_FULL_CHARGE = "last_full_charge";
-
-    private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness_battery";
-    private static final String KEY_SCREEN_TIMEOUT = "screen_timeout_battery";
-    private static final String KEY_AMBIENT_DISPLAY = "ambient_display_battery";
     private static final String KEY_BATTERY_SAVER_SUMMARY = "battery_saver_summary";
 
     @VisibleForTesting
@@ -270,16 +266,11 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 KEY_APP_LIST, lifecycle, activity, this);
         controllers.add(mBatteryAppListPreferenceController);
         mBatteryTipPreferenceController = new BatteryTipPreferenceController(context,
-                KEY_BATTERY_TIP, this);
+                KEY_BATTERY_TIP, (SettingsActivity) getActivity(), this, this);
         controllers.add(mBatteryTipPreferenceController);
-        controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
-        controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
         controllers.add(new BatterySaverController(context, getLifecycle()));
         controllers.add(new BatteryPercentagePreferenceController(context));
-        controllers.add(new AmbientDisplayPreferenceController(
-                context,
-                new AmbientDisplayConfiguration(context),
-                KEY_AMBIENT_DISPLAY));
+
         return controllers;
     }
 
@@ -378,8 +369,9 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         restartBatteryInfoLoader();
         final long lastFullChargeTime = mBatteryUtils.calculateLastFullChargeTime(mStatsHelper,
                 System.currentTimeMillis());
-        updateScreenPreference();
         updateLastFullChargePreference(lastFullChargeTime);
+        mScreenUsagePref.setSubtitle(Utils.formatElapsedTime(getContext(),
+                mBatteryUtils.calculateScreenUsageTime(mStatsHelper), false));
 
         final CharSequence timeSequence = Utils.formatRelativeTime(context, lastFullChargeTime,
                 false);
@@ -400,26 +392,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @VisibleForTesting
     AnomalyDetectionPolicy getAnomalyDetectionPolicy() {
         return new AnomalyDetectionPolicy(getContext());
-    }
-
-    @VisibleForTesting
-    BatterySipper findBatterySipperByType(List<BatterySipper> usageList, DrainType type) {
-        for (int i = 0, size = usageList.size(); i < size; i++) {
-            final BatterySipper sipper = usageList.get(i);
-            if (sipper.drainType == type) {
-                return sipper;
-            }
-        }
-        return null;
-    }
-
-    @VisibleForTesting
-    void updateScreenPreference() {
-        final BatterySipper sipper = findBatterySipperByType(
-                mStatsHelper.getUsageList(), DrainType.SCREEN);
-        final long usageTimeMs = sipper != null ? sipper.usageTimeMs : 0;
-
-        mScreenUsagePref.setSubtitle(Utils.formatElapsedTime(getContext(), usageTimeMs, false));
     }
 
     @VisibleForTesting
@@ -544,10 +516,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> niks = super.getNonIndexableKeys(context);
                     niks.add(KEY_BATTERY_SAVER_SUMMARY);
-                    // Duplicates in display
-                    niks.add(KEY_AUTO_BRIGHTNESS);
-                    niks.add(KEY_SCREEN_TIMEOUT);
-                    niks.add(KEY_AMBIENT_DISPLAY);
                     return niks;
                 }
             };

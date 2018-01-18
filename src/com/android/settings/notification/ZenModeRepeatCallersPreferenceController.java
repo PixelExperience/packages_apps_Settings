@@ -21,19 +21,26 @@ import android.content.Context;
 import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
 import android.util.Log;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.settings.R;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
 public class ZenModeRepeatCallersPreferenceController extends AbstractZenModePreferenceController
         implements Preference.OnPreferenceChangeListener {
 
     protected static final String KEY = "zen_mode_repeat_callers";
-    private final ZenModeBackend mBackend;
 
-    public ZenModeRepeatCallersPreferenceController(Context context, Lifecycle lifecycle) {
+    private final ZenModeBackend mBackend;
+    private final int mRepeatCallersThreshold;
+
+    public ZenModeRepeatCallersPreferenceController(Context context, Lifecycle lifecycle,
+            int repeatCallersThreshold) {
         super(context, KEY, lifecycle);
+
+        mRepeatCallersThreshold = repeatCallersThreshold;
         mBackend = ZenModeBackend.getInstance(context);
     }
 
@@ -48,11 +55,16 @@ public class ZenModeRepeatCallersPreferenceController extends AbstractZenModePre
     }
 
     @Override
+    public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
+        setRepeatCallerSummary(screen.findPreference(KEY));
+    }
+
+    @Override
     public void updateState(Preference preference) {
         super.updateState(preference);
 
         SwitchPreference pref = (SwitchPreference) preference;
-
         switch (getZenMode()) {
             case Settings.Global.ZEN_MODE_NO_INTERRUPTIONS:
             case Settings.Global.ZEN_MODE_ALARMS:
@@ -85,5 +97,10 @@ public class ZenModeRepeatCallersPreferenceController extends AbstractZenModePre
                 MetricsProto.MetricsEvent.ACTION_ZEN_ALLOW_REPEAT_CALLS, allowRepeatCallers);
         mBackend.saveSoundPolicy(Policy.PRIORITY_CATEGORY_REPEAT_CALLERS, allowRepeatCallers);
         return true;
+    }
+
+    private void setRepeatCallerSummary(Preference preference) {
+        preference.setSummary(mContext.getString(R.string.zen_mode_repeat_callers_summary,
+                mRepeatCallersThreshold));
     }
 }

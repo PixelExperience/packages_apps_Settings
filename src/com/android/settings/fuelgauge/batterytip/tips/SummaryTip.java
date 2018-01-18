@@ -16,8 +16,9 @@
 
 package com.android.settings.fuelgauge.batterytip.tips;
 
-import android.app.Dialog;
 import android.content.Context;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import com.android.settings.R;
 
@@ -27,9 +28,11 @@ import com.android.settings.R;
 public class SummaryTip extends BatteryTip {
 
     public SummaryTip(@StateType int state) {
-        mShowDialog = false;
-        mState = state;
-        mType = TipType.SUMMARY;
+        super(TipType.SUMMARY, state, false /* showDialog */);
+    }
+
+    private SummaryTip(Parcel in) {
+        super(in);
     }
 
     @Override
@@ -52,14 +55,13 @@ public class SummaryTip extends BatteryTip {
         mState = tip.mState;
     }
 
-    @Override
-    public void action() {
-        // do nothing
-    }
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
+        public BatteryTip createFromParcel(Parcel in) {
+            return new SummaryTip(in);
+        }
 
-    @Override
-    public Dialog buildDialog() {
-        //TODO(b/70570352): create the dialog for summary tip and add test
-        return null;
-    }
+        public BatteryTip[] newArray(int size) {
+            return new SummaryTip[size];
+        }
+    };
 }

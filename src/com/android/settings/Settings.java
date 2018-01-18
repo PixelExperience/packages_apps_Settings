@@ -68,6 +68,7 @@ public class Settings extends SettingsActivity {
     public static class AccessibilityContrastSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AccessibilityDaltonizerSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SecuritySettingsActivity extends SettingsActivity { /* empty */ }
+    public static class SecuritySettingsActivityV2 extends SettingsActivity { /* empty */ }
     public static class UsageAccessSettingsActivity extends SettingsActivity { /* empty */ }
     public static class LocationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class PrivacySettingsActivity extends SettingsActivity { /* empty */ }
@@ -161,7 +162,6 @@ public class Settings extends SettingsActivity {
         }
     }
     public static class WebViewAppPickerActivity extends SettingsActivity { /* empty */ }
-    public static class LegacySupportActivity extends SettingsActivity{ /* empty */ }
 
     // Top level categories for new IA
     public static class NetworkDashboardActivity extends SettingsActivity {}

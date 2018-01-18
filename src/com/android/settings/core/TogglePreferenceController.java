@@ -14,8 +14,8 @@
 package com.android.settings.core;
 
 import android.content.Context;
-import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.TwoStatePreference;
 
 /**
  * Abstract class that consolidates logic for updating toggle controllers.
@@ -40,18 +40,17 @@ public abstract class TogglePreferenceController extends BasePreferenceControlle
      * Set the Setting to {@param isChecked}
      *
      * @param isChecked Is {@true} when the setting should be enabled.
+     * @return {@true} if the underlying setting is updated.
      */
-    public abstract void setChecked(boolean isChecked);
+    public abstract boolean setChecked(boolean isChecked);
 
     @Override
     public final void updateState(Preference preference) {
-        ((SwitchPreference) preference).setChecked(isChecked());
+        ((TwoStatePreference) preference).setChecked(isChecked());
     }
 
     @Override
     public final boolean onPreferenceChange(Preference preference, Object newValue) {
-        boolean auto = (Boolean) newValue;
-        setChecked(auto);
-        return true;
+        return setChecked((Boolean) newValue);
     }
 }

@@ -90,6 +90,7 @@
     <uses-permission android:name="android.permission.READ_PRINT_SERVICES" />
     <uses-permission android:name="android.permission.NETWORK_SETTINGS" />
     <uses-permission android:name="android.permission.TEST_BLACKLISTED_PASSWORD" />
+    <uses-permission android:name="android.permission.USE_RESERVED_DISK" />
 
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"
@@ -1005,7 +1006,7 @@
             <meta-data android:name="com.android.settings.title"
                 android:resource="@string/about_settings" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.DeviceInfoSettings" />
+                android:value="com.android.settings.deviceinfo.DeviceInfoSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -1285,6 +1286,28 @@
                 android:value="com.android.settings.security.SecuritySettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
+        </activity>
+
+        <!-- TODO(32953042) Merge with Settings$SecuritySettingsActivity -->
+        <activity android:name="Settings$SecuritySettingsActivityV2"
+                  android:label="@string/security_settings_title"
+                  android:icon="@drawable/ic_settings_security"
+                  android:enabled="false"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:taskAffinity=""
+                  android:parentActivityName="Settings">
+            <intent-filter android:priority="-1">
+                <action android:name="android.settings.SECURITY_SETTINGS" />
+                <action android:name="android.credentials.UNLOCK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:priority="4">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.homepage" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.security.SecuritySettingsV2" />
         </activity>
 
         <activity android:name="MonitoringCertInfoActivity"
@@ -1758,45 +1781,6 @@
 
         <activity android:name=".EncryptionInterstitial"
             android:theme="@style/GlifTheme.Light" />
-
-        <activity android:name=".Settings$StatusActivity"
-                android:label="@string/device_status_activity_title"
-                android:taskAffinity="com.android.settings"
-                android:parentActivityName="Settings$DeviceInfoSettingsActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.deviceinfo.Status" />
-        </activity>
-
-        <!-- Runs in the phone process since it needs access to the Phone object -->
-        <activity android:name=".Settings$SimStatusActivity"
-                android:label="@string/sim_status_title"
-                android:process="com.android.phone">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.deviceinfo.SimStatus" />
-        </activity>
-
-        <!-- Runs in the phone process since it needs access to the Phone object -->
-        <activity android:name=".Settings$ImeiInformationActivity"
-                android:label="@string/imei_information_title"
-                android:process="com.android.phone">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.deviceinfo.ImeiInformation" />
-        </activity>
 
         <activity android:name=".Settings$StorageDashboardActivity"
                 android:label="@string/storage_settings"
@@ -3082,13 +3066,6 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                        android:value="com.android.settings.deletionhelper.AutomaticStorageManagerSettings" />
         </activity>
-
-        <activity android:name="Settings$LegacySupportActivity"
-                  android:label="@string/page_tab_title_support">
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-            android:value="com.android.settings.dashboard.SupportFragment"/>
-        </activity>
-
         <!-- Information architecture host activities -->
 
         <!-- Alias for battery settings in new IA. Remove and merge metadata into TargetActivity -->
@@ -3198,6 +3175,26 @@
             android:name=".development.qstile.DevelopmentTiles$AnimationSpeed"
             android:label="@string/window_animation_scale_title"
             android:icon="@drawable/tile_icon_animation_speed"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".development.qstile.DevelopmentTiles$WindowTrace"
+            android:label="@string/window_trace_quick_settings_title"
+            android:icon="@drawable/tile_icon_window_trace"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".development.qstile.DevelopmentTiles$LayerTrace"
+            android:label="@string/layer_trace_quick_settings_title"
+            android:icon="@drawable/tile_icon_layer_trace"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
             android:enabled="false">
             <intent-filter>

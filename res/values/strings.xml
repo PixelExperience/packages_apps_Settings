@@ -396,6 +396,11 @@
     <!-- Summary for bluetooth item in connection detail page -->
     <string name="bluetooth_pref_summary">Allow device to pair and connect to bluetooth devices</string>
 
+    <!-- Setting Checkbox title for disabling Bluetooth inband ringing in Development Settings -->
+    <string name="bluetooth_disable_inband_ringing">Disable in-band ringing</string>
+    <!-- Summary of checkbox for disabling Bluetooth inband ringing in Development Settings -->
+    <string name="bluetooth_disable_inband_ringing_summary">Don’t play custom phone ringtones on Bluetooth headsets</string>
+
     <!-- Title for connected device group [CHAR LIMIT=none]-->
     <string name="connected_device_connected_title">Currently connected</string>
     <!-- Title for connected device group [CHAR LIMIT=none]-->
@@ -747,6 +752,17 @@
     <string name="zone_list_menu_sort_alphabetically">Sort alphabetically</string>
     <!-- Menu item on Select time zone screen -->
     <string name="zone_list_menu_sort_by_timezone">Sort by time zone</string>
+    <!-- Label describing when a given time zone changes to DST or standard time -->
+    <string name="zone_change_to_from_dst"><xliff:g id="time_type" example="Pacific Summer Time">%1$s</xliff:g> starts on <xliff:g id="transition_date" example="Mar 11 2018">%2$s</xliff:g>.</string>
+    <!-- Describes the time type "daylight savings time" (used in zone_change_to_from_dst, when no zone specific name is available) -->
+    <string name="zone_time_type_dst">Daylight savings time</string>
+    <!-- Describes the time type "standard time" (used in zone_change_to_from_dst, when no zone specific name is available) -->
+    <string name="zone_time_type_standard">Standard time</string>
+    <!-- The menu item to switch to selecting a time zone by region (default) -->
+    <string name="zone_menu_by_region">Time zone by region</string>
+    <!-- The menu item to switch to selecting a time zone with a fixed offset (such as UTC or GMT+0200) -->
+    <string name="zone_menu_by_offset">Fixed offset time zones</string>
+
     <!-- Title string shown above DatePicker, letting a user select system date
          [CHAR LIMIT=20] -->
     <string name="date_picker_title">Date</string>
@@ -788,6 +804,9 @@
     <string name="Accounts_settings_title">Accounts</string>
     <!-- Main Settings screen setting option title for the item to take you to the location screen -->
     <string name="location_settings_title">Location</string>
+    <!-- Used in the location settings to control turning on/off the feature entirely -->
+    <string name="location_settings_master_switch_title">Use location</string>
+
     <!-- Main Settings screen setting option title for the item to take you to the accounts screen [CHAR LIMIT=22] -->
     <string name="account_settings_title">Accounts</string>
     <!-- Main Settings screen setting option title for the item to take you to the security screen -->
@@ -1624,6 +1643,11 @@
     <!-- Bluetooth settings.  Dock Setting Dialog - Remember setting and don't ask user again -->
     <string name="bluetooth_dock_settings_remember">Remember settings</string>
 
+    <!-- Bluetooth developer settings: Maximum number of connected audio devices -->
+    <string name="bluetooth_max_connected_audio_devices_string">Maximum connected Bluetooth audio devices</string>
+    <!-- Bluetooth developer settings: Maximum number of connected audio devices -->
+    <string name="bluetooth_max_connected_audio_devices_dialog_title">Select maximum number of connected Bluetooth audio devices</string>
+
     <!-- Wifi Display settings. The title of the screen. [CHAR LIMIT=40] -->
     <string name="wifi_display_settings_title">Cast</string>
     <!-- Wifi Display settings. The title of a menu item to enable wireless display [CHAR LIMIT=40] -->
@@ -1672,6 +1696,8 @@
     <string name="wifi_band_24ghz">2.4 GHz</string>
     <!-- Wifi Internal 5GHz as an universal itendifier for 5GHz band -->
     <string name="wifi_band_5ghz">5 GHz</string>
+    <!-- Wifi Sign in text for button [CHAR LIMIT = 40]-->
+    <string name="wifi_sign_in_button_text">Sign in</string>
     <!-- Link speed on Wifi Status screen -->
     <string name="link_speed">%1$d Mbps</string>
 
@@ -1712,6 +1738,9 @@
     <string name="wifi_quick_toggle_summary">Turn on Wi\u2011Fi</string>
     <!-- Used in the 1st-level settings screen to go to the 2nd-level settings screen  [CHAR LIMIT=20]-->
     <string name="wifi_settings">Wi\u2011Fi</string>
+
+    <!-- Used in the Wi-Fi settings screen to control turning on/off Wi-Fi entirely [CHAR LIMIT=30]-->
+    <string name="wifi_settings_master_switch_title">Use Wi\u2011Fi</string>
     <!-- Title of the Wi-fi settings screen -->
     <string name="wifi_settings_category">Wi\u2011Fi settings</string>
     <!-- Title of the Wi-fi settings entry in the left top level menu -->
@@ -2264,7 +2293,8 @@
     <string name="emergency_address_title">Emergency Address</string>
     <!-- Summary of Update Emergency Address preference, explaining usage of emergency address [CHAR LIMIT=NONE] -->
     <string name="emergency_address_summary">Used as your location when you make an emergency call over Wi\u2011Fi</string>
-
+    <!-- Message of private dns that provides a help link. [CHAR LIMIT=NONE] -->
+    <string name="private_dns_help_message"><annotation id="url">Learn more</annotation> about Private DNS features</string>
 
     <!-- Sound and alerts settings -->
     <skip/>
@@ -3064,6 +3094,9 @@
 \n\nDon\u2019t remove the <xliff:g id="name" example="SD card">^2</xliff:g> during the move.
     </string>
 
+    <!-- Body of lock screen challenge message explaining that the given user must be unlocked before data can be moved [CHAR LIMIT=64] -->
+    <string name="storage_wizard_move_unlock">To move data you need to unlock user <xliff:g id="app" example="Joey">^1</xliff:g>.</string>
+
     <!-- Title of wizard step showing app move progress [CHAR LIMIT=32] -->
     <string name="storage_wizard_move_progress_title">Moving <xliff:g id="app" example="Calculator">^1</xliff:g>\u2026</string>
     <!-- Body of wizard step showing app move progress [CHAR LIMIT=NONE] -->
@@ -3418,6 +3451,8 @@
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
     <string name="about_settings" product="default">About phone</string>
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
+    <string name="about_settings" product="device">About device</string>
+    <!-- Main settings screen, setting title for the user to go into the About phone screen -->
     <string name="about_settings" product="emulator">About emulated device</string>
     <!-- Main settings screen, setting summary for the user to go into the About phone screen-->
     <string name="about_settings_summary">View legal info, status, software version</string>
@@ -3689,6 +3724,15 @@
         to attack by unknown apps. By installing apps from
         this source, you agree that you are responsible for
         any damage to your phone or loss of data that may
+        result from their use.
+    </string>
+
+    <!-- Warning that appears below the unknown sources switch in settings -->
+    <string name="install_all_warning" product="device">
+        Your device and personal data are more vulnerable
+        to attack by unknown apps. By installing apps from
+        this source, you agree that you are responsible for
+        any damage to your device or loss of data that may
         result from their use.
     </string>
 
@@ -4380,6 +4424,12 @@
     <string name="accessibility_autoclick_preference_title">Click after pointer stops moving</string>
     <!-- Title for accessibility preference for configuring amount of time that has to pass after pointer stops moving before click action can be performed (if automatic click after pointer stops moving feature is enabled). [CHAR LIMIT=NONE] -->
     <string name="accessibility_autoclick_delay_preference_title">Delay before click</string>
+    <!-- Used in the acessibilty service settings to control turning on/off the service entirely -->
+    <string name="accessibility_service_master_switch_title">Use service</string>
+    <!-- Used in the Color correction settings screen to control turning on/off the feature entirely -->
+    <string name="accessibility_daltonizer_master_switch_title">Use color correction</string>
+    <!-- Used in the Captions settings screen to control turning on/off the feature entirely -->
+    <string name="accessibility_caption_master_switch_title">Use captions</string>
 
     <!-- Preference's state when enabled. Note: UPPERCASE -->
     <string name="accessibility_summary_state_enabled">ON</string>
@@ -4759,6 +4809,38 @@
     <string name="battery_tip_low_battery_title">Low battery capacity</string>
     <!-- Summary for the low battery tip [CHAR LIMIT=NONE] -->
     <string name="battery_tip_low_battery_summary">Battery can\'t provide good battery life</string>
+    <!-- Title for the smart battery tip [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_smart_battery_title">Turn on smart battery manager</string>
+    <!-- Summary for the smart battery tip [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_smart_battery_summary">Turn on to optimize battery usage</string>
+    <!-- Title for the battery high usage tip [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_high_usage_title" product="default">Phone used heavily</string>
+    <!-- Title for the battery high usage tip [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_high_usage_title" product="tablet">Tablet used heavily</string>
+    <!-- Title for the battery high usage tip [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_high_usage_title" product="device">Device used heavily</string>
+    <!-- Summary for the battery high usage tip, which presents how many hours the device been used since last full charge [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_high_usage_summary">About <xliff:g id="hour">%1$s</xliff:g> used since last full charge</string>
+    <!-- Message for battery tip dialog to show the status about the battery [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_dialog_message" product="default">Your phone was used heavily and this consumed a lot of battery. Your battery is behaving normally.\n\n Your phone was used for about <xliff:g id="hour">%1$s</xliff:g> since last full charge.\n\n Total usage:</string>
+    <!-- Message for battery tip dialog to show the status about the battery [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_dialog_message" product="tablet">Your tablet was used heavily and this consumed a lot of battery. Your battery is behaving normally.\n\n Your tablet was used for about <xliff:g id="hour">%1$s</xliff:g> since last full charge.\n\n Total usage:</string>
+    <!-- Message for battery tip dialog to show the status about the battery [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_dialog_message" product="device">Your device was used heavily and this consumed a lot of battery. Your battery is behaving normally.\n\n Your device was used for about <xliff:g id="hour">%1$s</xliff:g> since last full charge.\n\n Total usage:</string>
+
+    <!-- Title for the smart battery manager preference [CHAR LIMIT=NONE] -->
+    <string name="smart_battery_manager_title">Smart battery manager</string>
+    <!-- Title for the smart battery toggle [CHAR LIMIT=NONE] -->
+    <string name="smart_battery_title">Auto-manage battery</string>
+    <!-- Summary for the smart battery toggle [CHAR LIMIT=NONE] -->
+    <string name="smart_battery_summary">Automatically adjust power usage by apps based on usage</string>
+    <!-- Title for restricted app preference, clicking it will goes to restricted app list [CHAR LIMIT=NONE] -->
+    <string name="restricted_app_title">Restricted apps</string>
+    <!-- Summary for restricted app preference, clicking it will goes to restricted app list [CHAR LIMIT=NONE] -->
+    <plurals name="restricted_app_summary">
+        <item quantity="one">%1$d app</item>
+        <item quantity="other">%1$d apps</item>
+    </plurals>
 
     <!-- Title for force stop dialog [CHAR LIMIT=30] -->
     <string name="dialog_stop_title">Stop app?</string>
@@ -5006,6 +5088,9 @@
 
     <!-- [CHAR_LIMIT=40] Battery saver: Label for feature, title + menu item -->
     <string name="battery_saver">Battery Saver</string>
+
+    <!-- Used in the Battery Saver settings screen to control turning on/off the feature entirely -->
+    <string name="battery_saver_master_switch_title">Use Battery Saver</string>
 
     <!-- [CHAR_LIMIT=40] Battery saver: Title for automatic entry option -->
     <string name="battery_saver_turn_on_automatically_title">Turn on automatically</string>
@@ -5558,6 +5643,8 @@
     <string name="really_remove_account_message" product="tablet">Removing this account will delete all of its messages, contacts, and other data from the tablet!</string>
     <!-- Remove account message in dialog [CHAR LIMIT=NONE] -->
     <string name="really_remove_account_message" product="default">Removing this account will delete all of its messages, contacts, and other data from the phone!</string>
+    <!-- Remove account message in dialog [CHAR LIMIT=NONE] -->
+    <string name="really_remove_account_message" product="device">Removing this account will delete all of its messages, contacts, and other data from the device!</string>
     <!-- This is shown if the autheticator for a given account fails to remove it. [CHAR LIMIT=NONE] -->
     <string name="remove_account_failed">This change isn\'t allowed by your admin</string>
     <!-- What to show in messaging that refers to this provider, e.g. AccountSyncSettings -->
@@ -6333,6 +6420,7 @@
     <string name="help_url_icc_lock" translatable="false"></string>
     <string name="help_uri_process_stats_summary" translatable="false"></string>
     <string name="help_uri_process_stats_apps" translatable="false"></string>
+    <string name="help_uri_private_dns" translatable="false"></string>
 
     <!-- User account title [CHAR LIMIT=30] -->
     <string name="user_account_title">Account for content</string>
@@ -6796,10 +6884,10 @@
     <string name="zen_mode_add">Add</string>
 
     <!--  Do not disturb: Label for button that will turn on zen mode. [CHAR LIMIT=30] -->
-    <string name="zen_mode_button_turn_on">TURN ON NOW</string>
+    <string name="zen_mode_button_turn_on">Turn on now</string>
 
     <!--  Do not disturb: Label for button that will turn off zen mode. [CHAR LIMIT=30] -->
-    <string name="zen_mode_button_turn_off">TURN OFF NOW</string>
+    <string name="zen_mode_button_turn_off">Turn off now</string>
 
     <!-- [CHAR LIMIT=110] Zen mode settings footer: Footer showing end time of DND -->
     <string name="zen_mode_settings_dnd_manual_end_time">Do Not Disturb is on until <xliff:g id="formatted_time" example="7:00 AM">%s</xliff:g></string>
@@ -6926,7 +7014,7 @@
     <string name="notification_group_title">Notification category group</string>
 
     <!-- [CHAR LIMIT=100] Notification importance screen title -->
-    <string name="notification_importance_title">Importance</string>
+    <string name="notification_importance_title">Behavior</string>
 
     <!-- [CHAR LIMIT=100 BACKUP_MESSAGE_ID=1820188704793497324] Notification Importance: unspecified importance level description -->
     <string name="notification_importance_unspecified">Allow sound</string>
@@ -6990,6 +7078,9 @@
 
     <!-- [CHAR LIMIT=100] Notification Importance title: high importance level title -->
     <string name="notification_channel_summary_high">Urgent importance</string>
+
+    <!-- [CHAR LIMIT=100] Label for on/off toggle -->
+    <string name="notification_switch_label">Show notifications</string>
 
     <!-- Default Apps > Default notification assistant -->
     <string name="default_notification_assistant">Notification assistant</string>
@@ -7087,13 +7178,13 @@
     <string name="loading_notification_apps">Loading apps...</string>
 
     <!-- [CHAR LIMIT=NONE] Text appearing when app notifications are off -->
-    <string name="app_notifications_off_desc">Android is blocking this app\'s notifications from appearing on this device</string>
+    <string name="app_notifications_off_desc">At your request, Android is blocking this app\'s notifications from appearing on this device</string>
 
     <!-- [CHAR LIMIT=NONE] Text appearing when channel notifications are off -->
-    <string name="channel_notifications_off_desc">Android is blocking this category of notifications from appearing on this device</string>
+    <string name="channel_notifications_off_desc">At your request, Android is blocking this category of notifications from appearing on this device</string>
 
     <!-- [CHAR LIMIT=NONE] Text appearing when channel group notifications are off -->
-    <string name="channel_group_notifications_off_desc">Android is blocking this group of notifications from appearing on this device</string>
+    <string name="channel_group_notifications_off_desc">At your request, Android is blocking this group of notifications from appearing on this device</string>
 
     <!-- [CHAR LIMIT=NONE] App notification settings: channels title -->
     <string name="notification_channels">Categories</string>
@@ -8502,6 +8593,11 @@
     <!-- Text for the setting on whether you can type text into notifications without unlocking the device. -->
     <string name="lockscreen_remote_input">If device is locked, prevent typing replies or other text in notifications</string>
 
+    <string-array name="bytes_picker_sizes" translatable="false">
+        <item>@*android:string/megabyteShort</item>
+        <item>@*android:string/gigabyteShort</item>
+    </string-array>
+
     <!-- [CHAR LIMIT=30] Label for setting to control the default spell checker -->
     <string name="default_spell_checker">Default spell checker</string>
 
@@ -8632,92 +8728,11 @@
     <!-- [CHAR LIMIT=60] Name of dev option to enable extra quick settings tiles -->
     <string name="quick_settings_developer_tiles">Quick settings developer tiles</string>
 
-    <!-- Title text for connecting to customer support [CHAR LIMIT=80]-->
-    <string name="support_escalation_title">We\'re here to help</string>
+    <!-- [CHAR LIMIT=25] Title of developer tile to toggle window trace -->
+    <string name="window_trace_quick_settings_title">Window Trace</string>
 
-    <!-- Title text for connecting to 24/7 available customer support [CHAR LIMIT=80]-->
-    <string name="support_escalation_24_7_title">We\'re here for you 24/7</string>
-
-    <!-- Content description for connecting customer support. The "24 7" part indicates
-    support is available 24 hours a day, 7 days a week. It's used by screenreaders so it
-    cannot contain any symbol other that space. [CHAR LIMIT=80]-->
-    <string name="support_escalation_24_7_content_description">We\'re here for you 24 7</string>
-
-    <!-- Summary text for connecting to customer support [CHAR LIMIT=NONE]-->
-    <string name="support_escalation_summary">Our support team is here to help address any issue</string>
-
-    <!-- Summary text for connecting to 24/7 customer support [CHAR LIMIT=NONE]-->
-    <string name="support_escalation_24_7_summary">Our support team is available all day, every day</string>
-
-    <!-- Summary text when customer support is closed. [CHAR LIMIT=NONE]-->
-    <string name="support_escalation_closed_summary">Search help or come back during support hours (local time):&lt;br&gt;&lt;b&gt;<xliff:g id="operation_hours">%s</xliff:g>&lt;/b&gt;</string>
-
-    <!-- Summary text to call customer support when there is no internet. [CHAR LIMIT=NONE]-->
-    <string name="support_escalation_no_internet_summary">Phone support hours (local time)&lt;br&gt;&lt;b&gt;<xliff:g id="operation_hours">%s</xliff:g>&lt;/b&gt;</string>
-
-    <!-- Summary text when customer support is unavailable in the region. [CHAR LIMIT=NONE]-->
-    <string name="support_escalation_unavailable_summary">Search help or explore tips &amp; tricks</string>
-
-    <!-- Template for formatting support hours eg Mon - Fri, 8:00 AM - 19:30 PM. [CHAR LIMIT=NONE]-->
-    <string name="support_hour_format" translatable="false">
-        <xliff:g id="start_day">%1$s</xliff:g> - <xliff:g id="end_day">%2$s</xliff:g>, <xliff:g id="start_time">%3$s</xliff:g> - <xliff:g id="end_time">%4$s</xliff:g>&lt;br&gt;
-    </string>
-
-    <!-- Button label for choosing country for phone support. [CHAR LIMIT=40]-->
-    <string name="support_country_list_title">Support for:</string>
-
-    <!-- Template for formatting country and language. eg Canada - French [CHAR LIMIT=NONE]-->
-    <string name="support_country_format"><xliff:g id="country" example="Canada">%1$s</xliff:g> - <xliff:g id="language" example="French">%2$s</xliff:g></string>
-
-    <!-- Template for formatting phone number and language. eg English (800-000-0000) [CHAR LIMIT=NONE]-->
-    <string name ="support_phone_international_format">
-        <xliff:g id="language" example="English">%1$s</xliff:g> (<xliff:g id="phone" example="800-000-0000">%2$s</xliff:g>)
-    </string>
-
-    <!-- Title text for a list of international support phone numbers. [CHAR LIMIT=60]-->
-    <string name="support_international_phone_title">Traveling abroad?</string>
-
-    <!-- Description text warning international phone charge may apply when dialing support numbers. [CHAR LIMIT=NONE]-->
-    <string name="support_international_phone_summary">International charges may apply</string>
-
-    <!-- Button label for contacting customer support by phone [CHAR LIMIT=20]-->
-    <string name="support_escalation_by_phone">Phone</string>
-
-    <!-- Button label for contacting customer support by chat [CHAR LIMIT=20]-->
-    <string name="support_escalation_by_chat">Chat</string>
-
-    <!-- Button label for visiting the tips & tricks site [CHAR LIMIT=60]-->
-    <string name="support_tips_and_tricks_title">Explore tips &amp; tricks</string>
-
-    <!-- Button label for visiting help and/or send feedback [CHAR LIMIT=60]-->
-    <string name="support_help_feedback_title">Search help &amp; send feedback</string>
-
-    <!-- Title text that indicates user needs to sign in to get customer support. [CHAR LIMIT=80]-->
-    <string name="support_sign_in_required_title">Contact support</string>
-
-    <!-- Summary text that indicates user needs to sign-in to get real time customer support. [CHAR LIMIT=NONE]-->
-    <string name="support_sign_in_required_summary" translatable="false"></string>
-
-    <!-- Button label for signing in an account [CHAR LIMIT=40]-->
-    <string name="support_sign_in_button_text">Sign in</string>
-
-    <!-- Button label that redirects user who needs help for signin to help screen [CHAR LIMIT=NONE]-->
-    <string name="support_sign_in_required_help">Can\'t sign in?</string>
-
-    <!-- Dialog title displayed before initiating real time support [CHAR LIMIT=80]-->
-    <string name="support_disclaimer_title">Send system information</string>
-
-    <!-- Checkbox text, when checked dialog will not show again [CHAR LIMIT=80] -->
-    <string name="support_disclaimer_do_not_show">Do not show again</string>
-
-    <!-- Prefix text for the account picker, e.g. "Requesting as user@gmail.com" [CHAR LIMIT=60] -->
-    <string name="support_account_request_prefix">Requesting as</string>
-
-    <!-- Spinner dropdown text, when selected will try to add account [CHAR LIMIT=60] -->
-    <string name="support_account_picker_add_account">Add account</string>
-
-    <!-- Title for the dialog containing system information shown [CHAR LIMIT=30] -->
-    <string name="support_system_information_title">System information</string>
+    <!-- [CHAR LIMIT=25] Title of developer tile to toggle layer trace -->
+    <string name="layer_trace_quick_settings_title">Layer Trace</string>
 
     <!-- [CHAR LIMIT=60] Title of work profile setting page -->
     <string name="managed_profile_settings_title">Work profile settings</string>
@@ -8744,9 +8759,6 @@
         <item quantity="other"><xliff:g id="number" example="7">%s</xliff:g> seconds</item>
     </plurals>
 
-    <!-- Estimated wait time range for real time supports -->
-    <string name="support_estimated_wait_time">~<xliff:g id="ESTIMATE" example="2 minutes">%1$s</xliff:g> wait</string>
-
     <!-- Used as title on the automatic storage manager settings. [CHAR LIMIT=60] -->
     <string name="automatic_storage_manager_settings">Manage storage</string>
 
@@ -8758,6 +8770,9 @@
 
     <!-- Preference title for the automatic storage manager toggle. [CHAR LIMIT=60]-->
     <string name="automatic_storage_manager_preference_title">Storage manager</string>
+
+    <!-- Used in the storage manager settings screen to control turning on/off the feature entirely -->
+    <string name="automatic_storage_manager_master_switch_title">Use Storage manager</string>
 
     <!-- Category title for the automatic settings in the storage manager settings. [CHAR LIMIT=40] -->
     <string name="deletion_helper_automatic_title">Automatic</string>
