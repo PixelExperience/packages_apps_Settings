@@ -275,7 +275,6 @@ public class SimDialogActivity extends Activity {
         private Context mContext;
         private int mResId;
         private int mDialogId;
-        private final float OPACITY = 0.54f;
         private List<SubscriptionInfo> mSubInfoList;
 
         public SelectAccountListAdapter(List<SubscriptionInfo> subInfoList,
@@ -311,9 +310,8 @@ public class SimDialogActivity extends Activity {
             if (sir == null) {
                 holder.title.setText(getItem(position));
                 holder.summary.setText("");
-                holder.icon.setImageDrawable(getResources()
+                holder.icon.setImageDrawable(mContext
                         .getDrawable(R.drawable.ic_live_help));
-                holder.icon.setAlpha(OPACITY);
             } else {
                 holder.title.setText(sir.getDisplayName());
                 holder.summary.setText(sir.getNumber());
