@@ -90,4 +90,9 @@
         android:selectable="false"
         android:order="9999"/>
 
+    <Preference
+        android:key="app_package_name"
+        android:selectable="false"
+        android:order="9999"/>
+
 </PreferenceScreen>
