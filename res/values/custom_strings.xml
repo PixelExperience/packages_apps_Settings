@@ -49,5 +49,7 @@
     <string name="systemui_theme_style_auto">Automatic (wallpaper based)</string>
     <string name="systemui_theme_style_light">Light</string>
     <string name="systemui_theme_style_dark">Dark</string>
+    <string name="applying_theme_toast">Applying theme, please wait...</string>
+    <string name="theme_applied_toast">Theme applied!</string>
 
 </resources>
