@@ -3773,4 +3773,17 @@
     <skip />
     <!-- no translation found for enable_gnss_raw_meas_full_tracking_summary (496344699046454200) -->
     <skip />
+
+    <!-- apn names for carriers -->
+    <string name="APN_NAME_CMNET">中国移动NET</string>
+    <string name="APN_NAME_CMWAP">中国移动WAP</string>
+    <string name="APN_NAME_CMMMS">中国移动彩信设置</string>
+    <string name="APN_NAME_CUWAP">沃宽带用户手机上网</string>
+    <string name="APN_NAME_CUNET">沃宽带用户连接互联网</string>
+    <string name="APN_NAME_CUMMS">联通彩信</string>
+    <string name="APN_NAME_CUSUPL">联通AGPS</string>
+    <string name="APN_NAME_CTNET">中国电信互联网设置 CTNET</string>
+    <string name="APN_NAME_CTWAP">中国电信WAP设置 CTWAP</string>
+    <string name="APN_NAME_CTLTE">中国电信互联网设置 ctlte</string>
+    <string name="APN_NAME_CTMMS">中国电信彩信设置 CTWAP</string>
 </resources>
