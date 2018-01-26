@@ -81,6 +81,11 @@ public class MasterSwitchPreference extends TwoTargetPreference {
             });
         }
 
+        final View divider = holder.findViewById(R.id.two_target_divider);
+        if (divider != null) {
+            divider.setVisibility(View.GONE);
+        }
+
         mSwitch = (Switch) holder.findViewById(R.id.switchWidget);
         if (mSwitch != null) {
             mSwitch.setContentDescription(getTitle());
