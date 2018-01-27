@@ -275,7 +275,7 @@ public class ApnEditor extends SettingsPreferenceFragment
 
         mTelephonyManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
 
-        Log.d(TAG, "onCreate: EDITED " + mCursor.getInt(EDITED_INDEX));
+/*        Log.d(TAG, "onCreate: EDITED " + mCursor.getInt(EDITED_INDEX));
         // if it's not a USER_EDITED apn, check if it's read-only
         if (mCursor.getInt(EDITED_INDEX) != Telephony.Carriers.USER_EDITED &&
                 (mCursor.getInt(USER_EDITABLE_INDEX) == 0 ||
@@ -285,7 +285,7 @@ public class ApnEditor extends SettingsPreferenceFragment
             disableAllFields();
         } else if (!ArrayUtils.isEmpty(mReadOnlyApnFields)) {
             disableFields(mReadOnlyApnFields);
-        }
+        }*/
 
         for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
             getPreferenceScreen().getPreference(i).setOnPreferenceChangeListener(this);
@@ -738,7 +738,7 @@ public class ApnEditor extends SettingsPreferenceFragment
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         // If it's a new APN, then cancel will delete the new entry in onPause
-        if (!mNewApn && !mReadOnlyApn) {
+        if (!mNewApn) {
             menu.add(0, MENU_DELETE, 0, R.string.menu_delete)
                 .setIcon(R.drawable.ic_menu_delete);
         }
