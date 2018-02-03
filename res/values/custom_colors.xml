@@ -27,5 +27,8 @@
     <color name="switch_bar_bg_activated_dark">#242424</color>
     <color name="switch_bar_bg_deactivated_dark">#333333</color>
 
+    <!-- Storage bar -->
+    <color name="storage_bar_private_tint_color">@*android:color/accent_device_default_light</color>
+
 </resources>
 
