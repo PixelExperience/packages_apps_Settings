@@ -65,6 +65,16 @@ public class SimPreferenceDialog extends Activity {
         mSubInfoRecord = mSubscriptionManager.getActiveSubscriptionInfoForSimSlotIndex(mSlotId);
         mTintArr = mContext.getResources().getIntArray(com.android.internal.R.array.sim_colors);
         mColorStrings = mContext.getResources().getStringArray(R.array.color_picker);
+
+        String[] mColorStringsNew = new String[7]; // Pixel color +  6 aosp colors
+        mColorStringsNew[0] = mContext.getResources().getString(R.string.pixel_sim_color);
+        for (int i = 0; i <= 5; i++) {
+            int i2 = i+1;
+            mColorStringsNew[i2] = mColorStrings[i];
+        }
+
+        mColorStrings = mColorStringsNew;
+
         mTintSelectorPos = 0;
 
         mBuilder = new AlertDialog.Builder(mContext);
