@@ -25,7 +25,7 @@ import com.android.settingslib.core.lifecycle.events.OnCreate;
 /**
  * ActionBar lifecycle observer for {@link WifiNetworkDetailsFragment}.
  */
-public class WifiDetailActionBarObserver implements LifecycleObserver, OnCreate {
+public class WifiDetailActionBarObserver implements LifecycleObserver {
 
     private final Fragment mFragment;
     private final Context mContext;
@@ -35,11 +35,4 @@ public class WifiDetailActionBarObserver implements LifecycleObserver, OnCreate 
         mFragment = fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        if (mFragment.getActivity() != null) {
-            mFragment.getActivity().getActionBar()
-                    .setTitle(mContext.getString(R.string.wifi_details_title));
-        }
-    }
 }

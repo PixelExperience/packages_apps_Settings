@@ -55,6 +55,12 @@ public class WifiNetworkDetailsFragment extends DashboardFragment {
     }
 
     @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        getActivity().getActionBar().setTitle(R.string.wifi_details_title);
+        super.onActivityCreated(savedInstanceState);
+    }
+
+    @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.WIFI_NETWORK_DETAILS;
     }
