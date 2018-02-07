@@ -23,13 +23,14 @@ import android.net.ConnectivityManager;
 import android.os.UserManager;
 import android.support.annotation.Keep;
 
+import com.android.settings.accounts.AccountFeatureProvider;
+import com.android.settings.accounts.AccountFeatureProviderImpl;
 import com.android.settings.applications.ApplicationFeatureProvider;
 import com.android.settings.applications.ApplicationFeatureProviderImpl;
 import com.android.settings.bluetooth.BluetoothFeatureProvider;
 import com.android.settings.bluetooth.BluetoothFeatureProviderImpl;
 import com.android.settings.connecteddevice.SmsMirroringFeatureProvider;
 import com.android.settings.connecteddevice.SmsMirroringFeatureProviderImpl;
-import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.dashboard.DashboardFeatureProvider;
 import com.android.settings.dashboard.DashboardFeatureProviderImpl;
 import com.android.settings.dashboard.suggestions.SuggestionFeatureProvider;
@@ -55,6 +56,7 @@ import com.android.settings.users.UserFeatureProviderImpl;
 import com.android.settings.wrapper.ConnectivityManagerWrapper;
 import com.android.settings.wrapper.DevicePolicyManagerWrapper;
 import com.android.settings.wrapper.IPackageManagerWrapper;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.wrapper.PackageManagerWrapper;
 
 /**
@@ -78,6 +80,7 @@ public class FeatureFactoryImpl extends FeatureFactory {
     private DataPlanFeatureProvider mDataPlanFeatureProvider;
     private SmsMirroringFeatureProvider mSmsMirroringFeatureProvider;
     private SlicesFeatureProvider mSlicesFeatureProvider;
+    private AccountFeatureProvider mAccountFeatureProvider;
 
     @Override
     public SupportFeatureProvider getSupportFeatureProvider(Context context) {
@@ -218,5 +221,13 @@ public class FeatureFactoryImpl extends FeatureFactory {
             mSlicesFeatureProvider = new SlicesFeatureProviderImpl();
         }
         return mSlicesFeatureProvider;
+    }
+
+    @Override
+    public AccountFeatureProvider getAccountFeatureProvider() {
+        if (mAccountFeatureProvider == null) {
+            mAccountFeatureProvider = new AccountFeatureProviderImpl();
+        }
+        return mAccountFeatureProvider;
     }
 }

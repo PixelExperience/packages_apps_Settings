@@ -171,18 +171,20 @@ public class BatteryInfo {
                 if (discharging && provider != null
                         && provider.isEnhancedBatteryPredictionEnabled(context)) {
                     Estimate estimate = provider.getEnhancedBatteryPrediction(context);
-                    BatteryUtils.logRuntime(LOG_TAG, "time for enhanced BatteryInfo", startTime);
-                    return BatteryInfo.getBatteryInfo(context, batteryBroadcast, stats,
-                            elapsedRealtimeUs, shortString,
-                            BatteryUtils.convertMsToUs(estimate.estimateMillis),
-                            estimate.isBasedOnUsage);
-                } else {
-                    long prediction = discharging
-                            ? stats.computeBatteryTimeRemaining(elapsedRealtimeUs) : 0;
-                    BatteryUtils.logRuntime(LOG_TAG, "time for regular BatteryInfo", startTime);
-                    return BatteryInfo.getBatteryInfo(context, batteryBroadcast, stats,
-                            elapsedRealtimeUs, shortString, prediction, false);
+                    if(estimate != null) {
+                        BatteryUtils
+                                .logRuntime(LOG_TAG, "time for enhanced BatteryInfo", startTime);
+                        return BatteryInfo.getBatteryInfo(context, batteryBroadcast, stats,
+                                elapsedRealtimeUs, shortString,
+                                BatteryUtils.convertMsToUs(estimate.estimateMillis),
+                                estimate.isBasedOnUsage);
+                    }
                 }
+                long prediction = discharging
+                        ? stats.computeBatteryTimeRemaining(elapsedRealtimeUs) : 0;
+                BatteryUtils.logRuntime(LOG_TAG, "time for regular BatteryInfo", startTime);
+                return BatteryInfo.getBatteryInfo(context, batteryBroadcast, stats,
+                        elapsedRealtimeUs, shortString, prediction, false);
             }
 
             @Override
@@ -272,7 +274,7 @@ public class BatteryInfo {
         void onParsingDone();
     }
 
-    private static void parse(BatteryStats stats, BatteryDataParser... parsers) {
+    public static void parse(BatteryStats stats, BatteryDataParser... parsers) {
         long startWalltime = 0;
         long endWalltime = 0;
         long historyStart = 0;

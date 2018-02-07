@@ -25,6 +25,7 @@ import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -38,7 +39,8 @@ import android.support.v7.preference.PreferenceScreen;
 
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.TestConfig;
-import com.android.settings.security.SecuritySettingsV2;
+import com.android.settings.core.PreferenceControllerMixin;
+import com.android.settings.security.SecuritySettings;
 import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -67,7 +69,7 @@ public class TrustAgentListPreferenceControllerTest {
     @Mock
     private PreferenceCategory mCategory;
     @Mock
-    private SecuritySettingsV2 mFragment;
+    private SecuritySettings mFragment;
 
     private Lifecycle mLifecycle;
     private LifecycleOwner mLifecycleOwner;
@@ -99,6 +101,13 @@ public class TrustAgentListPreferenceControllerTest {
     public void testConstants() {
         assertThat(mController.isAvailable()).isTrue();
         assertThat(mController.getPreferenceKey()).isEqualTo(PREF_KEY_TRUST_AGENT);
+        assertThat(mController).isInstanceOf(PreferenceControllerMixin.class);
+    }
+
+    @Test
+    @Config(qualifiers = "mcc999")
+    public void isAvailable_whenNotVisible_isFalse() {
+        assertThat(mController.isAvailable()).isFalse();
     }
 
     @Test
@@ -132,5 +141,25 @@ public class TrustAgentListPreferenceControllerTest {
         mController.onResume();
 
         verify(mCategory, atLeastOnce()).addPreference(any(Preference.class));
+    }
+
+    @Test
+    @Config(qualifiers = "mcc999")
+    public void onResume_ifNotAvailable_shouldNotAddNewAgents() {
+        final List<TrustAgentManager.TrustAgentComponentInfo> agents = new ArrayList<>();
+        final TrustAgentManager.TrustAgentComponentInfo agent = mock(
+                TrustAgentManager.TrustAgentComponentInfo.class);
+        agent.title = "Test_title";
+        agent.summary = "test summary";
+        agent.componentName = new ComponentName("pkg", "agent");
+        agent.admin = null;
+        agents.add(agent);
+        when(mTrustAgentManager.getActiveTrustAgents(mActivity, mLockPatternUtils))
+                .thenReturn(agents);
+
+        mController.displayPreference(mScreen);
+        mController.onResume();
+
+        verify(mCategory, never()).addPreference(any(Preference.class));
     }
 }

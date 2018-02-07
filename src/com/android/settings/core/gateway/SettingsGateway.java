@@ -36,7 +36,7 @@ import com.android.settings.accessibility.ToggleDaltonizerPreferenceFragment;
 import com.android.settings.accounts.AccountSyncSettings;
 import com.android.settings.accounts.ChooseAccountActivity;
 import com.android.settings.accounts.ManagedProfileSettings;
-import com.android.settings.accounts.UserAndAccountDashboardFragment;
+import com.android.settings.accounts.AccountDashboardFragment;
 import com.android.settings.applications.AppAndNotificationDashboardFragment;
 import com.android.settings.applications.DefaultAppSettings;
 import com.android.settings.applications.InstalledAppDetails;
@@ -44,6 +44,7 @@ import com.android.settings.applications.ManageDomainUrls;
 import com.android.settings.applications.NotificationApps;
 import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
+import com.android.settings.applications.DirectoryAccessDetails;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.VrListenerSettings;
 import com.android.settings.applications.appinfo.AppInfoDashboardFragment;
@@ -56,6 +57,7 @@ import com.android.settings.applications.assist.ManageAssist;
 import com.android.settings.applications.manageapplications.ManageApplications;
 import com.android.settings.bluetooth.BluetoothDeviceDetailsFragment;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.connecteddevice.AdvancedConnectedDeviceDashboardFragment;
 import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment;
 import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragmentOld;
 import com.android.settings.datausage.DataPlanUsageSummary;
@@ -114,7 +116,6 @@ import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.security.CryptKeeperSettings;
 import com.android.settings.security.LockscreenDashboardFragment;
 import com.android.settings.security.SecuritySettings;
-import com.android.settings.security.SecuritySettingsV2;
 import com.android.settings.sim.SimSettings;
 import com.android.settings.support.SupportDashboardActivity;
 import com.android.settings.system.ResetDashboardFragment;
@@ -163,7 +164,6 @@ public class SettingsGateway {
             NotificationStation.class.getName(),
             LocationSettings.class.getName(),
             SecuritySettings.class.getName(),
-            SecuritySettingsV2.class.getName(),
             UsageAccessDetails.class.getName(),
             PrivacySettings.class.getName(),
             DeviceAdminSettings.class.getName(),
@@ -247,12 +247,14 @@ public class SettingsGateway {
             ConnectedDeviceDashboardFragment.class.getName(),
             ConnectedDeviceDashboardFragmentOld.class.getName(),
             AppAndNotificationDashboardFragment.class.getName(),
-            UserAndAccountDashboardFragment.class.getName(),
+            AccountDashboardFragment.class.getName(),
             EnterprisePrivacySettings.class.getName(),
             WebViewAppPicker.class.getName(),
             LockscreenDashboardFragment.class.getName(),
             BluetoothDeviceDetailsFragment.class.getName(),
-            DataUsageList.class.getName()
+            DataUsageList.class.getName(),
+            DirectoryAccessDetails.class.getName(),
+            AdvancedConnectedDeviceDashboardFragment.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -266,9 +268,8 @@ public class SettingsGateway {
             Settings.StorageDashboardActivity.class.getName(),
             Settings.PowerUsageSummaryActivity.class.getName(),
             Settings.PowerUsageSummaryLegacyActivity.class.getName(),
-            Settings.UserAndAccountDashboardActivity.class.getName(),
-            Settings.SecuritySettingsActivity.class.getName(),
-            Settings.SecuritySettingsActivityV2.class.getName(),
+            Settings.AccountDashboardActivity.class.getName(),
+            Settings.SecurityDashboardActivity.class.getName(),
             Settings.AccessibilitySettingsActivity.class.getName(),
             Settings.SystemDashboardActivity.class.getName(),
             SupportDashboardActivity.class.getName(),
@@ -294,5 +295,6 @@ public class SettingsGateway {
             Settings.DateTimeSettingsActivity.class.getName(),
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
+            Settings.MyDeviceInfoActivity.class.getName(),
     };
 }

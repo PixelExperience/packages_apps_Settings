@@ -34,6 +34,9 @@ import com.android.settingslib.core.lifecycle.events.OnPause;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
 import static com.android.settingslib.Utils.updateLocationMode;
+import static com.android.settingslib.Utils.updateLocationEnabled;
+import static com.android.settingslib.RestrictedLockUtils.checkIfRestrictionEnforced;
+
 
 /**
  * A class that listens to location settings change and modifies location settings
@@ -105,6 +108,26 @@ public class LocationEnabler implements LifecycleObserver, OnResume, OnPause {
         }
     }
 
+    void setLocationEnabled(boolean enabled) {
+        final int currentMode = Settings.Secure.getInt(mContext.getContentResolver(),
+            Settings.Secure.LOCATION_MODE, Settings.Secure.LOCATION_MODE_OFF);
+
+        if (isRestricted()) {
+            // Location toggling disabled by user restriction. Read the current location mode to
+            // update the location master switch.
+            if (Log.isLoggable(TAG, Log.INFO)) {
+                Log.i(TAG, "Restricted user, not setting location mode");
+            }
+            if (mListener != null) {
+                mListener.onLocationModeChanged(currentMode, true);
+            }
+            return;
+        }
+        updateLocationEnabled(mContext, enabled, UserHandle.myUserId(),
+                Settings.Secure.LOCATION_CHANGER_SYSTEM_SETTINGS);
+        refreshLocationMode();
+    }
+
     void setLocationMode(int mode) {
         final int currentMode = Settings.Secure.getInt(mContext.getContentResolver(),
                 Settings.Secure.LOCATION_MODE, Settings.Secure.LOCATION_MODE_OFF);
@@ -120,7 +143,8 @@ public class LocationEnabler implements LifecycleObserver, OnResume, OnPause {
             return;
         }
 
-        updateLocationMode(mContext, currentMode, mode, ActivityManager.getCurrentUser());
+        updateLocationMode(mContext, currentMode, mode, ActivityManager.getCurrentUser(),
+                Settings.Secure.LOCATION_CHANGER_SYSTEM_SETTINGS);
         refreshLocationMode();
     }
 
@@ -140,8 +164,14 @@ public class LocationEnabler implements LifecycleObserver, OnResume, OnPause {
     }
 
     RestrictedLockUtils.EnforcedAdmin getShareLocationEnforcedAdmin(int userId) {
-        return RestrictedLockUtils.checkIfRestrictionEnforced(
+        RestrictedLockUtils.EnforcedAdmin admin =  checkIfRestrictionEnforced(
                 mContext, UserManager.DISALLOW_SHARE_LOCATION, userId);
+
+        if (admin == null) {
+            admin = RestrictedLockUtils.checkIfRestrictionEnforced(
+                    mContext, UserManager.DISALLOW_CONFIG_LOCATION_MODE, userId);
+        }
+        return admin;
     }
 
     boolean hasShareLocationRestriction(int userId) {

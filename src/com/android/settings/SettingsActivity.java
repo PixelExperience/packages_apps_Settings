@@ -56,13 +56,13 @@ import com.android.settings.Settings.WifiSettingsActivity;
 import com.android.settings.applications.manageapplications.ManageApplications;
 import com.android.settings.backup.BackupSettingsActivity;
 import com.android.settings.core.gateway.SettingsGateway;
-import com.android.settings.core.instrumentation.MetricsFeatureProvider;
-import com.android.settings.core.instrumentation.SharedPreferencesLogger;
 import com.android.settings.dashboard.DashboardFeatureProvider;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.widget.SwitchBar;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
+import com.android.settingslib.core.instrumentation.SharedPreferencesLogger;
 import com.android.settingslib.development.DevelopmentSettingsEnabler;
 import com.android.settingslib.drawer.DashboardCategory;
 import com.android.settingslib.drawer.SettingsDrawerActivity;
@@ -91,11 +91,6 @@ public class SettingsActivity extends SettingsDrawerActivity
      * activity.
      */
     public static final String EXTRA_SHOW_FRAGMENT = ":settings:show_fragment";
-
-    /**
-     * The metrics category constant for logging source when a setting fragment is opened.
-     */
-    public static final String EXTRA_SOURCE_METRICS_CATEGORY = ":settings:source_metrics";
 
     /**
      * When starting this activity and using {@link #EXTRA_SHOW_FRAGMENT},
@@ -220,7 +215,8 @@ public class SettingsActivity extends SettingsDrawerActivity
     @Override
     public SharedPreferences getSharedPreferences(String name, int mode) {
         if (name.equals(getPackageName() + "_preferences")) {
-            return new SharedPreferencesLogger(this, getMetricsTag());
+            return new SharedPreferencesLogger(this, getMetricsTag(),
+                    FeatureFactory.getFactory(this).getMetricsFeatureProvider());
         }
         return super.getSharedPreferences(name, mode);
     }
@@ -806,20 +802,6 @@ public class SettingsActivity extends SettingsDrawerActivity
                 !isConnectedDeviceV2Enabled && !UserManager.isDeviceInDemoMode(this) /* enabled */,
                 isAdmin) || somethingChanged;
 
-        final boolean isSecurityV2Enabled = featureFactory.getSecurityFeatureProvider()
-                .isSecuritySettingsV2Enabled(this);
-
-        // Enable new security page if v2 enabled
-        somethingChanged = setTileEnabled(
-                new ComponentName(packageName,Settings.SecuritySettingsActivityV2.class.getName()),
-                isSecurityV2Enabled,
-                isAdmin) || somethingChanged;
-        // Enable old security page if v2 disabled
-        somethingChanged = setTileEnabled(
-                new ComponentName(packageName,Settings.SecuritySettingsActivity.class.getName()),
-                !isSecurityV2Enabled,
-                isAdmin) || somethingChanged;
-
         somethingChanged = setTileEnabled(new ComponentName(packageName,
                         Settings.SimSettingsActivity.class.getName()),
                 Utils.showSimCardTile(this), isAdmin)
@@ -875,6 +857,19 @@ public class SettingsActivity extends SettingsDrawerActivity
         somethingChanged = setTileEnabled(new ComponentName(packageName,
                         Settings.WifiDisplaySettingsActivity.class.getName()),
                 WifiDisplaySettings.isAvailable(this), isAdmin)
+                || somethingChanged;
+
+        // Enable/disable the Me Card page.
+        final boolean isMeCardEnabled = featureFactory
+                .getAccountFeatureProvider()
+                .isMeCardEnabled(this);
+        somethingChanged = setTileEnabled(new ComponentName(packageName,
+                        Settings.MyDeviceInfoActivity.class.getName()),
+                isMeCardEnabled, isAdmin)
+                || somethingChanged;
+        somethingChanged = setTileEnabled(new ComponentName(packageName,
+                        Settings.DeviceInfoSettingsActivity.class.getName()),
+                !isMeCardEnabled, isAdmin)
                 || somethingChanged;
 
         if (UserHandle.MU_ENABLED && !isAdmin) {

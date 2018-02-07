@@ -28,6 +28,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.content.pm.UserInfo;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -39,6 +40,7 @@ import android.os.UserManager;
 import android.provider.Settings;
 import android.support.annotation.VisibleForTesting;
 import android.telephony.euicc.EuiccManager;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -73,7 +75,11 @@ import java.util.List;
 public class MasterClear extends InstrumentedPreferenceFragment {
     private static final String TAG = "MasterClear";
 
-    private static final int KEYGUARD_REQUEST = 55;
+    @VisibleForTesting static final int KEYGUARD_REQUEST = 55;
+    @VisibleForTesting static final int CREDENTIAL_CONFIRM_REQUEST = 56;
+
+    private static final String KEY_SHOW_ESIM_RESET_CHECKBOX
+            = "masterclear.allow_retain_esim_profiles_after_fdr";
 
     static final String ERASE_EXTERNAL_EXTRA = "erase_sd";
     static final String ERASE_ESIMS_EXTRA = "erase_esim";
@@ -82,6 +88,8 @@ public class MasterClear extends InstrumentedPreferenceFragment {
     private Button mInitiateButton;
     private View mExternalStorageContainer;
     @VisibleForTesting CheckBox mExternalStorage;
+    private View mEsimStorageContainer;
+    @VisibleForTesting CheckBox mEsimStorage;
     private ScrollView mScrollView;
 
     private final OnGlobalLayoutListener mOnGlobalLayoutListener = new OnGlobalLayoutListener() {
@@ -110,17 +118,26 @@ public class MasterClear extends InstrumentedPreferenceFragment {
                 request, res.getText(R.string.master_clear_title));
     }
 
+    @VisibleForTesting
+    boolean isValidRequestCode(int requestCode) {
+        return !((requestCode != KEYGUARD_REQUEST) && (requestCode != CREDENTIAL_CONFIRM_REQUEST));
+    }
+
+    @VisibleForTesting
+    boolean isShowFinalConfirmation(int requestCode, int resultCode) {
+        return (resultCode == Activity.RESULT_OK) || (requestCode == CREDENTIAL_CONFIRM_REQUEST);
+    }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode != KEYGUARD_REQUEST) {
+        if (!isValidRequestCode(requestCode)) {
             return;
         }
 
         // If the user entered a valid keyguard trace, present the final
         // confirmation prompt; otherwise, go back to the initial state.
-        if (resultCode == Activity.RESULT_OK) {
+        if (isShowFinalConfirmation(requestCode, resultCode)) {
             showFinalConfirmation();
         } else {
             establishInitialState();
@@ -131,11 +148,43 @@ public class MasterClear extends InstrumentedPreferenceFragment {
     void showFinalConfirmation() {
         Bundle args = new Bundle();
         args.putBoolean(ERASE_EXTERNAL_EXTRA, mExternalStorage.isChecked());
-        // TODO: Offer the user a choice to wipe eSIMs when it is technically feasible to do so.
-        args.putBoolean(ERASE_ESIMS_EXTRA, true);
+        args.putBoolean(ERASE_ESIMS_EXTRA, mEsimStorage.isChecked());
         ((SettingsActivity) getActivity()).startPreferencePanel(
                 this, MasterClearConfirm.class.getName(),
                 args, R.string.master_clear_confirm_title, null, null, 0);
+    }
+
+    @VisibleForTesting
+    boolean tryShowAccountConfirmation() {
+        final Context context = getActivity();
+        final String accountType = context.getString(R.string.account_type);
+        final String packageName = context.getString(R.string.account_confirmation_package);
+        final String className = context.getString(R.string.account_confirmation_class);
+        if (TextUtils.isEmpty(accountType)
+                || TextUtils.isEmpty(packageName)
+                || TextUtils.isEmpty(className)) {
+            return false;
+        }
+        final AccountManager am = AccountManager.get(context);
+        Account[] accounts = am.getAccountsByType(accountType);
+        if (accounts != null && accounts.length > 0) {
+            final Intent requestAccountConfirmation = new Intent()
+                .setPackage(packageName)
+                .setComponent(new ComponentName(packageName, className));
+            // Check to make sure that the intent is supported.
+            final PackageManager pm = context.getPackageManager();
+            final ResolveInfo resolution = pm.resolveActivity(requestAccountConfirmation, 0);
+            if (resolution != null
+                    && resolution.activityInfo != null
+                    && packageName.equals(resolution.activityInfo.packageName)) {
+                // Note that we need to check the packagename to make sure that an Activity resolver
+                // wasn't returned.
+                startActivityForResult(
+                    requestAccountConfirmation, CREDENTIAL_CONFIRM_REQUEST);
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -158,7 +207,10 @@ public class MasterClear extends InstrumentedPreferenceFragment {
                             .setAction(Intent.ACTION_FACTORY_RESET);
                     context.startActivity(requestFactoryReset);
                 }
-            } else if (!runKeyguardConfirmation(KEYGUARD_REQUEST)) {
+                return;
+            }
+
+            if (!tryShowAccountConfirmation() && !runKeyguardConfirmation(KEYGUARD_REQUEST)) {
                 showFinalConfirmation();
             }
         }
@@ -181,6 +233,8 @@ public class MasterClear extends InstrumentedPreferenceFragment {
         mInitiateButton.setOnClickListener(mInitiateListener);
         mExternalStorageContainer = mContentView.findViewById(R.id.erase_external_container);
         mExternalStorage = (CheckBox) mContentView.findViewById(R.id.erase_external);
+        mEsimStorageContainer = mContentView.findViewById(R.id.erase_esim_container);
+        mEsimStorage = (CheckBox) mContentView.findViewById(R.id.erase_esim);
         mScrollView = (ScrollView) mContentView.findViewById(R.id.master_clear_scrollview);
 
         /*
@@ -215,11 +269,25 @@ public class MasterClear extends InstrumentedPreferenceFragment {
         }
 
         if (showWipeEuicc()) {
-            final View esimAlsoErased = mContentView.findViewById(R.id.also_erases_esim);
-            esimAlsoErased.setVisibility(View.VISIBLE);
+            if (showWipeEuiccCheckbox()) {
+                TextView title = mContentView.findViewById(R.id.erase_esim_title);
+                title.setText(R.string.erase_esim_storage);
+                mEsimStorageContainer.setVisibility(View.VISIBLE);
+                mEsimStorageContainer.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        mEsimStorage.toggle();
+                    }
+                });
+            } else {
+                final View esimAlsoErased = mContentView.findViewById(R.id.also_erases_esim);
+                esimAlsoErased.setVisibility(View.VISIBLE);
 
-            final View noCancelMobilePlan = mContentView.findViewById(R.id.no_cancel_mobile_plan);
-            noCancelMobilePlan.setVisibility(View.VISIBLE);
+                final View noCancelMobilePlan = mContentView.findViewById(
+                        R.id.no_cancel_mobile_plan);
+                noCancelMobilePlan.setVisibility(View.VISIBLE);
+                mEsimStorage.setChecked(true /* checked */);
+            }
         }
 
         final UserManager um = (UserManager) getActivity().getSystemService(Context.USER_SERVICE);
@@ -258,6 +326,12 @@ public class MasterClear extends InstrumentedPreferenceFragment {
         }
         ContentResolver cr = context.getContentResolver();
         return Settings.Global.getInt(cr, Settings.Global.EUICC_PROVISIONED, 0) != 0;
+    }
+
+    @VisibleForTesting
+    boolean showWipeEuiccCheckbox() {
+        return SystemProperties
+                .getBoolean(KEY_SHOW_ESIM_RESET_CHECKBOX, false /* def */);
     }
 
     @VisibleForTesting

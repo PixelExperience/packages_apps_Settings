@@ -30,6 +30,7 @@ import com.android.settings.applications.LayoutPreference;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+import com.android.settings.widget.MasterCheckBoxPreference;
 import com.android.settings.widget.MasterSwitchPreference;
 import com.android.settings.widget.SwitchBar;
 import com.android.settings.wrapper.NotificationChannelGroupWrapper;
@@ -168,14 +169,7 @@ abstract public class NotificationSettingsBase extends DashboardFragment {
         mChannel = (args != null && args.containsKey(Settings.EXTRA_CHANNEL_ID)) ?
                 mBackend.getChannel(mPkg, mUid, args.getString(Settings.EXTRA_CHANNEL_ID)) : null;
 
-        NotificationChannelGroup group =
-                (args != null && args.containsKey(Settings.EXTRA_CHANNEL_GROUP_ID))
-                        ? mBackend.getGroupWithChannels(mPkg, mUid,
-                        args.getString(Settings.EXTRA_CHANNEL_GROUP_ID))
-                        : null;
-        if (group != null) {
-            mChannelGroup = new NotificationChannelGroupWrapper(group);
-        }
+        NotificationChannelGroup group = null;
 
         mSuspendedAppsAdmin = RestrictedLockUtils.checkIfApplicationIsSuspended(
                 mContext, mPkg, mUserId);
@@ -284,9 +278,9 @@ abstract public class NotificationSettingsBase extends DashboardFragment {
 
     protected Preference populateSingleChannelPrefs(PreferenceGroup parent,
             final NotificationChannel channel, final boolean groupBlocked) {
-        MasterSwitchPreference channelPref = new MasterSwitchPreference(
+        MasterCheckBoxPreference channelPref = new MasterCheckBoxPreference(
                 getPrefContext());
-        channelPref.setSwitchEnabled(mSuspendedAppsAdmin == null
+        channelPref.setCheckBoxEnabled(mSuspendedAppsAdmin == null
                 && isChannelBlockable(channel)
                 && isChannelConfigurable(channel)
                 && !groupBlocked);

@@ -54,7 +54,6 @@ import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.applications.LayoutPreference;
 import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.widget.ActionButtonPreference;
 import com.android.settings.widget.EntityHeaderController;
 import com.android.settings.wifi.WifiDetailPreference;
@@ -63,6 +62,7 @@ import com.android.settings.wifi.WifiDialog.WifiDialogListener;
 import com.android.settings.wifi.WifiUtils;
 import com.android.settings.wrapper.ConnectivityManagerWrapper;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnPause;
@@ -280,7 +280,7 @@ public class WifiDetailPreferenceController extends AbstractPreferenceController
                 .setButton1Text(R.string.forget)
                 .setButton1Positive(false)
                 .setButton1OnClickListener(view -> forgetNetwork())
-                .setButton2Text(R.string.support_sign_in_button_text)
+                .setButton2Text(R.string.wifi_sign_in_button_text)
                 .setButton2Positive(true)
                 .setButton2OnClickListener(view -> signIntoNetwork());
 

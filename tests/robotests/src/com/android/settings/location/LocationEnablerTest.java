@@ -43,6 +43,7 @@ import com.android.settings.TestConfig;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.ShadowSecureSettings;
 import com.android.settingslib.core.lifecycle.Lifecycle;
+import com.android.settingslib.wrapper.LocationManagerWrapper;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Before;
@@ -53,11 +54,15 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
+import org.robolectric.annotation.Implementation;
+import org.robolectric.annotation.Implements;
 
 @RunWith(SettingsRobolectricTestRunner.class)
 @Config(manifest = TestConfig.MANIFEST_PATH,
         sdk = TestConfig.SDK_VERSION,
-        shadows = {ShadowSecureSettings.class})
+        shadows = {
+            ShadowSecureSettings.class,
+            LocationEnablerTest.ShadowLocationManagerWrapper.class})
 public class LocationEnablerTest {
 
     @Mock
@@ -124,7 +129,7 @@ public class LocationEnablerTest {
     }
 
     @Test
-    public void isEnabled_locationONotRestricted_shouldReturnTrue() {
+    public void isEnabled_locationNotRestricted_shouldReturnTrue() {
         when(mUserManager.hasUserRestriction(anyString())).thenReturn(false);
 
         assertThat(mEnabler.isEnabled(Settings.Secure.LOCATION_MODE_BATTERY_SAVING)).isTrue();
@@ -174,18 +179,45 @@ public class LocationEnablerTest {
     }
 
     @Test
-    public void setLocationMode_notRestricted_shouldBroadcastUpdate() {
+    public void setLocationMode_notRestricted_shouldBroadcastUpdateAndSetChanger() {
         when(mUserManager.hasUserRestriction(anyString())).thenReturn(false);
         Settings.Secure.putInt(mContext.getContentResolver(),
                 Settings.Secure.LOCATION_MODE, Settings.Secure.LOCATION_MODE_BATTERY_SAVING);
-
         mEnabler.setLocationMode(Settings.Secure.LOCATION_MODE_HIGH_ACCURACY);
 
         verify(mContext).sendBroadcastAsUser(
                 argThat(actionMatches(LocationManager.MODE_CHANGING_ACTION)),
                 eq(UserHandle.of(ActivityManager.getCurrentUser())),
                 eq(WRITE_SECURE_SETTINGS));
+        assertThat(Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.LOCATION_CHANGER, Settings.Secure.LOCATION_CHANGER_UNKNOWN))
+                .isEqualTo(Settings.Secure.LOCATION_CHANGER_SYSTEM_SETTINGS);
+    }
 
+    @Test
+    public void setLocationEnabled_notRestricted_shouldRefreshLocation() {
+        when(mUserManager.hasUserRestriction(anyString())).thenReturn(false);
+        Settings.Secure.putInt(mContext.getContentResolver(),
+            Settings.Secure.LOCATION_MODE, Settings.Secure.LOCATION_MODE_OFF);
+        mEnabler.setLocationEnabled(true);
+
+        verify(mEnabler).refreshLocationMode();
+    }
+
+    @Test
+    public void setLocationEnabled_notRestricted_shouldBroadcastUpdateAndSetChanger() {
+        when(mUserManager.hasUserRestriction(anyString())).thenReturn(false);
+        Settings.Secure.putInt(mContext.getContentResolver(),
+            Settings.Secure.LOCATION_MODE, Settings.Secure.LOCATION_MODE_OFF);
+        mEnabler.setLocationEnabled(true);
+
+        verify(mContext).sendBroadcastAsUser(
+            argThat(actionMatches(LocationManager.MODE_CHANGING_ACTION)),
+            eq(UserHandle.of(ActivityManager.getCurrentUser())),
+            eq(WRITE_SECURE_SETTINGS));
+        assertThat(Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.LOCATION_CHANGER, Settings.Secure.LOCATION_CHANGER_UNKNOWN))
+                .isEqualTo(Settings.Secure.LOCATION_CHANGER_SYSTEM_SETTINGS);
     }
 
     @Test
@@ -209,6 +241,23 @@ public class LocationEnablerTest {
         assertThat(mEnabler.isManagedProfileRestrictedByBase()).isTrue();
     }
 
+    @Test
+    public void setRestriction_getShareLocationEnforcedAdmin_shouldReturnEnforcedAdmin() {
+        int userId = UserHandle.myUserId();
+        List<UserManager.EnforcingUser> enforcingUsers = new ArrayList<>();
+        // Add two enforcing users so that RestrictedLockUtils.checkIfRestrictionEnforced returns
+        // non-null.
+        enforcingUsers.add(new UserManager.EnforcingUser(userId,
+                UserManager.RESTRICTION_SOURCE_DEVICE_OWNER));
+        enforcingUsers.add(new UserManager.EnforcingUser(userId,
+                UserManager.RESTRICTION_SOURCE_PROFILE_OWNER));
+        when(mUserManager.getUserRestrictionSources(
+                UserManager.DISALLOW_CONFIG_LOCATION_MODE, UserHandle.of(userId)))
+                .thenReturn(enforcingUsers);
+
+        assertThat(mEnabler.getShareLocationEnforcedAdmin(userId) != null).isTrue();
+    }
+
     private void mockManagedProfile() {
         final List<UserHandle> userProfiles = new ArrayList<>();
         final UserHandle userHandle = mock(UserHandle.class);
@@ -222,5 +271,14 @@ public class LocationEnablerTest {
 
     private static ArgumentMatcher<Intent> actionMatches(String expected) {
         return intent -> TextUtils.equals(expected, intent.getAction());
+    }
+
+    @Implements(value = LocationManagerWrapper.class)
+    public static class ShadowLocationManagerWrapper {
+
+        @Implementation
+        public void setLocationEnabledForUser(boolean enabled, UserHandle userHandle) {
+            // Do nothing
+        }
     }
 }

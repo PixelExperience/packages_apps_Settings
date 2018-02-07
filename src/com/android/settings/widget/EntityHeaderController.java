@@ -16,6 +16,10 @@
 
 package com.android.settings.widget;
 
+import static com.android.internal.logging.nano.MetricsProto.MetricsEvent
+        .ACTION_OPEN_APP_NOTIFICATION_SETTING;
+import static com.android.internal.logging.nano.MetricsProto.MetricsEvent.ACTION_OPEN_APP_SETTING;
+
 import android.annotation.IdRes;
 import android.annotation.UserIdInt;
 import android.app.ActionBar;
@@ -27,6 +31,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 import android.os.UserHandle;
 import android.support.annotation.IntDef;
 import android.support.annotation.VisibleForTesting;
@@ -54,20 +59,18 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import static com.android.internal.logging.nano.MetricsProto.MetricsEvent
-        .ACTION_OPEN_APP_NOTIFICATION_SETTING;
-import static com.android.internal.logging.nano.MetricsProto.MetricsEvent.ACTION_OPEN_APP_SETTING;
-
 public class EntityHeaderController {
 
     @IntDef({ActionType.ACTION_NONE,
             ActionType.ACTION_APP_PREFERENCE,
-            ActionType.ACTION_NOTIF_PREFERENCE})
+            ActionType.ACTION_NOTIF_PREFERENCE,
+            ActionType.ACTION_DND_RULE_PREFERENCE,})
     @Retention(RetentionPolicy.SOURCE)
     public @interface ActionType {
         int ACTION_NONE = 0;
         int ACTION_APP_PREFERENCE = 1;
         int ACTION_NOTIF_PREFERENCE = 2;
+        int ACTION_DND_RULE_PREFERENCE = 3;
     }
 
     public static final String PREF_KEY_APP_HEADER = "pref_app_header";
@@ -97,6 +100,8 @@ public class EntityHeaderController {
     private boolean mHasAppInfoLink;
 
     private boolean mIsInstantApp;
+
+    private View.OnClickListener mEditRuleNameOnClickListener;
 
     /**
      * Creates a new instance of the controller.
@@ -211,6 +216,11 @@ public class EntityHeaderController {
         return this;
     }
 
+    public EntityHeaderController setEditZenRuleNameListener(View.OnClickListener listener) {
+        this.mEditRuleNameOnClickListener = listener;
+        return this;
+    }
+
     /**
      * Done mutating entity header, rebinds everything and return a new {@link LayoutPreference}.
      */
@@ -291,6 +301,11 @@ public class EntityHeaderController {
         return;
     }
 
+    /**
+     * Styles the action bar (elevation, scrolling behaviors, color, etc).
+     * <p/>
+     * This method must be called after {@link Fragment#onCreate(Bundle)}.
+     */
     public EntityHeaderController styleActionBar(Activity activity) {
         if (activity == null) {
             Log.w(TAG, "No activity, cannot style actionbar.");
@@ -324,6 +339,16 @@ public class EntityHeaderController {
             return;
         }
         switch (action) {
+            case ActionType.ACTION_DND_RULE_PREFERENCE: {
+                if (mEditRuleNameOnClickListener == null) {
+                    button.setVisibility(View.GONE);
+                } else {
+                    button.setImageResource(R.drawable.ic_mode_edit);
+                    button.setVisibility(View.VISIBLE);
+                    button.setOnClickListener(mEditRuleNameOnClickListener);
+                }
+                return;
+            }
             case ActionType.ACTION_NOTIF_PREFERENCE: {
                 if (mAppNotifPrefIntent == null) {
                     button.setVisibility(View.GONE);

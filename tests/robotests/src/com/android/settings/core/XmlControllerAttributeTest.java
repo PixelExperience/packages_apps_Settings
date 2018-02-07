@@ -2,6 +2,8 @@ package com.android.settings.core;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 
+import static org.mockito.Mockito.mock;
+
 import android.content.Context;
 import android.content.res.XmlResourceParser;
 import android.provider.SearchIndexableResource;
@@ -13,10 +15,11 @@ import com.android.settings.R;
 import com.android.settings.TestConfig;
 import com.android.settings.search.DatabaseIndexingUtils;
 import com.android.settings.search.Indexable;
-import com.android.settings.search.SearchIndexableResources;
+import com.android.settings.search.SearchFeatureProvider;
+import com.android.settings.search.SearchFeatureProviderImpl;
 import com.android.settings.search.XmlParserUtils;
 import com.android.settings.security.SecuritySettings;
-import com.android.settings.security.SecuritySettingsV2;
+import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 
 import org.junit.After;
@@ -28,7 +31,6 @@ import org.robolectric.annotation.Config;
 import org.xmlpull.v1.XmlPullParser;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -43,25 +45,13 @@ public class XmlControllerAttributeTest {
     // List of classes that are too hard to mock in order to retrieve xml information.
     private final List<Class> illegalClasses = new ArrayList<>(
             Arrays.asList(
-                    SecuritySettings.class,
-                    SecuritySettingsV2.class
+                    SecuritySettings.class
             ));
 
     // List of XML that could be retrieved from the illegalClasses list.
     private final List<Integer> whitelistXml = new ArrayList<>(
             Arrays.asList(
-                    R.xml.security_settings_misc,
-                    R.xml.security_settings_lockscreen_profile,
-                    R.xml.security_settings_lockscreen,
-                    R.xml.security_settings_chooser,
-                    R.xml.security_settings_pattern_profile,
-                    R.xml.security_settings_pin_profile,
-                    R.xml.security_settings_password_profile,
-                    R.xml.security_settings_pattern,
-                    R.xml.security_settings_pin,
-                    R.xml.security_settings_password,
-                    R.xml.security_settings,
-                    R.xml.security_settings_status
+                    R.xml.security_dashboard_settings
             ));
 
     private static final String NO_VALID_CONSTRUCTOR_ERROR =
@@ -76,25 +66,22 @@ public class XmlControllerAttributeTest {
     private static final String BAD_CLASSNAME_ERROR =
             "The following controllers set in the XML did not have valid class names:\n";
 
-    private static final String BAD_CONSTRUCTOR_ERROR =
-            "The constructor provided by the following classes were insufficient to instantiate "
-                    + "the object. It could be due to being an interface, abstract, or an "
-                    + "IllegalAccessException. Please fix the following classes:\n";
-
     Context mContext;
-
-    private Set<Class> mProviderClassesCopy;
+    SearchFeatureProvider mSearchProvider;
+    private FakeFeatureFactory mFakeFeatureFactory;
 
     @Before
     public void setUp() {
         mContext = RuntimeEnvironment.application;
-        mProviderClassesCopy = new HashSet<>(SearchIndexableResources.providerValues());
+        mSearchProvider = new SearchFeatureProviderImpl();
+        mFakeFeatureFactory = FakeFeatureFactory.setupForTest();
+        mFakeFeatureFactory.searchFeatureProvider = mSearchProvider;
     }
 
     @After
     public void cleanUp() {
-        SearchIndexableResources.providerValues().clear();
-        SearchIndexableResources.providerValues().addAll(mProviderClassesCopy);
+        mFakeFeatureFactory.searchFeatureProvider = mock(
+                SearchFeatureProvider.class);
     }
 
     @Test
@@ -106,7 +93,6 @@ public class XmlControllerAttributeTest {
         Set<String> invalidConstructors = new HashSet<>();
         Set<String> invalidClassHierarchy = new HashSet<>();
         Set<String> badClassNameControllers = new HashSet<>();
-        Set<String> badConstructorControllers = new HashSet<>();
 
         for (int resId : xmlSet) {
             xmlControllers.addAll(getXmlControllers(resId));
@@ -127,13 +113,7 @@ public class XmlControllerAttributeTest {
                 continue;
             }
 
-            Object controller = getObjectFromConstructor(constructor);
-            if (controller == null) {
-                badConstructorControllers.add(controllerClassName);
-                continue;
-            }
-
-            if (!(controller instanceof BasePreferenceController)) {
+            if (!isBasePreferenceController(clazz)) {
                 invalidClassHierarchy.add(controllerClassName);
             }
         }
@@ -144,19 +124,17 @@ public class XmlControllerAttributeTest {
                 invalidClassHierarchy);
         final String badClassNameError = buildErrorMessage(BAD_CLASSNAME_ERROR,
                 badClassNameControllers);
-        final String badConstructorError = buildErrorMessage(BAD_CONSTRUCTOR_ERROR,
-                badConstructorControllers);
 
         assertWithMessage(invalidConstructorError).that(invalidConstructors).isEmpty();
         assertWithMessage(invalidClassHierarchyError).that(invalidClassHierarchy).isEmpty();
         assertWithMessage(badClassNameError).that(badClassNameControllers).isEmpty();
-        assertWithMessage(badConstructorError).that(badConstructorControllers).isEmpty();
     }
 
     private Set<Integer> getIndexableXml() {
         Set<Integer> xmlResSet = new HashSet();
 
-        Collection<Class> indexableClasses = SearchIndexableResources.providerValues();
+        Collection<Class> indexableClasses =
+                mSearchProvider.getSearchIndexableResources().getProviderValues();
         indexableClasses.removeAll(illegalClasses);
 
         for (Class clazz : indexableClasses) {
@@ -253,25 +231,16 @@ public class XmlControllerAttributeTest {
         return constructor;
     }
 
-    private Object getObjectFromConstructor(Constructor<?> constructor) {
-        Object controller = null;
-
-        try {
-            controller = constructor.newInstance(mContext);
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException |
-                IllegalArgumentException e) {
+    /**
+     * Make sure that {@link BasePreferenceController} is in the class hierarchy.
+     */
+    private boolean isBasePreferenceController(Class<?> clazz) {
+        while (clazz != null) {
+            clazz = clazz.getSuperclass();
+            if (BasePreferenceController.class.equals(clazz)) {
+                return true;
+            }
         }
-
-        if (controller != null) {
-            return controller;
-        }
-
-        try {
-            controller = constructor.newInstance(mContext, "key");
-        } catch (InstantiationException | IllegalAccessException | InvocationTargetException |
-                IllegalArgumentException e) {
-        }
-
-        return controller;
+        return false;
     }
 }

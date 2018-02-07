@@ -113,6 +113,7 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.password.ChooseLockSettingsHelper;
 import com.android.settings.wrapper.DevicePolicyManagerWrapper;
 import com.android.settings.wrapper.FingerprintManagerWrapper;
+import com.android.settingslib.core.instrumentation.VisibilityLoggerMixin;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -519,7 +520,8 @@ public final class Utils extends com.android.settingslib.Utils {
             Fragment resultTo, int resultRequestCode, String titleResPackageName, int titleResId,
             CharSequence title, boolean isShortcut, int metricsCategory) {
         startWithFragment(context, fragmentName, args, resultTo, resultRequestCode,
-                titleResPackageName, titleResId, title, isShortcut, metricsCategory, 0);
+                titleResPackageName, titleResId, title, isShortcut, metricsCategory,
+                Intent.FLAG_ACTIVITY_NEW_TASK);
     }
 
 
@@ -581,7 +583,7 @@ public final class Utils extends com.android.settingslib.Utils {
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_TITLE_RESID, titleResId);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_TITLE, title);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_AS_SHORTCUT, isShortcut);
-        intent.putExtra(SettingsActivity.EXTRA_SOURCE_METRICS_CATEGORY, sourceMetricsCategory);
+        intent.putExtra(VisibilityLoggerMixin.EXTRA_SOURCE_METRICS_CATEGORY, sourceMetricsCategory);
         return intent;
     }
 
