@@ -125,6 +125,13 @@
         android:title="@string/device_theme"
         android:summary="@string/summary_placeholder" />
 
+    <ListPreference
+        android:key="systemui_theme_style"
+        android:title="@string/systemui_theme_style_title"
+        android:entries="@array/systemui_theme_style_entries"
+        android:entryValues="@array/systemui_theme_style_values"
+        android:persistent="false" />
+
     <Preference
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
