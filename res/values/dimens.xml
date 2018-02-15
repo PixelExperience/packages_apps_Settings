@@ -22,7 +22,7 @@
     <dimen name="action_bar_switch_padding">16dip</dimen>
 
     <dimen name="app_icon_size">40dip</dimen>
-    <dimen name="secondary_app_icon_size">24dp</dimen>
+    <dimen name="secondary_app_icon_size">32dp</dimen>
     <dimen name="min_tap_target_size">48dp</dimen>
     <dimen name="screen_margin_sides">64dip</dimen>
     <dimen name="screen_margin_top">72dip</dimen>
@@ -110,7 +110,7 @@
     <dimen name="dashboard_tile_foreground_image_inset">6dp</dimen>
 
     <!-- Dashboard tile image margin start / end -->
-    <dimen name="dashboard_tile_image_margin">24dp</dimen>
+    <dimen name="dashboard_tile_image_margin">18dp</dimen>
 
     <!-- SwitchBar sub settings margin start / end -->
     <dimen name="switchbar_subsettings_margin_start">72dp</dimen>
@@ -119,8 +119,8 @@
     <!-- The following two margins need to match, with the caveat that
          the second should be negative. The second one ensures that the icons and text
          align despite the additional padding caused by the search bar's card background. -->
-    <dimen name="search_bar_margin">8dp</dimen>
-    <dimen name="search_bar_negative_margin">-8dp</dimen>
+    <dimen name="search_bar_margin">16dp</dimen>
+    <dimen name="search_bar_negative_margin">-16dp</dimen>
 
     <dimen name="search_bar_height">48dp</dimen>
     <dimen name="search_bar_corner_radius">2dp</dimen>
@@ -307,7 +307,7 @@
     <dimen name="suggestion_card_width_one_card">332dp</dimen>
     <dimen name="suggestion_card_width_two_cards">162dp</dimen>
     <dimen name="suggestion_card_width_multiple_cards">156dp</dimen>
-    <dimen name="suggestion_card_outer_margin">16dp</dimen>
+    <dimen name="suggestion_card_outer_margin">14dp</dimen>
     <dimen name="suggestion_card_inner_margin">12dp</dimen>
     <dimen name="suggestion_card_padding_bottom_one_card">16dp</dimen>
     <dimen name="suggestion_card_corner_radius">2dp</dimen>

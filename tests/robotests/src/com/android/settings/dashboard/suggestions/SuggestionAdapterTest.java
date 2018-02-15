@@ -16,12 +16,20 @@
 package com.android.settings.dashboard.suggestions;
 
 import static com.google.common.truth.Truth.assertThat;
+
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import android.app.PendingIntent;
 import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
 import android.service.settings.suggestions.Suggestion;
 import android.view.LayoutInflater;
@@ -46,6 +54,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
+import org.robolectric.util.ReflectionHelpers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,7 +77,7 @@ public class SuggestionAdapterTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        mContext = RuntimeEnvironment.application;
+        mContext = spy(RuntimeEnvironment.application);
         mFeatureFactory = FakeFeatureFactory.setupForTest();
 
         final Suggestion suggestion1 = new Suggestion.Builder("id1")
@@ -87,20 +96,21 @@ public class SuggestionAdapterTest {
     @Test
     public void getItemCount_shouldReturnListSize() {
         mSuggestionAdapter = new SuggestionAdapter(mContext, mSuggestionControllerMixin,
-                mOneSuggestion, new ArrayList<>());
+            null /* savedInstanceState */, null /* callback */, null /* lifecycle */);
+        mSuggestionAdapter.setSuggestions(mOneSuggestion);
         assertThat(mSuggestionAdapter.getItemCount()).isEqualTo(1);
 
-        mSuggestionAdapter = new SuggestionAdapter(mContext, mSuggestionControllerMixin,
-                mTwoSuggestions, new ArrayList<>());
+        mSuggestionAdapter.setSuggestions(mTwoSuggestions);
         assertThat(mSuggestionAdapter.getItemCount()).isEqualTo(2);
     }
 
     @Test
     public void getItemViewType_shouldReturnSuggestionTile() {
         mSuggestionAdapter = new SuggestionAdapter(mContext, mSuggestionControllerMixin,
-                mOneSuggestion, new ArrayList<>());
+            null /* savedInstanceState */, null /* callback */, null /* lifecycle */);
+        mSuggestionAdapter.setSuggestions(mOneSuggestion);
         assertThat(mSuggestionAdapter.getItemViewType(0))
-                .isEqualTo(R.layout.suggestion_tile);
+            .isEqualTo(R.layout.suggestion_tile);
     }
 
     @Test
@@ -112,19 +122,22 @@ public class SuggestionAdapterTest {
                 .setSummary("456")
                 .build());
         mSuggestionAdapter = new SuggestionAdapter(mContext, mSuggestionControllerMixin,
-                suggestions, new ArrayList<>());
+            null /* savedInstanceState */, null /* callback */, null /* lifecycle */);
+        mSuggestionAdapter.setSuggestions(suggestions);
 
         assertThat(mSuggestionAdapter.getItemViewType(0))
-                .isEqualTo(R.layout.suggestion_tile_with_button);
+            .isEqualTo(R.layout.suggestion_tile_with_button);
     }
 
     @Test
     public void onBindViewHolder_shouldLog() {
         final View view = spy(LayoutInflater.from(mContext).inflate(
-                R.layout.suggestion_tile, new LinearLayout(mContext), true));
+            R.layout.suggestion_tile, new LinearLayout(mContext), true));
         mSuggestionHolder = new DashboardAdapter.DashboardItemHolder(view);
         mSuggestionAdapter = new SuggestionAdapter(mContext, mSuggestionControllerMixin,
-                mOneSuggestion, new ArrayList<>());
+            null /* savedInstanceState */, null /* callback */, null /* lifecycle */);
+        mSuggestionAdapter.setSuggestions(mOneSuggestion);
+        doReturn("sans").when(mContext).getString(anyInt());
 
         // Bind twice
         mSuggestionAdapter.onBindViewHolder(mSuggestionHolder, 0);
@@ -150,6 +163,32 @@ public class SuggestionAdapterTest {
     }
 
     @Test
+    public void onBindViewHolder_hasButton_buttonShouldHandleClick()
+        throws PendingIntent.CanceledException {
+        final List<Suggestion> suggestions = new ArrayList<>();
+        final PendingIntent pendingIntent = mock(PendingIntent.class);
+        suggestions.add(new Suggestion.Builder("id")
+            .setFlags(Suggestion.FLAG_HAS_BUTTON)
+            .setTitle("123")
+            .setSummary("456")
+            .setPendingIntent(pendingIntent)
+            .build());
+        mSuggestionAdapter = new SuggestionAdapter(mContext, mSuggestionControllerMixin,
+            null /* savedInstanceState */, null /* callback */, null /* lifecycle */);
+        mSuggestionAdapter.setSuggestions(suggestions);
+        mSuggestionHolder = mSuggestionAdapter.onCreateViewHolder(
+            new FrameLayout(RuntimeEnvironment.application),
+            mSuggestionAdapter.getItemViewType(0));
+        doReturn("sans").when(mContext).getString(anyInt());
+
+        mSuggestionAdapter.onBindViewHolder(mSuggestionHolder, 0);
+        mSuggestionHolder.itemView.findViewById(android.R.id.primary).performClick();
+
+        verify(mSuggestionControllerMixin).launchSuggestion(suggestions.get(0));
+        verify(pendingIntent).send();
+    }
+
+    @Test
     public void getSuggestions_shouldReturnSuggestionWhenMatch() {
         final List<Suggestion> suggestions = makeSuggestions("pkg1");
         setupSuggestions(mActivity, suggestions);
@@ -157,9 +196,89 @@ public class SuggestionAdapterTest {
         assertThat(mSuggestionAdapter.getSuggestion(0)).isNotNull();
     }
 
+    @Test
+    public void onBindViewHolder_closeButtonShouldHandleClick()
+        throws PendingIntent.CanceledException {
+        final List<Suggestion> suggestions = makeSuggestions("pkg1");
+        final SuggestionAdapter.Callback callback = mock(SuggestionAdapter.Callback.class);
+        mSuggestionAdapter = new SuggestionAdapter(mActivity, mSuggestionControllerMixin,
+            null /* savedInstanceState */, callback, null /* lifecycle */);
+        mSuggestionAdapter.setSuggestions(suggestions);
+        mSuggestionHolder = mSuggestionAdapter.onCreateViewHolder(
+            new FrameLayout(RuntimeEnvironment.application),
+            mSuggestionAdapter.getItemViewType(0));
+
+        mSuggestionAdapter.onBindViewHolder(mSuggestionHolder, 0);
+        mSuggestionHolder.itemView.findViewById(R.id.close_button).performClick();
+
+        final Suggestion suggestion = suggestions.get(0);
+        verify(mFeatureFactory.suggestionsFeatureProvider).dismissSuggestion(
+            mActivity, mSuggestionControllerMixin, suggestion);
+        verify(callback).onSuggestionClosed(suggestion);
+    }
+
+    @Test
+    public void onBindViewHolder_iconNotTintable_shouldNotTintIcon()
+            throws PendingIntent.CanceledException {
+        final Icon icon = mock(Icon.class);
+        final Suggestion suggestion = new Suggestion.Builder("pkg1")
+            .setPendingIntent(mock(PendingIntent.class))
+            .setIcon(icon)
+            .build();
+        final List<Suggestion> suggestions = new ArrayList<>();
+        suggestions.add(suggestion);
+        mSuggestionAdapter = new SuggestionAdapter(mActivity, mSuggestionControllerMixin,
+            null /* savedInstanceState */, null /* callback */, null /* lifecycle */);
+        mSuggestionAdapter.setSuggestions(suggestions);
+        mSuggestionHolder = mSuggestionAdapter.onCreateViewHolder(
+            new FrameLayout(RuntimeEnvironment.application),
+            mSuggestionAdapter.getItemViewType(0));
+        DashboardAdapter.IconCache cache = mock(DashboardAdapter.IconCache.class);
+        final Drawable drawable = mock(Drawable.class);
+        when(cache.getIcon(icon)).thenReturn(drawable);
+        ReflectionHelpers.setField(mSuggestionAdapter, "mCache", cache);
+
+        mSuggestionAdapter.onBindViewHolder(mSuggestionHolder, 0);
+
+        verify(drawable, never()).setTint(anyInt());
+    }
+
+    @Test
+    public void onBindViewHolder_iconTintable_shouldTintIcon()
+            throws PendingIntent.CanceledException {
+        final Icon icon = mock(Icon.class);
+        final int FLAG_ICON_TINTABLE = 1 << 1;
+        final Suggestion suggestion = new Suggestion.Builder("pkg1")
+            .setPendingIntent(mock(PendingIntent.class))
+            .setIcon(icon)
+            .setFlags(FLAG_ICON_TINTABLE)
+            .build();
+        final List<Suggestion> suggestions = new ArrayList<>();
+        suggestions.add(suggestion);
+        mSuggestionAdapter = new SuggestionAdapter(mActivity, mSuggestionControllerMixin,
+            null /* savedInstanceState */, null /* callback */, null /* lifecycle */);
+        mSuggestionAdapter.setSuggestions(suggestions);
+        mSuggestionHolder = mSuggestionAdapter.onCreateViewHolder(
+            new FrameLayout(RuntimeEnvironment.application),
+            mSuggestionAdapter.getItemViewType(0));
+        DashboardAdapter.IconCache cache = mock(DashboardAdapter.IconCache.class);
+        final Drawable drawable = mock(Drawable.class);
+        when(cache.getIcon(icon)).thenReturn(drawable);
+        ReflectionHelpers.setField(mSuggestionAdapter, "mCache", cache);
+        TypedArray typedArray = mock(TypedArray.class);
+        final int colorAccent = 1234;
+        when(mActivity.obtainStyledAttributes(any())).thenReturn(typedArray);
+        when(typedArray.getColor(anyInt(), anyInt())).thenReturn(colorAccent);
+
+        mSuggestionAdapter.onBindViewHolder(mSuggestionHolder, 0);
+
+        verify(drawable).setTint(colorAccent);
+    }
+
     private void setupSuggestions(Context context, List<Suggestion> suggestions) {
         mSuggestionAdapter = new SuggestionAdapter(context, mSuggestionControllerMixin,
-                suggestions, new ArrayList<>());
+            null /* savedInstanceState */, null /* callback */, null /* lifecycle */);
+        mSuggestionAdapter.setSuggestions(suggestions);
         mSuggestionHolder = mSuggestionAdapter.onCreateViewHolder(
                 new FrameLayout(RuntimeEnvironment.application),
                 mSuggestionAdapter.getItemViewType(0));
