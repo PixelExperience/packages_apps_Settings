@@ -51,5 +51,9 @@
     <string name="systemui_theme_style_dark">Dark</string>
     <string name="applying_theme_toast">Applying theme, please wait...</string>
     <string name="theme_applied_toast">Theme applied!</string>
+    <string name="accent_picker_dialog_title">Select an accent color</string>
+    <string name="theme_accent_picker_title">Accent color</string>
+    <string name="theme_accent_picker_summary">Select system theme accent color</string>
+    <string name="theme_accent_picker_default">Default</string>
 
 </resources>
