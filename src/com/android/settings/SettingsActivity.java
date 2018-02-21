@@ -35,6 +35,8 @@ import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.support.annotation.VisibleForTesting;
@@ -59,6 +61,7 @@ import com.android.settings.core.gateway.SettingsGateway;
 import com.android.settings.dashboard.DashboardFeatureProvider;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.overlay.FeatureFactory;
+import com.android.settings.sim.SimSettings;
 import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.widget.SwitchBar;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
@@ -70,6 +73,8 @@ import com.android.settingslib.drawer.SettingsDrawerActivity;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+
+import org.codeaurora.internal.IExtTelephony;
 
 public class SettingsActivity extends SettingsDrawerActivity
         implements PreferenceManager.OnPreferenceTreeClickListener,
@@ -708,6 +713,26 @@ public class SettingsActivity extends SettingsDrawerActivity
      */
     private Fragment switchToFragment(String fragmentName, Bundle args, boolean validate,
             boolean addToBackStack, int titleResId, CharSequence title, boolean withTransition) {
+        IExtTelephony extTelephony =
+                IExtTelephony.Stub.asInterface(ServiceManager.getService("extphone"));
+        try {
+            if (fragmentName.equals(SimSettings.class.getName()) && extTelephony != null &&
+                    extTelephony.isVendorApkAvailable("com.qualcomm.qti.simsettings")) {
+                Log.i(LOG_TAG, "switchToFragment, launch simSettings  ");
+                Intent provisioningIntent =
+                        new Intent("com.android.settings.sim.SIM_SUB_INFO_SETTINGS");
+                if (!getPackageManager().queryIntentActivities(provisioningIntent, 0).isEmpty()) {
+                    startActivity(provisioningIntent);
+                }
+                finish();
+                return null;
+            }
+        } catch (RemoteException e) {
+            // could not connect to extphone service, launch the default activity
+            Log.i(LOG_TAG,
+                    "couldn't connect to extphone service, launch the default sim cards activity");
+        }
+
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
