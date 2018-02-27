@@ -16,7 +16,7 @@
 
 package com.android.settings.security.trustagent;
 
-import static com.android.settings.security.SecuritySettingsV2.CHANGE_TRUST_AGENT_SETTINGS;
+import static com.android.settings.security.SecuritySettings.CHANGE_TRUST_AGENT_SETTINGS;
 
 import android.app.Activity;
 import android.content.Context;
@@ -31,10 +31,11 @@ import android.text.TextUtils;
 
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
+import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.password.ChooseLockSettingsHelper;
 import com.android.settings.security.SecurityFeatureProvider;
-import com.android.settings.security.SecuritySettingsV2;
+import com.android.settings.security.SecuritySettings;
 import com.android.settingslib.RestrictedPreference;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -46,7 +47,8 @@ import com.android.settingslib.core.lifecycle.events.OnSaveInstanceState;
 import java.util.List;
 
 public class TrustAgentListPreferenceController extends AbstractPreferenceController
-        implements LifecycleObserver, OnSaveInstanceState, OnCreate, OnResume {
+        implements PreferenceControllerMixin, LifecycleObserver, OnSaveInstanceState,
+        OnCreate, OnResume {
 
     private static final String TRUST_AGENT_CLICK_INTENT = "trust_agent_click_intent";
     @VisibleForTesting
@@ -57,12 +59,12 @@ public class TrustAgentListPreferenceController extends AbstractPreferenceContro
 
     private final LockPatternUtils mLockPatternUtils;
     private final TrustAgentManager mTrustAgentManager;
-    private final SecuritySettingsV2 mHost;
+    private final SecuritySettings mHost;
 
     private Intent mTrustAgentClickIntent;
     private PreferenceCategory mSecurityCategory;
 
-    public TrustAgentListPreferenceController(Context context, SecuritySettingsV2 host,
+    public TrustAgentListPreferenceController(Context context, SecuritySettings host,
             Lifecycle lifecycle) {
         super(context);
         final SecurityFeatureProvider provider = FeatureFactory.getFactory(context)
@@ -77,7 +79,7 @@ public class TrustAgentListPreferenceController extends AbstractPreferenceContro
 
     @Override
     public boolean isAvailable() {
-        return true;
+        return mContext.getResources().getBoolean(R.bool.config_show_trust_agent_click_intent);
     }
 
     @Override
@@ -143,6 +145,10 @@ public class TrustAgentListPreferenceController extends AbstractPreferenceContro
             } else {
                 mSecurityCategory.removePreference(oldAgent);
             }
+        }
+        // If for some reason the preference is no longer available, don't proceed to add.
+        if (!isAvailable()) {
+            return;
         }
         // Then add new ones.
         final boolean hasSecurity = mLockPatternUtils.isSecure(MY_USER_ID);

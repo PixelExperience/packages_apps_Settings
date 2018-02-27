@@ -18,6 +18,11 @@ package com.android.settings.fuelgauge;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyInt;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
@@ -34,10 +39,12 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.UserManager;
 import android.support.v14.preference.SwitchPreference;
+import android.support.v7.preference.Preference;
 import android.widget.Button;
 
 import com.android.settings.R;
 import com.android.settings.TestConfig;
+import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
 import com.android.settings.testutils.shadow.ShadowFragment;
 import com.android.settings.wrapper.DevicePolicyManagerWrapper;
@@ -87,19 +94,21 @@ public class BackgroundActivityPreferenceControllerTest {
     private DevicePolicyManager mDevicePolicyManager;
     @Mock
     private DevicePolicyManagerWrapper mDevicePolicyManagerWrapper;
-    @Mock
+    @Mock(answer = Answers.RETURNS_DEEP_STUBS)
     private AdvancedPowerUsageDetail mFragment;
     @Mock
     private PowerWhitelistBackend mPowerWhitelistBackend;
     private BackgroundActivityPreferenceController mController;
-    private SwitchPreference mPreference;
+    private Preference mPreference;
     private Context mShadowContext;
+    private BatteryUtils mBatteryUtils;
 
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
 
         mShadowContext = RuntimeEnvironment.application;
+        FakeFeatureFactory.setupForTest();
         when(mContext.getPackageManager()).thenReturn(mPackageManager);
         when(mContext.getSystemService(Context.APP_OPS_SERVICE)).thenReturn(mAppOpsManager);
         when(mContext.getSystemService(Context.USER_SERVICE)).thenReturn(mUserManager);
@@ -115,58 +124,45 @@ public class BackgroundActivityPreferenceControllerTest {
         mHighApplicationInfo.targetSdkVersion = Build.VERSION_CODES.O;
         mLowApplicationInfo.targetSdkVersion = Build.VERSION_CODES.L;
 
-        mPreference = new SwitchPreference(mShadowContext);
+        mBatteryUtils = spy(new BatteryUtils(mShadowContext));
+        doNothing().when(mBatteryUtils).setForceAppStandby(anyInt(), anyString(), anyInt());
+
+        mPreference = new Preference(mShadowContext);
+        mPreference.setKey(BackgroundActivityPreferenceController.KEY_BACKGROUND_ACTIVITY);
         mController = spy(new BackgroundActivityPreferenceController(
                 mContext, mFragment, UID_LOW_SDK, LOW_SDK_PACKAGE, mPowerWhitelistBackend));
         mController.mDpm = mDevicePolicyManagerWrapper;
+        mController.mBatteryUtils = mBatteryUtils;
     }
 
     @Test
-    public void testOnPreferenceChange_TurnOnCheck_MethodInvoked() {
-        mController.onPreferenceChange(mPreference, true);
+    public void testHandlePreferenceTreeClick_restrictApp_showDialog() {
+        doReturn(AppOpsManager.MODE_ALLOWED).when(mAppOpsManager).checkOpNoThrow(anyInt(),
+                anyInt(), anyString());
 
-        verify(mAppOpsManager).setMode(AppOpsManager.OP_RUN_IN_BACKGROUND, UID_LOW_SDK,
-                LOW_SDK_PACKAGE, AppOpsManager.MODE_ALLOWED);
-        verify(mAppOpsManager).setMode(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, UID_LOW_SDK,
-                LOW_SDK_PACKAGE, AppOpsManager.MODE_ALLOWED);
+        mController.handlePreferenceTreeClick(mPreference);
 
-        assertThat(mPreference.getSummary())
-                .isEqualTo(mShadowContext.getText(R.string.background_activity_summary_on));
+        verify(mController).showDialog();
     }
 
     @Test
-    public void testOnPreferenceChange_TurnOnCheckHighSDK_MethodInvoked() {
-        mController = new BackgroundActivityPreferenceController(mContext, mFragment, UID_HIGH_SDK,
-                HIGH_SDK_PACKAGE, mPowerWhitelistBackend);
-        mController.onPreferenceChange(mPreference, true);
-        verify(mAppOpsManager).setMode(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, UID_HIGH_SDK,
-                HIGH_SDK_PACKAGE, AppOpsManager.MODE_ALLOWED);
-        verify(mAppOpsManager, never()).setMode(AppOpsManager.OP_RUN_IN_BACKGROUND, UID_HIGH_SDK,
-                HIGH_SDK_PACKAGE, AppOpsManager.MODE_ALLOWED);
-        assertThat(mPreference.getSummary())
-                .isEqualTo(mShadowContext.getText(R.string.background_activity_summary_on));
+    public void testHandlePreferenceTreeClick_unRestrictApp_setModeAllowed() {
+        doReturn(AppOpsManager.MODE_IGNORED).when(mAppOpsManager).checkOpNoThrow(anyInt(),
+                anyInt(), anyString());
+
+        mController.handlePreferenceTreeClick(mPreference);
+
+        verify(mBatteryUtils).setForceAppStandby(UID_LOW_SDK, LOW_SDK_PACKAGE,
+                AppOpsManager.MODE_ALLOWED);
     }
 
     @Test
-    public void testUpdateState_CheckOn_SetCheckedTrue() {
+    public void testUpdateState_noError_setEnabled() {
         when(mAppOpsManager.checkOpNoThrow(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, UID_LOW_SDK,
                 LOW_SDK_PACKAGE)).thenReturn(AppOpsManager.MODE_ALLOWED);
 
         mController.updateState(mPreference);
 
-        assertThat(mPreference.isChecked()).isTrue();
-        assertThat(mPreference.isEnabled()).isTrue();
-        verify(mController).updateSummary(mPreference);
-    }
-
-    @Test
-    public void testUpdateState_CheckOff_SetCheckedFalse() {
-        when(mAppOpsManager.checkOpNoThrow(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, UID_LOW_SDK,
-                LOW_SDK_PACKAGE)).thenReturn(AppOpsManager.MODE_IGNORED);
-
-        mController.updateState(mPreference);
-
-        assertThat(mPreference.isChecked()).isFalse();
         assertThat(mPreference.isEnabled()).isTrue();
         verify(mController).updateSummary(mPreference);
     }
@@ -175,7 +171,6 @@ public class BackgroundActivityPreferenceControllerTest {
     public void testUpdateState_whitelisted() {
         when(mPowerWhitelistBackend.isWhitelisted(LOW_SDK_PACKAGE)).thenReturn(true);
         mController.updateState(mPreference);
-        assertThat(mPreference.isChecked()).isTrue();
         assertThat(mPreference.isEnabled()).isFalse();
         assertThat(mPreference.getSummary()).isEqualTo(
                 mShadowContext.getText(R.string.background_activity_summary_whitelisted));
@@ -193,37 +188,23 @@ public class BackgroundActivityPreferenceControllerTest {
     }
 
     @Test
-    public void testUpdateSummary_modeDefault_showSummaryOn() {
+    public void testUpdateSummary_modeDefault_showNotRestricted() {
         when(mAppOpsManager.checkOpNoThrow(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, UID_LOW_SDK,
                 LOW_SDK_PACKAGE)).thenReturn(AppOpsManager.MODE_DEFAULT);
-        final CharSequence expectedSummary = mShadowContext.getText(
-                R.string.background_activity_summary_on);
 
         mController.updateSummary(mPreference);
 
-        assertThat(mPreference.getSummary()).isEqualTo(expectedSummary);
+        assertThat(mPreference.getSummary()).isEqualTo("No");
     }
 
     @Test
-    public void testUpdateSummary_modeIgnored_showSummaryOff() {
+    public void testUpdateSummary_modeIgnored_showRestricted() {
         when(mAppOpsManager.checkOpNoThrow(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, UID_LOW_SDK,
                 LOW_SDK_PACKAGE)).thenReturn(AppOpsManager.MODE_IGNORED);
-        final CharSequence expectedSummary = mShadowContext.getText(
-                R.string.background_activity_summary_off);
 
         mController.updateSummary(mPreference);
 
-        assertThat(mPreference.getSummary()).isEqualTo(expectedSummary);
-    }
-
-    @Test
-    public void testIsLegacyApp_SdkLowerThanO_ReturnTrue() {
-        assertThat(mController.isLegacyApp(LOW_SDK_PACKAGE)).isTrue();
-    }
-
-    @Test
-    public void testIsLegacyApp_SdkLargerOrEqualThanO_ReturnFalse() {
-        assertThat(mController.isLegacyApp(HIGH_SDK_PACKAGE)).isFalse();
+        assertThat(mPreference.getSummary()).isEqualTo("Yes");
     }
 
     @Test

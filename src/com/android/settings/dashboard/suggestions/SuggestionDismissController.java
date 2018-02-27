@@ -23,7 +23,12 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 
 import com.android.settings.R;
 import com.android.settings.overlay.FeatureFactory;
+import com.android.settingslib.suggestions.SuggestionControllerMixin;
 
+/**
+ * Deprecated as a close button is provided to dismiss the suggestion.
+ */
+@Deprecated
 public class SuggestionDismissController extends ItemTouchHelper.SimpleCallback {
 
     public interface Callback {

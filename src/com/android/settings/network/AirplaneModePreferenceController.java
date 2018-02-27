@@ -28,9 +28,10 @@ import com.android.internal.telephony.TelephonyIntents;
 import com.android.internal.telephony.TelephonyProperties;
 import com.android.settings.AirplaneModeEnabler;
 import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settings.core.instrumentation.MetricsFeatureProvider;
 import com.android.settings.overlay.FeatureFactory;
+import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnPause;
 import com.android.settingslib.core.lifecycle.events.OnResume;
@@ -91,7 +92,8 @@ public class AirplaneModePreferenceController extends AbstractPreferenceControll
     }
 
     public static boolean isAvailable(Context context) {
-        return !context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_LEANBACK);
+        return context.getResources().getBoolean(R.bool.config_show_toggle_airplane)
+                && !context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_LEANBACK);
     }
 
     @Override

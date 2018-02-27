@@ -88,6 +88,8 @@ public class UsbModePreferenceController extends AbstractPreferenceController
                 return R.string.usb_summary_photo_transfers;
             case UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_MIDI:
                 return R.string.usb_summary_MIDI;
+            case UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_NONE_CTA:
+                return R.string.connected; //only for CTA
         }
         return 0;
     }
@@ -100,7 +102,10 @@ public class UsbModePreferenceController extends AbstractPreferenceController
         if (preference != null) {
             if (mUsbReceiver.isConnected()) {
                 preference.setEnabled(true);
-                preference.setSummary(getSummary(mode));
+                int summary = getSummary(mode);
+                if (summary != 0) {
+                    preference.setSummary(summary);
+                }
             } else {
                 preference.setSummary(R.string.disconnected);
                 preference.setEnabled(false);

@@ -316,9 +316,30 @@
     <style name="TextAppearance.RecentsTitle" parent="TextAppearance.CategoryTitle" />
     <style name="TextAppearance.ResultTitle" parent="TextAppearance.CategoryTitle" />
 
+    <style name="TextAppearance.SuggestionHeader"
+           parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:fontFamily">@config/config_headlineFontFamilyMedium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
+    </style>
+
+    <style name="SuggestionCardText">
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="SuggestionCardIcon">
+        <item name="android:layout_centerHorizontal">false</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
     <style name="TextAppearance.SuggestionTitle"
            parent="@android:style/TextAppearance.Material.Subhead">
         <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.SuggestionTitleV2"
+           parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:fontFamily">@config/config_headlineFontFamily</item>
     </style>
 
     <style name="TextAppearance.SuggestionSummary" parent="TextAppearance.Small">
@@ -453,6 +474,7 @@
 
     <style name="TextAppearance.SearchBar" parent="@android:style/TextAppearance.Material.Widget.Toolbar.Subtitle">
         <item name="android:textSize">@dimen/search_bar_text_size</item>
+        <item name="android:fontFamily">@config/config_headlineFontFamily</item>
     </style>
 
     <style name="device_info_dialog_label">

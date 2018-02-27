@@ -23,11 +23,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Icon;
 import android.text.TextUtils;
+import android.util.Log;
 
+import com.android.internal.annotations.VisibleForTesting;
+import com.android.settings.R;
 import com.android.settings.SubSettings;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.search.DatabaseIndexingUtils;
+import com.android.settingslib.core.AbstractPreferenceController;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -54,21 +58,17 @@ public class SliceBuilderUtils {
     public static Slice buildSlice(Context context, SliceData sliceData) {
         final PendingIntent contentIntent = getContentIntent(context, sliceData);
         final Icon icon = Icon.createWithResource(context, sliceData.getIconResource());
-        String summaryText = sliceData.getSummary();
-        String subtitleText = TextUtils.isEmpty(summaryText)
-                ? sliceData.getScreenTitle()
-                : summaryText;
+        final BasePreferenceController controller = getPreferenceController(context, sliceData);
 
-        RowBuilder builder = new RowBuilder(context, sliceData.getUri())
+        final String subtitleText = getSubtitleText(context, controller, sliceData);
+
+        final RowBuilder builder = new RowBuilder(context, sliceData.getUri())
                 .setTitle(sliceData.getTitle())
                 .setTitleItem(icon)
                 .setSubtitle(subtitleText)
                 .setContentIntent(contentIntent);
 
-        BasePreferenceController controller = getPreferenceController(context, sliceData);
-
         // TODO (b/71640747) Respect setting availability.
-        // TODO (b/71640678) Add dynamic summary text.
 
         if (controller instanceof TogglePreferenceController) {
             addToggleAction(context, builder, ((TogglePreferenceController) controller).isChecked(),
@@ -82,21 +82,50 @@ public class SliceBuilderUtils {
 
     /**
      * Looks at the {@link SliceData#preferenceController} from {@param sliceData} and attempts to
-     * build a {@link BasePreferenceController}.
+     * build an {@link AbstractPreferenceController}.
      */
     public static BasePreferenceController getPreferenceController(Context context,
             SliceData sliceData) {
-        // TODO check for context-only controller first.
+        try {
+            return getController(context, sliceData, true /* isContextOnly */);
+        } catch (IllegalStateException e) {
+            // Do nothing
+            Log.d(TAG, "Could not find Context-only controller for preference controller: "
+                    + sliceData.getKey());
+        }
+
+        return getController(context, sliceData, false /* isContextOnly */);
+    }
+
+    /**
+     * Attempts to build a {@link BasePreferenceController} from {@param SliceData}.
+     *
+     * @param sliceData     Backing data for the Slice.
+     * @param contextOnlyCtor {@code true} when the constructor for the
+     *                      {@link BasePreferenceController}
+     *                      only takes a {@link Context}. Else the constructor will be ({@link
+     *                      Context}, {@code String}.
+     */
+    private static BasePreferenceController getController(Context context, SliceData sliceData,
+            boolean contextOnlyCtor) {
         try {
             Class<?> clazz = Class.forName(sliceData.getPreferenceController());
-            Constructor<?> preferenceConstructor = clazz.getConstructor(Context.class,
-                    String.class);
-            return (BasePreferenceController) preferenceConstructor.newInstance(
-                    new Object[]{context, sliceData.getKey()});
+            Constructor<?> preferenceConstructor;
+            Object[] params;
+
+            if (contextOnlyCtor) {
+                preferenceConstructor = clazz.getConstructor(Context.class);
+                params = new Object[]{context};
+            } else {
+                preferenceConstructor = clazz.getConstructor(Context.class, String.class);
+                params = new Object[]{context, sliceData.getKey()};
+            }
+
+            return (BasePreferenceController) preferenceConstructor.newInstance(params);
         } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException |
                 IllegalArgumentException | InvocationTargetException | IllegalAccessException e) {
             throw new IllegalStateException(
-                    "Invalid preference controller: " + sliceData.getPreferenceController());
+                    "Invalid preference controller: " + sliceData.getPreferenceController(), e);
         }
     }
 
@@ -121,5 +150,36 @@ public class SliceBuilderUtils {
                 0 /* TODO */);
         intent.setClassName("com.android.settings", SubSettings.class.getName());
         return PendingIntent.getActivity(context, 0 /* requestCode */, intent, 0 /* flags */);
+    }
+
+    @VisibleForTesting
+    static String getSubtitleText(Context context, AbstractPreferenceController controller,
+            SliceData sliceData) {
+        String summaryText = sliceData.getSummary();
+        if (isValidSummary(context, summaryText)) {
+            return summaryText;
+        }
+
+        if (controller != null) {
+            summaryText = controller.getSummary();
+
+            if (isValidSummary(context, summaryText)) {
+                return summaryText;
+            }
+        }
+
+        return sliceData.getScreenTitle();
+    }
+
+    private static boolean isValidSummary(Context context, String summary) {
+        if (summary == null || TextUtils.isEmpty(summary.trim())) {
+            return false;
+        }
+
+        final String placeHolder = context.getString(R.string.summary_placeholder);
+        final String doublePlaceHolder = context.getString(R.string.summary_two_lines_placeholder);
+
+        return !(TextUtils.equals(summary, placeHolder)
+                || TextUtils.equals(summary, doublePlaceHolder));
     }
 }

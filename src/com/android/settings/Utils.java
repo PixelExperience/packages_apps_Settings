@@ -46,6 +46,7 @@ import android.content.pm.ResolveInfo;
 import android.content.pm.UserInfo;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.content.res.Resources.NotFoundException;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -80,6 +81,8 @@ import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.Profile;
 import android.provider.ContactsContract.RawContacts;
 import android.provider.Settings;
+import android.provider.Telephony;
+import android.service.persistentdata.PersistentDataBlockManager;
 import android.support.annotation.StringRes;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
@@ -110,6 +113,7 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.password.ChooseLockSettingsHelper;
 import com.android.settings.wrapper.DevicePolicyManagerWrapper;
 import com.android.settings.wrapper.FingerprintManagerWrapper;
+import com.android.settingslib.core.instrumentation.VisibilityLoggerMixin;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -142,6 +146,8 @@ public final class Utils extends com.android.settingslib.Utils {
     private static final int SECONDS_PER_DAY = 24 * 60 * 60;
 
     public static final String OS_PKG = "os";
+    public static final String READ_ONLY = "read_only";
+    public static final String PERSISTENT = "persistent";
 
     /**
      * Finds a matching activity for a preference's intent. If a matching
@@ -514,7 +520,8 @@ public final class Utils extends com.android.settingslib.Utils {
             Fragment resultTo, int resultRequestCode, String titleResPackageName, int titleResId,
             CharSequence title, boolean isShortcut, int metricsCategory) {
         startWithFragment(context, fragmentName, args, resultTo, resultRequestCode,
-                titleResPackageName, titleResId, title, isShortcut, metricsCategory, 0);
+                titleResPackageName, titleResId, title, isShortcut, metricsCategory,
+                Intent.FLAG_ACTIVITY_NEW_TASK);
     }
 
 
@@ -576,7 +583,7 @@ public final class Utils extends com.android.settingslib.Utils {
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_TITLE_RESID, titleResId);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_TITLE, title);
         intent.putExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_AS_SHORTCUT, isShortcut);
-        intent.putExtra(SettingsActivity.EXTRA_SOURCE_METRICS_CATEGORY, sourceMetricsCategory);
+        intent.putExtra(VisibilityLoggerMixin.EXTRA_SOURCE_METRICS_CATEGORY, sourceMetricsCategory);
         return intent;
     }
 
@@ -1396,5 +1403,45 @@ public final class Utils extends com.android.settingslib.Utils {
         } catch (PackageManager.NameNotFoundException e) {
             return packageManager.getDefaultActivityIcon();
         }
+    }
+
+    public static String getLocalizedName(Context context, Cursor cursor, int index) {
+        if(context == null || cursor == null || index < 0){
+           return null;
+        }
+        // If can find a localized name, replace the APN name with it
+        String resName = cursor.getString(index);
+        String localizedName = null;
+        if (resName != null && !resName.isEmpty()) {
+            int resId = context.getResources().getIdentifier(resName, "string",
+                    context.getPackageName());
+            if(resId > 0){
+                try {
+                    localizedName = context.getResources().getString(resId);
+                    Log.d(TAG, "Replaced apn name with localized name");
+                } catch (NotFoundException e) {
+                    Log.e(TAG, "Got execption while getting the localized apn name.", e);
+                }
+            }
+        }
+        return localizedName;
+    }
+
+    public static boolean carrierTableFieldValidate(String field){
+        if(field == null)
+            return false;
+        if(READ_ONLY.equalsIgnoreCase(field) || PERSISTENT.equalsIgnoreCase(field)
+                || Telephony.Carriers.AUTH_TYPE.equalsIgnoreCase(field)
+                || Telephony.Carriers.SUBSCRIPTION_ID.equalsIgnoreCase(field))
+            return true;
+        field = field.toUpperCase();
+        Class clazz = Telephony.Carriers.class;
+        try{
+            clazz.getDeclaredField(field);
+        }catch(NoSuchFieldException e){
+            Log.w(TAG, field + "is not a valid field in class Telephony.Carriers");
+            return false;
+        }
+        return true;
     }
 }

@@ -16,7 +16,6 @@
 
 package com.android.settings;
 
-import static com.android.settings.core.FeatureFlags.BATTERY_SETTINGS_V2;
 import static com.android.settings.core.FeatureFlags.CONNECTED_DEVICE_V2;
 
 import android.os.Bundle;
@@ -55,6 +54,7 @@ public class Settings extends SettingsActivity {
     public static class NightDisplaySettingsActivity extends SettingsActivity { /* empty */ }
     public static class NightDisplaySuggestionActivity extends NightDisplaySettingsActivity { /* empty */ }
     public static class DeviceInfoSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class MyDeviceInfoActivity extends SettingsActivity { /* empty */ }
     public static class ApplicationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ManageApplicationsActivity extends SettingsActivity { /* empty */ }
     public static class ManageAssistActivity extends SettingsActivity { /* empty */ }
@@ -67,8 +67,7 @@ public class Settings extends SettingsActivity {
     public static class AccessibilityInversionSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AccessibilityContrastSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AccessibilityDaltonizerSettingsActivity extends SettingsActivity { /* empty */ }
-    public static class SecuritySettingsActivity extends SettingsActivity { /* empty */ }
-    public static class SecuritySettingsActivityV2 extends SettingsActivity { /* empty */ }
+    public static class SecurityDashboardActivity extends SettingsActivity { /* empty */ }
     public static class UsageAccessSettingsActivity extends SettingsActivity { /* empty */ }
     public static class LocationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class PrivacySettingsActivity extends SettingsActivity { /* empty */ }
@@ -120,6 +119,7 @@ public class Settings extends SettingsActivity {
     public static class PhotosStorageActivity extends SettingsActivity {
         /* empty */
     }
+    public static class DirectoryAccessSettingsActivity extends SettingsActivity { /* empty */ }
 
     public static class TopLevelSettings extends SettingsActivity { /* empty */ }
     public static class ApnSettingsActivity extends SettingsActivity { /* empty */ }
@@ -132,16 +132,8 @@ public class Settings extends SettingsActivity {
     public static class AppWriteSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AdvancedAppsActivity extends SettingsActivity { /* empty */ }
 
-    public static class ManageExternalSourcesActivity extends SettingsActivity {
-        /* empty */ }
+    public static class ManageExternalSourcesActivity extends SettingsActivity {/* empty */ }
     public static class ManageAppExternalSourcesActivity extends SettingsActivity { /* empty */ }
-    public static class DoubleTapPowerSuggestionActivity extends SettingsActivity { /* empty */ }
-    public static class DoubleTwistSuggestionActivity extends SettingsActivity { /* empty */ }
-    public static class AmbientDisplaySuggestionActivity extends SettingsActivity { /* empty */ }
-    public static class AmbientDisplayPickupSuggestionActivity extends SettingsActivity {
-        /* empty */ }
-    public static class SwipeToNotificationSuggestionActivity extends SettingsActivity {
-        /* empty */ }
     public static class WallpaperSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ManagedProfileSettingsActivity extends SettingsActivity { /* empty */ }
     public static class DeletionHelperActivity extends SettingsActivity { /* empty */ }
@@ -175,7 +167,12 @@ public class Settings extends SettingsActivity {
     public static class PowerUsageSummaryLegacyActivity extends SettingsActivity { /* empty */ }
     public static class AppAndNotificationDashboardActivity extends SettingsActivity {}
     public static class StorageDashboardActivity extends SettingsActivity {}
-    public static class UserAndAccountDashboardActivity extends SettingsActivity {}
+    public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
+    public static class AdvancedConnectedDeviceActivity extends SettingsActivity {
+        public static final boolean isEnabled() {
+            return FeatureFlagUtils.isEnabled(null /* context */, CONNECTED_DEVICE_V2);
+        }
+    }
 
 }

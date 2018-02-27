@@ -18,6 +18,7 @@ package com.android.settings.datausage;
 
 import android.content.Context;
 
+import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.TestConfig;
 import com.android.settingslib.NetworkPolicyEditor;
@@ -47,9 +48,12 @@ public class DataUsageListTest {
     private Context mContext;
     private DataUsageList mDataUsageList;
 
+    private FakeFeatureFactory mFactory;
+
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
+        mFactory = FakeFeatureFactory.setupForTest();
         mNetworkServices.mPolicyEditor = mock(NetworkPolicyEditor.class);
         mDataUsageList = spy(DataUsageList.class);
 
@@ -60,6 +64,7 @@ public class DataUsageListTest {
 
     @Test
     public void resumePause_shouldListenUnlistenDataStateChange() {
+        mDataUsageList.onAttach(mContext);
         mDataUsageList.onResume();
 
         verify(mListener).setListener(true, 0, mContext);

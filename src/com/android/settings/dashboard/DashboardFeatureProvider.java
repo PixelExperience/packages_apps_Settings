@@ -56,7 +56,9 @@ public interface DashboardFeatureProvider {
 
     /**
      * Whether or not we should tint icons in setting pages.
+     * @deprecated in favor of color icons in homepage
      */
+    @Deprecated
     boolean shouldTintIcon();
 
     /**
@@ -87,5 +89,10 @@ public interface DashboardFeatureProvider {
      * Opens a tile to its destination intent.
      */
     void openTileIntent(Activity activity, Tile tile);
+
+    /**
+     * Whether or not we should use the v2 of suggestions UI.
+     */
+    boolean useSuggestionUiV2();
 
 }

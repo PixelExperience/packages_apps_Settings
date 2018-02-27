@@ -43,20 +43,21 @@ import com.android.settingslib.fuelgauge.PowerWhitelistBackend;
  * Controller to control whether an app can run in the background
  */
 public class BackgroundActivityPreferenceController extends AbstractPreferenceController
-        implements PreferenceControllerMixin, Preference.OnPreferenceChangeListener {
+        implements PreferenceControllerMixin {
 
     private static final String TAG = "BgActivityPrefContr";
-    private static final String KEY_BACKGROUND_ACTIVITY = "background_activity";
+    @VisibleForTesting
+    static final String KEY_BACKGROUND_ACTIVITY = "background_activity";
 
-    private final PackageManager mPackageManager;
     private final AppOpsManager mAppOpsManager;
     private final UserManager mUserManager;
     private final int mUid;
     @VisibleForTesting
     DevicePolicyManagerWrapper mDpm;
+    @VisibleForTesting
+    BatteryUtils mBatteryUtils;
     private Fragment mFragment;
     private String mTargetPackage;
-    private boolean mIsPreOApp;
     private PowerWhitelistBackend mPowerWhitelistBackend;
 
     public BackgroundActivityPreferenceController(Context context, Fragment fragment,
@@ -69,7 +70,6 @@ public class BackgroundActivityPreferenceController extends AbstractPreferenceCo
             int uid, String packageName, PowerWhitelistBackend backend) {
         super(context);
         mPowerWhitelistBackend = backend;
-        mPackageManager = context.getPackageManager();
         mUserManager = (UserManager) context.getSystemService(Context.USER_SERVICE);
         mDpm = new DevicePolicyManagerWrapper(
                 (DevicePolicyManager) context.getSystemService(Context.DEVICE_POLICY_SERVICE));
@@ -77,7 +77,7 @@ public class BackgroundActivityPreferenceController extends AbstractPreferenceCo
         mUid = uid;
         mFragment = fragment;
         mTargetPackage = packageName;
-        mIsPreOApp = isLegacyApp(packageName);
+        mBatteryUtils = BatteryUtils.getInstance(context);
     }
 
     @Override
@@ -85,11 +85,6 @@ public class BackgroundActivityPreferenceController extends AbstractPreferenceCo
         final int mode = mAppOpsManager
                 .checkOpNoThrow(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, mUid, mTargetPackage);
         final boolean whitelisted = mPowerWhitelistBackend.isWhitelisted(mTargetPackage);
-        // Set checked or not before we may set it disabled
-        if (mode != AppOpsManager.MODE_ERRORED) {
-            final boolean checked = whitelisted || mode != AppOpsManager.MODE_IGNORED;
-            ((SwitchPreference) preference).setChecked(checked);
-        }
         if (whitelisted || mode == AppOpsManager.MODE_ERRORED
                 || Utils.isProfileOrDeviceOwner(mUserManager, mDpm, mTargetPackage)) {
             preference.setEnabled(false);
@@ -108,14 +103,8 @@ public class BackgroundActivityPreferenceController extends AbstractPreferenceCo
      * Called from the warning dialog, if the user decides to go ahead and disable background
      * activity for this package
      */
-    public void setUnchecked(Preference preference) {
-        if (mIsPreOApp) {
-            mAppOpsManager.setMode(AppOpsManager.OP_RUN_IN_BACKGROUND, mUid, mTargetPackage,
-                    AppOpsManager.MODE_IGNORED);
-        }
-        mAppOpsManager.setMode(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, mUid, mTargetPackage,
-                AppOpsManager.MODE_IGNORED);
-        ((SwitchPreference) preference).setChecked(false);
+    public void setRestricted(Preference preference) {
+        mBatteryUtils.setForceAppStandby(mUid, mTargetPackage, AppOpsManager.MODE_IGNORED);
         updateSummary(preference);
     }
 
@@ -125,33 +114,18 @@ public class BackgroundActivityPreferenceController extends AbstractPreferenceCo
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        final boolean switchOn = (Boolean) newValue;
-        if (!switchOn) {
-            final WarningDialogFragment dialogFragment = new WarningDialogFragment();
-            dialogFragment.setTargetFragment(mFragment, 0);
-            dialogFragment.show(mFragment.getFragmentManager(), TAG);
-            return false;
-        }
-        if (mIsPreOApp) {
-            mAppOpsManager.setMode(AppOpsManager.OP_RUN_IN_BACKGROUND, mUid, mTargetPackage,
-                    AppOpsManager.MODE_ALLOWED);
-        }
-        mAppOpsManager.setMode(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, mUid, mTargetPackage,
-                AppOpsManager.MODE_ALLOWED);
-        updateSummary(preference);
-        return true;
-    }
-
-    @VisibleForTesting
-    boolean isLegacyApp(final String packageName) {
-        try {
-            ApplicationInfo info = mPackageManager.getApplicationInfo(packageName,
-                    PackageManager.GET_META_DATA);
-
-            return info.targetSdkVersion < Build.VERSION_CODES.O;
-        } catch (PackageManager.NameNotFoundException e) {
-            Log.e(TAG, "Cannot find package: " + packageName, e);
+    public boolean handlePreferenceTreeClick(Preference preference) {
+        if (KEY_BACKGROUND_ACTIVITY.equals(preference.getKey())) {
+            final int mode = mAppOpsManager
+                    .checkOpNoThrow(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, mUid, mTargetPackage);
+            final boolean restricted = mode == AppOpsManager.MODE_IGNORED;
+            if (!restricted) {
+                showDialog();
+                return false;
+            }
+            mBatteryUtils.setForceAppStandby(mUid, mTargetPackage, AppOpsManager.MODE_ALLOWED);
+            updateSummary(preference);
+            return true;
         }
 
         return false;
@@ -169,10 +143,17 @@ public class BackgroundActivityPreferenceController extends AbstractPreferenceCo
         if (mode == AppOpsManager.MODE_ERRORED) {
             preference.setSummary(R.string.background_activity_summary_disabled);
         } else {
-            final boolean checked = mode != AppOpsManager.MODE_IGNORED;
-            preference.setSummary(checked ? R.string.background_activity_summary_on
-                    : R.string.background_activity_summary_off);
+            final boolean restricted = mode == AppOpsManager.MODE_IGNORED;
+            preference.setSummary(restricted ? R.string.restricted_true_label
+                    : R.string.restricted_false_label);
         }
+    }
+
+    @VisibleForTesting
+    void showDialog() {
+        final WarningDialogFragment dialogFragment = new WarningDialogFragment();
+        dialogFragment.setTargetFragment(mFragment, 0 /* requestCode */);
+        dialogFragment.show(mFragment.getFragmentManager(), TAG);
     }
 
     interface WarningConfirmationListener {
