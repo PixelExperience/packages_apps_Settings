@@ -1154,7 +1154,7 @@
     <string name="setup_lock_settings_picker_title" product="default">Protect your phone</string>
 
     <!-- Message shown when setting up screen lock, prompting user to choose the their backup screen lock method [CHAR LIMIT=NONE] -->
-    <string name="lock_settings_picker_fingerprint_added_security_message">For added security, set a backup screen lock.</string>
+    <string name="lock_settings_picker_fingerprint_added_security_message">For added security, set a backup screen lock</string>
 
     <!-- Description text for screen in setup wizard asking user to set up screen lock, explaining to the user how setting up a screen lock protect them from losing data. (tablet) [CHAR LIMIT=NONE] -->
     <string name="setup_lock_settings_picker_message" product="tablet">Prevent others from using this tablet without your permission by activating device protection features. Choose the screen lock you want to use.</string>
@@ -1845,12 +1845,8 @@
     <string name="wifi_configure_settings_preference_summary_wakeup_off">Wi\u2011Fi doesn\u0027t turn back on automatically</string>
     <!-- Header for the list of wifi networks-->
     <string name="wifi_access_points">Wi\u2011Fi networks</string>
-    <!-- Menu option to do WPS Push Button [CHAR LIMIT=25]-->
-    <string name="wifi_menu_wps_pbc">WPS Push Button</string>
     <!-- Content description for menu button in Wifi setup. Not shown on the screen. [CHAR LIMIT=NONE] -->
     <string name="wifi_menu_more_options">More options</string>
-    <!-- Menu option to do WPS Pin Entry [CHAR LIMIT=25]-->
-    <string name="wifi_menu_wps_pin">WPS Pin Entry</string>
     <!-- Menu option to launch Wi-Fi Direct settings [CHAR LIMIT=20]-->
     <string name="wifi_menu_p2p">Wi\u2011Fi Direct</string>
     <!-- Menu option to scan Wi-Fi networks -->
@@ -1887,32 +1883,6 @@
     <string name="wifi_advanced_toggle_description_expanded">Drop down list Advanced Options. Double-tap to collapse.</string>
     <!-- Message for talkback to say when Advanced Options is collapsed [CHAR LIMIT=NONE] -->
     <string name="wifi_advanced_toggle_description_collapsed">Drop down list Advanced Options. Double-tap to expand.</string>
-    <!-- Title for the WPS setup dialog [CHAR LIMIT=50] -->
-    <string name="wifi_wps_setup_title">Wi\u2011Fi Protected Setup</string>
-    <!-- Message in WPS dialog at start up [CHAR LIMIT=150] -->
-    <string name="wifi_wps_setup_msg">Starting WPS\u2026</string>
-    <!-- Message in WPS dialog for PBC after start up [CHAR LIMIT=150] -->
-    <string name="wifi_wps_onstart_pbc">Press the Wi\u2011Fi Protected Setup button on your router. It may be called \u201cWPS\u201d or marked with this symbol:</string>
-    <!-- Message in WPS dialog for PIN after start up [CHAR LIMIT=150] -->
-    <string name="wifi_wps_onstart_pin">Enter pin <xliff:g id="number">%1$s</xliff:g> on your Wi\u2011Fi router. The setup can take up to two minutes to complete.</string>
-    <!-- Text displayed when WPS succeeds [CHAR LIMIT=150] -->
-    <string name="wifi_wps_complete">WPS succeeded. Connecting to the network\u2026</string>
-    <!-- Text displayed when Wi-Fi is connected through WPS [CHAR LIMIT=150] -->
-    <string name="wifi_wps_connected">Connected to Wi\u2011Fi network <xliff:g id="network_name">%s</xliff:g></string>
-    <!-- Text displayed when WPS setup is in progress [CHAR LIMIT=150] -->
-    <string name="wifi_wps_in_progress">WPS is already in progress and can take up to two minutes to complete</string>
-    <!-- Text displayed when WPS fails to start [CHAR LIMIT=150] -->
-    <string name="wifi_wps_failed_generic">WPS failed. Please try again in a few minutes.</string>
-    <!-- Text displayed when WPS fails due to WEP [CHAR LIMIT=150] -->
-    <string name="wifi_wps_failed_wep">The wireless router security setting (WEP) is not supported</string>
-    <!-- Text displayed when WPS fails to TKIP [CHAR LIMIT=150] -->
-    <string name="wifi_wps_failed_tkip">The wireless router security setting (TKIP) is not supported</string>
-    <!-- Text displayed when WPS fails due to authentication issues [CHAR LIMIT=150] -->
-    <string name="wifi_wps_failed_auth">Authentication failure. Please try again.</string>
-    <!-- Text displayed when WPS fails due to another session [CHAR LIMIT=150] -->
-    <string name="wifi_wps_failed_overlap">Another WPS session was detected. Please try again in a few minutes.</string>
-    <!-- Text displayed when WPS fails due to wifi disconnected [CHAR LIMIT=150] -->
-    <string name="wifi_wps_failed_wifi_disconnected">Wi\u2011Fi disconnected. WPS setup canceled.</string>
     <!-- Label for the SSID of the network -->
     <string name="wifi_ssid">Network name</string>
     <!-- Hint for a text field to enter the SSID of a hidden wifi network. [CHAR LIMIT=35] -->
@@ -2172,6 +2142,8 @@
     <string name="wifi_hotspot_configure_ap_text_summary">AndroidAP WPA2 PSK hotspot</string>
     <!-- Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default">AndroidHotspot</string>
+    <!-- Summary text when hotspot is disabled because airplane mode is on [CHAR LIMIT=80]-->
+    <string name="wifi_tether_disabled_by_airplane">Unavailable because airplane mode is turned on</string>
 
     <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
          Wi-Fi Testing on the diagnostic screen-->
@@ -2423,13 +2395,6 @@
 
     <!-- Main Settings screen, setting option name to go into search settings -->
     <string name="search_settings">Search</string>
-    <!-- Main Settings screen, setting option summary to go into search settings -->
-    <string name="search_settings_summary">Manage search settings and history</string>
-    <!-- There are no search results for the user's search [CHAR LIMIT=NONE]-->
-    <string name="search_settings_no_results">No results</string>
-
-    <!-- Button to clear all search history in Settings [CHAR LIMIT=40]-->
-    <string name="search_clear_history">Clear history</string>
 
     <!-- Display settings --><skip/>
     <!-- Sound & display settings screen, section header for settings related to display -->
@@ -3518,19 +3483,19 @@
 
     <!-- Lock Pattern settings -->
     <!-- Header on first screen of choose password/PIN flow [CHAR LIMIT=40] -->
-    <string name="lockpassword_choose_your_screen_lock_header">Set a screen lock</string>
+    <string name="lockpassword_choose_your_screen_lock_header">Set screen lock</string>
     <!-- Message on first screen of choose password flow [CHAR LIMIT=NONE] -->
-    <string name="lockpassword_choose_your_password_message">For security, set a password</string>
+    <string name="lockpassword_choose_your_password_message">For security, set password</string>
     <!-- Header on first screen of choose password/PIN as backup for fingerprint flow. If this string cannot be translated in under 40 characters, please translate "Set fingerprint backup" [CHAR LIMIT=40] -->
-    <string name="lockpassword_choose_your_password_header_for_fingerprint">To use fingerprint, set a password</string>
+    <string name="lockpassword_choose_your_password_header_for_fingerprint">To use fingerprint, set password</string>
     <!-- Header on first screen of choose pattern as backup for fingerprint flow. If this string cannot be translated in under 40 characters, please translate "Set fingerprint backup" [CHAR LIMIT=40] -->
-    <string name="lockpassword_choose_your_pattern_header_for_fingerprint">To use fingerprint, set a pattern</string>
+    <string name="lockpassword_choose_your_pattern_header_for_fingerprint">To use fingerprint, set pattern</string>
     <!-- Message on first screen of choose PIN flow [CHAR LIMIT=NONE] -->
-    <string name="lockpassword_choose_your_pin_message">For security, set a PIN</string>
+    <string name="lockpassword_choose_your_pin_message">For security, set PIN</string>
     <!-- Header on first screen of choose password/PIN as backup for fingerprint flow. If this string cannot be translated in under 40 characters, please translate "Set fingerprint backup" [CHAR LIMIT=40] -->
-    <string name="lockpassword_choose_your_pin_header_for_fingerprint">To use fingerprint, set a PIN</string>
+    <string name="lockpassword_choose_your_pin_header_for_fingerprint">To use fingerprint, set PIN</string>
     <!-- Message on first screen of choose pattern flow [CHAR LIMIT=NONE] -->
-    <string name="lockpassword_choose_your_pattern_message">For security, set a pattern</string>
+    <string name="lockpassword_choose_your_pattern_message">For security, set pattern</string>
     <!-- Header on password confirm screen [CHAR LIMIT=40] -->
     <string name="lockpassword_confirm_your_password_header">Re-enter your password</string>
     <!-- Header on pattern confirm screen [CHAR LIMIT=30] -->
@@ -4435,6 +4400,12 @@
     <string name="accessibility_autoclick_preference_title">Click after pointer stops moving</string>
     <!-- Title for accessibility preference for configuring amount of time that has to pass after pointer stops moving before click action can be performed (if automatic click after pointer stops moving feature is enabled). [CHAR LIMIT=NONE] -->
     <string name="accessibility_autoclick_delay_preference_title">Delay before click</string>
+    <!-- Title for accessibility preference screen for configuring vibrations. -->
+    <string name="accessibility_vibration_settings_title">Vibration</string>
+    <!-- Title for accessibility preference for configuring notification vibrations. -->
+    <string name="accessibility_notification_vibration_title">Ring &amp; notification vibration</string>
+    <!-- Title for accessibility preference for configuring touch feedback vibrations. -->
+    <string name="accessibility_touch_vibration_title">Touch vibration</string>
     <!-- Used in the acessibilty service settings to control turning on/off the service entirely -->
     <string name="accessibility_service_master_switch_title">Use service</string>
     <!-- Used in the Color correction settings screen to control turning on/off the feature entirely -->
@@ -4477,6 +4448,30 @@
         <item quantity="one">Very long delay (<xliff:g id="click_delay_label" example="200">%1$d</xliff:g> ms)</item>
         <item quantity="other">Very long delay (<xliff:g id="click_delay_label" example="200">%1$d</xliff:g> ms)</item>
     </plurals>
+
+    <!-- Summary for vibration settings preference when ring & notification are set to off-->
+    <string name="accessibility_vibration_summary_off">Ring &amp; notification set to off</string>
+
+    <!-- Summary for vibration settings preference when ring & notification are set to low-->
+    <string name="accessibility_vibration_summary_low">Ring &amp; notification set to low</string>
+
+    <!-- Summary for vibration settings preference when ring & notification are set to medium-->
+    <string name="accessibility_vibration_summary_medium">Ring &amp; notification set to medium</string>
+
+    <!-- Summary for vibration settings preference when ring & notification are set to high-->
+    <string name="accessibility_vibration_summary_high">Ring &amp; notification set to high</string>
+
+    <!-- Label describing an option turning vibrations off. [CHAR LIMIT=15] -->
+    <string name="accessibility_vibration_intensity_off">Off</string>
+
+    <!-- Label describing a low intensity vibration option. [CHAR LIMIT=15] -->
+    <string name="accessibility_vibration_intensity_low">Low</string>
+
+    <!-- Label describing a medium intensity vibration option. [CHAR LIMIT=15] -->
+    <string name="accessibility_vibration_intensity_medium">Medium</string>
+
+    <!-- Label describing a high intensity vibration option. [CHAR LIMIT=15] -->
+    <string name="accessibility_vibration_intensity_high">High</string>
 
     <!-- Title for accessibility menu item to lauch a settings activity. [CHAR LIMIT=15] -->
     <string name="accessibility_menu_item_settings">Settings</string>
@@ -5114,6 +5109,9 @@
     <!-- Title for the battery management group [CHAR LIMIT=40] -->
     <string name ="battery_detail_manage_title">Manage battery usage</string>
 
+    <!-- Graph subtext displayed to user when enhanced battery estimate is being used [CHAR LIMIT=120] -->
+    <string name="advanced_battery_graph_subtext">Battery left estimate is based on your device usage</string>
+
     <!-- Description for battery time left, i.e. 50min Estimated time left. [CHAR LIMIT=80]-->
     <string name="estimated_time_left">Estimated time left</string>
 
@@ -5140,8 +5138,17 @@
     <!-- Label for dex2oat process in battery usage used for the optimization of one or more apps -->
     <string name="process_dex2oat_label">App optimization</string>
 
-    <!-- [CHAR_LIMIT=40] Battery saver: Label for feature, title + menu item -->
-    <string name="battery_saver">Battery Saver</string>
+    <!-- Battery saver: Label for feature, title + menu item [CHAR_LIMIT=40] -->
+    <string name="battery_saver">Reduced power mode</string>
+
+    <!-- Battery saver: Label for preference to turn on battery saver automatically when battery is low [CHAR_LIMIT=40] -->
+    <string name="battery_saver_auto_title">Schedule</string>
+
+    <!-- Battery saver: Summary for preference to turn on battery saver automatically when battery is low [CHAR_LIMIT=40] -->
+    <string name="battery_saver_auto_summary">Turn on Reduced power mode automatically when battery is low</string>
+
+    <!-- Battery saver: Label for seekbar to change battery saver threshold [CHAR_LIMIT=40] -->
+    <string name="battery_saver_seekbar_title">Turn on automatically at <xliff:g id="percent">%1$s</xliff:g></string>
 
     <!-- Used in the Battery Saver settings screen to control turning on/off the feature entirely -->
     <string name="battery_saver_master_switch_title">Use Battery Saver</string>
@@ -5744,9 +5751,6 @@
     <!--  action to select all [CHAR LIMIT=30] -->
     <string name="select_all">Select all</string>
 
-    <!-- A button that gets displayed in data plan usage preference in settings page to manage data plans [CHAR LIMIT=25] -->
-    <string name="data_plan_usage_manage_plans_button_text">Manage plans</string>
-
     <!-- Activity title for network data usage summary. [CHAR LIMIT=25] -->
     <string name="data_usage_summary_title">Data usage</string>
     <!-- Activity title for Appk data usage summary. [CHAR LIMIT=25] -->
@@ -5846,6 +5850,8 @@
     <string name="data_usage_enable_3g">2G-3G data</string>
     <!-- Toggle switch title for enabling 4G data network connection. [CHAR LIMIT=32] -->
     <string name="data_usage_enable_4g">4G data</string>
+    <!-- Toggle switch title for enabling roaming on the primary data SIM card. [CHAR LIMIT=32] -->
+    <string name="data_roaming_enable_mobile">Roaming</string>
 
     <!-- Data Usage Foreground label.  [CHAR LIMIT=40] -->
     <string name="data_usage_forground_label">Foreground:</string>
@@ -6317,13 +6323,6 @@
     <!-- Applicaitons with restrictions - settings button [CHAR LIMIT=30] -->
     <string name="apps_with_restrictions_settings_button">Expand settings for application</string>
 
-    <!-- Warning message when changing a global setting for a tablet.[CHAR LIMIT=none] -->
-    <string name="global_change_warning" product="tablet">This setting affects all users on this tablet.</string>
-    <!-- Warning message when changing a global setting for a phone.[CHAR LIMIT=none] -->
-    <string name="global_change_warning" product="default">This setting affects all users on this phone.</string>
-    <!-- Warning message title for global locale change [CHAR LIMIT=40] -->
-    <string name="global_locale_change_title">Change language</string>
-
     <!-- NFC payment settings --><skip/>
     <string name="nfc_payment_settings_title">Tap &amp; pay</string>
     <!-- Caption for button linking to a page explaining how Tap and Pay works-->
@@ -6478,6 +6477,7 @@
     <string name="help_uri_process_stats_apps" translatable="false"></string>
     <string name="help_uri_private_dns" translatable="false"></string>
     <string name="help_uri_about_phone_v2" translatable="false"></string>
+    <string name="help_uri_wifi_calling" translatable="false"></string>
 
     <!-- User account title [CHAR LIMIT=30] -->
     <string name="user_account_title">Account for content</string>
@@ -6976,6 +6976,21 @@
     <!-- [CHAR LIMIT=20] Accessibility string for current zen mode and selected exit condition. A template that simply concatenates existing mode string and the current condition description.  -->
     <string name="zen_mode_and_condition"><xliff:g id="zen_mode" example="Priority interruptions only">%1$s</xliff:g>. <xliff:g id="exit_condition" example="For one hour">%2$s</xliff:g></string>
 
+    <!-- Sound settings screen, summary format of do not disturb when on. [CHAR LIMIT=NONE] -->
+    <string name="zen_mode_sound_summary_on">On / <xliff:g name="dnd_summary" example="No sound except alarms and media">%1$s</xliff:g></string>
+
+    <!-- Sound settings screen, summary format of do not disturb when off with extra information. [CHAR LIMIT=NONE] -->
+    <string name="zen_mode_sound_summary_off_with_info">Off / <xliff:g name="dnd_summary" example="1 rule can turn on automatically">%1$s</xliff:g></string>
+
+    <!-- Sound settings screen, summary format of do not disturb when off with no extra information. [CHAR LIMIT=NONE] -->
+    <string name="zen_mode_sound_summary_off">Off</string>
+
+    <!-- Summary for the Sound Do not Disturb option when at least one automatic rules is enabled. [CHAR LIMIT=NONE]-->
+    <plurals name="zen_mode_sound_summary_summary_off_info">
+        <item quantity="one">1 rule can turn on automatically</item>
+        <item quantity="other"><xliff:g id="on_count" example="3">%d</xliff:g> rules can turn on automatically</item>
+    </plurals>
+
     <!-- Work Sounds: Work sound settings section header.  [CHAR LIMIT=50] -->
     <string name="sound_work_settings">Work profile sounds</string>
 
@@ -7040,7 +7055,7 @@
     <string name="notification_pulse_title">Blink light</string>
 
     <!-- Configure Notifications: Title for the option controlling notifications on the lockscreen. [CHAR LIMIT=30] -->
-    <string name="lock_screen_notifications_title">On the lock screen</string>
+    <string name="lock_screen_notifications_title">On lock screen</string>
 
     <!-- Configure Notifications: Value for lockscreen notifications:  all information will be
          shown in notifications shown on a secure lock screen
@@ -7050,7 +7065,7 @@
     <!-- Configure Notifications: Value for lockscreen notifications: sensitive information will be
          hidden or redacted from notifications shown on a secure lock screen
          [CHAR LIMIT=50] -->
-    <string name="lock_screen_notifications_summary_hide">Hide sensitive notification content</string>
+    <string name="lock_screen_notifications_summary_hide">Hide sensitive content</string>
 
     <!-- Configure Notifications: Value for lockscreen notifications: notifications will not appear on a secure lock screen
          [CHAR LIMIT=50] -->
@@ -7070,7 +7085,7 @@
     <!-- Configure Notifications: Value for lockscreen notifications: sensitive information will be
          hidden or redacted from work notifications shown on a secure lock screen
          [CHAR LIMIT=50] -->
-    <string name="lock_screen_notifications_summary_hide_profile">Hide sensitive work notification content</string>
+    <string name="lock_screen_notifications_summary_hide_profile">Hide sensitive work content</string>
 
     <!-- Configure Notifications: Value for lockscreen notifications: work notifications will not appear on a secure lock screen
          [CHAR LIMIT=50] -->
@@ -7110,10 +7125,10 @@
      summary on the channel page-->
 
     <!-- [CHAR LIMIT=100] Notification Importance: min importance level description -->
-    <string name="notification_importance_min">No sound or visual interruption</string>
+    <string name="notification_importance_min">Show silently and minimize</string>
 
     <!-- [CHAR LIMIT=100] Notification Importance: low importance level description -->
-    <string name="notification_importance_low">No sound</string>
+    <string name="notification_importance_low">Show silently</string>
 
     <!-- [CHAR LIMIT=100] Notification Importance: normal importance level description -->
     <string name="notification_importance_default">Make sound</string>
@@ -7330,7 +7345,7 @@
     <string name="app_notification_override_dnd_summary">Let these notifications continue to interrupt when Do Not Disturb is set to Priority Only</string>
 
     <!-- [CHAR LIMIT=NONE] App notification settings: Visibility override option title -->
-    <string name="app_notification_visibility_override_title">On the lock screen</string>
+    <string name="app_notification_visibility_override_title">On lock screen</string>
 
     <!-- [CHAR LIMIT=20] Notification settings: App notifications row summary when allowed -->
     <string name="app_notification_row_banned">Blocked</string>
@@ -8114,9 +8129,6 @@
          and powering other device [CHAR LIMIT=NONE] -->
     <string name="usb_summary_MIDI_power">MIDI and supplying power</string>
 
-    <!-- Settings item title for SMS Mirroring preference [CHAR LIMIT=35] -->
-    <string name="sms_mirroring_pref">SMS Mirroring</string>
-
     <!-- Settings item title for background check prefs [CHAR LIMIT=35] -->
     <string name="background_check_pref">Background check</string>
 
@@ -8468,7 +8480,7 @@
     <!-- Summary of condition that airplane mode is on [CHAR LIMIT=NONE] -->
     <string name="condition_airplane_summary">Wi-Fi, Bluetooth, and mobile network are turned off. You can\'t make phone calls or connect to the internet.</string>
 
-    <!-- Title of condition that do not disturb is on [CHAR LIMIT=30] -->
+    <!-- Title of condition that do not disturb is on [CHAR LIMIT=36] -->
     <string name="condition_zen_title">Do Not Disturb is on</string>
 
     <!-- Title of condition that battery saver is on [CHAR LIMIT=30] -->
@@ -8643,6 +8655,27 @@
         <item quantity="other"><xliff:g id="count" example="10">%1$d</xliff:g> apps allowed to use unrestricted data when Data Saver is on</item>
     </plurals>
 
+    <!-- Data usage title text [CHAR LIMIT=30] -->
+    <string name="data_usage_title">Primary data</string>
+
+    <!-- Data usage string [CHAR LIMIT=30] -->
+    <string name="data_used"><xliff:g name="bytes" example="2 GB">^1</xliff:g> used</string>
+
+    <!-- Optional part of data usage showing the remaining amount [CHAR LIMIT=30] -->
+    <string name="data_remaining"><xliff:g name="bytes" example="2 GB">, ^1</xliff:g> left</string>
+
+    <!-- Informational text about time left in billing cycle [CHAR LIMIT=30] -->
+    <string name="cycle_left_time_text"><xliff:g name="time" example="2d">%1$s</xliff:g> left in this cycle</string>
+
+    <!-- Informational text about carrier and update time [CHAR LIMIT=30] -->
+    <string name="carrier_and_update_text">Updated by <xliff:g name="carrier" example="T-mobile">%1$s</xliff:g> <xliff:g name="time" example="3m">%2$s</xliff:g></string>
+
+    <!-- Informational text about update time only, without carrier [CHAR LIMIT=30] -->
+    <string name="no_carrier_update_text">Updated <xliff:g name="time" example="3m">%1$s</xliff:g></string>
+
+    <!-- Button to launch external data plan app [CHAR LIMIT=30] -->
+    <string name="launch_mdp_app_text">VIEW PLAN</string>
+
     <!-- Name of Data Saver screens [CHAR LIMIT=30] -->
     <string name="data_saver_title">Data saver</string>
 
@@ -8699,6 +8732,12 @@
 
     <!-- [CHAR_LIMIT=NONE] Battery saver: Description for automatic entry option: pct% battery -->
     <string name="battery_saver_desc_turn_on_auto_pct">Turn on automatically at %1$s battery</string>
+
+    <!--  Battery saver: Label for button that will turn on battery saver. [CHAR LIMIT=30] -->
+    <string name="battery_saver_button_turn_on">Turn on now</string>
+
+    <!--  Battery saver: Label for button that will turn off battery saver. [CHAR LIMIT=30] -->
+    <string name="battery_saver_button_turn_off">Turn off now</string>
 
     <!-- [CHAR_LIMIT=NONE] Label for when app is ignoring battery optimizations -->
     <string name="not_battery_optimizing">Not using battery optimization</string>
@@ -9184,6 +9223,8 @@
     <!-- Confirmation message displayed when the user taps Clear app, to ensure they want to remove
          the instant app from the device. -->
     <string name="clear_instant_app_confirmation">Do you want to remove this instant app?</string>
+    <!-- Label for button that allows user to launch the instant app. -->
+    <string name="launch_instant_app">Open</string>
 
     <!-- Title of games app storage screen [CHAR LIMIT=30] -->
     <string name="game_storage_settings">Games</string>
@@ -9253,6 +9294,9 @@
 
     <!-- Help URI, USB Audio [DO NOT TRANSLATE] -->
     <string name="help_url_audio_accessory_not_supported" translatable="false"></string>
+
+    <!-- Help URI, battery saver page [DO NOT TRANSLATE] -->
+    <string name="help_url_battery_saver_settings" translatable="false"></string>
 
     <!-- Title label for new device suggestion, which is displayed in Settings homepage [CHAR LIMIT=100] -->
     <string name="new_device_suggestion_title">What\'s new and exciting?</string>
@@ -9330,4 +9374,6 @@
     <!-- Settings item summary for automatic Bluetooth on while driving preference [CHAR LIMIT=100] -->
     <string name="bluetooth_on_while_driving_summary">Turn on Bluetooth automatically when driving</string>
 
+    <!-- Title for item to go to old battery settings page when clicking [CHAR LIMIT=100] -->
+    <string name="dev_android_o_battery_settings_title">See Android 8.0 battery settings</string>
 </resources>

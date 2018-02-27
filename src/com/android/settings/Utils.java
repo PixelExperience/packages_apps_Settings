@@ -23,9 +23,7 @@ import static android.text.format.DateUtils.FORMAT_SHOW_DATE;
 
 import android.annotation.Nullable;
 import android.app.ActivityManager;
-import android.app.AlertDialog;
 import android.app.AppGlobals;
-import android.app.Dialog;
 import android.app.Fragment;
 import android.app.IActivityManager;
 import android.app.KeyguardManager;
@@ -34,7 +32,6 @@ import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
@@ -53,12 +50,6 @@ import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.hardware.fingerprint.FingerprintManager;
-import android.icu.text.MeasureFormat;
-import android.icu.text.RelativeDateTimeFormatter;
-import android.icu.text.RelativeDateTimeFormatter.RelativeUnit;
-import android.icu.util.Measure;
-import android.icu.util.MeasureUnit;
-import android.icu.util.ULocale;
 import android.net.ConnectivityManager;
 import android.net.LinkProperties;
 import android.net.Network;
@@ -91,8 +82,6 @@ import android.support.v7.preference.PreferenceScreen;
 import android.telephony.TelephonyManager;
 import android.text.Spannable;
 import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
-import android.text.Spanned;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
 import android.text.style.TtsSpan;
@@ -142,10 +131,6 @@ public final class Utils extends com.android.settingslib.Utils {
     };
 
     private static final String SETTINGS_PACKAGE_NAME = "com.android.settings";
-
-    private static final int SECONDS_PER_MINUTE = 60;
-    private static final int SECONDS_PER_HOUR = 60 * 60;
-    private static final int SECONDS_PER_DAY = 24 * 60 * 60;
 
     public static final String OS_PKG = "os";
     public static final String READ_ONLY = "read_only";
@@ -250,16 +235,6 @@ public final class Utils extends com.android.settingslib.Utils {
             return formatIpAddresses(prop);
         }
         return null;
-    }
-
-    /**
-     * Returns the default link's IP addresses, if any, taking into account IPv4 and IPv6 style
-     * addresses.
-     * @return the formatted and newline-separated IP addresses, or null if none.
-     */
-    public static String getDefaultIpAddresses(ConnectivityManager cm) {
-        LinkProperties prop = cm.getActiveLinkProperties();
-        return formatIpAddresses(prop);
     }
 
     private static String formatIpAddresses(LinkProperties prop) {
@@ -415,23 +390,6 @@ public final class Utils extends com.android.settingslib.Utils {
         }
     }
 
-    /** Not global warming, it's global change warning. */
-    public static Dialog buildGlobalChangeWarningDialog(final Context context, int titleResId,
-            final Runnable positiveAction) {
-        final AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle(titleResId);
-        builder.setMessage(R.string.global_change_warning);
-        builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                positiveAction.run();
-            }
-        });
-        builder.setNegativeButton(android.R.string.cancel, null);
-
-        return builder.create();
-    }
-
     public static boolean hasMultipleUsers(Context context) {
         return ((UserManager) context.getSystemService(Context.USER_SERVICE))
                 .getUsers().size() > 1;
@@ -461,26 +419,6 @@ public final class Utils extends com.android.settingslib.Utils {
                 metricsCategory);
     }
 
-
-    /**
-     * Start a new instance of the activity, showing only the given fragment.
-     * When launched in this mode, the given preference fragment will be instantiated and fill the
-     * entire activity.
-     *
-     * @param context The context.
-     * @param fragmentName The name of the fragment to display.
-     * @param titleResId resource id for the String to display for the title of this set
-     *                   of preferences.
-     * @param metricsCategory The current metricsCategory for logging source when fragment starts
-     * @param intentFlags flag that should be added to the intent.
-     */
-    public static void startWithFragment(Context context, String fragmentName, int titleResId,
-            int metricsCategory, int intentFlags) {
-        startWithFragment(context, fragmentName, null, null, 0,
-                null /* titleResPackageName */, titleResId, null, false /* not a shortcut */,
-                metricsCategory, intentFlags);
-    }
-
     /**
      * Start a new instance of the activity, showing only the given fragment.
      * When launched in this mode, the given preference fragment will be instantiated and fill the
@@ -492,20 +430,11 @@ public final class Utils extends com.android.settingslib.Utils {
      * @param resultTo Option fragment that should receive the result of the activity launch.
      * @param resultRequestCode If resultTo is non-null, this is the request code in which
      *                          to report the result.
-     * @param titleResPackageName Optional package name for the resource id of the title.
      * @param titleResId resource id for the String to display for the title of this set
      *                   of preferences.
      * @param title String to display for the title of this set of preferences.
      * @param metricsCategory The current metricsCategory for logging source when fragment starts
      */
-    public static void startWithFragment(Context context, String fragmentName, Bundle args,
-            Fragment resultTo, int resultRequestCode, String titleResPackageName, int titleResId,
-            CharSequence title, int metricsCategory) {
-        startWithFragment(context, fragmentName, args, resultTo, resultRequestCode,
-                titleResPackageName, titleResId, title, false /* not a shortcut */,
-                metricsCategory);
-    }
-
     public static void startWithFragment(Context context, String fragmentName, Bundle args,
             Fragment resultTo, int resultRequestCode, int titleResId,
             CharSequence title, boolean isShortcut, int metricsCategory) {
@@ -521,38 +450,13 @@ public final class Utils extends com.android.settingslib.Utils {
     public static void startWithFragment(Context context, String fragmentName, Bundle args,
             Fragment resultTo, int resultRequestCode, String titleResPackageName, int titleResId,
             CharSequence title, boolean isShortcut, int metricsCategory) {
-        startWithFragment(context, fragmentName, args, resultTo, resultRequestCode,
-                titleResPackageName, titleResId, title, isShortcut, metricsCategory,
-                Intent.FLAG_ACTIVITY_NEW_TASK);
-    }
-
-
-    public static void startWithFragment(Context context, String fragmentName, Bundle args,
-            Fragment resultTo, int resultRequestCode, String titleResPackageName, int titleResId,
-            CharSequence title, boolean isShortcut, int metricsCategory, int flags) {
         Intent intent = onBuildStartFragmentIntent(context, fragmentName, args, titleResPackageName,
                 titleResId, title, isShortcut, metricsCategory);
-        intent.addFlags(flags);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         if (resultTo == null) {
             context.startActivity(intent);
         } else {
             resultTo.startActivityForResult(intent, resultRequestCode);
-        }
-    }
-
-    public static void startWithFragmentAsUser(Context context, String fragmentName, Bundle args,
-            int titleResId, CharSequence title, boolean isShortcut, int metricsCategory,
-            UserHandle userHandle) {
-        // workaround to avoid crash in b/17523189
-        if (userHandle.getIdentifier() == UserHandle.myUserId()) {
-            startWithFragment(context, fragmentName, args, null, 0, titleResId, title, isShortcut,
-                    metricsCategory);
-        } else {
-            Intent intent = onBuildStartFragmentIntent(context, fragmentName, args,
-                    null /* titleResPackageName */, titleResId, title, isShortcut, metricsCategory);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            context.startActivityAsUser(intent, userHandle);
         }
     }
 
@@ -776,113 +680,6 @@ public final class Utils extends com.android.settingslib.Utils {
                 (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
 
         return tm.getSimCount() > 1;
-    }
-
-    /**
-     * Returns elapsed time for the given millis, in the following format:
-     * 2d 5h 40m 29s
-     * @param context the application context
-     * @param millis the elapsed time in milli seconds
-     * @param withSeconds include seconds?
-     * @return the formatted elapsed time
-     */
-    public static CharSequence formatElapsedTime(Context context, double millis,
-            boolean withSeconds) {
-        SpannableStringBuilder sb = new SpannableStringBuilder();
-        int seconds = (int) Math.floor(millis / 1000);
-        if (!withSeconds) {
-            // Round up.
-            seconds += 30;
-        }
-
-        int days = 0, hours = 0, minutes = 0;
-        if (seconds >= SECONDS_PER_DAY) {
-            days = seconds / SECONDS_PER_DAY;
-            seconds -= days * SECONDS_PER_DAY;
-        }
-        if (seconds >= SECONDS_PER_HOUR) {
-            hours = seconds / SECONDS_PER_HOUR;
-            seconds -= hours * SECONDS_PER_HOUR;
-        }
-        if (seconds >= SECONDS_PER_MINUTE) {
-            minutes = seconds / SECONDS_PER_MINUTE;
-            seconds -= minutes * SECONDS_PER_MINUTE;
-        }
-
-        final ArrayList<Measure> measureList = new ArrayList(4);
-        if (days > 0) {
-            measureList.add(new Measure(days, MeasureUnit.DAY));
-        }
-        if (hours > 0) {
-            measureList.add(new Measure(hours, MeasureUnit.HOUR));
-        }
-        if (minutes > 0) {
-            measureList.add(new Measure(minutes, MeasureUnit.MINUTE));
-        }
-        if (withSeconds && seconds > 0) {
-            measureList.add(new Measure(seconds, MeasureUnit.SECOND));
-        }
-        if (measureList.size() == 0) {
-            // Everything addable was zero, so nothing was added. We add a zero.
-            measureList.add(new Measure(0, withSeconds ? MeasureUnit.SECOND : MeasureUnit.MINUTE));
-        }
-        final Measure[] measureArray = measureList.toArray(new Measure[measureList.size()]);
-
-        final Locale locale = context.getResources().getConfiguration().locale;
-        final MeasureFormat measureFormat = MeasureFormat.getInstance(
-                locale, MeasureFormat.FormatWidth.NARROW);
-        sb.append(measureFormat.formatMeasures(measureArray));
-
-        if (measureArray.length == 1 && MeasureUnit.MINUTE.equals(measureArray[0].getUnit())) {
-            // Add ttsSpan if it only have minute value, because it will be read as "meters"
-            final TtsSpan ttsSpan = new TtsSpan.MeasureBuilder().setNumber(minutes)
-                    .setUnit("minute").build();
-            sb.setSpan(ttsSpan, 0, sb.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        }
-
-        return sb;
-    }
-
-    /**
-     * Returns relative time for the given millis in the past, in a short format such as "2 days
-     * ago", "5 hr. ago", "40 min. ago", or "29 sec. ago".
-     *
-     * <p>The unit is chosen to have good information value while only using one unit. So 27 hours
-     * and 50 minutes would be formatted as "28 hr. ago", while 50 hours would be formatted as
-     * "2 days ago".
-     *
-     * @param context the application context
-     * @param millis the elapsed time in milli seconds
-     * @param withSeconds include seconds?
-     * @return the formatted elapsed time
-     */
-    public static CharSequence formatRelativeTime(Context context, double millis,
-            boolean withSeconds) {
-        final int seconds = (int) Math.floor(millis / 1000);
-        final RelativeUnit unit;
-        final int value;
-        if (withSeconds && seconds < 2 * SECONDS_PER_MINUTE) {
-            unit = RelativeUnit.SECONDS;
-            value = seconds;
-        } else if (seconds < 2 * SECONDS_PER_HOUR) {
-            unit = RelativeUnit.MINUTES;
-            value = (seconds + SECONDS_PER_MINUTE / 2) / SECONDS_PER_MINUTE;
-        } else if (seconds < 2 * SECONDS_PER_DAY) {
-            unit = RelativeUnit.HOURS;
-            value = (seconds + SECONDS_PER_HOUR / 2) / SECONDS_PER_HOUR;
-        } else {
-            unit = RelativeUnit.DAYS;
-            value = (seconds + SECONDS_PER_DAY / 2) / SECONDS_PER_DAY;
-        }
-
-        final Locale locale = context.getResources().getConfiguration().locale;
-        final RelativeDateTimeFormatter formatter = RelativeDateTimeFormatter.getInstance(
-                ULocale.forLocale(locale),
-                null /* default NumberFormat */,
-                RelativeDateTimeFormatter.Style.SHORT,
-                android.icu.text.DisplayContext.CAPITALIZATION_FOR_MIDDLE_OF_SENTENCE);
-
-        return formatter.format(value, RelativeDateTimeFormatter.Direction.LAST, unit);
     }
 
     /**

@@ -21,6 +21,7 @@ import android.util.Log;
 import com.android.settings.search.ResultPayload;
 import com.android.settings.search.SearchIndexableRaw;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -30,6 +31,8 @@ import java.util.List;
  * Abstract class to consolidate utility between preference controllers and act as an interface
  * for Slices. The abstract classes that inherit from this class will act as the direct interfaces
  * for each type when plugging into Slices.
+ *
+ * TODO (b/73074893) Add Lifecycle Setting method.
  */
 public abstract class BasePreferenceController extends AbstractPreferenceController {
 
@@ -67,6 +70,8 @@ public abstract class BasePreferenceController extends AbstractPreferenceControl
     public static final int UNAVAILABLE_UNKNOWN = 4;
 
     protected final String mPreferenceKey;
+
+    protected Lifecycle mLifecycle;
 
     public BasePreferenceController(Context context, String preferenceKey) {
         super(context);
