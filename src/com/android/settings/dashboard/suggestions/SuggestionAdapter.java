@@ -38,7 +38,6 @@ import android.widget.LinearLayout;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardAdapter.DashboardItemHolder;
-import com.android.settings.dashboard.DashboardAdapter.IconCache;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.Utils;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
@@ -46,6 +45,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnSaveInstanceState;
 import com.android.settingslib.suggestions.SuggestionControllerMixin;
+import com.android.settingslib.utils.IconCache;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -127,7 +127,7 @@ public class SuggestionAdapter extends RecyclerView.Adapter<DashboardItemHolder>
         holder.title.setText(suggestion.getTitle());
         holder.title.setSingleLine(suggestionCount == 1);
         holder.title.setTypeface(Typeface.create(
-            mContext.getString(com.android.internal.R.string.config_headlineFontFamilyMedium),
+            mContext.getString(com.android.internal.R.string.config_headlineFontFamily),
             Typeface.NORMAL));
 
         if (suggestionCount == 1) {

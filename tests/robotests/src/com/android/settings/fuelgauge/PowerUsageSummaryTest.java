@@ -37,19 +37,14 @@ import android.os.Bundle;
 import android.os.PowerManager;
 import android.support.v7.preference.PreferenceScreen;
 import android.util.SparseArray;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.os.BatterySipper;
 import com.android.internal.os.BatteryStatsHelper;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.TestConfig;
-import com.android.settings.Utils;
 import com.android.settings.applications.LayoutPreference;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
 import com.android.settings.fuelgauge.anomaly.AnomalyDetectionPolicy;
@@ -61,6 +56,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Answers;
@@ -222,7 +218,7 @@ public class PowerUsageSummaryTest {
                 fragment.getPreferenceScreenResId());
         final List<String> preferenceKeys = new ArrayList<>();
 
-        for (AbstractPreferenceController controller : fragment.getPreferenceControllers(context)) {
+        for (AbstractPreferenceController controller : fragment.createPreferenceControllers(context)) {
             preferenceKeys.add(controller.getPreferenceKey());
         }
 
@@ -257,6 +253,7 @@ public class PowerUsageSummaryTest {
                 eq(Bundle.EMPTY), any());
     }
 
+    @Ignore("b/73892008")
     @Test
     public void testShowBothEstimates_summariesAreBothModified() {
         doReturn(new TextView(mRealContext)).when(mBatteryLayoutPref).findViewById(R.id.summary2);
@@ -265,8 +262,8 @@ public class PowerUsageSummaryTest {
         TextView summary1 = mFragment.mBatteryLayoutPref.findViewById(R.id.summary1);
         TextView summary2 = mFragment.mBatteryLayoutPref.findViewById(R.id.summary2);
         Robolectric.flushBackgroundThreadScheduler();
-        assertThat(summary2.getText().toString().contains(NEW_ML_EST_SUFFIX));
-        assertThat(summary1.getText().toString().contains(OLD_EST_SUFFIX));
+        assertThat(summary2.getText().toString()).contains(NEW_ML_EST_SUFFIX);
+        assertThat(summary1.getText().toString()).contains(OLD_EST_SUFFIX);
     }
 
     @Test

@@ -21,10 +21,12 @@ import android.hardware.usb.UsbManager;
 import android.hardware.usb.UsbPort;
 import android.hardware.usb.UsbPortStatus;
 import android.net.ConnectivityManager;
-import android.os.UserHandle;
 import android.os.UserManager;
 import android.os.SystemProperties;
 import android.support.annotation.VisibleForTesting;
+
+import com.android.settings.wrapper.UsbManagerWrapper;
+import com.android.settings.wrapper.UserManagerWrapper;
 
 public class UsbBackend {
 
@@ -49,7 +51,7 @@ public class UsbBackend {
 
     private UsbManager mUsbManager;
     @VisibleForTesting
-    UsbManagerPassThrough mUsbManagerPassThrough;
+    UsbManagerWrapper mUsbManagerWrapper;
     private UsbPort mPort;
     private UsbPortStatus mPortStatus;
 
@@ -58,24 +60,24 @@ public class UsbBackend {
     private boolean mIsCTA = SystemProperties.getBoolean("persist.vendor.strict_op_enable", false);
 
     public UsbBackend(Context context) {
-        this(context, new UserRestrictionUtil(context), null);
+        this(context, new UserManagerWrapper(UserManager.get(context)), null);
     }
 
     @VisibleForTesting
-    public UsbBackend(Context context, UserRestrictionUtil userRestrictionUtil,
-            UsbManagerPassThrough usbManagerPassThrough) {
+    public UsbBackend(Context context, UserManagerWrapper userManagerWrapper,
+            UsbManagerWrapper usbManagerWrapper) {
         mContext = context;
         mUsbManager = context.getSystemService(UsbManager.class);
 
-        mUsbManagerPassThrough = usbManagerPassThrough;
-        if (mUsbManagerPassThrough == null) {
-            mUsbManagerPassThrough = new UsbManagerPassThrough(mUsbManager);
+        mUsbManagerWrapper = usbManagerWrapper;
+        if (mUsbManagerWrapper == null) {
+            mUsbManagerWrapper = new UsbManagerWrapper(mUsbManager);
         }
 
-        mFileTransferRestricted = userRestrictionUtil.isUsbFileTransferRestricted();
-        mFileTransferRestrictedBySystem = userRestrictionUtil.isUsbFileTransferRestrictedBySystem();
-        mTetheringRestricted = userRestrictionUtil.isUsbTetheringRestricted();
-        mTetheringRestrictedBySystem = userRestrictionUtil.isUsbTetheringRestrictedBySystem();
+        mFileTransferRestricted = userManagerWrapper.isUsbFileTransferRestricted();
+        mFileTransferRestrictedBySystem = userManagerWrapper.isUsbFileTransferRestrictedBySystem();
+        mTetheringRestricted = userManagerWrapper.isUsbTetheringRestricted();
+        mTetheringRestrictedBySystem = userManagerWrapper.isUsbTetheringRestrictedBySystem();
 
         mMidiSupported = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_MIDI);
         ConnectivityManager cm =
@@ -123,43 +125,15 @@ public class UsbBackend {
     }
 
     public int getUsbDataMode() {
-        long functions = mUsbManagerPassThrough.getCurrentFunctions();
-        if (functions == UsbManager.FUNCTION_MTP) {
-            return MODE_DATA_MTP;
-        } else if (functions == UsbManager.FUNCTION_PTP) {
-            return MODE_DATA_PTP;
-        } else if (functions == UsbManager.FUNCTION_MIDI) {
-            return MODE_DATA_MIDI;
-        } else if (functions == UsbManager.FUNCTION_RNDIS) {
-            return MODE_DATA_TETHER;
-        }
-        return mIsCTA ? MODE_DATA_NONE_CTA : MODE_DATA_NONE;
+        return usbFunctionToMode(mUsbManagerWrapper.getCurrentFunctions());
     }
 
-    private void setUsbFunction(int mode) {
-        switch (mode) {
-            case MODE_DATA_MTP:
-                mUsbManager.setCurrentFunctions(UsbManager.FUNCTION_MTP);
-                break;
-            case MODE_DATA_PTP:
-                mUsbManager.setCurrentFunctions(UsbManager.FUNCTION_PTP);
-                break;
-            case MODE_DATA_MIDI:
-                mUsbManager.setCurrentFunctions(UsbManager.FUNCTION_MIDI);
-                break;
-            case MODE_DATA_TETHER:
-                mUsbManager.setCurrentFunctions(UsbManager.FUNCTION_RNDIS);
-                break;
-            case MODE_DATA_NONE:
-                //Take MTP mode and data unlocked false as charging
-                if (mIsCTA && !isInPowerSourceMode()) {
-                    mUsbManager.setCurrentFunction(UsbManager.USB_FUNCTION_MTP, false);
-                    break;
-                }
-            default:
-                mUsbManager.setCurrentFunctions(UsbManager.FUNCTION_NONE);
-                break;
-        }
+    public void setDefaultUsbMode(int mode) {
+        mUsbManager.setScreenUnlockedFunctions(modeToUsbFunction(mode & MODE_DATA_MASK));
+    }
+
+    public int getDefaultUsbMode() {
+        return usbFunctionToMode(mUsbManager.getScreenUnlockedFunctions());
     }
 
     public void setMode(int mode) {
@@ -174,11 +148,6 @@ public class UsbBackend {
             mUsbManager.setPortRoles(mPort, powerRole, dataRole);
         }
         setUsbFunction(mode & MODE_DATA_MASK);
-    }
-
-    private int modeToPower(int mode) {
-        return (mode & MODE_POWER_MASK) == MODE_POWER_SOURCE
-                    ? UsbPort.POWER_ROLE_SOURCE : UsbPort.POWER_ROLE_SINK;
     }
 
     public boolean isModeDisallowed(int mode) {
@@ -224,47 +193,40 @@ public class UsbBackend {
         return (mode & MODE_POWER_MASK) != MODE_POWER_SOURCE;
     }
 
-    // Wrapper class to enable testing with UserManager APIs
-    public static class UserRestrictionUtil {
-        private UserManager mUserManager;
-
-        public UserRestrictionUtil(Context context) {
-            mUserManager = UserManager.get(context);
+    private static int usbFunctionToMode(long functions) {
+        if (functions == UsbManager.FUNCTION_MTP) {
+            return MODE_DATA_MTP;
+        } else if (functions == UsbManager.FUNCTION_PTP) {
+            return MODE_DATA_PTP;
+        } else if (functions == UsbManager.FUNCTION_MIDI) {
+            return MODE_DATA_MIDI;
+        } else if (functions == UsbManager.FUNCTION_RNDIS) {
+            return MODE_DATA_TETHER;
         }
+        return MODE_DATA_NONE;
+    }
 
-        public boolean isUsbFileTransferRestricted() {
-            return mUserManager.hasUserRestriction(UserManager.DISALLOW_USB_FILE_TRANSFER);
-        }
-
-        public boolean isUsbTetheringRestricted() {
-            return mUserManager.hasUserRestriction(UserManager.DISALLOW_CONFIG_TETHERING);
-        }
-
-        public boolean isUsbFileTransferRestrictedBySystem() {
-            return mUserManager.hasBaseUserRestriction(
-                UserManager.DISALLOW_USB_FILE_TRANSFER, UserHandle.of(UserHandle.myUserId()));
-        }
-
-        public boolean isUsbTetheringRestrictedBySystem() {
-            return mUserManager.hasBaseUserRestriction(
-                UserManager.DISALLOW_CONFIG_TETHERING, UserHandle.of(UserHandle.myUserId()));
+    private static long modeToUsbFunction(int mode) {
+        switch (mode) {
+            case MODE_DATA_MTP:
+                return UsbManager.FUNCTION_MTP;
+            case MODE_DATA_PTP:
+                return UsbManager.FUNCTION_PTP;
+            case MODE_DATA_MIDI:
+                return UsbManager.FUNCTION_MIDI;
+            case MODE_DATA_TETHER:
+                return UsbManager.FUNCTION_RNDIS;
+            default:
+                return UsbManager.FUNCTION_NONE;
         }
     }
 
-    // Temporary pass-through to allow roboelectric to use getCurrentFunctions()
-    public static class UsbManagerPassThrough {
-        private UsbManager mUsbManager;
+    private static int modeToPower(int mode) {
+        return (mode & MODE_POWER_MASK) == MODE_POWER_SOURCE
+                ? UsbPort.POWER_ROLE_SOURCE : UsbPort.POWER_ROLE_SINK;
+    }
 
-        public UsbManagerPassThrough(UsbManager manager) {
-            mUsbManager = manager;
-        }
-
-        public long getCurrentFunctions() {
-            return mUsbManager.getCurrentFunctions();
-        }
-
-        public long usbFunctionsFromString(String str) {
-            return UsbManager.usbFunctionsFromString(str);
-        }
+    private void setUsbFunction(int mode) {
+        mUsbManager.setCurrentFunctions(modeToUsbFunction(mode));
     }
 }

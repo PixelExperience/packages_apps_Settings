@@ -54,6 +54,7 @@ import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
 import com.android.settings.applications.LayoutPreference;
 import com.android.settings.applications.manageapplications.ManageApplications;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.display.AmbientDisplayPreferenceController;
 import com.android.settings.display.AutoBrightnessPreferenceController;
@@ -66,11 +67,11 @@ import com.android.settings.fuelgauge.anomaly.AnomalyLoader;
 import com.android.settings.fuelgauge.anomaly.AnomalySummaryPreferenceController;
 import com.android.settings.fuelgauge.anomaly.AnomalyUtils;
 import com.android.settings.overlay.FeatureFactory;
-import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
-
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.utils.PowerUtil;
 import com.android.settingslib.utils.StringUtil;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -242,7 +243,7 @@ public class PowerUsageSummaryLegacy extends PowerUsageBase implements
                 KEY_TIME_SINCE_LAST_FULL_CHARGE);
         mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.battery_footer_summary);
         mAnomalySummaryPreferenceController = new AnomalySummaryPreferenceController(
-                (SettingsActivity) getActivity(), this, MetricsEvent.FUELGAUGE_POWER_USAGE_SUMMARY);
+                (SettingsActivity) getActivity(), this);
         mBatteryUtils = BatteryUtils.getInstance(getContext());
         mAnomalySparseArray = new SparseArray<>();
 
@@ -306,19 +307,21 @@ public class PowerUsageSummaryLegacy extends PowerUsageBase implements
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         mBatteryHeaderPreferenceController = new BatteryHeaderPreferenceController(
                 context, getActivity(), this /* host */, getLifecycle());
         controllers.add(mBatteryHeaderPreferenceController);
         controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
         controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
-        controllers.add(new BatterySaverController(context, getLifecycle()));
         controllers.add(new BatteryPercentagePreferenceController(context));
         controllers.add(new AmbientDisplayPreferenceController(
                 context,
                 new AmbientDisplayConfiguration(context),
                 KEY_AMBIENT_DISPLAY));
+        BatterySaverController batterySaverController = new BatterySaverController(context);
+        controllers.add(batterySaverController);
+        getLifecycle().addObserver(batterySaverController);
         return controllers;
     }
 
@@ -365,8 +368,12 @@ public class PowerUsageSummaryLegacy extends PowerUsageBase implements
                 Bundle args = new Bundle();
                 args.putString(ManageApplications.EXTRA_CLASSNAME,
                         HighPowerApplicationsActivity.class.getName());
-                sa.startPreferencePanel(this, ManageApplications.class.getName(), args,
-                        R.string.high_power_apps, null, null, 0);
+                new SubSettingLauncher(context)
+                        .setDestination(ManageApplications.class.getName())
+                        .setArguments(args)
+                        .setTitle(R.string.high_power_apps)
+                        .setSourceMetricsCategory(getMetricsCategory())
+                        .launch();
                 metricsFeatureProvider.action(context,
                         MetricsEvent.ACTION_SETTINGS_MENU_BATTERY_OPTIMIZATION);
                 return true;
@@ -402,8 +409,11 @@ public class PowerUsageSummaryLegacy extends PowerUsageBase implements
 
     private void performBatteryHeaderClick() {
         if (mPowerFeatureProvider.isAdvancedUiEnabled()) {
-            Utils.startWithFragment(getContext(), PowerUsageAdvanced.class.getName(), null,
-                    null, 0, R.string.advanced_battery_title, null, getMetricsCategory());
+            new SubSettingLauncher(getContext())
+                    .setDestination(PowerUsageAdvanced.class.getName())
+                    .setSourceMetricsCategory(getMetricsCategory())
+                    .setTitle(R.string.advanced_battery_title)
+                    .launch();
         } else {
             mStatsHelper.storeStatsHistoryInFile(BatteryHistoryDetail.BATTERY_HISTORY_FILE);
             Bundle args = new Bundle(2);
@@ -411,8 +421,12 @@ public class PowerUsageSummaryLegacy extends PowerUsageBase implements
                     BatteryHistoryDetail.BATTERY_HISTORY_FILE);
             args.putParcelable(BatteryHistoryDetail.EXTRA_BROADCAST,
                     mStatsHelper.getBatteryBroadcast());
-            Utils.startWithFragment(getContext(), BatteryHistoryDetail.class.getName(), args,
-                    null, 0, R.string.history_details_title, null, getMetricsCategory());
+            new SubSettingLauncher(getContext())
+                    .setDestination(BatteryHistoryDetail.class.getName())
+                    .setSourceMetricsCategory(getMetricsCategory())
+                    .setArguments(args)
+                    .setTitle(R.string.history_details_title)
+                    .launch();
         }
     }
 

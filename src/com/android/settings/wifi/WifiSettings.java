@@ -30,7 +30,6 @@ import android.net.NetworkInfo;
 import android.net.NetworkInfo.State;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
-import android.net.wifi.WpsInfo;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Handler;
@@ -52,6 +51,7 @@ import com.android.settings.LinkifyUtils;
 import com.android.settings.R;
 import com.android.settings.RestrictedSettingsFragment;
 import com.android.settings.SettingsActivity;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.location.ScanningSettings;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -350,32 +350,6 @@ public class WifiSettings extends RestrictedSettingsFragment
             getEmptyTextView().setText(R.string.wifi_empty_list_user_restricted);
         }
         getPreferenceScreen().removeAll();
-    }
-
-    /**
-     * Only update the AP list if there are not any APs currently shown.
-     *
-     * <p>Thus forceUpdate will only be called during cold start or when toggling between wifi on
-     * and off. In other use cases, the previous APs will remain until the next update is received
-     * from {@link WifiTracker}.
-     */
-    private void conditionallyForceUpdateAPs() {
-        if (mAccessPointsPreferenceCategory.getPreferenceCount() > 0
-                && mAccessPointsPreferenceCategory.getPreference(0) instanceof
-                        AccessPointPreference) {
-            // Make sure we don't update due to callbacks initiated by sticky broadcasts in
-            // WifiTracker.
-            Log.d(TAG, "Did not force update APs due to existing APs displayed");
-            getView().removeCallbacks(mUpdateAccessPointsRunnable);
-            return;
-        }
-        setProgressBarVisible(true);
-        mWifiTracker.forceUpdate();
-        if (isVerboseLoggingEnabled()) {
-            Log.i(TAG, "WifiSettings force update APs: " + mWifiTracker.getAccessPoints());
-        }
-        getView().removeCallbacks(mUpdateAccessPointsRunnable);
-        updateAccessPointPreferences();
     }
 
     /**
@@ -682,7 +656,7 @@ public class WifiSettings extends RestrictedSettingsFragment
         final int wifiState = mWifiManager.getWifiState();
         switch (wifiState) {
             case WifiManager.WIFI_STATE_ENABLED:
-                conditionallyForceUpdateAPs();
+                updateAccessPointPreferences();
                 break;
 
             case WifiManager.WIFI_STATE_ENABLING:
@@ -861,10 +835,12 @@ public class WifiSettings extends RestrictedSettingsFragment
         pref.setOnPreferenceClickListener(preference -> {
             pref.getAccessPoint().saveWifiState(pref.getExtras());
 
-            SettingsActivity activity = (SettingsActivity) WifiSettings.this.getActivity();
-            activity.startPreferencePanel(this,
-                    WifiNetworkDetailsFragment.class.getName(), pref.getExtras(),
-                    -1 /* resId */, pref.getTitle(), null, 0 /* resultRequestCode */);
+            new SubSettingLauncher(getContext())
+                    .setTitle(pref.getTitle())
+                    .setDestination(WifiNetworkDetailsFragment.class.getName())
+                    .setArguments(pref.getExtras())
+                    .setSourceMetricsCategory(getMetricsCategory())
+                    .launch();
             return true;
         });
 
@@ -922,15 +898,12 @@ public class WifiSettings extends RestrictedSettingsFragment
                 Settings.Global.WIFI_SCAN_ALWAYS_AVAILABLE, 0) == 1;
         final CharSequence description = wifiScanningMode ? getText(R.string.wifi_scan_notify_text)
                 : getText(R.string.wifi_scan_notify_text_scanning_off);
-        final LinkifyUtils.OnClickListener clickListener = new LinkifyUtils.OnClickListener() {
-            @Override
-            public void onClick() {
-                final SettingsActivity activity = (SettingsActivity) getActivity();
-                activity.startPreferencePanel(WifiSettings.this,
-                        ScanningSettings.class.getName(),
-                        null, R.string.location_scanning_screen_title, null, null, 0);
-            }
-        };
+        final LinkifyUtils.OnClickListener clickListener =
+                () -> new SubSettingLauncher(getContext())
+                        .setDestination(ScanningSettings.class.getName())
+                        .setTitle(R.string.location_scanning_screen_title)
+                        .setSourceMetricsCategory(getMetricsCategory())
+                        .launch();
         mStatusMessagePreference.setText(title, description, clickListener);
         removeConnectedAccessPointPreference();
         mAccessPointsPreferenceCategory.removeAll();

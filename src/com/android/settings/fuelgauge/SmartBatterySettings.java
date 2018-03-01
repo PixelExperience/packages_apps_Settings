@@ -19,11 +19,11 @@ package com.android.settings.fuelgauge;
 import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
-import android.support.v14.preference.PreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
+import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -64,12 +64,13 @@ public class SmartBatterySettings extends DashboardFragment {
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, (SettingsActivity) getActivity(), this);
     }
 
     private static List<AbstractPreferenceController> buildPreferenceControllers(
-            Context context, SettingsActivity settingsActivity, PreferenceFragment fragment) {
+            Context context, SettingsActivity settingsActivity,
+            InstrumentedPreferenceFragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new SmartBatteryPreferenceController(context));
         if (settingsActivity != null && fragment != null) {
@@ -98,7 +99,7 @@ public class SmartBatterySettings extends DashboardFragment {
                 }
 
                 @Override
-                public List<AbstractPreferenceController> getPreferenceControllers(
+                public List<AbstractPreferenceController> createPreferenceControllers(
                         Context context) {
                     return buildPreferenceControllers(context, null, null);
                 }

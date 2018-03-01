@@ -48,10 +48,10 @@ import java.util.List;
 public class SecuritySettings extends DashboardFragment {
 
     private static final String TAG = "SecuritySettings";
+    private static final String SECURITY_CATEGORY = "security_category";
+    private static final String WORK_PROFILE_SECURITY_CATEGORY = "security_category_profile";
 
-    public static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST = 123;
     public static final int CHANGE_TRUST_AGENT_SETTINGS = 126;
-    public static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST_PROFILE = 127;
     public static final int UNIFY_LOCK_CONFIRM_DEVICE_REQUEST = 128;
     public static final int UNIFY_LOCK_CONFIRM_PROFILE_REQUEST = 129;
     public static final int UNUNIFY_LOCK_CONFIRM_DEVICE_REQUEST = 130;
@@ -77,7 +77,7 @@ public class SecuritySettings extends DashboardFragment {
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, getLifecycle(), this /* host*/);
     }
 
@@ -86,11 +86,11 @@ public class SecuritySettings extends DashboardFragment {
      */
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (getPreferenceController(TrustAgentListPreferenceController.class)
+        if (use(TrustAgentListPreferenceController.class)
                 .handleActivityResult(requestCode, resultCode)) {
             return;
         }
-        if (getPreferenceController(LockUnificationPreferenceController.class)
+        if (use(LockUnificationPreferenceController.class)
                 .handleActivityResult(requestCode, resultCode, data)) {
             return;
         }
@@ -98,16 +98,16 @@ public class SecuritySettings extends DashboardFragment {
     }
 
     void launchConfirmDeviceLockForUnification() {
-        getPreferenceController(LockUnificationPreferenceController.class)
+        use(LockUnificationPreferenceController.class)
                 .launchConfirmDeviceLockForUnification();
     }
 
     void unifyUncompliantLocks() {
-        getPreferenceController(LockUnificationPreferenceController.class).unifyUncompliantLocks();
+        use(LockUnificationPreferenceController.class).unifyUncompliantLocks();
     }
 
     void updateUnificationPreference() {
-        getPreferenceController(LockUnificationPreferenceController.class).updateState(null);
+        use(LockUnificationPreferenceController.class).updateState(null);
     }
 
     private static List<AbstractPreferenceController> buildPreferenceControllers(Context context,
@@ -120,12 +120,17 @@ public class SecuritySettings extends DashboardFragment {
         controllers.add(new ScreenPinningPreferenceController(context));
         controllers.add(new SimLockPreferenceController(context));
         controllers.add(new ShowPasswordPreferenceController(context));
-        controllers.add(new FingerprintStatusPreferenceController(context));
         controllers.add(new EncryptionStatusPreferenceController(context,
                 PREF_KEY_ENCRYPTION_SECURITY_PAGE));
         controllers.add(new TrustAgentListPreferenceController(context, host, lifecycle));
-        controllers.add(new LockScreenPreferenceController(context, lifecycle));
-        controllers.add(new ChangeScreenLockPreferenceController(context, host));
+
+        final List<AbstractPreferenceController> securityPreferenceControllers = new ArrayList<>();
+        securityPreferenceControllers.add(new FingerprintStatusPreferenceController(context));
+        securityPreferenceControllers.add(new LockScreenPreferenceController(context, lifecycle));
+        securityPreferenceControllers.add(new ChangeScreenLockPreferenceController(context, host));
+        controllers.add(new PreferenceCategoryController(context, SECURITY_CATEGORY,
+                securityPreferenceControllers));
+        controllers.addAll(securityPreferenceControllers);
 
         final List<AbstractPreferenceController> profileSecurityControllers = new ArrayList<>();
         profileSecurityControllers.add(new ChangeProfileScreenLockPreferenceController(
@@ -134,7 +139,7 @@ public class SecuritySettings extends DashboardFragment {
         profileSecurityControllers.add(new VisiblePatternProfilePreferenceController(
                 context, lifecycle));
         profileSecurityControllers.add(new FingerprintProfileStatusPreferenceController(context));
-        controllers.add(new PreferenceCategoryController(context, "security_category_profile",
+        controllers.add(new PreferenceCategoryController(context, WORK_PROFILE_SECURITY_CATEGORY,
                 profileSecurityControllers));
         controllers.addAll(profileSecurityControllers);
 
@@ -159,7 +164,7 @@ public class SecuritySettings extends DashboardFragment {
                 }
 
                 @Override
-                public List<AbstractPreferenceController> getPreferenceControllers(Context
+                public List<AbstractPreferenceController> createPreferenceControllers(Context
                         context) {
                     return buildPreferenceControllers(context, null /* lifecycle */,
                             null /* host*/);

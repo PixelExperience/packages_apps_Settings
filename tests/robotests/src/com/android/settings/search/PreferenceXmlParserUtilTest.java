@@ -21,19 +21,25 @@ import static com.google.common.truth.Truth.assertThat;
 
 import android.content.Context;
 import android.content.res.XmlResourceParser;
+import android.os.Bundle;
 import android.util.AttributeSet;
 import android.util.Xml;
 
 import com.android.settings.R;
 import com.android.settings.TestConfig;
+import com.android.settings.core.PreferenceXmlParserUtils;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
-import org.robolectric.shadows.ShadowApplication;
 import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
+import java.util.List;
 
 /**
  * These tests use a series of preferences that have specific attributes which are sometimes
@@ -44,13 +50,13 @@ import org.xmlpull.v1.XmlPullParser;
  */
 @RunWith(SettingsRobolectricTestRunner.class)
 @Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
-public class XmlParserUtilTest {
+public class PreferenceXmlParserUtilTest {
 
     private Context mContext;
 
     @Before
     public void setUp() {
-        mContext = ShadowApplication.getInstance().getApplicationContext();
+        mContext = RuntimeEnvironment.application;
     }
 
     @Test
@@ -58,7 +64,7 @@ public class XmlParserUtilTest {
         XmlResourceParser parser = getChildByType(R.xml.display_settings,
                 "com.android.settings.TimeoutListPreference");
         final AttributeSet attrs = Xml.asAttributeSet(parser);
-        String title = XmlParserUtils.getDataTitle(mContext, attrs);
+        String title = PreferenceXmlParserUtils.getDataTitle(mContext, attrs);
         String expTitle = mContext.getString(R.string.screen_timeout);
         assertThat(title).isEqualTo(expTitle);
     }
@@ -67,7 +73,7 @@ public class XmlParserUtilTest {
     public void testDataKeywordsValid_ReturnsPreferenceKeywords() {
         XmlResourceParser parser = getParentPrimedParser(R.xml.display_settings);
         final AttributeSet attrs = Xml.asAttributeSet(parser);
-        String keywords = XmlParserUtils.getDataKeywords(mContext, attrs);
+        String keywords = PreferenceXmlParserUtils.getDataKeywords(mContext, attrs);
         String expKeywords = mContext.getString(R.string.keywords_display);
         assertThat(keywords).isEqualTo(expKeywords);
     }
@@ -77,7 +83,7 @@ public class XmlParserUtilTest {
         XmlResourceParser parser = getChildByType(R.xml.display_settings,
                 "com.android.settings.TimeoutListPreference");
         final AttributeSet attrs = Xml.asAttributeSet(parser);
-        String key = XmlParserUtils.getDataKey(mContext, attrs);
+        String key = PreferenceXmlParserUtils.getDataKey(mContext, attrs);
         String expKey = "screen_timeout";
         assertThat(key).isEqualTo(expKey);
     }
@@ -87,10 +93,9 @@ public class XmlParserUtilTest {
         XmlResourceParser parser = getChildByType(R.xml.display_settings,
                 "com.android.settings.TimeoutListPreference");
         final AttributeSet attrs = Xml.asAttributeSet(parser);
-        String summary = XmlParserUtils.getDataSummary(mContext, attrs);
+        String summary = PreferenceXmlParserUtils.getDataSummary(mContext, attrs);
         String expSummary = mContext.getString(R.string.summary_placeholder);
         assertThat(summary).isEqualTo(expSummary);
-
     }
 
     @Test
@@ -99,9 +104,9 @@ public class XmlParserUtilTest {
         XmlResourceParser parser = getChildByType(R.xml.display_settings, "CheckBoxPreference");
         final AttributeSet attrs = Xml.asAttributeSet(parser);
 
-        assertThat(XmlParserUtils.getDataSummaryOn(mContext, attrs))
+        assertThat(PreferenceXmlParserUtils.getDataSummaryOn(mContext, attrs))
                 .isEqualTo("summary_on");
-        assertThat(XmlParserUtils.getDataSummaryOff(mContext, attrs))
+        assertThat(PreferenceXmlParserUtils.getDataSummaryOff(mContext, attrs))
                 .isEqualTo("summary_off");
     }
 
@@ -110,7 +115,7 @@ public class XmlParserUtilTest {
     public void testDataEntriesValid_ReturnsPreferenceEntries() {
         XmlResourceParser parser = getChildByType(R.xml.display_settings, "ListPreference");
         final AttributeSet attrs = Xml.asAttributeSet(parser);
-        String entries = XmlParserUtils.getDataEntries(mContext, attrs);
+        String entries = PreferenceXmlParserUtils.getDataEntries(mContext, attrs);
         String[] expEntries = mContext.getResources()
                 .getStringArray(R.array.app_install_location_entries);
         for (int i = 0; i < expEntries.length; i++) {
@@ -124,7 +129,7 @@ public class XmlParserUtilTest {
     public void testDataKeyInvalid_ReturnsNull() {
         XmlResourceParser parser = getParentPrimedParser(R.xml.display_settings);
         final AttributeSet attrs = Xml.asAttributeSet(parser);
-        String key = XmlParserUtils.getDataKey(mContext, attrs);
+        String key = PreferenceXmlParserUtils.getDataKey(mContext, attrs);
         assertThat(key).isNull();
     }
 
@@ -134,7 +139,7 @@ public class XmlParserUtilTest {
         XmlResourceParser parser = getChildByType(R.xml.about_legal, "Preference");
         final AttributeSet attrs = Xml.asAttributeSet(parser);
 
-        String controller = XmlParserUtils.getController(mContext, attrs);
+        String controller = PreferenceXmlParserUtils.getController(mContext, attrs);
         assertThat(controller).isEqualTo("mind_flayer");
     }
 
@@ -142,7 +147,7 @@ public class XmlParserUtilTest {
     public void testDataSummaryInvalid_ReturnsNull() {
         XmlResourceParser parser = getParentPrimedParser(R.xml.display_settings);
         final AttributeSet attrs = Xml.asAttributeSet(parser);
-        String summary = XmlParserUtils.getDataSummary(mContext, attrs);
+        String summary = PreferenceXmlParserUtils.getDataSummary(mContext, attrs);
         assertThat(summary).isNull();
     }
 
@@ -150,7 +155,7 @@ public class XmlParserUtilTest {
     public void testDataSummaryOffInvalid_ReturnsNull() {
         XmlResourceParser parser = getParentPrimedParser(R.xml.display_settings);
         final AttributeSet attrs = Xml.asAttributeSet(parser);
-        String summaryOff = XmlParserUtils.getDataSummaryOff(mContext, attrs);
+        String summaryOff = PreferenceXmlParserUtils.getDataSummaryOff(mContext, attrs);
         assertThat(summaryOff).isNull();
     }
 
@@ -158,8 +163,22 @@ public class XmlParserUtilTest {
     public void testDataEntriesInvalid_ReturnsNull() {
         XmlResourceParser parser = getParentPrimedParser(R.xml.display_settings);
         final AttributeSet attrs = Xml.asAttributeSet(parser);
-        String entries = XmlParserUtils.getDataEntries(mContext, attrs);
+        String entries = PreferenceXmlParserUtils.getDataEntries(mContext, attrs);
         assertThat(entries).isNull();
+    }
+
+    @Test
+    @Config(qualifiers = "mcc999")
+    public void extractMetadata_shouldContainKeyAndControllerName()
+            throws IOException, XmlPullParserException {
+        final List<Bundle> metadata = PreferenceXmlParserUtils.extractMetadata(mContext,
+                R.xml.location_settings);
+
+        assertThat(metadata).isNotEmpty();
+        for (Bundle bundle : metadata) {
+            assertThat(bundle.getString(PreferenceXmlParserUtils.METADATA_KEY)).isNotNull();
+            assertThat(bundle.getString(PreferenceXmlParserUtils.METADATA_CONTROLLER)).isNotNull();
+        }
     }
 
     /**
