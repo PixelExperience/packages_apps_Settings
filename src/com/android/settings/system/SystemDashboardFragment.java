@@ -17,7 +17,6 @@ package com.android.settings.system;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.UserManager;
 import android.provider.SearchIndexableResource;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
@@ -27,8 +26,6 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.backup.BackupSettingsActivityPreferenceController;
 import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.deviceinfo.AdditionalSystemUpdatePreferenceController;
-import com.android.settings.deviceinfo.SystemUpdatePreferenceController;
 import com.android.settings.gestures.GesturesSettingPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
