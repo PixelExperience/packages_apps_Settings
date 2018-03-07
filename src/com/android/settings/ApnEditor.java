@@ -1184,6 +1184,7 @@ public class ApnEditor extends SettingsPreferenceFragment
                 }
             }
         }
+        contentValues.put(Telephony.Carriers.EDITED, Telephony.Carriers.USER_EDITED);
         return contentValues;
     }
 
