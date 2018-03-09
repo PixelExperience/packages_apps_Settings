@@ -26,9 +26,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
+import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
 import com.android.settings.fuelgauge.batterytip.BatteryTipPreferenceController.BatteryTipListener;
 import com.android.settings.fuelgauge.batterytip.actions.BatteryTipAction;
@@ -130,8 +132,7 @@ public class BatteryTipDialogFragment extends InstrumentedDialogFragment impleme
 
     @Override
     public int getMetricsCategory() {
-        //TODO(b/70570352): add correct metric id
-        return 0;
+        return MetricsProto.MetricsEvent.FUELGAUGE_BATTERY_TIP_DIALOG;
     }
 
     @Override
@@ -141,7 +142,8 @@ public class BatteryTipDialogFragment extends InstrumentedDialogFragment impleme
             return;
         }
         final BatteryTipAction action = BatteryTipUtils.getActionForBatteryTip(mBatteryTip,
-                (SettingsActivity) getActivity(), this);
+                (SettingsActivity) getActivity(),
+                (InstrumentedPreferenceFragment) getTargetFragment());
         if (action != null) {
             action.handlePositiveAction();
         }

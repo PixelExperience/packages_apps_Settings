@@ -23,7 +23,6 @@ import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
-
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
@@ -35,7 +34,6 @@ import com.android.settings.widget.SwitchBar;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.location.RecentLocationApps;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -67,16 +65,6 @@ public class LocationSettings extends DashboardFragment {
     private LocationSwitchBarController mSwitchBarController;
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-        final RecentLocationApps recentLocationApps = new RecentLocationApps(getActivity());
-        int locationRequestsApps = recentLocationApps.getAppList().size();
-        int locationRequestsPrefs = locationRequestsApps == 0 ? 1 : locationRequestsApps;
-        getPreferenceScreen().setInitialExpandedChildrenCount(locationRequestsPrefs + 2);
-    }
-
-
-    @Override
     public int getMetricsCategory() {
         return MetricsEvent.LOCATION;
     }
@@ -89,6 +77,7 @@ public class LocationSettings extends DashboardFragment {
         switchBar.setSwitchBarText(R.string.location_settings_master_switch_title,
                 R.string.location_settings_master_switch_title);
         mSwitchBarController = new LocationSwitchBarController(activity, switchBar, getLifecycle());
+        switchBar.show();
     }
 
     @Override
@@ -102,7 +91,7 @@ public class LocationSettings extends DashboardFragment {
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, this, getLifecycle());
     }
 
@@ -180,7 +169,7 @@ public class LocationSettings extends DashboardFragment {
                 }
 
                 @Override
-                public List<AbstractPreferenceController> getPreferenceControllers(Context
+                public List<AbstractPreferenceController> createPreferenceControllers(Context
                         context) {
                     return buildPreferenceControllers(context, null /* fragment */,
                             null /* lifecycle */);

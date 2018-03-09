@@ -20,11 +20,14 @@ import android.util.Log;
 
 import com.android.settings.search.ResultPayload;
 import com.android.settings.search.SearchIndexableRaw;
+import com.android.settings.slices.SliceData;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 /**
@@ -73,9 +76,50 @@ public abstract class BasePreferenceController extends AbstractPreferenceControl
 
     protected Lifecycle mLifecycle;
 
+    /**
+     * Instantiate a controller as specified controller type and user-defined key.
+     * <p/>
+     * This is done through reflection. Do not use this method unless you know what you are doing.
+     */
+    public static BasePreferenceController createInstance(Context context,
+            String controllerName, String key) {
+        try {
+            final Class<?> clazz = Class.forName(controllerName);
+            final Constructor<?> preferenceConstructor =
+                    clazz.getConstructor(Context.class, String.class);
+            final Object[] params = new Object[] {context, key};
+            return (BasePreferenceController) preferenceConstructor.newInstance(params);
+        } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException |
+                IllegalArgumentException | InvocationTargetException | IllegalAccessException e) {
+            throw new IllegalStateException(
+                    "Invalid preference controller: " + controllerName, e);
+        }
+    }
+
+    /**
+     * Instantiate a controller as specified controller type.
+     * <p/>
+     * This is done through reflection. Do not use this method unless you know what you are doing.
+     */
+    public static BasePreferenceController createInstance(Context context, String controllerName) {
+        try {
+            final Class<?> clazz = Class.forName(controllerName);
+            final Constructor<?> preferenceConstructor = clazz.getConstructor(Context.class);
+            final Object[] params = new Object[] {context};
+            return (BasePreferenceController) preferenceConstructor.newInstance(params);
+        } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException |
+                IllegalArgumentException | InvocationTargetException | IllegalAccessException e) {
+            throw new IllegalStateException(
+                    "Invalid preference controller: " + controllerName, e);
+        }
+    }
+
     public BasePreferenceController(Context context, String preferenceKey) {
         super(context);
         mPreferenceKey = preferenceKey;
+        if (TextUtils.isEmpty(mPreferenceKey)) {
+            throw new IllegalArgumentException("Preference key must be set");
+        }
     }
 
     /**
@@ -108,6 +152,14 @@ public abstract class BasePreferenceController extends AbstractPreferenceControl
      */
     public final boolean isSupported() {
         return getAvailabilityStatus() != DISABLED_UNSUPPORTED;
+    }
+
+    /**
+     * @return the UI type supported by the controller.
+     */
+    @SliceData.SliceType
+    public int getSliceType() {
+        return SliceData.SliceType.INTENT;
     }
 
     /**

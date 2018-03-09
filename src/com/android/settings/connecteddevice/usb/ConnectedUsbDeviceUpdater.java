@@ -16,13 +16,11 @@
 package com.android.settings.connecteddevice.usb;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.support.annotation.VisibleForTesting;
-import android.support.v14.preference.PreferenceFragment;
 
 import com.android.settings.R;
-import com.android.settings.SettingsActivity;
 import com.android.settings.connecteddevice.DevicePreferenceCallback;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.widget.GearPreference;
 
@@ -30,7 +28,7 @@ import com.android.settings.widget.GearPreference;
  * Controller to maintain connected usb device
  */
 public class ConnectedUsbDeviceUpdater {
-    private PreferenceFragment mFragment;
+    private DashboardFragment mFragment;
     private UsbBackend mUsbBackend;
     private DevicePreferenceCallback mDevicePreferenceCallback;
     @VisibleForTesting
@@ -42,8 +40,7 @@ public class ConnectedUsbDeviceUpdater {
     UsbConnectionBroadcastReceiver.UsbConnectionListener mUsbConnectionListener =
             (connected, newMode) -> {
                 if (connected) {
-                    mUsbPreference.setSummary(
-                            UsbModePreferenceController.getSummary(mUsbBackend.getCurrentMode()));
+                    mUsbPreference.setSummary(getSummary(mUsbBackend.getCurrentMode()));
                     mDevicePreferenceCallback.onDeviceAdded(mUsbPreference);
                 } else {
                     mDevicePreferenceCallback.onDeviceRemoved(mUsbPreference);
@@ -81,11 +78,11 @@ public class ConnectedUsbDeviceUpdater {
         mUsbPreference.setSelectable(false);
         mUsbPreference.setOnGearClickListener((GearPreference p) -> {
             // New version - uses a separate screen.
-            final Bundle args = new Bundle();
-            final SettingsActivity activity = (SettingsActivity) mFragment.getContext();
-            activity.startPreferencePanel(mFragment,
-                    UsbDetailsFragment.class.getName(), args,
-                    R.string.device_details_title, null /* titleText */, null /* resultTo */, 0);
+            new SubSettingLauncher(mFragment.getContext())
+                    .setDestination(UsbDetailsFragment.class.getName())
+                    .setTitle(R.string.device_details_title)
+                    .setSourceMetricsCategory(mFragment.getMetricsCategory())
+                    .launch();
         });
 
         forceUpdate();
@@ -95,5 +92,32 @@ public class ConnectedUsbDeviceUpdater {
         // Register so we can get the connection state from sticky intent.
         //TODO(b/70336520): Use an API to get data instead of sticky intent
         mUsbReceiver.register();
+    }
+
+    public static int getSummary(int mode) {
+        switch (mode) {
+            case UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_NONE:
+                return R.string.usb_summary_charging_only;
+            case UsbBackend.MODE_POWER_SOURCE | UsbBackend.MODE_DATA_NONE:
+                return R.string.usb_summary_power_only;
+            case UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_MTP:
+                return R.string.usb_summary_file_transfers;
+            case UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_PTP:
+                return R.string.usb_summary_photo_transfers;
+            case UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_MIDI:
+                return R.string.usb_summary_MIDI;
+            case UsbBackend.MODE_POWER_SINK | UsbBackend.MODE_DATA_TETHER:
+                return R.string.usb_summary_tether;
+            case UsbBackend.MODE_POWER_SOURCE | UsbBackend.MODE_DATA_MTP:
+                return R.string.usb_summary_file_transfers_power;
+            case UsbBackend.MODE_POWER_SOURCE | UsbBackend.MODE_DATA_PTP:
+                return R.string.usb_summary_photo_transfers_power;
+            case UsbBackend.MODE_POWER_SOURCE | UsbBackend.MODE_DATA_MIDI:
+                return R.string.usb_summary_MIDI_power;
+            case UsbBackend.MODE_POWER_SOURCE | UsbBackend.MODE_DATA_TETHER:
+                return R.string.usb_summary_tether_power;
+            default:
+                return R.string.usb_summary_charging_only;
+        }
     }
 }

@@ -28,7 +28,9 @@ import android.util.Log;
 import android.util.Xml;
 
 import com.android.settings.core.BasePreferenceController;
+import com.android.settings.core.PreferenceControllerListHelper;
 import com.android.settings.core.PreferenceControllerMixin;
+import com.android.settings.core.PreferenceXmlParserUtils;
 import com.android.settingslib.core.AbstractPreferenceController;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -76,8 +78,10 @@ public class BaseSearchIndexProvider implements Indexable.SearchIndexProvider {
                     ((BasePreferenceController) controller).updateNonIndexableKeys(
                             nonIndexableKeys);
                 } else {
-                    throw new IllegalStateException(controller.getClass().getName()
-                            + " must implement " + PreferenceControllerMixin.class.getName());
+                    Log.e(TAG, controller.getClass().getName()
+                            + " must implement " + PreferenceControllerMixin.class.getName()
+                            + " treating the key non-indexable");
+                    nonIndexableKeys.add(controller.getPreferenceKey());
                 }
             }
             return nonIndexableKeys;
@@ -88,6 +92,33 @@ public class BaseSearchIndexProvider implements Indexable.SearchIndexProvider {
 
     @Override
     public List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+        final List<AbstractPreferenceController> controllersFromCode =
+                createPreferenceControllers(context);
+        final List<SearchIndexableResource> res = getXmlResourcesToIndex(context, true);
+        if (res == null || res.isEmpty()) {
+            return controllersFromCode;
+        }
+        List<BasePreferenceController> controllersFromXml = new ArrayList<>();
+        for (SearchIndexableResource sir : res) {
+            controllersFromXml.addAll(PreferenceControllerListHelper
+                    .getPreferenceControllersFromXml(context, sir.xmlResId));
+        }
+        controllersFromXml = PreferenceControllerListHelper.filterControllers(controllersFromXml,
+                controllersFromCode);
+        final List<AbstractPreferenceController> allControllers = new ArrayList<>();
+        if (controllersFromCode != null) {
+            allControllers.addAll(controllersFromCode);
+        }
+        allControllers.addAll(controllersFromXml);
+        return allControllers;
+    }
+
+    /**
+     * Creates a list of {@link AbstractPreferenceController} programatically.
+     * <p/>
+     * This list should create controllers that are not defined in xml as a Slice controller.
+     */
+    public List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return null;
     }
 
@@ -119,7 +150,7 @@ public class BaseSearchIndexProvider implements Indexable.SearchIndexProvider {
         final AttributeSet attrs = Xml.asAttributeSet(parser);
         try {
             while (parser.next() != XmlPullParser.END_DOCUMENT) {
-                final String key = XmlParserUtils.getDataKey(context, attrs);
+                final String key = PreferenceXmlParserUtils.getDataKey(context, attrs);
                 if (!TextUtils.isEmpty(key)) {
                     nonIndexableKeys.add(key);
                 }

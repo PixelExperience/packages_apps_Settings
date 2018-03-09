@@ -25,7 +25,6 @@ import android.os.BatteryStats;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.support.annotation.VisibleForTesting;
-import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
 import android.text.format.Formatter;
 import android.util.SparseArray;
@@ -33,17 +32,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.widget.TextView;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
-import com.android.settings.Settings.HighPowerApplicationsActivity;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
 import com.android.settings.applications.LayoutPreference;
-import com.android.settings.applications.manageapplications.ManageApplications;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.display.BatteryPercentagePreferenceController;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
@@ -56,9 +52,9 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.Lifecycle;
-
 import com.android.settingslib.utils.PowerUtil;
 import com.android.settingslib.utils.StringUtil;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -227,22 +223,21 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         final Lifecycle lifecycle = getLifecycle();
         final SettingsActivity activity = (SettingsActivity) getActivity();
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         mBatteryHeaderPreferenceController = new BatteryHeaderPreferenceController(
-                context, activity, this /* host */, getLifecycle());
+                context, activity, this /* host */, lifecycle);
         controllers.add(mBatteryHeaderPreferenceController);
         mBatteryAppListPreferenceController = new BatteryAppListPreferenceController(context,
                 KEY_APP_LIST, lifecycle, activity, this);
         controllers.add(mBatteryAppListPreferenceController);
         mBatteryTipPreferenceController = new BatteryTipPreferenceController(context,
-                KEY_BATTERY_TIP, (SettingsActivity) getActivity(), this, this);
+                KEY_BATTERY_TIP, (SettingsActivity) getActivity(), this /* fragment */, this /*
+                BatteryTipListener */);
         controllers.add(mBatteryTipPreferenceController);
-        controllers.add(new BatterySaverController(context, getLifecycle()));
         controllers.add(new BatteryPercentagePreferenceController(context));
-
         return controllers;
     }
 
@@ -322,7 +317,8 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
 
     @VisibleForTesting
     void updateLastFullChargePreference(long timeMs) {
-        final CharSequence timeSequence = StringUtil.formatRelativeTime(getContext(), timeMs, false);
+        final CharSequence timeSequence = StringUtil.formatRelativeTime(getContext(), timeMs,
+                false);
         mLastFullChargePref.setSubtitle(timeSequence);
     }
 

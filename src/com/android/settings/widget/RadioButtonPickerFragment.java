@@ -17,7 +17,6 @@
 package com.android.settings.widget;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -34,6 +33,7 @@ import android.view.ViewGroup;
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.InstrumentedPreferenceFragment;
+import com.android.settingslib.widget.CandidateInfo;
 
 import java.util.List;
 import java.util.Map;
@@ -101,6 +101,13 @@ public abstract class RadioButtonPickerFragment extends InstrumentedPreferenceFr
         return false;
     }
 
+    /**
+     * Populate any static preferences, independent of the radio buttons.
+     * These might be used to provide extra information about the choices.
+     **/
+    protected void addStaticPreferences(PreferenceScreen screen) {
+    }
+
     protected CandidateInfo getCandidate(String key) {
         return mCandidates.get(key);
     }
@@ -134,6 +141,7 @@ public abstract class RadioButtonPickerFragment extends InstrumentedPreferenceFr
         final String systemDefaultKey = getSystemDefaultKey();
         final PreferenceScreen screen = getPreferenceScreen();
         screen.removeAll();
+        addStaticPreferences(screen);
 
         final int customLayoutResId = getRadioButtonPreferenceCustomLayoutResId();
         if (shouldShowItemNone()) {
@@ -221,21 +229,6 @@ public abstract class RadioButtonPickerFragment extends InstrumentedPreferenceFr
     @LayoutRes
     protected int getRadioButtonPreferenceCustomLayoutResId() {
         return 0;
-    }
-
-    public static abstract class CandidateInfo {
-
-        public final boolean enabled;
-
-        public CandidateInfo(boolean enabled) {
-            this.enabled = enabled;
-        }
-
-        public abstract CharSequence loadLabel();
-
-        public abstract Drawable loadIcon();
-
-        public abstract String getKey();
     }
 
 }

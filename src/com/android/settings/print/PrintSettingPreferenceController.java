@@ -18,6 +18,7 @@ package com.android.settings.print;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.os.UserManager;
 import android.print.PrintJob;
 import android.print.PrintJobId;
 import android.print.PrintJobInfo;
@@ -29,6 +30,7 @@ import android.support.v7.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.wrapper.PrintManagerWrapper;
+import com.android.settingslib.RestrictedPreference;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnStart;
 import com.android.settingslib.core.lifecycle.events.OnStop;
@@ -41,12 +43,14 @@ import java.util.List;
 public class PrintSettingPreferenceController extends BasePreferenceController implements
         LifecycleObserver, OnStart, OnStop, PrintManager.PrintJobStateChangeListener {
 
+    private static final String KEY_PRINTING_SETTINGS = "connected_device_printing";
+
     private final PackageManager mPackageManager;
     private PrintManagerWrapper mPrintManager;
     private Preference mPreference;
 
     public PrintSettingPreferenceController(Context context) {
-        super(context, "connected_device_printing" /* preferenceKey */);
+        super(context, KEY_PRINTING_SETTINGS);
         mPackageManager = context.getPackageManager();
         mPrintManager = new PrintManagerWrapper(context);
     }
@@ -80,14 +84,13 @@ public class PrintSettingPreferenceController extends BasePreferenceController i
 
     @Override
     public void updateState(Preference preference) {
-        if (preference == null) {
-            return;
-        }
-        preference.setSummary(getSummary());
+        super.updateState(preference);
+        ((RestrictedPreference) preference).checkRestrictionAndSetDisabled(
+                UserManager.DISALLOW_PRINTING);
     }
 
     @Override
-    public String getSummary() {
+    public CharSequence getSummary() {
         final List<PrintJob> printJobs = mPrintManager.getPrintJobs();
 
         int numActivePrintJobs = 0;
@@ -106,7 +109,7 @@ public class PrintSettingPreferenceController extends BasePreferenceController i
             final List<PrintServiceInfo> services =
                     mPrintManager.getPrintServices(PrintManager.ENABLED_SERVICES);
             if (services == null || services.isEmpty()) {
-                return mContext.getString(R.string.print_settings_summary_no_service);
+                return mContext.getText(R.string.print_settings_summary_no_service);
             } else {
                 final int count = services.size();
                 return mContext.getResources().getQuantityString(

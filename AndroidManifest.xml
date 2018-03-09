@@ -212,33 +212,6 @@
                 android:value="true" />
         </activity>
 
-        <activity
-            android:name=".Settings$ConnectedDeviceDashboardActivityOld"
-            android:enabled="false"
-            android:label="@string/connected_devices_dashboard_title"
-            android:icon="@drawable/ic_homepage_connected_device"
-            android:taskAffinity="com.android.settings"
-            android:parentActivityName="Settings">
-            <intent-filter android:priority="1">
-                <action android:name="android.settings.NFC_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
-            </intent-filter>
-            <intent-filter android:priority="10">
-                <action android:name="com.android.settings.action.SETTINGS"/>
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragmentOld"/>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.homepage"/>
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                       android:value="true" />
-        </activity>
-
         <activity android:name="AirplaneModeVoiceActivity"
                 android:label="@string/wireless_networks_settings_title"
                 android:theme="@*android:style/Theme.DeviceDefault.Light.Voice"
@@ -281,8 +254,6 @@
                 android:value="com.android.settings.wifi.WifiSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
-            <meta-data android:name="android.metadata.SLICE_URI"
-                       android:value="content://com.android.settings.slices/wifi" />
         </activity>
 
         <activity
@@ -745,15 +716,6 @@
                 android:value="true" />
         </activity>
 
-        <!-- Keep compatibility with old shortcuts. -->
-        <activity-alias android:name="UserDictionarySettings"
-                android:label="@string/user_dict_settings_title"
-                android:exported="true"
-                android:targetActivity="Settings$UserDictionarySettingsActivity">
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.UserDictionarySettings" />
-        </activity-alias>
-
         <activity
             android:name="Settings$ZenModeSettingsActivity"
             android:label="@string/zen_mode_settings_title"
@@ -892,25 +854,6 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.notification.ZenModeEventRuleSettings" />
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                android:value="true" />
-        </activity>
-
-        <activity
-            android:name="Settings$ZenModeExternalRuleSettingsActivity"
-            android:exported="true"
-            android:taskAffinity="com.android.settings"
-            android:parentActivityName="Settings">
-            <intent-filter android:priority="1">
-                <action android:name="android.settings.ZEN_MODE_EXTERNAL_RULE_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.notification.ZenModeExternalRuleSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -1280,7 +1223,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.applications.BackgroundCheckSummary" />
+                android:value="com.android.settings.applications.appops.BackgroundCheckSummary" />
         </activity>
 
         <activity
@@ -2277,7 +2220,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.fuelgauge.BatterySaverSettings" />
+                android:value="com.android.settings.fuelgauge.batterysaver.BatterySaverSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -3215,19 +3158,9 @@
             </intent-filter>
         </service>
         <service
-            android:name=".development.qstile.DevelopmentTiles$WindowTrace"
-            android:label="@string/window_trace_quick_settings_title"
-            android:icon="@drawable/tile_icon_window_trace"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
-            android:enabled="false">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE" />
-            </intent-filter>
-        </service>
-        <service
-            android:name=".development.qstile.DevelopmentTiles$LayerTrace"
-            android:label="@string/layer_trace_quick_settings_title"
-            android:icon="@drawable/tile_icon_layer_trace"
+            android:name=".development.qstile.DevelopmentTiles$WinscopeTrace"
+            android:label="@string/winscope_trace_quick_settings_title"
+            android:icon="@drawable/tile_icon_winscope_trace"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
             android:enabled="false">
             <intent-filter>
@@ -3295,6 +3228,24 @@
                 <action android:name="com.android.settings.slice.action.WIFI_CHANGED"/>
             </intent-filter>
         </receiver>
+
+        <!-- Couldn't be triggered from outside of settings. Statsd can trigger it because we send
+             PendingIntent to it-->
+        <receiver android:name=".fuelgauge.batterytip.AnomalyDetectionReceiver"
+                  android:exported="false" />
+
+        <receiver android:name=".fuelgauge.batterytip.AnomalyConfigReceiver">
+            <intent-filter>
+                <action android:name="android.app.action.STATSD_STARTED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".fuelgauge.batterytip.AnomalyCleanupJobService"
+                 android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service android:name=".fuelgauge.batterytip.AnomalyDetectionJobService"
+                 android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>

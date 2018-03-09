@@ -1655,10 +1655,15 @@
     <!-- Bluetooth settings.  Dock Setting Dialog - Remember setting and don't ask user again -->
     <string name="bluetooth_dock_settings_remember">Remember settings</string>
 
+    <!-- Bluetooth developer options. -->
     <!-- Bluetooth developer settings: Maximum number of connected audio devices -->
     <string name="bluetooth_max_connected_audio_devices_string">Maximum connected Bluetooth audio devices</string>
     <!-- Bluetooth developer settings: Maximum number of connected audio devices -->
     <string name="bluetooth_max_connected_audio_devices_dialog_title">Select maximum number of connected Bluetooth audio devices</string>
+    <!-- Bluetooth developer settings: Checkbox title for enabling Bluetooth receiving AVDTP delay reports -->
+    <string name="bluetooth_enable_avdtp_delay_reports">Enable Bluetooth AVDTP delay reports</string>
+    <!-- Bluetooth developer settings: Summary of checkbox for enabling Bluetooth receiving AVDTP delay reports -->
+    <string name="bluetooth_enable_avdtp_delay_reports_summary">Allow receiving Bluetooth AVDTP delay reports</string>
 
     <!-- Wifi Display settings. The title of the screen. [CHAR LIMIT=40] -->
     <string name="wifi_display_settings_title">Cast</string>
@@ -3370,6 +3375,8 @@
     <string name="location_app_level_permissions">App-level permissions</string>
     <!-- [CHAR LIMIT=42] Location settings screen, sub category for recent location requests -->
     <string name="location_category_recent_location_requests">Recent location requests</string>
+    <!-- Location settings screen, displayed when there're more than three recent location requests -->
+    <string name="location_recent_location_requests_see_all">See all</string>
     <!-- Location settings screen, displayed when there's no recent app accessing location -->
     <string name="location_no_recent_apps">No apps have requested location recently</string>
     <!-- [CHAR LIMIT=30] Location settings screen, sub category for location services -->
@@ -4413,10 +4420,10 @@
     <!-- Used in the Captions settings screen to control turning on/off the feature entirely -->
     <string name="accessibility_caption_master_switch_title">Use captions</string>
 
-    <!-- Preference's state when enabled. Note: UPPERCASE -->
-    <string name="accessibility_summary_state_enabled">ON</string>
-    <!-- Preference's state when disabled. Note: UPPERCASE -->
-    <string name="accessibility_summary_state_disabled">OFF</string>
+    <!-- Preference's state when enabled. -->
+    <string name="accessibility_summary_state_enabled">On</string>
+    <!-- Preference's state when disabled. -->
+    <string name="accessibility_summary_state_disabled">Off</string>
 
     <!-- Title for the preference to show a tile for a particular feature in the Quick Settings pane. [CHAR LIMIT=NONE] -->
     <string name="enable_quick_setting">Show in Quick Settings</string>
@@ -5409,7 +5416,7 @@
     <string name="usage_access_title">Apps with usage access</string>
 
     <!-- Sound settings screen, setting check box label -->
-    <string name="emergency_tone_title">Emergency tone</string>
+    <string name="emergency_tone_title">Emergency dialing signal</string>
     <!-- Sound settings screen, setting option summary text -->
     <string name="emergency_tone_summary">Set behavior when an emergency call is placed</string>
 
@@ -6762,6 +6769,8 @@
     <string name="keywords_android_version">android security patch level, baseband version, kernel version</string>
     <!-- Search keyword for Ambient display settings screen. -->
     <string name="keywords_ambient_display_screen">Ambient display, Lock screen display</string>
+    <!-- Search keyword for fingerprint settings. -->
+    <string name="keywords_fingerprint_settings">fingerprint</string>
 
     <!-- NFC Wi-Fi pairing/setup strings-->
 
@@ -6865,14 +6874,14 @@
     <!-- Sound: Other sounds: Value for the dock audio media with value 1: enabled. [CHAR LIMIT=30] -->
     <string name="dock_audio_media_enabled">Media audio only</string>
 
-    <!-- Sound: Other sounds: Value for the emergency tone option with value 0: silent. [CHAR LIMIT=30] -->
-    <string name="emergency_tone_silent">Silent</string>
+    <!-- Sound: Other sounds: Value for the emergency dialing signal option with value 0: silence. [CHAR LIMIT=30] -->
+    <string name="emergency_tone_silent">Silence</string>
 
-    <!-- Sound: Other sounds: Value for the emergency tone option with value 1: alert. [CHAR LIMIT=30] -->
-    <string name="emergency_tone_alert">Alert</string>
+    <!-- Sound: Other sounds: Value for the emergency dialing signal option with value 1: tones. [CHAR LIMIT=30] -->
+    <string name="emergency_tone_alert">Tones</string>
 
-    <!-- Sound: Other sounds: Value for the emergency tone option with value 2: vibrate. [CHAR LIMIT=30] -->
-    <string name="emergency_tone_vibrate">Vibrate</string>
+    <!-- Sound: Other sounds: Value for the emergency dialing signal option with value 2: vibrations. [CHAR LIMIT=30] -->
+    <string name="emergency_tone_vibrate">Vibrations</string>
 
     <!-- Sound: Other sounds: Title for the option enabling boot sounds. [CHAR LIMIT=30] -->
     <string name="boot_sounds_title">Power on sounds</string>
@@ -7407,14 +7416,8 @@
     <!-- [CHAR LIMIT=40] Zen mode settings: Delete rule dialog button caption -->
     <string name="zen_mode_delete_rule_button">Delete</string>
 
-    <!-- [CHAR LIMIT=40] Zen mode settings: External rule type -->
-    <string name="zen_mode_rule_type">Rule type</string>
-
     <!-- [CHAR LIMIT=40] Zen mode settings: External rule type name if unknown -->
     <string name="zen_mode_rule_type_unknown">Unknown</string>
-
-    <!-- [CHAR LIMIT=40] Zen mode settings: Configure external rule -->
-    <string name="zen_mode_configure_rule">Configure rule</string>
 
     <!-- [CHAR LIMIT=NONE] Zen mode behavior settings footer: footer describing why the user cannot change the current do not disturb behavior settings -->
     <string name="zen_mode_app_set_behavior">These settings can\'t be changed right now. An app (<xliff:g id="app_name" example="Android Services">%1$s</xliff:g>) has automatically turned on Do Not Disturb with custom behavior."</string>
@@ -7596,7 +7599,7 @@
     <!-- [CHAR LIMIT=40] Zen mode settings: visual signals: screen is on: title -->
     <string name="zen_mode_screen_on">When the screen is on</string>
     <!-- [CHAR LIMIT=130] Zen mode settings:  visual signals: screen is on: summary -->
-    <string name="zen_mode_screen_on_summary">Let notifications silenced by Do Not Disturb pop on screen</string>
+    <string name="zen_mode_screen_on_summary">Let notifications silenced by Do Not Disturb pop on screen and show a status bar icon</string>
     <!-- [CHAR LIMIT=40] Zen mode settings: visual signals: screen is off: title -->
     <string name="zen_mode_screen_off">When the screen is off</string>
     <!-- [CHAR LIMIT=130] Zen mode settings:  visual interruptions: screen is off: summary -->
@@ -8100,6 +8103,10 @@
          for this device should be used for. These options are less commonly used.
          Choices are usb_use_tethering, usb_use_photo_transfers, usb_use_MIDI, and usb_use_power_only.-->
     <string name="usb_use_also">Also use USB for</string>
+    <!-- The label that leads to the Default USB configuration window. -->
+    <string name="usb_default_label">Default USB Configuration</string>
+    <!-- Description at the footer of the default USB configuration window that describes how the setting works. -->
+    <string name="usb_default_info">When another device is connected and your phone is unlocked, these settings will be applied. Only connect to trusted devices.</string>
 
     <!-- Settings item title for USB preference [CHAR LIMIT=35] -->
     <string name="usb_pref">USB</string>
@@ -8411,10 +8418,10 @@
     <string name="payment_summary"><xliff:g id="app_name" example="Payment App">%1$s</xliff:g> is default</string>
 
     <!-- Summary of location on screen [CHAR LIMIT=NONE] -->
-    <string name="location_on_summary">ON</string>
+    <string name="location_on_summary">On</string>
 
     <!-- Location off [CHAR LIMIT=NONE] -->
-    <string name="location_off_summary">OFF</string>
+    <string name="location_off_summary">Off</string>
 
     <!-- Backup disabled summary [CHAR LIMIT=NONE] -->
     <string name="backup_disabled">Back up disabled</string>
@@ -8883,14 +8890,17 @@
     <!-- [CHAR LIMIT=60] Name of dev option called "System UI demo mode" -->
     <string name="demo_mode">System UI demo mode</string>
 
+    <!-- [CHAR LIMIT=60] Name of dev option that changes the UI Mode -->
+    <string name="dark_ui_mode">Night mode</string>
+
+    <!-- [CHAR LIMIT=60] Name of dev option that changes the color of the UI -->
+    <string name="dark_ui_mode_title">Set Night mode</string>
+
     <!-- [CHAR LIMIT=60] Name of dev option to enable extra quick settings tiles -->
     <string name="quick_settings_developer_tiles">Quick settings developer tiles</string>
 
-    <!-- [CHAR LIMIT=25] Title of developer tile to toggle window trace -->
-    <string name="window_trace_quick_settings_title">Window Trace</string>
-
-    <!-- [CHAR LIMIT=25] Title of developer tile to toggle layer trace -->
-    <string name="layer_trace_quick_settings_title">Surface Trace</string>
+    <!-- [CHAR LIMIT=25] Title of developer tile to toggle winscope trace -->
+    <string name="winscope_trace_quick_settings_title">Winscope Trace</string>
 
     <!-- Template for formatting country and language. eg Canada - French [CHAR LIMIT=NONE]-->
     <string name="support_country_format"><xliff:g id="country" example="Canada">%1$s</xliff:g> - <xliff:g id="language" example="French">%2$s</xliff:g></string>
@@ -9376,4 +9386,18 @@
 
     <!-- Title for item to go to old battery settings page when clicking [CHAR LIMIT=100] -->
     <string name="dev_android_o_battery_settings_title">See Android 8.0 battery settings</string>
+    <!-- Title for Wifi Access settings [CHAR LIMIT=35] -->
+    <string name="change_wifi_state_title">Toggle wifi on and off</string>
+    <!-- Keywords for Wifi Access settings [CHAR LIMIT=35] -->
+    <string name="keywords_change_wifi_state">toggle wifi on and off</string>
+
+    <!-- Apps > App Details > Advanced section string title. [CHAR LIMIT=35] -->
+    <string name="change_wifi_state_app_detail_title">Toggle wifi on and off</string>
+
+    <!-- Apps > App Details > Wifi access > Switch title. [CHAR LIMIT=NONE] -->
+    <string name="change_wifi_state_app_detail_switch">Allow toggle wifi</string>
+
+    <!-- Apps > App Details > Wifi access > Description. [CHAR LIMIT=NONE] -->
+    <string name="change_wifi_state_app_detail_summary">Allow this app to change wifi state including connecting to wifi and turing wifi on and off.</string>
+
 </resources>

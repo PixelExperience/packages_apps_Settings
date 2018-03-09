@@ -23,11 +23,15 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
 
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsActivity;
 import com.android.settings.core.BasePreferenceController;
+import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.fuelgauge.batterytip.actions.BatteryTipAction;
 import com.android.settings.fuelgauge.batterytip.tips.BatteryTip;
 import com.android.settings.fuelgauge.batterytip.tips.SummaryTip;
+import com.android.settings.overlay.FeatureFactory;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
 import java.util.HashMap;
 import java.util.List;
@@ -44,24 +48,26 @@ public class BatteryTipPreferenceController extends BasePreferenceController {
     private List<BatteryTip> mBatteryTips;
     private Map<String, BatteryTip> mBatteryTipMap;
     private SettingsActivity mSettingsActivity;
+    private MetricsFeatureProvider mMetricsFeatureProvider;
     @VisibleForTesting
     PreferenceGroup mPreferenceGroup;
     @VisibleForTesting
     Context mPrefContext;
-    PreferenceFragment mFragment;
+    InstrumentedPreferenceFragment mFragment;
 
     public BatteryTipPreferenceController(Context context, String preferenceKey) {
         this(context, preferenceKey, null, null, null);
     }
 
     public BatteryTipPreferenceController(Context context, String preferenceKey,
-            SettingsActivity settingsActivity, PreferenceFragment fragment,
+            SettingsActivity settingsActivity, InstrumentedPreferenceFragment fragment,
             BatteryTipListener batteryTipListener) {
         super(context, preferenceKey);
         mBatteryTipListener = batteryTipListener;
         mBatteryTipMap = new HashMap<>();
         mFragment = fragment;
         mSettingsActivity = settingsActivity;
+        mMetricsFeatureProvider = FeatureFactory.getFactory(context).getMetricsFeatureProvider();
     }
 
     @Override
@@ -98,6 +104,9 @@ public class BatteryTipPreferenceController extends BasePreferenceController {
                 final Preference preference = batteryTip.buildPreference(mPrefContext);
                 mBatteryTipMap.put(preference.getKey(), batteryTip);
                 mPreferenceGroup.addPreference(preference);
+                mMetricsFeatureProvider.action(mContext,
+                        MetricsProto.MetricsEvent.ACTION_BATTERY_TIP_SHOWN,
+                        batteryTip.getType());
                 break;
             }
         }

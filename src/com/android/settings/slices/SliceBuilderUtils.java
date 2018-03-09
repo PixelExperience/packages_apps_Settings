@@ -23,7 +23,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Icon;
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.settings.R;
@@ -33,10 +32,8 @@ import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.search.DatabaseIndexingUtils;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-
 import androidx.app.slice.Slice;
+import androidx.app.slice.builders.SliceAction;
 import androidx.app.slice.builders.ListBuilder;
 import androidx.app.slice.builders.ListBuilder.RowBuilder;
 
@@ -60,17 +57,17 @@ public class SliceBuilderUtils {
         final Icon icon = Icon.createWithResource(context, sliceData.getIconResource());
         final BasePreferenceController controller = getPreferenceController(context, sliceData);
 
-        final String subtitleText = getSubtitleText(context, controller, sliceData);
+        final CharSequence subtitleText = getSubtitleText(context, controller, sliceData);
 
         final RowBuilder builder = new RowBuilder(context, sliceData.getUri())
                 .setTitle(sliceData.getTitle())
                 .setTitleItem(icon)
                 .setSubtitle(subtitleText)
-                .setContentIntent(contentIntent);
+                .setPrimaryAction(new SliceAction(contentIntent, null, null));
 
         // TODO (b/71640747) Respect setting availability.
 
-        if (controller instanceof TogglePreferenceController) {
+        if (sliceData.getSliceType() == SliceData.SliceType.SWITCH) {
             addToggleAction(context, builder, ((TogglePreferenceController) controller).isChecked(),
                     sliceData.getKey());
         }
@@ -81,59 +78,42 @@ public class SliceBuilderUtils {
     }
 
     /**
+     * @return the {@link SliceData.SliceType} for the {@param controllerClassName} and key.
+     */
+    @SliceData.SliceType
+    public static int getSliceType(Context context, String controllerClassName,
+            String controllerKey) {
+        BasePreferenceController controller = getPreferenceController(context, controllerClassName,
+                controllerKey);
+        return controller.getSliceType();
+    }
+
+    /**
      * Looks at the {@link SliceData#preferenceController} from {@param sliceData} and attempts to
      * build an {@link AbstractPreferenceController}.
      */
     public static BasePreferenceController getPreferenceController(Context context,
             SliceData sliceData) {
-        try {
-            return getController(context, sliceData, true /* isContextOnly */);
-        } catch (IllegalStateException e) {
-            // Do nothing
-            Log.d(TAG, "Could not find Context-only controller for preference controller: "
-                    + sliceData.getKey());
-        }
-
-        return getController(context, sliceData, false /* isContextOnly */);
+        return getPreferenceController(context, sliceData.getPreferenceController(),
+                sliceData.getKey());
     }
 
-    /**
-     * Attempts to build a {@link BasePreferenceController} from {@param SliceData}.
-     *
-     * @param sliceData     Backing data for the Slice.
-     * @param contextOnlyCtor {@code true} when the constructor for the
-     *                      {@link BasePreferenceController}
-     *                      only takes a {@link Context}. Else the constructor will be ({@link
-     *                      Context}, {@code String}.
-     */
-    private static BasePreferenceController getController(Context context, SliceData sliceData,
-            boolean contextOnlyCtor) {
+    private static BasePreferenceController getPreferenceController(Context context,
+            String controllerClassName, String controllerKey) {
         try {
-            Class<?> clazz = Class.forName(sliceData.getPreferenceController());
-            Constructor<?> preferenceConstructor;
-            Object[] params;
-
-            if (contextOnlyCtor) {
-                preferenceConstructor = clazz.getConstructor(Context.class);
-                params = new Object[]{context};
-            } else {
-                preferenceConstructor = clazz.getConstructor(Context.class, String.class);
-                params = new Object[]{context, sliceData.getKey()};
-            }
-
-            return (BasePreferenceController) preferenceConstructor.newInstance(params);
-        } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException |
-                IllegalArgumentException | InvocationTargetException | IllegalAccessException e) {
-            throw new IllegalStateException(
-                    "Invalid preference controller: " + sliceData.getPreferenceController(), e);
+            return BasePreferenceController.createInstance(context, controllerClassName);
+        } catch (IllegalStateException e) {
+            // Do nothing
         }
+
+        return BasePreferenceController.createInstance(context, controllerClassName, controllerKey);
     }
 
     private static void addToggleAction(Context context, RowBuilder builder, boolean isChecked,
             String key) {
         PendingIntent actionIntent = getActionIntent(context,
                 SettingsSliceProvider.ACTION_TOGGLE_CHANGED, key);
-        builder.addToggle(actionIntent, isChecked);
+        builder.addEndItem(new SliceAction(actionIntent, null, isChecked));
     }
 
     private static PendingIntent getActionIntent(Context context, String action, String key) {
@@ -153,9 +133,9 @@ public class SliceBuilderUtils {
     }
 
     @VisibleForTesting
-    static String getSubtitleText(Context context, AbstractPreferenceController controller,
+    static CharSequence getSubtitleText(Context context, AbstractPreferenceController controller,
             SliceData sliceData) {
-        String summaryText = sliceData.getSummary();
+        CharSequence summaryText = sliceData.getSummary();
         if (isValidSummary(context, summaryText)) {
             return summaryText;
         }
@@ -171,13 +151,14 @@ public class SliceBuilderUtils {
         return sliceData.getScreenTitle();
     }
 
-    private static boolean isValidSummary(Context context, String summary) {
-        if (summary == null || TextUtils.isEmpty(summary.trim())) {
+    private static boolean isValidSummary(Context context, CharSequence summary) {
+        if (summary == null || TextUtils.isEmpty(summary.toString().trim())) {
             return false;
         }
 
-        final String placeHolder = context.getString(R.string.summary_placeholder);
-        final String doublePlaceHolder = context.getString(R.string.summary_two_lines_placeholder);
+        final CharSequence placeHolder = context.getText(R.string.summary_placeholder);
+        final CharSequence doublePlaceHolder =
+                context.getText(R.string.summary_two_lines_placeholder);
 
         return !(TextUtils.equals(summary, placeHolder)
                 || TextUtils.equals(summary, doublePlaceHolder));

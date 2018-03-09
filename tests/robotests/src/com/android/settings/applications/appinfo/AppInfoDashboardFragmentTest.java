@@ -24,8 +24,6 @@ import static com.android.settings.applications.appinfo.AppInfoDashboardFragment
 import static com.google.common.truth.Truth.assertThat;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.nullable;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.doReturn;
@@ -255,7 +253,7 @@ public final class AppInfoDashboardFragmentTest {
     public void getPreferenceControllers_noPackageInfo_shouldReturnNull() {
         doNothing().when(mFragment).retrieveAppEntry();
 
-        assertThat(mFragment.getPreferenceControllers(mShadowContext)).isNull();
+        assertThat(mFragment.createPreferenceControllers(mShadowContext)).isNull();
     }
 
     @Test
@@ -325,6 +323,7 @@ public final class AppInfoDashboardFragmentTest {
         final SettingsPreferenceFragment caller = mock(SettingsPreferenceFragment.class);
         final SettingsActivity sa = mock (SettingsActivity.class);
         when(caller.getActivity()).thenReturn(sa);
+        when(caller.getContext()).thenReturn(sa);
         final AppEntry appEntry = mock(AppEntry.class);
         appEntry.info = mock(ApplicationInfo.class);
 
@@ -336,7 +335,7 @@ public final class AppInfoDashboardFragmentTest {
     public void startAppInfoFragment_includesNewAndOldArgs() {
         final SettingsPreferenceFragment caller = mock(SettingsPreferenceFragment.class);
         final SettingsActivity sa = mock (SettingsActivity.class);
-        when(caller.getActivity()).thenReturn(sa);
+        when(caller.getContext()).thenReturn(sa);
         final AppEntry appEntry = mock(AppEntry.class);
         appEntry.info = mock(ApplicationInfo.class);
 
@@ -346,11 +345,14 @@ public final class AppInfoDashboardFragmentTest {
         AppInfoDashboardFragment.startAppInfoFragment(AppInfoDashboardFragment.class, 0, bundle,
                 caller, appEntry);
 
-        final ArgumentCaptor<Bundle> captor = ArgumentCaptor.forClass(Bundle.class);
-        verify(sa).startPreferencePanel(any(), anyString(), captor.capture(), anyInt(), any(),
-                any(), anyInt());
+        final ArgumentCaptor<Intent> intent = ArgumentCaptor.forClass(Intent.class);
 
-        assertThat(captor.getValue().containsKey("test"));
-        assertThat(captor.getValue().containsKey(ARG_PACKAGE_NAME));
+        verify(caller).startActivityForResult(intent.capture(), any(Integer.class));
+        assertThat(intent.getValue().getBundleExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_ARGUMENTS)
+            .containsKey("test"))
+            .isTrue();
+        assertThat(intent.getValue().getBundleExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_ARGUMENTS)
+            .containsKey(ARG_PACKAGE_NAME))
+            .isTrue();
     }
 }

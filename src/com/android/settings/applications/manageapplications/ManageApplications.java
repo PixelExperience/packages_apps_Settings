@@ -78,25 +78,28 @@ import com.android.settings.SettingsActivity;
 import com.android.settings.applications.AppInfoBase;
 import com.android.settings.applications.AppStateAppOpsBridge.PermissionState;
 import com.android.settings.applications.AppStateBaseBridge;
+import com.android.settings.applications.AppStateDirectoryAccessBridge;
 import com.android.settings.applications.AppStateInstallAppsBridge;
 import com.android.settings.applications.AppStateNotificationBridge;
 import com.android.settings.applications.AppStateOverlayBridge;
 import com.android.settings.applications.AppStatePowerBridge;
-import com.android.settings.applications.AppStateDirectoryAccessBridge;
 import com.android.settings.applications.AppStateUsageBridge;
 import com.android.settings.applications.AppStateUsageBridge.UsageState;
 import com.android.settings.applications.AppStateWriteSettingsBridge;
 import com.android.settings.applications.AppStorageSettings;
 import com.android.settings.applications.DefaultAppSettings;
-import com.android.settings.applications.InstalledAppCounter;
 import com.android.settings.applications.DirectoryAccessDetails;
+import com.android.settings.applications.InstalledAppCounter;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.appinfo.AppInfoDashboardFragment;
 import com.android.settings.applications.appinfo.AppNotificationPreferenceController;
 import com.android.settings.applications.appinfo.DrawOverlayDetails;
 import com.android.settings.applications.appinfo.ExternalSourcesDetails;
 import com.android.settings.applications.appinfo.WriteSettingsDetails;
+
+import com.android.settings.core.FeatureFlags;
 import com.android.settings.core.InstrumentedPreferenceFragment;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.fuelgauge.HighPowerDetail;
 import com.android.settings.notification.AppNotificationSettings;
@@ -104,6 +107,8 @@ import com.android.settings.notification.ConfigureNotificationSettings;
 import com.android.settings.notification.NotificationBackend;
 import com.android.settings.notification.NotificationBackend.AppRow;
 import com.android.settings.widget.LoadingViewController;
+import com.android.settings.wifi.AppStateChangeWifiStateBridge;
+import com.android.settings.wifi.ChangeWifiStateDetails;
 import com.android.settingslib.HelpUtils;
 import com.android.settingslib.applications.ApplicationsState;
 import com.android.settingslib.applications.ApplicationsState.AppEntry;
@@ -203,6 +208,7 @@ public class ManageApplications extends InstrumentedPreferenceFragment
     public static final int LIST_TYPE_MOVIES = 10;
     public static final int LIST_TYPE_PHOTOGRAPHY = 11;
     public static final int LIST_TYPE_DIRECTORY_ACCESS = 12;
+    public static final int LIST_TYPE_WIFI_ACCESS = 13;
 
     // List types that should show instant apps.
     public static final Set<Integer> LIST_TYPES_WITH_INSTANT = new ArraySet<>(Arrays.asList(
@@ -276,6 +282,9 @@ public class ManageApplications extends InstrumentedPreferenceFragment
         } else if (className.equals(Settings.DirectoryAccessSettingsActivity.class.getName())) {
             mListType = LIST_TYPE_DIRECTORY_ACCESS;
             screenTitle = R.string.directory_access;
+        } else if (className.equals(Settings.ChangeWifiStateActivity.class.getName())) {
+            mListType = LIST_TYPE_WIFI_ACCESS;
+            screenTitle = R.string.change_wifi_state_title;
         } else {
             mListType = LIST_TYPE_MAIN;
         }
@@ -442,6 +451,8 @@ public class ManageApplications extends InstrumentedPreferenceFragment
                 return MetricsEvent.MANAGE_EXTERNAL_SOURCES;
             case LIST_TYPE_DIRECTORY_ACCESS:
                 return MetricsEvent.DIRECTORY_ACCESS;
+            case LIST_TYPE_WIFI_ACCESS:
+                return MetricsEvent.CONFIGURE_WIFI;
             default:
                 return MetricsEvent.VIEW_UNKNOWN;
         }
@@ -539,7 +550,9 @@ public class ManageApplications extends InstrumentedPreferenceFragment
             case LIST_TYPE_DIRECTORY_ACCESS:
                 startAppInfoFragment(DirectoryAccessDetails.class, R.string.directory_access);
                 break;
-
+            case LIST_TYPE_WIFI_ACCESS:
+                startAppInfoFragment(ChangeWifiStateDetails.class, R.string.change_wifi_state_title);
+                break;
             // TODO: Figure out if there is a way where we can spin up the profile's settings
             // process ahead of time, to avoid a long load of data when user clicks on a managed
             // app. Maybe when they load the list of apps that contains managed profile apps.
@@ -628,14 +641,19 @@ public class ManageApplications extends InstrumentedPreferenceFragment
                 return true;
             case R.id.advanced:
                 if (mListType == LIST_TYPE_NOTIFICATION) {
-                    ((SettingsActivity) getActivity()).startPreferencePanel(this,
-                            ConfigureNotificationSettings.class.getName(), null,
-                            R.string.configure_notification_settings, null, this,
-                            ADVANCED_SETTINGS);
+                    new SubSettingLauncher(getContext())
+                            .setDestination(ConfigureNotificationSettings.class.getName())
+                            .setTitle(R.string.configure_notification_settings)
+                            .setSourceMetricsCategory(getMetricsCategory())
+                            .setResultListener(this, ADVANCED_SETTINGS)
+                            .launch();
                 } else {
-                    ((SettingsActivity) getActivity()).startPreferencePanel(this,
-                            DefaultAppSettings.class.getName(), null, R.string.configure_apps,
-                            null, this, ADVANCED_SETTINGS);
+                    new SubSettingLauncher(getContext())
+                            .setDestination(DefaultAppSettings.class.getName())
+                            .setTitle(R.string.configure_apps)
+                            .setSourceMetricsCategory(getMetricsCategory())
+                            .setResultListener(this, ADVANCED_SETTINGS)
+                            .launch();
                 }
                 return true;
             default:
@@ -840,6 +858,8 @@ public class ManageApplications extends InstrumentedPreferenceFragment
                 mExtraInfoBridge = new AppStateInstallAppsBridge(mContext, mState, this);
             } else if (mManageApplications.mListType == LIST_TYPE_DIRECTORY_ACCESS) {
                 mExtraInfoBridge = new AppStateDirectoryAccessBridge(mState, this);
+            } else if (mManageApplications.mListType == LIST_TYPE_WIFI_ACCESS) {
+                mExtraInfoBridge = new AppStateChangeWifiStateBridge(mContext, mState, this);
             } else {
                 mExtraInfoBridge = null;
             }
@@ -1244,6 +1264,9 @@ public class ManageApplications extends InstrumentedPreferenceFragment
                     break;
                 case LIST_TYPE_DIRECTORY_ACCESS:
                     holder.setSummary(null);
+                    break;
+                case LIST_TYPE_WIFI_ACCESS:
+                    holder.setSummary(ChangeWifiStateDetails.getSummary(mContext, entry));
                     break;
                 default:
                     holder.updateSizeText(entry, mManageApplications.mInvalidSizeStr, mWhichSize);

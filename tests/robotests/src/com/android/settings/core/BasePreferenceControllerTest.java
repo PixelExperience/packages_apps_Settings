@@ -24,6 +24,7 @@ import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Mockito.when;
 
 import com.android.settings.TestConfig;
+import com.android.settings.slices.SliceData;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 
 import org.junit.Before;
@@ -31,6 +32,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
 @RunWith(SettingsRobolectricTestRunner.class)
@@ -43,6 +45,17 @@ public class BasePreferenceControllerTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
+    }
+
+
+    @Test(expected = IllegalArgumentException.class)
+    public void newController_noKey_shouldCrash() {
+        new BasePreferenceController(RuntimeEnvironment.application, null /* key */) {
+            @Override
+            public int getAvailabilityStatus() {
+                return AVAILABLE;
+            }
+        };
     }
 
     @Test
@@ -113,5 +126,10 @@ public class BasePreferenceControllerTest {
         when(mPreferenceController.getAvailabilityStatus()).thenReturn(UNAVAILABLE_UNKNOWN);
 
         assertThat(mPreferenceController.isSupported()).isTrue();
+    }
+
+    @Test
+    public void getSliceType_shouldReturnIntent() {
+        assertThat(mPreferenceController.getSliceType()).isEqualTo(SliceData.SliceType.INTENT);
     }
 }

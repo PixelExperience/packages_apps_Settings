@@ -62,7 +62,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MyDeviceInfoFragment extends DashboardFragment {
-    private static final String LOG_TAG = "MeCardFragment";
+    private static final String LOG_TAG = "MyDeviceInfoFragment";
 
     private static final String KEY_MY_DEVICE_INFO_HEADER = "my_device_info_header";
     private static final String KEY_LEGAL_CONTAINER = "legal_container";
@@ -94,7 +94,7 @@ public class MyDeviceInfoFragment extends DashboardFragment {
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, getActivity(), this /* fragment */,
                 getLifecycle());
     }
@@ -130,7 +130,7 @@ public class MyDeviceInfoFragment extends DashboardFragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         final BuildNumberPreferenceController buildNumberPreferenceController =
-            getPreferenceController(BuildNumberPreferenceController.class);
+            use(BuildNumberPreferenceController.class);
         if (buildNumberPreferenceController.onActivityResult(requestCode, resultCode, data)) {
             return;
         }
@@ -198,7 +198,7 @@ public class MyDeviceInfoFragment extends DashboardFragment {
                 }
 
                 @Override
-                public List<AbstractPreferenceController> getPreferenceControllers(
+                public List<AbstractPreferenceController> createPreferenceControllers(
                         Context context) {
                     return buildPreferenceControllers(context, null /*activity */,
                             null /* fragment */, null /* lifecycle */);

@@ -27,9 +27,9 @@ import android.support.v7.preference.PreferenceScreen;
 
 import com.android.settings.R;
 import com.android.settings.TestConfig;
-import com.android.settings.applications.defaultapps.DefaultAppInfo;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.webview.WebViewUpdateServiceWrapper;
+import com.android.settingslib.applications.DefaultAppInfo;
 import com.android.settingslib.wrapper.PackageManagerWrapper;
 
 import org.junit.Before;
@@ -91,19 +91,5 @@ public class WebViewAppPreferenceControllerTest {
         mController.updateState(mPreference);
 
         verify(mPreference).setSummary(R.string.app_list_preference_none);
-    }
-
-    @Test
-    public void onDeveloperOptionsSwitchDisabled_preferenceShouldBeDisabled() {
-        mController.onDeveloperOptionsSwitchDisabled();
-
-        verify(mPreference).setEnabled(false);
-    }
-
-    @Test
-    public void onDeveloperOptionsSwitchEnabled_preferenceShouldBeEnabled() {
-        mController.onDeveloperOptionsSwitchEnabled();
-
-        verify(mPreference).setEnabled(true);
     }
 }

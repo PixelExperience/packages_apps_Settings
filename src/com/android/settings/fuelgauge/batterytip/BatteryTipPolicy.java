@@ -19,11 +19,11 @@ package com.android.settings.fuelgauge.batterytip;
 import android.content.Context;
 import android.provider.Settings;
 import android.support.annotation.VisibleForTesting;
-import android.text.format.DateUtils;
 import android.util.KeyValueListParser;
 import android.util.Log;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Class to store the policy for battery tips, which comes from
@@ -44,6 +44,8 @@ public class BatteryTipPolicy {
     private static final String KEY_REDUCED_BATTERY_PERCENT = "reduced_battery_percent";
     private static final String KEY_LOW_BATTERY_ENABLED = "low_battery_enabled";
     private static final String KEY_LOW_BATTERY_HOUR = "low_battery_hour";
+    private static final String KEY_DATA_HISTORY_RETAIN_DAY = "data_history_retain_day";
+    private static final String KEY_EXCESSIVE_BG_DRAIN_PERCENTAGE = "excessive_bg_drain_percentage";
 
     /**
      * {@code true} if general battery tip is enabled
@@ -143,6 +145,25 @@ public class BatteryTipPolicy {
      */
     public final int lowBatteryHour;
 
+    /**
+     * TTL day for anomaly data stored in database
+     *
+     * @see Settings.Global#BATTERY_TIP_CONSTANTS
+     * @see #KEY_DATA_HISTORY_RETAIN_DAY
+     */
+    public final int dataHistoryRetainDay;
+
+    /**
+     * Battery drain percentage threshold for excessive background anomaly(i.e. 10%)
+     *
+     * This is an additional check for excessive background, to check whether battery drain
+     * for an app is larger than x%
+     *
+     * @see Settings.Global#BATTERY_TIP_CONSTANTS
+     * @see #KEY_EXCESSIVE_BG_DRAIN_PERCENTAGE
+     */
+    public final int excessiveBgDrainPercentage;
+
     private final KeyValueListParser mParser;
 
     public BatteryTipPolicy(Context context) {
@@ -174,6 +195,8 @@ public class BatteryTipPolicy {
         reducedBatteryPercent = mParser.getInt(KEY_REDUCED_BATTERY_PERCENT, 50);
         lowBatteryEnabled = mParser.getBoolean(KEY_LOW_BATTERY_ENABLED, false);
         lowBatteryHour = mParser.getInt(KEY_LOW_BATTERY_HOUR, 16);
+        dataHistoryRetainDay = mParser.getInt(KEY_DATA_HISTORY_RETAIN_DAY, 30);
+        excessiveBgDrainPercentage = mParser.getInt(KEY_EXCESSIVE_BG_DRAIN_PERCENTAGE, 10);
     }
 
 }

@@ -15,27 +15,27 @@
  */
 package com.android.settings.location;
 
+import static com.android.settings.SettingsActivity.EXTRA_SHOW_FRAGMENT;
+import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.arch.lifecycle.LifecycleOwner;
 import android.content.Context;
-import android.os.Bundle;
+import android.content.Intent;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
-
 import com.android.settings.R;
-import com.android.settings.SettingsActivity;
 import com.android.settings.TestConfig;
 import com.android.settings.applications.appinfo.AppInfoDashboardFragment;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
@@ -43,10 +43,12 @@ import com.android.settings.widget.AppPreference;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.location.RecentLocationApps;
 import com.android.settingslib.location.RecentLocationApps.Request;
-
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.ArgumentCaptor;
 import org.mockito.ArgumentMatcher;
 import org.mockito.InOrder;
 import org.mockito.Mock;
@@ -54,9 +56,6 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @RunWith(SettingsRobolectricTestRunner.class)
 @Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
@@ -70,6 +69,8 @@ public class RecentLocationRequestPreferenceControllerTest {
     private PreferenceScreen mScreen;
     @Mock
     private RecentLocationApps mRecentLocationApps;
+    @Mock
+    private Preference mSeeAllButton;
 
     private Context mContext;
     private RecentLocationRequestPreferenceController mController;
@@ -85,6 +86,7 @@ public class RecentLocationRequestPreferenceControllerTest {
         mController = spy(new RecentLocationRequestPreferenceController(
                 mContext, mFragment, mLifecycle, mRecentLocationApps));
         when(mScreen.findPreference(mController.getPreferenceKey())).thenReturn(mCategory);
+        when(mScreen.findPreference(mController.KEY_SEE_ALL_BUTTON)).thenReturn(mSeeAllButton);
         final String key = mController.getPreferenceKey();
         when(mCategory.getKey()).thenReturn(key);
         when(mCategory.getContext()).thenReturn(mContext);
@@ -122,38 +124,43 @@ public class RecentLocationRequestPreferenceControllerTest {
 
     @Test
     public void updateState_hasRecentRequest_shouldRemoveAllAndAddInjectedSettings() {
-        final List<RecentLocationApps.Request> requests = new ArrayList<>();
-        final Request req1 = mock(Request.class);
-        final Request req2 = mock(Request.class);
-        requests.add(req1);
-        requests.add(req2);
+        List<Request> requests = createMockRequests(2);
         doReturn(requests).when(mRecentLocationApps).getAppListSorted();
-        final String title1 = "testTitle1";
-        final String title2 = "testTitle2";
-        final AppPreference preference1 = mock(AppPreference.class);
-        final AppPreference preference2 = mock(AppPreference.class);
-        when(preference1.getTitle()).thenReturn(title1);
-        when(preference2.getTitle()).thenReturn(title2);
-        doReturn(preference1).when(mController)
-                .createAppPreference(any(Context.class), eq(req1));
-        doReturn(preference2).when(mController)
-                .createAppPreference(any(Context.class), eq(req2));
+
         mController.displayPreference(mScreen);
         mController.updateState(mCategory);
 
         verify(mCategory).removeAll();
         // Verifies two preferences are added in original order
         InOrder inOrder = Mockito.inOrder(mCategory);
-        inOrder.verify(mCategory).addPreference(argThat(titleMatches(title1)));
-        inOrder.verify(mCategory).addPreference(argThat(titleMatches(title2)));
+        inOrder.verify(mCategory).addPreference(argThat(titleMatches("appTitle0")));
+        inOrder.verify(mCategory).addPreference(argThat(titleMatches("appTitle1")));
+    }
+
+    @Test
+    public void updateState_hasOverThreeRequests_shouldDisplaySeeAllButton() {
+        List<Request> requests = createMockRequests(6);
+        when(mRecentLocationApps.getAppListSorted()).thenReturn(requests);
+
+        mController.displayPreference(mScreen);
+        mController.updateState(mCategory);
+
+        verify(mCategory).removeAll();
+        // Verifies the first three preferences are added
+        InOrder inOrder = Mockito.inOrder(mCategory);
+        inOrder.verify(mCategory).addPreference(argThat(titleMatches("appTitle0")));
+        inOrder.verify(mCategory).addPreference(argThat(titleMatches("appTitle1")));
+        inOrder.verify(mCategory).addPreference(argThat(titleMatches("appTitle2")));
+        verify(mCategory, never()).addPreference(argThat(titleMatches("appTitle3")));
+        // Verifies the "See all" preference is visible
+        verify(mSeeAllButton).setVisible(true);
     }
 
     @Test
     public void createAppPreference_shouldAddClickListener() {
         final Request request = mock(Request.class);
         final AppPreference preference = mock(AppPreference.class);
-        doReturn(preference).when(mController)
-                .createAppPreference(any(Context.class));
+        doReturn(preference).when(mController).createAppPreference(any(Context.class));
 
         mController.createAppPreference(mContext, request);
 
@@ -163,8 +170,9 @@ public class RecentLocationRequestPreferenceControllerTest {
 
     @Test
     public void onPreferenceClick_shouldLaunchAppDetails() {
-        final SettingsActivity activity = mock(SettingsActivity.class);
-        when(mFragment.getActivity()).thenReturn(activity);
+        final Context context= mock(Context.class);
+        when(mFragment.getContext()).thenReturn(context);
+
         final List<RecentLocationApps.Request> requests = new ArrayList<>();
         final Request request = mock(Request.class);
         requests.add(request);
@@ -174,15 +182,33 @@ public class RecentLocationRequestPreferenceControllerTest {
         mController.displayPreference(mScreen);
         mController.updateState(mCategory);
 
+        final ArgumentCaptor<Intent> intent = ArgumentCaptor.forClass(Intent.class);
+
         preference.performClick();
 
-        verify(activity).startPreferencePanelAsUser(any(),
-            eq(AppInfoDashboardFragment.class.getName()),
-            any(Bundle.class), anyInt(), any());
+        verify(context).startActivity(intent.capture());
+
+        assertThat(intent.getValue().getStringExtra(EXTRA_SHOW_FRAGMENT))
+                .isEqualTo(AppInfoDashboardFragment.class.getName());
     }
 
     private static ArgumentMatcher<Preference> titleMatches(String expected) {
         return preference -> TextUtils.equals(expected, preference.getTitle());
     }
 
+    private List<RecentLocationApps.Request> createMockRequests(int count) {
+        List<RecentLocationApps.Request> requests = new ArrayList<>();
+        for (int i = 0; i < count; i++) {
+            // Add mock requests
+            Request req = mock(Request.class, "request" + i);
+            requests.add(req);
+            // Map mock AppPreferences with mock requests
+            String title = "appTitle" + i;
+            AppPreference appPreference = mock(AppPreference.class, "AppPreference" + i);
+            doReturn(title).when(appPreference).getTitle();
+            doReturn(appPreference)
+                    .when(mController).createAppPreference(any(Context.class), eq(req));
+        }
+        return requests;
+    }
 }

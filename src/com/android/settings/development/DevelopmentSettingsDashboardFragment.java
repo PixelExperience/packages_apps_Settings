@@ -302,7 +302,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         if (Utils.isMonkeyRunning()) {
             mPreferenceControllers = new ArrayList<>();
             return null;
@@ -375,6 +375,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new LocalBackupPasswordPreferenceController(context));
         controllers.add(new StayAwakePreferenceController(context, lifecycle));
         controllers.add(new HdcpCheckingPreferenceController(context));
+        controllers.add(new DarkUIPreferenceController(context));
         controllers.add(new BluetoothSnoopLogPreferenceController(context));
         controllers.add(new OemUnlockPreferenceController(context, activity, fragment));
         controllers.add(new FileEncryptionPreferenceController(context));
@@ -401,10 +402,10 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new WifiConnectedMacRandomizationPreferenceController(context));
         controllers.add(new MobileDataAlwaysOnPreferenceController(context));
         controllers.add(new TetheringHardwareAccelPreferenceController(context));
-        controllers.add(new SelectUsbConfigPreferenceController(context, lifecycle));
         controllers.add(new BluetoothDeviceNoNamePreferenceController(context));
         controllers.add(new BluetoothAbsoluteVolumePreferenceController(context));
         controllers.add(new BluetoothInbandRingingPreferenceController(context));
+        controllers.add(new BluetoothDelayReportsPreferenceController(context));
         controllers.add(new BluetoothAvrcpVersionPreferenceController(context));
         controllers.add(new BluetoothAudioCodecPreferenceController(context, lifecycle,
                 bluetoothA2dpConfigStore));
@@ -448,12 +449,23 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new FreeformWindowsPreferenceController(context));
         controllers.add(new ShortcutManagerThrottlingPreferenceController(context));
         controllers.add(new EnableGnssRawMeasFullTrackingPreferenceController(context));
+        controllers.add(new DefaultLaunchPreferenceController(context, "running_apps"));
+        controllers.add(
+            new DefaultLaunchPreferenceController(context, "android_o_battery_settings"));
+        controllers.add(new DefaultLaunchPreferenceController(context, "demo_mode"));
+        controllers.add(new DefaultLaunchPreferenceController(context, "quick_settings_tiles"));
+        controllers.add(new DefaultLaunchPreferenceController(context, "feature_flags_dashboard"));
+        controllers.add(
+            new DefaultLaunchPreferenceController(context, "default_usb_configuration"));
+        controllers.add(new DefaultLaunchPreferenceController(context, "density"));
+        controllers.add(new DefaultLaunchPreferenceController(context, "background_check"));
+        controllers.add(new DefaultLaunchPreferenceController(context, "inactive_apps"));
         return controllers;
     }
 
     @VisibleForTesting
     <T extends AbstractPreferenceController> T getDevelopmentOptionsController(Class<T> clazz) {
-        return getPreferenceController(clazz);
+        return use(clazz);
     }
 
     /**
@@ -477,7 +489,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
                 }
 
                 @Override
-                public List<AbstractPreferenceController> getPreferenceControllers(Context
+                public List<AbstractPreferenceController> createPreferenceControllers(Context
                         context) {
                     return buildPreferenceControllers(context, null /* activity */,
                             null /* lifecycle */, null /* devOptionsDashboardFragment */,
