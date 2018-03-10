@@ -51,6 +51,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.applications.manageapplications.ManageApplications;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.widget.PreferenceCategoryController;
@@ -82,9 +83,10 @@ public class AppInfoDashboardFragment extends DashboardFragment
     private static final String TAG = "AppInfoDashboard";
 
     // Menu identifiers
-    private static final int UNINSTALL_ALL_USERS_MENU = 1;
-    private static final int UNINSTALL_UPDATES = 2;
+    @VisibleForTesting static final int UNINSTALL_ALL_USERS_MENU = 1;
+    @VisibleForTesting static final int UNINSTALL_UPDATES = 2;
     static final int FORCE_STOP_MENU = 3;
+    static final int INSTALL_INSTANT_APP_MENU = 4;
 
     // Result code identifiers
     @VisibleForTesting
@@ -102,6 +104,7 @@ public class AppInfoDashboardFragment extends DashboardFragment
     static final int DLG_FORCE_STOP = DLG_BASE + 1;
     private static final int DLG_DISABLE = DLG_BASE + 2;
     private static final int DLG_SPECIAL_DISABLE = DLG_BASE + 3;
+    static final int DLG_CLEAR_INSTANT_APP = DLG_BASE + 4;
 
     private static final String KEY_ADVANCED_APP_INFO_CATEGORY = "advanced_app_info";
 
@@ -209,7 +212,7 @@ public class AppInfoDashboardFragment extends DashboardFragment
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         retrieveAppEntry();
         if (mPackageInfo == null) {
             return null;
@@ -243,7 +246,7 @@ public class AppInfoDashboardFragment extends DashboardFragment
         // The following are controllers for preferences that don't need to refresh the preference
         // state when app state changes.
         mInstantAppButtonPreferenceController =
-                new InstantAppButtonsPreferenceController(context, this, packageName);
+                new InstantAppButtonsPreferenceController(context, this, packageName, lifecycle);
         controllers.add(mInstantAppButtonPreferenceController);
         controllers.add(new AppBatteryPreferenceController(context, this, packageName, lifecycle));
         controllers.add(new AppMemoryPreferenceController(context, this, lifecycle));
@@ -330,7 +333,10 @@ public class AppInfoDashboardFragment extends DashboardFragment
         menu.findItem(UNINSTALL_ALL_USERS_MENU).setVisible(shouldShowUninstallForAll(mAppEntry));
         mUpdatedSysApp = (mAppEntry.info.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) != 0;
         final MenuItem uninstallUpdatesItem = menu.findItem(UNINSTALL_UPDATES);
-        uninstallUpdatesItem.setVisible(mUpdatedSysApp && !mAppsControlDisallowedBySystem);
+        final boolean uninstallUpdateDisabled = getContext().getResources().getBoolean(
+                R.bool.config_disable_uninstall_update);
+        uninstallUpdatesItem.setVisible(
+                mUpdatedSysApp && !mAppsControlDisallowedBySystem && !uninstallUpdateDisabled);
         if (uninstallUpdatesItem.isVisible()) {
             RestrictedLockUtils.setMenuItemAsDisabledByAdmin(getActivity(),
                     uninstallUpdatesItem, mAppsControlDisallowedAdmin);
@@ -502,16 +508,21 @@ public class AppInfoDashboardFragment extends DashboardFragment
         mDisableAfterUninstall = andDisable;
     }
 
-    public static void startAppInfoFragment(Class<?> fragment, int title,
+    public static void startAppInfoFragment(Class<?> fragment, int title, Bundle args,
             SettingsPreferenceFragment caller, AppEntry appEntry) {
         // start new fragment to display extended information
-        final Bundle args = new Bundle();
+        if (args == null) {
+            args = new Bundle();
+        }
         args.putString(ARG_PACKAGE_NAME, appEntry.info.packageName);
         args.putInt(ARG_PACKAGE_UID, appEntry.info.uid);
-
-        final SettingsActivity sa = (SettingsActivity) caller.getActivity();
-        sa.startPreferencePanel(caller, fragment.getName(), args, title, null, caller,
-                SUB_INFO_FRAGMENT);
+        new SubSettingLauncher(caller.getContext())
+                .setDestination(fragment.getName())
+                .setArguments(args)
+                .setTitle(title)
+                .setResultListener(caller, SUB_INFO_FRAGMENT)
+                .setSourceMetricsCategory(caller.getMetricsCategory())
+                .launch();
     }
 
     void handleUninstallButtonClick() {
@@ -665,7 +676,7 @@ public class AppInfoDashboardFragment extends DashboardFragment
         final Intent intent = new Intent();
         intent.putExtra(ManageApplications.APP_CHG, appChanged);
         final SettingsActivity sa = (SettingsActivity)getActivity();
-        sa.finishPreferencePanel(this, Activity.RESULT_OK, intent);
+        sa.finishPreferencePanel(Activity.RESULT_OK, intent);
         mFinishing = true;
     }
 

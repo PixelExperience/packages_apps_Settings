@@ -150,15 +150,6 @@
     <!-- Whether default_home should be shown or not. -->
     <bool name="config_show_default_home">true</bool>
 
-    <!-- Whether color correction preference should be shown or not. -->
-    <bool name="config_show_color_correction_preference">true</bool>
-
-    <!-- Whether color inversion preference should be shown or not. -->
-    <bool name="config_show_color_inversion_preference">true</bool>
-
-    <!-- Whether accessibility shortcut preference should be shown or not. -->
-    <bool name="config_show_accessibility_shortcut_preference">true</bool>
-
     <!-- Whether assist_and_voice_input should be shown or not. -->
     <bool name="config_show_assist_and_voice_input">true</bool>
 
@@ -173,4 +164,7 @@
 
     <!-- Whether wifi_mac_address should be shown or not. -->
     <bool name="config_show_wifi_mac_address">true</bool>
+
+    <!-- Whether to disable "Uninstall Updates" menu item for System apps or not.. -->
+    <bool name="config_disable_uninstall_update">false</bool>
 </resources>

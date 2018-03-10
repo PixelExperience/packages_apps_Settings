@@ -43,8 +43,8 @@ import android.util.Log;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
 import com.android.settings.applications.manageapplications.ManageApplications;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.wrapper.DevicePolicyManagerWrapper;
@@ -128,23 +128,27 @@ public abstract class AppInfoBase extends SettingsPreferenceFragment
     protected String retrieveAppEntry() {
         final Bundle args = getArguments();
         mPackageName = (args != null) ? args.getString(ARG_PACKAGE_NAME) : null;
+        Intent intent = (args == null) ?
+                getIntent() : (Intent) args.getParcelable("intent");
         if (mPackageName == null) {
-            Intent intent = (args == null) ?
-                    getActivity().getIntent() : (Intent) args.getParcelable("intent");
             if (intent != null && intent.getData() != null) {
                 mPackageName = intent.getData().getSchemeSpecificPart();
             }
         }
-        mUserId = UserHandle.myUserId();
+        if (intent != null && intent.hasExtra(Intent.EXTRA_USER_HANDLE)) {
+            mUserId = ((UserHandle) intent.getParcelableExtra(
+                    Intent.EXTRA_USER_HANDLE)).getIdentifier();
+        } else {
+            mUserId = UserHandle.myUserId();
+        }
         mAppEntry = mState.getEntry(mPackageName, mUserId);
         if (mAppEntry != null) {
             // Get application info again to refresh changed properties of application
             try {
-                mPackageInfo = mPm.getPackageInfo(mAppEntry.info.packageName,
+                mPackageInfo = mPm.getPackageInfoAsUser(mAppEntry.info.packageName,
                         PackageManager.MATCH_DISABLED_COMPONENTS |
-                        PackageManager.MATCH_ANY_USER |
-                        PackageManager.GET_SIGNATURES |
-                        PackageManager.GET_PERMISSIONS);
+                                PackageManager.GET_SIGNING_CERTIFICATES |
+                                PackageManager.GET_PERMISSIONS, mUserId);
             } catch (NameNotFoundException e) {
                 Log.e(TAG, "Exception when retrieving package:" + mAppEntry.info.packageName, e);
             }
@@ -161,7 +165,7 @@ public abstract class AppInfoBase extends SettingsPreferenceFragment
         Intent intent = new Intent();
         intent.putExtra(ManageApplications.APP_CHG, appChanged);
         SettingsActivity sa = (SettingsActivity)getActivity();
-        sa.finishPreferencePanel(this, Activity.RESULT_OK, intent);
+        sa.finishPreferencePanel(Activity.RESULT_OK, intent);
         mFinishing = true;
     }
 
@@ -218,20 +222,18 @@ public abstract class AppInfoBase extends SettingsPreferenceFragment
 
     public static void startAppInfoFragment(Class<?> fragment, int titleRes,
             String pkg, int uid, Fragment source, int request, int sourceMetricsCategory) {
-        startAppInfoFragment(fragment, titleRes, pkg, uid, source.getActivity(), request,
-                sourceMetricsCategory);
-    }
-
-    public static void startAppInfoFragment(Class<?> fragment, int titleRes,
-            String pkg, int uid, Activity source, int request, int sourceMetricsCategory) {
-        Bundle args = new Bundle();
+        final Bundle args = new Bundle();
         args.putString(AppInfoBase.ARG_PACKAGE_NAME, pkg);
         args.putInt(AppInfoBase.ARG_PACKAGE_UID, uid);
 
-        Intent intent = Utils.onBuildStartFragmentIntent(source, fragment.getName(),
-                args, null, titleRes, null, false, sourceMetricsCategory);
-        source.startActivityForResultAsUser(intent, request,
-                new UserHandle(UserHandle.getUserId(uid)));
+        new SubSettingLauncher(source.getContext())
+                .setDestination(fragment.getName())
+                .setSourceMetricsCategory(sourceMetricsCategory)
+                .setTitle(titleRes)
+                .setArguments(args)
+                .setUserHandle(new UserHandle(UserHandle.getUserId(uid)))
+                .setResultListener(source, request)
+                .launch();
     }
 
     public static class MyAlertDialogFragment extends InstrumentedDialogFragment {

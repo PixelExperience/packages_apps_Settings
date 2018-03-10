@@ -16,12 +16,9 @@
 
 package com.android.settings.fuelgauge;
 
+import static com.android.settings.SettingsActivity.EXTRA_SHOW_FRAGMENT_ARGUMENTS;
 import static com.google.common.truth.Truth.assertThat;
-
-
-import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyInt;
-import static org.mockito.Matchers.anyString;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.doReturn;
@@ -29,10 +26,9 @@ import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 
 import android.content.Context;
-import android.content.pm.ApplicationInfo;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceGroup;
@@ -40,9 +36,9 @@ import android.support.v7.preference.PreferenceManager;
 import android.util.IconDrawableFactory;
 
 import com.android.settings.SettingsActivity;
-import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.TestConfig;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
+import com.android.settings.testutils.SettingsRobolectricTestRunner;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -82,12 +78,9 @@ public class PowerUsageAnomalyDetailsTest {
     private PackageManager mPackageManager;
     @Mock
     private IconDrawableFactory mIconDrawableFactory;
-    @Mock
-    private ApplicationInfo mApplicationInfo;
     private Context mContext;
     private PowerUsageAnomalyDetails mFragment;
     private PreferenceGroup mAbnormalListGroup;
-    private Bundle mBundle;
     private List<Anomaly> mAnomalyList;
 
     @Before
@@ -179,22 +172,14 @@ public class PowerUsageAnomalyDetailsTest {
 
     @Test
     public void testStartBatteryAbnormalPage_dataCorrect() {
-        final ArgumentCaptor<Bundle> bundleCaptor = ArgumentCaptor.forClass(Bundle.class);
-        Answer<Void> bundleCallable = new Answer<Void>() {
-            @Override
-            public Void answer(InvocationOnMock invocation) throws Exception {
-                mBundle = bundleCaptor.getValue();
-                return null;
-            }
-        };
-        doAnswer(bundleCallable).when(mSettingsActivity).startPreferencePanelAsUser(any(),
-                anyString(),
-                bundleCaptor.capture(), anyInt(), any(), any());
+        final ArgumentCaptor<Intent> intent = ArgumentCaptor.forClass(Intent.class);
 
         PowerUsageAnomalyDetails.startBatteryAbnormalPage(mSettingsActivity, mFragment,
                 mAnomalyList);
 
-        assertThat(mBundle.getParcelableArrayList(
-                PowerUsageAnomalyDetails.EXTRA_ANOMALY_LIST)).isEqualTo(mAnomalyList);
+        verify(mSettingsActivity).startActivity(intent.capture());
+        assertThat(intent.getValue().getBundleExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS)
+                .getParcelableArrayList(PowerUsageAnomalyDetails.EXTRA_ANOMALY_LIST))
+                .isEqualTo(mAnomalyList);
     }
 }

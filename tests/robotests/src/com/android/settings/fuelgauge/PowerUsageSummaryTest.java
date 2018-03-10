@@ -15,8 +15,6 @@
  */
 package com.android.settings.fuelgauge;
 
-import static com.android.settings.fuelgauge.PowerUsageSummary.MENU_HIGH_POWER_APPS;
-
 import static com.google.common.truth.Truth.assertThat;
 
 import static org.mockito.Matchers.any;
@@ -39,19 +37,14 @@ import android.os.Bundle;
 import android.os.PowerManager;
 import android.support.v7.preference.PreferenceScreen;
 import android.util.SparseArray;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.os.BatterySipper;
 import com.android.internal.os.BatteryStatsHelper;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.TestConfig;
-import com.android.settings.Utils;
 import com.android.settings.applications.LayoutPreference;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
 import com.android.settings.fuelgauge.anomaly.AnomalyDetectionPolicy;
@@ -63,6 +56,7 @@ import com.android.settingslib.core.AbstractPreferenceController;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Answers;
@@ -108,14 +102,6 @@ public class PowerUsageSummaryTest {
 
     @Mock(answer = Answers.RETURNS_DEEP_STUBS)
     private Context mContext;
-    @Mock(answer = Answers.RETURNS_DEEP_STUBS)
-    private Menu mMenu;
-    @Mock
-    private MenuItem mToggleAppsMenu;
-    @Mock
-    private MenuItem mHighPowerMenu;
-    @Mock
-    private MenuInflater mMenuInflater;
     @Mock
     private BatterySipper mNormalBatterySipper;
     @Mock
@@ -169,7 +155,6 @@ public class PowerUsageSummaryTest {
         doReturn(mock(LoaderManager.class)).when(mFragment).getLoaderManager();
 
         when(mFragment.getActivity()).thenReturn(mSettingsActivity);
-        when(mHighPowerMenu.getItemId()).thenReturn(MENU_HIGH_POWER_APPS);
         when(mFeatureFactory.powerUsageFeatureProvider.getAdditionalBatteryInfoIntent())
                 .thenReturn(sAdditionalBatteryInfoIntent);
         when(mBatteryHelper.getTotalPower()).thenReturn(TOTAL_POWER);
@@ -205,14 +190,6 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testOptionsMenu_menuHighPower_metricEventInvoked() {
-        mFragment.onOptionsItemSelected(mHighPowerMenu);
-
-        verify(mFeatureFactory.metricsFeatureProvider).action(mContext,
-                MetricsProto.MetricsEvent.ACTION_SETTINGS_MENU_BATTERY_OPTIMIZATION);
-    }
-
-    @Test
     public void testUpdateLastFullChargePreference_showCorrectSummary() {
         doReturn(mRealContext).when(mFragment).getContext();
 
@@ -241,7 +218,7 @@ public class PowerUsageSummaryTest {
                 fragment.getPreferenceScreenResId());
         final List<String> preferenceKeys = new ArrayList<>();
 
-        for (AbstractPreferenceController controller : fragment.getPreferenceControllers(context)) {
+        for (AbstractPreferenceController controller : fragment.createPreferenceControllers(context)) {
             preferenceKeys.add(controller.getPreferenceKey());
         }
 
@@ -276,6 +253,7 @@ public class PowerUsageSummaryTest {
                 eq(Bundle.EMPTY), any());
     }
 
+    @Ignore("b/73892008")
     @Test
     public void testShowBothEstimates_summariesAreBothModified() {
         doReturn(new TextView(mRealContext)).when(mBatteryLayoutPref).findViewById(R.id.summary2);
@@ -284,8 +262,8 @@ public class PowerUsageSummaryTest {
         TextView summary1 = mFragment.mBatteryLayoutPref.findViewById(R.id.summary1);
         TextView summary2 = mFragment.mBatteryLayoutPref.findViewById(R.id.summary2);
         Robolectric.flushBackgroundThreadScheduler();
-        assertThat(summary2.getText().toString().contains(NEW_ML_EST_SUFFIX));
-        assertThat(summary1.getText().toString().contains(OLD_EST_SUFFIX));
+        assertThat(summary2.getText().toString()).contains(NEW_ML_EST_SUFFIX);
+        assertThat(summary1.getText().toString()).contains(OLD_EST_SUFFIX);
     }
 
     @Test

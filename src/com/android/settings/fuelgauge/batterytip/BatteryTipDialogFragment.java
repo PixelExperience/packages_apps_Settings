@@ -29,6 +29,7 @@ import android.view.LayoutInflater;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
+import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
 import com.android.settings.fuelgauge.batterytip.BatteryTipPreferenceController.BatteryTipListener;
 import com.android.settings.fuelgauge.batterytip.actions.BatteryTipAction;
@@ -36,6 +37,7 @@ import com.android.settings.fuelgauge.batterytip.tips.BatteryTip;
 import com.android.settings.fuelgauge.batterytip.tips.HighUsageTip;
 import com.android.settings.fuelgauge.batterytip.tips.RestrictAppTip;
 import com.android.settings.fuelgauge.batterytip.tips.UnrestrictAppTip;
+import com.android.settingslib.utils.StringUtil;
 
 import java.util.List;
 
@@ -83,7 +85,8 @@ public class BatteryTipDialogFragment extends InstrumentedDialogFragment impleme
 
                 return new AlertDialog.Builder(context)
                         .setMessage(getString(R.string.battery_tip_dialog_message,
-                                Utils.formatElapsedTime(context, highUsageTip.getScreenTimeMs(),
+                                StringUtil.formatElapsedTime(
+                                        context, highUsageTip.getScreenTimeMs(),
                                         false /* withSeconds */)))
                         .setView(view)
                         .setPositiveButton(android.R.string.ok, null)
@@ -139,7 +142,8 @@ public class BatteryTipDialogFragment extends InstrumentedDialogFragment impleme
             return;
         }
         final BatteryTipAction action = BatteryTipUtils.getActionForBatteryTip(mBatteryTip,
-                (SettingsActivity) getActivity(), this);
+                (SettingsActivity) getActivity(),
+                (InstrumentedPreferenceFragment) getTargetFragment());
         if (action != null) {
             action.handlePositiveAction();
         }

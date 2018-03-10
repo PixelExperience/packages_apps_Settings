@@ -512,6 +512,8 @@
         <item>IMSI</item>
         <!-- Do not translate. -->
         <item>GID</item>
+        <!-- Do not translate. -->
+        <item>ICCID</item>
     </string-array>
 
     <string-array translatable="false" name="mvno_type_values">
@@ -523,6 +525,8 @@
         <item>imsi</item>
         <!-- Do not translate. -->
         <item>gid</item>
+        <!-- Do not translate. -->
+        <item>iccid</item>
     </string-array>
 
     <!-- Apps on SD installation location options in ApplicationSettings -->
@@ -1077,6 +1081,20 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+
+    <!-- Titles for ui dark mode preference. -->
+    <string-array name="dark_ui_mode_entries" >
+        <item>Automatic (based on time of day)</item>
+        <item>Always on</item>
+        <item>Always off</item>
+    </string-array>
+
+    <!-- Values for ui dark mode preference. -->
+    <string-array name="dark_ui_mode_values" translatable="false" >
+        <item>auto</item>
+        <item>yes</item>
+        <item>no</item>
     </string-array>
 
 </resources>

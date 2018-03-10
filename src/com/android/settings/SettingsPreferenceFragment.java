@@ -135,19 +135,7 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
         if (icicle != null) {
             mPreferenceHighlighted = icicle.getBoolean(SAVE_HIGHLIGHTED_KEY);
         }
-        final Bundle arguments = getArguments();
-
-        // Check if we should keep the preferences expanded.
-        if (arguments != null) {
-            final String highlightKey =
-                    arguments.getString(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY);
-            if (!TextUtils.isEmpty(highlightKey)) {
-                final PreferenceScreen screen = getPreferenceScreen();
-                if (screen != null) {
-                    screen.setInitialExpandedChildrenCount(Integer.MAX_VALUE);
-                }
-            }
-        }
+        HighlightablePreferenceGroupAdapter.adjustInitialExpandedChildCount(this /* host */);
     }
 
     @Override
@@ -262,6 +250,15 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
         if (mAdapter != null) {
             mAdapter.requestHighlight(getView(), getListView());
         }
+    }
+
+    /**
+     * Returns initial expanded child count.
+     * <p/>
+     * Only override this method if the initial expanded child must be determined at run time.
+     */
+    public int getInitialExpandedChildCount() {
+        return 0;
     }
 
     protected void onDataSetChanged() {
@@ -683,22 +680,4 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
         }
         getActivity().setResult(result);
     }
-
-    public boolean startFragment(Fragment caller, String fragmentClass, int titleRes,
-            int requestCode, Bundle extras) {
-        final Activity activity = getActivity();
-        if (activity instanceof SettingsActivity) {
-            SettingsActivity sa = (SettingsActivity) activity;
-            sa.startPreferencePanel(
-                    caller, fragmentClass, extras, titleRes, null, caller, requestCode);
-            return true;
-        } else {
-            Log.w(TAG,
-                    "Parent isn't SettingsActivity nor PreferenceActivity, thus there's no way to "
-                            + "launch the given Fragment (name: " + fragmentClass
-                            + ", requestCode: " + requestCode + ")");
-            return false;
-        }
-    }
-
 }

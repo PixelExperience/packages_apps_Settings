@@ -30,7 +30,6 @@ import android.net.NetworkInfo;
 import android.net.NetworkInfo.State;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
-import android.net.wifi.WpsInfo;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Handler;
@@ -52,6 +51,7 @@ import com.android.settings.LinkifyUtils;
 import com.android.settings.R;
 import com.android.settings.RestrictedSettingsFragment;
 import com.android.settings.SettingsActivity;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.location.ScanningSettings;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -85,16 +85,12 @@ public class WifiSettings extends RestrictedSettingsFragment
 
     private static final String TAG = "WifiSettings";
 
-    /* package */ static final int MENU_ID_WPS_PBC = Menu.FIRST;
-    private static final int MENU_ID_WPS_PIN = Menu.FIRST + 1;
     private static final int MENU_ID_CONNECT = Menu.FIRST + 6;
     private static final int MENU_ID_FORGET = Menu.FIRST + 7;
     private static final int MENU_ID_MODIFY = Menu.FIRST + 8;
     private static final int MENU_ID_WRITE_NFC = Menu.FIRST + 9;
 
     public static final int WIFI_DIALOG_ID = 1;
-    /* package */ static final int WPS_PBC_DIALOG_ID = 2;
-    private static final int WPS_PIN_DIALOG_ID = 3;
     private static final int WRITE_NFC_DIALOG_ID = 6;
 
     // Instance state keys
@@ -108,6 +104,10 @@ public class WifiSettings extends RestrictedSettingsFragment
     private static final String PREF_KEY_ADDITIONAL_SETTINGS = "additional_settings";
     private static final String PREF_KEY_CONFIGURE_WIFI_SETTINGS = "configure_settings";
     private static final String PREF_KEY_SAVED_NETWORKS = "saved_networks";
+
+    private static boolean isVerboseLoggingEnabled() {
+        return WifiTracker.sVerboseLogging || Log.isLoggable(TAG, Log.VERBOSE);
+    }
 
     private final Runnable mUpdateAccessPointsRunnable = () -> {
         updateAccessPointPreferences();
@@ -353,32 +353,6 @@ public class WifiSettings extends RestrictedSettingsFragment
     }
 
     /**
-     * Only update the AP list if there are not any APs currently shown.
-     *
-     * <p>Thus forceUpdate will only be called during cold start or when toggling between wifi on
-     * and off. In other use cases, the previous APs will remain until the next update is received
-     * from {@link WifiTracker}.
-     */
-    private void conditionallyForceUpdateAPs() {
-        if (mAccessPointsPreferenceCategory.getPreferenceCount() > 0
-                && mAccessPointsPreferenceCategory.getPreference(0) instanceof
-                        AccessPointPreference) {
-            // Make sure we don't update due to callbacks initiated by sticky broadcasts in
-            // WifiTracker.
-            Log.d(TAG, "Did not force update APs due to existing APs displayed");
-            getView().removeCallbacks(mUpdateAccessPointsRunnable);
-            return;
-        }
-        setProgressBarVisible(true);
-        mWifiTracker.forceUpdate();
-        if (WifiTracker.sVerboseLogging) {
-            Log.i(TAG, "WifiSettings force update APs: " + mWifiTracker.getAccessPoints());
-        }
-        getView().removeCallbacks(mUpdateAccessPointsRunnable);
-        updateAccessPointPreferences();
-    }
-
-    /**
      * @return new WifiEnabler or null (as overridden by WifiSettingsForSetupWizard)
      */
     private WifiEnabler createWifiEnabler() {
@@ -457,24 +431,6 @@ public class WifiSettings extends RestrictedSettingsFragment
             mWifiToNfcDialog.saveState(savedState);
             outState.putBundle(SAVED_WIFI_NFC_DIALOG_STATE, savedState);
         }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // If the user is not allowed to configure wifi, do not handle menu selections.
-        if (mIsRestricted) {
-            return false;
-        }
-
-        switch (item.getItemId()) {
-            case MENU_ID_WPS_PBC:
-                showDialog(WPS_PBC_DIALOG_ID);
-                return true;
-            case MENU_ID_WPS_PIN:
-                showDialog(WPS_PIN_DIALOG_ID);
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -635,10 +591,6 @@ public class WifiSettings extends RestrictedSettingsFragment
 
                 mSelectedAccessPoint = mDlgAccessPoint;
                 return mDialog;
-            case WPS_PBC_DIALOG_ID:
-                return new WpsDialog(getActivity(), WpsInfo.PBC);
-            case WPS_PIN_DIALOG_ID:
-                return new WpsDialog(getActivity(), WpsInfo.DISPLAY);
             case WRITE_NFC_DIALOG_ID:
                 if (mSelectedAccessPoint != null) {
                     mWifiToNfcDialog = new WriteWifiConfigToNfcDialog(
@@ -660,10 +612,6 @@ public class WifiSettings extends RestrictedSettingsFragment
         switch (dialogId) {
             case WIFI_DIALOG_ID:
                 return MetricsEvent.DIALOG_WIFI_AP_EDIT;
-            case WPS_PBC_DIALOG_ID:
-                return MetricsEvent.DIALOG_WIFI_PBC;
-            case WPS_PIN_DIALOG_ID:
-                return MetricsEvent.DIALOG_WIFI_PIN;
             case WRITE_NFC_DIALOG_ID:
                 return MetricsEvent.DIALOG_WIFI_WRITE_NFC;
             default:
@@ -708,7 +656,7 @@ public class WifiSettings extends RestrictedSettingsFragment
         final int wifiState = mWifiManager.getWifiState();
         switch (wifiState) {
             case WifiManager.WIFI_STATE_ENABLED:
-                conditionallyForceUpdateAPs();
+                updateAccessPointPreferences();
                 break;
 
             case WifiManager.WIFI_STATE_ENABLING:
@@ -762,7 +710,7 @@ public class WifiSettings extends RestrictedSettingsFragment
         }
         // AccessPoints are sorted by the WifiTracker
         final List<AccessPoint> accessPoints = mWifiTracker.getAccessPoints();
-        if (WifiTracker.sVerboseLogging) {
+        if (isVerboseLoggingEnabled()) {
             Log.i(TAG, "updateAccessPoints called for: " + accessPoints);
         }
 
@@ -884,13 +832,16 @@ public class WifiSettings extends RestrictedSettingsFragment
                 connectedAp);
 
         // Launch details page on click.
-        pref.setOnGearClickListener(l -> {
+        pref.setOnPreferenceClickListener(preference -> {
             pref.getAccessPoint().saveWifiState(pref.getExtras());
 
-            SettingsActivity activity = (SettingsActivity) WifiSettings.this.getActivity();
-            activity.startPreferencePanel(this,
-                    WifiNetworkDetailsFragment.class.getName(), pref.getExtras(),
-                    -1 /* resId */, pref.getTitle(), null, 0 /* resultRequestCode */);
+            new SubSettingLauncher(getContext())
+                    .setTitle(pref.getTitle())
+                    .setDestination(WifiNetworkDetailsFragment.class.getName())
+                    .setArguments(pref.getExtras())
+                    .setSourceMetricsCategory(getMetricsCategory())
+                    .launch();
+            return true;
         });
 
         pref.refresh();
@@ -947,15 +898,12 @@ public class WifiSettings extends RestrictedSettingsFragment
                 Settings.Global.WIFI_SCAN_ALWAYS_AVAILABLE, 0) == 1;
         final CharSequence description = wifiScanningMode ? getText(R.string.wifi_scan_notify_text)
                 : getText(R.string.wifi_scan_notify_text_scanning_off);
-        final LinkifyUtils.OnClickListener clickListener = new LinkifyUtils.OnClickListener() {
-            @Override
-            public void onClick() {
-                final SettingsActivity activity = (SettingsActivity) getActivity();
-                activity.startPreferencePanel(WifiSettings.this,
-                        ScanningSettings.class.getName(),
-                        null, R.string.location_scanning_screen_title, null, null, 0);
-            }
-        };
+        final LinkifyUtils.OnClickListener clickListener =
+                () -> new SubSettingLauncher(getContext())
+                        .setDestination(ScanningSettings.class.getName())
+                        .setTitle(R.string.location_scanning_screen_title)
+                        .setSourceMetricsCategory(getMetricsCategory())
+                        .launch();
         mStatusMessagePreference.setText(title, description, clickListener);
         removeConnectedAccessPointPreference();
         mAccessPointsPreferenceCategory.removeAll();

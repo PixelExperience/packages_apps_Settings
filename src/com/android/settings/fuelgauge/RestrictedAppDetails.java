@@ -17,12 +17,12 @@
 package com.android.settings.fuelgauge;
 
 import android.app.AppOpsManager;
+import android.app.Fragment;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.support.v14.preference.PreferenceFragment;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
@@ -33,7 +33,10 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
+import com.android.settings.core.InstrumentedPreferenceFragment;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.fuelgauge.batterytip.AppInfo;
 import com.android.settings.widget.AppCheckBoxPreference;
 import com.android.settingslib.core.AbstractPreferenceController;
 
@@ -46,11 +49,12 @@ public class RestrictedAppDetails extends DashboardFragment {
 
     public static final String TAG = "RestrictedAppDetails";
 
-    private static final String EXTRA_PACKAGE_OPS_LIST = "package_ops_list";
+    @VisibleForTesting
+    static final String EXTRA_APP_INFO_LIST = "app_info_list";
     private static final String KEY_PREF_RESTRICTED_APP_LIST = "restrict_app_list";
 
     @VisibleForTesting
-    List<AppOpsManager.PackageOps> mPackageOpsList;
+    List<AppInfo> mAppInfos;
     @VisibleForTesting
     IconDrawableFactory mIconDrawableFactory;
     @VisibleForTesting
@@ -61,13 +65,16 @@ public class RestrictedAppDetails extends DashboardFragment {
     PackageManager mPackageManager;
 
     public static void startRestrictedAppDetails(SettingsActivity caller,
-            PreferenceFragment fragment, List<AppOpsManager.PackageOps> packageOpsList) {
-        Bundle args = new Bundle();
-        args.putParcelableList(EXTRA_PACKAGE_OPS_LIST, packageOpsList);
+            InstrumentedPreferenceFragment fragment, List<AppInfo> appInfos) {
+        final Bundle args = new Bundle();
+        args.putParcelableList(EXTRA_APP_INFO_LIST, appInfos);
 
-        caller.startPreferencePanelAsUser(fragment, RestrictedAppDetails.class.getName(), args,
-                R.string.restricted_app_title, null /* titleText */,
-                new UserHandle(UserHandle.myUserId()));
+        new SubSettingLauncher(caller)
+                .setDestination(RestrictedAppDetails.class.getName())
+                .setArguments(args)
+                .setTitle(R.string.restricted_app_title)
+                .setSourceMetricsCategory(fragment.getMetricsCategory())
+                .launch();
     }
 
     @Override
@@ -76,7 +83,7 @@ public class RestrictedAppDetails extends DashboardFragment {
         final Context context = getContext();
 
         mRestrictedAppListGroup = (PreferenceGroup) findPreference(KEY_PREF_RESTRICTED_APP_LIST);
-        mPackageOpsList = getArguments().getParcelableArrayList(EXTRA_PACKAGE_OPS_LIST);
+        mAppInfos = getArguments().getParcelableArrayList(EXTRA_APP_INFO_LIST);
         mPackageManager = context.getPackageManager();
         mIconDrawableFactory = IconDrawableFactory.newInstance(context);
         mBatteryUtils = BatteryUtils.getInstance(context);
@@ -101,7 +108,7 @@ public class RestrictedAppDetails extends DashboardFragment {
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return null;
     }
 
@@ -115,19 +122,20 @@ public class RestrictedAppDetails extends DashboardFragment {
         mRestrictedAppListGroup.removeAll();
         final Context context = getPrefContext();
 
-        for (int i = 0, size = mPackageOpsList.size(); i < size; i++) {
+        for (int i = 0, size = mAppInfos.size(); i < size; i++) {
             final CheckBoxPreference checkBoxPreference = new AppCheckBoxPreference(context);
-            final AppOpsManager.PackageOps packageOps = mPackageOpsList.get(i);
+            final AppInfo appInfo = mAppInfos.get(i);
             try {
                 final ApplicationInfo applicationInfo = mPackageManager.getApplicationInfo(
-                        packageOps.getPackageName(), 0 /* flags */);
+                        appInfo.packageName, 0 /* flags */);
                 checkBoxPreference.setChecked(true);
                 checkBoxPreference.setTitle(mPackageManager.getApplicationLabel(applicationInfo));
-                checkBoxPreference.setKey(packageOps.getPackageName());
+                checkBoxPreference.setKey(appInfo.packageName);
                 checkBoxPreference.setIcon(
                         Utils.getBadgedIcon(mIconDrawableFactory, mPackageManager,
-                                packageOps.getPackageName(),
-                                UserHandle.getUserId(packageOps.getUid())));
+                                appInfo.packageName,
+                                UserHandle.getUserId(
+                                        mBatteryUtils.getPackageUid(appInfo.packageName))));
                 checkBoxPreference.setOnPreferenceChangeListener((pref, value) -> {
                     // change the toggle
                     final int mode = (Boolean) value ? AppOpsManager.MODE_IGNORED

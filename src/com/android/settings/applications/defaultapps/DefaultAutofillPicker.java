@@ -38,7 +38,9 @@ import android.util.Log;
 import com.android.internal.content.PackageMonitor;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
+import com.android.settingslib.applications.DefaultAppInfo;
 import com.android.settingslib.utils.ThreadUtils;
+import com.android.settingslib.widget.CandidateInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -186,12 +188,20 @@ public class DefaultAutofillPicker extends DefaultAppPickerFragment {
     @Override
     protected List<DefaultAppInfo> getCandidates() {
         final List<DefaultAppInfo> candidates = new ArrayList<>();
-        final List<ResolveInfo> resolveInfos = mPm.getPackageManager()
-                .queryIntentServices(AUTOFILL_PROBE, PackageManager.GET_META_DATA);
+        final List<ResolveInfo> resolveInfos = mPm.queryIntentServices(
+                AUTOFILL_PROBE, PackageManager.GET_META_DATA);
         final Context context = getContext();
         for (ResolveInfo info : resolveInfos) {
             final String permission = info.serviceInfo.permission;
             if (Manifest.permission.BIND_AUTOFILL_SERVICE.equals(permission)) {
+                candidates.add(new DefaultAppInfo(context, mPm, mUserId, new ComponentName(
+                        info.serviceInfo.packageName, info.serviceInfo.name)));
+            }
+            if (Manifest.permission.BIND_AUTOFILL.equals(permission)) {
+                // Let it go for now...
+                Log.w(TAG, "AutofillService from '" + info.serviceInfo.packageName
+                        + "' uses unsupported permission " + Manifest.permission.BIND_AUTOFILL
+                        + ". It works for now, but might not be supported on future releases");
                 candidates.add(new DefaultAppInfo(context, mPm, mUserId, new ComponentName(
                         info.serviceInfo.packageName, info.serviceInfo.name)));
             }

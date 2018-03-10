@@ -23,19 +23,21 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.service.settings.suggestions.Suggestion;
+import android.support.annotation.VisibleForTesting;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardAdapter.DashboardItemHolder;
-import com.android.settings.dashboard.DashboardAdapter.IconCache;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.Utils;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
@@ -43,6 +45,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnSaveInstanceState;
 import com.android.settingslib.suggestions.SuggestionControllerMixin;
+import com.android.settingslib.utils.IconCache;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -117,14 +120,14 @@ public class SuggestionAdapter extends RecyclerView.Adapter<DashboardItemHolder>
         mConfig.setCardLayout(holder, suggestionCount, position);
         final Icon icon = suggestion.getIcon();
         final Drawable drawable = mCache.getIcon(icon);
-        if ((suggestion.getFlags() & Suggestion.FLAG_ICON_TINTABLE) != 0) {
+        if (drawable != null && (suggestion.getFlags() & Suggestion.FLAG_ICON_TINTABLE) != 0) {
             drawable.setTint(Utils.getColorAccent(mContext));
         }
         holder.icon.setImageDrawable(drawable);
         holder.title.setText(suggestion.getTitle());
         holder.title.setSingleLine(suggestionCount == 1);
         holder.title.setTypeface(Typeface.create(
-            mContext.getString(com.android.internal.R.string.config_headlineFontFamilyMedium),
+            mContext.getString(com.android.internal.R.string.config_headlineFontFamily),
             Typeface.NORMAL));
 
         if (suggestionCount == 1) {
@@ -226,28 +229,27 @@ public class SuggestionAdapter extends RecyclerView.Adapter<DashboardItemHolder>
         return mSuggestions;
     }
 
-    private static class CardConfig {
+    @VisibleForTesting
+    static class CardConfig {
         // Card start/end margin
         private final int mMarginInner;
         private final int mMarginOuter;
-        // Card width for different numbers of cards
-        private final int mWidthSingleCard;
-        private final int mWidthTwoCards;
+        // Card width if there are more than 2 cards
         private final int mWidthMultipleCards;
         // padding between icon and title
         private final int mPaddingTitleTopSingleCard;
         private final int mPaddingTitleTopMultipleCards;
+        private final WindowManager mWindowManager;
 
         private static CardConfig sConfig;
 
         private CardConfig(Context context) {
+            mWindowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
             final Resources res = context.getResources();
             mMarginInner =
                 res.getDimensionPixelOffset(R.dimen.suggestion_card_inner_margin);
             mMarginOuter =
                 res.getDimensionPixelOffset(R.dimen.suggestion_card_outer_margin);
-            mWidthSingleCard = res.getDimensionPixelOffset(R.dimen.suggestion_card_width_one_card);
-            mWidthTwoCards = res.getDimensionPixelOffset(R.dimen.suggestion_card_width_two_cards);
             mWidthMultipleCards =
                 res.getDimensionPixelOffset(R.dimen.suggestion_card_width_multiple_cards);
             mPaddingTitleTopSingleCard =
@@ -263,12 +265,12 @@ public class SuggestionAdapter extends RecyclerView.Adapter<DashboardItemHolder>
             return sConfig;
         }
 
-        private void setCardLayout(DashboardItemHolder holder, int suggestionCount,
-            int position) {
+        @VisibleForTesting
+        void setCardLayout(DashboardItemHolder holder, int suggestionCount, int position) {
             final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 suggestionCount == 1
-                    ? mWidthSingleCard : suggestionCount == 2
-                    ? mWidthTwoCards : mWidthMultipleCards,
+                    ? LinearLayout.LayoutParams.MATCH_PARENT : suggestionCount == 2
+                    ? getWidthForTwoCrads() : mWidthMultipleCards,
                 LinearLayout.LayoutParams.WRAP_CONTENT);
             if (suggestionCount == 1) {
                 params.setMarginStart(mMarginOuter);
@@ -281,6 +283,16 @@ public class SuggestionAdapter extends RecyclerView.Adapter<DashboardItemHolder>
             holder.itemView.setLayoutParams(params);
         }
 
+        private int getWidthForTwoCrads() {
+            return (getScreenWidth() - mMarginInner - mMarginOuter * 2) / 2;
+        }
+
+        @VisibleForTesting
+        int getScreenWidth() {
+            final DisplayMetrics metrics = new DisplayMetrics();
+            mWindowManager.getDefaultDisplay().getMetrics(metrics);
+            return metrics.widthPixels;
+        }
     }
 
 }

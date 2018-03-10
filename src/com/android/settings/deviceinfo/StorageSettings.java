@@ -47,7 +47,7 @@ import android.widget.Toast;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -56,9 +56,7 @@ import com.android.settings.search.SearchIndexableRaw;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.deviceinfo.PrivateStorageInfo;
 import com.android.settingslib.deviceinfo.StorageManagerVolumeProvider;
-import com.android.settingslib.drawer.SettingsDrawerActivity;
 
-import java.io.File;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -233,11 +231,12 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
                 mHasLaunchedPrivateVolumeSettings = true;
                 final Bundle args = new Bundle();
                 args.putString(VolumeInfo.EXTRA_VOLUME_ID, VolumeInfo.ID_PRIVATE_INTERNAL);
-                Intent intent = Utils.onBuildStartFragmentIntent(getActivity(),
-                        StorageDashboardFragment.class.getName(), args, null,
-                        R.string.storage_settings, null, false, getMetricsCategory());
-                intent.putExtra(SettingsDrawerActivity.EXTRA_SHOW_MENU, true);
-                getActivity().startActivity(intent);
+                new SubSettingLauncher(getActivity())
+                        .setDestination(StorageDashboardFragment.class.getName())
+                        .setArguments(args)
+                        .setTitle(R.string.storage_settings)
+                        .setSourceMetricsCategory(getMetricsCategory())
+                        .launch();
                 finish();
             }
         }
@@ -280,15 +279,23 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
                 args.putString(VolumeInfo.EXTRA_VOLUME_ID, vol.getId());
 
                 if (VolumeInfo.ID_PRIVATE_INTERNAL.equals(vol.getId())) {
-                    startFragment(this, StorageDashboardFragment.class.getCanonicalName(),
-                            R.string.storage_settings, 0, args);
+                    new SubSettingLauncher(getContext())
+                            .setDestination(StorageDashboardFragment.class.getCanonicalName())
+                            .setTitle(R.string.storage_settings)
+                            .setSourceMetricsCategory(getMetricsCategory())
+                            .setArguments(args)
+                            .launch();
                 } else {
                     // TODO: Go to the StorageDashboardFragment once it fully handles all of the
                     //       SD card cases and other private internal storage cases.
                     PrivateVolumeSettings.setVolumeSize(args, PrivateStorageInfo.getTotalSize(vol,
                             sTotalInternalStorage));
-                    startFragment(this, PrivateVolumeSettings.class.getCanonicalName(),
-                            -1, 0, args);
+                    new SubSettingLauncher(getContext())
+                            .setDestination(PrivateVolumeSettings.class.getCanonicalName())
+                            .setTitle(-1)
+                            .setSourceMetricsCategory(getMetricsCategory())
+                            .setArguments(args)
+                            .launch();
                 }
 
                 return true;
@@ -300,8 +307,12 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
                 } else {
                     final Bundle args = new Bundle();
                     args.putString(VolumeInfo.EXTRA_VOLUME_ID, vol.getId());
-                    startFragment(this, PublicVolumeSettings.class.getCanonicalName(),
-                            -1, 0, args);
+                    new SubSettingLauncher(getContext())
+                            .setDestination(PublicVolumeSettings.class.getCanonicalName())
+                            .setTitle(-1)
+                            .setSourceMetricsCategory(getMetricsCategory())
+                            .setArguments(args)
+                            .launch();
                     return true;
                 }
             }
@@ -315,8 +326,12 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
             // Picked a missing private volume
             final Bundle args = new Bundle();
             args.putString(VolumeRecord.EXTRA_FS_UUID, key);
-            startFragment(this, PrivateVolumeForget.class.getCanonicalName(),
-                    R.string.storage_menu_forget, 0, args);
+            new SubSettingLauncher(getContext())
+                    .setDestination(PrivateVolumeForget.class.getCanonicalName())
+                            .setTitle(R.string.storage_menu_forget)
+                    .setSourceMetricsCategory(getMetricsCategory())
+                    .setArguments(args)
+                    .launch();
             return true;
         }
 

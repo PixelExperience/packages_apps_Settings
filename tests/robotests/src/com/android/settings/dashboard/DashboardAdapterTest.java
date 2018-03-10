@@ -35,6 +35,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.android.settings.R;
@@ -46,6 +47,7 @@ import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
 import com.android.settingslib.drawer.Tile;
+import com.android.settingslib.utils.IconCache;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -77,6 +79,8 @@ public class DashboardAdapterTest {
     private Condition mCondition;
     @Mock
     private Resources mResources;
+    @Mock
+    private WindowManager mWindowManager;
     private FakeFeatureFactory mFactory;
     private DashboardAdapter mDashboardAdapter;
     private List<Condition> mConditionList;
@@ -87,6 +91,7 @@ public class DashboardAdapterTest {
         mFactory = FakeFeatureFactory.setupForTest();
         when(mFactory.dashboardFeatureProvider.shouldTintIcon()).thenReturn(true);
 
+        when(mContext.getSystemService(Context.WINDOW_SERVICE)).thenReturn(mWindowManager);
         when(mContext.getResources()).thenReturn(mResources);
         when(mResources.getQuantityString(any(int.class), any(int.class), any()))
                 .thenReturn("");
@@ -240,7 +245,7 @@ public class DashboardAdapterTest {
             new DashboardAdapter.DashboardItemHolder(view);
         final Tile tile = new Tile();
         tile.icon = Icon.createWithResource(context, R.drawable.ic_settings);
-        final DashboardAdapter.IconCache iconCache = mock(DashboardAdapter.IconCache.class);
+        final IconCache iconCache = mock(IconCache.class);
         when(iconCache.getIcon(tile.icon)).thenReturn(context.getDrawable(R.drawable.ic_settings));
 
         mDashboardAdapter = new DashboardAdapter(context, null /* savedInstanceState */,
@@ -261,7 +266,7 @@ public class DashboardAdapterTest {
         tile.icon = mock(Icon.class);
         when(tile.icon.getResPackage()).thenReturn("another.package");
 
-        final DashboardAdapter.IconCache iconCache = mock(DashboardAdapter.IconCache.class);
+        final IconCache iconCache = mock(IconCache.class);
         when(iconCache.getIcon(tile.icon)).thenReturn(context.getDrawable(R.drawable.ic_settings));
 
         mDashboardAdapter = new DashboardAdapter(context, null /* savedInstanceState */,

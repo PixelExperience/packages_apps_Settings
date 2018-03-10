@@ -107,7 +107,7 @@ public class SoundSettings extends DashboardFragment {
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, this, mVolumeCallback, getLifecycle());
     }
 
@@ -180,7 +180,7 @@ public class SoundSettings extends DashboardFragment {
             SoundSettings fragment, VolumeSeekBarPreference.Callback callback,
             Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
-        controllers.add(new ZenModePreferenceController(context));
+        controllers.add(new ZenModePreferenceController(context, lifecycle));
         controllers.add(new VibrateWhenRingPreferenceController(context));
 
         // === Volumes ===
@@ -255,7 +255,8 @@ public class SoundSettings extends DashboardFragment {
                 }
 
                 @Override
-                public List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+                public List<AbstractPreferenceController> createPreferenceControllers(
+                        Context context) {
                     return buildPreferenceControllers(context, null /* fragment */,
                             null /* callback */, null /* lifecycle */);
                 }
@@ -264,7 +265,7 @@ public class SoundSettings extends DashboardFragment {
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
                     // Duplicate results
-                    keys.add((new ZenModePreferenceController(context)).getPreferenceKey());
+                    keys.add((new ZenModePreferenceController(context, null)).getPreferenceKey());
                     return keys;
                 }
             };
@@ -273,7 +274,7 @@ public class SoundSettings extends DashboardFragment {
 
     void enableWorkSync() {
         final WorkSoundPreferenceController workSoundController =
-                getPreferenceController(WorkSoundPreferenceController.class);
+                use(WorkSoundPreferenceController.class);
         if (workSoundController != null) {
             workSoundController.enableWorkSync();
         }

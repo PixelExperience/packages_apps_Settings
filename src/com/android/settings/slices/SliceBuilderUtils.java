@@ -33,10 +33,8 @@ import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.search.DatabaseIndexingUtils;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-
 import androidx.app.slice.Slice;
+import androidx.app.slice.builders.SliceAction;
 import androidx.app.slice.builders.ListBuilder;
 import androidx.app.slice.builders.ListBuilder.RowBuilder;
 
@@ -66,7 +64,7 @@ public class SliceBuilderUtils {
                 .setTitle(sliceData.getTitle())
                 .setTitleItem(icon)
                 .setSubtitle(subtitleText)
-                .setContentIntent(contentIntent);
+                .setPrimaryAction(new SliceAction(contentIntent, null, null));
 
         // TODO (b/71640747) Respect setting availability.
 
@@ -87,53 +85,23 @@ public class SliceBuilderUtils {
     public static BasePreferenceController getPreferenceController(Context context,
             SliceData sliceData) {
         try {
-            return getController(context, sliceData, true /* isContextOnly */);
+            return BasePreferenceController.createInstance(context,
+                    sliceData.getPreferenceController());
         } catch (IllegalStateException e) {
             // Do nothing
             Log.d(TAG, "Could not find Context-only controller for preference controller: "
                     + sliceData.getKey());
         }
 
-        return getController(context, sliceData, false /* isContextOnly */);
-    }
-
-    /**
-     * Attempts to build a {@link BasePreferenceController} from {@param SliceData}.
-     *
-     * @param sliceData     Backing data for the Slice.
-     * @param contextOnlyCtor {@code true} when the constructor for the
-     *                      {@link BasePreferenceController}
-     *                      only takes a {@link Context}. Else the constructor will be ({@link
-     *                      Context}, {@code String}.
-     */
-    private static BasePreferenceController getController(Context context, SliceData sliceData,
-            boolean contextOnlyCtor) {
-        try {
-            Class<?> clazz = Class.forName(sliceData.getPreferenceController());
-            Constructor<?> preferenceConstructor;
-            Object[] params;
-
-            if (contextOnlyCtor) {
-                preferenceConstructor = clazz.getConstructor(Context.class);
-                params = new Object[]{context};
-            } else {
-                preferenceConstructor = clazz.getConstructor(Context.class, String.class);
-                params = new Object[]{context, sliceData.getKey()};
-            }
-
-            return (BasePreferenceController) preferenceConstructor.newInstance(params);
-        } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException |
-                IllegalArgumentException | InvocationTargetException | IllegalAccessException e) {
-            throw new IllegalStateException(
-                    "Invalid preference controller: " + sliceData.getPreferenceController(), e);
-        }
+        return BasePreferenceController.createInstance(context, sliceData.getPreferenceController(),
+                sliceData.getKey());
     }
 
     private static void addToggleAction(Context context, RowBuilder builder, boolean isChecked,
             String key) {
         PendingIntent actionIntent = getActionIntent(context,
                 SettingsSliceProvider.ACTION_TOGGLE_CHANGED, key);
-        builder.addToggle(actionIntent, isChecked);
+        builder.addEndItem(new SliceAction(actionIntent, null, isChecked));
     }
 
     private static PendingIntent getActionIntent(Context context, String action, String key) {
