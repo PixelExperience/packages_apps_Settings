@@ -42,6 +42,8 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.settings.development.RefreshRatePreferenceController;
 
+import com.android.internal.custom.hardware.LineageHardwareManager;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,6 +52,7 @@ public class DisplaySettings extends DashboardFragment {
     private static final String TAG = "DisplaySettings";
 
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
+    private static final String KEY_HIGH_TOUCH_SENSITIVITY = "high_touch_sensitivity_enable";
 
     @Override
     public int getMetricsCategory() {
@@ -111,6 +114,17 @@ public class DisplaySettings extends DashboardFragment {
                     sir.xmlResId = R.xml.display_settings;
                     result.add(sir);
                     return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    LineageHardwareManager hardware = LineageHardwareManager.getInstance(context);
+                    if (!hardware.isSupported(
+                            LineageHardwareManager.FEATURE_HIGH_TOUCH_SENSITIVITY)) {
+                        keys.add(KEY_HIGH_TOUCH_SENSITIVITY);
+                    }
+                    return keys;
                 }
 
                 @Override
