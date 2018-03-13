@@ -47,6 +47,7 @@ import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 
+import com.android.settingslib.utils.StringUtil;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
@@ -166,7 +167,7 @@ public class PowerUsageAdvanced extends PowerUsageBase {
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return null;
     }
 
@@ -318,7 +319,7 @@ public class PowerUsageAdvanced extends PowerUsageBase {
             return;
         }
         if (usageData.usageList.size() <= 1) {
-            CharSequence timeSequence = Utils.formatElapsedTime(getContext(),
+            CharSequence timeSequence = StringUtil.formatElapsedTime(getContext(),
                     usageData.totalUsageTimeMs, false);
             usageData.summary = usageData.usageType == UsageType.IDLE ? timeSequence
                     : TextUtils.expandTemplate(getText(R.string.battery_used_for), timeSequence);

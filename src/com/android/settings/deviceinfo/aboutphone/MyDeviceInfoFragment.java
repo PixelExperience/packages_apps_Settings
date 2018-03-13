@@ -21,6 +21,7 @@ import static com.android.settings.bluetooth.Utils.getLocalBtManager;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.UserInfo;
 import android.os.Bundle;
 import android.os.UserManager;
@@ -93,7 +94,7 @@ public class MyDeviceInfoFragment extends DashboardFragment {
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, getActivity(), this /* fragment */,
                 getLifecycle());
     }
@@ -124,6 +125,16 @@ public class MyDeviceInfoFragment extends DashboardFragment {
         controllers.add(
                 new BuildNumberPreferenceController(context, activity, fragment, lifecycle));
         return controllers;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        final BuildNumberPreferenceController buildNumberPreferenceController =
+            use(BuildNumberPreferenceController.class);
+        if (buildNumberPreferenceController.onActivityResult(requestCode, resultCode, data)) {
+            return;
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     private void initHeader() {
@@ -187,7 +198,7 @@ public class MyDeviceInfoFragment extends DashboardFragment {
                 }
 
                 @Override
-                public List<AbstractPreferenceController> getPreferenceControllers(
+                public List<AbstractPreferenceController> createPreferenceControllers(
                         Context context) {
                     return buildPreferenceControllers(context, null /*activity */,
                             null /* fragment */, null /* lifecycle */);

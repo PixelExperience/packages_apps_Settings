@@ -23,7 +23,6 @@ import android.support.annotation.VisibleForTesting;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
-import com.android.settings.SettingsActivity;
 import com.android.settings.bluetooth.BluetoothMasterSwitchPreferenceController;
 import com.android.settings.bluetooth.Utils;
 import com.android.settings.connecteddevice.usb.UsbBackend;
@@ -31,7 +30,6 @@ import com.android.settings.connecteddevice.usb.UsbModePreferenceController;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.nfc.NfcPreferenceController;
-import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -73,28 +71,22 @@ public class ConnectedDeviceDashboardFragmentOld extends DashboardFragment {
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         final Lifecycle lifecycle = getLifecycle();
         final NfcPreferenceController nfcPreferenceController =
                 new NfcPreferenceController(context);
         lifecycle.addObserver(nfcPreferenceController);
         controllers.add(nfcPreferenceController);
-        mUsbPrefController = new UsbModePreferenceController(context, new UsbBackend(context));
-        lifecycle.addObserver(mUsbPrefController);
+        mUsbPrefController = new UsbModePreferenceController(context, new UsbBackend(context),
+                lifecycle);
         controllers.add(mUsbPrefController);
         final BluetoothMasterSwitchPreferenceController bluetoothPreferenceController =
                 new BluetoothMasterSwitchPreferenceController(
-                        context, Utils.getLocalBtManager(context), this,
-                        (SettingsActivity) getActivity());
+                        context, Utils.getLocalBtManager(context), this);
         lifecycle.addObserver(bluetoothPreferenceController);
         controllers.add(bluetoothPreferenceController);
 
-        SmsMirroringFeatureProvider smsMirroringFeatureProvider =
-                FeatureFactory.getFactory(context).getSmsMirroringFeatureProvider();
-        AbstractPreferenceController smsMirroringController =
-                smsMirroringFeatureProvider.getController(context);
-        controllers.add(smsMirroringController);
         return controllers;
     }
 
@@ -156,12 +148,6 @@ public class ConnectedDeviceDashboardFragmentOld extends DashboardFragment {
                         keys.add(NfcPreferenceController.KEY_ANDROID_BEAM_SETTINGS);
                     }
                     keys.add(BluetoothMasterSwitchPreferenceController.KEY_TOGGLE_BLUETOOTH);
-
-                    SmsMirroringFeatureProvider smsMirroringFeatureProvider =
-                            FeatureFactory.getFactory(context).getSmsMirroringFeatureProvider();
-                    SmsMirroringPreferenceController smsMirroringController =
-                            smsMirroringFeatureProvider.getController(context);
-                    smsMirroringController.updateNonIndexableKeys(keys);
 
                     return keys;
                 }

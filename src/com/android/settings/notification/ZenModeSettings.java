@@ -50,7 +50,7 @@ public class ZenModeSettings extends ZenModeSettingsBase {
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, getLifecycle(), getFragmentManager());
     }
 
@@ -113,6 +113,26 @@ public class ZenModeSettings extends ZenModeSettingsBase {
 
             // custom
             return mContext.getString(R.string.zen_mode_behavior_summary_custom);
+        }
+
+        String getSoundSummary() {
+            int zenMode = NotificationManager.from(mContext).getZenMode();
+
+            if (zenMode != Settings.Global.ZEN_MODE_OFF) {
+                Policy policy = NotificationManager.from(mContext).getNotificationPolicy();
+                return mContext.getString(R.string.zen_mode_sound_summary_on,
+                        getBehaviorSettingSummary(policy, zenMode));
+            } else {
+                final int count = getEnabledAutomaticRulesCount();
+                if (count > 0) {
+                    return mContext.getString(R.string.zen_mode_sound_summary_off_with_info,
+                            mContext.getResources().getQuantityString(
+                                    R.plurals.zen_mode_sound_summary_summary_off_info,
+                                    count, count));
+                }
+
+                return mContext.getString(R.string.zen_mode_sound_summary_off);
+            }
         }
 
         String getAutomaticRulesSummary() {
@@ -210,7 +230,7 @@ public class ZenModeSettings extends ZenModeSettingsBase {
                 }
 
                 @Override
-                public List<AbstractPreferenceController> getPreferenceControllers(Context
+                public List<AbstractPreferenceController> createPreferenceControllers(Context
                         context) {
                     return buildPreferenceControllers(context, null, null);
                 }

@@ -18,7 +18,6 @@
 package com.android.settings.fuelgauge;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.BatteryStats;
@@ -28,10 +27,8 @@ import android.os.Process;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.support.annotation.VisibleForTesting;
-import android.support.v14.preference.PreferenceFragment;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
-import android.support.v7.preference.PreferenceManager;
 import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
@@ -47,16 +44,15 @@ import com.android.internal.os.PowerProfile;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.core.FeatureFlags;
+import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settings.Utils;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
-import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.AbstractPreferenceController;
-import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnDestroy;
 import com.android.settingslib.core.lifecycle.events.OnPause;
+import com.android.settingslib.utils.StringUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,7 +62,8 @@ import java.util.List;
  */
 public class BatteryAppListPreferenceController extends AbstractPreferenceController
         implements PreferenceControllerMixin, LifecycleObserver, OnPause, OnDestroy {
-    private static final boolean USE_FAKE_DATA = true;
+    @VisibleForTesting
+    static final boolean USE_FAKE_DATA = false;
     private static final int MAX_ITEMS_TO_LIST = USE_FAKE_DATA ? 30 : 10;
     private static final int MIN_AVERAGE_POWER_THRESHOLD_MILLI_AMP = 10;
     private static final int STATS_TYPE = BatteryStats.STATS_SINCE_CHARGED;
@@ -80,7 +77,7 @@ public class BatteryAppListPreferenceController extends AbstractPreferenceContro
     BatteryUtils mBatteryUtils;
     private UserManager mUserManager;
     private SettingsActivity mActivity;
-    private PreferenceFragment mFragment;
+    private InstrumentedPreferenceFragment mFragment;
     private Context mPrefContext;
     SparseArray<List<Anomaly>> mAnomalySparseArray;
 
@@ -115,7 +112,8 @@ public class BatteryAppListPreferenceController extends AbstractPreferenceContro
     };
 
     public BatteryAppListPreferenceController(Context context, String preferenceKey,
-            Lifecycle lifecycle, SettingsActivity activity, PreferenceFragment fragment) {
+            Lifecycle lifecycle, SettingsActivity activity,
+            InstrumentedPreferenceFragment fragment) {
         super(context);
 
         if (lifecycle != null) {
@@ -362,8 +360,8 @@ public class BatteryAppListPreferenceController extends AbstractPreferenceContro
         // Only show summary when usage time is longer than one minute
         final long usageTimeMs = sipper.usageTimeMs;
         if (usageTimeMs >= DateUtils.MINUTE_IN_MILLIS) {
-            final CharSequence timeSequence = Utils.formatElapsedTime(mContext, usageTimeMs,
-                    false);
+            final CharSequence timeSequence =
+                StringUtil.formatElapsedTime(mContext, usageTimeMs, false);
             preference.setSummary(
                     (sipper.drainType != DrainType.APP || mBatteryUtils.shouldHideSipper(sipper))
                             ? timeSequence

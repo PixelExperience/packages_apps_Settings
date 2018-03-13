@@ -21,6 +21,7 @@ import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Bundle;
 import android.os.UserHandle;
 import android.service.notification.NotifyingApp;
 import android.support.annotation.VisibleForTesting;
@@ -35,14 +36,14 @@ import android.util.Log;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settings.applications.AppInfoBase;
 import com.android.settings.applications.InstalledAppCounter;
 import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settings.widget.AppPreference;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settingslib.applications.AppUtils;
 import com.android.settingslib.applications.ApplicationsState;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.utils.StringUtil;
 import com.android.settingslib.wrapper.PackageManagerWrapper;
 
 import java.util.ArrayList;
@@ -197,13 +198,13 @@ public class RecentNotifyingAppsPreferenceController extends AbstractPreferenceC
 
         // Rebind prefs/avoid adding new prefs if possible. Adding/removing prefs causes jank.
         // Build a cached preference pool
-        final Map<String, Preference> appPreferences = new ArrayMap<>();
+        final Map<String, NotificationAppPreference> appPreferences = new ArrayMap<>();
         int prefCount = mCategory.getPreferenceCount();
         for (int i = 0; i < prefCount; i++) {
             final Preference pref = mCategory.getPreference(i);
             final String key = pref.getKey();
             if (!TextUtils.equals(key, KEY_SEE_ALL)) {
-                appPreferences.put(key, pref);
+                appPreferences.put(key, (NotificationAppPreference) pref);
             }
         }
         final int recentAppsCount = recentApps.size();
@@ -218,24 +219,37 @@ public class RecentNotifyingAppsPreferenceController extends AbstractPreferenceC
             }
 
             boolean rebindPref = true;
-            Preference pref = appPreferences.remove(pkgName);
+            NotificationAppPreference pref = appPreferences.remove(pkgName);
             if (pref == null) {
-                pref = new AppPreference(prefContext);
+                pref = new NotificationAppPreference(prefContext);
                 rebindPref = false;
             }
             pref.setKey(pkgName);
             pref.setTitle(appEntry.label);
             pref.setIcon(mIconDrawableFactory.getBadgedIcon(appEntry.info));
-            pref.setSummary(Utils.formatRelativeTime(mContext,
+            pref.setSummary(StringUtil.formatRelativeTime(mContext,
                     System.currentTimeMillis() - app.getLastNotified(), false));
             pref.setOrder(i);
-            pref.setOnPreferenceClickListener(preference -> {
-                AppInfoBase.startAppInfoFragment(AppNotificationSettings.class,
-                        R.string.notifications_title, pkgName, appEntry.info.uid, mHost,
-                        1001 /*RequestCode */,
-                        MetricsProto.MetricsEvent.MANAGE_APPLICATIONS_NOTIFICATIONS);
-                    return true;
+            Bundle args = new Bundle();
+            args.putString(AppInfoBase.ARG_PACKAGE_NAME, pkgName);
+            args.putInt(AppInfoBase.ARG_PACKAGE_UID, appEntry.info.uid);
+
+            pref.setIntent(new SubSettingLauncher(mHost.getActivity())
+                    .setDestination(AppNotificationSettings.class.getName())
+                    .setTitle(R.string.notifications_title)
+                    .setArguments(args)
+                    .setSourceMetricsCategory(
+                            MetricsProto.MetricsEvent.MANAGE_APPLICATIONS_NOTIFICATIONS)
+                    .toIntent());
+            pref.setOnPreferenceChangeListener((preference, newValue) -> {
+                boolean blocked = !(Boolean) newValue;
+                mNotificationBackend.setNotificationsEnabledForPackage(
+                        pkgName, appEntry.info.uid, !blocked);
+                return true;
             });
+            pref.setChecked(
+                    !mNotificationBackend.getNotificationsBanned(pkgName, appEntry.info.uid));
+
             if (!rebindPref) {
                 mCategory.addPreference(pref);
             }

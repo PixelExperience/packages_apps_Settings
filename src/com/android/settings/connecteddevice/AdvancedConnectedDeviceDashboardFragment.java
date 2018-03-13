@@ -28,7 +28,7 @@ import com.android.settings.connecteddevice.usb.UsbBackend;
 import com.android.settings.connecteddevice.usb.UsbModePreferenceController;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.nfc.NfcPreferenceController;
-import com.android.settings.overlay.FeatureFactory;
+import com.android.settings.print.PrintSettingPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -43,7 +43,6 @@ import java.util.List;
 public class AdvancedConnectedDeviceDashboardFragment extends DashboardFragment {
 
     private static final String TAG = "AdvancedConnectedDeviceFrag";
-    private UsbModePreferenceController mUsbPrefController;
 
     @Override
     public int getMetricsCategory() {
@@ -66,28 +65,33 @@ public class AdvancedConnectedDeviceDashboardFragment extends DashboardFragment 
     }
 
     @Override
-    protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return buildControllers(context, getLifecycle());
+    }
+
+    private static List<AbstractPreferenceController> buildControllers(Context context,
+            Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
-        final Lifecycle lifecycle = getLifecycle();
         final NfcPreferenceController nfcPreferenceController =
                 new NfcPreferenceController(context);
-        lifecycle.addObserver(nfcPreferenceController);
         controllers.add(nfcPreferenceController);
-        mUsbPrefController = new UsbModePreferenceController(context, new UsbBackend(context));
-        lifecycle.addObserver(mUsbPrefController);
-        controllers.add(mUsbPrefController);
+        controllers.add(new UsbModePreferenceController(
+                context, new UsbBackend(context), lifecycle));
         final BluetoothSwitchPreferenceController bluetoothPreferenceController =
                 new BluetoothSwitchPreferenceController(context);
-        lifecycle.addObserver(bluetoothPreferenceController);
         controllers.add(bluetoothPreferenceController);
 
-        SmsMirroringFeatureProvider smsMirroringFeatureProvider =
-                FeatureFactory.getFactory(context).getSmsMirroringFeatureProvider();
-        AbstractPreferenceController smsMirroringController =
-                smsMirroringFeatureProvider.getController(context);
-        controllers.add(smsMirroringController);
         controllers.add(new BluetoothFilesPreferenceController(context));
         controllers.add(new BluetoothOnWhileDrivingPreferenceController(context));
+        final PrintSettingPreferenceController printerController =
+                new PrintSettingPreferenceController(context);
+        if (lifecycle != null) {
+            lifecycle.addObserver(printerController);
+            lifecycle.addObserver(nfcPreferenceController);
+            lifecycle.addObserver(bluetoothPreferenceController);
+        }
+        controllers.add(printerController);
+
         return controllers;
     }
 
@@ -114,13 +118,13 @@ public class AdvancedConnectedDeviceDashboardFragment extends DashboardFragment 
                     }
                     keys.add(BluetoothMasterSwitchPreferenceController.KEY_TOGGLE_BLUETOOTH);
 
-                    SmsMirroringFeatureProvider smsMirroringFeatureProvider =
-                            FeatureFactory.getFactory(context).getSmsMirroringFeatureProvider();
-                    SmsMirroringPreferenceController smsMirroringController =
-                            smsMirroringFeatureProvider.getController(context);
-                    smsMirroringController.updateNonIndexableKeys(keys);
-
                     return keys;
+                }
+
+                @Override
+                public List<AbstractPreferenceController> createPreferenceControllers(
+                        Context context) {
+                    return buildControllers(context, null /* lifecycle */);
                 }
             };
 }

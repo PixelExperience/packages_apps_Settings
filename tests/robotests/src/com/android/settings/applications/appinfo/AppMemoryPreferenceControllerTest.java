@@ -17,30 +17,29 @@
 package com.android.settings.applications.appinfo;
 
 import static com.google.common.truth.Truth.assertThat;
-
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import android.content.Context;
+import android.content.Intent;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 
-import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.TestConfig;
 import com.android.settings.applications.ProcStatsData;
 import com.android.settings.applications.ProcessStatsDetail;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
+import com.android.settings.testutils.shadow.ShadowUserManager;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
@@ -48,7 +47,9 @@ import org.robolectric.annotation.Config;
 import org.robolectric.util.ReflectionHelpers;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
+@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION, shadows = {
+        ShadowUserManager.class
+})
 public class AppMemoryPreferenceControllerTest {
 
     @Mock
@@ -67,12 +68,18 @@ public class AppMemoryPreferenceControllerTest {
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         mContext = RuntimeEnvironment.application;
+        ShadowUserManager.getShadow().setIsAdminUser(true);
         mController =
                 spy(new AppMemoryPreferenceController(mContext, mFragment, null /* lifecycle */));
         when(mScreen.findPreference(mController.getPreferenceKey())).thenReturn(mPreference);
         final String key = mController.getPreferenceKey();
         when(mPreference.getKey()).thenReturn(key);
         when(mFragment.getActivity()).thenReturn(mActivity);
+    }
+
+    @After
+    public void tearDown() {
+        ShadowUserManager.getShadow().reset();
     }
 
     @Test
@@ -118,8 +125,11 @@ public class AppMemoryPreferenceControllerTest {
 
         mController.handlePreferenceTreeClick(mPreference);
 
-        verify(mActivity).startPreferencePanel(any(), eq(ProcessStatsDetail.class.getName()), any(),
-                eq(R.string.memory_usage), any(), any(), anyInt());
+        final ArgumentCaptor<Intent> intentCaptor = ArgumentCaptor.forClass(Intent.class);
+
+        verify(mActivity).startActivity(intentCaptor.capture());
+        assertThat(intentCaptor.getValue().getStringExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT))
+                .isEqualTo(ProcessStatsDetail.class.getName());
     }
 
 }

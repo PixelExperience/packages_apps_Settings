@@ -55,7 +55,6 @@ import com.android.internal.os.BatteryStatsImpl;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.TestConfig;
-import com.android.settings.Utils;
 import com.android.settings.applications.LayoutPreference;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
 import com.android.settings.fuelgauge.anomaly.AnomalyDetectionPolicy;
@@ -65,8 +64,10 @@ import com.android.settings.testutils.XmlTestUtils;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
 import com.android.settingslib.core.AbstractPreferenceController;
 
+import com.android.settingslib.utils.StringUtil;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Answers;
@@ -367,8 +368,8 @@ public class PowerUsageSummaryLegacyTest {
     public void testUpdateScreenPreference_showCorrectSummary() {
         doReturn(mScreenBatterySipper).when(mFragment).findBatterySipperByType(any(), any());
         doReturn(mRealContext).when(mFragment).getContext();
-        final CharSequence expectedSummary = Utils.formatElapsedTime(mRealContext, USAGE_TIME_MS,
-                false);
+        final CharSequence expectedSummary =
+            StringUtil.formatElapsedTime(mRealContext, USAGE_TIME_MS, false);
 
         mFragment.updateScreenPreference();
 
@@ -408,7 +409,7 @@ public class PowerUsageSummaryLegacyTest {
                 fragment.getPreferenceScreenResId());
         final List<String> preferenceKeys = new ArrayList<>();
 
-        for (AbstractPreferenceController controller : fragment.getPreferenceControllers(context)) {
+        for (AbstractPreferenceController controller : fragment.createPreferenceControllers(context)) {
             preferenceKeys.add(controller.getPreferenceKey());
         }
 
@@ -444,6 +445,7 @@ public class PowerUsageSummaryLegacyTest {
                 eq(Bundle.EMPTY), any());
     }
 
+    @Ignore("b/73892008")
     @Test
     public void testShowBothEstimates_summariesAreBothModified() {
         doReturn(new TextView(mRealContext)).when(mBatteryLayoutPref).findViewById(R.id.summary2);
@@ -452,8 +454,8 @@ public class PowerUsageSummaryLegacyTest {
         TextView summary1 = mFragment.mBatteryLayoutPref.findViewById(R.id.summary1);
         TextView summary2 = mFragment.mBatteryLayoutPref.findViewById(R.id.summary2);
         Robolectric.flushBackgroundThreadScheduler();
-        assertThat(summary2.getText().toString().contains(NEW_ML_EST_SUFFIX));
-        assertThat(summary1.getText().toString().contains(OLD_EST_SUFFIX));
+        assertThat(summary2.getText().toString()).contains(NEW_ML_EST_SUFFIX);
+        assertThat(summary1.getText().toString()).contains(OLD_EST_SUFFIX);
     }
 
     @Test

@@ -16,16 +16,16 @@
 
 package com.android.settings.applications.appinfo;
 
+import static com.android.settings.applications.appinfo.AppInfoDashboardFragment.SUB_INFO_FRAGMENT;
 import static com.google.common.truth.Truth.assertThat;
-
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import android.content.Intent;
 import android.content.pm.ApplicationInfo;
+import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 
@@ -39,6 +39,7 @@ import com.android.settingslib.applications.ApplicationsState;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
@@ -66,6 +67,7 @@ public class AppInfoPreferenceControllerBaseTest {
         final String key = mController.getPreferenceKey();
         when(mScreen.findPreference(key)).thenReturn(mPreference);
         when(mPreference.getKey()).thenReturn(key);
+        when(mFragment.getContext()).thenReturn(mActivity);
         when(mFragment.getActivity()).thenReturn(mActivity);
     }
 
@@ -89,10 +91,11 @@ public class AppInfoPreferenceControllerBaseTest {
         when(mFragment.getAppEntry()).thenReturn(appEntry);
 
         mController.handlePreferenceTreeClick(mPreference);
+        final ArgumentCaptor<Intent> intentCaptor = ArgumentCaptor.forClass(Intent.class);
 
-        verify(mActivity).startPreferencePanel(any(),
-                eq(mController.getDetailFragmentClass().getName()), any(), anyInt(), any(), any(),
-                anyInt());
+        verify(mActivity).startActivityForResult(intentCaptor.capture(), eq(SUB_INFO_FRAGMENT));
+        assertThat(intentCaptor.getValue().getStringExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT))
+                .isEqualTo(mController.getDetailFragmentClass().getName());
     }
 
     private class TestPreferenceController extends AppInfoPreferenceControllerBase {
@@ -111,6 +114,13 @@ public class AppInfoPreferenceControllerBaseTest {
         @Override
         public Class<? extends SettingsPreferenceFragment> getDetailFragmentClass() {
             return AppNotificationSettings.class;
+        }
+
+        @Override
+        protected Bundle getArguments() {
+            Bundle bundle = new Bundle();
+            bundle.putString("test", "test");
+            return bundle;
         }
 
     }

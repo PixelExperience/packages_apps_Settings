@@ -16,14 +16,11 @@
 package com.android.settings.core;
 
 import static com.android.settings.core.BasePreferenceController.AVAILABLE;
-import static com.android.settings.core.BasePreferenceController
-        .DISABLED_DEPENDENT_SETTING;
+import static com.android.settings.core.BasePreferenceController.DISABLED_DEPENDENT_SETTING;
 import static com.android.settings.core.BasePreferenceController.DISABLED_FOR_USER;
 import static com.android.settings.core.BasePreferenceController.DISABLED_UNSUPPORTED;
 import static com.android.settings.core.BasePreferenceController.UNAVAILABLE_UNKNOWN;
-
 import static com.google.common.truth.Truth.assertThat;
-
 import static org.mockito.Mockito.when;
 
 import com.android.settings.TestConfig;
@@ -34,6 +31,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
 @RunWith(SettingsRobolectricTestRunner.class)
@@ -41,11 +39,22 @@ import org.robolectric.annotation.Config;
 public class BasePreferenceControllerTest {
 
     @Mock
-    BasePreferenceController mPreferenceController;
+    private BasePreferenceController mPreferenceController;
 
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
+    }
+
+
+    @Test(expected = IllegalArgumentException.class)
+    public void newController_noKey_shouldCrash() {
+        new BasePreferenceController(RuntimeEnvironment.application, null /* key */) {
+            @Override
+            public int getAvailabilityStatus() {
+                return AVAILABLE;
+            }
+        };
     }
 
     @Test

@@ -36,6 +36,7 @@ import com.android.settings.TestConfig;
 import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
+import com.android.settings.testutils.shadow.ShadowUtils;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import com.google.android.collect.Lists;
@@ -107,7 +108,7 @@ public class UsbDetailsProfilesControllerTest {
         List<SwitchPreference> switches = getProfileSwitches();
 
         for (int i = 0; i < switches.size(); i++) {
-            assertThat(switches.get(i).getKey().equals(mOptions.get(i)));
+            assertThat(switches.get(i).getKey()).isEqualTo(mOptions.get(i));
         }
     }
 
@@ -137,8 +138,8 @@ public class UsbDetailsProfilesControllerTest {
         mDetailsProfilesController.refresh(UsbBackend.MODE_DATA_MTP);
         List<SwitchPreference> switches = getProfileSwitches();
 
-        assertThat(switches.get(0).getKey().equals(UsbManager.USB_FUNCTION_MTP));
-        assertThat(switches.get(0).isChecked());
+        assertThat(switches.get(0).getKey()).isEqualTo(UsbManager.USB_FUNCTION_MTP);
+        assertThat(switches.get(0).isChecked()).isTrue();
     }
 
     @Test
@@ -152,9 +153,9 @@ public class UsbDetailsProfilesControllerTest {
         List<SwitchPreference> switches = getProfileSwitches();
 
         assertThat(switches.get(0).getKey()).isEqualTo(UsbManager.USB_FUNCTION_MTP);
-        assertThat(switches.get(0).isChecked());
+        assertThat(switches.get(0).isChecked()).isTrue();
         assertThat(switches.get(3).getKey()).isEqualTo(UsbDetailsProfilesController.KEY_POWER);
-        assertThat(switches.get(3).isChecked());
+        assertThat(switches.get(3).isChecked()).isTrue();
     }
 
     @Test
@@ -170,7 +171,7 @@ public class UsbDetailsProfilesControllerTest {
 
         assertThat(switches.get(0).getKey()).isEqualTo(UsbManager.USB_FUNCTION_MTP);
         verify(mUsbBackend).setMode(UsbBackend.MODE_DATA_MTP);
-        assertThat(switches.get(0).isChecked());
+        assertThat(switches.get(0).isChecked()).isTrue();
     }
 
     @Test
@@ -187,9 +188,9 @@ public class UsbDetailsProfilesControllerTest {
 
         assertThat(switches.get(0).getKey()).isEqualTo(UsbManager.USB_FUNCTION_MTP);
         verify(mUsbBackend).setMode(UsbBackend.MODE_DATA_MTP | UsbBackend.MODE_POWER_SOURCE);
-        assertThat(switches.get(0).isChecked());
+        assertThat(switches.get(0).isChecked()).isTrue();
         assertThat(switches.get(3).getKey()).isEqualTo(UsbDetailsProfilesController.KEY_POWER);
-        assertThat(switches.get(3).isChecked());
+        assertThat(switches.get(3).isChecked()).isTrue();
     }
 
     @Test
@@ -206,9 +207,10 @@ public class UsbDetailsProfilesControllerTest {
 
         assertThat(switches.get(0).getKey()).isEqualTo(UsbManager.USB_FUNCTION_MTP);
         verify(mUsbBackend).setMode(UsbBackend.MODE_DATA_MTP);
-        assertThat(switches.get(0).isChecked());
+        mDetailsProfilesController.refresh(UsbBackend.MODE_DATA_MTP);
+        assertThat(switches.get(0).isChecked()).isTrue();
         assertThat(switches.get(1).getKey()).isEqualTo(UsbManager.USB_FUNCTION_PTP);
-        assertThat(!switches.get(1).isChecked());
+        assertThat(switches.get(1).isChecked()).isFalse();
     }
 
     @Test
@@ -225,7 +227,14 @@ public class UsbDetailsProfilesControllerTest {
 
         assertThat(switches.get(0).getKey()).isEqualTo(UsbManager.USB_FUNCTION_MTP);
         verify(mUsbBackend).setMode(UsbBackend.MODE_DATA_NONE);
-        assertThat(!switches.get(0).isChecked());
+        assertThat(switches.get(0).isChecked()).isFalse();
+    }
+
+    @Test
+    @Config(shadows = ShadowUtils.class)
+    public void testIsAvailable_isMonkey_shouldReturnFalse() {
+        ShadowUtils.setIsUserAMonkey(true);
+        assertThat(mDetailsProfilesController.isAvailable()).isFalse();
     }
 
     private List<SwitchPreference> getProfileSwitches() {
