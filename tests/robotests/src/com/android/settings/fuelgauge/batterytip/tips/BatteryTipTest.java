@@ -17,7 +17,6 @@ package com.android.settings.fuelgauge.batterytip.tips;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import android.app.Dialog;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -25,21 +24,20 @@ import android.support.annotation.IdRes;
 import android.support.v7.preference.Preference;
 
 import com.android.settings.R;
-import com.android.settings.TestConfig;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class BatteryTipTest {
+
     private static final String TITLE = "title";
     private static final String SUMMARY = "summary";
     @IdRes
@@ -55,7 +53,7 @@ public class BatteryTipTest {
     }
 
     @Test
-    public void testBuildPreference() {
+    public void buildPreference() {
         final Preference preference = mBatteryTip.buildPreference(mContext);
 
         assertThat(preference.getTitle()).isEqualTo(TITLE);
@@ -64,7 +62,7 @@ public class BatteryTipTest {
     }
 
     @Test
-    public void testParcelable() {
+    public void parcelable() {
         final BatteryTip batteryTip = new TestBatteryTip();
 
         Parcel parcel = Parcel.obtain();
@@ -79,13 +77,18 @@ public class BatteryTipTest {
     }
 
     @Test
-    public void testTipOrder_orderUnique() {
+    public void tipOrder_orderUnique() {
         final List<Integer> orders = new ArrayList<>();
         for (int i = 0, size = BatteryTip.TIP_ORDER.size(); i < size; i++) {
             orders.add(BatteryTip.TIP_ORDER.valueAt(i));
         }
 
         assertThat(orders).containsNoDuplicates();
+    }
+
+    @Test
+    public void toString_containBatteryTipData() {
+        assertThat(mBatteryTip.toString()).isEqualTo("type=6 state=0");
     }
 
     /**
@@ -120,6 +123,11 @@ public class BatteryTipTest {
             // do nothing
         }
 
+        @Override
+        public void log(Context context, MetricsFeatureProvider metricsFeatureProvider) {
+            // do nothing
+        }
+
         public final Parcelable.Creator CREATOR = new Parcelable.Creator() {
             public BatteryTip createFromParcel(Parcel in) {
                 return new TestBatteryTip(in);
@@ -130,5 +138,4 @@ public class BatteryTipTest {
             }
         };
     }
-
 }

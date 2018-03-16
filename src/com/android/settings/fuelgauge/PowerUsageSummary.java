@@ -25,7 +25,6 @@ import android.os.BatteryStats;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.support.annotation.VisibleForTesting;
-import android.support.v7.preference.PreferenceGroup;
 import android.text.format.Formatter;
 import android.util.SparseArray;
 import android.view.Menu;
@@ -40,6 +39,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
 import com.android.settings.applications.LayoutPreference;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.display.BatteryPercentagePreferenceController;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
@@ -50,13 +50,12 @@ import com.android.settings.fuelgauge.batterytip.tips.BatteryTip;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
-import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.utils.PowerUtil;
 import com.android.settingslib.utils.StringUtil;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -69,7 +68,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     static final String TAG = "PowerUsageSummary";
 
     private static final boolean DEBUG = false;
-    private static final String KEY_APP_LIST = "app_list";
     private static final String KEY_BATTERY_HEADER = "battery_header";
     private static final String KEY_BATTERY_TIP = "battery_tip";
 
@@ -81,7 +79,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     static final int BATTERY_INFO_LOADER = 1;
     @VisibleForTesting
     static final int BATTERY_TIP_LOADER = 2;
-    private static final int MENU_STATS_TYPE = Menu.FIRST;
+    @VisibleForTesting
+    static final int MENU_STATS_TYPE = Menu.FIRST;
+    @VisibleForTesting
+    static final int MENU_ADVANCED_BATTERY = Menu.FIRST + 1;
     public static final int DEBUG_INFO_LOADER = 3;
 
     @VisibleForTesting
@@ -101,10 +102,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @VisibleForTesting
     SparseArray<List<Anomaly>> mAnomalySparseArray;
     @VisibleForTesting
-    PreferenceGroup mAppListGroup;
-    @VisibleForTesting
     BatteryHeaderPreferenceController mBatteryHeaderPreferenceController;
-    private BatteryAppListPreferenceController mBatteryAppListPreferenceController;
     private BatteryTipPreferenceController mBatteryTipPreferenceController;
     private int mStatsType = BatteryStats.STATS_SINCE_CHARGED;
 
@@ -138,36 +136,40 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 @Override
                 public void onLoadFinished(Loader<List<BatteryInfo>> loader,
                         List<BatteryInfo> batteryInfos) {
-                    final BatteryMeterView batteryView = (BatteryMeterView) mBatteryLayoutPref
-                            .findViewById(R.id.battery_header_icon);
-                    final TextView percentRemaining =
-                            mBatteryLayoutPref.findViewById(R.id.battery_percent);
-                    final TextView summary1 = mBatteryLayoutPref.findViewById(R.id.summary1);
-                    final TextView summary2 = mBatteryLayoutPref.findViewById(R.id.summary2);
-                    BatteryInfo oldInfo = batteryInfos.get(0);
-                    BatteryInfo newInfo = batteryInfos.get(1);
-                    percentRemaining.setText(Utils.formatPercentage(oldInfo.batteryLevel));
-
-                    // set the text to the old estimate (copied from battery info). Note that this
-                    // can sometimes say 0 time remaining because battery stats requires the phone
-                    // be unplugged for a period of time before being willing ot make an estimate.
-                    summary1.setText(mPowerFeatureProvider.getOldEstimateDebugString(
-                            Formatter.formatShortElapsedTime(getContext(),
-                                    PowerUtil.convertUsToMs(oldInfo.remainingTimeUs))));
-
-                    // for this one we can just set the string directly
-                    summary2.setText(mPowerFeatureProvider.getEnhancedEstimateDebugString(
-                            Formatter.formatShortElapsedTime(getContext(),
-                                    PowerUtil.convertUsToMs(newInfo.remainingTimeUs))));
-
-                    batteryView.setBatteryLevel(oldInfo.batteryLevel);
-                    batteryView.setCharging(!oldInfo.discharging);
+                    updateViews(batteryInfos);
                 }
 
                 @Override
                 public void onLoaderReset(Loader<List<BatteryInfo>> loader) {
                 }
             };
+
+    protected void updateViews(List<BatteryInfo> batteryInfos) {
+        final BatteryMeterView batteryView = mBatteryLayoutPref
+            .findViewById(R.id.battery_header_icon);
+        final TextView percentRemaining =
+            mBatteryLayoutPref.findViewById(R.id.battery_percent);
+        final TextView summary1 = mBatteryLayoutPref.findViewById(R.id.summary1);
+        final TextView summary2 = mBatteryLayoutPref.findViewById(R.id.summary2);
+        BatteryInfo oldInfo = batteryInfos.get(0);
+        BatteryInfo newInfo = batteryInfos.get(1);
+        percentRemaining.setText(Utils.formatPercentage(oldInfo.batteryLevel));
+
+        // set the text to the old estimate (copied from battery info). Note that this
+        // can sometimes say 0 time remaining because battery stats requires the phone
+        // be unplugged for a period of time before being willing ot make an estimate.
+        summary1.setText(mPowerFeatureProvider.getOldEstimateDebugString(
+            Formatter.formatShortElapsedTime(getContext(),
+                PowerUtil.convertUsToMs(oldInfo.remainingTimeUs))));
+
+        // for this one we can just set the string directly
+        summary2.setText(mPowerFeatureProvider.getEnhancedEstimateDebugString(
+            Formatter.formatShortElapsedTime(getContext(),
+                PowerUtil.convertUsToMs(newInfo.remainingTimeUs))));
+
+        batteryView.setBatteryLevel(oldInfo.batteryLevel);
+        batteryView.setCharging(!oldInfo.discharging);
+    }
 
     private LoaderManager.LoaderCallbacks<List<BatteryTip>> mBatteryTipsCallbacks =
             new LoaderManager.LoaderCallbacks<List<BatteryTip>>() {
@@ -230,9 +232,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mBatteryHeaderPreferenceController = new BatteryHeaderPreferenceController(
                 context, activity, this /* host */, lifecycle);
         controllers.add(mBatteryHeaderPreferenceController);
-        mBatteryAppListPreferenceController = new BatteryAppListPreferenceController(context,
-                KEY_APP_LIST, lifecycle, activity, this);
-        controllers.add(mBatteryAppListPreferenceController);
         mBatteryTipPreferenceController = new BatteryTipPreferenceController(context,
                 KEY_BATTERY_TIP, (SettingsActivity) getActivity(), this /* fragment */, this /*
                 BatteryTipListener */);
@@ -249,6 +248,8 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                     .setAlphabeticShortcut('t');
         }
 
+        menu.add(Menu.NONE, MENU_ADVANCED_BATTERY, Menu.NONE, R.string.advanced_battery_title);
+
         super.onCreateOptionsMenu(menu, inflater);
     }
 
@@ -259,11 +260,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        final SettingsActivity sa = (SettingsActivity) getActivity();
-        final Context context = getContext();
-        final MetricsFeatureProvider metricsFeatureProvider =
-                FeatureFactory.getFactory(context).getMetricsFeatureProvider();
-
         switch (item.getItemId()) {
             case MENU_STATS_TYPE:
                 if (mStatsType == BatteryStats.STATS_SINCE_CHARGED) {
@@ -272,6 +268,13 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                     mStatsType = BatteryStats.STATS_SINCE_CHARGED;
                 }
                 refreshUi();
+                return true;
+            case MENU_ADVANCED_BATTERY:
+                new SubSettingLauncher(getContext())
+                        .setDestination(PowerUsageAdvanced.class.getName())
+                        .setSourceMetricsCategory(getMetricsCategory())
+                        .setTitle(R.string.advanced_battery_title)
+                        .launch();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -293,11 +296,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         updateLastFullChargePreference(lastFullChargeTime);
         mScreenUsagePref.setSubtitle(StringUtil.formatElapsedTime(getContext(),
                 mBatteryUtils.calculateScreenUsageTime(mStatsHelper), false));
-
-        final CharSequence timeSequence = StringUtil.formatRelativeTime(context, lastFullChargeTime,
-                false);
-        mBatteryAppListPreferenceController.refreshAppListGroup(mStatsHelper,
-                false /* showAllApps */, timeSequence);
     }
 
     @VisibleForTesting
@@ -343,8 +341,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @VisibleForTesting
     void updateAnomalySparseArray(List<Anomaly> anomalies) {
         mAnomalySparseArray.clear();
-        for (int i = 0, size = anomalies.size(); i < size; i++) {
-            final Anomaly anomaly = anomalies.get(i);
+        for (final Anomaly anomaly : anomalies) {
             if (mAnomalySparseArray.get(anomaly.uid) == null) {
                 mAnomalySparseArray.append(anomaly.uid, new ArrayList<>());
             }
@@ -423,7 +420,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                         Context context, boolean enabled) {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
                     sir.xmlResId = R.xml.power_usage_summary;
-                    return Arrays.asList(sir);
+                    return Collections.singletonList(sir);
                 }
 
                 @Override
