@@ -16,20 +16,17 @@
 
 package com.android.settings.slices;
 
-import static com.android.settings.TestConfig.SDK_VERSION;
-
+import static com.android.settings.core.PreferenceXmlParserUtils.METADATA_CONTROLLER;
+import static com.google.common.truth.Truth.assertThat;
 import static com.google.common.truth.Truth.assertWithMessage;
-
 import static org.mockito.Mockito.spy;
 
 import android.content.Context;
-import android.content.res.XmlResourceParser;
+import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.text.TextUtils;
-import android.util.AttributeSet;
-import android.util.Xml;
 
-import com.android.settings.TestConfig;
+import com.android.settings.core.PreferenceXmlParserUtils;
 import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.core.codeinspection.ClassScanner;
 import com.android.settings.core.codeinspection.CodeInspector;
@@ -38,7 +35,6 @@ import com.android.settings.search.DatabaseIndexingUtils;
 import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchFeatureProvider;
 import com.android.settings.search.SearchFeatureProviderImpl;
-import com.android.settings.core.PreferenceXmlParserUtils;
 import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 
@@ -46,21 +42,20 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
-import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
 
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = SDK_VERSION)
 public class SliceControllerInXmlTest {
 
-    private static final List<Class> mSliceControllerClasses = new ArrayList<>(Arrays.asList(
+    private static final List<Class> mSliceControllerClasses = Collections.singletonList(
             TogglePreferenceController.class
-    ));
+    );
 
     private final List<String> mXmlDeclaredControllers = new ArrayList<>();
     private final List<String> mGrandfatheredClasses = new ArrayList<>();
@@ -73,11 +68,11 @@ public class SliceControllerInXmlTest {
 
     private Context mContext;
 
-    SearchFeatureProvider mSearchProvider;
+    private SearchFeatureProvider mSearchProvider;
     private FakeFeatureFactory mFakeFeatureFactory;
 
     @Before
-    public void setUp() {
+    public void setUp() throws IOException, XmlPullParserException {
         mContext = spy(RuntimeEnvironment.application);
 
         mSearchProvider = new SearchFeatureProviderImpl();
@@ -89,44 +84,28 @@ public class SliceControllerInXmlTest {
         initDeclaredControllers();
     }
 
-    private void initDeclaredControllers() {
+    private void initDeclaredControllers() throws IOException, XmlPullParserException {
         final List<Integer> xmlResources = getIndexableXml();
-        XmlResourceParser parser;
-
         for (int xmlResId : xmlResources) {
-            try {
-                parser = mContext.getResources().getXml(xmlResId);
-
-                int type;
-                while ((type = parser.next()) != XmlPullParser.END_DOCUMENT
-                        && type != XmlPullParser.START_TAG) {
-                    // Parse next until start tag is found
+            final List<Bundle> metadata = PreferenceXmlParserUtils.extractMetadata(mContext,
+                    xmlResId, PreferenceXmlParserUtils.MetadataFlag.FLAG_NEED_PREF_CONTROLLER);
+            for (Bundle bundle : metadata) {
+                final String controllerClassName = bundle.getString(METADATA_CONTROLLER);
+                if (TextUtils.isEmpty(controllerClassName)) {
+                    continue;
                 }
-
-                final int outerDepth = parser.getDepth();
-                final AttributeSet attrs = Xml.asAttributeSet(parser);
-                String controllerClassName;
-                while ((type = parser.next()) != XmlPullParser.END_DOCUMENT
-                        && (type != XmlPullParser.END_TAG || parser.getDepth() > outerDepth)) {
-                    if (type == XmlPullParser.END_TAG || type == XmlPullParser.TEXT) {
-                        continue;
-                    }
-                    controllerClassName = PreferenceXmlParserUtils.getController(mContext, attrs);
-
-                    if (!TextUtils.isEmpty(controllerClassName)) {
-                        mXmlDeclaredControllers.add(controllerClassName);
-                    }
-                }
-            } catch (Exception e) {
-                // Assume an issue with robolectric resources
+                mXmlDeclaredControllers.add(controllerClassName);
             }
         }
+        // We definitely have some controllers in xml, so assert not-empty here as a proxy to
+        // make sure the parser didn't fail
+        assertThat(mXmlDeclaredControllers).isNotEmpty();
     }
 
     @Test
     public void testAllControllersDeclaredInXml() throws Exception {
-        final List<Class<?>> classes = new ClassScanner().getClassesForPackage(
-                mContext.getPackageName());
+        final List<Class<?>> classes =
+                new ClassScanner().getClassesForPackage(mContext.getPackageName());
         final List<String> missingControllersInXml = new ArrayList<>();
 
         for (Class<?> clazz : classes) {
@@ -144,8 +123,8 @@ public class SliceControllerInXmlTest {
         // Removed whitelisted classes
         missingControllersInXml.removeAll(mGrandfatheredClasses);
 
-        final String missingControllerError = buildErrorMessage(ERROR_MISSING_CONTROLLER,
-                missingControllersInXml);
+        final String missingControllerError =
+                buildErrorMessage(ERROR_MISSING_CONTROLLER, missingControllersInXml);
 
         assertWithMessage(missingControllerError).that(missingControllersInXml).isEmpty();
     }
@@ -176,7 +155,6 @@ public class SliceControllerInXmlTest {
                 .getProviderValues();
 
         for (Class clazz : indexableClasses) {
-
             Indexable.SearchIndexProvider provider = DatabaseIndexingUtils.getSearchIndexProvider(
                     clazz);
 

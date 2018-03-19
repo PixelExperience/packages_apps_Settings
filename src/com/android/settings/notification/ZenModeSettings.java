@@ -63,6 +63,7 @@ public class ZenModeSettings extends ZenModeSettingsBase {
             Lifecycle lifecycle, FragmentManager fragmentManager) {
         List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new ZenModeBehaviorPreferenceController(context, lifecycle));
+        controllers.add(new ZenModeBlockedEffectsPreferenceController(context, lifecycle));
         controllers.add(new ZenModeAutomationPreferenceController(context));
         controllers.add(new ZenModeButtonPreferenceController(context, lifecycle, fragmentManager));
         controllers.add(new ZenModeSettingsFooterPreferenceController(context, lifecycle));
@@ -77,9 +78,11 @@ public class ZenModeSettings extends ZenModeSettingsBase {
             mContext = context;
         }
 
+        // these should match NotificationManager.Policy#ALL_PRIORITY_CATEGORIES
         private static final int[] ALL_PRIORITY_CATEGORIES = {
                 Policy.PRIORITY_CATEGORY_ALARMS,
-                Policy.PRIORITY_CATEGORY_MEDIA_SYSTEM_OTHER,
+                Policy.PRIORITY_CATEGORY_MEDIA,
+                Policy.PRIORITY_CATEGORY_SYSTEM,
                 Policy.PRIORITY_CATEGORY_REMINDERS,
                 Policy.PRIORITY_CATEGORY_EVENTS,
                 Policy.PRIORITY_CATEGORY_MESSAGES,
@@ -104,10 +107,10 @@ public class ZenModeSettings extends ZenModeSettingsBase {
                 return mContext.getString(R.string.zen_mode_behavior_total_silence);
             }
 
-            // only alarms and media/system can bypass dnd
+            // only alarms and media can bypass dnd
             if (numCategories == 2 &&
                     isCategoryEnabled(policy, Policy.PRIORITY_CATEGORY_ALARMS) &&
-                    isCategoryEnabled(policy, Policy.PRIORITY_CATEGORY_MEDIA_SYSTEM_OTHER)) {
+                    isCategoryEnabled(policy, Policy.PRIORITY_CATEGORY_MEDIA)) {
                 return mContext.getString(R.string.zen_mode_behavior_alarms_only);
             }
 
@@ -133,6 +136,18 @@ public class ZenModeSettings extends ZenModeSettingsBase {
 
                 return mContext.getString(R.string.zen_mode_sound_summary_off);
             }
+        }
+
+        String getBlockedEffectsSummary(Policy policy) {
+            if (policy.suppressedVisualEffects == 0) {
+                return mContext.getResources().getString(
+                        R.string.zen_mode_block_effect_summary_sound);
+            } else if (Policy.areAllVisualEffectsSuppressed(policy.suppressedVisualEffects)) {
+                return mContext.getResources().getString(
+                        R.string.zen_mode_block_effect_summary_all);
+            }
+            return mContext.getResources().getString(
+                    R.string.zen_mode_block_effect_summary_some);
         }
 
         String getAutomaticRulesSummary() {
@@ -164,9 +179,12 @@ public class ZenModeSettings extends ZenModeSettingsBase {
                 if (isCategoryEnabled(policy, category)) {
                     if (category == Policy.PRIORITY_CATEGORY_ALARMS) {
                         enabledCategories.add(mContext.getString(R.string.zen_mode_alarms));
-                    } else if (category == Policy.PRIORITY_CATEGORY_MEDIA_SYSTEM_OTHER) {
+                    } else if (category == Policy.PRIORITY_CATEGORY_MEDIA) {
                         enabledCategories.add(mContext.getString(
-                                R.string.zen_mode_media_system_other));
+                                R.string.zen_mode_media));
+                    } else if (category == Policy.PRIORITY_CATEGORY_SYSTEM) {
+                        enabledCategories.add(mContext.getString(
+                                R.string.zen_mode_system));
                     } else if (category == Policy.PRIORITY_CATEGORY_REMINDERS) {
                         enabledCategories.add(mContext.getString(R.string.zen_mode_reminders));
                     } else if (category == Policy.PRIORITY_CATEGORY_EVENTS) {

@@ -313,8 +313,9 @@ public class SettingsActivity extends SettingsDrawerActivity
 
         ActionBar actionBar = getActionBar();
         if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeButtonEnabled(true);
+            boolean deviceProvisioned = Utils.isDeviceProvisioned(this);
+            actionBar.setDisplayHomeAsUpEnabled(deviceProvisioned);
+            actionBar.setHomeButtonEnabled(deviceProvisioned);
             actionBar.setDisplayShowTitleEnabled(!mIsShowingDashboard);
         }
         mSwitchBar = findViewById(R.id.switch_bar);
@@ -527,7 +528,7 @@ public class SettingsActivity extends SettingsDrawerActivity
         if (startingFragment != null) {
             Intent modIntent = new Intent(superIntent);
             modIntent.putExtra(EXTRA_SHOW_FRAGMENT, startingFragment);
-            Bundle args = superIntent.getExtras();
+            Bundle args = superIntent.getBundleExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS);
             if (args != null) {
                 args = new Bundle(args);
             } else {
@@ -656,19 +657,10 @@ public class SettingsActivity extends SettingsDrawerActivity
                 Utils.isBandwidthControlEnabled() /* enabled */,
                 isAdmin) || somethingChanged;
 
-        final boolean isConnectedDeviceV2Enabled =
-                Settings.ConnectedDeviceDashboardActivity.isEnabled();
-        // Enable new connected page if v2 enabled
         somethingChanged = setTileEnabled(
                 new ComponentName(packageName,
                         Settings.ConnectedDeviceDashboardActivity.class.getName()),
-                isConnectedDeviceV2Enabled && !UserManager.isDeviceInDemoMode(this) /* enabled */,
-                isAdmin) || somethingChanged;
-        // Enable old connected page if v2 disabled
-        somethingChanged = setTileEnabled(
-                new ComponentName(packageName,
-                        Settings.ConnectedDeviceDashboardActivityOld.class.getName()),
-                !isConnectedDeviceV2Enabled && !UserManager.isDeviceInDemoMode(this) /* enabled */,
+                !UserManager.isDeviceInDemoMode(this) /* enabled */,
                 isAdmin) || somethingChanged;
 
         somethingChanged = setTileEnabled(new ComponentName(packageName,
@@ -736,16 +728,16 @@ public class SettingsActivity extends SettingsDrawerActivity
                 || somethingChanged;
 
         // Enable/disable the Me Card page.
-        final boolean isMeCardEnabled = featureFactory
+        final boolean aboutPhoneV2Enabled = featureFactory
                 .getAccountFeatureProvider()
-                .isMeCardEnabled(this);
+                .isAboutPhoneV2Enabled(this);
         somethingChanged = setTileEnabled(new ComponentName(packageName,
                         Settings.MyDeviceInfoActivity.class.getName()),
-                isMeCardEnabled, isAdmin)
+                aboutPhoneV2Enabled, isAdmin)
                 || somethingChanged;
         somethingChanged = setTileEnabled(new ComponentName(packageName,
                         Settings.DeviceInfoSettingsActivity.class.getName()),
-                !isMeCardEnabled, isAdmin)
+                !aboutPhoneV2Enabled, isAdmin)
                 || somethingChanged;
 
         if (UserHandle.MU_ENABLED && !isAdmin) {

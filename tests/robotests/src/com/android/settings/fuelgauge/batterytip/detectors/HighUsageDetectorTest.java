@@ -17,11 +17,10 @@
 package com.android.settings.fuelgauge.batterytip.detectors;
 
 import static com.google.common.truth.Truth.assertThat;
-
-import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.when;
 
 import android.content.Context;
 import android.os.BatteryStats;
@@ -29,11 +28,11 @@ import android.text.format.DateUtils;
 
 import com.android.internal.os.BatterySipper;
 import com.android.internal.os.BatteryStatsHelper;
-import com.android.settings.TestConfig;
-import com.android.settings.fuelgauge.BatteryInfo;
 import com.android.settings.fuelgauge.BatteryUtils;
+import com.android.settings.fuelgauge.batterytip.AppInfo;
 import com.android.settings.fuelgauge.batterytip.BatteryTipPolicy;
 import com.android.settings.fuelgauge.batterytip.HighUsageDataParser;
+import com.android.settings.fuelgauge.batterytip.tips.HighUsageTip;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 
 import org.junit.Before;
@@ -42,15 +41,15 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 import org.robolectric.util.ReflectionHelpers;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class HighUsageDetectorTest {
+    private static final int UID = 123;
+    private static final long SCREEN_ON_TIME_MS = DateUtils.HOUR_IN_MILLIS;
     private Context mContext;
     @Mock
     private BatteryStatsHelper mBatteryStatsHelper;
@@ -61,6 +60,7 @@ public class HighUsageDetectorTest {
     @Mock
     private HighUsageDataParser mDataParser;
 
+    private AppInfo mAppInfo;
     private BatteryTipPolicy mPolicy;
     private HighUsageDetector mHighUsageDetector;
     private List<BatterySipper> mUsageList;
@@ -75,6 +75,11 @@ public class HighUsageDetectorTest {
         mHighUsageDetector.mBatteryUtils = mBatteryUtils;
         mHighUsageDetector.mDataParser = mDataParser;
         doNothing().when(mHighUsageDetector).parseBatteryData();
+        doReturn(UID).when(mBatterySipper).getUid();
+        mAppInfo = new AppInfo.Builder()
+                .setUid(UID)
+                .setScreenOnTimeMs(SCREEN_ON_TIME_MS)
+                .build();
 
         mUsageList = new ArrayList<>();
         mUsageList.add(mBatterySipper);
@@ -90,11 +95,13 @@ public class HighUsageDetectorTest {
     @Test
     public void testDetect_containsHighUsageApp_tipVisible() {
         doReturn(true).when(mDataParser).isDeviceHeavilyUsed();
-        doReturn(mUsageList).when(mBatteryStatsHelper).getUsageList();
-        doReturn(DateUtils.HOUR_IN_MILLIS).when(mBatteryUtils).getProcessTimeMs(
+        when(mBatteryStatsHelper.getUsageList()).thenReturn(mUsageList);
+        doReturn(SCREEN_ON_TIME_MS).when(mBatteryUtils).getProcessTimeMs(
                 BatteryUtils.StatusType.FOREGROUND, mBatterySipper.uidObj,
                 BatteryStats.STATS_SINCE_CHARGED);
 
-        assertThat(mHighUsageDetector.detect().isVisible()).isTrue();
+        final HighUsageTip highUsageTip = (HighUsageTip) mHighUsageDetector.detect();
+        assertThat(highUsageTip.isVisible()).isTrue();
+        assertThat(highUsageTip.getHighUsageAppList()).containsExactly(mAppInfo);
     }
 }

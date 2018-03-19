@@ -32,12 +32,10 @@ import com.android.internal.os.BatterySipper;
 import com.android.internal.os.BatteryStatsImpl;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
-import com.android.settings.TestConfig;
 import com.android.settings.core.FeatureFlags;
 import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
 import com.android.settings.testutils.FakeFeatureFactory;
-import com.android.settings.testutils.shadow.SettingsShadowSystemProperties;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -46,14 +44,12 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 import java.util.List;
 
 @RunWith(RobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION, shadows =
-        SettingsShadowSystemProperties.class)
 public class BatteryAppListPreferenceControllerTest {
+
     private static final String[] PACKAGE_NAMES = {"com.app1", "com.app2"};
     private static final String KEY_APP_LIST = "app_list";
     private static final int UID = 123;
@@ -204,20 +200,6 @@ public class BatteryAppListPreferenceControllerTest {
         mNormalBatterySipper.drainType = BatterySipper.DrainType.APP;
 
         assertThat(mPreferenceController.shouldHideSipper(mNormalBatterySipper)).isFalse();
-    }
-
-    @Test
-    public void testIsAvailable_featureOn_returnTrue() {
-        FeatureFlagUtils.setEnabled(mContext, FeatureFlags.BATTERY_DISPLAY_APP_LIST, true);
-
-        assertThat(mPreferenceController.isAvailable()).isTrue();
-    }
-
-    @Test
-    public void testIsAvailable_featureOff_returnFalse() {
-        FeatureFlagUtils.setEnabled(mContext, FeatureFlags.BATTERY_DISPLAY_APP_LIST, false);
-
-        assertThat(mPreferenceController.isAvailable()).isFalse();
     }
 
     @Test

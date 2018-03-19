@@ -23,7 +23,7 @@ import static com.android.settings.core.BasePreferenceController.UNAVAILABLE_UNK
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Mockito.when;
 
-import com.android.settings.TestConfig;
+import com.android.settings.slices.SliceData;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 
 import org.junit.Before;
@@ -32,10 +32,8 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class BasePreferenceControllerTest {
 
     @Mock
@@ -125,5 +123,10 @@ public class BasePreferenceControllerTest {
         when(mPreferenceController.getAvailabilityStatus()).thenReturn(UNAVAILABLE_UNKNOWN);
 
         assertThat(mPreferenceController.isSupported()).isTrue();
+    }
+
+    @Test
+    public void getSliceType_shouldReturnIntent() {
+        assertThat(mPreferenceController.getSliceType()).isEqualTo(SliceData.SliceType.INTENT);
     }
 }

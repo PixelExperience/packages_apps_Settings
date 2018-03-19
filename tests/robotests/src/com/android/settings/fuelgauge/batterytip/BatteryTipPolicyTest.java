@@ -18,26 +18,20 @@ package com.android.settings.fuelgauge.batterytip;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import static org.mockito.Matchers.eq;
-import static org.mockito.Mockito.doReturn;
-import static org.mockito.Mockito.spy;
-
 import android.content.Context;
 import android.provider.Settings;
 import android.text.format.DateUtils;
 
-import com.android.settings.TestConfig;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class BatteryTipPolicyTest {
+
     private static final String BATTERY_TIP_CONSTANTS_VALUE = "battery_tip_enabled=true"
             + ",summary_enabled=false"
             + ",battery_saver_tip_enabled=false"
@@ -50,7 +44,7 @@ public class BatteryTipPolicyTest {
             + ",reduced_battery_percent=30"
             + ",low_battery_enabled=false"
             + ",low_battery_hour=10"
-            + ",data_history_retain_hour=24"
+            + ",data_history_retain_day=24"
             + ",excessive_bg_drain_percentage=25";
     private Context mContext;
 
@@ -78,7 +72,7 @@ public class BatteryTipPolicyTest {
         assertThat(batteryTipPolicy.reducedBatteryPercent).isEqualTo(30);
         assertThat(batteryTipPolicy.lowBatteryEnabled).isFalse();
         assertThat(batteryTipPolicy.lowBatteryHour).isEqualTo(10);
-        assertThat(batteryTipPolicy.dataHistoryRetainHour).isEqualTo(24);
+        assertThat(batteryTipPolicy.dataHistoryRetainDay).isEqualTo(24);
         assertThat(batteryTipPolicy.excessiveBgDrainPercentage).isEqualTo(25);
     }
 
@@ -101,7 +95,7 @@ public class BatteryTipPolicyTest {
         assertThat(batteryTipPolicy.reducedBatteryPercent).isEqualTo(50);
         assertThat(batteryTipPolicy.lowBatteryEnabled).isFalse();
         assertThat(batteryTipPolicy.lowBatteryHour).isEqualTo(16);
-        assertThat(batteryTipPolicy.dataHistoryRetainHour).isEqualTo(72);
+        assertThat(batteryTipPolicy.dataHistoryRetainDay).isEqualTo(30);
         assertThat(batteryTipPolicy.excessiveBgDrainPercentage).isEqualTo(10);
     }
 }

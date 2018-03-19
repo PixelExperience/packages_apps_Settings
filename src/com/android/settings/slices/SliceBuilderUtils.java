@@ -23,7 +23,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Icon;
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.settings.R;
@@ -58,7 +57,7 @@ public class SliceBuilderUtils {
         final Icon icon = Icon.createWithResource(context, sliceData.getIconResource());
         final BasePreferenceController controller = getPreferenceController(context, sliceData);
 
-        final String subtitleText = getSubtitleText(context, controller, sliceData);
+        final CharSequence subtitleText = getSubtitleText(context, controller, sliceData);
 
         final RowBuilder builder = new RowBuilder(context, sliceData.getUri())
                 .setTitle(sliceData.getTitle())
@@ -68,7 +67,7 @@ public class SliceBuilderUtils {
 
         // TODO (b/71640747) Respect setting availability.
 
-        if (controller instanceof TogglePreferenceController) {
+        if (sliceData.getSliceType() == SliceData.SliceType.SWITCH) {
             addToggleAction(context, builder, ((TogglePreferenceController) controller).isChecked(),
                     sliceData.getKey());
         }
@@ -79,22 +78,35 @@ public class SliceBuilderUtils {
     }
 
     /**
+     * @return the {@link SliceData.SliceType} for the {@param controllerClassName} and key.
+     */
+    @SliceData.SliceType
+    public static int getSliceType(Context context, String controllerClassName,
+            String controllerKey) {
+        BasePreferenceController controller = getPreferenceController(context, controllerClassName,
+                controllerKey);
+        return controller.getSliceType();
+    }
+
+    /**
      * Looks at the {@link SliceData#preferenceController} from {@param sliceData} and attempts to
      * build an {@link AbstractPreferenceController}.
      */
     public static BasePreferenceController getPreferenceController(Context context,
             SliceData sliceData) {
+        return getPreferenceController(context, sliceData.getPreferenceController(),
+                sliceData.getKey());
+    }
+
+    private static BasePreferenceController getPreferenceController(Context context,
+            String controllerClassName, String controllerKey) {
         try {
-            return BasePreferenceController.createInstance(context,
-                    sliceData.getPreferenceController());
+            return BasePreferenceController.createInstance(context, controllerClassName);
         } catch (IllegalStateException e) {
             // Do nothing
-            Log.d(TAG, "Could not find Context-only controller for preference controller: "
-                    + sliceData.getKey());
         }
 
-        return BasePreferenceController.createInstance(context, sliceData.getPreferenceController(),
-                sliceData.getKey());
+        return BasePreferenceController.createInstance(context, controllerClassName, controllerKey);
     }
 
     private static void addToggleAction(Context context, RowBuilder builder, boolean isChecked,
@@ -121,9 +133,9 @@ public class SliceBuilderUtils {
     }
 
     @VisibleForTesting
-    static String getSubtitleText(Context context, AbstractPreferenceController controller,
+    static CharSequence getSubtitleText(Context context, AbstractPreferenceController controller,
             SliceData sliceData) {
-        String summaryText = sliceData.getSummary();
+        CharSequence summaryText = sliceData.getSummary();
         if (isValidSummary(context, summaryText)) {
             return summaryText;
         }
@@ -139,13 +151,14 @@ public class SliceBuilderUtils {
         return sliceData.getScreenTitle();
     }
 
-    private static boolean isValidSummary(Context context, String summary) {
-        if (summary == null || TextUtils.isEmpty(summary.trim())) {
+    private static boolean isValidSummary(Context context, CharSequence summary) {
+        if (summary == null || TextUtils.isEmpty(summary.toString().trim())) {
             return false;
         }
 
-        final String placeHolder = context.getString(R.string.summary_placeholder);
-        final String doublePlaceHolder = context.getString(R.string.summary_two_lines_placeholder);
+        final CharSequence placeHolder = context.getText(R.string.summary_placeholder);
+        final CharSequence doublePlaceHolder =
+                context.getText(R.string.summary_two_lines_placeholder);
 
         return !(TextUtils.equals(summary, placeHolder)
                 || TextUtils.equals(summary, doublePlaceHolder));

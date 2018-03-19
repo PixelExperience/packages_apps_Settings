@@ -39,12 +39,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import com.android.settings.TestConfig;
 import com.android.settings.applications.LayoutPreference;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
-import com.android.settingslib.applications.AppUtils;
 import com.android.settingslib.applications.ApplicationsState;
-import com.android.settingslib.applications.instantapps.InstantAppDataProvider;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import org.junit.Before;
@@ -54,11 +51,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
-import org.robolectric.util.ReflectionHelpers;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class AppHeaderViewPreferenceControllerTest {
 
     @Mock
@@ -89,8 +83,8 @@ public class AppHeaderViewPreferenceControllerTest {
         when(mScreen.findPreference(anyString())).thenReturn(mPreference);
         when(mPreference.findViewById(R.id.entity_header)).thenReturn(mHeader);
 
-        mController = new AppHeaderViewPreferenceController(mContext, mFragment, "Package1",
-                mLifecycle);
+        mController =
+            new AppHeaderViewPreferenceController(mContext, mFragment, "Package1", mLifecycle);
     }
 
     @Test
@@ -106,8 +100,7 @@ public class AppHeaderViewPreferenceControllerTest {
         appEntry.info = info;
         when(mFragment.getAppEntry()).thenReturn(appEntry);
         when(mFragment.getPackageInfo()).thenReturn(packageInfo);
-        ReflectionHelpers.setStaticField(AppUtils.class, "sInstantAppDataProvider",
-            (InstantAppDataProvider) (i -> false));
+
 
         final TextView title = mHeader.findViewById(R.id.entity_header_title);
         final TextView summary = mHeader.findViewById(R.id.entity_header_summary);
@@ -115,7 +108,9 @@ public class AppHeaderViewPreferenceControllerTest {
         mController.displayPreference(mScreen);
         mController.refreshUi();
 
+        assertThat(title).isNotNull();
         assertThat(title.getText()).isEqualTo(appLabel);
+        assertThat(summary).isNotNull();
         assertThat(summary.getText()).isEqualTo(mContext.getString(R.string.installed));
     }
 
@@ -132,5 +127,4 @@ public class AppHeaderViewPreferenceControllerTest {
 
         verify(actionBar).setBackgroundDrawable(any(Drawable.class));
     }
-
 }

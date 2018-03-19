@@ -27,7 +27,6 @@ import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.RecoverySystem;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.support.annotation.VisibleForTesting;
@@ -42,9 +41,11 @@ import android.widget.Toast;
 import com.android.ims.ImsManager;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.telephony.PhoneConstants;
+import com.android.settings.enterprise.ActionDisabledByAdminDialogHelper;
 import com.android.settings.wrapper.RecoverySystemWrapper;
 import com.android.settings.core.InstrumentedFragment;
 import com.android.settingslib.RestrictedLockUtils;
+import com.android.settingslib.utils.ThreadUtils;
 
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
@@ -148,7 +149,8 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
                 }
             }
 
-            ImsManager.factoryReset(context);
+            ImsManager.getInstance(context,
+                     SubscriptionManager.getPhoneId(mSubId)).factoryReset();
             restoreDefaultApn(context);
             esimFactoryReset(context, context.getPackageName());
         }
@@ -158,7 +160,7 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
     void esimFactoryReset(Context context, String packageName) {
         if (mEraseEsim) {
             mEraseEsimTask = new EraseEsimAsyncTask(context, packageName);
-            mEraseEsimTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+            mEraseEsimTask.execute();
         } else {
             Toast.makeText(context, R.string.reset_network_complete_toast, Toast.LENGTH_SHORT)
                     .show();
@@ -196,10 +198,11 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
                 UserManager.DISALLOW_NETWORK_RESET, UserHandle.myUserId())) {
             return inflater.inflate(R.layout.network_reset_disallowed_screen, null);
         } else if (admin != null) {
-            View view = inflater.inflate(R.layout.admin_support_details_empty_view, null);
-            ShowAdminSupportDetailsDialog.setAdminSupportDetails(getActivity(), view, admin, false);
-            view.setVisibility(View.VISIBLE);
-            return view;
+            new ActionDisabledByAdminDialogHelper(getActivity())
+                    .prepareDialogBuilder(UserManager.DISALLOW_NETWORK_RESET, admin)
+                    .setOnDismissListener(__ -> getActivity().finish())
+                    .show();
+            return new View(getContext());
         }
         mContentView = inflater.inflate(R.layout.reset_network_confirm, null);
         establishFinalConfirmationState();

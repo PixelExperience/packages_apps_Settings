@@ -16,10 +16,7 @@
 
 package com.android.settings;
 
-import static com.android.settings.core.FeatureFlags.CONNECTED_DEVICE_V2;
-
 import android.os.Bundle;
-import android.util.FeatureFlagUtils;
 
 import com.android.settings.enterprise.EnterprisePrivacySettings;
 
@@ -103,10 +100,10 @@ public class Settings extends SettingsActivity {
     public static class PrintJobSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ZenModeSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ZenModeBehaviorSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ZenModeBlockedEffectsSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ZenModeAutomationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ZenModeScheduleRuleSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ZenModeEventRuleSettingsActivity extends SettingsActivity { /* empty */ }
-    public static class ZenModeExternalRuleSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SoundSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ConfigureNotificationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AppNotificationSettingsActivity extends SettingsActivity { /* empty */ }
@@ -128,6 +125,7 @@ public class Settings extends SettingsActivity {
     public static class AppMemoryUsageActivity extends SettingsActivity { /* empty */ }
     public static class OverlaySettingsActivity extends SettingsActivity { /* empty */ }
     public static class WriteSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ChangeWifiStateActivity extends SettingsActivity { /* empty */ }
     public static class AppDrawOverlaySettingsActivity extends SettingsActivity { /* empty */ }
     public static class AppWriteSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AdvancedAppsActivity extends SettingsActivity { /* empty */ }
@@ -157,22 +155,13 @@ public class Settings extends SettingsActivity {
 
     // Top level categories for new IA
     public static class NetworkDashboardActivity extends SettingsActivity {}
-    public static class ConnectedDeviceDashboardActivity extends SettingsActivity {
-        public static final boolean isEnabled() {
-            return FeatureFlagUtils.isEnabled(null /* context */, CONNECTED_DEVICE_V2);
-        }
-    }
-    public static class ConnectedDeviceDashboardActivityOld extends SettingsActivity {}
+    public static class ConnectedDeviceDashboardActivity extends SettingsActivity {}
     public static class PowerUsageSummaryActivity extends SettingsActivity { /* empty */ }
     public static class PowerUsageSummaryLegacyActivity extends SettingsActivity { /* empty */ }
     public static class AppAndNotificationDashboardActivity extends SettingsActivity {}
     public static class StorageDashboardActivity extends SettingsActivity {}
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
-    public static class AdvancedConnectedDeviceActivity extends SettingsActivity {
-        public static final boolean isEnabled() {
-            return FeatureFlagUtils.isEnabled(null /* context */, CONNECTED_DEVICE_V2);
-        }
-    }
+    public static class AdvancedConnectedDeviceActivity extends SettingsActivity {}
 
 }

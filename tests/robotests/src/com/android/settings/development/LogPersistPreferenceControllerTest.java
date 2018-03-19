@@ -16,6 +16,7 @@
 
 package com.android.settings.development;
 
+import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -25,24 +26,17 @@ import android.os.SystemProperties;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.PreferenceScreen;
 
-import com.android.settings.TestConfig;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
-import com.android.settings.testutils.shadow.SettingsShadowSystemProperties;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH,
-        sdk = TestConfig.SDK_VERSION,
-        shadows = {SettingsShadowSystemProperties.class})
 public class LogPersistPreferenceControllerTest {
 
     @Mock
@@ -63,28 +57,16 @@ public class LogPersistPreferenceControllerTest {
         mContext = RuntimeEnvironment.application;
         mLifecycleOwner = () -> mLifecycle;
         mLifecycle = new Lifecycle(mLifecycleOwner);
-        mController = new LogPersistPreferenceController(mContext, mFragment, mLifecycle);
+        mController = spy(new LogPersistPreferenceController(mContext, mFragment, mLifecycle));
         when(mScreen.findPreference(mController.getPreferenceKey())).thenReturn(mPreference);
         SystemProperties.set("ro.debuggable", "1");
         mController.displayPreference(mScreen);
     }
 
-    @After
-    public void teardown() {
-        SettingsShadowSystemProperties.clear();
-    }
-
     @Test
-    public void onDeveloperOptionsSwitchDisabled_shouldDisablePreference() {
+    public void onDeveloperOptionsSwitchDisabled_shouldResetLogOption() {
         mController.onDeveloperOptionsSwitchDisabled();
 
-        verify(mPreference).setEnabled(false);
-    }
-
-    @Test
-    public void onDeveloperOptionsSwitchEnabled_shouldEnablePreference() {
-        mController.onDeveloperOptionsSwitchEnabled();
-
-        verify(mPreference).setEnabled(true);
+        verify(mController).writeLogpersistOption(null, true);
     }
 }

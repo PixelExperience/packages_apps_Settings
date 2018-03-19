@@ -20,9 +20,7 @@ import static com.google.common.truth.Truth.assertThat;
 import android.arch.lifecycle.LifecycleOwner;
 import android.content.Context;
 import android.provider.Settings;
-import android.support.v14.preference.SwitchPreference;
 
-import com.android.settings.TestConfig;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
 import com.android.settings.widget.SeekBarPreference;
@@ -36,9 +34,9 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION, shadows =
-        SettingsShadowResources.class)
+@Config(shadows = SettingsShadowResources.class)
 public class AutoBatterySeekBarPreferenceControllerTest {
+
     private static final int TRIGGER_LEVEL = 20;
     private static final int DEFAULT_LEVEL = 15;
 
@@ -100,5 +98,25 @@ public class AutoBatterySeekBarPreferenceControllerTest {
 
         assertThat(Settings.Global.getInt(mContext.getContentResolver(),
                 Settings.Global.LOW_POWER_MODE_TRIGGER_LEVEL, 0)).isEqualTo(TRIGGER_LEVEL);
+    }
+
+    @Test
+    public void testOnPreferenceChange_changeMax() {
+        Settings.Global.putInt(mContext.getContentResolver(),
+                Settings.Global.LOW_POWER_MODE_TRIGGER_LEVEL_MAX, 50);
+
+        mController.updateState(mPreference);
+
+        assertThat(mPreference.getMax()).isEqualTo(50);
+    }
+
+    @Test
+    public void testOnPreferenceChange_noChangeMax() {
+        Settings.Global.putInt(mContext.getContentResolver(),
+                Settings.Global.LOW_POWER_MODE_TRIGGER_LEVEL_MAX, 0);
+
+        mController.updateState(mPreference);
+
+        assertThat(mPreference.getMax()).isEqualTo(100);
     }
 }
