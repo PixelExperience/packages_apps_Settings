@@ -17,30 +17,38 @@ package com.android.settings.fuelgauge.batterytip.tips;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import static org.mockito.Mockito.verify;
+
 import android.content.Context;
 import android.os.Parcel;
 
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
-import com.android.settings.TestConfig;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class EarlyWarningTipTest {
+
+    @Mock
+    private MetricsFeatureProvider mMetricsFeatureProvider;
     private Context mContext;
     private EarlyWarningTip mEarlyWarningTip;
 
     @Before
     public void setUp() {
+        MockitoAnnotations.initMocks(this);
+
         mContext = RuntimeEnvironment.application;
-        mEarlyWarningTip = new EarlyWarningTip(BatteryTip.StateType.NEW,
-                false /* powerSaveModeOn */);
+        mEarlyWarningTip =
+                new EarlyWarningTip(BatteryTip.StateType.NEW, false /* powerSaveModeOn */);
     }
 
     @Test
@@ -56,8 +64,8 @@ public class EarlyWarningTipTest {
 
     @Test
     public void testInfo_stateNew_displayPowerModeInfo() {
-        final EarlyWarningTip tip = new EarlyWarningTip(BatteryTip.StateType.NEW,
-                false /* powerModeOn */);
+        final EarlyWarningTip tip =
+                new EarlyWarningTip(BatteryTip.StateType.NEW, false /* powerModeOn */);
 
         assertThat(tip.getTitle(mContext)).isEqualTo("Turn on Low Battery Mode");
         assertThat(tip.getSummary(mContext)).isEqualTo("Extend your battery life");
@@ -66,8 +74,8 @@ public class EarlyWarningTipTest {
 
     @Test
     public void testInfo_stateHandled_displayPowerModeHandledInfo() {
-        final EarlyWarningTip tip = new EarlyWarningTip(BatteryTip.StateType.HANDLED,
-                false /* powerModeOn */);
+        final EarlyWarningTip tip =
+                new EarlyWarningTip(BatteryTip.StateType.HANDLED, false /* powerModeOn */);
 
         assertThat(tip.getTitle(mContext)).isEqualTo("Low Battery Mode is on");
         assertThat(tip.getSummary(mContext)).isEqualTo("Some features are limited");
@@ -76,8 +84,8 @@ public class EarlyWarningTipTest {
 
     @Test
     public void testUpdate_powerModeTurnedOn_typeBecomeHandled() {
-        final EarlyWarningTip nextTip = new EarlyWarningTip(BatteryTip.StateType.INVISIBLE,
-                true /* powerModeOn */);
+        final EarlyWarningTip nextTip =
+                new EarlyWarningTip(BatteryTip.StateType.INVISIBLE, true /* powerModeOn */);
 
         mEarlyWarningTip.updateState(nextTip);
 
@@ -116,5 +124,13 @@ public class EarlyWarningTipTest {
         earlyWarningTip.updateState(nextTip);
 
         assertThat(earlyWarningTip.getState()).isEqualTo(BatteryTip.StateType.INVISIBLE);
+    }
+
+    @Test
+    public void testLog() {
+        mEarlyWarningTip.log(mContext, mMetricsFeatureProvider);
+
+        verify(mMetricsFeatureProvider).action(mContext,
+                MetricsProto.MetricsEvent.ACTION_EARLY_WARNING_TIP, BatteryTip.StateType.NEW);
     }
 }

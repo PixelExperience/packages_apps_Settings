@@ -17,12 +17,9 @@
 package com.android.settings.applications.appinfo;
 
 import static com.android.settings.applications.appinfo.AppInfoDashboardFragment.ARG_PACKAGE_NAME;
-import static com.android.settings.applications.appinfo.AppInfoDashboardFragment
-        .UNINSTALL_ALL_USERS_MENU;
+import static com.android.settings.applications.appinfo.AppInfoDashboardFragment.UNINSTALL_ALL_USERS_MENU;
 import static com.android.settings.applications.appinfo.AppInfoDashboardFragment.UNINSTALL_UPDATES;
-
 import static com.google.common.truth.Truth.assertThat;
-
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.nullable;
 import static org.mockito.Mockito.doNothing;
@@ -47,7 +44,6 @@ import android.view.MenuItem;
 
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.TestConfig;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.wrapper.DevicePolicyManagerWrapper;
 import com.android.settingslib.applications.AppUtils;
@@ -70,10 +66,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(
-    manifest = TestConfig.MANIFEST_PATH,
-    sdk = TestConfig.SDK_VERSION
-)
 public final class AppInfoDashboardFragmentTest {
 
     private static final String PACKAGE_NAME = "test_package_name";
@@ -89,7 +81,6 @@ public final class AppInfoDashboardFragmentTest {
 
     private AppInfoDashboardFragment mFragment;
     private Context mShadowContext;
-
 
     @Before
     public void setUp() {
@@ -302,7 +293,6 @@ public final class AppInfoDashboardFragmentTest {
         ReflectionHelpers.setField(mFragment, "mPm", mPackageManager);
 
         assertThat(mFragment.getNumberOfUserWithPackageInstalled(packageName)).isEqualTo(1);
-
     }
 
     @Test
@@ -335,7 +325,6 @@ public final class AppInfoDashboardFragmentTest {
     public void startAppInfoFragment_includesNewAndOldArgs() {
         final SettingsPreferenceFragment caller = mock(SettingsPreferenceFragment.class);
         final SettingsActivity sa = mock (SettingsActivity.class);
-        when(caller.getActivity()).thenReturn(sa);
         when(caller.getContext()).thenReturn(sa);
         final AppEntry appEntry = mock(AppEntry.class);
         appEntry.info = mock(ApplicationInfo.class);
@@ -348,7 +337,7 @@ public final class AppInfoDashboardFragmentTest {
 
         final ArgumentCaptor<Intent> intent = ArgumentCaptor.forClass(Intent.class);
 
-        verify(sa).startActivityForResult(intent.capture(), any(Integer.class));
+        verify(caller).startActivityForResult(intent.capture(), any(Integer.class));
         assertThat(intent.getValue().getBundleExtra(SettingsActivity.EXTRA_SHOW_FRAGMENT_ARGUMENTS)
             .containsKey("test"))
             .isTrue();

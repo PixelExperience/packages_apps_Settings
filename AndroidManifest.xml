@@ -212,33 +212,6 @@
                 android:value="true" />
         </activity>
 
-        <activity
-            android:name=".Settings$ConnectedDeviceDashboardActivityOld"
-            android:enabled="false"
-            android:label="@string/connected_devices_dashboard_title"
-            android:icon="@drawable/ic_homepage_connected_device"
-            android:taskAffinity="com.android.settings"
-            android:parentActivityName="Settings">
-            <intent-filter android:priority="1">
-                <action android:name="android.settings.NFC_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.VOICE_LAUNCH" />
-            </intent-filter>
-            <intent-filter android:priority="10">
-                <action android:name="com.android.settings.action.SETTINGS"/>
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragmentOld"/>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.homepage"/>
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                       android:value="true" />
-        </activity>
-
         <activity android:name="AirplaneModeVoiceActivity"
                 android:label="@string/wireless_networks_settings_title"
                 android:theme="@*android:style/Theme.DeviceDefault.Light.Voice"
@@ -743,15 +716,6 @@
                 android:value="true" />
         </activity>
 
-        <!-- Keep compatibility with old shortcuts. -->
-        <activity-alias android:name="UserDictionarySettings"
-                android:label="@string/user_dict_settings_title"
-                android:exported="true"
-                android:targetActivity="Settings$UserDictionarySettingsActivity">
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.UserDictionarySettings" />
-        </activity-alias>
-
         <activity
             android:name="Settings$ZenModeSettingsActivity"
             android:label="@string/zen_mode_settings_title"
@@ -772,6 +736,19 @@
                 android:value="com.android.settings.notification.ZenModeSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
+        </activity>
+
+        <activity
+            android:name="Settings$ZenModeBlockedEffectsSettingsActivity"
+            android:label="@string/zen_mode_what_to_block_title"
+            android:icon="@drawable/ic_settings_notifications"
+            android:exported="true"
+            android:taskAffinity="com.android.settings"
+            android:parentActivityName="Settings">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.notification.ZenModeBlockedEffectsSetting" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                       android:value="true" />
         </activity>
 
         <activity
@@ -890,25 +867,6 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.notification.ZenModeEventRuleSettings" />
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                android:value="true" />
-        </activity>
-
-        <activity
-            android:name="Settings$ZenModeExternalRuleSettingsActivity"
-            android:exported="true"
-            android:taskAffinity="com.android.settings"
-            android:parentActivityName="Settings">
-            <intent-filter android:priority="1">
-                <action android:name="android.settings.ZEN_MODE_EXTERNAL_RULE_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.notification.ZenModeExternalRuleSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -1278,7 +1236,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.applications.BackgroundCheckSummary" />
+                android:value="com.android.settings.applications.appops.BackgroundCheckSummary" />
         </activity>
 
         <activity
@@ -2275,7 +2233,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.fuelgauge.BatterySaverSettings" />
+                android:value="com.android.settings.fuelgauge.batterysaver.BatterySaverSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -2818,10 +2776,6 @@
             android:icon="@drawable/ic_settings_sim"
             android:taskAffinity="com.android.settings"
             android:parentActivityName="Settings">
-            <intent-filter android:priority="1">
-                <action android:name="com.android.settings.sim.SIM_SUB_INFO_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -3010,7 +2964,7 @@
                        android:value="com.android.settings.applications.appinfo.ExternalSourcesDetails" />
         </activity>
 
-        <activity android:name="ShowAdminSupportDetailsDialog"
+        <activity android:name=".enterprise.ActionDisabledByAdminDialog"
                 android:theme="@style/Transparent"
                 android:excludeFromRecents="true"
                 android:launchMode="singleTop">
@@ -3296,7 +3250,7 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".fuelgauge.batterytip.AnomalyCleanUpJobService"
+        <service android:name=".fuelgauge.batterytip.AnomalyCleanupJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <service android:name=".fuelgauge.batterytip.AnomalyDetectionJobService"

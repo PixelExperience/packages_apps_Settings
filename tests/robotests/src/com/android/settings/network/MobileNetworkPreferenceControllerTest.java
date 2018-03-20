@@ -15,11 +15,9 @@
  */
 package com.android.settings.network;
 
-import static android.arch.lifecycle.Lifecycle.Event.ON_PAUSE;
-import static android.arch.lifecycle.Lifecycle.Event.ON_RESUME;
-
+import static android.arch.lifecycle.Lifecycle.Event.ON_START;
+import static android.arch.lifecycle.Lifecycle.Event.ON_STOP;
 import static com.google.common.truth.Truth.assertThat;
-
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
@@ -36,7 +34,6 @@ import android.support.v7.preference.PreferenceScreen;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 
-import com.android.settings.TestConfig;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.ShadowConnectivityManager;
 import com.android.settings.testutils.shadow.ShadowRestrictedLockUtilsWrapper;
@@ -52,11 +49,10 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(
-    manifest = TestConfig.MANIFEST_PATH,
-    sdk = TestConfig.SDK_VERSION,
-    shadows = {ShadowRestrictedLockUtilsWrapper.class, ShadowConnectivityManager.class,
-            ShadowUserManager.class}
+@Config(shadows = {
+    ShadowRestrictedLockUtilsWrapper.class,
+    ShadowConnectivityManager.class,
+    ShadowUserManager.class}
 )
 public class MobileNetworkPreferenceControllerTest {
 
@@ -76,8 +72,7 @@ public class MobileNetworkPreferenceControllerTest {
         mContext = spy(RuntimeEnvironment.application);
         mLifecycleOwner = () -> mLifecycle;
         mLifecycle = new Lifecycle(mLifecycleOwner);
-        when(mContext.getSystemService(Context.TELEPHONY_SERVICE))
-                .thenReturn(mTelephonyManager);
+        when(mContext.getSystemService(Context.TELEPHONY_SERVICE)).thenReturn(mTelephonyManager);
     }
 
     @Test
@@ -110,11 +105,11 @@ public class MobileNetworkPreferenceControllerTest {
         mLifecycle.addObserver(mController);
         doReturn(true).when(mController).isAvailable();
 
-        mLifecycle.handleLifecycleEvent(ON_RESUME);
+        mLifecycle.handleLifecycleEvent(ON_START);
         verify(mTelephonyManager).listen(mController.mPhoneStateListener,
                 PhoneStateListener.LISTEN_SERVICE_STATE);
 
-        mLifecycle.handleLifecycleEvent(ON_PAUSE);
+        mLifecycle.handleLifecycleEvent(ON_STOP);
         verify(mTelephonyManager).listen(mController.mPhoneStateListener,
                 PhoneStateListener.LISTEN_NONE);
     }
@@ -131,8 +126,8 @@ public class MobileNetworkPreferenceControllerTest {
 
         // Display pref and go through lifecycle to set up listener.
         mController.displayPreference(mScreen);
-        mLifecycle.handleLifecycleEvent(ON_RESUME);
-        verify(mController).onResume();
+        mLifecycle.handleLifecycleEvent(ON_START);
+        verify(mController).onStart();
         verify(mTelephonyManager).listen(mController.mPhoneStateListener,
                 PhoneStateListener.LISTEN_SERVICE_STATE);
 

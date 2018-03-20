@@ -26,6 +26,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.android.settings.core.PreferenceXmlParserUtils.MetadataFlag;
 import com.android.settingslib.core.AbstractPreferenceController;
 
 import org.xmlpull.v1.XmlPullParserException;
@@ -41,7 +42,7 @@ import java.util.TreeSet;
  */
 public class PreferenceControllerListHelper {
 
-    private static final String TAG = "PrefCtrlListCreator";
+    private static final String TAG = "PrefCtrlListHelper";
 
     /**
      * Instantiates a list of controller based on xml definition.
@@ -52,7 +53,8 @@ public class PreferenceControllerListHelper {
         final List<BasePreferenceController> controllers = new ArrayList<>();
         List<Bundle> preferenceMetadata;
         try {
-            preferenceMetadata = PreferenceXmlParserUtils.extractMetadata(context, xmlResId);
+            preferenceMetadata = PreferenceXmlParserUtils.extractMetadata(context, xmlResId,
+                    MetadataFlag.FLAG_NEED_KEY | MetadataFlag.FLAG_NEED_PREF_CONTROLLER);
         } catch (IOException | XmlPullParserException e) {
             Log.e(TAG, "Failed to parse preference xml for getting controllers");
             return controllers;
@@ -67,14 +69,20 @@ public class PreferenceControllerListHelper {
             try {
                 controller = BasePreferenceController.createInstance(context, controllerName);
             } catch (IllegalStateException e) {
+                Log.d(TAG, "Could not find Context-only controller for pref: " + controllerName);
                 final String key = metadata.getString(METADATA_KEY);
                 if (TextUtils.isEmpty(key)) {
                     Log.w(TAG, "Controller requires key but it's not defined in xml: "
                             + controllerName);
                     continue;
                 }
-                Log.d(TAG, "Could not find Context-only controller for pref: " + key);
-                controller = BasePreferenceController.createInstance(context, controllerName, key);
+                try {
+                    controller = BasePreferenceController.createInstance(context, controllerName,
+                            key);
+                } catch (IllegalStateException e2) {
+                    Log.w(TAG, "Cannot instantiate controller from reflection: " + controllerName);
+                    continue;
+                }
             }
             controllers.add(controller);
         }

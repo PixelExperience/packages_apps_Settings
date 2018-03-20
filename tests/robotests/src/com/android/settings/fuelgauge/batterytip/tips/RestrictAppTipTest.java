@@ -17,17 +17,24 @@ package com.android.settings.fuelgauge.batterytip.tips;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyInt;
+import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.verify;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Parcel;
+import android.util.Pair;
 
-import com.android.settings.TestConfig;
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.fuelgauge.batterytip.AppInfo;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -35,16 +42,16 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class RestrictAppTipTest {
     private static final String PACKAGE_NAME = "com.android.app";
     private static final String DISPLAY_NAME = "app";
+    private static final int ANOMALY_WAKEUP = 0;
+    private static final int ANOMALY_WAKELOCK = 1;
 
     private Context mContext;
     private RestrictAppTip mNewBatteryTip;
@@ -55,6 +62,8 @@ public class RestrictAppTipTest {
     private ApplicationInfo mApplicationInfo;
     @Mock
     private PackageManager mPackageManager;
+    @Mock
+    private MetricsFeatureProvider mMetricsFeatureProvider;
 
     @Before
     public void setUp() throws Exception {
@@ -69,6 +78,8 @@ public class RestrictAppTipTest {
         mUsageAppList = new ArrayList<>();
         mUsageAppList.add(new AppInfo.Builder()
                 .setPackageName(PACKAGE_NAME)
+                .addAnomalyType(ANOMALY_WAKEUP)
+                .addAnomalyType(ANOMALY_WAKELOCK)
                 .build());
         mNewBatteryTip = new RestrictAppTip(BatteryTip.StateType.NEW, mUsageAppList);
         mHandledBatteryTip = new RestrictAppTip(BatteryTip.StateType.HANDLED, mUsageAppList);
@@ -76,7 +87,7 @@ public class RestrictAppTipTest {
     }
 
     @Test
-    public void testParcelable() {
+    public void parcelable() {
         Parcel parcel = Parcel.obtain();
         mNewBatteryTip.writeToParcel(parcel, mNewBatteryTip.describeContents());
         parcel.setDataPosition(0);
@@ -90,40 +101,72 @@ public class RestrictAppTipTest {
     }
 
     @Test
-    public void testGetTitle_stateNew_showRestrictTitle() {
+    public void getTitle_stateNew_showRestrictTitle() {
         assertThat(mNewBatteryTip.getTitle(mContext)).isEqualTo("Restrict 1 app");
     }
 
     @Test
-    public void testGetTitle_stateHandled_showHandledTitle() {
+    public void getTitle_stateHandled_showHandledTitle() {
         assertThat(mHandledBatteryTip.getTitle(mContext)).isEqualTo("1 recently restricted");
     }
 
     @Test
-    public void testGetSummary_stateNew_showRestrictSummary() {
-        assertThat(mNewBatteryTip.getSummary(mContext)).isEqualTo(
-                "app has high battery usage");
+    public void getSummary_stateNew_showRestrictSummary() {
+        assertThat(mNewBatteryTip.getSummary(mContext))
+            .isEqualTo("app has high battery usage");
     }
 
     @Test
-    public void testGetSummary_stateHandled_showHandledSummary() {
-        assertThat(mHandledBatteryTip.getSummary(mContext)).isEqualTo(
-                "App changes are in progress");
+    public void getSummary_stateHandled_showHandledSummary() {
+        assertThat(mHandledBatteryTip.getSummary(mContext))
+            .isEqualTo("App changes are in progress");
     }
 
     @Test
-    public void testUpdate_anomalyBecomeInvisible_stateHandled() {
+    public void update_anomalyBecomeInvisible_stateHandled() {
         mNewBatteryTip.updateState(mInvisibleBatteryTip);
 
         assertThat(mNewBatteryTip.getState()).isEqualTo(BatteryTip.StateType.HANDLED);
     }
 
     @Test
-    public void testUpdate_newAnomalyComes_stateNew() {
+    public void update_newAnomalyComes_stateNew() {
         mInvisibleBatteryTip.updateState(mNewBatteryTip);
         assertThat(mInvisibleBatteryTip.getState()).isEqualTo(BatteryTip.StateType.NEW);
 
         mHandledBatteryTip.updateState(mNewBatteryTip);
         assertThat(mHandledBatteryTip.getState()).isEqualTo(BatteryTip.StateType.NEW);
+    }
+
+    @Test
+    public void toString_containsAppData() {
+        assertThat(mNewBatteryTip.toString()).isEqualTo(
+                "type=1 state=0 { packageName=com.android.app,anomalyTypes={0, 1},screenTime=0 }");
+    }
+
+    @Test
+    public void testLog_stateNew_logAppInfo() {
+        mNewBatteryTip.log(mContext, mMetricsFeatureProvider);
+
+        verify(mMetricsFeatureProvider).action(mContext,
+                MetricsProto.MetricsEvent.ACTION_APP_RESTRICTION_TIP, BatteryTip.StateType.NEW);
+        verify(mMetricsFeatureProvider).action(mContext,
+                MetricsProto.MetricsEvent.ACTION_APP_RESTRICTION_TIP_LIST,
+                PACKAGE_NAME,
+                Pair.create(MetricsProto.MetricsEvent.FIELD_CONTEXT, ANOMALY_WAKEUP));
+        verify(mMetricsFeatureProvider).action(mContext,
+                MetricsProto.MetricsEvent.ACTION_APP_RESTRICTION_TIP_LIST,
+                PACKAGE_NAME,
+                Pair.create(MetricsProto.MetricsEvent.FIELD_CONTEXT, ANOMALY_WAKELOCK));
+    }
+
+    @Test
+    public void testLog_stateHandled_doNotLogAppInfo() {
+        mHandledBatteryTip.log(mContext, mMetricsFeatureProvider);
+
+        verify(mMetricsFeatureProvider).action(mContext,
+                MetricsProto.MetricsEvent.ACTION_APP_RESTRICTION_TIP, BatteryTip.StateType.HANDLED);
+        verify(mMetricsFeatureProvider, never()).action(any(), anyInt(), anyString(), any());
+
     }
 }

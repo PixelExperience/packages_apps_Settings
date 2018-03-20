@@ -125,7 +125,7 @@ public class UsbBackend {
     }
 
     public int getUsbDataMode() {
-        return usbFunctionToMode(mUsbManagerWrapper.getCurrentFunctions());
+        return mIsCTA ? MODE_DATA_NONE_CTA : usbFunctionToMode(mUsbManagerWrapper.getCurrentFunctions());
     }
 
     public void setDefaultUsbMode(int mode) {
@@ -227,6 +227,16 @@ public class UsbBackend {
     }
 
     private void setUsbFunction(int mode) {
-        mUsbManager.setCurrentFunctions(modeToUsbFunction(mode));
+        switch (mode) {
+            case MODE_DATA_NONE:
+                //Take MTP mode and data unlocked false as charging
+                if (mIsCTA && !isInPowerSourceMode()) {
+                    mUsbManager.setCurrentFunctions(modeToUsbFunction(MODE_DATA_MTP));
+                    break;
+                }
+            default:
+                mUsbManager.setCurrentFunctions(modeToUsbFunction(mode));
+                break;
+        }
     }
 }

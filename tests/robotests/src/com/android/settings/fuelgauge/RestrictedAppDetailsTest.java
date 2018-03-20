@@ -21,6 +21,7 @@ import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.when;
 
 import android.content.Context;
 import android.content.Intent;
@@ -33,7 +34,6 @@ import android.support.v7.preference.PreferenceManager;
 import android.util.IconDrawableFactory;
 
 import com.android.settings.SettingsActivity;
-import com.android.settings.TestConfig;
 import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.fuelgauge.batterytip.AppInfo;
 
@@ -46,16 +46,17 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(RobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class RestrictedAppDetailsTest {
+
     private static final String PACKAGE_NAME = "com.android.app";
+    private static final int UID = 234;
     private static final String APP_NAME = "app";
+
     @Mock
     private PackageManager mPackageManager;
     @Mock
@@ -70,6 +71,7 @@ public class RestrictedAppDetailsTest {
     private InstrumentedPreferenceFragment mFragment;
     private RestrictedAppDetails mRestrictedAppDetails;
     private Context mContext;
+    private AppInfo mAppInfo;
     private Intent mIntent;
 
     @Before
@@ -78,15 +80,17 @@ public class RestrictedAppDetailsTest {
 
         mContext = spy(RuntimeEnvironment.application);
         mRestrictedAppDetails = spy(new RestrictedAppDetails());
+        mAppInfo = new AppInfo.Builder()
+                .setPackageName(PACKAGE_NAME)
+                .setUid(UID)
+                .build();
 
         doReturn(mPreferenceManager).when(mRestrictedAppDetails).getPreferenceManager();
         doReturn(mContext).when(mPreferenceManager).getContext();
         mRestrictedAppDetails.mPackageManager = mPackageManager;
         mRestrictedAppDetails.mIconDrawableFactory = mIconDrawableFactory;
         mRestrictedAppDetails.mAppInfos = new ArrayList<>();
-        mRestrictedAppDetails.mAppInfos.add(new AppInfo.Builder()
-                .setPackageName(PACKAGE_NAME)
-                .build());
+        mRestrictedAppDetails.mAppInfos.add(mAppInfo);
         mRestrictedAppDetails.mRestrictedAppListGroup = spy(new PreferenceCategory(mContext));
         mRestrictedAppDetails.mBatteryUtils = new BatteryUtils(mContext);
         doReturn(mPreferenceManager).when(
@@ -103,7 +107,6 @@ public class RestrictedAppDetailsTest {
         assertThat(mRestrictedAppDetails.mRestrictedAppListGroup.getPreferenceCount()).isEqualTo(1);
         final Preference preference = mRestrictedAppDetails.mRestrictedAppListGroup.getPreference(
                 0);
-        assertThat(preference.getKey()).isEqualTo(PACKAGE_NAME);
         assertThat(preference.getTitle()).isEqualTo(APP_NAME);
     }
 
@@ -124,7 +127,6 @@ public class RestrictedAppDetailsTest {
         // Verify the bundle has the correct info
         final List<AppInfo> appInfos = bundle.getParcelableArrayList(
                 RestrictedAppDetails.EXTRA_APP_INFO_LIST);
-        assertThat(appInfos).hasSize(1);
-        assertThat(appInfos.get(0).packageName).isEqualTo(PACKAGE_NAME);
+        assertThat(appInfos).containsExactly(mAppInfo);
     }
 }

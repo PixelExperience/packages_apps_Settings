@@ -21,7 +21,6 @@ import static com.google.common.truth.Truth.assertThat;
 import android.content.Context;
 
 import com.android.settings.R;
-import com.android.settings.TestConfig;
 import com.android.settings.slices.FakePreferenceController;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -36,7 +35,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(SettingsRobolectricTestRunner.class)
-@Config(manifest = TestConfig.MANIFEST_PATH, sdk = TestConfig.SDK_VERSION)
 public class PreferenceControllerListHelperTest {
 
     private Context mContext;
@@ -57,6 +55,17 @@ public class PreferenceControllerListHelperTest {
         for (BasePreferenceController controller : controllers) {
             assertThat(controller).isInstanceOf(FakePreferenceController.class);
         }
+    }
+
+    @Test
+    @Config(qualifiers = "mcc998")
+    public void getControllers_partialFailure_shouldReturnTheRest() {
+        final List<BasePreferenceController> controllers =
+                PreferenceControllerListHelper.getPreferenceControllersFromXml(mContext,
+                        R.xml.location_settings);
+
+        assertThat(controllers).hasSize(1);
+        assertThat(controllers.get(0)).isInstanceOf(FakePreferenceController.class);
     }
 
     @Test
@@ -114,5 +123,4 @@ public class PreferenceControllerListHelperTest {
                 .filterControllers(controllers, filter);
         assertThat(result).isEmpty();
     }
-
 }

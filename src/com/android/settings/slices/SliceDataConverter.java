@@ -16,21 +16,28 @@
 
 package com.android.settings.slices;
 
+import static com.android.settings.core.PreferenceXmlParserUtils.METADATA_CONTROLLER;
+import static com.android.settings.core.PreferenceXmlParserUtils.METADATA_ICON;
+import static com.android.settings.core.PreferenceXmlParserUtils.METADATA_KEY;
+import static com.android.settings.core.PreferenceXmlParserUtils.METADATA_SUMMARY;
+import static com.android.settings.core.PreferenceXmlParserUtils.METADATA_TITLE;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
+import android.os.Bundle;
 import android.provider.SearchIndexableResource;
-import android.support.annotation.DrawableRes;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.Xml;
 
+import com.android.settings.core.PreferenceXmlParserUtils;
+import com.android.settings.core.PreferenceXmlParserUtils.MetadataFlag;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.DatabaseIndexingUtils;
 import com.android.settings.search.Indexable.SearchIndexProvider;
-import com.android.settings.core.PreferenceXmlParserUtils;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -127,11 +134,6 @@ class SliceDataConverter {
         XmlResourceParser parser = null;
 
         final List<SliceData> xmlSliceData = new ArrayList<>();
-        String key;
-        String title;
-        String summary;
-        @DrawableRes int iconResId;
-        String controllerClassName;
 
         try {
             parser = mContext.getResources().getXml(xmlResId);
@@ -149,36 +151,36 @@ class SliceDataConverter {
                                 + nodeName + " at " + parser.getPositionDescription());
             }
 
-            final int outerDepth = parser.getDepth();
             final AttributeSet attrs = Xml.asAttributeSet(parser);
             final String screenTitle = PreferenceXmlParserUtils.getDataTitle(mContext, attrs);
 
             // TODO (b/67996923) Investigate if we need headers for Slices, since they never
             // correspond to an actual setting.
-            SliceData xmlSlice;
-            while ((type = parser.next()) != XmlPullParser.END_DOCUMENT
-                    && (type != XmlPullParser.END_TAG || parser.getDepth() > outerDepth)) {
-                if (type == XmlPullParser.END_TAG || type == XmlPullParser.TEXT) {
-                    continue;
-                }
 
+            final List<Bundle> metadata = PreferenceXmlParserUtils.extractMetadata(mContext,
+                    xmlResId,
+                    MetadataFlag.FLAG_NEED_KEY
+                            | MetadataFlag.FLAG_NEED_PREF_CONTROLLER
+                            | MetadataFlag.FLAG_NEED_PREF_TYPE
+                            | MetadataFlag.FLAG_NEED_PREF_TITLE
+                            | MetadataFlag.FLAG_NEED_PREF_ICON
+                            | MetadataFlag.FLAG_NEED_PREF_SUMMARY);
 
+            for (Bundle bundle : metadata) {
                 // TODO (b/67996923) Non-controller Slices should become intent-only slices.
                 // Note that without a controller, dynamic summaries are impossible.
-                // TODO (b/67996923) This will not work if preferences have nested intents:
-                // <pref ....>
-                //      <intent action="blab"/> </pref>
-                controllerClassName = PreferenceXmlParserUtils.getController(mContext, attrs);
+                final String controllerClassName = bundle.getString(METADATA_CONTROLLER);
                 if (TextUtils.isEmpty(controllerClassName)) {
                     continue;
                 }
+                final String key = bundle.getString(METADATA_KEY);
+                final String title = bundle.getString(METADATA_TITLE);
+                final String summary = bundle.getString(METADATA_SUMMARY);
+                final int iconResId = bundle.getInt(METADATA_ICON);
+                final int sliceType = SliceBuilderUtils.getSliceType(mContext, controllerClassName,
+                        key);
 
-                title = PreferenceXmlParserUtils.getDataTitle(mContext, attrs);
-                key = PreferenceXmlParserUtils.getDataKey(mContext, attrs);
-                iconResId = PreferenceXmlParserUtils.getDataIcon(mContext, attrs);
-                summary = PreferenceXmlParserUtils.getDataSummary(mContext, attrs);
-
-                xmlSlice = new SliceData.Builder()
+                final SliceData xmlSlice = new SliceData.Builder()
                         .setKey(key)
                         .setTitle(title)
                         .setSummary(summary)
@@ -186,6 +188,7 @@ class SliceDataConverter {
                         .setScreenTitle(screenTitle)
                         .setPreferenceControllerClassName(controllerClassName)
                         .setFragmentName(fragmentName)
+                        .setSliceType(sliceType)
                         .build();
 
                 xmlSliceData.add(xmlSlice);
@@ -195,7 +198,7 @@ class SliceDataConverter {
         } catch (IOException e) {
             Log.w(TAG, "IO Error parsing PreferenceScreen: ", e);
         } catch (Resources.NotFoundException e) {
-            Log.w(TAG, "Resoucre not found error parsing PreferenceScreen: ", e);
+            Log.w(TAG, "Resource not found error parsing PreferenceScreen: ", e);
         } finally {
             if (parser != null) parser.close();
         }
