@@ -401,6 +401,10 @@
     <!-- Summary of checkbox for disabling Bluetooth inband ringing in Development Settings -->
     <string name="bluetooth_disable_inband_ringing_summary">Don’t play custom phone ringtones on Bluetooth headsets</string>
 
+    <!-- Title for Bluetooth device group with media capability group [CHAR LIMIT=none]-->
+    <string name="connected_device_available_media_title">Available media devices</string>
+    <!-- Title for Bluetooth device group with media capability group [CHAR LIMIT=none]-->
+    <string name="connected_device_available_call_title">Available call devices</string>
     <!-- Title for connected device group [CHAR LIMIT=none]-->
     <string name="connected_device_connected_title">Currently connected</string>
     <!-- Title for connected device group [CHAR LIMIT=none]-->
@@ -411,6 +415,8 @@
     <string name="connected_device_add_device_summary">Bluetooth will turn on to enable pairing</string>
     <!-- Title for other connection preferences [CHAR LIMIT=none]-->
     <string name="connected_device_connections_title">Connection preferences</string>
+    <!-- Title for Bluetooth preference to open paired but no connection list [CHAR LIMIT=none]-->
+    <string name="connected_device_previously_connected_title">Previously connected devices</string>
 
     <!-- Date & time settings screen title -->
     <string name="date_and_time">Date &amp; time</string>
@@ -805,7 +811,7 @@
     <!-- Text shown for the title of the lockdown option -->
     <string name="lockdown_settings_title">Show lockdown option</string>
     <!-- Text shown for the description of the lockdown option -->
-    <string name="lockdown_settings_summary">Display power button option that turns off extended access and fingerprint unlocking.</string>
+    <string name="lockdown_settings_summary">Display power button option that turns off Smart Lock, fingerprint unlocking, and notifications on the lock screen</string>
     <!-- Text shown for summary of owner info setting (if none set) [CHAR LIMIT=40]-->
     <string name="owner_info_settings_summary">None</string>
     <!-- Description of how many characters are used in owner info [CHAR LIMIT=40]-->
@@ -935,7 +941,7 @@
     <!-- Title shown in fingerprint enrollment dialog once enrollment is completed [CHAR LIMIT=29] -->
     <string name="security_settings_fingerprint_enroll_finish_title">Fingerprint added</string>
     <!-- Message shown in fingerprint enrollment dialog once enrollment is completed -->
-    <string name="security_settings_fingerprint_enroll_finish_message">When you see this icon, use your fingerprint for identification or to approve purchases.</string>
+    <string name="security_settings_fingerprint_enroll_finish_message">When you see this icon, use your fingerprint for identification or to approve purchases</string>
     <!-- Button text to skip enrollment of fingerprint [CHAR LIMIT=40] -->
     <string name="security_settings_fingerprint_enroll_enrolling_skip">Do it later</string>
     <!-- Title of the dialog shown when the user tries to skip fingerprint setup, asking them to confirm the action [CHAR LIMIT=40] -->
@@ -1136,25 +1142,25 @@
 
     <!-- Security Picker --><skip />
 
-    <!-- Title for suggested actions for screen lock [CHAR LIMIT=34] -->
-    <string name="suggested_lock_settings_title">Set screen lock for security</string>
+    <!-- Title for suggested actions for screen lock [CHAR LIMIT=46] -->
+    <string name="suggested_lock_settings_title">Secure your phone</string>
 
-    <!-- Summary for suggested actions for screen lock (tablet) -->
-    <string name="suggested_lock_settings_summary" product="tablet">Prevent others from using your tablet</string>
-    <!-- Summary for suggested actions for screen lock (device) -->
-    <string name="suggested_lock_settings_summary" product="device">Prevent others from using your device</string>
-    <!-- Summary for suggested actions for screen lock (phone) -->
-    <string name="suggested_lock_settings_summary" product="default">Prevent others from using your phone</string>
+    <!-- Summary for suggested actions for screen lock (tablet) [CHAR LIMIT=55] -->
+    <string name="suggested_lock_settings_summary" product="tablet">Set screen lock to protect tablet</string>
+    <!-- Summary for suggested actions for screen lock (device) [CHAR LIMIT=55] -->
+    <string name="suggested_lock_settings_summary" product="device">Set screen lock to protect device</string>
+    <!-- Summary for suggested actions for screen lock (phone) [CHAR LIMIT=55] -->
+    <string name="suggested_lock_settings_summary" product="default">Set screen lock to protect phone</string>
 
-    <!-- Title for suggested actions for settings up a fingerprint lock [CHAR LIMIT=34] -->
+    <!-- Title for suggested actions for settings up a fingerprint lock [CHAR LIMIT=46] -->
     <string name="suggested_fingerprint_lock_settings_title">Unlock with fingerprint</string>
 
-    <!-- Summary for suggested actions for settings up a fingerprint lock (tablet)  -->
-    <string name="suggested_fingerprint_lock_settings_summary" product="tablet">Unlock with your fingerprint</string>
-    <!-- Summary for suggested actions for settings up a fingerprint lock (device)  -->
-    <string name="suggested_fingerprint_lock_settings_summary" product="device">Unlock with your fingerprint</string>
-    <!-- Summary for suggested actions for settings up a fingerprint lock (phone)  -->
-    <string name="suggested_fingerprint_lock_settings_summary" product="default">Unlock with your fingerprint</string>
+    <!-- Summary for suggested actions for settings up a fingerprint lock (tablet) [CHAR LIMIT=55] -->
+    <string name="suggested_fingerprint_lock_settings_summary" product="tablet"></string>
+    <!-- Summary for suggested actions for settings up a fingerprint lock (device) [CHAR LIMIT=55] -->
+    <string name="suggested_fingerprint_lock_settings_summary" product="device"></string>
+    <!-- Summary for suggested actions for settings up a fingerprint lock (phone) [CHAR LIMIT=55] -->
+    <string name="suggested_fingerprint_lock_settings_summary" product="default"></string>
 
     <!--  Title for security picker to choose the unlock method: None/Pattern/PIN/Password [CHAR LIMIT=22] -->
     <string name="lock_settings_picker_title">Choose screen lock</string>
@@ -1676,10 +1682,10 @@
     <string name="bluetooth_max_connected_audio_devices_string">Maximum connected Bluetooth audio devices</string>
     <!-- Bluetooth developer settings: Maximum number of connected audio devices -->
     <string name="bluetooth_max_connected_audio_devices_dialog_title">Select maximum number of connected Bluetooth audio devices</string>
-    <!-- Bluetooth developer settings: Checkbox title for enabling Bluetooth receiving AVDTP delay reports -->
-    <string name="bluetooth_enable_avdtp_delay_reports">Enable Bluetooth AVDTP delay reports</string>
-    <!-- Bluetooth developer settings: Summary of checkbox for enabling Bluetooth receiving AVDTP delay reports -->
-    <string name="bluetooth_enable_avdtp_delay_reports_summary">Allow receiving Bluetooth AVDTP delay reports</string>
+    <!-- Bluetooth developer settings: Checkbox title for disabling Bluetooth receiving AVDTP delay reports -->
+    <string name="bluetooth_disable_avdtp_delay_reports">Disable Bluetooth AVDTP delay reports</string>
+    <!-- Bluetooth developer settings: Summary of checkbox for disabling Bluetooth receiving AVDTP delay reports -->
+    <string name="bluetooth_disable_avdtp_delay_reports_summary">Disallow receiving Bluetooth AVDTP delay reports</string>
 
     <!-- Wifi Display settings. The title of the screen. [CHAR LIMIT=40] -->
     <string name="wifi_display_settings_title">Cast</string>
@@ -1731,6 +1737,8 @@
     <string name="wifi_band_5ghz">5 GHz</string>
     <!-- Wifi Sign in text for button [CHAR LIMIT = 40]-->
     <string name="wifi_sign_in_button_text">Sign in</string>
+    <!-- Wifi Sign in CTA for wifi settings when captive portal auth is required [CHAR LIMIT = 50] -->
+    <string name="wifi_tap_to_sign_in">Tap here to sign in to network</string>
     <!-- Link speed on Wifi Status screen -->
     <string name="link_speed">%1$d Mbps</string>
 
@@ -1823,10 +1831,7 @@
     <!-- Message to describe "Wi-Fi scan always available feature" when Wi-Fi is off and Wi-Fi
       scanning is on. The place-holders "LINK_BEGIN" and "LINK_END" must NOT be translated. They
       mark a link to bring the user to "scanning settings" screen. -->
-    <string name="wifi_scan_notify_text">To improve location accuracy, system apps and services can
-        still scan for Wi\u2011Fi networks. You can change this in
-        <xliff:g id="link_begin">LINK_BEGIN</xliff:g>scanning
-        settings<xliff:g id="link_end">LINK_END</xliff:g>.</string>
+    <string name="wifi_scan_notify_text">To improve location accuracy, apps and services can still scan for Wi\u2011Fi networks at any time, even when Wi\u2011Fi is off. This can be used, for example, to improve location-based features and services. You can change this in <xliff:g id="link_begin">LINK_BEGIN</xliff:g>scanning settings<xliff:g id="link_end">LINK_END</xliff:g>.</string>
     <!-- Message to describe "Wi-Fi scan always available feature" when Wi-Fi is off and Wi-Fi
       scanning is also off. The place-holders "LINK_BEGIN" and "LINK_END" must NOT be translated.
       They mark a link to bring the user to "scanning settings" screen. -->
@@ -2251,10 +2256,10 @@
 
     <!-- Wireless networks, item title to go into the WFC settings [CHAR LIMIT=30] -->
     <string name="wifi_calling_settings_title">Wi-Fi calling</string>
-    <!-- Title of suggestion to turn on wifi calling [CHAR LIMIT=30] -->
-    <string name="wifi_calling_suggestion_title">Extend call coverage with Wi\u2011Fi</string>
-    <!-- Summary of suggestion to turn on wifi calling [CHAR LIMIT=60] -->
-    <string name="wifi_calling_suggestion_summary">Turn on Wi\u2011Fi calling</string>
+    <!-- Title of suggestion to turn on wifi calling [CHAR LIMIT=46] -->
+    <string name="wifi_calling_suggestion_title">Extend calls with Wi\u2011Fi</string>
+    <!-- Summary of suggestion to turn on wifi calling [CHAR LIMIT=55] -->
+    <string name="wifi_calling_suggestion_summary">Turn on Wi\u2011Fi calling to extend coverage</string>
     <!-- Title of WFC preference item [CHAR LIMIT=30] -->
     <string name="wifi_calling_mode_title">Calling preference</string>
     <!-- Title of WFC preference selection dialog [CHAR LIMIT=30] -->
@@ -2532,9 +2537,9 @@
     <string name="wallpaper_settings_summary_default">Default</string>
     <!-- Wallpaper settings summary when wallpaper has been updated [CHAR LIMIT=NONE] -->
     <string name="wallpaper_settings_summary_custom">Custom</string>
-    <!-- Wallpaper suggestion title [CHAR LIMIT=30] -->
+    <!-- Wallpaper suggestion title [CHAR LIMIT=46] -->
     <string name="wallpaper_suggestion_title">Change wallpaper</string>
-    <!-- Wallpaper suggestion title [CHAR LIMIT=60] -->
+    <!-- Wallpaper suggestion summary [CHAR LIMIT=55] -->
     <string name="wallpaper_suggestion_summary">Personalize your screen</string>
     <!-- Wallpaper settings fragment title [CHAR LIMIT=30] -->
     <string name="wallpaper_settings_fragment_title">Choose wallpaper from</string>
@@ -2755,7 +2760,9 @@
     <!-- About phone, status item title.  The ICCID of the current LTE device. [CHAR LIMIT=30] -->
     <string name="status_icc_id">ICCID</string>
     <!-- About phone, status item title for the type of data phone network we're connected to, for example 3G or Edge or GPRS -->
-    <string name="status_network_type">Mobile network type</string>
+    <string name="status_data_network_type">Mobile data network type</string>
+    <!-- About phone, status item title for the type of voice phone network we're connected to, for example 3G or Edge or GPRS -->
+    <string name="status_voice_network_type">Mobile voice network type</string>
     <!-- About phone, status item title for the latest area info cell broadcast received (Brazil only). -->
     <string name="status_latest_area_info">Operator info</string>
     <!-- About phone, status item title. The status of data access.  For example, the value may be "Connected" -->
@@ -3221,7 +3228,7 @@
     <!-- SD card & phone storage settings screen, message on screen after user selects Reset network settings [CHAR LIMIT=NONE] -->
     <string name="reset_network_desc">This will reset all network settings, including:\n\n<li>Wi\u2011Fi</li>\n<li>Mobile data</li>\n<li>Bluetooth</li>"</string>
     <!-- SD card & phone storage settings screen, title for the checkbox to let user decide whether erase eSIM data together [CHAR LIMIT=NONE] -->
-    <string name="reset_esim_title">Also reset eSIMs</string>
+    <string name="reset_esim_title">Also reset eSIM</string>
     <!-- SD card & phone storage settings screen, message for the checkbox to let user decide whether erase eSIM data together [CHAR LIMIT=NONE] -->
     <string name="reset_esim_desc">Erase all eSIMs on the phone. You\u2019ll have to contact your carrier to redownload your eSIMs. This will not cancel your mobile service plan.</string>
     <!-- SD card & phone storage settings screen, button on screen after user selects Reset network settings -->
@@ -3271,7 +3278,7 @@
     <!-- SD card & phone storage settings screen, description for check box to erase USB storage [CHAR LIMIT=NONE] -->
     <string name="erase_external_storage_description" product="default">Erase all the data on the SD card, such as music or photos</string>
     <!-- SD card & phone storage settings screen, label for check box to erase all the carriers information on the embedded SIM card [CHAR LIMIT=30] -->
-    <string name="erase_esim_storage">Erase eSIMs</string>
+    <string name="erase_esim_storage">Erase eSIM</string>
     <!-- SD card & phone storage settings screen, description for check box to erase eSIMs for default devices [CHAR LIMIT=NONE] -->
     <string name="erase_esim_storage_description" product="default">Erase all eSIMs on the phone. This will not cancel your mobile service plan.</string>
     <!-- SD card & phone storage settings screen, description for check box to erase eSIMs for tablets [CHAR LIMIT=NONE] -->
@@ -3406,14 +3413,11 @@
     <!-- [CHAR LIMIT=130] Preference title for Wi-Fi always scanning -->
     <string name="location_scanning_wifi_always_scanning_title">Wi\u2011Fi scanning</string>
     <!-- Preference description text for Wi-Fi always scanning -->
-    <string name="location_scanning_wifi_always_scanning_description">Improve location by allowing
-      system apps and services to detect Wi\u2011Fi networks at any time.</string>
+    <string name="location_scanning_wifi_always_scanning_description">Allow apps and services to scan for Wi\u2011Fi networks at any time, even when Wi\u2011Fi is off. This can be used, for example, to improve location-based features and services.</string>
     <!-- [CHAR LIMIT=130] Description text for Bluetooth always scanning -->
     <string name="location_scanning_bluetooth_always_scanning_title">Bluetooth scanning</string>
     <!-- Description text for Bluetooth always scanning -->
-    <string name="location_scanning_bluetooth_always_scanning_description">
-        Improve location by allowing system apps and services to detect Bluetooth devices at any
-        time.</string>
+    <string name="location_scanning_bluetooth_always_scanning_description">Allow apps and services to scan for nearby devices at any time, even when Bluetooth is off. This can be used, for example, to improve location-based features and services.</string>
 
     <!-- [CHAR LIMIT=30] Security & location settings screen, setting check box label for Google location service (cell ID, wifi, etc.) -->
     <string name="location_network_based">Wi\u2011Fi &amp; mobile network location</string>
@@ -4181,10 +4185,6 @@
     <string name="keyboard_shortcuts_helper">Keyboard shortcuts helper</string>
     <!-- Summary text for the 'keyboard shortcuts helper' dialog. [CHAR LIMIT=100] -->
     <string name="keyboard_shortcuts_helper_summary">Display available shortcuts</string>
-    <!--
-        Format string for a physical device in the form: InputMethodSubtype - InputMethodEditor.
-        e.g. English (US) - X Keyboard -->
-    <string name="physical_device_title" translatable="false"><xliff:g id="input_method_editor" example="X Keyboard">%1$s</xliff:g> - <xliff:g id="input_method_subtype" example="English (US)">%2$s</xliff:g></string>
 
     <!-- Summary text for keyboards when no layout has been selected. [CHAR LIMIT=35] -->
     <string name="default_keyboard_layout">Default</string>
@@ -4195,9 +4195,9 @@
     <!-- On Languages & input settings screen, heading. Inside the "Languages & input settings" screen, this is the header for settings that relate to game controller devices. [CHAR LIMIT=40] -->
     <string name="game_controller_settings_category">Game Controller</string>
     <!-- On Languages & input settings screen, setting title.  Setting to redirect vibration to input devices. [CHAR LIMIT=35] -->
-    <string name="vibrate_input_devices">Use vibrator</string>
+    <string name="vibrate_input_devices">Redirect vibrator</string>
     <!-- On Languages & input settings screen, setting summary.  Setting to redirect vibration to input devices. [CHAR LIMIT=100] -->
-    <string name="vibrate_input_devices_summary">Redirect vibrator to game controller when connected.</string>
+    <string name="vibrate_input_devices_summary">Send vibration to game controller when connected</string>
 
     <!-- Keyboard Layout Preference Dialog --> <skip />
     <!-- Title for the keyboard layout preference dialog. [CHAR LIMIT=35] -->
@@ -4416,7 +4416,9 @@
     <!-- Subtitle for the accessibility preference to configure display color inversion. [CHAR LIMIT=NONE] -->
     <string name="accessibility_display_inversion_preference_subtitle">May affect performance</string>
     <!-- Title for accessibility preference for configuring feature that performs click action soon after mouse/trackpad pointer stops moving. [CHAR LIMIT=NONE] -->
-    <string name="accessibility_autoclick_preference_title">Click after pointer stops moving</string>
+    <string name="accessibility_autoclick_preference_title">Dwell timing</string>
+    <!-- Footer text to explain what autoclick does -->
+    <string name="accessibility_autoclick_description">If you are using a mouse, you can set the cursor to take action automatically when it stops moving for a certain amount of time.</string>
     <!-- Title for accessibility preference for configuring amount of time that has to pass after pointer stops moving before click action can be performed (if automatic click after pointer stops moving feature is enabled). [CHAR LIMIT=NONE] -->
     <string name="accessibility_autoclick_delay_preference_title">Delay before click</string>
     <!-- Title for accessibility preference screen for configuring vibrations. -->
@@ -4436,6 +4438,10 @@
     <string name="accessibility_summary_state_enabled">On</string>
     <!-- Preference's state when disabled. -->
     <string name="accessibility_summary_state_disabled">Off</string>
+    <!-- Accessibility service's preference's state when enabled but not running (like maybe it crashed). -->
+    <string name="accessibility_summary_state_stopped">Not working. Tap for info.</string>
+    <!-- Accessibility service's description when enabled but not running (like maybe it crashed). -->
+    <string name="accessibility_description_state_stopped">This service is malfunctioning.</string>
 
     <!-- Title for the preference to show a tile for a particular feature in the Quick Settings pane. [CHAR LIMIT=NONE] -->
     <string name="enable_quick_setting">Show in Quick Settings</string>
@@ -4736,7 +4742,7 @@
     <string name="power_charge_remaining"><xliff:g id="until_charged">%1$s</xliff:g> to charge</string>
 
     <!-- Title for the background activity setting, which allows a user to control whether an app can run in the background [CHAR_LIMIT=40] -->
-    <string name="background_activity_title">Restricted</string>
+    <string name="background_activity_title">Battery restrictions</string>
     <!-- Summary for the background activity [CHAR_LIMIT=120] -->
     <string name="background_activity_summary">Allow the app to run in the background</string>
     <!-- Summary for the background activity when it is on [CHAR_LIMIT=120] -->
@@ -4833,37 +4839,41 @@
     <!-- Title for the battery summary tip [CHAR LIMIT=NONE] -->
     <string name="battery_tip_summary_title">Battery is in good shape</string>
     <!-- Summary for the battery summary tip [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_summary_summary">Apps are behaving normally</string>
+    <string name="battery_tip_summary_summary">Apps are running normally</string>
     <!-- Title for the low battery tip [CHAR LIMIT=NONE] -->
     <string name="battery_tip_low_battery_title">Low battery capacity</string>
     <!-- Summary for the low battery tip [CHAR LIMIT=NONE] -->
     <string name="battery_tip_low_battery_summary">Battery can\'t provide good battery life</string>
     <!-- Title for the smart battery tip [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_smart_battery_title">Turn on smart battery manager</string>
+    <string name="battery_tip_smart_battery_title" product="default">Improve your phone\'s battery life</string>
+    <!-- Title for the smart battery tip [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_smart_battery_title" product="tablet">Improve your tablet\'s battery life</string>
+    <!-- Title for the smart battery tip [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_smart_battery_title" product="device">Improve your device\'s battery life</string>
     <!-- Summary for the smart battery tip [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_smart_battery_summary">Turn on to optimize battery usage</string>
+    <string name="battery_tip_smart_battery_summary">Turn on Battery Manager</string>
     <!-- Title for the early heads up tip [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_early_heads_up_title">Turn on Low Battery Mode</string>
+    <string name="battery_tip_early_heads_up_title">Turn on Battery Saver</string>
     <!-- Summary for the early hedas up tip [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_early_heads_up_summary">Extend your battery life</string>
+    <string name="battery_tip_early_heads_up_summary">Battery may run out earlier than usual</string>
     <!-- Title when early heads up is solved [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_early_heads_up_done_title">Low Battery Mode is on</string>
+    <string name="battery_tip_early_heads_up_done_title">Battery Saver is on</string>
     <!-- Summary when early heads up is solved [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_early_heads_up_done_summary">Some features are limited</string>
+    <string name="battery_tip_early_heads_up_done_summary">Some features may be limited</string>
     <!-- Title for the battery high usage tip [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_high_usage_title" product="default">Phone used heavily</string>
+    <string name="battery_tip_high_usage_title" product="default">Phone used more than usual</string>
     <!-- Title for the battery high usage tip [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_high_usage_title" product="tablet">Tablet used heavily</string>
+    <string name="battery_tip_high_usage_title" product="tablet">Tablet used more than usual</string>
     <!-- Title for the battery high usage tip [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_high_usage_title" product="device">Device used heavily</string>
-    <!-- Summary for the battery high usage tip, which presents how many hours the device been used since last full charge [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_high_usage_summary">About <xliff:g id="hour">%1$s</xliff:g> used since last full charge</string>
+    <string name="battery_tip_high_usage_title" product="device">Device used more than usual</string>
+    <!-- Summary for the battery high usage tip, which presents battery may run out soon [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_high_usage_summary">Battery may run out soon</string>
     <!-- Message for battery tip dialog to show the status about the battery [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_dialog_message" product="default">Your phone was used heavily and this consumed a lot of battery. Your battery is behaving normally.\n\n Your phone was used for about <xliff:g id="hour">%1$s</xliff:g> since last full charge.\n\n Total usage:</string>
+    <string name="battery_tip_dialog_message" product="default">Your phone has been used more than usual. Your battery may run out sooner than expected.\n\nTop <xliff:g id="number">%1$d</xliff:g> apps since last charge:</string>
     <!-- Message for battery tip dialog to show the status about the battery [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_dialog_message" product="tablet">Your tablet was used heavily and this consumed a lot of battery. Your battery is behaving normally.\n\n Your tablet was used for about <xliff:g id="hour">%1$s</xliff:g> since last full charge.\n\n Total usage:</string>
+    <string name="battery_tip_dialog_message" product="tablet">Your tablet has been used more than usual. Your battery may run out sooner than expected.\n\nTop <xliff:g id="number">%1$d</xliff:g> apps since last charge:</string>
     <!-- Message for battery tip dialog to show the status about the battery [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_dialog_message" product="device">Your device was used heavily and this consumed a lot of battery. Your battery is behaving normally.\n\n Your device was used for about <xliff:g id="hour">%1$s</xliff:g> since last full charge.\n\n Total usage:</string>
+    <string name="battery_tip_dialog_message" product="device">Your device has been used more than usual. Your battery may run out sooner than expected.\n\nTop <xliff:g id="number">%1$d</xliff:g> apps since last charge:</string>
     <!-- Title for restricted app preference, showing how many app need to be restricted [CHAR LIMIT=NONE] -->
     <plurals name="battery_tip_restrict_title">
         <item quantity="one">Restrict %1$d app</item>
@@ -4871,41 +4881,55 @@
     </plurals>
     <!-- Title for restricted app preference, showing how many app been restricted [CHAR LIMIT=NONE] -->
     <plurals name="battery_tip_restrict_handled_title">
-        <item quantity="one">%1$d recently restricted</item>
-        <item quantity="other">%1$d apps recently restricted</item>
+        <item quantity="one">%1$s recently restricted</item>
+        <item quantity="other">%2$d apps recently restricted</item>
     </plurals>
     <!-- Summary for restricted app preference, showing the impact of the apps [CHAR LIMIT=NONE] -->
     <plurals name="battery_tip_restrict_summary">
-        <item quantity="one">%1$s has high battery usage</item>
-        <item quantity="other">%2$d apps have high battery usage</item>
+        <item quantity="one">%1$s has high background battery usage</item>
+        <item quantity="other">%2$d apps have high background battery usage</item>
     </plurals>
     <!-- Summary for restricted app preference, showing the impact of the apps [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_restrict_handled_summary">App changes are in progress</string>
+    <plurals name="battery_tip_restrict_handled_summary">
+        <item quantity="one">This app can\'t run in the background</item>
+        <item quantity="other">These apps can\'t run in the background</item>
+    </plurals>
 
     <!-- Title for dialog to restrict the app [CHAR LIMIT=NONE] -->
     <plurals name="battery_tip_restrict_app_dialog_title">
         <item quantity="one">Restrict app?</item>
         <item quantity="other">Restrict %1$d apps?</item>
     </plurals>
-    <!-- Message for battery tip dialog to show the restrict app list [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_restrict_app_dialog_message">To save battery, you can stop this app from running in the background when it’s not being used.</string>
+    <!-- Message for battery tip dialog to show the info to restrict the app [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_restrict_app_dialog_message">To save battery, stop <xliff:g id="app">%1$s</xliff:g> from using battery in the background.</string>
+    <!-- Message for battery tip dialog to show the info to restrict the app, below it app list will be shown as a view [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_restrict_apps_less_than_5_dialog_message">To save battery, stop these apps from using battery in the background.\n\nApps:\n</string>
+    <!-- Message for battery tip dialog to show the info to restrict the app, below it app list will be shown as raw string[CHAR LIMIT=NONE] -->
+    <string name="battery_tip_restrict_apps_more_than_5_dialog_message">To save battery, stop these apps from using battery in the background.\n\nApps:\n<xliff:g id="app_list">%1$s</xliff:g>.</string>
     <!-- OK button for battery tip dialog to show the restrict app list [CHAR LIMIT=NONE] -->
     <string name="battery_tip_restrict_app_dialog_ok">Restrict</string>
     <!-- Title for dialog to remove restriction for the app [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_unrestrict_app_dialog_title">Remove restriction for <xliff:g id="app">%1$s</xliff:g>?</string>
+    <string name="battery_tip_unrestrict_app_dialog_title">Remove restriction?</string>
     <!-- Message for  dialog to show the impact if remove restriction for app [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_unrestrict_app_dialog_message">This app will be able to use battery in the background. This may cause your battery to be used up faster.</string>
+    <string name="battery_tip_unrestrict_app_dialog_message">This app will be able to use battery in the background. Your battery may run out sooner than expected.</string>
     <!-- OK button for dialog to remove restriction for app [CHAR LIMIT=NONE] -->
     <string name="battery_tip_unrestrict_app_dialog_ok">Remove</string>
     <!-- CANCEL button for dialog to remove restriction for app [CHAR LIMIT=NONE] -->
-    <string name="battery_tip_unrestrict_app_dialog_cancel">Not now</string>
+    <string name="battery_tip_unrestrict_app_dialog_cancel">Cancel</string>
+
+    <!-- Message for battery tip dialog to show the battery summary -->
+    <string name="battery_tip_dialog_summary_message">Based on your usage, your battery usually lasts about <xliff:g id="time_duration">%1$s</xliff:g> when fully charged.\n\nIf you need to extend your battery life, turn on Battery Saver.</string>
+    <!-- Message for battery tip dialog to show the battery summary -->
+    <string name="battery_tip_dialog_summary_message_no_estimation">If you need to extend your battery life, turn on Battery Saver</string>
 
     <!-- Title for the smart battery manager preference [CHAR LIMIT=NONE] -->
-    <string name="smart_battery_manager_title">Smart battery manager</string>
+    <string name="smart_battery_manager_title">Battery Manager</string>
     <!-- Title for the smart battery toggle [CHAR LIMIT=NONE] -->
-    <string name="smart_battery_title">Auto-manage battery</string>
+    <string name="smart_battery_title">Manage apps automatically</string>
     <!-- Summary for the smart battery toggle [CHAR LIMIT=NONE] -->
-    <string name="smart_battery_summary">Automatically adjust power usage by apps based on usage</string>
+    <string name="smart_battery_summary">Limit battery for infrequently used apps and apps that consume battery</string>
+    <!-- Footer for the aosp smart battery page -->
+    <string name="smart_battery_footer">Battery Manager prevents apps from consuming battery when you aren\’t using them</string>
     <!-- Title for restricted app preference, clicking it will goes to restricted app list [CHAR LIMIT=NONE] -->
     <string name="restricted_app_title">Restricted apps</string>
     <!-- Summary for restricted app preference, clicking it will goes to restricted app list [CHAR LIMIT=NONE] -->
@@ -4914,10 +4938,23 @@
         <item quantity="other">%1$d apps</item>
     </plurals>
 
+    <!-- Footer message for restrict app details page -->
+    <string name="restricted_app_detail_footer">Apps shown here aren\'t behaving properly and have been using battery in the background.\n\nThese apps are now blocked from using battery in the background. As a result, some app notifications may be delayed.</string>
+
     <!-- Title for auto restriction toggle -->
     <string name="battery_auto_restriction_title">Restrict apps automatically</string>
     <!-- Summary for auto restriction toggle -->
     <string name="battery_auto_restriction_summary">Prevent apps from using extra battery in the background</string>
+
+    <!-- Summary for battery manager when it is on -->
+    <string name="battery_manager_on">On / Restricting apps automatically</string>
+    <!-- Summary for battery manager when it is off -->
+    <string name="battery_manager_off">Off</string>
+    <!-- Summary for battery manager, showing app restricted -->
+    <plurals name="battery_manager_app_restricted">
+        <item quantity="one">%1$d app restricted</item>
+        <item quantity="other">%1$d apps restricted</item>
+    </plurals>
 
     <!-- Title for force stop dialog [CHAR LIMIT=30] -->
     <string name="dialog_stop_title">Stop app?</string>
@@ -5122,6 +5159,8 @@
     <string name="battery_detail_since_full_charge">Breakdown since last full charge</string>
     <!-- Title for usage time since last full charge. [CHAR LIMIT=60] -->
     <string name="battery_last_full_charge">Last full charge</string>
+    <!-- Title for usage time that full charge lasts. [CHAR LIMIT=60] -->
+    <string name="battery_full_charge_last">Full charge lasts about</string>
     <!-- Description for text in battery footer. [CHAR LIMIT=NONE] -->
     <string name="battery_footer_summary">Battery usage data is approximate and can change based on usage</string>
     <!-- Title for text that shows the amount of time an app has been running while in the foreground. [CHAR LIMIT=80] -->
@@ -5167,16 +5206,13 @@
     <string name="process_dex2oat_label">App optimization</string>
 
     <!-- Battery saver: Label for feature, title + menu item [CHAR_LIMIT=40] -->
-    <string name="battery_saver">Reduced power mode</string>
+    <string name="battery_saver">Battery Saver</string>
 
     <!-- Battery saver: Label for preference to turn on battery saver automatically when battery is low [CHAR_LIMIT=40] -->
-    <string name="battery_saver_auto_title">Schedule</string>
-
-    <!-- Battery saver: Summary for preference to turn on battery saver automatically when battery is low [CHAR_LIMIT=40] -->
-    <string name="battery_saver_auto_summary">Turn on Reduced power mode automatically when battery is low</string>
+    <string name="battery_saver_auto_title">Turn on automatically</string>
 
     <!-- Battery saver: Label for seekbar to change battery saver threshold [CHAR_LIMIT=40] -->
-    <string name="battery_saver_seekbar_title">Turn on automatically at <xliff:g id="percent">%1$s</xliff:g></string>
+    <string name="battery_saver_seekbar_title">Turn on at <xliff:g id="percent">%1$s</xliff:g></string>
 
     <!-- Used in the Battery Saver settings screen to control turning on/off the feature entirely -->
     <string name="battery_saver_master_switch_title">Use Battery Saver</string>
@@ -6741,6 +6777,7 @@
 
     <!--Search Keywords [CHAR LIMIT=NONE]-->
     <string name="keywords_wifi">wifi, wi-fi, network connection</string>
+    <string name="keywords_change_wifi_state">wifi, wi-fi, toggle, control</string>
     <string name="keywords_more_default_sms_app">text message, texting, messages, messaging</string>
     <string name="keywords_more_mobile_networks">cellular, mobile, cell carrier, wireless, data, 4g,3g, 2g, lte</string>
     <string name="keywords_wifi_calling">wifi, wi-fi, call, calling</string>
@@ -6925,6 +6962,9 @@
     <!-- Do not disturb: Title for the page describing what can bypass DND. [CHAR LIMIT=30] -->
     <string name="zen_mode_behavior_settings_title">Exceptions</string>
 
+    <!-- Do not disturb: Title for the dnd duration setting (user can specify how long dnd will last when toggling dnd on from qs or settings) [CHAR LIMIT=30] -->
+    <string name="zen_mode_duration_settings_title">Duration</string>
+
     <!-- Do not disturb: Instructions indicating what types of sounds can bypass DND. [CHAR LIMIT=52] -->
     <string name="zen_mode_behavior_allow_title">Allow sounds and vibrations from</string>
 
@@ -6949,10 +6989,10 @@
     <!--  Do not disturb: Title for a specific zen mode automatic rule in settings. [CHAR LIMIT=30] -->
     <string name="zen_mode_automatic_rule_settings_page_title">Automatic rule</string>
 
-    <!--  Do not disturb: Title for the zen mode automation option Suggestion. [CHAR LIMIT=34] -->
+    <!--  Do not disturb: Title for the zen mode automation option Suggestion. [CHAR LIMIT=46] -->
     <string name="zen_mode_automation_suggestion_title">Silence phone at certain times</string>
 
-    <!--  Do not disturb: Summary for the zen mode automation option Suggestion. [CHAR LIMIT=NONE] -->
+    <!--  Do not disturb: Summary for the zen mode automation option Suggestion. [CHAR LIMIT=55] -->
     <string name="zen_mode_automation_suggestion_summary">Set Do Not Disturb rules</string>
 
     <!--  Do not disturb: Switch toggle to toggle whether to use an automatic dnd rule or not [CHAR LIMIT=40] -->
@@ -7004,6 +7044,11 @@
     <!-- Do not disturb: what to block summary, all effects -->
     <string name="zen_mode_block_effect_summary_all">Sound, vibration, and visual signs of notifications</string>
 
+    <!--  Do not disturb: Zen mode no sounds are exceptions to bypass do not disturb-->
+    <string name="zen_mode_no_exceptions">None</string>
+    <!--  Do not disturb: Zen mode catch all "other" sounds can bypass do not disturb -->
+    <string name="zen_mode_other_options">other options</string>
+
     <!--  Do not disturb: Button to add new automatic rule to DND. [CHAR LIMIT=30] -->
     <string name="zen_mode_add">Add</string>
 
@@ -7034,14 +7079,32 @@
     <!-- [CHAR LIMIT=20] Accessibility string for current zen mode and selected exit condition. A template that simply concatenates existing mode string and the current condition description.  -->
     <string name="zen_mode_and_condition"><xliff:g id="zen_mode" example="Priority interruptions only">%1$s</xliff:g>. <xliff:g id="exit_condition" example="For one hour">%2$s</xliff:g></string>
 
-    <!-- Sound settings screen, summary format of do not disturb when on. [CHAR LIMIT=NONE] -->
-    <string name="zen_mode_sound_summary_on">On / <xliff:g name="dnd_summary" example="No sound except alarms and media">%1$s</xliff:g></string>
+    <!-- Sound settings screen, summary format of do not disturb when on with extra info. [CHAR LIMIT=NONE] -->
+    <string name="zen_mode_sound_summary_on_with_info">On / <xliff:g name="dnd_summary" example="No sound except alarms and media">%1$s</xliff:g></string>
 
     <!-- Sound settings screen, summary format of do not disturb when off with extra information. [CHAR LIMIT=NONE] -->
     <string name="zen_mode_sound_summary_off_with_info">Off / <xliff:g name="dnd_summary" example="1 rule can turn on automatically">%1$s</xliff:g></string>
 
     <!-- Sound settings screen, summary format of do not disturb when off with no extra information. [CHAR LIMIT=NONE] -->
     <string name="zen_mode_sound_summary_off">Off</string>
+
+    <!-- Sound settings screen, summary format of do not disturb when on with no extra information. [CHAR LIMIT=NONE] -->
+    <string name="zen_mode_sound_summary_on">On</string>
+
+    <!--  Do not disturb: Summary for zen mode duration setting indicating user will be prompted to set dnd duration whenever dnd is manually toggled on [CHAR LIMIT=NONE]-->
+    <string name="zen_mode_duration_summary_always_prompt">Ask every time (unless turned on automatically)</string>
+
+    <!--  Do not disturb: Summary for zen mode duration setting indicating how long dnd will last when dnd is manually toggled on [CHAR LIMIT=NONE] -->
+    <string name="zen_mode_duration_summary_forever">Until you turn off (unless turned on automatically)</string>
+
+    <!--  Do not disturb: Summary for zen mode duration setting indicating how long dnd will last when dnd is manually toggled on [CHAR LIMIT=NONE] -->
+    <plurals name="zen_mode_duration_summary_time_hours">
+        <item quantity="one">1 hour (unless turned on automatically)</item>
+        <item quantity="other"><xliff:g id="num_hours" example="3">%d</xliff:g> hours (unless turned on automatically)</item>
+    </plurals>
+
+    <!--  Do not disturb: Summary for zen mode duration setting indicating how long dnd will last when toggled on -->
+    <string name="zen_mode_duration_summary_time_minutes"><xliff:g id="num_minutes" example="5">%d</xliff:g> minutes (unless turned on automatically)</string>
 
     <!-- Summary for the Sound Do not Disturb option when at least one automatic rules is enabled. [CHAR LIMIT=NONE]-->
     <plurals name="zen_mode_sound_summary_summary_off_info">
@@ -7115,6 +7178,9 @@
     <!-- Configure Notifications: Title for the option controlling notifications on the lockscreen. [CHAR LIMIT=30] -->
     <string name="lock_screen_notifications_title">On lock screen</string>
 
+    <!-- Configure Notifications: Title for the option controlling notifications for work profile. [CHAR LIMIT=30] -->
+    <string name="locked_work_profile_notification_title">When work profile is locked</string>
+
     <!-- Configure Notifications: Value for lockscreen notifications:  all information will be
          shown in notifications shown on a secure lock screen
          [CHAR LIMIT=50] -->
@@ -7144,10 +7210,6 @@
          hidden or redacted from work notifications shown on a secure lock screen
          [CHAR LIMIT=50] -->
     <string name="lock_screen_notifications_summary_hide_profile">Hide sensitive work content</string>
-
-    <!-- Configure Notifications: Value for lockscreen notifications: work notifications will not appear on a secure lock screen
-         [CHAR LIMIT=50] -->
-    <string name="lock_screen_notifications_summary_disable_profile">Don\u2019t show work notifications at all</string>
 
     <!-- Security > Choose PIN/PW/Pattern > Notification redaction interstitial: Message asking the user how they want their profile notifications to appear when the device is locked [CHAR LIMIT=NONE] -->
     <string name="lock_screen_notifications_interstitial_message_profile">When your device is locked, how do you want profile notifications to show?</string>
@@ -7579,8 +7641,8 @@
     <!-- [CHAR LIMIT=50] Zen mode settings: Media option -->
     <string name="zen_mode_media">Media</string>
 
-    <!-- [CHAR LIMIT=50] Zen mode settings: System option which includes sounds such as touch and charging sounds -->
-    <string name="zen_mode_system">Touch and charging sounds</string>
+    <!-- [CHAR LIMIT=50] Zen mode settings: System option which includes sounds such as touch sounds -->
+    <string name="zen_mode_system">Touch sounds</string>
 
     <!-- [CHAR LIMIT=50] Zen mode settings: Reminders option -->
     <string name="zen_mode_reminders">Reminders</string>
@@ -7732,9 +7794,9 @@
     <string name="encryption_interstitial_no">No</string>
 
     <!-- Label to say yes to the question of whether app is restricted. [CHAR LIMIT=20] -->
-    <string name="restricted_true_label">Yes</string>
+    <string name="restricted_true_label">On / Background usage restricted</string>
     <!-- Label to say no to the question of whether app is restricted. [CHAR LIMIT=20] -->
-    <string name="restricted_false_label">No</string>
+    <string name="restricted_false_label">Off / Uses battery in background</string>
 
     <!-- Title for encryption dialog that disables TalkBack. [CHAR_LIMIT=25] -->
     <string name="encrypt_talkback_dialog_require_pin">Require PIN?</string>
@@ -8103,7 +8165,7 @@
     <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for charging only. -->
-    <string name="usb_use_charging_only">Charge this device</string>
+    <string name="usb_use_charging_only">No data transfer</string>
     <!-- Decription of one of the choices in a dialog (with title defined in usb_use) that lets the
          user select what the USB connection for this device should be used for. This choice
          is for charging only. -->
@@ -8111,11 +8173,7 @@
     <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for powering the other device only. -->
-    <string name="usb_use_power_only">Charging connected device</string>
-    <!-- Decription of one of the choices in a dialog (with title defined in usb_use) that lets the
-         user select what the USB connection for this device should be used for. This choice
-         is for powering the other device. -->
-    <string name="usb_use_power_only_desc">Other settings unavailable when turned on</string>
+    <string name="usb_use_power_only">Charge connected device</string>
     <!-- Title of one of the choices in a dialog (with title defined in usb_use) that lets the user
          select what the USB connection for this device should be used for. This choice
          is for transferring files via MTP. -->
@@ -8148,17 +8206,31 @@
          for this device should be used for. These options are more commonly used.
          Choices are usb_use_file_transfer.-->
     <string name="usb_use">Use USB for</string>
-    <!-- The title used in a dialog which lets the user select what the USB connection
-         for this device should be used for. These options are less commonly used.
-         Choices are usb_use_tethering, usb_use_photo_transfers, usb_use_MIDI, and usb_use_power_only.-->
-    <string name="usb_use_also">Also use USB for</string>
     <!-- The label that leads to the Default USB configuration window. -->
-    <string name="usb_default_label">Default USB Configuration</string>
+    <string name="usb_default_label">Default USB configuration</string>
     <!-- Description at the footer of the default USB configuration window that describes how the setting works. -->
     <string name="usb_default_info">When another device is connected and your phone is unlocked, these settings will be applied. Only connect to trusted devices.</string>
 
     <!-- Settings item title for USB preference [CHAR LIMIT=35] -->
     <string name="usb_pref">USB</string>
+    <!-- Settings screen title for USB preference [CHAR LIMIT=35] -->
+    <string name="usb_preference">USB Preferences</string>
+
+    <!-- The title used in USB Preferences which lets the user select whether USB
+         should be in host or device mode. -->
+    <string name="usb_control_title">USB controlled by</string>
+    <!-- The option in USB Preferences for selecting USB to be in host mode. This allows
+         the user to connect peripherals such as a mouse or flash drive to the device. -->
+    <string name="usb_control_host">Connected device</string>
+    <!-- The option in USB Preferences for selecting USB to be in device mode. This allows
+         the device to provide services such as file transfer or tethering to another device. -->
+    <string name="usb_control_device">This device</string>
+    <!-- The summary text that appears under a USB control option while it is in the process of
+         switching control or power. -->
+    <string name="usb_switching">Switching...</string>
+    <!-- The summary text that appears under a USB control option when switching control or power has
+         failed. -->
+    <string name="usb_switching_failed">Couldn\'t switch</string>
 
     <!-- Settings item summary for USB preference when set to charging only [CHAR LIMIT=NONE] -->
     <string name="usb_summary_charging_only">Charging this device</string>
@@ -8319,8 +8391,6 @@
     <string name="system_alert_window_access_title">Display over other apps</string>
     <!-- Label for setting which controls whether app can display over other apps [CHAR LIMIT=45] -->
     <string name="permit_draw_overlay">Allow display over other apps</string>
-    <!-- Link to the apps page for SYSTEM_ALERT_WINDOW settings [CHAR LIMIT=45] -->
-    <string name="app_overlay_permission_preference">App display on top permission</string>
     <!-- Description of allowing overlay setting [CHAR LIMIT=NONE] -->
     <string name="allow_overlay_description">Allow this app to display on top of other apps you\u2019re using. It may interfere with your use of those apps or change the way they seem to appear or behave.</string>
 
@@ -8362,8 +8432,6 @@
     <string name="write_settings_title">Can modify system settings</string>
     <!-- Main settings screen item's title to go into the write system settings screen [CHAR LIMIT=30] -->
     <string name="write_system_settings">Modify system settings</string>
-    <!-- Link to the apps page for WRITE_SETTINGS settings [CHAR LIMIT=52] -->
-    <string name="write_settings_preference">App modify system settings permission</string>
     <!-- Label for setting which controls whether app can write system settings [CHAR LIMIT=45] -->
     <string name="permit_write_settings">Allow modifying system settings</string>
     <!-- Description of the write system settings [CHAR LIMIT=NONE] -->
@@ -8425,7 +8493,6 @@
 
     <!-- Wi-Fi state - Disconnected [CHAR LIMIT=NONE] -->
     <string name="disconnected">Not connected</string>
-    <string name="connected">Connected</string>
 
     <!-- Summary of data usage [CHAR LIMIT=NONE] -->
     <string name="data_usage_summary_format"><xliff:g id="amount" example="50%">%1$s</xliff:g> of data used</string>
@@ -8534,7 +8601,7 @@
     <string name="condition_airplane_title">Airplane mode is on</string>
 
     <!-- Summary of condition that airplane mode is on [CHAR LIMIT=NONE] -->
-    <string name="condition_airplane_summary">Wi-Fi, Bluetooth, and mobile network are turned off. You can\'t make phone calls or connect to the internet.</string>
+    <string name="condition_airplane_summary">When airplane mode is turned on, Wi\u2011Fi, Bluetooth, and mobile network are turned off. Wi\u2011Fi and Bluetooth can be turned back on.</string>
 
     <!-- Title of condition that do not disturb is on [CHAR LIMIT=36] -->
     <string name="condition_zen_title">Do Not Disturb is on</string>
@@ -8563,10 +8630,10 @@
     <!-- Summary of condition that work mode is off [CHAR LIMIT=NONE] -->
     <string name="condition_work_summary">Apps, background sync, and other features related to your work profile are turned off.</string>
 
-    <!--  Night display: Title for the night display option Suggestion (renamed "Night Light" with title caps). [CHAR LIMIT=30] -->
+    <!--  Night display: Title for the night display option Suggestion (renamed "Night Light" with title caps). [CHAR LIMIT=46] -->
     <string name="night_display_suggestion_title">Set Night Light schedule</string>
 
-    <!--  Night display: Summary for the night display option Suggestion (renamed "Night Light" with title caps). [CHAR LIMIT=NONE] -->
+    <!--  Night display: Summary for the night display option Suggestion (renamed "Night Light" with title caps). [CHAR LIMIT=55] -->
     <string name="night_display_suggestion_summary">Automatically tint screen every night</string>
 
     <!-- Title of condition that night display is on (renamed "Night Light" with title caps). [CHAR LIMIT=30] -->
@@ -8635,6 +8702,9 @@
     <!-- Label for cellular data usage in data usage screen [CHAR LIMIT=60] -->
     <string name="cellular_data_usage">Mobile data usage</string>
 
+    <!-- App data usage, as seen from the platform, in data usage screen [CHAR LIMIT=60] -->
+    <string name="app_cellular_data_usage">App data usage</string>
+
     <!-- Label for wifi data usage in data usage screen [CHAR LIMIT=60] -->
     <string name="wifi_data_usage">Wi-Fi data usage</string>
 
@@ -8662,11 +8732,20 @@
     <!-- Format for a summary describing the amount of data before the user is warned or limited [CHAR LIMIT=NONE] -->
     <string name="cell_warning_and_limit"><xliff:g name="amount" example="1 GB">%1$s</xliff:g> Data warning / <xliff:g name="amount" example="2 GB">%2$s</xliff:g> Data limit</string>
 
-    <!-- Title of button and screen for billing cycle preferences [CHAR LIMIT=30] -->
+    <!-- Title of button and screen for billing cycle preferences [CHAR LIMIT=40] -->
     <string name="billing_cycle">Data warning &amp; limit</string>
 
-    <!-- Title of button for application usage cycle preferences [CHAR LIMIT=30] -->
+    <!-- Title of button for application usage cycle preferences [CHAR LIMIT=40] -->
     <string name="app_usage_cycle">App data usage cycle</string>
+
+    <!-- Format for a summary describing the amount of data before the user is warned [CHAR LIMIT=NONE] -->
+    <string name="cell_data_warning"><xliff:g name="amount" example="1 GB">^1</xliff:g> data warning</string>
+
+    <!-- Format for a summary describing the amount of data the limit is set to [CHAR LIMIT=NONE] -->
+    <string name="cell_data_limit"><xliff:g name="amount" example="1 GB">^1</xliff:g> data limit</string>
+
+    <!-- Format for a summary describing the amount of data before the user is warned or limited [CHAR LIMIT=NONE] -->
+    <string name="cell_data_warning_and_limit"><xliff:g name="amount" example="1 GB">^1</xliff:g> data warning / <xliff:g name="amount" example="2 GB">^2</xliff:g> data limit</string>
 
     <!-- Summary describing when the billing cycle for their phone carrier starts [CHAR LIMIT=NONE] -->
     <string name="billing_cycle_fragment_summary">Monthly on day <xliff:g name="day_of_month" example="17">%1$s</xliff:g></string>
@@ -8691,6 +8770,9 @@
 
     <!-- Label for button to set the amount of data before user is warned about usage [CHAR LIMIT=30] -->
     <string name="data_warning">Data warning</string>
+
+    <!-- Label for footnote on Data warning and limit page to warn of device discrepancies -->
+    <string name="data_warning_footnote">Data warning and data limit are measured by your device. This may be different from carrier data.</string>
 
     <!-- Label for switch about whether to limit how much data can be used [CHAR LIMIT=30] -->
     <string name="set_data_limit">Set data limit</string>
@@ -8717,14 +8799,29 @@
     <!-- Data usage title text [CHAR LIMIT=30] -->
     <string name="data_usage_title">Primary data</string>
 
-    <!-- Data usage string [CHAR LIMIT=30] -->
+    <!-- Data usage remaining string [CHAR LIMIT=30] -->
     <string name="data_used"><xliff:g name="bytes" example="2 GB">^1</xliff:g> used</string>
 
-    <!-- Optional part of data usage showing the remaining amount [CHAR LIMIT=30] -->
-    <string name="data_remaining"><xliff:g name="bytes" example="2 GB">, ^1</xliff:g> left</string>
+    <!-- Data usage remaining string [CHAR LIMIT=30] -->
+    <string name="data_used_formatted"><xliff:g name="value" example="500">^1</xliff:g> <xliff:g name="units" example="GB">^2</xliff:g> used</string>
 
-    <!-- Informational text about time left in billing cycle [CHAR LIMIT=30] -->
-    <string name="cycle_left_time_text"><xliff:g name="time" example="2d">%1$s</xliff:g> left in this cycle</string>
+    <!-- Data usage over limit string [CHAR LIMIT=30] -->
+    <string name="data_overusage"><xliff:g name="bytes" example="2 GB">^1</xliff:g> over</string>
+
+    <!-- Optional part of data usage showing the remaining amount [CHAR LIMIT=30] -->
+    <string name="data_remaining"><xliff:g name="bytes" example="2 GB">^1</xliff:g> left</string>
+
+    <!-- Informational text about time left in billing cycle [CHAR LIMIT=60] -->
+    <plurals name="billing_cycle_days_left">
+        <item quantity="one">%d day left</item>
+        <item quantity="other">%d days left</item>
+    </plurals>
+
+    <!-- Informational text about time left in billing cycle [CHAR LIMIT=60] -->
+    <string name="billing_cycle_none_left">No time remaining</string>
+
+    <!-- Informational text about time left in billing cycle [CHAR LIMIT=60] -->
+    <string name="billing_cycle_less_than_one_day_left">Less than 1 day left</string>
 
     <!-- Informational text about carrier and update time [CHAR LIMIT=30] -->
     <string name="carrier_and_update_text">Updated by <xliff:g name="carrier" example="T-mobile">%1$s</xliff:g> <xliff:g name="time" example="3m">%2$s</xliff:g></string>
@@ -8733,7 +8830,7 @@
     <string name="no_carrier_update_text">Updated <xliff:g name="time" example="3m">%1$s</xliff:g></string>
 
     <!-- Button to launch external data plan app [CHAR LIMIT=30] -->
-    <string name="launch_mdp_app_text">VIEW PLAN</string>
+    <string name="launch_mdp_app_text">View plan</string>
 
     <!-- Name of Data Saver screens [CHAR LIMIT=30] -->
     <string name="data_saver_title">Data saver</string>
@@ -8774,10 +8871,10 @@
     <!-- Summary of the preference controlling whether the device encryption *password* must be entered before being able to start the device. [CHAR LIMIT=NONE]-->
     <string name="lockpattern_settings_require_password_before_startup_summary">Require password to start up your device. While off, this device can\'t receive calls, messages, notifications, or alarms.</string>
 
-    <!-- Title for suggestion adding more fingerprints [CHAR LIMIT=30] -->
+    <!-- Title for suggestion adding more fingerprints [CHAR LIMIT=46] -->
     <string name="suggestion_additional_fingerprints">Add another fingerprint</string>
 
-    <!-- Summary for suggestion adding more fingerprints [CHAR LIMIT=60] -->
+    <!-- Summary for suggestion adding more fingerprints [CHAR LIMIT=55] -->
     <string name="suggestion_additional_fingerprints_summary">Unlock with a different finger</string>
 
     <!-- Summary of battery saver when on [CHAR LIMIT=NONE] -->
@@ -8814,6 +8911,9 @@
 
     <!-- [CHAR LIMIT=30] Title for dialog for setting to control the default spell checker -->
     <string name="choose_spell_checker">Choose spell checker</string>
+
+    <!-- [CHAR LIMIT=45] Title for the master switch for spell checker, turning off will disable entire spell check feature. -->
+    <string name="spell_checker_master_switch_title">Use spell checker</string>
 
     <!-- [CHAR LIMIT=30] Label for the placeholder of the current spell checker name.  Used when no spell checker is currently selected. -->
     <string name="spell_checker_not_selected">Not selected</string>
@@ -9439,18 +9539,13 @@
     <!-- Title for item to go to old battery settings page when clicking [CHAR LIMIT=100] -->
     <string name="dev_android_o_battery_settings_title">See Android 8.0 battery settings</string>
     <!-- Title for Wifi Access settings [CHAR LIMIT=35] -->
-    <string name="change_wifi_state_title">Toggle wifi on and off</string>
-    <!-- Keywords for Wifi Access settings [CHAR LIMIT=35] -->
-    <string name="keywords_change_wifi_state">toggle wifi on and off</string>
-
-    <!-- Apps > App Details > Advanced section string title. [CHAR LIMIT=35] -->
-    <string name="change_wifi_state_app_detail_title">Toggle wifi on and off</string>
+    <string name="change_wifi_state_title">Wi-Fi control</string>
 
     <!-- Apps > App Details > Wifi access > Switch title. [CHAR LIMIT=NONE] -->
-    <string name="change_wifi_state_app_detail_switch">Allow toggle wifi</string>
+    <string name="change_wifi_state_app_detail_switch">Allow app to control Wi-Fi</string>
 
     <!-- Apps > App Details > Wifi access > Description. [CHAR LIMIT=NONE] -->
-    <string name="change_wifi_state_app_detail_summary">Allow this app to change wifi state including connecting to wifi and turing wifi on and off.</string>
+    <string name="change_wifi_state_app_detail_summary">Allow this app to turn Wi-Fi on or off, scan and connect to Wi-Fi networks, add or remove networks, or start a local-only hotspot</string>
 
     <!-- Title for media output settings -->
     <string name="media_output_title">Play media to</string>
@@ -9469,5 +9564,17 @@
 
     <!-- Summary for media output settings when the media stream is being captured by something else. -->
     <string name="media_output_summary_unavailable">Unavailable</string>
+
+    <!-- Title for HFP(hands free profile) output switch button in settings. -->
+    <string name="take_call_on_title">Take call on</string>
+
+    <!--  Title for battery Suggestion. (tablet) [CHAR LIMIT=46] -->
+    <string name="battery_suggestion_title" product="tablet" >Improve tablet\'s battery life</string>
+    <!--  Title for battery Suggestion. (device) [CHAR LIMIT=46] -->
+    <string name="battery_suggestion_title" product="device" >Improve device\'s battery life</string>
+    <!--  Title for battery Suggestion. (phone) [CHAR LIMIT=46] -->
+    <string name="battery_suggestion_title" product="default" >Improve phone\'s battery life</string>
+    <!--  Summary for battery Suggestion. [CHAR LIMIT=55] -->
+    <string name="battery_suggestion_summary"></string>
 
 </resources>

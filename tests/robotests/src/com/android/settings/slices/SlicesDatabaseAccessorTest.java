@@ -89,8 +89,9 @@ public class SlicesDatabaseAccessorTest {
     @Test
     public void testGetSliceFromUri_validUri_validSliceReturned() {
         String key = "key";
+        String path = "intent/" + key;
         insertSpecialCase(key);
-        Uri uri = SettingsSliceProvider.getUri(key);
+        Uri uri = SliceBuilderUtils.getUri(path, false);
 
         SliceData data = mAccessor.getSliceDataFromUri(uri);
 
@@ -106,8 +107,7 @@ public class SlicesDatabaseAccessorTest {
 
     @Test(expected = IllegalStateException.class)
     public void testGetSliceFromUri_invalidUri_errorThrown() {
-        Uri uri = SettingsSliceProvider.getUri("durr");
-
+        Uri uri = SliceBuilderUtils.getUri("intent/durr", false);
         mAccessor.getSliceDataFromUri(uri);
     }
 
