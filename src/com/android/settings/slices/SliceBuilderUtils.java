@@ -19,10 +19,14 @@ package com.android.settings.slices;
 import static com.android.settings.slices.SettingsSliceProvider.EXTRA_SLICE_KEY;
 
 import android.app.PendingIntent;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Icon;
+import android.net.Uri;
+import android.provider.SettingsSlicesContract;
 import android.text.TextUtils;
+import android.util.Pair;
 
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.settings.R;
@@ -32,10 +36,10 @@ import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.search.DatabaseIndexingUtils;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import androidx.app.slice.Slice;
-import androidx.app.slice.builders.SliceAction;
-import androidx.app.slice.builders.ListBuilder;
-import androidx.app.slice.builders.ListBuilder.RowBuilder;
+import androidx.slice.Slice;
+import androidx.slice.builders.SliceAction;
+import androidx.slice.builders.ListBuilder;
+import androidx.slice.builders.ListBuilder.RowBuilder;
 
 /**
  * Utility class to build Slices objects and Preference Controllers based on the Database managed
@@ -89,6 +93,38 @@ public class SliceBuilderUtils {
     }
 
     /**
+     * Splits the Settings Slice Uri path into its two expected components:
+     * - intent/action
+     * - key
+     * <p>
+     * Examples of valid paths are:
+     * - intent/wifi
+     * - intent/bluetooth
+     * - action/wifi
+     * - action/accessibility/servicename
+     *
+     * @param uri of the Slice. Follows pattern outlined in {@link SettingsSliceProvider}.
+     * @return Pair whose first element {@code true} if the path is prepended with "action", and
+     * second is a key.
+     */
+    public static Pair<Boolean, String> getPathData(Uri uri) {
+        final String path = uri.getPath();
+        final String[] split = path.split("/", 3);
+
+        // Split should be: [{}, SLICE_TYPE, KEY].
+        // Example: "/action/wifi" -> [{}, "action", "wifi"]
+        //          "/action/longer/path" -> [{}, "action", "longer/path"]
+        if (split.length != 3) {
+            throw new IllegalArgumentException("Uri (" + uri + ") has incomplete path: " + path);
+        }
+
+        final boolean isInline = TextUtils.equals(SettingsSlicesContract.PATH_SETTING_ACTION,
+                split[1]);
+
+        return new Pair<>(isInline, split[2]);
+    }
+
+    /**
      * Looks at the {@link SliceData#preferenceController} from {@param sliceData} and attempts to
      * build an {@link AbstractPreferenceController}.
      */
@@ -96,6 +132,17 @@ public class SliceBuilderUtils {
             SliceData sliceData) {
         return getPreferenceController(context, sliceData.getPreferenceController(),
                 sliceData.getKey());
+    }
+
+    public static Uri getUri(String path, boolean isPlatformSlice) {
+        final String authority = isPlatformSlice
+                ? SettingsSlicesContract.AUTHORITY
+                : SettingsSliceProvider.SLICE_AUTHORITY;
+        return new Uri.Builder()
+                .scheme(ContentResolver.SCHEME_CONTENT)
+                .authority(authority)
+                .appendPath(path)
+                .build();
     }
 
     private static BasePreferenceController getPreferenceController(Context context,

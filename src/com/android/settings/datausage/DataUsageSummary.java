@@ -28,6 +28,7 @@ import android.support.v7.preference.PreferenceScreen;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.SubscriptionPlan;
+import android.telephony.TelephonyManager;
 import android.text.BidiFormatter;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -126,14 +127,6 @@ public class DataUsageSummary extends DataUsageBaseFragment implements Indexable
             addEthernetSection();
         }
         setHasOptionsMenu(true);
-    }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        if (UserManager.get(getContext()).isAdminUser()) {
-            inflater.inflate(R.menu.data_usage, menu);
-        }
-        super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
@@ -243,12 +236,17 @@ public class DataUsageSummary extends DataUsageBaseFragment implements Indexable
     static CharSequence formatUsage(Context context, String template, long usageLevel) {
         final float LARGER_SIZE = 1.25f * 1.25f;  // (1/0.8)^2
         final float SMALLER_SIZE = 1.0f / LARGER_SIZE;  // 0.8^2
+        return formatUsage(context, template, usageLevel, LARGER_SIZE, SMALLER_SIZE);
+    }
+
+    static CharSequence formatUsage(Context context, String template, long usageLevel,
+                                    float larger, float smaller) {
         final int FLAGS = Spannable.SPAN_INCLUSIVE_INCLUSIVE;
 
         final Formatter.BytesResult usedResult = Formatter.formatBytes(context.getResources(),
                 usageLevel, Formatter.FLAG_CALCULATE_ROUNDED);
         final SpannableString enlargedValue = new SpannableString(usedResult.value);
-        enlargedValue.setSpan(new RelativeSizeSpan(LARGER_SIZE), 0, enlargedValue.length(), FLAGS);
+        enlargedValue.setSpan(new RelativeSizeSpan(larger), 0, enlargedValue.length(), FLAGS);
 
         final SpannableString amountTemplate = new SpannableString(
                 context.getString(com.android.internal.R.string.fileSizeSuffix)
@@ -257,7 +255,7 @@ public class DataUsageSummary extends DataUsageBaseFragment implements Indexable
                 enlargedValue, usedResult.units);
 
         final SpannableString fullTemplate = new SpannableString(template);
-        fullTemplate.setSpan(new RelativeSizeSpan(SMALLER_SIZE), 0, fullTemplate.length(), FLAGS);
+        fullTemplate.setSpan(new RelativeSizeSpan(smaller), 0, fullTemplate.length(), FLAGS);
         return TextUtils.expandTemplate(fullTemplate,
                 BidiFormatter.getInstance().unicodeWrap(formattedUsage.toString()));
     }
@@ -306,8 +304,18 @@ public class DataUsageSummary extends DataUsageBaseFragment implements Indexable
         @Override
         public void setListening(boolean listening) {
             if (listening) {
-                mSummaryLoader.setSummary(this,
-                        mActivity.getString(R.string.data_usage_summary_format, formatUsedData()));
+                TelephonyManager telephonyManager = (TelephonyManager) mActivity
+                        .getSystemService(Context.TELEPHONY_SERVICE);
+                final int simState = telephonyManager.getSimState();
+                // Note that pulling the SIM card returns UNKNOWN, not ABSENT.
+                if (simState == TelephonyManager.SIM_STATE_ABSENT
+                        || simState == TelephonyManager.SIM_STATE_UNKNOWN) {
+                    mSummaryLoader.setSummary(this, null);
+                } else {
+                    mSummaryLoader.setSummary(this,
+                            mActivity.getString(R.string.data_usage_summary_format,
+                                    formatUsedData()));
+                }
             }
         }
 

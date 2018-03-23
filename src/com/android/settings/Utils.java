@@ -49,6 +49,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.VectorDrawable;
 import android.hardware.fingerprint.FingerprintManager;
 import android.net.ConnectivityManager;
 import android.net.LinkProperties;
@@ -936,7 +937,7 @@ public final class Utils extends com.android.settingslib.Utils {
      */
     public static void setSafeIcon(Preference pref, Drawable icon) {
         Drawable safeIcon = icon;
-        if (icon != null) {
+        if ((icon != null) && !(icon instanceof VectorDrawable)) {
             safeIcon = getSafeDrawable(icon, 500, 500);
         }
         pref.setIcon(safeIcon);
@@ -982,8 +983,8 @@ public final class Utils extends com.android.settingslib.Utils {
     public static Drawable getBadgedIcon(IconDrawableFactory iconDrawableFactory,
             PackageManager packageManager, String packageName, int userId) {
         try {
-            final ApplicationInfo appInfo = packageManager.getApplicationInfo(packageName,
-                    PackageManager.GET_META_DATA);
+            final ApplicationInfo appInfo = packageManager.getApplicationInfoAsUser(
+                    packageName, PackageManager.GET_META_DATA, userId);
             return iconDrawableFactory.getBadgedIcon(appInfo, userId);
         } catch (PackageManager.NameNotFoundException e) {
             return packageManager.getDefaultActivityIcon();
