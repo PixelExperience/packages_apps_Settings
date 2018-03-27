@@ -47,6 +47,8 @@ import com.android.settingslib.bluetooth.LocalBluetoothProfileManager;
 import com.android.settingslib.bluetooth.MapProfile;
 import com.android.settingslib.bluetooth.PanProfile;
 import com.android.settingslib.bluetooth.PbapServerProfile;
+import com.android.settingslib.bluetooth.DunServerProfile;
+
 
 public final class DeviceProfilesSettings extends InstrumentedDialogFragment implements
         CachedBluetoothDevice.Callback, DialogInterface.OnClickListener, OnClickListener {
@@ -399,6 +401,9 @@ public final class DeviceProfilesSettings extends InstrumentedDialogFragment imp
             profilePref.setChecked(profile.getConnectionStatus(device) ==
                     BluetoothProfile.STATE_CONNECTED);
 
+        } else if (profile instanceof DunServerProfile) {
+            profilePref.setChecked(profile.getConnectionStatus(device) ==
+                    BluetoothProfile.STATE_CONNECTED);
         } else {
             profilePref.setChecked(profile.isPreferred(device));
         }
