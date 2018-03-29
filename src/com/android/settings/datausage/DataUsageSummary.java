@@ -20,7 +20,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.NetworkTemplate;
 import android.os.Bundle;
-import android.os.UserManager;
 import android.provider.SearchIndexableResource;
 import android.support.annotation.VisibleForTesting;
 import android.support.v7.preference.Preference;
@@ -36,21 +35,16 @@ import android.text.TextUtils;
 import android.text.format.Formatter;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
-import com.android.settings.SettingsActivity;
 import com.android.settings.Utils;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-import com.android.settings.widget.EntityHeaderController;
 import com.android.settingslib.NetworkPolicyEditor;
 import com.android.settingslib.core.AbstractPreferenceController;
-import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.net.DataUsageController;
 
 import java.util.ArrayList;
@@ -170,7 +164,7 @@ public class DataUsageSummary extends DataUsageBaseFragment implements Indexable
         final Activity activity = getActivity();
         final ArrayList<AbstractPreferenceController> controllers = new ArrayList<>();
         mSummaryController =
-                new DataUsageSummaryPreferenceController(context, this, activity);
+                new DataUsageSummaryPreferenceController(activity, getLifecycle(), this);
         controllers.add(mSummaryController);
         getLifecycle().addObserver(mSummaryController);
         return controllers;
