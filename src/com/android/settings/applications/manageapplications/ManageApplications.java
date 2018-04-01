@@ -16,6 +16,7 @@
 
 package com.android.settings.applications.manageapplications;
 
+import static android.support.v7.widget.RecyclerView.SCROLL_STATE_IDLE;
 import static com.android.settings.applications.manageapplications.AppFilterRegistry
         .FILTER_APPS_ALL;
 import static com.android.settings.applications.manageapplications.AppFilterRegistry
@@ -50,6 +51,7 @@ import android.os.Environment;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.preference.PreferenceFrameLayout;
+import android.support.annotation.NonNull;
 import android.support.annotation.VisibleForTesting;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -107,6 +109,7 @@ import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.fuelgauge.HighPowerDetail;
 import com.android.settings.notification.AppNotificationSettings;
 import com.android.settings.notification.ConfigureNotificationSettings;
+import com.android.settings.notification.NotificationBackend;
 import com.android.settings.widget.LoadingViewController;
 import com.android.settings.wifi.AppStateChangeWifiStateBridge;
 import com.android.settings.wifi.ChangeWifiStateDetails;
@@ -221,6 +224,7 @@ public class ManageApplications extends InstrumentedFragment
     private Spinner mFilterSpinner;
     private FilterSpinnerAdapter mFilterAdapter;
     private UsageStatsManager mUsageStatsManager;
+    private NotificationBackend mNotificationBackend;
     private ResetAppsHelper mResetAppsHelper;
     private String mVolumeUuid;
     private int mStorageType;
@@ -290,6 +294,7 @@ public class ManageApplications extends InstrumentedFragment
             mListType = LIST_TYPE_NOTIFICATION;
             mUsageStatsManager =
                     (UsageStatsManager) getContext().getSystemService(Context.USAGE_STATS_SERVICE);
+            mNotificationBackend = new NotificationBackend();
             mSortOrder = R.id.sort_order_recent_notification;
             screenTitle = R.string.app_notifications_title;
         } else {
@@ -844,10 +849,15 @@ public class ManageApplications extends InstrumentedFragment
         private boolean mHasReceivedBridgeCallback;
         private FileViewHolderController mExtraViewController;
 
-        // These two variables are used to remember and restore the last scroll position when this
+        // This is to remember and restore the last scroll position when this
         // fragment is paused. We need this special handling because app entries are added gradually
         // when we rebuild the list after the user made some changes, like uninstalling an app.
         private int mLastIndex = -1;
+
+        @VisibleForTesting
+        OnScrollListener mOnScrollListener;
+        private RecyclerView mRecyclerView;
+
 
         public ApplicationsAdapter(ApplicationsState state, ManageApplications manageApplications,
                 AppFilterItem appFilter, Bundle savedInstanceState) {
@@ -862,8 +872,9 @@ public class ManageApplications extends InstrumentedFragment
             mContext = manageApplications.getActivity();
             mAppFilter = appFilter;
             if (mManageApplications.mListType == LIST_TYPE_NOTIFICATION) {
-                mExtraInfoBridge = new AppStateNotificationBridge(mState, this,
-                        manageApplications.mUsageStatsManager);
+                mExtraInfoBridge = new AppStateNotificationBridge(mContext, mState, this,
+                        manageApplications.mUsageStatsManager,
+                        manageApplications.mNotificationBackend);
             } else if (mManageApplications.mListType == LIST_TYPE_USAGE_ACCESS) {
                 mExtraInfoBridge = new AppStateUsageBridge(mContext, mState, this);
             } else if (mManageApplications.mListType == LIST_TYPE_HIGH_POWER) {
@@ -884,6 +895,22 @@ public class ManageApplications extends InstrumentedFragment
             if (savedInstanceState != null) {
                 mLastIndex = savedInstanceState.getInt(STATE_LAST_SCROLL_INDEX);
             }
+        }
+
+        @Override
+        public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
+            super.onAttachedToRecyclerView(recyclerView);
+            mRecyclerView = recyclerView;
+            mOnScrollListener = new OnScrollListener(this);
+            mRecyclerView.addOnScrollListener(mOnScrollListener);
+        }
+
+        @Override
+        public void onDetachedFromRecyclerView(@NonNull RecyclerView recyclerView) {
+            super.onDetachedFromRecyclerView(recyclerView);
+            mRecyclerView.removeOnScrollListener(mOnScrollListener);
+            mOnScrollListener = null;
+            mRecyclerView = null;
         }
 
         public void setCompositeFilter(AppFilter compositeFilter) {
@@ -965,7 +992,12 @@ public class ManageApplications extends InstrumentedFragment
 
         @Override
         public ApplicationViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            final View view = ApplicationViewHolder.newView(parent);
+            View view;
+            if (mManageApplications.mListType == LIST_TYPE_NOTIFICATION) {
+                view = ApplicationViewHolder.newView(parent, true /* twoTarget */);
+            } else {
+                view = ApplicationViewHolder.newView(parent, false /* twoTarget */);
+            }
             return new ApplicationViewHolder(view,
                     shouldUseStableItemHeight(mManageApplications.mListType));
         }
@@ -1180,9 +1212,8 @@ public class ManageApplications extends InstrumentedFragment
                     rebuild();
                     return;
                 } else {
-                    notifyItemChanged(i);
+                    mOnScrollListener.postNotifyItemChange(i);
                 }
-
             }
         }
 
@@ -1254,6 +1285,7 @@ public class ManageApplications extends InstrumentedFragment
                     mState.ensureIcon(entry);
                     holder.setIcon(entry.icon);
                     updateSummary(holder, entry);
+                    updateSwitch(holder, entry);
                     holder.updateDisableView(entry.info);
                 }
                 holder.setEnabled(isEnabled(position));
@@ -1306,9 +1338,54 @@ public class ManageApplications extends InstrumentedFragment
             }
         }
 
+        private void updateSwitch(ApplicationViewHolder holder, AppEntry entry) {
+            switch (mManageApplications.mListType) {
+                case LIST_TYPE_NOTIFICATION:
+                    holder.updateSwitch(((AppStateNotificationBridge) mExtraInfoBridge)
+                                    .getSwitchOnClickListener(entry),
+                            AppStateNotificationBridge.enableSwitch(entry),
+                            AppStateNotificationBridge.checkSwitch(entry));
+                    if (entry.extraInfo != null) {
+                        holder.setSummary(AppStateNotificationBridge.getSummary(mContext,
+                                (NotificationsSentState) entry.extraInfo,
+                                (mLastSortMode == R.id.sort_order_recent_notification)));
+                    } else {
+                        holder.setSummary(null);
+                    }
+                    break;
+            }
+        }
+
         private boolean hasExtraView() {
             return mExtraViewController != null
                     && mExtraViewController.shouldShow();
+        }
+
+        public static class OnScrollListener extends RecyclerView.OnScrollListener {
+            private int mScrollState = SCROLL_STATE_IDLE;
+            private boolean mDelayNotifyDataChange;
+            private ApplicationsAdapter mAdapter;
+
+            public OnScrollListener(ApplicationsAdapter adapter) {
+                mAdapter = adapter;
+            }
+
+            @Override
+            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+                mScrollState = newState;
+                if (mScrollState == SCROLL_STATE_IDLE && mDelayNotifyDataChange) {
+                    mDelayNotifyDataChange = false;
+                    mAdapter.notifyDataSetChanged();
+                }
+            }
+
+            public void postNotifyItemChange(int index) {
+                if (mScrollState == SCROLL_STATE_IDLE) {
+                    mAdapter.notifyItemChanged(index);
+                } else {
+                    mDelayNotifyDataChange = true;
+                }
+            }
         }
     }
 
@@ -1316,7 +1393,6 @@ public class ManageApplications extends InstrumentedFragment
 
         private final Context mContext;
         private final SummaryLoader mLoader;
-        private ApplicationsState.Session mSession;
 
         private SummaryProvider(Context context, SummaryLoader loader) {
             mContext = context;

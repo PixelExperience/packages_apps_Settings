@@ -16,10 +16,14 @@
 
 package com.android.settings.applications.manageapplications;
 
+import static android.support.v7.widget.RecyclerView.SCROLL_STATE_DRAGGING;
+import static android.support.v7.widget.RecyclerView.SCROLL_STATE_IDLE;
 import static com.android.settings.applications.manageapplications.AppFilterRegistry.FILTER_APPS_ALL;
 import static com.android.settings.applications.manageapplications.ManageApplications.LIST_TYPE_MAIN;
 import static com.android.settings.applications.manageapplications.ManageApplications.LIST_TYPE_NOTIFICATION;
 import static com.google.common.truth.Truth.assertThat;
+
+import static org.mockito.ArgumentMatchers.anyBoolean;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Matchers.eq;
@@ -227,6 +231,76 @@ public class ManageApplicationsTest {
         adapter.onRebuildComplete(null);
 
         verify(loadingViewController).showContent(true /* animate */);
+    }
+
+    @Test
+    public void notifyItemChange_recyclerViewIdle_shouldNotify() {
+        final RecyclerView recyclerView = mock(RecyclerView.class);
+        final ManageApplications.ApplicationsAdapter adapter =
+                spy(new ManageApplications.ApplicationsAdapter(mState,
+                        mock(ManageApplications.class),
+                        AppFilterRegistry.getInstance().get(FILTER_APPS_ALL), new Bundle()));
+
+        adapter.onAttachedToRecyclerView(recyclerView);
+        adapter.mOnScrollListener.onScrollStateChanged(recyclerView, SCROLL_STATE_IDLE);
+        adapter.mOnScrollListener.postNotifyItemChange(0 /* index */);
+
+        verify(adapter).notifyItemChanged(0);
+    }
+
+    @Test
+    public void notifyItemChange_recyclerViewScrolling_shouldNotifyWhenIdle() {
+        final RecyclerView recyclerView = mock(RecyclerView.class);
+        final ManageApplications.ApplicationsAdapter adapter =
+                spy(new ManageApplications.ApplicationsAdapter(mState,
+                        mock(ManageApplications.class),
+                        AppFilterRegistry.getInstance().get(FILTER_APPS_ALL), new Bundle()));
+
+        adapter.onAttachedToRecyclerView(recyclerView);
+        adapter.mOnScrollListener.onScrollStateChanged(recyclerView, SCROLL_STATE_DRAGGING);
+        adapter.mOnScrollListener.postNotifyItemChange(0 /* index */);
+
+        verify(adapter, never()).notifyItemChanged(0);
+        verify(adapter, never()).notifyDataSetChanged();
+
+        adapter.mOnScrollListener.onScrollStateChanged(recyclerView, SCROLL_STATE_IDLE);
+        verify(adapter).notifyDataSetChanged();
+    }
+
+    @Test
+    public void applicationsAdapter_onBindViewHolder_updateSwitch_notifications() {
+        ManageApplications manageApplications = mock(ManageApplications.class);
+        manageApplications.mListType = LIST_TYPE_NOTIFICATION;
+        ApplicationViewHolder holder = mock(ApplicationViewHolder.class);
+        ReflectionHelpers.setField(holder, "itemView", mock(View.class));
+        ManageApplications.ApplicationsAdapter adapter =
+                new ManageApplications.ApplicationsAdapter(mState,
+                        manageApplications, mock(AppFilterItem.class),
+                        mock(Bundle.class));
+        final ArrayList<ApplicationsState.AppEntry> appList = new ArrayList<>();
+        appList.add(mock(ApplicationsState.AppEntry.class));
+        ReflectionHelpers.setField(adapter, "mEntries", appList);
+
+        adapter.onBindViewHolder(holder, 0);
+        verify(holder).updateSwitch(any(), anyBoolean(), anyBoolean());
+    }
+
+    @Test
+    public void applicationsAdapter_onBindViewHolder_updateSwitch_notNotifications() {
+        ManageApplications manageApplications = mock(ManageApplications.class);
+        manageApplications.mListType = LIST_TYPE_MAIN;
+        ApplicationViewHolder holder = mock(ApplicationViewHolder.class);
+        ReflectionHelpers.setField(holder, "itemView", mock(View.class));
+        ManageApplications.ApplicationsAdapter adapter =
+                new ManageApplications.ApplicationsAdapter(mState,
+                        manageApplications, mock(AppFilterItem.class),
+                        mock(Bundle.class));
+        final ArrayList<ApplicationsState.AppEntry> appList = new ArrayList<>();
+        appList.add(mock(ApplicationsState.AppEntry.class));
+        ReflectionHelpers.setField(adapter, "mEntries", appList);
+
+        adapter.onBindViewHolder(holder, 0);
+        verify(holder, never()).updateSwitch(any(), anyBoolean(), anyBoolean());
     }
 
     private void setUpOptionMenus() {
