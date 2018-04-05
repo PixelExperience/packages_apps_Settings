@@ -48,10 +48,9 @@
  */
 package com.android.settings.bluetooth;
 
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothProfile;
 import android.content.Context;
-import android.support.annotation.VisibleForTesting;
 
 import com.android.settings.connecteddevice.DevicePreferenceCallback;
 import com.android.settings.dashboard.DashboardFragment;
@@ -59,28 +58,26 @@ import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
 
 /**
- * Maintain and update saved bluetooth devices(bonded but not connected)
+ * Maintain and update saved TWS+ bluetooth devices(bonded but not connected)
  */
-public class SavedBluetoothDeviceUpdater extends BluetoothDeviceUpdater {
+public class SavedBluetoothTwsDeviceUpdater extends BluetoothDeviceUpdater {
 
-    public SavedBluetoothDeviceUpdater(Context context, DashboardFragment fragment,
+    public SavedBluetoothTwsDeviceUpdater(Context context, DashboardFragment fragment,
             DevicePreferenceCallback devicePreferenceCallback) {
         super(context, fragment, devicePreferenceCallback);
     }
 
-    @VisibleForTesting
-    SavedBluetoothDeviceUpdater(DashboardFragment fragment,
+    SavedBluetoothTwsDeviceUpdater(DashboardFragment fragment,
             DevicePreferenceCallback devicePreferenceCallback,
             LocalBluetoothManager localBluetoothManager) {
         super(fragment, devicePreferenceCallback, localBluetoothManager);
     }
 
     @Override
-    public void onProfileConnectionStateChanged(CachedBluetoothDevice cachedDevice, int state,
-            int bluetoothProfile) {
-        if (state == BluetoothProfile.STATE_CONNECTED) {
+    public void onConnectionStateChanged(CachedBluetoothDevice cachedDevice, int state) {
+        if (state == BluetoothAdapter.STATE_CONNECTED) {
             removePreference(cachedDevice);
-        } else if (state == BluetoothProfile.STATE_DISCONNECTED) {
+        } else if (state == BluetoothAdapter.STATE_DISCONNECTED) {
             addPreference(cachedDevice);
         }
     }
@@ -89,6 +86,6 @@ public class SavedBluetoothDeviceUpdater extends BluetoothDeviceUpdater {
     public boolean isFilterMatched(CachedBluetoothDevice cachedDevice) {
         final BluetoothDevice device = cachedDevice.getDevice();
         return device.getBondState() == BluetoothDevice.BOND_BONDED &&
-            !device.isConnected() && !device.isTwsPlusDevice();
+            !device.isConnected() && device.isTwsPlusDevice();
     }
 }
