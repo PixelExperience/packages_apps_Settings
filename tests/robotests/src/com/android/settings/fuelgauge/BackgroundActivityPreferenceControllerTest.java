@@ -38,7 +38,6 @@ import com.android.settings.R;
 import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.shadow.SettingsShadowResources;
 import com.android.settings.testutils.shadow.ShadowFragment;
-import com.android.settings.wrapper.DevicePolicyManagerWrapper;
 import com.android.settingslib.fuelgauge.PowerWhitelistBackend;
 
 import org.junit.Before;
@@ -74,7 +73,7 @@ public class BackgroundActivityPreferenceControllerTest {
     @Mock
     private DevicePolicyManager mDevicePolicyManager;
     @Mock
-    private DevicePolicyManagerWrapper mDevicePolicyManagerWrapper;
+    private DevicePolicyManager mDevicePolicyManagerWrapper;
     @Mock(answer = Answers.RETURNS_DEEP_STUBS)
     private AdvancedPowerUsageDetail mFragment;
     @Mock
@@ -174,7 +173,7 @@ public class BackgroundActivityPreferenceControllerTest {
 
         mController.updateSummary(mPreference);
 
-        assertThat(mPreference.getSummary()).isEqualTo("Off / Uses battery in background");
+        assertThat(mPreference.getSummary()).isEqualTo("App can use battery in background");
     }
 
     @Test
@@ -184,7 +183,7 @@ public class BackgroundActivityPreferenceControllerTest {
 
         mController.updateSummary(mPreference);
 
-        assertThat(mPreference.getSummary()).isEqualTo("On / Background usage restricted");
+        assertThat(mPreference.getSummary()).isEqualTo("App can\u2019t use battery in background");
     }
 
     @Test

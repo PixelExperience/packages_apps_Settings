@@ -27,6 +27,7 @@ import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.Mockito.when;
 
 import android.app.admin.DevicePolicyManager;
+import android.content.pm.IPackageManager;
 import android.content.pm.PackageManager;
 import android.content.pm.UserInfo;
 import android.os.Build;
@@ -34,8 +35,6 @@ import android.os.UserHandle;
 import android.os.UserManager;
 
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
-import com.android.settings.wrapper.DevicePolicyManagerWrapper;
-import com.android.settings.wrapper.IPackageManagerWrapper;
 import com.android.settingslib.wrapper.PackageManagerWrapper;
 
 import org.junit.Before;
@@ -79,9 +78,9 @@ public final class AppWithAdminGrantedPermissionsListerTest {
     @Mock
     private PackageManagerWrapper mPackageManager;
     @Mock
-    private IPackageManagerWrapper mPackageManagerService;
+    private IPackageManager mPackageManagerService;
     @Mock
-    private DevicePolicyManagerWrapper mDevicePolicyManager;
+    private DevicePolicyManager mDevicePolicyManager;
 
     private List<UserAppInfo> mAppList = Collections.emptyList();
 
@@ -109,14 +108,14 @@ public final class AppWithAdminGrantedPermissionsListerTest {
         // * app5 uses install-time permissions. It was installed by the admin but did not request
         //        any of the permissions. It should not be listed.
         when(mPackageManager.getInstalledApplicationsAsUser(PackageManager.GET_DISABLED_COMPONENTS
-                | PackageManager.GET_DISABLED_UNTIL_USED_COMPONENTS
-                | PackageManager.MATCH_ANY_USER,
+                        | PackageManager.GET_DISABLED_UNTIL_USED_COMPONENTS
+                        | PackageManager.MATCH_ANY_USER,
                 MAIN_USER_ID)).thenReturn(Arrays.asList(
-                        buildInfo(APP_1_UID, APP_1, 0 /* flags */, Build.VERSION_CODES.M),
-                        buildInfo(APP_2_UID, APP_2, 0 /* flags */, Build.VERSION_CODES.M),
-                        buildInfo(APP_3_UID, APP_3, 0 /* flags */, Build.VERSION_CODES.LOLLIPOP),
-                        buildInfo(APP_4_UID, APP_4, 0 /* flags */, Build.VERSION_CODES.LOLLIPOP),
-                        buildInfo(APP_5_UID, APP_5, 0 /* flags */, Build.VERSION_CODES.LOLLIPOP)));
+                buildInfo(APP_1_UID, APP_1, 0 /* flags */, Build.VERSION_CODES.M),
+                buildInfo(APP_2_UID, APP_2, 0 /* flags */, Build.VERSION_CODES.M),
+                buildInfo(APP_3_UID, APP_3, 0 /* flags */, Build.VERSION_CODES.LOLLIPOP),
+                buildInfo(APP_4_UID, APP_4, 0 /* flags */, Build.VERSION_CODES.LOLLIPOP),
+                buildInfo(APP_5_UID, APP_5, 0 /* flags */, Build.VERSION_CODES.LOLLIPOP)));
 
         // Grant run-time permissions as appropriate.
         when(mDevicePolicyManager.getPermissionGrantState(null, APP_1, PERMISSION_1))
@@ -164,9 +163,9 @@ public final class AppWithAdminGrantedPermissionsListerTest {
         // The second user has one app installed. This app uses run-time permissions. It has been
         // granted both permissions by the admin. It should be listed.
         when(mPackageManager.getInstalledApplicationsAsUser(PackageManager.GET_DISABLED_COMPONENTS
-                | PackageManager.GET_DISABLED_UNTIL_USED_COMPONENTS,
+                        | PackageManager.GET_DISABLED_UNTIL_USED_COMPONENTS,
                 MANAGED_PROFILE_ID)).thenReturn(Arrays.asList(
-                        buildInfo(APP_6_UID, APP_6, 0 /* flags */, Build.VERSION_CODES.M)));
+                buildInfo(APP_6_UID, APP_6, 0 /* flags */, Build.VERSION_CODES.M)));
 
         // Grant run-time permissions as appropriate.
         when(mDevicePolicyManager.getPermissionGrantState(eq(null), eq(APP_6), anyObject()))

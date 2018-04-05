@@ -17,8 +17,9 @@
 package com.android.settings.connecteddevice.usb;
 
 import static com.google.common.truth.Truth.assertThat;
-
 import static org.mockito.Answers.RETURNS_DEEP_STUBS;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -28,11 +29,10 @@ import android.hardware.usb.UsbManager;
 import android.hardware.usb.UsbPort;
 import android.hardware.usb.UsbPortStatus;
 import android.net.ConnectivityManager;
+import android.os.UserHandle;
+import android.os.UserManager;
 
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
-import com.android.settings.testutils.SettingsRobolectricTestRunner;
-import com.android.settings.wrapper.UsbManagerWrapper;
-import com.android.settings.wrapper.UserManagerWrapper;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -48,9 +48,7 @@ public class UsbBackendTest {
     @Mock
     private UsbManager mUsbManager;
     @Mock
-    private UserManagerWrapper mUserManagerWrapper;
-    @Mock
-    private UsbManagerWrapper mUsbManagerWrapper;
+    private UserManager mUserManager;
     @Mock
     private ConnectivityManager mConnectivityManager;
     @Mock
@@ -62,26 +60,18 @@ public class UsbBackendTest {
     public void setUp() {
         MockitoAnnotations.initMocks(this);
         when(mContext.getPackageManager().hasSystemFeature(PackageManager.FEATURE_MIDI))
-            .thenReturn(true);
-        when((Object)mContext.getSystemService(UsbManager.class)).thenReturn(mUsbManager);
+                .thenReturn(true);
+        when((Object) mContext.getSystemService(UsbManager.class)).thenReturn(mUsbManager);
         when(mContext.getSystemService(Context.CONNECTIVITY_SERVICE))
                 .thenReturn(mConnectivityManager);
-        when(mUsbManager.getPorts()).thenReturn(new UsbPort[]{ mUsbPort });
+        when(mUsbManager.getPorts()).thenReturn(new UsbPort[] {mUsbPort});
         when(mUsbPortStatus.isConnected()).thenReturn(true);
         when(mUsbManager.getPortStatus(mUsbPort)).thenReturn(mUsbPortStatus);
     }
 
     @Test
-    public void constructor_noUsbPort_shouldNotCrash() {
-        final UsbBackend usbBackend =
-                new UsbBackend(mContext, mUserManagerWrapper, mUsbManagerWrapper);
-        // Should not crash
-    }
-
-    @Test
     public void setDataRole_allRolesSupported_shouldSetDataRole() {
-        final UsbBackend usbBackend =
-                new UsbBackend(mContext, mUserManagerWrapper, mUsbManagerWrapper);
+        final UsbBackend usbBackend = new UsbBackend(mContext, mUserManager);
 
         when(mUsbPortStatus
                 .isRoleCombinationSupported(UsbPort.POWER_ROLE_SINK, UsbPort.DATA_ROLE_DEVICE))
@@ -104,8 +94,7 @@ public class UsbBackendTest {
 
     @Test
     public void setDataRole_notAllRolesSupported_shouldSetDataAndPowerRole() {
-        final UsbBackend usbBackend =
-                new UsbBackend(mContext, mUserManagerWrapper, mUsbManagerWrapper);
+        final UsbBackend usbBackend = new UsbBackend(mContext, mUserManager);
 
         when(mUsbPortStatus
                 .isRoleCombinationSupported(UsbPort.POWER_ROLE_SINK, UsbPort.DATA_ROLE_DEVICE))
@@ -123,8 +112,7 @@ public class UsbBackendTest {
 
     @Test
     public void setPowerRole_allRolesSupported_shouldSetPowerRole() {
-        final UsbBackend usbBackend =
-                new UsbBackend(mContext, mUserManagerWrapper, mUsbManagerWrapper);
+        final UsbBackend usbBackend = new UsbBackend(mContext, mUserManager);
 
         when(mUsbPortStatus
                 .isRoleCombinationSupported(UsbPort.POWER_ROLE_SINK, UsbPort.DATA_ROLE_DEVICE))
@@ -148,8 +136,7 @@ public class UsbBackendTest {
 
     @Test
     public void setPowerRole_notAllRolesSupported_shouldSetDataAndPowerRole() {
-        final UsbBackend usbBackend =
-                new UsbBackend(mContext, mUserManagerWrapper, mUsbManagerWrapper);
+        final UsbBackend usbBackend = new UsbBackend(mContext, mUserManager);
 
         when(mUsbPortStatus
                 .isRoleCombinationSupported(UsbPort.POWER_ROLE_SINK, UsbPort.DATA_ROLE_DEVICE))
@@ -167,22 +154,26 @@ public class UsbBackendTest {
 
     @Test
     public void areFunctionsSupported_fileTransferDisallowed_shouldReturnFalse() {
-        when(mUserManagerWrapper.isUsbFileTransferRestricted()).thenReturn(true);
-        when(mUserManagerWrapper.isUsbFileTransferRestrictedBySystem()).thenReturn(true);
+        when(mUserManager.hasUserRestriction(UserManager.DISALLOW_USB_FILE_TRANSFER))
+                .thenReturn(true);
+        when(mUserManager.hasBaseUserRestriction(
+                eq(UserManager.DISALLOW_USB_FILE_TRANSFER), any(UserHandle.class)))
+                .thenReturn(true);
 
-        final UsbBackend usbBackend =
-                new UsbBackend(mContext, mUserManagerWrapper, mUsbManagerWrapper);
+        final UsbBackend usbBackend = new UsbBackend(mContext, mUserManager);
 
         assertThat(usbBackend.areFunctionsSupported(UsbManager.FUNCTION_MTP)).isFalse();
     }
 
     @Test
     public void areFunctionsSupported_fileTransferAllowed_shouldReturnTrue() {
-        when(mUserManagerWrapper.isUsbFileTransferRestricted()).thenReturn(false);
-        when(mUserManagerWrapper.isUsbFileTransferRestrictedBySystem()).thenReturn(false);
+        when(mUserManager.hasUserRestriction(UserManager.DISALLOW_USB_FILE_TRANSFER))
+                .thenReturn(false);
+        when(mUserManager.hasBaseUserRestriction(
+                eq(UserManager.DISALLOW_USB_FILE_TRANSFER), any(UserHandle.class)))
+                .thenReturn(false);
 
-        final UsbBackend usbBackend =
-                new UsbBackend(mContext, mUserManagerWrapper, mUsbManagerWrapper);
+        final UsbBackend usbBackend = new UsbBackend(mContext, mUserManager);
 
         assertThat(usbBackend.areFunctionsSupported(UsbManager.FUNCTION_MTP)).isTrue();
     }

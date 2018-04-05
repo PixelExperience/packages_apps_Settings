@@ -64,8 +64,6 @@ import com.android.settings.search.SearchIndexableRaw;
 import com.android.settings.widget.SummaryUpdater.OnSummaryChangeListener;
 import com.android.settings.widget.SwitchBarController;
 import com.android.settings.wifi.details.WifiNetworkDetailsFragment;
-import com.android.settings.wrapper.ConnectivityManagerWrapper;
-import com.android.settings.wrapper.WifiManagerWrapper;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.wifi.AccessPoint;
 import com.android.settingslib.wifi.AccessPoint.AccessPointListener;
@@ -136,7 +134,7 @@ public class WifiSettings extends RestrictedSettingsFragment
     private boolean mIsRestricted;
 
     private WifiEnabler mWifiEnabler;
-    // An access point being editted is stored here.
+    // An access point being edited is stored here.
     private AccessPoint mSelectedAccessPoint;
 
     private WifiDialog mDialog;
@@ -608,11 +606,10 @@ public class WifiSettings extends RestrictedSettingsFragment
                 if (mSelectedAccessPoint != null) {
                     mWifiToNfcDialog = new WriteWifiConfigToNfcDialog(
                             getActivity(),
-                            mSelectedAccessPoint.getSecurity(),
-                            new WifiManagerWrapper(mWifiManager));
+                            mSelectedAccessPoint.getSecurity());
                 } else if (mWifiNfcDialogSavedState != null) {
                     mWifiToNfcDialog = new WriteWifiConfigToNfcDialog(getActivity(),
-                            mWifiNfcDialogSavedState, new WifiManagerWrapper(mWifiManager));
+                            mWifiNfcDialogSavedState);
                 }
 
                 return mWifiToNfcDialog;
@@ -854,9 +851,7 @@ public class WifiSettings extends RestrictedSettingsFragment
                     pref.getAccessPoint().saveWifiState(pref.getExtras());
                     if (mCaptivePortalNetworkCallback != null
                             && mCaptivePortalNetworkCallback.isCaptivePortal()) {
-                        ConnectivityManagerWrapper connectivityManagerWrapper =
-                                new ConnectivityManagerWrapper(mConnectivityManager);
-                        connectivityManagerWrapper.startCaptivePortalApp(
+                        mConnectivityManager.startCaptivePortalApp(
                                 mCaptivePortalNetworkCallback.getNetwork());
                     } else {
                         launchNetworkDetailsFragment(pref);

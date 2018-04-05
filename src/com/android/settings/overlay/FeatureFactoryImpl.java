@@ -51,9 +51,6 @@ import com.android.settings.slices.SlicesFeatureProvider;
 import com.android.settings.slices.SlicesFeatureProviderImpl;
 import com.android.settings.users.UserFeatureProvider;
 import com.android.settings.users.UserFeatureProviderImpl;
-import com.android.settings.wrapper.ConnectivityManagerWrapper;
-import com.android.settings.wrapper.DevicePolicyManagerWrapper;
-import com.android.settings.wrapper.IPackageManagerWrapper;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.wrapper.PackageManagerWrapper;
 
@@ -113,9 +110,9 @@ public class FeatureFactoryImpl extends FeatureFactory {
         if (mApplicationFeatureProvider == null) {
             mApplicationFeatureProvider = new ApplicationFeatureProviderImpl(context,
                     new PackageManagerWrapper(context.getPackageManager()),
-                    new IPackageManagerWrapper(AppGlobals.getPackageManager()),
-                    new DevicePolicyManagerWrapper((DevicePolicyManager) context
-                            .getSystemService(Context.DEVICE_POLICY_SERVICE)));
+                    AppGlobals.getPackageManager(),
+                    (DevicePolicyManager) context
+                            .getSystemService(Context.DEVICE_POLICY_SERVICE));
         }
         return mApplicationFeatureProvider;
     }
@@ -132,12 +129,10 @@ public class FeatureFactoryImpl extends FeatureFactory {
     public EnterprisePrivacyFeatureProvider getEnterprisePrivacyFeatureProvider(Context context) {
         if (mEnterprisePrivacyFeatureProvider == null) {
             mEnterprisePrivacyFeatureProvider = new EnterprisePrivacyFeatureProviderImpl(context,
-                    new DevicePolicyManagerWrapper((DevicePolicyManager) context
-                            .getSystemService(Context.DEVICE_POLICY_SERVICE)),
+                    (DevicePolicyManager) context.getSystemService(Context.DEVICE_POLICY_SERVICE),
                     new PackageManagerWrapper(context.getPackageManager()),
                     UserManager.get(context),
-                    new ConnectivityManagerWrapper((ConnectivityManager) context
-                            .getSystemService(Context.CONNECTIVITY_SERVICE)),
+                    (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE),
                     context.getResources());
         }
         return mEnterprisePrivacyFeatureProvider;
