@@ -974,12 +974,11 @@ public final class Utils extends com.android.settingslib.Utils {
         }
     }
 
-    public static String getLocalizedName(Context context, Cursor cursor, int index) {
-        if(context == null || cursor == null || index < 0){
+    public static String getLocalizedName(Context context, String resName) {
+        if(context == null){
            return null;
         }
         // If can find a localized name, replace the APN name with it
-        String resName = cursor.getString(index);
         String localizedName = null;
         if (resName != null && !resName.isEmpty()) {
             int resId = context.getResources().getIdentifier(resName, "string",

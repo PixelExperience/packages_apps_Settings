@@ -55,6 +55,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
 import com.android.settingslib.utils.ThreadUtils;
+import com.android.settings.Utils;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -322,7 +323,7 @@ public class ApnEditor extends SettingsPreferenceFragment
         // if it's not a USER_EDITED apn, check if it's read-only
         if (!isUserEdited && (mApnData.getInteger(USER_EDITABLE_INDEX, 1) == 0
                 || apnTypesMatch(mReadOnlyApnTypes, mApnData.getString(TYPE_INDEX))
-                || mCursor.getInt(READONLY_INDEX) == 1)) {
+                || mApnData.getInteger(READONLY_INDEX) == 1)) {
             Log.d(TAG, "onCreate: apnTypesMatch; read-only APN");
             mReadOnlyApn = true;
             disableAllFields();
@@ -330,7 +331,7 @@ public class ApnEditor extends SettingsPreferenceFragment
             disableFields(mReadOnlyApnFields);
         }
 
-        mDeletableApn = mCursor.getInt(PERSISTENT_INDEX) != 1;
+        mDeletableApn = mApnData.getInteger(PERSISTENT_INDEX) != 1;
 
         for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
             getPreferenceScreen().getPreference(i).setOnPreferenceChangeListener(this);
@@ -565,7 +566,7 @@ public class ApnEditor extends SettingsPreferenceFragment
                 mMvnoType.setValue(mMvnoTypeStr);
                 mMvnoMatchData.setText(mMvnoMatchDataStr);
             }
-            String localizedName = Utils.getLocalizedName(getActivity(), mCursor,NAME_INDEX);
+            String localizedName = Utils.getLocalizedName(getActivity(), mApnData.getString(NAME_INDEX));
             if (!TextUtils.isEmpty(localizedName)) {
                 mName.setText(localizedName);
             }

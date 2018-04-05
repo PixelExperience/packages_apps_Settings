@@ -62,6 +62,7 @@ import com.android.internal.telephony.uicc.UiccController;
 import com.android.settings.R;
 import com.android.settings.RestrictedSettingsFragment;
 import com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
+import com.android.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -315,7 +316,7 @@ public class ApnSettings extends RestrictedSettingsFragment implements
                 String mvnoMatchData = cursor.getString(MVNO_MATCH_DATA_INDEX);
 
                 //Special requirement of some operators, need change APN name follow language.
-                String localizedName = Utils.getLocalizedName(getActivity(), cursor, NAME_INDEX);
+                String localizedName = Utils.getLocalizedName(getActivity(), cursor.getString(NAME_INDEX));
 
                 if (!TextUtils.isEmpty(localizedName)) {
                     name = localizedName;
