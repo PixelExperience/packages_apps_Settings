@@ -59,7 +59,6 @@ import android.os.BatteryManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.INetworkManagementService;
-import android.os.Looper;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.UserHandle;
@@ -78,8 +77,6 @@ import android.service.persistentdata.PersistentDataBlockManager;
 import android.support.annotation.StringRes;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
-import android.support.v7.preference.PreferenceManager;
-import android.support.v7.preference.PreferenceScreen;
 import android.telephony.TelephonyManager;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -89,7 +86,6 @@ import android.text.style.TtsSpan;
 import android.util.ArraySet;
 import android.util.IconDrawableFactory;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -101,12 +97,8 @@ import com.android.internal.app.UnlaunchableAppActivity;
 import com.android.internal.util.ArrayUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.password.ChooseLockSettingsHelper;
-import com.android.settings.wrapper.DevicePolicyManagerWrapper;
-import com.android.settings.wrapper.FingerprintManagerWrapper;
-import com.android.settingslib.core.instrumentation.VisibilityLoggerMixin;
 
 import java.net.InetAddress;
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
@@ -822,15 +814,6 @@ public final class Utils extends com.android.settingslib.Utils {
         }
     }
 
-    public static FingerprintManagerWrapper getFingerprintManagerWrapperOrNull(Context context) {
-        FingerprintManager fingerprintManager = getFingerprintManagerOrNull(context);
-        if (fingerprintManager != null) {
-            return new FingerprintManagerWrapper(fingerprintManager);
-        } else {
-            return null;
-        }
-    }
-
     public static boolean hasFingerprintHardware(Context context) {
         FingerprintManager fingerprintManager = getFingerprintManagerOrNull(context);
         return fingerprintManager != null && fingerprintManager.isHardwareDetected();
@@ -897,7 +880,7 @@ public final class Utils extends com.android.settingslib.Utils {
      * @param packageName package to check about
      */
     public static boolean isProfileOrDeviceOwner(UserManager userManager,
-            DevicePolicyManagerWrapper devicePolicyManager, String packageName) {
+            DevicePolicyManager devicePolicyManager, String packageName) {
         List<UserInfo> userInfos = userManager.getUsers();
         if (devicePolicyManager.isDeviceOwnerAppOnAnyUser(packageName)) {
             return true;
@@ -991,12 +974,11 @@ public final class Utils extends com.android.settingslib.Utils {
         }
     }
 
-    public static String getLocalizedName(Context context, Cursor cursor, int index) {
-        if(context == null || cursor == null || index < 0){
+    public static String getLocalizedName(Context context, String resName) {
+        if(context == null){
            return null;
         }
         // If can find a localized name, replace the APN name with it
-        String resName = cursor.getString(index);
         String localizedName = null;
         if (resName != null && !resName.isEmpty()) {
             int resId = context.getResources().getIdentifier(resName, "string",

@@ -16,12 +16,14 @@
 
 package com.android.settings.enterprise;
 
+import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.UserInfo;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
@@ -31,8 +33,6 @@ import android.view.View;
 
 import com.android.settings.R;
 import com.android.settings.vpn2.VpnUtils;
-import com.android.settings.wrapper.ConnectivityManagerWrapper;
-import com.android.settings.wrapper.DevicePolicyManagerWrapper;
 import com.android.settingslib.wrapper.PackageManagerWrapper;
 
 import java.util.Date;
@@ -41,16 +41,16 @@ import java.util.List;
 public class EnterprisePrivacyFeatureProviderImpl implements EnterprisePrivacyFeatureProvider {
 
     private final Context mContext;
-    private final DevicePolicyManagerWrapper mDpm;
+    private final DevicePolicyManager mDpm;
     private final PackageManagerWrapper mPm;
     private final UserManager mUm;
-    private final ConnectivityManagerWrapper mCm;
+    private final ConnectivityManager mCm;
     private final Resources mResources;
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
-    public EnterprisePrivacyFeatureProviderImpl(Context context, DevicePolicyManagerWrapper dpm,
-            PackageManagerWrapper pm, UserManager um, ConnectivityManagerWrapper cm,
+    public EnterprisePrivacyFeatureProviderImpl(Context context, DevicePolicyManager dpm,
+            PackageManagerWrapper pm, UserManager um, ConnectivityManager cm,
             Resources resources) {
         mContext = context.getApplicationContext();
         mDpm = dpm;
@@ -233,6 +233,11 @@ public class EnterprisePrivacyFeatureProviderImpl implements EnterprisePrivacyFe
             }
         }
         return activeAdmins;
+    }
+
+    @Override
+    public boolean areBackupsMandatory() {
+        return null != mDpm.getMandatoryBackupTransport();
     }
 
     protected static class EnterprisePrivacySpan extends ClickableSpan {
