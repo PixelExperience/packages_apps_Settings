@@ -171,9 +171,9 @@
     <string name="bluetooth_device_name_summary" msgid="522235742194965734">"Viditeľné pre ostatné zariadenia ako <xliff:g id="DEVICE_NAME">^1</xliff:g>"</string>
     <string name="bluetooth_paired_device_title" msgid="8638994696317952019">"Vaše zariadenia"</string>
     <string name="bluetooth_pairing_page_title" msgid="7712127387361962608">"Párovanie nového zariadenia"</string>
-    <string name="bluetooth_pref_summary" product="tablet" msgid="3520035819421024105">"Povolte tabletu komunikovať so zariadeniami Bluetooth nablízku"</string>
-    <string name="bluetooth_pref_summary" product="device" msgid="2205100629387332862">"Povolte zariadeniu komunikovať so zariadeniami Bluetooth nablízku"</string>
-    <string name="bluetooth_pref_summary" product="default" msgid="782032074675157079">"Povolte telefónu komunikovať so zariadeniami Bluetooth nablízku"</string>
+    <string name="bluetooth_pref_summary" product="tablet" msgid="3520035819421024105">"Povoľte tabletu komunikovať so zariadeniami Bluetooth nablízku"</string>
+    <string name="bluetooth_pref_summary" product="device" msgid="2205100629387332862">"Povoľte zariadeniu komunikovať so zariadeniami Bluetooth nablízku"</string>
+    <string name="bluetooth_pref_summary" product="default" msgid="782032074675157079">"Povoľte telefónu komunikovať so zariadeniami Bluetooth nablízku"</string>
     <string name="bluetooth_disable_inband_ringing" msgid="8919353393497325693">"Zakázať zvonenie v hovorovom pásme"</string>
     <string name="bluetooth_disable_inband_ringing_summary" msgid="7898974890913984364">"Neprehrávať vlastné tóny zvonenia telefónu v náhlavných súpravách Bluetooth"</string>
     <string name="connected_device_available_media_title" msgid="2560067541413280645">"Dostupné mediálne zariadenia"</string>
@@ -840,8 +840,11 @@
     <string name="wifi_setup_wps" msgid="8128702488486283957">"Automatické nastavenie (WPS)"</string>
     <string name="wifi_settings_scanning_required_title" msgid="3815269816331500375">"Zapnúť vyhľadávanie Wi‑Fi?"</string>
     <string name="wifi_settings_scanning_required_summary" msgid="6352918945128328916">"Ak chcete automaticky zapínať Wi-Fi, najskôr musíte zapnúť vyhľadávanie sietí Wi-Fi."</string>
-    <string name="wifi_settings_scanning_required_info" msgid="1720819171594759585">"Vyhľadávanie sietí Wi-Fi umožňuje aplikáciám a službám kedykoľvek vyhľadávať siete Wi‑Fi, a to aj vtedy, keď je sieť Wi-Fi vypnutá. Môžete to využiť napríklad na zlepšenie funkcií a služieb podmienených polohou."</string>
+    <!-- no translation found for wifi_settings_scanning_required_info (3155631874578023647) -->
+    <skip />
     <string name="wifi_settings_scanning_required_turn_on" msgid="1364287182804820646">"Zapnúť"</string>
+    <!-- no translation found for wifi_settings_scanning_required_enabled (5527653791584018157) -->
+    <skip />
     <string name="wifi_show_advanced" msgid="3409422789616520979">"Rozšírené možnosti"</string>
     <string name="wifi_advanced_toggle_description_expanded" msgid="2380600578544493084">"Rozbaľovací zoznam Rozšírené možnosti. Zbalíte ho dvojitým klepnutím."</string>
     <string name="wifi_advanced_toggle_description_collapsed" msgid="1463812308429197263">"Rozbaľovací zoznam Rozšírené možnosti. Rozbalíte ho dvojitým klepnutím."</string>
@@ -849,7 +852,8 @@
     <string name="wifi_ssid_hint" msgid="897593601067321355">"Zadajte SSID"</string>
     <string name="wifi_security" msgid="6603611185592956936">"Zabezpečenie"</string>
     <string name="wifi_hidden_network" msgid="973162091800925000">"Skrytá sieť"</string>
-    <string name="wifi_hidden_network_warning" msgid="747945140951420201">"Skrytá sieť môže predstavovať riziko ochrany súkromia, pretože pripojenie k nej vyžaduje, aby zariadenie vysielalo SSID."</string>
+    <!-- no translation found for wifi_hidden_network_warning (6674068093531603452) -->
+    <skip />
     <string name="wifi_signal" msgid="5514120261628065287">"Sila signálu"</string>
     <string name="wifi_status" msgid="4824568012414605414">"Stav"</string>
     <string name="wifi_speed" msgid="3526198708812322037">"Rýchlosť pripojenia"</string>
@@ -2231,7 +2235,7 @@
     </plurals>
     <!-- no translation found for battery_tip_restrict_app_dialog_message (7271391929137806299) -->
     <skip />
-    <!-- no translation found for battery_tip_restrict_apps_less_than_5_dialog_message (3076716192672316037) -->
+    <!-- no translation found for battery_tip_restrict_apps_less_than_5_dialog_message (3175700359860699627) -->
     <skip />
     <!-- no translation found for battery_tip_restrict_apps_more_than_5_dialog_message (582641081128076191) -->
     <skip />
@@ -2523,7 +2527,6 @@
     <string name="adding_profile_owner_warning" msgid="1354474524852805802">"Ak budete pokračovať, vášho používateľa bude spravovať správca, ktorý bude môcť okrem vašich osobných údajov ukladať tiež združené údaje.\n\nSprávca môže sledovať a spravovať nastavenia, prístup, aplikácie a údaje priradené k tomuto používateľovi (vrátane aktivity siete a informácií o polohe vášho zariadenia)."</string>
     <string name="admin_disabled_other_options" msgid="7712694507069054530">"Ďalšie možnosti zakázal váš správca."</string>
     <string name="admin_more_details" msgid="7901420667346456102">"Ďalšie podrobnosti"</string>
-    <string name="untitled_apn" msgid="1230060359198685513">"Bez názvu"</string>
     <string name="sound_category_sound_title" msgid="1488759370067953996">"Všeobecné"</string>
     <string name="notification_log_title" msgid="3766148588239398464">"Denník upozornení"</string>
     <string name="sound_category_call_ringtone_vibrate_title" msgid="1543777228646645163">"Tón zvonenia a vibrovanie"</string>
@@ -3427,7 +3430,8 @@
     <string name="switch_on_text" msgid="1124106706920572386">"Zapnuté"</string>
     <string name="switch_off_text" msgid="1139356348100829659">"Vypnuté"</string>
     <string name="screen_pinning_title" msgid="2292573232264116542">"Pripnutie obrazovky"</string>
-    <string name="screen_pinning_description" msgid="3360904523688769289">"Keď je toto nastavenie zapnuté, môžete pripnúť aktuálnu obrazovku a nechať ju zobrazenú, dokým ju neodopnete.\n\nPostup pripnutia obrazovky:\n\n1. Skontrolujte, či je pripnutie obrazovky zapnuté.\n\n2. Otvorte obrazovku, ktorú chcete pripnúť.\n\n3. Klepnite na ikonu Prehľad.\n\n4. Prejdite prstom nahor a potom klepnite na ikonu špendlíka."</string>
+    <!-- no translation found for screen_pinning_description (1110847562111827766) -->
+    <skip />
     <string name="screen_pinning_unlock_pattern" msgid="8282268570060313339">"Pred uvoľnením žiadať bezpečnostný vzor"</string>
     <string name="screen_pinning_unlock_pin" msgid="8757588350454795286">"Pred uvoľnením požiadať o PIN"</string>
     <string name="screen_pinning_unlock_password" msgid="2514079566873826434">"Pred uvoľnením požiadať o heslo"</string>
@@ -3737,6 +3741,8 @@
     <string name="screen_zoom_conversation_timestamp_4" msgid="2511469395448561259">"Ut 18:03"</string>
     <string name="disconnected" msgid="4836600637485526329">"Nepripojené"</string>
     <string name="data_usage_summary_format" msgid="7507047900192160585">"<xliff:g id="AMOUNT">%1$s</xliff:g> využitých dát"</string>
+    <!-- no translation found for data_usage_wifi_format (5417296451392612860) -->
+    <skip />
     <plurals name="notification_summary" formatted="false" msgid="3941492005316143599">
       <item quantity="few">Vypnuté pre <xliff:g id="COUNT">%d</xliff:g> aplikácie</item>
       <item quantity="many">Vypnuté pre <xliff:g id="COUNT">%d</xliff:g> aplikácie</item>
@@ -3766,6 +3772,8 @@
     <string name="disabled_by_policy_title_camera" msgid="6225008536855644874">"Použitie fotoaparátu je zakázané"</string>
     <string name="disabled_by_policy_title_screen_capture" msgid="4066913623298047094">"Snímky obrazovky sú zakázané"</string>
     <string name="disabled_by_policy_title_turn_off_backups" msgid="6346948990624612516">"Zálohy sa nedajú vypnúť"</string>
+    <!-- no translation found for disabled_by_policy_title_suspend_packages (7423998445638650115) -->
+    <skip />
     <string name="default_admin_support_msg" msgid="4489678214035485367">"V prípade otázok kontaktujte správcu IT."</string>
     <string name="admin_support_more_info" msgid="8901377038510512654">"Ďalšie podrobnosti"</string>
     <string name="admin_profile_owner_message" msgid="5860816886981109626">"Správca môže sledovať a spravovať aplikácie a údaje priradené k vášmu pracovnému profilu vrátane nastavení, povolení, firemného prístupu, aktivity siete a informácií o polohe zariadenia."</string>
@@ -3829,7 +3837,8 @@
     <string name="usage" msgid="2977875522080448986">"Spotreba"</string>
     <string name="cellular_data_usage" msgid="2155683719898158203">"Spotreba mobilných dát"</string>
     <string name="app_cellular_data_usage" msgid="5468472735806533448">"Spotreba dát aplikácie"</string>
-    <string name="wifi_data_usage" msgid="686754111095324306">"Spotreba dát cez Wi‑Fi"</string>
+    <!-- no translation found for wifi_data_usage (771603760674507659) -->
+    <skip />
     <string name="ethernet_data_usage" msgid="5108764537574354616">"Spotreba dát prostredníctvom ethernetu"</string>
     <string name="wifi" msgid="1081550856200013637">"Wi‑Fi"</string>
     <string name="ethernet" msgid="6600095783781389720">"Ethernet"</string>
@@ -3868,6 +3877,8 @@
       <item quantity="one">1 aplikácia má povolené používať neobmedzené dáta, keď je zapnutý šetrič dát</item>
     </plurals>
     <string name="data_usage_title" msgid="3659356290392241789">"Primárne dáta"</string>
+    <!-- no translation found for data_usage_wifi_title (7063659423081820720) -->
+    <skip />
     <string name="data_used" msgid="5116389957228457203">"Spotreba <xliff:g id="ID_1">^1</xliff:g>"</string>
     <string name="data_used_formatted" msgid="2989129931961311051">"Využité dáta: <xliff:g id="ID_1">^1</xliff:g> <xliff:g id="ID_2">^2</xliff:g>"</string>
     <string name="data_overusage" msgid="1134445012475270295">"Prekročený limit <xliff:g id="ID_1">^1</xliff:g>"</string>
@@ -3885,6 +3896,8 @@
     <string name="carrier_and_update_now_text" msgid="4057997726060106722">"Práve aktualizované – <xliff:g id="ID_1">^1</xliff:g>"</string>
     <string name="no_carrier_update_now_text" msgid="1766859656868932996">"Práve aktualizované"</string>
     <string name="launch_mdp_app_text" msgid="6751296320061773169">"Zobraziť tarifu"</string>
+    <!-- no translation found for launch_wifi_text (2311424914664372687) -->
+    <skip />
     <string name="data_saver_title" msgid="8034286939200289826">"Šetrič dát"</string>
     <string name="unrestricted_data_saver" msgid="952796077540228711">"Neobmedzené dáta"</string>
     <string name="restrict_background_blacklisted" msgid="3995443391711013068">"Dátové prenosy na pozadí sú vypnuté"</string>
@@ -4216,4 +4229,6 @@
     <string name="prevent_ringing_option_none_summary" msgid="8037313710474671901">"Nerobiť nič"</string>
     <string name="pref_title_network_details" msgid="7186418845727358964">"Podrobnosti siete"</string>
     <string name="about_phone_device_name_warning" msgid="8885670415541365348">"Názov zariadenia je viditeľný pre aplikácie v telefóne. Môže sa zobrazovať aj ostatným používateľom po pripojení k zariadeniu Bluetooth alebo nastavení hotspotu Wi-Fi."</string>
+    <!-- no translation found for devices_title (7701726109334110391) -->
+    <skip />
 </resources>

@@ -72,7 +72,7 @@ public class ActionDisabledByAdminDialogHelper {
                 mRestriction);
         return builder
             .setPositiveButton(R.string.okay, null)
-            .setNeutralButton(R.string.admin_more_details,
+            .setNeutralButton(R.string.learn_more,
                     (dialog, which) -> {
                         showAdminPolicies(mEnforcedAdmin, mActivity);
                         mActivity.finish();
@@ -147,6 +147,9 @@ public class ActionDisabledByAdminDialogHelper {
                 break;
             case DevicePolicyManager.POLICY_MANDATORY_BACKUPS:
                 titleView.setText(R.string.disabled_by_policy_title_turn_off_backups);
+                break;
+            case DevicePolicyManager.POLICY_SUSPEND_PACKAGES:
+                titleView.setText(R.string.disabled_by_policy_title_suspend_packages);
                 break;
             default:
                 // Use general text if no specialized title applies

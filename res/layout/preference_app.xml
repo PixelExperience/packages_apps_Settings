@@ -31,7 +31,6 @@
         android:gravity="start|center_vertical"
         android:minWidth="56dp"
         android:orientation="horizontal"
-        android:paddingStart="4dp"
         android:paddingEnd="8dp"
         android:paddingTop="4dp"
         android:paddingBottom="4dp">
@@ -96,8 +95,8 @@
         android:id="@android:id/widget_frame"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:gravity="end|center_vertical"
-        android:paddingStart="16dp"
+        android:gravity="center"
+        android:minWidth="64dp"
         android:orientation="vertical" />
 
 </LinearLayout>
