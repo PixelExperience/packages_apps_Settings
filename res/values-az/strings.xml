@@ -818,8 +818,11 @@
     <string name="wifi_setup_wps" msgid="8128702488486283957">"Avtomatik quraşdırma (WPS)"</string>
     <string name="wifi_settings_scanning_required_title" msgid="3815269816331500375">"Wi‑Fi skanı aktiv edilsin?"</string>
     <string name="wifi_settings_scanning_required_summary" msgid="6352918945128328916">"Wi‑Fi şəbəkəsini avtomatik aktiv etmək üçün əvvəlcə Wi‑Fi skanını aktiv edin."</string>
-    <string name="wifi_settings_scanning_required_info" msgid="1720819171594759585">"Wi011Fi skanı Wi‑Fi deaktiv olsa belə, tətbiq və xidmətlərin Wi‑Fi şəbəkələrini istənilən zaman skan etməsinə icazə verir. Məsələn, bu, məkanla bağlı funksiya və xidmətləri təkmilləşdirmək üçün istifadə edilə bilər."</string>
+    <!-- no translation found for wifi_settings_scanning_required_info (3155631874578023647) -->
+    <skip />
     <string name="wifi_settings_scanning_required_turn_on" msgid="1364287182804820646">"Aktiv edin"</string>
+    <!-- no translation found for wifi_settings_scanning_required_enabled (5527653791584018157) -->
+    <skip />
     <string name="wifi_show_advanced" msgid="3409422789616520979">"Qabaqcıl seçimlər"</string>
     <string name="wifi_advanced_toggle_description_expanded" msgid="2380600578544493084">"Aşağı açılan siyahı Qabaqcıl Seçimlər. Yığcamlaşdırmaq üçün iki dəfə tıklayın."</string>
     <string name="wifi_advanced_toggle_description_collapsed" msgid="1463812308429197263">"Aşağı açılan siyahı Qabaqcıl Seçimlər. Genişləndirmək üçün iki dəfə tıklayın."</string>
@@ -827,7 +830,8 @@
     <string name="wifi_ssid_hint" msgid="897593601067321355">"SSID daxil edin"</string>
     <string name="wifi_security" msgid="6603611185592956936">"Təhlükəsizlik"</string>
     <string name="wifi_hidden_network" msgid="973162091800925000">"Gizlədilmiş şəbəkə"</string>
-    <string name="wifi_hidden_network_warning" msgid="747945140951420201">"Bu cihazın qoşulması üçün SSID adını yayımlamaq lazım olduğuna görə gizlədilmiş şəbəkə məxfilik təhkükəsi yarada bilər."</string>
+    <!-- no translation found for wifi_hidden_network_warning (6674068093531603452) -->
+    <skip />
     <string name="wifi_signal" msgid="5514120261628065287">"Siqnal gücü"</string>
     <string name="wifi_status" msgid="4824568012414605414">"Status"</string>
     <string name="wifi_speed" msgid="3526198708812322037">"Link sürəti"</string>
@@ -2177,7 +2181,7 @@
     </plurals>
     <!-- no translation found for battery_tip_restrict_app_dialog_message (7271391929137806299) -->
     <skip />
-    <!-- no translation found for battery_tip_restrict_apps_less_than_5_dialog_message (3076716192672316037) -->
+    <!-- no translation found for battery_tip_restrict_apps_less_than_5_dialog_message (3175700359860699627) -->
     <skip />
     <!-- no translation found for battery_tip_restrict_apps_more_than_5_dialog_message (582641081128076191) -->
     <skip />
@@ -2467,7 +2471,6 @@
     <string name="adding_profile_owner_warning" msgid="1354474524852805802">"Davam etməklə istifadəçiniz admin tərəfindən idarə ediləcək ki, şəxsi dataya əlavə olaraq, əlaqəli datanı saxlaya bilsin.\n\nAdmin ayarlar, giriş, tətbiq və bu istifadəçi ilə əlaqəli ayarlar, giriş, tətbiq və dataya nəzarət etmək və idarə etmək iqtidarındadır, bura şəbəkə fəaliyyəti və cihazın məkan məlumatı da daxildir."</string>
     <string name="admin_disabled_other_options" msgid="7712694507069054530">"Digər seçimlər admin tərəfindən deaktiv edildi"</string>
     <string name="admin_more_details" msgid="7901420667346456102">"Daha ətraflı"</string>
-    <string name="untitled_apn" msgid="1230060359198685513">"Başlıqsız"</string>
     <string name="sound_category_sound_title" msgid="1488759370067953996">"Ümumi"</string>
     <string name="notification_log_title" msgid="3766148588239398464">"Bildiriş jurnalı"</string>
     <string name="sound_category_call_ringtone_vibrate_title" msgid="1543777228646645163">"Çağrı səsi &amp; vibrasiya"</string>
@@ -3343,7 +3346,8 @@
     <string name="switch_on_text" msgid="1124106706920572386">"Aktiv"</string>
     <string name="switch_off_text" msgid="1139356348100829659">"Deaktiv"</string>
     <string name="screen_pinning_title" msgid="2292573232264116542">"Ekran sancılması"</string>
-    <string name="screen_pinning_description" msgid="3360904523688769289">"Bu ayar aktivləşdirildikdən sonra ekranı göz qabağında saxlamaq üçün ekran sancağı istifadə edə bilərsiniz.\n\nEkran sancağını işlətmək üçün:\n\n1. Ekran sancağının aktiv olduğuna əmin olun.\n\n2. Sancmaq istədiyiniz ekranı açın.\n\n3. İcmala tıklayın.\n\n4. Yuxarı sürüşdürün, sonra sancaq ikonasına tıklayın."</string>
+    <!-- no translation found for screen_pinning_description (1110847562111827766) -->
+    <skip />
     <string name="screen_pinning_unlock_pattern" msgid="8282268570060313339">"Ayırmadan öncə kilid modeli istənilsin"</string>
     <string name="screen_pinning_unlock_pin" msgid="8757588350454795286">"Ayırmadan öncə PIN istənilsin"</string>
     <string name="screen_pinning_unlock_password" msgid="2514079566873826434">"Ayırmadan öncə parol istənilsin"</string>
@@ -3637,6 +3641,8 @@
     <string name="screen_zoom_conversation_timestamp_4" msgid="2511469395448561259">"Ç.a 6:03GƏ"</string>
     <string name="disconnected" msgid="4836600637485526329">"Qoşulu deyil"</string>
     <string name="data_usage_summary_format" msgid="7507047900192160585">"<xliff:g id="AMOUNT">%1$s</xliff:g> data istifadə edildi"</string>
+    <!-- no translation found for data_usage_wifi_format (5417296451392612860) -->
+    <skip />
     <plurals name="notification_summary" formatted="false" msgid="3941492005316143599">
       <item quantity="other"><xliff:g id="COUNT">%d</xliff:g> tətbiq üçün deaktiv</item>
       <item quantity="one"> 1 tətbiq üçün deaktiv</item>
@@ -3664,6 +3670,8 @@
     <string name="disabled_by_policy_title_camera" msgid="6225008536855644874">"Kameraya icazə verilmir"</string>
     <string name="disabled_by_policy_title_screen_capture" msgid="4066913623298047094">"Skrinşota icazə verilmir"</string>
     <string name="disabled_by_policy_title_turn_off_backups" msgid="6346948990624612516">"Yedəkləmələri deaktiv etmək alınmadı"</string>
+    <!-- no translation found for disabled_by_policy_title_suspend_packages (7423998445638650115) -->
+    <skip />
     <string name="default_admin_support_msg" msgid="4489678214035485367">"Sualınız varsa, IT admini ilə əlaqə saxlayın"</string>
     <string name="admin_support_more_info" msgid="8901377038510512654">"Daha ətraflı"</string>
     <string name="admin_profile_owner_message" msgid="5860816886981109626">"Admin ayarlar, icazələr, korporativ giriş, şəbəkə fəaliyyəti və cihazın məkan məlumatı da daxil olmaqla bu iş profili ilə əlaqəli tətbiq və dataya nəzarət edə və idarə edə bilər."</string>
@@ -3723,7 +3731,8 @@
     <string name="usage" msgid="2977875522080448986">"İstifadə"</string>
     <string name="cellular_data_usage" msgid="2155683719898158203">"Mobil data istifadəsi"</string>
     <string name="app_cellular_data_usage" msgid="5468472735806533448">"Tətbiq data istifadəsi"</string>
-    <string name="wifi_data_usage" msgid="686754111095324306">"Wi-Fi data istifadəsi"</string>
+    <!-- no translation found for wifi_data_usage (771603760674507659) -->
+    <skip />
     <string name="ethernet_data_usage" msgid="5108764537574354616">"Ethernet data istifadəsi"</string>
     <string name="wifi" msgid="1081550856200013637">"Wi-Fi"</string>
     <string name="ethernet" msgid="6600095783781389720">"Ethernet"</string>
@@ -3758,6 +3767,8 @@
       <item quantity="one">Data Saver aktiv olduğu zaman 1 tətbiqə məhdudlaşdırılmamış data girişini istifadə etməyə icazə verilir</item>
     </plurals>
     <string name="data_usage_title" msgid="3659356290392241789">"Əsas data"</string>
+    <!-- no translation found for data_usage_wifi_title (7063659423081820720) -->
+    <skip />
     <string name="data_used" msgid="5116389957228457203">"<xliff:g id="ID_1">^1</xliff:g> istifadə edildi"</string>
     <string name="data_used_formatted" msgid="2989129931961311051">"<xliff:g id="ID_1">^1</xliff:g> <xliff:g id="ID_2">^2</xliff:g> istifadə edildi"</string>
     <string name="data_overusage" msgid="1134445012475270295">"<xliff:g id="ID_1">^1</xliff:g> və daha çox"</string>
@@ -3773,6 +3784,8 @@
     <string name="carrier_and_update_now_text" msgid="4057997726060106722">"<xliff:g id="ID_1">^1</xliff:g> tərəfindən indicə yeniləndi"</string>
     <string name="no_carrier_update_now_text" msgid="1766859656868932996">"İndi güncəlləşdirilib"</string>
     <string name="launch_mdp_app_text" msgid="6751296320061773169">"Plana baxın"</string>
+    <!-- no translation found for launch_wifi_text (2311424914664372687) -->
+    <skip />
     <string name="data_saver_title" msgid="8034286939200289826">"Data Qənaəti"</string>
     <string name="unrestricted_data_saver" msgid="952796077540228711">"Məhdudlaşdırılmamış data"</string>
     <string name="restrict_background_blacklisted" msgid="3995443391711013068">"Arxa fon datası deaktiv edilib"</string>
@@ -4082,4 +4095,6 @@
     <string name="prevent_ringing_option_none_summary" msgid="8037313710474671901">"Heç nə etməyin"</string>
     <string name="pref_title_network_details" msgid="7186418845727358964">"Şəbəkə məlumatları"</string>
     <string name="about_phone_device_name_warning" msgid="8885670415541365348">"Cihazın adı telefondakı tətbiqlərdə görünəcək. Bluetooth cihazlarına qoşulduqda və ya Wi-Fi hotspotu ayarladıqda digərləri də onu görə bilər."</string>
+    <!-- no translation found for devices_title (7701726109334110391) -->
+    <skip />
 </resources>

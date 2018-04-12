@@ -53,10 +53,11 @@ public class EarlyWarningDetector implements BatteryTipDetector {
                 batteryBroadcast.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1) == 0;
         final boolean powerSaveModeOn = mPowerManager.isPowerSaveMode();
         final boolean earlyWarning = mPowerUsageFeatureProvider.getEarlyWarningSignal(mContext,
-                EarlyWarningDetector.class.getName());
+                EarlyWarningDetector.class.getName()) || mPolicy.testBatterySaverTip;
 
-        final int state =
-                mPolicy.batterySaverTipEnabled && !powerSaveModeOn && discharging && earlyWarning
+        final int state = powerSaveModeOn
+                ? BatteryTip.StateType.HANDLED
+                : mPolicy.batterySaverTipEnabled && discharging && earlyWarning
                         ? BatteryTip.StateType.NEW
                         : BatteryTip.StateType.INVISIBLE;
         return new EarlyWarningTip(state, powerSaveModeOn);

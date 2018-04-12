@@ -30,7 +30,8 @@ import java.util.Arrays;
 import java.util.List;
 
 @SuppressWarnings("WeakerAccess")
-public class ColorModePreferenceFragment extends RadioButtonPickerFragment {
+public class ColorModePreferenceFragment extends RadioButtonPickerFragment
+        implements ColorDisplayController.Callback {
 
     @VisibleForTesting
     static final String KEY_COLOR_MODE_NATURAL = "color_mode_natural";
@@ -38,9 +39,6 @@ public class ColorModePreferenceFragment extends RadioButtonPickerFragment {
     static final String KEY_COLOR_MODE_BOOSTED = "color_mode_boosted";
     @VisibleForTesting
     static final String KEY_COLOR_MODE_SATURATED = "color_mode_saturated";
-    // TODO have a real key for "automatic" rather than just re-using "saturated"
-    @VisibleForTesting
-    static final String KEY_COLOR_MODE_AUTOMATIC = "color_mode_saturated";
 
     private ColorDisplayController mController;
 
@@ -48,6 +46,16 @@ public class ColorModePreferenceFragment extends RadioButtonPickerFragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         mController = new ColorDisplayController(context);
+        mController.setListener(this);
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        if (mController != null) {
+            mController.setListener(null);
+            mController = null;
+        }
     }
 
     @Override
@@ -72,23 +80,21 @@ public class ColorModePreferenceFragment extends RadioButtonPickerFragment {
     protected List<? extends CandidateInfo> getCandidates() {
         Context c = getContext();
         return Arrays.asList(
-            new ColorModeCandidateInfo(c.getString(R.string.color_mode_option_natural),
-                    KEY_COLOR_MODE_NATURAL),
-            new ColorModeCandidateInfo(c.getString(R.string.color_mode_option_boosted),
-                    KEY_COLOR_MODE_BOOSTED),
-            new ColorModeCandidateInfo(c.getString(R.string.color_mode_option_saturated),
-                    KEY_COLOR_MODE_SATURATED),
-            new ColorModeCandidateInfo(c.getString(R.string.color_mode_option_automatic),
-                    KEY_COLOR_MODE_AUTOMATIC)
+            new ColorModeCandidateInfo(c.getText(R.string.color_mode_option_natural),
+                    KEY_COLOR_MODE_NATURAL, true /* enabled */),
+            new ColorModeCandidateInfo(c.getText(R.string.color_mode_option_boosted),
+                    KEY_COLOR_MODE_BOOSTED, true /* enabled */),
+            new ColorModeCandidateInfo(c.getText(R.string.color_mode_option_saturated),
+                    KEY_COLOR_MODE_SATURATED, true /* enabled */)
         );
     }
 
     @Override
     protected String getDefaultKey() {
-        if (mController.getColorMode() == ColorDisplayController.COLOR_MODE_SATURATED) {
+        final int colorMode = mController.getColorMode();
+        if (colorMode == ColorDisplayController.COLOR_MODE_SATURATED) {
             return KEY_COLOR_MODE_SATURATED;
-        }
-        if (mController.getColorMode() == ColorDisplayController.COLOR_MODE_BOOSTED) {
+        } else if (colorMode == ColorDisplayController.COLOR_MODE_BOOSTED) {
             return KEY_COLOR_MODE_BOOSTED;
         }
         return KEY_COLOR_MODE_NATURAL;
@@ -120,8 +126,8 @@ public class ColorModePreferenceFragment extends RadioButtonPickerFragment {
         private final CharSequence mLabel;
         private final String mKey;
 
-        ColorModeCandidateInfo(CharSequence label, String key) {
-            super(true);
+        ColorModeCandidateInfo(CharSequence label, String key, boolean enabled) {
+            super(enabled);
             mLabel = label;
             mKey = key;
         }
@@ -142,4 +148,12 @@ public class ColorModePreferenceFragment extends RadioButtonPickerFragment {
         }
     }
 
+    @Override
+    public void onAccessibilityTransformChanged(boolean state) {
+        // Color modes are no not configurable when Accessibility transforms are enabled. Close
+        // this fragment in that case.
+        if (state) {
+            getActivity().onBackPressed();
+        }
+    }
 }

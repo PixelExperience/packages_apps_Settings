@@ -41,20 +41,15 @@ public class AnomalyConfigReceiver extends BroadcastReceiver {
             // Check whether to update the config
             AnomalyConfigJobService.scheduleConfigUpdate(context);
 
-            BatteryTipUtils.uploadAnomalyPendingIntent(context, statsManager);
+            try {
+                BatteryTipUtils.uploadAnomalyPendingIntent(context, statsManager);
+            } catch (StatsManager.StatsUnavailableException e) {
+                Log.w(TAG, "Failed to uploadAnomalyPendingIntent.", e);
+            }
 
             if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
                 AnomalyCleanupJobService.scheduleCleanUp(context);
             }
         }
-    }
-
-    @VisibleForTesting
-    void uploadPendingIntent(StatsManager statsManager, PendingIntent pendingIntent) {
-        Log.i(TAG, "Upload PendingIntent to StatsManager. configKey: "
-                + StatsManagerConfig.ANOMALY_CONFIG_KEY + " subId: "
-                + StatsManagerConfig.SUBSCRIBER_ID);
-        statsManager.setBroadcastSubscriber(StatsManagerConfig.ANOMALY_CONFIG_KEY,
-                StatsManagerConfig.SUBSCRIBER_ID, pendingIntent);
     }
 }

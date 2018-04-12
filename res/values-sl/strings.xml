@@ -840,8 +840,11 @@
     <string name="wifi_setup_wps" msgid="8128702488486283957">"Samodej. nastavitev (WPS)"</string>
     <string name="wifi_settings_scanning_required_title" msgid="3815269816331500375">"Želite vklopiti iskanje omrežij Wi-Fi?"</string>
     <string name="wifi_settings_scanning_required_summary" msgid="6352918945128328916">"Če želite samodejno vklopiti Wi-Fi, morate najprej vklopiti iskanje omrežij Wi-Fi."</string>
-    <string name="wifi_settings_scanning_required_info" msgid="1720819171594759585">"Iskanje omrežij Wi-Fi aplikacijam in storitvam omogoči, da kadar koli iščejo omrežja Wi-Fi v bližini, tudi ko je Wi-Fi izklopljen. To funkcijo lahko na primer uporabite, če želite izboljšati funkcije in storitve, ki pri delovanju uporabljajo lokacijo."</string>
+    <!-- no translation found for wifi_settings_scanning_required_info (3155631874578023647) -->
+    <skip />
     <string name="wifi_settings_scanning_required_turn_on" msgid="1364287182804820646">"Vklopi"</string>
+    <!-- no translation found for wifi_settings_scanning_required_enabled (5527653791584018157) -->
+    <skip />
     <string name="wifi_show_advanced" msgid="3409422789616520979">"Dodatne možnosti"</string>
     <string name="wifi_advanced_toggle_description_expanded" msgid="2380600578544493084">"Spustni seznam Dodatne možnosti. Dvakrat se dotaknite, da ga strnete."</string>
     <string name="wifi_advanced_toggle_description_collapsed" msgid="1463812308429197263">"Spustni seznam Dodatne možnosti. Dvakrat se dotaknite, da ga razširite."</string>
@@ -849,7 +852,8 @@
     <string name="wifi_ssid_hint" msgid="897593601067321355">"Vnesite SSID"</string>
     <string name="wifi_security" msgid="6603611185592956936">"Varnost"</string>
     <string name="wifi_hidden_network" msgid="973162091800925000">"Skrito omrežje"</string>
-    <string name="wifi_hidden_network_warning" msgid="747945140951420201">"Skrito omrežje lahko povzroči tveganje glede zasebnosti, saj mora ta naprava oddajati ime SSID, da lahko vzpostavi povezavo."</string>
+    <!-- no translation found for wifi_hidden_network_warning (6674068093531603452) -->
+    <skip />
     <string name="wifi_signal" msgid="5514120261628065287">"Moč signala"</string>
     <string name="wifi_status" msgid="4824568012414605414">"Stanje"</string>
     <string name="wifi_speed" msgid="3526198708812322037">"Hitrost povezave"</string>
@@ -2231,7 +2235,7 @@
     </plurals>
     <!-- no translation found for battery_tip_restrict_app_dialog_message (7271391929137806299) -->
     <skip />
-    <!-- no translation found for battery_tip_restrict_apps_less_than_5_dialog_message (3076716192672316037) -->
+    <!-- no translation found for battery_tip_restrict_apps_less_than_5_dialog_message (3175700359860699627) -->
     <skip />
     <!-- no translation found for battery_tip_restrict_apps_more_than_5_dialog_message (582641081128076191) -->
     <skip />
@@ -2523,7 +2527,6 @@
     <string name="adding_profile_owner_warning" msgid="1354474524852805802">"Če nadaljujete, bo uporabnika upravljal skrbnik, ki lahko poleg osebnih podatkov shranjuje tudi povezane podatke.\n\nSkrbnik lahko nadzira in upravlja nastavitve, dostop, aplikacije ter podatke, povezane s tem uporabnikom, vključno z omrežno dejavnostjo in podatki o lokaciji naprave."</string>
     <string name="admin_disabled_other_options" msgid="7712694507069054530">"Druge možnosti je onemogočil skrbnik"</string>
     <string name="admin_more_details" msgid="7901420667346456102">"Več podrobnosti"</string>
-    <string name="untitled_apn" msgid="1230060359198685513">"Brez naslova"</string>
     <string name="sound_category_sound_title" msgid="1488759370067953996">"Splošno"</string>
     <string name="notification_log_title" msgid="3766148588239398464">"Dnevnik obvestil"</string>
     <string name="sound_category_call_ringtone_vibrate_title" msgid="1543777228646645163">"Ton zvonjenja in vibriranje"</string>
@@ -3427,7 +3430,8 @@
     <string name="switch_on_text" msgid="1124106706920572386">"Vklopljeno"</string>
     <string name="switch_off_text" msgid="1139356348100829659">"Izklopljeno"</string>
     <string name="screen_pinning_title" msgid="2292573232264116542">"Pripenjanje zaslona"</string>
-    <string name="screen_pinning_description" msgid="3360904523688769289">"Če je pripenjanje zaslona vklopljeno, lahko z njim ohranite prikaz trenutnega zaslona, dokler ga ne odpnete.\n\nUporaba pripenjanja:\n\n1. Pripenjanje zaslona mora biti vklopljeno.\n\n2. Odprite zaslon, ki ga želite pripeti.\n\n3. Dotaknite se tipke za pregled.\n\n4. Povlecite navzgor in se dotaknite ikone žebljička."</string>
+    <!-- no translation found for screen_pinning_description (1110847562111827766) -->
+    <skip />
     <string name="screen_pinning_unlock_pattern" msgid="8282268570060313339">"Pred odpenjanjem vprašaj za vzorec za odklepanje"</string>
     <string name="screen_pinning_unlock_pin" msgid="8757588350454795286">"Zahtevaj PIN pred odpenjanjem"</string>
     <string name="screen_pinning_unlock_password" msgid="2514079566873826434">"Pred odpenjanjem vprašaj za geslo"</string>
@@ -3737,6 +3741,8 @@
     <string name="screen_zoom_conversation_timestamp_4" msgid="2511469395448561259">"Tor., 18.03"</string>
     <string name="disconnected" msgid="4836600637485526329">"Povezava ni vzpostavljena"</string>
     <string name="data_usage_summary_format" msgid="7507047900192160585">"Prenesenih podatkov: <xliff:g id="AMOUNT">%1$s</xliff:g>"</string>
+    <!-- no translation found for data_usage_wifi_format (5417296451392612860) -->
+    <skip />
     <plurals name="notification_summary" formatted="false" msgid="3941492005316143599">
       <item quantity="one">Izklopljeno za <xliff:g id="COUNT">%d</xliff:g> aplikacijo</item>
       <item quantity="two">Izklopljeno za <xliff:g id="COUNT">%d</xliff:g> aplikaciji</item>
@@ -3766,6 +3772,8 @@
     <string name="disabled_by_policy_title_camera" msgid="6225008536855644874">"Fotoaparat ni omogočen"</string>
     <string name="disabled_by_policy_title_screen_capture" msgid="4066913623298047094">"Ustvarjanje posnetka zaslona ni omogočeno"</string>
     <string name="disabled_by_policy_title_turn_off_backups" msgid="6346948990624612516">"Varnostnega kopiranja ni mogoče izklopiti"</string>
+    <!-- no translation found for disabled_by_policy_title_suspend_packages (7423998445638650115) -->
+    <skip />
     <string name="default_admin_support_msg" msgid="4489678214035485367">"Če imate vprašanja, se obrnite na skrbnika za IT"</string>
     <string name="admin_support_more_info" msgid="8901377038510512654">"Več podrobnosti"</string>
     <string name="admin_profile_owner_message" msgid="5860816886981109626">"Skrbnik lahko nadzira in upravlja aplikacije ter podatke, povezane s tem delovnim profilom, vključno z nastavitvami, dovoljenji, dostopom za podjetje, omrežno dejavnostjo in podatki o lokaciji naprave."</string>
@@ -3829,7 +3837,8 @@
     <string name="usage" msgid="2977875522080448986">"Poraba"</string>
     <string name="cellular_data_usage" msgid="2155683719898158203">"Poraba mobilnih podatkov"</string>
     <string name="app_cellular_data_usage" msgid="5468472735806533448">"Prenesena količina podatkov aplikacije"</string>
-    <string name="wifi_data_usage" msgid="686754111095324306">"Preneseni podatki (Wi-Fi)"</string>
+    <!-- no translation found for wifi_data_usage (771603760674507659) -->
+    <skip />
     <string name="ethernet_data_usage" msgid="5108764537574354616">"Preneseni podatki (ethernet)"</string>
     <string name="wifi" msgid="1081550856200013637">"Wi-Fi"</string>
     <string name="ethernet" msgid="6600095783781389720">"Ethernet"</string>
@@ -3868,6 +3877,8 @@
       <item quantity="other">Ko je vklopljeno varčevanje s podatki, je neomejen prenos podatkov dovoljen <xliff:g id="COUNT">%1$d</xliff:g> aplikacijam.</item>
     </plurals>
     <string name="data_usage_title" msgid="3659356290392241789">"Glavni podatki"</string>
+    <!-- no translation found for data_usage_wifi_title (7063659423081820720) -->
+    <skip />
     <string name="data_used" msgid="5116389957228457203">"Porabljeno: <xliff:g id="ID_1">^1</xliff:g>"</string>
     <string name="data_used_formatted" msgid="2989129931961311051">"Porabljeno: <xliff:g id="ID_1">^1</xliff:g> <xliff:g id="ID_2">^2</xliff:g>"</string>
     <string name="data_overusage" msgid="1134445012475270295">"Prekoračeno za <xliff:g id="ID_1">^1</xliff:g>"</string>
@@ -3885,6 +3896,8 @@
     <string name="carrier_and_update_now_text" msgid="4057997726060106722">"Pravkar posodobil <xliff:g id="ID_1">^1</xliff:g>"</string>
     <string name="no_carrier_update_now_text" msgid="1766859656868932996">"Pravkar posodobljeno"</string>
     <string name="launch_mdp_app_text" msgid="6751296320061773169">"Prikaži paket"</string>
+    <!-- no translation found for launch_wifi_text (2311424914664372687) -->
+    <skip />
     <string name="data_saver_title" msgid="8034286939200289826">"Varčevanje s podatki"</string>
     <string name="unrestricted_data_saver" msgid="952796077540228711">"Neomejen podatkovni dostop"</string>
     <string name="restrict_background_blacklisted" msgid="3995443391711013068">"Prenos podatkov v ozadju je izklopljen"</string>
@@ -4216,4 +4229,6 @@
     <string name="prevent_ringing_option_none_summary" msgid="8037313710474671901">"Ne naredi ničesar"</string>
     <string name="pref_title_network_details" msgid="7186418845727358964">"O omrežju"</string>
     <string name="about_phone_device_name_warning" msgid="8885670415541365348">"Ime naprave je vidno aplikacijam v telefonu. Ko vzpostavite povezavo z napravami Bluetooth ali nastavite dostopno točko Wi-Fi, ga bodo morda videle tudi druge osebe."</string>
+    <!-- no translation found for devices_title (7701726109334110391) -->
+    <skip />
 </resources>
