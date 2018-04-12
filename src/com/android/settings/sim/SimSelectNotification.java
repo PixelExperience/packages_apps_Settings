@@ -57,7 +57,7 @@ public class SimSelectNotification extends BroadcastReceiver {
         final int numSlots = telephonyManager.getSimCount();
 
         boolean skipUserSelection =
-                !SystemProperties.getBoolean("persist.radio.aosp_usr_pref_sel", false);
+                !SystemProperties.getBoolean("persist.vendor.radio.aosp_usr_pref_sel", false);
         IExtTelephony extTelephony =
                 IExtTelephony.Stub.asInterface(ServiceManager.getService("extphone"));
         try {
