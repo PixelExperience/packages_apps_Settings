@@ -67,6 +67,7 @@ public class Settings extends SettingsActivity {
     public static class SecurityDashboardActivity extends SettingsActivity { /* empty */ }
     public static class UsageAccessSettingsActivity extends SettingsActivity { /* empty */ }
     public static class LocationSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ScanningSettingsActivity extends SettingsActivity { /* empty */ }
     public static class PrivacySettingsActivity extends SettingsActivity { /* empty */ }
     public static class FactoryResetActivity extends SettingsActivity { /* empty */ }
     public static class RunningServicesActivity extends SettingsActivity { /* empty */ }
@@ -153,6 +154,7 @@ public class Settings extends SettingsActivity {
         }
     }
     public static class WebViewAppPickerActivity extends SettingsActivity { /* empty */ }
+    public static class AdvancedConnectedDeviceActivity extends SettingsActivity { /* empty */ }
 
     // Top level categories for new IA
     public static class NetworkDashboardActivity extends SettingsActivity {}
@@ -162,6 +164,5 @@ public class Settings extends SettingsActivity {
     public static class StorageDashboardActivity extends SettingsActivity {}
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
-    public static class AdvancedConnectedDeviceActivity extends SettingsActivity {}
 
 }
