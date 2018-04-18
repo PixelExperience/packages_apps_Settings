@@ -331,7 +331,7 @@ public class ApnEditor extends SettingsPreferenceFragment
             disableFields(mReadOnlyApnFields);
         }
 
-        mDeletableApn = mApnData.getInteger(PERSISTENT_INDEX) != 1;
+        mDeletableApn = (mApnData.getInteger(PERSISTENT_INDEX, 0)) != 1;
 
         for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
             getPreferenceScreen().getPreference(i).setOnPreferenceChangeListener(this);
