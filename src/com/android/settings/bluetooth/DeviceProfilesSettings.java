@@ -250,7 +250,10 @@ public final class DeviceProfilesSettings extends InstrumentedDialogFragment imp
     public void onClick(View v) {
         if (v instanceof CheckBox) {
             LocalBluetoothProfile prof = getProfileOf(v);
-            onProfileClicked(prof, (CheckBox) v);
+            if (prof != null)
+                onProfileClicked(prof, (CheckBox) v);
+            else
+                Log.e(TAG, "Error: Can't get the profile for the preference");
         }
     }
 
