@@ -26,6 +26,7 @@ import static org.mockito.Mockito.verify;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.provider.Settings;
@@ -38,6 +39,7 @@ import com.android.settings.core.BasePreferenceController;
 import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.FakeSliderController;
 import com.android.settings.testutils.FakeToggleController;
+import com.android.settings.testutils.FakeUnavailablePreferenceController;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.SliceTester;
 
@@ -275,7 +277,7 @@ public class SliceBuilderUtilsTest {
 
         final Pair<Boolean, String> pathPair = SliceBuilderUtils.getPathData(uri);
 
-        assertThat(pathPair.first).isFalse();
+        assertThat(pathPair.first).isTrue();
         assertThat(pathPair.second).isEqualTo(KEY);
     }
 
@@ -289,18 +291,20 @@ public class SliceBuilderUtilsTest {
 
         final Pair<Boolean, String> pathPair = SliceBuilderUtils.getPathData(uri);
 
-        assertThat(pathPair.first).isTrue();
+        assertThat(pathPair.first).isFalse();
         assertThat(pathPair.second).isEqualTo(KEY);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void getPathData_noKey_returnsNull() {
         final Uri uri = new Uri.Builder()
                 .authority(SettingsSliceProvider.SLICE_AUTHORITY)
                 .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION)
                 .build();
 
-        SliceBuilderUtils.getPathData(uri);
+        final Pair<Boolean, String> pathPair = SliceBuilderUtils.getPathData(uri);
+
+        assertThat(pathPair).isNull();
     }
 
     @Test
@@ -314,7 +318,7 @@ public class SliceBuilderUtilsTest {
 
         final Pair<Boolean, String> pathPair = SliceBuilderUtils.getPathData(uri);
 
-        assertThat(pathPair.first).isTrue();
+        assertThat(pathPair.first).isFalse();
         assertThat(pathPair.second).isEqualTo(KEY + "/" + KEY);
     }
 
@@ -322,7 +326,7 @@ public class SliceBuilderUtilsTest {
     public void testUnsupportedSlice_validTitleSummary() {
         final SliceData data = getDummyData(FakeUnavailablePreferenceController.class,
                 SliceData.SliceType.SWITCH);
-        Settings.System.putInt(mContext.getContentResolver(),
+        Settings.Global.putInt(mContext.getContentResolver(),
                 FakeUnavailablePreferenceController.AVAILABILITY_KEY,
                 BasePreferenceController.DISABLED_UNSUPPORTED);
 
@@ -335,7 +339,7 @@ public class SliceBuilderUtilsTest {
     public void testDisabledForUserSlice_validTitleSummary() {
         final SliceData data = getDummyData(FakeUnavailablePreferenceController.class,
                 SliceData.SliceType.SWITCH);
-        Settings.System.putInt(mContext.getContentResolver(),
+        Settings.Global.putInt(mContext.getContentResolver(),
                 FakeUnavailablePreferenceController.AVAILABILITY_KEY,
                 BasePreferenceController.DISABLED_FOR_USER);
 
@@ -348,7 +352,7 @@ public class SliceBuilderUtilsTest {
     public void testDisabledDependentSettingSlice_validTitleSummary() {
         final SliceData data = getDummyData(FakeUnavailablePreferenceController.class,
                 SliceData.SliceType.INTENT);
-        Settings.System.putInt(mContext.getContentResolver(),
+        Settings.Global.putInt(mContext.getContentResolver(),
                 FakeUnavailablePreferenceController.AVAILABILITY_KEY,
                 BasePreferenceController.DISABLED_DEPENDENT_SETTING);
 
@@ -370,7 +374,7 @@ public class SliceBuilderUtilsTest {
     public void testUnavailableUnknownSlice_validTitleSummary() {
         final SliceData data = getDummyData(FakeUnavailablePreferenceController.class,
                 SliceData.SliceType.SWITCH);
-        Settings.System.putInt(mContext.getContentResolver(),
+        Settings.Global.putInt(mContext.getContentResolver(),
                 FakeUnavailablePreferenceController.AVAILABILITY_KEY,
                 BasePreferenceController.UNAVAILABLE_UNKNOWN);
 
@@ -387,6 +391,17 @@ public class SliceBuilderUtilsTest {
         assertThat(capturedLoggingPair.second)
                 .isEqualTo(data.getKey());
         SliceTester.testSettingsUnavailableSlice(mContext, slice, data);
+    }
+
+    @Test
+    public void testContentIntent_includesUniqueData() {
+        final SliceData sliceData = getDummyData();
+        final Uri expectedUri = new Uri.Builder().appendPath(sliceData.getKey()).build();
+
+        final Intent intent = SliceBuilderUtils.getContentIntent(mContext, sliceData);
+        final Uri intentData = intent.getData();
+
+        assertThat(intentData).isEqualTo(expectedUri);
     }
 
     private SliceData getDummyData() {

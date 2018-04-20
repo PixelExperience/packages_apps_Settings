@@ -46,18 +46,8 @@ public class SavedDeviceGroupController extends BasePreferenceController
     PreferenceGroup mPreferenceGroup;
     private BluetoothDeviceUpdater mBluetoothDeviceUpdater;
 
-    public SavedDeviceGroupController(Context context, DashboardFragment fragment,
-            Lifecycle lifecycle) {
+    public SavedDeviceGroupController(Context context) {
         super(context, KEY);
-        init(lifecycle, new SavedBluetoothDeviceUpdater(context, fragment,
-                SavedDeviceGroupController.this));
-    }
-
-    @VisibleForTesting
-    SavedDeviceGroupController(DashboardFragment fragment, Lifecycle lifecycle,
-            BluetoothDeviceUpdater bluetoothDeviceUpdater) {
-        super(fragment.getContext(), KEY);
-        init(lifecycle, bluetoothDeviceUpdater);
     }
 
     @Override
@@ -108,10 +98,13 @@ public class SavedDeviceGroupController extends BasePreferenceController
         }
     }
 
-    private void init(Lifecycle lifecycle, BluetoothDeviceUpdater bluetoothDeviceUpdater) {
-        if (lifecycle != null && isAvailable()) {
-            lifecycle.addObserver(this);
-        }
-        mBluetoothDeviceUpdater = bluetoothDeviceUpdater;
+    public void init(DashboardFragment fragment) {
+        mBluetoothDeviceUpdater = new SavedBluetoothDeviceUpdater(fragment.getContext(),
+                fragment, SavedDeviceGroupController.this);
+    }
+
+    @VisibleForTesting
+    public void setBluetoothDeviceUpdater(BluetoothDeviceUpdater bluetoothDeviceUpdater) {
+        mBluetoothDeviceUpdater  = bluetoothDeviceUpdater;
     }
 }
