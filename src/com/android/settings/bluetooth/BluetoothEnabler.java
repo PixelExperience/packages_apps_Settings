@@ -138,19 +138,19 @@ public final class BluetoothEnabler implements SwitchWidgetController.OnSwitchCh
                 mSwitchController.setEnabled(false);
                 break;
             case BluetoothAdapter.STATE_ON:
-                setChecked(true);
                 mSwitchController.setEnabled(true);
+                setChecked(true);
                 break;
             case BluetoothAdapter.STATE_TURNING_OFF:
                 mSwitchController.setEnabled(false);
                 break;
             case BluetoothAdapter.STATE_OFF:
-                setChecked(false);
                 mSwitchController.setEnabled(true);
+                setChecked(false);
                 break;
             default:
-                setChecked(false);
                 mSwitchController.setEnabled(true);
+                setChecked(false);
         }
     }
 
