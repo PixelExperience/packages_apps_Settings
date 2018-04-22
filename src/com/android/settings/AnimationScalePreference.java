@@ -17,14 +17,15 @@
 package com.android.settings;
 
 import android.content.Context;
-import android.preference.DialogPreference;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-public class AnimationScalePreference extends DialogPreference
+import com.android.settingslib.CustomDialogPreference;
+
+public class AnimationScalePreference extends CustomDialogPreference
     implements SeekBar.OnSeekBarChangeListener {
 
     private TextView mScaleText;
@@ -34,18 +35,15 @@ public class AnimationScalePreference extends DialogPreference
 
     public AnimationScalePreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-
         setPositiveButtonText(android.R.string.ok);
         setNegativeButtonText(android.R.string.cancel);
 
-        setDialogLayoutResource(R.layout.preference_dialog_fontsize);
+        setDialogLayoutResource(R.layout.preference_dialog_animation_scale);
     }
 
     @Override
-    protected View onCreateDialogView() {
-        LayoutInflater inflater =
-                (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.preference_dialog_animation_scale, null);
+    protected void onBindDialogView(View view) {
+        super.onBindDialogView(view);
 
         mScaleText = (TextView) view.findViewById(R.id.scale);
         mScaleText.setText(String.valueOf(mScale) + "x");
@@ -53,8 +51,6 @@ public class AnimationScalePreference extends DialogPreference
         mSeekBar = (IntervalSeekBar) view.findViewById(R.id.scale_seekbar);
         mSeekBar.setProgressFloat(mScale);
         mSeekBar.setOnSeekBarChangeListener(this);
-
-        return view;
     }
 
     public void setScale(float scale) {
