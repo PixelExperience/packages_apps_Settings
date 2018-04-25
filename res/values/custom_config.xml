@@ -40,4 +40,12 @@
     <!-- Whether device supports lift to wake -->
     <bool name="config_supportsLiftToWake">true</bool>
 
+    <!-- Whether to override specific vendor properties for
+         displaying information in about phone. Supported properties include:
+         Device Model(String) = "config_overridenVendorProductModel"
+         Security Patch = "ro.vendor.override.security_patch"
+         Build number = "ro.vendor.override.build_display"
+    -->
+    <string name="config_overridenVendorProductModel" translatable="false"></string>
+
 </resources>
