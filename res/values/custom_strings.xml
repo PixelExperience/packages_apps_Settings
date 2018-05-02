@@ -37,4 +37,7 @@
     <string name="proximity_wake_title">Prevent accidental wake-up</string>
     <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 
+    <!-- Other gestures -->
+    <string name="other_gestures">Other gestures</string>
+
 </resources>
