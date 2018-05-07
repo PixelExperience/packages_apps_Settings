@@ -21,6 +21,7 @@ import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 
@@ -114,6 +115,24 @@ public class ApnEditorTest {
         mApnEditorUT.mApnData = new FakeApnData(APN_DATA);
         mApnEditorUT.sNotSet = "Not Set";
     }
+
+    @Test
+    public void testApnEditor_doesNotUseManagedQuery() {
+        mApnEditorUT.getApnDataFromUri(Mockito.mock(Uri.class));
+
+        verify(mActivity, never()).managedQuery(
+                any(Uri.class),
+                any(String[].class),
+                any(String.class),
+                any(String.class));
+
+        verify(mActivity, never()).managedQuery(
+                any(Uri.class),
+                any(String[].class),
+                any(String.class),
+                any(String[].class),
+                any(String.class));
+  }
 
     @Test
     public void testSetStringValue_valueChanged_shouldSetValue() {
@@ -416,6 +435,16 @@ public class ApnEditorTest {
 
         // THEN the null value is returned
         assertThat(str).isNull();
+    }
+
+    @Test
+    public void formatInteger_shouldParseString() {
+        assertThat(ApnEditor.formatInteger("42")).isEqualTo("42");
+    }
+
+    @Test
+    public void formatInteger_shouldIgnoreNonIntegers() {
+        assertThat(ApnEditor.formatInteger("not an int")).isEqualTo("not an int");
     }
 
     private void initCursor() {

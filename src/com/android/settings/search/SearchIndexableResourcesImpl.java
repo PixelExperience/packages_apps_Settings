@@ -22,6 +22,8 @@ import com.android.settings.DateTimeSettings;
 import com.android.settings.DisplaySettings;
 import com.android.settings.LegalSettings;
 import com.android.settings.connecteddevice.AdvancedConnectedDeviceDashboardFragment;
+import com.android.settings.connecteddevice.PreviouslyConnectedDeviceDashboardFragment;
+import com.android.settings.connecteddevice.BluetoothDashboardFragment;
 import com.android.settings.datausage.DataUsageSummaryLegacy;
 import com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment;
 import com.android.settings.accessibility.AccessibilitySettings;
@@ -75,6 +77,7 @@ import com.android.settings.notification.SoundSettings;
 import com.android.settings.notification.ZenModeAutomationSettings;
 import com.android.settings.notification.ZenModeBehaviorSettings;
 import com.android.settings.notification.ZenModeBlockedEffectsSettings;
+import com.android.settings.notification.ZenModeRestrictNotificationsSettings;
 import com.android.settings.notification.ZenModeSettings;
 import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.security.EncryptionAndCredential;
@@ -178,11 +181,14 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(ZenModeBehaviorSettings.class);
         addIndex(ZenModeBlockedEffectsSettings.class);
         addIndex(ZenModeAutomationSettings.class);
+        addIndex(ZenModeRestrictNotificationsSettings.class);
         addIndex(NightDisplaySettings.class);
         addIndex(SmartBatterySettings.class);
         addIndex(MyDeviceInfoFragment.class);
         addIndex(VibrationSettings.class);
         addIndex(RecentLocationRequestSeeAllFragment.class);
+        addIndex(PreviouslyConnectedDeviceDashboardFragment.class);
+        addIndex(BluetoothDashboardFragment.class);
     }
 
     @Override

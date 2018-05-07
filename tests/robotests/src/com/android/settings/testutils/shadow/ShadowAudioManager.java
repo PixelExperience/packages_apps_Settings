@@ -16,23 +16,92 @@
 
 package com.android.settings.testutils.shadow;
 
+import static android.media.AudioManager.STREAM_ACCESSIBILITY;
+import static android.media.AudioManager.STREAM_ALARM;
+import static android.media.AudioManager.STREAM_MUSIC;
+import static android.media.AudioManager.STREAM_NOTIFICATION;
+import static android.media.AudioManager.STREAM_RING;
+import static android.media.AudioManager.STREAM_SYSTEM;
+import static android.media.AudioManager.STREAM_VOICE_CALL;
+import static android.media.AudioManager.STREAM_DTMF;
+
+import static org.robolectric.RuntimeEnvironment.application;
+
+import android.media.AudioDeviceCallback;
 import android.media.AudioManager;
+import android.os.Handler;
 
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
+import org.robolectric.annotation.Resetter;
+import org.robolectric.shadow.api.Shadow;
 
-@Implements(AudioManager.class)
-public class ShadowAudioManager {
+import java.util.ArrayList;
 
+@Implements(value = AudioManager.class, inheritImplementationMethods = true)
+public class ShadowAudioManager extends org.robolectric.shadows.ShadowAudioManager {
     private int mRingerMode;
+    private int mStream;
+    private boolean mMusicActiveRemotely = false;
+    private ArrayList<AudioDeviceCallback> mDeviceCallbacks = new ArrayList();
 
     @Implementation
+    private int getRingerModeInternal() {
+        return mRingerMode;
+    }
+
+    public static ShadowAudioManager getShadow() {
+        return Shadow.extract(application.getSystemService(AudioManager.class));
+    }
+
     public void setRingerModeInternal(int mode) {
         mRingerMode = mode;
     }
 
     @Implementation
-    private int getRingerModeInternal() {
-        return mRingerMode;
+    public void registerAudioDeviceCallback(AudioDeviceCallback callback, Handler handler) {
+        mDeviceCallbacks.add(callback);
+    }
+
+    @Implementation
+    public void unregisterAudioDeviceCallback(AudioDeviceCallback callback) {
+        if (mDeviceCallbacks.contains(callback)) {
+            mDeviceCallbacks.remove(callback);
+        }
+    }
+
+    public void setMusicActiveRemotely(boolean flag) {
+        mMusicActiveRemotely = flag;
+    }
+
+    @Implementation
+    public boolean isMusicActiveRemotely() {
+        return mMusicActiveRemotely;
+    }
+
+    public void setStream(int stream) {
+        mStream = stream;
+    }
+
+    @Implementation
+    public int getDevicesForStream(int streamType) {
+        switch (streamType) {
+            case STREAM_VOICE_CALL:
+            case STREAM_SYSTEM:
+            case STREAM_RING:
+            case STREAM_MUSIC:
+            case STREAM_ALARM:
+            case STREAM_NOTIFICATION:
+            case STREAM_DTMF:
+            case STREAM_ACCESSIBILITY:
+                return mStream;
+            default:
+                return 0;
+        }
+    }
+
+    @Resetter
+    public void reset() {
+        mDeviceCallbacks.clear();
     }
 }

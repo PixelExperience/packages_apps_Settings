@@ -60,7 +60,7 @@
     <item msgid="4322676235684793329">"30 ਮਿੰਟ"</item>
   </string-array>
   <string-array name="entries_font_size">
-    <item msgid="8166647333858618801">"ਛੋਟੀ"</item>
+    <item msgid="8166647333858618801">"ਛੋਟਾ"</item>
     <item msgid="6986443533756848935">"ਪੂਰਵ-ਨਿਰਧਾਰਤ"</item>
     <item msgid="38373998008112077">"ਵੱਡੀ"</item>
     <item msgid="7635254317531872272">"ਸਭ ਤੋਂ ਵੱਡੀ"</item>
@@ -117,7 +117,8 @@
   </string-array>
     <!-- no translation found for wifi_ap_band_config_full:0 (1085243288162893079) -->
     <!-- no translation found for wifi_ap_band_config_full:1 (5531376834915607202) -->
-    <!-- no translation found for wifi_ap_band_config_full:2 (3580217704310339410) -->
+    <!-- no translation found for wifi_ap_band_summary_full:0 (7176872102094020362) -->
+    <!-- no translation found for wifi_ap_band_summary_full:1 (311895158827229479) -->
     <!-- no translation found for wifi_ap_band_config_2G_only:0 (7006771583217001015) -->
     <!-- no translation found for wifi_ap_band_config_2G_only:1 (8904289885593822837) -->
   <string-array name="wifi_p2p_wps_setup">
@@ -397,9 +398,9 @@
   </string-array>
   <string-array name="captioning_font_size_selector_titles">
     <item msgid="4800919809575254054">"ਬਹੁਤ ਛੋਟਾ"</item>
-    <item msgid="6781094565687692782">"ਛੋਟੀ"</item>
+    <item msgid="6781094565687692782">"ਛੋਟਾ"</item>
     <item msgid="8222123259497646551">"ਸਧਾਰਨ"</item>
-    <item msgid="5813217276778560466">"ਵੱਡੇ"</item>
+    <item msgid="5813217276778560466">"ਵੱਡਾ"</item>
     <item msgid="9044232017390975191">"ਬਹੁਤ ਵੱਡਾ"</item>
   </string-array>
   <string-array name="captioning_edge_type_selector_titles">
@@ -417,7 +418,7 @@
     <item msgid="8342334626783983353">"100%"</item>
   </string-array>
   <string-array name="captioning_preset_selector_titles">
-    <item msgid="7009918361545506251">"ਐਪ ਡਿਫੌਲਟਸ ਵਰਤੋ"</item>
+    <item msgid="7009918361545506251">"ਐਪ ਵੱਲੋਂ ਪੂਰਵ-ਨਿਰਧਾਰਤ ਵਰਤੋ"</item>
     <item msgid="1770533843436933500">"ਕਾਲੇ \'ਤੇ ਸਫ਼ੈਦ"</item>
     <item msgid="758587126802411846">"ਸਫ਼ੈਦ \'ਤੇ ਕਾਲਾ"</item>
     <item msgid="1495307195241623402">"ਕਾਲੇ \'ਤੇ ਪੀਲਾ"</item>
@@ -492,8 +493,10 @@
     <item msgid="8745603368609022803">"ਮੀਟਰਬੱਧ ਮੰਨੋ"</item>
     <item msgid="2266114985518865625">"ਗੈਰ-ਮੀਟਰਬੱਧ ਮੰਨੋ"</item>
   </string-array>
-    <!-- no translation found for wifi_hidden_entries:0 (234221371123852300) -->
-    <!-- no translation found for wifi_hidden_entries:1 (3863157480502955888) -->
+  <string-array name="wifi_hidden_entries">
+    <item msgid="234221371123852300">"ਨਹੀਂ"</item>
+    <item msgid="3863157480502955888">"ਹਾਂ"</item>
+  </string-array>
   <string-array name="dark_ui_mode_entries">
     <item msgid="146804192658443142">"ਸਵੈਚਲਿਤ (ਦਿਨ ਦੇ ਸਮੇਂ ਅਨੁਸਾਰ)"</item>
     <item msgid="6620560879508595181">"ਹਮੇਸ਼ਾਂ ਚਾਲੂ"</item>

@@ -25,6 +25,7 @@ import android.os.BatteryStats;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.support.annotation.VisibleForTesting;
+import android.text.BidiFormatter;
 import android.text.format.Formatter;
 import android.util.SparseArray;
 import android.view.Menu;
@@ -107,7 +108,8 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     BatteryHeaderPreferenceController mBatteryHeaderPreferenceController;
     @VisibleForTesting
     boolean mNeedUpdateBatteryTip;
-    private BatteryTipPreferenceController mBatteryTipPreferenceController;
+    @VisibleForTesting
+    BatteryTipPreferenceController mBatteryTipPreferenceController;
     private int mStatsType = BatteryStats.STATS_SINCE_CHARGED;
 
     @VisibleForTesting
@@ -213,8 +215,8 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mAnomalySparseArray = new SparseArray<>();
 
         restartBatteryInfoLoader();
-        mNeedUpdateBatteryTip = icicle == null;
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
+        updateBatteryTipFlag(icicle);
     }
 
     @Override
@@ -382,6 +384,11 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         }
     }
 
+    @VisibleForTesting
+    void updateBatteryTipFlag(Bundle icicle) {
+        mNeedUpdateBatteryTip = icicle == null || mBatteryTipPreferenceController.needUpdate();
+    }
+
     @Override
     public boolean onLongClick(View view) {
         showBothEstimates();
@@ -425,7 +432,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 BatteryInfo.getBatteryInfo(mContext, new BatteryInfo.Callback() {
                     @Override
                     public void onBatteryInfoLoaded(BatteryInfo info) {
-                        mLoader.setSummary(SummaryProvider.this, info.chargeLabel);
+                        mLoader.setSummary(SummaryProvider.this, getDashboardLabel(mContext, info));
                     }
                 }, true /* shortString */);
             });
@@ -439,6 +446,20 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
                 mBatteryBroadcastReceiver.unRegister();
             }
         }
+    }
+
+    @VisibleForTesting
+    static CharSequence getDashboardLabel(Context context, BatteryInfo info) {
+        CharSequence label;
+        final BidiFormatter formatter = BidiFormatter.getInstance();
+        if (info.remainingLabel == null) {
+            label = info.batteryPercentString;
+        } else {
+            label = context.getString(R.string.power_remaining_settings_home_page,
+                    formatter.unicodeWrap(info.batteryPercentString),
+                    formatter.unicodeWrap(info.remainingLabel));
+        }
+        return label;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

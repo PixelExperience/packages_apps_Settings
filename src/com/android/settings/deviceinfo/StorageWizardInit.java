@@ -45,7 +45,7 @@ public class StorageWizardInit extends StorageWizardBase {
         mIsPermittedToAdopt = UserManager.get(this).isAdminUser()
                 && !ActivityManager.isUserAMonkey();
 
-        setHeaderText(R.string.storage_wizard_init_v2_title, mDisk.getShortDescription());
+        setHeaderText(R.string.storage_wizard_init_v2_title, getDiskShortDescription());
 
         mExternal = requireViewById(R.id.storage_wizard_init_external);
         mInternal = requireViewById(R.id.storage_wizard_init_internal);
@@ -55,7 +55,6 @@ public class StorageWizardInit extends StorageWizardBase {
         if (!mDisk.isAdoptable()) {
             // If not adoptable, we only have one choice
             onNavigateExternal(null);
-            finish();
         } else if (!mIsPermittedToAdopt) {
             // TODO: Show a message about why this is disabled for guest and
             // that only an admin user can adopt an sd card.
@@ -77,6 +76,7 @@ public class StorageWizardInit extends StorageWizardBase {
             final Intent intent = new Intent(this, StorageWizardReady.class);
             intent.putExtra(DiskInfo.EXTRA_DISK_ID, mDisk.getId());
             startActivity(intent);
+            finish();
 
         } else {
             // Gotta format to get there

@@ -57,8 +57,8 @@ public class StorageWizardFormatProgress extends StorageWizardBase {
 
         mFormatPrivate = getIntent().getBooleanExtra(EXTRA_FORMAT_PRIVATE, false);
 
-        setHeaderText(R.string.storage_wizard_format_progress_title, mDisk.getShortDescription());
-        setBodyText(R.string.storage_wizard_format_progress_body, mDisk.getDescription());
+        setHeaderText(R.string.storage_wizard_format_progress_title, getDiskShortDescription());
+        setBodyText(R.string.storage_wizard_format_progress_body, getDiskDescription());
 
         mTask = (PartitionTask) getLastNonConfigurationInstance();
         if (mTask == null) {
@@ -91,7 +91,7 @@ public class StorageWizardFormatProgress extends StorageWizardBase {
                     storage.partitionPrivate(activity.mDisk.getId());
                     publishProgress(40);
 
-                    final VolumeInfo privateVol = activity.findFirstVolume(TYPE_PRIVATE, 5);
+                    final VolumeInfo privateVol = activity.findFirstVolume(TYPE_PRIVATE, 25);
                     final CompletableFuture<PersistableBundle> result = new CompletableFuture<>();
                     storage.benchmark(privateVol.getId(), new IVoldTaskListener.Stub() {
                         @Override

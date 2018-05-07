@@ -22,6 +22,7 @@ import android.text.TextUtils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+import java.util.List;
 
 /**
  * Data class representing a slice stored by {@link SlicesIndexer}.
@@ -57,7 +58,9 @@ public class SliceData {
 
     private final String mSummary;
 
-    private final String mScreenTitle;
+    private final CharSequence mScreenTitle;
+
+    private final String mKeywords;
 
     private final int mIconResource;
 
@@ -84,8 +87,12 @@ public class SliceData {
         return mSummary;
     }
 
-    public String getScreenTitle() {
+    public CharSequence getScreenTitle() {
         return mScreenTitle;
+    }
+
+    public String getKeywords() {
+        return mKeywords;
     }
 
     public int getIconResource() {
@@ -117,6 +124,7 @@ public class SliceData {
         mTitle = builder.mTitle;
         mSummary = builder.mSummary;
         mScreenTitle = builder.mScreenTitle;
+        mKeywords = builder.mKeywords;
         mIconResource = builder.mIconResource;
         mFragmentClassName = builder.mFragmentClassName;
         mUri = builder.mUri;
@@ -146,7 +154,9 @@ public class SliceData {
 
         private String mSummary;
 
-        private String mScreenTitle;
+        private CharSequence mScreenTitle;
+
+        private String mKeywords;
 
         private int mIconResource;
 
@@ -175,8 +185,13 @@ public class SliceData {
             return this;
         }
 
-        public Builder setScreenTitle(String screenTitle) {
+        public Builder setScreenTitle(CharSequence screenTitle) {
             mScreenTitle = screenTitle;
+            return this;
+        }
+
+        public Builder setKeywords(String keywords) {
+            mKeywords = keywords;
             return this;
         }
 
@@ -212,19 +227,19 @@ public class SliceData {
 
         public SliceData build() {
             if (TextUtils.isEmpty(mKey)) {
-                throw new IllegalStateException("Key cannot be empty");
+                throw new InvalidSliceDataException("Key cannot be empty");
             }
 
             if (TextUtils.isEmpty(mTitle)) {
-                throw new IllegalStateException("Title cannot be empty");
+                throw new InvalidSliceDataException("Title cannot be empty");
             }
 
             if (TextUtils.isEmpty(mFragmentClassName)) {
-                throw new IllegalStateException("Fragment Name cannot be empty");
+                throw new InvalidSliceDataException("Fragment Name cannot be empty");
             }
 
             if (TextUtils.isEmpty(mPrefControllerClassName)) {
-                throw new IllegalStateException("Preference Controller cannot be empty");
+                throw new InvalidSliceDataException("Preference Controller cannot be empty");
             }
 
             return new SliceData(this);
@@ -232,6 +247,13 @@ public class SliceData {
 
         public String getKey() {
             return mKey;
+        }
+    }
+
+    public static class InvalidSliceDataException extends RuntimeException {
+
+        public InvalidSliceDataException(String message) {
+            super(message);
         }
     }
 }

@@ -258,9 +258,10 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
                     Log.w(TAG, "Failed to get icon from uri " + uri);
                     return;
                 }
-                tile.icon = Icon.createWithResource(iconInfo.first, iconInfo.second);
-                ThreadUtils.postOnMainThread(() ->
-                        preference.setIcon(tile.icon.loadDrawable(preference.getContext()))
+                final Icon icon = Icon.createWithResource(iconInfo.first, iconInfo.second);
+                ThreadUtils.postOnMainThread(() -> {
+                            preference.setIcon(icon.loadDrawable(preference.getContext()));
+                    }
                 );
             });
     }

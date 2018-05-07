@@ -17,11 +17,16 @@
 
 package com.android.settings.slices;
 
+import static android.content.ContentResolver.SCHEME_CONTENT;
+
 import static com.google.common.truth.Truth.assertThat;
 
+import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
 
+import android.app.slice.SliceManager;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
@@ -41,6 +46,9 @@ import org.robolectric.RuntimeEnvironment;
 
 import androidx.slice.Slice;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 
 /**
@@ -62,17 +70,22 @@ public class SettingsSliceProviderTest {
     private Context mContext;
     private SettingsSliceProvider mProvider;
     private SQLiteDatabase mDb;
+    private SliceManager mManager;
 
     @Before
     public void setUp() {
         mContext = spy(RuntimeEnvironment.application);
         mProvider = spy(new SettingsSliceProvider());
+        mProvider.mSliceWeakDataCache = new HashMap<>();
         mProvider.mSliceDataCache = new HashMap<>();
         mProvider.mSlicesDatabaseAccessor = new SlicesDatabaseAccessor(mContext);
         when(mProvider.getContext()).thenReturn(mContext);
 
         mDb = SlicesDatabaseHelper.getInstance(mContext).getWritableDatabase();
         SlicesDatabaseHelper.getInstance(mContext).setIndexedState();
+        mManager = mock(SliceManager.class);
+        when(mContext.getSystemService(SliceManager.class)).thenReturn(mManager);
+        when(mManager.getPinnedSlices()).thenReturn(Collections.emptyList());
     }
 
     @After
@@ -96,6 +109,30 @@ public class SettingsSliceProviderTest {
         Uri uri = SliceBuilderUtils.getUri(INTENT_PATH, false);
 
         mProvider.loadSlice(uri);
+        SliceData data = mProvider.mSliceWeakDataCache.get(uri);
+
+        assertThat(data.getKey()).isEqualTo(KEY);
+        assertThat(data.getTitle()).isEqualTo(TITLE);
+    }
+
+    @Test
+    public void testLoadSlice_doesntCacheWithoutPin() {
+        insertSpecialCase(KEY);
+        Uri uri = SliceBuilderUtils.getUri(INTENT_PATH, false);
+
+        mProvider.loadSlice(uri);
+        SliceData data = mProvider.mSliceDataCache.get(uri);
+
+        assertThat(data).isNull();
+    }
+
+    @Test
+    public void testLoadSlice_cachesWithPin() {
+        insertSpecialCase(KEY);
+        Uri uri = SliceBuilderUtils.getUri(INTENT_PATH, false);
+        when(mManager.getPinnedSlices()).thenReturn(Arrays.asList(uri));
+
+        mProvider.loadSlice(uri);
         SliceData data = mProvider.mSliceDataCache.get(uri);
 
         assertThat(data.getKey()).isEqualTo(KEY);
@@ -105,16 +142,211 @@ public class SettingsSliceProviderTest {
     @Test
     public void testLoadSlice_cachedEntryRemovedOnBuild() {
         SliceData data = getDummyData();
-        mProvider.mSliceDataCache.put(data.getUri(), data);
+        mProvider.mSliceWeakDataCache.put(data.getUri(), data);
         mProvider.onBindSlice(data.getUri());
         insertSpecialCase(data.getKey());
 
-        SliceData cachedData = mProvider.mSliceDataCache.get(data.getUri());
+        SliceData cachedData = mProvider.mSliceWeakDataCache.get(data.getUri());
 
         assertThat(cachedData).isNull();
     }
 
+    @Test
+    public void testLoadSlice_cachedEntryRemovedOnUnpin() {
+        SliceData data = getDummyData();
+        mProvider.mSliceDataCache.put(data.getUri(), data);
+        mProvider.onSliceUnpinned(data.getUri());
+        insertSpecialCase(data.getKey());
+
+        SliceData cachedData = mProvider.mSliceWeakDataCache.get(data.getUri());
+
+        assertThat(cachedData).isNull();
+    }
+
+    @Test
+    public void getDescendantUris_fullActionUri_returnsSelf() {
+        final Uri uri = SliceBuilderUtils.getUri(
+                SettingsSlicesContract.PATH_SETTING_ACTION + "/key", true);
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).containsExactly(uri);
+    }
+
+    @Test
+    public void getDescendantUris_fullIntentUri_returnsSelf() {
+        final Uri uri = SliceBuilderUtils.getUri(
+                SettingsSlicesContract.PATH_SETTING_ACTION + "/key", true);
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).containsExactly(uri);
+    }
+
+    @Test
+    public void getDescendantUris_wrongPath_returnsEmpty() {
+        final Uri uri = SliceBuilderUtils.getUri("invalid_path", true);
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).isEmpty();
+    }
+
+    @Test
+    public void getDescendantUris_invalidPath_returnsEmpty() {
+        final String key = "platform_key";
+        insertSpecialCase(key, true /* isPlatformSlice */);
+        final Uri uri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSlicesContract.AUTHORITY)
+                .appendPath("invalid")
+                .build();
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).isEmpty();
+    }
+
+    @Test
+    public void getDescendantUris_platformSlice_doesNotReturnOEMSlice() {
+        insertSpecialCase("oem_key", false /* isPlatformSlice */);
+        final Uri uri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSlicesContract.AUTHORITY)
+                .build();
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).isEmpty();
+    }
+
+    @Test
+    public void getDescendantUris_oemSlice_doesNotReturnPlatformSlice() {
+        insertSpecialCase("platform_key", true /* isPlatformSlice */);
+        final Uri uri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSliceProvider.SLICE_AUTHORITY)
+                .build();
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).isEmpty();
+    }
+
+    @Test
+    public void getDescendantUris_oemSlice_returnsOEMUriDescendant() {
+        final String key = "oem_key";
+        insertSpecialCase(key, false /* isPlatformSlice */);
+        final Uri uri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSliceProvider.SLICE_AUTHORITY)
+                .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION)
+                .build();
+        final Uri expectedUri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSliceProvider.SLICE_AUTHORITY)
+                .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION)
+                .appendPath(key)
+                .build();
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).containsExactly(expectedUri);
+    }
+
+    @Test
+    public void getDescendantUris_oemSliceNoPath_returnsOEMUriDescendant() {
+        final String key = "oem_key";
+        insertSpecialCase(key, false /* isPlatformSlice */);
+        final Uri uri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSliceProvider.SLICE_AUTHORITY)
+                .build();
+        final Uri expectedUri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSliceProvider.SLICE_AUTHORITY)
+                .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION)
+                .appendPath(key)
+                .build();
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).containsExactly(expectedUri);
+    }
+
+    @Test
+    public void getDescendantUris_platformSlice_returnsPlatformUriDescendant() {
+        final String key = "platform_key";
+        insertSpecialCase(key, true /* isPlatformSlice */);
+        final Uri uri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSlicesContract.AUTHORITY)
+                .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION)
+                .build();
+        final Uri expectedUri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSlicesContract.AUTHORITY)
+                .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION)
+                .appendPath(key)
+                .build();
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).containsExactly(expectedUri);
+    }
+
+    @Test
+    public void getDescendantUris_platformSliceNoPath_returnsPlatformUriDescendant() {
+        final String key = "platform_key";
+        insertSpecialCase(key, true /* isPlatformSlice */);
+        final Uri uri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSlicesContract.AUTHORITY)
+                .build();
+        final Uri expectedUri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSlicesContract.AUTHORITY)
+                .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION)
+                .appendPath(key)
+                .build();
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).containsExactly(expectedUri);
+    }
+
+    @Test
+    public void getDescendantUris_noAuthorityNorPath_returnsAllUris() {
+        final String platformKey = "platform_key";
+        final String oemKey = "oemKey";
+        insertSpecialCase(platformKey, true /* isPlatformSlice */);
+        insertSpecialCase(oemKey, false /* isPlatformSlice */);
+        final Uri uri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .build();
+        final Uri expectedPlatformUri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSlicesContract.AUTHORITY)
+                .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION)
+                .appendPath(platformKey)
+                .build();
+        final Uri expectedOemUri = new Uri.Builder()
+                .scheme(SCHEME_CONTENT)
+                .authority(SettingsSliceProvider.SLICE_AUTHORITY)
+                .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION)
+                .appendPath(oemKey)
+                .build();
+
+        final Collection<Uri> descendants = mProvider.onGetSliceDescendants(uri);
+
+        assertThat(descendants).containsExactly(expectedPlatformUri, expectedOemUri);
+    }
+
     private void insertSpecialCase(String key) {
+        insertSpecialCase(key, true);
+    }
+
+    private void insertSpecialCase(String key, boolean isPlatformSlice) {
         ContentValues values = new ContentValues();
         values.put(SlicesDatabaseHelper.IndexColumns.KEY, key);
         values.put(SlicesDatabaseHelper.IndexColumns.TITLE, TITLE);
@@ -123,6 +355,8 @@ public class SettingsSliceProviderTest {
         values.put(SlicesDatabaseHelper.IndexColumns.ICON_RESOURCE, 1234);
         values.put(SlicesDatabaseHelper.IndexColumns.FRAGMENT, "test");
         values.put(SlicesDatabaseHelper.IndexColumns.CONTROLLER, "test");
+        values.put(SlicesDatabaseHelper.IndexColumns.PLATFORM_SLICE, isPlatformSlice);
+        values.put(SlicesDatabaseHelper.IndexColumns.SLICE_TYPE, SliceData.SliceType.INTENT);
 
         mDb.replaceOrThrow(SlicesDatabaseHelper.Tables.TABLE_SLICES_INDEX, null, values);
     }

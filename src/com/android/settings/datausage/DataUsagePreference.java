@@ -21,7 +21,6 @@ import android.net.NetworkTemplate;
 import android.os.Bundle;
 import android.support.v4.content.res.TypedArrayUtils;
 import android.support.v7.preference.Preference;
-import android.text.format.Formatter;
 import android.util.AttributeSet;
 import android.util.FeatureFlagUtils;
 
@@ -57,17 +56,17 @@ public class DataUsagePreference extends Preference implements TemplatePreferenc
         DataUsageController.DataUsageInfo usageInfo = controller.getDataUsageInfo(mTemplate);
         if (FeatureFlagUtils.isEnabled(getContext(), FeatureFlags.DATA_USAGE_SETTINGS_V2)) {
             if (mTemplate.isMatchRuleMobile()) {
-                setTitle(getContext().getString(R.string.app_cellular_data_usage));
+                setTitle(R.string.app_cellular_data_usage);
             } else {
                 setTitle(mTitleRes);
                 setSummary(getContext().getString(R.string.data_usage_template,
-                        Formatter.formatFileSize(getContext(), usageInfo.usageLevel),
+                        DataUsageUtils.formatDataUsage(getContext(), usageInfo.usageLevel),
                                 usageInfo.period));
             }
         } else {
             setTitle(mTitleRes);
             setSummary(getContext().getString(R.string.data_usage_template,
-                    Formatter.formatFileSize(getContext(), usageInfo.usageLevel),
+                    DataUsageUtils.formatDataUsage(getContext(), usageInfo.usageLevel),
                             usageInfo.period));
         }
         setIntent(getIntent());
@@ -84,7 +83,7 @@ public class DataUsagePreference extends Preference implements TemplatePreferenc
                 .setSourceMetricsCategory(MetricsProto.MetricsEvent.VIEW_UNKNOWN);
         if (FeatureFlagUtils.isEnabled(getContext(), FeatureFlags.DATA_USAGE_SETTINGS_V2)) {
             if (mTemplate.isMatchRuleMobile()) {
-                launcher.setTitle(getContext().getString(R.string.app_cellular_data_usage));
+                launcher.setTitle(R.string.app_cellular_data_usage);
             } else {
                 launcher.setTitle(mTitleRes);
             }

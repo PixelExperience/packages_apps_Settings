@@ -29,6 +29,7 @@ import static com.google.common.truth.Truth.assertThat;
 import android.app.PendingIntent;
 import android.content.Context;
 
+import java.util.Arrays;
 import java.util.List;
 
 import androidx.slice.Slice;
@@ -55,6 +56,7 @@ public class SliceTester {
      * - No toggles
      * - Correct intent
      * - Correct title
+     * - Correct keywords
      */
     public static void testSettingsIntentSlice(Context context, Slice slice, SliceData sliceData) {
         final SliceMetadata metadata = SliceMetadata.from(context, slice);
@@ -64,10 +66,12 @@ public class SliceTester {
 
         final PendingIntent primaryPendingIntent = metadata.getPrimaryAction().getAction();
         assertThat(primaryPendingIntent).isEqualTo(
-                SliceBuilderUtils.getContentIntent(context, sliceData));
+                SliceBuilderUtils.getContentPendingIntent(context, sliceData));
 
         final List<SliceItem> sliceItems = slice.getItems();
         assertTitle(sliceItems, sliceData.getTitle());
+
+        assertKeywords(metadata, sliceData);
     }
 
     /**
@@ -76,6 +80,7 @@ public class SliceTester {
      * - Correct toggle intent
      * - Correct content intent
      * - Correct title
+     * - Correct keywords
      */
     public static void testSettingsToggleSlice(Context context, Slice slice, SliceData sliceData) {
         final SliceMetadata metadata = SliceMetadata.from(context, slice);
@@ -97,16 +102,19 @@ public class SliceTester {
         // Check primary intent
         final PendingIntent primaryPendingIntent = metadata.getPrimaryAction().getAction();
         assertThat(primaryPendingIntent).isEqualTo(
-                SliceBuilderUtils.getContentIntent(context, sliceData));
+                SliceBuilderUtils.getContentPendingIntent(context, sliceData));
 
         final List<SliceItem> sliceItems = slice.getItems();
         assertTitle(sliceItems, sliceData.getTitle());
+
+        assertKeywords(metadata, sliceData);
     }
 
     /**
      * Test the contents of an slider based slice, including:
      * - No intent
      * - Correct title
+     * - Correct keywords
      */
     public static void testSettingsSliderSlice(Context context, Slice slice, SliceData sliceData) {
         final SliceMetadata metadata = SliceMetadata.from(context, slice);
@@ -115,11 +123,14 @@ public class SliceTester {
                 sliceData.getIconResource());
 
         // Check primary intent
-        final SliceAction primaryAction = metadata.getPrimaryAction();
-        assertThat(primaryAction).isNull();
+        final PendingIntent primaryPendingIntent = metadata.getPrimaryAction().getAction();
+        assertThat(primaryPendingIntent).isEqualTo(
+                SliceBuilderUtils.getContentPendingIntent(context, sliceData));
 
         final List<SliceItem> sliceItems = slice.getItems();
         assertTitle(sliceItems, sliceData.getTitle());
+
+        assertKeywords(metadata, sliceData);
     }
 
     /**
@@ -127,6 +138,7 @@ public class SliceTester {
      * - No toggles
      * - Correct title
      * - Correct intent
+     * - Correct keywords
      */
     public static void testSettingsUnavailableSlice(Context context, Slice slice,
             SliceData sliceData) {
@@ -147,24 +159,36 @@ public class SliceTester {
             case DISABLED_FOR_USER:
             case DISABLED_DEPENDENT_SETTING:
                 assertThat(primaryPendingIntent).isEqualTo(
-                        SliceBuilderUtils.getContentIntent(context, sliceData));
+                        SliceBuilderUtils.getContentPendingIntent(context, sliceData));
                 break;
         }
 
         final List<SliceItem> sliceItems = slice.getItems();
         assertTitle(sliceItems, sliceData.getTitle());
+
+        assertKeywords(metadata, sliceData);
     }
 
     private static void assertTitle(List<SliceItem> sliceItems, String title) {
         boolean hasTitle = false;
         for (SliceItem item : sliceItems) {
-            List<SliceItem> titles = SliceQuery.findAll(item, FORMAT_TEXT, HINT_TITLE,
+            List<SliceItem> titleItems = SliceQuery.findAll(item, FORMAT_TEXT, HINT_TITLE,
                     null /* non-hints */);
-            if (titles != null & titles.size() == 1) {
-                assertThat(titles.get(0).getText()).isEqualTo(title);
-                hasTitle = true;
+            if (titleItems == null) {
+                continue;
+            }
+
+            hasTitle = true;
+            for (SliceItem subTitleItem : titleItems) {
+                assertThat(subTitleItem.getText()).isEqualTo(title);
             }
         }
         assertThat(hasTitle).isTrue();
+    }
+
+    private static void assertKeywords(SliceMetadata metadata, SliceData data) {
+        final List<String> keywords = metadata.getSliceKeywords();
+        final List<String> expectedKeywords = Arrays.asList(data.getKeywords().split(","));
+        assertThat(keywords).containsExactlyElementsIn(expectedKeywords);
     }
 }

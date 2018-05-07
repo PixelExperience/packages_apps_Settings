@@ -129,6 +129,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
     static final String EXTRA_TITLE_RES = "title_res";
     static final String EXTRA_RESOLVE_INFO = "resolve_info";
     static final String EXTRA_SUMMARY = "summary";
+    static final String EXTRA_SUMMARY_RES = "summary_res";
     static final String EXTRA_SETTINGS_TITLE = "settings_title";
     static final String EXTRA_COMPONENT_NAME = "component_name";
     static final String EXTRA_SETTINGS_COMPONENT_NAME = "settings_component_name";
@@ -342,6 +343,21 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
         return super.onPreferenceTreeClick(preference);
     }
 
+    public static CharSequence getServiceSummary(Context context, AccessibilityServiceInfo info,
+            boolean serviceEnabled) {
+        final String serviceState = serviceEnabled
+                ? context.getString(R.string.accessibility_summary_state_enabled)
+                : context.getString(R.string.accessibility_summary_state_disabled);
+        final CharSequence serviceSummary = info.loadSummary(context.getPackageManager());
+        final String stateSummaryCombo = context.getString(
+                R.string.preference_summary_default_combination,
+                serviceState, serviceSummary);
+
+        return (TextUtils.isEmpty(serviceSummary))
+                ? serviceState
+                : stateSummaryCombo;
+    }
+
     private void handleToggleTextContrastPreferenceClick() {
         Settings.Secure.putInt(getContentResolver(),
                 Settings.Secure.ACCESSIBILITY_HIGH_TEXT_CONTRAST_ENABLED,
@@ -543,15 +559,9 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
                 preference.setSummary(R.string.accessibility_summary_state_stopped);
                 description = getString(R.string.accessibility_description_state_stopped);
             } else {
-                final String serviceState = serviceEnabled ?
-                        getString(R.string.accessibility_summary_state_enabled) :
-                        getString(R.string.accessibility_summary_state_disabled);
-                final CharSequence serviceSummary = info.loadSummary(getPackageManager());
-                final String stateSummaryCombo = getString(
-                        R.string.preference_summary_default_combination,
-                        serviceState, serviceSummary);
-                preference.setSummary((TextUtils.isEmpty(serviceSummary)) ? serviceState
-                        : stateSummaryCombo);
+                final CharSequence serviceSummary = getServiceSummary(getContext(), info,
+                        serviceEnabled);
+                preference.setSummary(serviceSummary);
             }
 
             // Disable all accessibility services that are not permitted.

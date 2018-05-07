@@ -17,8 +17,10 @@
 package com.android.settings.datausage;
 
 import static com.google.common.truth.Truth.assertThat;
-import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.doReturn;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.when;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -28,6 +30,7 @@ import android.graphics.Typeface;
 import android.net.NetworkTemplate;
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceViewHolder;
+import android.telephony.SubscriptionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -41,17 +44,15 @@ import com.android.settings.SubSettings;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.shadow.SettingsShadowResourcesImpl;
 import com.android.settingslib.Utils;
-import com.android.settingslib.core.instrumentation.VisibilityLoggerMixin;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.MockitoAnnotations;
 import org.robolectric.Robolectric;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
 import org.robolectric.Shadows;
+import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowActivity;
 
 import java.util.concurrent.TimeUnit;
@@ -85,13 +86,13 @@ public class DataUsageSummaryPreferenceTest {
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
-        mContext = RuntimeEnvironment.application;
+        mContext = spy(RuntimeEnvironment.application);
         mSummaryPreference = new DataUsageSummaryPreference(mContext, null /* attrs */);
         LayoutInflater inflater = LayoutInflater.from(mContext);
         View view = inflater.inflate(mSummaryPreference.getLayoutResource(), null /* root */,
                 false /* attachToRoot */);
 
-        mHolder = PreferenceViewHolder.createInstanceForTests(view);
+        mHolder = spy(PreferenceViewHolder.createInstanceForTests(view));
 
         final long now = System.currentTimeMillis();
         mCycleEnd = now + CYCLE_DURATION_MILLIS;
@@ -216,7 +217,7 @@ public class DataUsageSummaryPreferenceTest {
     }
 
     @Test
-    public void testSetUsageInfo_withRecentCarrierUpdate_doesNotSetCarrierInfoWarningColorAndFont() {
+    public void setUsageInfo_withRecentCarrierUpdate_doesNotSetCarrierInfoWarningColorAndFont() {
         final long updateTime = System.currentTimeMillis() - TimeUnit.HOURS.toMillis(1);
         mCarrierInfo = (TextView) mHolder.findViewById(R.id.carrier_and_update);
         mSummaryPreference.setUsageInfo(mCycleEnd, updateTime, DUMMY_CARRIER, 1 /* numPlans */,
@@ -364,11 +365,15 @@ public class DataUsageSummaryPreferenceTest {
     public void testSetUsageAndRemainingInfo_withUsageInfo_dataUsageAndRemainingShown() {
         mSummaryPreference.setUsageInfo(mCycleEnd, mUpdateTime, DUMMY_CARRIER, 1 /* numPlans */,
                 new Intent());
-        mSummaryPreference.setUsageNumbers(1000000L, 10000000L, true);
+        mSummaryPreference.setUsageNumbers(
+                BillingCycleSettings.MIB_IN_BYTES,
+                10 * BillingCycleSettings.MIB_IN_BYTES,
+                true /* hasMobileData */);
 
         bindViewHolder();
         assertThat(mDataUsed.getText().toString()).isEqualTo("1.00 MB used");
         assertThat(mDataRemaining.getText().toString()).isEqualTo("9.00 MB left");
+        assertThat(mDataRemaining.getVisibility()).isEqualTo(View.VISIBLE);
         final int colorId = Utils.getColorAttr(mContext, android.R.attr.colorAccent);
         assertThat(mDataRemaining.getCurrentTextColor()).isEqualTo(colorId);
     }
@@ -377,7 +382,10 @@ public class DataUsageSummaryPreferenceTest {
     public void testSetUsageInfo_withDataOverusage() {
         mSummaryPreference.setUsageInfo(mCycleEnd, mUpdateTime, DUMMY_CARRIER, 1 /* numPlans */,
                 new Intent());
-        mSummaryPreference.setUsageNumbers(11_000_000L, 10_000_000L, true);
+        mSummaryPreference.setUsageNumbers(
+                11 * BillingCycleSettings.MIB_IN_BYTES,
+                10 * BillingCycleSettings.MIB_IN_BYTES,
+                true /* hasMobileData */);
 
         bindViewHolder();
         assertThat(mDataUsed.getText().toString()).isEqualTo("11.00 MB used");
@@ -390,11 +398,77 @@ public class DataUsageSummaryPreferenceTest {
     public void testSetUsageInfo_withUsageInfo_dataUsageShown() {
         mSummaryPreference.setUsageInfo(mCycleEnd, mUpdateTime, DUMMY_CARRIER, 0 /* numPlans */,
                 new Intent());
-        mSummaryPreference.setUsageNumbers(1000000L, -1L, true);
+        mSummaryPreference.setUsageNumbers(
+                BillingCycleSettings.MIB_IN_BYTES, -1L, true /* hasMobileData */);
 
         bindViewHolder();
         assertThat(mDataUsed.getText().toString()).isEqualTo("1.00 MB used");
         assertThat(mDataRemaining.getText()).isEqualTo("");
+    }
+
+    @Test
+    public void testSetAppIntent_toMdpApp_intentCorrect() {
+        final Activity activity = Robolectric.setupActivity(Activity.class);
+        final Intent intent = new Intent(SubscriptionManager.ACTION_MANAGE_SUBSCRIPTION_PLANS);
+        intent.setPackage("test-owner.example.com");
+        intent.putExtra(SubscriptionManager.EXTRA_SUBSCRIPTION_INDEX, 42);
+
+        mSummaryPreference.setUsageInfo(mCycleEnd, mUpdateTime, DUMMY_CARRIER, 0 /* numPlans */,
+                intent);
+
+        bindViewHolder();
+        assertThat(mLaunchButton.getVisibility()).isEqualTo(View.VISIBLE);
+        assertThat(mLaunchButton.getText())
+                .isEqualTo(mContext.getString(R.string.launch_mdp_app_text));
+
+        mLaunchButton.callOnClick();
+        ShadowActivity shadowActivity = Shadows.shadowOf(activity);
+        Intent startedIntent = shadowActivity.getNextStartedActivity();
+        assertThat(startedIntent.getAction())
+                .isEqualTo(SubscriptionManager.ACTION_MANAGE_SUBSCRIPTION_PLANS);
+        assertThat(startedIntent.getPackage()).isEqualTo("test-owner.example.com");
+        assertThat(startedIntent.getIntExtra(SubscriptionManager.EXTRA_SUBSCRIPTION_INDEX, -1))
+                .isEqualTo(42);
+    }
+
+    @Test
+    public void testSetUsageInfo_withOverflowStrings_dataRemainingNotShown() {
+        LayoutInflater inflater = LayoutInflater.from(mContext);
+        View view = inflater.inflate(mSummaryPreference.getLayoutResource(), null /* root */,
+                false /* attachToRoot */);
+
+        TextView dataUsed = spy(new TextView(mContext));
+        TextView dataRemaining = spy(new TextView(mContext));
+        doReturn(dataUsed).when(mHolder).findViewById(R.id.data_usage_view);
+        doReturn(dataRemaining).when(mHolder).findViewById(R.id.data_remaining_view);
+
+        mSummaryPreference.setUsageInfo(mCycleEnd, mUpdateTime, DUMMY_CARRIER, 1 /* numPlans */,
+                new Intent());
+        mSummaryPreference.setUsageNumbers(
+                BillingCycleSettings.MIB_IN_BYTES,
+                10 * BillingCycleSettings.MIB_IN_BYTES,
+                true /* hasMobileData */);
+
+        when(mContext.getResources()).thenCallRealMethod();
+        when(mContext.getText(R.string.data_used_formatted))
+                .thenReturn("^1 ^2 used with long trailing text");
+        when(mContext.getText(R.string.data_remaining)).thenReturn("^1 left");
+
+        bindViewHolder();
+
+        doReturn(500).when(dataUsed).getMeasuredWidth();
+        doReturn(500).when(dataRemaining).getMeasuredWidth();
+
+        assertThat(dataRemaining.getVisibility()).isEqualTo(View.VISIBLE);
+
+        MeasurableLinearLayout layout =
+                (MeasurableLinearLayout) mHolder.findViewById(R.id.usage_layout);
+        layout.measure(
+                View.MeasureSpec.makeMeasureSpec(800, View.MeasureSpec.EXACTLY),
+                View.MeasureSpec.makeMeasureSpec(1000, View.MeasureSpec.EXACTLY));
+
+        assertThat(dataUsed.getText().toString()).isEqualTo("1.00 MB used with long trailing text");
+        assertThat(dataRemaining.getVisibility()).isEqualTo(View.GONE);
     }
 
     @Test
@@ -445,8 +519,8 @@ public class DataUsageSummaryPreferenceTest {
         mCycleTime = (TextView) mHolder.findViewById(R.id.cycle_left_time);
         mCarrierInfo = (TextView) mHolder.findViewById(R.id.carrier_and_update);
         mDataLimits = (TextView) mHolder.findViewById(R.id.data_limits);
-        mDataUsed = (TextView) mHolder.findViewById(R.id.data_usage_view);
-        mDataRemaining = (TextView) mHolder.findViewById(R.id.data_remaining_view);
+        mDataUsed = spy((TextView) mHolder.findViewById(R.id.data_usage_view));
+        mDataRemaining = spy((TextView) mHolder.findViewById(R.id.data_remaining_view));
         mLaunchButton = (Button) mHolder.findViewById(R.id.launch_mdp_app_button);
         mLabelBar = (LinearLayout) mHolder.findViewById(R.id.label_bar);
         mLabel1 = (TextView) mHolder.findViewById(R.id.text1);

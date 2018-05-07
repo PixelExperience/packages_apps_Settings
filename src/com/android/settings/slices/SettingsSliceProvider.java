@@ -16,21 +16,34 @@
 
 package com.android.settings.slices;
 
+import static android.Manifest.permission.READ_SEARCH_INDEXABLES;
+
 import android.app.PendingIntent;
 import android.app.slice.SliceManager;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Icon;
 import android.net.Uri;
 import android.net.wifi.WifiManager;
+import android.os.StrictMode;
+import android.provider.Settings;
+import android.provider.SettingsSlicesContract;
 import android.support.annotation.VisibleForTesting;
 import android.support.v4.graphics.drawable.IconCompat;
+import android.text.TextUtils;
+import android.util.ArrayMap;
 import android.util.Log;
+import android.util.Pair;
 
 import com.android.settings.R;
 import com.android.settingslib.utils.ThreadUtils;
 
 import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.WeakHashMap;
 
@@ -103,12 +116,18 @@ public class SettingsSliceProvider extends SliceProvider {
     SlicesDatabaseAccessor mSlicesDatabaseAccessor;
 
     @VisibleForTesting
+    Map<Uri, SliceData> mSliceWeakDataCache;
     Map<Uri, SliceData> mSliceDataCache;
+
+    public SettingsSliceProvider() {
+        super(READ_SEARCH_INDEXABLES);
+    }
 
     @Override
     public boolean onCreateSliceProvider() {
         mSlicesDatabaseAccessor = new SlicesDatabaseAccessor(getContext());
-        mSliceDataCache = new WeakHashMap<>();
+        mSliceDataCache = new ArrayMap<>();
+        mSliceWeakDataCache = new WeakHashMap<>();
         return true;
     }
 
@@ -124,7 +143,23 @@ public class SettingsSliceProvider extends SliceProvider {
     }
 
     @Override
+    public void onSlicePinned(Uri sliceUri) {
+        // Start warming the slice, we expect someone will want it soon.
+        loadSliceInBackground(sliceUri);
+    }
+
+    @Override
+    public void onSliceUnpinned(Uri sliceUri) {
+        mSliceDataCache.remove(sliceUri);
+    }
+
+    @Override
     public Slice onBindSlice(Uri sliceUri) {
+        // TODO: Remove this when all slices are not breaking strict mode
+        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
+                .permitAll()
+                .build());
+
         String path = sliceUri.getPath();
         // If adding a new Slice, do not directly match Slice URIs.
         // Use {@link SlicesDatabaseAccessor}.
@@ -133,23 +168,109 @@ public class SettingsSliceProvider extends SliceProvider {
                 return createWifiSlice(sliceUri);
         }
 
-        SliceData cachedSliceData = mSliceDataCache.get(sliceUri);
+        SliceData cachedSliceData = mSliceWeakDataCache.get(sliceUri);
         if (cachedSliceData == null) {
             loadSliceInBackground(sliceUri);
             return getSliceStub(sliceUri);
         }
 
         // Remove the SliceData from the cache after it has been used to prevent a memory-leak.
-        mSliceDataCache.remove(sliceUri);
+        if (!mSliceDataCache.containsKey(sliceUri)) {
+            mSliceWeakDataCache.remove(sliceUri);
+        }
         return SliceBuilderUtils.buildSlice(getContext(), cachedSliceData);
+    }
+
+    /**
+     * Get a list of all valid Uris based on the keys indexed in the Slices database.
+     * <p>
+     * This will return a list of {@link Uri uris} depending on {@param uri}, following:
+     * 1. Authority & Full Path -> Only {@param uri}. It is only a prefix for itself.
+     * 2. Authority & No path -> A list of authority/action/$KEY$, where
+     * {@code $KEY$} is a list of all Slice-enabled keys for the authority.
+     * 3. Authority & action path -> A list of authority/action/$KEY$, where
+     * {@code $KEY$} is a list of all Slice-enabled keys for the authority.
+     * 4. Empty authority & path -> A list of Uris with all keys for both supported authorities.
+     * 5. Else -> Empty list.
+     * <p>
+     * Note that the authority will stay consistent with {@param uri}, and the list of valid Slice
+     * keys depends on if the authority is {@link SettingsSlicesContract#AUTHORITY} or
+     * {@link #SLICE_AUTHORITY}.
+     *
+     * @param uri The uri to look for descendants under.
+     * @returns all valid Settings uris for which {@param uri} is a prefix.
+     */
+    @Override
+    public Collection<Uri> onGetSliceDescendants(Uri uri) {
+        final List<Uri> descendants = new ArrayList<>();
+        final Pair<Boolean, String> pathData = SliceBuilderUtils.getPathData(uri);
+
+        if (pathData != null) {
+            // Uri has a full path and will not have any descendants.
+            descendants.add(uri);
+            return descendants;
+        }
+
+        final String authority = uri.getAuthority();
+        final String pathPrefix = uri.getPath();
+        final boolean isPathEmpty = pathPrefix.isEmpty();
+
+        // No path nor authority. Return all possible Uris.
+        if (isPathEmpty && TextUtils.isEmpty(authority)) {
+            final List<String> platformKeys = mSlicesDatabaseAccessor.getSliceKeys(
+                    true /* isPlatformSlice */);
+            final List<String> oemKeys = mSlicesDatabaseAccessor.getSliceKeys(
+                    false /* isPlatformSlice */);
+            final List<Uri> allUris = buildUrisFromKeys(platformKeys,
+                    SettingsSlicesContract.AUTHORITY);
+            allUris.addAll(buildUrisFromKeys(oemKeys, SettingsSliceProvider.SLICE_AUTHORITY));
+
+            return allUris;
+        }
+
+        // Path is anything but empty, "action", or "intent". Return empty list.
+        if (!isPathEmpty
+                && !TextUtils.equals(pathPrefix, "/" + SettingsSlicesContract.PATH_SETTING_ACTION)
+                && !TextUtils.equals(pathPrefix,
+                "/" + SettingsSlicesContract.PATH_SETTING_INTENT)) {
+            // Invalid path prefix, there are no valid Uri descendants.
+            return descendants;
+        }
+
+        // Can assume authority belongs to the provider. Return all Uris for the authority.
+        final boolean isPlatformUri = TextUtils.equals(authority, SettingsSlicesContract.AUTHORITY);
+        final List<String> keys = mSlicesDatabaseAccessor.getSliceKeys(isPlatformUri);
+        return buildUrisFromKeys(keys, authority);
+    }
+
+    private List<Uri> buildUrisFromKeys(List<String> keys, String authority) {
+        final List<Uri> descendants = new ArrayList<>();
+
+        final Uri.Builder builder = new Uri.Builder()
+                .scheme(ContentResolver.SCHEME_CONTENT)
+                .authority(authority)
+                .appendPath(SettingsSlicesContract.PATH_SETTING_ACTION);
+
+        final String newUriPathPrefix = SettingsSlicesContract.PATH_SETTING_ACTION + "/";
+        for (String key : keys) {
+            builder.path(newUriPathPrefix + key);
+            descendants.add(builder.build());
+        }
+
+        return descendants;
     }
 
     @VisibleForTesting
     void loadSlice(Uri uri) {
         long startBuildTime = System.currentTimeMillis();
 
-        SliceData sliceData = mSlicesDatabaseAccessor.getSliceDataFromUri(uri);
-        mSliceDataCache.put(uri, sliceData);
+        final SliceData sliceData = mSlicesDatabaseAccessor.getSliceDataFromUri(uri);
+        List<Uri> pinnedSlices = getContext().getSystemService(
+                SliceManager.class).getPinnedSlices();
+        if (pinnedSlices.contains(uri)) {
+            mSliceDataCache.put(uri, sliceData);
+        }
+        mSliceWeakDataCache.put(uri, sliceData);
         getContext().getContentResolver().notifyChange(uri, null /* content observer */);
 
         Log.d(TAG, "Built slice (" + uri + ") in: " +
@@ -168,7 +289,8 @@ public class SettingsSliceProvider extends SliceProvider {
      * {@link SliceData} is loaded from {@link SlicesDatabaseHelper.Tables#TABLE_SLICES_INDEX}.
      */
     private Slice getSliceStub(Uri uri) {
-        return new ListBuilder(getContext(), uri).build();
+        // TODO: Switch back to ListBuilder when slice loading states are fixed.
+        return new Slice.Builder(uri).build();
     }
 
     // TODO (b/70622039) remove this when the proper wifi slice is enabled.
@@ -204,13 +326,14 @@ public class SettingsSliceProvider extends SliceProvider {
                         .addEndItem(new SliceAction(getBroadcastIntent(ACTION_WIFI_CHANGED),
                                 null, finalWifiEnabled))
                         .setPrimaryAction(
-                                new SliceAction(getIntent(Intent.ACTION_MAIN),
+                                new SliceAction(getIntent(Settings.ACTION_WIFI_SETTINGS),
                                         (IconCompat) null, null)))
                 .build();
     }
 
     private PendingIntent getIntent(String action) {
         Intent intent = new Intent(action);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         PendingIntent pi = PendingIntent.getActivity(getContext(), 0, intent, 0);
         return pi;
     }

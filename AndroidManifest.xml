@@ -739,23 +739,6 @@
         </activity>
 
         <activity
-            android:name="Settings$ZenModeBlockedEffectsSettingsActivity"
-            android:label="@string/zen_mode_what_to_block_title"
-            android:icon="@drawable/ic_settings_notifications"
-            android:exported="true"
-            android:taskAffinity="com.android.settings"
-            android:parentActivityName="Settings">
-            <intent-filter android:priority="1">
-                <action android:name="android.settings.ZEN_MODE_BLOCKED_EFFECTS_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.notification.ZenModeBlockedEffectsSettings" />
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                       android:value="true" />
-        </activity>
-
-        <activity
             android:name=".notification.ZenOnboardingActivity"
             android:label="@string/zen_onboarding_dnd_visual_disturbances_header"
             android:icon="@drawable/ic_settings_notifications"
@@ -1298,6 +1281,22 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.location.LocationSettings" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+        <activity
+            android:name="Settings$ScanningSettingsActivity"
+            android:label="@string/location_scanning_screen_title"
+            android:icon="@drawable/ic_settings_location"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:taskAffinity="com.android.settings"
+            android:parentActivityName="Settings">
+            <intent-filter android:priority="1">
+                <action android:name="android.settings.LOCATION_SCANNING_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.location.ScanningSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
@@ -2639,6 +2638,8 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.apps"/>
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/summary_empty"/>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.notification.ConfigureNotificationSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
@@ -2725,6 +2726,7 @@
 
         <!-- Show channel-level notification settings (channel passed in as extras) -->
         <activity android:name="Settings$ChannelNotificationSettingsActivity"
+                  android:label="@string/notification_channel_title"
                   android:exported="true">
             <intent-filter android:priority="1">
                 <action android:name="android.settings.CHANNEL_NOTIFICATION_SETTINGS" />
@@ -3172,6 +3174,9 @@
             android:name=".SettingsDumpService"
             android:exported="true"
             android:permission="android.permission.DUMP" />
+
+         <service android:name=".search.DeviceIndexUpdateJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <!-- Quick Settings tiles for Developer Options -->
         <service

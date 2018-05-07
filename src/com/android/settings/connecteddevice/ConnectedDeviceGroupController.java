@@ -22,16 +22,19 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
 
+import com.android.settings.bluetooth.BluetoothDeviceUpdater;
+import com.android.settings.bluetooth.ConnectedBluetoothDeviceUpdater;
+import com.android.settings.connecteddevice.dock.DockUpdater;
 import com.android.settings.connecteddevice.usb.ConnectedUsbDeviceUpdater;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settings.bluetooth.BluetoothDeviceUpdater;
-import com.android.settings.bluetooth.ConnectedBluetoothDeviceUpdater;
-import com.android.settingslib.core.lifecycle.Lifecycle;
-import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.overlay.DockUpdaterFeatureProvider;
+import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.lifecycle.events.OnStart;
 import com.android.settingslib.core.lifecycle.events.OnStop;
+import com.android.settingslib.core.lifecycle.Lifecycle;
+import com.android.settingslib.core.lifecycle.LifecycleObserver;
 
 /**
  * Controller to maintain the {@link android.support.v7.preference.PreferenceGroup} for all
@@ -47,32 +50,24 @@ public class ConnectedDeviceGroupController extends BasePreferenceController
     PreferenceGroup mPreferenceGroup;
     private BluetoothDeviceUpdater mBluetoothDeviceUpdater;
     private ConnectedUsbDeviceUpdater mConnectedUsbDeviceUpdater;
+    private DockUpdater mConnectedDockUpdater;
 
-    public ConnectedDeviceGroupController(Context context, DashboardFragment fragment,
-            Lifecycle lifecycle) {
+    public ConnectedDeviceGroupController(Context context) {
         super(context, KEY);
-        init(lifecycle, new ConnectedBluetoothDeviceUpdater(context, fragment, this),
-                new ConnectedUsbDeviceUpdater(context, fragment, this));
-    }
-
-    @VisibleForTesting
-    ConnectedDeviceGroupController(DashboardFragment fragment, Lifecycle lifecycle,
-            BluetoothDeviceUpdater bluetoothDeviceUpdater,
-            ConnectedUsbDeviceUpdater connectedUsbDeviceUpdater) {
-        super(fragment.getContext(), KEY);
-        init(lifecycle, bluetoothDeviceUpdater, connectedUsbDeviceUpdater);
     }
 
     @Override
     public void onStart() {
         mBluetoothDeviceUpdater.registerCallback();
         mConnectedUsbDeviceUpdater.registerCallback();
+        mConnectedDockUpdater.registerCallback();
     }
 
     @Override
     public void onStop() {
         mConnectedUsbDeviceUpdater.unregisterCallback();
         mBluetoothDeviceUpdater.unregisterCallback();
+        mConnectedDockUpdater.unregisterCallback();
     }
 
     @Override
@@ -85,6 +80,7 @@ public class ConnectedDeviceGroupController extends BasePreferenceController
             mBluetoothDeviceUpdater.setPrefContext(screen.getContext());
             mBluetoothDeviceUpdater.forceUpdate();
             mConnectedUsbDeviceUpdater.initUsbPreference(screen.getContext());
+            mConnectedDockUpdater.forceUpdate();
         }
     }
 
@@ -116,12 +112,24 @@ public class ConnectedDeviceGroupController extends BasePreferenceController
         }
     }
 
-    private void init(Lifecycle lifecycle, BluetoothDeviceUpdater bluetoothDeviceUpdater,
-            ConnectedUsbDeviceUpdater connectedUsbDeviceUpdater) {
-        if (lifecycle != null && isAvailable()) {
-            lifecycle.addObserver(this);
-        }
+    @VisibleForTesting
+    public void init(BluetoothDeviceUpdater bluetoothDeviceUpdater,
+            ConnectedUsbDeviceUpdater connectedUsbDeviceUpdater,
+            DockUpdater connectedDockUpdater) {
+
         mBluetoothDeviceUpdater = bluetoothDeviceUpdater;
         mConnectedUsbDeviceUpdater = connectedUsbDeviceUpdater;
+        mConnectedDockUpdater = connectedDockUpdater;
+    }
+
+    public void init(DashboardFragment fragment) {
+        final Context context = fragment.getContext();
+        DockUpdaterFeatureProvider dockUpdaterFeatureProvider =
+                FeatureFactory.getFactory(context).getDockUpdaterFeatureProvider();
+        final DockUpdater connectedDockUpdater =
+                dockUpdaterFeatureProvider.getConnectedDockUpdater(context, this);
+        init(new ConnectedBluetoothDeviceUpdater(context, fragment, this),
+                new ConnectedUsbDeviceUpdater(context, fragment, this),
+                connectedDockUpdater);
     }
 }

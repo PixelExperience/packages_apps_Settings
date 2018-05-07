@@ -48,7 +48,9 @@ import com.android.internal.os.BatteryStatsHelper;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.applications.LayoutPreference;
+import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.fuelgauge.anomaly.Anomaly;
+import com.android.settings.fuelgauge.batterytip.BatteryTipPreferenceController;
 import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.XmlTestUtils;
@@ -187,7 +189,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testUpdateLastFullChargePreference_noAverageTime_showLastFullChargeSummary() {
+    public void updateLastFullChargePreference_noAverageTime_showLastFullChargeSummary() {
         mFragment.mBatteryInfo = null;
         when(mFragment.getContext()).thenReturn(mRealContext);
         doReturn(TIME_SINCE_LAST_FULL_CHARGE_MS).when(
@@ -200,7 +202,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testUpdateLastFullChargePreference_hasAverageTime_showFullChargeLastSummary() {
+    public void updateLastFullChargePreference_hasAverageTime_showFullChargeLastSummary() {
         mFragment.mBatteryInfo = mBatteryInfo;
         mBatteryInfo.averageTimeToDischarge = TIME_SINCE_LAST_FULL_CHARGE_MS;
         when(mFragment.getContext()).thenReturn(mRealContext);
@@ -212,7 +214,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testNonIndexableKeys_MatchPreferenceKeys() {
+    public void nonIndexableKeys_MatchPreferenceKeys() {
         final Context context = RuntimeEnvironment.application;
         final List<String> niks =
             PowerUsageSummary.SEARCH_INDEX_DATA_PROVIDER.getNonIndexableKeys(context);
@@ -224,7 +226,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testPreferenceControllers_getPreferenceKeys_existInPreferenceScreen() {
+    public void preferenceControllers_getPreferenceKeys_existInPreferenceScreen() {
         final Context context = RuntimeEnvironment.application;
         final PowerUsageSummary fragment = new PowerUsageSummary();
         final List<String> preferenceScreenKeys =
@@ -239,7 +241,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testUpdateAnomalySparseArray() {
+    public void updateAnomalySparseArray() {
         mFragment.mAnomalySparseArray = new SparseArray<>();
         final List<Anomaly> anomalies = new ArrayList<>();
         final Anomaly anomaly1 = new Anomaly.Builder().setUid(UID).build();
@@ -256,7 +258,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testRestartBatteryTipLoader() {
+    public void restartBatteryTipLoader() {
         //TODO: add policy logic here when BatteryTipPolicy is implemented
         doReturn(mLoaderManager).when(mFragment).getLoaderManager();
 
@@ -267,7 +269,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testShowBothEstimates_summariesAreBothModified() {
+    public void showBothEstimates_summariesAreBothModified() {
         when(mFeatureFactory.powerUsageFeatureProvider.isEnhancedBatteryPredictionEnabled(any()))
             .thenReturn(true);
         doAnswer(new Answer() {
@@ -296,7 +298,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testDebugMode() {
+    public void debugMode() {
         doReturn(true).when(mFeatureFactory.powerUsageFeatureProvider).isEstimateDebugEnabled();
         doReturn(new TextView(mRealContext)).when(mBatteryLayoutPref).findViewById(R.id.summary2);
 
@@ -315,7 +317,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testRestartBatteryStatsLoader_notClearHeader_quickUpdateNotInvoked() {
+    public void restartBatteryStatsLoader_notClearHeader_quickUpdateNotInvoked() {
         mFragment.mBatteryHeaderPreferenceController = mBatteryHeaderPreferenceController;
 
         mFragment.restartBatteryStatsLoader(false /* clearHeader */);
@@ -324,7 +326,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testOptionsMenu_advancedPageEnabled() {
+    public void optionsMenu_advancedPageEnabled() {
         when(mFeatureFactory.powerUsageFeatureProvider.isPowerAccountingToggleEnabled())
                 .thenReturn(true);
 
@@ -335,7 +337,7 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testOptionsMenu_clickAdvancedPage_fireIntent() {
+    public void optionsMenu_clickAdvancedPage_fireIntent() {
         final ArgumentCaptor<Intent> captor = ArgumentCaptor.forClass(Intent.class);
         doAnswer(invocation -> {
             // Get the intent in which it has the app info bundle
@@ -353,11 +355,37 @@ public class PowerUsageSummaryTest {
     }
 
     @Test
-    public void testRefreshUi_deviceRotate_doNotUpdateBatteryTip() {
-        mFragment.mNeedUpdateBatteryTip = false;
+    public void refreshUi_deviceRotate_doNotUpdateBatteryTip() {
+        mFragment.mBatteryTipPreferenceController = mock(BatteryTipPreferenceController.class);
+        when(mFragment.mBatteryTipPreferenceController.needUpdate()).thenReturn(false);
+        mFragment.updateBatteryTipFlag(new Bundle());
+
         mFragment.refreshUi();
 
         verify(mFragment, never()).restartBatteryTipLoader();
+    }
+
+    @Test
+    public void refreshUi_tipNeedUpdate_updateBatteryTip() {
+        mFragment.mBatteryTipPreferenceController = mock(BatteryTipPreferenceController.class);
+        when(mFragment.mBatteryTipPreferenceController.needUpdate()).thenReturn(true);
+        mFragment.updateBatteryTipFlag(new Bundle());
+
+        mFragment.refreshUi();
+
+        verify(mFragment).restartBatteryTipLoader();
+    }
+
+    @Test
+    public void getDashboardLabel_returnsCorrectLabel() {
+        BatteryInfo info = new BatteryInfo();
+        info.batteryPercentString = "3%";
+        assertThat(PowerUsageSummary.getDashboardLabel(mRealContext, info))
+                .isEqualTo(info.batteryPercentString);
+
+        info.remainingLabel = "Phone will shut down soon";
+        assertThat(PowerUsageSummary.getDashboardLabel(mRealContext, info))
+                .isEqualTo("3% - Phone will shut down soon");
     }
 
     public static class TestFragment extends PowerUsageSummary {
