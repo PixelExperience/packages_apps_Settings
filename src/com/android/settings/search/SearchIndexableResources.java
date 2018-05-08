@@ -88,6 +88,12 @@ import com.android.settings.wallpaper.WallpaperTypeSettings;
 import com.android.settings.wifi.ConfigureWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
+
+import com.android.settings.custom.ButtonSettings;
+import com.android.settings.custom.fragments.PowerMenu;
+import com.android.settings.custom.fragments.batterylight.BatteryLightSettings;
+import com.android.settings.custom.fragments.batterylight.NotificationLightSettings;
+
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -216,6 +222,12 @@ public final class SearchIndexableResources {
                 AutomaticStorageManagerSettings.class,
                 NO_DATA_RES_ID,
                 R.drawable.ic_settings_storage);
+
+        // Custom additions
+        addIndex(ButtonSettings.class, R.xml.buttons, R.drawable.ic_button_settings);
+        addIndex(PowerMenu.class, R.xml.powermenu, R.drawable.ic_button_settings);
+        addIndex(BatteryLightSettings.class, R.xml.battery_light_settings, R.drawable.ic_settings_leds);
+        addIndex(NotificationLightSettings.class, R.xml.notification_light_settings, R.drawable.ic_settings_leds);
     }
 
     private SearchIndexableResources() {
