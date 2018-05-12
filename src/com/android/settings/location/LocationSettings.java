@@ -212,7 +212,7 @@ public class LocationSettings extends DashboardFragment {
         public int getAvailabilityStatus() {
             return mContext.getResources().getBoolean(R.bool.config_agps_enabled)
                     ? AVAILABLE
-                    : DISABLED_UNSUPPORTED;
+                    : UNSUPPORTED_ON_DEVICE;
         }
 
         @Override
