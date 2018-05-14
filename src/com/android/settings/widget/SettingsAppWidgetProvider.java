@@ -393,18 +393,6 @@ public class SettingsAppWidgetProvider extends AppWidgetProvider {
             new AsyncTask<Void, Void, Void>() {
                 @Override
                 protected Void doInBackground(Void... args) {
-                    /**
-                     * Disable tethering if enabling Wifi
-                     */
-                    int wifiApState = wifiManager.getWifiApState();
-                    if (desiredState && ((wifiApState == WifiManager.WIFI_AP_STATE_ENABLING) ||
-                                         (wifiApState == WifiManager.WIFI_AP_STATE_ENABLED))) {
-                        final ConnectivityManager connectivityManager =
-                                (ConnectivityManager) context.getSystemService(
-                                        Context.CONNECTIVITY_SERVICE);
-                        connectivityManager.stopTethering(ConnectivityManager.TETHERING_WIFI);
-                    }
-
                     wifiManager.setWifiEnabled(desiredState);
                     return null;
                 }
