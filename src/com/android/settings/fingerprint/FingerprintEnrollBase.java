@@ -17,16 +17,19 @@
 package com.android.settings.fingerprint;
 
 import android.annotation.Nullable;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.internal.util.custom.NavbarUtils;
 import com.android.settings.R;
 import com.android.settings.SetupWizardUtils;
 import com.android.settings.core.InstrumentedActivity;
@@ -45,6 +48,10 @@ public abstract class FingerprintEnrollBase extends InstrumentedActivity
     protected byte[] mToken;
     protected int mUserId;
 
+    protected boolean mHasFrontSensor;
+    protected boolean mNavBarEnabled;
+    protected boolean mWasUsingNavbar = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +63,26 @@ public abstract class FingerprintEnrollBase extends InstrumentedActivity
                     ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN);
         }
         mUserId = getIntent().getIntExtra(Intent.EXTRA_USER_ID, UserHandle.myUserId());
+
+        mHasFrontSensor = getResources().getInteger(R.integer.config_fingerprintSensorLocation) == 1;
+        mNavBarEnabled = NavbarUtils.isNavigationBarEnabled(this);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (mNavBarEnabled) {
+            mWasUsingNavbar = true;
+            NavbarUtils.setNavigationBarEnabled(this, false);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mHasFrontSensor && mWasUsingNavbar) {
+            NavbarUtils.setNavigationBarEnabled(this, true);
+        }
     }
 
     @Override
