@@ -71,7 +71,7 @@ public abstract class FingerprintEnrollBase extends InstrumentedActivity
     @Override
     protected void onStart() {
         super.onStart();
-        if (mNavBarEnabled) {
+        if (mHasFrontSensor && mNavBarEnabled) {
             mWasUsingNavbar = true;
             NavbarUtils.setNavigationBarEnabled(this, false);
         }
