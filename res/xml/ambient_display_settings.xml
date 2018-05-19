@@ -19,6 +19,17 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/ambient_display_screen_title">
 
+    <SwitchPreference
+        android:key="ambient_display_ambient_play"
+        android:title="@string/ambient_recognition_title"
+        android:summary="@string/ambient_recognition_summary" />
+
+    <SwitchPreference
+        android:key="ambient_display_ambient_play_keyguard"
+        android:title="@string/ambient_recognition_lockscreen_title"
+        android:summary="@string/ambient_recognition_lockscreen_summary"
+        android:dependency="ambient_display_ambient_play" />
+
     <PreferenceCategory
             android:title="@string/ambient_display_category_triggers">
 
