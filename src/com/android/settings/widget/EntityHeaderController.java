@@ -35,6 +35,7 @@ import android.support.annotation.IntDef;
 import android.support.annotation.VisibleForTesting;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
+import android.util.IconDrawableFactory;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -146,9 +147,7 @@ public class EntityHeaderController {
      * accessibility purposes.
      */
     public EntityHeaderController setIcon(ApplicationsState.AppEntry appEntry) {
-        if (appEntry.icon != null) {
-            mIcon = appEntry.icon.getConstantState().newDrawable(mAppContext.getResources());
-        }
+        mIcon = IconDrawableFactory.newInstance(mAppContext).getBadgedIcon(appEntry.info);
         return this;
     }
 
@@ -318,7 +317,7 @@ public class EntityHeaderController {
             return this;
         }
         actionBar.setBackgroundDrawable(
-                new ColorDrawable(Utils.getColorAttr(activity, android.R.attr.colorSecondary)));
+                new ColorDrawable(Utils.getColorAttr(activity, android.R.attr.colorPrimary)));
         actionBar.setElevation(0);
         if (mRecyclerView != null && mLifecycle != null) {
             ActionBarShadowController.attachToRecyclerView(mActivity, mLifecycle, mRecyclerView);
