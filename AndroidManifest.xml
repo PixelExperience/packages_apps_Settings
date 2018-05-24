@@ -3296,6 +3296,30 @@
             </intent-filter>
         </activity>
 
+        <!-- Custom Button Settings -->
+        <activity android:name=".Settings$ButtonSettingsActivity"
+            android:label="@string/button_settings"
+            android:icon="@drawable/ic_button_settings"
+            android:taskAffinity="com.android.settings"
+            android:parentActivityName="Settings$SystemDashboardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:priority="250">
+                <action android:name="com.android.settings.action.SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.system"/>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.custom.ButtonSettings"/>
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                       android:value="true"/>
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/summary_empty" />
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
