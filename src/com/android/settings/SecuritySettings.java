@@ -360,13 +360,13 @@ public class SecuritySettings extends SettingsPreferenceFragment
         }
 
         // Encryption status of device
-        if (LockPatternUtils.isDeviceEncryptionEnabled()) {
+        /*if (LockPatternUtils.isDeviceEncryptionEnabled()) {
             root.findPreference(KEY_ENCRYPTION_AND_CREDENTIALS).setSummary(
                 R.string.encryption_and_credential_settings_summary);
         } else {
             root.findPreference(KEY_ENCRYPTION_AND_CREDENTIALS).setSummary(
                 R.string.summary_placeholder);
-        }
+        }*/
 
         // Show password
         mShowPassword = (SwitchPreference) root.findPreference(KEY_SHOW_PASSWORD);
