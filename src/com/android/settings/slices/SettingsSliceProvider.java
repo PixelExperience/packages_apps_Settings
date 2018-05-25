@@ -23,18 +23,22 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
+import android.provider.Settings;
 import android.provider.SettingsSlicesContract;
 import android.support.annotation.VisibleForTesting;
 import android.support.v4.graphics.drawable.IconCompat;
 import android.text.TextUtils;
 import android.util.ArraySet;
+import android.util.KeyValueListParser;
 import android.util.Log;
 import android.util.Pair;
 
+import com.android.settings.location.LocationSliceBuilder;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.wifi.WifiSliceBuilder;
 import com.android.settings.wifi.calling.WifiCallingSliceHelper;
+import com.android.settings.bluetooth.BluetoothSliceBuilder;
 import com.android.settings.notification.ZenModeSliceBuilder;
 import com.android.settingslib.SliceBroadcastRelay;
 import com.android.settingslib.utils.ThreadUtils;
@@ -43,6 +47,7 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -114,10 +119,13 @@ public class SettingsSliceProvider extends SliceProvider {
     @VisibleForTesting
     Map<Uri, SliceData> mSliceDataCache;
 
+    private final KeyValueListParser mParser;
+
     final Set<Uri> mRegisteredUris = new ArraySet<>();
 
     public SettingsSliceProvider() {
         super(READ_SEARCH_INDEXABLES);
+        mParser = new KeyValueListParser(',');
     }
 
     @Override
@@ -146,7 +154,9 @@ public class SettingsSliceProvider extends SliceProvider {
             return;
         } else if (ZenModeSliceBuilder.ZEN_MODE_URI.equals(sliceUri)) {
             registerIntentToUri(ZenModeSliceBuilder.INTENT_FILTER, sliceUri);
-            mRegisteredUris.add(sliceUri);
+            return;
+        } else if (BluetoothSliceBuilder.BLUETOOTH_URI.equals(sliceUri)) {
+            registerIntentToUri(BluetoothSliceBuilder.INTENT_FILTER, sliceUri);
             return;
         }
 
@@ -166,6 +176,13 @@ public class SettingsSliceProvider extends SliceProvider {
 
     @Override
     public Slice onBindSlice(Uri sliceUri) {
+        final Set<String> blockedKeys = getBlockedKeys();
+        final String key = sliceUri.getLastPathSegment();
+        if (blockedKeys.contains(key)) {
+            Log.e(TAG, "Requested blocked slice with Uri: " + sliceUri);
+            return null;
+        }
+
         // If adding a new Slice, do not directly match Slice URIs.
         // Use {@link SlicesDatabaseAccessor}.
         if (WifiCallingSliceHelper.WIFI_CALLING_URI.equals(sliceUri)) {
@@ -177,6 +194,10 @@ public class SettingsSliceProvider extends SliceProvider {
             return WifiSliceBuilder.getSlice(getContext());
         } else if (ZenModeSliceBuilder.ZEN_MODE_URI.equals(sliceUri)) {
             return ZenModeSliceBuilder.getSlice(getContext());
+        } else if (BluetoothSliceBuilder.BLUETOOTH_URI.equals(sliceUri)) {
+            return BluetoothSliceBuilder.getSlice(getContext());
+        } else if (LocationSliceBuilder.LOCATION_URI.equals(sliceUri)) {
+            return LocationSliceBuilder.getSlice(getContext());
         }
 
         SliceData cachedSliceData = mSliceWeakDataCache.get(sliceUri);
@@ -278,10 +299,17 @@ public class SettingsSliceProvider extends SliceProvider {
     void loadSlice(Uri uri) {
         long startBuildTime = System.currentTimeMillis();
 
-        final SliceData sliceData = mSlicesDatabaseAccessor.getSliceDataFromUri(uri);
+        final SliceData sliceData;
+        try {
+            sliceData = mSlicesDatabaseAccessor.getSliceDataFromUri(uri);
+        } catch (IllegalStateException e) {
+            Log.e(TAG, "Could not get slice data for uri: " + uri, e);
+            return;
+        }
 
         final BasePreferenceController controller = SliceBuilderUtils.getPreferenceController(
                 getContext(), sliceData);
+
         final IntentFilter filter = controller.getIntentFilter();
         if (filter != null) {
             registerIntentToUri(filter, uri);
@@ -324,7 +352,9 @@ public class SettingsSliceProvider extends SliceProvider {
 
     private List<Uri> getSpecialCasePlatformUris() {
         return Arrays.asList(
-                WifiSliceBuilder.WIFI_URI
+                WifiSliceBuilder.WIFI_URI,
+                BluetoothSliceBuilder.BLUETOOTH_URI,
+                LocationSliceBuilder.LOCATION_URI
         );
     }
 
@@ -344,5 +374,33 @@ public class SettingsSliceProvider extends SliceProvider {
         mRegisteredUris.add(sliceUri);
         SliceBroadcastRelay.registerReceiver(getContext(), sliceUri, SliceBroadcastReceiver.class,
                 intentFilter);
+    }
+
+    @VisibleForTesting
+    Set<String> getBlockedKeys() {
+        final String value = Settings.Global.getString(getContext().getContentResolver(),
+                Settings.Global.BLOCKED_SLICES);
+        final Set<String> set = new ArraySet<>();
+
+        try {
+            mParser.setString(value);
+        } catch (IllegalArgumentException e) {
+            Log.e(TAG, "Bad Settings Slices Whitelist flags", e);
+            return set;
+        }
+
+        final String[] parsedValues = parseStringArray(value);
+        Collections.addAll(set, parsedValues);
+        return set;
+    }
+
+    private String[] parseStringArray(String value) {
+        if (value != null) {
+            String[] parts = value.split(":");
+            if (parts.length > 0) {
+                return parts;
+            }
+        }
+        return new String[0];
     }
 }

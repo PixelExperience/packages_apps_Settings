@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package com.android.settings.testutils.shadow;
 
 import com.android.settingslib.bluetooth.LocalBluetoothAdapter;
@@ -25,6 +26,8 @@ public class ShadowLocalBluetoothAdapter {
 
     private static String sName;
 
+    private boolean isBluetoothEnabled = true;
+
     @Implementation
     public String getName() {
         return sName;
@@ -32,5 +35,22 @@ public class ShadowLocalBluetoothAdapter {
 
     public static void setName(String name) {
         sName = name;
+    }
+
+    @Implementation
+    public boolean isEnabled() {
+        return isBluetoothEnabled;
+    }
+
+    @Implementation
+    public boolean enable() {
+        isBluetoothEnabled = true;
+        return true;
+    }
+
+    @Implementation
+    public boolean disable() {
+        isBluetoothEnabled = false;
+        return true;
     }
 }

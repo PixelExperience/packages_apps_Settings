@@ -26,7 +26,6 @@ import static org.mockito.Mockito.spy;
 import android.content.Context;
 
 import com.android.settings.R;
-import com.android.settings.wifi.WifiSliceBuilder;
 import com.android.settings.testutils.SettingsRobolectricTestRunner;
 import com.android.settings.testutils.SliceTester;
 
@@ -68,7 +67,7 @@ public class WifiSliceBuilderTest {
     }
 
     @Test
-    public void getWifiSlice_correctData() {
+    public void getWifiSlice_correctSliceContent() {
         final Slice wifiSlice = WifiSliceBuilder.getSlice(mContext);
         final SliceMetadata metadata = SliceMetadata.from(mContext, wifiSlice);
 
