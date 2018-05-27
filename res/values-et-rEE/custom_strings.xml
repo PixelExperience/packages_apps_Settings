@@ -4,33 +4,33 @@
   <!-- Title for SIM selection notification channel -->
   <string name="sim_selection_channel_title">SIM-valik</string>
   <!-- Format string for fingerprint location message -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Leidke telefonil sõrmejäljelugemis andur telefoni <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Leidke sõrmejäljeandur oma telefoni <xliff:g id="sensor_location">%1$s</xliff:g>.</string>
   <!-- Fingerprint sensor locations -->
-  <string name="security_settings_fingerprint_sensor_location_back">taga</string>
-  <string name="security_settings_fingerprint_sensor_location_front">esi</string>
-  <string name="security_settings_fingerprint_sensor_location_left">vasak külg</string>
-  <string name="security_settings_fingerprint_sensor_location_right">parem külg</string>
+  <string name="security_settings_fingerprint_sensor_location_back">tagaküljel</string>
+  <string name="security_settings_fingerprint_sensor_location_front">esiküljel</string>
+  <string name="security_settings_fingerprint_sensor_location_left">vasakul küljel</string>
+  <string name="security_settings_fingerprint_sensor_location_right">paremal küljel</string>
   <!-- Manual provisioning support -->
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> on <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_disabled">keelatud</string>
-  <string name="sim_missing">puuduv või vigane</string>
+  <string name="sim_missing">puudu või vigane</string>
   <string name="sim_enabler_need_disable_sim">SIM-kaart deaktiveeritakse. Kas soovite jätkata?</string>
   <string name="sim_enabler_will_disable_sim_title">Tähelepanu</string>
-  <string name="sim_enabler_need_switch_data_service">See SIM-kaart blokeeritakse ja andmesideteenuste jaoks kasutatakse SIM-kaarti <xliff:g id="slotid">%1$s</xliff:g>. Kas olete kindel, et soovite jätkata?</string>
-  <string name="sim_enabler_airplane_on">Toimingut ei saa sooritada, kui lennurežiim on aktiveeritud.</string>
-  <string name="sim_enabler_in_call">Toimingut ei saa kõne ajal sooritada.</string>
-  <string name="sim_enabler_both_inactive">Ei saa keelata kõiki SIM-kaarte</string>
+  <string name="sim_enabler_need_switch_data_service">See SIM-kaart blokeeritakse ja andmesideteenuste jaoks hakatakse kasutama SIM-kaarti <xliff:g id="slotid">%1$s</xliff:g>. Kas olete kindel, et soovite jätkata?</string>
+  <string name="sim_enabler_airplane_on">Seda toimingut ei saa teostada lennurežiimis.</string>
+  <string name="sim_enabler_in_call">Seda toimingut ei saa teostada kõne ajal.</string>
+  <string name="sim_enabler_both_inactive">Kõiki SIM-kaarte ei saa keelata</string>
   <string name="sim_enabler_enabling">Aktiveerin</string>
   <string name="sim_enabler_disabling">Deaktiveerin</string>
-  <string name="sub_activate_success">SIM aktiveeritud.</string>
+  <string name="sub_activate_success">SIM on aktiveeritud.</string>
   <string name="sub_activate_failed">Aktiveerimine ebaõnnestus.</string>
-  <string name="sub_deactivate_success">SIM deaktiveeritud.</string>
+  <string name="sub_deactivate_success">SIM on deaktiveeritud.</string>
   <string name="sub_deactivate_failed">Deaktiveerimine ebaõnnestus.</string>
   <!-- Pixel color on sim card -->
   <string name="pixel_sim_color">Pixel</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Väldi juhuslikku ärkamist</string>
-  <string name="proximity_wake_summary">Kontrollige enne äratamist ekraani lähedussensorit</string>
+  <string name="proximity_wake_title">Väldi juhuslikku äratamist</string>
+  <string name="proximity_wake_summary">Kontrollige lähedussensorit enne ekraani äratamist</string>
   <!-- Other gestures -->
   <string name="other_gestures">Muud žestid</string>
   <!-- Search -->
