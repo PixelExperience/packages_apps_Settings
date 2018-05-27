@@ -38,6 +38,7 @@ public class SystemUpdatePreferenceController extends AbstractPreferenceControll
     private final UserManager mUm;
 
     private static final String OTA_BUILD_TYPE_PROP = "org.pixelexperience.build_type";
+    private static final String DEVICE_NAME = "org.pixelexperience.device";
     private static final String OTA_APP_PACKAGE = "org.pixelexperience.ota";
 
     public SystemUpdatePreferenceController(Context context, UserManager um) {
@@ -48,7 +49,8 @@ public class SystemUpdatePreferenceController extends AbstractPreferenceControll
     @Override
     public boolean isAvailable() {
         String buildtype = SystemProperties.get(OTA_BUILD_TYPE_PROP,"unofficial");
-        if (!mUm.isAdminUser() || !buildtype.equalsIgnoreCase("official")){
+        String deviceName = SystemProperties.get(DEVICE_NAME,"");
+        if (deviceName.startsWith("phhgsi_") || !mUm.isAdminUser() || !buildtype.equalsIgnoreCase("official")){
             return false;
         }
         try {
