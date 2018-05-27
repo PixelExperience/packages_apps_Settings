@@ -4,7 +4,7 @@
   <!-- Title for SIM selection notification channel -->
   <string name="sim_selection_channel_title">Выбор SIM-карты</string>
   <!-- Format string for fingerprint location message -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Найдите сканер отпечатков пальцев на <xliff:g id="sensor_location">%1$s</xliff:g> телефона.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Сканер отпечатков пальцев расположен на <xliff:g id="sensor_location">%1$s </xliff:g> вашего телефона.</string>
   <!-- Fingerprint sensor locations -->
   <string name="security_settings_fingerprint_sensor_location_back">задней панели</string>
   <string name="security_settings_fingerprint_sensor_location_front">передней панели</string>

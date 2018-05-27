@@ -43,6 +43,8 @@
   <string name="systemui_theme_style_dark">Темний</string>
   <string name="applying_theme_toast">Застосування теми, будь ласка, зачекайте...</string>
   <string name="theme_applied_toast">Тему застосовано!</string>
+  <string name="accent_picker_dialog_title">Виберіть колір акценту</string>
+  <string name="theme_accent_picker_title">Колір акценту</string>
   <string name="theme_accent_picker_summary">Оберіть колір акценту системної теми</string>
   <string name="theme_accent_picker_default">За замовчанням</string>
 </resources>
