@@ -38,28 +38,29 @@
         android:order="-175"
         settings:controller="com.android.settings.sound.MediaOutputPreferenceController"/>
 
-    <!-- Ring volume -->
+    <!-- Call volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
-        android:key="ring_volume"
-        android:icon="@*android:drawable/ic_audio_ring_notif"
-        android:title="@string/ring_volume_option_title"
+        android:key="call_volume"
+        android:icon="@drawable/ic_local_phone_24_lib"
+        android:title="@string/call_volume_option_title"
         android:order="-170"
-        settings:controller="com.android.settings.notification.RingVolumePreferenceController"
-        settings:allowDividerAbove="true"/>
-
-    <!-- Also vibrate for calls -->
-    <SwitchPreference
-        android:key="vibrate_when_ringing"
-        android:title="@string/vibrate_when_ringing_title"
-        android:order="-160"/>
+        settings:controller="com.android.settings.notification.CallVolumePreferenceController"/>
 
     <!-- Hands free profile output switcher -->
     <ListPreference
         android:key="take_call_on_output"
         android:title="@string/take_call_on_title"
         android:dialogTitle="@string/take_call_on_title"
-        android:order="-155"
+        android:order="-165"
         settings:controller="com.android.settings.sound.HandsFreeProfileOutputPreferenceController"/>
+
+    <!-- Ring volume -->
+    <com.android.settings.notification.VolumeSeekBarPreference
+        android:key="ring_volume"
+        android:icon="@*android:drawable/ic_audio_ring_notif"
+        android:title="@string/ring_volume_option_title"
+        android:order="-160"
+        settings:controller="com.android.settings.notification.RingVolumePreferenceController"/>
 
     <!-- Alarm volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
@@ -67,7 +68,6 @@
         android:icon="@*android:drawable/ic_audio_alarm"
         android:title="@string/alarm_volume_option_title"
         android:order="-150"
-        settings:allowDividerAbove="true"
         settings:controller="com.android.settings.notification.AlarmVolumePreferenceController"/>
 
     <!-- Notification volume -->
@@ -77,6 +77,13 @@
         android:title="@string/notification_volume_option_title"
         android:order="-140"
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
+
+    <!-- Also vibrate for calls -->
+    <SwitchPreference
+        android:key="vibrate_when_ringing"
+        android:title="@string/vibrate_when_ringing_title"
+        settings:controller="com.android.settings.notification.VibrateWhenRingPreferenceController"
+        android:order="-130"/>
 
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
@@ -93,7 +100,6 @@
         android:title="@string/gesture_prevent_ringing_sound_title"
         android:order="-110"
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
-        settings:allowDividerAbove="true"
         settings:controller="com.android.settings.gestures.PreventRingingPreferenceController" />
 
     <!-- Phone ringtone -->

@@ -17,7 +17,6 @@ package com.android.settings.search;
 import static android.app.slice.Slice.HINT_LARGE;
 import static android.app.slice.Slice.HINT_TITLE;
 import static android.app.slice.SliceItem.FORMAT_TEXT;
-
 import static com.android.settings.search.DeviceIndexFeatureProvider.createDeepLink;
 
 import android.app.job.JobParameters;
@@ -54,10 +53,12 @@ public class DeviceIndexUpdateJobService extends JobService {
     @Override
     public boolean onStartJob(JobParameters params) {
         if (DEBUG) Log.d(TAG, "onStartJob");
-        mRunningJob = true;
-        Thread thread = new Thread(() -> updateIndex(params));
-        thread.setPriority(Thread.MIN_PRIORITY);
-        thread.start();
+        if (!mRunningJob) {
+            mRunningJob = true;
+            Thread thread = new Thread(() -> updateIndex(params));
+            thread.setPriority(Thread.MIN_PRIORITY);
+            thread.start();
+        }
         return true;
     }
 
@@ -73,16 +74,20 @@ public class DeviceIndexUpdateJobService extends JobService {
 
     @VisibleForTesting
     protected void updateIndex(JobParameters params) {
-        if (DEBUG) Log.d(TAG, "Starting index");
-        DeviceIndexFeatureProvider indexProvider = FeatureFactory.getFactory(
-                this).getDeviceIndexFeatureProvider();
-        SliceManager manager = getSliceManager();
-        Uri baseUri = new Builder()
+        if (DEBUG) {
+            Log.d(TAG, "Starting index");
+        }
+        final DeviceIndexFeatureProvider indexProvider = FeatureFactory.getFactory(this)
+                .getDeviceIndexFeatureProvider();
+        final SliceManager manager = getSliceManager();
+        final Uri baseUri = new Builder()
                 .scheme(ContentResolver.SCHEME_CONTENT)
                 .authority(SettingsSliceProvider.SLICE_AUTHORITY)
                 .build();
-        Collection<Uri> slices = manager.getSliceDescendants(baseUri);
-        if (DEBUG) Log.d(TAG, "Indexing " + slices.size() + " slices");
+        final Collection<Uri> slices = manager.getSliceDescendants(baseUri);
+        if (DEBUG) {
+            Log.d(TAG, "Indexing " + slices.size() + " slices");
+        }
 
         for (Uri slice : slices) {
             if (!mRunningJob) {
@@ -93,16 +98,20 @@ public class DeviceIndexUpdateJobService extends JobService {
             SliceMetadata metaData = getMetadata(loadedSlice);
             CharSequence title = findTitle(loadedSlice, metaData);
             if (title != null) {
-                if (DEBUG) Log.d(TAG, "Indexing: " + slice + " " + title + " " + loadedSlice);
-                indexProvider.index(this, title, slice, Uri.parse(createDeepLink(
+                if (DEBUG) {
+                    Log.d(TAG, "Indexing: " + slice + " " + title + " " + loadedSlice);
+                }
+                indexProvider.index(this, title, slice, createDeepLink(
                         new Intent(SliceDeepLinkSpringBoard.ACTION_VIEW_SLICE)
                                 .setPackage(getPackageName())
                                 .putExtra(SliceDeepLinkSpringBoard.EXTRA_SLICE, slice.toString())
-                                .toUri(Intent.URI_ANDROID_APP_SCHEME))),
+                                .toUri(Intent.URI_ANDROID_APP_SCHEME)),
                         metaData.getSliceKeywords());
             }
         }
-        if (DEBUG) Log.d(TAG, "Done indexing");
+        if (DEBUG) {
+            Log.d(TAG, "Done indexing");
+        }
         jobFinished(params, false);
     }
 
@@ -115,7 +124,7 @@ public class DeviceIndexUpdateJobService extends JobService {
     }
 
     protected CharSequence findTitle(Slice loadedSlice, SliceMetadata metaData) {
-        ListContent content = new ListContent(this, loadedSlice);
+        ListContent content = new ListContent(null, loadedSlice);
         SliceItem headerItem = content.getHeaderItem();
         if (headerItem == null) {
             if (content.getRowItems().size() != 0) {

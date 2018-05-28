@@ -22,7 +22,7 @@ import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothProfile;
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 
@@ -57,7 +57,8 @@ public class SavedBluetoothDeviceUpdaterTest {
     private LocalBluetoothProfileManager mLocalBluetoothProfileManager;
 
     private Context mContext;
-    private BluetoothDeviceUpdater mBluetoothDeviceUpdater;
+    private SavedBluetoothDeviceUpdater mBluetoothDeviceUpdater;
+    private BluetoothDevicePreference mPreference;
 
     @Before
     public void setUp() {
@@ -71,12 +72,13 @@ public class SavedBluetoothDeviceUpdaterTest {
         mBluetoothDeviceUpdater = spy(new SavedBluetoothDeviceUpdater(mDashboardFragment,
                 mDevicePreferenceCallback, mLocalManager));
         mBluetoothDeviceUpdater.setPrefContext(mContext);
+        mPreference = new BluetoothDevicePreference(mContext, mCachedBluetoothDevice, false);
         doNothing().when(mBluetoothDeviceUpdater).addPreference(any());
         doNothing().when(mBluetoothDeviceUpdater).removePreference(any());
     }
 
     @Test
-    public void testUpdate_filterMatch_addPreference() {
+    public void update_filterMatch_addPreference() {
         doReturn(BluetoothDevice.BOND_BONDED).when(mBluetoothDevice).getBondState();
         doReturn(false).when(mBluetoothDevice).isConnected();
 
@@ -86,7 +88,7 @@ public class SavedBluetoothDeviceUpdaterTest {
     }
 
     @Test
-    public void testUpdate_filterNotMatch_removePreference() {
+    public void update_filterNotMatch_removePreference() {
         doReturn(BluetoothDevice.BOND_NONE).when(mBluetoothDevice).getBondState();
         doReturn(true).when(mBluetoothDevice).isConnected();
 
@@ -96,18 +98,25 @@ public class SavedBluetoothDeviceUpdaterTest {
     }
 
     @Test
-    public void testOnConnectionStateChanged_deviceConnected_removePreference() {
-        mBluetoothDeviceUpdater
-            .onConnectionStateChanged(mCachedBluetoothDevice, BluetoothAdapter.STATE_CONNECTED);
+    public void onProfileConnectionStateChanged_deviceConnected_removePreference() {
+        mBluetoothDeviceUpdater.onProfileConnectionStateChanged(mCachedBluetoothDevice,
+                BluetoothProfile.STATE_CONNECTED, BluetoothProfile.A2DP);
 
         verify(mBluetoothDeviceUpdater).removePreference(mCachedBluetoothDevice);
     }
 
     @Test
-    public void testOnConnectionStateChanged_deviceDisconnected_addPreference() {
-        mBluetoothDeviceUpdater
-            .onConnectionStateChanged(mCachedBluetoothDevice, BluetoothAdapter.STATE_DISCONNECTED);
+    public void onProfileConnectionStateChanged_deviceDisconnected_addPreference() {
+        mBluetoothDeviceUpdater.onProfileConnectionStateChanged(mCachedBluetoothDevice,
+                BluetoothProfile.STATE_DISCONNECTED, BluetoothProfile.A2DP);
 
         verify(mBluetoothDeviceUpdater).addPreference(mCachedBluetoothDevice);
+    }
+
+    @Test
+    public void onClick_Preference_setConnect() {
+        mBluetoothDeviceUpdater.onPreferenceClick(mPreference);
+
+        verify(mCachedBluetoothDevice).connect(true);
     }
 }

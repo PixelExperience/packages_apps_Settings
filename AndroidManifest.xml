@@ -207,8 +207,6 @@
                 android:value="com.android.settings.category.ia.homepage"/>
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
-            <meta-data android:name="android.metadata.SLICE_URI"
-                android:value="content://android.settings.slices/action/toggle_bluetooth_switch" />
         </activity>
 
         <activity android:name="AirplaneModeVoiceActivity"
@@ -253,8 +251,6 @@
                 android:value="com.android.settings.wifi.WifiSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
-            <meta-data android:name="android.metadata.SLICE_URI"
-                android:value="content://android.settings.slices/wifi" />
         </activity>
 
         <activity
@@ -743,6 +739,27 @@
         </activity>
 
         <activity
+            android:name=".notification.ZenSuggestionActivity"
+            android:label="@string/zen_mode_settings_title"
+            android:icon="@drawable/ic_do_not_disturb_on_24dp"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.suggested.category.ZEN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.suggested.category.FIRST_IMPRESSION" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.dismiss"
+                       android:value="0" />
+            <meta-data android:name="com.android.settings.title"
+                       android:resource="@string/zen_suggestion_title" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/zen_suggestion_summary" />
+        </activity>
+
+        <activity
             android:name=".notification.ZenOnboardingActivity"
             android:label="@string/zen_onboarding_dnd_visual_disturbances_header"
             android:icon="@drawable/ic_settings_notifications"
@@ -755,7 +772,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="Settings$ZenModeAutomationSettingsActivity"
             android:label="@string/zen_mode_automation_settings_title"
@@ -1114,7 +1130,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".slice.SliceDeepLinkSpringBoard"
+        <activity
+            android:name=".slices.SliceDeepLinkSpringBoard"
+            android:excludeFromRecents="true"
             android:theme="@android:style/Theme.NoDisplay">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -2224,8 +2242,6 @@
                 android:value="com.android.settings.category.ia.homepage" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.fuelgauge.PowerUsageSummary" />
-            <meta-data android:name="android.metadata.SLICE_URI"
-                android:value="content://android.settings.slices/action/auto_brightness" />
         </activity>
 
         <activity
@@ -2242,8 +2258,6 @@
                 android:value="com.android.settings.fuelgauge.batterysaver.BatterySaverSettings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
-            <meta-data android:name="android.metadata.SLICE_URI"
-                android:value="content://android.settings.slices/action/battery_saver_summary" />
         </activity>
 
         <activity android:name=".fuelgauge.BatterySaverModeVoiceActivity"
@@ -2665,8 +2679,6 @@
                 android:value="true" />
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/sound_dashboard_summary"/>
-            <meta-data android:name="android.metadata.SLICE_URI"
-                android:value="content://android.settings.slices/action/alarm_volume" />
         </activity>
 
         <!-- Show apps for which application-level notification settings are applicable -->
