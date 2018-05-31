@@ -21,6 +21,10 @@
         settings:keywords="@string/keywords_location">
 
         <PreferenceCategory
+            android:key="location_services"
+            android:title="@string/location_category_location_services"/>
+
+        <PreferenceCategory
             android:key="recent_location_requests"
             android:title="@string/location_category_recent_location_requests"/>
 
@@ -57,10 +61,6 @@
                 settings:useAdminDisabledSummary="true"
                 android:enabled="false"
                 android:selectable="true" />
-
-            <PreferenceCategory
-                android:key="location_services"
-                android:title="@string/location_category_location_services"/>
 
             <CheckBoxPreference
                 android:key="assisted_gps"
