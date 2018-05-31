@@ -51,6 +51,7 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
     @Override
     public void updateDisplay() {
         final WifiConfiguration config = mWifiManager.getWifiApConfiguration();
+        int tempBandIndex = mBandIndex;
         if (config == null) {
             mBandIndex = 0;
             Log.d(TAG, "Updating band index to 0 because no config");
@@ -65,6 +66,10 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
         }
         HotspotApBandSelectionPreference preference =
                 (HotspotApBandSelectionPreference) mPreference;
+
+        if (mBandIndex >= mBandEntries.length) {
+            mBandIndex = tempBandIndex;
+        }
 
         if (!is5GhzBandSupported()) {
             preference.setEnabled(false);
