@@ -132,6 +132,13 @@
         android:entryValues="@array/systemui_theme_style_values"
         android:persistent="false" />
 
+    <ListPreference
+        android:key="notification_theme"
+        android:title="@string/notification_theme_title"
+        android:entries="@array/notification_theme_entries"
+        android:entryValues="@array/notification_theme_values"
+        android:persistent="false" />
+
     <Preference
         android:key="accent_picker"
         android:title="@string/theme_accent_picker_title" />
