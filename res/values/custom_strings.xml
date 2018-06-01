@@ -55,5 +55,8 @@
     <string name="theme_accent_picker_title">Accent color</string>
     <string name="theme_accent_picker_summary">Select system theme accent color</string>
     <string name="theme_accent_picker_default">Default</string>
+    <string name="notification_theme_title">Notification style</string>
+    <string name="notification_style_default">Default (white)</string>
+    <string name="notification_style_dark">Dark (when available)</string>
 
 </resources>
