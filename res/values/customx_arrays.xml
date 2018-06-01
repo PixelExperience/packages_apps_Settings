@@ -44,4 +44,15 @@
         <item>6</item>
         <item>7</item>
     </string-array>
+
+    <!-- Notification theme -->
+    <string-array name="notification_theme_entries" translatable="false">
+        <item>@string/notification_style_default</item>
+        <item>@string/notification_style_dark</item>
+    </string-array>
+
+    <string-array name="notification_theme_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
 </resources>
