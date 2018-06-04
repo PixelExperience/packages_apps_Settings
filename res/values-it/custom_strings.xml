@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Colore in rilievo</string>
   <string name="theme_accent_picker_summary">Seleziona il colore primario per il tema di sistema</string>
   <string name="theme_accent_picker_default">Predefinito</string>
+  <string name="notification_theme_title">Stile di notifica</string>
+  <string name="notification_style_default">Bianco (predefinito)</string>
+  <string name="notification_style_dark">Scuro (segui lo sfondo)</string>
 </resources>

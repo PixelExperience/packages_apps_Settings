@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Vurgu rengi</string>
   <string name="theme_accent_picker_summary">Sistem teması için vurgu rengi seçin</string>
   <string name="theme_accent_picker_default">Varsayılan</string>
+  <string name="notification_theme_title">Bildirim stili</string>
+  <string name="notification_style_default">Varsayılan (beyaz)</string>
+  <string name="notification_style_dark">Karanlık (arka planı takip et)</string>
 </resources>

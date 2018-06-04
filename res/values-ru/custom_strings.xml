@@ -4,7 +4,7 @@
   <!-- Title for SIM selection notification channel -->
   <string name="sim_selection_channel_title">Выбор SIM-карты</string>
   <!-- Format string for fingerprint location message -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Найдите сканер отпечатков пальцев на <xliff:g id="sensor_location">%1$s</xliff:g> телефона.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Сканер отпечатков пальцев расположен на <xliff:g id="sensor_location">%1$s </xliff:g> вашего телефона.</string>
   <!-- Fingerprint sensor locations -->
   <string name="security_settings_fingerprint_sensor_location_back">задней панели</string>
   <string name="security_settings_fingerprint_sensor_location_front">передней панели</string>
@@ -44,7 +44,10 @@
   <string name="applying_theme_toast">Применение темы, пожалуйста, подождите...</string>
   <string name="theme_applied_toast">Тема применена!</string>
   <string name="accent_picker_dialog_title">Выберите цветовой оттенок</string>
-  <string name="theme_accent_picker_title">Оттенок цвета</string>
-  <string name="theme_accent_picker_summary">Выбрать системный оттенок цвета</string>
+  <string name="theme_accent_picker_title">Цвет</string>
+  <string name="theme_accent_picker_summary">Выберите цвет акцента системной темы</string>
   <string name="theme_accent_picker_default">По умолчанию</string>
+  <string name="notification_theme_title">Стиль уведомлений</string>
+  <string name="notification_style_default">По умолчанию (белый)</string>
+  <string name="notification_style_dark">Тёмный (как фон)</string>
 </resources>

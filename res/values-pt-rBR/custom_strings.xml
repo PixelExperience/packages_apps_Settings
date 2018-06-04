@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Cor de destaque</string>
   <string name="theme_accent_picker_summary">Selecione a cor de destaque do tema</string>
   <string name="theme_accent_picker_default">Padrão</string>
+  <string name="notification_theme_title">Estilo de notificação</string>
+  <string name="notification_style_default">Padrão (branco)</string>
+  <string name="notification_style_dark">Escuro (acompanhar plano de fundo)</string>
 </resources>

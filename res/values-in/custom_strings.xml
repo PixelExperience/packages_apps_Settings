@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Warna aksen</string>
   <string name="theme_accent_picker_summary">Pilih warna aksen tema sistem</string>
   <string name="theme_accent_picker_default">Standar</string>
+  <string name="notification_theme_title">Gaya notifikasi</string>
+  <string name="notification_style_default">Semula (Putih)</string>
+  <string name="notification_style_dark">Hitam (mengikuti latar belakang)</string>
 </resources>

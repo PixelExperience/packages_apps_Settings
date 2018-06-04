@@ -29,12 +29,22 @@
   <!-- Pixel color on sim card -->
   <string name="pixel_sim_color">पिक्सेल</string>
   <!-- Proximity wake -->
+  <string name="proximity_wake_title">आकस्मिक जागरूकता को रोकें</string>
+  <string name="proximity_wake_summary">स्क्रीन जागने से पहले निकटता सेंसर की जांच करें</string>
   <!-- Other gestures -->
   <string name="other_gestures">अन्य इशारे</string>
   <!-- Search -->
+  <string name="menu_search">ऐप खोजें</string>
+  <string name="menu_search_hint">ऐप्स खोजें \ u2026</string>
   <!-- Themes -->
   <string name="systemui_theme_style_title">पीछे का रंग</string>
   <string name="systemui_theme_style_auto">स्वचालित (वॉलपेपर आधारित)</string>
+  <string name="systemui_theme_style_light">रोशनी</string>
+  <string name="systemui_theme_style_dark">अंधेरा</string>
   <string name="applying_theme_toast">थीम लागू हो रही है, कृपया प्रतीक्षा करें...</string>
   <string name="theme_applied_toast">थीम लागू!</string>
+  <string name="accent_picker_dialog_title">एक उच्चारण रंग का चयन करें</string>
+  <string name="theme_accent_picker_title">स्वरोंका रंग</string>
+  <string name="theme_accent_picker_summary">सिस्टम थीम उच्चारण रंग का चयन करें</string>
+  <string name="theme_accent_picker_default">चूक</string>
 </resources>
