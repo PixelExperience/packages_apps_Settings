@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Odcień koloru</string>
   <string name="theme_accent_picker_summary">Wybierz kolor akcentu motywu systemowego</string>
   <string name="theme_accent_picker_default">Domyślny</string>
+  <string name="notification_theme_title">Styl powiadomień</string>
+  <string name="notification_style_default">Domyślny (biały)</string>
+  <string name="notification_style_dark">Ciemny (dopasowany do tła)</string>
 </resources>

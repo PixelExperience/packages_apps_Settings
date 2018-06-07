@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Aktsentvärv</string>
   <string name="theme_accent_picker_summary">Valige süsteemi teema aktsentvärv</string>
   <string name="theme_accent_picker_default">Vaikimisi</string>
+  <string name="notification_theme_title">Teavituste temaatika</string>
+  <string name="notification_style_default">Vaikimisi (valge)</string>
+  <string name="notification_style_dark">Tume (vastavalt taustapildile)</string>
 </resources>

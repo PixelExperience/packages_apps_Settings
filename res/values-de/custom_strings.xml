@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Akzentfarbe</string>
   <string name="theme_accent_picker_summary">Wähle eine System-Theme Akzentfarbe</string>
   <string name="theme_accent_picker_default">Standard</string>
+  <string name="notification_theme_title">Benachrichtigungsstil</string>
+  <string name="notification_style_default">Standard weiß</string>
+  <string name="notification_style_dark">Dunkel (je nach Hintergrundbild)</string>
 </resources>

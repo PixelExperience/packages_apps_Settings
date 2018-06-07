@@ -48,6 +48,6 @@
   <string name="theme_accent_picker_summary">Vyberte doplnkovú farbu systému</string>
   <string name="theme_accent_picker_default">Predvolená</string>
   <string name="notification_theme_title">Štýl upozornenia</string>
-  <string name="notification_style_default">Predvolená (biela)</string>
+  <string name="notification_style_default">Predvolený (biely)</string>
   <string name="notification_style_dark">Tmavý (podľa pozadia)</string>
 </resources>
