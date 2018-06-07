@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">তীব্র রঙ</string>
   <string name="theme_accent_picker_summary">সিস্টেম থিম তীব্র রঙ নির্বাচন করুন</string>
   <string name="theme_accent_picker_default">পূর্ব-নির্ধারিত</string>
+  <string name="notification_theme_title">বিজ্ঞপ্তির ধরন</string>
+  <string name="notification_style_default">পূর্ব-নির্ধারিত (সাদা)</string>
+  <string name="notification_style_dark">অন্ধকার (ব্যাকগ্রাউন্ড অনুসরণ কর)</string>
 </resources>

@@ -34,8 +34,8 @@
   <!-- Other gestures -->
   <string name="other_gestures">Другие жесты</string>
   <!-- Search -->
-  <string name="menu_search">Приложения для поиска</string>
-  <string name="menu_search_hint">Найти приложения</string>
+  <string name="menu_search">Поиск приложений</string>
+  <string name="menu_search_hint">Найти приложения\u2026</string>
   <!-- Themes -->
   <string name="systemui_theme_style_title">Цвет фона</string>
   <string name="systemui_theme_style_auto">Автоматически (на основе обоев)</string>
@@ -44,8 +44,8 @@
   <string name="applying_theme_toast">Применение темы, пожалуйста, подождите...</string>
   <string name="theme_applied_toast">Тема применена!</string>
   <string name="accent_picker_dialog_title">Выберите цветовой оттенок</string>
-  <string name="theme_accent_picker_title">Цвет</string>
-  <string name="theme_accent_picker_summary">Выберите цвет акцента системной темы</string>
+  <string name="theme_accent_picker_title">Цветовой оттенок</string>
+  <string name="theme_accent_picker_summary">Выберите цветовой оттенок системной темы</string>
   <string name="theme_accent_picker_default">По умолчанию</string>
   <string name="notification_theme_title">Стиль уведомлений</string>
   <string name="notification_style_default">По умолчанию (белый)</string>
