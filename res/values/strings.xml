@@ -7979,8 +7979,8 @@
 
     <!-- Zen mode settings: Starred contacts summary [CHAR LIMIT=NONE] -->
     <plurals name="zen_mode_starred_contacts_summary_additional_contacts">
-        <item quantity="one">and 1 other</item>
-        <item quantity="other">and <xliff:g id="num_people" example="3">%d</xliff:g> others</item>
+        <item quantity="one">1 other</item>
+        <item quantity="other"><xliff:g id="num_people" example="3">%d</xliff:g> others</item>
     </plurals>
 
     <!-- [CHAR LIMIT=20] Zen mode settings: Messages option -->
@@ -9120,9 +9120,6 @@
 
     <!-- Title for Camera laser sensor switch [CHAR LIMIT=NONE] -->
     <string name="camera_laser_sensor_switch">Camera Laser Sensor</string>
-
-    <!-- Title for logical camera default switch [CHAR LIMIT=NONE] -->
-    <string name="logical_camera_default_switch">Logical Camera As Default</string>
 
     <!-- Title of the setting to disable the automatic update -->
     <string name="ota_disable_automatic_update">Automatic system updates</string>
