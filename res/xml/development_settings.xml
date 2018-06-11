@@ -184,13 +184,12 @@
             android:entryValues="@array/select_logpersist_values" />
 
         <SwitchPreference
-            android:key="connectivity_monitor_switch"
-            android:title="@string/connectivity_monitor_switch"
-            android:summary="@string/connectivity_monitor_switch_summary" />
-
-        <SwitchPreference
             android:key="camera_laser_sensor_switch"
             android:title="@string/camera_laser_sensor_switch" />
+
+        <SwitchPreference
+            android:key="logical_camera_default_switch"
+            android:title="@string/logical_camera_default_switch" />
 
         <Preference
             android:key="feature_flags_dashboard"
@@ -253,6 +252,10 @@
             android:key="bluetooth_disable_absolute_volume"
             android:title="@string/bluetooth_disable_absolute_volume"
             android:summary="@string/bluetooth_disable_absolute_volume_summary" />
+
+        <SwitchPreference
+            android:key="bluetooth_disable_a2dp_hw_offload"
+            android:title="@string/bluetooth_disable_a2dp_hw_offload" />
 
         <ListPreference
             android:key="bluetooth_select_avrcp_version"

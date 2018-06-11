@@ -15,6 +15,7 @@ package com.android.settings.core;
 
 import android.annotation.IntDef;
 import android.content.Context;
+import android.content.IntentFilter;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -218,6 +219,41 @@ public abstract class BasePreferenceController extends AbstractPreferenceControl
     @SliceData.SliceType
     public int getSliceType() {
         return SliceData.SliceType.INTENT;
+    }
+
+    /**
+     * @return an {@link IntentFilter} that includes all broadcasts which can affect the state of
+     * this Setting.
+     */
+    public IntentFilter getIntentFilter() {
+        return null;
+    }
+
+    /**
+     * Determines if the controller should be used as a Slice.
+     * <p>
+     *     Important criteria for a Slice are:
+     *     - Must be secure
+     *     - Must not be a privacy leak
+     *     - Must be understandable as a stand-alone Setting.
+     * <p>
+     *     This does not guarantee the setting is available. {@link #isAvailable()} should sill be
+     *     called.
+     *
+     * @return {@code true} if the controller should be used externally as a Slice.
+     */
+    public boolean isSliceable() {
+        return false;
+    }
+
+    /**
+     * @return {@code true} if the setting update asynchronously.
+     * <p>
+     * For example, a Wifi controller would return true, because it needs to update the radio
+     * and wait for it to turn on.
+     */
+    public boolean hasAsyncUpdate() {
+        return false;
     }
 
     /**

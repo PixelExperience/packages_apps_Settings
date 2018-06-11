@@ -103,12 +103,12 @@ public class ConnectedDeviceDashboardFragment extends DashboardFragment {
     private static List<AbstractPreferenceController> buildPreferenceControllers(Context context,
             Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
-        final NfcPreferenceController nfcPreferenceController =
-                new NfcPreferenceController(context);
-        controllers.add(nfcPreferenceController);
+        final DiscoverableFooterPreferenceController discoverableFooterPreferenceController =
+                new DiscoverableFooterPreferenceController(context);
+        controllers.add(discoverableFooterPreferenceController);
 
         if (lifecycle != null) {
-            lifecycle.addObserver(nfcPreferenceController);
+            lifecycle.addObserver(discoverableFooterPreferenceController);
         }
 
         return controllers;
@@ -120,6 +120,8 @@ public class ConnectedDeviceDashboardFragment extends DashboardFragment {
         use(AvailableMediaDeviceGroupController.class).init(this);
         use(ConnectedDeviceGroupController.class).init(this);
         use(SavedTwsDeviceGroupController.class).init(this);
+        use(PreviouslyConnectedDevicePreferenceController.class).init(this);
+        use(DiscoverableFooterPreferenceController.class).init(this);
     }
 
     @VisibleForTesting
@@ -127,25 +129,17 @@ public class ConnectedDeviceDashboardFragment extends DashboardFragment {
 
         private final Context mContext;
         private final SummaryLoader mSummaryLoader;
-        private final NfcPreferenceController mNfcPreferenceController;
 
         public SummaryProvider(Context context, SummaryLoader summaryLoader) {
             mContext = context;
             mSummaryLoader = summaryLoader;
-            mNfcPreferenceController = new NfcPreferenceController(context);
         }
-
 
         @Override
         public void setListening(boolean listening) {
             if (listening) {
-                if (mNfcPreferenceController.isAvailable()) {
-                    mSummaryLoader.setSummary(this,
-                            mContext.getString(R.string.connected_devices_dashboard_summary));
-                } else {
-                    mSummaryLoader.setSummary(this, mContext.getString(
-                            R.string.connected_devices_dashboard_no_nfc_summary));
-                }
+                mSummaryLoader.setSummary(this, mContext.getText(AdvancedConnectedDeviceController.
+                        getConnectedDevicesSummaryResourceId(mContext)));
             }
         }
     }

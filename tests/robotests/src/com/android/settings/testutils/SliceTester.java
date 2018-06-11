@@ -35,6 +35,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import androidx.slice.Slice;
 import androidx.slice.SliceItem;
@@ -149,14 +150,17 @@ public class SliceTester {
         final int color = colorItem.getInt();
         assertThat(color).isEqualTo(Utils.getColorAccent(context));
 
-        final IconCompat expectedToggleIcon = IconCompat.createWithResource(context,
+        final SliceAction primaryAction = metadata.getPrimaryAction();
+
+        final IconCompat expectedIcon = IconCompat.createWithResource(context,
                 sliceData.getIconResource());
+        assertThat(expectedIcon.toString()).isEqualTo(primaryAction.getIcon().toString());
 
         final long sliceTTL = metadata.getExpiry();
         assertThat(sliceTTL).isEqualTo(ListBuilder.INFINITY);
 
         // Check primary intent
-        final PendingIntent primaryPendingIntent = metadata.getPrimaryAction().getAction();
+        final PendingIntent primaryPendingIntent = primaryAction.getAction();
         assertThat(primaryPendingIntent).isEqualTo(
                 SliceBuilderUtils.getContentPendingIntent(context, sliceData));
 
@@ -190,20 +194,8 @@ public class SliceTester {
         assertThat(toggles).isEmpty();
 
         final PendingIntent primaryPendingIntent = metadata.getPrimaryAction().getAction();
-        final int availabilityStatus = SliceBuilderUtils.getPreferenceController(context,
-                sliceData).getAvailabilityStatus();
-        switch (availabilityStatus) {
-            case UNSUPPORTED_ON_DEVICE:
-            case CONDITIONALLY_UNAVAILABLE:
-                assertThat(primaryPendingIntent).isEqualTo(
-                        SliceBuilderUtils.getSettingsIntent(context));
-                break;
-            case DISABLED_FOR_USER:
-            case DISABLED_DEPENDENT_SETTING:
-                assertThat(primaryPendingIntent).isEqualTo(
-                        SliceBuilderUtils.getContentPendingIntent(context, sliceData));
-                break;
-        }
+        assertThat(primaryPendingIntent).isEqualTo(SliceBuilderUtils.getContentPendingIntent(
+                context, sliceData));
 
         final List<SliceItem> sliceItems = slice.getItems();
         assertTitle(sliceItems, sliceData.getTitle());
@@ -211,7 +203,7 @@ public class SliceTester {
         assertKeywords(metadata, sliceData);
     }
 
-    private static void assertTitle(List<SliceItem> sliceItems, String title) {
+    public static void assertTitle(List<SliceItem> sliceItems, String title) {
         boolean hasTitle = false;
         for (SliceItem item : sliceItems) {
             List<SliceItem> titleItems = SliceQuery.findAll(item, FORMAT_TEXT, HINT_TITLE,
@@ -230,8 +222,9 @@ public class SliceTester {
 
     private static void assertKeywords(SliceMetadata metadata, SliceData data) {
         final List<String> keywords = metadata.getSliceKeywords();
-        final Set<String> expectedKeywords = new HashSet<>(
-                Arrays.asList(data.getKeywords().split(",")));
+        final Set<String> expectedKeywords = Arrays.stream(data.getKeywords().split(","))
+                .map(s -> s = s.trim())
+                .collect(Collectors.toSet());
         expectedKeywords.add(data.getTitle());
         expectedKeywords.add(data.getScreenTitle().toString());
         assertThat(keywords).containsExactlyElementsIn(expectedKeywords);

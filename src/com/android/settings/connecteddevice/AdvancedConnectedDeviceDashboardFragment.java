@@ -40,6 +40,8 @@ public class AdvancedConnectedDeviceDashboardFragment extends DashboardFragment 
 
     private static final String TAG = "AdvancedConnectedDeviceFrag";
 
+    static final String KEY_BLUETOOTH = "bluetooth_settings";
+
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.CONNECTION_DEVICE_ADVANCED;
@@ -69,17 +71,13 @@ public class AdvancedConnectedDeviceDashboardFragment extends DashboardFragment 
             Lifecycle lifecycle) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
 
-        final AndroidBeamPreferenceController beamPreferenceController =
-                new AndroidBeamPreferenceController(context);
-        controllers.add(beamPreferenceController);
-
         controllers.add(new BluetoothFilesPreferenceController(context));
         controllers.add(new BluetoothOnWhileDrivingPreferenceController(context));
 
         final PrintSettingPreferenceController printerController =
                 new PrintSettingPreferenceController(context);
+
         if (lifecycle != null) {
-            lifecycle.addObserver(beamPreferenceController);
             lifecycle.addObserver(printerController);
         }
         controllers.add(printerController);
@@ -107,6 +105,9 @@ public class AdvancedConnectedDeviceDashboardFragment extends DashboardFragment 
                     if (!pm.hasSystemFeature(PackageManager.FEATURE_NFC)) {
                         keys.add(AndroidBeamPreferenceController.KEY_ANDROID_BEAM_SETTINGS);
                     }
+
+                    // Parent duplicate
+                    keys.add(KEY_BLUETOOTH);
 
                     return keys;
                 }

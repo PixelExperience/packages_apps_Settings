@@ -32,7 +32,6 @@ import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settingslib.bluetooth.LocalBluetoothAdapter;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
-import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnStart;
 import com.android.settingslib.core.lifecycle.events.OnStop;
@@ -44,16 +43,16 @@ public class BluetoothDeviceNamePreferenceController extends BasePreferenceContr
         LifecycleObserver, OnStart, OnStop {
     private static final String TAG = "BluetoothNamePrefCtrl";
 
-    public static final String KEY_DEVICE_NAME = "device_name";
-
-
     @VisibleForTesting
     Preference mPreference;
     private LocalBluetoothManager mLocalManager;
-    private LocalBluetoothAdapter mLocalAdapter;
+    protected LocalBluetoothAdapter mLocalAdapter;
 
-    public BluetoothDeviceNamePreferenceController(Context context, Lifecycle lifecycle) {
-        this(context, (LocalBluetoothAdapter) null);
+    /**
+     * Constructor exclusively used for Slice.
+     */
+    public BluetoothDeviceNamePreferenceController(Context context, String preferenceKey) {
+        super(context, preferenceKey);
 
         mLocalManager = Utils.getLocalBtManager(context);
         if (mLocalManager == null) {
@@ -61,22 +60,12 @@ public class BluetoothDeviceNamePreferenceController extends BasePreferenceContr
             return;
         }
         mLocalAdapter = mLocalManager.getBluetoothAdapter();
-
-        if (lifecycle != null) {
-            lifecycle.addObserver(this);
-        }
-    }
-
-    /**
-     * Constructor exclusively used for Slice.
-     */
-    public BluetoothDeviceNamePreferenceController(Context context) {
-        this(context, (Lifecycle) null);
     }
 
     @VisibleForTesting
-    BluetoothDeviceNamePreferenceController(Context context, LocalBluetoothAdapter localAdapter) {
-        super(context, KEY_DEVICE_NAME);
+    BluetoothDeviceNamePreferenceController(Context context, LocalBluetoothAdapter localAdapter,
+            String preferenceKey) {
+        super(context, preferenceKey);
         mLocalAdapter = localAdapter;
     }
 
@@ -88,8 +77,10 @@ public class BluetoothDeviceNamePreferenceController extends BasePreferenceContr
 
     @Override
     public void onStart() {
-        mContext.registerReceiver(mReceiver,
-                new IntentFilter(BluetoothAdapter.ACTION_LOCAL_NAME_CHANGED));
+        final IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(BluetoothAdapter.ACTION_LOCAL_NAME_CHANGED);
+        intentFilter.addAction(BluetoothAdapter.ACTION_STATE_CHANGED);
+        mContext.registerReceiver(mReceiver, intentFilter);
     }
 
     @Override
@@ -103,13 +94,8 @@ public class BluetoothDeviceNamePreferenceController extends BasePreferenceContr
     }
 
     @Override
-    public String getPreferenceKey() {
-        return KEY_DEVICE_NAME;
-    }
-
-    @Override
     public void updateState(Preference preference) {
-        updateDeviceName(preference);
+        updatePreferenceState(preference);
     }
 
     @Override
@@ -134,7 +120,7 @@ public class BluetoothDeviceNamePreferenceController extends BasePreferenceContr
     public Preference createBluetoothDeviceNamePreference(PreferenceScreen screen, int order) {
         mPreference = new Preference(screen.getContext());
         mPreference.setOrder(order);
-        mPreference.setKey(KEY_DEVICE_NAME);
+        mPreference.setKey(getPreferenceKey());
         screen.addPreference(mPreference);
 
         return mPreference;
@@ -145,7 +131,7 @@ public class BluetoothDeviceNamePreferenceController extends BasePreferenceContr
      *
      * @param preference to set the summary for
      */
-    protected void updateDeviceName(final Preference preference) {
+    protected void updatePreferenceState(final Preference preference) {
         preference.setSelectable(false);
         preference.setSummary(getSummary());
     }
@@ -166,8 +152,10 @@ public class BluetoothDeviceNamePreferenceController extends BasePreferenceContr
 
             if (TextUtils.equals(action, BluetoothAdapter.ACTION_LOCAL_NAME_CHANGED)) {
                 if (mPreference != null && mLocalAdapter != null && mLocalAdapter.isEnabled()) {
-                    updateDeviceName(mPreference);
+                    updatePreferenceState(mPreference);
                 }
+            } else if (TextUtils.equals(action, BluetoothAdapter.ACTION_STATE_CHANGED)) {
+                updatePreferenceState(mPreference);
             }
         }
     };
