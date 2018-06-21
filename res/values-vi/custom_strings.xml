@@ -30,6 +30,7 @@
   <string name="pixel_sim_color">Điểm ảnh</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Ngăn tình trạng tình cờ đánh thức thiết bị</string>
+  <string name="proximity_wake_summary">Kiểm tra cảm biến tiệm cận trước khi mở màn hình</string>
   <!-- Other gestures -->
   <string name="other_gestures">Các cử chỉ khác</string>
   <!-- Search -->
@@ -42,4 +43,11 @@
   <string name="systemui_theme_style_dark">Tối</string>
   <string name="applying_theme_toast">Áp dụng chủ đề, xin vui lòng chờ...</string>
   <string name="theme_applied_toast">Chủ đề được áp dụng!</string>
+  <string name="accent_picker_dialog_title">Chọn màu nổi bật</string>
+  <string name="theme_accent_picker_title">Màu nổi bật</string>
+  <string name="theme_accent_picker_summary">Chọn màu nổi bật của chủ đề hệ thống</string>
+  <string name="theme_accent_picker_default">Mặc định</string>
+  <string name="notification_theme_title">Kiểu thông báo</string>
+  <string name="notification_style_default">Trắng (mặc định)</string>
+  <string name="notification_style_dark">Tối</string>
 </resources>

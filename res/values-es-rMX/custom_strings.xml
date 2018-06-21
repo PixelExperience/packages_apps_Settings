@@ -46,5 +46,8 @@
   <string name="accent_picker_dialog_title">Seleccione un color de acento</string>
   <string name="theme_accent_picker_title">Color destacado</string>
   <string name="theme_accent_picker_summary">Seleccione color destacado del tema de sistema</string>
-  <string name="theme_accent_picker_default">Por defecto</string>
+  <string name="theme_accent_picker_default">Predeterminado</string>
+  <string name="notification_theme_title">Estilo de notificación</string>
+  <string name="notification_style_default">Por defecto (blanco)</string>
+  <string name="notification_style_dark">Oscuro (Según el fondo)</string>
 </resources>

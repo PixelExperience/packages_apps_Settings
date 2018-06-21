@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Couleur secondaire</string>
   <string name="theme_accent_picker_summary">Choisir la couleur secondaire du thème système</string>
   <string name="theme_accent_picker_default">Par défaut</string>
+  <string name="notification_theme_title">Style de notification</string>
+  <string name="notification_style_default">Par défaut (blanc)</string>
+  <string name="notification_style_dark">Sombre (suivant le fond d\'écran)</string>
 </resources>

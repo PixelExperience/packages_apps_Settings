@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">強調顏色</string>
   <string name="theme_accent_picker_summary">選擇系統主題強調色</string>
   <string name="theme_accent_picker_default">預設</string>
+  <string name="notification_theme_title">通知樣式</string>
+  <string name="notification_style_default">預設值（白色）</string>
+  <string name="notification_style_dark">黑色（跟隨背景）</string>
 </resources>

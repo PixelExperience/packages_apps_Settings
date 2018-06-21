@@ -48,6 +48,6 @@
   <string name="theme_accent_picker_summary">システムテーマのアクセントカラーを選択</string>
   <string name="theme_accent_picker_default">既定</string>
   <string name="notification_theme_title">通知スタイル</string>
-  <string name="notification_style_default">デフォルト（白）</string>
+  <string name="notification_style_default">既定（白）</string>
   <string name="notification_style_dark">ダーク（背景に続く）</string>
 </resources>
