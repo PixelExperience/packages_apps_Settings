@@ -1259,7 +1259,8 @@ public class RadioInfo extends Activity {
     };
 
     private boolean isEabProvisioned() {
-        return isFeatureProvisioned(EAB_PROVISIONED_CONFIG_ID, false);
+        return getApplicationContext().getResources().getBoolean(R.bool.config_is_eab_provisioned)
+                && isFeatureProvisioned(EAB_PROVISIONED_CONFIG_ID, false);
     }
 
     OnCheckedChangeListener mEabCheckedChangeListener = new OnCheckedChangeListener() {

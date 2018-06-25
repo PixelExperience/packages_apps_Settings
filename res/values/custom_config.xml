@@ -40,4 +40,7 @@
     <!-- Whether device supports lift to wake -->
     <bool name="config_supportsLiftToWake">true</bool>
 
+    <!-- Whether to disable eab provision -->
+    <bool name="config_is_eab_provisioned">true</bool>
+
 </resources>
