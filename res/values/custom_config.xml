@@ -37,4 +37,7 @@
     <!-- Device specific gesture package -->
     <string name="config_customGesturePackage" translatable="false"></string>
 
+    <!-- Whether device supports lift to wake -->
+    <bool name="config_supportsLiftToWake">true</bool>
+
 </resources>
