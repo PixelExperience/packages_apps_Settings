@@ -115,4 +115,7 @@
 
     <!-- Whether or not new device intro suggestion is supported for this device -->
     <bool name="config_new_device_intro_suggestion_supported">false</bool>
+
+    <!-- Whether device supports lift to wake -->
+    <bool name="config_supportsLiftToWake">true</bool>
 </resources>
