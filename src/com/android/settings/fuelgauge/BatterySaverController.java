@@ -141,5 +141,6 @@ public class BatterySaverController extends AbstractPreferenceController
     @Override
     public void onBatteryChanged(boolean pluggedIn) {
         mBatterySaverPref.setSwitchEnabled(!pluggedIn);
+        mBatterySaverPref.setEnabled(!pluggedIn);
     }
 }
