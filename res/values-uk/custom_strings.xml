@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Колір акценту</string>
   <string name="theme_accent_picker_summary">Оберіть колір акценту системної теми</string>
   <string name="theme_accent_picker_default">За замовчанням</string>
+  <string name="notification_theme_title">Стиль сповіщень</string>
+  <string name="notification_style_default">Стандартний (білий)</string>
+  <string name="notification_style_dark">Темний (як тло)</string>
 </resources>

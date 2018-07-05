@@ -6,8 +6,8 @@
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Пронађите сензор за отиске прстију <xliff:g id="sensor_location">%1$s</xliff:g> вашег телефона.</string>
   <!-- Fingerprint sensor locations -->
-  <string name="security_settings_fingerprint_sensor_location_back">на полеђини</string>
-  <string name="security_settings_fingerprint_sensor_location_front">на предњој страни</string>
+  <string name="security_settings_fingerprint_sensor_location_back">на задњој страни уређаја</string>
+  <string name="security_settings_fingerprint_sensor_location_front">на предњој или задњој страни: зависи од уређаја</string>
   <string name="security_settings_fingerprint_sensor_location_left">с леве стране</string>
   <string name="security_settings_fingerprint_sensor_location_right">с десне стране</string>
   <!-- Manual provisioning support -->
@@ -47,4 +47,6 @@
   <string name="theme_accent_picker_title">Боја наглашавања</string>
   <string name="theme_accent_picker_summary">Изаберите боју наглашавања теме система</string>
   <string name="theme_accent_picker_default">Подразумевано</string>
+  <string name="notification_style_default">Стил_обавештења_подразумевано</string>
+  <string name="notification_style_dark">Стил_обавештења_подразумевано</string>
 </resources>
