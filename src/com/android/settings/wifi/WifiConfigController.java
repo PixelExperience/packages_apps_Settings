@@ -34,6 +34,7 @@ import android.net.wifi.WifiEnterpriseConfig;
 import android.net.wifi.WifiEnterpriseConfig.Eap;
 import android.net.wifi.WifiEnterpriseConfig.Phase2;
 import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Handler;
 import android.os.UserManager;
 import android.provider.Settings;
@@ -170,6 +171,7 @@ public class WifiConfigController implements TextWatcher,
     private TextView mProxyExclusionListView;
     private TextView mProxyPacView;
     private CheckBox mSharedCheckBox;
+    private CheckBox mShareThisWifiCheckBox;
 
     private IpAssignment mIpAssignment = IpAssignment.UNASSIGNED;
     private ProxySettings mProxySettings = ProxySettings.UNASSIGNED;
@@ -181,6 +183,7 @@ public class WifiConfigController implements TextWatcher,
     private TextView mSsidView;
 
     private Context mContext;
+    private WifiManager mWifiManager;
     private TelephonyManager mTelephonyManager;
     private SubscriptionManager mSubscriptionManager = null;
     private int selectedSimCardNumber;
@@ -233,6 +236,8 @@ public class WifiConfigController implements TextWatcher,
                 mHiddenSettingsSpinner.getSelectedItemPosition() == NOT_HIDDEN_NETWORK
                         ? View.GONE
                         : View.VISIBLE);
+        mShareThisWifiCheckBox = (CheckBox) mView.findViewById(R.id.share_this_wifi);
+        mWifiManager = (WifiManager) mContext.getSystemService(Context.WIFI_SERVICE);
 
         if (mAccessPoint == null) { // new network
             mConfigUi.setTitle(R.string.wifi_add_network);
@@ -253,6 +258,14 @@ public class WifiConfigController implements TextWatcher,
 
             mConfigUi.setSubmitButton(res.getString(R.string.wifi_save));
         } else {
+
+            if (!mWifiManager.isWifiCoverageExtendFeatureEnabled()
+                 || (mAccessPoint.getSecurity() != AccessPoint.SECURITY_NONE
+                      && mAccessPoint.getSecurity() != AccessPoint.SECURITY_PSK)) {
+                mShareThisWifiCheckBox.setChecked(false);
+                mShareThisWifiCheckBox.setVisibility(View.GONE);
+            }
+
             if (!mAccessPoint.isPasspointConfig()) {
                 mConfigUi.setTitle(mAccessPoint.getSsid());
             } else {
@@ -280,7 +293,7 @@ public class WifiConfigController implements TextWatcher,
                 } else {
                     mIpSettingsSpinner.setSelection(DHCP);
                 }
-
+                mShareThisWifiCheckBox.setChecked(config.shareThisAp);
                 mSharedCheckBox.setEnabled(config.shared);
                 if (!config.shared) {
                     showAdvancedFields = true;
@@ -553,7 +566,7 @@ public class WifiConfigController implements TextWatcher,
         }
 
         config.shared = mSharedCheckBox.isChecked();
-
+        config.shareThisAp = mShareThisWifiCheckBox.isChecked();
         switch (mAccessPointSecurity) {
             case AccessPoint.SECURITY_NONE:
                 config.allowedKeyManagement.set(KeyMgmt.NONE);
@@ -1461,6 +1474,16 @@ public class WifiConfigController implements TextWatcher,
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         if (parent == mSecuritySpinner) {
             mAccessPointSecurity = position;
+
+            if (!mWifiManager.isWifiCoverageExtendFeatureEnabled()
+                 || (mAccessPointSecurity != AccessPoint.SECURITY_NONE
+                      && mAccessPointSecurity != AccessPoint.SECURITY_PSK)) {
+                mShareThisWifiCheckBox.setChecked(false);
+                mShareThisWifiCheckBox.setVisibility(View.GONE);
+            } else {
+                mShareThisWifiCheckBox.setVisibility(View.VISIBLE);
+            }
+
             showSecurityFields();
         } else if (parent == mEapMethodSpinner || parent == mEapCaCertSpinner) {
             showSecurityFields();

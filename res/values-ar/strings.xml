@@ -4180,6 +4180,8 @@
       <item quantity="other"><xliff:g id="NUMBER">%s</xliff:g> ثانية</item>
       <item quantity="one">ثانية واحدة</item>
     </plurals>
+    <string name="qtifeedback_settings_title">الإبلاغ عن</string>
+    <string name="qtifeedback_settings_subtitle">ملاحظات حول أجهزة Qualcomm Technologies, Inc</string>
     <string name="automatic_storage_manager_settings" msgid="7819434542155181607">"إدارة سعة التخزين"</string>
     <string name="automatic_storage_manager_text" msgid="4562950476680600604">"للمساعدة في تفريغ مساحة التخزين، يزيل مدير سعة التخزين من جهاز الصور والفيديوهات التي تم الاحتفاظ بنسخة احتياطية منها."</string>
     <string name="automatic_storage_manager_days_title" msgid="2017913896160914647">"إزالة الصور والفيديوهات"</string>

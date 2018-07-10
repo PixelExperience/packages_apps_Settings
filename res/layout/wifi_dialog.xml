@@ -335,6 +335,13 @@
                     android:orientation="vertical"
                     android:visibility="gone">
 
+            <CheckBox android:id="@+id/share_this_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/wifi_item_content"
+                    android:textSize="14sp"
+                    android:text="@string/share_this_wifi" />
+
             <LinearLayout android:id="@+id/metered_settings_fields"
                           android:layout_width="match_parent"
                           android:layout_height="wrap_content"

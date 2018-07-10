@@ -214,6 +214,11 @@
             android:summary="@string/wifi_display_certification_summary" />
 
         <SwitchPreference
+            android:key="wifi_coverage_extend"
+            android:title="@string/wifi_coverage_extend"
+            android:summary="@string/wifi_coverage_extend_summary" />
+
+        <SwitchPreference
             android:key="wifi_verbose_logging"
             android:title="@string/wifi_verbose_logging"
             android:summary="@string/wifi_verbose_logging_summary" />

@@ -3932,6 +3932,8 @@
       <item quantity="other"><xliff:g id="NUMBER">%s</xliff:g> секунди</item>
       <item quantity="one">1 секунда</item>
     </plurals>
+    <string name="qtifeedback_settings_title"> Обратна връзка за хардуер</string>
+    <string name="qtifeedback_settings_subtitle">Qualcomm Technologies, Inc доклади</string>
     <string name="automatic_storage_manager_settings" msgid="7819434542155181607">"Управление на хранилището"</string>
     <string name="automatic_storage_manager_text" msgid="4562950476680600604">"За да ви помогне да освободите място за съхранение, мениджърът на хранилището премахва от устройството ви резервните копия на снимки и видеоклипове."</string>
     <string name="automatic_storage_manager_days_title" msgid="2017913896160914647">"Премахване на снимките и видеоклиповете"</string>

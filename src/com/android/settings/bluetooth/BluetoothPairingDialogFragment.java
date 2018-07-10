@@ -39,8 +39,6 @@ import com.android.internal.annotations.VisibleForTesting;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
-import android.os.Handler;
-import android.os.Message;
 
 /**
  * A dialogFragment used by {@link BluetoothPairingDialog} to create an appropriately styled dialog
@@ -56,9 +54,6 @@ public class BluetoothPairingDialogFragment extends InstrumentedDialogFragment i
     private BluetoothPairingController mPairingController;
     private BluetoothPairingDialog mPairingDialogActivity;
     private EditText mPairingView;
-    private static final int PAIRING_POPUP_TIMEOUT = 35000;
-    private static final int MESSAGE_DELAYED_DISMISS = 1;
-
     /**
      * The interface we expect a listener to implement. Typically this should be done by
      * the controller.
@@ -189,8 +184,6 @@ public class BluetoothPairingDialogFragment extends InstrumentedDialogFragment i
                 dialog = null;
                 Log.e(TAG, "Incorrect pairing type received, not showing any dialog");
         }
-        if (dialog !=null)
-            popTimedout();
         return dialog;
     }
 
@@ -352,25 +345,5 @@ public class BluetoothPairingDialogFragment extends InstrumentedDialogFragment i
         }
         return view;
     }
-
-private void popTimedout() {
-
-        Message message = mHandler.obtainMessage(MESSAGE_DELAYED_DISMISS);
-        mHandler.sendMessageDelayed(message, PAIRING_POPUP_TIMEOUT);
-}
-
-private final Handler mHandler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            switch (msg.what) {
-                case MESSAGE_DELAYED_DISMISS:
-                    Log.v(TAG, "Delayed pairing pop up handler");
-                    dismiss();
-                    break;
-                default:
-                    break;
-            }
-        }
-};
 
 }
