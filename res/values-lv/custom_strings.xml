@@ -4,10 +4,27 @@
   <!-- Title for SIM selection notification channel -->
   <!-- Format string for fingerprint location message -->
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">atpakaļ</string>
+  <string name="security_settings_fingerprint_sensor_location_front">priekšpuse</string>
+  <string name="security_settings_fingerprint_sensor_location_left">kreisā puse</string>
+  <string name="security_settings_fingerprint_sensor_location_right">labā puse</string>
   <!-- Manual provisioning support -->
+  <string name="sim_disabled">izslēgts</string>
+  <string name="sim_enabler_will_disable_sim_title">Uzmanību</string>
+  <string name="sub_activate_success">SIM aktivizēta.</string>
+  <string name="sub_activate_failed">Aktivēšana neizdevās.</string>
+  <string name="sub_deactivate_success">SIM deaktivizēta.</string>
+  <string name="sub_deactivate_failed">Deaktivēšana neizdevās.</string>
   <!-- Pixel color on sim card -->
+  <string name="pixel_sim_color">Pixel</string>
   <!-- Proximity wake -->
   <!-- Other gestures -->
   <!-- Search -->
+  <string name="menu_search">Meklēt lietotnes</string>
   <!-- Themes -->
+  <string name="systemui_theme_style_title">Fona krāsa</string>
+  <string name="systemui_theme_style_light">Gaišs</string>
+  <string name="systemui_theme_style_dark">Tumšs</string>
+  <string name="theme_accent_picker_default">Noklusējums</string>
+  <string name="notification_style_default">Noklusējuma balts</string>
 </resources>

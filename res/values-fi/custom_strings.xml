@@ -6,38 +6,47 @@
   <!-- Format string for fingerprint location message -->
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Etsi sormenjälkitunnistin <xliff:g id="sensor_location">%1$s</xliff:g> puhelimessasi.</string>
   <!-- Fingerprint sensor locations -->
-  <string name="security_settings_fingerprint_sensor_location_back">takaisin</string>
+  <string name="security_settings_fingerprint_sensor_location_back">paluu</string>
   <string name="security_settings_fingerprint_sensor_location_front">edessä</string>
   <string name="security_settings_fingerprint_sensor_location_left">vasen puoli</string>
   <string name="security_settings_fingerprint_sensor_location_right">oikea puoli</string>
   <!-- Manual provisioning support -->
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> on <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_disabled">poissa käytöstä</string>
-  <string name="sim_missing">puuttuu tai on viallinen</string>
-  <string name="sim_enabler_need_disable_sim">SIM-kortti deaktivoidaan. Haluatko jatkaa?</string>
+  <string name="sim_disabled">ei käytössä</string>
+  <string name="sim_missing">puuttuu tai viallinen</string>
+  <string name="sim_enabler_need_disable_sim">SIM-kortti poistetaan käytöstä. Haluatko jatkaa?</string>
   <string name="sim_enabler_will_disable_sim_title">Huomio</string>
-  <string name="sim_enabler_need_switch_data_service">Tämä SIM-kortti poistetaan käytöstä ja SIM <xliff:g id="slotid">%1$s</xliff:g>:n datapalvelut otetaan käyttöön. Haluatko varmasti jatkaa?</string>
+  <string name="sim_enabler_need_switch_data_service">Tämä SIM-kortti poistetaan käytöstä ja SIM <xliff:g id="slotid">%1$s</xliff:g> datapalvelut otetaan käyttöön. Haluatko varmasti jatkaa?</string>
   <string name="sim_enabler_airplane_on">Toimintoja ei voida suorittaa, kun lentotila on päällä.</string>
   <string name="sim_enabler_in_call">Toimintoa ei voida suorittaa puhelun aikana.</string>
   <string name="sim_enabler_both_inactive">Kaikkia SIM-kortteja ei voi poistaa käytöstä</string>
   <string name="sim_enabler_enabling">Aktivoidaan\u2026</string>
-  <string name="sim_enabler_disabling">Deaktivoidaan\u2026</string>
-  <string name="sub_activate_success">SIM aktivoitu.</string>
-  <string name="sub_activate_failed">Aktivointi epäonnistui.</string>
-  <string name="sub_deactivate_success">SIM deaktivoitu.</string>
-  <string name="sub_deactivate_failed">Deaktivointi epäonnistui.</string>
+  <string name="sim_enabler_disabling">Otetaan pois käytöstä\u2026</string>
+  <string name="sub_activate_success">SIM otettu käyttöön.</string>
+  <string name="sub_activate_failed">Ei otettu käyttöön.</string>
+  <string name="sub_deactivate_success">SIM poistettu käytöstä.</string>
+  <string name="sub_deactivate_failed">Käytöstä poisto epäonnistui.</string>
   <!-- Pixel color on sim card -->
   <string name="pixel_sim_color">Pixel</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Estä vahinko heräämlnen</string>
+  <string name="proximity_wake_title">Estä vahingossa heräämlnen</string>
   <string name="proximity_wake_summary">Tarkista lähestymisanturi näytön heräämiseen</string>
   <!-- Other gestures -->
   <string name="other_gestures">Muut toiminnot</string>
   <!-- Search -->
   <string name="menu_search">Haku ohjelmat</string>
+  <string name="menu_search_hint">Haetaan sovellusta\u2026</string>
   <!-- Themes -->
   <string name="systemui_theme_style_title">Taustan väri</string>
+  <string name="systemui_theme_style_auto">Automaattinen (taustakuva)</string>
+  <string name="systemui_theme_style_light">Vaalea</string>
+  <string name="systemui_theme_style_dark">Tumma</string>
   <string name="applying_theme_toast">Asetetaan teemaa, odota...</string>
+  <string name="theme_applied_toast">Teema otettu käyttöön!</string>
+  <string name="accent_picker_dialog_title">Valitse korostusväri</string>
+  <string name="theme_accent_picker_title">Korostusväri</string>
+  <string name="theme_accent_picker_summary">Valitse järjestelmäteeman korostusväri</string>
+  <string name="theme_accent_picker_default">Oletus</string>
   <string name="notification_theme_title">Huomautus tapa</string>
   <string name="notification_style_default">Oletus (valkoinen)</string>
   <string name="notification_style_dark">Tumma(taustaväristä)</string>

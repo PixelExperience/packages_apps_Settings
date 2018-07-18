@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">स्वरोंका रंग</string>
   <string name="theme_accent_picker_summary">सिस्टम थीम उच्चारण रंग का चयन करें</string>
   <string name="theme_accent_picker_default">चूक</string>
+  <string name="notification_theme_title">अधिसूचना शैली</string>
+  <string name="notification_style_default">डिफ़ॉल्ट (सफेद)</string>
+  <string name="notification_style_dark">अंधेरा (पृष्ठभूमि का पालन करें)</string>
 </resources>
