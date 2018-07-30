@@ -89,11 +89,11 @@
         android:key="ota_disable_automatic_update"
         android:title="@string/ota_disable_automatic_update" /-->
 
-    <!--Preference
+    <Preference
         android:key="demo_mode"
         android:title="@string/demo_mode">
         <intent android:action="com.android.settings.action.DEMO_MODE" />
-    </Preference-->
+    </Preference>
 
     <!--Preference
         android:key="quick_settings_tiles"
