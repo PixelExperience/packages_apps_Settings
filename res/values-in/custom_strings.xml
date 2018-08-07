@@ -4,7 +4,7 @@
   <!-- Title for SIM selection notification channel -->
   <string name="sim_selection_channel_title">Pilihan SIM</string>
   <!-- Format string for fingerprint location message -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Cari sensor sidik jari di <xliff:g id="sensor_location">%1$s</xliff:g> telepon Anda.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Tempatkan sensor sidik jari pada <xliff:g id="sensor_location">%1$s</xliff:g> telepon anda.</string>
   <!-- Fingerprint sensor locations -->
   <string name="security_settings_fingerprint_sensor_location_back">kembali</string>
   <string name="security_settings_fingerprint_sensor_location_front">depan</string>

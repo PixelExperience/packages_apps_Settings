@@ -41,7 +41,7 @@
   <string name="systemui_theme_style_auto">自動（壁紙に基づく）</string>
   <string name="systemui_theme_style_light">明るい</string>
   <string name="systemui_theme_style_dark">暗い</string>
-  <string name="applying_theme_toast">テーマを適用中です。しばらくお待ちください。</string>
+  <string name="applying_theme_toast">テーマを適用中です。しばらくお待ちください...</string>
   <string name="theme_applied_toast">テーマが適用されました</string>
   <string name="accent_picker_dialog_title">アクセントカラーを選択します</string>
   <string name="theme_accent_picker_title">アクセントカラー</string>

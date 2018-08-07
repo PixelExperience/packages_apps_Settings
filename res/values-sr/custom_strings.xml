@@ -47,6 +47,7 @@
   <string name="theme_accent_picker_title">Боја наглашавања</string>
   <string name="theme_accent_picker_summary">Изаберите боју наглашавања теме система</string>
   <string name="theme_accent_picker_default">Подразумевано</string>
+  <string name="notification_theme_title">Стил обавештења</string>
   <string name="notification_style_default">Стил_обавештења_подразумевано</string>
   <string name="notification_style_dark">Стил_обавештења_подразумевано</string>
 </resources>

@@ -48,6 +48,6 @@
   <string name="theme_accent_picker_summary">시스템 테마 강조 색상 선택</string>
   <string name="theme_accent_picker_default">기본</string>
   <string name="notification_theme_title">알림 스타일</string>
-  <string name="notification_style_default">기본 (화이트)</string>
-  <string name="notification_style_dark">다크 (배경화면 기반)</string>
+  <string name="notification_style_default">기본 (밝게)</string>
+  <string name="notification_style_dark">어둡게 (배경화면 기반)</string>
 </resources>
