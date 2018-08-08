@@ -204,9 +204,16 @@ public class WifiConfigController implements TextWatcher,
         mTelephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
         mSimDisplayNames = new ArrayList<String>();
         mLevels = res.getStringArray(R.array.wifi_signal);
-        mPhase2PeapAdapter = new ArrayAdapter<String>(
-                mContext, android.R.layout.simple_spinner_item,
-                res.getStringArray(R.array.wifi_peap_phase2_entries));
+        if (Utils.isWifiOnly(mContext) || !mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_eap_sim_based_auth_supported)) {
+            mPhase2PeapAdapter = new ArrayAdapter<String>(
+                    mContext, android.R.layout.simple_spinner_item,
+                    res.getStringArray(R.array.wifi_peap_phase2_entries));
+        } else {
+            mPhase2PeapAdapter = new ArrayAdapter<String>(
+                    mContext, android.R.layout.simple_spinner_item,
+                    res.getStringArray(R.array.wifi_peap_phase2_entries_with_sim_auth));
+        }
         mPhase2PeapAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         mPhase2FullAdapter = new ArrayAdapter<String>(
