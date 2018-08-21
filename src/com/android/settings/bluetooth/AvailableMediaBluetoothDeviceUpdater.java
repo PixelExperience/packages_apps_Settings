@@ -73,7 +73,9 @@ public class AvailableMediaBluetoothDeviceUpdater extends BluetoothDeviceUpdater
                 removePreference(cachedDevice);
             }
         } else if (state == BluetoothProfile.STATE_DISCONNECTED) {
-            removePreference(cachedDevice);
+            if (!isFilterMatched(cachedDevice)) {
+                removePreference(cachedDevice);
+            }
         }
     }
 
