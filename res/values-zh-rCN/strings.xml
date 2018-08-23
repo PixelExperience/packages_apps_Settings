@@ -4169,4 +4169,5 @@
     <string name="reset_network_progress_title" >"正在重置"</string>
     <!-- Reset network progress screen text [CHAR LIMIT=75] -->
     <string name="reset_network_progress_text">"请稍候…"</string>
+    <string name="summary_collapsed_preference_list" msgid="5190123168583152844">"<xliff:g id="CURRENT_ITEMS">%1$s</xliff:g>、<xliff:g id="ADDED_ITEMS">%2$s</xliff:g>"</string>
 </resources>
