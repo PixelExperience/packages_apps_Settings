@@ -68,7 +68,11 @@ public class TetherPreferenceController extends AbstractPreferenceController imp
                 }
 
                 public void onServiceDisconnected(int profile) {
-                    mBluetoothPan.set(null);
+                    BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
+                    BluetoothProfile currentProfile = mBluetoothPan.getAndSet(null);
+                    if (currentProfile != null && adapter != null) {
+                        adapter.closeProfileProxy(BluetoothProfile.PAN, currentProfile);
+                    }
                 }
             };
 
