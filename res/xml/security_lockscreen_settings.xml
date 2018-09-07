@@ -40,6 +40,13 @@
         android:summary="@string/lockdown_settings_summary"
         settings:controller="com.android.settings.security.LockdownButtonPreferenceController"/>
 
+    <!-- Face auto unlock -->
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="face_auto_unlock"
+        android:title="@string/face_auto_unlock_title"
+        android:summary="@string/face_auto_unlock_summary"
+        android:defaultValue="@*android:bool/config_autoFaceUnlockEnabledByDefault" />
+
     <!-- Ambient play -->
     <PreferenceScreen
         android:key="ambient_play"
