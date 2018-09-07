@@ -136,4 +136,8 @@
     <string name="disable_navkeys_title">Enable on-screen nav bar</string>
     <string name="disable_navkeys_summary">Enable on-screen navigation bar and disable hardware buttons</string>
 
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatic face unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lock screen after face unlock</string>
+
 </resources>
