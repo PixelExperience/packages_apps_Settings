@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">رنگ‌ تاکید</string>
   <string name="theme_accent_picker_summary">رنگ‌ تاکید پوسته سیستم را انتخاب نمایید</string>
   <string name="theme_accent_picker_default">پیش فرض</string>
+  <string name="notification_theme_title">سبک اعلانیه ها</string>
+  <string name="notification_style_default">پیشفرض (سفید)</string>
+  <string name="notification_style_dark">تیره (پیرو پس زمینه)</string>
 </resources>

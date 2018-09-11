@@ -29,7 +29,7 @@
   <!-- Pixel color on sim card -->
   <string name="pixel_sim_color">Pixel</string>
   <!-- Proximity wake -->
-  <string name="proximity_wake_title">Previne que o ecrã se ligue acidentalmente</string>
+  <string name="proximity_wake_title">Impedir que o ecrã se ligue acidentalmente</string>
   <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar o ecrã</string>
   <!-- Other gestures -->
   <string name="other_gestures">Outros gestos</string>
@@ -43,8 +43,11 @@
   <string name="systemui_theme_style_dark">Escuro</string>
   <string name="applying_theme_toast">A aplicar, por favor aguarde...</string>
   <string name="theme_applied_toast">Tema aplicado!</string>
-  <string name="accent_picker_dialog_title">Selecione uma cor de acento</string>
-  <string name="theme_accent_picker_title">Cor de acento</string>
-  <string name="theme_accent_picker_summary">Selecione a cor de acento de tema do sistema</string>
-  <string name="theme_accent_picker_default">Predefinição</string>
+  <string name="accent_picker_dialog_title">Selecione uma cor de destaque</string>
+  <string name="theme_accent_picker_title">Cor de destaque</string>
+  <string name="theme_accent_picker_summary">Selecione a cor de destaque para o tema do sistema</string>
+  <string name="theme_accent_picker_default">Padrão</string>
+  <string name="notification_theme_title">Estilo de notificação</string>
+  <string name="notification_style_default">Padrão (branco)</string>
+  <string name="notification_style_dark">Escuro (acompanhar o fundo)</string>
 </resources>

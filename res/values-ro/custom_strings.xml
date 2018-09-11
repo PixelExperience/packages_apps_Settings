@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Culoare de accent</string>
   <string name="theme_accent_picker_summary">Selecteaza culoarea de accent a temei de sistem</string>
   <string name="theme_accent_picker_default">Implicit</string>
+  <string name="notification_theme_title">Notificări</string>
+  <string name="notification_style_default">Implicit (alb)</string>
+  <string name="notification_style_dark">Întunecat (după fundal)</string>
 </resources>

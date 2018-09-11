@@ -47,4 +47,7 @@
   <string name="theme_accent_picker_title">Accentkleur</string>
   <string name="theme_accent_picker_summary">Selecteer de accentkleur bij het thema</string>
   <string name="theme_accent_picker_default">Standaard</string>
+  <string name="notification_theme_title">Meldingen stijl</string>
+  <string name="notification_style_default">Standaard (wit)</string>
+  <string name="notification_style_dark">Donker (volgens achtergrond)</string>
 </resources>

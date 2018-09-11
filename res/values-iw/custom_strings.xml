@@ -45,5 +45,9 @@
   <string name="theme_applied_toast">ערכת הנושא הוחלה!</string>
   <string name="accent_picker_dialog_title">בחר צבע נושא</string>
   <string name="theme_accent_picker_title">צבע נושא</string>
+  <string name="theme_accent_picker_summary">בחר את ערכת הנושא של המערכת</string>
   <string name="theme_accent_picker_default">ברירת מחדל</string>
+  <string name="notification_theme_title">צורת ההתראה</string>
+  <string name="notification_style_default">ברירת מחדל (לבן)</string>
+  <string name="notification_style_dark">כהה ( עקוב אחרי רקע)</string>
 </resources>

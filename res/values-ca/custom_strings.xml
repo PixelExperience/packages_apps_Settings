@@ -29,6 +29,8 @@
   <!-- Pixel color on sim card -->
   <string name="pixel_sim_color">Pixel</string>
   <!-- Proximity wake -->
+  <string name="proximity_wake_title">Previndre despertada accidental</string>
+  <string name="proximity_wake_summary">Comprova el sensor de proximitat abans d\'engegar la pantalla</string>
   <!-- Other gestures -->
   <string name="other_gestures">Altres gestos</string>
   <!-- Search -->
@@ -36,10 +38,16 @@
   <string name="menu_search_hint">Cerca aplicacions\u2026</string>
   <!-- Themes -->
   <string name="systemui_theme_style_title">Color de fons</string>
+  <string name="systemui_theme_style_auto">Automàtic (basat en el fons de pantalla)</string>
   <string name="systemui_theme_style_light">Clar</string>
   <string name="systemui_theme_style_dark">Fosc</string>
   <string name="applying_theme_toast">Aplicant tema, per favor espereu...</string>
+  <string name="theme_applied_toast">Tema aplicat!</string>
+  <string name="accent_picker_dialog_title">Selecciona un color d\'accent</string>
+  <string name="theme_accent_picker_title">Color d\'accent</string>
+  <string name="theme_accent_picker_summary">Selecciona el color d\'accent del sistema</string>
   <string name="theme_accent_picker_default">Per defecte</string>
   <string name="notification_theme_title">Estil de notificació</string>
   <string name="notification_style_default">Per defecte (blanc)</string>
+  <string name="notification_style_dark">Fosc (segueix fons)</string>
 </resources>

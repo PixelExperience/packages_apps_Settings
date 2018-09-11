@@ -4,11 +4,49 @@
   <!-- Title for SIM selection notification channel -->
   <string name="sim_selection_channel_title">Выбар SIM-карты</string>
   <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Сканар адбіткаў пальцаў размешчаны на <xliff:g id="sensor_location">%1$s </xliff:g> вашага тэлефона.</string>
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">задняй панэлі</string>
+  <string name="security_settings_fingerprint_sensor_location_front">пярэдняй панэлі</string>
+  <string name="security_settings_fingerprint_sensor_location_left">левай грані</string>
+  <string name="security_settings_fingerprint_sensor_location_right">правай грані</string>
   <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> — <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_disabled">адключана</string>
+  <string name="sim_missing">адсутнічае альбо няспраўна</string>
+  <string name="sim_enabler_need_disable_sim">SIM-картка будзе адключана. Жадаеце працягнуць?</string>
+  <string name="sim_enabler_will_disable_sim_title">Увага</string>
+  <string name="sim_enabler_need_switch_data_service">SIM картка будзе адключана і SIM <xliff:g id="slotid">%1$s</xliff:g> будзе выкарыстоўваць дадзеныя службаў. Упэўнены ў жаданні працягнуць?</string>
+  <string name="sim_enabler_airplane_on">Выкананне аперацыі немагчыма пры ўключаным рэжыме палёту.</string>
+  <string name="sim_enabler_in_call">Выкананне аперацыі немагчымае падчас тэлефанавання.</string>
+  <string name="sim_enabler_both_inactive">Немагчыма адключыць усе SIM-карты</string>
+  <string name="sim_enabler_enabling">Улучэнне\u2026</string>
+  <string name="sim_enabler_disabling">Выключэнне\u2026</string>
+  <string name="sub_activate_success">SIM актывована.</string>
+  <string name="sub_activate_failed">Памылка падчас актывацыі.</string>
+  <string name="sub_deactivate_success">SIM дэактывована.</string>
+  <string name="sub_deactivate_failed">Памылка падчас адключэння.</string>
   <!-- Pixel color on sim card -->
+  <string name="pixel_sim_color">Піксел</string>
   <!-- Proximity wake -->
+  <string name="proximity_wake_title">Прадухіляць выпадковае ўключэнне экрана</string>
+  <string name="proximity_wake_summary">Правяраць датчык набліжэння перад уключэннем экрана</string>
   <!-- Other gestures -->
+  <string name="other_gestures">Іншыя жэсты</string>
   <!-- Search -->
+  <string name="menu_search">Пошук праграм</string>
+  <string name="menu_search_hint">Пошук праграм\u2026</string>
   <!-- Themes -->
+  <string name="systemui_theme_style_title">Колер фону</string>
+  <string name="systemui_theme_style_auto">Аўтаматычна (на аснове шпалер)</string>
+  <string name="systemui_theme_style_light">Светлы</string>
+  <string name="systemui_theme_style_dark">Цёмны</string>
+  <string name="applying_theme_toast">Прымяненне тэмы, калі ласка, пачакайце...</string>
+  <string name="theme_applied_toast">Тэма ўжыта!</string>
+  <string name="accent_picker_dialog_title">Выберыце адценне колеру</string>
+  <string name="theme_accent_picker_title">Асноўны колер</string>
+  <string name="theme_accent_picker_summary">Выберыце адценне колеру сістэмнай тэмы</string>
+  <string name="theme_accent_picker_default">Па змаўчанні</string>
+  <string name="notification_theme_title">Стыль апавяшчэнняў</string>
+  <string name="notification_style_default">Па змаўчанні (белы)</string>
 </resources>
