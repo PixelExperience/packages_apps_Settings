@@ -56,12 +56,12 @@
         android:summary="@string/summary_placeholder"/>
 
     <!-- Legal information -->
-    <Preference
+    <!--Preference
         android:key="legal_container"
         android:order="5"
         android:title="@string/legal_information"
         android:fragment="com.android.settings.LegalSettings"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="true"/-->
 
     <!-- Regulatory labels -->
     <Preference
