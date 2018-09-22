@@ -45,7 +45,7 @@ public interface DeviceIndexFeatureProvider {
     String INDEX_LANGUAGE = "settings:language";
 
     // Increment when new items are added to ensure they get pushed to the device index.
-    String VERSION = Build.FINGERPRINT;
+    String VERSION = Build.CUSTOM_FINGERPRINT;
 
     // When the device language changes, re-index so Slices trigger in device language.
     Locale LANGUAGE = Locale.getDefault();
