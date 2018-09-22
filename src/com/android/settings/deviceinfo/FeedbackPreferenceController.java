@@ -40,7 +40,7 @@ public class FeedbackPreferenceController extends AbstractPreferenceController i
 
     @Override
     public boolean isAvailable() {
-        return !TextUtils.isEmpty(DeviceInfoUtils.getFeedbackReporterPackage(mContext));
+        return false;
     }
 
     @Override
