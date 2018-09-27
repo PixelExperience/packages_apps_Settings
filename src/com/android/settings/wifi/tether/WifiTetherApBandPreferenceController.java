@@ -71,8 +71,8 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
             mBandIndex = tempBandIndex;
         }
 
+        preference.setEnabled(is5GhzBandSupported());
         if (!is5GhzBandSupported()) {
-            preference.setEnabled(false);
             preference.setSummary(R.string.wifi_ap_choose_2G);
         } else {
             preference.setExistingConfigValue(config.apBand);
