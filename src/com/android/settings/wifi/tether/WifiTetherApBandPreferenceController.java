@@ -75,6 +75,7 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
             preference.setEnabled(false);
             preference.setSummary(R.string.wifi_ap_choose_2G);
         } else {
+            preference.setEnabled(true);
             preference.setExistingConfigValue(config.apBand);
             preference.setSummary(getConfigSummary());
         }
