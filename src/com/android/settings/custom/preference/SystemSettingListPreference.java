@@ -87,11 +87,4 @@ public class SystemSettingListPreference extends ListPreference {
         }
     }
 
-    @Override
-    protected boolean isPersisted() {
-        // Using getString instead of getInt so we can simply check for null
-        // instead of catching an exception. (All values are stored as strings.)
-        return Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
-    }
-
 }
