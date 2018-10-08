@@ -27,6 +27,10 @@ import com.android.settings.connecteddevice.DevicePreferenceCallback;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settingslib.bluetooth.CachedBluetoothDevice;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
+import com.android.settingslib.bluetooth.LocalBluetoothProfile;
+
+import java.util.List;
+import java.util.ArrayList;
 
 /**
  * Controller to maintain connected bluetooth devices
@@ -73,7 +77,18 @@ public class ConnectedBluetoothDeviceUpdater extends BluetoothDeviceUpdater {
                 removePreference(cachedDevice);
             }
         } else if (state == BluetoothProfile.STATE_DISCONNECTED) {
-            removePreference(cachedDevice);
+            List<Integer> profileIds = new ArrayList<>();
+
+            for (LocalBluetoothProfile profile : cachedDevice.getProfiles()) {
+                if (cachedDevice.isConnectedProfile(profile))
+                    profileIds.add(profile.getProfileId());
+            }
+
+            //Make sure all profiles are disconnected.
+            if (profileIds.isEmpty() || (profileIds.contains(bluetoothProfile) &&
+                    profileIds.size() == 1)) {
+                removePreference(cachedDevice);
+            }
         }
     }
 
