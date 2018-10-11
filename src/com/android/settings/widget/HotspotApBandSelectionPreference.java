@@ -27,6 +27,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 
@@ -45,9 +46,9 @@ public class HotspotApBandSelectionPreference extends CustomDialogPreference imp
     static final String KEY_HOTSPOT_SUPER_STATE = "hotspot_super_state";
 
     @VisibleForTesting
-    CheckBox mBox2G;
+    CompoundButton mBox2G;
     @VisibleForTesting
-    CheckBox mBox5G;
+    CompoundButton mBox5G;
     @VisibleForTesting
     ArrayList<Integer> mRestoredBands;
     @VisibleForTesting
@@ -55,6 +56,7 @@ public class HotspotApBandSelectionPreference extends CustomDialogPreference imp
 
     private String[] mBandEntries;
     private int mExistingConfigValue = UNSET;
+    private boolean isDualBandApSupported;
 
     public HotspotApBandSelectionPreference(Context context) {
         super(context);
@@ -98,12 +100,13 @@ public class HotspotApBandSelectionPreference extends CustomDialogPreference imp
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
         final Context context = getContext();
+        isDualBandApSupported = context.getResources().getBoolean(R.bool.is_dual_band_ap_supported);
 
         // Register so we can adjust the buttons if needed once the dialog is available.
         setOnShowListener(this);
 
         mBandEntries = context.getResources().getStringArray(R.array.wifi_ap_band_config_full);
-        // add a checkbox for every band entry.
+        // add a checkbox or radiobutton for every band entry.
         addApBandViews((LinearLayout) view);
         // try to update the button just in case we already missed the onShow call.
         updatePositiveButton();
@@ -125,8 +128,16 @@ public class HotspotApBandSelectionPreference extends CustomDialogPreference imp
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        if (!(buttonView instanceof CheckBox)) {
+        if (!(buttonView instanceof CheckBox) && !(buttonView instanceof RadioButton)) {
             return;
+        }
+        if (!isDualBandApSupported && isChecked){
+            if (buttonView == mBox2G){
+                mBox5G.setChecked(false);
+            }
+            if (buttonView == mBox5G){
+                mBox2G.setChecked(false);
+            }
         }
         updatePositiveButton();
     }
@@ -152,15 +163,23 @@ public class HotspotApBandSelectionPreference extends CustomDialogPreference imp
     }
 
     private void addApBandViews(LinearLayout view) {
-        mBox2G = view.findViewById(R.id.box_2g);
+        view.findViewById(!isDualBandApSupported ? R.id.box_2g : R.id.r_box_2g).setVisibility(View.GONE);
+        view.findViewById(!isDualBandApSupported ? R.id.box_5g : R.id.r_box_5g).setVisibility(View.GONE);
+
+        mBox2G = view.findViewById(isDualBandApSupported ? R.id.box_2g : R.id.r_box_2g);
         mBox2G.setText(mBandEntries[WifiConfiguration.AP_BAND_2GHZ]);
         mBox2G.setChecked(restoreBandIfNeeded(WifiConfiguration.AP_BAND_2GHZ));
         mBox2G.setOnCheckedChangeListener(this);
 
-        mBox5G = view.findViewById(R.id.box_5g);
+        mBox5G = view.findViewById(isDualBandApSupported ? R.id.box_5g : R.id.r_box_5g);
         mBox5G.setText(mBandEntries[WifiConfiguration.AP_BAND_5GHZ]);
         mBox5G.setChecked(restoreBandIfNeeded(WifiConfiguration.AP_BAND_5GHZ));
         mBox5G.setOnCheckedChangeListener(this);
+        
+        if (!isDualBandApSupported && getWifiBand() == WifiConfiguration.AP_BAND_ANY){
+            mBox2G.setChecked(true);
+            mBox5G.setChecked(false);
+        }
     }
 
     private boolean restoreBandIfNeeded(int band) {

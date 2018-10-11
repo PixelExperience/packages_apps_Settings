@@ -27,4 +27,7 @@
     <!-- Device specific doze package -->
     <string name="config_customDozePackage" translatable="false"></string>
 
+    <!-- Whether dual band ap is supported -->
+    <bool name="is_dual_band_ap_supported">true</bool>
+
 </resources>
