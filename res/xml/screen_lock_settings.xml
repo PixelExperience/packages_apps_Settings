@@ -44,6 +44,13 @@
         android:key="owner_info_settings"
         android:title="@string/owner_info_settings_title" />
 
+    <!-- Ambient play -->
+    <PreferenceScreen
+        android:key="ambient_play"
+        android:title="@string/ambient_play_title"
+        android:summary="@string/ambient_play_summary"
+        android:fragment="com.android.settings.custom.ambient.AmbientPlaySettings" />
+
     <PreferenceCategory
         android:key="weather_lockscreen_key"
         android:title="@string/weather_title"
