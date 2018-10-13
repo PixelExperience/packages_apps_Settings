@@ -94,4 +94,11 @@
     <string name="weather_unit_metric" translatable="false">Celsius</string>
     <string name="weather_unit_imperial" translatable="false">Fahrenheit</string>
 
+    <!-- Ambient Play -->
+    <string name="ambient_play_title">Now Playing</string>
+    <string name="ambient_play_enable">Enable Now Playing</string>
+    <string name="ambient_play_summary">Show nearby songs</string>
+    <string name="ambient_play_lockscreen_title">Show songs on lock screen</string>
+    <string name="ambient_play_notifications_title">Show notifications</string>
+
 </resources>
