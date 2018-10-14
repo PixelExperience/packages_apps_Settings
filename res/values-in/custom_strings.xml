@@ -17,7 +17,7 @@
   <string name="sim_enabler_need_disable_sim">Kartu SIM akan dinonaktifkan. Apakah Anda ingin melanjutkan?</string>
   <string name="sim_enabler_will_disable_sim_title">Perhatian</string>
   <string name="sim_enabler_need_switch_data_service">SIM ini akan dinonaktifkan dan SIM <xliff:g id="slotid">%1$s </xliff:g> akan digunakan untuk layanan data. Apakah Anda yakin ingin melanjutkan?</string>
-  <string name="sim_enabler_airplane_on">Tidak dapat melakukan operasi saat modus pesawat aktif.</string>
+  <string name="sim_enabler_airplane_on">Tidak dapat melakukan operasi saat mode pesawat aktif.</string>
   <string name="sim_enabler_in_call">Tidak dapat melakukan operasi saat dalam panggilan.</string>
   <string name="sim_enabler_both_inactive">Tidak dapat menonaktifkan semua kartu SIM</string>
   <string name="sim_enabler_enabling">Mengaktifkan\u2026</string>
@@ -30,7 +30,7 @@
   <string name="pixel_sim_color">Pixel</string>
   <!-- Proximity wake -->
   <string name="proximity_wake_title">Cegah bangun yang tak disengaja</string>
-  <string name="proximity_wake_summary">Periksa sensor kedekatan sebelum membangunkan layar</string>
+  <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
   <!-- Other gestures -->
   <string name="other_gestures">Gestur lain</string>
   <!-- Search -->
@@ -46,8 +46,8 @@
   <string name="accent_picker_dialog_title">Pilih warna aksen</string>
   <string name="theme_accent_picker_title">Warna aksen</string>
   <string name="theme_accent_picker_summary">Pilih warna aksen tema sistem</string>
-  <string name="theme_accent_picker_default">Standar</string>
+  <string name="theme_accent_picker_default">Bawaan</string>
   <string name="notification_theme_title">Gaya notifikasi</string>
-  <string name="notification_style_default">Semula (Putih)</string>
-  <string name="notification_style_dark">Hitam (mengikuti latar belakang)</string>
+  <string name="notification_style_default">Bawaan (Putih)</string>
+  <string name="notification_style_dark">Gelap (mengikuti latar belakang)</string>
 </resources>
