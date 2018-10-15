@@ -26,6 +26,7 @@ import android.provider.Settings;
 import android.support.annotation.VisibleForTesting;
 import android.text.TextUtils;
 import android.view.WindowManagerGlobal;
+import com.android.internal.util.custom.NavbarUtils;
 
 import com.android.internal.R;
 
@@ -52,7 +53,7 @@ public class SwipeUpPreferenceController extends GesturePreferenceController {
         } catch (RemoteException ex) {
             // no window manager? good luck with that
         }
-        if (!hasNav || !configEnabled) {
+        if (!hasNav || !NavbarUtils.isEnabled(context) || !configEnabled) {
             return false;
         }
 
