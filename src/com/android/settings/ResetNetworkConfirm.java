@@ -29,6 +29,10 @@ import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
+import android.os.Message;
 import android.os.RecoverySystem;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -64,6 +68,12 @@ import com.android.settingslib.bluetooth.LocalBluetoothManager;
  * This is the confirmation screen.
  */
 public class ResetNetworkConfirm extends InstrumentedFragment {
+
+    private static final int MSG_RESTORE_APN_START = 1;
+    private static final int MSG_RESTORE_APN_COMPLETE = 2;
+    private HandlerThread mApnThread;
+    private RestoreApnHandler mRestoreApnHandler;
+    private RestoreCompleteHandler mRestoreCompleteHandler;
 
     private View mContentView;
     private int mSubId = SubscriptionManager.INVALID_SUBSCRIPTION_ID;
@@ -161,13 +171,13 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
 
             ImsManager.getInstance(context,
                      SubscriptionManager.getPhoneId(mSubId)).factoryReset();
-            restoreDefaultApn(context);
             esimFactoryReset(context, context.getPackageName());
             // There has been issues when Sms raw table somehow stores orphan
             // fragments. They lead to garbled message when new fragments come
             // in and combied with those stale ones. In case this happens again,
             // user can reset all network settings which will clean up this table.
             cleanUpSmsRawTable(context);
+            restoreDefaultApn(context);
         }
     };
 
@@ -182,24 +192,74 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
         if (mEraseEsim) {
             mEraseEsimTask = new EraseEsimAsyncTask(context, packageName);
             mEraseEsimTask.execute();
-        } else {
-            Toast.makeText(context, R.string.reset_network_complete_toast, Toast.LENGTH_SHORT)
-                    .show();
         }
     }
 
+    private class RestoreCompleteHandler extends Handler {
+        private Context mContext;
+        public RestoreCompleteHandler(Context context) {
+            super();
+            mContext = context;
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            switch(msg.what) {
+                case MSG_RESTORE_APN_COMPLETE:
+                    Toast.makeText(mContext, R.string.reset_network_complete_toast,
+                            Toast.LENGTH_SHORT).show();
+                    break;
+            }
+        }
+    }
+
+    private class RestoreApnHandler extends Handler {
+        private Context mContext;
+        private Handler mUiHandler;
+
+        public RestoreApnHandler(Looper looper, Context context,
+                                 RestoreCompleteHandler handler) {
+            super(looper);
+            mContext = context;
+            this.mUiHandler = handler;
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            switch(msg.what) {
+                case MSG_RESTORE_APN_START:
+                    Uri uri = Uri.parse(ApnSettings.RESTORE_CARRIERS_URI);
+                    if (SubscriptionManager.isUsableSubIdValue(mSubId)) {
+                        uri = Uri.withAppendedPath(uri, "subId/" + String.valueOf(mSubId));
+                    }
+                    ContentResolver resolver = mContext.getContentResolver();
+                    resolver.delete(uri, null, null);
+                    mUiHandler.sendEmptyMessage(MSG_RESTORE_APN_COMPLETE);
+                    break;
+            }
+        }
+    }
     /**
      * Restore APN settings to default.
      */
     private void restoreDefaultApn(Context context) {
-        Uri uri = Uri.parse(ApnSettings.RESTORE_CARRIERS_URI);
-
-        if (SubscriptionManager.isUsableSubIdValue(mSubId)) {
-            uri = Uri.withAppendedPath(uri, "subId/" + String.valueOf(mSubId));
+        if (mApnThread == null) {
+            mApnThread = new HandlerThread("restore default apn");
+            if (mApnThread == null) {
+                Toast.makeText(context, R.string.reset_default_apn_failed,
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
+            mApnThread.start();
         }
-
-        ContentResolver resolver = context.getContentResolver();
-        resolver.delete(uri, null, null);
+        if (mRestoreCompleteHandler == null) {
+            mRestoreCompleteHandler = new RestoreCompleteHandler(context);
+        }
+        if (mRestoreApnHandler == null) {
+            mRestoreApnHandler = new RestoreApnHandler(
+                    mApnThread.getLooper(), context, mRestoreCompleteHandler);
+        }
+        mRestoreApnHandler.sendEmptyMessage(MSG_RESTORE_APN_START);
     }
 
     /**
@@ -247,6 +307,9 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
         if (mEraseEsimTask != null) {
             mEraseEsimTask.cancel(true /* mayInterruptIfRunning */);
             mEraseEsimTask = null;
+        }
+        if (mApnThread != null) {
+            mApnThread.quit();
         }
         super.onDestroy();
     }
