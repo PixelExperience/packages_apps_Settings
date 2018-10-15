@@ -37,7 +37,8 @@ LOCAL_JAVA_LIBRARIES := \
     bouncycastle \
     telephony-common \
     ims-common \
-    telephony-ext
+    telephony-ext \
+    org.pixelexperience.keydisabler
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
     android-arch-lifecycle-runtime \
