@@ -40,7 +40,6 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Bakgrundsbelysning</string>
   <string name="button_backlight_enabled">Knappljus</string>
-  <string name="keyboard_backlight_seekbar_title">Tangetbordsljusstyrka</string>
   <string name="backlight_timeout_unlimited">Stäng inte av</string>
   <string name="backlight_summary_disabled">Avaktiverad</string>
   <string name="backlight_summary_enabled">Aktiverad</string>

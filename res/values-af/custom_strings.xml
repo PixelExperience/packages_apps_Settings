@@ -51,9 +51,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Agtergrondlig</string>
   <string name="button_backlight_enabled">Verlig knoppies</string>
-  <string name="keyboard_backlight_enabled">Verlig sleutelbord</string>
   <string name="button_backlight_seekbar_title">Knoppie helderheid</string>
-  <string name="keyboard_backlight_seekbar_title">Sleutelbord helderheid</string>
   <string name="backlight_timeout_title">Verligting tydsduur</string>
   <string name="backlight_timeout_unlimited">Moet nie afsit nie</string>
   <string name="backlight_summary_disabled">Gedeaktiveer</string>

@@ -51,9 +51,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Verlichting</string>
   <string name="button_backlight_enabled">Knoppen verlichten</string>
-  <string name="keyboard_backlight_enabled">Toetsenbord verlichten</string>
   <string name="button_backlight_seekbar_title">Knoppenhelderheid</string>
-  <string name="keyboard_backlight_seekbar_title">Toetsenbordhelderheid</string>
   <string name="backlight_timeout_title">Verlichtingstime-out</string>
   <string name="backlight_timeout_unlimited">Nooit uitschakelen</string>
   <string name="backlight_summary_disabled">Uitgeschakeld</string>

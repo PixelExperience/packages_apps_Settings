@@ -76,9 +76,7 @@
   <string name="button_backlight_title">Contraluz</string>
   <string name="button_backlight_enabled">Iluminar botones</string>
   <string name="button_backlight_only_when_pressed_title">Iluminar los botones únicamente cuando se presionan</string>
-  <string name="keyboard_backlight_enabled">Iluminar teclado</string>
   <string name="button_backlight_seekbar_title">Brillo de los botones</string>
-  <string name="keyboard_backlight_seekbar_title">Brillo del teclado</string>
   <string name="backlight_timeout_title">Tiempo de iluminación</string>
   <string name="backlight_timeout_unlimited">No apagar</string>
   <string name="backlight_summary_disabled">Desactivado</string>

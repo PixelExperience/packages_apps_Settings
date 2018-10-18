@@ -51,9 +51,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Підсвічування</string>
   <string name="button_backlight_enabled">Підсвічування кнопок</string>
-  <string name="keyboard_backlight_enabled">Підсвічування клавіатури</string>
   <string name="button_backlight_seekbar_title">Яскравість кнопок</string>
-  <string name="keyboard_backlight_seekbar_title">Яскравість клавіатури</string>
   <string name="backlight_timeout_title">Тривалість підсвічування</string>
   <string name="backlight_timeout_unlimited">Не вимикати</string>
   <string name="backlight_summary_disabled">Вимкнено</string>

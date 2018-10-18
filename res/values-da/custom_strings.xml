@@ -51,9 +51,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Bagbelysning</string>
   <string name="button_backlight_enabled">Oplys knapper</string>
-  <string name="keyboard_backlight_enabled">Oplys tastatur</string>
   <string name="button_backlight_seekbar_title">Knap-lysstyrke</string>
-  <string name="keyboard_backlight_seekbar_title">Tastatur-lysstyrke</string>
   <string name="backlight_timeout_title">Oplysnings-timeout</string>
   <string name="backlight_timeout_unlimited">Slå ikke fra</string>
   <string name="backlight_summary_disabled">Deaktiveret</string>

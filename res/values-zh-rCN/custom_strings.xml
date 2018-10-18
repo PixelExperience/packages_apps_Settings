@@ -16,7 +16,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_front">您可以在手机正面找到指纹传感器。</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_left">您可以在手机左侧找到指纹传感器。</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_right">您可以在手机右侧找到指纹传感器。</string>
   <!-- Notification light settings -->
+  <string name="lights_category_title">指示灯设置</string>
   <string name="notification_light_title">通知指示灯</string>
   <string name="battery_light_title">电量指示灯</string>
   <!-- Manual provisioning support -->
@@ -72,9 +76,7 @@
   <string name="button_backlight_title">背光</string>
   <string name="button_backlight_enabled">点亮按键</string>
   <string name="button_backlight_only_when_pressed_title">仅在按下时照亮按钮</string>
-  <string name="keyboard_backlight_enabled">点亮键盘</string>
   <string name="button_backlight_seekbar_title">按键亮度</string>
-  <string name="keyboard_backlight_seekbar_title">键盘亮度</string>
   <string name="backlight_timeout_title">背光超时</string>
   <string name="backlight_timeout_unlimited">从不关闭</string>
   <string name="backlight_summary_disabled">已禁用</string>

@@ -76,9 +76,7 @@
   <string name="button_backlight_title">Падсвятленне</string>
   <string name="button_backlight_enabled">Падсвятленне кнопак</string>
   <string name="button_backlight_only_when_pressed_title">Падсвятленне кнопак толькі пры дотыку</string>
-  <string name="keyboard_backlight_enabled">Падсвятленне клявіятуры</string>
   <string name="button_backlight_seekbar_title">Яркасць кнопак</string>
-  <string name="keyboard_backlight_seekbar_title">Яркасць клявіятуры</string>
   <string name="backlight_timeout_title">Працягласць падсвятлення</string>
   <string name="backlight_timeout_unlimited">Не выключаць</string>
   <string name="backlight_summary_disabled">Адключана</string>

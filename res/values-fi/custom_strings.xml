@@ -27,6 +27,12 @@
   <string name="sim_enabler_will_disable_sim_title">SIM kortti poistetaan käytöstä</string>
   <string name="sim_enabler_airplane_on">Ei toimi, koska lentokone tila käyttössä</string>
   <string name="sim_enabler_both_inactive">Ei voi poistaa kaikkia SIM kortteja käytöstä</string>
+  <string name="sim_enabler_enabling">SIM kortteja aktivoidaan</string>
+  <string name="sim_enabler_disabling">Sim kortteja poistetaan</string>
+  <string name="sub_activate_success">SIM kortin aktivointi onnistui.</string>
+  <string name="sub_activate_failed">SIM kortin aktivointi epäonnistui.</string>
+  <string name="sub_deactivate_success">SIM kortin poisto onnistui.</string>
+  <string name="sub_deactivate_failed">Poisto epäonnistui.</string>
   <!-- Generic stuff used everywhere -->
   <string name="reset">Palauta oletukset</string>
   <!-- Buttons -->
@@ -59,9 +65,7 @@
   <string name="button_backlight_title">Taustavalo</string>
   <string name="button_backlight_enabled">Valaise painikkeet</string>
   <string name="button_backlight_only_when_pressed_title">Valaise painikkeita vain painettuna</string>
-  <string name="keyboard_backlight_enabled">Valaise näppäimistö</string>
   <string name="button_backlight_seekbar_title">Painikkeen kirkkaus</string>
-  <string name="keyboard_backlight_seekbar_title">Näppäimistön kirkkaus</string>
   <string name="backlight_timeout_title">Valaistuksen aikakatkaisu</string>
   <string name="backlight_timeout_unlimited">Älä katkaise</string>
   <string name="backlight_summary_disabled">Pois käytöstä</string>

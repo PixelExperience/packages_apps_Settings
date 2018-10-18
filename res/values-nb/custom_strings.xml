@@ -51,9 +51,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Bakgrunnsbelysning</string>
   <string name="button_backlight_enabled">Belyste knapper</string>
-  <string name="keyboard_backlight_enabled">Belyst tastatur</string>
   <string name="button_backlight_seekbar_title">Knappenes lysstyrke</string>
-  <string name="keyboard_backlight_seekbar_title">Tastaturets lysstyrke</string>
   <string name="backlight_timeout_title">Belysningstidsavbrudd</string>
   <string name="backlight_timeout_unlimited">Ikke slå av</string>
   <string name="backlight_summary_disabled">Deaktivert</string>

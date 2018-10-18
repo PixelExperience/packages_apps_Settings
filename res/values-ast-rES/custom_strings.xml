@@ -47,9 +47,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Contralluz</string>
   <string name="button_backlight_enabled">Illuminar botones</string>
-  <string name="keyboard_backlight_enabled">Illuminar tecláu</string>
   <string name="button_backlight_seekbar_title">Brilléu de botones</string>
-  <string name="keyboard_backlight_seekbar_title">Brilléu de tecláu</string>
   <string name="backlight_timeout_title">Escosa de tiempu d\'illuminación</string>
   <string name="backlight_timeout_unlimited">Nun apagar</string>
 </resources>

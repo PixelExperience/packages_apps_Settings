@@ -52,9 +52,7 @@
   <string name="button_backlight_title">Pozadinsko osvjetljenje</string>
   <string name="button_backlight_enabled">Osvjetljenje tipki</string>
   <string name="button_backlight_only_when_pressed_title">Osvijetli gumbe samo pri pritisku</string>
-  <string name="keyboard_backlight_enabled">Osvjetljenje tipkovnice</string>
   <string name="button_backlight_seekbar_title">Svjetlina tipki</string>
-  <string name="keyboard_backlight_seekbar_title">Svjetlina tipkovnice</string>
   <string name="backlight_timeout_title">Istek osvjetljenja</string>
   <string name="backlight_timeout_unlimited">Nemojte isključiti</string>
   <string name="backlight_summary_disabled">Onemogućeno</string>

@@ -76,9 +76,7 @@
   <string name="button_backlight_title">Podświetlenie</string>
   <string name="button_backlight_enabled">Podświetlenie przycisków</string>
   <string name="button_backlight_only_when_pressed_title">Podświetlenie przycisków tylko po naciśnięciu</string>
-  <string name="keyboard_backlight_enabled">Podświetlenie klawiatury</string>
   <string name="button_backlight_seekbar_title">Jasność przycisków</string>
-  <string name="keyboard_backlight_seekbar_title">Jasność klawiatury</string>
   <string name="backlight_timeout_title">Czas podświetlenia</string>
   <string name="backlight_timeout_unlimited">Nie wyłączaj</string>
   <string name="backlight_summary_disabled">Wyłączone</string>

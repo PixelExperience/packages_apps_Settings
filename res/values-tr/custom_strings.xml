@@ -27,12 +27,12 @@
   <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_disabled">devre dışı</string>
   <string name="sim_missing">eksik veya hatalı</string>
-  <string name="sim_enabler_need_disable_sim">SIM kart devre dışı bırakılacak. Devam etmek istermisiniz?</string>
+  <string name="sim_enabler_need_disable_sim">SIM kart devre dışı bırakılacaktır. Devam etmek istiyor musun?</string>
   <string name="sim_enabler_will_disable_sim_title">Dikkat</string>
-  <string name="sim_enabler_need_switch_data_service">Bu SIM devre dışı bırakılacak ve veri servisleri için SIM <xliff:g id="slotid">%1$s</xliff:g> kullanılacaktır. Devam etmek istermisiniz?</string>
+  <string name="sim_enabler_need_switch_data_service">Bu SIM devre dışı bırakılacak ve veri servisleri için SIM <xliff:g id="slotid">%1$s</xliff:g> kullanılacaktır. Devam etmek ister misiniz?</string>
   <string name="sim_enabler_airplane_on">Uçak modu açıkken işlem yapılamıyor.</string>
   <string name="sim_enabler_in_call">Arama sırasında işlem yapılamıyor.</string>
-  <string name="sim_enabler_both_inactive">Tüm SIM kartları devre dışı bırakılamıyor</string>
+  <string name="sim_enabler_both_inactive">Tüm SIM kartlar devre dışı bırakılamıyor</string>
   <string name="sim_enabler_enabling">Etkinleştiriliyor\u2026</string>
   <string name="sim_enabler_disabling">Devre dışı bırakılıyor\u2026</string>
   <string name="sub_activate_success">SIM etkinleştirildi.</string>
@@ -76,9 +76,7 @@
   <string name="button_backlight_title">Aydınlatma ışığı</string>
   <string name="button_backlight_enabled">Tuşları aydınlat</string>
   <string name="button_backlight_only_when_pressed_title">Tuşları sadece basıldığında aydınlat</string>
-  <string name="keyboard_backlight_enabled">Klavyeyi aydınlat</string>
   <string name="button_backlight_seekbar_title">Tuş parlaklığı</string>
-  <string name="keyboard_backlight_seekbar_title">Klavye parlaklığı</string>
   <string name="backlight_timeout_title">Aydınlatma zaman aşımı</string>
   <string name="backlight_timeout_unlimited">Kapatma</string>
   <string name="backlight_summary_disabled">Devre dışı</string>

@@ -71,9 +71,7 @@
   <string name="button_backlight_title">Rétroéclairage</string>
   <string name="button_backlight_enabled">Rétroéclairage des boutons</string>
   <string name="button_backlight_only_when_pressed_title">Éclairer les boutons seulement lors de l\'appui</string>
-  <string name="keyboard_backlight_enabled">Rétroéclairage du clavier</string>
   <string name="button_backlight_seekbar_title">Luminosité des boutons</string>
-  <string name="keyboard_backlight_seekbar_title">Luminosité du clavier</string>
   <string name="backlight_timeout_title">Délai d\'extinction de l\'éclairage</string>
   <string name="backlight_timeout_unlimited">Ne pas éteindre</string>
   <string name="backlight_summary_disabled">Désactivé</string>

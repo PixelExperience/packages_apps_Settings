@@ -52,9 +52,7 @@
   <string name="button_backlight_title">Lampu latar</string>
   <string name="button_backlight_enabled">Cahaya tombol</string>
   <string name="button_backlight_only_when_pressed_title">Nyalakan tombol hanya jika ditekan</string>
-  <string name="keyboard_backlight_enabled">Terangi papan ketik</string>
   <string name="button_backlight_seekbar_title">Tombol kecerahan</string>
-  <string name="keyboard_backlight_seekbar_title">Kecerahan papan ketik</string>
   <string name="backlight_timeout_title">Waktu habis iluminasi</string>
   <string name="backlight_timeout_unlimited">Jangan Matikan</string>
   <string name="backlight_summary_disabled">Dimatikan</string>

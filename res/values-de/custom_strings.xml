@@ -52,9 +52,7 @@
   <string name="button_backlight_title">Hintergrundbeleuchtung</string>
   <string name="button_backlight_enabled">Tasten beleuchten</string>
   <string name="button_backlight_only_when_pressed_title">Tasten nur beleuchten, wenn sie gedrückt werden</string>
-  <string name="keyboard_backlight_enabled">Tastatur beleuchten</string>
   <string name="button_backlight_seekbar_title">Tasten-Helligkeit</string>
-  <string name="keyboard_backlight_seekbar_title">Tastatur-Helligkeit</string>
   <string name="backlight_timeout_title">Automatisch abschalten nach</string>
   <string name="backlight_timeout_unlimited">Nie ausschalten</string>
   <string name="backlight_summary_disabled">Deaktiviert</string>

@@ -16,10 +16,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Găsiți senzorul de amprentă pe partea din faţă a telefonului.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Găsiți senzorul de amprentă pe partea stângă a telefonului.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Găsiți senzorul de amprentă pe partea dreaptă a telefonului.</string>
   <!-- Notification light settings -->
+  <string name="lights_category_title">Setări lumină</string>
   <string name="notification_light_title">Lumină de notificare</string>
   <string name="battery_light_title">Lumină baterie</string>
   <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> este <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_disabled">dezactivat</string>
+  <string name="sim_missing">lipsă sau defect</string>
+  <string name="sim_enabler_need_disable_sim">Cartela SIM va fi dezactivată. Doriți să continuați?</string>
+  <string name="sim_enabler_will_disable_sim_title">Atenție</string>
+  <string name="sim_enabler_need_switch_data_service">Acest SIM va fi dezactivat, iar SIM <xliff:g id="slotid">%1$s</xliff:g> va fi utilizat pentru servicii de date. Sunteți sigur că doriți să continuați?</string>
+  <string name="sim_enabler_airplane_on">Nu se poate efectua operațiunea cât timp modul avion este activ.</string>
+  <string name="sim_enabler_in_call">Nu se poate efectua operațiunea în timpul unui apel.</string>
+  <string name="sim_enabler_both_inactive">Nu se pot dezactiva toate cartelele SIM</string>
+  <string name="sim_enabler_enabling">Se activează\u2026</string>
+  <string name="sim_enabler_disabling">Se dezactivează\u2026</string>
+  <string name="sub_activate_success">SIM activat.</string>
+  <string name="sub_activate_failed">Activare eșuată.</string>
+  <string name="sub_deactivate_success">SIM dezactivat.</string>
+  <string name="sub_deactivate_failed">Dezactivare eșuată.</string>
   <!-- Generic stuff used everywhere -->
   <string name="reset">Resetați</string>
   <!-- Buttons -->
@@ -57,9 +76,7 @@
   <string name="button_backlight_title">Iluminare butoane</string>
   <string name="button_backlight_enabled">Iluminare butoane</string>
   <string name="button_backlight_only_when_pressed_title">Iluminare butoane numai când au fost apăsate</string>
-  <string name="keyboard_backlight_enabled">Iluminare tastatură</string>
   <string name="button_backlight_seekbar_title">Luminozitate buton</string>
-  <string name="keyboard_backlight_seekbar_title">Luminozitate tastatură</string>
   <string name="backlight_timeout_title">Timp expirare iluminare</string>
   <string name="backlight_timeout_unlimited">Nu se oprește</string>
   <string name="backlight_summary_disabled">Dezactivat</string>

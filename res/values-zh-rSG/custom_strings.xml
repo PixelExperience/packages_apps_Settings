@@ -16,7 +16,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_front">指紋感應器位於手機背面。</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_left">指紋感應器位於手機左侧。</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_right">指紋感應器位於手機右侧。</string>
   <!-- Notification light settings -->
+  <string name="lights_category_title">指示燈設定</string>
   <string name="notification_light_title">通知指示燈</string>
   <string name="battery_light_title">電量指示燈</string>
   <!-- Manual provisioning support -->
@@ -58,6 +62,11 @@
   <string name="hardware_keys_action_sleep">關閉螢幕</string>
   <string name="hardware_keys_action_last_app">最後一個應用程式</string>
   <string name="hardware_keys_action_split_screen">分割視窗</string>
+  <string name="hardware_keys_swipe_right_key_title">向右滑動</string>
+  <string name="hardware_keys_swipe_left_key_title">向左滑動</string>
+  <string name="hardware_keys_long_tap_key_title">長按</string>
+  <string name="hardware_keys_swipe_tap_title">滑動操作</string>
+  <string name="hardware_keys_long_tap_title">單擊動作</string>
   <string name="button_wake_title">喚醒裝置</string>
   <string name="camera_sleep_on_release_title">預覽螢幕</string>
   <string name="camera_sleep_on_release_summary">僅有當按住按鍵時，半按即可保持螢幕開啟。</string>
@@ -67,9 +76,7 @@
   <string name="button_backlight_title">背光</string>
   <string name="button_backlight_enabled">開啟按鍵背光</string>
   <string name="button_backlight_only_when_pressed_title">僅在按下按鈕才點亮指示燈</string>
-  <string name="keyboard_backlight_enabled">開啟鍵盤背光</string>
   <string name="button_backlight_seekbar_title">按鍵亮度</string>
-  <string name="keyboard_backlight_seekbar_title">鍵盤亮度</string>
   <string name="backlight_timeout_title">背光逾時</string>
   <string name="backlight_timeout_unlimited">不要關閉</string>
   <string name="backlight_summary_disabled">已停用</string>

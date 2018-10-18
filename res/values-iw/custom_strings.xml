@@ -52,9 +52,7 @@
   <string name="button_backlight_title">תאורה אחורית</string>
   <string name="button_backlight_enabled">האר מקשים</string>
   <string name="button_backlight_only_when_pressed_title">האר את המקשים רק כאשר נוגעים בהם</string>
-  <string name="keyboard_backlight_enabled">האר מקלדת</string>
   <string name="button_backlight_seekbar_title">בהירות מקשים</string>
-  <string name="keyboard_backlight_seekbar_title">בהירות מקשים</string>
   <string name="backlight_timeout_title">משך תאורה</string>
   <string name="backlight_timeout_unlimited">אל תכבה</string>
   <string name="backlight_summary_disabled">מבוטל</string>

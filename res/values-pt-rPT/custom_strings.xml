@@ -67,9 +67,7 @@
   <string name="button_backlight_title">Luz de fundo</string>
   <string name="button_backlight_enabled">Iluminar os botões</string>
   <string name="button_backlight_only_when_pressed_title">Iluminar botões apenas ao tocar</string>
-  <string name="keyboard_backlight_enabled">Iluminar o teclado</string>
   <string name="button_backlight_seekbar_title">Brilho dos botões</string>
-  <string name="keyboard_backlight_seekbar_title">Brilho do teclado</string>
   <string name="backlight_timeout_title">Tempo limite de iluminação</string>
   <string name="backlight_timeout_unlimited">Não desligar</string>
   <string name="backlight_summary_disabled">Inativa</string>

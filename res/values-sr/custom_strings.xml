@@ -52,9 +52,7 @@
   <string name="button_backlight_title">Позадинско осветљење</string>
   <string name="button_backlight_enabled">Осветли дугмад</string>
   <string name="button_backlight_only_when_pressed_title">Осветли дугмиће само када су притиснути</string>
-  <string name="keyboard_backlight_enabled">Осветли тастатуру</string>
   <string name="button_backlight_seekbar_title">Осветљеност дугмади</string>
-  <string name="keyboard_backlight_seekbar_title">Осветљеност тастатуре</string>
   <string name="backlight_timeout_title">Трајање осветљености</string>
   <string name="backlight_timeout_unlimited">Не искључуј</string>
   <string name="backlight_summary_disabled">Онемогућено</string>

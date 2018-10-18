@@ -52,9 +52,7 @@
   <string name="button_backlight_title">백라이트</string>
   <string name="button_backlight_enabled">버튼 조명 사용</string>
   <string name="button_backlight_only_when_pressed_title">버튼이 눌렸을 때만 조명을 켭니다.</string>
-  <string name="keyboard_backlight_enabled">키보드 조명 사용</string>
   <string name="button_backlight_seekbar_title">버튼 조명 밝기</string>
-  <string name="keyboard_backlight_seekbar_title">키보드 조명 밝기</string>
   <string name="backlight_timeout_title">조명 시간 제한</string>
   <string name="backlight_timeout_unlimited">끄지 않음</string>
   <string name="backlight_summary_disabled">사용 안 함</string>

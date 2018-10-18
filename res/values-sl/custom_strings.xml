@@ -16,10 +16,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Poiščite tipalo za prstne odtise na sprednji strani vašega telefona.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Poiščite tipalo za prstne odtise na zadnji strani vašega telefona.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Poiščite tipalo za prstne odtise na desni strani vašega telefona.</string>
   <!-- Notification light settings -->
+  <string name="lights_category_title">Nastavitve lučke</string>
   <string name="notification_light_title">Lučka za obvestila</string>
   <string name="battery_light_title">Lučka za baterijo</string>
   <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_disabled">onemogočena</string>
+  <string name="sim_missing">manjka ali je poškodovana</string>
+  <string name="sim_enabler_need_disable_sim">Kartica SIM bo onemogočena. Ali želite nadaljevati?</string>
+  <string name="sim_enabler_will_disable_sim_title">Pozor</string>
+  <string name="sim_enabler_need_switch_data_service">Ta kartica SIM bo onemogočena in SIM <xliff:g id="slotid">%1$s</xliff:g> bo uporabljena za podatkovne storitve. Ste prepričani, da želite nadaljevati?</string>
+  <string name="sim_enabler_airplane_on">Opravila ni mogoče izvesti, ko je vključen način za letalo.</string>
+  <string name="sim_enabler_in_call">Opravila ni mogoče izvesti med klicem.</string>
+  <string name="sim_enabler_both_inactive">Vseh kartic SIM ni mogoče onemogočiti</string>
+  <string name="sim_enabler_enabling">Omogočanje \u2026</string>
+  <string name="sim_enabler_disabling">Onemogočanje \u2026</string>
+  <string name="sub_activate_success">Kartica SIM omogočena.</string>
+  <string name="sub_activate_failed">Omogočanje je spodletelo.</string>
+  <string name="sub_deactivate_success">Kartica SIM onemogočena.</string>
+  <string name="sub_deactivate_failed">Onemogočanje je spodletelo.</string>
   <!-- Generic stuff used everywhere -->
   <string name="reset">Ponastavi</string>
   <!-- Buttons -->
@@ -43,6 +62,11 @@
   <string name="hardware_keys_action_sleep">Izklopi zaslon</string>
   <string name="hardware_keys_action_last_app">Zadnja aplikacija</string>
   <string name="hardware_keys_action_split_screen">Razdeli zaslon</string>
+  <string name="hardware_keys_swipe_right_key_title">Poteg desno</string>
+  <string name="hardware_keys_swipe_left_key_title">Poteg levo</string>
+  <string name="hardware_keys_long_tap_key_title">Dolgi tap</string>
+  <string name="hardware_keys_swipe_tap_title">Dejanje potega</string>
+  <string name="hardware_keys_long_tap_title">Dejanje dolgega tapa</string>
   <string name="button_wake_title">Zbudi napravo</string>
   <string name="camera_sleep_on_release_title">Predogled zaslona</string>
   <string name="camera_sleep_on_release_summary">Polpritisk bo ohranil zaslon vklopljen samo, ko je gumb pridržan</string>
@@ -52,9 +76,7 @@
   <string name="button_backlight_title">Osvetlitev ozadja</string>
   <string name="button_backlight_enabled">Osvetli gumbe</string>
   <string name="button_backlight_only_when_pressed_title">Osvetli gumbe samo ob pritisku</string>
-  <string name="keyboard_backlight_enabled">Osvetli tipkovnico</string>
   <string name="button_backlight_seekbar_title">Svetlost gumbov</string>
-  <string name="keyboard_backlight_seekbar_title">Svetlost tipkovnice</string>
   <string name="backlight_timeout_title">Časovna omejitev osvetlitve</string>
   <string name="backlight_timeout_unlimited">Ne izklopi</string>
   <string name="backlight_summary_disabled">Onemogočena</string>
