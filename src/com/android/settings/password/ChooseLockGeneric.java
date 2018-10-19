@@ -164,6 +164,11 @@ public class ChooseLockGeneric extends SettingsActivity {
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
+            final Activity activity = getActivity();
+            if (!Utils.isDeviceProvisioned(activity) && !canRunBeforeDeviceProvisioned()) {
+                activity.finish();
+                return;
+            }
 
             String chooseLockAction = getActivity().getIntent().getAction();
             mFingerprintManager = Utils.getFingerprintManagerOrNull(getActivity());
@@ -248,6 +253,10 @@ public class ChooseLockGeneric extends SettingsActivity {
                 }
             }
             addHeaderView();
+        }
+
+        protected boolean canRunBeforeDeviceProvisioned() {
+            return false;
         }
 
         protected void addHeaderView() {
