@@ -16,10 +16,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Individua il sensore d\'impronte digitali sulla parte anteriore del tuo telefono.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Individua il sensore d\'impronte digitali sul lato sinistro del tuo telefono.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Individua il sensore d\'impronte digitali sul lato destro del tuo telefono.</string>
   <!-- Notification light settings -->
+  <string name="lights_category_title">Impostazioni delle luci</string>
   <string name="notification_light_title">Luce di notifica</string>
-  <string name="battery_light_title">Indicatore batteria</string>
+  <string name="battery_light_title">Luce della batteria</string>
   <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> è <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_disabled">disattivato</string>
+  <string name="sim_missing">mancante o difettoso</string>
+  <string name="sim_enabler_need_disable_sim">La scheda SIM verrà disattivata. Vuoi continuare?</string>
+  <string name="sim_enabler_will_disable_sim_title">Attenzione</string>
+  <string name="sim_enabler_need_switch_data_service">Questa SIM verrà disabilitata e la SIM <xliff:g id="slotid">%1$s</xliff:g> verrà utilizzata per i servizi dei dati. Sei sicuro di voler continuare?</string>
+  <string name="sim_enabler_airplane_on">Impossibile eseguire l\'operazione mentre la modalità aereo è attiva.</string>
+  <string name="sim_enabler_in_call">Impossibile eseguire l\'operazione durante la chiamata.</string>
+  <string name="sim_enabler_both_inactive">Impossibile disabilitare tutte le SIM</string>
+  <string name="sim_enabler_enabling">Attivazione\u2026</string>
+  <string name="sim_enabler_disabling">Disattivazione\u2026</string>
+  <string name="sub_activate_success">SIM attiva.</string>
+  <string name="sub_activate_failed">Attivazione fallita.</string>
+  <string name="sub_deactivate_success">SIM disattivata.</string>
+  <string name="sub_deactivate_failed">Disattivazione fallita.</string>
   <!-- Generic stuff used everywhere -->
   <string name="reset">Reimposta</string>
   <!-- Buttons -->
@@ -28,7 +47,7 @@
   <string name="hardware_keys_back_key_title">Tasto Indietro</string>
   <string name="hardware_keys_menu_key_title">Tasto Menu</string>
   <string name="hardware_keys_assist_key_title">Tasto Cerca</string>
-  <string name="hardware_keys_appswitch_key_title">Tasto Panoramica</string>
+  <string name="hardware_keys_appswitch_key_title">Tasto Recenti</string>
   <string name="hardware_keys_camera_key_title">Tasto Fotocamera</string>
   <string name="hardware_keys_short_press_title">Azione pressione breve</string>
   <string name="hardware_keys_long_press_title">Azione pressione prolungata</string>
@@ -36,31 +55,31 @@
   <string name="hardware_keys_action_nothing">Nessuna azione</string>
   <string name="hardware_keys_action_menu">Apri/chiudi menu</string>
   <string name="hardware_keys_action_app_switch">Selettore app recenti</string>
-  <string name="hardware_keys_action_search">Assistente ricerca</string>
+  <string name="hardware_keys_action_search">Assistente di ricerca</string>
   <string name="hardware_keys_action_voice_search">Ricerca vocale</string>
-  <string name="hardware_keys_action_in_app_search">Ricerca in app</string>
+  <string name="hardware_keys_action_in_app_search">Ricerca in-app</string>
   <string name="hardware_keys_action_launch_camera">Avvia fotocamera</string>
   <string name="hardware_keys_action_sleep">Spegni lo schermo</string>
   <string name="hardware_keys_action_last_app">Ultima app</string>
   <string name="hardware_keys_action_split_screen">Schermo diviso</string>
-  <string name="hardware_keys_swipe_right_key_title">Scorrimento verso destra</string>
-  <string name="hardware_keys_swipe_left_key_title">Scorrimento verso sinistra</string>
+  <string name="hardware_keys_swipe_right_key_title">Scorri verso destra</string>
+  <string name="hardware_keys_swipe_left_key_title">Scorri verso sinistra</string>
   <string name="hardware_keys_long_tap_key_title">Tocco prolungato</string>
-  <string name="hardware_keys_swipe_tap_title">Azione dello scorrimento</string>
+  <string name="hardware_keys_swipe_tap_title">Azione di scorrimento</string>
   <string name="hardware_keys_long_tap_title">Azione del tocco prolungato</string>
-  <string name="button_wake_title">Risveglia dispositivo</string>
-  <string name="camera_sleep_on_release_title">Anteprima schermo</string>
-  <string name="camera_sleep_on_release_summary">Una pressione leggera terrà lo schermo acceso solo mentre il pulsante è premuto</string>
+  <string name="button_wake_title">Risveglia il dispositivo</string>
+  <string name="camera_sleep_on_release_title">Anteprima dello schermo</string>
+  <string name="camera_sleep_on_release_summary">Una leggera pressione manterrà lo schermo acceso solo mentre il pulsante verrà tenuto premuto</string>
   <string name="camera_launch_title">Avvia fotocamera</string>
-  <string name="camera_launch_summary">Una pressione prolungata e il successivo rilascio attiveranno la fotocamera</string>
+  <string name="camera_launch_summary">Una pressione prolungata e il successivo rilascio avvieranno la fotocamera</string>
   <!-- Key backlight -->
   <string name="button_backlight_title">Retroilluminazione</string>
   <string name="button_backlight_enabled">Illumina pulsanti</string>
-  <string name="button_backlight_only_when_pressed_title">Illumina i pulsanti solo se premuti</string>
+  <string name="button_backlight_only_when_pressed_title">Illumina i pulsanti solo quando vengono premuti</string>
   <string name="button_backlight_seekbar_title">Luminosità pulsanti</string>
-  <string name="backlight_timeout_title">Timeout illuminazione</string>
+  <string name="backlight_timeout_title">Tempo di illuminazione</string>
   <string name="backlight_timeout_unlimited">Non spegnere</string>
-  <string name="backlight_summary_disabled">Disattivata</string>
+  <string name="backlight_summary_disabled">Disabilitato</string>
   <string name="backlight_summary_enabled_with_timeout">Attivata per <xliff:g id="timeout">%s</xliff:g></string>
   <string name="backlight_summary_enabled">Attivata</string>
 </resources>

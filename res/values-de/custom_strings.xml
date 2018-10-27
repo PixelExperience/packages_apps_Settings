@@ -16,10 +16,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Finden Sie den Fingerabdrucksensor auf der Vorderseite des Telefons.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Finden Sie den Fingerabdrucksensor auf der linken Seite des Telefons.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Finden Sie den Fingerabdrucksensor auf der rechten Seite des Telefons.</string>
   <!-- Notification light settings -->
+  <string name="lights_category_title">Led-Einstellungen</string>
   <string name="notification_light_title">Benachrichtigungs-LED</string>
   <string name="battery_light_title">Akku-LED</string>
   <!-- Manual provisioning support -->
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> ist <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_disabled">deaktiviert</string>
+  <string name="sim_missing">fehlend oder defekt</string>
+  <string name="sim_enabler_need_disable_sim">SIM-Karte wird deaktiviert. Willst du fortfahren?</string>
+  <string name="sim_enabler_will_disable_sim_title">Achtung</string>
+  <string name="sim_enabler_need_switch_data_service">Diese SIM-Karte wird deaktiviert und SIM-Karte <xliff:g id="slotid">%1$s</xliff:g> wird für Datendienste verwendet. Sind Sie sicher, dass Sie fortfahren möchten?</string>
+  <string name="sim_enabler_airplane_on">Vorgang kann nicht im Flugmodus durchgeführt werden.</string>
+  <string name="sim_enabler_in_call">Vorgang kann nicht während eines Anrufs durchgeführt werden.</string>
+  <string name="sim_enabler_both_inactive">Es können nicht alle SIM-Karten deaktiviert werden</string>
+  <string name="sim_enabler_enabling">Aktiviere\u2026</string>
+  <string name="sim_enabler_disabling">Deaktiviere\u2026</string>
+  <string name="sub_activate_success">SIM-Karte aktiviert.</string>
+  <string name="sub_activate_failed">Aktivierung fehlgeschlagen.</string>
+  <string name="sub_deactivate_success">SIM-Karte deaktiviert.</string>
+  <string name="sub_deactivate_failed">Deaktivierung fehlgeschlagen.</string>
   <!-- Generic stuff used everywhere -->
   <string name="reset">Zurücksetzen</string>
   <!-- Buttons -->
@@ -43,6 +62,11 @@
   <string name="hardware_keys_action_sleep">Bildschirm ausschalten</string>
   <string name="hardware_keys_action_last_app">Vorherige App</string>
   <string name="hardware_keys_action_split_screen">Geteilter Bildschirm</string>
+  <string name="hardware_keys_swipe_right_key_title">Nach rechts wischen</string>
+  <string name="hardware_keys_swipe_left_key_title">Nach links wischen</string>
+  <string name="hardware_keys_long_tap_key_title">Lange drücken</string>
+  <string name="hardware_keys_swipe_tap_title">Wischgesten</string>
+  <string name="hardware_keys_long_tap_title">Langes Drücken (Aktion)</string>
   <string name="button_wake_title">Gerät aufwecken</string>
   <string name="camera_sleep_on_release_title">Kurzer Blick</string>
   <string name="camera_sleep_on_release_summary">Der Bildschirm bleibt aktiviert, solange die Kamera-Taste halb durchgedrückt gehalten wird.</string>
