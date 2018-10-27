@@ -16,7 +16,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Thola i-sensor zeminwe ngaphambili kwefoni yakho.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Thola inzwa yomsindo ngakwesokunxele kwefoni yakho.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Thola inzwa yeminwe ngakwesokudla kwefoni yakho.</string>
   <!-- Notification light settings -->
+  <string name="lights_category_title">Izilungiselelo zokukhanya</string>
   <!-- Manual provisioning support -->
   <!-- Generic stuff used everywhere -->
   <!-- Buttons -->
