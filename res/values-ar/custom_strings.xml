@@ -24,7 +24,6 @@
   <string name="notification_light_title">ضوء الإشعار</string>
   <string name="battery_light_title">ضوء البطارية</string>
   <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
   <string name="sim_disabled">معطل</string>
   <string name="sim_missing">مفقود أو به خلل</string>
   <string name="sim_enabler_need_disable_sim">سيتم إلغاء تنشيط بطاقة SIM. هل تريد الاستمرار؟</string>

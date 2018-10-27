@@ -16,10 +16,28 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Знайдіть сенсор відбитків пальців на передній панелі вашого смартфона.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Знайдіть сенсор відбитків пальців на лівій грані вашого смартфона.</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Знайдіть сенсор відбитків пальців на правій грані вашого смартфона.</string>
   <!-- Notification light settings -->
+  <string name="lights_category_title">Налаштування індикатора</string>
   <string name="notification_light_title">Індикатор сповіщень</string>
   <string name="battery_light_title">Індикація батареї</string>
   <!-- Manual provisioning support -->
+  <string name="sim_disabled">вимкнено</string>
+  <string name="sim_missing">відсутній або несправний</string>
+  <string name="sim_enabler_need_disable_sim">SIM-карту буде деактивовано. Ви хочете продовжити?</string>
+  <string name="sim_enabler_will_disable_sim_title">Увага</string>
+  <string name="sim_enabler_need_switch_data_service">Цю SIM буде вимкнуто і SIM <xliff:g id="slotid">%1$s</xliff:g> буде використовуватися для передачі даних. Ви впевнені що хочете продовжити?</string>
+  <string name="sim_enabler_airplane_on">Не вдалося виконати операцію, коли увімкнено режим польоту.</string>
+  <string name="sim_enabler_in_call">Не вдалося виконати операцію під час виклику.</string>
+  <string name="sim_enabler_both_inactive">Не вдається вимкнути всі SIM-картки</string>
+  <string name="sim_enabler_enabling">Активація\u2026</string>
+  <string name="sim_enabler_disabling">Деактивація\u2026</string>
+  <string name="sub_activate_success">SIM активована.</string>
+  <string name="sub_activate_failed">Помилка активації.</string>
+  <string name="sub_deactivate_success">SIM деактивована.</string>
+  <string name="sub_deactivate_failed">Помилка деактивації.</string>
   <!-- Generic stuff used everywhere -->
   <string name="reset">Скинути</string>
   <!-- Buttons -->
@@ -43,6 +61,11 @@
   <string name="hardware_keys_action_sleep">Вимкнути екран</string>
   <string name="hardware_keys_action_last_app">Останній додаток</string>
   <string name="hardware_keys_action_split_screen">Розділення екрана</string>
+  <string name="hardware_keys_swipe_right_key_title">Свайп вправо</string>
+  <string name="hardware_keys_swipe_left_key_title">Свайп вліво</string>
+  <string name="hardware_keys_long_tap_key_title">Довгий дотик</string>
+  <string name="hardware_keys_swipe_tap_title">Свайп для дії</string>
+  <string name="hardware_keys_long_tap_title">Дії довгого натиску</string>
   <string name="button_wake_title">Розбудити пристрій</string>
   <string name="camera_sleep_on_release_title">Швидкий перегляд</string>
   <string name="camera_sleep_on_release_summary">Тримати екран увімкненим тільки при утриманні кнопки</string>
@@ -51,6 +74,7 @@
   <!-- Key backlight -->
   <string name="button_backlight_title">Підсвічування</string>
   <string name="button_backlight_enabled">Підсвічування кнопок</string>
+  <string name="button_backlight_only_when_pressed_title">Підсвічувати кнопки лише при натисканні</string>
   <string name="button_backlight_seekbar_title">Яскравість кнопок</string>
   <string name="backlight_timeout_title">Тривалість підсвічування</string>
   <string name="backlight_timeout_unlimited">Не вимикати</string>
