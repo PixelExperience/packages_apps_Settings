@@ -189,14 +189,6 @@
     <!-- Power menu key customization -->
     <string name="power_end_call_title">End call</string>
     <string name="power_end_call_summary">End the current call by pressing the power button</string>
-    <string name="torch_long_press_power_gesture_title">Long press for torch</string>
-    <string name="torch_long_press_power_gesture_desc">Activate the torch by long pressing the power button while the display is off</string>
-    <string name="torch_long_press_power_timeout_title">Automatically turn torch off</string>
-    <string name="torch_long_press_power_timeout_never">Never</string>
-    <string name="torch_long_press_power_timeout_1min">1 minute</string>
-    <string name="torch_long_press_power_timeout_2min">2 minutes</string>
-    <string name="torch_long_press_power_timeout_5min">5 minutes</string>
-    <string name="torch_long_press_power_timeout_10min">10 minutes</string>
 
     <!-- Others settings -->
     <string name="others_settings_title">Others settings</string>
@@ -319,5 +311,15 @@
     <string name="wifi_hotspot_timeout_summary_10mins">10 minutes</string>
     <string name="wifi_hotspot_timeout_summary_30mins">30 minutes</string>
     <string name="wifi_hotspot_timeout_summary_1hour">1 hour</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="power_button_torch_title">Quick torch</string>
+    <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
+    <string name="torch_long_press_power_timeout_title">Automatically turn torch off</string>
+    <string name="torch_long_press_power_timeout_never">Never</string>
+    <string name="torch_long_press_power_timeout_1min">1 minute</string>
+    <string name="torch_long_press_power_timeout_2min">2 minutes</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutes</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutes</string>
 
 </resources>
