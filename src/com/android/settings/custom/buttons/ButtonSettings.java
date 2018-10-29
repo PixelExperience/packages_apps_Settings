@@ -58,6 +58,7 @@ import com.android.settings.Utils;
 import com.android.settings.custom.preference.CustomDialogPreference;
 import com.android.settings.gestures.PowerMenuPreferenceController;
 import com.android.settings.gestures.SystemNavigationPreferenceController;
+import com.android.settings.gestures.PowerButtonTorchGesturePreferenceController;
 
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON_OVERLAY;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
@@ -110,7 +111,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAV_GESTURES = "navbar_gestures";
     private static final String KEY_NAV_COMPACT_LAYOUT = "navigation_bar_compact_layout";
     private static final String KEY_TORCH_LONG_PRESS_POWER = "torch_long_press_power_gesture";
-    private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT = "torch_long_press_power_timeout";
     private static final String KEY_CLICK_PARTIAL_SCREENSHOT =
             "click_partial_screenshot";
     private static final String KEY_POWER_END_CALL = "power_end_call";
@@ -131,8 +131,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mNavigationInverse;
     private Preference mNavigationGestures;
     private SwitchPreference mNavigationCompactLayout;
-    private SwitchPreference mTorchLongPressPower;
-    private ListPreference mTorchLongPressPowerTimeout;
+    private Preference mTorchLongPressPower;
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
     private ListPreference mVolumeKeyCursorControl;
@@ -392,8 +391,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mSupportLongPressPowerWhenNonInteractive = getResources().getBoolean(
                 com.android.internal.R.bool.config_supportLongPressPowerWhenNonInteractive);
         mPowerEndCall = findPreference(KEY_POWER_END_CALL);
+
         mTorchLongPressPower = findPreference(KEY_TORCH_LONG_PRESS_POWER);
-        mTorchLongPressPowerTimeout = findPreference(KEY_TORCH_LONG_PRESS_POWER_TIMEOUT);
+
         mGesturePowerMenu = findPreference(KEY_GESTURE_POWER_MENU);
 
         if (hasPowerKey) {
@@ -404,7 +404,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             if (!mSupportLongPressPowerWhenNonInteractive ||
                     !ButtonSettingsUtils.deviceSupportsFlashLight(getActivity())) {
                 powerCategory.removePreference(mTorchLongPressPower);
-                powerCategory.removePreference(mTorchLongPressPowerTimeout);
+                mTorchLongPressPower = null;
             }
         } else {
             prefScreen.removePreference(powerCategory);
@@ -548,6 +548,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private void updateOthersSummaries(){
         if (mGesturePowerMenu != null){
             mGesturePowerMenu.setSummary(PowerMenuPreferenceController.getPrefSummary(getActivity()));
+        }
+        if (mTorchLongPressPower != null){
+            mTorchLongPressPower.setSummary(PowerButtonTorchGesturePreferenceController.getPrefSummary(getActivity()));
         }
     }
 
