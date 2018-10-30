@@ -40,6 +40,20 @@
         android:summary="@string/lockdown_settings_summary"
         settings:controller="com.android.settings.security.LockdownButtonPreferenceController"/>
 
+    <PreferenceCategory
+        android:key="weather_lockscreen_key"
+        android:title="@string/weather_title"
+        settings:controller="com.android.settings.security.screenlock.WeatherPreferenceController">
+        <com.android.settings.custom.preference.SystemSettingListPreference
+            android:key="weather_lockscreen_unit"
+            android:dialogTitle="@string/weather_unit"
+            android:title="@string/weather_unit"
+            android:summary="%s"
+            android:entries="@array/weather_unit_entries"
+            android:entryValues="@array/weather_unit_values"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
     <!-- Work profile settings are at the bottom with high order value to avoid users thinking that
          any of the above settings (including dynamic) are specific to the work profile. -->
     <PreferenceCategory
