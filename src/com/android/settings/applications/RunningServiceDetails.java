@@ -45,6 +45,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import com.android.internal.util.custom.weather.WeatherClient;
+
 public class RunningServiceDetails extends InstrumentedFragment
         implements RunningState.OnRefreshUiListener {
     static final String TAG = "RunningServicesDetails";
@@ -166,7 +168,10 @@ public class RunningServiceDetails extends InstrumentedFragment
                 return;
             }
 
-            if (mManageIntent != null) {
+            // Don't allow force stop for Weather service
+            if (mActiveItem.mItem.mPackageInfo.packageName.equals(WeatherClient.SERVICE_PACKAGE)){
+                finish();
+            }else if (mManageIntent != null) {
                 try {
                     getActivity().startIntentSender(mManageIntent.getIntentSender(), null,
                             Intent.FLAG_ACTIVITY_NEW_TASK
