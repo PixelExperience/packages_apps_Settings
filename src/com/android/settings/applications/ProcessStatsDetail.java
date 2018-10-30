@@ -61,6 +61,8 @@ import java.util.List;
 
 import static com.android.settings.widget.EntityHeaderController.ActionType;
 
+import com.android.internal.util.custom.weather.WeatherClient;
+
 public class ProcessStatsDetail extends SettingsPreferenceFragment {
 
     private static final String TAG = "ProcessStatsDetail";
@@ -453,7 +455,7 @@ public class ProcessStatsDetail extends SettingsPreferenceFragment {
             ProcStatsEntry ent = mApp.mEntries.get(i);
             for (int j=0; j<ent.mPackages.size(); j++) {
                 String pkg = ent.mPackages.get(j);
-                if (mDpm.packageHasActiveAdmins(pkg)) {
+                if (mDpm.packageHasActiveAdmins(pkg) || pkg.equals(WeatherClient.SERVICE_PACKAGE)) {
                     mForceStop.setEnabled(false);
                     return;
                 }

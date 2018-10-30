@@ -88,4 +88,10 @@
     <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Enabled</string>
 
+    <!-- Weather -->
+    <string name="weather_title">Weather</string>
+    <string name="weather_unit">Unit</string>
+    <string name="weather_unit_metric">Metric</string>
+    <string name="weather_unit_imperial">Imperial</string>
+
 </resources>
