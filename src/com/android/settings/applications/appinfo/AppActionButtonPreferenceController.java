@@ -52,6 +52,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
+import com.android.internal.util.custom.weather.WeatherClient;
+
 public class AppActionButtonPreferenceController extends BasePreferenceController
         implements AppInfoDashboardFragment.Callback {
 
@@ -288,6 +290,9 @@ public class AppActionButtonPreferenceController extends BasePreferenceControlle
         } else if (AppUtils.isInstant(packageInfo.applicationInfo)) {
             updateForceStopButton(false);
             mActionButtons.setButton2Visible(false);
+        } else if (packageInfo.packageName.equals(WeatherClient.SERVICE_PACKAGE)) {
+            // Don't allow force stopping weather service
+            updateForceStopButton(false);
         } else if ((appEntry.info.flags & ApplicationInfo.FLAG_STOPPED) == 0) {
             // If the app isn't explicitly stopped, then always show the
             // force stop button.

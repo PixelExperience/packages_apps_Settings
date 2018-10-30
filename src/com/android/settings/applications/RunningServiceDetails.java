@@ -45,6 +45,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import com.android.internal.util.custom.weather.WeatherClient;
+
 public class RunningServiceDetails extends InstrumentedFragment
         implements RunningState.OnRefreshUiListener {
     static final String TAG = "RunningServicesDetails";
@@ -278,6 +280,10 @@ public class RunningServiceDetails extends InstrumentedFragment
         TextView description = (TextView)root.findViewById(R.id.comp_description);
         detail.mStopButton = (Button)root.findViewById(R.id.left_button);
         detail.mReportButton = (Button)root.findViewById(R.id.right_button);
+
+        if (si.mServiceInfo.packageName.equals(WeatherClient.SERVICE_PACKAGE)){
+            detail.mStopButton.setEnabled(false);
+        }
 
         if (isService && mi.mUserId != UserHandle.myUserId()) {
             // For services from other users, we don't show any description or
