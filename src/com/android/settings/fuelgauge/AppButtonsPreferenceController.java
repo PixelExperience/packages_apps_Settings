@@ -66,6 +66,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
+import com.android.internal.util.custom.weather.WeatherClient;
+
 /**
  * Controller to control the uninstall button and forcestop button. All fragments that use
  * this controller should implement {@link ButtonActionDialogFragment.AppButtonsDialogListener} and
@@ -477,6 +479,9 @@ public class AppButtonsPreferenceController extends AbstractPreferenceController
             // force stop button.
             Log.w(TAG, "App is not explicitly stopped");
             updateForceStopButtonInner(true /* enabled */);
+        } else if (mPackageInfo.packageName.equals(WeatherClient.SERVICE_PACKAGE)) {
+            // Don't allow force stopping weather service
+            updateForceStopButtonInner(false /* enabled */);
         } else {
             Intent intent = new Intent(Intent.ACTION_QUERY_PACKAGE_RESTART,
                     Uri.fromParts("package", mAppEntry.info.packageName, null));
