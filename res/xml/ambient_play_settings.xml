@@ -36,6 +36,11 @@
             android:title="@string/ambient_play_notifications_title"
             android:defaultValue="true" />
 
+        <PreferenceCategory />
+
+        <com.android.settings.custom.ambient.history.AmbientPlayHistoryPreference
+            android:key="ambient_recognition_history_preference" />
+
         <com.android.settingslib.widget.FooterPreference
             android:key="ambient_recognition_footer_preference"
             android:title="@string/ambient_play_help_text"
