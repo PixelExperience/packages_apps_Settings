@@ -168,5 +168,6 @@ public class Settings extends SettingsActivity {
 
     // Ambient play
     public static class AmbientPlayActivity extends SettingsActivity { /* empty */ }
+    public static class AmbientPlayHistoryActivity extends SettingsActivity { /* empty */ }
 
 }
