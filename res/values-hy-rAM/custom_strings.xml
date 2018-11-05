@@ -15,10 +15,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Fingerprint location message -->
-  <!-- Notification light settings -->
-  <!-- Manual provisioning support -->
-  <!-- Generic stuff used everywhere -->
-  <!-- Buttons -->
-  <!-- Key backlight -->
+    <!-- Fingerprint location message -->
+    <!-- Notification light settings -->
+    <!-- Manual provisioning support -->
+    <!-- Generic stuff used everywhere -->
+    <!-- Buttons -->
+    <!-- Key backlight -->
+    <!-- Weather -->
+    <!-- Ambient Play -->
 </resources>

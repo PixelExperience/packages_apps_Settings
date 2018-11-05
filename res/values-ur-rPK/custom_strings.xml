@@ -15,33 +15,35 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Fingerprint location message -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_front">اپنے فون کے سامنے کے حصّہ میں فنگرپرنٹ سینسر تلاش کریں.</string>
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_left">اپنے فون کی بائیں جانب فنگرپرنٹ سینسر تلاش کریں.</string>
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_right">اپنے فون کی دائیں جانب فنگرپرنٹ سینسر تلاش کریں.</string>
-  <!-- Notification light settings -->
-  <string name="lights_category_title">لائیٹ سیٹنگس</string>
-  <string name="notification_light_title">نوٹیفیکیشن کی لائٹ</string>
-  <string name="battery_light_title">بیٹری کی لائیٹ</string>
-  <!-- Manual provisioning support -->
-  <string name="sim_disabled">غیر فعال</string>
-  <string name="sim_missing">غیر حاضر یا خراب</string>
-  <string name="sim_enabler_will_disable_sim_title">توجہ فرمائیں</string>
-  <!-- Generic stuff used everywhere -->
-  <string name="reset">ری سیٹ کریں</string>
-  <!-- Buttons -->
-  <string name="button_pref_title">بٹن</string>
-  <string name="hardware_keys_home_key_title">ہوم بٹن</string>
-  <string name="hardware_keys_back_key_title">واپسی بٹن</string>
-  <string name="hardware_keys_menu_key_title">مینو بٹن</string>
-  <string name="hardware_keys_assist_key_title">تلاش بٹن</string>
-  <string name="hardware_keys_appswitch_key_title">گذشتہ ایپس بٹن</string>
-  <string name="hardware_keys_camera_key_title">کیمرہ بٹن</string>
-  <string name="hardware_keys_action_nothing">کوئی کام نہیں</string>
-  <string name="hardware_keys_action_search">سرچ ایسسٹنٹ</string>
-  <string name="hardware_keys_action_voice_search">صوتی تلاش</string>
-  <string name="hardware_keys_action_launch_camera">کیمرا لانچ کریں</string>
-  <string name="hardware_keys_action_split_screen">اسکرین کو آدھا کریں</string>
-  <string name="hardware_keys_swipe_left_key_title">بائیں طرف پھیریں</string>
-  <!-- Key backlight -->
+    <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">اپنے فون کے سامنے کے حصّہ میں فنگرپرنٹ سینسر تلاش کریں.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">اپنے فون کی بائیں جانب فنگرپرنٹ سینسر تلاش کریں.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">اپنے فون کی دائیں جانب فنگرپرنٹ سینسر تلاش کریں.</string>
+    <!-- Notification light settings -->
+    <string name="lights_category_title">لائیٹ سیٹنگس</string>
+    <string name="notification_light_title">نوٹیفیکیشن کی لائٹ</string>
+    <string name="battery_light_title">بیٹری کی لائیٹ</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_disabled">غیر فعال</string>
+    <string name="sim_missing">غیر حاضر یا خراب</string>
+    <string name="sim_enabler_will_disable_sim_title">توجہ فرمائیں</string>
+    <!-- Generic stuff used everywhere -->
+    <string name="reset">ری سیٹ کریں</string>
+    <!-- Buttons -->
+    <string name="button_pref_title">بٹن</string>
+    <string name="hardware_keys_home_key_title">ہوم بٹن</string>
+    <string name="hardware_keys_back_key_title">واپسی بٹن</string>
+    <string name="hardware_keys_menu_key_title">مینو بٹن</string>
+    <string name="hardware_keys_assist_key_title">تلاش بٹن</string>
+    <string name="hardware_keys_appswitch_key_title">گذشتہ ایپس بٹن</string>
+    <string name="hardware_keys_camera_key_title">کیمرہ بٹن</string>
+    <string name="hardware_keys_action_nothing">کوئی کام نہیں</string>
+    <string name="hardware_keys_action_search">سرچ ایسسٹنٹ</string>
+    <string name="hardware_keys_action_voice_search">صوتی تلاش</string>
+    <string name="hardware_keys_action_launch_camera">کیمرا لانچ کریں</string>
+    <string name="hardware_keys_action_split_screen">اسکرین کو آدھا کریں</string>
+    <string name="hardware_keys_swipe_left_key_title">بائیں طرف پھیریں</string>
+    <!-- Key backlight -->
+    <!-- Weather -->
+    <!-- Ambient Play -->
 </resources>

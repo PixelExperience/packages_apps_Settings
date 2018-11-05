@@ -15,71 +15,92 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Fingerprint location message -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Localize o sensor de impressão digital na parte frontal do seu telefone.</string>
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Localize o sensor de impressão digital no lado esquerdo do seu telefone.</string>
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Localize o sensor de impressão digital no lado direito do seu telefone.</string>
-  <!-- Notification light settings -->
-  <string name="lights_category_title">Configurações de luz</string>
-  <string name="notification_light_title">Luz de notificação</string>
-  <string name="battery_light_title">Luz da bateria</string>
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> está <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-  <string name="sim_disabled">desativado</string>
-  <string name="sim_missing">desconectado ou com defeito</string>
-  <string name="sim_enabler_need_disable_sim">Cartão SIM será desativado. Você quer continuar?</string>
-  <string name="sim_enabler_will_disable_sim_title">Atenção</string>
-  <string name="sim_enabler_need_switch_data_service">Este cartão SIM será desativado e o cartão SIM <xliff:g id="slotid">%1$s</xliff:g> será usado para serviços de dados. Tem certeza que deseja continuar?</string>
-  <string name="sim_enabler_airplane_on">Não é possível executar a operação enquanto o modo avião estiver ativado.</string>
-  <string name="sim_enabler_in_call">Não é possível executar a operação enquanto estiver numa chamada.</string>
-  <string name="sim_enabler_both_inactive">Não é possível desativar todos os cartões SIM</string>
-  <string name="sim_enabler_enabling">Ativando\u2026</string>
-  <string name="sim_enabler_disabling">Desativando\u2026</string>
-  <string name="sub_activate_success">SIM ativado.</string>
-  <string name="sub_activate_failed">Falha na ativação.</string>
-  <string name="sub_deactivate_success">SIM desativado.</string>
-  <string name="sub_deactivate_failed">Falha na desativação.</string>
-  <!-- Generic stuff used everywhere -->
-  <string name="reset">Redefinir</string>
-  <!-- Buttons -->
-  <string name="button_pref_title">Botões</string>
-  <string name="hardware_keys_home_key_title">Botão início</string>
-  <string name="hardware_keys_back_key_title">Botão voltar</string>
-  <string name="hardware_keys_menu_key_title">Botão de menu</string>
-  <string name="hardware_keys_assist_key_title">Botão de pesquisa</string>
-  <string name="hardware_keys_appswitch_key_title">Botão de aplicativos recentes</string>
-  <string name="hardware_keys_camera_key_title">Botão da câmera</string>
-  <string name="hardware_keys_short_press_title">Ação de toque rápido</string>
-  <string name="hardware_keys_long_press_title">Ação de toque longo</string>
-  <string name="hardware_keys_double_tap_title">Ação de toque duplo</string>
-  <string name="hardware_keys_action_nothing">Nenhuma ação</string>
-  <string name="hardware_keys_action_menu">Abrir/fechar menu</string>
-  <string name="hardware_keys_action_app_switch">Alternador de aplicativos recentes</string>
-  <string name="hardware_keys_action_search">Assistente de busca</string>
-  <string name="hardware_keys_action_voice_search">Pesquisa por voz</string>
-  <string name="hardware_keys_action_in_app_search">Busca dentro do aplicativo</string>
-  <string name="hardware_keys_action_launch_camera">Iniciar a câmera</string>
-  <string name="hardware_keys_action_sleep">Desligar a tela</string>
-  <string name="hardware_keys_action_last_app">Último aplicativo</string>
-  <string name="hardware_keys_action_split_screen">Dividir a tela</string>
-  <string name="hardware_keys_swipe_right_key_title">Deslizar para direita</string>
-  <string name="hardware_keys_swipe_left_key_title">Deslizar para esquerda</string>
-  <string name="hardware_keys_long_tap_key_title">Toque longo</string>
-  <string name="hardware_keys_swipe_tap_title">Ação ao deslizar</string>
-  <string name="hardware_keys_long_tap_title">Ação de toque longo</string>
-  <string name="button_wake_title">Acordar o dispositivo</string>
-  <string name="camera_sleep_on_release_title">Espiar a tela</string>
-  <string name="camera_sleep_on_release_summary">Um toque parcial manterá a tela ligada somente enquanto o botão estiver pressionado</string>
-  <string name="camera_launch_title">Iniciar a câmera</string>
-  <string name="camera_launch_summary">Mantenha pressionado e solte para abrir a câmera</string>
-  <!-- Key backlight -->
-  <string name="button_backlight_title">Luz de fundo</string>
-  <string name="button_backlight_enabled">Iluminar botões</string>
-  <string name="button_backlight_only_when_pressed_title">Iluminar botões apenas ao tocar</string>
-  <string name="button_backlight_seekbar_title">Brilho dos botões</string>
-  <string name="backlight_timeout_title">Duração do brilho</string>
-  <string name="backlight_timeout_unlimited">Não desligar</string>
-  <string name="backlight_summary_disabled">Desativado</string>
-  <string name="backlight_summary_enabled_with_timeout">Ativado por <xliff:g id="timeout">%s</xliff:g></string>
-  <string name="backlight_summary_enabled">Ativado</string>
+    <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Localize o sensor de impressão digital na parte frontal do seu telefone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Localize o sensor de impressão digital no lado esquerdo do seu telefone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Localize o sensor de impressão digital no lado direito do seu telefone.</string>
+    <!-- Notification light settings -->
+    <string name="lights_category_title">Configurações de luz</string>
+    <string name="notification_light_title">Luz de notificação</string>
+    <string name="battery_light_title">Luz da bateria</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> está <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">desativado</string>
+    <string name="sim_missing">desconectado ou com defeito</string>
+    <string name="sim_enabler_need_disable_sim">Cartão SIM será desativado. Você quer continuar?</string>
+    <string name="sim_enabler_will_disable_sim_title">Atenção</string>
+    <string name="sim_enabler_need_switch_data_service">Este cartão SIM será desativado e o cartão SIM <xliff:g id="slotid">%1$s</xliff:g> será usado para serviços de dados. Tem certeza que deseja continuar?</string>
+    <string name="sim_enabler_airplane_on">Não é possível executar a operação enquanto o modo avião estiver ativado.</string>
+    <string name="sim_enabler_in_call">Não é possível executar a operação enquanto estiver numa chamada.</string>
+    <string name="sim_enabler_both_inactive">Não é possível desativar todos os cartões SIM</string>
+    <string name="sim_enabler_enabling">Ativando\u2026</string>
+    <string name="sim_enabler_disabling">Desativando\u2026</string>
+    <string name="sub_activate_success">SIM ativado.</string>
+    <string name="sub_activate_failed">Falha na ativação.</string>
+    <string name="sub_deactivate_success">SIM desativado.</string>
+    <string name="sub_deactivate_failed">Falha na desativação.</string>
+    <!-- Generic stuff used everywhere -->
+    <string name="reset">Redefinir</string>
+    <!-- Buttons -->
+    <string name="button_pref_title">Botões</string>
+    <string name="hardware_keys_home_key_title">Botão início</string>
+    <string name="hardware_keys_back_key_title">Botão voltar</string>
+    <string name="hardware_keys_menu_key_title">Botão de menu</string>
+    <string name="hardware_keys_assist_key_title">Botão de pesquisa</string>
+    <string name="hardware_keys_appswitch_key_title">Botão de aplicativos recentes</string>
+    <string name="hardware_keys_camera_key_title">Botão da câmera</string>
+    <string name="hardware_keys_short_press_title">Ação de toque rápido</string>
+    <string name="hardware_keys_long_press_title">Ação de toque longo</string>
+    <string name="hardware_keys_double_tap_title">Ação de toque duplo</string>
+    <string name="hardware_keys_action_nothing">Nenhuma ação</string>
+    <string name="hardware_keys_action_menu">Abrir/fechar menu</string>
+    <string name="hardware_keys_action_app_switch">Alternador de aplicativos recentes</string>
+    <string name="hardware_keys_action_search">Assistente de busca</string>
+    <string name="hardware_keys_action_voice_search">Pesquisa por voz</string>
+    <string name="hardware_keys_action_in_app_search">Busca dentro do aplicativo</string>
+    <string name="hardware_keys_action_launch_camera">Iniciar a câmera</string>
+    <string name="hardware_keys_action_sleep">Desligar a tela</string>
+    <string name="hardware_keys_action_last_app">Último aplicativo</string>
+    <string name="hardware_keys_action_split_screen">Dividir a tela</string>
+    <string name="hardware_keys_swipe_right_key_title">Deslizar para direita</string>
+    <string name="hardware_keys_swipe_left_key_title">Deslizar para esquerda</string>
+    <string name="hardware_keys_long_tap_key_title">Toque longo</string>
+    <string name="hardware_keys_swipe_tap_title">Ação ao deslizar</string>
+    <string name="hardware_keys_long_tap_title">Ação de toque longo</string>
+    <string name="button_wake_title">Acordar o dispositivo</string>
+    <string name="camera_sleep_on_release_title">Espiar a tela</string>
+    <string name="camera_sleep_on_release_summary">Um toque parcial manterá a tela ligada somente enquanto o botão estiver pressionado</string>
+    <string name="camera_launch_title">Iniciar a câmera</string>
+    <string name="camera_launch_summary">Mantenha pressionado e solte para abrir a câmera</string>
+    <!-- Key backlight -->
+    <string name="button_backlight_title">Luz de fundo</string>
+    <string name="button_backlight_enabled">Iluminar botões</string>
+    <string name="button_backlight_only_when_pressed_title">Iluminar botões apenas ao tocar</string>
+    <string name="button_backlight_seekbar_title">Brilho dos botões</string>
+    <string name="backlight_timeout_title">Duração do brilho</string>
+    <string name="backlight_timeout_unlimited">Não desligar</string>
+    <string name="backlight_summary_disabled">Desativado</string>
+    <string name="backlight_summary_enabled_with_timeout">Ativado por <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Ativado</string>
+    <!-- Weather -->
+    <string name="weather_title">Previsão do tempo</string>
+    <string name="weather_unit">Unidade de temperatura</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_summary">Mostrar músicas próximas</string>
+    <string name="ambient_play_lockscreen_title">Mostrar na tela de bloqueio</string>
+    <string name="ambient_play_notifications_title">Notificações</string>
+    <string name="ambient_play_switch_bar_on">Ligado</string>
+    <string name="ambient_play_switch_bar_off">Desligado</string>
+    <string name="ambient_play_help_text">Quando alguma música estiver tocando nas proximidades, você poderá ver o nome e o artista. O uso de bateria e de dados podem ser afetados se isso estiver ativado.</string>
+    <string name="ambient_play_history">Histórico de músicas</string>
+    <string name="ambient_play_loading_data">Carregando dados…</string>
+    <string name="ambient_play_history_today">Hoje</string>
+    <string name="ambient_play_history_yesterday">Ontem</string>
+    <string name="ambient_play_history_dialog_play">Escutar agora</string>
+    <string name="ambient_play_history_dialog_search">Procurar na web</string>
+    <string name="ambient_play_history_dialog_remove">Remover</string>
+    <string name="ambient_play_history_empty">O histórico de música está vazio</string>
+    <string name="ambient_play_history_menu_remove_all">Limpar</string>
+    <string name="ambient_play_history_menu_add_to_home">Adicionar à tela inicial</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Você tem certeza?</string>
 </resources>

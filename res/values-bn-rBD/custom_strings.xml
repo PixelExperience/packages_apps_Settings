@@ -15,25 +15,27 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Fingerprint location message -->
-  <!-- Notification light settings -->
-  <!-- Manual provisioning support -->
-  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> হয় <xliff:g id="status" example="disabled">%2$s</xliff:g>।</string>
-  <string name="sim_disabled">নিষ্ক্রিয় করা হয়েছে</string>
-  <string name="sim_missing">অনুল্লিখিত বা ত্রুটিপুর্ণ</string>
-  <string name="sim_enabler_need_disable_sim">সিমটি বন্ধ হয়ে যাবে। আপনি কি অবিরত রাখতে চান?</string>
-  <string name="sim_enabler_will_disable_sim_title">দৃষ্টি আকর্ষণ</string>
-  <string name="sim_enabler_need_switch_data_service">এই সিমটি বন্ধ হয়ে যাবে আর সিম <xliff:g id="slotid">%1$s</xliff:g> ইন্টারনেটের জন্য ব্যবহৃত হবে। আপনি কি নিশ্চিত আপনি অব্যাহত রাখতে চান?</string>
-  <string name="sim_enabler_airplane_on">এয়ারপ্লেন মোড চালু অবস্থায় এই অপারেশন সম্পাদন করা সম্ভব হচ্ছে না।</string>
-  <string name="sim_enabler_in_call">ফোন কলে থাকা অবস্থায় এই অপারেশনটি সম্পাদন সম্ভব নয়।</string>
-  <string name="sim_enabler_both_inactive">সবগুলো সংযোগ নিস্ক্রিয় করা সম্ভব নয়।</string>
-  <string name="sim_enabler_enabling">চালু হচ্ছে\u2026</string>
-  <string name="sim_enabler_disabling">নিস্ক্রিয় হচ্ছে\u2026</string>
-  <string name="sub_activate_success">সিম সক্রিয় করা হয়েছে।</string>
-  <string name="sub_activate_failed">সক্রিয়করণ ব্যর্থ হয়েছে।</string>
-  <string name="sub_deactivate_success">সিম নিস্ক্রিয় করা হয়েছে।</string>
-  <string name="sub_deactivate_failed">নিস্ক্রিয়করণ ব্যর্থ হয়েছে।</string>
-  <!-- Generic stuff used everywhere -->
-  <!-- Buttons -->
-  <!-- Key backlight -->
+    <!-- Fingerprint location message -->
+    <!-- Notification light settings -->
+    <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> হয় <xliff:g id="status" example="disabled">%2$s</xliff:g>।</string>
+    <string name="sim_disabled">নিষ্ক্রিয় করা হয়েছে</string>
+    <string name="sim_missing">অনুল্লিখিত বা ত্রুটিপুর্ণ</string>
+    <string name="sim_enabler_need_disable_sim">সিমটি বন্ধ হয়ে যাবে। আপনি কি অবিরত রাখতে চান?</string>
+    <string name="sim_enabler_will_disable_sim_title">দৃষ্টি আকর্ষণ</string>
+    <string name="sim_enabler_need_switch_data_service">এই সিমটি বন্ধ হয়ে যাবে আর সিম <xliff:g id="slotid">%1$s</xliff:g> ইন্টারনেটের জন্য ব্যবহৃত হবে। আপনি কি নিশ্চিত আপনি অব্যাহত রাখতে চান?</string>
+    <string name="sim_enabler_airplane_on">এয়ারপ্লেন মোড চালু অবস্থায় এই অপারেশন সম্পাদন করা সম্ভব হচ্ছে না।</string>
+    <string name="sim_enabler_in_call">ফোন কলে থাকা অবস্থায় এই অপারেশনটি সম্পাদন সম্ভব নয়।</string>
+    <string name="sim_enabler_both_inactive">সবগুলো সংযোগ নিস্ক্রিয় করা সম্ভব নয়।</string>
+    <string name="sim_enabler_enabling">চালু হচ্ছে\u2026</string>
+    <string name="sim_enabler_disabling">নিস্ক্রিয় হচ্ছে\u2026</string>
+    <string name="sub_activate_success">সিম সক্রিয় করা হয়েছে।</string>
+    <string name="sub_activate_failed">সক্রিয়করণ ব্যর্থ হয়েছে।</string>
+    <string name="sub_deactivate_success">সিম নিস্ক্রিয় করা হয়েছে।</string>
+    <string name="sub_deactivate_failed">নিস্ক্রিয়করণ ব্যর্থ হয়েছে।</string>
+    <!-- Generic stuff used everywhere -->
+    <!-- Buttons -->
+    <!-- Key backlight -->
+    <!-- Weather -->
+    <!-- Ambient Play -->
 </resources>
