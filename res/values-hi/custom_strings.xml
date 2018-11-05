@@ -15,15 +15,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Fingerprint location message -->
-  <!-- Notification light settings -->
-  <!-- Manual provisioning support -->
-  <!-- Generic stuff used everywhere -->
-  <!-- Buttons -->
-  <string name="hardware_keys_swipe_right_key_title">स्वाइप राइट</string>
-  <string name="hardware_keys_swipe_left_key_title">स्वाइप लेफ्ट</string>
-  <string name="hardware_keys_long_tap_key_title">लोंग टैप</string>
-  <string name="hardware_keys_swipe_tap_title">स्वाइप एक्शन</string>
-  <string name="hardware_keys_long_tap_title">लॉन्ग टैप एक्शन</string>
-  <!-- Key backlight -->
+    <!-- Fingerprint location message -->
+    <!-- Notification light settings -->
+    <!-- Manual provisioning support -->
+    <!-- Generic stuff used everywhere -->
+    <!-- Buttons -->
+    <string name="hardware_keys_swipe_right_key_title">स्वाइप राइट</string>
+    <string name="hardware_keys_swipe_left_key_title">स्वाइप लेफ्ट</string>
+    <string name="hardware_keys_long_tap_key_title">लोंग टैप</string>
+    <string name="hardware_keys_swipe_tap_title">स्वाइप एक्शन</string>
+    <string name="hardware_keys_long_tap_title">लॉन्ग टैप एक्शन</string>
+    <!-- Key backlight -->
+    <!-- Weather -->
+    <!-- Ambient Play -->
 </resources>

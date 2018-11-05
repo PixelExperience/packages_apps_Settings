@@ -15,10 +15,58 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Fingerprint location message -->
-  <!-- Notification light settings -->
-  <!-- Manual provisioning support -->
-  <!-- Generic stuff used everywhere -->
-  <!-- Buttons -->
-  <!-- Key backlight -->
+    <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">سنسور اثر انگشت را در جلوی تلفن خود پیدا کنید.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">سنسور اثر انگشت را در کناره سمت چپ تلفن خود پیدا کنید.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">سنسور اثر انگشت را در کناره سمت راست تلفن خود پیدا کنید.</string>
+    <!-- Notification light settings -->
+    <string name="lights_category_title">تنظیمات نور</string>
+    <string name="notification_light_title">چراغ اعلان‌</string>
+    <string name="battery_light_title">چراغ باتری</string>
+    <!-- Manual provisioning support -->
+    <string name="sim_disabled">غیرفعال</string>
+    <string name="sim_enabler_need_disable_sim">سیم‌کارت غیرفعال می شود. آیا مایلید ادامه دهید؟</string>
+    <string name="sim_enabler_will_disable_sim_title">توجه</string>
+    <string name="sim_enabler_need_switch_data_service">این سیم‌کارت غیر فعال شده و سیم <xliff:g id="slotid">%1$s</xliff:g> برای خدمات داده‌ها مورد استفاده قرار گیرد. آیا مطمئنید که می‌خواهید ادامه دهید؟</string>
+    <string name="sim_enabler_airplane_on">اجرای عملیات هنگام روشن بودن حالت هواپیما ممکن نیست.</string>
+    <string name="sim_enabler_in_call">اجرای عملیات در حین تماس ممکن نیست.</string>
+    <string name="sim_enabler_both_inactive">نمی‌توان تمام سیم‌کارت‌ها را غیرفعال کرد</string>
+    <string name="sim_enabler_enabling">در حال فعال‌سازی\u2026</string>
+    <string name="sim_enabler_disabling">در حال غیرفعال‌سازی\u2026</string>
+    <string name="sub_activate_success">سیم‌کارت فعال شد.</string>
+    <string name="sub_activate_failed">فعال‌سازی ناموفق بود.</string>
+    <string name="sub_deactivate_success">سیم‌کارت غیرفعال شد.</string>
+    <string name="sub_deactivate_failed">غیرفعال‌سازی ناموفق بود.</string>
+    <!-- Generic stuff used everywhere -->
+    <string name="reset">بازنشانی</string>
+    <!-- Buttons -->
+    <string name="button_pref_title">دکمه‌ها</string>
+    <string name="hardware_keys_home_key_title">دکمهٔ خانه</string>
+    <string name="hardware_keys_back_key_title">دکمهٔ بازگشت</string>
+    <string name="hardware_keys_menu_key_title">دکمهٔ فهرست</string>
+    <string name="hardware_keys_assist_key_title">دکمهٔ جست‌وجو</string>
+    <string name="hardware_keys_appswitch_key_title">دکمهٔ موارد اخیر</string>
+    <string name="hardware_keys_camera_key_title">دکمهٔ دوربین</string>
+    <string name="hardware_keys_short_press_title">عملکرد فشردن کوتاه‌مدت</string>
+    <string name="hardware_keys_long_press_title">عملکرد فشردن طولانی</string>
+    <string name="hardware_keys_double_tap_title">عملکرد دو بار زدن</string>
+    <string name="hardware_keys_action_nothing">بدون عمل</string>
+    <string name="hardware_keys_action_menu">گشودن/بستن منو</string>
+    <string name="hardware_keys_action_app_switch">تعویضگر برنامه‌های اخیر</string>
+    <string name="hardware_keys_action_search">دستیار جست‌وجو</string>
+    <string name="hardware_keys_action_voice_search">جست‌وجوی صوتی</string>
+    <string name="hardware_keys_action_in_app_search">جستجوی درون‌ برنامه‌ای</string>
+    <string name="hardware_keys_action_launch_camera">اجرای دوربین</string>
+    <string name="hardware_keys_action_sleep">خاموش کردن صفحه</string>
+    <string name="hardware_keys_action_last_app">آخرین برنامه</string>
+    <string name="hardware_keys_action_split_screen">تقسیم صفحه</string>
+    <string name="hardware_keys_swipe_right_key_title">کشیدن به راست</string>
+    <string name="hardware_keys_swipe_left_key_title">کشیدن به چپ</string>
+    <string name="hardware_keys_long_tap_key_title">ضربه‌ی طولانی</string>
+    <string name="hardware_keys_swipe_tap_title">عملکرد کشیدن</string>
+    <string name="hardware_keys_long_tap_title">عملکرد زدن طولانی</string>
+    <string name="button_wake_title">بیدار کردن دستگاه</string>
+    <!-- Key backlight -->
+    <!-- Weather -->
+    <!-- Ambient Play -->
 </resources>
