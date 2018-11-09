@@ -3,7 +3,8 @@
     android:id="@+id/fragment_history_menu_bottom"
     android:layout_width="match_parent"
     android:layout_height="180dp"
-    android:background="#ffffff"
+    android:background="?android:attr/colorBackground"
+    android:textColor="?android:attr/textColorPrimary"
     android:orientation="vertical">
 
     <com.android.settings.custom.ambient.history.AmbientPlayHistoryPreferenceEntryView
