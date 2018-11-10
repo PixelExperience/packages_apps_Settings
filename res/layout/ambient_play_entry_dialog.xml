@@ -30,15 +30,16 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:contentDescription="@string/ambient_play_history_dialog_play"
-            android:src="@drawable/ic_play_grey600_24dp" />
+            android:src="@drawable/ic_play" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
-            android:fontFamily="@sans-serif-medium"
-            android:text="@string/ambient_play_history_dialog_play" />
+            android:text="@string/ambient_play_history_dialog_play"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -55,14 +56,16 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:contentDescription="@string/ambient_play_history_dialog_search"
-            android:src="@drawable/ic_magnify_grey600_24dp" />
+            android:src="@drawable/ic_search" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
-            android:text="@string/ambient_play_history_dialog_search" />
+            android:text="@string/ambient_play_history_dialog_search"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -79,14 +82,16 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:contentDescription="@string/ambient_play_history_dialog_remove"
-            android:src="@drawable/ic_delete_grey600_24dp" />
+            android:src="@drawable/ic_delete" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
-            android:text="@string/ambient_play_history_dialog_remove" />
+            android:text="@string/ambient_play_history_dialog_remove"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout

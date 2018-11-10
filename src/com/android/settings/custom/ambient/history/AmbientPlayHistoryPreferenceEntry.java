@@ -40,7 +40,7 @@ class AmbientPlayHistoryPreferenceEntry extends Preference {
         this.artist = artist;
         setTitle(getSongTitle());
         setSummary(getArtistTitle() + " • " + getFormattedMatchTime());
-        setIcon(R.drawable.quantum_ic_music_note_grey600_24);
+        setIcon(R.drawable.ic_music_note);
     }
 
     void removePreference() {
