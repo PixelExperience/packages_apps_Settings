@@ -19,6 +19,7 @@ package com.android.settings.deviceinfo.firmwareversion;
 import android.os.Build;
 import android.support.annotation.VisibleForTesting;
 import android.text.BidiFormatter;
+import android.text.TextUtils;
 
 import com.android.settings.R;
 
@@ -47,7 +48,8 @@ public class BuildNumberDialogController {
     public void initialize() {
         
         StringBuilder sb = new StringBuilder();
-        sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
+        sb.append(BidiFormatter.getInstance().unicodeWrap(
+                TextUtils.isEmpty(Build.VENDOR.BUILD_NUMBER_OVERRIDE) ? Build.DISPLAY : Build.VENDOR.BUILD_NUMBER_OVERRIDE));
         String pixelExperienceVersion = getPixelExperienceVersion();
         if (!pixelExperienceVersion.equals("")){
             sb.append("\n");

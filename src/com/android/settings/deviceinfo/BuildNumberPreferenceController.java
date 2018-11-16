@@ -86,7 +86,8 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
         if (preference != null) {
             try {
                 StringBuilder sb = new StringBuilder();
-                sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
+                sb.append(BidiFormatter.getInstance().unicodeWrap(
+                        TextUtils.isEmpty(Build.VENDOR.BUILD_NUMBER_OVERRIDE) ? Build.DISPLAY : Build.VENDOR.BUILD_NUMBER_OVERRIDE));
                 String pixelExperienceVersion = getPixelExperienceVersion();
                 if (!pixelExperienceVersion.equals("")){
                     sb.append("\n");
