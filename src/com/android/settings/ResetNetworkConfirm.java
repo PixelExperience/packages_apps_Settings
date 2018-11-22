@@ -19,6 +19,7 @@ package com.android.settings;
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothManager;
 import android.content.ContentResolver;
@@ -29,10 +30,6 @@ import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.os.Looper;
-import android.os.Message;
 import android.os.RecoverySystem;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -69,16 +66,12 @@ import com.android.settingslib.bluetooth.LocalBluetoothManager;
  */
 public class ResetNetworkConfirm extends InstrumentedFragment {
 
-    private static final int MSG_RESTORE_APN_START = 1;
-    private static final int MSG_RESTORE_APN_COMPLETE = 2;
-    private HandlerThread mApnThread;
-    private RestoreApnHandler mRestoreApnHandler;
-    private RestoreCompleteHandler mRestoreCompleteHandler;
-
     private View mContentView;
     private int mSubId = SubscriptionManager.INVALID_SUBSCRIPTION_ID;
     @VisibleForTesting boolean mEraseEsim;
     @VisibleForTesting EraseEsimAsyncTask mEraseEsimTask;
+    private ResetNetworkAyncTask mResetNetworkTask;
+    private ProgressDialog mProgressDialog;
 
     /**
      * Async task used to erase all the eSIM profiles from the phone. If error happens during
@@ -113,6 +106,140 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
         }
     }
 
+    private static class ResetNetworkAyncTask extends AsyncTask<Void, Void, Boolean> {
+        private Context mContext;
+        private String mPackageName;
+        private ProgressDialog mProgressDialog;
+        private boolean mEraseESimCard;
+        private int mSubId = SubscriptionManager.INVALID_SUBSCRIPTION_ID;
+
+        ResetNetworkAyncTask(Context context, String packageName, int subId, boolean eraseESim,
+                             ProgressDialog progressDialog) {
+            mContext = context;
+            mPackageName = packageName;
+            mSubId = subId;
+            mEraseESimCard = eraseESim;
+            mProgressDialog = progressDialog;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            if (null != mProgressDialog) {
+                mProgressDialog.show();
+            }
+        }
+
+        @Override
+        protected void onPostExecute(Boolean succeeded) {
+            if (null != mProgressDialog && mProgressDialog.isShowing()) {
+                mProgressDialog.dismiss();
+                mProgressDialog = null;
+            }
+
+            if (succeeded) {
+                Toast.makeText(mContext, R.string.reset_network_complete_toast, Toast.LENGTH_SHORT)
+                        .show();
+            } else {
+                new AlertDialog.Builder(mContext)
+                        .setTitle(R.string.reset_esim_error_title)
+                        .setMessage(R.string.reset_esim_error_msg)
+                        .setPositiveButton(android.R.string.ok, null /* listener */)
+                        .show();
+            }
+        }
+
+        @Override
+        protected Boolean doInBackground(Void... params) {
+            ConnectivityManager connectivityManager = (ConnectivityManager)
+                    mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
+            if (connectivityManager != null) {
+                connectivityManager.factoryReset();
+            }
+
+            WifiManager wifiManager = (WifiManager)
+                    mContext.getSystemService(Context.WIFI_SERVICE);
+            if (wifiManager != null) {
+                wifiManager.factoryReset();
+            }
+
+            TelephonyManager telephonyManager = (TelephonyManager)
+                    mContext.getSystemService(Context.TELEPHONY_SERVICE);
+            if (telephonyManager != null) {
+                telephonyManager.factoryReset(mSubId);
+            }
+
+            NetworkPolicyManager policyManager = (NetworkPolicyManager)
+                    mContext.getSystemService(Context.NETWORK_POLICY_SERVICE);
+            if (policyManager != null) {
+                String subscriberId = telephonyManager.getSubscriberId(mSubId);
+                policyManager.factoryReset(subscriberId);
+            }
+
+            BluetoothManager btManager = (BluetoothManager)
+                    mContext.getSystemService(Context.BLUETOOTH_SERVICE);
+            if (btManager != null) {
+                BluetoothAdapter btAdapter = btManager.getAdapter();
+                if (btAdapter != null) {
+                    btAdapter.factoryReset();
+                    LocalBluetoothManager mLocalBtManager =
+                            LocalBluetoothManager.getInstance(mContext, null);
+                    if (mLocalBtManager != null) {
+                        CachedBluetoothDeviceManager cachedDeviceManager =
+                                mLocalBtManager.getCachedDeviceManager();
+                        cachedDeviceManager.clearAllDevices();
+                    }
+                }
+            }
+
+            ImsManager.getInstance(mContext,
+                    SubscriptionManager.getPhoneId(mSubId)).factoryReset();
+            // There has been issues when Sms raw table somehow stores orphan
+            // fragments. They lead to garbled message when new fragments come
+            // in and combied with those stale ones. In case this happens again,
+            // user can reset all network settings which will clean up this table.
+            cleanUpSmsRawTable(mContext);
+            restoreDefaultApn(mContext);
+
+            if (mEraseESimCard) {
+                return RecoverySystem.wipeEuiccData(mContext, mPackageName);
+            }
+
+            return true;
+        }
+
+        private void cleanUpSmsRawTable(Context context) {
+            ContentResolver resolver = context.getContentResolver();
+            Uri uri = Uri.withAppendedPath(Telephony.Sms.CONTENT_URI,
+                    "raw/permanentDelete");
+            resolver.delete(uri, null, null);
+        }
+
+        /**
+         * Restore APN settings to default.
+         */
+        private void restoreDefaultApn(Context context) {
+            Uri uri = Uri.parse(ApnSettings.RESTORE_CARRIERS_URI);
+
+            if (SubscriptionManager.isUsableSubIdValue(mSubId)) {
+                uri = Uri.withAppendedPath(uri, "subId/" + String.valueOf(mSubId));
+            }
+
+            ContentResolver resolver = context.getContentResolver();
+            resolver.delete(uri, null, null);
+        }
+    }
+
+    private ProgressDialog getProgressDialog() {
+        final ProgressDialog progressDialog = new ProgressDialog(getActivity());
+        progressDialog.setIndeterminate(true);
+        progressDialog.setCancelable(false);
+        progressDialog.setTitle(
+                getActivity().getString(R.string.reset_network_progress_title));
+        progressDialog.setMessage(
+                getActivity().getString(R.string.reset_network_progress_text));
+        return progressDialog;
+    }
+
     /**
      * The user has gone through the multiple confirmation, so now we go ahead
      * and reset the network settings to its factory-default state.
@@ -124,68 +251,15 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
             if (Utils.isMonkeyRunning()) {
                 return;
             }
-            // TODO maybe show a progress screen if this ends up taking a while and won't let user
-            // go back until the tasks finished.
+
             Context context = getActivity();
-
-            ConnectivityManager connectivityManager = (ConnectivityManager)
-                    context.getSystemService(Context.CONNECTIVITY_SERVICE);
-            if (connectivityManager != null) {
-                connectivityManager.factoryReset();
-            }
-
-            WifiManager wifiManager = (WifiManager)
-                    context.getSystemService(Context.WIFI_SERVICE);
-            if (wifiManager != null) {
-                wifiManager.factoryReset();
-            }
-
-            TelephonyManager telephonyManager = (TelephonyManager)
-                    context.getSystemService(Context.TELEPHONY_SERVICE);
-            if (telephonyManager != null) {
-                telephonyManager.factoryReset(mSubId);
-            }
-
-            NetworkPolicyManager policyManager = (NetworkPolicyManager)
-                    context.getSystemService(Context.NETWORK_POLICY_SERVICE);
-            if (policyManager != null) {
-                String subscriberId = telephonyManager.getSubscriberId(mSubId);
-                policyManager.factoryReset(subscriberId);
-            }
-
-            BluetoothManager btManager = (BluetoothManager)
-                    context.getSystemService(Context.BLUETOOTH_SERVICE);
-            if (btManager != null) {
-                BluetoothAdapter btAdapter = btManager.getAdapter();
-                if (btAdapter != null) {
-                    btAdapter.factoryReset();
-                    LocalBluetoothManager mLocalBtManager =
-                                      LocalBluetoothManager.getInstance(context, null);
-                    if (mLocalBtManager != null) {
-                        CachedBluetoothDeviceManager cachedDeviceManager =
-                                            mLocalBtManager.getCachedDeviceManager();
-                        cachedDeviceManager.clearAllDevices();
-                    }
-                }
-            }
-
-            ImsManager.getInstance(context,
-                     SubscriptionManager.getPhoneId(mSubId)).factoryReset();
-            esimFactoryReset(context, context.getPackageName());
-            // There has been issues when Sms raw table somehow stores orphan
-            // fragments. They lead to garbled message when new fragments come
-            // in and combied with those stale ones. In case this happens again,
-            // user can reset all network settings which will clean up this table.
-            cleanUpSmsRawTable(context);
-            restoreDefaultApn(context);
+            mProgressDialog = getProgressDialog();
+            mResetNetworkTask = new ResetNetworkAyncTask(context, context.getPackageName(),
+                    mSubId, mEraseEsim, mProgressDialog);
+            mResetNetworkTask.execute();
         }
-    };
 
-    private void cleanUpSmsRawTable(Context context) {
-        ContentResolver resolver = context.getContentResolver();
-        Uri uri = Uri.withAppendedPath(Telephony.Sms.CONTENT_URI, "raw/permanentDelete");
-        resolver.delete(uri, null, null);
-    }
+    };
 
     @VisibleForTesting
     void esimFactoryReset(Context context, String packageName) {
@@ -193,73 +267,6 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
             mEraseEsimTask = new EraseEsimAsyncTask(context, packageName);
             mEraseEsimTask.execute();
         }
-    }
-
-    private class RestoreCompleteHandler extends Handler {
-        private Context mContext;
-        public RestoreCompleteHandler(Context context) {
-            super();
-            mContext = context;
-        }
-
-        @Override
-        public void handleMessage(Message msg) {
-            switch(msg.what) {
-                case MSG_RESTORE_APN_COMPLETE:
-                    Toast.makeText(mContext, R.string.reset_network_complete_toast,
-                            Toast.LENGTH_SHORT).show();
-                    break;
-            }
-        }
-    }
-
-    private class RestoreApnHandler extends Handler {
-        private Context mContext;
-        private Handler mUiHandler;
-
-        public RestoreApnHandler(Looper looper, Context context,
-                                 RestoreCompleteHandler handler) {
-            super(looper);
-            mContext = context;
-            this.mUiHandler = handler;
-        }
-
-        @Override
-        public void handleMessage(Message msg) {
-            switch(msg.what) {
-                case MSG_RESTORE_APN_START:
-                    Uri uri = Uri.parse(ApnSettings.RESTORE_CARRIERS_URI);
-                    if (SubscriptionManager.isUsableSubIdValue(mSubId)) {
-                        uri = Uri.withAppendedPath(uri, "subId/" + String.valueOf(mSubId));
-                    }
-                    ContentResolver resolver = mContext.getContentResolver();
-                    resolver.delete(uri, null, null);
-                    mUiHandler.sendEmptyMessage(MSG_RESTORE_APN_COMPLETE);
-                    break;
-            }
-        }
-    }
-    /**
-     * Restore APN settings to default.
-     */
-    private void restoreDefaultApn(Context context) {
-        if (mApnThread == null) {
-            mApnThread = new HandlerThread("restore default apn");
-            if (mApnThread == null) {
-                Toast.makeText(context, R.string.reset_default_apn_failed,
-                        Toast.LENGTH_SHORT).show();
-                return;
-            }
-            mApnThread.start();
-        }
-        if (mRestoreCompleteHandler == null) {
-            mRestoreCompleteHandler = new RestoreCompleteHandler(context);
-        }
-        if (mRestoreApnHandler == null) {
-            mRestoreApnHandler = new RestoreApnHandler(
-                    mApnThread.getLooper(), context, mRestoreCompleteHandler);
-        }
-        mRestoreApnHandler.sendEmptyMessage(MSG_RESTORE_APN_START);
     }
 
     /**
@@ -308,9 +315,17 @@ public class ResetNetworkConfirm extends InstrumentedFragment {
             mEraseEsimTask.cancel(true /* mayInterruptIfRunning */);
             mEraseEsimTask = null;
         }
-        if (mApnThread != null) {
-            mApnThread.quit();
+
+        if (null != mProgressDialog && mProgressDialog.isShowing()) {
+            mProgressDialog.dismiss();
+            mProgressDialog = null;
         }
+
+        if (null != mResetNetworkTask && !mResetNetworkTask.isCancelled()) {
+            mResetNetworkTask.cancel(true /* mayInterruptIfRunning */);
+            mResetNetworkTask = null;
+        }
+
         super.onDestroy();
     }
 
