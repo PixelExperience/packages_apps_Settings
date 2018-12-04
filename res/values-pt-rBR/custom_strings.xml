@@ -99,7 +99,7 @@
     <string name="ambient_play_history_dialog_play">Escutar agora</string>
     <string name="ambient_play_history_dialog_search">Procurar na web</string>
     <string name="ambient_play_history_dialog_remove">Remover</string>
-    <string name="ambient_play_history_empty">O histórico de música está vazio</string>
+    <string name="ambient_play_history_empty">O histórico está vazio</string>
     <string name="ambient_play_history_menu_remove_all">Limpar</string>
     <string name="ambient_play_history_menu_add_to_home">Adicionar à tela inicial</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Você tem certeza?</string>

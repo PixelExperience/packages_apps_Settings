@@ -17,6 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
     <!-- Notification light settings -->
+    <string name="lights_category_title">प्रकाश सेटिंग्ज</string>
     <!-- Manual provisioning support -->
     <string name="sim_disabled">निष्क्रिय केले</string>
     <string name="sim_missing">गहाळ किंवा सदोष</string>

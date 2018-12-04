@@ -83,5 +83,24 @@
     <string name="backlight_summary_enabled_with_timeout">Уключана на <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Уключана</string>
     <!-- Weather -->
+    <string name="weather_title">Надвор\'е</string>
+    <string name="weather_unit">Адзінкі тэмпературы</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Паказаць бліжэйшыя песні</string>
+    <string name="ambient_play_lockscreen_title">Паказваць песні на экране блакавання</string>
+    <string name="ambient_play_notifications_title">Апавяшчэнні</string>
+    <string name="ambient_play_switch_bar_on">Уключыць</string>
+    <string name="ambient_play_switch_bar_off">Адключыць</string>
+    <string name="ambient_play_help_text">Калі музыка гуляе побач, вы можаце бачыць назву песні і імя выканаўцы. Тэрмін службы батарэі і выкарыстанне дадзеных можа паўплываць, калі гэта дазволена.</string>
+    <string name="ambient_play_history">Чарга прайгравання</string>
+    <string name="ambient_play_loading_data">Загрузка даных...</string>
+    <string name="ambient_play_history_today">Сёння</string>
+    <string name="ambient_play_history_yesterday">Учора</string>
+    <string name="ambient_play_history_dialog_play">Прайграць зараз</string>
+    <string name="ambient_play_history_dialog_search">Пошук у Інтэрнэце</string>
+    <string name="ambient_play_history_dialog_remove">Выдаліць</string>
+    <string name="ambient_play_history_empty">У гісторыі пакуль няма песень</string>
+    <string name="ambient_play_history_menu_remove_all">Выдаліць усё</string>
+    <string name="ambient_play_history_menu_add_to_home">Дадаць на Галоўны экран</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Вы ўпэўнены?</string>
 </resources>

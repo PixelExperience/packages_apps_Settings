@@ -86,11 +86,20 @@
     <string name="weather_title">Météo</string>
     <string name="weather_unit">Unité de température</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Afficher les titres diffusés à proximité</string>
+    <string name="ambient_play_lockscreen_title">Afficher les musiques sur l\'écran de verrouillage</string>
+    <string name="ambient_play_notifications_title">Notifications</string>
+    <string name="ambient_play_switch_bar_on">Activé</string>
+    <string name="ambient_play_switch_bar_off">Désactivé</string>
+    <string name="ambient_play_help_text">Quand une musique est joué à proximité, vous pouvez voir le titre et l\'artiste. L\'utilisation de la batterie et les données mobile peuvent être affectés.</string>
+    <string name="ambient_play_history">Historique des titres</string>
     <string name="ambient_play_loading_data">Chargement des données…</string>
     <string name="ambient_play_history_today">Aujourd\'hui</string>
     <string name="ambient_play_history_yesterday">Hier</string>
+    <string name="ambient_play_history_dialog_play">Lire maintenant</string>
     <string name="ambient_play_history_dialog_search">Rechercher sur le web</string>
     <string name="ambient_play_history_dialog_remove">Supprimer</string>
+    <string name="ambient_play_history_empty">L\'historique est vide</string>
     <string name="ambient_play_history_menu_remove_all">Tout supprimer</string>
     <string name="ambient_play_history_menu_add_to_home">Ajouter à l\'écran d\'accueil</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Êtes-vous sûr ?</string>

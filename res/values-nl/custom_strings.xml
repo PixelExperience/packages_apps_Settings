@@ -83,5 +83,24 @@
     <string name="backlight_summary_enabled_with_timeout">Ingeschakeld voor <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Ingeschakeld</string>
     <!-- Weather -->
+    <string name="weather_title">Weer</string>
+    <string name="weather_unit">Temperatuur eenheid</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Toon liedjes in de buurt</string>
+    <string name="ambient_play_lockscreen_title">Toon nummers op vergrendelscherm</string>
+    <string name="ambient_play_notifications_title">Notificaties</string>
+    <string name="ambient_play_switch_bar_on">Aan</string>
+    <string name="ambient_play_switch_bar_off">Uit</string>
+    <string name="ambient_play_help_text">Wanneer muziek in de buurt wordt afgespeeld, kunt u de naam en artiest van het nummer zien. De levensduur van de batterij en het gegevensgebruik kunnen worden beïnvloed als dit is ingeschakeld.</string>
+    <string name="ambient_play_history">Nu Afspelen Geschiedenis</string>
+    <string name="ambient_play_loading_data">Data laden…</string>
+    <string name="ambient_play_history_today">Vandaag</string>
+    <string name="ambient_play_history_yesterday">Gisteren</string>
+    <string name="ambient_play_history_dialog_play">Speel nu</string>
+    <string name="ambient_play_history_dialog_search">Zoek op het web</string>
+    <string name="ambient_play_history_dialog_remove">Verwijder</string>
+    <string name="ambient_play_history_empty">Muziek geschiedenis is leeg</string>
+    <string name="ambient_play_history_menu_remove_all">Verwijder alles</string>
+    <string name="ambient_play_history_menu_add_to_home">Aan Home Screen toevoegen</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Ben je zeker?</string>
 </resources>

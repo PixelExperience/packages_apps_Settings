@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">전화의 앞면에서 지문 센서를 찾습니다.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">휴대 전화 앞면에서 지문 센서를 찾습니다.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">전화의 좌측 옆면에서 지문 센서를 찾습니다.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">전화의 우측 옆면에서 지문 센서를 찾습니다.</string>
     <!-- Notification light settings -->
@@ -86,4 +86,21 @@
     <string name="weather_title">날씨</string>
     <string name="weather_unit">온도 단위</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">모든 노래를 표시</string>
+    <string name="ambient_play_lockscreen_title">잠금화면에 음악 표시</string>
+    <string name="ambient_play_notifications_title">알림</string>
+    <string name="ambient_play_switch_bar_on">켜짐</string>
+    <string name="ambient_play_switch_bar_off">꺼짐</string>
+    <string name="ambient_play_help_text">음악이 근처에서 재생 될 때 노래 이름과 아티스트를 볼 수 있습니다. 이 기능을 사용하면 배터리 수명 및 데이터 사용에 영향을받을 수 있습니다.</string>
+    <string name="ambient_play_history">지금 재생 중 목록</string>
+    <string name="ambient_play_loading_data">데이터 로드 중…</string>
+    <string name="ambient_play_history_today">오늘</string>
+    <string name="ambient_play_history_yesterday">어제</string>
+    <string name="ambient_play_history_dialog_play">지금 재생</string>
+    <string name="ambient_play_history_dialog_search">웹에서 검색</string>
+    <string name="ambient_play_history_dialog_remove">삭제</string>
+    <string name="ambient_play_history_empty">히스토리가 비어 있습니다.</string>
+    <string name="ambient_play_history_menu_remove_all">모두 삭제</string>
+    <string name="ambient_play_history_menu_add_to_home">홈 화면에 추가</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">계속 하시겠습니까?</string>
 </resources>

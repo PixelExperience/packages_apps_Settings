@@ -16,16 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Löydä sormenjälki tunnistin puhelimesi etuosasta.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Löydä sormenjälkitunnistin puhelimesi etuosasta.</string>
     <!-- Notification light settings -->
     <string name="lights_category_title">Valaistus asetukset</string>
     <string name="notification_light_title">Ilmoitusvalo</string>
     <string name="battery_light_title">Akun valo</string>
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> on <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">ei käytössä</string>
     <string name="sim_missing">SIM puuttuu tai ei ole asennettu oikein</string>
+    <string name="sim_enabler_need_disable_sim">SIM-kortti poistetaan käytöstä. Haluatko jatkaa?</string>
     <string name="sim_enabler_will_disable_sim_title">SIM kortti poistetaan käytöstä</string>
+    <string name="sim_enabler_need_switch_data_service">Tämä SIM-kortti poistetaan käytöstä ja SIM <xliff:g id="slotid">%1$s</xliff:g> datapalvelut otetaan käyttöön. Haluatko varmasti jatkaa?</string>
     <string name="sim_enabler_airplane_on">Ei toimi, koska lentokone tila käyttössä</string>
+    <string name="sim_enabler_in_call">Toimintoa ei voida suorittaa puhelun aikana.</string>
     <string name="sim_enabler_both_inactive">Ei voi poistaa kaikkia SIM kortteja käytöstä</string>
     <string name="sim_enabler_enabling">SIM kortteja aktivoidaan</string>
     <string name="sim_enabler_disabling">Sim kortteja poistetaan</string>
@@ -56,6 +60,11 @@
     <string name="hardware_keys_action_sleep">Sammuta näyttö</string>
     <string name="hardware_keys_action_last_app">Viimeinen sovellus</string>
     <string name="hardware_keys_action_split_screen">Jaa näyttö</string>
+    <string name="hardware_keys_swipe_right_key_title">Pyyhkäisy oikealle</string>
+    <string name="hardware_keys_swipe_left_key_title">Pyyhkäisy vasemmalle</string>
+    <string name="hardware_keys_long_tap_key_title">Pitkä painallus</string>
+    <string name="hardware_keys_swipe_tap_title">Pyyhkäisyn toiminto</string>
+    <string name="hardware_keys_long_tap_title">Pitkän painalluksen toiminto</string>
     <string name="button_wake_title">Herätä laite</string>
     <string name="camera_sleep_on_release_title">Vilauta näyttöä</string>
     <string name="camera_sleep_on_release_summary">Puolikas painallus pitää näytön päällä vain kun näppäintä pidetään alhaalla</string>
@@ -72,5 +81,22 @@
     <string name="backlight_summary_enabled_with_timeout">Käytössä <xliff:g id="timeout">%s</xliff:g> ajan</string>
     <string name="backlight_summary_enabled">Käytössä</string>
     <!-- Weather -->
+    <string name="weather_title">Sää</string>
+    <string name="weather_unit">Lämpötilan yksikkö</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Näytä lähellä olevat kappaleet</string>
+    <string name="ambient_play_lockscreen_title">Näytä kappaleet lukitusnäytöss\'</string>
+    <string name="ambient_play_notifications_title">Ilmoitukset</string>
+    <string name="ambient_play_help_text">Kun musiikkia soi lähettyvillä, näet kappaleen nimen ja artistin. Tämä voi vaikuttaa akun kestoon ja datan käyttöön jos käytössä.</string>
+    <string name="ambient_play_history">Nyt Soi -historia</string>
+    <string name="ambient_play_loading_data">Ladataan tietoja…</string>
+    <string name="ambient_play_history_today">Tänään</string>
+    <string name="ambient_play_history_yesterday">Eilen</string>
+    <string name="ambient_play_history_dialog_play">Toista nyt</string>
+    <string name="ambient_play_history_dialog_search">Hae netistä</string>
+    <string name="ambient_play_history_dialog_remove">Poista</string>
+    <string name="ambient_play_history_empty">Musiikkihistoria on tyhjä</string>
+    <string name="ambient_play_history_menu_remove_all">Poista kaikki</string>
+    <string name="ambient_play_history_menu_add_to_home">Lisää aloitusnäytölle</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Oletko varma?</string>
 </resources>

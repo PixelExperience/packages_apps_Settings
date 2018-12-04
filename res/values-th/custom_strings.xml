@@ -16,11 +16,91 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">วางนิ้วมือบนเซนเซอร์อ่านลายนิ้วมือที่ด้านหน้าเครื่องของคุณ</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">วางนิ้วมือบนเซนเซอร์อ่านลายนิ้วมือที่ด้านซ้ายของเครื่องคุณ</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">วางนิ้วมือบนเซนเซอร์อ่านลายนิ้วมือที่ด้านขวาของเครื่องคุณ</string>
     <!-- Notification light settings -->
+    <string name="lights_category_title">ตั้งค่าความสว่าง</string>
+    <string name="notification_light_title">ไฟแจ้งเตือน</string>
+    <string name="battery_light_title">ไฟแจ้งเตือนแบตเตอรี่</string>
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> คือ <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">ปิดการใช้งาน</string>
+    <string name="sim_missing">สูญหาย หรือ ชำรุด</string>
+    <string name="sim_enabler_need_disable_sim">ซิมการ์ดจะถูกปิดการใช้งาน คุณต้องการทำต่อหรือไม่?</string>
+    <string name="sim_enabler_will_disable_sim_title">โปรดทราบ</string>
+    <string name="sim_enabler_need_switch_data_service">ซิมการ์ดนี้จะถูกจะปิดการใช้งาน และซิม <xliff:g id="slotid">%1$s</xliff:g> จะถูกใช้สำหรับการใช้งานข้อมูลมือถือ คุณแน่ใจที่จะทำต่อหรือไม่</string>
+    <string name="sim_enabler_airplane_on">ไม่สามารถดำเนินการได้ในขณะที่เปิดโหมดเครื่องบิน</string>
+    <string name="sim_enabler_in_call">ไม่สามารถดำเนินการได้ในขณะใช้สายอยู่</string>
+    <string name="sim_enabler_both_inactive">ไม่สามารถปิดการใช้งานทุกซิมการ์ดได้</string>
+    <string name="sim_enabler_enabling">กำลังเปิดการใช้งาน\u2026</string>
+    <string name="sim_enabler_disabling">กำลังปิดการใช้งาน\u2026</string>
+    <string name="sub_activate_success">การลงทะเบียนซิมการ์ดสำเร็จ</string>
+    <string name="sub_activate_failed">การลงทะเบียนใช้งานล้มเหลว</string>
+    <string name="sub_deactivate_success">ปิดการใช้งานซิมการ์ดแล้ว</string>
+    <string name="sub_deactivate_failed">การปิดการลงทะเบียนใช้งานไม่สำเร็จ</string>
     <!-- Generic stuff used everywhere -->
+    <string name="reset">รีเซ็ต/เริ่มทำงานใหม่</string>
     <!-- Buttons -->
+    <string name="button_pref_title">ปุ่ม</string>
+    <string name="hardware_keys_home_key_title">ปุ่มโฮม</string>
+    <string name="hardware_keys_back_key_title">ปุ่มกลับ</string>
+    <string name="hardware_keys_menu_key_title">ปุ่มเมนู</string>
+    <string name="hardware_keys_assist_key_title">ปุ่มค้นหา</string>
+    <string name="hardware_keys_appswitch_key_title">ปุ่มแอปล่าสุด</string>
+    <string name="hardware_keys_camera_key_title">ปุ่มเปิดกล้อง</string>
+    <string name="hardware_keys_short_press_title">กดสั้นๆ</string>
+    <string name="hardware_keys_long_press_title">กดค้างไว้</string>
+    <string name="hardware_keys_double_tap_title">การแตะสองครั้ง</string>
+    <string name="hardware_keys_action_nothing">ไม่มีการกระทำใดๆ</string>
+    <string name="hardware_keys_action_menu">เปิด/ปิด เมนู</string>
+    <string name="hardware_keys_action_app_switch">ตัวสลับการใช้งานแอปล่าสุด</string>
+    <string name="hardware_keys_action_search">ผู้ช่วยช่วยค้นหา</string>
+    <string name="hardware_keys_action_voice_search">ค้นหาด้วยเสียง</string>
+    <string name="hardware_keys_action_in_app_search">ค้นหาภายในแอป</string>
+    <string name="hardware_keys_action_launch_camera">เปิดกล้อง</string>
+    <string name="hardware_keys_action_sleep">ปิดหน้าจอ</string>
+    <string name="hardware_keys_action_last_app">แอปล่าสุด</string>
+    <string name="hardware_keys_action_split_screen">แบ่งหน้าจอ</string>
+    <string name="hardware_keys_swipe_right_key_title">ปัดไปทางขวา</string>
+    <string name="hardware_keys_swipe_left_key_title">ปัดไปทางซ้าย</string>
+    <string name="hardware_keys_long_tap_key_title">แตะค้างไว้</string>
+    <string name="hardware_keys_swipe_tap_title">การปัด</string>
+    <string name="hardware_keys_long_tap_title">การแตะค้าง</string>
+    <string name="button_wake_title">ปลุกอุปกรณ์</string>
+    <string name="camera_sleep_on_release_title">มองหน้าจอ</string>
+    <string name="camera_sleep_on_release_summary">การกดเพียงครึ่งหนึ่งจะทำให้หน้าจอเปิดค้างไว้ โดยเฉพาะขณะที่กดปุ่มค้างไว้</string>
+    <string name="camera_launch_title">เปิดกล้อง</string>
+    <string name="camera_launch_summary">กดค้างไว้และปล่อย จะเป็นการเปิดใช้งานกล้อง</string>
     <!-- Key backlight -->
+    <string name="button_backlight_title">แสงไฟหลังหน้าจอ</string>
+    <string name="button_backlight_enabled">แสงไฟปุ่มกด</string>
+    <string name="button_backlight_only_when_pressed_title">แสงไฟปุ่มกดจะสว่างเมื่อกดปุ่มเท่านั้น</string>
+    <string name="button_backlight_seekbar_title">ปุ่มปรับระดับความสว่าง</string>
+    <string name="backlight_timeout_title">หมดเวลาแสงไฟหน้าจอ</string>
+    <string name="backlight_timeout_unlimited">ห้ามทำการปิด</string>
+    <string name="backlight_summary_disabled">ปิดการใช้งาน</string>
+    <string name="backlight_summary_enabled_with_timeout">เปิดการใช้งานสำหรับ <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">เปิดการใช้งาน</string>
     <!-- Weather -->
+    <string name="weather_title">สภาพอากาศ</string>
+    <string name="weather_unit">หน่วยอุณหภูมิ</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">แสดงเพลงที่ใกล้เคียง</string>
+    <string name="ambient_play_lockscreen_title">แสดงข้อมูลเพลงบนหน้าจอล็อค</string>
+    <string name="ambient_play_notifications_title">การแจ้งเตือน</string>
+    <string name="ambient_play_switch_bar_on">เปิด</string>
+    <string name="ambient_play_switch_bar_off">ปิด</string>
+    <string name="ambient_play_help_text">เมื่อเพลงที่กำลังเล่นอยู่บริเวณใกล้เคียง คุณสามารถเห็นชื่อเพลงและศิลปิน อายุการใช้งานแบตเตอรี่และการใช้ข้อมูลอาจได้รับผลกระทบหากถูกเปิดใช้งาน</string>
+    <string name="ambient_play_history">แสดงประวัติ กำลังเล่นในขณะนี้</string>
+    <string name="ambient_play_loading_data">กำลังโหลดข้อมูล...</string>
+    <string name="ambient_play_history_today">วันนี้</string>
+    <string name="ambient_play_history_yesterday">เมื่อวานนี้</string>
+    <string name="ambient_play_history_dialog_play">เล่นในขณะนี้</string>
+    <string name="ambient_play_history_dialog_search">ค้น​หาบน​เว็บ​ไซ​ต์</string>
+    <string name="ambient_play_history_dialog_remove">ลบออก</string>
+    <string name="ambient_play_history_empty">ประวัติเพลงของคุณว่างเปล่า</string>
+    <string name="ambient_play_history_menu_remove_all">ลบออกทั้งหมด</string>
+    <string name="ambient_play_history_menu_add_to_home">เพิ่มไปยังหน้าจอหลัก</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">คุณแน่ใจหรือไม่ ?</string>
 </resources>

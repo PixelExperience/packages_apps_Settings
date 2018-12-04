@@ -20,7 +20,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Tentukan lokasi sensor sidik jari di sisi kiri telepon anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Tentukan lokasi sensor sidik jari di sisi kanan telepon anda.</string>
     <!-- Notification light settings -->
-    <string name="lights_category_title">Pengaturan lampu</string>
+    <string name="lights_category_title">Pengaturan cahaya</string>
     <string name="notification_light_title">Lampu notifikasi</string>
     <string name="battery_light_title">Lampu baterai</string>
     <!-- Manual provisioning support -->

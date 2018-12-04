@@ -87,19 +87,19 @@
     <string name="weather_unit">Unità della temperatura</string>
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Visualizza i brani nelle vicinanze</string>
-    <string name="ambient_play_lockscreen_title">Mostra i brani sulla schermata di blocco</string>
+    <string name="ambient_play_lockscreen_title">Mostra i brani nella schermata di blocco</string>
     <string name="ambient_play_notifications_title">Notifiche</string>
-    <string name="ambient_play_switch_bar_on">On</string>
-    <string name="ambient_play_switch_bar_off">Off</string>
-    <string name="ambient_play_help_text">Quando c\'è musica nelle vicinanze verranno mostrati il titolo e l\'artista del brano. Se attivo, la batteria e i dati mobili potrebbero venire consumati più velocemente.</string>
-    <string name="ambient_play_history">Cronologia dei brani</string>
+    <string name="ambient_play_switch_bar_on">Acceso</string>
+    <string name="ambient_play_switch_bar_off">Spento</string>
+    <string name="ambient_play_help_text">Quando della musica è in riproduzione nelle vicinanze, puoi vedere il nome del brano e l\'artista. La durata della batteria e l\'utilizzo dei dati potrebbero essere compromessi se abilitato.</string>
+    <string name="ambient_play_history">Riproducendo la cronologia dei brani</string>
     <string name="ambient_play_loading_data">Caricamento dati…</string>
     <string name="ambient_play_history_today">Oggi</string>
     <string name="ambient_play_history_yesterday">Ieri</string>
     <string name="ambient_play_history_dialog_play">Riproduci ora</string>
     <string name="ambient_play_history_dialog_search">Cerca online</string>
-    <string name="ambient_play_history_dialog_remove">Elimina</string>
-    <string name="ambient_play_history_empty">La cronologia è vuota</string>
+    <string name="ambient_play_history_dialog_remove">Rimuovi</string>
+    <string name="ambient_play_history_empty">La cronologia della musica è vuota</string>
     <string name="ambient_play_history_menu_remove_all">Rimuovi tutto</string>
     <string name="ambient_play_history_menu_add_to_home">Aggiungi alla schermata home</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Sei sicuro?</string>
