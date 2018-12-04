@@ -86,4 +86,21 @@
     <string name="weather_title">Vreme</string>
     <string name="weather_unit">Enote za temperaturo</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Prikaži skladbe v bližini</string>
+    <string name="ambient_play_lockscreen_title">Prikaži skladbe na zaklenjenem zaslon</string>
+    <string name="ambient_play_notifications_title">Obvestila</string>
+    <string name="ambient_play_switch_bar_on">Vklopljeno</string>
+    <string name="ambient_play_switch_bar_off">Izklopljeno</string>
+    <string name="ambient_play_help_text">Ob predvajanju glasbe v bližini, lahko vidite ime skladbe in izvajalca. Lahko vpliva na življenjsko dobo akumulatorja in porabo podatkov, če je omogočeno.</string>
+    <string name="ambient_play_history">Zgodovina trenutnega predvajanja</string>
+    <string name="ambient_play_loading_data">Nalaganje podatkov …</string>
+    <string name="ambient_play_history_today">Danes</string>
+    <string name="ambient_play_history_yesterday">Včeraj</string>
+    <string name="ambient_play_history_dialog_play">Predvajaj</string>
+    <string name="ambient_play_history_dialog_search">Išči po spletu</string>
+    <string name="ambient_play_history_dialog_remove">Odstrani</string>
+    <string name="ambient_play_history_empty">Zgodovina glasbe je prazna</string>
+    <string name="ambient_play_history_menu_remove_all">Odstrani vse</string>
+    <string name="ambient_play_history_menu_add_to_home">Dodaj na začetni zaslon</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Ali ste prepričani?</string>
 </resources>

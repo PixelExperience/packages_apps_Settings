@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">指紋感應器位於手機正面。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">指紋傳感器位於手機正面。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">指紋感應器位於手機左側。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">指紋感應器位於手機右側。</string>
     <!-- Notification light settings -->
@@ -68,13 +68,13 @@
     <string name="hardware_keys_swipe_tap_title">滑動操作</string>
     <string name="hardware_keys_long_tap_title">長按動作</string>
     <string name="button_wake_title">喚醒裝置</string>
-    <string name="camera_sleep_on_release_title">預覽螢幕</string>
-    <string name="camera_sleep_on_release_summary">僅有當按住按鍵時，半按即可保持螢幕開啟。</string>
+    <string name="camera_sleep_on_release_title">螢幕窺視</string>
+    <string name="camera_sleep_on_release_summary">僅當按鈕被按下的時候，半按將會保持螢幕點亮</string>
     <string name="camera_launch_title">啟動相機</string>
     <string name="camera_launch_summary">長按後放開將啟動相機</string>
     <!-- Key backlight -->
     <string name="button_backlight_title">背光</string>
-    <string name="button_backlight_enabled">開啟按鍵背光</string>
+    <string name="button_backlight_enabled">照亮按鈕</string>
     <string name="button_backlight_only_when_pressed_title">僅在按下按鍵時點亮指示燈</string>
     <string name="button_backlight_seekbar_title">按鍵亮度</string>
     <string name="backlight_timeout_title">背光逾時</string>
@@ -86,21 +86,21 @@
     <string name="weather_title">天氣</string>
     <string name="weather_unit">溫度單位</string>
     <!-- Ambient Play -->
-    <string name="ambient_play_summary">智慧識別歌曲</string>
-    <string name="ambient_play_lockscreen_title">在鎖定螢幕上顯示鄰近播放中的歌曲</string>
+    <string name="ambient_play_summary">顯示附近歌曲</string>
+    <string name="ambient_play_lockscreen_title">在鎖定螢幕上顯示歌曲</string>
     <string name="ambient_play_notifications_title">通知</string>
     <string name="ambient_play_switch_bar_on">開啟</string>
     <string name="ambient_play_switch_bar_off">關閉</string>
     <string name="ambient_play_help_text">自動識別鄰近播放的歌曲，您可以看到歌曲名稱及創作者。啟用時，電池及數據的使用可能會受到些影響。</string>
-    <string name="ambient_play_history">播放歷史</string>
-    <string name="ambient_play_loading_data">載入數據中...</string>
-    <string name="ambient_play_history_today">今天</string>
-    <string name="ambient_play_history_yesterday">昨天</string>
-    <string name="ambient_play_history_dialog_play">正在播放</string>
-    <string name="ambient_play_history_dialog_search">在網路上搜尋</string>
+    <string name="ambient_play_history">正在播放歷史</string>
+    <string name="ambient_play_loading_data">資料載入中...</string>
+    <string name="ambient_play_history_today">今日</string>
+    <string name="ambient_play_history_yesterday">尋日</string>
+    <string name="ambient_play_history_dialog_play">現在播放</string>
+    <string name="ambient_play_history_dialog_search">在網絡上搜尋</string>
     <string name="ambient_play_history_dialog_remove">移除</string>
     <string name="ambient_play_history_empty">音樂歷史為空</string>
-    <string name="ambient_play_history_menu_remove_all">刪除所有內容</string>
+    <string name="ambient_play_history_menu_remove_all">移除全部</string>
     <string name="ambient_play_history_menu_add_to_home">新增至主畫面</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">你確定要這樣做嗎？</string>
 </resources>

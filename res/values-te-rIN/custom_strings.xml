@@ -16,8 +16,22 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">మీ ఫోన్ వెనుకవైపున వేలిముద్ర సెన్సార్‌ని గుర్తించండి.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">మీ ఫోన్ ఎడమ వైపున వేలిముద్ర సెన్సార్‌ని గుర్తించండి.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">మీ ఫోన్ కుడి వైపున వేలిముద్ర సెన్సార్‌ని గుర్తించండి.</string>
     <!-- Notification light settings -->
+    <string name="lights_category_title">లైట్ సెట్టింగులు</string>
+    <string name="notification_light_title">నోటిఫికేషన్ లైట్</string>
+    <string name="battery_light_title">బ్యాటరీ కాంతి</string>
     <!-- Manual provisioning support -->
+    <string name="sim_disabled">డిసేబుల్</string>
+    <string name="sim_missing">పోయిన లేదా లోపాలున్న</string>
+    <string name="sim_enabler_need_disable_sim">SIM కార్డ్ నిలిపివేయబడుతుంది. మీరు కొనసాగించాలని అనుకుంటున్నారా?</string>
+    <string name="sim_enabler_will_disable_sim_title">గమనిక</string>
+    <string name="sim_enabler_need_switch_data_service">ఈ SIM కార్డ్ నిలిపివేయబడుతుంది మరియు డేటా సేవల కొరకు SIM <xliff:g id="slotid">%1$s</xliff:g> ఉపయోగించబడుతుంది. కొనసాగించాలని మీరు నిర్ధారించుకున్నారా?</string>
+    <string name="sim_enabler_airplane_on">విమాన మోడ్ ఆన్లో ఉన్నప్పుడు ఆపరేషన్ నిర్వహించడం సాధ్యపడదు.</string>
+    <string name="sim_enabler_in_call">కాల్ లో ఉన్నప్పుడు ఆపరేషన్ నిర్వహించడం సాధ్యపడదు.</string>
+    <string name="sim_enabler_both_inactive">అన్ని SIM కార్డులను నిలిపివేయడం కుదరదు</string>
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->
     <!-- Key backlight -->

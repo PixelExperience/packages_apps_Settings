@@ -16,10 +16,23 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Locate the fingerprint sensor on the left side of your phone.</string>
     <!-- Notification light settings -->
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_will_disable_sim_title">கவனம்</string>
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->
+    <string name="button_pref_title">பட்டன்கள்</string>
+    <string name="hardware_keys_home_key_title">முகப்பு பட்டன்</string>
+    <string name="hardware_keys_back_key_title">பின் பட்டன்</string>
+    <string name="hardware_keys_menu_key_title">மெனு பட்டன்</string>
+    <string name="hardware_keys_assist_key_title">தேடல் பட்டன்</string>
+    <string name="hardware_keys_appswitch_key_title">சமீபத்திய பட்டன்</string>
+    <string name="hardware_keys_camera_key_title">கேமரா பட்டன்</string>
+    <string name="hardware_keys_short_press_title">சுருக்க அழுத்த செயல்பாடு</string>
+    <string name="hardware_keys_long_press_title">நீண்ட அழுத்த செயல்பாடு</string>
+    <string name="hardware_keys_action_nothing">செயல்பாடு இல்லை</string>
+    <string name="hardware_keys_action_menu">பட்டியலை திற/மூடு</string>
     <!-- Key backlight -->
     <!-- Weather -->
     <!-- Ambient Play -->

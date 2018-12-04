@@ -16,8 +16,15 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Phone ke aage ki oar fingerprint ko dhunde</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Phone ke bayein taraf fingerprint sensor ko dhunde</string>
     <!-- Notification light settings -->
+    <string name="lights_category_title">प्रकाश सेटिंग्स</string>
+    <string name="notification_light_title">अधिसूचना प्रकाश</string>
+    <string name="battery_light_title">बैटरी प्रकाश</string>
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">निर्योग्य</string>
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->
     <string name="hardware_keys_swipe_right_key_title">स्वाइप राइट</string>

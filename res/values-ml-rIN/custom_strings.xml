@@ -16,11 +16,56 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">നിങ്ങളുടെ ഫോണിന്റെ മുൻഭാഗത്ത് ഫിംഗർപ്രിന്റ് സെൻസർ കണ്ടെത്തുക.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">നിങ്ങളുടെ ഫോണിന്റെ ഇടത് ഭാഗത്ത് ഫിംഗർപ്രിന്റ് സെൻസർ കണ്ടെത്തുക.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">നിങ്ങളുടെ ഫോണിന്റെ വലത് ഭാഗത്ത് ഫിംഗർപ്രിന്റ് സെൻസർ കണ്ടെത്തുക.</string>
     <!-- Notification light settings -->
+    <string name="lights_category_title">പ്രകാശ ക്രമീകരണങ്ങള്‍</string>
+    <string name="notification_light_title">അറിയിപ്പ് ലൈറ്റ്</string>
+    <string name="battery_light_title">ബാറ്ററി വെളിച്ചം</string>
     <!-- Manual provisioning support -->
+    <string name="sim_disabled">പ്രവര്‍ത്തനരഹിതമാക്കുക</string>
+    <string name="sim_enabler_need_disable_sim">SIM കാർഡ് നിര്‍ജീവമാക്കുന്നതാണ്. നിങ്ങൾക്ക് തുടരണോ?</string>
+    <string name="sim_enabler_will_disable_sim_title">ശ്രദ്ധിക്കുക</string>
+    <string name="sim_enabler_need_switch_data_service">ഈ SIM അപ്രാപ്തമാക്കുകയും ഡാറ്റ സേവനങ്ങൾക്കായി SIM <xliff:g id="slotid">%1$s</xliff:g> ഉപയോഗിക്കുന്നതുമാണ്. നിങ്ങൾക്ക്‌ തുടരണമെന്ന് ഉറപ്പാണോ?</string>
+    <string name="sim_enabler_airplane_on">എയര്‍പ്ലെയിന്‍ മോഡ് ഓണ്‍ ആയിരിക്കുന്ന സമയത്ത് പ്രവർത്തനം നടത്താൻ കഴിയുന്നില്ല.</string>
+    <string name="sim_enabler_in_call">കോളില്‍ ആയിരിക്കുന്ന സമയത്ത് പ്രവർത്തനം നടത്താൻ കഴിയുന്നില്ല.</string>
+    <string name="sim_enabler_both_inactive">എല്ലാ SIM കാർഡുകളും അപ്രാപ്തമാക്കുവാന്‍ കഴിയില്ല</string>
+    <string name="sim_enabler_enabling">സജീവമാക്കുന്നു\u2026</string>
+    <string name="sim_enabler_disabling">നിർജീവമാക്കുന്നു\u2026</string>
+    <string name="sub_activate_success">SIM സജീവമാക്കി.</string>
+    <string name="sub_activate_failed">സജീവമാക്കൽ പരാജയപ്പെട്ടു.</string>
+    <string name="sub_deactivate_success">SIM നിർജീവമാക്കി.</string>
+    <string name="sub_deactivate_failed">നിർജീവമാക്കല്‍ പരാജയപ്പെട്ടു.</string>
     <!-- Generic stuff used everywhere -->
+    <string name="reset">പുനഃക്രമീകരിക്കുക</string>
     <!-- Buttons -->
+    <string name="button_pref_title">ബട്ടണുകൾ</string>
+    <string name="hardware_keys_home_key_title">ഹോം ബട്ടൺ</string>
+    <string name="hardware_keys_back_key_title">ബാക്ക് ബട്ടൺ</string>
+    <string name="hardware_keys_menu_key_title">മെനു ബട്ടൺ</string>
+    <string name="hardware_keys_assist_key_title">തിരച്ചിൽ ബട്ടൺ</string>
+    <string name="hardware_keys_appswitch_key_title">റീസന്റ് ബട്ടൻ</string>
+    <string name="hardware_keys_camera_key_title">കാമറ ബട്ടൺ</string>
+    <string name="hardware_keys_action_nothing">ഒന്നും ചെയ്യാനില്ല</string>
+    <string name="hardware_keys_action_menu">തുറക്കൽ/അടയ്ക്കൽ മെനു</string>
+    <string name="hardware_keys_action_search">തിരച്ചിൽ സഹായി</string>
+    <string name="hardware_keys_action_voice_search">ശബ്‌ദം ഉപയോഗിച്ചുള്ള തിരയൽ</string>
+    <string name="hardware_keys_action_in_app_search">ആപ്പിനുള്ളിൽ തിരയുക</string>
+    <string name="hardware_keys_action_launch_camera">ക്യാമറ സമാരംഭിക്കുക</string>
+    <string name="hardware_keys_action_sleep">സ്ക്രീൻ ഓഫ്‌ ചെയ്യുക</string>
+    <string name="hardware_keys_action_last_app">അവസാന ആപ്പ്</string>
+    <string name="hardware_keys_swipe_right_key_title">വലത്തേക്ക് സ്വൈപ്പ് ചെയ്യുക</string>
+    <string name="hardware_keys_swipe_left_key_title">ഇടത്തേക്ക് സ്വൈപ് ചെയ്യുക</string>
+    <string name="button_wake_title">ഉപകരണം ഉണർത്തുക</string>
+    <string name="camera_sleep_on_release_summary">A half press will keep the screen on only while the button is held down</string>
+    <string name="camera_launch_title">Launch camera</string>
+    <string name="camera_launch_summary">A longpress and release will launch camera</string>
     <!-- Key backlight -->
+    <string name="button_backlight_title">Backlight</string>
+    <string name="button_backlight_enabled">Illuminate buttons</string>
+    <string name="button_backlight_only_when_pressed_title">Illuminate buttons only when pressed</string>
+    <string name="button_backlight_seekbar_title">Button brightness</string>
     <!-- Weather -->
     <!-- Ambient Play -->
 </resources>

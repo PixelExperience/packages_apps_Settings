@@ -86,4 +86,21 @@
     <string name="weather_title">હવામાન</string>
     <string name="weather_unit">તાપમાન એકમ</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">નજીકના ગીતો બતાવો</string>
+    <string name="ambient_play_lockscreen_title">લૉક સ્ક્રીન પર ગીતો બતાવો</string>
+    <string name="ambient_play_notifications_title">સૂચના</string>
+    <string name="ambient_play_switch_bar_on">ચાલુ</string>
+    <string name="ambient_play_switch_bar_off">બંધ</string>
+    <string name="ambient_play_help_text">જ્યારે સંગીત નજીકમાં વાગી રહ્યું છે, ત્યારે તમે ગીતનું નામ અને કલાકાર જોઈ શકો છો. બેટરી જીવન અને ડેટા વપરાશ પ્રભાવિત થઈ શકે છે જો આ ચાલુ હસે.</string>
+    <string name="ambient_play_history">હવે પાચડના વાગડીએ છીયે</string>
+    <string name="ambient_play_loading_data">ડેટા લોડ થાય છે…</string>
+    <string name="ambient_play_history_today">આજે</string>
+    <string name="ambient_play_history_yesterday">ગઈકાલ</string>
+    <string name="ambient_play_history_dialog_play">હમણા વગાડો</string>
+    <string name="ambient_play_history_dialog_search">વેબ પર શોધો</string>
+    <string name="ambient_play_history_dialog_remove">દુર કરો</string>
+    <string name="ambient_play_history_empty">સંગીત ઇતિહાસ ખાલી છે</string>
+    <string name="ambient_play_history_menu_remove_all">બધું દૂર કરો</string>
+    <string name="ambient_play_history_menu_add_to_home">હોમ સ્ક્રીન પર ઉમેરો</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">શું તમે ખાતરી કરો છો?</string>
 </resources>

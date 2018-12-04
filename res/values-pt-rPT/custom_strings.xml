@@ -16,16 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Localize o sensor de imp. digitais na parte da frente do seu telemóvel.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Localize o sensor de imp. digitais na lateral esquerda do seu telemóvel.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Localize o sensor de imp. digitais na lateral direita do seu telemóvel.</string>
     <!-- Notification light settings -->
+    <string name="lights_category_title">Definições de Luz</string>
     <string name="notification_light_title">Luz de notificação</string>
     <string name="battery_light_title">Luz da bateria</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> está <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-    <string name="sim_disabled">desactivado</string>
+    <string name="sim_disabled">desativado</string>
     <string name="sim_missing">em falta ou com defeito</string>
-    <string name="sim_enabler_need_disable_sim">O cartão SIM será desativado. Quer continuar?</string>
+    <string name="sim_enabler_need_disable_sim">O cartão SIM será desativado. Deseja continuar?</string>
     <string name="sim_enabler_will_disable_sim_title">Atenção</string>
-    <string name="sim_enabler_need_switch_data_service">Este cartão SIM será desativado e o cartão SIM <xliff:g id="slotid">%1$s</xliff:g> será usado para os serviços de dados. Tem a certeza que deseja continuar?</string>
+    <string name="sim_enabler_need_switch_data_service">Este cartão SIM será desativado e o cartão SIM <xliff:g id="slotid">%1$s</xliff:g> será usado para o serviço de dados. Tem a certeza que deseja continuar?</string>
     <string name="sim_enabler_airplane_on">Não é possível executar a operação, enquanto o modo avião estiver ativado.</string>
     <string name="sim_enabler_in_call">Não é possível executar a operação durante a chamada.</string>
     <string name="sim_enabler_both_inactive">Não é possível desativar todos os cartões SIM</string>
@@ -58,6 +62,11 @@
     <string name="hardware_keys_action_sleep">Desligar o ecrã</string>
     <string name="hardware_keys_action_last_app">Última aplicação</string>
     <string name="hardware_keys_action_split_screen">Dividir ecrã</string>
+    <string name="hardware_keys_swipe_right_key_title">Deslizar para a direita</string>
+    <string name="hardware_keys_swipe_left_key_title">Deslizar para a esquerda</string>
+    <string name="hardware_keys_long_tap_key_title">Toque longo</string>
+    <string name="hardware_keys_swipe_tap_title">Ação de deslizamento</string>
+    <string name="hardware_keys_long_tap_title">Ação de toque longo</string>
     <string name="button_wake_title">Acordar o dispositivo</string>
     <string name="camera_sleep_on_release_title">Apresentação rápida</string>
     <string name="camera_sleep_on_release_summary">Pressionar até metade irá manter o ecrã ligado apenas enquanto o botão estiver pressionado</string>
@@ -74,5 +83,21 @@
     <string name="backlight_summary_enabled_with_timeout">Ativada por <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Ativada</string>
     <!-- Weather -->
+    <string name="weather_title">Meteorologia</string>
+    <string name="weather_unit">Unidade de temperatura</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Mostrar músicas próximas</string>
+    <string name="ambient_play_lockscreen_title">Mostrar músicas no ecrã de bloqueio</string>
+    <string name="ambient_play_notifications_title">Notificações</string>
+    <string name="ambient_play_switch_bar_on">Ligado</string>
+    <string name="ambient_play_switch_bar_off">Desligado</string>
+    <string name="ambient_play_loading_data">A carregar dados…</string>
+    <string name="ambient_play_history_today">Hoje</string>
+    <string name="ambient_play_history_yesterday">Ontem</string>
+    <string name="ambient_play_history_dialog_play">Tocar agora</string>
+    <string name="ambient_play_history_dialog_search">Procurar na Web</string>
+    <string name="ambient_play_history_dialog_remove">Remover</string>
+    <string name="ambient_play_history_empty">O histórico de músicas está vazio</string>
+    <string name="ambient_play_history_menu_remove_all">Remover todas</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Tens a certeza?</string>
 </resources>
