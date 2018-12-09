@@ -18,11 +18,16 @@ package com.android.settings.widget;
 
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
+import android.app.ActivityManager;
 import android.content.Context;
+import android.content.om.IOverlayManager;
+import android.content.om.OverlayInfo;
 import android.content.res.TypedArray;
 import android.graphics.Rect;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.os.ServiceManager;
+import android.os.RemoteException;
 import android.support.annotation.ColorInt;
 import android.support.annotation.StringRes;
 import android.support.annotation.VisibleForTesting;
@@ -88,6 +93,8 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
     private EnforcedAdmin mEnforcedAdmin = null;
     private String mMetricsTag;
 
+    private IOverlayManager mOverlayManager;
+    private int mCurrentUserId;
 
     public SwitchBar(Context context) {
         this(context, null);
@@ -105,6 +112,10 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
         super(context, attrs, defStyleAttr, defStyleRes);
 
         LayoutInflater.from(context).inflate(R.layout.switch_bar, this);
+
+        mOverlayManager = IOverlayManager.Stub.asInterface(
+                ServiceManager.getService(Context.OVERLAY_SERVICE));
+        mCurrentUserId = ActivityManager.getCurrentUser();
 
         final TypedArray a = context.obtainStyledAttributes(attrs, XML_ATTRIBUTES);
         int switchBarMarginStart = (int) a.getDimension(0, 0);
@@ -157,8 +168,26 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
 
     public void setTextViewLabelAndBackground(boolean isChecked) {
         mLabel = getResources().getString(isChecked ? mOnTextId : mOffTextId);
-        setBackgroundColor(isChecked ? mBackgroundActivatedColor : mBackgroundColor);
+
+        if (isUsingDarkTheme()) {
+            setBackgroundColor(isChecked ?
+                    getResources().getColor(R.color.switch_bar_bg_activated_dark) :
+                    getResources().getColor(R.color.switch_bar_bg_deactivated_dark));
+        } else {
+            setBackgroundColor(isChecked ? mBackgroundActivatedColor : mBackgroundColor);
+        }
         updateText();
+    }
+
+    private boolean isUsingDarkTheme() {
+        OverlayInfo themeInfo = null;
+        try {
+            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dark",
+                    mCurrentUserId);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return themeInfo != null && themeInfo.isEnabled();
     }
 
     public void setSwitchBarText(int onText, int offText) {
