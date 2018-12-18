@@ -17,10 +17,28 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Localitza el sensor d\'empremta al frontal del teu telèfon.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Localitza el sensor d\'empremta al costat esquerre del teu telèfon.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Localitza el sensor d\'empremta al costat dret del teu telèfon.</string>
     <!-- Notification light settings -->
+    <string name="lights_category_title">Configuració del LED</string>
     <string name="notification_light_title">Llum de notificació</string>
     <string name="battery_light_title">Llum de la bateria</string>
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> és <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">deshabilitada</string>
+    <string name="sim_missing">absent o defectuosa</string>
+    <string name="sim_enabler_need_disable_sim">És deshabilitarà la targeta SIM. Voleu continuar?</string>
+    <string name="sim_enabler_will_disable_sim_title">Atenció</string>
+    <string name="sim_enabler_need_switch_data_service">Aquesta SIM es deshabilitarà i la SIM <xliff:g id="slotid">%1$s</xliff:g> es destinarà a serveis de dades. Estàs segur que vols continuar?</string>
+    <string name="sim_enabler_airplane_on">No es pot realitzar aquesta operació mentrestant el mode avió està activat.</string>
+    <string name="sim_enabler_in_call">No es pot realitzar aquesta operació durant una trucada.</string>
+    <string name="sim_enabler_both_inactive">No es poden deshabilitar totes les targetes SIM</string>
+    <string name="sim_enabler_enabling">Activant\u2026</string>
+    <string name="sim_enabler_disabling">Desactivant\u2026</string>
+    <string name="sub_activate_success">SIM activada.</string>
+    <string name="sub_activate_failed">L\'activació ha fallat.</string>
+    <string name="sub_deactivate_success">SIM desactivada.</string>
+    <string name="sub_deactivate_failed">La desactivació ha fallat.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Restableix</string>
     <!-- Buttons -->
@@ -44,6 +62,11 @@
     <string name="hardware_keys_action_sleep">Apaga la pantalla</string>
     <string name="hardware_keys_action_last_app">Darrera aplicació</string>
     <string name="hardware_keys_action_split_screen">Pantalla dividida</string>
+    <string name="hardware_keys_swipe_right_key_title">Llisca a la dreta</string>
+    <string name="hardware_keys_swipe_left_key_title">Llisca a l\'esquerra</string>
+    <string name="hardware_keys_long_tap_key_title">Pulsació llarga</string>
+    <string name="hardware_keys_swipe_tap_title">Acció en lliscar</string>
+    <string name="hardware_keys_long_tap_title">Acció amb pulsació llarga</string>
     <string name="button_wake_title">Encén el dispositiu</string>
     <string name="camera_sleep_on_release_title">Cop d\'ull a la pantalla</string>
     <string name="camera_sleep_on_release_summary">Una mitja pressió mantindrà la pantalla encesa només mentre el botó es mantingui apretat</string>
@@ -60,9 +83,27 @@
     <string name="backlight_summary_enabled_with_timeout">Activada durant <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Activada</string>
     <!-- Weather -->
+    <string name="weather_title">El temps</string>
+    <string name="weather_unit">Unitat de temperatura</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Mostra cançons properes</string>
+    <string name="ambient_play_lockscreen_title">Mostra cançons a la pantalla de bloqueig</string>
+    <string name="ambient_play_notifications_title">Notificacions</string>
+    <string name="ambient_play_switch_bar_on">Activat</string>
+    <string name="ambient_play_switch_bar_off">Desactivat</string>
+    <string name="ambient_play_help_text">Quan la música s\'està reproduint a prop, pots veure el nom de la cançó i l\'artista. La vida útil de la bateria i l\'ús de dades es poden veure afectats si està habilitat.</string>
+    <string name="ambient_play_history">Historial de reproducció</string>
+    <string name="ambient_play_loading_data">S\'estan carregant les dades…</string>
+    <string name="ambient_play_history_today">Avui</string>
+    <string name="ambient_play_history_yesterday">Ahir</string>
+    <string name="ambient_play_history_dialog_play">Reprodueix ara</string>
+    <string name="ambient_play_history_dialog_search">Cerca al web</string>
+    <string name="ambient_play_history_dialog_remove">Elimina</string>
     <string name="ambient_play_history_empty">L\'historial de música és buit</string>
     <string name="ambient_play_history_menu_remove_all">Suprimeix-ho tot</string>
     <string name="ambient_play_history_menu_add_to_home">Afegeix a la pantalla d\'inici</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Estàs segur?</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Desbloquejament facial automàtic</string>
+    <string name="face_auto_unlock_summary">No veure la pantalla de bloqueig després de desbloquejament facial</string>
 </resources>

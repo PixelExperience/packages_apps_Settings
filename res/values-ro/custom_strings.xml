@@ -87,7 +87,7 @@
     <string name="weather_unit">Unitate de temperatură</string>
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Arată toate melodiile din preajmă</string>
-    <string name="ambient_play_lockscreen_title">Afișează melodiile pe ecranul blocat</string>
+    <string name="ambient_play_lockscreen_title">Afișează melodiile pe ecranul blocat </string>
     <string name="ambient_play_notifications_title">Notificări</string>
     <string name="ambient_play_switch_bar_on">Pornit</string>
     <string name="ambient_play_switch_bar_off">Oprit</string>
@@ -103,4 +103,7 @@
     <string name="ambient_play_history_menu_remove_all">Eliminare totală</string>
     <string name="ambient_play_history_menu_add_to_home">Adăugați pe ecranul de pornire</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Sunteți sigur?</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Deblocare automată cu fața</string>
+    <string name="face_auto_unlock_summary">Deblocare ecran după recunoașterea feței</string>
 </resources>

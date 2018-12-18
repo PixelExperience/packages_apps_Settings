@@ -91,6 +91,8 @@
     <string name="ambient_play_notifications_title">Notificações</string>
     <string name="ambient_play_switch_bar_on">Ligado</string>
     <string name="ambient_play_switch_bar_off">Desligado</string>
+    <string name="ambient_play_help_text">Quando estiver a tocar música nas proximidades, poderá ver o nome da música e o artista. A duração de bateria e dados móveis poderá ser afectada se esta opção estiver activada.</string>
+    <string name="ambient_play_history">Agora a tocar história</string>
     <string name="ambient_play_loading_data">A carregar dados…</string>
     <string name="ambient_play_history_today">Hoje</string>
     <string name="ambient_play_history_yesterday">Ontem</string>
@@ -99,5 +101,7 @@
     <string name="ambient_play_history_dialog_remove">Remover</string>
     <string name="ambient_play_history_empty">O histórico de músicas está vazio</string>
     <string name="ambient_play_history_menu_remove_all">Remover todas</string>
+    <string name="ambient_play_history_menu_add_to_home">Adicionar ao ecrã principal</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Tens a certeza?</string>
+    <!-- Face auto unlock -->
 </resources>

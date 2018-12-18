@@ -103,4 +103,5 @@
     <string name="ambient_play_history_menu_remove_all">Видалити все</string>
     <string name="ambient_play_history_menu_add_to_home">Додати на головний екран</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Ви впевнені? </string>
+    <!-- Face auto unlock -->
 </resources>

@@ -16,11 +16,35 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Hanapin ang fingerprint sensor sa harap ng iyong telepono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Hanapin ang fingerprint sensor sa kaliwang bahagi ng iyong telepono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Hanapin ang fingerprint sensor sa kanang bahagi ng iyong telepono.</string>
     <!-- Notification light settings -->
     <!-- Manual provisioning support -->
+    <string name="sim_missing">nawawala o sira</string>
+    <string name="sim_enabler_need_disable_sim">Ang SIM card ay madi-deactivate. Gusto mo bang magpatuloy?</string>
+    <string name="sim_enabler_will_disable_sim_title">Atensyon</string>
+    <string name="sim_enabler_need_switch_data_service">Ang SIM na ito ay madi-disable at ang SIM <xliff:g id="slotid">%1$s</xliff:g> ay gagamitin para sa data services. Sigurado ka bang gusto mong magpatuloy?</string>
+    <string name="sim_enabler_airplane_on">Hindi magagawa ang operasyon habang naka-on ang airplane mode.</string>
+    <string name="sim_enabler_both_inactive">Hindi ma-disable ang lahat ng mga SIM cards</string>
+    <string name="sub_activate_success">Na-activate na ang SIM.</string>
+    <string name="sub_deactivate_success">Ang SIM ay naka-deactivate na.</string>
     <!-- Generic stuff used everywhere -->
+    <string name="reset">I-reset</string>
     <!-- Buttons -->
+    <string name="hardware_keys_action_nothing">Walang aksyon</string>
+    <string name="hardware_keys_action_menu">Buksan/isara ang menu</string>
+    <string name="hardware_keys_action_launch_camera">Buksan ang camera</string>
+    <string name="hardware_keys_action_sleep">Patayin ang screen</string>
+    <string name="hardware_keys_action_last_app">Huling app</string>
+    <string name="hardware_keys_long_tap_key_title">Mahabang pindot</string>
+    <string name="button_wake_title">Buksan ang device</string>
     <!-- Key backlight -->
     <!-- Weather -->
     <!-- Ambient Play -->
+    <string name="ambient_play_history_today">Ngayong araw</string>
+    <string name="ambient_play_history_yesterday">Kahapon</string>
+    <string name="ambient_play_history_dialog_play">Patugtugin</string>
+    <string name="ambient_play_history_dialog_remove">Tanggalin</string>
+    <!-- Face auto unlock -->
 </resources>

@@ -103,4 +103,5 @@
     <string name="ambient_play_history_menu_remove_all">全て解除</string>
     <string name="ambient_play_history_menu_add_to_home">ホーム画面に追加</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">よろしいですか?</string>
+    <!-- Face auto unlock -->
 </resources>

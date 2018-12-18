@@ -77,7 +77,7 @@
     <string name="button_backlight_enabled">Osvetli gumbe</string>
     <string name="button_backlight_only_when_pressed_title">Osvetli gumbe samo ob pritisku</string>
     <string name="button_backlight_seekbar_title">Svetlost gumbov</string>
-    <string name="backlight_timeout_title">Časovna omejitev osvetlitve</string>
+    <string name="backlight_timeout_title">Čas osvetlitve</string>
     <string name="backlight_timeout_unlimited">Ne izklopi</string>
     <string name="backlight_summary_disabled">Onemogočena</string>
     <string name="backlight_summary_enabled_with_timeout">Omogočena za <xliff:g id="timeout">%s</xliff:g></string>
@@ -103,4 +103,7 @@
     <string name="ambient_play_history_menu_remove_all">Odstrani vse</string>
     <string name="ambient_play_history_menu_add_to_home">Dodaj na začetni zaslon</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Ali ste prepričani?</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Samodejni odklep s prepoznavo obraza</string>
+    <string name="face_auto_unlock_summary">Opusti zaklenjen zaslon po odklepu s prepoznavo obraza</string>
 </resources>

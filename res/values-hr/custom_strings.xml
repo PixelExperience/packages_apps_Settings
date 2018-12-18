@@ -85,4 +85,5 @@
     <string name="weather_title">Vrijeme</string>
     <string name="weather_unit">Jedinica temperature</string>
     <!-- Ambient Play -->
+    <!-- Face auto unlock -->
 </resources>

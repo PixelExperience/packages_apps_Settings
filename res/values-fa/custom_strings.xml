@@ -24,10 +24,12 @@
     <string name="notification_light_title">چراغ اعلان‌</string>
     <string name="battery_light_title">چراغ باتری</string>
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> هست <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">غیرفعال</string>
+    <string name="sim_missing">مفقود یا معیوب</string>
     <string name="sim_enabler_need_disable_sim">سیم‌کارت غیرفعال می شود. آیا مایلید ادامه دهید؟</string>
     <string name="sim_enabler_will_disable_sim_title">توجه</string>
-    <string name="sim_enabler_need_switch_data_service">این سیم‌کارت غیر فعال شده و سیم <xliff:g id="slotid">%1$s</xliff:g> برای خدمات داده‌ها مورد استفاده قرار گیرد. آیا مطمئنید که می‌خواهید ادامه دهید؟</string>
+    <string name="sim_enabler_need_switch_data_service">این سیم‌کارت غیر فعال شده و سیم <xliff:g id="slotid">%1$s</xliff:g> برای خدمات داده‌ها مورد استفاده قرار می گیرد. آیا مطمئنید که می‌خواهید ادامه دهید؟</string>
     <string name="sim_enabler_airplane_on">اجرای عملیات هنگام روشن بودن حالت هواپیما ممکن نیست.</string>
     <string name="sim_enabler_in_call">اجرای عملیات در حین تماس ممکن نیست.</string>
     <string name="sim_enabler_both_inactive">نمی‌توان تمام سیم‌کارت‌ها را غیرفعال کرد</string>
@@ -66,7 +68,36 @@
     <string name="hardware_keys_swipe_tap_title">عملکرد کشیدن</string>
     <string name="hardware_keys_long_tap_title">عملکرد زدن طولانی</string>
     <string name="button_wake_title">بیدار کردن دستگاه</string>
+    <string name="camera_sleep_on_release_summary">تا زمانی که دکمه پایین نگه داشته شده، یک نیمه فشار صفحه نمایش را روشن نگه میدارد</string>
+    <string name="camera_launch_title">اجرای دوربین</string>
+    <string name="camera_launch_summary">یک فشار طولانی و سپس رها کردن دوربین را اجرا می‌کند</string>
     <!-- Key backlight -->
+    <string name="button_backlight_title">نور پس زمینه</string>
+    <string name="button_backlight_enabled">دکمه های روشن</string>
+    <string name="button_backlight_only_when_pressed_title">دکمه ها را تنها زمانی که لمس شدند، روشن کن</string>
+    <string name="button_backlight_seekbar_title">روشنایی دکمه</string>
+    <string name="backlight_timeout_title">مدت زمان روشن بودن</string>
+    <string name="backlight_summary_disabled">غیرفعال</string>
+    <string name="backlight_summary_enabled_with_timeout">برای <xliff:g id="timeout">%s</xliff:g> فعال شد</string>
+    <string name="backlight_summary_enabled">فعال است</string>
     <!-- Weather -->
+    <string name="weather_title">آب و هوا</string>
+    <string name="weather_unit">واحد دما</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_lockscreen_title">نمایش آهنگ ها روی صفحه قفل</string>
+    <string name="ambient_play_notifications_title">اعلان‌ها</string>
+    <string name="ambient_play_switch_bar_on">روشن</string>
+    <string name="ambient_play_switch_bar_off">خاموش</string>
+    <string name="ambient_play_history">تاریخچه پخش کنونی</string>
+    <string name="ambient_play_loading_data">در حال بارگذاری داده‌ها…</string>
+    <string name="ambient_play_history_today">امروز</string>
+    <string name="ambient_play_history_yesterday">دیروز</string>
+    <string name="ambient_play_history_dialog_play">پخش</string>
+    <string name="ambient_play_history_dialog_search">جستجو در وب</string>
+    <string name="ambient_play_history_dialog_remove">حذف</string>
+    <string name="ambient_play_history_empty">تاریخچه موسیقی خالی است</string>
+    <string name="ambient_play_history_menu_remove_all">حذف همه</string>
+    <string name="ambient_play_history_menu_add_to_home">افزودن به صفحه اصلی</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">آیا مطمئنید؟</string>
+    <!-- Face auto unlock -->
 </resources>

@@ -77,7 +77,7 @@
     <string name="button_backlight_enabled">แสงไฟปุ่มกด</string>
     <string name="button_backlight_only_when_pressed_title">แสงไฟปุ่มกดจะสว่างเมื่อกดปุ่มเท่านั้น</string>
     <string name="button_backlight_seekbar_title">ปุ่มปรับระดับความสว่าง</string>
-    <string name="backlight_timeout_title">หมดเวลาแสงไฟหน้าจอ</string>
+    <string name="backlight_timeout_title">เวลาหมดของแสงไฟ</string>
     <string name="backlight_timeout_unlimited">ห้ามทำการปิด</string>
     <string name="backlight_summary_disabled">ปิดการใช้งาน</string>
     <string name="backlight_summary_enabled_with_timeout">เปิดการใช้งานสำหรับ <xliff:g id="timeout">%s</xliff:g></string>
@@ -103,4 +103,7 @@
     <string name="ambient_play_history_menu_remove_all">ลบออกทั้งหมด</string>
     <string name="ambient_play_history_menu_add_to_home">เพิ่มไปยังหน้าจอหลัก</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">คุณแน่ใจหรือไม่ ?</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">ปลดล็อคใบหน้าอัตโนมัติ</string>
+    <string name="face_auto_unlock_summary">ยกเลิกหน้าจอล็อคหลังจากทำการปลดล็อคด้วยใบหน้า</string>
 </resources>

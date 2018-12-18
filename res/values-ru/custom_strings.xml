@@ -103,4 +103,5 @@
     <string name="ambient_play_history_menu_remove_all">Удалить всё</string>
     <string name="ambient_play_history_menu_add_to_home">Добавить на главный экран</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Вы уверены?</string>
+    <!-- Face auto unlock -->
 </resources>

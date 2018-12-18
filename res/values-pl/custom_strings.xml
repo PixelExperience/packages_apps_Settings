@@ -103,4 +103,7 @@
     <string name="ambient_play_history_menu_remove_all">Usuń wszystkie</string>
     <string name="ambient_play_history_menu_add_to_home">Dodaj do ekranu głównego</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Jesteś pewien?</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatyczne odblokowanie twarzą</string>
+    <string name="face_auto_unlock_summary">Nie pokazuj ekranu blokady po odblokowaniu twarzą</string>
 </resources>
