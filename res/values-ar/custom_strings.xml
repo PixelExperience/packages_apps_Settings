@@ -103,4 +103,5 @@
     <string name="ambient_play_history_menu_remove_all">ازالة الكل</string>
     <string name="ambient_play_history_menu_add_to_home">إضافة إلى الشاشة الرئيسية</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">هل أنت متأكد؟</string>
+    <!-- Face auto unlock -->
 </resources>

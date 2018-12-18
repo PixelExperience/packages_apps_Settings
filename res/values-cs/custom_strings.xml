@@ -103,4 +103,5 @@
     <string name="ambient_play_history_menu_remove_all">Odstranit vše</string>
     <string name="ambient_play_history_menu_add_to_home">Přidat na plochu</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Jste si jisti?</string>
+    <!-- Face auto unlock -->
 </resources>

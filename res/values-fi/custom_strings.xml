@@ -99,4 +99,7 @@
     <string name="ambient_play_history_menu_remove_all">Poista kaikki</string>
     <string name="ambient_play_history_menu_add_to_home">Lisää aloitusnäytölle</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Oletko varma?</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automaattinen face unlock</string>
+    <string name="face_auto_unlock_summary">Ohittaa lukitusnäytön face unlockin jälkeen</string>
 </resources>

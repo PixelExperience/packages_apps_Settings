@@ -16,9 +16,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Tentukan lokasi sensor sidik jari di depan telepon anda.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Tentukan lokasi sensor sidik jari di sisi kiri telepon anda.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Tentukan lokasi sensor sidik jari di sisi kanan telepon anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Temukan lokasi sensor sidik jari di depan telepon anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Temukan lokasi sensor sidik jari di sisi kiri telepon anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Temukan lokasi sensor sidik jari di sisi kanan telepon anda.</string>
     <!-- Notification light settings -->
     <string name="lights_category_title">Pengaturan cahaya</string>
     <string name="notification_light_title">Lampu notifikasi</string>
@@ -58,7 +58,7 @@
     <string name="hardware_keys_action_search">Asisten pencarian</string>
     <string name="hardware_keys_action_voice_search">Pencarian suara</string>
     <string name="hardware_keys_action_in_app_search">Penelusuran di aplikasi</string>
-    <string name="hardware_keys_action_launch_camera">Menjalankan kamera</string>
+    <string name="hardware_keys_action_launch_camera">Buka kamera</string>
     <string name="hardware_keys_action_sleep">Matikan layar</string>
     <string name="hardware_keys_action_last_app">Aplikasi terakhir</string>
     <string name="hardware_keys_action_split_screen">Membagi layar</string>
@@ -103,4 +103,7 @@
     <string name="ambient_play_history_menu_remove_all">Hapus semua</string>
     <string name="ambient_play_history_menu_add_to_home">Tambah ke layar beranda</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Apakah anda yakin?</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Membuka kunci dengan wajah otomatis</string>
+    <string name="face_auto_unlock_summary">Lewati kunci layar setelah terbuka dengan wajah</string>
 </resources>
