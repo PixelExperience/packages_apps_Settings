@@ -47,13 +47,6 @@
         android:summary="@string/face_auto_unlock_summary"
         android:defaultValue="@*android:bool/config_autoFaceUnlockEnabledByDefault" />
 
-    <!-- Ambient play -->
-    <PreferenceScreen
-        android:key="ambient_play"
-        android:title="@string/ambient_play_title"
-        android:summary="@string/ambient_play_summary"
-        android:fragment="com.android.settings.custom.ambient.AmbientPlaySettings" />
-
     <PreferenceCategory
         android:key="weather_lockscreen_key"
         android:title="@string/weather_title"
