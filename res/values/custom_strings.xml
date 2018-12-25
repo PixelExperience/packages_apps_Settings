@@ -116,6 +116,16 @@
     <string name="ambient_play_history_menu_remove_all">Remove all</string>
     <string name="ambient_play_history_menu_add_to_home">Add to Home Screen</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Are you sure?</string>
+    <string name="ambient_play_saving_options_title">Saving options</string>
+    <string name="ambient_play_saving_options_summary">Options to decrease battery and network usage</string>
+    <string name="ambient_play_saving_options_low_battery_title">Low battery</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Disable recognition when battery is low</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobile data</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Disable recognition when mobile data is enabled</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Quiet period</string>
+    <string name="ambient_play_saving_options_quiet_period_summary">Disable recognition for a certain period of time (when sleeping for example)</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Start time</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">End time</string>
 
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatic face unlock</string>
