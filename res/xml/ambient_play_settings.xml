@@ -37,6 +37,12 @@
             android:title="@string/ambient_play_notifications_title"
             android:summary="@string/ambient_play_notifications_summary" />
 
+        <Preference
+            android:key="ambient_recognition_saving_options"
+            android:title="@string/ambient_play_saving_options_title"
+            android:summary="@string/ambient_play_saving_options_summary"
+            android:fragment="com.android.settings.custom.ambient.AmbientPlaySavingOptions" />
+
         <com.android.settings.custom.ambient.history.AmbientPlayHistoryPreference
             android:key="ambient_recognition_history_preference" />
     </PreferenceCategory>
