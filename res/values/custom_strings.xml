@@ -99,7 +99,9 @@
     <string name="ambient_play_recognition_information" translatable="false">@*android:string/ambient_recognition_information</string>
     <string name="ambient_play_summary">Show nearby songs</string>
     <string name="ambient_play_lockscreen_title">Show songs on lock screen</string>
+    <string name="ambient_play_lockscreen_summary">Show on lock screen when a song is recognized</string>
     <string name="ambient_play_notifications_title">Notifications</string>
+    <string name="ambient_play_notifications_summary">Show notification when a song is recognized</string>
     <string name="ambient_play_switch_bar_on">On</string>
     <string name="ambient_play_switch_bar_off">Off</string>
     <string name="ambient_play_help_text">When music is playing nearby, you can see the song name and artist. Battery life and data usage may be affected if this is enabled.</string>
