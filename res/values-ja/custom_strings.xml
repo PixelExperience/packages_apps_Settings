@@ -104,4 +104,6 @@
     <string name="ambient_play_history_menu_add_to_home">ホーム画面に追加</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">よろしいですか?</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">自動フェイスアンロック</string>
+    <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>
 </resources>

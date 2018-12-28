@@ -104,4 +104,6 @@
     <string name="ambient_play_history_menu_add_to_home">Дадаць на Галоўны экран</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Вы ўпэўнены?</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Аўтаматычнае распазнанне асобы</string>
+    <string name="face_auto_unlock_summary">Прапускаць экран блакавання пасля разблакоўкі тварам</string>
 </resources>

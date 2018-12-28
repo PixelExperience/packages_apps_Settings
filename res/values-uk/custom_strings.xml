@@ -16,9 +16,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Знайдіть сенсор відбитків пальців на передній панелі вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Знайдіть сенсор відбитків пальців на лівій грані вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Знайдіть сенсор відбитків пальців на правій грані вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Знайдіть сканер відбитків пальців на лівій грані вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Знайдіть сканер відбитків пальців на правій грані вашого смартфона.</string>
     <!-- Notification light settings -->
     <string name="lights_category_title">Налаштування індикатора</string>
     <string name="notification_light_title">Індикатор сповіщень</string>
@@ -104,4 +104,6 @@
     <string name="ambient_play_history_menu_add_to_home">Додати на головний екран</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Ви впевнені? </string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Автоматичне розблокування обличчям</string>
+    <string name="face_auto_unlock_summary">Прибрати екран блокування після розблокування обличчям</string>
 </resources>

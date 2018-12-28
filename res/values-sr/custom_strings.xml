@@ -16,10 +16,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Пронађите сензор за отиске прстију са предње стране вашег телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Пронађите сензор за отиске прстију са леве стране вашег телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Пронађите сензор за отиске прстију са десне стране вашег телефона.</string>
     <!-- Notification light settings -->
+    <string name="lights_category_title">Подешавања светла</string>
     <string name="notification_light_title">Индикатор обавештења</string>
     <string name="battery_light_title">Индикатор батерије</string>
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> је <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">онемогућено</string>
+    <string name="sim_missing">недостаје или је неисправна</string>
+    <string name="sim_enabler_need_disable_sim">SIM картица ће бити деактивирана. Желите ли да наставите?</string>
+    <string name="sim_enabler_will_disable_sim_title">Пажња</string>
+    <string name="sim_enabler_need_switch_data_service">Тренутна SIM картица ће бити онемогућена, а за пренос података ће бити коришћена SIM картица <xliff:g id="slotid">%1$s</xliff:g>. Заиста желите да наставите?</string>
+    <string name="sim_enabler_airplane_on">Не могу да извршим операцију док је укључен режим рада у авиону.</string>
+    <string name="sim_enabler_in_call">Не могу да извршим операцију током позива.</string>
+    <string name="sim_enabler_both_inactive">Не могу да онемогућим све SIM картице</string>
+    <string name="sim_enabler_enabling">Активирам\u2026</string>
+    <string name="sim_enabler_disabling">Деактивирам\u2026</string>
+    <string name="sub_activate_success">SIM картица је активирана.</string>
+    <string name="sub_activate_failed">Активација није успела.</string>
+    <string name="sub_deactivate_success">SIM картица је деактивирана.</string>
+    <string name="sub_deactivate_failed">Деактивација није успела.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Поништи</string>
     <!-- Buttons -->
@@ -43,6 +62,11 @@
     <string name="hardware_keys_action_sleep">Искључи екран</string>
     <string name="hardware_keys_action_last_app">Последња апликација</string>
     <string name="hardware_keys_action_split_screen">Подељени екран</string>
+    <string name="hardware_keys_swipe_right_key_title">Превуци десно</string>
+    <string name="hardware_keys_swipe_left_key_title">Превуци лево</string>
+    <string name="hardware_keys_long_tap_key_title">Дуги додир</string>
+    <string name="hardware_keys_swipe_tap_title">Аkcija превлачења</string>
+    <string name="hardware_keys_long_tap_title">Акција дугог додира</string>
     <string name="button_wake_title">Пробуди уређај</string>
     <string name="camera_sleep_on_release_title">Завиривање екрана</string>
     <string name="camera_sleep_on_release_summary">Екран ће бити укључен само док држите дугме.</string>
@@ -59,6 +83,23 @@
     <string name="backlight_summary_enabled_with_timeout">Омогућено за <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Омогућено</string>
     <!-- Weather -->
+    <string name="weather_title">Временска прогноза</string>
+    <string name="weather_unit">Јединица температуре</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Прикажи оближње песме</string>
+    <string name="ambient_play_lockscreen_title">Прикажи песме на екрану за откључавање</string>
+    <string name="ambient_play_notifications_title">Обавештења</string>
+    <string name="ambient_play_switch_bar_on">Укључено</string>
+    <string name="ambient_play_switch_bar_off">Искључено</string>
+    <string name="ambient_play_loading_data">Учитавање података…</string>
+    <string name="ambient_play_history_today">Данас</string>
+    <string name="ambient_play_history_yesterday">Јуче</string>
+    <string name="ambient_play_history_dialog_play">Пусти одмах</string>
+    <string name="ambient_play_history_dialog_search">Претражи интернет</string>
+    <string name="ambient_play_history_dialog_remove">Уклони</string>
+    <string name="ambient_play_history_empty">Историја музике је празна</string>
+    <string name="ambient_play_history_menu_remove_all">Уклони све</string>
+    <string name="ambient_play_history_menu_add_to_home">Додај на почетни екран</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Да ли сте сигурни?</string>
     <!-- Face auto unlock -->
 </resources>

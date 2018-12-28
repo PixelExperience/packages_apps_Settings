@@ -104,4 +104,6 @@
     <string name="ambient_play_history_menu_add_to_home">Thêm vào Màn hình chính</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Bạn chắc chứ?</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Mở khóa khuôn mặt tự động</string>
+    <string name="face_auto_unlock_summary">Bỏ qua khóa màn hình sau khi mở khóa khuôn mặt</string>
 </resources>

@@ -16,9 +16,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">உங்கள் தொலைப்பேசியின் முன்புறத்தில் இருக்கும் கைரேகை உணர்வியைக் கண்டறியுங்கள்.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Locate the fingerprint sensor on the left side of your phone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">உங்கள் தொலைப்பேசியின் வலதுபுறத்தில் இருக்கும் கைரேகை உணர்வியைக் கண்டறியுங்கள்.</string>
     <!-- Notification light settings -->
+    <string name="lights_category_title">ஒளி அமைப்புகள்</string>
+    <string name="notification_light_title">அறிவிப்பு ஒளி</string>
+    <string name="battery_light_title">பேட்டரி ஒளி</string>
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> என்பது <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">முடக்கப்பட்டது</string>
     <string name="sim_enabler_will_disable_sim_title">கவனம்</string>
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->

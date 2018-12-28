@@ -20,6 +20,9 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Hanapin ang fingerprint sensor sa kaliwang bahagi ng iyong telepono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Hanapin ang fingerprint sensor sa kanang bahagi ng iyong telepono.</string>
     <!-- Notification light settings -->
+    <string name="lights_category_title">Mga settings sa liwanag</string>
+    <string name="notification_light_title">Ilaw para sa notification</string>
+    <string name="battery_light_title">Ilaw para sa baterya</string>
     <!-- Manual provisioning support -->
     <string name="sim_missing">nawawala o sira</string>
     <string name="sim_enabler_need_disable_sim">Ang SIM card ay madi-deactivate. Gusto mo bang magpatuloy?</string>
@@ -39,9 +42,17 @@
     <string name="hardware_keys_action_last_app">Huling app</string>
     <string name="hardware_keys_long_tap_key_title">Mahabang pindot</string>
     <string name="button_wake_title">Buksan ang device</string>
+    <string name="camera_launch_title">Buksan ang camera</string>
     <!-- Key backlight -->
+    <string name="backlight_timeout_unlimited">Huwag patayin</string>
+    <string name="backlight_summary_disabled">Naka-disable</string>
+    <string name="backlight_summary_enabled">Naka-enable</string>
     <!-- Weather -->
+    <string name="weather_title">Panahon</string>
+    <string name="weather_unit">Yunit ng temperatura</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_lockscreen_title">Ipakita ang mga kanta sa lock screen</string>
+    <string name="ambient_play_notifications_title">Mga abiso</string>
     <string name="ambient_play_history_today">Ngayong araw</string>
     <string name="ambient_play_history_yesterday">Kahapon</string>
     <string name="ambient_play_history_dialog_play">Patugtugin</string>

@@ -103,6 +103,7 @@
     <string name="ambient_play_history_menu_remove_all">清除所有</string>
     <string name="ambient_play_history_menu_add_to_home">添加到桌面</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">你确定要这样做吗?</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">开始时间</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">自动人脸解锁</string>
     <string name="face_auto_unlock_summary">人脸解锁后自动解锁</string>
