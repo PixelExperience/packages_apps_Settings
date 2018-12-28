@@ -104,4 +104,6 @@
     <string name="ambient_play_history_menu_add_to_home">Pridať na domovskú obrazovku</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Ste si istí?</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatické odomknutie pomocou tváre</string>
+    <string name="face_auto_unlock_summary">Zbaliť obrazovku uzamknutia po odomknutí pomocou tváre</string>
 </resources>

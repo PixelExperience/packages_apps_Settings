@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Rodyti visas dainas</string>
     <string name="ambient_play_lockscreen_title">Rodyti dainas užrakto ekrane</string>
+    <string name="ambient_play_lockscreen_summary">Rodyti užrakinimo ekrane, kai daina atpažįstama</string>
     <string name="ambient_play_notifications_title">Pranešimai</string>
+    <string name="ambient_play_notifications_summary">Rodyti pranešimą, kai daina atpažįstama</string>
     <string name="ambient_play_switch_bar_on">Įjungti</string>
     <string name="ambient_play_switch_bar_off">Išjungti</string>
     <string name="ambient_play_help_text">Kai muzika groja netoliese, galite pamatyti dainos pavadinimą ir atlikėją. Akumuliatoriaus veikimo laikas ir duomenų naudojimas gali turėti įtakos, jei tai įjungta.</string>
@@ -103,5 +105,18 @@
     <string name="ambient_play_history_menu_remove_all">Pašalinti visus</string>
     <string name="ambient_play_history_menu_add_to_home">Pridėti prie pagrind. ekrano</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Ar tu tuo tikras?</string>
+    <string name="ambient_play_saving_options_title">Išsaugoti parinktis</string>
+    <string name="ambient_play_saving_options_summary">Funkcijos, skirtos sumažinti baterijos ir tinklo naudojimą</string>
+    <string name="ambient_play_saving_options_low_battery_title">Žemas baterijos lygis</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Išjunkite atpažinimą, kai baterijos lygis yra žemas</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobilieji duomenys</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Išjunkite atpažinimą, kai įgalinti mobilieji duomenys</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Tylus laikotarpis</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Įjungti tylų laikotarpį</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Išjungti atpažinimą tam tikrą laiką</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Pradžios laikas</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Pabaigos laikas</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatinis veido atpažinimo atrakinimas</string>
+    <string name="face_auto_unlock_summary">Išjunkite užrakto ekraną, po veido atrakinimo skaneriu</string>
 </resources>

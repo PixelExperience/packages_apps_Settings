@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Mostra cançons properes</string>
     <string name="ambient_play_lockscreen_title">Mostra cançons a la pantalla de bloqueig</string>
+    <string name="ambient_play_lockscreen_summary">Mostra a la pantalla de bloqueig es reconeix una cançó</string>
     <string name="ambient_play_notifications_title">Notificacions</string>
+    <string name="ambient_play_notifications_summary">Mostra una notificació quan es reconeix una cançó</string>
     <string name="ambient_play_switch_bar_on">Activat</string>
     <string name="ambient_play_switch_bar_off">Desactivat</string>
     <string name="ambient_play_help_text">Quan la música s\'està reproduint a prop, pots veure el nom de la cançó i l\'artista. La vida útil de la bateria i l\'ús de dades es poden veure afectats si està habilitat.</string>
@@ -103,7 +105,18 @@
     <string name="ambient_play_history_menu_remove_all">Suprimeix-ho tot</string>
     <string name="ambient_play_history_menu_add_to_home">Afegeix a la pantalla d\'inici</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Estàs segur?</string>
+    <string name="ambient_play_saving_options_title">Opcions de guardar</string>
+    <string name="ambient_play_saving_options_summary">Opcions per a reduir l\'ús de la bateria i de la xarxa</string>
+    <string name="ambient_play_saving_options_low_battery_title">Bateria baixa</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Desactivar el reconeixement amb bateria baixa</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Dades mòbils</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Desactivar el reconeixement amb dades mòbils</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Període silenciós</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Habilita període silenciós</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Deshabilita el reconeixement durant un període de temps</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Hora d\'inici</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Hora de finalització</string>
     <!-- Face auto unlock -->
-    <string name="face_auto_unlock_title">Desbloquejament facial automàtic</string>
-    <string name="face_auto_unlock_summary">No veure la pantalla de bloqueig després de desbloquejament facial</string>
+    <string name="face_auto_unlock_title">Desbloqueig facial automàtic</string>
+    <string name="face_auto_unlock_summary">Descarta la pantalla de bloqueig després del desbloqueig facial</string>
 </resources>

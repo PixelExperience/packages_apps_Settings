@@ -24,6 +24,7 @@
     <string name="notification_light_title">Svjetlo obavijesti</string>
     <string name="battery_light_title">Baterijsko svjetlo</string>
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">onemogućeno</string>
     <string name="sim_missing">nedostaje ili je neispravan</string>
     <string name="sim_enabler_need_disable_sim">SIM kartica će biti deaktivirana. Želite li nastaviti?</string>
@@ -85,5 +86,24 @@
     <string name="weather_title">Vrijeme</string>
     <string name="weather_unit">Jedinica temperature</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Prikaži pjesme u blizini</string>
+    <string name="ambient_play_lockscreen_title">Prikaži pjesme na Zaključanom zaslonu</string>
+    <string name="ambient_play_notifications_title">Obavijesti</string>
+    <string name="ambient_play_switch_bar_on">Uključeno</string>
+    <string name="ambient_play_switch_bar_off">Isključeno</string>
+    <string name="ambient_play_help_text">Kada muzika svira u blizini, vidjeti ćete ime pjesme i autora. Ako je omogućeno, to može utjecati na vijek trajanja baterije i korištenje podataka.</string>
+    <string name="ambient_play_history">Sada se svira Povijest</string>
+    <string name="ambient_play_loading_data">Učitavanje podataka…</string>
+    <string name="ambient_play_history_today">Danas</string>
+    <string name="ambient_play_history_yesterday">Jučer</string>
+    <string name="ambient_play_history_dialog_play">Sviraj sada</string>
+    <string name="ambient_play_history_dialog_search">Pretraži na internetu</string>
+    <string name="ambient_play_history_dialog_remove">Ukloni</string>
+    <string name="ambient_play_history_empty">Povijest sviranja je prazna</string>
+    <string name="ambient_play_history_menu_remove_all">Ukloni sve</string>
+    <string name="ambient_play_history_menu_add_to_home">Dodaj na početni zaslon</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Jeste li sigurni?</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatsko otključavanje lica</string>
+    <string name="face_auto_unlock_summary">Otpustite zaključavanje zaslona nakon otključavanja lica</string>
 </resources>

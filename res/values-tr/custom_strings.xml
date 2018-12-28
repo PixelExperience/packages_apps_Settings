@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Yakındaki şarkıları göster</string>
     <string name="ambient_play_lockscreen_title">Kilit ekranında şarkıları göster</string>
+    <string name="ambient_play_lockscreen_summary">Bir şarkı tanındığında kilit ekranında göster</string>
     <string name="ambient_play_notifications_title">Bildirimler</string>
+    <string name="ambient_play_notifications_summary">Bir şarkı tanındığında bildirim göster</string>
     <string name="ambient_play_switch_bar_on">Açık</string>
     <string name="ambient_play_switch_bar_off">Kapalı</string>
     <string name="ambient_play_help_text">Müzik yakınınızda çaldığında, şarkı adını ve sanatçıyı görebilirsiniz. Bu özellik etkinleştirildiğinde pil ömrü ve veri kullanımı etkilenebilir.</string>
@@ -103,6 +105,14 @@
     <string name="ambient_play_history_menu_remove_all">Tümünü kaldır</string>
     <string name="ambient_play_history_menu_add_to_home">Ana ekrana ekle</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Emin misiniz?</string>
+    <string name="ambient_play_saving_options_title">Kaydetme seçenekleri</string>
+    <string name="ambient_play_saving_options_summary">Pil ve ağ kullanımını azaltmak için seçenekler</string>
+    <string name="ambient_play_saving_options_low_battery_title">Düşük pil</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Pil düşükken tanımayı devre dışı bırakın</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobil veri</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Mobil veri etkinleştirildiğinde tanımayı devre dışı bırak</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Başlama zamanı</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Bitiş zamanı</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Otomatik yüz kilidi açma</string>
     <string name="face_auto_unlock_summary">Yüz kilidini açtıktan sonra kilit ekranını otomatik kapat</string>

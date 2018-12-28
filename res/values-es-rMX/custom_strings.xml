@@ -104,4 +104,6 @@
     <string name="ambient_play_history_menu_add_to_home">Añadir a pantalla de inicio</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">¿Seguro que quiere continuar?</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Desbloqueo facial automático</string>
+    <string name="face_auto_unlock_summary">Quitar la pantalla de bloqueo tras desbloqueo facial</string>
 </resources>

@@ -84,5 +84,18 @@
     <string name="backlight_summary_enabled">Активирани</string>
     <!-- Weather -->
     <!-- Ambient Play -->
+    <string name="ambient_play_lockscreen_summary">Показване на заключен екран при разпознаване на песен</string>
+    <string name="ambient_play_notifications_summary">Показване на известие при разпознаване на песен</string>
+    <string name="ambient_play_saving_options_title">Опции за запазване</string>
+    <string name="ambient_play_saving_options_summary">Опции за намаляване на използването на батерията и мрежата</string>
+    <string name="ambient_play_saving_options_low_battery_title">Изтощена батерия</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Деактивиране разпознаването, когато батерията е изтощена</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Мобилни данни</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Деактивиране на разпознаването, когато мобилните данни са активирани</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Тих период</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Активиране на тих период</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Деактивиране разпознаването за определен период от време</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Време на започване</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Време за край</string>
     <!-- Face auto unlock -->
 </resources>
