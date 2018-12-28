@@ -306,6 +306,10 @@ public class ApnSettings extends RestrictedSettingsFragment implements
             ArrayList<ApnPreference> mvnoMmsApnList = new ArrayList<ApnPreference>();
 
             mSelectedKey = getSelectedApnKey();
+
+            // ApnPreference.mSelectedKey static variable is shared for MSim case,
+            // need be initialized according to preferred apn id per sub
+            ApnPreference.setSelectedKey(mSelectedKey);
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
                 String name = cursor.getString(NAME_INDEX);
@@ -349,8 +353,6 @@ public class ApnSettings extends RestrictedSettingsFragment implements
                 if (selectable) {
                     if ((mSelectedKey != null) && mSelectedKey.equals(key)) {
                         pref.setChecked();
-                    } else {
-                        pref.unsetChecked();
                     }
                     addApnToList(pref, mnoApnList, mvnoApnList, r, mvnoType, mvnoMatchData);
                 } else {
