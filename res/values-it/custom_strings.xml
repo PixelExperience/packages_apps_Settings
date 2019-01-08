@@ -105,7 +105,7 @@
     <string name="ambient_play_history_menu_remove_all">Rimuovi tutto</string>
     <string name="ambient_play_history_menu_add_to_home">Aggiungi alla schermata home</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Sei sicuro?</string>
-    <string name="ambient_play_saving_options_title">Salvare le opzioni</string>
+    <string name="ambient_play_saving_options_title">Salvataggio delle opzioni</string>
     <string name="ambient_play_saving_options_summary">Opzioni per ridurre l\'utilizzo della batteria e della rete</string>
     <string name="ambient_play_saving_options_low_battery_title">Batteria scarica</string>
     <string name="ambient_play_saving_options_low_battery_summary">Disattiva il riconoscimento quando la batteria è scarica</string>

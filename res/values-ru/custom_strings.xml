@@ -17,8 +17,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Найдите сканер отпечатков пальцев на задней поверхности телефона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Сканер отпечатков пальцев расположен в левой части телефона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Найдите сканер отпечатков пальцев в правой части вашего телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Найдите сканер отпечатков пальцев на левой грани телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Найдите сканер отпечатков пальцев на правой грани телефона.</string>
     <!-- Notification light settings -->
     <string name="lights_category_title">Настройки яркости</string>
     <string name="notification_light_title">Индикация уведомлений</string>
@@ -27,7 +27,7 @@
     <string name="sim_enabler_summary"><xliff:g id="отображение названия">%1$s</xliff:g> — <xliff:g id="состояние" пример="отключено">%2$s</xliff:g></string>
     <string name="sim_disabled">отключено</string>
     <string name="sim_missing">отсутствует или неисправна</string>
-    <string name="sim_enabler_need_disable_sim">SIM-карта будет отключена. Продолжить?</string>
+    <string name="sim_enabler_need_disable_sim">SIM-карта будет отключена. Хотите продолжить?</string>
     <string name="sim_enabler_will_disable_sim_title">Внимание</string>
     <string name="sim_enabler_need_switch_data_service">Эта SIM-карта будет отключена и SIM<xliff:g id="slotid">%1$s</xliff:g> будет использоваться для передачи данных. Вы действительно хотите продолжить?</string>
     <string name="sim_enabler_airplane_on">Невозможно выполнить операцию при включённом режиме полёта.</string>

@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Prikaži pjesme u blizini</string>
     <string name="ambient_play_lockscreen_title">Prikaži pjesme na Zaključanom zaslonu</string>
+    <string name="ambient_play_lockscreen_summary">Prikaži na zaključanom zaslonu kada je pjesma prepoznata</string>
     <string name="ambient_play_notifications_title">Obavijesti</string>
+    <string name="ambient_play_notifications_summary">Prikaži notifikacije kada je pjesma prepoznata</string>
     <string name="ambient_play_switch_bar_on">Uključeno</string>
     <string name="ambient_play_switch_bar_off">Isključeno</string>
     <string name="ambient_play_help_text">Kada muzika svira u blizini, vidjeti ćete ime pjesme i autora. Ako je omogućeno, to može utjecati na vijek trajanja baterije i korištenje podataka.</string>
@@ -103,6 +105,17 @@
     <string name="ambient_play_history_menu_remove_all">Ukloni sve</string>
     <string name="ambient_play_history_menu_add_to_home">Dodaj na početni zaslon</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Jeste li sigurni?</string>
+    <string name="ambient_play_saving_options_title">Spremanje opcija</string>
+    <string name="ambient_play_saving_options_summary">Opcije za smanjenje potrošnje baterije i podataka</string>
+    <string name="ambient_play_saving_options_low_battery_title">Slaba baterija</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Onemogući prepoznavanje kada je baterja pri kraju</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobilni internet</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Onemogući prepoznavanje kada je mobilni internet uključen</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Tihi period</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Omogući tihi period</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Onemogući prepoznavanje na određeno vrijeme</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Vrijeme početka</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Vrijeme završetka</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatsko otključavanje lica</string>
     <string name="face_auto_unlock_summary">Otpustite zaključavanje zaslona nakon otključavanja lica</string>

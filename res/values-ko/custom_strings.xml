@@ -93,7 +93,7 @@
     <string name="ambient_play_notifications_summary">노래가 인식되면 알림으로 표시됩니다.</string>
     <string name="ambient_play_switch_bar_on">켜짐</string>
     <string name="ambient_play_switch_bar_off">꺼짐</string>
-    <string name="ambient_play_help_text">근처에서 음악이 재생 중일 경우, 해당 음악의 제목과 아티스트를 알려 줍니다. 이 기능은 배터리와 데이터 사용량에 영향을 미칠 수 있습니다.</string>
+    <string name="ambient_play_help_text">근처에서 음악이 재생 중일 경우 해당 음악의 제목과 아티스트를 알려 줍니다. 이 기능은 배터리와 데이터 사용량에 영향을 미칠 수 있습니다.</string>
     <string name="ambient_play_history">지금 재생 중 기록</string>
     <string name="ambient_play_loading_data">데이터 로드 중…</string>
     <string name="ambient_play_history_today">오늘</string>
@@ -105,12 +105,12 @@
     <string name="ambient_play_history_menu_remove_all">모두 삭제</string>
     <string name="ambient_play_history_menu_add_to_home">홈 화면에 추가</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">계속 하시겠습니까?</string>
-    <string name="ambient_play_saving_options_title">배터리 절약 옵션</string>
-    <string name="ambient_play_saving_options_summary">배터리 및 네트워크 사용량 절약 옵션</string>
+    <string name="ambient_play_saving_options_title">고급 설정</string>
+    <string name="ambient_play_saving_options_summary">배터리 및 네트워크 사용량, 방해 금지 모드 옵션</string>
     <string name="ambient_play_saving_options_low_battery_title">배터리 부족</string>
     <string name="ambient_play_saving_options_low_battery_summary">배터리가 부족할 때 노래 인식을 비활성화 합니다.</string>
     <string name="ambient_play_saving_options_mobile_data_title">모바일 데이터</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">모바일 데이터가 사용 설정되면 인식 비활성화 합니다.</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">모바일 데이터가 사용 설정되면 인식을 비활성화 합니다.</string>
     <string name="ambient_play_saving_options_quiet_period_title">방해 금지 모드</string>
     <string name="ambient_play_saving_options_quiet_period_enable_title">방해 금지 모드 사용</string>
     <string name="ambient_play_saving_options_quiet_period_enable_summary">맞춤 시간에 따라 노래 인식을 비활성화 합니다.</string>

@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Hiện bài hát kế bên</string>
     <string name="ambient_play_lockscreen_title">Hiện bài hát trên màn hình khóa</string>
+    <string name="ambient_play_lockscreen_summary">Hiển thị thông báo trên màn hình khoá khi tìm ra bài hát</string>
     <string name="ambient_play_notifications_title">Thông báo</string>
+    <string name="ambient_play_notifications_summary">Hiển thị thông báo khi tìm ra bài hát</string>
     <string name="ambient_play_switch_bar_on">Bật</string>
     <string name="ambient_play_switch_bar_off">Tắt</string>
     <string name="ambient_play_help_text">Khi nhạc đang phát ở gần, bạn có thể thấy tên bài hát và nghệ sĩ. Tuổi thọ pin và sử dụng dữ liệu có thể bị ảnh hưởng nếu bật cái này.</string>
@@ -103,6 +105,17 @@
     <string name="ambient_play_history_menu_remove_all">Loại bỏ tất cả</string>
     <string name="ambient_play_history_menu_add_to_home">Thêm vào Màn hình chính</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Bạn chắc chứ?</string>
+    <string name="ambient_play_saving_options_title">Đang lưu tùy chọn</string>
+    <string name="ambient_play_saving_options_summary">Tùy chọn để giảm mức sử dụng pin và dữ liệu di động</string>
+    <string name="ambient_play_saving_options_low_battery_title">Pin yếu</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Vô hiệu hoá tính năng \"Nhận diện bài hát\" khi pin yếu</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Dữ liệu di động</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Vô hiệu hoá \"Nhận diện bài hát\" khi dữ liệu di động được bật</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Thời gian im lặng</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Kích hoặc thời gian im lặng</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Vô hiệu hoá tính năng \"Nhận dạng bài hát\" trong khoảng thời gian nhất định</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Bắt đầu lúc</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Kết thúc lúc</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Mở khóa khuôn mặt tự động</string>
     <string name="face_auto_unlock_summary">Bỏ qua khóa màn hình sau khi mở khóa khuôn mặt</string>

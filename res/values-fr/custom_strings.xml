@@ -117,4 +117,6 @@
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Heure début</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">Heure de fin</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Déverrouillage automatique avec reconnaissance faciale</string>
+    <string name="face_auto_unlock_summary">Désactiver l\'écran de verrouillage après la reconnaissance faciale</string>
 </resources>

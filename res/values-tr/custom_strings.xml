@@ -111,6 +111,9 @@
     <string name="ambient_play_saving_options_low_battery_summary">Pil düşükken tanımayı devre dışı bırakın</string>
     <string name="ambient_play_saving_options_mobile_data_title">Mobil veri</string>
     <string name="ambient_play_saving_options_mobile_data_summary">Mobil veri etkinleştirildiğinde tanımayı devre dışı bırak</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Sessiz süre</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Sessiz süreyi etkinleştir</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Belirli bir süre için tanınmayı devre dışı bırak</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Başlama zamanı</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">Bitiş zamanı</string>
     <!-- Face auto unlock -->
