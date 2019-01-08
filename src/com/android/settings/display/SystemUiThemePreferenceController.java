@@ -19,6 +19,7 @@ package com.android.settings.display;
 import static android.provider.Settings.Secure.THEME_MODE;
 
 import android.content.Context;
+import android.os.PowerManager;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -28,18 +29,30 @@ import android.util.FeatureFlagUtils;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.events.OnStart;
+import com.android.settingslib.core.lifecycle.events.OnStop;
+
+import com.android.settings.fuelgauge.BatteryBroadcastReceiver;
+import static com.android.settings.fuelgauge.BatteryBroadcastReceiver.BatteryUpdateType;
+
+import com.android.settings.R;
 
 /**
  * Setting where user can pick if SystemUI will be light, dark or try to match
  * the wallpaper colors.
  */
 public class SystemUiThemePreferenceController extends BasePreferenceController
-        implements Preference.OnPreferenceChangeListener {
+        implements Preference.OnPreferenceChangeListener, OnStart, OnStop, BatteryBroadcastReceiver.OnBatteryChangedListener {
 
     private ListPreference mSystemUiThemePref;
+    private final BatteryBroadcastReceiver mBatteryBroadcastReceiver;
+    private final PowerManager mPowerManager;
 
     public SystemUiThemePreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
+        mPowerManager = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
+        mBatteryBroadcastReceiver = new BatteryBroadcastReceiver(mContext);
+        mBatteryBroadcastReceiver.setBatteryChangedListener(this);
     }
 
     @Override
@@ -54,6 +67,7 @@ public class SystemUiThemePreferenceController extends BasePreferenceController
         mSystemUiThemePref = (ListPreference) screen.findPreference(getPreferenceKey());
         int value = Settings.Secure.getInt(mContext.getContentResolver(), THEME_MODE, 0);
         mSystemUiThemePref.setValue(Integer.toString(value));
+        updateState();
     }
 
     @Override
@@ -66,8 +80,42 @@ public class SystemUiThemePreferenceController extends BasePreferenceController
 
     @Override
     public CharSequence getSummary() {
-        int value = Settings.Secure.getInt(mContext.getContentResolver(), THEME_MODE, 0);
-        int index = mSystemUiThemePref.findIndexOfValue(Integer.toString(value));
-        return mSystemUiThemePref.getEntries()[index];
+        if (mPowerManager.isPowerSaveMode()){
+            return mContext.getString(R.string.systemui_theme_dark) + " (" + mContext.getString(R.string.battery_tip_early_heads_up_done_title) + ")";
+        }else{
+            int value = Settings.Secure.getInt(mContext.getContentResolver(), THEME_MODE, 0);
+            int index = mSystemUiThemePref.findIndexOfValue(Integer.toString(value));
+            return mSystemUiThemePref.getEntries()[index];
+        }
+    }
+
+    private void updateSummary() {
+        if (mSystemUiThemePref != null){
+            mSystemUiThemePref.setSummary(getSummary());
+        }
+    }
+
+    private void updateState() {
+        if (mSystemUiThemePref != null){
+            mSystemUiThemePref.setEnabled(!mPowerManager.isPowerSaveMode());
+        }
+    }
+
+    @Override
+    public void onStart() {
+        mBatteryBroadcastReceiver.register();
+    }
+
+    @Override
+    public void onStop() {
+        mBatteryBroadcastReceiver.unRegister();
+    }
+
+    @Override
+    public void onBatteryChanged(int type) {
+        if (type == BatteryUpdateType.BATTERY_SAVER){
+            updateState();
+            updateSummary();
+        }
     }
 }
