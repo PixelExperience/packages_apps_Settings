@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Mostrar músicas próximas</string>
     <string name="ambient_play_lockscreen_title">Mostrar músicas no ecrã de bloqueio</string>
+    <string name="ambient_play_lockscreen_summary">Mostrar notificação quando a musica for reconhecida</string>
     <string name="ambient_play_notifications_title">Notificações</string>
+    <string name="ambient_play_notifications_summary">Mostrar notificação quando a musica for reconhecida</string>
     <string name="ambient_play_switch_bar_on">Ligado</string>
     <string name="ambient_play_switch_bar_off">Desligado</string>
     <string name="ambient_play_help_text">Quando estiver a tocar música nas proximidades, poderá ver o nome da música e o artista. A duração de bateria e dados móveis poderá ser afectada se esta opção estiver activada.</string>
@@ -103,5 +105,18 @@
     <string name="ambient_play_history_menu_remove_all">Remover todas</string>
     <string name="ambient_play_history_menu_add_to_home">Adicionar ao ecrã principal</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Tens a certeza?</string>
+    <string name="ambient_play_saving_options_title">A gravar opções</string>
+    <string name="ambient_play_saving_options_summary">Opção de diminuir o uso da bateria e da rede</string>
+    <string name="ambient_play_saving_options_low_battery_title">Bateria fraca</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Desactiva reconhecimento quando a bateria está fraca</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Dados móveis</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Desactiva reconhecimento quando os dados móveis estão activos</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Período silenciado</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Activar período silenciado</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Desactivar reconhecimento por um período de tempo</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Hora de Início</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Hora do fim</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Face unlock automático</string>
+    <string name="face_auto_unlock_summary">Desbloquear automaticamente a tela quando um rosto confiável for detectado</string>
 </resources>

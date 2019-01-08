@@ -103,6 +103,9 @@
     <string name="ambient_play_history_menu_remove_all">Odstrániť všetko</string>
     <string name="ambient_play_history_menu_add_to_home">Pridať na domovskú obrazovku</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Ste si istí?</string>
+    <string name="ambient_play_saving_options_low_battery_title">Slabá batéria</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Zakázať rozpoznávanie pri nízkom stave batérie</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobilné dáta</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatické odomknutie pomocou tváre</string>
     <string name="face_auto_unlock_summary">Zbaliť obrazovku uzamknutia po odomknutí pomocou tváre</string>

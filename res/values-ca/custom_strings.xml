@@ -88,7 +88,7 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Mostra cançons properes</string>
     <string name="ambient_play_lockscreen_title">Mostra cançons a la pantalla de bloqueig</string>
-    <string name="ambient_play_lockscreen_summary">Mostra a la pantalla de bloqueig es reconeix una cançó</string>
+    <string name="ambient_play_lockscreen_summary">Mostra a la pantalla de bloqueig quan es reconeix una cançó</string>
     <string name="ambient_play_notifications_title">Notificacions</string>
     <string name="ambient_play_notifications_summary">Mostra una notificació quan es reconeix una cançó</string>
     <string name="ambient_play_switch_bar_on">Activat</string>
@@ -105,12 +105,12 @@
     <string name="ambient_play_history_menu_remove_all">Suprimeix-ho tot</string>
     <string name="ambient_play_history_menu_add_to_home">Afegeix a la pantalla d\'inici</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Estàs segur?</string>
-    <string name="ambient_play_saving_options_title">Opcions de guardar</string>
+    <string name="ambient_play_saving_options_title">Opcions d\'estalvi</string>
     <string name="ambient_play_saving_options_summary">Opcions per a reduir l\'ús de la bateria i de la xarxa</string>
     <string name="ambient_play_saving_options_low_battery_title">Bateria baixa</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Desactivar el reconeixement amb bateria baixa</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Desactiva el reconeixement amb bateria baixa</string>
     <string name="ambient_play_saving_options_mobile_data_title">Dades mòbils</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Desactivar el reconeixement amb dades mòbils</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Desactiva el reconeixement quan les dades mòbils estiguin activades</string>
     <string name="ambient_play_saving_options_quiet_period_title">Període silenciós</string>
     <string name="ambient_play_saving_options_quiet_period_enable_title">Habilita període silenciós</string>
     <string name="ambient_play_saving_options_quiet_period_enable_summary">Deshabilita el reconeixement durant un període de temps</string>
