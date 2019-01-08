@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Toon liedjes in de buurt</string>
     <string name="ambient_play_lockscreen_title">Toon nummers op vergrendelscherm</string>
+    <string name="ambient_play_lockscreen_summary">Bekijk op vergrendelscherm wanneeer een liedje herkend word</string>
     <string name="ambient_play_notifications_title">Notificaties</string>
+    <string name="ambient_play_notifications_summary">Laat notificatie op vergrendelscherm zien wanneeer een liedje herkend word</string>
     <string name="ambient_play_switch_bar_on">Aan</string>
     <string name="ambient_play_switch_bar_off">Uit</string>
     <string name="ambient_play_help_text">Wanneer muziek in de buurt wordt afgespeeld, kunt u de naam en artiest van het nummer zien. De levensduur van de batterij en het gegevensgebruik kunnen worden beïnvloed als dit is ingeschakeld.</string>
@@ -103,6 +105,17 @@
     <string name="ambient_play_history_menu_remove_all">Verwijder alles</string>
     <string name="ambient_play_history_menu_add_to_home">Aan Home Screen toevoegen</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Ben je zeker?</string>
+    <string name="ambient_play_saving_options_title">Instellingen opslaan</string>
+    <string name="ambient_play_saving_options_summary">Opties om batterij en netwerkverbruik te verminderen</string>
+    <string name="ambient_play_saving_options_low_battery_title">Lage accuspanning</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Schakel herkenning uit wanneer de accu bijna leeg is</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobiele data</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Schakel herkenning uit wanneer mobiele data is ingeschakeld</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Stiltetijd</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Schakel stiltetijd in</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Schakel herkenning uit voor een bepaalde tijdsperiode</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Starttijd</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Eindtijd</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatisch gezicht ontgrendeling</string>
     <string name="face_auto_unlock_summary">Vergrendelscherm weigeren na gezichtsontgrendeling</string>

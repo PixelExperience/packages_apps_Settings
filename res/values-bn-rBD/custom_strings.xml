@@ -68,6 +68,7 @@
     <string name="hardware_keys_swipe_tap_title">টানার প্রতিক্রিয়া</string>
     <string name="hardware_keys_long_tap_title">দীর্ঘ স্পর্শের প্রতিক্রিয়া</string>
     <string name="button_wake_title">ডিভাইস জাগ্রত করুন</string>
+    <string name="camera_sleep_on_release_title">শিরোনাম: এর পর ক্যামেরা বন্দি হবে</string>
     <string name="camera_launch_title">ক্যামেরা চালু করুন</string>
     <!-- Key backlight -->
     <string name="button_backlight_title">পেছনের আলো</string>
@@ -83,11 +84,15 @@
     <string name="ambient_play_notifications_title">বিজ্ঞপ্তি</string>
     <string name="ambient_play_switch_bar_on">চালু</string>
     <string name="ambient_play_switch_bar_off">বন্ধ</string>
+    <string name="ambient_play_history">এখন পূর্ববর্তী চলছে</string>
+    <string name="ambient_play_loading_data">তথ্য প্রস্তুত হচ্ছে…</string>
     <string name="ambient_play_history_today">আজ</string>
     <string name="ambient_play_history_yesterday">গতকাল</string>
+    <string name="ambient_play_history_dialog_play">এখন চলাও</string>
     <string name="ambient_play_history_dialog_remove">অপসারণ করুন</string>
     <string name="ambient_play_history_menu_remove_all">সবগুলো সরান</string>
     <string name="ambient_play_history_menu_add_to_home">নীড়ের স্ক্রিনে যোগ করুন</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">আপনি কি নিশ্চিত?</string>
+    <string name="ambient_play_saving_options_title">সংরক্ষণ অপশন</string>
     <!-- Face auto unlock -->
 </resources>

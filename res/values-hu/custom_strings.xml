@@ -113,7 +113,7 @@
     <string name="ambient_play_saving_options_mobile_data_summary">Zeneszám-felismerés tlitása mobiladat-használatkor</string>
     <string name="ambient_play_saving_options_quiet_period_title">Csendes időszak</string>
     <string name="ambient_play_saving_options_quiet_period_enable_title">A csendes időszak engedélyezése</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Zzeneszám-felismerés tiltása egy előre megadott idószakban</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Zeneszám-felismerés tiltása egy előre megadott idószakban</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Kezdési idő</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">Befejezési idő</string>
     <!-- Face auto unlock -->

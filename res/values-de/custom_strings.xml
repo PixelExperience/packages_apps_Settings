@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Alle Titel anzeigen</string>
     <string name="ambient_play_lockscreen_title">Titel auf dem Sperrbildschirm anzeigen</string>
+    <string name="ambient_play_lockscreen_summary">Anzeigen auf dem Sperrbildschirm, wenn ein Song erkannt wird</string>
     <string name="ambient_play_notifications_title">Benachrichtigungen</string>
+    <string name="ambient_play_notifications_summary">Benachrichtigung anzeigen, wenn ein Song erkannt wird</string>
     <string name="ambient_play_switch_bar_on">An</string>
     <string name="ambient_play_switch_bar_off">Aus</string>
     <string name="ambient_play_help_text">Wenn Musik in der Nähe abgespielt wird, kann der Namen des Songs und der Interpret angezeigt werden. Akkulaufzeit und Datennutzung können beeinträchtigt werden, wenn diese Option aktiviert ist.</string>
@@ -103,5 +105,18 @@
     <string name="ambient_play_history_menu_remove_all">Alle entfernen</string>
     <string name="ambient_play_history_menu_add_to_home">Zum Startbildschirm hinzufügen</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Sicher?</string>
+    <string name="ambient_play_saving_options_title">Speicheroptionen</string>
+    <string name="ambient_play_saving_options_summary">Optionen zur Reduzierung des Batterie- und Netzwerkbedarfs</string>
+    <string name="ambient_play_saving_options_low_battery_title">Batterieladung niedrig</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Deaktivieren der Erkennung bei schwacher Batterie</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobile Daten</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Deaktivieren der Erkennung bei aktivierten mobilen Daten</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Ruhephase</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Ruhephase aktivieren</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Deaktivieren der Erkennung für einen bestimmten Zeitraum</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Startzeit</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Endzeit</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatische Gesichts-Entsperrung</string>
+    <string name="face_auto_unlock_summary">Sperrbildschirm nach Gesichtsentsperrung verlassen</string>
 </resources>

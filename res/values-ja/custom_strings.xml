@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">近隣の曲を表示</string>
     <string name="ambient_play_lockscreen_title">ロック画面で曲を表示する</string>
+    <string name="ambient_play_lockscreen_summary">楽曲認識時にロック画面に表示する</string>
     <string name="ambient_play_notifications_title">通知</string>
+    <string name="ambient_play_notifications_summary">楽曲認識時に通知を表示する</string>
     <string name="ambient_play_switch_bar_on">オン</string>
     <string name="ambient_play_switch_bar_off">オフ</string>
     <string name="ambient_play_help_text">近隣で音楽が再生中の時に曲名とアーティスト名を表示できます。この機能を有効にするとバッテリー消費とデータ通信が増加することがあります。</string>
@@ -103,6 +105,17 @@
     <string name="ambient_play_history_menu_remove_all">全て解除</string>
     <string name="ambient_play_history_menu_add_to_home">ホーム画面に追加</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">よろしいですか?</string>
+    <string name="ambient_play_saving_options_title">設定を保存</string>
+    <string name="ambient_play_saving_options_summary">バッテリー消費とネットワーク通信量を減らす設定</string>
+    <string name="ambient_play_saving_options_low_battery_title">バッテリー残量低下</string>
+    <string name="ambient_play_saving_options_low_battery_summary">バッテリー残量低下時に認識を無効にする</string>
+    <string name="ambient_play_saving_options_mobile_data_title">モバイルデータ</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">モバイルデータ通信有効時に認識を無効にする</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Quiet Period</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Quiet Period を有効化</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">一定期間認識を無効化する</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">開始時刻</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">終了時刻</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">自動フェイスアンロック</string>
     <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>

@@ -16,9 +16,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">您可以在手机正面找到指纹传感器。</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">您可以在手机左侧找到指纹传感器。</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">您可以在手机右侧找到指纹传感器。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">在手机正面找到指纹传感器。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">在手机左侧找到指纹传感器。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">在手机右侧找到指纹传感器。</string>
     <!-- Notification light settings -->
     <string name="lights_category_title">指示灯设置</string>
     <string name="notification_light_title">通知指示灯</string>
@@ -29,7 +29,7 @@
     <string name="sim_missing">缺失或故障</string>
     <string name="sim_enabler_need_disable_sim">SIM 卡将停用。是否继续？</string>
     <string name="sim_enabler_will_disable_sim_title">注意</string>
-    <string name="sim_enabler_need_switch_data_service">此 SIM 卡将被禁用，并且 SIM 卡 <xliff:g id="slotid">%1$s</xliff:g> 将被用作数据服务。您确定要继续吗？</string>
+    <string name="sim_enabler_need_switch_data_service">此 SIM 卡将被禁用，且 SIM 卡 <xliff:g id="slotid">%1$s</xliff:g> 将被用作数据服务。您确定要继续吗？</string>
     <string name="sim_enabler_airplane_on">飞行模式开启时无法执行该操作。</string>
     <string name="sim_enabler_in_call">通话期间无法执行该操作。</string>
     <string name="sim_enabler_both_inactive">无法停用全部 SIM 卡</string>
@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">显示附近歌曲</string>
     <string name="ambient_play_lockscreen_title">在锁屏界面显示歌曲</string>
+    <string name="ambient_play_lockscreen_summary">在锁屏界面显示已识别的歌曲</string>
     <string name="ambient_play_notifications_title">通知</string>
+    <string name="ambient_play_notifications_summary">在锁屏界面显示已识别的歌曲</string>
     <string name="ambient_play_switch_bar_on">开启</string>
     <string name="ambient_play_switch_bar_off">关闭</string>
     <string name="ambient_play_help_text">启用识别附近播放的音乐，你可以看到歌名和演奏者，耗电量和数据流量也许会受到影响。</string>
@@ -103,7 +105,17 @@
     <string name="ambient_play_history_menu_remove_all">清除所有</string>
     <string name="ambient_play_history_menu_add_to_home">添加到桌面</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">你确定要这样做吗?</string>
+    <string name="ambient_play_saving_options_title">保存选项</string>
+    <string name="ambient_play_saving_options_summary">降低电池和网络使用的选项</string>
+    <string name="ambient_play_saving_options_low_battery_title">低电量</string>
+    <string name="ambient_play_saving_options_low_battery_summary">电池电量不足时禁用识别</string>
+    <string name="ambient_play_saving_options_mobile_data_title">移动数据</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">移动网络开启时禁用识别</string>
+    <string name="ambient_play_saving_options_quiet_period_title">免打扰时段</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">打开免打扰时段</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">在特定的时间段内关闭识别</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">开始时间</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">结束时间</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">自动人脸解锁</string>
     <string name="face_auto_unlock_summary">人脸解锁后自动解锁</string>

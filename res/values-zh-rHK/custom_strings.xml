@@ -103,6 +103,10 @@
     <string name="ambient_play_history_menu_remove_all">移除全部</string>
     <string name="ambient_play_history_menu_add_to_home">新增至主畫面</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">你確定要這樣做嗎？</string>
+    <string name="ambient_play_saving_options_low_battery_title">低電量</string>
+    <string name="ambient_play_saving_options_mobile_data_title">行動數據</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">開始時間</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">結束時間：</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">自動人臉辨識解鎖</string>
     <string name="face_auto_unlock_summary">人臉辨識後將自動解鎖螢幕</string>
