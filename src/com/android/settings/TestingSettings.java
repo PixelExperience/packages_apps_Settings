@@ -16,13 +16,17 @@
 
 package com.android.settings;
 
+import com.android.internal.telephony.PhoneConstants;
 import android.os.Bundle;
 import android.os.UserManager;
 import android.support.v7.preference.PreferenceScreen;
+import android.telephony.TelephonyManager;
+
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 public class TestingSettings extends SettingsPreferenceFragment {
+    int sNumPhones = TelephonyManager.getDefault().getPhoneCount();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,20 @@ public class TestingSettings extends SettingsPreferenceFragment {
             PreferenceScreen preferenceScreen = (PreferenceScreen)
                     findPreference("radio_info_settings");
             getPreferenceScreen().removePreference(preferenceScreen);
+        }
+
+        if (PhoneConstants.MAX_PHONE_COUNT_DUAL_SIM == sNumPhones) {
+            PreferenceScreen preferenceScreen = (PreferenceScreen)
+                    findPreference("radio_info_settings");
+            getPreferenceScreen().removePreference(preferenceScreen);
+        } else if (PhoneConstants.MAX_PHONE_COUNT_SINGLE_SIM == sNumPhones) {
+            PreferenceScreen preferenceScreen1 = (PreferenceScreen)
+                    findPreference("radio_info1_settings");
+            getPreferenceScreen().removePreference(preferenceScreen1);
+
+            PreferenceScreen preferenceScreen2 = (PreferenceScreen)
+                    findPreference("radio_info2_settings");
+            getPreferenceScreen().removePreference(preferenceScreen2);
         }
     }
 

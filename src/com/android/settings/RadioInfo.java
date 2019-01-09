@@ -181,6 +181,9 @@ public class RadioInfo extends Activity {
     private static final int MENU_ITEM_GET_IMS_STATUS = 4;
     private static final int MENU_ITEM_TOGGLE_DATA  = 5;
 
+    private static final int INVALID_SLOT_ID  = -1;
+    private static final int DEFAULT_SLOT_ID = 0;
+
     private TextView mDeviceId; //DeviceId is the IMEI in GSM and the MEID in CDMA
     private TextView number;
     private TextView mSubscriberId;
@@ -228,6 +231,7 @@ public class RadioInfo extends Activity {
     private TelephonyManager mTelephonyManager;
     private ImsManager mImsManager = null;
     private Phone phone = null;
+    private int mSlotId = INVALID_SLOT_ID;
 
     private String mPingHostnameResultV4;
     private String mPingHostnameResultV6;
@@ -242,6 +246,12 @@ public class RadioInfo extends Activity {
     private int mPreferredNetworkTypeResult;
     private int mCellInfoRefreshRateIndex;
 
+    private PhoneStateListener[] mPhoneStateListener = null;
+    private ServiceState[] mServiceState = null;
+    private SignalStrength[] mSignalStrength = null;
+    private CellLocation[] mCellLocation = null;
+    private DataConnectionRealTimeInfo[] mDataConnectionRealTimeInfo = null;
+
     private final NetworkRequest mDefaultNetworkRequest = new NetworkRequest.Builder()
             .addTransportType(NetworkCapabilities.TRANSPORT_CELLULAR)
             .addCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
@@ -253,82 +263,6 @@ public class RadioInfo extends Activity {
             int ulbw = nc.getLinkUpstreamBandwidthKbps();
             updateBandwidths(dlbw, ulbw);
         }
-    };
-
-    private final PhoneStateListener mPhoneStateListener = new PhoneStateListener() {
-        @Override
-        public void onDataConnectionStateChanged(int state) {
-            updateDataState();
-            updateNetworkType();
-        }
-
-        @Override
-        public void onDataActivity(int direction) {
-            updateDataStats2();
-        }
-
-        @Override
-        public void onCallStateChanged(int state, String incomingNumber) {
-            updateNetworkType();
-            updatePhoneState(state);
-        }
-
-        @Override
-        public void onPreciseCallStateChanged(PreciseCallState preciseState) {
-            updateNetworkType();
-        }
-
-        @Override
-        public void onCellLocationChanged(CellLocation location) {
-            updateLocation(location);
-        }
-
-        @Override
-        public void onMessageWaitingIndicatorChanged(boolean mwi) {
-            mMwiValue = mwi;
-            updateMessageWaiting();
-        }
-
-        @Override
-        public void onCallForwardingIndicatorChanged(boolean cfi) {
-            mCfiValue = cfi;
-            updateCallRedirect();
-        }
-
-        @Override
-        public void onCellInfoChanged(List<CellInfo> arrayCi) {
-            log("onCellInfoChanged: arrayCi=" + arrayCi);
-            mCellInfoResult = arrayCi;
-            updateCellInfo(mCellInfoResult);
-        }
-
-        @Override
-        public void onDataConnectionRealTimeInfoChanged(DataConnectionRealTimeInfo dcRtInfo) {
-            log("onDataConnectionRealTimeInfoChanged: dcRtInfo=" + dcRtInfo);
-            updateDcRtInfoTv(dcRtInfo);
-        }
-
-        @Override
-        public void onSignalStrengthsChanged(SignalStrength signalStrength) {
-            log("onSignalStrengthChanged: SignalStrength=" +signalStrength);
-            updateSignalStrength(signalStrength);
-        }
-
-        @Override
-        public void onServiceStateChanged(ServiceState serviceState) {
-            log("onServiceStateChanged: ServiceState=" + serviceState);
-            updateServiceState(serviceState);
-            updateRadioPowerState();
-            updateNetworkType();
-            updateImsProvisionedState();
-        }
-
-        @Override
-        public void onPhysicalChannelConfigurationChanged(
-                List<PhysicalChannelConfig> configs) {
-            updatePhysicalChannelConfiguration(configs);
-        }
-
     };
 
     private void updatePhysicalChannelConfiguration(List<PhysicalChannelConfig> configs) {
@@ -408,13 +342,23 @@ public class RadioInfo extends Activity {
             return;
         }
 
+        mSlotId = getIntent().getIntExtra("slot", DEFAULT_SLOT_ID);
+
         setContentView(R.layout.radio_info);
 
-        log("Started onCreate");
+        log("Started onCreate, mPhoneId is: " + mSlotId);
 
         mTelephonyManager = (TelephonyManager)getSystemService(TELEPHONY_SERVICE);
         mConnectivityManager = (ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
-        phone = PhoneFactory.getDefaultPhone();
+        phone = PhoneFactory.getPhone(mSlotId);
+
+        int sNumPhones = TelephonyManager.getDefault().getPhoneCount();
+
+        mPhoneStateListener = new PhoneStateListener[sNumPhones];
+        mServiceState = new ServiceState[sNumPhones];
+        mSignalStrength = new SignalStrength[sNumPhones];
+        mCellLocation = new CellLocation[sNumPhones];
+        mDataConnectionRealTimeInfo = new DataConnectionRealTimeInfo[sNumPhones];
 
         //TODO: Need to update this if the default phoneId changes?
         //      Better to have an instance per phone?
@@ -543,8 +487,9 @@ public class RadioInfo extends Activity {
         imsVtProvisionedSwitch.setOnCheckedChangeListener(mImsVtCheckedChangeListener);
         imsWfcProvisionedSwitch.setOnCheckedChangeListener(mImsWfcCheckedChangeListener);
         eabProvisionedSwitch.setOnCheckedChangeListener(mEabCheckedChangeListener);
-
-        mTelephonyManager.listen(mPhoneStateListener,
+        int[] subId = SubscriptionManager.getSubId(mSlotId);
+        mPhoneStateListener[mSlotId] = createPhoneStateListener(mSlotId, subId[DEFAULT_SLOT_ID]);
+        mTelephonyManager.listen(mPhoneStateListener[mSlotId],
                   PhoneStateListener.LISTEN_CALL_STATE
         //b/27803938 - RadioInfo currently cannot read PRECISE_CALL_STATE
         //      | PhoneStateListener.LISTEN_PRECISE_CALL_STATE
@@ -564,13 +509,96 @@ public class RadioInfo extends Activity {
         smsc.clearFocus();
     }
 
+    private PhoneStateListener createPhoneStateListener(int slotId, int subId) {
+        //create sub based phonestatelistener
+        return new PhoneStateListener(subId) {
+
+            @Override
+            public void onDataConnectionStateChanged(int state) {
+                updateDataState();
+                updateNetworkType();
+            }
+
+            @Override
+            public void onDataActivity(int direction) {
+                updateDataStats2();
+            }
+
+            @Override
+            public void onCallStateChanged(int state, String incomingNumber) {
+                updateNetworkType();
+                updatePhoneState(state);
+            }
+
+            @Override
+            public void onPreciseCallStateChanged(PreciseCallState preciseState) {
+                updateNetworkType();
+            }
+
+            @Override
+            public void onCellLocationChanged(CellLocation location) {
+                mCellLocation[slotId] = location;
+                updateLocation(mCellLocation[slotId]);
+            }
+
+            @Override
+            public void onMessageWaitingIndicatorChanged(boolean mwi) {
+                mMwiValue = mwi;
+                updateMessageWaiting();
+            }
+
+            @Override
+            public void onCallForwardingIndicatorChanged(boolean cfi) {
+                mCfiValue = cfi;
+                updateCallRedirect();
+            }
+
+            @Override
+            public void onCellInfoChanged(List<CellInfo> arrayCi) {
+                log("onCellInfoChanged: arrayCi=" + arrayCi);
+                mCellInfoResult = arrayCi;
+                updateCellInfo(mCellInfoResult);
+            }
+
+            @Override
+            public void onDataConnectionRealTimeInfoChanged(DataConnectionRealTimeInfo dcRtInfo) {
+                log("onDataConnectionRealTimeInfoChanged: dcRtInfo=" + dcRtInfo);
+                mDataConnectionRealTimeInfo[slotId] = dcRtInfo;
+                updateDcRtInfoTv(mDataConnectionRealTimeInfo[slotId]);
+            }
+
+            @Override
+            public void onSignalStrengthsChanged(SignalStrength signalStrength) {
+                log("onSignalStrengthChanged: SignalStrength=" +signalStrength);
+                mSignalStrength[slotId] = signalStrength;
+                updateSignalStrength(mSignalStrength[slotId]);
+            }
+
+            @Override
+            public void onServiceStateChanged(ServiceState serviceState) {
+                log("onServiceStateChanged: ServiceState=" + serviceState);
+                mServiceState[slotId] = serviceState;
+                updateServiceState(mServiceState[slotId]);
+                updateRadioPowerState();
+                updateNetworkType();
+                updateImsProvisionedState();
+            }
+
+            @Override
+            public void onPhysicalChannelConfigurationChanged(
+                    List<PhysicalChannelConfig> configs) {
+                updatePhysicalChannelConfiguration(configs);
+            }
+        };
+    }
+
     @Override
     protected void onPause() {
         super.onPause();
 
         log("onPause: unregister phone & data intents");
 
-        mTelephonyManager.listen(mPhoneStateListener, PhoneStateListener.LISTEN_NONE);
+        mTelephonyManager.listen(mPhoneStateListener[mSlotId], PhoneStateListener.LISTEN_NONE);
         mTelephonyManager.setCellInfoListRate(CELL_INFO_LIST_RATE_DISABLED);
         mConnectivityManager.unregisterNetworkCallback(mNetworkCallback);
 
@@ -687,7 +715,7 @@ public class RadioInfo extends Activity {
                     + ((lac == -1) ? "unknown" : Integer.toHexString(lac))
                     + "   "
                     + r.getString(R.string.radioInfo_cid) + " = "
-                    + ((cid == -1) ? "unknown" : Integer.toHexString(cid)));
+                    + ((cid == -1) ? "unknown" : cid));
         } else if (location instanceof CdmaCellLocation) {
             CdmaCellLocation loc = (CdmaCellLocation)location;
             int bid = loc.getBaseStationId();
@@ -1095,8 +1123,8 @@ public class RadioInfo extends Activity {
         Thread locThread = new Thread() {
             @Override
             public void run() {
-                mCellInfoResult = mTelephonyManager.getAllCellInfo();
-                mCellLocationResult = mTelephonyManager.getCellLocation();
+                mCellInfoResult = phone.getAllCellInfo(null);
+                mCellLocationResult = phone.getCellLocation();
                 mNeighboringCellResult = mTelephonyManager.getNeighboringCellInfo();
 
                 mHandler.post(updateAllCellInfoResults);
