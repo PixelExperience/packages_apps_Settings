@@ -41,6 +41,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import com.android.internal.util.custom.cutout.CutoutUtils;
+
 public class StatusbarSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "StatusbarSettings";
@@ -68,8 +70,6 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
 
         mNetworkTrafficCategory = (PreferenceCategory) findPreference(NETWORK_TRAFFIC_CATEGORY);
 
-        // TODO: Check notch
-
         mQuickPulldown =
                 (ListPreference) findPreference(Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
@@ -77,29 +77,33 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
         updateQuickPulldownSummary(quickPulldownValue);
 
-        mNetTrafficMode = (DropDownPreference)
-                findPreference(Settings.System.NETWORK_TRAFFIC_MODE);
-        mNetTrafficMode.setOnPreferenceChangeListener(this);
-        int mode = Settings.System.getIntForUser(resolver,
-                Settings.System.NETWORK_TRAFFIC_MODE, 0, UserHandle.USER_CURRENT);
-        mNetTrafficMode.setValue(String.valueOf(mode));
+        if (!isNetworkTrafficAvailable()) {
+            getPreferenceScreen().removePreference(mNetworkTrafficCategory);
+        }else{
+            mNetTrafficMode = (DropDownPreference)
+                    findPreference(Settings.System.NETWORK_TRAFFIC_MODE);
+            mNetTrafficMode.setOnPreferenceChangeListener(this);
+            int mode = Settings.System.getIntForUser(resolver,
+                    Settings.System.NETWORK_TRAFFIC_MODE, 0, UserHandle.USER_CURRENT);
+            mNetTrafficMode.setValue(String.valueOf(mode));
 
-        mNetTrafficAutohide = (SwitchPreference)
-                findPreference(Settings.System.NETWORK_TRAFFIC_AUTOHIDE);
-        mNetTrafficAutohide.setOnPreferenceChangeListener(this);
+            mNetTrafficAutohide = (SwitchPreference)
+                    findPreference(Settings.System.NETWORK_TRAFFIC_AUTOHIDE);
+            mNetTrafficAutohide.setOnPreferenceChangeListener(this);
 
-        mNetTrafficUnits = (DropDownPreference)
-                findPreference(Settings.System.NETWORK_TRAFFIC_UNITS);
-        mNetTrafficUnits.setOnPreferenceChangeListener(this);
-        int units = Settings.System.getIntForUser(resolver,
-                Settings.System.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1, UserHandle.USER_CURRENT);
-        mNetTrafficUnits.setValue(String.valueOf(units));
+            mNetTrafficUnits = (DropDownPreference)
+                    findPreference(Settings.System.NETWORK_TRAFFIC_UNITS);
+            mNetTrafficUnits.setOnPreferenceChangeListener(this);
+            int units = Settings.System.getIntForUser(resolver,
+                    Settings.System.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1, UserHandle.USER_CURRENT);
+            mNetTrafficUnits.setValue(String.valueOf(units));
 
-        mNetTrafficShowUnits = (SwitchPreference)
-                findPreference(Settings.System.NETWORK_TRAFFIC_SHOW_UNITS);
-        mNetTrafficShowUnits.setOnPreferenceChangeListener(this);
+            mNetTrafficShowUnits = (SwitchPreference)
+                    findPreference(Settings.System.NETWORK_TRAFFIC_SHOW_UNITS);
+            mNetTrafficShowUnits.setOnPreferenceChangeListener(this);
 
-        updateNetworkTrafficEnabledStates(mode);
+            updateNetworkTrafficEnabledStates(mode);
+        }
     }
 
     @Override
@@ -110,7 +114,13 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
             mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
         }
-        // TODO: Check notch
+        if (mNetworkTrafficCategory != null && !isNetworkTrafficAvailable()) {
+            getPreferenceScreen().removePreference(mNetworkTrafficCategory);
+        }
+    }
+
+    private boolean isNetworkTrafficAvailable(){
+        return !CutoutUtils.hasBigCutout(getContext());
     }
 
     @Override
