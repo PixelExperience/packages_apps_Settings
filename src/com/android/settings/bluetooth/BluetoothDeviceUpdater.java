@@ -15,6 +15,7 @@
  */
 package com.android.settings.bluetooth;
 
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.os.Bundle;
@@ -113,7 +114,18 @@ public abstract class BluetoothDeviceUpdater implements BluetoothCallback,
 
     @Override
     public void onBluetoothStateChanged(int bluetoothState) {
-        forceUpdate();
+        if (bluetoothState == BluetoothAdapter.STATE_OFF ||
+                bluetoothState == BluetoothAdapter.STATE_BLE_ON) {
+            Collection<CachedBluetoothDevice> cachedDevices =
+                    mLocalManager.getCachedDeviceManager().getCachedDevicesCopy();
+            for (CachedBluetoothDevice cachedBluetoothDevice : cachedDevices) {
+                if (!cachedBluetoothDevice.isConnected()) {
+                    removePreference(cachedBluetoothDevice);
+                }
+            }
+        } else {
+            forceUpdate();
+        }
     }
 
     @Override

@@ -37,6 +37,7 @@ import android.net.NetworkRequest;
 import android.net.NetworkUtils;
 import android.net.RouteInfo;
 import android.net.wifi.WifiConfiguration;
+import android.net.wifi.WifiConfiguration.KeyMgmt;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Handler;
@@ -297,6 +298,13 @@ public class WifiDetailPreferenceController extends AbstractPreferenceController
 
         mIpv6Category = (PreferenceCategory) screen.findPreference(KEY_IPV6_CATEGORY);
         mIpv6AddressPref = screen.findPreference(KEY_IPV6_ADDRESSES_PREF);
+
+        if (mAccessPoint.getSecurityString(false).equals("SAE")
+             && mAccessPoint.getConfig().allowedKeyManagement.get(KeyMgmt.WPA_PSK)) {
+             mSecurityPref.setDetailText(mContext.getString(R.string.wifi_security_wpa_wpa2));
+         }
+         else
+             mSecurityPref.setDetailText(mAccessPoint.getSecurityString(false /* concise */));
 
         mSecurityPref.setDetailText(mAccessPoint.getSecurityString(false /* concise */));
     }

@@ -10108,4 +10108,9 @@
     <string name="qtifeedback_activity">com.qti.smq.ui.QtiFeedbackActivity</string>
 
     <string name="reset_default_apn_failed">Failed to reset default apn</string>
+    <!-- Reset network progress screen title [CHAR LIMIT=30] -->
+    <string name="reset_network_progress_title" >Resetting</string>
+    <!-- Reset network progress screen text [CHAR LIMIT=75] -->
+    <string name="reset_network_progress_text">Please wait...</string>
+
 </resources>
