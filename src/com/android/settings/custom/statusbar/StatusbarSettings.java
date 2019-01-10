@@ -72,7 +72,9 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
 
         mNetworkTrafficCategory = (PreferenceCategory) findPreference(NETWORK_TRAFFIC_CATEGORY);
 
-        // TODO: Check notch
+        if (!isNetworkTrafficAvailable()) {
+            removePreferenceAndRemoveFromIndex(getPreferenceScreen(), mNetworkTrafficCategory);
+        }
 
         mQuickPulldown =
                 (ListPreference) findPreference(Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN);
@@ -114,7 +116,19 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
             mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
         }
-        // TODO: Check notch
+        if (mNetworkTrafficCategory != null && !isNetworkTrafficAvailable()) {
+            removePreferenceAndRemoveFromIndex(getPreferenceScreen(), mNetworkTrafficCategory);
+        }
+    }
+
+    private boolean isNetworkTrafficAvailable(){
+        if (getResources().getBoolean(
+                com.android.internal.R.bool.config_physicalDisplayCutout)){
+            return Settings.System.getIntForUser(getActivity().getContentResolver(),
+                Settings.System.DISPLAY_CUTOUT_HIDDEN, 0, UserHandle.USER_CURRENT) == 1;
+        }else{
+            return true;
+        }
     }
 
     @Override
