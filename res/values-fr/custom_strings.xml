@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Déverrouillage automatique avec reconnaissance faciale</string>
     <string name="face_auto_unlock_summary">Désactiver l\'écran de verrouillage après la reconnaissance faciale</string>
+    <!-- Advanced restart options -->
 </resources>

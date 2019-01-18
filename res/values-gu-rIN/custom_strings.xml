@@ -104,4 +104,5 @@
     <string name="ambient_play_history_menu_add_to_home">હોમ સ્ક્રીન પર ઉમેરો</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">શું તમે ખાતરી કરો છો?</string>
     <!-- Face auto unlock -->
+    <!-- Advanced restart options -->
 </resources>

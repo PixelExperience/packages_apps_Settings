@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Аўтаматычнае распазнанне асобы</string>
     <string name="face_auto_unlock_summary">Прапускаць экран блакавання пасля разблакоўкі тварам</string>
+    <!-- Advanced restart options -->
 </resources>

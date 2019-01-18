@@ -98,4 +98,5 @@
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Време на започване</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">Време за край</string>
     <!-- Face auto unlock -->
+    <!-- Advanced restart options -->
 </resources>

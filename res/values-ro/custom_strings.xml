@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Deblocare automată cu fața</string>
     <string name="face_auto_unlock_summary">Deblocare ecran după recunoașterea feței</string>
+    <!-- Advanced restart options -->
 </resources>

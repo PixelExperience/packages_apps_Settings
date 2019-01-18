@@ -105,4 +105,5 @@
     <string name="ambient_play_history_dialog_remove_all_confirmation">Adakah anda pasti?</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Telefon Dibuka Secara Automatik Melalui Pengimbasan Muka</string>
+    <!-- Advanced restart options -->
 </resources>

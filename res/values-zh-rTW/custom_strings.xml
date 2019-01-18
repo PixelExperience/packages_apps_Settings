@@ -29,7 +29,7 @@
     <string name="sim_missing">遺失或故障</string>
     <string name="sim_enabler_need_disable_sim">SIM 卡將停用。是否繼續？</string>
     <string name="sim_enabler_will_disable_sim_title">注意</string>
-    <string name="sim_enabler_need_switch_data_service">此 SIM 卡將被停用，並且將使用 SIM 卡 <xliff:g id="slotid">%1$s</xliff:g> 於數據服務中，您確定要繼續嗎？</string>
+    <string name="sim_enabler_need_switch_data_service">此 SIM 卡將被停用，並且將使用 SIM 卡 <xliff:g id="slotid">%1$s</xliff:g> 於行動數據服務中，您確定要繼續嗎？</string>
     <string name="sim_enabler_airplane_on">飛航模式開啟時無法進行此操作。</string>
     <string name="sim_enabler_in_call">通話時無法進行此操作。</string>
     <string name="sim_enabler_both_inactive">無法停用所有 SIM 卡</string>
@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">智慧識別歌曲</string>
     <string name="ambient_play_lockscreen_title">在鎖定螢幕上顯示鄰近播放中的歌曲</string>
+    <string name="ambient_play_lockscreen_summary">在鎖定畫面上顯示已識別歌曲</string>
     <string name="ambient_play_notifications_title">通知</string>
+    <string name="ambient_play_notifications_summary">使在通知顯示已識別歌曲</string>
     <string name="ambient_play_switch_bar_on">開啟</string>
     <string name="ambient_play_switch_bar_off">關閉</string>
     <string name="ambient_play_help_text">自動識別鄰近播放的歌曲，您可以看到歌曲名稱及創作者。啟用時，電池及數據的使用可能會受到些影響。</string>
@@ -103,11 +105,17 @@
     <string name="ambient_play_history_menu_remove_all">刪除所有內容</string>
     <string name="ambient_play_history_menu_add_to_home">新增至主畫面</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">你確定要這樣做嗎？</string>
+    <string name="ambient_play_saving_options_title">保存設定</string>
+    <string name="ambient_play_saving_options_summary">降低電池和網路使用量的選項</string>
     <string name="ambient_play_saving_options_low_battery_title">低電量</string>
+    <string name="ambient_play_saving_options_low_battery_summary">低電量時停用歌曲識別</string>
     <string name="ambient_play_saving_options_mobile_data_title">行動數據</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">行動數據啟用時停用歌曲識別</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">停用歌曲識別的時間</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">開始時間</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">結束時間：</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">自動人臉辨識解鎖</string>
     <string name="face_auto_unlock_summary">人臉辨識後將自動解鎖螢幕</string>
+    <!-- Advanced restart options -->
 </resources>

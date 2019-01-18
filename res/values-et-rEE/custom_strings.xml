@@ -113,7 +113,11 @@
     <string name="ambient_play_saving_options_mobile_data_summary">Peata tuvastus kui mobiilse andmeside on aktiveeritud</string>
     <string name="ambient_play_saving_options_quiet_period_title">Vaikne periood</string>
     <string name="ambient_play_saving_options_quiet_period_enable_title">Akriveeri vaikne periood</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Peata tuvastus kindlaks perioodiks</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Algusaeg</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Lõpuaeg</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automaatne näotuvastusega avamine</string>
     <string name="face_auto_unlock_summary">Väldi lukustusekraani peale näotuvastust</string>
+    <!-- Advanced restart options -->
 </resources>

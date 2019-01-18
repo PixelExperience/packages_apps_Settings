@@ -88,10 +88,13 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Εμφάνιση κοντινών τραγουδιών</string>
     <string name="ambient_play_lockscreen_title">Προβολή τραγουδιών στην οθόνη κλειδώματος</string>
+    <string name="ambient_play_lockscreen_summary">Εμφάνιση στην οθόνη κλειδώματος όταν αναγνωρίζεται ενα τραγούδι</string>
     <string name="ambient_play_notifications_title">Ειδοποιήσεις</string>
+    <string name="ambient_play_notifications_summary">Εμφάνιση ειδοποιήσης όταν ενα τραγούδι αναγνωρίζεται</string>
     <string name="ambient_play_switch_bar_on">Ενεργό</string>
     <string name="ambient_play_switch_bar_off">Ανενεργό</string>
     <string name="ambient_play_help_text">Όταν παίζει μουσική κοντά σας, μπορείτε να δείτε το όνομα του τραγουδιού και του καλλιτέχνη. Η ζωή της μπαταρίας και η χρήση δεδομένων μπορεί να επηρεαστούν εάν αυτή η λειτουργία είναι ενεργοποιημένη.</string>
+    <string name="ambient_play_history">Ιστορικό Αναγνώρισης Τραγουδιών</string>
     <string name="ambient_play_loading_data">Φόρτωση δεδομένων…</string>
     <string name="ambient_play_history_today">Σήμερα</string>
     <string name="ambient_play_history_yesterday">Χθές</string>
@@ -102,5 +105,16 @@
     <string name="ambient_play_history_menu_remove_all">Αφαίρεση όλων</string>
     <string name="ambient_play_history_menu_add_to_home">Προσθήκη στην Αρχική οθόνη</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Είστε σίγουρος;</string>
+    <string name="ambient_play_saving_options_title">Αποθήκευση Επιλογών</string>
+    <string name="ambient_play_saving_options_summary">Επιλογές για την ελάττωση χρήσης μπαταρίας και δεδομένων</string>
+    <string name="ambient_play_saving_options_low_battery_title">Χαμηλή Μπαταρία</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Απενεργοποίηση αναγνώρισης όταν η μπαταρία είναι χαμηλή</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Κινητά Δεδομένα</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Απενεργοποίηση αναγνώρισης όταν χρησιμοποιούνται Κινητά Δεδομένα</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Περίοδος Ησυχίας</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Ενεργοποίηση περιόδου ησυχίας</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Απενεργοποίηση αναγνώρισης για συγκεκριμένο χρονικό διάστημα</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Στιγμή εναρξης</string>
     <!-- Face auto unlock -->
+    <!-- Advanced restart options -->
 </resources>

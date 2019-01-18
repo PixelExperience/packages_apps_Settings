@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Otomatik yüz kilidi açma</string>
     <string name="face_auto_unlock_summary">Yüz kilidini açtıktan sonra kilit ekranını otomatik kapat</string>
+    <!-- Advanced restart options -->
 </resources>

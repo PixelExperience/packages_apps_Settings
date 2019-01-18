@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Zobraziť všetky skladby</string>
     <string name="ambient_play_lockscreen_title">Zobraziť skladby na obrazovke uzamknutia</string>
+    <string name="ambient_play_lockscreen_summary">Zobraziť rozpoznané skladby na uzamykacej obrazovke</string>
     <string name="ambient_play_notifications_title">Upozornenia</string>
+    <string name="ambient_play_notifications_summary">Zobraziť notifikáciu pri rozpoznaní skladby</string>
     <string name="ambient_play_switch_bar_on">Zap.</string>
     <string name="ambient_play_switch_bar_off">Vyp.</string>
     <string name="ambient_play_help_text">Keď v okolí bude hrať hudba, zobrazí sa vám názov skladby a interpret. Životnosť batérie a využitie dát môžu byť ovplyvnené, ak je táto funkcia povolená.</string>
@@ -103,10 +105,19 @@
     <string name="ambient_play_history_menu_remove_all">Odstrániť všetko</string>
     <string name="ambient_play_history_menu_add_to_home">Pridať na domovskú obrazovku</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Ste si istí?</string>
+    <string name="ambient_play_saving_options_title">Možnosti ukladania</string>
+    <string name="ambient_play_saving_options_summary">Možnosti k zníženiu spotreby batérie a využitia siete</string>
     <string name="ambient_play_saving_options_low_battery_title">Slabá batéria</string>
     <string name="ambient_play_saving_options_low_battery_summary">Zakázať rozpoznávanie pri nízkom stave batérie</string>
     <string name="ambient_play_saving_options_mobile_data_title">Mobilné dáta</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Zakázať rozpoznávanie, pokiaľ sú zapnuté mobilné dáta</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Obdobie ticha</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Povoliť obdobie ticha</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Zakázať rozpoznávanie na určitú dobu</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Čas spustenia</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Čas ukončenia</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatické odomknutie pomocou tváre</string>
     <string name="face_auto_unlock_summary">Zbaliť obrazovku uzamknutia po odomknutí pomocou tváre</string>
+    <!-- Advanced restart options -->
 </resources>

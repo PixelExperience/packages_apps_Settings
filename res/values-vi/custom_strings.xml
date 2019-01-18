@@ -88,7 +88,7 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Hiện bài hát kế bên</string>
     <string name="ambient_play_lockscreen_title">Hiện bài hát trên màn hình khóa</string>
-    <string name="ambient_play_lockscreen_summary">Hiển thị thông báo trên màn hình khoá khi tìm ra bài hát</string>
+    <string name="ambient_play_lockscreen_summary">Hiển thị thông báo trên màn hình khoá khi sử dụng tính năng \"Tìm bài hát\"</string>
     <string name="ambient_play_notifications_title">Thông báo</string>
     <string name="ambient_play_notifications_summary">Hiển thị thông báo khi tìm ra bài hát</string>
     <string name="ambient_play_switch_bar_on">Bật</string>
@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Mở khóa khuôn mặt tự động</string>
     <string name="face_auto_unlock_summary">Bỏ qua khóa màn hình sau khi mở khóa khuôn mặt</string>
+    <!-- Advanced restart options -->
 </resources>

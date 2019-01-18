@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatische Gesichts-Entsperrung</string>
     <string name="face_auto_unlock_summary">Sperrbildschirm nach Gesichtsentsperrung verlassen</string>
+    <!-- Advanced restart options -->
 </resources>

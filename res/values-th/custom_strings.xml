@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">ปลดล็อคใบหน้าอัตโนมัติ</string>
     <string name="face_auto_unlock_summary">ยกเลิกหน้าจอล็อคหลังจากทำการปลดล็อคด้วยใบหน้า</string>
+    <!-- Advanced restart options -->
 </resources>

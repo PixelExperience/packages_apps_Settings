@@ -61,7 +61,7 @@
     <string name="hardware_keys_action_launch_camera">启动相机</string>
     <string name="hardware_keys_action_sleep">关闭屏幕</string>
     <string name="hardware_keys_action_last_app">上次运行应用</string>
-    <string name="hardware_keys_action_split_screen">拆分屏幕</string>
+    <string name="hardware_keys_action_split_screen">分屏</string>
     <string name="hardware_keys_swipe_right_key_title">右滑</string>
     <string name="hardware_keys_swipe_left_key_title">左滑</string>
     <string name="hardware_keys_long_tap_key_title">长按</string>
@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">自动人脸解锁</string>
     <string name="face_auto_unlock_summary">人脸解锁后自动解锁</string>
+    <!-- Advanced restart options -->
 </resources>

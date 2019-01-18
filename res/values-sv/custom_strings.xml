@@ -104,4 +104,5 @@
     <string name="ambient_play_history_menu_add_to_home">Lägg till på hemskärmen</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Är du säker?</string>
     <!-- Face auto unlock -->
+    <!-- Advanced restart options -->
 </resources>

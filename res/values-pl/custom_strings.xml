@@ -30,7 +30,7 @@
     <string name="sim_enabler_need_disable_sim">Karta SIM zostanie wyłączona. Kontynuować?</string>
     <string name="sim_enabler_will_disable_sim_title">Uwaga</string>
     <string name="sim_enabler_need_switch_data_service">Ta karta SIM zostanie wyłączona i SIM <xliff:g id="slotid">%1$s </xliff:g> będzie używana do transmisji danych, kontynuować?</string>
-    <string name="sim_enabler_airplane_on">Nie można wykonać operacji, podczas włączonego trybu samolotowego.</string>
+    <string name="sim_enabler_airplane_on">Nie można wykonać operacji, gdy włączony jest tryb samolotowy.</string>
     <string name="sim_enabler_in_call">Nie można wykonać operacji w czasie rozmowy.</string>
     <string name="sim_enabler_both_inactive">Nie można wyłączyć wszystkich kart SIM</string>
     <string name="sim_enabler_enabling">Aktywowanie\u2026</string>
@@ -44,9 +44,9 @@
     <!-- Buttons -->
     <string name="button_pref_title">Przyciski</string>
     <string name="hardware_keys_home_key_title">Przycisk Home</string>
-    <string name="hardware_keys_back_key_title">Przycisk wstecz</string>
-    <string name="hardware_keys_menu_key_title">Przycisk menu</string>
-    <string name="hardware_keys_assist_key_title">Przycisk szukaj</string>
+    <string name="hardware_keys_back_key_title">Przycisk Wstecz</string>
+    <string name="hardware_keys_menu_key_title">Przycisk Menu</string>
+    <string name="hardware_keys_assist_key_title">Przycisk Szukaj</string>
     <string name="hardware_keys_appswitch_key_title">Przycisk ostatnich aplikacji</string>
     <string name="hardware_keys_camera_key_title">Przycisk aparatu</string>
     <string name="hardware_keys_short_press_title">Akcja krótkiego naciśnięcia</string>
@@ -86,15 +86,15 @@
     <string name="weather_title">Pogoda</string>
     <string name="weather_unit">Jednostka temperatury</string>
     <!-- Ambient Play -->
-    <string name="ambient_play_summary">Pokaż pobliskie utwory</string>
+    <string name="ambient_play_summary">Pokaż utwory w pobliżu</string>
     <string name="ambient_play_lockscreen_title">Pokaż piosenki na ekranie blokady</string>
-    <string name="ambient_play_lockscreen_summary">Pokaż na ekranie blokady gdy piosenka jest rozpoznana</string>
+    <string name="ambient_play_lockscreen_summary">Pokaż na ekranie blokady, gdy piosenka została rozpoznana</string>
     <string name="ambient_play_notifications_title">Powiadomienia</string>
-    <string name="ambient_play_notifications_summary">Pokaż powiadomienie gdy piosenka jest rozpoznana</string>
+    <string name="ambient_play_notifications_summary">Pokaż powiadomienie, gdy piosenka została rozpoznana</string>
     <string name="ambient_play_switch_bar_on">Włączone</string>
     <string name="ambient_play_switch_bar_off">Wyłączone</string>
-    <string name="ambient_play_help_text">Gdy muzyka jest odtwarzana w pobliżu, możesz zobaczyć nazwę utworu i wykonawcę. Żywotność baterii i korzystanie z danych mogą ulec zmianie, jeśli jest włączona.</string>
-    <string name="ambient_play_history">Odtwarzam z historii</string>
+    <string name="ambient_play_help_text">Gdy muzyka jest odtwarzana w pobliżu, możesz zobaczyć nazwę utworu i wykonawcę. Żywotność baterii i ilość zużytych danych mogą ulec zmianie, jeśli ta funkcja jest włączona.</string>
+    <string name="ambient_play_history">Historia odsłuchanych piosenek</string>
     <string name="ambient_play_loading_data">Wczytywanie danych…</string>
     <string name="ambient_play_history_today">Dziś</string>
     <string name="ambient_play_history_yesterday">Wczoraj</string>
@@ -108,7 +108,7 @@
     <string name="ambient_play_saving_options_title">Opcje zapisu</string>
     <string name="ambient_play_saving_options_summary">Zmniejsz zużycie baterii i danych sieci komórkowej</string>
     <string name="ambient_play_saving_options_low_battery_title">Niski stan baterii</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Wyłącz rozpoznawanie gdy stan baterii jest niski</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Wyłącz rozpoznawanie, gdy stan baterii jest niski</string>
     <string name="ambient_play_saving_options_mobile_data_title">Dane sieci komórkowej</string>
     <string name="ambient_play_saving_options_mobile_data_summary">Wyłącz rozpoznawanie gdy korzystasz z danych komórkowych</string>
     <string name="ambient_play_saving_options_quiet_period_title">Okres ciszy</string>
@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatyczne odblokowanie twarzą</string>
     <string name="face_auto_unlock_summary">Nie pokazuj ekranu blokady po odblokowaniu twarzą</string>
+    <!-- Advanced restart options -->
 </resources>

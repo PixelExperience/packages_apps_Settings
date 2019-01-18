@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Face unlock automático</string>
     <string name="face_auto_unlock_summary">Desbloquear automaticamente a tela quando um rosto confiável for detectado</string>
+    <!-- Advanced restart options -->
 </resources>

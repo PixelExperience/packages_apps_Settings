@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatinis veido atpažinimo atrakinimas</string>
     <string name="face_auto_unlock_summary">Išjunkite užrakto ekraną, po veido atrakinimo skaneriu</string>
+    <!-- Advanced restart options -->
 </resources>

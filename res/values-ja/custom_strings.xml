@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">自動フェイスアンロック</string>
     <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>
+    <!-- Advanced restart options -->
 </resources>

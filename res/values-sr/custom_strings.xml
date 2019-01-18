@@ -16,9 +16,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Пронађите сензор за отиске прстију са предње стране вашег телефона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Пронађите сензор за отиске прстију са леве стране вашег телефона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Пронађите сензор за отиске прстију са десне стране вашег телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Пронађите сензор за отисак прста са предње стране вашег телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Пронађите сензор за отисак прста са леве стране вашег телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Пронађите сензор за отисак прста са десне стране вашег телефона.</string>
     <!-- Notification light settings -->
     <string name="lights_category_title">Подешавања светла</string>
     <string name="notification_light_title">Индикатор обавештења</string>
@@ -88,9 +88,13 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Прикажи оближње песме</string>
     <string name="ambient_play_lockscreen_title">Прикажи песме на екрану за откључавање</string>
+    <string name="ambient_play_lockscreen_summary">Прикажи на закључаном екрану када је песма препозната</string>
     <string name="ambient_play_notifications_title">Обавештења</string>
+    <string name="ambient_play_notifications_summary">Прикажи обавештење на екрану када је песма препозната</string>
     <string name="ambient_play_switch_bar_on">Укључено</string>
     <string name="ambient_play_switch_bar_off">Искључено</string>
+    <string name="ambient_play_help_text">Када свира музика у близини, обавештенје о песми и извођачу ће бити приказна. Ово може утицати на трајање батерије и пренос података.</string>
+    <string name="ambient_play_history">Историја функције тренутног слушања</string>
     <string name="ambient_play_loading_data">Учитавање података…</string>
     <string name="ambient_play_history_today">Данас</string>
     <string name="ambient_play_history_yesterday">Јуче</string>
@@ -101,5 +105,19 @@
     <string name="ambient_play_history_menu_remove_all">Уклони све</string>
     <string name="ambient_play_history_menu_add_to_home">Додај на почетни екран</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Да ли сте сигурни?</string>
+    <string name="ambient_play_saving_options_title">Опције чувања</string>
+    <string name="ambient_play_saving_options_summary">Опције за смањивање потрошње батерије и преноса података</string>
+    <string name="ambient_play_saving_options_low_battery_title">Слаба батерија</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Укини препознавање када је слаба батерија</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Прехос података путем мреже</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Укини препознавање када је укључен пренос података путем мобилне мреже</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Тихи период</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Омогући тихи период</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Укини препознавање на одређено време</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Време почетка</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Време завршетка</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Аутоматско откључаванје препознвањем лица</string>
+    <string name="face_auto_unlock_summary">Поништите закључан ектан после препознатог лица</string>
+    <!-- Advanced restart options -->
 </resources>

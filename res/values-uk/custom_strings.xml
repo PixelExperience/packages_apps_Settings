@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Показати найближчі пісні</string>
     <string name="ambient_play_lockscreen_title">Показувати пісні на екрані блокування</string>
+    <string name="ambient_play_lockscreen_summary">Показувати на екрані блокування, коли пісня відтворюється</string>
     <string name="ambient_play_notifications_title">Сповіщення</string>
+    <string name="ambient_play_notifications_summary">Показувати сповіщення, коли після відтворюється</string>
     <string name="ambient_play_switch_bar_on">Вкл</string>
     <string name="ambient_play_switch_bar_off">Викл</string>
     <string name="ambient_play_help_text">Коли поруч грає музика, ви можете побачити назву пісні і виконавця. Може витрачати заряд батареї і вплинути на витрату трафіку.</string>
@@ -103,7 +105,19 @@
     <string name="ambient_play_history_menu_remove_all">Видалити все</string>
     <string name="ambient_play_history_menu_add_to_home">Додати на головний екран</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Ви впевнені? </string>
+    <string name="ambient_play_saving_options_title">Зберегти настройки</string>
+    <string name="ambient_play_saving_options_summary">Настройка зменшення використання батареї та мережі</string>
+    <string name="ambient_play_saving_options_low_battery_title">Низький рівень заряду батареї</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Вимкнути розпізнавання, коли низький зярд батареї</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Мобільні данні</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Вимкнути розпізнавання, коли мобільні дані ввімкнено</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Беззвучний режим</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Ввімкнути беззвучний режим</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Вимкнути розпізнавання протягом певного періоду часу</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Початок часу</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Кінець часу</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Автоматичне розблокування обличчям</string>
     <string name="face_auto_unlock_summary">Прибрати екран блокування після розблокування обличчям</string>
+    <!-- Advanced restart options -->
 </resources>

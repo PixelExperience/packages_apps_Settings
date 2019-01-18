@@ -90,7 +90,7 @@
     <string name="ambient_play_lockscreen_title">Mostra i brani nella schermata di blocco</string>
     <string name="ambient_play_lockscreen_summary">Mostra sullo schermata di blocco quando viene riconosciuto un brano</string>
     <string name="ambient_play_notifications_title">Notifiche</string>
-    <string name="ambient_play_notifications_summary">Mostra notifica quando viene riconosciuto un brano</string>
+    <string name="ambient_play_notifications_summary">Mostra una notifica quando viene riconosciuto un brano</string>
     <string name="ambient_play_switch_bar_on">Acceso</string>
     <string name="ambient_play_switch_bar_off">Spento</string>
     <string name="ambient_play_help_text">Quando della musica è in riproduzione nelle vicinanze, puoi vedere il nome del brano e l\'artista. La durata della batteria e l\'utilizzo dei dati potrebbero essere compromessi se abilitato.</string>
@@ -105,18 +105,19 @@
     <string name="ambient_play_history_menu_remove_all">Rimuovi tutto</string>
     <string name="ambient_play_history_menu_add_to_home">Aggiungi alla schermata home</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Sei sicuro?</string>
-    <string name="ambient_play_saving_options_title">Salvataggio delle opzioni</string>
+    <string name="ambient_play_saving_options_title">Salvataggio delle impostazioni</string>
     <string name="ambient_play_saving_options_summary">Opzioni per ridurre l\'utilizzo della batteria e della rete</string>
     <string name="ambient_play_saving_options_low_battery_title">Batteria scarica</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Disattiva il riconoscimento quando la batteria è scarica</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Disattiva il riconoscimento dei brani quando la batteria è scarica</string>
     <string name="ambient_play_saving_options_mobile_data_title">Dati mobili</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Disattiva il riconoscimento quando i dati mobili sono attivati</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Periodo silenzioso</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Abilita il periodo di silenzio</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Disattiva il riconoscimento quando i dati cellulare sono attivati</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Periodo di pausa</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Abilita il periodo di pausa</string>
     <string name="ambient_play_saving_options_quiet_period_enable_summary">Disattiva il riconoscimento per un certo periodo di tempo</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Tempo di Inizio</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Ora di inizio</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">Tempo di fine</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Sblocco con viso automatico</string>
     <string name="face_auto_unlock_summary">Ignora la schermata di blocco dopo lo sblocco con il viso</string>
+    <!-- Advanced restart options -->
 </resources>

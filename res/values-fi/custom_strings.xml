@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automaattinen face unlock</string>
     <string name="face_auto_unlock_summary">Ohittaa lukitusnäytön face unlockin jälkeen</string>
+    <!-- Advanced restart options -->
 </resources>

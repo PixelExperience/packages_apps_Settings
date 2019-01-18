@@ -95,4 +95,5 @@
     <string name="ambient_play_history_dialog_remove_all_confirmation">আপনি কি নিশ্চিত?</string>
     <string name="ambient_play_saving_options_title">সংরক্ষণ অপশন</string>
     <!-- Face auto unlock -->
+    <!-- Advanced restart options -->
 </resources>

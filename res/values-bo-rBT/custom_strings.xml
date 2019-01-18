@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">རང་འགུལ་གྱིས་གདོང་རིས་སྤྱད་དེ་ཟྭ་འབྱེད་པ།</string>
     <string name="face_auto_unlock_summary">གདོང་རིས་ངོས་འཛིན་བྱས་རྗེས་རང་འགུལ་གྱིས་ཟ་འབྱེད་པ།</string>
+    <!-- Advanced restart options -->
 </resources>

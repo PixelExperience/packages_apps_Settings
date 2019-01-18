@@ -119,4 +119,7 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Desbloqueio facial automático</string>
     <string name="face_auto_unlock_summary">Desbloquear automaticamente a tela quando um rosto confiável for detectado</string>
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Reinicialização avançada</string>
+    <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu liga/desliga para reiniciar o dispositivo em modo de recuperação ou bootloader</string>
 </resources>

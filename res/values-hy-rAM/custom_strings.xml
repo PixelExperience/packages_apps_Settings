@@ -37,4 +37,5 @@
     <string name="ambient_play_switch_bar_off">Անջատել</string>
     <string name="ambient_play_history_dialog_search">Որոնել համացանցում</string>
     <!-- Face auto unlock -->
+    <!-- Advanced restart options -->
 </resources>

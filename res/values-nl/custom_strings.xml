@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatisch gezicht ontgrendeling</string>
     <string name="face_auto_unlock_summary">Vergrendelscherm weigeren na gezichtsontgrendeling</string>
+    <!-- Advanced restart options -->
 </resources>

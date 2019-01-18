@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Desbloqueo facial automático</string>
     <string name="face_auto_unlock_summary">Quitar la pantalla de bloqueo tras desbloqueo facial</string>
+    <!-- Advanced restart options -->
 </resources>

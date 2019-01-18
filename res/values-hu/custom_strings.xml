@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Automatikus arcalapú feloldás</string>
     <string name="face_auto_unlock_summary">Sikeres arcalapú feloldás után a rendszer ki fogja hagyni a záróképernyőt</string>
+    <!-- Advanced restart options -->
 </resources>

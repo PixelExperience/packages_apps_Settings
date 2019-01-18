@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Samodejni odklep s prepoznavo obraza</string>
     <string name="face_auto_unlock_summary">Opusti zaklenjen zaslon po odklepu s prepoznavo obraza</string>
+    <!-- Advanced restart options -->
 </resources>

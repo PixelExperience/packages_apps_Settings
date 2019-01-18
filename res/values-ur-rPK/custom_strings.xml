@@ -27,6 +27,9 @@
     <string name="sim_disabled">غیر فعال</string>
     <string name="sim_missing">غیر حاضر یا خراب</string>
     <string name="sim_enabler_will_disable_sim_title">توجہ فرمائیں</string>
+    <string name="sub_activate_success">سم چالو ھو گئ.</string>
+    <string name="sub_activate_failed">چالو کرنے میں ناکامی.</string>
+    <string name="sub_deactivate_success">سم غیر فعال.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">ری سیٹ کریں</string>
     <!-- Buttons -->
@@ -44,7 +47,13 @@
     <string name="hardware_keys_action_split_screen">اسکرین کو آدھا کریں</string>
     <string name="hardware_keys_swipe_left_key_title">بائیں طرف پھیریں</string>
     <!-- Key backlight -->
+    <string name="backlight_summary_disabled">غیر فعال</string>
     <!-- Weather -->
     <!-- Ambient Play -->
+    <string name="ambient_play_switch_bar_on">چالو</string>
+    <string name="ambient_play_switch_bar_off">بند</string>
+    <string name="ambient_play_history_menu_remove_all">سبھی کو ہٹائیں</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">کیا آپ کو یقین ہے?</string>
     <!-- Face auto unlock -->
+    <!-- Advanced restart options -->
 </resources>

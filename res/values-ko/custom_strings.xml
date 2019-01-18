@@ -119,4 +119,5 @@
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">자동으로 얼굴 인식 잠금 해제</string>
     <string name="face_auto_unlock_summary">얼굴 인식 후 잠금이 해제 됩니다.</string>
+    <!-- Advanced restart options -->
 </resources>
