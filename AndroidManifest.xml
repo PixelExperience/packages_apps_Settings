@@ -98,6 +98,9 @@
     <!-- Ambient Indication -->
     <uses-permission android:name="org.pixelexperience.ambient.play.history.MANAGE_HISTORY" />
 
+    <!-- Thermal controller -->
+    <uses-permission android:name="org.pixelexperience.thermalcontroller.MANAGE_SETTINGS" />
+
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"
             android:taskAffinity=""
