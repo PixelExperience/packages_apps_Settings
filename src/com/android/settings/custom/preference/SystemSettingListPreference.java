@@ -20,10 +20,13 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.support.v7.preference.PreferenceDataStore;
 import android.support.v7.preference.ListPreference;
+import android.text.TextUtils;
 
 import android.provider.Settings;
 
 public class SystemSettingListPreference extends ListPreference {
+    private boolean mAutoSummary = false;
+
     public SystemSettingListPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         setPreferenceDataStore(new DataStore());
@@ -37,6 +40,33 @@ public class SystemSettingListPreference extends ListPreference {
     public SystemSettingListPreference(Context context) {
         super(context);
         setPreferenceDataStore(new DataStore());
+    }
+
+    @Override
+    public void setValue(String value) {
+        super.setValue(value);
+        if (mAutoSummary || TextUtils.isEmpty(getSummary())) {
+            setSummary(getEntry(), true);
+        }
+    }
+
+    @Override
+    public void setSummary(CharSequence summary) {
+        setSummary(summary, false);
+    }
+
+    private void setSummary(CharSequence summary, boolean autoSummary) {
+        mAutoSummary = autoSummary;
+        super.setSummary(summary);
+    }
+
+    @Override
+    protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
+        // This is what default ListPreference implementation is doing without respecting
+        // real default value:
+        //setValue(restoreValue ? getPersistedString(mValue) : (String) defaultValue);
+        // Instead, we better do
+        setValue(restoreValue ? getPersistedString((String) defaultValue) : (String) defaultValue);
     }
 
     public int getIntValue(int defValue) {
