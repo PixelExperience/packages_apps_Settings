@@ -70,20 +70,22 @@ public class ConnectedBluetoothDeviceUpdater extends BluetoothDeviceUpdater {
                     cachedDevice.getName() + ", state: " + state + ", bluetoothProfile: "
                     + bluetoothProfile);
         }
+
+        List<Integer> profileIds = new ArrayList<>();
+        for (LocalBluetoothProfile profile : cachedDevice.getProfiles()) {
+            if (cachedDevice.isConnectedProfile(profile)) {
+                profileIds.add(profile.getProfileId());
+            }
+        }
         if (state == BluetoothProfile.STATE_CONNECTED) {
-            if (isFilterMatched(cachedDevice)) {
+            if (isFilterMatched(cachedDevice) ||
+                    (cachedDevice.getDevice().isConnected() && profileIds.isEmpty()
+                        &&  bluetoothProfile != BluetoothProfile.A2DP)) {
                 addPreference(cachedDevice);
             } else {
                 removePreference(cachedDevice);
             }
         } else if (state == BluetoothProfile.STATE_DISCONNECTED) {
-            List<Integer> profileIds = new ArrayList<>();
-
-            for (LocalBluetoothProfile profile : cachedDevice.getProfiles()) {
-                if (cachedDevice.isConnectedProfile(profile))
-                    profileIds.add(profile.getProfileId());
-            }
-
             //Make sure all profiles are disconnected.
             if (profileIds.isEmpty() || (profileIds.contains(bluetoothProfile) &&
                     profileIds.size() == 1)) {
