@@ -115,6 +115,12 @@
     <string name="ambient_play_saving_options_quiet_period_enable_title">Ενεργοποίηση περιόδου ησυχίας</string>
     <string name="ambient_play_saving_options_quiet_period_enable_summary">Απενεργοποίηση αναγνώρισης για συγκεκριμένο χρονικό διάστημα</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Στιγμή εναρξης</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Ώρα τερματισμού</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Αυτόματο ξεκλείδωμα προσώπου</string>
+    <string name="face_auto_unlock_summary">Παράκαμψη οθόνης κλειδώματος μετά το ξεκλείδωμα προσώπου</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Προηγμένη επανεκκίνηση</string>
+    <string name="advanced_reboot_summary">Όταν ενεργοποιηθεί, περιλαμβάνονται στο μενού πλήκτρου απενεργοποίησης οι επιλογές επανεκκίνησης σε λειτουργία recovery ή bootloader</string>
+    <!-- Thermal control per app -->
 </resources>

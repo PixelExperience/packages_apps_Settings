@@ -120,4 +120,15 @@
     <string name="face_auto_unlock_title">Samodejni odklep s prepoznavo obraza</string>
     <string name="face_auto_unlock_summary">Opusti zaklenjen zaslon po odklepu s prepoznavo obraza</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Napredni vnovičen zagon</string>
+    <string name="advanced_reboot_summary">Ko je odklenjeno, v meni za izklop vključi možnosti za vnovičen zagon v obnovitev ali zagonski nalagalnik</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Profil optimizacije</string>
+    <string name="thermal_control_per_app_default">Brez optimizacije</string>
+    <string name="thermal_control_per_app_benchmark">Zmogljivost</string>
+    <string name="thermal_control_per_app_games">Igre</string>
+    <string name="thermal_control_per_app_browser">Brskalnik</string>
+    <string name="thermal_control_per_app_video_playback">Predvajanje videoposnetka</string>
+    <string name="thermal_control_per_app_dialer">Klicalnik</string>
+    <string name="thermal_control_per_app_camera">Fotoaparat</string>
 </resources>

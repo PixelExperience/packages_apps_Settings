@@ -120,4 +120,11 @@
     <string name="face_auto_unlock_title">自動フェイスアンロック</string>
     <string name="face_auto_unlock_summary">顔認証した時ロック画面をスキップする</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">高度な再起動</string>
+    <string name="advanced_reboot_summary">ロック解除時にリカバリーやブートローダーで再起動するオプションを電源メニューに含める</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app_games">ゲーム</string>
+    <string name="thermal_control_per_app_browser">ブラウザ</string>
+    <string name="thermal_control_per_app_dialer">電話</string>
+    <string name="thermal_control_per_app_camera">カメラ</string>
 </resources>

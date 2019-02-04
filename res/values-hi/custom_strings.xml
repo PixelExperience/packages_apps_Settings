@@ -18,6 +18,7 @@
     <!-- Fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Phone ke aage ki oar fingerprint ko dhunde</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Phone ke bayein taraf fingerprint sensor ko dhunde</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">अपने फोन के दांए तरफ फिंगरप्रिंट सेंसर को ढूंडें</string>
     <!-- Notification light settings -->
     <string name="lights_category_title">प्रकाश सेटिंग्स</string>
     <string name="notification_light_title">अधिसूचना प्रकाश</string>
@@ -25,6 +26,13 @@
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">निर्योग्य</string>
+    <string name="sim_missing">ढूंडने में असक्षम या खराब</string>
+    <string name="sim_enabler_need_disable_sim">सिम कार्ड निष्क्रिय हो जाएगा। क्या आप जारी रखना चाहते हैं?</string>
+    <string name="sim_enabler_will_disable_sim_title">ध्यान दें!</string>
+    <string name="sim_enabler_need_switch_data_service">यह सिम बंद हो जाएगा और सिम <xliff:g id="slotid">%1$s</xliff:g> नेट के लिए प्रयोग होगा। क्या आप जारी रखना चाहते हैं?</string>
+    <string name="sim_enabler_airplane_on">यह कार्य तब तक नहीं किया जा सकता जबतक एयरप्लेन मोड चालू है</string>
+    <string name="sim_enabler_in_call">यह कार्य कॉल के बीच में नहीं हो सकता</string>
+    <string name="sim_enabler_both_inactive">सभी सिम कार्ड बंद नहीं किए जा सकते</string>
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->
     <string name="hardware_keys_swipe_right_key_title">स्वाइप राइट</string>
@@ -37,4 +45,5 @@
     <!-- Ambient Play -->
     <!-- Face auto unlock -->
     <!-- Advanced restart options -->
+    <!-- Thermal control per app -->
 </resources>

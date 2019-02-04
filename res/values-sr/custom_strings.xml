@@ -120,4 +120,6 @@
     <string name="face_auto_unlock_title">Аутоматско откључаванје препознвањем лица</string>
     <string name="face_auto_unlock_summary">Поништите закључан ектан после препознатог лица</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Напредно ново покретање</string>
+    <!-- Thermal control per app -->
 </resources>

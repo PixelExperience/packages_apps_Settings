@@ -120,4 +120,14 @@
     <string name="face_auto_unlock_title">Membuka kunci dengan wajah otomatis</string>
     <string name="face_auto_unlock_summary">Lewati kunci layar setelah terbuka dengan wajah</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Mulai ulang lanjutan</string>
+    <string name="advanced_reboot_summary">Ketika tidak terkunci, berisi pilihan pada menu daya untuk mulai ulang ke pemulihan atau bootloader</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Profil pengoptimalan</string>
+    <string name="thermal_control_per_app_default">Tidak ada optimasi</string>
+    <string name="thermal_control_per_app_benchmark">Performa</string>
+    <string name="thermal_control_per_app_games">Permainan</string>
+    <string name="thermal_control_per_app_video_playback">Pemutaran video</string>
+    <string name="thermal_control_per_app_dialer">Telepon</string>
+    <string name="thermal_control_per_app_camera">Kamera</string>
 </resources>

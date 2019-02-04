@@ -88,7 +88,7 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Visualizza i brani nelle vicinanze</string>
     <string name="ambient_play_lockscreen_title">Mostra i brani nella schermata di blocco</string>
-    <string name="ambient_play_lockscreen_summary">Mostra sullo schermata di blocco quando viene riconosciuto un brano</string>
+    <string name="ambient_play_lockscreen_summary">Mostra una notifica quando viene riconosciuto un brano</string>
     <string name="ambient_play_notifications_title">Notifiche</string>
     <string name="ambient_play_notifications_summary">Mostra una notifica quando viene riconosciuto un brano</string>
     <string name="ambient_play_switch_bar_on">Acceso</string>
@@ -105,7 +105,7 @@
     <string name="ambient_play_history_menu_remove_all">Rimuovi tutto</string>
     <string name="ambient_play_history_menu_add_to_home">Aggiungi alla schermata home</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Sei sicuro?</string>
-    <string name="ambient_play_saving_options_title">Salvataggio delle impostazioni</string>
+    <string name="ambient_play_saving_options_title">Opzioni di salvataggio</string>
     <string name="ambient_play_saving_options_summary">Opzioni per ridurre l\'utilizzo della batteria e della rete</string>
     <string name="ambient_play_saving_options_low_battery_title">Batteria scarica</string>
     <string name="ambient_play_saving_options_low_battery_summary">Disattiva il riconoscimento dei brani quando la batteria è scarica</string>
@@ -120,4 +120,15 @@
     <string name="face_auto_unlock_title">Sblocco con viso automatico</string>
     <string name="face_auto_unlock_summary">Ignora la schermata di blocco dopo lo sblocco con il viso</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Riavvio avanzato</string>
+    <string name="advanced_reboot_summary">Quando sbloccato, includi le opzioni nel menu di accensione per riavviare in recovery o in bootloader</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Profilo di ottimizzazione</string>
+    <string name="thermal_control_per_app_default">Nessuna ottimizzazione</string>
+    <string name="thermal_control_per_app_benchmark">Prestazioni</string>
+    <string name="thermal_control_per_app_games">Giochi</string>
+    <string name="thermal_control_per_app_browser">Browser</string>
+    <string name="thermal_control_per_app_video_playback">Riproduzione video</string>
+    <string name="thermal_control_per_app_dialer">Telefono</string>
+    <string name="thermal_control_per_app_camera">Fotocamera</string>
 </resources>

@@ -24,13 +24,16 @@
     <string name="notification_light_title">Ilaw para sa notification</string>
     <string name="battery_light_title">Ilaw para sa baterya</string>
     <!-- Manual provisioning support -->
+    <string name="sim_disabled">naka-disable</string>
     <string name="sim_missing">nawawala o sira</string>
     <string name="sim_enabler_need_disable_sim">Ang SIM card ay madi-deactivate. Gusto mo bang magpatuloy?</string>
     <string name="sim_enabler_will_disable_sim_title">Atensyon</string>
     <string name="sim_enabler_need_switch_data_service">Ang SIM na ito ay madi-disable at ang SIM <xliff:g id="slotid">%1$s</xliff:g> ay gagamitin para sa data services. Sigurado ka bang gusto mong magpatuloy?</string>
     <string name="sim_enabler_airplane_on">Hindi magagawa ang operasyon habang naka-on ang airplane mode.</string>
+    <string name="sim_enabler_in_call">Hindi magagawa ang operasyon habang tumatawag.</string>
     <string name="sim_enabler_both_inactive">Hindi ma-disable ang lahat ng mga SIM cards</string>
     <string name="sub_activate_success">Na-activate na ang SIM.</string>
+    <string name="sub_activate_failed">Ang pag-activate ay nabigo.</string>
     <string name="sub_deactivate_success">Ang SIM ay naka-deactivate na.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">I-reset</string>
@@ -40,10 +43,14 @@
     <string name="hardware_keys_action_launch_camera">Buksan ang camera</string>
     <string name="hardware_keys_action_sleep">Patayin ang screen</string>
     <string name="hardware_keys_action_last_app">Huling app</string>
+    <string name="hardware_keys_swipe_left_key_title">Mag-swipe pakaliwa</string>
     <string name="hardware_keys_long_tap_key_title">Mahabang pindot</string>
     <string name="button_wake_title">Buksan ang device</string>
     <string name="camera_launch_title">Buksan ang camera</string>
+    <string name="camera_launch_summary">Ang mahabang pagpindut at pagbitiw ay magbubukas ng kamera</string>
     <!-- Key backlight -->
+    <string name="button_backlight_enabled">Pa-ilawin ang mga button</string>
+    <string name="button_backlight_only_when_pressed_title">Pa-ilawin ang mga button kapag pinindot lamang</string>
     <string name="backlight_timeout_unlimited">Huwag patayin</string>
     <string name="backlight_summary_disabled">Naka-disable</string>
     <string name="backlight_summary_enabled">Naka-enable</string>
@@ -51,12 +58,24 @@
     <string name="weather_title">Panahon</string>
     <string name="weather_unit">Yunit ng temperatura</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Ipakita ang mga kantang malapit</string>
     <string name="ambient_play_lockscreen_title">Ipakita ang mga kanta sa lock screen</string>
+    <string name="ambient_play_lockscreen_summary">Ipakita sa lock screen kapag ang kanta ay nalaman</string>
     <string name="ambient_play_notifications_title">Mga abiso</string>
+    <string name="ambient_play_notifications_summary">Magpakita ng notification kapag ang kanta ay nalaman</string>
+    <string name="ambient_play_switch_bar_on">Bukas</string>
+    <string name="ambient_play_switch_bar_off">Patay</string>
+    <string name="ambient_play_help_text">Kapag may tumutugtog na kanta, makikita mo ang pamagat ng kanta at ang artista. Ang battery life at data usage ay maaaring maapektuhan kapag ito ay naka-enable.</string>
     <string name="ambient_play_history_today">Ngayong araw</string>
     <string name="ambient_play_history_yesterday">Kahapon</string>
     <string name="ambient_play_history_dialog_play">Patugtugin</string>
     <string name="ambient_play_history_dialog_remove">Tanggalin</string>
+    <string name="ambient_play_history_menu_remove_all">Alisin lahat</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Sigurado ka ba?</string>
     <!-- Face auto unlock -->
     <!-- Advanced restart options -->
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app_games">Mga Laro</string>
+    <string name="thermal_control_per_app_browser">Browser</string>
+    <string name="thermal_control_per_app_camera">Kamera</string>
 </resources>

@@ -75,7 +75,9 @@
     <string name="button_backlight_enabled">আলোকিত বোতাম</string>
     <string name="button_backlight_seekbar_title">বোতামের উজ্জ্বলতা</string>
     <string name="backlight_timeout_title">আলো প্রজ্জ্বলনের মেয়াদ</string>
+    <string name="backlight_timeout_unlimited">বন্ধ করবেন না</string>
     <string name="backlight_summary_disabled">নিষ্ক্রিয়</string>
+    <string name="backlight_summary_enabled_with_timeout"><xliff:g id="timeout">%s</xliff:g> এর জন্যে সক্রিয়</string>
     <string name="backlight_summary_enabled">সক্রিয়</string>
     <!-- Weather -->
     <string name="weather_title">আবহাওয়া</string>
@@ -96,4 +98,5 @@
     <string name="ambient_play_saving_options_title">সংরক্ষণ অপশন</string>
     <!-- Face auto unlock -->
     <!-- Advanced restart options -->
+    <!-- Thermal control per app -->
 </resources>

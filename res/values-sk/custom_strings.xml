@@ -120,4 +120,7 @@
     <string name="face_auto_unlock_title">Automatické odomknutie pomocou tváre</string>
     <string name="face_auto_unlock_summary">Zbaliť obrazovku uzamknutia po odomknutí pomocou tváre</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Rozšířený reštart</string>
+    <string name="advanced_reboot_summary">Ak je povolené, do ponuky vypnutia budú pridané ďalšie voľby na reštart do recovery alebo bootloadera</string>
+    <!-- Thermal control per app -->
 </resources>

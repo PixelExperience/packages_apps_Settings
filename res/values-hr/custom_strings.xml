@@ -20,13 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Pronađite senzor otiska prsta na lijevoj strani telefona.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Pronađite senzor otiska prsta na desnoj strani telefona.</string>
     <!-- Notification light settings -->
-    <string name="lights_category_title">Postavke svjetla</string>
+    <string name="lights_category_title">Postavke svjetla obavijesti</string>
     <string name="notification_light_title">Svjetlo obavijesti</string>
-    <string name="battery_light_title">Baterijsko svjetlo</string>
+    <string name="battery_light_title">Svjetlo baterije</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">onemogućeno</string>
-    <string name="sim_missing">nedostaje ili je neispravan</string>
+    <string name="sim_missing">nedostaje ili je neispravna</string>
     <string name="sim_enabler_need_disable_sim">SIM kartica će biti deaktivirana. Želite li nastaviti?</string>
     <string name="sim_enabler_will_disable_sim_title">Pažnja</string>
     <string name="sim_enabler_need_switch_data_service">Ovaj SIM će biti onemogućen a SIM <xliff:g id="slotid">%1$s</xliff:g> će biti korišten za podatkovnu uslugu. Jeste li sigurni da želite nastaviti?</string>
@@ -44,7 +44,7 @@
     <!-- Buttons -->
     <string name="button_pref_title">Tipke</string>
     <string name="hardware_keys_home_key_title">Tipka za početni zaslon</string>
-    <string name="hardware_keys_back_key_title">Tipka za natrag</string>
+    <string name="hardware_keys_back_key_title">Tipka za povratak</string>
     <string name="hardware_keys_menu_key_title">Tipka izbornika</string>
     <string name="hardware_keys_assist_key_title">Tipka za pretraživanje</string>
     <string name="hardware_keys_appswitch_key_title">Tipka nedavno</string>
@@ -61,14 +61,14 @@
     <string name="hardware_keys_action_launch_camera">Pokreni kameru</string>
     <string name="hardware_keys_action_sleep">Isključi zaslon</string>
     <string name="hardware_keys_action_last_app">Posljednja aplikacija</string>
-    <string name="hardware_keys_action_split_screen">Podijeljeni ekran</string>
+    <string name="hardware_keys_action_split_screen">Podijeli ekran</string>
     <string name="hardware_keys_swipe_right_key_title">Povuci desno</string>
     <string name="hardware_keys_swipe_left_key_title">Povuci lijevo</string>
     <string name="hardware_keys_long_tap_key_title">Dugi dodir</string>
     <string name="hardware_keys_swipe_tap_title">Akcija potezanjem prsta</string>
     <string name="hardware_keys_long_tap_title">Radnja dugog dodira</string>
     <string name="button_wake_title">Buđenje uređaja</string>
-    <string name="camera_sleep_on_release_title">Zavirivanje zaslona</string>
+    <string name="camera_sleep_on_release_title">Brzi pogled na ekran</string>
     <string name="camera_sleep_on_release_summary">Polupritisak će držati zaslon uključen samo dok se tipka drži pritisnuta</string>
     <string name="camera_launch_title">Pokreni kameru</string>
     <string name="camera_launch_summary">Dugi pritisak i puštanje će pokrenuti kameru</string>
@@ -78,7 +78,7 @@
     <string name="button_backlight_only_when_pressed_title">Osvijetli gumbe samo pri pritisku</string>
     <string name="button_backlight_seekbar_title">Svjetlina tipki</string>
     <string name="backlight_timeout_title">Istek osvjetljenja</string>
-    <string name="backlight_timeout_unlimited">Nemojte isključiti</string>
+    <string name="backlight_timeout_unlimited">Nemoj isključiti</string>
     <string name="backlight_summary_disabled">Onemogućeno</string>
     <string name="backlight_summary_enabled_with_timeout">Omogućeno za <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Omogućeno</string>
@@ -90,11 +90,11 @@
     <string name="ambient_play_lockscreen_title">Prikaži pjesme na Zaključanom zaslonu</string>
     <string name="ambient_play_lockscreen_summary">Prikaži na zaključanom zaslonu kada je pjesma prepoznata</string>
     <string name="ambient_play_notifications_title">Obavijesti</string>
-    <string name="ambient_play_notifications_summary">Prikaži notifikacije kada je pjesma prepoznata</string>
+    <string name="ambient_play_notifications_summary">Pokaži obavijest na zaključanom zaslonu kada je pjesma prepoznata</string>
     <string name="ambient_play_switch_bar_on">Uključeno</string>
     <string name="ambient_play_switch_bar_off">Isključeno</string>
     <string name="ambient_play_help_text">Kada muzika svira u blizini, vidjeti ćete ime pjesme i autora. Ako je omogućeno, to može utjecati na vijek trajanja baterije i korištenje podataka.</string>
-    <string name="ambient_play_history">Sada se svira Povijest</string>
+    <string name="ambient_play_history">\"Sada svira\" Povijest</string>
     <string name="ambient_play_loading_data">Učitavanje podataka…</string>
     <string name="ambient_play_history_today">Danas</string>
     <string name="ambient_play_history_yesterday">Jučer</string>
@@ -105,10 +105,10 @@
     <string name="ambient_play_history_menu_remove_all">Ukloni sve</string>
     <string name="ambient_play_history_menu_add_to_home">Dodaj na početni zaslon</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Jeste li sigurni?</string>
-    <string name="ambient_play_saving_options_title">Spremanje opcija</string>
+    <string name="ambient_play_saving_options_title">Opcije spremanja</string>
     <string name="ambient_play_saving_options_summary">Opcije za smanjenje potrošnje baterije i podataka</string>
     <string name="ambient_play_saving_options_low_battery_title">Slaba baterija</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Onemogući prepoznavanje kada je baterja pri kraju</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Onemogući prepoznavanje kada je baterija pri kraju</string>
     <string name="ambient_play_saving_options_mobile_data_title">Mobilni internet</string>
     <string name="ambient_play_saving_options_mobile_data_summary">Onemogući prepoznavanje kada je mobilni internet uključen</string>
     <string name="ambient_play_saving_options_quiet_period_title">Tihi period</string>
@@ -117,7 +117,18 @@
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Vrijeme početka</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">Vrijeme završetka</string>
     <!-- Face auto unlock -->
-    <string name="face_auto_unlock_title">Automatsko otključavanje lica</string>
-    <string name="face_auto_unlock_summary">Otpustite zaključavanje zaslona nakon otključavanja lica</string>
+    <string name="face_auto_unlock_title">Automatsko otključavanje licem</string>
+    <string name="face_auto_unlock_summary">Preskočite zaslon zaključavanja nakon otključavanja licem</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Opcije naprednog ponovnog pokretanja</string>
+    <string name="advanced_reboot_summary">Kad je uređaj otključan, u izborniku ponovnog pokretanja prikaži opcije za oporavak ili bootloader</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Profil optimizacije</string>
+    <string name="thermal_control_per_app_default">Nema optimizacije</string>
+    <string name="thermal_control_per_app_benchmark">Performanse</string>
+    <string name="thermal_control_per_app_games">Igre</string>
+    <string name="thermal_control_per_app_browser">Preglednik</string>
+    <string name="thermal_control_per_app_video_playback">Reprodukcija videozapisa</string>
+    <string name="thermal_control_per_app_dialer">Birač broja</string>
+    <string name="thermal_control_per_app_camera">Kamera</string>
 </resources>

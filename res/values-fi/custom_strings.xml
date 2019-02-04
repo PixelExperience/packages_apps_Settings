@@ -120,4 +120,15 @@
     <string name="face_auto_unlock_title">Automaattinen face unlock</string>
     <string name="face_auto_unlock_summary">Ohittaa lukitusnäytön face unlockin jälkeen</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Edistynyt uudelleenkäynnistys</string>
+    <string name="advanced_reboot_summary">Lisää mahdollisuuden käynnistää uudelleenkäynnistämisen yhteydessä recovery- tai bootloader-tilaan</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Optimointi profiili</string>
+    <string name="thermal_control_per_app_default">Ei optimointia</string>
+    <string name="thermal_control_per_app_benchmark">Suorituskyky</string>
+    <string name="thermal_control_per_app_games">Pelit</string>
+    <string name="thermal_control_per_app_browser">Selain</string>
+    <string name="thermal_control_per_app_video_playback">Videotoisto</string>
+    <string name="thermal_control_per_app_dialer">Puhelin</string>
+    <string name="thermal_control_per_app_camera">Kamera</string>
 </resources>

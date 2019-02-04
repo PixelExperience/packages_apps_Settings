@@ -120,4 +120,15 @@
     <string name="face_auto_unlock_title">Deblocare automată cu fața</string>
     <string name="face_auto_unlock_summary">Deblocare ecran după recunoașterea feței</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Repornire avansată</string>
+    <string name="advanced_reboot_summary">Când este deblocat, în meniul butonului de alimentare se includ opțiunile pentru repornire în modurile Recuperare sau Bootloader</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Profil optimizare</string>
+    <string name="thermal_control_per_app_default">Nicio optimizare</string>
+    <string name="thermal_control_per_app_benchmark">Performanță</string>
+    <string name="thermal_control_per_app_games">Jocuri</string>
+    <string name="thermal_control_per_app_browser">Browser</string>
+    <string name="thermal_control_per_app_video_playback">Redare video</string>
+    <string name="thermal_control_per_app_dialer">Telefon</string>
+    <string name="thermal_control_per_app_camera">Cameră</string>
 </resources>

@@ -120,4 +120,7 @@
     <string name="face_auto_unlock_title">Automatische Gesichts-Entsperrung</string>
     <string name="face_auto_unlock_summary">Sperrbildschirm nach Gesichtsentsperrung verlassen</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Erweiterter Neustart</string>
+    <string name="advanced_reboot_summary">Bei entsperrtem Bildschirm dem Neustartmenü Optionen für Neustart in Recovery oder in Bootloader hinzufügen</string>
+    <!-- Thermal control per app -->
 </resources>

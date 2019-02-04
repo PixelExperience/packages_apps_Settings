@@ -120,4 +120,7 @@
     <string name="face_auto_unlock_title">Аўтаматычнае распазнанне асобы</string>
     <string name="face_auto_unlock_summary">Прапускаць экран блакавання пасля разблакоўкі тварам</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Варыянты перазагрузкі</string>
+    <string name="advanced_reboot_summary">Калі прылада разблакавана, у меню сілкавання даступны опцыі перазагрузкі ў рэжым аднаўлення і ў загрузчыка</string>
+    <!-- Thermal control per app -->
 </resources>

@@ -120,4 +120,15 @@
     <string name="face_auto_unlock_title">Mở khóa khuôn mặt tự động</string>
     <string name="face_auto_unlock_summary">Bỏ qua khóa màn hình sau khi mở khóa khuôn mặt</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Khởi động lại nâng cao</string>
+    <string name="advanced_reboot_summary">Khi mở khóa, bao gồm các tùy chọn trong trình đơn nguồn để khởi động lại vào phục hồi hoặc trình nạp khởi động</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Hồ sơ tối ưu hóa</string>
+    <string name="thermal_control_per_app_default">Không tối ưu hóa</string>
+    <string name="thermal_control_per_app_benchmark">Hiệu suất cao</string>
+    <string name="thermal_control_per_app_games">Trò chơi</string>
+    <string name="thermal_control_per_app_browser">Trình duyệt</string>
+    <string name="thermal_control_per_app_video_playback">Phát lại video</string>
+    <string name="thermal_control_per_app_dialer">Trình quay số</string>
+    <string name="thermal_control_per_app_camera">Máy ảnh</string>
 </resources>

@@ -20,9 +20,9 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Знайдіть сканер відбитків пальців на лівій грані вашого смартфона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Знайдіть сканер відбитків пальців на правій грані вашого смартфона.</string>
     <!-- Notification light settings -->
-    <string name="lights_category_title">Налаштування індикатора</string>
+    <string name="lights_category_title">Налаштування яскравості</string>
     <string name="notification_light_title">Індикатор сповіщень</string>
-    <string name="battery_light_title">Індикація батареї</string>
+    <string name="battery_light_title">Індикатор батареї</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">вимкнено</string>
@@ -120,4 +120,14 @@
     <string name="face_auto_unlock_title">Автоматичне розблокування обличчям</string>
     <string name="face_auto_unlock_summary">Прибрати екран блокування після розблокування обличчям</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Розширене меню перезавантаження</string>
+    <string name="advanced_reboot_summary">Коли пристрій розблоковано, в меню живлення доступні опції перезавантаження в режими відновлювача та завантажувача</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Профіль оптимізації</string>
+    <string name="thermal_control_per_app_default">Без оптимізації</string>
+    <string name="thermal_control_per_app_benchmark">Продуктивність</string>
+    <string name="thermal_control_per_app_games">Ігри</string>
+    <string name="thermal_control_per_app_browser">Браузер</string>
+    <string name="thermal_control_per_app_dialer">Номеронабирач</string>
+    <string name="thermal_control_per_app_camera">Камера</string>
 </resources>

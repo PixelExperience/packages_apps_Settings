@@ -28,7 +28,7 @@
     <string name="sim_disabled">معطل</string>
     <string name="sim_missing">مفقود أو به خلل</string>
     <string name="sim_enabler_need_disable_sim">سيتم إلغاء تنشيط بطاقة SIM. هل تريد الاستمرار؟</string>
-    <string name="sim_enabler_will_disable_sim_title">انتباه</string>
+    <string name="sim_enabler_will_disable_sim_title">تنبيه</string>
     <string name="sim_enabler_need_switch_data_service">سيتم تعطيل شريحة SIM وسيتم استخدام شريحة <xliff:g id="slotid">%1$s</xliff:g> لخدمات البيانات. هل أنت متأكد من أنك تريد المتابعة؟</string>
     <string name="sim_enabler_airplane_on">تعذر القيام بالعملية في وضع الطيران.</string>
     <string name="sim_enabler_in_call">تعذر القيام بالعملية أثناء إجراء مكالمة.</string>
@@ -92,9 +92,9 @@
     <string name="ambient_play_notifications_title">الإشعارات</string>
     <string name="ambient_play_notifications_summary">إظهار الإخطار عند التعرف على الأغنية</string>
     <string name="ambient_play_switch_bar_on">مفعل</string>
-    <string name="ambient_play_switch_bar_off">مغلق</string>
+    <string name="ambient_play_switch_bar_off">معطل</string>
     <string name="ambient_play_help_text">عندما يتم تشغيل الموسيقى في مكان قريب ، يمكنك رؤية اسم الأغنية والفنان. قد يتأثر عمر البطارية واستخدام البيانات إذا تم تمكين ذلك.</string>
-    <string name="ambient_play_history">سجل التشغيل الآن</string>
+    <string name="ambient_play_history">سجل التشغيل الحالي</string>
     <string name="ambient_play_loading_data">تحميل البيانات…</string>
     <string name="ambient_play_history_today">اليوم</string>
     <string name="ambient_play_history_yesterday">أمس</string>
@@ -105,8 +105,8 @@
     <string name="ambient_play_history_menu_remove_all">ازالة الكل</string>
     <string name="ambient_play_history_menu_add_to_home">إضافة إلى الشاشة الرئيسية</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">هل أنت متأكد؟</string>
-    <string name="ambient_play_saving_options_title">حفظ الخيارات</string>
-    <string name="ambient_play_saving_options_summary">خيارات لتقليل استخدام البطارية والشبكة</string>
+    <string name="ambient_play_saving_options_title">خيارات الحفظ</string>
+    <string name="ambient_play_saving_options_summary">خيارات لتقليل استخدام البطارية وبيانات الشبكة</string>
     <string name="ambient_play_saving_options_low_battery_title">البطـارية منخفضة</string>
     <string name="ambient_play_saving_options_low_battery_summary">تعطيل التعرف عندما تكون البطارية منخفضة</string>
     <string name="ambient_play_saving_options_mobile_data_title">بيانات الجوال</string>
@@ -117,7 +117,18 @@
     <string name="ambient_play_saving_options_quiet_period_start_time_title">وقت البدء</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">وقت الانتهـاء</string>
     <!-- Face auto unlock -->
-    <string name="face_auto_unlock_title">فتح الوجه التلقائي</string>
-    <string name="face_auto_unlock_summary">صرف النظر عن قفل الشاشة بعد إلغاء قفل الوجه</string>
+    <string name="face_auto_unlock_title">فتح القفل بالوجه تلقائي</string>
+    <string name="face_auto_unlock_summary">استبعد قفل الشاشة بعد إلغاء قفل الوجه</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">إعادة تشغيل متقدمة</string>
+    <string name="advanced_reboot_summary">عند الغاء قفل الشاشة، اضمن خيارات اعادة التشغيل الى وضع الاسترداد ووضع البوتلودر في قائمة اعادة التشغيل</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">وضع التحسين</string>
+    <string name="thermal_control_per_app_default">بدون تحسين</string>
+    <string name="thermal_control_per_app_benchmark">الأداء</string>
+    <string name="thermal_control_per_app_games">الألعاب</string>
+    <string name="thermal_control_per_app_browser">المتصفح</string>
+    <string name="thermal_control_per_app_video_playback">تشغيل الفيديو</string>
+    <string name="thermal_control_per_app_dialer">الإتصال</string>
+    <string name="thermal_control_per_app_camera">الكاميرا</string>
 </resources>

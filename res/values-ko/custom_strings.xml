@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front">휴대 전화 앞면에서 지문 센서를 찾습니다.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">전화기 왼쪽에 있는 지문 센서를 찾으십시오.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Locate the fingerprint sensor on the left side of your phone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">전화기 오른쪽에 있는 지문 센서를 찾으십시오.</string>
     <!-- Notification light settings -->
     <string name="lights_category_title">조명 설정</string>
@@ -120,4 +120,15 @@
     <string name="face_auto_unlock_title">자동으로 얼굴 인식 잠금 해제</string>
     <string name="face_auto_unlock_summary">얼굴 인식 후 잠금이 해제 됩니다.</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">고급 재시작</string>
+    <string name="advanced_reboot_summary">화면 잠금이 해제되어 있으면 전원 메뉴에 복구 모드 및 부트로더로 다시 시작하는 옵션을 추가합니다.</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">최적화 프로파일</string>
+    <string name="thermal_control_per_app_default">최적화 비활성화</string>
+    <string name="thermal_control_per_app_benchmark">퍼포먼스</string>
+    <string name="thermal_control_per_app_games">게임</string>
+    <string name="thermal_control_per_app_browser">인터넷</string>
+    <string name="thermal_control_per_app_video_playback">영상</string>
+    <string name="thermal_control_per_app_dialer">전화</string>
+    <string name="thermal_control_per_app_camera">카메라</string>
 </resources>

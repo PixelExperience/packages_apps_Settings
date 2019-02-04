@@ -120,4 +120,15 @@
     <string name="face_auto_unlock_title">Otomatik yüz kilidi açma</string>
     <string name="face_auto_unlock_summary">Yüz kilidini açtıktan sonra kilit ekranını otomatik kapat</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Gelişmiş yeniden başlatma</string>
+    <string name="advanced_reboot_summary">Kilit açıldığında kurtarma veya ön yükleyici modunda yeniden başlatmak için güç menüsüne seçenekler ekler</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Optimizasyon profili</string>
+    <string name="thermal_control_per_app_default">Optimizasyon yok</string>
+    <string name="thermal_control_per_app_benchmark">Performans</string>
+    <string name="thermal_control_per_app_games">Oyunlar</string>
+    <string name="thermal_control_per_app_browser">Tarayıcı</string>
+    <string name="thermal_control_per_app_video_playback">Video oynatma</string>
+    <string name="thermal_control_per_app_dialer">Çevirici</string>
+    <string name="thermal_control_per_app_camera">Kamera</string>
 </resources>

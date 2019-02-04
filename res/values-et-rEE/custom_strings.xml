@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Leidke enda telefoni tagaküljel olev sõrmejäljeandur.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Leidke enda telefoni esiküljel olev sõrmejäljeandur.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Leidke enda telefoni vasakul küljel olev sõrmejäljeandur.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Leidke enda telefoni paremal küljel olev sõrmejäljeandur.</string>
     <!-- Notification light settings -->
@@ -120,4 +120,15 @@
     <string name="face_auto_unlock_title">Automaatne näotuvastusega avamine</string>
     <string name="face_auto_unlock_summary">Väldi lukustusekraani peale näotuvastust</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Täiustatud taaskäivitamine</string>
+    <string name="advanced_reboot_summary">Kui lukustamata, lisa toitemenüüsse valikud taastusrežiimi või käivituslaadurisse taaskäivitamiseks</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Optimeerimise profiil</string>
+    <string name="thermal_control_per_app_default">Optimeeritud puudub</string>
+    <string name="thermal_control_per_app_benchmark">Jõudlus</string>
+    <string name="thermal_control_per_app_games">Mängud</string>
+    <string name="thermal_control_per_app_browser">Veebilehitseja</string>
+    <string name="thermal_control_per_app_video_playback">Videode Vaatamine</string>
+    <string name="thermal_control_per_app_dialer">Valija</string>
+    <string name="thermal_control_per_app_camera">Kaamera</string>
 </resources>

@@ -120,4 +120,15 @@
     <string name="face_auto_unlock_title">Automatyczne odblokowanie twarzą</string>
     <string name="face_auto_unlock_summary">Nie pokazuj ekranu blokady po odblokowaniu twarzą</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Zaawansowany restart</string>
+    <string name="advanced_reboot_summary">Dodaj opcję ponownego uruchomienia w trybie recovery lub bootloadera do menu zasilania, gdy urządzenie jest odblokowane</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Optymalizacja profilu</string>
+    <string name="thermal_control_per_app_default">Brak optymalizacji</string>
+    <string name="thermal_control_per_app_benchmark">Wydajność</string>
+    <string name="thermal_control_per_app_games">Gry</string>
+    <string name="thermal_control_per_app_browser">Przeglądarka</string>
+    <string name="thermal_control_per_app_video_playback">Odtwarzanie wideo</string>
+    <string name="thermal_control_per_app_dialer">Telefon</string>
+    <string name="thermal_control_per_app_camera">Aparat</string>
 </resources>

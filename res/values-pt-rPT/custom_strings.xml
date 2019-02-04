@@ -120,4 +120,14 @@
     <string name="face_auto_unlock_title">Face unlock automático</string>
     <string name="face_auto_unlock_summary">Desbloquear automaticamente a tela quando um rosto confiável for detectado</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Reinício avançado</string>
+    <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu de ligar/desligar para reiniciar o dispositivo em modo de recuperação ou bootloader</string>
+    <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Perfil de optimização</string>
+    <string name="thermal_control_per_app_default">Sem optimização</string>
+    <string name="thermal_control_per_app_benchmark">Desempenho</string>
+    <string name="thermal_control_per_app_games">Jogos</string>
+    <string name="thermal_control_per_app_browser">Navegador</string>
+    <string name="thermal_control_per_app_dialer">Marcador</string>
+    <string name="thermal_control_per_app_camera">Câmara</string>
 </resources>
