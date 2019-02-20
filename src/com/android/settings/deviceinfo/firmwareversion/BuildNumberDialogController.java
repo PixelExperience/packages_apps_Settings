@@ -25,6 +25,7 @@ import com.android.settings.R;
 import android.os.SystemProperties;
 
 import com.android.settings.deviceinfo.BuildNumberPreferenceController;
+import com.android.settings.deviceinfo.DeviceModelPreferenceController;
 
 public class BuildNumberDialogController {
 
@@ -49,6 +50,8 @@ public class BuildNumberDialogController {
             sb.append("\n");
             sb.append(pixelExperienceVersion);
         }
+        sb.append("\n");
+        sb.append(DeviceModelPreferenceController.getDeviceModel());
         mDialog.setText(BUILD_NUMBER_VALUE_ID, sb.toString());
     }
 }
