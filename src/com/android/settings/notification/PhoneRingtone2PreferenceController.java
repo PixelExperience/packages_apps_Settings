@@ -44,6 +44,7 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
         ringtonePreference.setSlotId(SLOT_ID);
         ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title) + " - " +
             String.format(mContext.getString(R.string.sim_card_number_title), 2));
+        ringtonePreference.setEnabled(hasCard());
     }
 
     @Override
@@ -61,5 +62,11 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
     @Override
     public int getRingtoneType() {
         return RingtoneManager.TYPE_RINGTONE;
+    }
+
+    private boolean hasCard() {
+        TelephonyManager telephonyManager =
+                (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+        return telephonyManager.hasIccCard(SLOT_ID);
     }
 }
