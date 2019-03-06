@@ -30,6 +30,7 @@ import com.android.settings.Utils;
 
 public class PhoneRingtonePreferenceController extends RingtonePreferenceControllerBase {
 
+    private static final int SLOT_ID = 0;
     private static final String KEY_PHONE_RINGTONE = "ringtone";
 
     public PhoneRingtonePreferenceController(Context context) {
@@ -48,6 +49,7 @@ public class PhoneRingtonePreferenceController extends RingtonePreferenceControl
                     (DefaultRingtonePreference) screen.findPreference(KEY_PHONE_RINGTONE);
             ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title) + " - " +
                 String.format(mContext.getString(R.string.sim_card_number_title), 1));
+            ringtonePreference.setEnabled(hasCard());
         }
     }
 
@@ -64,5 +66,11 @@ public class PhoneRingtonePreferenceController extends RingtonePreferenceControl
     @Override
     public int getRingtoneType() {
         return RingtoneManager.TYPE_RINGTONE;
+    }
+
+    private boolean hasCard() {
+        TelephonyManager telephonyManager =
+                (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+        return telephonyManager.hasIccCard(SLOT_ID);
     }
 }
