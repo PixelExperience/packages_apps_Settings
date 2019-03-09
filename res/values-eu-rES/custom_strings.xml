@@ -89,6 +89,7 @@
     <string name="ambient_play_summary">Erakutsi inguruko kantak</string>
     <string name="ambient_play_lockscreen_title">Kantuak blokeo pantailan erakutsi</string>
     <string name="ambient_play_notifications_title">Jakinarazpenak</string>
+    <string name="ambient_play_notifications_summary">Erakutsi jakinarazpena abesti bat antzematen duenean</string>
     <string name="ambient_play_switch_bar_on">Piztu</string>
     <string name="ambient_play_switch_bar_off">Itzali</string>
     <string name="ambient_play_help_text">Hurbil musika erreproduzitzen denean, abestiaren izena eta artista ikus dezakezu. Hau gaituta egonez gero bateriaren iraupena eta datuen erabilera kaltetu daitezke.</string>
@@ -103,7 +104,18 @@
     <string name="ambient_play_history_menu_remove_all">Kendu denak</string>
     <string name="ambient_play_history_menu_add_to_home">Hasierako pantailan gehitu</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Ziur zaude?</string>
+    <string name="ambient_play_saving_options_low_battery_title">Bateria baxua</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Ezagutzea desgaitu bateria baxua denean</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Datu mugikorrak</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Ezagutzea desgaitu datu mugikorrak gaituta daudenean</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Ezagutzea desgaitu denbora tarte baterako</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Hasiera ordua</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Amaiera ordua</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Aurpegiko desblokeatze automatikoa</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Berrabiaratze aurreratua</string>
+    <string name="advanced_reboot_summary">Desblokeatuta dagoenean, berreskuratze eta abiarazle moduetan berrabiatzeko aukerak gehitu itzaltze menuan</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app_browser">Nabigatzailea</string>
 </resources>

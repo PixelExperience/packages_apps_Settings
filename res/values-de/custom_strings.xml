@@ -20,7 +20,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Finden Sie den Fingerabdrucksensor auf der linken Seite des Telefons.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Finden Sie den Fingerabdrucksensor auf der rechten Seite des Telefons.</string>
     <!-- Notification light settings -->
-    <string name="lights_category_title">Led-Einstellungen</string>
+    <string name="lights_category_title">LED-Einstellungen</string>
     <string name="notification_light_title">Benachrichtigungs-LED</string>
     <string name="battery_light_title">Akku-LED</string>
     <!-- Manual provisioning support -->
@@ -123,4 +123,12 @@
     <string name="advanced_reboot_title">Erweiterter Neustart</string>
     <string name="advanced_reboot_summary">Bei entsperrtem Bildschirm dem Neustartmenü Optionen für Neustart in Recovery oder in Bootloader hinzufügen</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Optimierungs Profil</string>
+    <string name="thermal_control_per_app_default">Keine Optimierung</string>
+    <string name="thermal_control_per_app_benchmark">Leistung</string>
+    <string name="thermal_control_per_app_games">Spiele</string>
+    <string name="thermal_control_per_app_browser">Browser</string>
+    <string name="thermal_control_per_app_video_playback">Video-Wiedergabe</string>
+    <string name="thermal_control_per_app_dialer">Telefon</string>
+    <string name="thermal_control_per_app_camera">Kamera</string>
 </resources>

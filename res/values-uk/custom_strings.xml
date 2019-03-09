@@ -128,6 +128,7 @@
     <string name="thermal_control_per_app_benchmark">Продуктивність</string>
     <string name="thermal_control_per_app_games">Ігри</string>
     <string name="thermal_control_per_app_browser">Браузер</string>
+    <string name="thermal_control_per_app_video_playback">Відтворення відео</string>
     <string name="thermal_control_per_app_dialer">Номеронабирач</string>
     <string name="thermal_control_per_app_camera">Камера</string>
 </resources>

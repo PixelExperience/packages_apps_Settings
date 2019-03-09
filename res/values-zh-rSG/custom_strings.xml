@@ -17,8 +17,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front">指紋感應器位於手機背面。</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">指紋感應器位於手機左侧。</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">指紋感應器位於手機右侧。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left">指紋感應器位於手機左側。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right">指紋感應器位於手機右側。</string>
     <!-- Notification light settings -->
     <string name="lights_category_title">指示燈設定</string>
     <string name="notification_light_title">通知指示燈</string>
@@ -123,9 +123,12 @@
     <string name="advanced_reboot_title">進階重新啟動</string>
     <string name="advanced_reboot_summary">設備已解鎖時，在電源選單的重啟選項下加入重啟至 recovery 模式與 bootloader 的選項</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">最佳化設定檔</string>
+    <string name="thermal_control_per_app_default">無最佳化</string>
     <string name="thermal_control_per_app_benchmark">效能</string>
     <string name="thermal_control_per_app_games">遊戲</string>
     <string name="thermal_control_per_app_browser">瀏覽器</string>
+    <string name="thermal_control_per_app_video_playback">播放影片</string>
     <string name="thermal_control_per_app_dialer">電話</string>
     <string name="thermal_control_per_app_camera">相機</string>
 </resources>

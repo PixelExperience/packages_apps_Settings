@@ -127,6 +127,7 @@
     <string name="thermal_control_per_app_default">Tidak ada optimasi</string>
     <string name="thermal_control_per_app_benchmark">Performa</string>
     <string name="thermal_control_per_app_games">Permainan</string>
+    <string name="thermal_control_per_app_browser">Peramban</string>
     <string name="thermal_control_per_app_video_playback">Pemutaran video</string>
     <string name="thermal_control_per_app_dialer">Telepon</string>
     <string name="thermal_control_per_app_camera">Kamera</string>

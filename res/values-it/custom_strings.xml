@@ -88,7 +88,7 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Visualizza i brani nelle vicinanze</string>
     <string name="ambient_play_lockscreen_title">Mostra i brani nella schermata di blocco</string>
-    <string name="ambient_play_lockscreen_summary">Mostra una notifica quando viene riconosciuto un brano</string>
+    <string name="ambient_play_lockscreen_summary">Mostra sulla schermata di blocco quando viene riconosciuto un brano</string>
     <string name="ambient_play_notifications_title">Notifiche</string>
     <string name="ambient_play_notifications_summary">Mostra una notifica quando viene riconosciuto un brano</string>
     <string name="ambient_play_switch_bar_on">Acceso</string>
@@ -108,16 +108,16 @@
     <string name="ambient_play_saving_options_title">Opzioni di salvataggio</string>
     <string name="ambient_play_saving_options_summary">Opzioni per ridurre l\'utilizzo della batteria e della rete</string>
     <string name="ambient_play_saving_options_low_battery_title">Batteria scarica</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Disattiva il riconoscimento dei brani quando la batteria è scarica</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Disattiva il riconoscimento quando la batteria è scarica</string>
     <string name="ambient_play_saving_options_mobile_data_title">Dati mobili</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Disattiva il riconoscimento quando i dati cellulare sono attivati</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Disattiva il riconoscimento quando i dati mobili sono attivati</string>
     <string name="ambient_play_saving_options_quiet_period_title">Periodo di pausa</string>
     <string name="ambient_play_saving_options_quiet_period_enable_title">Abilita il periodo di pausa</string>
     <string name="ambient_play_saving_options_quiet_period_enable_summary">Disattiva il riconoscimento per un certo periodo di tempo</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Ora di inizio</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Tempo di fine</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Ora della fine</string>
     <!-- Face auto unlock -->
-    <string name="face_auto_unlock_title">Sblocco con viso automatico</string>
+    <string name="face_auto_unlock_title">Sblocco automatico con il viso</string>
     <string name="face_auto_unlock_summary">Ignora la schermata di blocco dopo lo sblocco con il viso</string>
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Riavvio avanzato</string>

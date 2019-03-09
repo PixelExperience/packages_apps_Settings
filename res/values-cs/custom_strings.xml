@@ -33,8 +33,8 @@
     <string name="sim_enabler_airplane_on">Nelze provést akci, když je aktivován mód letadlo.</string>
     <string name="sim_enabler_in_call">Nelze provést tuto akci při hovoru.</string>
     <string name="sim_enabler_both_inactive">Nelze zakázat všechny SIM karty</string>
-    <string name="sim_enabler_enabling">Aktivování\u2026</string>
-    <string name="sim_enabler_disabling">Deaktivování\u2026</string>
+    <string name="sim_enabler_enabling">Aktivovace\u2026</string>
+    <string name="sim_enabler_disabling">Deaktivace\u2026</string>
     <string name="sub_activate_success">SIM karta aktivována.</string>
     <string name="sub_activate_failed">Aktivace selhala.</string>
     <string name="sub_deactivate_success">SIM karta deaktivována.</string>

@@ -123,4 +123,12 @@
     <string name="advanced_reboot_title">Reinici avançat</string>
     <string name="advanced_reboot_summary">Quan està desbloquejat, inclou opcions al menú d\'apagat per reiniciar en mode recuperació o al bootloader</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Perfil d\'optimització</string>
+    <string name="thermal_control_per_app_default">Sense optimització</string>
+    <string name="thermal_control_per_app_benchmark">Rendiment</string>
+    <string name="thermal_control_per_app_games">Jocs</string>
+    <string name="thermal_control_per_app_browser">Navegador</string>
+    <string name="thermal_control_per_app_video_playback">Reproducció de vídeo</string>
+    <string name="thermal_control_per_app_dialer">Marcador</string>
+    <string name="thermal_control_per_app_camera">Càmera</string>
 </resources>
