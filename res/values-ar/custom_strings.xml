@@ -28,7 +28,7 @@
     <string name="sim_disabled">معطل</string>
     <string name="sim_missing">مفقود أو به خلل</string>
     <string name="sim_enabler_need_disable_sim">سيتم إلغاء تنشيط بطاقة SIM. هل تريد الاستمرار؟</string>
-    <string name="sim_enabler_will_disable_sim_title">تنبيه</string>
+    <string name="sim_enabler_will_disable_sim_title">انتباه</string>
     <string name="sim_enabler_need_switch_data_service">سيتم تعطيل شريحة SIM وسيتم استخدام شريحة <xliff:g id="slotid">%1$s</xliff:g> لخدمات البيانات. هل أنت متأكد من أنك تريد المتابعة؟</string>
     <string name="sim_enabler_airplane_on">تعذر القيام بالعملية في وضع الطيران.</string>
     <string name="sim_enabler_in_call">تعذر القيام بالعملية أثناء إجراء مكالمة.</string>

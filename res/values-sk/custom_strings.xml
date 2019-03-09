@@ -123,4 +123,12 @@
     <string name="advanced_reboot_title">Rozšířený reštart</string>
     <string name="advanced_reboot_summary">Ak je povolené, do ponuky vypnutia budú pridané ďalšie voľby na reštart do recovery alebo bootloadera</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Profil optimalizácie</string>
+    <string name="thermal_control_per_app_default">Žiadna optimalizácia</string>
+    <string name="thermal_control_per_app_benchmark">Výkon</string>
+    <string name="thermal_control_per_app_games">Hry</string>
+    <string name="thermal_control_per_app_browser">Prehliadač</string>
+    <string name="thermal_control_per_app_video_playback">Prehrávanie videa</string>
+    <string name="thermal_control_per_app_dialer">Vytáčanie</string>
+    <string name="thermal_control_per_app_camera">Fotoaparát</string>
 </resources>

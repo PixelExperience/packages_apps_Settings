@@ -127,7 +127,7 @@
     <string name="thermal_control_per_app_default">Sin optimización</string>
     <string name="thermal_control_per_app_benchmark">Rendimiento</string>
     <string name="thermal_control_per_app_games">Juegos</string>
-    <string name="thermal_control_per_app_browser">Navegador</string>
+    <string name="thermal_control_per_app_browser">Navegación web</string>
     <string name="thermal_control_per_app_video_playback">Reproducción de vídeo</string>
     <string name="thermal_control_per_app_dialer">Marcador de teléfono</string>
     <string name="thermal_control_per_app_camera">Cámara</string>

@@ -123,4 +123,5 @@
     <string name="advanced_reboot_title">Варыянты перазагрузкі</string>
     <string name="advanced_reboot_summary">Калі прылада разблакавана, у меню сілкавання даступны опцыі перазагрузкі ў рэжым аднаўлення і ў загрузчыка</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Профіль аптымізацыі</string>
 </resources>

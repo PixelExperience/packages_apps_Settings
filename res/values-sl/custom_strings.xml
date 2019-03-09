@@ -128,7 +128,7 @@
     <string name="thermal_control_per_app_benchmark">Zmogljivost</string>
     <string name="thermal_control_per_app_games">Igre</string>
     <string name="thermal_control_per_app_browser">Brskalnik</string>
-    <string name="thermal_control_per_app_video_playback">Predvajanje videoposnetka</string>
+    <string name="thermal_control_per_app_video_playback">Predvajanje videoposnetkov</string>
     <string name="thermal_control_per_app_dialer">Klicalnik</string>
     <string name="thermal_control_per_app_camera">Fotoaparat</string>
 </resources>

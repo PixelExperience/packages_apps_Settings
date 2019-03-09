@@ -75,7 +75,7 @@
     <!-- Key backlight -->
     <string name="button_backlight_title">Подсветка</string>
     <string name="button_backlight_enabled">Подсветка кнопок</string>
-    <string name="button_backlight_only_when_pressed_title">Подсветка кнопок только при касании сенсорного экрана</string>
+    <string name="button_backlight_only_when_pressed_title">Подсветка кнопок только при касании</string>
     <string name="button_backlight_seekbar_title">Яркость кнопок</string>
     <string name="backlight_timeout_title">Длительность подсветки</string>
     <string name="backlight_timeout_unlimited">Не выключать</string>

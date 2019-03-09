@@ -88,7 +88,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Visa nära låtar</string>
     <string name="ambient_play_lockscreen_title">Visa låtar på låsskärmen</string>
+    <string name="ambient_play_lockscreen_summary">Visa på låsskärmen när en låt känns igen</string>
     <string name="ambient_play_notifications_title">Aviseringar</string>
+    <string name="ambient_play_notifications_summary">Visa notis när en låt känns igen</string>
     <string name="ambient_play_switch_bar_on">På</string>
     <string name="ambient_play_switch_bar_off">Av</string>
     <string name="ambient_play_help_text">När musik spelas nära, du kan se sång namnen och musikartisten. Batteri och data användning kommer att vara påverkad om detta är påsatt.</string>
@@ -103,7 +105,30 @@
     <string name="ambient_play_history_menu_remove_all">Ta bort allt</string>
     <string name="ambient_play_history_menu_add_to_home">Lägg till på hemskärmen</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Är du säker?</string>
+    <string name="ambient_play_saving_options_title">Spara alternativ</string>
+    <string name="ambient_play_saving_options_summary">Alternativ för att minska batteri och nätverks användning</string>
+    <string name="ambient_play_saving_options_low_battery_title">Lågt batteri</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Inaktivera igenkänning när batteriet är lågt</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobildata</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Inaktivera igenkänning när mobildata är aktiverat</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Tyst period</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Aktivera tyst period</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Inaktivera igenkänning under vissa tids perioder</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Starttid</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Sluttid</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatisk ansiktsupplåsning</string>
+    <string name="face_auto_unlock_summary">Avfärda låsskärm efter ansiktsupplåsning</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Avancerad omstart</string>
+    <string name="advanced_reboot_summary">Lägg till alternativ för recovery- och bootloaderläge i omstartsmenyn när enheten är upplåst</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Optimerings profil</string>
+    <string name="thermal_control_per_app_default">Ingen optimering</string>
+    <string name="thermal_control_per_app_benchmark">Prestanda</string>
+    <string name="thermal_control_per_app_games">Spel</string>
+    <string name="thermal_control_per_app_browser">Bläddrare</string>
+    <string name="thermal_control_per_app_video_playback">Videouppspelning</string>
+    <string name="thermal_control_per_app_dialer">Uppringare</string>
+    <string name="thermal_control_per_app_camera">Kamera</string>
 </resources>

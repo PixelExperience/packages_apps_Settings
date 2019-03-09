@@ -27,17 +27,17 @@
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> está <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">desativado</string>
     <string name="sim_missing">desconectado ou com defeito</string>
-    <string name="sim_enabler_need_disable_sim">Cartão SIM será desativado. Você quer continuar?</string>
+    <string name="sim_enabler_need_disable_sim">O chip será desativado. Você quer continuar?</string>
     <string name="sim_enabler_will_disable_sim_title">Atenção</string>
-    <string name="sim_enabler_need_switch_data_service">Este cartão SIM será desativado e o cartão SIM <xliff:g id="slotid">%1$s</xliff:g> será usado para serviços de dados. Tem certeza que deseja continuar?</string>
+    <string name="sim_enabler_need_switch_data_service">O chip <xliff:g id="slotid">%1$s</xliff:g> será usado para serviços de dados. Tem certeza que deseja continuar?</string>
     <string name="sim_enabler_airplane_on">Não é possível executar a operação enquanto o modo avião estiver ativado.</string>
     <string name="sim_enabler_in_call">Não é possível executar a operação enquanto estiver numa chamada.</string>
-    <string name="sim_enabler_both_inactive">Não é possível desativar todos os cartões SIM</string>
+    <string name="sim_enabler_both_inactive">Não é possível desativar todos os chips</string>
     <string name="sim_enabler_enabling">Ativando\u2026</string>
     <string name="sim_enabler_disabling">Desativando\u2026</string>
-    <string name="sub_activate_success">SIM ativado.</string>
+    <string name="sub_activate_success">Chip ativado.</string>
     <string name="sub_activate_failed">Falha na ativação.</string>
-    <string name="sub_deactivate_success">SIM desativado.</string>
+    <string name="sub_deactivate_success">Chip desativado.</string>
     <string name="sub_deactivate_failed">Falha na desativação.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Redefinir</string>
