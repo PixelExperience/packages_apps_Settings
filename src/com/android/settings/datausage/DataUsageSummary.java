@@ -33,7 +33,6 @@ import android.text.SpannableString;
 import android.text.TextUtils;
 import android.text.format.Formatter;
 import android.text.style.RelativeSizeSpan;
-import android.util.Log;
 import android.view.MenuItem;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -136,16 +135,8 @@ public class DataUsageSummary extends DataUsageBaseFragment implements Indexable
         switch (item.getItemId()) {
             case R.id.data_usage_menu_cellular_networks: {
                 final Intent intent = new Intent(Intent.ACTION_MAIN);
-                if (Utils.isNetworkSettingsApkAvailable()) {
-                    // prepare intent to start qti MobileNetworkSettings activity
-                    intent.setComponent(new ComponentName("com.qualcomm.qti.networksetting",
-                            "com.qualcomm.qti.networksetting.MobileNetworkSettings"));
-                } else {
-                    // vendor MobileNetworkSettings not available, launch the default activity
-                    Log.d(TAG, "vendor MobileNetworkSettings is not available");
-                    intent.setComponent(new ComponentName("com.android.phone",
-                            "com.android.phone.MobileNetworkSettings"));
-                }
+                intent.setComponent(new ComponentName("com.android.phone",
+                        "com.android.phone.MobileNetworkSettings"));
                 startActivity(intent);
                 return true;
             }
