@@ -150,4 +150,9 @@
     <string name="thermal_control_per_app_dialer">Dialer</string>
     <string name="thermal_control_per_app_camera">Camera</string>
 
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Notch behavior</string>
+    <string name="display_cutout_mode_normal">Default</string>
+    <string name="display_cutout_mode_hidden">Hidden</string>
+
 </resources>
