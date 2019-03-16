@@ -90,6 +90,14 @@
         android:fragment="com.android.settings.display.ScreenZoomSettings"
         settings:keywords="@string/screen_zoom_keywords" />
 
+    <com.android.settings.custom.preference.SystemSettingListPreference
+        android:key="display_cutout_hidden"
+        android:title="@string/display_cutout_mode_title"
+        android:entries="@array/display_cutout_mode_entries"
+        android:entryValues="@array/display_cutout_mode_values"
+        android:defaultValue="0"
+        settings:controller="com.android.settings.display.DisplayCutoutPreferenceController" />
+
     <SwitchPreference
         android:key="show_operator_name"
         android:title="@string/show_operator_name_title"
