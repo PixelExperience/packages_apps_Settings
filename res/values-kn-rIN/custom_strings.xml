@@ -123,4 +123,5 @@
     <string name="advanced_reboot_title">ವಿಸ್ತ್ರತ ಪುನರಾರಂಭ</string>
     <string name="advanced_reboot_summary">ಬೀಗ ತೆಗೆದ ನಂತರ, ರಿಕವರಿ ಅಥವಾ ಬೂಟ್ ಲೋಡರ್ ನಲ್ಲಿ ಪುನರಾರಂಭಿಸುವ ಆಯ್ಕೆಗಳನ್ನು ಶಕ್ತಿ-ಪಟ್ಟಿಯಲ್ಲಿ ಸೇರಿಸು</string>
     <!-- Thermal control per app -->
+    <!-- Notch behavior -->
 </resources>

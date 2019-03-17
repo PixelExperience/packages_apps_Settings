@@ -123,4 +123,5 @@
     <string name="thermal_control_per_app_video_playback">വീഡിയോ പ്ലേ ബാക്ക്</string>
     <string name="thermal_control_per_app_dialer">ഡയലെർ</string>
     <string name="thermal_control_per_app_camera">ക്യാമറ</string>
+    <!-- Notch behavior -->
 </resources>

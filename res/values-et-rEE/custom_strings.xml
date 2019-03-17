@@ -131,4 +131,5 @@
     <string name="thermal_control_per_app_video_playback">Videode Vaatamine</string>
     <string name="thermal_control_per_app_dialer">Valija</string>
     <string name="thermal_control_per_app_camera">Kaamera</string>
+    <!-- Notch behavior -->
 </resources>

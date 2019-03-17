@@ -123,4 +123,5 @@
     <string name="advanced_reboot_title">Προηγμένη επανεκκίνηση</string>
     <string name="advanced_reboot_summary">Όταν ενεργοποιηθεί, περιλαμβάνονται στο μενού πλήκτρου απενεργοποίησης οι επιλογές επανεκκίνησης σε λειτουργία recovery ή bootloader</string>
     <!-- Thermal control per app -->
+    <!-- Notch behavior -->
 </resources>

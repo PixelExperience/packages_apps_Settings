@@ -44,7 +44,7 @@
     <!-- Buttons -->
     <string name="button_pref_title">Tipke</string>
     <string name="hardware_keys_home_key_title">Tipka za početni zaslon</string>
-    <string name="hardware_keys_back_key_title">Tipka za povratak</string>
+    <string name="hardware_keys_back_key_title">Tipka za natrag</string>
     <string name="hardware_keys_menu_key_title">Tipka izbornika</string>
     <string name="hardware_keys_assist_key_title">Tipka za pretraživanje</string>
     <string name="hardware_keys_appswitch_key_title">Tipka nedavno</string>
@@ -68,7 +68,7 @@
     <string name="hardware_keys_swipe_tap_title">Akcija potezanjem prsta</string>
     <string name="hardware_keys_long_tap_title">Radnja dugog dodira</string>
     <string name="button_wake_title">Buđenje uređaja</string>
-    <string name="camera_sleep_on_release_title">Brzi pogled na ekran</string>
+    <string name="camera_sleep_on_release_title">Zavirivanje zaslona</string>
     <string name="camera_sleep_on_release_summary">Polupritisak će držati zaslon uključen samo dok se tipka drži pritisnuta</string>
     <string name="camera_launch_title">Pokreni kameru</string>
     <string name="camera_launch_summary">Dugi pritisak i puštanje će pokrenuti kameru</string>
@@ -87,10 +87,10 @@
     <string name="weather_unit">Jedinica temperature</string>
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Prikaži pjesme u blizini</string>
-    <string name="ambient_play_lockscreen_title">Prikaži pjesme na Zaključanom zaslonu</string>
+    <string name="ambient_play_lockscreen_title">Prikaži pjesme na zaključanom zaslonu</string>
     <string name="ambient_play_lockscreen_summary">Prikaži na zaključanom zaslonu kada je pjesma prepoznata</string>
     <string name="ambient_play_notifications_title">Obavijesti</string>
-    <string name="ambient_play_notifications_summary">Pokaži obavijest na zaključanom zaslonu kada je pjesma prepoznata</string>
+    <string name="ambient_play_notifications_summary">Pokaži obavijest kada je pjesma prepoznata</string>
     <string name="ambient_play_switch_bar_on">Uključeno</string>
     <string name="ambient_play_switch_bar_off">Isključeno</string>
     <string name="ambient_play_help_text">Kada muzika svira u blizini, vidjeti ćete ime pjesme i autora. Ako je omogućeno, to može utjecati na vijek trajanja baterije i korištenje podataka.</string>
@@ -120,8 +120,8 @@
     <string name="face_auto_unlock_title">Automatsko otključavanje licem</string>
     <string name="face_auto_unlock_summary">Preskočite zaslon zaključavanja nakon otključavanja licem</string>
     <!-- Advanced restart options -->
-    <string name="advanced_reboot_title">Opcije naprednog ponovnog pokretanja</string>
-    <string name="advanced_reboot_summary">Kad je uređaj otključan, u izborniku ponovnog pokretanja prikaži opcije za oporavak ili bootloader</string>
+    <string name="advanced_reboot_title">Napredno ponovno pokretanje</string>
+    <string name="advanced_reboot_summary">Kad je uređaj otključan, u izborniku ponovnog pokretanja prikaži opcije za recovery ili bootloader</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Profil optimizacije</string>
     <string name="thermal_control_per_app_default">Nema optimizacije</string>
@@ -131,4 +131,5 @@
     <string name="thermal_control_per_app_video_playback">Reprodukcija videozapisa</string>
     <string name="thermal_control_per_app_dialer">Birač broja</string>
     <string name="thermal_control_per_app_camera">Kamera</string>
+    <!-- Notch behavior -->
 </resources>

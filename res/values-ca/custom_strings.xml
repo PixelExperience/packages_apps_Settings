@@ -131,4 +131,5 @@
     <string name="thermal_control_per_app_video_playback">Reproducció de vídeo</string>
     <string name="thermal_control_per_app_dialer">Marcador</string>
     <string name="thermal_control_per_app_camera">Càmera</string>
+    <!-- Notch behavior -->
 </resources>

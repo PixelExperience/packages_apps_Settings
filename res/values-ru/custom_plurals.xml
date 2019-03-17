@@ -5,6 +5,6 @@
         <item quantity="one"><xliff:g id="seconds">%d</xliff:g> секунда</item>
         <item quantity="few"><xliff:g id="seconds">%d</xliff:g> секунды</item>
         <item quantity="many"><xliff:g id="seconds">%d</xliff:g> секунд</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> секунды</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> секунд</item>
     </plurals>
 </resources>

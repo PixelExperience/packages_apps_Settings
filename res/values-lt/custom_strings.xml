@@ -131,4 +131,5 @@
     <string name="thermal_control_per_app_video_playback">Vaizdo įrašo atkūrimas</string>
     <string name="thermal_control_per_app_dialer">Rinkiklis</string>
     <string name="thermal_control_per_app_camera">Fotoaparatas</string>
+    <!-- Notch behavior -->
 </resources>

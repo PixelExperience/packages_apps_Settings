@@ -70,6 +70,7 @@
     <string name="button_wake_title">ডিভাইস জাগ্রত করুন</string>
     <string name="camera_sleep_on_release_title">শিরোনাম: এর পর ক্যামেরা বন্দি হবে</string>
     <string name="camera_launch_title">ক্যামেরা চালু করুন</string>
+    <string name="camera_launch_summary">দীর্ঘক্ষণ চেপে থাকলে ক্যামেরা চালু হবে</string>
     <!-- Key backlight -->
     <string name="button_backlight_title">পেছনের আলো</string>
     <string name="button_backlight_enabled">আলোকিত বোতাম</string>
@@ -83,20 +84,40 @@
     <string name="weather_title">আবহাওয়া</string>
     <string name="weather_unit">তাপমাত্রার একক</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">কাছের গানগুলো দেখাও</string>
+    <string name="ambient_play_lockscreen_title">লক স্ক্রিনে গান দেখাও</string>
     <string name="ambient_play_notifications_title">বিজ্ঞপ্তি</string>
+    <string name="ambient_play_notifications_summary">পরিচিত গান পেলে নোটিফিকেশন দেখাবে</string>
     <string name="ambient_play_switch_bar_on">চালু</string>
     <string name="ambient_play_switch_bar_off">বন্ধ</string>
+    <string name="ambient_play_help_text">যখন আশেপাশে গান বাজবে তখন আপনি গানের নাম,লেখক ইত্যাদি তথ্য দেখতে পাবেন। তবে এতে আপনার চার্জ বেশি যাবে এবং ডাটার সাথে যুক্ত হতে পারে</string>
     <string name="ambient_play_history">এখন পূর্ববর্তী চলছে</string>
     <string name="ambient_play_loading_data">তথ্য প্রস্তুত হচ্ছে…</string>
     <string name="ambient_play_history_today">আজ</string>
     <string name="ambient_play_history_yesterday">গতকাল</string>
     <string name="ambient_play_history_dialog_play">এখন চলাও</string>
+    <string name="ambient_play_history_dialog_search">ওয়েবে খুঁজুন</string>
     <string name="ambient_play_history_dialog_remove">অপসারণ করুন</string>
+    <string name="ambient_play_history_empty">মিউজিক হিস্টোরি ফাঁকা</string>
     <string name="ambient_play_history_menu_remove_all">সবগুলো সরান</string>
     <string name="ambient_play_history_menu_add_to_home">নীড়ের স্ক্রিনে যোগ করুন</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">আপনি কি নিশ্চিত?</string>
     <string name="ambient_play_saving_options_title">সংরক্ষণ অপশন</string>
+    <string name="ambient_play_saving_options_low_battery_title">ব্যাটারি কম</string>
+    <string name="ambient_play_saving_options_mobile_data_title">মোবাইল ডাটা</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">শুরু</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">শেষ</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">আপনাআপনি ফেস আনলক</string>
+    <string name="face_auto_unlock_summary">ফেস আনলকের পর লক স্ক্রিন থেকে বের হোন</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">অগ্রিম রিবুট</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app_benchmark">পারফরম্যান্স</string>
+    <string name="thermal_control_per_app_games">গেমস</string>
+    <string name="thermal_control_per_app_browser">ব্রাউজার</string>
+    <string name="thermal_control_per_app_video_playback">ভিডিও প্লেব্যাক</string>
+    <string name="thermal_control_per_app_dialer">ডায়ালার</string>
+    <string name="thermal_control_per_app_camera">ক্যামেরা</string>
+    <!-- Notch behavior -->
 </resources>

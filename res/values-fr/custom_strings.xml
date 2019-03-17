@@ -131,4 +131,8 @@
     <string name="thermal_control_per_app_video_playback">Lecture vidéo</string>
     <string name="thermal_control_per_app_dialer">Téléphone</string>
     <string name="thermal_control_per_app_camera">Appareil photo</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Comportement de l\'encoche</string>
+    <string name="display_cutout_mode_normal">Par défaut</string>
+    <string name="display_cutout_mode_hidden">Cachée</string>
 </resources>

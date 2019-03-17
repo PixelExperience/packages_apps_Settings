@@ -131,4 +131,8 @@
     <string name="thermal_control_per_app_video_playback">Воспроизведение видео</string>
     <string name="thermal_control_per_app_dialer">Номеронабиратель</string>
     <string name="thermal_control_per_app_camera">Камера</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Параметры выреза</string>
+    <string name="display_cutout_mode_normal">По умолчанию</string>
+    <string name="display_cutout_mode_hidden">Скрыть вырез</string>
 </resources>

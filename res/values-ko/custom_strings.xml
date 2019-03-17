@@ -131,4 +131,8 @@
     <string name="thermal_control_per_app_video_playback">영상</string>
     <string name="thermal_control_per_app_dialer">전화</string>
     <string name="thermal_control_per_app_camera">카메라</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">노치 방식</string>
+    <string name="display_cutout_mode_normal">기본</string>
+    <string name="display_cutout_mode_hidden">숨김</string>
 </resources>

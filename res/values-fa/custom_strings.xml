@@ -108,4 +108,5 @@
     <string name="face_auto_unlock_summary">رد کردن قفل صفحه بعد از بازگشایی با چهره</string>
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
+    <!-- Notch behavior -->
 </resources>

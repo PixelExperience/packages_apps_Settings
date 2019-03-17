@@ -131,4 +131,7 @@
     <string name="thermal_control_per_app_video_playback">Video-Wiedergabe</string>
     <string name="thermal_control_per_app_dialer">Telefon</string>
     <string name="thermal_control_per_app_camera">Kamera</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_normal">Standard</string>
+    <string name="display_cutout_mode_hidden">Ausgeblendet</string>
 </resources>

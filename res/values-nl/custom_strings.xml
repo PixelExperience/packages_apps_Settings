@@ -127,4 +127,5 @@
     <string name="thermal_control_per_app_default">Geen optimalisatie</string>
     <string name="thermal_control_per_app_dialer">Telefoon</string>
     <string name="thermal_control_per_app_camera">Camera</string>
+    <!-- Notch behavior -->
 </resources>
