@@ -107,4 +107,5 @@
     <string name="face_auto_unlock_title">Telefon Dibuka Secara Automatik Melalui Pengimbasan Muka</string>
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
+    <!-- Notch behavior -->
 </resources>

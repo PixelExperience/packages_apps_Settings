@@ -131,4 +131,5 @@
     <string name="thermal_control_per_app_video_playback">Phát lại video</string>
     <string name="thermal_control_per_app_dialer">Trình quay số</string>
     <string name="thermal_control_per_app_camera">Máy ảnh</string>
+    <!-- Notch behavior -->
 </resources>

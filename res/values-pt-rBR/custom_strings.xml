@@ -131,4 +131,8 @@
     <string name="thermal_control_per_app_video_playback">Reprodução de vídeo</string>
     <string name="thermal_control_per_app_dialer">Discador</string>
     <string name="thermal_control_per_app_camera">Câmera</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Comportamento do notch</string>
+    <string name="display_cutout_mode_normal">Padrão</string>
+    <string name="display_cutout_mode_hidden">Escondido</string>
 </resources>

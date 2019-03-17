@@ -124,4 +124,12 @@
     <string name="advanced_reboot_summary">Калі прылада разблакавана, у меню сілкавання даступны опцыі перазагрузкі ў рэжым аднаўлення і ў загрузчыка</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Профіль аптымізацыі</string>
+    <string name="thermal_control_per_app_default">Без аптымізацыі</string>
+    <string name="thermal_control_per_app_benchmark">Прадукцыйнасць</string>
+    <string name="thermal_control_per_app_games">Гульні</string>
+    <string name="thermal_control_per_app_browser">Браўзер</string>
+    <string name="thermal_control_per_app_video_playback">Прайграванне відэа</string>
+    <string name="thermal_control_per_app_dialer">Набіральнік нумара</string>
+    <string name="thermal_control_per_app_camera">Камера</string>
+    <!-- Notch behavior -->
 </resources>

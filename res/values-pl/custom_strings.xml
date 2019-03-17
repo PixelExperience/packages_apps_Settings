@@ -131,4 +131,8 @@
     <string name="thermal_control_per_app_video_playback">Odtwarzanie wideo</string>
     <string name="thermal_control_per_app_dialer">Telefon</string>
     <string name="thermal_control_per_app_camera">Aparat</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Wyświetlanie wcięcia</string>
+    <string name="display_cutout_mode_normal">Domyślnie</string>
+    <string name="display_cutout_mode_hidden">Ukryty</string>
 </resources>

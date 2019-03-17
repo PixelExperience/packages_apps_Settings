@@ -120,5 +120,16 @@
     <string name="face_auto_unlock_title">རང་འགུལ་གྱིས་གདོང་རིས་སྤྱད་དེ་ཟྭ་འབྱེད་པ།</string>
     <string name="face_auto_unlock_summary">གདོང་རིས་ངོས་འཛིན་བྱས་རྗེས་རང་འགུལ་གྱིས་ཟ་འབྱེད་པ།</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">མཐོ་རིམ་བསྐྱར་སློང་།</string>
+    <string name="advanced_reboot_summary">འདིའི་ཁ་ཕྱེ་རྗེས་གློག་ཁུངས་ཀྱི་གདམ་བྱའིི་ནང་སླར་གསོའི་དཔེ་ཚུལ་གྱིི་གདམ་ཚན་ཁ་སྣོན་བྱ་ངེས།</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">སྒྲིག་འགོད་ཀྱི་ཡིག་ཆ་ལེགས་བཅོས་བྱེད།</string>
+    <string name="thermal_control_per_app_default">ལེགས་བཅོས་མི་བྱེད།</string>
+    <string name="thermal_control_per_app_benchmark">བྱེད་ལས།</string>
+    <string name="thermal_control_per_app_games">རོལ་རྩེད།</string>
+    <string name="thermal_control_per_app_browser">དྲ་བཤེར་ཆས།</string>
+    <string name="thermal_control_per_app_video_playback">བརྙན་རིས་བསྐྱར་གཏོང་།</string>
+    <string name="thermal_control_per_app_dialer">ཁ་པར།</string>
+    <string name="thermal_control_per_app_camera">པར་ཆས།</string>
+    <!-- Notch behavior -->
 </resources>

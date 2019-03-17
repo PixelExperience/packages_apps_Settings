@@ -131,4 +131,5 @@
     <string name="thermal_control_per_app_video_playback">Videólejátszás</string>
     <string name="thermal_control_per_app_dialer">Tárcsázó</string>
     <string name="thermal_control_per_app_camera">Kamera</string>
+    <!-- Notch behavior -->
 </resources>

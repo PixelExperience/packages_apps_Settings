@@ -118,4 +118,5 @@
     <string name="advanced_reboot_summary">Desblokeatuta dagoenean, berreskuratze eta abiarazle moduetan berrabiatzeko aukerak gehitu itzaltze menuan</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app_browser">Nabigatzailea</string>
+    <!-- Notch behavior -->
 </resources>

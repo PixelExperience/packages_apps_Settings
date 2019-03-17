@@ -123,4 +123,16 @@
     <string name="advanced_reboot_title">Рестартиране за напреднали</string>
     <string name="advanced_reboot_summary">Когато е отключена, включете опциите в менюто за захранване, за да рестартирате във възстановяване или буутлоудър</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Профил за оптимизация</string>
+    <string name="thermal_control_per_app_default">Без оптимизация</string>
+    <string name="thermal_control_per_app_benchmark">Производителност</string>
+    <string name="thermal_control_per_app_games">Игри</string>
+    <string name="thermal_control_per_app_browser">Браузър</string>
+    <string name="thermal_control_per_app_video_playback">Възпроизвеждане на видео</string>
+    <string name="thermal_control_per_app_dialer">Телефон</string>
+    <string name="thermal_control_per_app_camera">Камера</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Поведение на Notch</string>
+    <string name="display_cutout_mode_normal">По подразбиране</string>
+    <string name="display_cutout_mode_hidden">Скрит</string>
 </resources>

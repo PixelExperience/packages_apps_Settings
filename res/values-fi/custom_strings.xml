@@ -86,8 +86,8 @@
     <string name="weather_title">Sää</string>
     <string name="weather_unit">Lämpötilan yksikkö</string>
     <!-- Ambient Play -->
-    <string name="ambient_play_summary">Näytä lähellä olevat biisit</string>
-    <string name="ambient_play_lockscreen_title">Näytä biisit lukitusnäytöss\'</string>
+    <string name="ambient_play_summary">Näytä lähellä olevat kappaleet</string>
+    <string name="ambient_play_lockscreen_title">Näytä kappaleet lukitusnäytössä</string>
     <string name="ambient_play_lockscreen_summary">Näytä lukitusnäytöllä, kun kappale on tunnistettu</string>
     <string name="ambient_play_notifications_title">Ilmoitukset</string>
     <string name="ambient_play_notifications_summary">Näytä ilmoitus, kun kappale on tunnistettu</string>
@@ -99,7 +99,7 @@
     <string name="ambient_play_history_today">Tänään</string>
     <string name="ambient_play_history_yesterday">Eilen</string>
     <string name="ambient_play_history_dialog_play">Toista nyt</string>
-    <string name="ambient_play_history_dialog_search">Hae netistä</string>
+    <string name="ambient_play_history_dialog_search">Etsi verkosta</string>
     <string name="ambient_play_history_dialog_remove">Poista</string>
     <string name="ambient_play_history_empty">Musiikkihistoria on tyhjä</string>
     <string name="ambient_play_history_menu_remove_all">Poista kaikki</string>
@@ -131,4 +131,8 @@
     <string name="thermal_control_per_app_video_playback">Videotoisto</string>
     <string name="thermal_control_per_app_dialer">Puhelin</string>
     <string name="thermal_control_per_app_camera">Kamera</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Loven käyttäytyminen</string>
+    <string name="display_cutout_mode_normal">Oletus</string>
+    <string name="display_cutout_mode_hidden">Piilotettu</string>
 </resources>

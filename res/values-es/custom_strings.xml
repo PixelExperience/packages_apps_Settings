@@ -131,4 +131,8 @@
     <string name="thermal_control_per_app_video_playback">Reproducción de vídeo</string>
     <string name="thermal_control_per_app_dialer">Marcador de teléfono</string>
     <string name="thermal_control_per_app_camera">Cámara</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Comportamiento del Notch</string>
+    <string name="display_cutout_mode_normal">Por defecto</string>
+    <string name="display_cutout_mode_hidden">Oculto</string>
 </resources>

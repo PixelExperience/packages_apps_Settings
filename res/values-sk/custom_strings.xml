@@ -131,4 +131,5 @@
     <string name="thermal_control_per_app_video_playback">Prehrávanie videa</string>
     <string name="thermal_control_per_app_dialer">Vytáčanie</string>
     <string name="thermal_control_per_app_camera">Fotoaparát</string>
+    <!-- Notch behavior -->
 </resources>

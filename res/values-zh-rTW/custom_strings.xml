@@ -131,4 +131,5 @@
     <string name="thermal_control_per_app_video_playback">播放影片</string>
     <string name="thermal_control_per_app_dialer">電話</string>
     <string name="thermal_control_per_app_camera">相機</string>
+    <!-- Notch behavior -->
 </resources>

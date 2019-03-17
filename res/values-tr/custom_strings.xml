@@ -131,4 +131,8 @@
     <string name="thermal_control_per_app_video_playback">Video oynatma</string>
     <string name="thermal_control_per_app_dialer">Çevirici</string>
     <string name="thermal_control_per_app_camera">Kamera</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Çentik davranışı</string>
+    <string name="display_cutout_mode_normal">Varsayılan</string>
+    <string name="display_cutout_mode_hidden">Gizli</string>
 </resources>

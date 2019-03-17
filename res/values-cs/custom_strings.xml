@@ -131,4 +131,8 @@
     <string name="thermal_control_per_app_video_playback">Přehrávání videa</string>
     <string name="thermal_control_per_app_dialer">Vytáčení</string>
     <string name="thermal_control_per_app_camera">Fotoaparát</string>
+    <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Vlastnosti výřezu</string>
+    <string name="display_cutout_mode_normal">Výchozí</string>
+    <string name="display_cutout_mode_hidden">Skrytý</string>
 </resources>
