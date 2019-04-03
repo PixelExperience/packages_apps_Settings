@@ -132,4 +132,7 @@
     <string name="thermal_control_per_app_dialer">Klicalnik</string>
     <string name="thermal_control_per_app_camera">Fotoaparat</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Obnašanje zareze</string>
+    <string name="display_cutout_mode_normal">Privzeto</string>
+    <string name="display_cutout_mode_hidden">Skrita</string>
 </resources>

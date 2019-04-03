@@ -25,13 +25,13 @@
     <string name="battery_light_title">LED signalizace baterie</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-    <string name="sim_disabled">vypnuto</string>
+    <string name="sim_disabled">zakázána</string>
     <string name="sim_missing">chybějící nebo vadná</string>
     <string name="sim_enabler_need_disable_sim">SIM karta bude deaktivována. Přejete si pokračovat?</string>
     <string name="sim_enabler_will_disable_sim_title">Varování</string>
     <string name="sim_enabler_need_switch_data_service">Tato SIM karta bude zakázána a SIM <xliff:g id="slotid">%1$s</xliff:g> bude použita pro datové služby. Jste si jisti, že chcete pokračovat?</string>
-    <string name="sim_enabler_airplane_on">Nelze provést akci, když je aktivován mód letadlo.</string>
-    <string name="sim_enabler_in_call">Nelze provést tuto akci při hovoru.</string>
+    <string name="sim_enabler_airplane_on">Nelze provést akci, když je aktivován režim letadlo.</string>
+    <string name="sim_enabler_in_call">Tuto akci nelze provést během hovoru.</string>
     <string name="sim_enabler_both_inactive">Nelze zakázat všechny SIM karty</string>
     <string name="sim_enabler_enabling">Aktivovace\u2026</string>
     <string name="sim_enabler_disabling">Deaktivace\u2026</string>

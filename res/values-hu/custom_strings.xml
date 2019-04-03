@@ -132,4 +132,7 @@
     <string name="thermal_control_per_app_dialer">Tárcsázó</string>
     <string name="thermal_control_per_app_camera">Kamera</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">A Notch viselkedése</string>
+    <string name="display_cutout_mode_normal">Alapértelmezett</string>
+    <string name="display_cutout_mode_hidden">Rejtett</string>
 </resources>

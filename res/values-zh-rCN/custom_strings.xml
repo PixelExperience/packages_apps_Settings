@@ -132,4 +132,7 @@
     <string name="thermal_control_per_app_dialer">电话</string>
     <string name="thermal_control_per_app_camera">相机</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">缺口行为</string>
+    <string name="display_cutout_mode_normal">默认</string>
+    <string name="display_cutout_mode_hidden">隐藏</string>
 </resources>
