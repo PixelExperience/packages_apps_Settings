@@ -132,4 +132,7 @@
     <string name="thermal_control_per_app_dialer">Telepon</string>
     <string name="thermal_control_per_app_camera">Kamera</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Perilaku Notch</string>
+    <string name="display_cutout_mode_normal">Bawaan</string>
+    <string name="display_cutout_mode_hidden">Tersembunyi</string>
 </resources>

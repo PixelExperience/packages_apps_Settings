@@ -132,4 +132,7 @@
     <string name="thermal_control_per_app_dialer">Телефон</string>
     <string name="thermal_control_per_app_camera">Камера</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Понашање зареза</string>
+    <string name="display_cutout_mode_normal">Подразумевано</string>
+    <string name="display_cutout_mode_hidden">Скривено</string>
 </resources>

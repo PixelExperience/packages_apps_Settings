@@ -132,4 +132,7 @@
     <string name="thermal_control_per_app_dialer">Birač broja</string>
     <string name="thermal_control_per_app_camera">Kamera</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Upravljanje urezom</string>
+    <string name="display_cutout_mode_normal">Zadano</string>
+    <string name="display_cutout_mode_hidden">Skriveno</string>
 </resources>

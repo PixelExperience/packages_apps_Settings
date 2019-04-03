@@ -108,11 +108,11 @@
     <string name="ambient_play_saving_options_title">Đang lưu tùy chọn</string>
     <string name="ambient_play_saving_options_summary">Tùy chọn để giảm mức sử dụng pin và dữ liệu di động</string>
     <string name="ambient_play_saving_options_low_battery_title">Pin yếu</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Vô hiệu hoá tính năng \"Nhận diện bài hát\" khi pin yếu</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Vô hiệu hoá tính năng \"Nhận dạng bài hát\" khi pin yếu</string>
     <string name="ambient_play_saving_options_mobile_data_title">Dữ liệu di động</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Vô hiệu hoá \"Nhận diện bài hát\" khi dữ liệu di động được bật</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Vô hiệu hoá \"Nhận dạng bài hát\" khi dữ liệu di động được bật</string>
     <string name="ambient_play_saving_options_quiet_period_title">Thời gian im lặng</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Kích hoặc thời gian im lặng</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Cho phép khoảng thời gian im lặng</string>
     <string name="ambient_play_saving_options_quiet_period_enable_summary">Vô hiệu hoá tính năng \"Nhận dạng bài hát\" trong khoảng thời gian nhất định</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Bắt đầu lúc</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">Kết thúc lúc</string>
@@ -132,4 +132,7 @@
     <string name="thermal_control_per_app_dialer">Trình quay số</string>
     <string name="thermal_control_per_app_camera">Máy ảnh</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Hành vi notch</string>
+    <string name="display_cutout_mode_normal">Mặc định</string>
+    <string name="display_cutout_mode_hidden">Ẩn</string>
 </resources>

@@ -132,4 +132,7 @@
     <string name="thermal_control_per_app_dialer">Vytáčanie</string>
     <string name="thermal_control_per_app_camera">Fotoaparát</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Vlastnosti výrezu</string>
+    <string name="display_cutout_mode_normal">Predvolené</string>
+    <string name="display_cutout_mode_hidden">Skryté</string>
 </resources>

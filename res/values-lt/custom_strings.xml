@@ -132,4 +132,7 @@
     <string name="thermal_control_per_app_dialer">Rinkiklis</string>
     <string name="thermal_control_per_app_camera">Fotoaparatas</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Žiedų elgesys</string>
+    <string name="display_cutout_mode_normal">Numatytasis</string>
+    <string name="display_cutout_mode_hidden">Paslėptas</string>
 </resources>

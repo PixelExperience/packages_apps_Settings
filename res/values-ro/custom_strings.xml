@@ -132,7 +132,7 @@
     <string name="thermal_control_per_app_dialer">Telefon</string>
     <string name="thermal_control_per_app_camera">Cameră</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Comportament lobod</string>
+    <string name="display_cutout_mode_title">Comportament breton</string>
     <string name="display_cutout_mode_normal">Implicit</string>
     <string name="display_cutout_mode_hidden">Ascuns</string>
 </resources>

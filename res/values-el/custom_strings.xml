@@ -123,5 +123,16 @@
     <string name="advanced_reboot_title">Προηγμένη επανεκκίνηση</string>
     <string name="advanced_reboot_summary">Όταν ενεργοποιηθεί, περιλαμβάνονται στο μενού πλήκτρου απενεργοποίησης οι επιλογές επανεκκίνησης σε λειτουργία recovery ή bootloader</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Προφίλ βελτιστοποίησης</string>
+    <string name="thermal_control_per_app_default">Χωρίς βελτιστοποίηση</string>
+    <string name="thermal_control_per_app_benchmark">Επιδόσεις</string>
+    <string name="thermal_control_per_app_games">Παιχνίδια</string>
+    <string name="thermal_control_per_app_browser">Πρόγραμμα περιήγησης</string>
+    <string name="thermal_control_per_app_video_playback">Αναπαραγωγή βίντεο</string>
+    <string name="thermal_control_per_app_dialer">Εφαρμογή κλήσεων</string>
+    <string name="thermal_control_per_app_camera">Κάμερα</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Επιλογές εγκοπής</string>
+    <string name="display_cutout_mode_normal">Προεπιλογή</string>
+    <string name="display_cutout_mode_hidden">Κρυφό</string>
 </resources>

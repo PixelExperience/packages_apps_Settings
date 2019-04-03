@@ -132,4 +132,7 @@
     <string name="thermal_control_per_app_dialer">Telefono</string>
     <string name="thermal_control_per_app_camera">Fotocamera</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Comportamento del notch</string>
+    <string name="display_cutout_mode_normal">Predefinito</string>
+    <string name="display_cutout_mode_hidden">Nascosto</string>
 </resources>
