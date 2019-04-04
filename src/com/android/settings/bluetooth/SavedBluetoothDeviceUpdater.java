@@ -93,7 +93,7 @@ public class SavedBluetoothDeviceUpdater extends BluetoothDeviceUpdater
     public boolean isFilterMatched(CachedBluetoothDevice cachedDevice) {
         final BluetoothDevice device = cachedDevice.getDevice();
         return device.getBondState() == BluetoothDevice.BOND_BONDED &&
-            !device.isConnected() && !device.isTwsPlusDevice();
+            !cachedDevice.isConnected() && !device.isTwsPlusDevice();
     }
 
     @Override

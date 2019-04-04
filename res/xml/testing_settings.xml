@@ -16,13 +16,39 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/testing" >
-            
+
     <PreferenceScreen
             android:title="@string/testing_phone_info"
             android:key="radio_info_settings">
         <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.settings"
-                android:targetClass="com.android.settings.RadioInfo" />
+                android:targetClass="com.android.settings.RadioInfo"/>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+            android:title="@string/testing_phone1_info"
+            android:key="radio_info1_settings">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.RadioInfo">
+            <extra
+                android:name="slot"
+                android:value="0"
+            />
+        </intent>
+    </PreferenceScreen>
+
+    <PreferenceScreen
+            android:title="@string/testing_phone2_info"
+            android:key="radio_info2_settings">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.RadioInfo">
+            <extra
+                android:name="slot"
+                android:value="1"
+            />
+        </intent>
     </PreferenceScreen>
 
     <PreferenceScreen

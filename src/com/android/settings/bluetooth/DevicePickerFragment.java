@@ -180,11 +180,13 @@ public final class DevicePickerFragment extends DeviceListPreferenceFragment {
     }
 
     private void sendDevicePickedIntent(BluetoothDevice device) {
+        android.util.Log.d("Devicepicker", "sendDevicePickedIntent");
         Intent intent = new Intent(BluetoothDevicePicker.ACTION_DEVICE_SELECTED);
         intent.putExtra(BluetoothDevice.EXTRA_DEVICE, device);
         if (mLaunchPackage != null && mLaunchClass != null) {
             intent.setClassName(mLaunchPackage, mLaunchClass);
         }
+        intent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
         getActivity().sendBroadcast(intent);
     }
 }
