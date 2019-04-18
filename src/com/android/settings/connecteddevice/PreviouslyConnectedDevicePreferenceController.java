@@ -20,7 +20,13 @@ import android.content.pm.PackageManager;
 import android.support.annotation.VisibleForTesting;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
+import android.bluetooth.BluetoothAdapter;
 
+import com.android.settingslib.bluetooth.BluetoothCallback;
+import com.android.settingslib.bluetooth.LocalBluetoothAdapter;
+import com.android.settingslib.bluetooth.LocalBluetoothManager;
+import com.android.settingslib.bluetooth.CachedBluetoothDevice;
+import com.android.settings.bluetooth.Utils;
 import com.android.settings.bluetooth.BluetoothDeviceUpdater;
 import com.android.settings.bluetooth.SavedBluetoothDeviceUpdater;
 import com.android.settings.connecteddevice.dock.DockUpdater;
@@ -32,8 +38,10 @@ import com.android.settingslib.core.lifecycle.events.OnStart;
 import com.android.settingslib.core.lifecycle.events.OnStop;
 
 public class PreviouslyConnectedDevicePreferenceController extends BasePreferenceController
-        implements LifecycleObserver, OnStart, OnStop, DevicePreferenceCallback {
+        implements LifecycleObserver, OnStart, OnStop, DevicePreferenceCallback, BluetoothCallback {
 
+    private LocalBluetoothAdapter mLocalAdapter;
+    private LocalBluetoothManager manager;
     private Preference mPreference;
     private BluetoothDeviceUpdater mBluetoothDeviceUpdater;
     private DockUpdater mSavedDockUpdater;
@@ -44,6 +52,10 @@ public class PreviouslyConnectedDevicePreferenceController extends BasePreferenc
 
         mSavedDockUpdater = FeatureFactory.getFactory(
                 context).getDockUpdaterFeatureProvider().getSavedDockUpdater(context, this);
+        manager = Utils.getLocalBtManager(context);
+         if ( manager != null) {
+           mLocalAdapter = manager.getBluetoothAdapter();
+         }
     }
 
     @Override
@@ -66,6 +78,7 @@ public class PreviouslyConnectedDevicePreferenceController extends BasePreferenc
     public void onStart() {
         mBluetoothDeviceUpdater.registerCallback();
         mSavedDockUpdater.registerCallback();
+        manager.getEventManager().registerCallback(this);
         updatePreferenceOnSizeChanged();
     }
 
@@ -73,6 +86,8 @@ public class PreviouslyConnectedDevicePreferenceController extends BasePreferenc
     public void onStop() {
         mBluetoothDeviceUpdater.unregisterCallback();
         mSavedDockUpdater.unregisterCallback();
+        manager.getEventManager().unregisterCallback(this);
+
     }
 
     public void init(DashboardFragment fragment) {
@@ -90,6 +105,46 @@ public class PreviouslyConnectedDevicePreferenceController extends BasePreferenc
     public void onDeviceRemoved(Preference preference) {
         mPreferenceSize--;
         updatePreferenceOnSizeChanged();
+    }
+
+    @Override
+    public void onBluetoothStateChanged(int bluetoothState) {
+        updatePreferenceOnSizeChanged();
+    }
+
+    @Override
+    public void onScanningStateChanged(boolean started) {
+        // do nothing
+    }
+
+    @Override
+    public void onDeviceAdded(CachedBluetoothDevice cachedDevice) {
+       // do nothing
+    }
+
+    @Override
+    public void onDeviceDeleted(CachedBluetoothDevice cachedDevice) {
+        // do nothing
+    }
+
+    @Override
+    public void onDeviceBondStateChanged(CachedBluetoothDevice cachedDevice, int bondState) {
+        // do nothing
+    }
+
+    @Override
+    public void onConnectionStateChanged(CachedBluetoothDevice cachedDevice, int state) {
+        // do nothing
+    }
+
+    @Override
+    public void onActiveDeviceChanged(CachedBluetoothDevice activeDevice, int bluetoothProfile) {
+        // do nothing
+    }
+
+    @Override
+    public void onAudioModeChanged() {
+       // do nothing
     }
 
     @VisibleForTesting
@@ -114,7 +169,12 @@ public class PreviouslyConnectedDevicePreferenceController extends BasePreferenc
 
     private void updatePreferenceOnSizeChanged() {
         if (isAvailable()) {
-            mPreference.setEnabled(mPreferenceSize != 0);
+            if ((mLocalAdapter != null) &&
+                (mLocalAdapter.getBluetoothState() == BluetoothAdapter.STATE_ON)) {
+                mPreference.setVisible(mPreferenceSize != 0);
+            } else {
+                mPreference.setVisible(false);
+            }
         }
     }
 }
