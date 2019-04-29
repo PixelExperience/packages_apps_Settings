@@ -160,4 +160,8 @@
     <string name="dark_theme_style_default">Default</string>
     <string name="dark_theme_style_black">Black</string>
 
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Ignore notch space for selected applications</string>
+
 </resources>
