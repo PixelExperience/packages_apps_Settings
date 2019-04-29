@@ -45,7 +45,7 @@ public class SystemUpdatePreferenceController extends BasePreferenceController {
     public int getAvailabilityStatus() {
         String buildtype = SystemProperties.get(OTA_BUILD_TYPE_PROP,"unofficial");
         String deviceName = SystemProperties.get(DEVICE_NAME,"");
-        if (deviceName.startsWith("phhgsi_") || !mUm.isAdminUser() || !buildtype.equalsIgnoreCase("official")){
+        if (!mUm.isAdminUser() || !buildtype.equalsIgnoreCase("official")){
             return UNSUPPORTED_ON_DEVICE;
         }
         try {
