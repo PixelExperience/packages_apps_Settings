@@ -90,6 +90,13 @@
         android:fragment="com.android.settings.display.ScreenZoomSettings"
         settings:keywords="@string/screen_zoom_keywords" />
 
+    <Preference
+        android:key="display_cutout_force_fullscreen_settings"
+        android:title="@string/display_cutout_force_fullscreen_title"
+        android:summary="@string/display_cutout_force_fullscreen_summary"
+        android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
+        settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
+
     <com.android.settings.custom.preference.SystemSettingListPreference
         android:key="display_cutout_hidden"
         android:title="@string/display_cutout_mode_title"
