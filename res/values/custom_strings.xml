@@ -171,4 +171,8 @@
     <string name="fp_success_auth_vib_title">Fingerprint authentication</string>
     <string name="fp_success_auth_vib_summary">Vibrate on successful fingerprint authentication</string>
 
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar or lockscreen to turn off the display</string>
+
 </resources>
