@@ -18,21 +18,12 @@ package com.android.settings.custom.buttons;
 import android.content.Context;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
-import com.android.internal.util.custom.NavbarUtils;
 
 import com.android.settings.Utils;
 
 import static com.android.internal.util.custom.hwkeys.DeviceKeysConstants.*;
 
 public class ButtonSettingsUtils {
-    public static boolean isAvailable(Context context) {
-        return NavbarUtils.canDisable(context) || hasCameraKey(context) || additionalSettingsAvailable(context);
-    }
-
-    public static boolean additionalSettingsAvailable(Context context) {
-        return Utils.canResolveIntent(context, "org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS");
-    }
-
     public static int getDeviceKeys(Context context) {
         return context.getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
