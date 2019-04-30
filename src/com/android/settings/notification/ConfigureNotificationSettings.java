@@ -99,6 +99,8 @@ public class ConfigureNotificationSettings extends DashboardFragment {
                 new PulseNotificationPreferenceController(context);
         final BatteryNotificationPreferenceController batteryController =
                 new BatteryNotificationPreferenceController(context);
+        final BatteryLowNotificationPreferenceController batteryLowController =
+                new BatteryLowNotificationPreferenceController(context);
         final LockScreenNotificationPreferenceController lockScreenNotificationController =
                 new LockScreenNotificationPreferenceController(context,
                         KEY_LOCKSCREEN,
@@ -107,6 +109,7 @@ public class ConfigureNotificationSettings extends DashboardFragment {
         if (lifecycle != null) {
             lifecycle.addObserver(pulseController);
             lifecycle.addObserver(batteryController);
+            lifecycle.addObserver(batteryLowController);
             lifecycle.addObserver(lockScreenNotificationController);
         }
         controllers.add(new RecentNotifyingAppsPreferenceController(
@@ -114,6 +117,7 @@ public class ConfigureNotificationSettings extends DashboardFragment {
         controllers.add(lighsController);
         controllers.add(pulseController);
         controllers.add(batteryController);
+        controllers.add(batteryLowController);
         controllers.add(lockScreenNotificationController);
         controllers.add(new NotificationRingtonePreferenceController(context) {
             @Override
