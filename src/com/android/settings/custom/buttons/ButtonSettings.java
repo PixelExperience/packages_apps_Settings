@@ -22,6 +22,8 @@ import android.app.ActivityManager;
 import android.app.DialogFragment;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.ComponentName;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
@@ -46,6 +48,7 @@ import static com.android.internal.util.custom.hwkeys.DeviceKeysConstants.*;
 
 import com.android.internal.util.custom.NavbarUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -65,6 +68,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_APP_SWITCH_PRESS = "hardware_keys_app_switch_press";
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
+    private static final String KEY_NAV_INVERSE = "navbar_inverse";
+    private static final String KEY_ADDITIONAL_BUTTONS = "additional_buttons";
+    private static final String KEY_TORCH_LONG_PRESS_POWER = "torch_long_press_power_gesture";
+    private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT = "torch_long_press_power_timeout";
 
     private static final String CATEGORY_HOME = "home_key";
     private static final String CATEGORY_BACK = "back_key";
@@ -72,7 +79,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_ASSIST = "assist_key";
     private static final String CATEGORY_APPSWITCH = "app_switch_key";
     private static final String CATEGORY_CAMERA = "camera_key";
-    private static final String CATEGORY_BACKLIGHT = "key_backlight";
+    private static final String CATEGORY_BACKLIGHT = "button_backlight_cat";
+    private static final String CATEGORY_NAVBAR = "navbar_key";
+    private static final String CATEGORY_POWER = "power_key";
+    private static final String CATEGORY_OTHERS = "others_category";
 
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
@@ -86,8 +96,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraSleepOnRelease;
     private SwitchPreference mCameraLaunch;
     private SwitchPreference mDisableNavigationKeys;
+    private SwitchPreference mNavigationInverse;
+    private Preference mAdditionalButtonsPreference;
+    private SwitchPreference mTorchLongPressPower;
+    private ListPreference mTorchLongPressPowerTimeout;
 
     private Handler mHandler;
+    
+    private static boolean sSupportLongPressPowerWhenNonInteractive;
+    private static boolean sAdditionalButtonsAvailable;
+    private static List<String> sNonIndexableKeys = new ArrayList<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -131,11 +149,21 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
         final PreferenceCategory cameraCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_CAMERA);
+        final PreferenceCategory backlightCat =
+                (PreferenceCategory) findPreference(CATEGORY_BACKLIGHT);
+        final PreferenceCategory navbarCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_NAVBAR);
+        final PreferenceCategory powerCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
+        final PreferenceCategory othersCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_OTHERS);
 
         mHandler = new Handler();
 
         // Force Navigation bar related options
         mDisableNavigationKeys = (SwitchPreference) findPreference(DISABLE_NAV_KEYS);
+        mNavigationInverse = (SwitchPreference) findPreference(KEY_NAV_INVERSE);
+        mNavigationInverse.setOnPreferenceChangeListener(this);
 
         Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
                 com.android.internal.R.integer.config_longPressOnHomeBehaviorHwkeys));
@@ -164,8 +192,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             // Remove keys that can be provided by the navbar
             updateDisableNavkeysOption();
             updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
+            mNavigationInverse.setDependency(DISABLE_NAV_KEYS);
         } else {
-            prefScreen.removePreference(mDisableNavigationKeys);
+            navbarCategory.removePreference(mDisableNavigationKeys);
         }
 
         if (hasHomeKey) {
@@ -264,7 +293,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
         if (!backlight.isButtonSupported()) {
-            prefScreen.removePreference(backlight);
+            prefScreen.removePreference(backlightCat);
         }
 
         if (mCameraWakeScreen != null) {
@@ -310,6 +339,21 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mAppSwitchLongPressAction.setEntries(actionEntriesGo);
                 mAppSwitchLongPressAction.setEntryValues(actionValuesGo);
             }
+        }
+        sSupportLongPressPowerWhenNonInteractive = getResources().getBoolean(
+                com.android.internal.R.bool.config_supportLongPressPowerWhenNonInteractive);
+        sAdditionalButtonsAvailable = !getResources().getString(R.string.config_customButtonsPackage).equals("");
+        if (sAdditionalButtonsAvailable){
+            mAdditionalButtonsPreference = (Preference) findPreference(KEY_ADDITIONAL_BUTTONS);
+        }else{
+            prefScreen.removePreference(othersCategory);
+        }
+
+        mTorchLongPressPower = (SwitchPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER);
+        mTorchLongPressPowerTimeout = (ListPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER_TIMEOUT);
+        if (!sSupportLongPressPowerWhenNonInteractive){
+            powerCategory.removePreference(mTorchLongPressPower);
+            powerCategory.removePreference(mTorchLongPressPowerTimeout);
         }
     }
 
@@ -378,6 +422,18 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mAppSwitchLongPressAction) {
             handleListChange((ListPreference) preference, newValue,
                     Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
+            return true;
+        } else if (preference == mNavigationInverse) {
+            mNavigationInverse.setEnabled(false);
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        mNavigationInverse.setEnabled(true);
+                    }catch(Exception e){
+                    }
+                }
+            }, 1000);
             return true;
         }
         return false;
@@ -449,6 +505,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     }
                 }
             }, 1000);
+        }else if(preference == mAdditionalButtonsPreference){
+            try {
+                String[] customButtonsPackage = getResources().getString(R.string.config_customButtonsPackage).split("/");
+                String activityName = customButtonsPackage[0];
+                String className = customButtonsPackage[1];
+                Intent intent = new Intent();
+                intent.setComponent(new ComponentName(activityName, className));
+                startActivity(intent);
+            } catch (Exception e){
+            }
         }
 
         return super.onPreferenceTreeClick(preference);

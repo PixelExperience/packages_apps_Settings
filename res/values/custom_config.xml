@@ -34,4 +34,7 @@
     <!-- Whether notify user that switch data service -->
     <bool name="confirm_to_switch_data_service">false</bool>
 
+    <!-- Device specific custom buttons package -->
+    <string name="config_customButtonsPackage" translatable="false"></string>
+
 </resources>
