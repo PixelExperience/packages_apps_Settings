@@ -68,6 +68,12 @@
             android:key="battery_light_enabled"
             android:title="@string/battery_light_title"
             android:order="19"/>
+        <!-- Battery light: low blinking -->
+        <SwitchPreference
+            android:key="battery_light_low_blinking"
+            android:title="@string/battery_low_pulse_title"
+            android:dependency="battery_light_enabled"
+            android:order="19"/>
     </PreferenceCategory>
 
     <!-- Empty category to draw divider -->
