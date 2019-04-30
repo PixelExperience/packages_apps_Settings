@@ -22,6 +22,8 @@ import android.app.ActivityManager;
 import android.app.DialogFragment;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.ComponentName;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
@@ -46,11 +48,16 @@ import static com.android.internal.util.custom.hwkeys.DeviceKeysConstants.*;
 
 import com.android.internal.util.custom.NavbarUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import android.provider.SearchIndexableResource;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+
 public class ButtonSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "ButtonSettings";
 
     private static final String KEY_BUTTON_BACKLIGHT = "button_backlight";
@@ -63,6 +70,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_APP_SWITCH_PRESS = "hardware_keys_app_switch_press";
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
+    private static final String KEY_ADDITIONAL_BUTTONS = "additional_buttons";
+    private static final String KEY_TORCH_LONG_PRESS_POWER = "torch_long_press_power_gesture";
+    private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT = "torch_long_press_power_timeout";
 
     private static final String CATEGORY_HOME = "home_key";
     private static final String CATEGORY_BACK = "back_key";
@@ -72,6 +82,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_CAMERA = "camera_key";
     private static final String CATEGORY_BACKLIGHT = "button_backlight_cat";
     private static final String CATEGORY_NAVBAR = "navbar_key";
+    private static final String CATEGORY_POWER = "power_key";
+    private static final String CATEGORY_OTHERS = "others_category";
 
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
@@ -85,8 +97,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraSleepOnRelease;
     private SwitchPreference mCameraLaunch;
     private SwitchPreference mDisableNavigationKeys;
+    private Preference mAdditionalButtonsPreference;
+    private SwitchPreference mTorchLongPressPower;
+    private ListPreference mTorchLongPressPowerTimeout;
 
     private Handler mHandler;
+    
+    private static boolean sSupportLongPressPowerWhenNonInteractive;
+    private static boolean sAdditionalButtonsAvailable;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -134,6 +152,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) findPreference(CATEGORY_BACKLIGHT);
         final PreferenceCategory navbarCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_NAVBAR);
+        final PreferenceCategory powerCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
+        final PreferenceCategory othersCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_OTHERS);
 
         mHandler = new Handler();
 
@@ -308,6 +330,21 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mAppSwitchLongPressAction.setEntryValues(actionValuesGo);
             }
         }
+        sSupportLongPressPowerWhenNonInteractive = getResources().getBoolean(
+                com.android.internal.R.bool.config_supportLongPressPowerWhenNonInteractive);
+        sAdditionalButtonsAvailable = !getResources().getString(R.string.config_customButtonsPackage).equals("");
+        if (sAdditionalButtonsAvailable){
+            mAdditionalButtonsPreference = (Preference) findPreference(KEY_ADDITIONAL_BUTTONS);
+        }else{
+            prefScreen.removePreference(othersCategory);
+        }
+
+        mTorchLongPressPower = (SwitchPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER);
+        mTorchLongPressPowerTimeout = (ListPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER_TIMEOUT);
+        if (!sSupportLongPressPowerWhenNonInteractive){
+            powerCategory.removePreference(mTorchLongPressPower);
+            powerCategory.removePreference(mTorchLongPressPowerTimeout);
+        }
     }
 
     @Override
@@ -446,6 +483,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     }
                 }
             }, 1000);
+        }else if(preference == mAdditionalButtonsPreference){
+            try {
+                String[] customButtonsPackage = getResources().getString(R.string.config_customButtonsPackage).split("/");
+                String activityName = customButtonsPackage[0];
+                String className = customButtonsPackage[1];
+                Intent intent = new Intent();
+                intent.setComponent(new ComponentName(activityName, className));
+                startActivity(intent);
+            } catch (Exception e){
+            }
         }
 
         return super.onPreferenceTreeClick(preference);
@@ -474,4 +521,30 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         f.show(getFragmentManager(), "dialog_preference");
         onDialogShowing();
     }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+        new BaseSearchIndexProvider() {
+            @Override
+            public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                    boolean enabled) {
+                List<SearchIndexableResource> indexables = new ArrayList<>();
+                SearchIndexableResource indexable = new SearchIndexableResource(context);
+                indexable.xmlResId = R.xml.button_settings;
+                indexables.add(indexable);
+                return indexables;
+            }
+            @Override
+            public List<String> getNonIndexableKeys(Context context) {
+                final List<String> keys = super.getNonIndexableKeys(context);
+                if (!sAdditionalButtonsAvailable) {
+                    keys.add(KEY_ADDITIONAL_BUTTONS);
+                    keys.add(CATEGORY_OTHERS);
+                }
+                if (!sSupportLongPressPowerWhenNonInteractive) {
+                    keys.add(KEY_TORCH_LONG_PRESS_POWER);
+                    keys.add(KEY_TORCH_LONG_PRESS_POWER_TIMEOUT);
+                }
+                return keys;
+            }
+        };
 }
