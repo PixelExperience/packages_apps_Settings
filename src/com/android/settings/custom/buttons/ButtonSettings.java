@@ -21,6 +21,8 @@ package com.android.settings.custom.buttons;
 import android.app.ActivityManager;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.ComponentName;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
@@ -29,6 +31,8 @@ import android.os.UserHandle;
 import android.os.SystemProperties;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.KeyCharacterMap;
+import android.view.KeyEvent;
 
 import androidx.fragment.app.DialogFragment;
 import androidx.preference.SwitchPreference;
@@ -42,11 +46,14 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.settings.custom.buttons.preference.*;
+import com.android.settings.custom.utils.DeviceUtils;
+import com.android.settings.custom.utils.TelephonyUtils;
 
 import static com.android.internal.util.custom.hwkeys.DeviceKeysConstants.*;
 
 import com.android.internal.util.custom.NavbarUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -66,6 +73,15 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_APP_SWITCH_PRESS = "hardware_keys_app_switch_press";
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
+    private static final String KEY_NAV_INVERSE = "navbar_inverse";
+    private static final String KEY_ADDITIONAL_BUTTONS = "additional_buttons";
+    private static final String KEY_TORCH_LONG_PRESS_POWER = "torch_long_press_power_gesture";
+    private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT = "torch_long_press_power_timeout";
+    private static final String KEY_POWER_END_CALL = "power_end_call";
+    private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
+    private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+    private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
+    private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
 
     private static final String CATEGORY_HOME = "home_key";
     private static final String CATEGORY_BACK = "back_key";
@@ -73,7 +89,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_ASSIST = "assist_key";
     private static final String CATEGORY_APPSWITCH = "app_switch_key";
     private static final String CATEGORY_CAMERA = "camera_key";
-    private static final String CATEGORY_BACKLIGHT = "key_backlight";
+    private static final String CATEGORY_VOLUME = "volume_keys";
+    private static final String CATEGORY_BACKLIGHT = "button_backlight_cat";
+    private static final String CATEGORY_NAVBAR = "navbar_key";
+    private static final String CATEGORY_POWER = "power_key";
+    private static final String CATEGORY_OTHERS = "others_category";
 
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
@@ -87,8 +107,23 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraSleepOnRelease;
     private SwitchPreference mCameraLaunch;
     private SwitchPreference mDisableNavigationKeys;
+    private SwitchPreference mNavigationInverse;
+    private Preference mAdditionalButtonsPreference;
+    private SwitchPreference mTorchLongPressPower;
+    private ListPreference mTorchLongPressPowerTimeout;
+    private SwitchPreference mPowerEndCall;
+    private SwitchPreference mHomeAnswerCall;
+    private ListPreference mVolumeKeyCursorControl;
+    private SwitchPreference mVolumeWakeScreen;
+    private SwitchPreference mVolumeMusicControls;
+    private SwitchPreference mSwapVolumeButtons;
 
     private Handler mHandler;
+    
+    private boolean mSupportLongPressPowerWhenNonInteractive;
+    private boolean mAdditionalButtonsAvailable;
+
+    private static List<String> sNonIndexableKeys = new ArrayList<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -105,6 +140,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final int deviceWakeKeys = res.getInteger(
                 com.android.internal.R.integer.config_deviceHardwareWakeKeys);
 
+        final boolean hasPowerKey = KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_POWER);
         final boolean hasHomeKey = (deviceKeys & KEY_MASK_HOME) != 0;
         final boolean hasBackKey = (deviceKeys & KEY_MASK_BACK) != 0;
         final boolean hasMenuKey = (deviceKeys & KEY_MASK_MENU) != 0;
@@ -118,6 +154,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final boolean showAssistWake = (deviceWakeKeys & KEY_MASK_ASSIST) != 0;
         final boolean showAppSwitchWake = (deviceWakeKeys & KEY_MASK_APP_SWITCH) != 0;
         final boolean showCameraWake = (deviceWakeKeys & KEY_MASK_CAMERA) != 0;
+        final boolean showVolumeWake = (deviceWakeKeys & KEY_MASK_VOLUME) != 0;
 
         boolean hasAnyBindableKey = false;
         final PreferenceCategory homeCategory =
@@ -130,13 +167,28 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_ASSIST);
         final PreferenceCategory appSwitchCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
+        final PreferenceCategory volumeCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_VOLUME);
         final PreferenceCategory cameraCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_CAMERA);
+        final PreferenceCategory backlightCat =
+                (PreferenceCategory) findPreference(CATEGORY_BACKLIGHT);
+        final PreferenceCategory navbarCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_NAVBAR);
+        final PreferenceCategory powerCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
+        final PreferenceCategory othersCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_OTHERS);
+
+        // Home button answers calls.
+        mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);
 
         mHandler = new Handler();
 
         // Force Navigation bar related options
         mDisableNavigationKeys = (SwitchPreference) findPreference(DISABLE_NAV_KEYS);
+        mNavigationInverse = (SwitchPreference) findPreference(KEY_NAV_INVERSE);
+        mNavigationInverse.setOnPreferenceChangeListener(this);
 
         Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
                 com.android.internal.R.integer.config_longPressOnHomeBehaviorHwkeys));
@@ -165,13 +217,19 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             // Remove keys that can be provided by the navbar
             updateDisableNavkeysOption();
             updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
+            mNavigationInverse.setDependency(DISABLE_NAV_KEYS);
         } else {
-            prefScreen.removePreference(mDisableNavigationKeys);
+            navbarCategory.removePreference(mDisableNavigationKeys);
         }
 
         if (hasHomeKey) {
             if (!showHomeWake) {
                 homeCategory.removePreference(findPreference(Settings.System.HOME_WAKE_SCREEN));
+            }
+
+            if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+                homeCategory.removePreference(mHomeAnswerCall);
+                mHomeAnswerCall = null;
             }
 
             mHomeLongPressAction = initList(KEY_HOME_LONG_PRESS, homeLongPressAction);
@@ -265,7 +323,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
         if (!backlight.isButtonSupported()) {
-            prefScreen.removePreference(backlight);
+            prefScreen.removePreference(backlightCat);
         }
 
         if (mCameraWakeScreen != null) {
@@ -312,11 +370,96 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mAppSwitchLongPressAction.setEntryValues(actionValuesGo);
             }
         }
+        mAdditionalButtonsAvailable = !getResources().getString(R.string.config_customButtonsPackage).equals("");
+        if (mAdditionalButtonsAvailable){
+            mAdditionalButtonsPreference = (Preference) findPreference(KEY_ADDITIONAL_BUTTONS);
+        }else{
+            prefScreen.removePreference(othersCategory);
+        }
+
+        // Power button
+        mSupportLongPressPowerWhenNonInteractive = getResources().getBoolean(
+                com.android.internal.R.bool.config_supportLongPressPowerWhenNonInteractive);
+        mPowerEndCall = (SwitchPreference) findPreference(KEY_POWER_END_CALL);
+        mTorchLongPressPower = (SwitchPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER);
+        mTorchLongPressPowerTimeout = (ListPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER_TIMEOUT);
+
+        if (hasPowerKey) {
+            if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+                powerCategory.removePreference(mPowerEndCall);
+                mPowerEndCall = null;
+            }
+            if (!mSupportLongPressPowerWhenNonInteractive ||
+                    !DeviceUtils.deviceSupportsFlashLight(getActivity())) {
+                powerCategory.removePreference(mTorchLongPressPower);
+                powerCategory.removePreference(mTorchLongPressPowerTimeout);
+            }
+        } else {
+            prefScreen.removePreference(powerCategory);
+        }
+
+        // Volume button
+        mVolumeWakeScreen = (SwitchPreference) findPreference(Settings.System.VOLUME_WAKE_SCREEN);
+        mVolumeMusicControls = (SwitchPreference) findPreference(KEY_VOLUME_MUSIC_CONTROLS);
+
+        if (mVolumeWakeScreen != null) {
+            if (mVolumeMusicControls != null) {
+                mVolumeMusicControls.setDependency(Settings.System.VOLUME_WAKE_SCREEN);
+                mVolumeWakeScreen.setDisableDependentsState(true);
+            }
+        }
+
+        if (DeviceUtils.hasVolumeRocker(getActivity())) {
+            if (!showVolumeWake) {
+                volumeCategory.removePreference(findPreference(Settings.System.VOLUME_WAKE_SCREEN));
+            }
+
+            if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+                volumeCategory.removePreference(
+                        findPreference(Settings.System.VOLUME_ANSWER_CALL));
+            }
+
+            int cursorControlAction = Settings.System.getInt(resolver,
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
+            mVolumeKeyCursorControl = initList(KEY_VOLUME_KEY_CURSOR_CONTROL,
+                    cursorControlAction);
+
+            int swapVolumeKeys = Settings.System.getInt(getContentResolver(),
+                    Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION, 0);
+            mSwapVolumeButtons = (SwitchPreference)
+                    prefScreen.findPreference(KEY_SWAP_VOLUME_BUTTONS);
+            if (mSwapVolumeButtons != null) {
+                mSwapVolumeButtons.setChecked(swapVolumeKeys > 0);
+            }
+        } else {
+            prefScreen.removePreference(volumeCategory);
+        }
+
     }
 
     @Override
     public void onResume() {
         super.onResume();
+
+        // Power button ends calls.
+        if (mPowerEndCall != null) {
+            final int incallPowerBehavior = Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR,
+                    Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_DEFAULT);
+            final boolean powerButtonEndsCall =
+                    (incallPowerBehavior == Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_HANGUP);
+            mPowerEndCall.setChecked(powerButtonEndsCall);
+        }
+
+        // Home button answers calls.
+        if (mHomeAnswerCall != null) {
+            final int incallHomeBehavior = Settings.System.getInt(getContentResolver(),
+                    Settings.System.RING_HOME_BUTTON_BEHAVIOR,
+                    Settings.System.RING_HOME_BUTTON_BEHAVIOR_DEFAULT);
+            final boolean homeButtonAnswersCall =
+                (incallHomeBehavior == Settings.System.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
+            mHomeAnswerCall.setChecked(homeButtonAnswersCall);
+        }
     }
 
     private ListPreference initList(String key, Action value) {
@@ -333,13 +476,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     private void handleListChange(ListPreference pref, Object newValue, String setting) {
-        String value = (String) newValue;
-        int index = pref.findIndexOfValue(value);
-        pref.setSummary(pref.getEntries()[index]);
-        Settings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
-    }
-
-    private void handleSystemListChange(ListPreference pref, Object newValue, String setting) {
         String value = (String) newValue;
         int index = pref.findIndexOfValue(value);
         pref.setSummary(pref.getEntries()[index]);
@@ -380,6 +516,22 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             handleListChange((ListPreference) preference, newValue,
                     Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
             return true;
+        } else if (preference == mNavigationInverse) {
+            mNavigationInverse.setEnabled(false);
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        mNavigationInverse.setEnabled(true);
+                    }catch(Exception e){
+                    }
+                }
+            }, 1000);
+            return true;
+        }else if (preference == mVolumeKeyCursorControl) {
+            handleListChange(mVolumeKeyCursorControl, newValue,
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL);
+            return true;
         }
         return false;
     }
@@ -417,7 +569,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
 
         if (homeCategory != null) {
-            homeCategory.setEnabled(!navbarEnabled);
+            if (mHomeAnswerCall != null) {
+                mHomeAnswerCall.setEnabled(!navbarEnabled);
+            }
         }
         if (backCategory != null) {
             backCategory.setEnabled(!navbarEnabled);
@@ -450,9 +604,57 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     }
                 }
             }, 1000);
-        }
+        }else if(preference == mAdditionalButtonsPreference){
+            try {
+                String[] customButtonsPackage = getResources().getString(R.string.config_customButtonsPackage).split("/");
+                String activityName = customButtonsPackage[0];
+                String className = customButtonsPackage[1];
+                Intent intent = new Intent();
+                intent.setComponent(new ComponentName(activityName, className));
+                startActivity(intent);
+            } catch (Exception e){
+            }
+        } else if (preference == mPowerEndCall) {
+            handleTogglePowerButtonEndsCallPreferenceClick();
+            return true;
+        } else if (preference == mHomeAnswerCall) {
+            handleToggleHomeButtonAnswersCallPreferenceClick();
+            return true;
+        }else if (preference == mSwapVolumeButtons) {
+            int value;
+
+            if (mSwapVolumeButtons.isChecked()) {
+                /* The native inputflinger service uses the same logic of:
+                 *   1 - the volume rocker is on one the sides, relative to the natural
+                 *       orientation of the display (true for all phones and most tablets)
+                 *   2 - the volume rocker is on the top or bottom, relative to the
+                 *       natural orientation of the display (true for some tablets)
+                 */
+                value = getResources().getInteger(
+                        R.integer.config_volumeRockerVsDisplayOrientation);
+            } else {
+                /* Disable the re-orient functionality */
+                value = 0;
+            }
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION, value);
+        } 
 
         return super.onPreferenceTreeClick(preference);
+    }
+
+    private void handleTogglePowerButtonEndsCallPreferenceClick() {
+        Settings.Secure.putInt(getContentResolver(),
+                Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR, (mPowerEndCall.isChecked()
+                        ? Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_HANGUP
+                        : Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_SCREEN_OFF));
+    }
+
+    private void handleToggleHomeButtonAnswersCallPreferenceClick() {
+        Settings.System.putInt(getContentResolver(),
+                Settings.System.RING_HOME_BUTTON_BEHAVIOR, (mHomeAnswerCall.isChecked()
+                        ? Settings.System.RING_HOME_BUTTON_BEHAVIOR_ANSWER
+                        : Settings.System.RING_HOME_BUTTON_BEHAVIOR_DO_NOTHING));
     }
 
     @Override
