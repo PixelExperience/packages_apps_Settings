@@ -27,7 +27,7 @@ public class ButtonSettingsPreferenceController extends BasePreferenceController
 
     @Override
     public int getAvailabilityStatus() {
-        return ButtonSettingsUtils.isAvailable(mContext) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return AVAILABLE;
     }
 
 }
