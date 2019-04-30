@@ -44,8 +44,6 @@ import com.android.settings.custom.buttons.preference.*;
 
 import static com.android.internal.util.custom.hwkeys.DeviceKeysConstants.*;
 
-import org.pixelexperience.keydisabler.KeyDisabler;
-
 import com.android.internal.util.custom.NavbarUtils;
 
 import java.util.List;
@@ -154,7 +152,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 defaultAppSwitchLongPressAction);
 
         // Only visible on devices that does not have a navigation bar already
-        if (isKeyDisablerSupported(getActivity())) {
+        if (NavbarUtils.canDisable(getActivity())) {
             // Remove keys that can be provided by the navbar
             updateDisableNavkeysOption();
             updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
@@ -424,10 +422,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         if (appSwitchCategory != null) {
             appSwitchCategory.setEnabled(!navbarEnabled);
         }
-    }
-
-    private static boolean isKeyDisablerSupported(Context context) {
-        return KeyDisabler.isSupported();
     }
 
     @Override
