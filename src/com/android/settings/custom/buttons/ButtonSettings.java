@@ -22,6 +22,8 @@ import android.app.ActivityManager;
 import android.app.DialogFragment;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.ComponentName;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
@@ -34,6 +36,7 @@ import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.PreferenceGroup;
 import android.util.Log;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -46,11 +49,16 @@ import static com.android.internal.util.custom.hwkeys.DeviceKeysConstants.*;
 
 import com.android.internal.util.custom.NavbarUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import android.provider.SearchIndexableResource;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+
 public class ButtonSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "ButtonSettings";
 
     private static final String KEY_BUTTON_BACKLIGHT = "button_backlight";
@@ -63,6 +71,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_APP_SWITCH_PRESS = "hardware_keys_app_switch_press";
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
+    private static final String KEY_NAV_INVERSE = "navbar_inverse";
+    private static final String KEY_ADDITIONAL_BUTTONS = "additional_buttons";
+    private static final String KEY_TORCH_LONG_PRESS_POWER = "torch_long_press_power_gesture";
+    private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT = "torch_long_press_power_timeout";
 
     private static final String CATEGORY_HOME = "home_key";
     private static final String CATEGORY_BACK = "back_key";
@@ -72,6 +84,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_CAMERA = "camera_key";
     private static final String CATEGORY_BACKLIGHT = "button_backlight_cat";
     private static final String CATEGORY_NAVBAR = "navbar_key";
+    private static final String CATEGORY_POWER = "power_key";
+    private static final String CATEGORY_OTHERS = "others_category";
 
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
@@ -85,8 +99,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraSleepOnRelease;
     private SwitchPreference mCameraLaunch;
     private SwitchPreference mDisableNavigationKeys;
+    private SwitchPreference mNavigationInverse;
+    private Preference mAdditionalButtonsPreference;
+    private SwitchPreference mTorchLongPressPower;
+    private ListPreference mTorchLongPressPowerTimeout;
 
     private Handler mHandler;
+    
+    private static boolean sSupportLongPressPowerWhenNonInteractive;
+    private static boolean sAdditionalButtonsAvailable;
+    private static List<String> sNonIndexableKeys = new ArrayList<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -134,11 +156,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) findPreference(CATEGORY_BACKLIGHT);
         final PreferenceCategory navbarCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_NAVBAR);
+        final PreferenceCategory powerCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
+        final PreferenceCategory othersCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_OTHERS);
 
         mHandler = new Handler();
 
         // Force Navigation bar related options
         mDisableNavigationKeys = (SwitchPreference) findPreference(DISABLE_NAV_KEYS);
+        mNavigationInverse = (SwitchPreference) findPreference(KEY_NAV_INVERSE);
 
         Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
                 com.android.internal.R.integer.config_longPressOnHomeBehaviorHwkeys));
@@ -161,13 +188,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             // Remove keys that can be provided by the navbar
             updateDisableNavkeysOption();
             updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
+            mNavigationInverse.setDependency(DISABLE_NAV_KEYS);
         } else {
-            prefScreen.removePreference(navbarCategory);
+            removePreferenceAndRemoveFromIndex(navbarCategory, mDisableNavigationKeys);
         }
 
         if (hasHomeKey) {
             if (!showHomeWake) {
-                homeCategory.removePreference(findPreference(Settings.System.HOME_WAKE_SCREEN));
+                removePreferenceAndRemoveFromIndex(homeCategory, findPreference(Settings.System.HOME_WAKE_SCREEN));
             }
 
             mHomeLongPressAction = initList(KEY_HOME_LONG_PRESS, homeLongPressAction);
@@ -175,21 +203,21 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
             hasAnyBindableKey = true;
         } else {
-            prefScreen.removePreference(homeCategory);
+            removePreferenceAndRemoveFromIndex(prefScreen, homeCategory);
         }
 
         if (hasBackKey) {
             if (!showBackWake) {
-                backCategory.removePreference(findPreference(Settings.System.BACK_WAKE_SCREEN));
-                prefScreen.removePreference(backCategory);
+                removePreferenceAndRemoveFromIndex(backCategory, findPreference(Settings.System.BACK_WAKE_SCREEN));
+                removePreferenceAndRemoveFromIndex(prefScreen, backCategory);
             }
         } else {
-            prefScreen.removePreference(backCategory);
+            removePreferenceAndRemoveFromIndex(prefScreen, backCategory);
         }
 
         if (hasMenuKey) {
             if (!showMenuWake) {
-                menuCategory.removePreference(findPreference(Settings.System.MENU_WAKE_SCREEN));
+                removePreferenceAndRemoveFromIndex(menuCategory, findPreference(Settings.System.MENU_WAKE_SCREEN));
             }
 
             Action pressAction = Action.fromSettings(resolver,
@@ -203,12 +231,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
             hasAnyBindableKey = true;
         } else {
-            prefScreen.removePreference(menuCategory);
+            removePreferenceAndRemoveFromIndex(prefScreen, menuCategory);
         }
 
         if (hasAssistKey) {
             if (!showAssistWake) {
-                assistCategory.removePreference(findPreference(Settings.System.ASSIST_WAKE_SCREEN));
+                removePreferenceAndRemoveFromIndex(assistCategory, findPreference(Settings.System.ASSIST_WAKE_SCREEN));
             }
 
             Action pressAction = Action.fromSettings(resolver,
@@ -221,12 +249,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
             hasAnyBindableKey = true;
         } else {
-            prefScreen.removePreference(assistCategory);
+            removePreferenceAndRemoveFromIndex(prefScreen, assistCategory);
         }
 
         if (hasAppSwitchKey) {
             if (!showAppSwitchWake) {
-                appSwitchCategory.removePreference(findPreference(
+                removePreferenceAndRemoveFromIndex(appSwitchCategory, findPreference(
                         Settings.System.APP_SWITCH_WAKE_SCREEN));
             }
 
@@ -238,7 +266,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
             hasAnyBindableKey = true;
         } else {
-            prefScreen.removePreference(appSwitchCategory);
+            removePreferenceAndRemoveFromIndex(prefScreen, appSwitchCategory);
         }
 
         if (hasCameraKey) {
@@ -248,20 +276,20 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mCameraLaunch = (SwitchPreference) findPreference(Settings.System.CAMERA_LAUNCH);
 
             if (!showCameraWake) {
-                prefScreen.removePreference(mCameraWakeScreen);
+                removePreferenceAndRemoveFromIndex(prefScreen, mCameraWakeScreen);
             }
             // Only show 'Camera sleep on release' if the device has a focus key
             if (res.getBoolean(com.android.internal.R.bool.config_singleStageCameraKey)) {
-                prefScreen.removePreference(mCameraSleepOnRelease);
+                removePreferenceAndRemoveFromIndex(prefScreen, mCameraSleepOnRelease);
             }
         } else {
-            prefScreen.removePreference(cameraCategory);
+            removePreferenceAndRemoveFromIndex(prefScreen, cameraCategory);
         }
 
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
         if (!backlight.isButtonSupported()) {
-            prefScreen.removePreference(backlightCat);
+            removePreferenceAndRemoveFromIndex(prefScreen, backlightCat);
         }
 
         if (mCameraWakeScreen != null) {
@@ -307,6 +335,21 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mAppSwitchLongPressAction.setEntries(actionEntriesGo);
                 mAppSwitchLongPressAction.setEntryValues(actionValuesGo);
             }
+        }
+        sSupportLongPressPowerWhenNonInteractive = getResources().getBoolean(
+                com.android.internal.R.bool.config_supportLongPressPowerWhenNonInteractive);
+        sAdditionalButtonsAvailable = !getResources().getString(R.string.config_customButtonsPackage).equals("");
+        if (sAdditionalButtonsAvailable){
+            mAdditionalButtonsPreference = (Preference) findPreference(KEY_ADDITIONAL_BUTTONS);
+        }else{
+            removePreferenceAndRemoveFromIndex(prefScreen, othersCategory);
+        }
+
+        mTorchLongPressPower = (SwitchPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER);
+        mTorchLongPressPowerTimeout = (ListPreference) findPreference(KEY_TORCH_LONG_PRESS_POWER_TIMEOUT);
+        if (!sSupportLongPressPowerWhenNonInteractive){
+            removePreferenceAndRemoveFromIndex(powerCategory, mTorchLongPressPower);
+            removePreferenceAndRemoveFromIndex(powerCategory, mTorchLongPressPowerTimeout);
         }
     }
 
@@ -446,6 +489,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     }
                 }
             }, 1000);
+        }else if(preference == mAdditionalButtonsPreference){
+            try {
+                String[] customButtonsPackage = getResources().getString(R.string.config_customButtonsPackage).split("/");
+                String activityName = customButtonsPackage[0];
+                String className = customButtonsPackage[1];
+                Intent intent = new Intent();
+                intent.setComponent(new ComponentName(activityName, className));
+                startActivity(intent);
+            } catch (Exception e){
+            }
         }
 
         return super.onPreferenceTreeClick(preference);
@@ -474,4 +527,50 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         f.show(getFragmentManager(), "dialog_preference");
         onDialogShowing();
     }
+
+    private void removePreferenceAndRemoveFromIndex(PreferenceScreen parent, Preference toRemove){
+        if(toRemove instanceof PreferenceCategory) {
+            ArrayList<Preference> list = getPreferenceList(toRemove, new ArrayList<Preference>());
+            for (Preference p : list) {
+                sNonIndexableKeys.add(p.getKey());
+            }
+        }
+        sNonIndexableKeys.add(toRemove.getKey());
+        parent.removePreference(toRemove);
+    }
+    
+    private void removePreferenceAndRemoveFromIndex(PreferenceCategory parent, Preference toRemove){
+        sNonIndexableKeys.add(toRemove.getKey());
+        parent.removePreference(toRemove);
+    }
+
+    private ArrayList<Preference> getPreferenceList(Preference p, ArrayList<Preference> list) {
+        if(p instanceof PreferenceCategory || p instanceof PreferenceScreen) {
+            PreferenceGroup pGroup = (PreferenceGroup) p;
+            int pCount = pGroup.getPreferenceCount();
+            for(int i = 0; i < pCount; i++) {
+                getPreferenceList(pGroup.getPreference(i), list);
+            }
+        }else{
+            list.add(p);
+        }
+        return list;
+    }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+        new BaseSearchIndexProvider() {
+            @Override
+            public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                    boolean enabled) {
+                List<SearchIndexableResource> indexables = new ArrayList<>();
+                SearchIndexableResource indexable = new SearchIndexableResource(context);
+                indexable.xmlResId = R.xml.button_settings;
+                indexables.add(indexable);
+                return indexables;
+            }
+            @Override
+            public List<String> getNonIndexableKeys(Context context) {
+                return sNonIndexableKeys;
+            }
+        };
 }
