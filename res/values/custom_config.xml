@@ -38,4 +38,7 @@
          "About Phone" -->
     <bool name="config_show_security_patch_level">true</bool>
 
+    <!-- Device specific custom buttons package -->
+    <string name="config_customButtonsPackage" translatable="false"></string>
+
 </resources>
