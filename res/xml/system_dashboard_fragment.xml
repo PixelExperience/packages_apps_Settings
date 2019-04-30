@@ -34,7 +34,7 @@
         android:key="button_settings"
         android:title="@string/button_pref_title"
         android:icon="@drawable/ic_button_settings"
-        android:order="-70"
+        android:order="-256"
         android:fragment="com.android.settings.custom.buttons.ButtonSettings" />
 
     <!-- Backup -->
