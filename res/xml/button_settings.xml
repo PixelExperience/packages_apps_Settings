@@ -3,17 +3,27 @@
         android:key="button_settings"
         android:title="@string/button_pref_title">
 
-    <SwitchPreference
-        android:key="disable_nav_keys"
-        android:title="@*android:string/disable_navkeys_title"
-        android:summary="@*android:string/disable_navkeys_summary"
-        android:defaultValue="false" />
+    <PreferenceCategory
+        android:key="navbar_key"
+        android:title="@string/navigation_bar_title">
+        <SwitchPreference
+            android:key="disable_nav_keys"
+            android:title="@*android:string/disable_navkeys_title"
+            android:summary="@*android:string/disable_navkeys_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
 
-    <com.android.settings.custom.buttons.preference.ButtonBacklightBrightness
-        android:key="button_backlight"
-        android:title="@string/button_backlight_title"
-        android:dialogTitle="@string/button_backlight_title"
-        android:persistent="false" />
+    <PreferenceCategory
+        android:key="button_backlight_cat"
+        android:title="@string/button_backlight_title">
+
+        <com.android.settings.custom.buttons.preference.ButtonBacklightBrightness
+            android:key="button_backlight"
+            android:title="@string/button_backlight_title"
+            android:dialogTitle="@string/button_backlight_title"
+            android:persistent="false" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="home_key"

@@ -48,6 +48,7 @@
 
     <!-- Buttons -->
     <string name="button_pref_title">Buttons</string>
+    <string name="navigation_bar_title">Navigation bar</string>
     <string name="hardware_keys_home_key_title">Home button</string>
     <string name="hardware_keys_back_key_title">Back button</string>
     <string name="hardware_keys_menu_key_title">Menu button</string>

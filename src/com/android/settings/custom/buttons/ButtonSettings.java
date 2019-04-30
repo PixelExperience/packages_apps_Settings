@@ -70,7 +70,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_ASSIST = "assist_key";
     private static final String CATEGORY_APPSWITCH = "app_switch_key";
     private static final String CATEGORY_CAMERA = "camera_key";
-    private static final String CATEGORY_BACKLIGHT = "key_backlight";
+    private static final String CATEGORY_BACKLIGHT = "button_backlight_cat";
+    private static final String CATEGORY_NAVBAR = "navbar_key";
 
     private ListPreference mHomeLongPressAction;
     private ListPreference mHomeDoubleTapAction;
@@ -129,6 +130,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
         final PreferenceCategory cameraCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_CAMERA);
+        final PreferenceCategory backlightCat =
+                (PreferenceCategory) findPreference(CATEGORY_BACKLIGHT);
+        final PreferenceCategory navbarCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_NAVBAR);
 
         mHandler = new Handler();
 
@@ -157,7 +162,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             updateDisableNavkeysOption();
             updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
         } else {
-            prefScreen.removePreference(mDisableNavigationKeys);
+            prefScreen.removePreference(navbarCategory);
         }
 
         if (hasHomeKey) {
@@ -256,7 +261,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) findPreference(KEY_BUTTON_BACKLIGHT);
         if (!backlight.isButtonSupported()) {
-            prefScreen.removePreference(backlight);
+            prefScreen.removePreference(backlightCat);
         }
 
         if (mCameraWakeScreen != null) {
