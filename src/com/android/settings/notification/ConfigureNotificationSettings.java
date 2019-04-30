@@ -92,8 +92,6 @@ public class ConfigureNotificationSettings extends DashboardFragment {
 
     private static List<AbstractPreferenceController> buildPreferenceControllers(Context context,
             Lifecycle lifecycle, Application app, Fragment host) {
-        boolean lightsSettingsAvailable = context.getResources().getBoolean(com.android.internal.R.bool.config_intrusiveNotificationLed) || 
-                context.getResources().getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed);
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         final LightsNotificationPreferenceCategoryController lighsController =
                 new LightsNotificationPreferenceCategoryController(context);
@@ -107,19 +105,15 @@ public class ConfigureNotificationSettings extends DashboardFragment {
                         KEY_LOCKSCREEN_WORK_PROFILE_HEADER,
                         KEY_LOCKSCREEN_WORK_PROFILE);
         if (lifecycle != null) {
-            if (lightsSettingsAvailable){
-                lifecycle.addObserver(pulseController);
-                lifecycle.addObserver(batteryController);
-            }
+            lifecycle.addObserver(pulseController);
+            lifecycle.addObserver(batteryController);
             lifecycle.addObserver(lockScreenNotificationController);
         }
         controllers.add(new RecentNotifyingAppsPreferenceController(
                 context, new NotificationBackend(), app, host));
         controllers.add(lighsController);
-        if (lightsSettingsAvailable){
-            controllers.add(pulseController);
-            controllers.add(batteryController);
-        }
+        controllers.add(pulseController);
+        controllers.add(batteryController);
         controllers.add(lockScreenNotificationController);
         controllers.add(new NotificationRingtonePreferenceController(context) {
             @Override
