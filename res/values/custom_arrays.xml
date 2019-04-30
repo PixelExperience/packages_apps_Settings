@@ -120,4 +120,23 @@
         <item>1</item>
     </string-array>
 
+    <!-- Allow accents -->
+    <string-array name="allowed_themes" translatable="false">
+        <item>org.pixelexperience.overlay.accent.brown</item>
+        <item>org.pixelexperience.overlay.accent.cyan</item>
+        <item>org.pixelexperience.overlay.accent.green</item>
+        <item>org.pixelexperience.overlay.accent.orange</item>
+        <item>org.pixelexperience.overlay.accent.pink</item>
+        <item>org.pixelexperience.overlay.accent.purple</item>
+        <item>org.pixelexperience.overlay.accent.red</item>
+        <item>org.pixelexperience.overlay.accent.yellow</item>
+        <item>org.pixelexperience.overlay.accent.teal</item>
+    </string-array>
+    <string-array name="allowed_themes_when_light" translatable="false">
+        <item>org.pixelexperience.overlay.accent.black</item>
+    </string-array>
+    <string-array name="allowed_themes_when_dark" translatable="false">
+        <item>org.pixelexperience.overlay.accent.white</item>
+    </string-array>
+
 </resources>
