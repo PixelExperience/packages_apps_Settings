@@ -19,7 +19,7 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="system_dashboard_screen"
     android:title="@string/header_category_system"
-    settings:initialExpandedChildrenCount="4">
+    settings:initialExpandedChildrenCount="5">
 
     <Preference
         android:key="language_input_settings"
@@ -43,8 +43,7 @@
         android:title="@string/button_pref_title"
         android:icon="@drawable/ic_button_settings"
         android:order="-249"
-        android:fragment="com.android.settings.custom.buttons.ButtonSettings"
-        settings:controller="com.android.settings.custom.buttons.ButtonSettingsPreferenceController"/>
+        android:fragment="com.android.settings.custom.buttons.ButtonSettings"/>
 
     <Preference
         android:key="date_time_settings"

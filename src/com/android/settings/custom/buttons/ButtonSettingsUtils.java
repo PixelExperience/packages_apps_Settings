@@ -23,10 +23,6 @@ import com.android.internal.util.custom.NavbarUtils;
 import static com.android.internal.util.custom.hwkeys.DeviceKeysConstants.*;
 
 public class ButtonSettingsUtils {
-    public static boolean isAvailable(Context context) {
-        return NavbarUtils.canDisable(context) || hasCameraKey(context);
-    }
-
     public static int getDeviceKeys(Context context) {
         return context.getResources().getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
