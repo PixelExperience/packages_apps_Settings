@@ -35,8 +35,7 @@
         android:title="@string/button_pref_title"
         android:icon="@drawable/ic_button_settings"
         android:order="-256"
-        android:fragment="com.android.settings.custom.buttons.ButtonSettings"
-        settings:controller="com.android.settings.custom.buttons.ButtonSettingsPreferenceController"/>
+        android:fragment="com.android.settings.custom.buttons.ButtonSettings"/>
 
     <!-- Backup -->
     <Preference
