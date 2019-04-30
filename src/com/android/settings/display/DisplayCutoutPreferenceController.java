@@ -21,6 +21,7 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
+import android.os.UserHandle;
 import android.os.PowerManager;
 import android.os.SystemClock;
 
@@ -42,8 +43,9 @@ public class DisplayCutoutPreferenceController extends BasePreferenceController
     }
 
     private int getConfig(){
-        return Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.DISPLAY_CUTOUT_HIDDEN, 0);
+        return Settings.System.getIntForUser(mContext.getContentResolver(),
+                Settings.System.DISPLAY_CUTOUT_HIDDEN, 0,
+                UserHandle.USER_CURRENT);
     }
 
     @Override

@@ -20,6 +20,7 @@ import static android.provider.Settings.Secure.THEME_MODE;
 
 import android.content.Context;
 import android.os.PowerManager;
+import android.os.UserManager;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -61,6 +62,7 @@ public class SystemUiThemePreferenceController extends AbstractPreferenceControl
 
     @Override
     public boolean isAvailable() {
+        if (!isAdminUser()) return false;
         return FeatureFlagUtils.isEnabled(mContext, "settings_systemui_theme");
     }
 
@@ -128,4 +130,9 @@ public class SystemUiThemePreferenceController extends AbstractPreferenceControl
     @Override
     public void onBatteryChanged(boolean pluggedIn) {
     }
+
+    boolean isAdminUser() {
+        return ((UserManager) mContext.getSystemService(Context.USER_SERVICE)).isAdminUser();
+    }
+
 }

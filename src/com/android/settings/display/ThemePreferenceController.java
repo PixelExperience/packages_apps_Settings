@@ -20,6 +20,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.UserHandle;
+import android.os.UserManager;
 import android.support.annotation.VisibleForTesting;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
@@ -181,6 +182,7 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
 
     @Override
     public boolean isAvailable() {
+        if (!isAdminUser()) return false;
         if (mOverlayService == null) return false;
         String[] themes = getAvailableAccents();
         return themes != null && themes.length > 1;
@@ -209,5 +211,9 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
             }
         }
         return false;
+    }
+
+    boolean isAdminUser() {
+        return ((UserManager) mContext.getSystemService(Context.USER_SERVICE)).isAdminUser();
     }
 }
