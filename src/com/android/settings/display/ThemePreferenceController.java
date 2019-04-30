@@ -33,6 +33,7 @@ import com.android.settings.wrapper.OverlayManagerWrapper.OverlayInfo;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -47,6 +48,7 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
     private final MetricsFeatureProvider mMetricsFeatureProvider;
     private final OverlayManagerWrapper mOverlayService;
     private final PackageManager mPackageManager;
+    private final String[] mAllowedThemes;
 
     public ThemePreferenceController(Context context) {
         this(context, ServiceManager.getService(Context.OVERLAY_SERVICE) != null
@@ -57,6 +59,7 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
     ThemePreferenceController(Context context, OverlayManagerWrapper overlayManager) {
         super(context);
         mOverlayService = overlayManager;
+        mAllowedThemes = mContext.getResources().getStringArray(R.array.allowed_themes); 
         mPackageManager = context.getPackageManager();
         mMetricsFeatureProvider = FeatureFactory.getFactory(context).getMetricsFeatureProvider();
     }
@@ -119,6 +122,9 @@ public class ThemePreferenceController extends AbstractPreferenceController impl
 
     private boolean isTheme(OverlayInfo oi) {
         if (!OverlayInfo.CATEGORY_THEME.equals(oi.category)) {
+            return false;
+        }
+        if (!Arrays.asList(mAllowedThemes).contains(oi.packageName)){
             return false;
         }
         try {
