@@ -23,7 +23,6 @@ import android.os.Looper;
 import android.provider.Settings;
 import android.os.PowerManager;
 import android.os.SystemClock;
-import android.os.UserManager;
 
 import com.android.settings.core.BasePreferenceController;
 
@@ -49,7 +48,7 @@ public class DisplayCutoutPreferenceController extends BasePreferenceController
 
     @Override
     public int getAvailabilityStatus() {
-        return isAdminUser() && mContext.getResources().getBoolean(
+        return mContext.getResources().getBoolean(
                 com.android.internal.R.bool.config_physicalDisplayCutout) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
@@ -70,10 +69,6 @@ public class DisplayCutoutPreferenceController extends BasePreferenceController
         }catch(Exception e){
         }
         return true;
-    }
-
-    boolean isAdminUser() {
-        return ((UserManager) mContext.getSystemService(Context.USER_SERVICE)).isAdminUser();
     }
 
 }
