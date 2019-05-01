@@ -105,6 +105,7 @@ import java.util.Set;
 
 
 import com.android.settings.custom.buttons.ButtonSettings;
+import com.android.settings.custom.statusbar.StatusbarSettings;
 
 public class SearchIndexableResourcesImpl implements SearchIndexableResources {
 
@@ -199,6 +200,7 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
 
         // Custom settings
         addIndex(ButtonSettings.class);
+        addIndex(StatusbarSettings.class);
     }
 
     @Override
