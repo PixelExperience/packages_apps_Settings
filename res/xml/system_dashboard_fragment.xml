@@ -37,6 +37,14 @@
         android:order="-256"
         android:fragment="com.android.settings.custom.buttons.ButtonSettings"/>
 
+    <!-- Statusbar Settings -->
+    <Preference
+        android:key="statusbar_settings"
+        android:title="@string/status_bar_title"
+        android:icon="@drawable/ic_settings_statusbar"
+        android:order="-254"
+        android:fragment="com.android.settings.custom.statusbar.StatusbarSettings" />
+
     <!-- Backup -->
     <Preference
         android:key="backup_settings"
