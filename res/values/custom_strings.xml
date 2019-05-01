@@ -195,4 +195,8 @@
     <string name="lockscreen_power_menu_disabled_title">Disable on lock screen</string>
     <string name="lockscreen_power_menu_disabled_summary">Disable power menu on lock screen</string>
 
+    <!-- Others settings -->
+    <string name="others_settings_title">Others settings</string>
+    <string name="additional_buttons_title">Additional buttons</string>
+
 </resources>

@@ -220,4 +220,16 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="others_category"
+        android:title="@string/others_settings_title"
+        settings:controller="com.android.settings.custom.buttons.CustomButtonsPreferenceController">
+
+        <Preference
+            android:key="additional_buttons"
+            android:title="@string/additional_buttons_title"
+            settings:controller="com.android.settings.custom.buttons.CustomButtonsPreferenceController" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
