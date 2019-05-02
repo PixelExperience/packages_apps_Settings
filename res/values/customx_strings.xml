@@ -92,4 +92,8 @@
     <string name="display_cutout_force_fullscreen_restart_app">Please restart the application to apply the changes.</string>
     <string name="cutout_force_fullscreen_no_apps">No apps</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Swipe to screenshot</string>
+    <string name="swipe_to_screenshot_gesture_summary">Swipe three fingers to take screenshot</string>
+
 </resources>
