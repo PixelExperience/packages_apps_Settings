@@ -3333,6 +3333,24 @@
                 android:value="com.android.settings.custom.ambient.history.AmbientPlayHistory" />
         </activity>
 
+        <!-- LiveDisplay settings (Display category) -->
+        <activity-alias
+            android:name=".livedisplay.LiveDisplaySettings"
+            android:label="@string/live_display_title"
+            android:parentActivityName="Settings">
+            <intent-filter android:priority="-2">
+                <action android:name="com.android.settings.action.SETTINGS" />
+                <action android:name="com.android.settings.LIVEDISPLAY_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/live_display_summary" />
+        </activity-alias>
+
         <provider android:name=".slices.SettingsSliceProvider"
                   android:authorities="com.android.settings.slices;android.settings.slices"
                   android:exported="true"
