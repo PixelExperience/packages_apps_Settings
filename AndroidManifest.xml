@@ -101,6 +101,10 @@
     <!-- Thermal controller -->
     <uses-permission android:name="org.pixelexperience.thermalcontroller.MANAGE_SETTINGS" />
 
+    <!-- LiveDisplay -->
+    <uses-permission android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    <uses-permission android:name="lineageos.permission.MANAGE_LIVEDISPLAY" />
+
     <application android:label="@string/settings_label"
             android:icon="@drawable/ic_launcher_settings"
             android:taskAffinity=""
@@ -3306,6 +3310,20 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.custom.ambient.history.AmbientPlayHistory" />
+        </activity>
+
+        <!-- LiveDisplay -->
+        <activity
+            android:name="Settings$LiveDisplaySettingsActivity"
+            android:label="@*android:string/live_display_title"
+            android:parentActivityName="Settings"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.LIVEDISPLAY_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.livedisplay.LiveDisplaySettings" />
         </activity>
 
         <provider android:name=".slices.SettingsSliceProvider"
