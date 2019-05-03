@@ -242,4 +242,7 @@
     <string name="pocket_judge_title">Pocket detection</string>
     <string name="pocket_judge_summary">Lock the screen and buttons when the device is in your pocket</string>
 
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">Optimize your screen based on time of day and ambient conditions to improve readability and reduce eyestrain</string>
+
 </resources>
