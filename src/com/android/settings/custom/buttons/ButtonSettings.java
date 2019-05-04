@@ -52,6 +52,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import com.android.settings.custom.preference.CustomDialogPreference;
+
 public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "ButtonSettings";
