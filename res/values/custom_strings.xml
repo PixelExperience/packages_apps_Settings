@@ -295,4 +295,7 @@
     <string name="adj_intensity_title">Intensity</string>
     <string name="adj_contrast_title">Contrast</string>
 
+    <!-- LiveDisplay - Custom theme mode -->
+    <string name="systemui_theme_time">Automatic (time of the day)</string>
+
 </resources>
