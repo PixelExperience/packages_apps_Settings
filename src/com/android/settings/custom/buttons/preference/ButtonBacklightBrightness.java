@@ -41,6 +41,8 @@ import com.android.settings.R;
 
 import static com.android.internal.util.custom.hwkeys.DeviceKeysConstants.*;
 
+import com.android.settings.custom.preference.CustomDialogPreference;
+
 public class ButtonBacklightBrightness extends CustomDialogPreference<AlertDialog> implements
         SeekBar.OnSeekBarChangeListener {
     private static final int DEFAULT_BUTTON_TIMEOUT = 5;
