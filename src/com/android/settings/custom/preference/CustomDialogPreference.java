@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.custom.buttons.preference;
+package com.android.settings.custom.preference;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
