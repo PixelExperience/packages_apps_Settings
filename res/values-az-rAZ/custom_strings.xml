@@ -23,6 +23,7 @@
     <string name="lights_category_title">İşıq tənzimləmələri</string>
     <string name="notification_light_title">Bildiriş işığı</string>
     <string name="battery_light_title">Batareya işığı</string>
+    <string name="battery_low_pulse_title">Batereya zəifdirsə yanıb sön</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">qeyri-aktivdir</string>
@@ -43,12 +44,15 @@
     <string name="reset">Sıfırla</string>
     <!-- Buttons -->
     <string name="button_pref_title">Düymələr</string>
+    <string name="navigation_bar_title">Düymələr və düzülüşü</string>
+    <string name="hardware_keys_power_key_title">Güc düyməsi</string>
     <string name="hardware_keys_home_key_title">Ana ekran düyməsi</string>
     <string name="hardware_keys_back_key_title">Geri düyməsi</string>
     <string name="hardware_keys_menu_key_title">Menyu düyməsi</string>
     <string name="hardware_keys_assist_key_title">Axtarış düyməsi</string>
     <string name="hardware_keys_appswitch_key_title">Son tətbiqlər düyməsi</string>
     <string name="hardware_keys_camera_key_title">Kamera düyməsi</string>
+    <string name="hardware_keys_volume_keys_title">Səs düymələri</string>
     <string name="hardware_keys_short_press_title">Basma hərəkəti</string>
     <string name="hardware_keys_long_press_title">Basıb saxlama hərəkəti</string>
     <string name="hardware_keys_double_tap_title">İki dəfə toxunma hərəkəti</string>
@@ -135,4 +139,113 @@
     <string name="display_cutout_mode_title">Çərtik tənzimləmələri</string>
     <string name="display_cutout_mode_normal">Standart</string>
     <string name="display_cutout_mode_hidden">Gizli</string>
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Yuxuya keçmək üçün iki dəfə toxun</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Ekranı söndürmək üçün vəziyyət sətrinə iki dəfə toxunun</string>
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Medianın qapaq üzünü göstər</string>
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <string name="torch_long_press_power_gesture_title">Fənər üçün uzun basın</string>
+    <string name="torch_long_press_power_gesture_desc">Ekran sönülü olarkən güc düyməsinə uzun basmaq fənəri yandırar</string>
+    <string name="torch_long_press_power_timeout_title">Fənəri avtomatik söndür</string>
+    <string name="torch_long_press_power_timeout_never">Heç vaxt</string>
+    <string name="torch_long_press_power_timeout_1min">1 dəqiqə</string>
+    <string name="torch_long_press_power_timeout_2min">2 dəqiqə</string>
+    <string name="torch_long_press_power_timeout_5min">5 dəqiqə</string>
+    <string name="torch_long_press_power_timeout_10min">10 dəqiqə</string>
+    <!-- Volume control playback -->
+    <string name="volbtn_music_controls_title">Musiqi nəzarəti</string>
+    <string name="volbtn_music_controls_summary">Ekran sönülü olarkən səs düymələrinə uzun basaraq musiqini dəyişdir</string>
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <string name="additional_buttons_title">Əlavə düymələr</string>
+    <!-- Status bar -->
+    <string name="status_bar_title">Vəziyyət sətri</string>
+    <string name="status_bar_quick_qs_pulldown_title">Cəld aşağı çəkmə</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Vəziyyət sətrinin %1$s tərəfindən aşağı çəkərək Cəld Tənzimləmələri aç</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">Sol</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">Sağ</string>
+    <string name="status_bar_quick_qs_pulldown_off">Bağlı</string>
+    <string name="status_bar_quick_qs_pulldown_left">Sol</string>
+    <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
+    <!-- Status bar - icons -->
+    <string name="status_bar_icons_title">Vəziyyət sətri nişanları</string>
+    <string name="status_bar_system_icons_title">Sistem nişanları</string>
+    <string name="status_bar_system_icons_summary">Hansı vəziyyət sətri nişanlarının göstəriləcəyinə nəzarət edin</string>
+    <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_settings_title">Şəbəkə trafik göstəricisi</string>
+    <string name="network_traffic_settings_summary">Vəziyyət sətrində hazırki şəbəkə trafik səviyyələrini göstər</string>
+    <string name="network_traffic_mode_title">Görüntü rejimi</string>
+    <string name="network_traffic_mode_disable">Sıradan çıxarıldı</string>
+    <string name="network_traffic_mode_up">Yalnız yükləmə</string>
+    <string name="network_traffic_mode_down">Yalnız endirmə</string>
+    <string name="network_traffic_mode_all">Yükləmə və endirmə</string>
+    <string name="network_traffic_autohide">Avtomatik gizlət</string>
+    <string name="network_traffic_autohide_summary">Fəaliyyət olmayanda trafik göstəricisini gizlət</string>
+    <string name="network_traffic_units_title">Trafik ölçü vahidi</string>
+    <string name="network_traffic_units_kilobits">Saniyədə kilobit (kb/s)</string>
+    <string name="network_traffic_units_megabits">Saniyədə megabit (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Saniyədə kilobayt (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Saniyədə megabayt (MB/s)</string>
+    <string name="network_traffic_show_units">Vahidləri göstər</string>
+    <string name="network_traffic_show_units_summary">Vəziyyət sətrində trafik ölçmə vahidlərini göstərilib göstərilməyəcəyi</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">Oxunaqlılığı artırmaq və göz yorğunluğu azaltmaq üçün ekranınızı günün saatına və mühit şərtlərinə görə optimallaşdırın</string>
+    <string name="live_display_mode">Görüntü rejimi</string>
+    <string name="live_display_color_temperature_title">Rəng hərarəti</string>
+    <string name="live_display_color_temperature_summary">Gündüz: <xliff:g id="day_temperature">%1$d</xliff:g>K  Gecə: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">Gündüz</string>
+    <string name="live_display_night">Gecə</string>
+    <string name="live_display_outdoor_mode_title">Avtomatik çöl rejimi</string>
+    <string name="live_display_outdoor_mode_summary">Parlaq günəş işığı altında parlaqlığı və doydurmanı avtomatik artırar</string>
+    <string name="live_display_low_power_title">Enerji istehlakını azalt</string>
+    <string name="live_display_low_power_summary">Ekranda xarablaşma olmadan ekranı ən aşağı enerji istehlakı üçün nizamlayın</string>
+    <string name="live_display_enhance_color_title">Rəngləri artır</string>
+    <string name="live_display_enhance_color_summary">Dəri tonu, səhnə və digər təsvirlərin rəng titrəməsini təkmilləşdirər</string>
+    <string name="live_display_color_profile_title">Rəng profili</string>
+    <string name="live_display_color_profile_standard_title">Standard</string>
+    <string name="live_display_color_profile_standard_summary">Dəqiq rənglər və parlaq ağlar</string>
+    <string name="live_display_color_profile_natural_title">Tәbii</string>
+    <string name="live_display_color_profile_natural_summary">Gerçək rənglər və dəri çalarları</string>
+    <string name="live_display_color_profile_dynamic_title">Dinamik</string>
+    <string name="live_display_color_profile_dynamic_summary">Dolmuş rənglər və parlaq ağlar</string>
+    <string name="live_display_color_profile_cinema_title">Sinema</string>
+    <string name="live_display_color_profile_cinema_summary">Video üçün mükəmməl rəng istehsalı</string>
+    <string name="live_display_color_profile_astronomy_title">Astronomiya</string>
+    <string name="live_display_color_profile_astronomy_summary">Gecə görünüşünü qorumaq üçün dərin qırmızı</string>
+    <string name="live_display_color_profile_photography_title">Fotoqraflıq</string>
+    <string name="live_display_color_profile_photography_summary">Fotolar üçün mükəmməl rəng istehsalı</string>
+    <string name="live_display_color_profile_basic_title">Əsas</string>
+    <string name="live_display_color_profile_basic_summary">Ekranı kalibrasiya etmədən istifadə et</string>
+    <string name="live_display_color_profile_adaptive_title">Uyğunlaşdırılmış</string>
+    <string name="live_display_color_profile_adaptive_summary">Rəngləri mühit şərtlərinə görə uyğunlaşdır</string>
+    <string name="live_display_color_profile_reading_title">Oxuma</string>
+    <string name="live_display_color_profile_reading_summary">Daha az göz yorğunluğu üçün isti rənglər</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Rənglər, sRGB rəng aralığına görə dəqiqdir</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Rənglər, DCI-P3 rəng aralığına görə dəqiqdir</string>
+    <string name="live_display_reading_mode_title">Oxuma rejimi</string>
+    <string name="live_display_reading_mode_summary">Uzun müddətli oxuma üçün boz çalarlı rejim</string>
+    <string name="color_calibration_title">Rəng kalibrasiyası</string>
+    <string name="color_calibration_summary">Ekran rənglərini kalibrlə</string>
+    <string name="color_red_title">Qırmızı</string>
+    <string name="color_green_title">Yaşıl</string>
+    <string name="color_blue_title">Mavi</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">Şəkil nizamlama</string>
+    <string name="picture_adjustment_summary">Çalar, doydurma, sıxlıq və ziddiyyət</string>
+    <string name="adj_hue_title">Çalar</string>
+    <string name="adj_saturation_title">Doydurma</string>
+    <string name="adj_intensity_title">Sıxlıq</string>
+    <string name="adj_contrast_title">Ziddiyyət</string>
+    <!-- LiveDisplay - Custom theme mode -->
+    <string name="systemui_theme_time">Avtomatik (günün saatı)</string>
 </resources>

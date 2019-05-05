@@ -18,6 +18,19 @@
     <!-- Fingerprint location message -->
     <!-- Notification light settings -->
     <!-- Manual provisioning support -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">چەكلەنگەن</string>
+    <string name="sim_missing">يوق ياكى بۇزۇلغان</string>
+    <string name="sim_enabler_need_disable_sim">SIM كارتا قۇلۇپلىنىدۇ. داۋاملاشتۇرامسىز؟</string>
+    <string name="sim_enabler_airplane_on">ئايروپىلان ھالىتى ئوچۇق بولسا بۇ مەشغۇلاتنى تاماملىيالمايدۇ.</string>
+    <string name="sim_enabler_in_call">سۆزلىشىۋاتقاندا بۇ مەشغۇلاتنى تاماملىيالمايدۇ.</string>
+    <string name="sim_enabler_both_inactive">ھەممە SIM كارتىنى چەكلىيەلمەيدۇ</string>
+    <string name="sim_enabler_enabling">\u2026 نى قوزغىتىۋاتىدۇ</string>
+    <string name="sim_enabler_disabling">\u2026 نى چەكلەۋاتىدۇ</string>
+    <string name="sub_activate_success">SIM كارتا قوزغىتىلدى.</string>
+    <string name="sub_activate_failed">ئاكتىپلاش مەغلۇب بولدى.</string>
+    <string name="sub_deactivate_success">SIM كارتا چەكلەندى.</string>
+    <string name="sub_deactivate_failed">ئىشلىتىشنى توختىتالمىدى.</string>
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->
     <!-- Key backlight -->
@@ -27,4 +40,22 @@
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <!-- Volume control playback -->
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Network Traffic -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>

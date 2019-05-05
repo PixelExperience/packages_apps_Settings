@@ -24,10 +24,10 @@
     <string name="notification_light_title">સૂચના લાઇટ</string>
     <string name="battery_light_title">બેટરી લાઈટ</string>
     <!-- Manual provisioning support -->
-    <string name="sim_enabler_summary"><xliff:g id="પ્રદર્શન નામ">%1$s</xliff:g> છે <xliff:g id="સ્થિતિ" example="અક્ષમ">%2$s</xliff:g></string>
-    <string name="sim_disabled">અક્ષમ કરેલું</string>
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> તે <xliff:g id="status" example="disabled">%2$s</xliff:g> છે</string>
+    <string name="sim_disabled">અક્ષમ કર્યું છે</string>
     <string name="sim_missing">ગુમ અથવા ખામીયુક્ત</string>
-    <string name="sim_enabler_need_disable_sim">SIM કાર્ડ નિષ્ક્રિય કરવામાં આવશે. શું તમે ચાલુ રહેવા માંગો છો?</string>
+    <string name="sim_enabler_need_disable_sim">SIM કાર્ડ નિષ્ક્રિય કરવામાં આવશે. શું તમે ચાલુ રહેવા માંગો છો ?</string>
     <string name="sim_enabler_will_disable_sim_title">ધ્યાન આપો</string>
     <string name="sim_enabler_need_switch_data_service">આ SIM અક્ષમ કરાશે અને SIM <xliff:g id="slotid">%1$s</xliff:g> નો ઉપયોગ ડેટા સેવાઓ માટે થશે. શું તમને ખાતરી છે કે તમારે ચાલુ રાખવું છે?</string>
     <string name="sim_enabler_airplane_on">એરપ્લેન મોડ ચાલુ હોય ત્યારે ઑપરેશન કરવામાં અક્ષમ.</string>
@@ -107,4 +107,22 @@
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <!-- Volume control playback -->
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Network Traffic -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>

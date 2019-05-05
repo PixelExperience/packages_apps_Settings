@@ -23,6 +23,7 @@
     <string name="lights_category_title">ตั้งค่าความสว่าง</string>
     <string name="notification_light_title">ไฟแจ้งเตือน</string>
     <string name="battery_light_title">ไฟแจ้งเตือนแบตเตอรี่</string>
+    <string name="battery_low_pulse_title">กระพริบเมื่อแบตเตอรี่ต่ำ</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> คือ <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">ปิดการใช้งาน</string>
@@ -43,12 +44,15 @@
     <string name="reset">รีเซ็ต</string>
     <!-- Buttons -->
     <string name="button_pref_title">ปุ่ม</string>
+    <string name="navigation_bar_title">ปุ่มและรูปแบบ</string>
+    <string name="hardware_keys_power_key_title">ปุ่มเพาเวอร์</string>
     <string name="hardware_keys_home_key_title">ปุ่มหน้าหลัก</string>
     <string name="hardware_keys_back_key_title">ปุ่มย้อนกลับ</string>
     <string name="hardware_keys_menu_key_title">ปุ่มเมนู</string>
     <string name="hardware_keys_assist_key_title">ปุ่มค้นหา</string>
     <string name="hardware_keys_appswitch_key_title">ปุ่มแอปล่าสุด</string>
     <string name="hardware_keys_camera_key_title">ปุ่มเปิดกล้อง</string>
+    <string name="hardware_keys_volume_keys_title">ปุ่มปรับเสียง</string>
     <string name="hardware_keys_short_press_title">แตะฃ่วงสั้นๆ</string>
     <string name="hardware_keys_long_press_title">แตะค้างนาน</string>
     <string name="hardware_keys_double_tap_title">แตะสองครั้ง</string>
@@ -132,4 +136,117 @@
     <string name="thermal_control_per_app_dialer">โทรศัพท์</string>
     <string name="thermal_control_per_app_camera">กล้องถ่ายรูป</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">แสดงรอยบาก</string>
+    <string name="display_cutout_mode_normal">ค่าเริ่มต้น</string>
+    <string name="display_cutout_mode_hidden">ซ่อน</string>
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">แอพแบบเต็มหน้าจอ</string>
+    <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">สั่นเพื่อระบุสถานะการโทร</string>
+    <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">การตรวจสอบลายนิ้วมือ</string>
+    <string name="fp_success_auth_vib_summary">สั่นเมื่อตรวจสอบลายนิ้วมือสำเร็จ</string>
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">แตะสองครั้งเพื่อปิดจอ</string>
+    <string name="status_bar_double_tap_to_sleep_summary">แตะสองครั้งที่แถบสถานะเพื่อปิดหน้าจอ</string>
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">แสดงหน้าปกสื่อ</string>
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">สลับรูปแบบ</string>
+    <string name="nav_bar_layout_inverse_summary">สลับเค้าโครงของปุ่มแถบการนำทาง</string>
+    <!-- Torch long press power button -->
+    <string name="torch_long_press_power_gesture_title">กดค้างสำหรับไฟฉาย</string>
+    <string name="torch_long_press_power_gesture_desc">เปิดใช้งานไฟฉาย โดยกดปุ่มเปิด/ปิด​เครื่องค้างไว้ในขณะที่จอแสดงผลปิดอยู่</string>
+    <string name="torch_long_press_power_timeout_title">ปิดไฟฉายอัตโนมัติ</string>
+    <string name="torch_long_press_power_timeout_never">ไม่เลย</string>
+    <string name="torch_long_press_power_timeout_1min">1 นาที</string>
+    <string name="torch_long_press_power_timeout_2min">2 นาที</string>
+    <string name="torch_long_press_power_timeout_5min">5 นาที</string>
+    <string name="torch_long_press_power_timeout_10min">10 นาที</string>
+    <!-- Volume control playback -->
+    <string name="volbtn_music_controls_title">ควบคุมการเล่น</string>
+    <string name="volbtn_music_controls_summary">ค้นหาเพลงด้วยการกดปุ่มปรับระดับเสียงในขณะที่ปิดหน้าจอ</string>
+    <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">ปิดการใช้งานบนหน้าจอล็อค</string>
+    <!-- Others settings -->
+    <string name="others_settings_title">การตั้งค่าอื่น ๆ</string>
+    <string name="additional_buttons_title">ปุ่มเพิ่มเติม</string>
+    <!-- Status bar -->
+    <string name="status_bar_title">แถบสถานะ</string>
+    <string name="lockscreen_qs_disabled_title">ปิดการใช้งานบนหน้าจอล็อค</string>
+    <string name="status_bar_quick_qs_pulldown_title">ปัดแถบสถานะลงอย่างเร็ว</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s ปัดที่มุมของแถบการแจ้งเตือนเพื่อเปิดแผงการตั้งค่าอย่างรวดเร็ว</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">ซ้าย</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">ขวา</string>
+    <string name="status_bar_quick_qs_pulldown_off">ปิด</string>
+    <string name="status_bar_quick_qs_pulldown_left">ซ้าย</string>
+    <string name="status_bar_quick_qs_pulldown_right">ขวา</string>
+    <!-- Status bar - icons -->
+    <string name="status_bar_icons_title">ไอคอนแถบสถานะ</string>
+    <string name="status_bar_system_icons_title">ไอคอนระบบ</string>
+    <string name="status_bar_system_icons_summary">ควบคุมไอคอนแถบสถานะที่จะแสดง</string>
+    <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_settings_title">ตรวจสอบการรับส่งข้อมูลเครือข่าย</string>
+    <string name="network_traffic_settings_summary">แสดงสถานะการรับส่งข้อมูลเครือข่ายปัจจุบันในแถบสถานะ</string>
+    <string name="network_traffic_mode_title">โหมดการแสดงผล</string>
+    <string name="network_traffic_mode_disable">ปิด</string>
+    <string name="network_traffic_mode_up">อัพโหลดเท่านั้น</string>
+    <string name="network_traffic_mode_down">ดาวน์โหลดเท่านั้น</string>
+    <string name="network_traffic_mode_all">อัพโหลดและดาวน์โหลด</string>
+    <string name="network_traffic_autohide">ซ่อนอัตโนมัติ</string>
+    <string name="network_traffic_autohide_summary">ซ่อนการแสดงผลเมื่อมีไม่มีกิจกรรม</string>
+    <string name="network_traffic_units_title">หน่วยการวัดปริมาณการใช้งาน</string>
+    <string name="network_traffic_units_kilobits">กิโลบิตต่อวินาที (kb/s)</string>
+    <string name="network_traffic_units_megabits">เมกะบิตต่อวินาที (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">กิโลไบต์ต่อวินาที (kB/s)</string>
+    <string name="network_traffic_units_megabytes">เมกะไบต์ต่อวินาที (MB/s)</string>
+    <string name="network_traffic_show_units">แสดงหน่วย</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <string name="live_display_mode">โหมดการแสดงผล</string>
+    <string name="live_display_color_temperature_title">อุณหภูมิสี</string>
+    <string name="live_display_color_temperature_summary">กลางวัน: <xliff:g id="day_temperature">%1$d</xliff:g>K  กลางคืน: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_day">กลางวัน</string>
+    <string name="live_display_night">กลางคืน</string>
+    <string name="live_display_outdoor_mode_title">โหมดกลางแจ้งอัตโนมัติ</string>
+    <string name="live_display_outdoor_mode_summary">เพิ่มความสว่างและความอิ่มตัวของสีโดยอัตโนมัติภายใต้แสงแดด</string>
+    <string name="live_display_low_power_title">ลดการใช้พลังงาน</string>
+    <string name="live_display_low_power_summary">ปรับการแสดงผลให้ใช้พลังงานน้อยที่สุดโดยที่ไม่ลดประสิทธิภาพ</string>
+    <string name="live_display_enhance_color_title">เพิ่มประสิทธิภาพสี</string>
+    <string name="live_display_enhance_color_summary">ปรับปรุงความมีชีวิตชีวาของสีโดยเน้นโทนสี ภาพทิวทัศน์ และภาพอื่น ๆ</string>
+    <string name="live_display_color_profile_title">โปรไฟล์สี</string>
+    <string name="live_display_color_profile_standard_title">มาตรฐาน</string>
+    <string name="live_display_color_profile_standard_summary">สีที่ถูกต้องและขาวสว่าง</string>
+    <string name="live_display_color_profile_natural_title">ธรรมชาติ</string>
+    <string name="live_display_color_profile_natural_summary">สีที่สมจริงและโทนสีธรรมชาติ</string>
+    <string name="live_display_color_profile_dynamic_title">ไดนามิก</string>
+    <string name="live_display_color_profile_dynamic_summary">สีที่เพิ่มขึ้นและขาวสว่าง</string>
+    <string name="live_display_color_profile_cinema_title">ภาพยนตร์</string>
+    <string name="live_display_color_profile_cinema_summary">คุณภาพสีที่สมบูรณ์แบบสำหรับวิดีโอ</string>
+    <string name="live_display_color_profile_astronomy_summary">สีแดงเข้มสำหรับรักษาสายตาตอนกลางคืน</string>
+    <string name="live_display_color_profile_photography_title">การถ่ายภาพ</string>
+    <string name="live_display_color_profile_photography_summary">คุณภาพสีที่สมบูรณ์แบบสำหรับภาพถ่าย</string>
+    <string name="live_display_color_profile_basic_title">พื้นฐาน</string>
+    <string name="live_display_color_profile_adaptive_title">ปรับแต่ง</string>
+    <string name="live_display_color_profile_adaptive_summary">สีปรับให้เข้ากับสภาพแวดล้อม</string>
+    <string name="live_display_color_profile_reading_title">อ่านหนังสือ</string>
+    <string name="live_display_color_profile_reading_summary">สีอุ่นขึ้นเพื่อลดอาการปวดตา</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">ปรับสีให้ถูกต้องกับพื้นที่สี sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_reading_mode_title">โหมดการอ่าน</string>
+    <string name="color_calibration_title">การปรับเทียบสี</string>
+    <string name="color_calibration_summary">ปรับเทียบสีบนจอ</string>
+    <string name="color_red_title">แดง</string>
+    <string name="color_green_title">เขียว</string>
+    <string name="color_blue_title">น้ำเงิน</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">การปรับรูปภาพ</string>
+    <string name="picture_adjustment_summary">ปรับโทนสี ความอิ่มตัว ความเข้ม และคอนทราสต์</string>
+    <string name="adj_hue_title">โทนสี</string>
+    <string name="adj_saturation_title">ความอิ่มตัว</string>
+    <string name="adj_intensity_title">ความเข้ม</string>
+    <string name="adj_contrast_title">คอนทราสต์</string>
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>
