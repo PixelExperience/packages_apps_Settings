@@ -18,6 +18,11 @@
     <!-- Fingerprint location message -->
     <!-- Notification light settings -->
     <!-- Manual provisioning support -->
+    <string name="sim_disabled">desaktivéiert</string>
+    <string name="sim_missing">net do oder feelerhaft</string>
+    <string name="sim_enabler_airplane_on">Dës Operatioun kann am Fligermodus net duerchgefouert ginn.</string>
+    <string name="sim_enabler_in_call">Dës Operatioun ka während engem Uruff net duerchgefouert ginn.</string>
+    <string name="sim_enabler_both_inactive">Kann net all d\'SIM-Kaarten desaktivéieren</string>
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->
     <!-- Key backlight -->
@@ -27,4 +32,22 @@
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <!-- Volume control playback -->
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Network Traffic -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>

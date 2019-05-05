@@ -18,13 +18,56 @@
     <!-- Fingerprint location message -->
     <!-- Notification light settings -->
     <!-- Manual provisioning support -->
+    <string name="sim_disabled">disabilitada</string>
     <!-- Generic stuff used everywhere -->
+    <string name="reset">Reseta</string>
     <!-- Buttons -->
     <!-- Key backlight -->
+    <string name="backlight_summary_disabled">Disabilitadu</string>
+    <string name="backlight_summary_enabled">Abilitadu</string>
     <!-- Weather -->
     <!-- Ambient Play -->
     <!-- Face auto unlock -->
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <string name="torch_long_press_power_timeout_never">Mai</string>
+    <string name="torch_long_press_power_timeout_1min">1 minutu</string>
+    <string name="torch_long_press_power_timeout_2min">2 minutos</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutos</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutos</string>
+    <!-- Volume control playback -->
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <string name="status_bar_quick_qs_pulldown_off">Istudadu</string>
+    <!-- Status bar - icons -->
+    <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_mode_disable">Disabilitadu</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <string name="live_display_color_temperature_summary">Die: <xliff:g id="day_temperature">%1$d</xliff:g>K Note: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_day">Die</string>
+    <string name="live_display_night">Note</string>
+    <string name="live_display_color_profile_standard_title">Istandard</string>
+    <string name="live_display_color_profile_natural_title">Naturale</string>
+    <string name="live_display_color_profile_cinema_title">Tzìnema</string>
+    <string name="live_display_color_profile_astronomy_title">Astronomia</string>
+    <string name="live_display_color_profile_photography_title">Fotografia</string>
+    <string name="color_red_title">Ruju</string>
+    <string name="color_green_title">Birde</string>
+    <string name="color_blue_title">Biaitu</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="adj_saturation_title">Saturatzione</string>
+    <string name="adj_intensity_title">Intensidade</string>
+    <string name="adj_contrast_title">Cuntrastu</string>
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>
