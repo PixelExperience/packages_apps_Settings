@@ -26,7 +26,18 @@
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> என்பது <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">முடக்கப்பட்டது</string>
+    <string name="sim_missing">காணவில்லை அல்லது கோளாறு</string>
+    <string name="sim_enabler_need_disable_sim">SIM கார்டு முடக்கப்படும். நீங்கள் தொடர விரும்புகிறீர்களா?</string>
     <string name="sim_enabler_will_disable_sim_title">கவனம்</string>
+    <string name="sim_enabler_airplane_on">ஏர்ப்ளேன் முறை ஆன் ஆக இருக்கும்போது செயல்பாட்டை செய்ய முடியவில்லை</string>
+    <string name="sim_enabler_in_call">அழைப்பின் போது செயல்பாட்டை செய்ய முடியவில்லை</string>
+    <string name="sim_enabler_both_inactive">அனைத்து SIM கார்டுகளையும் முடக்க முடியவில்லை</string>
+    <string name="sim_enabler_enabling">செயல்படுத்துகிறது\u2026</string>
+    <string name="sim_enabler_disabling">முடக்குகிறது\u2026</string>
+    <string name="sub_activate_success">SIM செயல்படுத்துகிறது.</string>
+    <string name="sub_activate_failed">செயல்படுத்துதல் தோல்வியடைந்தது.</string>
+    <string name="sub_deactivate_success">SIM முடக்கப்பட்டது.</string>
+    <string name="sub_deactivate_failed">முடக்குதல் தோல்வியடைந்தது.</string>
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->
     <string name="button_pref_title">பட்டன்கள்</string>
@@ -47,4 +58,22 @@
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <!-- Volume control playback -->
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Network Traffic -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>

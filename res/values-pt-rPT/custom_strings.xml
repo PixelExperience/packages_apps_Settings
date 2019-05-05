@@ -23,32 +23,36 @@
     <string name="lights_category_title">Definições de Luz</string>
     <string name="notification_light_title">Luz de notificação</string>
     <string name="battery_light_title">Luz da bateria</string>
+    <string name="battery_low_pulse_title">Piscar se a bateria estiver fraca</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> está <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">desativado</string>
     <string name="sim_missing">em falta ou com defeito</string>
-    <string name="sim_enabler_need_disable_sim">O cartão SIM será desativado. Deseja continuar?</string>
+    <string name="sim_enabler_need_disable_sim">O cartão SIM será desativado. Quer continuar?</string>
     <string name="sim_enabler_will_disable_sim_title">Atenção</string>
     <string name="sim_enabler_need_switch_data_service">Este cartão SIM será desativado e o cartão SIM <xliff:g id="slotid">%1$s</xliff:g> será usado para o serviço de dados. Tem a certeza que deseja continuar?</string>
-    <string name="sim_enabler_airplane_on">Não é possível executar a operação, enquanto o modo avião estiver ativado.</string>
-    <string name="sim_enabler_in_call">Não é possível executar a operação durante a chamada.</string>
+    <string name="sim_enabler_airplane_on">Não é possível executar a operação enquanto o modo de voo estiver ativado.</string>
+    <string name="sim_enabler_in_call">Não é possível executar a operação enquanto estiver numa chamada.</string>
     <string name="sim_enabler_both_inactive">Não é possível desativar todos os cartões SIM</string>
     <string name="sim_enabler_enabling">A ativar\u2026</string>
     <string name="sim_enabler_disabling">A desativar\u2026</string>
     <string name="sub_activate_success">SIM ativado.</string>
-    <string name="sub_activate_failed">Ativação falhou.</string>
+    <string name="sub_activate_failed">A ativação falhou.</string>
     <string name="sub_deactivate_success">SIM desativado.</string>
-    <string name="sub_deactivate_failed">Desativação falhou.</string>
+    <string name="sub_deactivate_failed">A desativação falhou.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Repor</string>
     <!-- Buttons -->
     <string name="button_pref_title">Botões</string>
+    <string name="navigation_bar_title">Botões e sua disposição</string>
+    <string name="hardware_keys_power_key_title">Botão ligar/desligar</string>
     <string name="hardware_keys_home_key_title">Botão Página Inicial</string>
     <string name="hardware_keys_back_key_title">Botão Anterior</string>
     <string name="hardware_keys_menu_key_title">Botão do menu</string>
     <string name="hardware_keys_assist_key_title">Botão de pesquisa</string>
     <string name="hardware_keys_appswitch_key_title">Botão de Visão geral</string>
     <string name="hardware_keys_camera_key_title">Botão da câmara</string>
+    <string name="hardware_keys_volume_keys_title">Botões de volume</string>
     <string name="hardware_keys_short_press_title">Pressão rápida</string>
     <string name="hardware_keys_long_press_title">Pressão longa</string>
     <string name="hardware_keys_double_tap_title">Toque duplo</string>
@@ -120,8 +124,8 @@
     <string name="face_auto_unlock_title">Face unlock automático</string>
     <string name="face_auto_unlock_summary">Desbloquear automaticamente a tela quando um rosto confiável for detectado</string>
     <!-- Advanced restart options -->
-    <string name="advanced_reboot_title">Reinício avançado</string>
-    <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu de ligar/desligar para reiniciar o dispositivo em modo de recuperação ou bootloader</string>
+    <string name="advanced_reboot_title">Reinicialização avançada</string>
+    <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu ligar/desligar para reiniciar em modo de recuperação ou bootloader</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Perfil de optimização</string>
     <string name="thermal_control_per_app_default">Sem optimização</string>
@@ -135,4 +139,113 @@
     <string name="display_cutout_mode_title">Comportamento do recorte (notch) de ecrã</string>
     <string name="display_cutout_mode_normal">Predefinição</string>
     <string name="display_cutout_mode_hidden">Ocultos</string>
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Toque duplo para desligar ecrã</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Dê um toque duplo na barra de estado para desligar o ecrã</string>
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Mostrar capa do álbum</string>
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <string name="torch_long_press_power_gesture_title">Lanterna através de pressão longa</string>
+    <string name="torch_long_press_power_gesture_desc">Ativar a lanterna através de pressão longa no botão de ligar/desligar quando o ecrã estiver desligado</string>
+    <string name="torch_long_press_power_timeout_title">Desligar automaticamente a lanterna</string>
+    <string name="torch_long_press_power_timeout_never">Nunca</string>
+    <string name="torch_long_press_power_timeout_1min">1 minuto</string>
+    <string name="torch_long_press_power_timeout_2min">2 minutos</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutos</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutos</string>
+    <!-- Volume control playback -->
+    <string name="volbtn_music_controls_title">Controlo de reprodução</string>
+    <string name="volbtn_music_controls_summary">Procurar músicas com uma pressão longa das teclas de volume, enquanto o ecrã estiver desligado</string>
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <string name="additional_buttons_title">Botões adicionais</string>
+    <!-- Status bar -->
+    <string name="status_bar_title">Barra de estado</string>
+    <string name="status_bar_quick_qs_pulldown_title">Abertura rápida</string>
+    <string name="status_bar_quick_qs_pulldown_summary">O %1$s da barra de estado faz baixar o painel de definições rápidas</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">canto esquerdo</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">canto direito</string>
+    <string name="status_bar_quick_qs_pulldown_off">Desligada</string>
+    <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
+    <string name="status_bar_quick_qs_pulldown_right">Direita</string>
+    <!-- Status bar - icons -->
+    <string name="status_bar_icons_title">Ícones da barra de estado</string>
+    <string name="status_bar_system_icons_title">Ícones do sistema</string>
+    <string name="status_bar_system_icons_summary">Controlar que ícones da barra de estado são mostrados</string>
+    <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_settings_title">Monitor de tráfego de rede</string>
+    <string name="network_traffic_settings_summary">Mostrar na barra de estado os níveis de tráfego de rede atual</string>
+    <string name="network_traffic_mode_title">Modo de visualização</string>
+    <string name="network_traffic_mode_disable">Desativado</string>
+    <string name="network_traffic_mode_up">Apenas envio</string>
+    <string name="network_traffic_mode_down">Apenas receção</string>
+    <string name="network_traffic_mode_all">Envio e receção</string>
+    <string name="network_traffic_autohide">Ocultar automaticamente</string>
+    <string name="network_traffic_autohide_summary">Ocultar o monitor de tráfego quando não houver atividade</string>
+    <string name="network_traffic_units_title">Unidades de medida do tráfego</string>
+    <string name="network_traffic_units_kilobits">Kilobits por segundo (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabits por segundo (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes por segundo (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabytes por segundo (MB/s)</string>
+    <string name="network_traffic_show_units">Mostrar unidades</string>
+    <string name="network_traffic_show_units_summary">Mostrar as unidades de medida do tráfego na barra de estado</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">Otimiza o ecrã com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir a fadiga ocular</string>
+    <string name="live_display_mode">Modo do ecrã</string>
+    <string name="live_display_color_temperature_title">Temperatura da cor</string>
+    <string name="live_display_color_temperature_summary">Dia: <xliff:g id="day_temperature">%1$d</xliff:g>K  Noite: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">Dia</string>
+    <string name="live_display_night">Noite</string>
+    <string name="live_display_outdoor_mode_title">Modo de exterior automático</string>
+    <string name="live_display_outdoor_mode_summary">Aumentar o brilho e saturação automaticamente sob luz solar intensa</string>
+    <string name="live_display_low_power_title">Reduzir o consumo de energia</string>
+    <string name="live_display_low_power_summary">Ajustar o ecrã para consumir menos energia, sem degradação</string>
+    <string name="live_display_enhance_color_title">Realçar cores</string>
+    <string name="live_display_enhance_color_summary">Melhorar a vivacidade da cor de tons de pele, cenário e outras imagens</string>
+    <string name="live_display_color_profile_title">Perfil de cor</string>
+    <string name="live_display_color_profile_standard_title">Padrão</string>
+    <string name="live_display_color_profile_standard_summary">Cores precisas e brancos brilhantes</string>
+    <string name="live_display_color_profile_natural_title">Natural</string>
+    <string name="live_display_color_profile_natural_summary">Cores e tons de pele realistas</string>
+    <string name="live_display_color_profile_dynamic_title">Dinâmico</string>
+    <string name="live_display_color_profile_dynamic_summary">Cores melhoradas e brancos brilhantes</string>
+    <string name="live_display_color_profile_cinema_title">Cinema</string>
+    <string name="live_display_color_profile_cinema_summary">Melhor reprodução de cor para vídeo</string>
+    <string name="live_display_color_profile_astronomy_title">Astronomia</string>
+    <string name="live_display_color_profile_astronomy_summary">Vermelho profundo para preservar a visão noturna</string>
+    <string name="live_display_color_profile_photography_title">Fotografia</string>
+    <string name="live_display_color_profile_photography_summary">Melhor reprodução de cor para fotos</string>
+    <string name="live_display_color_profile_basic_title">Básico</string>
+    <string name="live_display_color_profile_basic_summary">Utilizar o ecrã não calibrado</string>
+    <string name="live_display_color_profile_adaptive_title">Adaptável</string>
+    <string name="live_display_color_profile_adaptive_summary">As cores adaptam-se às condições ambientais</string>
+    <string name="live_display_color_profile_reading_title">Leitura</string>
+    <string name="live_display_color_profile_reading_summary">Cores mais quentes para reduzir a fadiga ocular</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Cores precisas para o espaço de cor sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Cores precisas para o espaço de cor DCI-P3</string>
+    <string name="live_display_reading_mode_title">Modo de leitura</string>
+    <string name="live_display_reading_mode_summary">Modo em tons de cinzento para leituras por longos períodos</string>
+    <string name="color_calibration_title">Calibração de cores</string>
+    <string name="color_calibration_summary">Calibrar as cores do ecrã</string>
+    <string name="color_red_title">Vermelho</string>
+    <string name="color_green_title">Verde</string>
+    <string name="color_blue_title">Azul</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">Ajuste da imagem</string>
+    <string name="picture_adjustment_summary">Ajustar a tonalidade, a saturação, a intensidade e o contraste</string>
+    <string name="adj_hue_title">Tonalidade</string>
+    <string name="adj_saturation_title">Saturação</string>
+    <string name="adj_intensity_title">Intensidade</string>
+    <string name="adj_contrast_title">Contraste</string>
+    <!-- LiveDisplay - Custom theme mode -->
+    <string name="systemui_theme_time">Automático (baseado na hora do dia)</string>
 </resources>

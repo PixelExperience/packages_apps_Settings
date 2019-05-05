@@ -88,6 +88,7 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Tunjukkan lagu kawasan sekitar</string>
     <string name="ambient_play_lockscreen_title">Paparkan lagu pada skrin kunci</string>
+    <string name="ambient_play_lockscreen_summary">5</string>
     <string name="ambient_play_notifications_title">Notifikasi</string>
     <string name="ambient_play_switch_bar_on">Dihidupkan</string>
     <string name="ambient_play_switch_bar_off">Dimatikan</string>
@@ -103,9 +104,33 @@
     <string name="ambient_play_history_menu_remove_all">Buang semua</string>
     <string name="ambient_play_history_menu_add_to_home">Tambahkan pada Paparan Utama</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Adakah anda pasti?</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Data mobile</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Matikan pengesan wifi apabila data dihidupkan</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Masa mula</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Masa tamat</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Telefon Dibuka Secara Automatik Melalui Pengimbasan Muka</string>
+    <string name="face_auto_unlock_summary">Tutup skrin kunci selepas face unlock</string>
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_hidden">Potongan_paparan_disembunyikan</string>
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <!-- Volume control playback -->
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Network Traffic -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>
