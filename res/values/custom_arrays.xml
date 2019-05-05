@@ -35,6 +35,7 @@
         <item>@string/hardware_keys_action_sleep</item>
         <item>@string/hardware_keys_action_last_app</item>
         <item>@string/hardware_keys_action_split_screen</item>
+        <item>@*android:string/global_action_screenshot</item>
     </string-array>
 
     <!-- Hardware key rebinding for Go enabled devices -->
@@ -51,6 +52,8 @@
         split-screen is not supported on Android Go devices
         <item>@string/hardware_keys_action_split_screen</item>
         -->
+        <item>@string/hardware_keys_action_last_app</item>
+        <item>@*android:string/global_action_screenshot</item>
     </string-array>
 
     <string-array name="hardware_keys_action_values" translatable="false">
@@ -63,6 +66,7 @@
         <item>6</item>
         <item>7</item>
         <item>8</item>
+        <item>9</item>
     </string-array>
 
     <string-array name="hardware_keys_action_values_go" translatable="false">
@@ -78,6 +82,7 @@
         split-screen is not supported on Android Go devices
         <item>8</item>
         -->
+        <item>9</item>
     </string-array>
     
     <!-- Weather -->
