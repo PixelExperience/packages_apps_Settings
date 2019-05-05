@@ -25,7 +25,7 @@
     <string name="battery_light_title">چراغ اعلان باتری</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> هست <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-    <string name="sim_disabled">غیرفعال شده</string>
+    <string name="sim_disabled">غیرفعال</string>
     <string name="sim_missing">مفقود یا معیوب</string>
     <string name="sim_enabler_need_disable_sim">سیم‌کارت غیرفعال می شود. آیا مایلید ادامه دهید؟</string>
     <string name="sim_enabler_will_disable_sim_title">توجه</string>
@@ -109,4 +109,22 @@
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <!-- Volume control playback -->
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Network Traffic -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>

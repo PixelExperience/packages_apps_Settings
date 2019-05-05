@@ -24,14 +24,21 @@
     <string name="notification_light_title">నోటిఫికేషన్ లైట్</string>
     <string name="battery_light_title">బ్యాటరీ కాంతి</string>
     <!-- Manual provisioning support -->
-    <string name="sim_disabled">డిసేబుల్</string>
-    <string name="sim_missing">పోయిన లేదా లోపాలున్న</string>
-    <string name="sim_enabler_need_disable_sim">SIM కార్డ్ నిలిపివేయబడుతుంది. మీరు కొనసాగించాలని అనుకుంటున్నారా?</string>
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_disabled">నిలిపివేయబడింది</string>
+    <string name="sim_missing">గల్లంతయిన లేదా లోపాలున్న</string>
+    <string name="sim_enabler_need_disable_sim">SIM కార్డ్ నిష్క్రియాత్మకం చేయబడుతుంది. మీరు కొనసాగించాలని అనుకుంటున్నారా?</string>
     <string name="sim_enabler_will_disable_sim_title">గమనిక</string>
     <string name="sim_enabler_need_switch_data_service">ఈ SIM కార్డ్ నిలిపివేయబడుతుంది మరియు డేటా సేవల కొరకు SIM <xliff:g id="slotid">%1$s</xliff:g> ఉపయోగించబడుతుంది. కొనసాగించాలని మీరు నిర్ధారించుకున్నారా?</string>
     <string name="sim_enabler_airplane_on">విమాన మోడ్ ఆన్లో ఉన్నప్పుడు ఆపరేషన్ నిర్వహించడం సాధ్యపడదు.</string>
     <string name="sim_enabler_in_call">కాల్ లో ఉన్నప్పుడు ఆపరేషన్ నిర్వహించడం సాధ్యపడదు.</string>
     <string name="sim_enabler_both_inactive">అన్ని SIM కార్డులను నిలిపివేయడం కుదరదు</string>
+    <string name="sim_enabler_enabling">\u2026 క్రియాత్మకమవుతుంది</string>
+    <string name="sim_enabler_disabling">నిష్క్రియాత్మకం చేయబడుతుంది\u2026</string>
+    <string name="sub_activate_success">SIM సక్రియం చేయబడింది</string>
+    <string name="sub_activate_failed">క్రియాశీలత విఫలమయింది.</string>
+    <string name="sub_deactivate_success">SIM నిష్క్రియాత్మకం చేయబడింది.</string>
+    <string name="sub_deactivate_failed">నిష్క్రియాత్మకం విఫలమయింది.</string>
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->
     <!-- Key backlight -->
@@ -41,4 +48,22 @@
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <!-- Volume control playback -->
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Network Traffic -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>

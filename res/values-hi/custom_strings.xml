@@ -25,14 +25,14 @@
     <string name="battery_light_title">बैटरी प्रकाश</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-    <string name="sim_disabled">निर्योग्य</string>
-    <string name="sim_missing">ढूंडने में असक्षम या खराब</string>
+    <string name="sim_disabled">अक्षम</string>
+    <string name="sim_missing">अनुपस्थित या दोषपूर्ण</string>
     <string name="sim_enabler_need_disable_sim">सिम कार्ड निष्क्रिय हो जाएगा। क्या आप जारी रखना चाहते हैं?</string>
     <string name="sim_enabler_will_disable_sim_title">ध्यान दें!</string>
     <string name="sim_enabler_need_switch_data_service">यह सिम बंद हो जाएगा और सिम <xliff:g id="slotid">%1$s</xliff:g> नेट के लिए प्रयोग होगा। क्या आप जारी रखना चाहते हैं?</string>
-    <string name="sim_enabler_airplane_on">यह कार्य तब तक नहीं किया जा सकता जबतक एयरप्लेन मोड चालू है</string>
-    <string name="sim_enabler_in_call">यह कार्य कॉल के बीच में नहीं हो सकता</string>
-    <string name="sim_enabler_both_inactive">सभी सिम कार्ड बंद नहीं किए जा सकते</string>
+    <string name="sim_enabler_airplane_on">विमान मोड चालू होने पर यह कार्य करने में असमर्थ।</string>
+    <string name="sim_enabler_in_call">कॉल चालू होने पर यह कार्य करने में असमर्थ।</string>
+    <string name="sim_enabler_both_inactive">सब सिम कार्डों को अक्षम नहीं कर सकते</string>
     <string name="sim_enabler_enabling">सक्रिय हो रहा है \u2026</string>
     <string name="sim_enabler_disabling">निष्क्रिय हो रहा है\u2206</string>
     <string name="sub_activate_success">सिम अब सक्रिय है</string>
@@ -76,4 +76,22 @@
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <!-- Volume control playback -->
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Network Traffic -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>
