@@ -17,14 +17,142 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
     <!-- Notification light settings -->
+    <string name="notification_light_title">Светло за известување</string>
+    <string name="battery_light_title">Светло на батеријата</string>
+    <string name="battery_low_pulse_title">Пулсирај ако батеријата е празна</string>
     <!-- Manual provisioning support -->
     <!-- Generic stuff used everywhere -->
+    <string name="reset">Ресетирај</string>
     <!-- Buttons -->
+    <string name="button_pref_title">Копчиња</string>
+    <string name="navigation_bar_title">Копчиња и распоред</string>
+    <string name="hardware_keys_power_key_title">Копче за напојување</string>
+    <string name="hardware_keys_home_key_title">Копче за почеток</string>
+    <string name="hardware_keys_back_key_title">Копче за назад</string>
+    <string name="hardware_keys_menu_key_title">Копче за мени</string>
+    <string name="hardware_keys_assist_key_title">Копче за пребарување</string>
+    <string name="hardware_keys_appswitch_key_title">Копче за неодамнешни</string>
+    <string name="hardware_keys_camera_key_title">Копче за камера</string>
+    <string name="hardware_keys_volume_keys_title">Копчиња за глас</string>
+    <string name="hardware_keys_short_press_title">Кратко притискање</string>
+    <string name="hardware_keys_long_press_title">Акција за долго притискање</string>
+    <string name="hardware_keys_double_tap_title">Акција за двојно притискање</string>
+    <string name="hardware_keys_action_nothing">Без акција</string>
+    <string name="hardware_keys_action_menu">Овори/затвори мени</string>
+    <string name="hardware_keys_action_app_switch">Приказ на неодамнешни апликации</string>
+    <string name="hardware_keys_action_search">Помошник за пребарување</string>
+    <string name="hardware_keys_action_voice_search">Гласовно пребарување</string>
+    <string name="hardware_keys_action_in_app_search">Пребарување во апликација</string>
+    <string name="hardware_keys_action_launch_camera">Стартувај камера</string>
+    <string name="hardware_keys_action_sleep">Исклучи го екранот</string>
+    <string name="hardware_keys_action_last_app">Последна апликација</string>
+    <string name="hardware_keys_action_split_screen">Поделен екран</string>
+    <string name="button_wake_title">Разбуди уред</string>
+    <string name="camera_sleep_on_release_title">Ѕиркање на екранот</string>
+    <string name="camera_sleep_on_release_summary">Половина притискање ќе го задржи екранот уклучен само додека копчето се држи надолу</string>
+    <string name="camera_launch_title">Стартувај камера</string>
+    <string name="camera_launch_summary">Долго притискање и пуштање ќе ја стартува камерата</string>
     <!-- Key backlight -->
+    <string name="button_backlight_title">Позадинско осветлување</string>
+    <string name="button_backlight_enabled">Осветлете ги копчињата</string>
+    <string name="button_backlight_seekbar_title">Светлост на копчињата</string>
+    <string name="backlight_timeout_title">Истек на светлоста</string>
+    <string name="backlight_timeout_unlimited">Не исклучувај</string>
+    <string name="backlight_summary_disabled">Оневозможено</string>
+    <string name="backlight_summary_enabled_with_timeout">Овозможено за <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Овозможено</string>
     <!-- Weather -->
     <!-- Ambient Play -->
     <!-- Face auto unlock -->
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Двоен допир за спиење</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Двоен-допир на статусната лента за да го исклучите екранот</string>
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <string name="torch_long_press_power_gesture_title">Долг притисок за светилка</string>
+    <string name="torch_long_press_power_gesture_desc">Активирајте ја светилката со долго притискање на копчето за напојување додека екранот е исклучен</string>
+    <string name="torch_long_press_power_timeout_title">Автоматски исклучи ја светилката</string>
+    <string name="torch_long_press_power_timeout_never">Никогаш</string>
+    <string name="torch_long_press_power_timeout_1min">1 минута</string>
+    <string name="torch_long_press_power_timeout_2min">2 минути</string>
+    <string name="torch_long_press_power_timeout_5min">5 минути</string>
+    <string name="torch_long_press_power_timeout_10min">10 минути</string>
+    <!-- Volume control playback -->
+    <string name="volbtn_music_controls_title">Контролирње на репродукцијата</string>
+    <string name="volbtn_music_controls_summary">Прескокнете песни со долго притискање на копчињата за јачина на звукот додека екранот е исклучен</string>
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <string name="status_bar_title">Статусна лента</string>
+    <string name="status_bar_quick_qs_pulldown_title">Брз пристап</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s работ на статусната лента се повлекува по брзи поставувања</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">Лево</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">Десно</string>
+    <string name="status_bar_quick_qs_pulldown_off">Исклучен</string>
+    <string name="status_bar_quick_qs_pulldown_left">Леви</string>
+    <string name="status_bar_quick_qs_pulldown_right">Десни</string>
+    <!-- Status bar - icons -->
+    <string name="status_bar_icons_title">Икони на статусната лента</string>
+    <string name="status_bar_system_icons_title">Системски икони</string>
+    <string name="status_bar_system_icons_summary">Контролирај кои икони на статусната лента се прикажани</string>
+    <!-- Status bar - Network Traffic -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">Оптимизирајте го вашиот екран врз основа на време од денот и амбиентални услови за да се подобри читливоста и да се намали обемот на очите</string>
+    <string name="live_display_mode">Режим на екранот</string>
+    <string name="live_display_color_temperature_title">Температура на бојата</string>
+    <string name="live_display_color_temperature_summary">Ден <xliff:g id="day_temperature">%1$d</xliff:g>K  Ноќ: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">Ден</string>
+    <string name="live_display_night">Ноќ</string>
+    <string name="live_display_outdoor_mode_title">Автоматски режим на отворено</string>
+    <string name="live_display_outdoor_mode_summary">Зголемете ја осветленоста и сатурацијата автоматски под силна сончева светлина</string>
+    <string name="live_display_low_power_title">Намали ја потрошувачката енергија</string>
+    <string name="live_display_low_power_summary">Прилагодете го екранот за најниска потрошувачка на енергија без деградација</string>
+    <string name="live_display_enhance_color_title">Подобрете ги боите</string>
+    <string name="live_display_enhance_color_summary">Подобрете ја динамиката на боите од тонови на месо, сцени и други слики</string>
+    <string name="live_display_color_profile_title">Профил на боја</string>
+    <string name="live_display_color_profile_standard_title">Стандардно</string>
+    <string name="live_display_color_profile_standard_summary">Точни бои и светли бели</string>
+    <string name="live_display_color_profile_natural_title">Природно</string>
+    <string name="live_display_color_profile_natural_summary">Реални бои и тонови на месо</string>
+    <string name="live_display_color_profile_dynamic_title">Динамично</string>
+    <string name="live_display_color_profile_dynamic_summary">Подобрени бои и светли бели</string>
+    <string name="live_display_color_profile_cinema_title">Кино</string>
+    <string name="live_display_color_profile_cinema_summary">Совршена репродукција на боите за видео</string>
+    <string name="live_display_color_profile_astronomy_title">Астрономија</string>
+    <string name="live_display_color_profile_astronomy_summary">Длабоко црвена за зачувување на ноќниот вид</string>
+    <string name="live_display_color_profile_photography_title">Фотографија</string>
+    <string name="live_display_color_profile_photography_summary">Совршена репродукција на боите за фотографии</string>
+    <string name="live_display_color_profile_basic_title">Основно</string>
+    <string name="live_display_color_profile_basic_summary">Користете го екранот некалибриран</string>
+    <string name="live_display_color_profile_adaptive_title">Адаптивно</string>
+    <string name="live_display_color_profile_adaptive_summary">Боите се прилагодуваат на амбиентални услови</string>
+    <string name="live_display_color_profile_reading_title">Читање</string>
+    <string name="live_display_color_profile_reading_summary">Потемни бои за помалку замор на очите</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Бои прецизни во просторот за боја на sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Боиите се точни за просторот за боја DCI-P3</string>
+    <string name="color_calibration_title">Калибрација на боја</string>
+    <string name="color_calibration_summary">Калибрирај ги боите на екранот</string>
+    <string name="color_red_title">Црвено</string>
+    <string name="color_green_title">Зелено</string>
+    <string name="color_blue_title">Сино</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">Прилагодување на сликата</string>
+    <string name="picture_adjustment_summary">Прилагодете боја, сатурација, интензитет и контраст</string>
+    <string name="adj_hue_title">Нијанса</string>
+    <string name="adj_saturation_title">Сатурација</string>
+    <string name="adj_intensity_title">Интензитет</string>
+    <string name="adj_contrast_title">Контраст</string>
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>

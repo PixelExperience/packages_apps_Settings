@@ -19,7 +19,8 @@
     <!-- Notification light settings -->
     <string name="lights_category_title">प्रकाश सेटिंग्ज</string>
     <!-- Manual provisioning support -->
-    <string name="sim_disabled">निष्क्रिय केले</string>
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g>  <xliff:g id="status" example="disabled">%2$s</xliff:g> आहे</string>
+    <string name="sim_disabled">अक्षम केलेले</string>
     <string name="sim_missing">गहाळ किंवा सदोष</string>
     <string name="sim_enabler_need_disable_sim">सिम कार्ड निष्क्रिय केले जाईल. तुम्हाला चालू ठेवायचे आहे का?</string>
     <string name="sim_enabler_will_disable_sim_title">लक्ष द्या</string>
@@ -42,4 +43,22 @@
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
     <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- In-call feedback -->
+    <!-- Fingerprint authentication vibration -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Lock screen cover art -->
+    <!-- Button that controls inversion of layout of navigation bar -->
+    <!-- Torch long press power button -->
+    <!-- Volume control playback -->
+    <!-- Power menu on lockscreen -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Network Traffic -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Pocket judge -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+    <!-- LiveDisplay - Custom theme mode -->
 </resources>
