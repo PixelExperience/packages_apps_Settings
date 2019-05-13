@@ -394,6 +394,7 @@ public class ManageApplications extends InstrumentedFragment
         pinnedHeader.addView(mSpinnerHeader, 0);
 
         final AppFilterRegistry appFilterRegistry = AppFilterRegistry.getInstance();
+        mFilterAdapter.enableFilter(FILTER_OVERLAYS);
         mFilterAdapter.enableFilter(appFilterRegistry.getDefaultFilterType(mListType));
         if (mListType == LIST_TYPE_MAIN) {
             if (UserManager.get(getActivity()).getUserProfiles().size() > 1) {
@@ -1428,6 +1429,47 @@ public class ManageApplications extends InstrumentedFragment
         public SummaryLoader.SummaryProvider createSummaryProvider(Activity activity,
                 SummaryLoader summaryLoader) {
             return new SummaryProvider(activity, summaryLoader);
+        }
+    };
+    
+    
+    private static final AppFilter FILTER_OVERLAYS = new AppFilter() {
+    
+        private final String[] overlays = {"com.android.documentsui.theme.dark",
+                "com.android.systemui.custom.theme.dark",
+                "com.android.gboard.theme.dark",
+                "com.android.settings.intelligence.theme.dark",
+                "com.android.wellbeing.theme.dark",
+                "com.android.system.theme.dark",
+                "com.android.settings.theme.dark",
+                "org.pixelexperience.ota.theme.dark",
+                "com.android.documentsui.theme.black",
+                "com.android.systemui.custom.theme.black",
+                "com.android.system.theme.black",
+                "org.pixelexperience.ota.theme.black",
+                "org.pixelexperience.overlay.accent.cyan",
+                "org.pixelexperience.overlay.accent.purple",
+                "org.pixelexperience.overlay.accent.white",
+                "org.pixelexperience.overlay.accent.red",
+                "org.pixelexperience.overlay.accent.brown",
+                "org.pixelexperience.overlay.accent.yellow",
+                "org.pixelexperience.overlay.accent.teal",
+                "org.pixelexperience.overlay.accent.black",
+                "org.pixelexperience.overlay.accent.orange",
+                "org.pixelexperience.overlay.accent.green",
+                "org.pixelexperience.overlay.accent.pink",
+                "com.android.gboard.theme.light",
+                "org.pixelexperience.overlay.theme.devicesettings",
+                "org.pixelexperience.overlay.theme.devicesettings2",
+                "org.pixelexperience.overlay.theme.devicesettings3",
+                "org.pixelexperience.overlay.hidecutout"};
+
+        public void init() {
+        }
+
+        @Override
+        public boolean filterApp(AppEntry entry) {
+            return !Arrays.asList(overlays).contains(entry.info.packageName);
         }
     };
 }
