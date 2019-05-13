@@ -44,8 +44,9 @@ public class SystemUiThemePreferenceController extends AbstractPreferenceControl
         implements Preference.OnPreferenceChangeListener, LifecycleObserver, OnStart, OnStop, BatterySaverReceiver.BatterySaverListener {
 
     private ListPreference mSystemUiThemePref;
-    private final BatterySaverReceiver mBatteryStateChangeReceiver;
-    private final PowerManager mPowerManager;
+    private BatterySaverReceiver mBatteryStateChangeReceiver = null;
+    private PowerManager mPowerManager = null;
+    private boolean mHasOledScreen;
 
     private static final String KEY_SYSTEMUI_THEME = "systemui_theme";
 
@@ -54,9 +55,12 @@ public class SystemUiThemePreferenceController extends AbstractPreferenceControl
         if (lifecycle != null) {
             lifecycle.addObserver(this);
         }
-        mPowerManager = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
-        mBatteryStateChangeReceiver = new BatterySaverReceiver(mContext);
-        mBatteryStateChangeReceiver.setBatterySaverListener(this);
+        mHasOledScreen = mContext.getResources().getBoolean(com.android.internal.R.bool.config_hasOledDisplay);
+        if (mHasOledScreen){
+            mPowerManager = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
+            mBatteryStateChangeReceiver = new BatterySaverReceiver(mContext);
+            mBatteryStateChangeReceiver.setBatterySaverListener(this);
+        }
     }
 
     @Override
@@ -88,7 +92,7 @@ public class SystemUiThemePreferenceController extends AbstractPreferenceControl
 
     @Override
     public CharSequence getSummary() {
-        if (mPowerManager.isPowerSaveMode()){
+        if (mPowerManager != null && mPowerManager.isPowerSaveMode()){
             return mContext.getString(R.string.systemui_theme_dark) + " (" + mContext.getString(R.string.battery_tip_early_heads_up_done_title) + ")";
         }else{
             int value = Settings.Secure.getInt(mContext.getContentResolver(), THEME_MODE, 0);
@@ -104,19 +108,23 @@ public class SystemUiThemePreferenceController extends AbstractPreferenceControl
     }
 
     private void updateState() {
-        if (mSystemUiThemePref != null){
+        if (mSystemUiThemePref != null && mPowerManager != null){
             mSystemUiThemePref.setEnabled(!mPowerManager.isPowerSaveMode());
         }
     }
 
     @Override
     public void onStart() {
-        mBatteryStateChangeReceiver.setListening(true);
+        if (mBatteryStateChangeReceiver != null){
+            mBatteryStateChangeReceiver.setListening(true);
+        }
     }
 
     @Override
     public void onStop() {
-        mBatteryStateChangeReceiver.setListening(false);
+        if (mBatteryStateChangeReceiver != null){
+            mBatteryStateChangeReceiver.setListening(false);
+        }
     }
 
     @Override
