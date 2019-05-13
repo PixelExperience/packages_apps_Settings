@@ -169,7 +169,7 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
     public void setTextViewLabelAndBackground(boolean isChecked) {
         mLabel = getResources().getString(isChecked ? mOnTextId : mOffTextId);
 
-        if (isUsingDarkTheme()) {
+        if (isUsingWhiteAccent()) {
             setBackgroundColor(isChecked ?
                     getResources().getColor(R.color.switch_bar_bg_activated_dark) :
                     getResources().getColor(R.color.switch_bar_bg_deactivated_dark));
@@ -179,10 +179,10 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
         updateText();
     }
 
-    private boolean isUsingDarkTheme() {
+    private boolean isUsingWhiteAccent() {
         OverlayInfo themeInfo = null;
         try {
-            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dark",
+            themeInfo = mOverlayManager.getOverlayInfo("org.pixelexperience.overlay.accent.white",
                     mCurrentUserId);
         } catch (RemoteException e) {
             e.printStackTrace();
