@@ -155,4 +155,9 @@
     <string name="display_cutout_mode_normal">Default</string>
     <string name="display_cutout_mode_hidden">Hidden</string>
 
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Dark theme style</string>
+    <string name="dark_theme_style_default">Default</string>
+    <string name="dark_theme_style_black">Black</string>
+
 </resources>

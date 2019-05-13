@@ -144,6 +144,13 @@
         android:entryValues="@array/systemui_theme_values"
         settings:controller="com.android.settings.display.SystemUiThemePreferenceController" />
 
+    <com.android.settings.custom.preference.SystemSettingListPreference
+        android:key="dark_theme_style"
+        android:title="@string/dark_theme_style_title"
+        android:entries="@array/dark_theme_style_entries"
+        android:entryValues="@array/dark_theme_style_values"
+        android:defaultValue="0" />
+
     <ListPreference
         android:key="theme"
         android:title="@string/color_theme"
