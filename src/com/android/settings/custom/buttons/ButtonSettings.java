@@ -169,8 +169,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 com.android.internal.R.integer.config_longPressOnHomeBehaviorHwkeys));
         Action defaultHomeDoubleTapAction = Action.fromIntSafe(res.getInteger(
                 com.android.internal.R.integer.config_doubleTapOnHomeBehaviorHwkeys));
+        Action defaultAppSwitchPressAction = Action.fromIntSafe(res.getInteger(
+                com.android.internal.R.integer.config_pressOnAppSwitchBehaviorHwkeys));
         Action defaultAppSwitchLongPressAction = Action.fromIntSafe(res.getInteger(
                 com.android.internal.R.integer.config_longPressOnAppSwitchBehaviorHwkeys));
+        Action defaultAssistPressAction = Action.fromIntSafe(res.getInteger(
+                com.android.internal.R.integer.config_pressOnAssistBehaviorHwkeys));
+        Action defaultAssistLongPressAction = Action.fromIntSafe(res.getInteger(
+                com.android.internal.R.integer.config_longPressOnAssistBehaviorHwkeys));
         Action homeLongPressAction = Action.fromSettings(resolver,
                 Settings.System.KEY_HOME_LONG_PRESS_ACTION,
                 defaultHomeLongPressAction);
@@ -238,11 +244,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
 
             Action pressAction = Action.fromSettings(resolver,
-                    Settings.System.KEY_ASSIST_ACTION, Action.SEARCH);
+                    Settings.System.KEY_ASSIST_ACTION, defaultAssistPressAction);
             mAssistPressAction = initList(KEY_ASSIST_PRESS, pressAction);
 
             Action longPressAction = Action.fromSettings(resolver,
-                    Settings.System.KEY_ASSIST_LONG_PRESS_ACTION, Action.VOICE_SEARCH);
+                    Settings.System.KEY_ASSIST_LONG_PRESS_ACTION, defaultAssistLongPressAction);
             mAssistLongPressAction = initList(KEY_ASSIST_LONG_PRESS, longPressAction);
 
             hasAnyBindableKey = true;
@@ -257,7 +263,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
 
             Action pressAction = Action.fromSettings(resolver,
-                    Settings.System.KEY_APP_SWITCH_ACTION, Action.APP_SWITCH);
+                    Settings.System.KEY_APP_SWITCH_ACTION, defaultAppSwitchPressAction);
             mAppSwitchPressAction = initList(KEY_APP_SWITCH_PRESS, pressAction);
 
             mAppSwitchLongPressAction = initList(KEY_APP_SWITCH_LONG_PRESS, appSwitchLongPressAction);
