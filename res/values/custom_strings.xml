@@ -298,4 +298,9 @@
     <string name="swipe_to_screenshot_gesture_title">Swipe to screenshot</string>
     <string name="swipe_to_screenshot_gesture_summary">Swipe three fingers to take screenshot</string>
 
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Dark theme style</string>
+    <string name="dark_theme_style_default">Default</string>
+    <string name="dark_theme_style_black">Black</string>
+
 </resources>
