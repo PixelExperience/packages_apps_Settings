@@ -179,11 +179,11 @@
     <string name="lockscreen_qs_disabled_summary">Onemogoči razširjeno vrstico stanja na zaščitenem zaklenjenem zaslonu</string>
     <string name="status_bar_quick_qs_pulldown_title">Hitro spuščanje</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s rob vrstice stanja spusti Hitre nastavitve</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Levo</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Desno</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">Levi</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">Desni</string>
     <string name="status_bar_quick_qs_pulldown_off">Izklopljeno</string>
-    <string name="status_bar_quick_qs_pulldown_left">Levi</string>
-    <string name="status_bar_quick_qs_pulldown_right">Desni</string>
+    <string name="status_bar_quick_qs_pulldown_left">Levo</string>
+    <string name="status_bar_quick_qs_pulldown_right">Desno</string>
     <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Ikone vrstice stanja</string>
     <string name="status_bar_system_icons_title">Sistemske ikone</string>
@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabajtov na sekundo (MB/s)</string>
     <string name="network_traffic_show_units">Prikaži enote</string>
     <string name="network_traffic_show_units_summary">Prikaz merskih enot prometa v vrstici stanja</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Poteg za posnetek zaslona</string>
-    <string name="swipe_to_screenshot_gesture_summary">Potegnite s tremi prsti, da zajamete posnetek zaslona</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Zaznavanje žepa</string>
     <string name="pocket_judge_summary">Zakleni zaslon in gumbe, ko je naprava v vašem žepu</string>
@@ -264,4 +261,11 @@
     <string name="adj_contrast_title">Kontrast</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Samodejno (čas dneva)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Poteg za posnetek zaslona</string>
+    <string name="swipe_to_screenshot_gesture_summary">Potegnite s tremi prsti, da zajamete posnetek zaslona</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Slog temne teme</string>
+    <string name="dark_theme_style_default">Privzeto</string>
+    <string name="dark_theme_style_black">Črna</string>
 </resources>

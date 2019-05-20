@@ -193,7 +193,6 @@
     <string name="network_traffic_units_megabytes">Megabytes per segon (MB/s)</string>
     <string name="network_traffic_show_units">Mostra les unitats</string>
     <string name="network_traffic_show_units_summary">Si vols mostrar les unitats de mesura del trànsit a la barra d\'estat</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimitza la teva pantalla basant-se en l\'hora del dia i les condicions ambientals per millorar la llegibilitat i reduir la fatiga ocular</string>
@@ -248,4 +247,6 @@
     <string name="adj_contrast_title">Contrast</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automàtic (segons l\'hora del dia)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

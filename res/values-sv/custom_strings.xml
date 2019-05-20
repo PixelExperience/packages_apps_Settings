@@ -172,7 +172,6 @@
     <string name="network_traffic_mode_all">Uppladdning och nerladdning</string>
     <string name="network_traffic_autohide">Göm automatiskt</string>
     <string name="network_traffic_units_kilobits">Kilobits per sekund (kb/s)</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_mode">Visningsläge</string>
@@ -204,4 +203,6 @@
     <string name="adj_intensity_title">Intensitet</string>
     <string name="adj_contrast_title">Kontrast</string>
     <!-- LiveDisplay - Custom theme mode -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

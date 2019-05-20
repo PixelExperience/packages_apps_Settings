@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">メガバイト/秒 (MB/s)</string>
     <string name="network_traffic_show_units">単位を表示</string>
     <string name="network_traffic_show_units_summary">ステータスバーにネットワークトラフィックの単位を表示</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">スワイプでスクリーンショット</string>
-    <string name="swipe_to_screenshot_gesture_summary">3本指でスワイプしてスクリーンショットを取得する</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">ポケット検出</string>
     <string name="pocket_judge_summary">端末がポケット内にある時は画面とボタンをロックする</string>
@@ -264,4 +261,11 @@
     <string name="adj_contrast_title">コントラスト</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">自動設定（時間帯に合わせる）</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">スワイプでスクリーンショット</string>
+    <string name="swipe_to_screenshot_gesture_summary">3本指でスワイプしてスクリーンショットを取得する</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">ダークテーマスタイル</string>
+    <string name="dark_theme_style_default">既定</string>
+    <string name="dark_theme_style_black">ブラック</string>
 </resources>

@@ -51,7 +51,6 @@
     <!-- Status bar - icons -->
     <!-- Status bar - Network Traffic -->
     <string name="network_traffic_mode_disable">Disabilitadu</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_color_temperature_summary">Die: <xliff:g id="day_temperature">%1$d</xliff:g>K Note: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
@@ -70,4 +69,6 @@
     <string name="adj_intensity_title">Intensidade</string>
     <string name="adj_contrast_title">Cuntrastu</string>
     <!-- LiveDisplay - Custom theme mode -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

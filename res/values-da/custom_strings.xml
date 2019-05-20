@@ -107,10 +107,13 @@
     <string name="ambient_play_history_dialog_remove">Fjern</string>
     <string name="ambient_play_history_empty">Musikhistorikken er tom</string>
     <string name="ambient_play_history_menu_remove_all">Fjern alle</string>
+    <string name="ambient_play_history_menu_add_to_home">Føj til startskærm</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Er du sikker?</string>
+    <string name="ambient_play_saving_options_title">Gem Indstillinger</string>
     <string name="ambient_play_saving_options_summary">Indstillinger til nedbringelse af batteri- og dataforbrug</string>
     <string name="ambient_play_saving_options_low_battery_title">Lavt batteri</string>
     <string name="ambient_play_saving_options_low_battery_summary">Deaktivér genkendelse, når batteriniveauet er lavt</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobilt netværk</string>
     <!-- Face auto unlock -->
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Avanceret genstart</string>
@@ -148,7 +151,6 @@
     <string name="status_bar_system_icons_title">Systemikoner</string>
     <string name="status_bar_system_icons_summary">Kontrollér, hvilke statuslinje-ikoner, der vises</string>
     <!-- Status bar - Network Traffic -->
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimér din skærm baseret på tidspunktet på dagen, samt omgivelserne, for at forbedre læsbarheden og nedsætte anstrengelsen af øjnene</string>
@@ -198,4 +200,6 @@
     <string name="adj_intensity_title">Intensitet</string>
     <string name="adj_contrast_title">Kontrast</string>
     <!-- LiveDisplay - Custom theme mode -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

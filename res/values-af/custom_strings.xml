@@ -118,7 +118,6 @@
     <string name="status_bar_system_icons_title">Stelselikone</string>
     <string name="status_bar_system_icons_summary">Beheer watter status balk ikone word getoon</string>
     <!-- Status bar - Network Traffic -->
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimaliseer jou skerm gebaseer op die tyd van die dag en die omringende omstandighede om leesbaarheid te verbeter en oogspanning te verminder</string>
@@ -170,4 +169,6 @@
     <string name="adj_intensity_title">Intensiteit</string>
     <string name="adj_contrast_title">Kontras</string>
     <!-- LiveDisplay - Custom theme mode -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

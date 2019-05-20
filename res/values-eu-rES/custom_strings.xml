@@ -177,7 +177,6 @@
     <string name="network_traffic_units_megabytes">Megabyte-ak segundoko (MB/s)</string>
     <string name="network_traffic_show_units">Erakutsi unitateak</string>
     <string name="network_traffic_show_units_summary">Trafikoa neurtzeko unitateak egoera-barran erakutsi ala ez</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizatu zure pantaila eguneko orduaren eta inguruneko baldintzen arabera irakurgarritasuna hobetzeko eta begien nekea gutxiagotzeko</string>
@@ -232,4 +231,6 @@
     <string name="adj_contrast_title">Kontrastea</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automatikoa (eguneko ordua)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

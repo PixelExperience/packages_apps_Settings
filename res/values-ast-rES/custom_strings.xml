@@ -137,7 +137,6 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundu (MB/s)</string>
     <string name="network_traffic_show_units">Amosar unidaes</string>
     <string name="network_traffic_show_units_summary">Si quies amosar les unidaes de midición del tráficu na barra d\'estáu</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimiza la to pantalla según la hora\'l día y les condiciones ambientales p\'ameyorar la llexibilidá y amenorgar el cansanciu de güeyos</string>
@@ -192,4 +191,6 @@
     <string name="adj_contrast_title">Contraste</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automáticu (hora del día)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabájt / másodperc (MB/s)</string>
     <string name="network_traffic_show_units">Mértékegység-megjelenítés</string>
     <string name="network_traffic_show_units_summary">Az állapotsoron jelenjen meg az adatforgalom mértékegysége</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Képernyőkép csúsztatással</string>
-    <string name="swipe_to_screenshot_gesture_summary">Képernyőmentés három ujjas csúsztatással</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Zsebérzékelés</string>
     <string name="pocket_judge_summary">Lezárja a képernyőt és a gombokat, amikor épp zsebben hordja a készüléket</string>
@@ -264,4 +261,11 @@
     <string name="adj_contrast_title">Kontraszt</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automatikus (napszaktól függő)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Képernyőkép csúsztatással</string>
+    <string name="swipe_to_screenshot_gesture_summary">Képernyőmentés három ujjas csúsztatással</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">A Fekete téma stílusa</string>
+    <string name="dark_theme_style_default">Alapértelmezett</string>
+    <string name="dark_theme_style_black">Fekete</string>
 </resources>
