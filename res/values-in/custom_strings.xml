@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabyte per detik (MB/d)</string>
     <string name="network_traffic_show_units">Tampilkan satuan</string>
     <string name="network_traffic_show_units_summary">Pilihan tampilan satuan pengukuran lalu lintas di bilah status</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Usap untuk menangkap layar</string>
-    <string name="swipe_to_screenshot_gesture_summary">Usap 3 jari untuk mengambil tangkapan layar</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Deteksi saku</string>
     <string name="pocket_judge_summary">Kunci layar dan tombol ketika perangkat berada didalam saku</string>
@@ -264,4 +261,8 @@
     <string name="adj_contrast_title">Kontras</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Otomatis (waktu dalam sehari)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Usap untuk menangkap layar</string>
+    <string name="swipe_to_screenshot_gesture_summary">Usap 3 jari untuk mengambil tangkapan layar</string>
+    <!-- Dark theme style -->
 </resources>

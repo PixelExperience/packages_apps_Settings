@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabitai per sekundę (Mb/s)</string>
     <string name="network_traffic_show_units">Rodyti vienetus</string>
     <string name="network_traffic_show_units_summary">Rodyti duomenų perdavimo spartą būsenos juostoje</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Braukite ekrano kopijai</string>
-    <string name="swipe_to_screenshot_gesture_summary">Jie norite padaryti ekrano kopiją, braukite trim pirštais</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Režimas \"kišenėje\"</string>
     <string name="pocket_judge_summary">Užrakinkite ekraną ir mygtukus, kai prietaisas yra kišenėje</string>
@@ -264,4 +261,11 @@
     <string name="adj_contrast_title">Kontrastas</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automatinis (dienos laikas)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Braukite ekrano kopijai</string>
+    <string name="swipe_to_screenshot_gesture_summary">Jie norite padaryti ekrano kopiją, braukite trim pirštais</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Tamsus temos stilius</string>
+    <string name="dark_theme_style_default">Numatytasis</string>
+    <string name="dark_theme_style_black">Juodas</string>
 </resources>

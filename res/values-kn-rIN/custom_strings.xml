@@ -182,7 +182,6 @@
     <string name="network_traffic_units_megabytes">ದಶಲಕ್ಷಬೈಟ್ಗಳು ಪ್ರತಿ ಕ್ಷಣ (Mb/s)</string>
     <string name="network_traffic_show_units">ಘಟಕಗಳನ್ನು ತೋರಿಸು</string>
     <string name="network_traffic_show_units_summary">ಸ್ಥಿತಿಪಟ್ಟಿಕೆಯಲ್ಲಿ ಸಾಗಾಟ ಮಾಪನ ಘಟಕಗಳನ್ನು ತೋರಿಸಬೇಕೆ</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">ದಿನದ ಸಮಯ ಮತ್ತು ಪರಿಸರದ ಪರಿಸ್ಥಿತಿ ಆಧಾರಿಸಿ ನಿಮ್ಮ ಪರದೆಯನ್ನು ಉತ್ತಮವಾಗಿಸಿ ವಾಚನೀಯತೆ ಉತ್ತಮಗೊಳಿಸಿ ಕಣ್ಣಿನ ಆಯಾಸ ಕಡಿಮೆ ಮಾಡು</string>
@@ -235,4 +234,6 @@
     <string name="adj_contrast_title">ವೈದೃಶ್ಯ</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">ಸ್ವಯಂ (ದಿನದ ಸಮಯ)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

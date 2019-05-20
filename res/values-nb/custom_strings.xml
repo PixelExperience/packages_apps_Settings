@@ -124,7 +124,6 @@
     <string name="status_bar_system_icons_title">Systemikoner</string>
     <string name="status_bar_system_icons_summary">Velg hvilke av statusikonene som skal vises</string>
     <!-- Status bar - Network Traffic -->
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalisere skjermen basert på tidspunkt av dagen og omgivelsesforhold for å forbedre lesbarhet og redusere belastningen på øynene</string>
@@ -176,4 +175,6 @@
     <string name="adj_intensity_title">Intensitet</string>
     <string name="adj_contrast_title">Kontrast</string>
     <!-- LiveDisplay - Custom theme mode -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

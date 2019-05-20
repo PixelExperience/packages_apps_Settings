@@ -142,6 +142,8 @@
     <!-- Notch: Full screen apps -->
     <!-- In-call feedback -->
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">Ταυτοποίηση δακτυλικού αποτυπώματος</string>
+    <string name="fp_success_auth_vib_summary">Δόνηση σε επιτυχές έλεγχο δαχτυλικού αποτυπώματος</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Διπλό χτύπημα για αναστολή</string>
     <string name="status_bar_double_tap_to_sleep_summary">Διπλό χτύπημα στη γραμμή κατάστασης για αναστολή της συσκευής</string>
@@ -162,6 +164,7 @@
     <string name="volbtn_music_controls_summary">Αναζήτηση μουσικών κομμάτιών πιέζοντας παρατεταμένα τα πλήκτρα έντασης ενώ η οθόνη είναι απενεργοποιημένη</string>
     <!-- Power menu on lockscreen -->
     <!-- Others settings -->
+    <string name="others_settings_title">Άλλες ρυθμίσεις</string>
     <string name="additional_buttons_title">Πρόσθετα πλήκτρα</string>
     <!-- Status bar -->
     <string name="status_bar_title">Γραμμή κατάστασης</string>
@@ -193,8 +196,8 @@
     <string name="network_traffic_units_megabytes">Megabyte ανά δευτερόλεπτο (MB/δ)</string>
     <string name="network_traffic_show_units">Εμφάνιση μονάδων</string>
     <string name="network_traffic_show_units_summary">Επιλέξτε αν θα εμφανίζονται οι μονάδες μέτρησης κίνησης στη γραμμή κατάστασης</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">Ανίχνευση τσέπης</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Βελτιστοποίηση της οθόνης σας με βάση την ώρα της ημέρας και τις συνθήκες περιβάλλοντος για βελτίωση της αναγνωσιμότητας και μείωση της καταπόνησης των ματιών</string>
     <string name="live_display_mode">Λειτουργία οθόνης</string>
@@ -248,4 +251,6 @@
     <string name="adj_contrast_title">Αντίθεση</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Αυτόματο (ώρα της ημέρας)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

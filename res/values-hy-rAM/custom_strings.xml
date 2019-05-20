@@ -128,9 +128,10 @@
     <string name="status_bar_quick_qs_pulldown_right">Աջ</string>
     <!-- Status bar - icons -->
     <!-- Status bar - Network Traffic -->
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <!-- LiveDisplay : Picture Adjustment -->
     <!-- LiveDisplay - Custom theme mode -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

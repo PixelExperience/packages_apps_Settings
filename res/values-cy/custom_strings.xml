@@ -137,7 +137,6 @@
     <string name="network_traffic_units_megabytes">Megabeitiau\'r eiliad (MB/e)</string>
     <string name="network_traffic_show_units">Dangos unedau</string>
     <string name="network_traffic_show_units_summary">Dangos unedau mesur traffig yn y bar statws</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Addasa dy sgrin i\'r gorau yn dibynnu ar yr amser o\'r dydd ac amgylchiadau amgylchynol fel ei bod yn haws darllen a bod llai o straen ar y llygaid.</string>
@@ -192,4 +191,6 @@
     <string name="adj_contrast_title">Cyferbyniaeth</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Awtomatig (amser o\'r dydd)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

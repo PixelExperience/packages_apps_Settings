@@ -133,7 +133,6 @@
     <string name="network_traffic_units_megabytes">Megabyte për sekondë (MB/s)</string>
     <string name="network_traffic_show_units">Shfaq njësitë</string>
     <string name="network_traffic_show_units_summary">Për të shfaqur matjet e trafikut në shiritin e statusit</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizo ekranin në bazë të orës së ditës dhe konditave të mjedisit për të përmirësuar lexueshmërinë dhe për të reduktuar lodhjen e syve</string>
@@ -188,4 +187,6 @@
     <string name="adj_contrast_title">Kontrasti</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automatike (ora)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

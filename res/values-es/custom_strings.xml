@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundo (MB/s)</string>
     <string name="network_traffic_show_units">Mostrar unidades</string>
     <string name="network_traffic_show_units_summary">Mostrar/ocultar unidades de medida de tráfico en la barra de estado</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Deslizar para capturar pantalla</string>
-    <string name="swipe_to_screenshot_gesture_summary">Capturar pantalla deslizando tres dedos</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Detección de bolsillo</string>
     <string name="pocket_judge_summary">Bloquear la pantalla y los botones cuando el dispositivo está en el bolsillo</string>
@@ -264,4 +261,11 @@
     <string name="adj_contrast_title">Contraste</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automático (hora del día)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Deslizar para capturar pantalla</string>
+    <string name="swipe_to_screenshot_gesture_summary">Capturar pantalla deslizando tres dedos</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Tema oscuro</string>
+    <string name="dark_theme_style_default">Por defecto</string>
+    <string name="dark_theme_style_black">Negro</string>
 </resources>

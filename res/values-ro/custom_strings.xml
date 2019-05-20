@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabytes pe secundă (MB/s)</string>
     <string name="network_traffic_show_units">Arată unităţi</string>
     <string name="network_traffic_show_units_summary">Afișarea unităților de măsurare ale traficului în bara de stare</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Glisați pentru captura de ecran</string>
-    <string name="swipe_to_screenshot_gesture_summary">Glisați trei degete pentru captură de ecran</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Detectare buzunar</string>
     <string name="pocket_judge_summary">Blocare ecran și butoane atunci când dispozitivul se află în buzunar</string>
@@ -264,4 +261,11 @@
     <string name="adj_contrast_title">Contrast</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automat (timpul zilei)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Glisați pentru captura de ecran</string>
+    <string name="swipe_to_screenshot_gesture_summary">Glisați trei degete pentru captură de ecran</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Stil temă întunecată</string>
+    <string name="dark_theme_style_default">Implicit</string>
+    <string name="dark_theme_style_black">Negru</string>
 </resources>

@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Скрыть вырез</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Полноэкранные приложения</string>
-    <string name="display_cutout_force_fullscreen_summary">Заставить приложения игнорировать вырез</string>
+    <string name="display_cutout_force_fullscreen_summary">Ингорирование выреза выбранными приложениями</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Вибрация для индикации статуса вызова</string>
     <!-- Fingerprint authentication vibration -->
@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Мегабайт в секунду (МБ/с)</string>
     <string name="network_traffic_show_units">Показать единицы</string>
     <string name="network_traffic_show_units_summary">Отображать скорость передачи данных в строке состояния</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Провести для скриншота</string>
-    <string name="swipe_to_screenshot_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Режим «В кармане»</string>
     <string name="pocket_judge_summary">Заблокировать экран и кнопки когда устройство находится в кармане</string>
@@ -264,4 +261,11 @@
     <string name="adj_contrast_title">Контраст</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Автоматически (время суток)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Провести для скриншота</string>
+    <string name="swipe_to_screenshot_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Стиль тёмной темы</string>
+    <string name="dark_theme_style_default">По умолчанию</string>
+    <string name="dark_theme_style_black">Чёрный</string>
 </resources>
