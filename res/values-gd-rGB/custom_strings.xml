@@ -122,7 +122,6 @@
     <string name="network_traffic_units_megabytes">Meaga-baidht gach diog (MB/s)</string>
     <string name="network_traffic_show_units">Seall na h-aonadan</string>
     <string name="network_traffic_show_units_summary">Co-dhiù an dèid aonadan tomhais air trafaig a shealltainn air bàr na staid gus nach dèid</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Pisich an sgrìn agad a-rèir àm dhen latha is na h-àrainneachd ach am bi cùisean nas fhasa leughadh is nas lugha a sgithear sùla ort</string>
@@ -177,4 +176,6 @@
     <string name="adj_contrast_title">Iomsgaradh</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Fèin-obrachail (àm dhen latha)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

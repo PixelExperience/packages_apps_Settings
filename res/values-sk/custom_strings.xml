@@ -140,8 +140,11 @@
     <string name="display_cutout_mode_normal">Predvolené</string>
     <string name="display_cutout_mode_hidden">Skryté</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Aplikácie v plnom rozlíšení</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">Vibrovanie</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">Autentifikácia odtlačkom prsta</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Uspať dvojitým poklepaním</string>
     <string name="status_bar_double_tap_to_sleep_summary">Vypnutie obrazovky dvojitým kliknutím na stavový riadok</string>
@@ -161,7 +164,9 @@
     <string name="volbtn_music_controls_title">Ovládanie prehrávania</string>
     <string name="volbtn_music_controls_summary">Dlhé stlačenie tlačidiel hlasitosti počas vypnutej obrazovky prepne hudobné stopy</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Vypnúť na zamknutej obrazovke</string>
     <!-- Others settings -->
+    <string name="others_settings_title">Ostatné nastavenia</string>
     <string name="additional_buttons_title">Ďalšie tlačidlá</string>
     <!-- Status bar -->
     <string name="status_bar_title">Stavový riadok</string>
@@ -193,8 +198,8 @@
     <string name="network_traffic_units_megabytes">Megabajty za sekundu (MB/s)</string>
     <string name="network_traffic_show_units">Zobrazovať jednotky</string>
     <string name="network_traffic_show_units_summary">Zobrazenie jednotiek merania sieť. prevádzky v stavovom riadku</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
+    <string name="pocket_judge_summary">Zamknúť obrazovku a tlačidlá ak je zariadenie vo vačku</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalizovať vašu obrazovku na základe dennej doby a podmienok okolia na zlepšenie čitateľnosti a zníženia únavy očí</string>
     <string name="live_display_mode">Režim zobrazenia</string>
@@ -248,4 +253,8 @@
     <string name="adj_contrast_title">Kontrast</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automaticky (podľa času dňa)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Screenshot potiahnutím</string>
+    <string name="swipe_to_screenshot_gesture_summary">Screenshot potiahnutím tromi prstami</string>
+    <!-- Dark theme style -->
 </resources>

@@ -31,7 +31,7 @@
     <string name="sim_enabler_need_disable_sim">SIM-Karte wird deaktiviert. Möchten Sie fortfahren?</string>
     <string name="sim_enabler_will_disable_sim_title">Achtung</string>
     <string name="sim_enabler_need_switch_data_service">Diese SIM-Karte wird deaktiviert und SIM-Karte <xliff:g id="slotid">%1$s</xliff:g> wird für Datendienste verwendet. Sind Sie sicher, dass Sie fortfahren möchten?</string>
-    <string name="sim_enabler_airplane_on">Vorgang kann nicht im Flugmodus durchgeführt werden.</string>
+    <string name="sim_enabler_airplane_on">Dieser Vorgang kann nicht im Flugmodus durchgeführt werden.</string>
     <string name="sim_enabler_in_call">Vorgang kann nicht während eines Anrufs durchgeführt werden.</string>
     <string name="sim_enabler_both_inactive">Es können nicht alle SIM-Karten deaktiviert werden.</string>
     <string name="sim_enabler_enabling">Aktivieren\u2026</string>
@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabyte pro Sekunde (MB/s)</string>
     <string name="network_traffic_show_units">Einheiten anzeigen</string>
     <string name="network_traffic_show_units_summary">Zeigt die Einheiten der Datenübertragungsraten in der Statusleiste an</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Wischen für Screenshot</string>
-    <string name="swipe_to_screenshot_gesture_summary">Wische mit drei Fingern für Screenshot</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Taschen-Erkennung</string>
     <string name="pocket_judge_summary">Deaktivieren des Bildschirms bzw. Buttons, wenn das Gerät in der Hosentasche ist</string>
@@ -264,4 +261,8 @@
     <string name="adj_contrast_title">Kontrast</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automatisch (Tageszeit)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Wischen für Screenshot</string>
+    <string name="swipe_to_screenshot_gesture_summary">Wische mit drei Fingern für Screenshot</string>
+    <!-- Dark theme style -->
 </resources>

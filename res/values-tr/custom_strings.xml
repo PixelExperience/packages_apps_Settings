@@ -205,13 +205,11 @@
     <string name="network_traffic_units_megabytes">Saniyede megabayt (MB/sn)</string>
     <string name="network_traffic_show_units">Birimleri göster</string>
     <string name="network_traffic_show_units_summary">Durum çubuğunda ağ ölçme birimlerinin gösterilip gösterilmeyeceği</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Ekran görüntüsü için kaydır</string>
-    <string name="swipe_to_screenshot_gesture_summary">Ekran görüntüsü almak için üç parmağınızı kaydırın</string>
     <!-- Pocket judge -->
-    <string name="pocket_judge_summary">Cihaz cebinizde olduğu zaman ekranı ve tuşları kilitle</string>
+    <string name="pocket_judge_title">Cep algılama</string>
+    <string name="pocket_judge_summary">Cihaz cebinizde olduğu zaman ekranı ve tuşları kilitler</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Ekranınızı, okunabilirliği artırmak ve göz yorgunluğunu azaltmak için günün saatine ve ortam koşullarına göre optimize edin</string>
+    <string name="live_display_summary">Okunabilirliği artırmak ve göz yorgunluğunu azaltmak için ekranınızı günün zamanına ve ortam koşullarına göre optimize edin</string>
     <string name="live_display_mode">Görüntü modu</string>
     <string name="live_display_color_temperature_title">Renk sıcaklığı</string>
     <string name="live_display_color_temperature_summary">Gündüz: <xliff:g id="day_temperature">%1$d</xliff:g>K Gece: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
@@ -238,7 +236,7 @@
     <string name="live_display_color_profile_photography_title">Fotoğrafçılık</string>
     <string name="live_display_color_profile_photography_summary">Fotoğraflar için mükemmel renk sunumu</string>
     <string name="live_display_color_profile_basic_title">Temel</string>
-    <string name="live_display_color_profile_basic_summary">Ekranı ayarlanmamış şekilde kullan</string>
+    <string name="live_display_color_profile_basic_summary">Kalibre edilmemiş ekranı kullanın</string>
     <string name="live_display_color_profile_adaptive_title">Uyarlanabilir</string>
     <string name="live_display_color_profile_adaptive_summary">Renkleri ortam koşullarına uyarla</string>
     <string name="live_display_color_profile_reading_title">Okunuyor</string>
@@ -257,10 +255,17 @@
     <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Resim ayarlama</string>
     <string name="picture_adjustment_summary">Ton, doygunluk, yoğunluk ve kontrastı ayarla</string>
-    <string name="adj_hue_title">Renk Tonu</string>
+    <string name="adj_hue_title">Renk tonu</string>
     <string name="adj_saturation_title">Doygunluk</string>
     <string name="adj_intensity_title">Yoğunluk</string>
     <string name="adj_contrast_title">Karşıtlık</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Otomatik (günün saati)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Ekran görüntüsü için kaydır</string>
+    <string name="swipe_to_screenshot_gesture_summary">Ekran görüntüsü almak için üç parmağınızı kaydırın</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Koyu tema stili</string>
+    <string name="dark_theme_style_default">Varsayılan</string>
+    <string name="dark_theme_style_black">Siyah</string>
 </resources>

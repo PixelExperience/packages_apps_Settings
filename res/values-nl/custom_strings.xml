@@ -183,7 +183,6 @@
     <string name="network_traffic_units_kilobytes">Kilobyte per seconde (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabyte per seconde (MB/s)</string>
     <string name="network_traffic_show_units">Eenheden weergeven</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
@@ -237,4 +236,6 @@
     <string name="adj_contrast_title">Contrast</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automatisch (tijdstip van de dag)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

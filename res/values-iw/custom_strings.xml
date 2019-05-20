@@ -140,14 +140,21 @@
     <string name="display_cutout_mode_normal">ברירת מחדל</string>
     <string name="display_cutout_mode_hidden">מוסתר</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">יישומים במסך מלא</string>
+    <string name="display_cutout_force_fullscreen_summary">אלץ אפליקציות להתעלם מאזור המגרעת</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">הפעל רטט ע\'\'מ לסמן סיום שיחה</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">אימות טביעת אצבע</string>
+    <string name="fp_success_auth_vib_summary">הפעל רטט בעת אימות טביעת אצבע מוצלח</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">הקשה כפולה לכיבוי המסך</string>
     <string name="status_bar_double_tap_to_sleep_summary">הקש פעמיים על שורת המצב כדי לכבות את המסך</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">הצג תמונת אלבום/מדיה</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">היפוך מראה חזותי</string>
+    <string name="nav_bar_layout_inverse_summary">היפוך מראה חזותי של כפתורי הניווט</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">לחיצה ארוכה לפנס</string>
     <string name="torch_long_press_power_gesture_desc">הפעל את הפנס על ידי לחיצה ארוכה על מקש ההפעלה כשהמסך כבוי</string>
@@ -161,10 +168,15 @@
     <string name="volbtn_music_controls_title">שלוט במוסיקה</string>
     <string name="volbtn_music_controls_summary">מעבר בין שירים על ידי לחיצה ארוכה על מקשי עוצמת השמע כאשר המסך כבוי</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">השבת מסך נעילה</string>
+    <string name="lockscreen_power_menu_disabled_summary">השבת את תפריט ההפעלה במסך נעילה מוגן</string>
     <!-- Others settings -->
+    <string name="others_settings_title">הגדרות נוספות</string>
     <string name="additional_buttons_title">מקשים נוספים</string>
     <!-- Status bar -->
     <string name="status_bar_title">שורת מצב</string>
+    <string name="lockscreen_qs_disabled_title">השבת מסך נעילה</string>
+    <string name="lockscreen_qs_disabled_summary">השבת שורת מצב מורחבת במסך נעילה מוגן</string>
     <string name="status_bar_quick_qs_pulldown_title">משיכה מהירה</string>
     <string name="status_bar_quick_qs_pulldown_summary">משיכה מצד %1$s לפתיחה מהירה של ההגדרות המהירות</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">שמאל</string>
@@ -193,8 +205,9 @@
     <string name="network_traffic_units_megabytes">מגה בייט לשנייה (MB/s)</string>
     <string name="network_traffic_show_units">הצג יחידות מידה</string>
     <string name="network_traffic_show_units_summary">מציג את יחידות המידה של התעבורה בשורת המצב</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">זיהוי כיס</string>
+    <string name="pocket_judge_summary">נעל את המסך ואת הלחצנים כאשר המכשיר נמצא בכיס</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">התאם את מסך מכשירך בהתאם לשעה ולתנאי הסביבה על מנת לשפר את נוחות הקריאה ולהפחית את עייפות העין</string>
     <string name="live_display_mode">מצב תצוגה</string>
@@ -248,4 +261,11 @@
     <string name="adj_contrast_title">ניגודיות</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">אוטומטי (בהתאם לשעות היממה)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">החלק לצילום מסך</string>
+    <string name="swipe_to_screenshot_gesture_summary">החלק עם שלוש אצבעות לצילום מסך</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">ערכת נושא כהה</string>
+    <string name="dark_theme_style_default">ברירת מחדל</string>
+    <string name="dark_theme_style_black">שחור</string>
 </resources>

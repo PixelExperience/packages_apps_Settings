@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabit mỗi giây (Mb/s)</string>
     <string name="network_traffic_show_units">Hiển thị các đơn vị</string>
     <string name="network_traffic_show_units_summary">Hiển thị các đơn vị đo lưu lượng truy cập trong thanh trạng thái</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Vuốt để chụp màn hình</string>
-    <string name="swipe_to_screenshot_gesture_summary">Vuốt ba ngón tay để chụp màn hình</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Phát hiện trong túi</string>
     <string name="pocket_judge_summary">Khoá màn hình và các phím khi thiết bị trong túi của bạn</string>
@@ -264,4 +261,8 @@
     <string name="adj_contrast_title">Độ tương phản</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Tự động (thời gian trong ngày)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Vuốt để chụp màn hình</string>
+    <string name="swipe_to_screenshot_gesture_summary">Vuốt ba ngón tay để chụp màn hình</string>
+    <!-- Dark theme style -->
 </resources>

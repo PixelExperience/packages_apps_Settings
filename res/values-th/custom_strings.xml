@@ -201,7 +201,6 @@
     <string name="network_traffic_units_kilobytes">กิโลไบต์ต่อวินาที (kB/s)</string>
     <string name="network_traffic_units_megabytes">เมกะไบต์ต่อวินาที (MB/s)</string>
     <string name="network_traffic_show_units">แสดงหน่วย</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_mode">โหมดการแสดงผล</string>
@@ -249,4 +248,6 @@
     <string name="adj_intensity_title">ความเข้ม</string>
     <string name="adj_contrast_title">คอนทราสต์</string>
     <!-- LiveDisplay - Custom theme mode -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

@@ -23,7 +23,7 @@
     <string name="lights_category_title">指示燈設定</string>
     <string name="notification_light_title">通知指示燈</string>
     <string name="battery_light_title">電量指示燈</string>
-    <string name="battery_low_pulse_title">電量不足時閃爍呼吸燈</string>
+    <string name="battery_low_pulse_title">电池电量过低</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> 是 <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">已停用</string>
@@ -44,15 +44,15 @@
     <string name="reset">重設</string>
     <!-- Buttons -->
     <string name="button_pref_title">按鍵</string>
-    <string name="navigation_bar_title">按鍵與配置</string>
-    <string name="hardware_keys_power_key_title">電源鍵</string>
+    <string name="navigation_bar_title">導航欄</string>
+    <string name="hardware_keys_power_key_title">電源按鈕</string>
     <string name="hardware_keys_home_key_title">主畫面鍵</string>
     <string name="hardware_keys_back_key_title">返回鍵</string>
     <string name="hardware_keys_menu_key_title">選單鍵</string>
     <string name="hardware_keys_assist_key_title">搜尋鍵</string>
     <string name="hardware_keys_appswitch_key_title">最近使用程式</string>
     <string name="hardware_keys_camera_key_title">相機鍵</string>
-    <string name="hardware_keys_volume_keys_title">音量鍵</string>
+    <string name="hardware_keys_volume_keys_title">音量按钮</string>
     <string name="hardware_keys_short_press_title">短按動作</string>
     <string name="hardware_keys_long_press_title">長按動作</string>
     <string name="hardware_keys_double_tap_title">連按兩下動作</string>
@@ -140,31 +140,42 @@
     <string name="display_cutout_mode_normal">預設</string>
     <string name="display_cutout_mode_hidden">隱藏</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">全屏應用</string>
+    <string name="display_cutout_force_fullscreen_summary">強制應用忽略缺口空間</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">振動以指示呼叫狀態</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">指紋認證</string>
+    <string name="fp_success_auth_vib_summary">振動成功的指紋認證</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
-    <string name="status_bar_double_tap_to_sleep_title">輕觸兩下即可休眠</string>
-    <string name="status_bar_double_tap_to_sleep_summary">輕觸兩下狀態列來關閉螢幕</string>
+    <string name="status_bar_double_tap_to_sleep_title">點按即可入睡</string>
+    <string name="status_bar_double_tap_to_sleep_summary">雙擊狀態欄或鎖定屏幕以關閉顯示屏</string>
     <!-- Lock screen cover art -->
-    <string name="lockscreen_media_art_title">顯示媒體封面藝術</string>
+    <string name="lockscreen_media_art_title">顯示媒體封面</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">反轉佈局</string>
+    <string name="nav_bar_layout_inverse_summary">反轉導航欄按鈕的佈局</string>
     <!-- Torch long press power button -->
-    <string name="torch_long_press_power_gesture_title">長按開啟手電筒</string>
-    <string name="torch_long_press_power_gesture_desc">當螢幕關閉時長按電源鍵啟動手電筒</string>
-    <string name="torch_long_press_power_timeout_title">自動關閉手電筒</string>
-    <string name="torch_long_press_power_timeout_never">永不</string>
-    <string name="torch_long_press_power_timeout_1min">1 分鐘</string>
-    <string name="torch_long_press_power_timeout_2min">2 分鐘</string>
-    <string name="torch_long_press_power_timeout_5min">5 分鐘</string>
-    <string name="torch_long_press_power_timeout_10min">10 分鐘</string>
+    <string name="torch_long_press_power_gesture_title">長按火炬</string>
+    <string name="torch_long_press_power_gesture_desc">在顯示屏關閉時長按電源按鈕激活割炬</string>
+    <string name="torch_long_press_power_timeout_title">自動關閉割炬</string>
+    <string name="torch_long_press_power_timeout_never">決不</string>
+    <string name="torch_long_press_power_timeout_1min">一分钟</string>
+    <string name="torch_long_press_power_timeout_2min">二分钟</string>
+    <string name="torch_long_press_power_timeout_5min">五分钟</string>
+    <string name="torch_long_press_power_timeout_10min">十分钟</string>
     <!-- Volume control playback -->
-    <string name="volbtn_music_controls_title">控制播放</string>
-    <string name="volbtn_music_controls_summary">在顯示螢幕關閉時長按音量鍵可尋找音樂曲目</string>
+    <string name="volbtn_music_controls_title">控製播放</string>
+    <string name="volbtn_music_controls_summary">在顯示屏關閉時長按音量鍵可以搜索音樂曲目</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">在鎖定屏幕上禁用</string>
+    <string name="lockscreen_power_menu_disabled_summary">禁用受保護鎖定屏幕上的電源菜單</string>
     <!-- Others settings -->
-    <string name="additional_buttons_title">附加按鍵</string>
+    <string name="others_settings_title">其他設置</string>
+    <string name="additional_buttons_title">附加按鈕</string>
     <!-- Status bar -->
-    <string name="status_bar_title">狀態列</string>
+    <string name="status_bar_title">狀態欄</string>
+    <string name="lockscreen_qs_disabled_title">在鎖定畫面中停用</string>
     <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
     <string name="status_bar_quick_qs_pulldown_summary">從狀態列的%1$s邊拉下快速設定</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">左</string>
@@ -193,7 +204,6 @@
     <string name="network_traffic_units_megabytes">每秒百位元組(MB/s)</string>
     <string name="network_traffic_show_units">顯示單位</string>
     <string name="network_traffic_show_units_summary">是否在狀態列中顯示流量單位</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
@@ -248,4 +258,6 @@
     <string name="adj_contrast_title">對比</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">自動 (一天之中)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

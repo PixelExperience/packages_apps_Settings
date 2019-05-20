@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundo (MB/s)</string>
     <string name="network_traffic_show_units">Mostrar unidades</string>
     <string name="network_traffic_show_units_summary">Mostrar as unidades de medida do tráfego na barra de status</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Deslize para capturar a tela</string>
-    <string name="swipe_to_screenshot_gesture_summary">Deslize três dedos para tirar uma captura de tela</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Detectar quando estiver no bolso</string>
     <string name="pocket_judge_summary">Bloquear a tela e os botões quando o dispositivo estiver no bolso</string>
@@ -248,7 +245,7 @@
     <string name="live_display_color_profile_srgb_summary">Cores correspondentes ao espaço de cores sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Cores correspondentes ao espaço de cores DCI-P3</string>
-    <string name="live_display_reading_mode_title">Modo de leitura</string>
+    <string name="live_display_reading_mode_title">Modo leitura</string>
     <string name="live_display_reading_mode_summary">Modo de tons de cinza para longos períodos de leitura</string>
     <string name="color_calibration_title">Calibração de cores</string>
     <string name="color_calibration_summary">Calibra as cores da tela</string>
@@ -264,4 +261,11 @@
     <string name="adj_contrast_title">Contraste</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automático (baseado na hora do dia)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Deslize para capturar a tela</string>
+    <string name="swipe_to_screenshot_gesture_summary">Deslize três dedos para tirar uma captura de tela</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Estilo do tema escuro</string>
+    <string name="dark_theme_style_default">Padrão</string>
+    <string name="dark_theme_style_black">Preto</string>
 </resources>

@@ -193,7 +193,6 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundo (kb/s)</string>
     <string name="network_traffic_show_units">Amosa unidades</string>
     <string name="network_traffic_show_units_summary">Se queres amosar as unidades de medición do tráfico na barra de estado</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizar a súa pantalla baseandose na hora do día e as condicións ambientais para mellorar a lexibilidade e reducir o cansanzo visual</string>
@@ -248,4 +247,6 @@
     <string name="adj_contrast_title">Contraste</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automático (segundo a hora do día)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>
