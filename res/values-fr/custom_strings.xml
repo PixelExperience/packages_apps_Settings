@@ -176,6 +176,7 @@
     <!-- Status bar -->
     <string name="status_bar_title">Barre d\'état</string>
     <string name="lockscreen_qs_disabled_title">Désactiver sur l\'écran de verrouillage</string>
+    <string name="lockscreen_qs_disabled_summary">Désactiver la barre d\'état étendue sur l\'écran de verrouillage</string>
     <string name="status_bar_quick_qs_pulldown_title">Menu déroulant rapide</string>
     <string name="status_bar_quick_qs_pulldown_summary">Déployer le volet de configuration rapide en appuyant sur la %1$s de la barre d\'état</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Gauche</string>
@@ -204,10 +205,9 @@
     <string name="network_traffic_units_megabytes">Mégaoctets par seconde (Mo/s)</string>
     <string name="network_traffic_show_units">Afficher les unités</string>
     <string name="network_traffic_show_units_summary">Afficher ou non les unités de mesure du débit dans la barre d’état</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Glisser pour prendre une capture d\'écran</string>
-    <string name="swipe_to_screenshot_gesture_summary">Balayer l\'écran avec trois doigts pour faire une capture d\'écran</string>
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">Détecteur de poche</string>
+    <string name="pocket_judge_summary">Verrouiller l\'écran et les boutons quand l\'appareil est dans votre poche</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimiser votre écran en fonction de l\'heure et des conditions ambiantes pour améliorer la lisibilité et réduire la fatigue oculaire</string>
     <string name="live_display_mode">Mode d\'affichage</string>
@@ -261,4 +261,11 @@
     <string name="adj_contrast_title">Contraste</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automatique (heure)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Glisser pour prendre une capture d\'écran</string>
+    <string name="swipe_to_screenshot_gesture_summary">Balayer l\'écran avec trois doigts pour faire une capture d\'écran</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Thème sombre</string>
+    <string name="dark_theme_style_default">Défaut</string>
+    <string name="dark_theme_style_black">Noir</string>
 </resources>

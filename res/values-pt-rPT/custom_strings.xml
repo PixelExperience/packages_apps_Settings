@@ -140,14 +140,22 @@
     <string name="display_cutout_mode_normal">Predefinição</string>
     <string name="display_cutout_mode_hidden">Ocultos</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">"display_cutout_force_fullscreen_title
+Notch: Aplicações em ecrã cheio"</string>
+    <string name="display_cutout_force_fullscreen_summary">Forçar aplicações a ignorar o espaço do notch</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">Vibrar para indicar estado da chamada</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">Autenticação por impressão digital</string>
+    <string name="fp_success_auth_vib_summary">Vibrar na autenticação bem sucedida da impressão digital</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Toque duplo para desligar ecrã</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dê um toque duplo na barra de estado para desligar o ecrã</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Mostrar capa do álbum</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">Inverter disposição</string>
+    <string name="nav_bar_layout_inverse_summary">Inventer disposição dos botões da barra de navegação</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">Lanterna através de pressão longa</string>
     <string name="torch_long_press_power_gesture_desc">Ativar a lanterna através de pressão longa no botão de ligar/desligar quando o ecrã estiver desligado</string>
@@ -161,10 +169,14 @@
     <string name="volbtn_music_controls_title">Controlo de reprodução</string>
     <string name="volbtn_music_controls_summary">Procurar músicas com uma pressão longa das teclas de volume, enquanto o ecrã estiver desligado</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Desativar no ecrã de bloqueio</string>
+    <string name="lockscreen_power_menu_disabled_summary">Desativar o menu de energia na ecrã de bloqueio</string>
     <!-- Others settings -->
+    <string name="others_settings_title">Outras definições</string>
     <string name="additional_buttons_title">Botões adicionais</string>
     <!-- Status bar -->
     <string name="status_bar_title">Barra de estado</string>
+    <string name="lockscreen_qs_disabled_title">Desativar no ecrã de bloqueio</string>
     <string name="status_bar_quick_qs_pulldown_title">Abertura rápida</string>
     <string name="status_bar_quick_qs_pulldown_summary">O %1$s da barra de estado faz baixar o painel de definições rápidas</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">canto esquerdo</string>
@@ -193,7 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundo (MB/s)</string>
     <string name="network_traffic_show_units">Mostrar unidades</string>
     <string name="network_traffic_show_units_summary">Mostrar as unidades de medida do tráfego na barra de estado</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Otimiza o ecrã com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir a fadiga ocular</string>
@@ -248,4 +259,6 @@
     <string name="adj_contrast_title">Contraste</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automático (baseado na hora do dia)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

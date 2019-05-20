@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabita u sekundi (MB/s)</string>
     <string name="network_traffic_show_units">Prikaz jedinica mjere</string>
     <string name="network_traffic_show_units_summary">Odaberite hoće li se u statusnoj traci prikazivati mjerenje prometa</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Gesta s tri prsta</string>
-    <string name="swipe_to_screenshot_gesture_summary">Povucite tri prsta po zaslonu za snimku zaslona</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Otkrivanje uređaja u đepu</string>
     <string name="pocket_judge_summary">Zaključaj zaslon i tipke kada je uređaj u džepu</string>
@@ -264,4 +261,8 @@
     <string name="adj_contrast_title">Kontrast</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automatski (prema dobu dana)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Gesta s tri prsta</string>
+    <string name="swipe_to_screenshot_gesture_summary">Povucite tri prsta po zaslonu za snimku zaslona</string>
+    <!-- Dark theme style -->
 </resources>

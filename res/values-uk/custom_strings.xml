@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Мегабайт за секунду (Мб/с)</string>
     <string name="network_traffic_show_units">Відображати одиниці виміру</string>
     <string name="network_traffic_show_units_summary">Відображати швидкість передачі даних в рядку стану</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Провести для знімку екрану</string>
-    <string name="swipe_to_screenshot_gesture_summary">Проведіть трьома пальцями для знімку екрану</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Режим \"У кишені\"</string>
     <string name="pocket_judge_summary">Заблокувати екран та кнопки коли пристрій знаходиться в кишені</string>
@@ -264,4 +261,11 @@
     <string name="adj_contrast_title">Контрастність</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Автоматично (час доби)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Провести для знімку екрану</string>
+    <string name="swipe_to_screenshot_gesture_summary">Проведіть трьома пальцями для знімку екрану</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Стиль темної теми</string>
+    <string name="dark_theme_style_default">За замовчуванням</string>
+    <string name="dark_theme_style_black">Чорний</string>
 </resources>

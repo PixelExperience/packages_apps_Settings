@@ -103,7 +103,6 @@
     <string name="status_bar_system_icons_title">Системски икони</string>
     <string name="status_bar_system_icons_summary">Контролирај кои икони на статусната лента се прикажани</string>
     <!-- Status bar - Network Traffic -->
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Оптимизирајте го вашиот екран врз основа на време од денот и амбиентални услови за да се подобри читливоста и да се намали обемот на очите</string>
@@ -155,4 +154,6 @@
     <string name="adj_intensity_title">Интензитет</string>
     <string name="adj_contrast_title">Контраст</string>
     <!-- LiveDisplay - Custom theme mode -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

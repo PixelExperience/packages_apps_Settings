@@ -140,14 +140,20 @@
     <string name="display_cutout_mode_normal">預設</string>
     <string name="display_cutout_mode_hidden">隱藏</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">全螢幕應用程式</string>
+    <string name="display_cutout_force_fullscreen_summary">強制應用程式使用瀏海區域</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">使用震動來指示通話狀態</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">指紋驗證</string>
+    <string name="fp_success_auth_vib_summary">指紋驗證成功時震動</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">輕觸兩下即可休眠</string>
     <string name="status_bar_double_tap_to_sleep_summary">輕觸兩下狀態列來關閉螢幕</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">顯示媒體封面藝術</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">反轉佈局</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">長按開啟手電筒</string>
     <string name="torch_long_press_power_gesture_desc">當螢幕關閉時長按電源鍵啟動手電筒</string>
@@ -161,10 +167,14 @@
     <string name="volbtn_music_controls_title">控制播放</string>
     <string name="volbtn_music_controls_summary">在顯示螢幕關閉時長按音量鍵可尋找音樂曲目</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">在鎖定畫面中停用</string>
+    <string name="lockscreen_power_menu_disabled_summary">在受保護的鎖定畫面停用電源選單</string>
     <!-- Others settings -->
+    <string name="others_settings_title">其他設定</string>
     <string name="additional_buttons_title">附加按鍵</string>
     <!-- Status bar -->
     <string name="status_bar_title">狀態列</string>
+    <string name="lockscreen_qs_disabled_title">在鎖定畫面中停用</string>
     <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
     <string name="status_bar_quick_qs_pulldown_summary">從狀態列的%1$s邊拉下快速設定</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">左</string>
@@ -193,7 +203,6 @@
     <string name="network_traffic_units_megabytes">每秒百位元組(MB/s)</string>
     <string name="network_traffic_show_units">顯示單位</string>
     <string name="network_traffic_show_units_summary">是否在狀態列中顯示流量單位</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
@@ -248,4 +257,6 @@
     <string name="adj_contrast_title">對比</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">自動 (一天之中)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Dark theme style -->
 </resources>

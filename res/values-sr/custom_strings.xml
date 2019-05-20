@@ -140,14 +140,21 @@
     <string name="display_cutout_mode_normal">Подразумевано</string>
     <string name="display_cutout_mode_hidden">Скривено</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Апликације преко целог екрана</string>
+    <string name="display_cutout_force_fullscreen_summary">Форсирај апликације да игноришу простор зуба</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">Вибрација за индикацију статуса позива</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">Аутентификација отиском прста</string>
+    <string name="fp_success_auth_vib_summary">Вибрација при успешној провери отиска</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Искључи екран при двоструком додиру</string>
     <string name="status_bar_double_tap_to_sleep_summary">Додирните двапут на статусну траку да бисте искључили екран.</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Прикажи омот медија</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">Обрни распоред</string>
+    <string name="nav_bar_layout_inverse_summary">Обрни распоред навигационих дугмића</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">Дуги притисак за лампу</string>
     <string name="torch_long_press_power_gesture_desc">Укључите лампу дугим притиском на дугме за напајање док је екран искључен.</string>
@@ -161,10 +168,15 @@
     <string name="volbtn_music_controls_title">Управљање репродукцијом</string>
     <string name="volbtn_music_controls_summary">Премотавајте нумере дугим притиском на дугмад за јачину звука док је екран искључен.</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Онемогући на закључаном екрану</string>
+    <string name="lockscreen_power_menu_disabled_summary">Онемогући мени напајања на заштићеном закључаном екрану</string>
     <!-- Others settings -->
+    <string name="others_settings_title">Друга подешавања</string>
     <string name="additional_buttons_title">Додатна дугмад</string>
     <!-- Status bar -->
     <string name="status_bar_title">Статусна трака</string>
+    <string name="lockscreen_qs_disabled_title">Онемогући на закључаном екрану</string>
+    <string name="lockscreen_qs_disabled_summary">Онемогућите отворени статусни бар на заштићеном закључаном екрану</string>
     <string name="status_bar_quick_qs_pulldown_title">Брзи приступ</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s ивица статусне траке повлачи брза подешавања.</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Лево</string>
@@ -193,8 +205,9 @@
     <string name="network_traffic_units_megabytes">Мегабајта у секунди (MB/с)</string>
     <string name="network_traffic_show_units">Прикажи јединице</string>
     <string name="network_traffic_show_units_summary">Да ли приказати мерне јединице протока у на статусној траци</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">Детекција када је уређај у џепу</string>
+    <string name="pocket_judge_summary">Закључај екран и дугмиће када је уређај у џепу</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Прилагодите екран на основу доба дана и осветљености, како би се повећала читљивост и смањило напрезање очију.</string>
     <string name="live_display_mode">Режим приказа</string>
@@ -232,6 +245,8 @@
     <string name="live_display_color_profile_srgb_summary">Боје које одговарају простору боја sRGB.</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Боје које одговарају простору боја DCI-P3.</string>
+    <string name="live_display_reading_mode_title">Режим читања</string>
+    <string name="live_display_reading_mode_summary">Режим сивих тонова за дуготрајно читање</string>
     <string name="color_calibration_title">Калибрација боја</string>
     <string name="color_calibration_summary">Калибрација боја екрана</string>
     <string name="color_red_title">Црвена</string>
@@ -246,4 +261,11 @@
     <string name="adj_contrast_title">Контраст</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Аутоматско (доба дана)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Потез за снимак екрана</string>
+    <string name="swipe_to_screenshot_gesture_summary">Потез са три прста за снимак екрана</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Стил тамне теме</string>
+    <string name="dark_theme_style_default">Подразумевано</string>
+    <string name="dark_theme_style_black">Црна</string>
 </resources>

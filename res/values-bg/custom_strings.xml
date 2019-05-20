@@ -143,12 +143,14 @@
     <string name="display_cutout_force_fullscreen_title">Апликации на цял екран</string>
     <!-- In-call feedback -->
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_summary">Вибрация при успешно удостоверяване с пръстов отпечатък</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Двукратно почукване за заспиване</string>
     <string name="status_bar_double_tap_to_sleep_summary">Двукратно почукване върху лентата на състоянието изключва на дисплея</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Показване на артистична обложка</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">Объръщане реда на бутоните</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">Активиране на фенерчето</string>
     <string name="torch_long_press_power_gesture_desc">Активиране на фенерчето чрез зъдържане бутона за захранване, когато дисплеят е изключен</string>
@@ -162,11 +164,13 @@
     <string name="volbtn_music_controls_title">Управление на музика</string>
     <string name="volbtn_music_controls_summary">Смяна на песни чрез дълъго натискане на бутоните на звука докато дисплеят е изключен</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Забранено на заключен екран</string>
     <!-- Others settings -->
     <string name="others_settings_title">Други настройки</string>
     <string name="additional_buttons_title">Допълнителни бутони</string>
     <!-- Status bar -->
     <string name="status_bar_title">Лента на състоянието</string>
+    <string name="lockscreen_qs_disabled_title">Забранено на заключен екран</string>
     <string name="status_bar_quick_qs_pulldown_title">Бързи настройки</string>
     <string name="status_bar_quick_qs_pulldown_summary">Дръпнете %1$s лентата на състоянието за бързи настройки</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Вляво</string>
@@ -195,9 +199,6 @@
     <string name="network_traffic_units_megabytes">Мегабайта в секунда (MB/s)</string>
     <string name="network_traffic_show_units">Покажи единици</string>
     <string name="network_traffic_show_units_summary">Дали да се показват мерните единици за измерване на трафика в лентата на състоянието</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Плъзни за екранна снимка</string>
-    <string name="swipe_to_screenshot_gesture_summary">Плъзнете три пръста за заснемане на екранна снимка</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Разпознаване при носене</string>
     <string name="pocket_judge_summary">Заключване на екрана и бутоните, когато устройството и в джоба ви</string>
@@ -254,4 +255,11 @@
     <string name="adj_contrast_title">Контраст</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Автоматично (време през деня)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Плъзни за екранна снимка</string>
+    <string name="swipe_to_screenshot_gesture_summary">Плъзнете три пръста за заснемане на екранна снимка</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Стил на тъмна тема</string>
+    <string name="dark_theme_style_default">По подразбиране</string>
+    <string name="dark_theme_style_black">Черен</string>
 </resources>

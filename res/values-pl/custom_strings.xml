@@ -205,9 +205,6 @@
     <string name="network_traffic_units_megabytes">Megabajty na sekundę (MB/s)</string>
     <string name="network_traffic_show_units">Pokaż jednostki</string>
     <string name="network_traffic_show_units_summary">Określa, czy pokazywać jednostki pomiaru ruchu sieciowego na pasku stanu</string>
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Gest trójpalcowy</string>
-    <string name="swipe_to_screenshot_gesture_summary">Przeuń trzema palcami by zrobić screenshot</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Wykrywanie \'w kieszeni\'</string>
     <string name="pocket_judge_summary">Zablokuj ekran i przyciski kiedy urządzenie jest w kieszeni</string>
@@ -264,4 +261,11 @@
     <string name="adj_contrast_title">Kontrast</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automatyczny (pora dnia)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Gest trójpalcowy</string>
+    <string name="swipe_to_screenshot_gesture_summary">Przeuń trzema palcami by zrobić screenshot</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Styl ciemnego motywu</string>
+    <string name="dark_theme_style_default">Domyślny</string>
+    <string name="dark_theme_style_black">Czarny</string>
 </resources>

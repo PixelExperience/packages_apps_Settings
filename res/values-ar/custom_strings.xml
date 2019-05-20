@@ -140,14 +140,21 @@
     <string name="display_cutout_mode_normal">الإفتراضي</string>
     <string name="display_cutout_mode_hidden">مخفية</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">تطبيقات الشاشة الكاملة</string>
+    <string name="display_cutout_force_fullscreen_summary">إجبار التطبيقات على تجاهل مساحة الحز</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">إهتزاز للإشارة إلى حالة الإتصال</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">مصادقة البصمة</string>
+    <string name="fp_success_auth_vib_summary">اهتزاز عند نجاح المصادقة على بصمة الاصبع</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">الضغط مرتين لإطفاء الشاشة</string>
     <string name="status_bar_double_tap_to_sleep_summary">اضغط مرتين على شريط الحالة لإطفاء الشاشة</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">عرض الغلاف الفني للوسائط</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">عكس التخطيط</string>
+    <string name="nav_bar_layout_inverse_summary">عكس تخطيط أزرار شريط التنقل</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">الضغط مطولاً للكشاف</string>
     <string name="torch_long_press_power_gesture_desc">تشغيل المصباح بضغطة طويلة على زر الطاقة والشاشة مغلقة</string>
@@ -161,10 +168,15 @@
     <string name="volbtn_music_controls_title">التحكم في التشغيل</string>
     <string name="volbtn_music_controls_summary">تبديل مسار الموسيقى بضغطة طويلة على مفاتيح الصوت والشاشة مغلقة</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">تعطيل في شاشة القفل</string>
+    <string name="lockscreen_power_menu_disabled_summary">تعطيل قائمة التشغيل على شاشة القفل المؤمّنة</string>
     <!-- Others settings -->
+    <string name="others_settings_title">إعدادات أخرى</string>
     <string name="additional_buttons_title">أزرار إضافية</string>
     <!-- Status bar -->
     <string name="status_bar_title">شريط الحالة</string>
+    <string name="lockscreen_qs_disabled_title">تعطيل في شاشة القفل</string>
+    <string name="lockscreen_qs_disabled_summary">تعطيل قائمة التشغيل الموسعة على شاشة القفل المؤمّنة</string>
     <string name="status_bar_quick_qs_pulldown_title">السحب السريع لأسفل</string>
     <string name="status_bar_quick_qs_pulldown_summary">سحب الحافّة %1$s لشريط الحالة إلى أسفل يُظهر لوحة الإعدادات السّريعة</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">اليسار</string>
@@ -193,14 +205,17 @@
     <string name="network_traffic_units_megabytes">ميغابايت في الثانية (MB/s)</string>
     <string name="network_traffic_show_units">عرض الوحدات</string>
     <string name="network_traffic_show_units_summary">ما إذا كان سيتم عرض وحدات قياس حركة المرور في شريط الحالة أم لا</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">إستشعار الجيب</string>
+    <string name="pocket_judge_summary">قفل الشاشة والأزرار عندما يكون الجهاز في جيبك</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">تحسين الشاشة استناداً إلى الوقت من اليوم والظروف المحيطة لتحسين قابلية القراءة وتقليل إجهاد العين</string>
     <string name="live_display_mode">نمط العرض</string>
     <string name="live_display_color_temperature_title">درجة حرارة اللون</string>
     <string name="live_display_color_temperature_summary">النهار: <xliff:g id="day_temperature">%1$d</xliff:g>K  الليل: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">النهار</string>
+    <string name="live_display_night">الليل</string>
     <string name="live_display_outdoor_mode_title">وضع في الخارج التلقائي</string>
     <string name="live_display_outdoor_mode_summary">زيادة الإضاءة والإشباع تلقائياً تحت أشعة الشمس</string>
     <string name="live_display_low_power_title">تقليل استهلاك الطاقة</string>
@@ -234,9 +249,23 @@
     <string name="live_display_reading_mode_summary">وضع التدرج الرمادي للقراءة على المدى الطويل</string>
     <string name="color_calibration_title">معايرة الألوان</string>
     <string name="color_calibration_summary">معايرة الألوان الظاهرة على الشاشة</string>
+    <string name="color_red_title">أحمر</string>
+    <string name="color_green_title">أخضر</string>
+    <string name="color_blue_title">أزرق</string>
     <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">ضبط الصورة</string>
     <string name="picture_adjustment_summary">ضبط تدرج اللون والتشبع، والكثافة، والتباين</string>
+    <string name="adj_hue_title">تدرج اللون</string>
+    <string name="adj_saturation_title">التشبع</string>
+    <string name="adj_intensity_title">الكثافة</string>
+    <string name="adj_contrast_title">التباين</string>
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">تلقائي (الوقت من اليوم)</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">اسحب لأخذ لقطة للشاشة</string>
+    <string name="swipe_to_screenshot_gesture_summary">السحب بثلاثة أصابع لأخذ لقطة للشاشة</string>
+    <!-- Dark theme style -->
+    <string name="dark_theme_style_title">نمط السمة الداكنة</string>
+    <string name="dark_theme_style_default">الإفتراضي</string>
+    <string name="dark_theme_style_black">أسود</string>
 </resources>
