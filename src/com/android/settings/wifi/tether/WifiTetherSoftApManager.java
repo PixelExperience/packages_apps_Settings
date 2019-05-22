@@ -19,16 +19,6 @@ public class WifiTetherSoftApManager {
 
         @Override
         public void onNumClientsChanged(int numClients) {
-            // Do nothing - we don't care about changing anything here.
-        }
-
-        @Override
-        public void onStaConnected(String Macaddr, int numClients) {
-            mWifiTetherSoftApCallback.onNumClientsChanged(numClients);
-        }
-
-        @Override
-        public void onStaDisconnected(String Macaddr, int numClients) {
             mWifiTetherSoftApCallback.onNumClientsChanged(numClients);
         }
     };
