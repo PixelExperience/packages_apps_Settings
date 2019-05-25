@@ -32,7 +32,7 @@
         android:paddingStart="48dp"
         android:maxLines="2"
         android:ellipsize="end"
-        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textAppearance="@*android:style/TextAppearanceTitle"
         android:textColor="?android:attr/textColorPrimary"
         android:textAlignment="viewStart" />
 
