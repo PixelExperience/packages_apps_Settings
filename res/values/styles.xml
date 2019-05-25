@@ -310,7 +310,7 @@
     <style name="TextAppearance.Small" parent="@android:style/TextAppearance.Material.Small" />
     <style name="TextAppearance.Switch" parent="@android:style/TextAppearance.Material.Title" />
 
-    <style name="TextAppearance.CategoryTitle" parent="@android:style/TextAppearance.Material.Body2">
+    <style name="TextAppearance.CategoryTitle" parent="@*android:style/TextAppearancePreferenceCategory">
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
 
@@ -502,7 +502,7 @@
 
     <style name="device_info_dialog_value">
         <item name="android:textAlignment">viewStart</item>
-        <item name="android:textAppearance">@android:style/TextAppearance.Material.Body2</item>
+        <item name="android:textAppearance">@*android:style/TextAppearancePreferenceCategory</item>
         <item name="android:paddingBottom">24dp</item>
     </style>
 
