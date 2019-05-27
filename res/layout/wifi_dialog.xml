@@ -83,10 +83,19 @@
                         style="@style/wifi_item_label"
                         android:text="@string/wifi_security" />
 
+                <Spinner android:id="@+id/security_no_wpa3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/wifi_item_spinner"
+                        android:visibility="gone"
+                        android:prompt="@string/wifi_security"
+                        android:entries="@array/wifi_security_no_wpa3" />
+
                 <Spinner android:id="@+id/security"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         style="@style/wifi_item_spinner"
+                        android:visibility="gone"
                         android:prompt="@string/wifi_security"
                         android:entries="@array/wifi_security" />
             </LinearLayout>
