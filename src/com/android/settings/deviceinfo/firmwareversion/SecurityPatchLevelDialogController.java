@@ -70,8 +70,7 @@ public class SecurityPatchLevelDialogController implements View.OnClickListener 
      * Populates the security patch level field in the dialog and registers click listeners.
      */
     public void initialize() {
-        boolean showPatch = mContext.getResources().getBoolean(R.bool.config_show_security_patch_level);
-        if (TextUtils.isEmpty(mCurrentPatch) || !showPatch) {
+        if (TextUtils.isEmpty(mCurrentPatch)) {
             mDialog.removeSettingFromScreen(SECURITY_PATCH_LABEL_ID);
             mDialog.removeSettingFromScreen(SECURITY_PATCH_VALUE_ID);
             return;

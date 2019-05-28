@@ -34,10 +34,6 @@
     <!-- Whether notify user that switch data service -->
     <bool name="confirm_to_switch_data_service">false</bool>
 
-    <!-- Whether we should show the security patch level in
-         "About Phone" -->
-    <bool name="config_show_security_patch_level">true</bool>
-
     <!-- Device specific custom buttons package -->
     <string name="config_customButtonsPackage" translatable="false"></string>
 
