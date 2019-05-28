@@ -305,8 +305,6 @@ public class WifiDetailPreferenceController extends AbstractPreferenceController
          }
          else
              mSecurityPref.setDetailText(mAccessPoint.getSecurityString(false /* concise */));
-
-        mSecurityPref.setDetailText(mAccessPoint.getSecurityString(false /* concise */));
     }
 
     private void setupEntityHeader(PreferenceScreen screen) {
