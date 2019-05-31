@@ -55,7 +55,7 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
 
     private ListPreference mQuickPulldown;
     private PreferenceCategory mNetworkTrafficCategory;
-    private DropDownPreference mNetTrafficMode;
+    private SwitchPreference mNetTrafficEnabled;
     private SwitchPreference mNetTrafficAutohide;
     private DropDownPreference mNetTrafficUnits;
     private SwitchPreference mNetTrafficShowUnits;
@@ -80,12 +80,12 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
         if (!isNetworkTrafficAvailable()) {
             getPreferenceScreen().removePreference(mNetworkTrafficCategory);
         }else{
-            mNetTrafficMode = (DropDownPreference)
-                    findPreference(Settings.System.NETWORK_TRAFFIC_MODE);
-            mNetTrafficMode.setOnPreferenceChangeListener(this);
+            mNetTrafficEnabled = (SwitchPreference)
+                    findPreference(Settings.System.NETWORK_TRAFFIC_ENABLED);
+            mNetTrafficEnabled.setOnPreferenceChangeListener(this);
             int mode = Settings.System.getIntForUser(resolver,
-                    Settings.System.NETWORK_TRAFFIC_MODE, 0, UserHandle.USER_CURRENT);
-            mNetTrafficMode.setValue(String.valueOf(mode));
+                    Settings.System.NETWORK_TRAFFIC_ENABLED, 0, UserHandle.USER_CURRENT);
+            mNetTrafficEnabled.setChecked(mode != 0);
 
             mNetTrafficAutohide = (SwitchPreference)
                     findPreference(Settings.System.NETWORK_TRAFFIC_AUTOHIDE);
@@ -127,10 +127,10 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mQuickPulldown) {
             updateQuickPulldownSummary(Integer.parseInt((String) newValue));
-        }else if (preference == mNetTrafficMode) {
-            int mode = Integer.valueOf((String) newValue);
+        }else if (preference == mNetTrafficEnabled) {
+            int mode = ((boolean) newValue) ? 1 : 0;
             Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_MODE, mode);
+                    Settings.System.NETWORK_TRAFFIC_ENABLED, mode);
             updateNetworkTrafficEnabledStates(mode);
         } else if (preference == mNetTrafficUnits) {
             int units = Integer.valueOf((String) newValue);

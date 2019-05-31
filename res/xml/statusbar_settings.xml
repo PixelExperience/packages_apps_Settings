@@ -31,12 +31,10 @@
     <PreferenceCategory
         android:title="@string/network_traffic_settings_title"
         android:key="network_traffic">
-        <DropDownPreference
-            android:key="network_traffic_mode"
-            android:title="@string/network_traffic_mode_title"
-            android:entries="@array/network_traffic_mode_entries"
-            android:entryValues="@array/network_traffic_mode_values"
-            android:summary="%s"
+        <SwitchPreference
+            android:key="network_traffic_enabled"
+            android:title="@string/network_traffic_settings_title"
+            android:summary="@string/network_traffic_settings_summary"
             android:persistent="false" />
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
