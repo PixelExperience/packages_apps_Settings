@@ -22,9 +22,8 @@
     <!-- Suggestion cards -->
     <color name="suggestion_card_background">#fafafa</color>
 
-
     <!-- Switch bar -->
-    <color name="switch_bar_bg_activated_dark">#242424</color>
+    <color name="switch_bar_bg_activated_dark">@*android:color/custom_accent_color</color>
     <color name="switch_bar_bg_deactivated_dark">#333333</color>
 
     <!-- Storage bar -->
