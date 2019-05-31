@@ -185,15 +185,11 @@
     <!-- Network Traffic -->
     <string-array name="network_traffic_mode_entries" translatable="false">
         <item>@string/network_traffic_mode_disable</item>
-        <item>@string/network_traffic_mode_up</item>
-        <item>@string/network_traffic_mode_down</item>
         <item>@string/network_traffic_mode_all</item>
     </string-array>
     <string-array name="network_traffic_mode_values" translatable="false">
         <item>0</item>
         <item>1</item>
-        <item>2</item>
-        <item>3</item>
     </string-array>
     <string-array name="network_traffic_units_entries" translatable="false">
         <item>@string/network_traffic_units_kilobits</item>
