@@ -157,7 +157,9 @@ public class SwitchBar extends LinearLayout implements CompoundButton.OnCheckedC
 
     public void setTextViewLabelAndBackground(boolean isChecked) {
         mLabel = getResources().getString(isChecked ? mOnTextId : mOffTextId);
-        setBackgroundColor(isChecked ? mBackgroundActivatedColor : mBackgroundColor);
+        setBackgroundColor(isChecked ?
+                getResources().getColor(R.color.switch_bar_bg_activated_dark) :
+                getResources().getColor(R.color.switch_bar_bg_deactivated_dark));
         updateText();
     }
 
