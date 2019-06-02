@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Zobrazit rychlost přenosu dat ve stavové liště</string>
     <string name="network_traffic_mode_title">Režim zobrazení</string>
     <string name="network_traffic_mode_disable">Zakázáno</string>
-    <string name="network_traffic_mode_up">Pouze odchozí data</string>
-    <string name="network_traffic_mode_down">Pouze příchozí data</string>
     <string name="network_traffic_mode_all">Příchozí a odchozí data</string>
     <string name="network_traffic_autohide">Automaticky skrývat</string>
     <string name="network_traffic_autohide_summary">Skrýt indikátor síťového provozu, pokud není žádná aktivita</string>

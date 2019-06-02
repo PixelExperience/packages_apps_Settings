@@ -140,6 +140,7 @@
     <string name="display_cutout_mode_normal">Por defecto</string>
     <string name="display_cutout_mode_hidden">Agochados</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Aplicacións a pantalla completa</string>
     <!-- In-call feedback -->
     <!-- Fingerprint authentication vibration -->
     <!-- Double tap to sleep on status bar or lockscreen -->
@@ -181,8 +182,6 @@
     <string name="network_traffic_settings_summary">Amosar os niveis actuais do tráfico de rede na barra de estado</string>
     <string name="network_traffic_mode_title">Modo de visualización</string>
     <string name="network_traffic_mode_disable">Desactivado</string>
-    <string name="network_traffic_mode_up">Só subida</string>
-    <string name="network_traffic_mode_down">Só baixada</string>
     <string name="network_traffic_mode_all">Subida e baixada</string>
     <string name="network_traffic_autohide">Ocultar automáticamente</string>
     <string name="network_traffic_autohide_summary">Ocultar o monitor de tráfico cando non hai actividade</string>

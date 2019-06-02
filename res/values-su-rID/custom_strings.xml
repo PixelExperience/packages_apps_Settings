@@ -16,7 +16,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">فنگرپرنٹ سنسر کو اپنے فون قے سامنے طلاش کریں.</string>
     <!-- Notification light settings -->
     <!-- Manual provisioning support -->
     <!-- Generic stuff used everywhere -->

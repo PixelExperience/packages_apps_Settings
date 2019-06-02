@@ -176,6 +176,7 @@
     <!-- Status bar -->
     <string name="status_bar_title">狀態欄</string>
     <string name="lockscreen_qs_disabled_title">在鎖定畫面中停用</string>
+    <string name="lockscreen_qs_disabled_summary">在受保護的鎖定畫面停用擴展狀態列</string>
     <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
     <string name="status_bar_quick_qs_pulldown_summary">從狀態列的%1$s邊拉下快速設定</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">左</string>
@@ -192,8 +193,6 @@
     <string name="network_traffic_settings_summary">在狀態列中顯示目前的網路級別</string>
     <string name="network_traffic_mode_title">顯示模式</string>
     <string name="network_traffic_mode_disable">已停用</string>
-    <string name="network_traffic_mode_up">僅限上傳</string>
-    <string name="network_traffic_mode_down">僅限下載</string>
     <string name="network_traffic_mode_all">上傳和下載</string>
     <string name="network_traffic_autohide">自動隱藏</string>
     <string name="network_traffic_autohide_summary">沒有活動時隱藏流量監測器</string>
@@ -205,6 +204,8 @@
     <string name="network_traffic_show_units">顯示單位</string>
     <string name="network_traffic_show_units_summary">是否在狀態列中顯示流量單位</string>
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">口袋檢測</string>
+    <string name="pocket_judge_summary">設備位於口袋中時鎖定螢幕與按鈕</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
     <string name="live_display_mode">顯示模式</string>
@@ -259,5 +260,10 @@
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">自動 (一天之中)</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">滑動截圖</string>
+    <string name="swipe_to_screenshot_gesture_summary">同時滑動三支指頭以擷取螢幕畫面</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">暗色主題</string>
+    <string name="dark_theme_style_default">預設</string>
+    <string name="dark_theme_style_black">黑色</string>
 </resources>

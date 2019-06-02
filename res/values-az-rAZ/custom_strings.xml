@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Status sətrində hazırki şəbəkə trafik səviyyələrini göstər</string>
     <string name="network_traffic_mode_title">Göstərmə rejimi</string>
     <string name="network_traffic_mode_disable">Q-aktiv</string>
-    <string name="network_traffic_mode_up">Sadəcə yükləmə</string>
-    <string name="network_traffic_mode_down">Sadəcə endirmə</string>
     <string name="network_traffic_mode_all">Yükləmə və endirmə</string>
     <string name="network_traffic_autohide">Avtomatik gizlə</string>
     <string name="network_traffic_autohide_summary">Fəaliyyət olmasa trafik göstəricisini gizlət</string>

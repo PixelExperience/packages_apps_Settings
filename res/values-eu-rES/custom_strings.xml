@@ -165,8 +165,6 @@
     <string name="network_traffic_settings_summary">Erakutsi uneko sare-trafiko mailak egoera-barran</string>
     <string name="network_traffic_mode_title">Bistaratze modua</string>
     <string name="network_traffic_mode_disable">Desgaituta</string>
-    <string name="network_traffic_mode_up">Igoera besterik ez</string>
-    <string name="network_traffic_mode_down">Jaitsiera besterik ez</string>
     <string name="network_traffic_mode_all">Igoera eta jaitsiera</string>
     <string name="network_traffic_autohide">Ezkutatu automatikoki</string>
     <string name="network_traffic_autohide_summary">Ezkutatu trafikoaren monitorea jarduerarik ez badago</string>

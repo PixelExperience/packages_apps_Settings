@@ -190,8 +190,6 @@
     <string name="network_traffic_settings_summary">แสดงสถานะการรับส่งข้อมูลเครือข่ายปัจจุบันในแถบสถานะ</string>
     <string name="network_traffic_mode_title">โหมดการแสดงผล</string>
     <string name="network_traffic_mode_disable">ปิด</string>
-    <string name="network_traffic_mode_up">อัพโหลดเท่านั้น</string>
-    <string name="network_traffic_mode_down">ดาวน์โหลดเท่านั้น</string>
     <string name="network_traffic_mode_all">อัพโหลดและดาวน์โหลด</string>
     <string name="network_traffic_autohide">ซ่อนอัตโนมัติ</string>
     <string name="network_traffic_autohide_summary">ซ่อนการแสดงผลเมื่อมีไม่มีกิจกรรม</string>

@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Адлюстроўваць бягучую хуткасць злучэння ў радку стану</string>
     <string name="network_traffic_mode_title">Рэжым прагляду</string>
     <string name="network_traffic_mode_disable">Адключана</string>
-    <string name="network_traffic_mode_up">Толькі выходны трафік</string>
-    <string name="network_traffic_mode_down">Толькі ўваходны трафік</string>
     <string name="network_traffic_mode_all">Выходны і ўваходны трафік</string>
     <string name="network_traffic_autohide">Хаваць аўтаматычна</string>
     <string name="network_traffic_autohide_summary">Хаваць індыкатар трафіку, калі няма актыўнасці</string>

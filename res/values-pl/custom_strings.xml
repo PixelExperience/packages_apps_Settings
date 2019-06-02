@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Pokaż bieżące poziomy ruchu sieciowego na pasku stanu</string>
     <string name="network_traffic_mode_title">Tryb wyświetlania</string>
     <string name="network_traffic_mode_disable">Wyłączone</string>
-    <string name="network_traffic_mode_up">Tylko wysyłanie</string>
-    <string name="network_traffic_mode_down">Tylko pobieranie</string>
     <string name="network_traffic_mode_all">Wysyłanie i pobieranie</string>
     <string name="network_traffic_autohide">Autoukrywanie</string>
     <string name="network_traffic_autohide_summary">Ukryj monitor ruchu, przy braku aktywności</string>

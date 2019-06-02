@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Afficher les débits réseau actuels dans la barre d\'état</string>
     <string name="network_traffic_mode_title">Mode d\'affichage</string>
     <string name="network_traffic_mode_disable">Désactivé</string>
-    <string name="network_traffic_mode_up">Débit montant uniquement</string>
-    <string name="network_traffic_mode_down">Débit descendant uniquement</string>
     <string name="network_traffic_mode_all">Débits montant et descendant</string>
     <string name="network_traffic_autohide">Masquer automatiquement</string>
     <string name="network_traffic_autohide_summary">Masquer le moniteur réseau lorsqu\'il n\'y a pas d\'activité</string>

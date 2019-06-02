@@ -184,8 +184,6 @@
     <string name="network_traffic_settings_summary">Να εμφανίζονται τα τρέχοντα επίπεδα κίνησης δικτύου στη γραμμή κατάστασης</string>
     <string name="network_traffic_mode_title">Λειτουργία προβολής</string>
     <string name="network_traffic_mode_disable">Ανενεργή</string>
-    <string name="network_traffic_mode_up">Μόνο αποστολή</string>
-    <string name="network_traffic_mode_down">Μόνο λήψη</string>
     <string name="network_traffic_mode_all">Αποστολή και λήψη</string>
     <string name="network_traffic_autohide">Αυτόματη απόκρυψη</string>
     <string name="network_traffic_autohide_summary">Απόκρυψη κίνησης δικτύου όταν δεν υπάρχει δραστηριότητα</string>

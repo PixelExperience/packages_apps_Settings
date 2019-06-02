@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Muestra los niveles de tráfico de red actuales en la barra de estado</string>
     <string name="network_traffic_mode_title">Modo de visualización</string>
     <string name="network_traffic_mode_disable">Deshabilitado</string>
-    <string name="network_traffic_mode_up">Sólo subida</string>
-    <string name="network_traffic_mode_down">Sólo descarga</string>
     <string name="network_traffic_mode_all">Subida y descarga</string>
     <string name="network_traffic_autohide">Ocultar automáticamente</string>
     <string name="network_traffic_autohide_summary">Ocultar el monitor de tráfico cuando no hay actividad</string>

@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Відображати поточну швидкість з\'єднання в рядку стану</string>
     <string name="network_traffic_mode_title">Режим відображення</string>
     <string name="network_traffic_mode_disable">Вимкнено</string>
-    <string name="network_traffic_mode_up">Тільки вихідний трафік</string>
-    <string name="network_traffic_mode_down">Тільки вихідний трафік</string>
     <string name="network_traffic_mode_all">Вихідний та вхідний трафік</string>
     <string name="network_traffic_autohide">Приховувати автоматично</string>
     <string name="network_traffic_autohide_summary">Не відображати швидкість при відсутності активності</string>

@@ -140,14 +140,21 @@
     <string name="display_cutout_mode_normal">Predeterminat</string>
     <string name="display_cutout_mode_hidden">Ocult</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Aplicacions a pantalla completa</string>
+    <string name="display_cutout_force_fullscreen_summary">Fes que les aplicacions ignorin l’espai de l’notch</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">Vibració per indicar l\'estat de la trucada</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">Autenticació d\'empremtes digitals</string>
+    <string name="fp_success_auth_vib_summary">Vibrar en l’autenticació d’impremtes amb èxit</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Pica dues vegades per posar en repòs</string>
     <string name="status_bar_double_tap_to_sleep_summary">Pica dues vegades a la barra d\'estat per apagar la pantalla</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Mostra la coberta de l\'àlbum</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">Inverteix el disseny</string>
+    <string name="nav_bar_layout_inverse_summary">Inverteix el disseny dels botons de la barra de navegació</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">Pulsació llarga per la torxa</string>
     <string name="torch_long_press_power_gesture_desc">Activa la torxa fent una pulsació llarga del botó d\'apagat mentre la pantalla està apagada</string>
@@ -161,10 +168,15 @@
     <string name="volbtn_music_controls_title">Controla la reproducció</string>
     <string name="volbtn_music_controls_summary">Busca les pistes de música fent una pulsació llarga a les tecles de volum mentre la pantalla està apagada</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Desactiva a la pantalla de bloqueig</string>
+    <string name="lockscreen_power_menu_disabled_summary">Inhabiliteu el menú d’alimentació a la pantalla de bloqueig protegida</string>
     <!-- Others settings -->
+    <string name="others_settings_title">Configuració d\'altres</string>
     <string name="additional_buttons_title">Botons addicionals</string>
     <!-- Status bar -->
     <string name="status_bar_title">Barra d\'estat</string>
+    <string name="lockscreen_qs_disabled_title">Desactiva a la pantalla de bloqueig</string>
+    <string name="lockscreen_qs_disabled_summary">Inhabiliteu la barra d’estat ampliada a la pantalla de bloqueig protegida</string>
     <string name="status_bar_quick_qs_pulldown_title">Baixada ràpida</string>
     <string name="status_bar_quick_qs_pulldown_summary">La vora %1$s de la barra d\'estat desplega el panell d\'ajustos ràpids</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Esquerra</string>
@@ -181,8 +193,6 @@
     <string name="network_traffic_settings_summary">Mostra els nivells actuals de trànsit de xarxa a la barra d\'estat</string>
     <string name="network_traffic_mode_title">Mode de pantalla</string>
     <string name="network_traffic_mode_disable">Deshabilitat</string>
-    <string name="network_traffic_mode_up">Només pujada</string>
-    <string name="network_traffic_mode_down">Només baixada</string>
     <string name="network_traffic_mode_all">Pujada i baixada</string>
     <string name="network_traffic_autohide">Amaga automàticament</string>
     <string name="network_traffic_autohide_summary">Amaga el monitor de trànsit quan no hi hagi activitat</string>
@@ -194,6 +204,8 @@
     <string name="network_traffic_show_units">Mostra les unitats</string>
     <string name="network_traffic_show_units_summary">Si vols mostrar les unitats de mesura del trànsit a la barra d\'estat</string>
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">Detecció de butxaca</string>
+    <string name="pocket_judge_summary">Bloquejar la pantalla i els botons quan el dispositiu es troba a la butxaca</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimitza la teva pantalla basant-se en l\'hora del dia i les condicions ambientals per millorar la llegibilitat i reduir la fatiga ocular</string>
     <string name="live_display_mode">Mode de pantalla</string>
@@ -248,5 +260,10 @@
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automàtic (segons l\'hora del dia)</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Fes lliscar els dits per fer captura de pantalla</string>
+    <string name="swipe_to_screenshot_gesture_summary">Passeu tres dits per fer una captura de pantalla</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Estil del tema fosc</string>
+    <string name="dark_theme_style_default">Per defecte</string>
+    <string name="dark_theme_style_black">Negre</string>
 </resources>
