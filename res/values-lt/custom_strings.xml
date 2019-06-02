@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Rodyti dabartinius tinklo srauto lygius būsenos juostoje</string>
     <string name="network_traffic_mode_title">Rodymo režimas</string>
     <string name="network_traffic_mode_disable">Išjungta</string>
-    <string name="network_traffic_mode_up">Įkelti tik</string>
-    <string name="network_traffic_mode_down">Tik atsisiųsti</string>
     <string name="network_traffic_mode_all">Įkelti ir atsisiųsti</string>
     <string name="network_traffic_autohide">Automatiškai slėpti</string>
     <string name="network_traffic_autohide_summary">Slėpti tinklo indikatorių, kai nėra jokios veiklos</string>

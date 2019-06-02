@@ -167,8 +167,6 @@
     <!-- Status bar - Network Traffic -->
     <string name="network_traffic_mode_title">Visningsläge</string>
     <string name="network_traffic_mode_disable">Inaktiverat</string>
-    <string name="network_traffic_mode_up">Bara upp</string>
-    <string name="network_traffic_mode_down">Bara ner</string>
     <string name="network_traffic_mode_all">Uppladdning och nerladdning</string>
     <string name="network_traffic_autohide">Göm automatiskt</string>
     <string name="network_traffic_units_kilobits">Kilobits per sekund (kb/s)</string>

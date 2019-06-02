@@ -110,8 +110,6 @@
     <string name="network_traffic_settings_summary">Seall na leibheilean trafaige làithreach air bàr na staid</string>
     <string name="network_traffic_mode_title">Modh an taisbeanaidh</string>
     <string name="network_traffic_mode_disable">À comas</string>
-    <string name="network_traffic_mode_up">Luchdadh suas a-mhàin</string>
-    <string name="network_traffic_mode_down">Luchdadh sìos a-mhàin</string>
     <string name="network_traffic_mode_all">Luchdadh suas is sìos</string>
     <string name="network_traffic_autohide">Falaich gu fèin-obrachail</string>
     <string name="network_traffic_autohide_summary">Cuir monatair trafaig an lìonraidh am falach gu fèin-obrachail mur eil gnìomhachd ann</string>

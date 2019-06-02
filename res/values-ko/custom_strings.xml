@@ -71,7 +71,7 @@
     <string name="hardware_keys_long_tap_key_title">길게 누르기</string>
     <string name="hardware_keys_swipe_tap_title">스와이프 동작</string>
     <string name="hardware_keys_long_tap_title">길게 누르기 동작</string>
-    <string name="button_wake_title">화면 켜기</string>
+    <string name="button_wake_title">기기 깨우기</string>
     <string name="camera_sleep_on_release_title">화면 엿보기</string>
     <string name="camera_sleep_on_release_summary">버튼을 반만 누르고 있는 동안 화면을 계속 켜두기</string>
     <string name="camera_launch_title">카메라 실행</string>
@@ -145,7 +145,7 @@
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">통화 상태를 나타내는 진동</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fp_success_auth_vib_title">지문 인증</string>
+    <string name="fp_success_auth_vib_title">지문 인식</string>
     <string name="fp_success_auth_vib_summary">지문이 인식되면 진동이 울립니다</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">두 번 두드려 화면 끄기</string>
@@ -169,14 +169,14 @@
     <string name="volbtn_music_controls_summary">화면이 꺼진 상태에서 볼륨 키를 길게 눌러 음악 트랙 탐색</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">잠금화면에서 비활성화</string>
-    <string name="lockscreen_power_menu_disabled_summary">잠금화면에서 전원메뉴 비활성화</string>
+    <string name="lockscreen_power_menu_disabled_summary">잠금화면에서 전원 메뉴 비활성화</string>
     <!-- Others settings -->
     <string name="others_settings_title">기타 설정</string>
     <string name="additional_buttons_title">기타 버튼</string>
     <!-- Status bar -->
     <string name="status_bar_title">상태 표시줄</string>
-    <string name="lockscreen_qs_disabled_title">잠금 화면에서 사용 안 함</string>
-    <string name="lockscreen_qs_disabled_summary">잠금 화면에서 설정 패널 비활성화</string>
+    <string name="lockscreen_qs_disabled_title">잠금화면에서 비활성화</string>
+    <string name="lockscreen_qs_disabled_summary">잠금화면에서 설정 패널 비활성화</string>
     <string name="status_bar_quick_qs_pulldown_title">빠르게 설정 패널 열기</string>
     <string name="status_bar_quick_qs_pulldown_summary">상태 표시줄의 %1$s 모서리를 내려 설정 패널을 봅니다.</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">왼쪽</string>
@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">상태 표시줄에 현재 네트워크 트래픽 수준 표시</string>
     <string name="network_traffic_mode_title">다스플레이 모드</string>
     <string name="network_traffic_mode_disable">비활성화 됨</string>
-    <string name="network_traffic_mode_up">업로드만</string>
-    <string name="network_traffic_mode_down">다운로드 만</string>
     <string name="network_traffic_mode_all">업로드와 다운로드</string>
     <string name="network_traffic_autohide">자동으로 숨기기</string>
     <string name="network_traffic_autohide_summary">활동이 없을 때 자동으로 트래픽 모니터를 숨깁니다</string>
@@ -262,7 +260,10 @@
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">자동 (시간에 따라)</string>
     <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">화면을 스와이프 하며 스크린샷 찍기</string>
+    <string name="swipe_to_screenshot_gesture_title">화면을 스와이프 하여 스크린샷 찍기</string>
     <string name="swipe_to_screenshot_gesture_summary">세 손가락을 스와이프 해서 스크린샷을 찍습니다</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">어두운 테마 스타일</string>
+    <string name="dark_theme_style_default">기본값</string>
+    <string name="dark_theme_style_black">완전히 어두운 검정색</string>
 </resources>
