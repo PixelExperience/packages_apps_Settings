@@ -435,6 +435,10 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements
             if (!config.hasFeature(FEATURE_READING_ENHANCEMENT)) {
                 result.add(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
             }
+            if (ColorDisplayManager.isNightDisplayAvailable(context)) {
+                result.add(KEY_LIVE_DISPLAY);
+                result.add(KEY_LIVE_DISPLAY_TEMPERATURE);
+            }
             return result;
         }
 
