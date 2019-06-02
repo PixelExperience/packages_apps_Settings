@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Näyttää verkon nopeuden tilapalkissa</string>
     <string name="network_traffic_mode_title">Näyttötila</string>
     <string name="network_traffic_mode_disable">Pois</string>
-    <string name="network_traffic_mode_up">Vain lähetys</string>
-    <string name="network_traffic_mode_down">Vain lataus</string>
     <string name="network_traffic_mode_all">Lähetys ja lataus</string>
     <string name="network_traffic_autohide">Piilota automaattisesti</string>
     <string name="network_traffic_autohide_summary">Piilota verkkoliikenne kun toimintaa ei ole</string>

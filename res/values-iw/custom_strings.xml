@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">הצג את מהירות תעבורת הרשת בזמן אמת בשורת המצב</string>
     <string name="network_traffic_mode_title">מצב תצוגה</string>
     <string name="network_traffic_mode_disable">כבוי</string>
-    <string name="network_traffic_mode_up">העלאה בלבד</string>
-    <string name="network_traffic_mode_down">הורדה בלבד</string>
     <string name="network_traffic_mode_all">הורדה והעלאה</string>
     <string name="network_traffic_autohide">הסתרה אוטומטית</string>
     <string name="network_traffic_autohide_summary">מנטר תעבורת הרשת יוסתר כאשר אין פעילות</string>

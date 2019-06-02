@@ -134,10 +134,15 @@
     <!-- Lock screen cover art -->
     <!-- Button that controls inversion of layout of navigation bar -->
     <!-- Torch long press power button -->
+    <string name="torch_long_press_power_timeout_1min">1 minuto</string>
+    <string name="torch_long_press_power_timeout_2min">2 minuto</string>
+    <string name="torch_long_press_power_timeout_5min">5 minuto</string>
+    <string name="torch_long_press_power_timeout_10min">10 minuto</string>
     <!-- Volume control playback -->
     <!-- Power menu on lockscreen -->
     <!-- Others settings -->
     <!-- Status bar -->
+    <string name="lockscreen_qs_disabled_title">Huwag paganahin sa lock screen</string>
     <!-- Status bar - icons -->
     <!-- Status bar - Network Traffic -->
     <!-- Pocket judge -->

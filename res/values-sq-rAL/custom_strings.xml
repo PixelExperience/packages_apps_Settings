@@ -121,8 +121,6 @@
     <string name="network_traffic_settings_summary">Shfaq nivelin aktual të trafikut të rrjetit në shiritin e statusit</string>
     <string name="network_traffic_mode_title">Mënyra e shfaqjes</string>
     <string name="network_traffic_mode_disable">I çaktivizuar</string>
-    <string name="network_traffic_mode_up">Vetëm Ngarkimin</string>
-    <string name="network_traffic_mode_down">Vetëm Shkarkimin</string>
     <string name="network_traffic_mode_all">Ngarkim dhe Shkarkim</string>
     <string name="network_traffic_autohide">Vetëfshehje</string>
     <string name="network_traffic_autohide_summary">Fsheh monitoruesin e trafikut kur ska asnjë aktivitet</string>

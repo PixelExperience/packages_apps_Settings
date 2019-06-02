@@ -170,8 +170,6 @@
     <string name="network_traffic_settings_summary">ಸ್ಥಿತಿಪಟ್ಟಿಕೆಯಲ್ಲಿ ಪ್ರಸ್ತುತ ಜಾಲದ ಸಾಗಾಟ ಮಟ್ಟಗಳನ್ನು ತೋರಿಸು</string>
     <string name="network_traffic_mode_title">ಪ್ರದರ್ಶನ ರೀತಿ</string>
     <string name="network_traffic_mode_disable">ಅಶಕ್ತ</string>
-    <string name="network_traffic_mode_up">ಏರುವಿಕೆ ಮಾತ್ರ</string>
-    <string name="network_traffic_mode_down">ಇಳಿಸುವಿಕೆ ಮಾತ್ರ</string>
     <string name="network_traffic_mode_all">ಏರುವಿಕೆ ಮತ್ತು ಇಳಿಸುವಿಕೆ</string>
     <string name="network_traffic_autohide">ಸ್ವಯಂ ಅವಿಸಿಡು</string>
     <string name="network_traffic_autohide_summary">ಯಾವುದೇ ಚಟುವಟಿಕೆ ಇಲ್ಲದಿದ್ದಾಗ ಸಾಗಾಟ ತೋರುಕವನ್ನು ಅಡಗಿಸು</string>

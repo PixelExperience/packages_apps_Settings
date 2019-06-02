@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Aktuellen Datenverkehr in der Statusleiste anzeigen</string>
     <string name="network_traffic_mode_title">Anzeigemodus</string>
     <string name="network_traffic_mode_disable">Deaktiviert</string>
-    <string name="network_traffic_mode_up">Nur Upload</string>
-    <string name="network_traffic_mode_down">Nur Download</string>
     <string name="network_traffic_mode_all">Upload und Download</string>
     <string name="network_traffic_autohide">Automatisch ausblenden</string>
     <string name="network_traffic_autohide_summary">Datenverkehr-Anzeige bei Inaktivität ausblenden</string>
@@ -265,4 +263,7 @@
     <string name="swipe_to_screenshot_gesture_title">Wischen für Screenshot</string>
     <string name="swipe_to_screenshot_gesture_summary">Wische mit drei Fingern für Screenshot</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Dunkler stil thema</string>
+    <string name="dark_theme_style_default">Standard/Default</string>
+    <string name="dark_theme_style_black">Schwarz</string>
 </resources>

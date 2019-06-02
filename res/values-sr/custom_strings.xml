@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Прикажи тренутни проток мрежног саобраћаја у статусној траци</string>
     <string name="network_traffic_mode_title">Режим приказа</string>
     <string name="network_traffic_mode_disable">Онемогућено</string>
-    <string name="network_traffic_mode_up">Отпреми само</string>
-    <string name="network_traffic_mode_down">Само преузимање</string>
     <string name="network_traffic_mode_all">Слање и преузимање</string>
     <string name="network_traffic_autohide">Аутоматски сакриј</string>
     <string name="network_traffic_autohide_summary">Сакриј контролу протока у одсуству активности</string>

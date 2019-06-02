@@ -193,8 +193,6 @@
     <string name="network_traffic_settings_summary">Hiển thị mức lưu lượng mạng hiện tại trên thanh trạng thái</string>
     <string name="network_traffic_mode_title">Chế độ hiển thị</string>
     <string name="network_traffic_mode_disable">Tắt</string>
-    <string name="network_traffic_mode_up">Chỉ tải lên</string>
-    <string name="network_traffic_mode_down">Chỉ tải xuống</string>
     <string name="network_traffic_mode_all">Tải lên và tải xuống</string>
     <string name="network_traffic_autohide">Tự động ẩn</string>
     <string name="network_traffic_autohide_summary">Ẩn giám sát lưu lượng mạng khi không có hoạt động</string>
@@ -265,4 +263,7 @@
     <string name="swipe_to_screenshot_gesture_title">Vuốt để chụp màn hình</string>
     <string name="swipe_to_screenshot_gesture_summary">Vuốt ba ngón tay để chụp màn hình</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Chế độ nền tối</string>
+    <string name="dark_theme_style_default">Mặc định</string>
+    <string name="dark_theme_style_black">Đen</string>
 </resources>

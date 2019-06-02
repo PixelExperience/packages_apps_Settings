@@ -125,8 +125,6 @@
     <string name="network_traffic_settings_summary">Amosar los niveles actuales del tráficu de rede na barra d\'estáu</string>
     <string name="network_traffic_mode_title">Mou de pantalla</string>
     <string name="network_traffic_mode_disable">Deshabilitáu</string>
-    <string name="network_traffic_mode_up">Sólo xubida</string>
-    <string name="network_traffic_mode_down">Sólo descarga</string>
     <string name="network_traffic_mode_all">Xubida y descarga</string>
     <string name="network_traffic_autohide">Tapecer automáticamente</string>
     <string name="network_traffic_autohide_summary">Tapecer el monitor de tráficu cuando nun heba actividá</string>
