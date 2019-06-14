@@ -432,6 +432,10 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements I
             if (!hardwareManager.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
                 result.add(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
             }
+            if (ColorDisplayController.isAvailable(context)) {
+                result.add(KEY_LIVE_DISPLAY);
+                result.add(KEY_LIVE_DISPLAY_TEMPERATURE);
+            }
             return result;
         }
 
