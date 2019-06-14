@@ -44,7 +44,7 @@
     <string name="reset">รีเซ็ต</string>
     <!-- Buttons -->
     <string name="button_pref_title">ปุ่ม</string>
-    <string name="navigation_bar_title">ปุ่มและรูปแบบ</string>
+    <string name="navigation_bar_title">แถบนำทาง</string>
     <string name="hardware_keys_power_key_title">ปุ่มเพาเวอร์</string>
     <string name="hardware_keys_home_key_title">ปุ่มหน้าหลัก</string>
     <string name="hardware_keys_back_key_title">ปุ่มย้อนกลับ</string>
@@ -141,6 +141,7 @@
     <string name="display_cutout_mode_hidden">ซ่อน</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">แอพแบบเต็มหน้าจอ</string>
+    <string name="display_cutout_force_fullscreen_summary">บังคับแอปให้ละเลยจุดที่บาก</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">สั่นเพื่อระบุสถานะการโทร</string>
     <!-- Fingerprint authentication vibration -->
@@ -168,12 +169,14 @@
     <string name="volbtn_music_controls_summary">ค้นหาเพลงด้วยการกดปุ่มปรับระดับเสียงในขณะที่ปิดหน้าจอ</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">ปิดการใช้งานบนหน้าจอล็อค</string>
+    <string name="lockscreen_power_menu_disabled_summary">ปิดการใช้งานเมนูพาวเวอร์บนหน้าจอล็อคที่ถูกป้องกัน</string>
     <!-- Others settings -->
     <string name="others_settings_title">การตั้งค่าอื่น ๆ</string>
     <string name="additional_buttons_title">ปุ่มเพิ่มเติม</string>
     <!-- Status bar -->
     <string name="status_bar_title">แถบสถานะ</string>
     <string name="lockscreen_qs_disabled_title">ปิดการใช้งานบนหน้าจอล็อค</string>
+    <string name="lockscreen_qs_disabled_summary">ปิดการใช้งานแถบสถานะที่ถูกขยายบนหน้าจอล็อคที่ถูกป้องกัน</string>
     <string name="status_bar_quick_qs_pulldown_title">ปัดแถบสถานะลงอย่างเร็ว</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s ปัดที่มุมของแถบการแจ้งเตือนเพื่อเปิดแผงการตั้งค่าอย่างรวดเร็ว</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">ซ้าย</string>
@@ -199,11 +202,16 @@
     <string name="network_traffic_units_kilobytes">กิโลไบต์ต่อวินาที (kB/s)</string>
     <string name="network_traffic_units_megabytes">เมกะไบต์ต่อวินาที (MB/s)</string>
     <string name="network_traffic_show_units">แสดงหน่วย</string>
+    <string name="network_traffic_show_units_summary">จะแสดงหน่วยการวัดการจราจรในแถบสถานะหรือไม่</string>
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">การตรวจจับขณะอยู่ในกระเป๋า</string>
+    <string name="pocket_judge_summary">ล็อคหน้าจอและปุ่มเมื่ออุปกรณ์ของคุณอยู่ในกระเป๋า</string>
     <!-- LiveDisplay -->
+    <string name="live_display_summary">ปรับหน้าจอแสดงผลให้เหมาะสมตามเวลาของวันและสภาพแวดล้อมเพื่อปรับปรุงความสามารถในการอ่านและลดอาการปวดตา</string>
     <string name="live_display_mode">โหมดการแสดงผล</string>
     <string name="live_display_color_temperature_title">อุณหภูมิสี</string>
     <string name="live_display_color_temperature_summary">กลางวัน: <xliff:g id="day_temperature">%1$d</xliff:g>K  กลางคืน: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
     <string name="live_display_day">กลางวัน</string>
     <string name="live_display_night">กลางคืน</string>
     <string name="live_display_outdoor_mode_title">โหมดกลางแจ้งอัตโนมัติ</string>
@@ -221,10 +229,12 @@
     <string name="live_display_color_profile_dynamic_summary">สีที่เพิ่มขึ้นและขาวสว่าง</string>
     <string name="live_display_color_profile_cinema_title">ภาพยนตร์</string>
     <string name="live_display_color_profile_cinema_summary">คุณภาพสีที่สมบูรณ์แบบสำหรับวิดีโอ</string>
+    <string name="live_display_color_profile_astronomy_title">ดาราศาสตร์</string>
     <string name="live_display_color_profile_astronomy_summary">สีแดงเข้มสำหรับรักษาสายตาตอนกลางคืน</string>
     <string name="live_display_color_profile_photography_title">การถ่ายภาพ</string>
     <string name="live_display_color_profile_photography_summary">คุณภาพสีที่สมบูรณ์แบบสำหรับภาพถ่าย</string>
     <string name="live_display_color_profile_basic_title">พื้นฐาน</string>
+    <string name="live_display_color_profile_basic_summary">ใช้จอแสดงผลที่ไม่ได้ปรับเทียบ</string>
     <string name="live_display_color_profile_adaptive_title">ปรับแต่ง</string>
     <string name="live_display_color_profile_adaptive_summary">สีปรับให้เข้ากับสภาพแวดล้อม</string>
     <string name="live_display_color_profile_reading_title">อ่านหนังสือ</string>
@@ -232,7 +242,9 @@
     <string name="live_display_color_profile_srgb_title">sRGB</string>
     <string name="live_display_color_profile_srgb_summary">ปรับสีให้ถูกต้องกับพื้นที่สี sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">ปรับสีให้ถูกต้องกับพื้นที่สี DCI-P3</string>
     <string name="live_display_reading_mode_title">โหมดการอ่าน</string>
+    <string name="live_display_reading_mode_summary">โหมดสีเทาสำหรับการอ่านระยะยาว</string>
     <string name="color_calibration_title">การปรับเทียบสี</string>
     <string name="color_calibration_summary">ปรับเทียบสีบนจอ</string>
     <string name="color_red_title">แดง</string>
@@ -246,6 +258,12 @@
     <string name="adj_intensity_title">ความเข้ม</string>
     <string name="adj_contrast_title">คอนทราสต์</string>
     <!-- LiveDisplay - Custom theme mode -->
+    <string name="systemui_theme_time">อัตโนมัติ (ตามเวลาของวัน)</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">ปัดนิ้วเพื่อจับภาพหน้าจอ</string>
+    <string name="swipe_to_screenshot_gesture_summary">ใช้สามนิ้วปัดเพื่อถ่ายภาพหน้าจอ</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">ลักษณะธีมมืด</string>
+    <string name="dark_theme_style_default">ค่าเริ่มต้น</string>
+    <string name="dark_theme_style_black">สีดำ</string>
 </resources>

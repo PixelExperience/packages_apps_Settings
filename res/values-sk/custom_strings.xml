@@ -141,16 +141,20 @@
     <string name="display_cutout_mode_hidden">Skryté</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikácie v plnom rozlíšení</string>
+    <string name="display_cutout_force_fullscreen_summary">Prinútiť aplikácie ignorovať výrez</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrovanie</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fp_success_auth_vib_title">Autentifikácia odtlačkom prsta</string>
+    <string name="fp_success_auth_vib_summary">Vibrovať po úspešnom rozpoznaní odtlačku prsta</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Uspať dvojitým poklepaním</string>
     <string name="status_bar_double_tap_to_sleep_summary">Vypnutie obrazovky dvojitým kliknutím na stavový riadok</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Zobraziť obal médií</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">Invertovať rozloženie</string>
+    <string name="nav_bar_layout_inverse_summary">Invertovať rozloženie tlačidiel navigačného panelu</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">Dlhé stlačenie zapne Baterku</string>
     <string name="torch_long_press_power_gesture_desc">Keď obrazovka je vypnutá, dlhé zatlačením tlačidla Napájanie zapne Baterku</string>
@@ -165,11 +169,14 @@
     <string name="volbtn_music_controls_summary">Dlhé stlačenie tlačidiel hlasitosti počas vypnutej obrazovky prepne hudobné stopy</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Vypnúť na zamknutej obrazovke</string>
+    <string name="lockscreen_power_menu_disabled_summary">Zakázať menu tlačidla Napájanie na obrazovke uzamknutia</string>
     <!-- Others settings -->
     <string name="others_settings_title">Ostatné nastavenia</string>
     <string name="additional_buttons_title">Ďalšie tlačidlá</string>
     <!-- Status bar -->
     <string name="status_bar_title">Stavový riadok</string>
+    <string name="lockscreen_qs_disabled_title">Zakázať na obrazovke uzamknutia</string>
+    <string name="lockscreen_qs_disabled_summary">Zakázať rozšírenú stavovú lištu na obrazovke uzamknutia</string>
     <string name="status_bar_quick_qs_pulldown_title">Rýchle vysunutie</string>
     <string name="status_bar_quick_qs_pulldown_summary">Potiahnutím stavového riadku dolu zo strany: %1$s, sa vysunie lišta rýchlych nastavení</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Vľavo</string>
@@ -197,6 +204,7 @@
     <string name="network_traffic_show_units">Zobrazovať jednotky</string>
     <string name="network_traffic_show_units_summary">Zobrazenie jednotiek merania sieť. prevádzky v stavovom riadku</string>
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">Detekcia režimu Vo vrecku</string>
     <string name="pocket_judge_summary">Zamknúť obrazovku a tlačidlá ak je zariadenie vo vačku</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalizovať vašu obrazovku na základe dennej doby a podmienok okolia na zlepšenie čitateľnosti a zníženia únavy očí</string>
@@ -255,4 +263,7 @@
     <string name="swipe_to_screenshot_gesture_title">Screenshot potiahnutím</string>
     <string name="swipe_to_screenshot_gesture_summary">Screenshot potiahnutím tromi prstami</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Štýl tmavého motívu</string>
+    <string name="dark_theme_style_default">Predvolené</string>
+    <string name="dark_theme_style_black">Čierna</string>
 </resources>

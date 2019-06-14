@@ -23,6 +23,7 @@
     <string name="lights_category_title">Tetapan lampu</string>
     <string name="notification_light_title">Lampu notifikasi</string>
     <string name="battery_light_title">Lampu bateri</string>
+    <string name="battery_low_pulse_title">Kelip jika bateri rendah</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> ialah <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">dilumpuhkan</string>
@@ -43,12 +44,15 @@
     <string name="reset">Tetapkan semula</string>
     <!-- Buttons -->
     <string name="button_pref_title">Butang</string>
+    <string name="navigation_bar_title">Bar navigasi</string>
+    <string name="hardware_keys_power_key_title">Butang kuasa</string>
     <string name="hardware_keys_home_key_title">Butang \"rumah\"</string>
     <string name="hardware_keys_back_key_title">Butang kembali</string>
     <string name="hardware_keys_menu_key_title">Butang menu</string>
     <string name="hardware_keys_assist_key_title">Butang Carian</string>
     <string name="hardware_keys_appswitch_key_title">Butang terdahulu</string>
     <string name="hardware_keys_camera_key_title">Butang kamera</string>
+    <string name="hardware_keys_volume_keys_title">Butang nada</string>
     <string name="hardware_keys_short_press_title">Tekan sekejap sahaja</string>
     <string name="hardware_keys_long_press_title">Tekan dengan lama</string>
     <string name="hardware_keys_double_tap_title">Tindakan sentuh dua kali</string>
@@ -90,6 +94,7 @@
     <string name="ambient_play_lockscreen_title">Paparkan lagu pada skrin kunci</string>
     <string name="ambient_play_lockscreen_summary">5</string>
     <string name="ambient_play_notifications_title">Notifikasi</string>
+    <string name="ambient_play_notifications_summary">Paparkan notifikasi di skrinkunci apabila lagu dikenali</string>
     <string name="ambient_play_switch_bar_on">Dihidupkan</string>
     <string name="ambient_play_switch_bar_off">Dimatikan</string>
     <string name="ambient_play_help_text">Apabila musik dimainkan berdekatan dengan peranti, nama dan tajuk lagu akan dapat dilihat. Ianya akan mempengaruhi penggunaan data dan bateri jika fungsi ini dihidupkan.</string>
@@ -104,8 +109,14 @@
     <string name="ambient_play_history_menu_remove_all">Buang semua</string>
     <string name="ambient_play_history_menu_add_to_home">Tambahkan pada Paparan Utama</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Adakah anda pasti?</string>
+    <string name="ambient_play_saving_options_title">Tetapan simpanan</string>
+    <string name="ambient_play_saving_options_summary">Tetapan untuk mengurangkan menggunaan bateri dan rangkaian</string>
+    <string name="ambient_play_saving_options_low_battery_title">Bateri lemah</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Matikan pengiktirafan apabila bateri lemah</string>
     <string name="ambient_play_saving_options_mobile_data_title">Data mobile</string>
     <string name="ambient_play_saving_options_mobile_data_summary">Matikan pengesan wifi apabila data dihidupkan</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Tempoh tenang</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Aktifkan tempoh tenang</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Masa mula</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">Masa tamat</string>
     <!-- Face auto unlock -->
@@ -113,19 +124,47 @@
     <string name="face_auto_unlock_summary">Tutup skrin kunci selepas face unlock</string>
     <!-- Advanced restart options -->
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Profil optimasi</string>
+    <string name="thermal_control_per_app_default">Tiada optimasi</string>
+    <string name="thermal_control_per_app_benchmark">Prestasi</string>
+    <string name="thermal_control_per_app_games">Permainan</string>
+    <string name="thermal_control_per_app_browser">Pelayar</string>
+    <string name="thermal_control_per_app_dialer">Pendail</string>
+    <string name="thermal_control_per_app_camera">Kamera</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Kelakuan notch</string>
+    <string name="display_cutout_mode_normal">Lalai</string>
     <string name="display_cutout_mode_hidden">Potongan_paparan_disembunyikan</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Aplikasi skrin penuh</string>
+    <string name="display_cutout_force_fullscreen_summary">Paksa aplikasi untuk abaikan ruang notch</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">Getar untuk nyatakan status panggilan</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">Pengesahan cap jari</string>
+    <string name="fp_success_auth_vib_summary">Getar apabila berjaya pengesahan cap jari</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Ketik untuk tidur</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Ketik dua kali distatus bar untuk tutup paparan</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Paparkan seni cover media</string>
     <!-- Button that controls inversion of layout of navigation bar -->
     <!-- Torch long press power button -->
+    <string name="torch_long_press_power_gesture_title">Tekan lama untuk lampu suluh</string>
+    <string name="torch_long_press_power_gesture_desc">Aktifkan lampu suluh dengan menekan lama butang kuasa apabila skrin dimatikan</string>
+    <string name="torch_long_press_power_timeout_title">Tutup lampu suluh secara automatik</string>
+    <string name="torch_long_press_power_timeout_never">Tiada</string>
+    <string name="torch_long_press_power_timeout_1min">1 minit</string>
+    <string name="torch_long_press_power_timeout_2min">2 minit</string>
+    <string name="torch_long_press_power_timeout_5min">5 minit</string>
+    <string name="torch_long_press_power_timeout_10min">10 minit</string>
     <!-- Volume control playback -->
+    <string name="volbtn_music_controls_title">Kawalan permainan</string>
     <!-- Power menu on lockscreen -->
     <!-- Others settings -->
+    <string name="additional_buttons_title">Butang tambahan</string>
     <!-- Status bar -->
+    <string name="status_bar_title">Bar status</string>
     <!-- Status bar - icons -->
     <!-- Status bar - Network Traffic -->
     <!-- Pocket judge -->
