@@ -141,8 +141,11 @@
     <string name="display_cutout_mode_hidden">Скрит</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Апликации на цял екран</string>
+    <string name="display_cutout_force_fullscreen_summary">Принуждаване приложенията да игнорират пространството около прореза</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">Вибриране за показване състоянието на повикването</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">Удостоверяване с пръстов отпечатък</string>
     <string name="fp_success_auth_vib_summary">Вибрация при успешно удостоверяване с пръстов отпечатък</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Двукратно почукване за заспиване</string>
@@ -151,6 +154,7 @@
     <string name="lockscreen_media_art_title">Показване на артистична обложка</string>
     <!-- Button that controls inversion of layout of navigation bar -->
     <string name="nav_bar_layout_inverse_title">Объръщане реда на бутоните</string>
+    <string name="nav_bar_layout_inverse_summary">Обратно разположение на бутоните в лентата за управление</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">Активиране на фенерчето</string>
     <string name="torch_long_press_power_gesture_desc">Активиране на фенерчето чрез зъдържане бутона за захранване, когато дисплеят е изключен</string>
@@ -165,12 +169,14 @@
     <string name="volbtn_music_controls_summary">Смяна на песни чрез дълъго натискане на бутоните на звука докато дисплеят е изключен</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Забранено на заключен екран</string>
+    <string name="lockscreen_power_menu_disabled_summary">Деактивиране на менюто за рестартиране при защитен заключен екран</string>
     <!-- Others settings -->
     <string name="others_settings_title">Други настройки</string>
     <string name="additional_buttons_title">Допълнителни бутони</string>
     <!-- Status bar -->
     <string name="status_bar_title">Лента на състоянието</string>
     <string name="lockscreen_qs_disabled_title">Забранено на заключен екран</string>
+    <string name="lockscreen_qs_disabled_summary">Деактивиране на разширената лента за състояние при защитен заключен екран</string>
     <string name="status_bar_quick_qs_pulldown_title">Бързи настройки</string>
     <string name="status_bar_quick_qs_pulldown_summary">Дръпнете %1$s лентата на състоянието за бързи настройки</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Вляво</string>
