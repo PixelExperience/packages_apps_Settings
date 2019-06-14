@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Ẩn</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Ứng dụng toàn màn hình</string>
-    <string name="display_cutout_force_fullscreen_summary">Buộc các ứng dụng bỏ qua không gian notch</string>
+    <string name="display_cutout_force_fullscreen_summary">Buộc các ứng dụng bỏ qua notch</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Rung để chỉ trạng thái cuộc gọi</string>
     <!-- Fingerprint authentication vibration -->
@@ -151,7 +151,7 @@
     <string name="status_bar_double_tap_to_sleep_title">Chạm để tắt màn hình</string>
     <string name="status_bar_double_tap_to_sleep_summary">Chạm hai lần vào thanh trạng thái hoặc màn hình khoá để tắt màn hình</string>
     <!-- Lock screen cover art -->
-    <string name="lockscreen_media_art_title">Hiển thị ảnh bìa phương tiện</string>
+    <string name="lockscreen_media_art_title">Hiển thị ảnh bìa đa phương tiện</string>
     <!-- Button that controls inversion of layout of navigation bar -->
     <string name="nav_bar_layout_inverse_title">Đảo ngược bố cục</string>
     <string name="nav_bar_layout_inverse_summary">Đảo ngược bố cục của thanh điều hướng</string>
@@ -172,7 +172,7 @@
     <string name="lockscreen_power_menu_disabled_summary">Vô hiệu hoá power menu trên màn hình khoá có bảo mật</string>
     <!-- Others settings -->
     <string name="others_settings_title">Các cài đặt khác</string>
-    <string name="additional_buttons_title">Nút bổ sung</string>
+    <string name="additional_buttons_title">Các nút bổ sung</string>
     <!-- Status bar -->
     <string name="status_bar_title">Thanh trạng thái</string>
     <string name="lockscreen_qs_disabled_title">Vô hiệu hóa trên màn hình khóa</string>

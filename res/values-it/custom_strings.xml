@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Nascosto</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">App a schermo intero</string>
-    <string name="display_cutout_force_fullscreen_summary">Forza le applicazioni ad ignorare lo spazio del notch</string>
+    <string name="display_cutout_force_fullscreen_summary">Forza le applicazioni ad ignorare lo spazio della tacca</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibra per indicare lo stato della chiamata</string>
     <!-- Fingerprint authentication vibration -->
@@ -166,10 +166,10 @@
     <string name="torch_long_press_power_timeout_10min">10 minuti</string>
     <!-- Volume control playback -->
     <string name="volbtn_music_controls_title">Controllo riproduzione</string>
-    <string name="volbtn_music_controls_summary">Cambia la traccia musicale premendo a lungo i tasti del volume quando lo schermo è spento</string>
+    <string name="volbtn_music_controls_summary">Salta i brani premendo a lungo i tasti del volume a schermo spento</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Disabilita sulla schermata di blocco</string>
-    <string name="lockscreen_power_menu_disabled_summary">Disabilita il menù di alimentazione nella schermata di blocco</string>
+    <string name="lockscreen_power_menu_disabled_summary">Disabilita il menù di spegnimento nella schermata di blocco</string>
     <!-- Others settings -->
     <string name="others_settings_title">Altre impostazioni</string>
     <string name="additional_buttons_title">Pulsanti aggiuntivi</string>
@@ -240,9 +240,9 @@
     <string name="live_display_color_profile_reading_title">Lettura</string>
     <string name="live_display_color_profile_reading_summary">Colori più caldi per ridurre l’affaticamento degli occhi</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
-    <string name="live_display_color_profile_srgb_summary">Colori accurati allo spazio di colore sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Colori fedeli allo spazio colore sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
-    <string name="live_display_color_profile_dci_p3_summary">Colori accurati allo spazio di colore DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Colori fedeli allo spazio colore DCI-P3</string>
     <string name="live_display_reading_mode_title">Modalità lettura</string>
     <string name="live_display_reading_mode_summary">Modalità scala di grigi per lettura a lungo termine</string>
     <string name="color_calibration_title">Calibrazione colore</string>
@@ -260,7 +260,7 @@
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automatico (ora del giorno)</string>
     <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Scorri le dita per fare uno screenshot</string>
+    <string name="swipe_to_screenshot_gesture_title">Scorri per fare uno screenshot</string>
     <string name="swipe_to_screenshot_gesture_summary">Scorri tre dita per fare uno screenshot</string>
     <!-- Dark theme style -->
     <string name="dark_theme_style_title">Stile tema scuro</string>

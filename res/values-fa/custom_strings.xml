@@ -178,6 +178,7 @@
     <string name="lockscreen_qs_disabled_title">غیرفعّال کردن در صفحهٔ قفل</string>
     <string name="lockscreen_qs_disabled_summary">غیرفعال کردن نوار اعلانات گسترده در صفحه قفل محافظت شده</string>
     <string name="status_bar_quick_qs_pulldown_title">پایین کشیدن سریع</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s لبه نوار وضعیت تنظیمات سریع را پایین می آورد</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">چپ</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">راست</string>
     <string name="status_bar_quick_qs_pulldown_off">خاموش</string>
@@ -186,13 +187,83 @@
     <!-- Status bar - icons -->
     <string name="status_bar_icons_title">آیکون های نوار وضعیت</string>
     <string name="status_bar_system_icons_title">آیکون‌های سیستم</string>
+    <string name="status_bar_system_icons_summary">تنظیم کنید کدام‌یک از آیکن‌های نوار وضعیت نمایش داده شوند</string>
     <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_settings_title">نمایش سرعت تبادل شبکه</string>
+    <string name="network_traffic_settings_summary">نمایش وضعیت کنونی سرعت تبادل شبکه در نوار وضعیت</string>
     <string name="network_traffic_mode_title">حالت نمایش</string>
     <string name="network_traffic_mode_disable">غیرفعال</string>
+    <string name="network_traffic_mode_all">بارگیری و بارگزاری</string>
+    <string name="network_traffic_autohide">مخفی‌کردن خودکار</string>
+    <string name="network_traffic_autohide_summary">مخفی‌کردن سرعت تبادل شبکه در زمان عدم فعالیت</string>
+    <string name="network_traffic_units_title">واحد اندازگیری سرعت شبکه</string>
+    <string name="network_traffic_units_kilobits">کیلوبیت بر ثانیه (kb/s)</string>
+    <string name="network_traffic_units_megabits">مگابیت بر ثانیه (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">کیلوبایت بر ثانیه (kB/s)</string>
+    <string name="network_traffic_units_megabytes">مگابایت بر ثانیه (MB/s)</string>
+    <string name="network_traffic_show_units">نمایش واحد</string>
+    <string name="network_traffic_show_units_summary">نمایش یا عدم نمایش واحد سرعت شبکه در نوار وضعیت</string>
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">تشخیص قرارگیری گوشی در جیب</string>
+    <string name="pocket_judge_summary">قفل کردن صفحه و کلیدها در زمانی که دستگاه در جیب شماست</string>
     <!-- LiveDisplay -->
+    <string name="live_display_summary">بهینه‌سازی صفحه‌نمایش بر اساس زمانِ روز و شرایط محیطی برای افزایش خوانایی و کاهش خستگی چشم</string>
+    <string name="live_display_mode">حالت نمایش</string>
+    <string name="live_display_color_temperature_title">دمای رنگ</string>
+    <string name="live_display_color_temperature_summary">روز: <xliff:g id="day_temperature">%1$d</xliff:g>کلوین شب: <xliff:g id="night_temperature">%2$d</xliff:g>کلوین</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>کلوین</string>
+    <string name="live_display_day">روز</string>
+    <string name="live_display_night">شب</string>
+    <string name="live_display_outdoor_mode_title">حالت خودکار فضای باز</string>
+    <string name="live_display_outdoor_mode_summary">افزایش خودکار روشنایی و اشباع رنگ در هنگام قرارگیری زیر نور خورشید</string>
+    <string name="live_display_low_power_title">کاهش مصرف نیرو</string>
+    <string name="live_display_low_power_summary">تنظیم صفحه نمایش برای کمترین مصرف نیرو بدون کاهش کارایی</string>
+    <string name="live_display_enhance_color_title">بهبود رنگ‌ها</string>
+    <string name="live_display_enhance_color_summary">بهبود طراوت رنگ پوست بدن، مناظر و تصاویر دیگر</string>
+    <string name="live_display_color_profile_title">نمایه رنگ</string>
+    <string name="live_display_color_profile_standard_title">استاندارد</string>
+    <string name="live_display_color_profile_standard_summary">رنگ‌های دقیق و سفید روشن</string>
+    <string name="live_display_color_profile_natural_title">طبیعی</string>
+    <string name="live_display_color_profile_natural_summary">رنگ پوست رو رنگ‌های دیگر به صورت واقع‌نما</string>
+    <string name="live_display_color_profile_dynamic_title">پویا</string>
+    <string name="live_display_color_profile_dynamic_summary">رنگ‌های بهبود یافته و سفید روشن</string>
+    <string name="live_display_color_profile_cinema_title">سینما</string>
+    <string name="live_display_color_profile_cinema_summary">بازآفرینی رنگ بی‌‌نقص برای ویدیو</string>
+    <string name="live_display_color_profile_astronomy_title">ستاره شناسی</string>
+    <string name="live_display_color_profile_astronomy_summary">قرمز پررنگ برای حفظ عکاسی در شب</string>
+    <string name="live_display_color_profile_photography_title">عکاسی</string>
+    <string name="live_display_color_profile_photography_summary">بازآفرینی رنگ بی‌نقص برای عکس‌ها</string>
+    <string name="live_display_color_profile_basic_title">پایه</string>
+    <string name="live_display_color_profile_basic_summary">استفاده از صفحه به صورت تنظیم نشده</string>
+    <string name="live_display_color_profile_adaptive_title">تطبیقی</string>
+    <string name="live_display_color_profile_adaptive_summary">تطبیق زنگ‌ها با شرایط محیطی</string>
+    <string name="live_display_color_profile_reading_title">مطالعه</string>
+    <string name="live_display_color_profile_reading_summary">رنگ‌های گرم‌تر برای کاهش خستگی چشم</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">رنگ‌های مطابق با فضای رنگ sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">رنگ‌های مطابق با فضای رنگ DCI-P3</string>
+    <string name="live_display_reading_mode_title">حالت مطالعه</string>
+    <string name="live_display_reading_mode_summary">حالت سیاه و سفید برای مطالعه طولانی</string>
+    <string name="color_calibration_title">تنظیم رنگ‌ها</string>
+    <string name="color_calibration_summary">تنظیم رنگ صفحه نمایش</string>
+    <string name="color_red_title">قرمز</string>
+    <string name="color_green_title">سبز</string>
+    <string name="color_blue_title">آبی</string>
     <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">تنظیم تصویر</string>
+    <string name="picture_adjustment_summary">تنظیم فام، اشباع رنگ، شدت و سایه‌روشن</string>
+    <string name="adj_hue_title">فام</string>
+    <string name="adj_saturation_title">اشباع رنگ</string>
+    <string name="adj_intensity_title">پرده</string>
+    <string name="adj_contrast_title">سایه‌روشن</string>
     <!-- LiveDisplay - Custom theme mode -->
+    <string name="systemui_theme_time">خودکار (براساس زمان روز)</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">کشیدن برای گرفتن عکس از صفحه نمایش</string>
+    <string name="swipe_to_screenshot_gesture_summary">با سه انگشت روی صفحه کشیدن برای گرفتن عکس از صفحه دستگاه</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">تِم حالت تاریک</string>
+    <string name="dark_theme_style_default">پیش‌فرض</string>
+    <string name="dark_theme_style_black">مشکی</string>
 </resources>
