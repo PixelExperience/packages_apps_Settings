@@ -222,6 +222,7 @@
     <string name="network_traffic_mode_title">Display mode</string>
     <string name="network_traffic_mode_disable">Disabled</string>
     <string name="network_traffic_mode_all">Upload and download</string>
+    <string name="network_traffic_mode_all_notched">Upload and download (will be shown in expanded status bar)</string>
     <string name="network_traffic_autohide">Auto hide</string>
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_units_title">Traffic measurement units</string>

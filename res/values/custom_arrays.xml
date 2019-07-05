@@ -187,6 +187,10 @@
         <item>@string/network_traffic_mode_disable</item>
         <item>@string/network_traffic_mode_all</item>
     </string-array>
+    <string-array name="network_traffic_mode_entries_notched" translatable="false">
+        <item>@string/network_traffic_mode_disable</item>
+        <item>@string/network_traffic_mode_all_notched</item>
+    </string-array>
     <string-array name="network_traffic_mode_values" translatable="false">
         <item>0</item>
         <item>1</item>

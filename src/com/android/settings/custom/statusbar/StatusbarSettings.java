@@ -75,32 +75,32 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0, UserHandle.USER_CURRENT);
         updateQuickPulldownSummary(quickPulldownValue);
 
-        if (!isNetworkTrafficAvailable()) {
-            getPreferenceScreen().removePreference(mNetworkTrafficCategory);
-        }else{
-            mNetTrafficEnabled = (DropDownPreference)
-                    findPreference(Settings.System.NETWORK_TRAFFIC_ENABLED);
-            mNetTrafficEnabled.setOnPreferenceChangeListener(this);
-            int mode = Settings.System.getIntForUser(resolver,
-                    Settings.System.NETWORK_TRAFFIC_ENABLED, 0, UserHandle.USER_CURRENT);
-            mNetTrafficEnabled.setValue(String.valueOf(mode));
+        mNetTrafficEnabled = (DropDownPreference)
+                findPreference(Settings.System.NETWORK_TRAFFIC_ENABLED);
+        mNetTrafficEnabled.setOnPreferenceChangeListener(this);
+        int mode = Settings.System.getIntForUser(resolver,
+                Settings.System.NETWORK_TRAFFIC_ENABLED, 0, UserHandle.USER_CURRENT);
+        mNetTrafficEnabled.setValue(String.valueOf(mode));
 
-            mNetTrafficAutohide = (SwitchPreference)
-                    findPreference(Settings.System.NETWORK_TRAFFIC_AUTOHIDE);
-            mNetTrafficAutohide.setOnPreferenceChangeListener(this);
+        mNetTrafficAutohide = (SwitchPreference)
+                findPreference(Settings.System.NETWORK_TRAFFIC_AUTOHIDE);
+        mNetTrafficAutohide.setOnPreferenceChangeListener(this);
 
-            mNetTrafficUnits = (DropDownPreference)
-                    findPreference(Settings.System.NETWORK_TRAFFIC_UNITS);
-            mNetTrafficUnits.setOnPreferenceChangeListener(this);
-            int units = Settings.System.getIntForUser(resolver,
-                    Settings.System.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1, UserHandle.USER_CURRENT);
-            mNetTrafficUnits.setValue(String.valueOf(units));
+        mNetTrafficUnits = (DropDownPreference)
+                findPreference(Settings.System.NETWORK_TRAFFIC_UNITS);
+        mNetTrafficUnits.setOnPreferenceChangeListener(this);
+        int units = Settings.System.getIntForUser(resolver,
+                Settings.System.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1, UserHandle.USER_CURRENT);
+        mNetTrafficUnits.setValue(String.valueOf(units));
 
-            mNetTrafficShowUnits = (SwitchPreference)
-                    findPreference(Settings.System.NETWORK_TRAFFIC_SHOW_UNITS);
-            mNetTrafficShowUnits.setOnPreferenceChangeListener(this);
+        mNetTrafficShowUnits = (SwitchPreference)
+                findPreference(Settings.System.NETWORK_TRAFFIC_SHOW_UNITS);
+        mNetTrafficShowUnits.setOnPreferenceChangeListener(this);
 
-            updateNetworkTrafficEnabledStates(mode);
+        updateNetworkTrafficEnabledStates(mode);
+
+        if (!isNotchHidden()) {
+            mNetTrafficEnabled.setEntries(R.array.network_traffic_mode_entries_notched);
         }
     }
 
@@ -112,18 +112,15 @@ public class StatusbarSettings extends SettingsPreferenceFragment implements
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
             mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
         }
-        if (mNetworkTrafficCategory != null && !isNetworkTrafficAvailable()) {
-            getPreferenceScreen().removePreference(mNetworkTrafficCategory);
-        }
     }
 
-    private boolean isNetworkTrafficAvailable(){
+    private boolean isNotchHidden(){
         if (getResources().getBoolean(
                 com.android.internal.R.bool.config_physicalDisplayCutout)){
             return Settings.System.getIntForUser(getActivity().getContentResolver(),
                 Settings.System.DISPLAY_CUTOUT_HIDDEN, 0, UserHandle.USER_CURRENT) == 1;
         }else{
-            return true;
+            return false;
         }
     }
 
