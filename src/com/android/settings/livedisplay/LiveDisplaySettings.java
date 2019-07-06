@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
  *               2017-2018 The LineageOS Project
+ *               2019 The PixelExperience Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,108 +20,107 @@ package com.android.settings.livedisplay;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.content.res.Resources;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Settings;
+import android.provider.SearchIndexableResource;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
-import android.text.TextUtils;
 import android.util.Log;
-
-import com.android.internal.app.ColorDisplayController;
-import com.android.internal.util.ArrayUtils;
-
+import com.android.internal.custom.hardware.DisplayMode;
+import com.android.internal.custom.hardware.LineageHardwareManager;
+import com.android.internal.custom.hardware.LiveDisplayConfig;
+import com.android.internal.custom.hardware.LiveDisplayManager;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-
-import android.provider.SearchIndexableResource;
+import com.android.settings.custom.preference.CustomDialogPreference;
+import com.android.settings.custom.utils.ResourceUtils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
-import com.android.internal.custom.hardware.LineageHardwareManager;
-import com.android.internal.custom.hardware.DisplayMode;
-import com.android.internal.custom.hardware.LiveDisplayConfig;
-import com.android.internal.custom.hardware.LiveDisplayManager;
-
-import com.android.settings.custom.utils.SettingsHelper;
-import com.android.settings.custom.utils.ResourceUtils;
-
-import com.android.settings.custom.preference.CustomDialogPreference;
-
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_CABC;
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_DISPLAY_MODES;
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
-import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_READING_ENHANCEMENT;
-import static com.android.internal.custom.hardware.LiveDisplayManager.MODE_OFF;
-import static com.android.internal.custom.hardware.LiveDisplayManager.MODE_OUTDOOR;
+import static com.android.internal.custom.hardware.LiveDisplayManager.*;
 
 public class LiveDisplaySettings extends SettingsPreferenceFragment implements Indexable,
-        Preference.OnPreferenceChangeListener, SettingsHelper.OnSettingsChangeListener {
+        Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "LiveDisplay";
 
     private static final String KEY_CATEGORY_LIVE_DISPLAY = "live_display_options";
     private static final String KEY_CATEGORY_ADVANCED = "advanced";
 
-    private static final String KEY_LIVE_DISPLAY = "live_display";
     private static final String KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE =
             "display_auto_outdoor_mode";
     private static final String KEY_LIVE_DISPLAY_READING_ENHANCEMENT = "display_reading_mode";
     private static final String KEY_LIVE_DISPLAY_LOW_POWER = "display_low_power";
     private static final String KEY_LIVE_DISPLAY_COLOR_ENHANCE = "display_color_enhance";
-    private static final String KEY_LIVE_DISPLAY_TEMPERATURE = "live_display_color_temperature";
 
     private static final String KEY_DISPLAY_COLOR = "color_calibration";
     private static final String KEY_PICTURE_ADJUSTMENT = "picture_adjustment";
 
     private static final String KEY_LIVE_DISPLAY_COLOR_PROFILE = "live_display_color_profile";
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
 
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    final LiveDisplayConfig config = LiveDisplayManager.getInstance(context).getConfig();
+                    final LineageHardwareManager hardwareManager = LineageHardwareManager.getInstance(context);
+                    final List<String> result = new ArrayList<String>();
+
+                    if (!config.hasFeature(FEATURE_DISPLAY_MODES)) {
+                        result.add(KEY_LIVE_DISPLAY_COLOR_PROFILE);
+                    }
+                    if (!config.hasFeature(FEATURE_OUTDOOR_MODE)) {
+                        result.add(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
+                    }
+                    if (!config.hasFeature(FEATURE_COLOR_ENHANCEMENT)) {
+                        result.add(KEY_LIVE_DISPLAY_COLOR_ENHANCE);
+                    }
+                    if (!config.hasFeature(FEATURE_CABC)) {
+                        result.add(KEY_LIVE_DISPLAY_LOW_POWER);
+                    }
+                    if (!config.hasFeature(FEATURE_COLOR_ADJUSTMENT)) {
+                        result.add(KEY_DISPLAY_COLOR);
+                    }
+                    if (!config.hasFeature(FEATURE_PICTURE_ADJUSTMENT)) {
+                        result.add(KEY_PICTURE_ADJUSTMENT);
+                    }
+                    if (!hardwareManager.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
+                        result.add(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
+                    }
+                    return result;
+                }
+
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    final ArrayList<SearchIndexableResource> result = new ArrayList<>();
+                    final SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.livedisplay;
+                    result.add(sir);
+                    return result;
+                }
+            };
     private static final String COLOR_PROFILE_TITLE =
             KEY_LIVE_DISPLAY_COLOR_PROFILE + "_%s_title";
-
     private static final String COLOR_PROFILE_SUMMARY =
             KEY_LIVE_DISPLAY_COLOR_PROFILE + "_%s_summary";
-
-    private final Uri DISPLAY_TEMPERATURE_DAY_URI =
-            Settings.System.getUriFor(Settings.System.DISPLAY_TEMPERATURE_DAY);
-    private final Uri DISPLAY_TEMPERATURE_NIGHT_URI =
-            Settings.System.getUriFor(Settings.System.DISPLAY_TEMPERATURE_NIGHT);
-    private final Uri DISPLAY_TEMPERATURE_MODE_URI =
-            Settings.System.getUriFor(Settings.System.DISPLAY_TEMPERATURE_MODE);
-
-    private ListPreference mLiveDisplay;
-
     private SwitchPreference mColorEnhancement;
     private SwitchPreference mLowPower;
     private SwitchPreference mOutdoorMode;
     private SwitchPreference mReadingMode;
-
     private PictureAdjustment mPictureAdjustment;
-    private DisplayTemperature mDisplayTemperature;
     private DisplayColor mDisplayColor;
-
     private ListPreference mColorProfile;
     private String[] mColorProfileSummaries;
-
-    private String[] mModeEntries;
-    private String[] mModeValues;
-    private String[] mModeSummaries;
-
     private boolean mHasDisplayModes = false;
-
     private LiveDisplayManager mLiveDisplayManager;
     private LiveDisplayConfig mConfig;
-
     private LineageHardwareManager mHardware;
 
     @Override
@@ -139,49 +139,6 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements I
         PreferenceCategory advancedPrefs = (PreferenceCategory)
                 findPreference(KEY_CATEGORY_ADVANCED);
 
-        int adaptiveMode = mLiveDisplayManager.getMode();
-
-        mLiveDisplay = (ListPreference) findPreference(KEY_LIVE_DISPLAY);
-        mLiveDisplay.setValue(String.valueOf(adaptiveMode));
-
-        mModeEntries = res.getStringArray(
-                com.android.internal.R.array.live_display_entries);
-        mModeValues = res.getStringArray(
-                com.android.internal.R.array.live_display_values);
-        mModeSummaries = res.getStringArray(
-                com.android.internal.R.array.live_display_summaries);
-
-        // Remove outdoor mode from lists if there is no support
-        if (!mConfig.hasFeature(LiveDisplayManager.MODE_OUTDOOR)) {
-            int idx = ArrayUtils.indexOf(mModeValues, String.valueOf(MODE_OUTDOOR));
-            String[] entriesTemp = new String[mModeEntries.length - 1];
-            String[] valuesTemp = new String[mModeValues.length - 1];
-            String[] summariesTemp = new String[mModeSummaries.length - 1];
-            int j = 0;
-            for (int i = 0; i < mModeEntries.length; i++) {
-                if (i == idx) {
-                    continue;
-                }
-                entriesTemp[j] = mModeEntries[i];
-                valuesTemp[j] = mModeValues[i];
-                summariesTemp[j] = mModeSummaries[i];
-                j++;
-            }
-            mModeEntries = entriesTemp;
-            mModeValues = valuesTemp;
-            mModeSummaries = summariesTemp;
-        }
-
-        mLiveDisplay.setEntries(mModeEntries);
-        mLiveDisplay.setEntryValues(mModeValues);
-        mLiveDisplay.setOnPreferenceChangeListener(this);
-
-        mDisplayTemperature = (DisplayTemperature) findPreference(KEY_LIVE_DISPLAY_TEMPERATURE);
-        if (ColorDisplayController.isAvailable(getContext())) {
-            liveDisplayPrefs.removePreference(mLiveDisplay);
-            liveDisplayPrefs.removePreference(mDisplayTemperature);
-        }
-
         mColorProfile = (ListPreference) findPreference(KEY_LIVE_DISPLAY_COLOR_PROFILE);
         if (liveDisplayPrefs != null && mColorProfile != null
                 && (!mConfig.hasFeature(FEATURE_DISPLAY_MODES) || !updateDisplayModes())) {
@@ -193,7 +150,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements I
 
         mOutdoorMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
         if (liveDisplayPrefs != null && mOutdoorMode != null
-                && !mConfig.hasFeature(MODE_OUTDOOR)) {
+                && !mConfig.hasFeature(FEATURE_OUTDOOR_MODE)) {
             liveDisplayPrefs.removePreference(mOutdoorMode);
             mOutdoorMode = null;
         }
@@ -223,7 +180,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements I
 
         mPictureAdjustment = (PictureAdjustment) findPreference(KEY_PICTURE_ADJUSTMENT);
         if (advancedPrefs != null && mPictureAdjustment != null &&
-                    !mConfig.hasFeature(LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT)) {
+                !mConfig.hasFeature(LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT)) {
             advancedPrefs.removePreference(mPictureAdjustment);
             mPictureAdjustment = null;
         }
@@ -239,18 +196,20 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements I
     @Override
     public void onResume() {
         super.onResume();
-        updateModeSummary();
-        updateTemperatureSummary();
         updateColorProfileSummary(null);
         updateReadingModeStatus();
-        SettingsHelper.get(getActivity()).startWatching(this, DISPLAY_TEMPERATURE_DAY_URI,
-                DISPLAY_TEMPERATURE_MODE_URI, DISPLAY_TEMPERATURE_NIGHT_URI);
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        SettingsHelper.get(getActivity()).stopWatching(this);
+    }
+
+    private void updateReadingModeStatus() {
+        if (mReadingMode != null) {
+            mReadingMode.setChecked(
+                    mHardware.get(LineageHardwareManager.FEATURE_READING_ENHANCEMENT));
+        }
     }
 
     private boolean updateDisplayModes() {
@@ -315,56 +274,15 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements I
         mColorProfile.setSummary(mColorProfileSummaries[idx]);
     }
 
-    private void updateModeSummary() {
-        if (ColorDisplayController.isAvailable(getContext())) {
-            return; // Do nothing if device has hwc2 support
-        }
-        int mode = mLiveDisplayManager.getMode();
-
-        int index = ArrayUtils.indexOf(mModeValues, String.valueOf(mode));
-        if (index < 0) {
-            index = ArrayUtils.indexOf(mModeValues, String.valueOf(MODE_OFF));
-        }
-
-        mLiveDisplay.setSummary(mModeSummaries[index]);
-        mLiveDisplay.setValue(String.valueOf(mode));
-
-        if (mDisplayTemperature != null) {
-            mDisplayTemperature.setEnabled(mode != MODE_OFF);
-        }
-        if (mOutdoorMode != null) {
-            mOutdoorMode.setEnabled(mode != MODE_OFF);
-        }
-    }
-
-    private void updateTemperatureSummary() {
-        int day = mLiveDisplayManager.getDayColorTemperature();
-        int night = mLiveDisplayManager.getNightColorTemperature();
-
-        mDisplayTemperature.setSummary(getResources().getString(
-                R.string.live_display_color_temperature_summary,
-                mDisplayTemperature.roundUp(day),
-                mDisplayTemperature.roundUp(night)));
-    }
-
-    private void updateReadingModeStatus() {
-        if (mReadingMode != null) {
-            mReadingMode.setChecked(
-                    mHardware.get(LineageHardwareManager.FEATURE_READING_ENHANCEMENT));
-        }
-    }
-
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mLiveDisplay) {
-            mLiveDisplayManager.setMode(Integer.valueOf((String)objValue));
-        } else if (preference == mColorProfile) {
-            int id = Integer.valueOf((String)objValue);
+        if (preference == mColorProfile) {
+            int id = Integer.valueOf((String) objValue);
             Log.i("LiveDisplay", "Setting mode: " + id);
             for (DisplayMode mode : mHardware.getDisplayModes()) {
                 if (mode.id == id) {
                     mHardware.setDisplayMode(mode, true);
-                    updateColorProfileSummary((String)objValue);
+                    updateColorProfileSummary((String) objValue);
                     break;
                 }
             }
@@ -372,13 +290,6 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements I
             mHardware.set(LineageHardwareManager.FEATURE_READING_ENHANCEMENT, (Boolean) objValue);
         }
         return true;
-    }
-
-    @Override
-    public void onSettingsChanged(Uri uri) {
-        updateModeSummary();
-        updateTemperatureSummary();
-        updateReadingModeStatus();
     }
 
     @Override
@@ -404,52 +315,4 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements I
         f.show(getFragmentManager(), "dialog_preference");
         onDialogShowing();
     }
-
-    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider() {
-
-        @Override
-        public List<String> getNonIndexableKeys(Context context) {
-            final LiveDisplayConfig config = LiveDisplayManager.getInstance(context).getConfig();
-            final LineageHardwareManager hardwareManager = LineageHardwareManager.getInstance(context);
-            final List<String> result = new ArrayList<String>();
-
-            if (!config.hasFeature(FEATURE_DISPLAY_MODES)) {
-                result.add(KEY_LIVE_DISPLAY_COLOR_PROFILE);
-            }
-            if (!config.hasFeature(MODE_OUTDOOR)) {
-                result.add(KEY_LIVE_DISPLAY_AUTO_OUTDOOR_MODE);
-            }
-            if (!config.hasFeature(FEATURE_COLOR_ENHANCEMENT)) {
-                result.add(KEY_LIVE_DISPLAY_COLOR_ENHANCE);
-            }
-            if (!config.hasFeature(FEATURE_CABC)) {
-                result.add(KEY_LIVE_DISPLAY_LOW_POWER);
-            }
-            if (!config.hasFeature(FEATURE_COLOR_ADJUSTMENT)) {
-                result.add(KEY_DISPLAY_COLOR);
-            }
-            if (!config.hasFeature(FEATURE_PICTURE_ADJUSTMENT)) {
-                result.add(KEY_PICTURE_ADJUSTMENT);
-            }
-            if (!hardwareManager.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
-                result.add(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
-            }
-            if (ColorDisplayController.isAvailable(context)) {
-                result.add(KEY_LIVE_DISPLAY);
-                result.add(KEY_LIVE_DISPLAY_TEMPERATURE);
-            }
-            return result;
-        }
-
-        @Override
-        public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
-                boolean enabled) {
-            final ArrayList<SearchIndexableResource> result = new ArrayList<>();
-            final SearchIndexableResource sir = new SearchIndexableResource(context);
-            sir.xmlResId = R.xml.livedisplay;
-            result.add(sir);
-            return result;
-        }
-    };
 }
