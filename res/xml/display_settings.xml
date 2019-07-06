@@ -48,8 +48,8 @@
 
     <Preference
         android:key="livedisplay"
-        android:title="@*android:string/live_display_title"
-        android:summary="@string/live_display_summary">
+        android:title="@string/color_settings_title"
+        android:summary="@string/color_settings_summary">
         <intent android:action="com.android.settings.LIVEDISPLAY_SETTINGS" />
     </Preference>
 
