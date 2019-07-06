@@ -28,18 +28,6 @@
                 android:title="@string/live_display_color_profile_title"
                 android:persistent="false" />
 
-        <ListPreference
-                android:key="live_display"
-                android:title="@string/live_display_mode"
-                android:persistent="false" />
-
-        <!-- Manual temperature selection -->
-        <com.android.settings.livedisplay.DisplayTemperature
-                android:key="live_display_color_temperature"
-                android:title="@string/live_display_color_temperature_title"
-                android:dialogTitle="@*android:string/live_display_title"
-                android:persistent="false" />
-
         <!-- Outdoor mode / SRE -->
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
                 android:key="display_auto_outdoor_mode"
