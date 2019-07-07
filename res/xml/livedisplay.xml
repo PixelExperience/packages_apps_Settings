@@ -17,7 +17,7 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="livedisplay"
-        android:title="@*android:string/live_display_title">
+        android:title="@string/color_settings_title">
 
     <PreferenceCategory
         android:key="live_display_options">
