@@ -64,7 +64,7 @@
     <string name="hardware_keys_action_in_app_search">アプリ内検索</string>
     <string name="hardware_keys_action_launch_camera">カメラを起動</string>
     <string name="hardware_keys_action_sleep">画面を消灯</string>
-    <string name="hardware_keys_action_last_app">前回のアプリ</string>
+    <string name="hardware_keys_action_last_app">直前のアプリ</string>
     <string name="hardware_keys_action_split_screen">画面の分割</string>
     <string name="hardware_keys_swipe_right_key_title">右にスワイプ</string>
     <string name="hardware_keys_swipe_left_key_title">左にスワイプ</string>
@@ -90,7 +90,7 @@
     <string name="weather_title">天気</string>
     <string name="weather_unit">温度の単位</string>
     <!-- Ambient Play -->
-    <string name="ambient_play_summary">近隣の曲を表示</string>
+    <string name="ambient_play_summary">近隣の曲を表示する</string>
     <string name="ambient_play_lockscreen_title">ロック画面で曲を表示する</string>
     <string name="ambient_play_lockscreen_summary">楽曲認識時にロック画面に表示する</string>
     <string name="ambient_play_notifications_title">通知</string>
@@ -193,7 +193,7 @@
     <string name="network_traffic_settings_summary">ステータスバーに現在のネットワーク通信量を表示する</string>
     <string name="network_traffic_mode_title">表示モード</string>
     <string name="network_traffic_mode_disable">無効</string>
-    <string name="network_traffic_mode_all">アップロードとダウンロード</string>
+    <string name="network_traffic_mode_all">両方</string>
     <string name="network_traffic_autohide">自動的に隠す</string>
     <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にする</string>
     <string name="network_traffic_units_title">トラフィックの単位</string>
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">ポケット検出</string>
     <string name="pocket_judge_summary">端末がポケット内にある時は画面とボタンをロックする</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">画面を見やすく目の疲れを軽減するために、時間と周囲の環境に合わせて画面を最適化する。</string>
-    <string name="live_display_mode">ディスプレイのモード</string>
-    <string name="live_display_color_temperature_title">色温度</string>
-    <string name="live_display_color_temperature_summary">昼: <xliff:g id="day_temperature">%1$d</xliff:g>K  夜: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">昼</string>
-    <string name="live_display_night">夜</string>
+    <string name="color_settings_title">色の設定</string>
+    <string name="color_settings_summary">画面の色を調整し向上させる</string>
     <string name="live_display_outdoor_mode_title">自動屋外モード</string>
     <string name="live_display_outdoor_mode_summary">明るい日差しが照射する環境下で明るさと彩度を自動的に向上させる</string>
     <string name="live_display_low_power_title">消費電力を削減</string>

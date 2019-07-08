@@ -207,13 +207,6 @@
     <string name="pocket_judge_title">تشخیص قرارگیری گوشی در جیب</string>
     <string name="pocket_judge_summary">قفل کردن صفحه و کلیدها در زمانی که دستگاه در جیب شماست</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">بهینه‌سازی صفحه‌نمایش بر اساس زمانِ روز و شرایط محیطی برای افزایش خوانایی و کاهش خستگی چشم</string>
-    <string name="live_display_mode">حالت نمایش</string>
-    <string name="live_display_color_temperature_title">دمای رنگ</string>
-    <string name="live_display_color_temperature_summary">روز: <xliff:g id="day_temperature">%1$d</xliff:g>کلوین شب: <xliff:g id="night_temperature">%2$d</xliff:g>کلوین</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>کلوین</string>
-    <string name="live_display_day">روز</string>
-    <string name="live_display_night">شب</string>
     <string name="live_display_outdoor_mode_title">حالت خودکار فضای باز</string>
     <string name="live_display_outdoor_mode_summary">افزایش خودکار روشنایی و اشباع رنگ در هنگام قرارگیری زیر نور خورشید</string>
     <string name="live_display_low_power_title">کاهش مصرف نیرو</string>

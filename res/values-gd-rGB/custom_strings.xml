@@ -122,13 +122,6 @@
     <string name="network_traffic_show_units_summary">Co-dhiù an dèid aonadan tomhais air trafaig a shealltainn air bàr na staid gus nach dèid</string>
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Pisich an sgrìn agad a-rèir àm dhen latha is na h-àrainneachd ach am bi cùisean nas fhasa leughadh is nas lugha a sgithear sùla ort</string>
-    <string name="live_display_mode">Modh an taisbeanaidh</string>
-    <string name="live_display_color_temperature_title">Teothachd an datha</string>
-    <string name="live_display_color_temperature_summary">Latha: <xliff:g id="day_temperature">%1$d</xliff:g>K  Oidhche: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Latha</string>
-    <string name="live_display_night">Oidhche</string>
     <string name="live_display_outdoor_mode_title">Modh taobh a-muigh fèin-obrachail</string>
     <string name="live_display_outdoor_mode_summary">Meudaich an t-soilleireachd ’s an t-sàthachd gu fèin-obrachail fo dhearrsadh na grèine</string>
     <string name="live_display_low_power_title">Caomhain cumhachd</string>

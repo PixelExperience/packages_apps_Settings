@@ -126,13 +126,6 @@
     <!-- Status bar - Network Traffic -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimalisere skjermen basert på tidspunkt av dagen og omgivelsesforhold for å forbedre lesbarhet og redusere belastningen på øynene</string>
-    <string name="live_display_mode">Visningsmodus</string>
-    <string name="live_display_color_temperature_title">Fargetemperatur</string>
-    <string name="live_display_color_temperature_summary">Dag: <xliff:g id="day_temperature">%1$d</xliff:g>K  Natt: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Dag</string>
-    <string name="live_display_night">Natt</string>
     <string name="live_display_outdoor_mode_title">Automatisk utendørs modus</string>
     <string name="live_display_outdoor_mode_summary">Øk lysstyrke og metning automatisk under sterkt sollys</string>
     <string name="live_display_low_power_title">Reduser strømforbruket</string>

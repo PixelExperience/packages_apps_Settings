@@ -207,13 +207,6 @@
     <string name="pocket_judge_title">口袋檢測</string>
     <string name="pocket_judge_summary">設備位於口袋中時鎖定螢幕與按鈕</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
-    <string name="live_display_mode">顯示模式</string>
-    <string name="live_display_color_temperature_title">色溫</string>
-    <string name="live_display_color_temperature_summary">日間：<xliff:g id="day_temperature">%1$d</xliff:g>K 夜間：<xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">日間</string>
-    <string name="live_display_night">夜間</string>
     <string name="live_display_outdoor_mode_title">自動戶外模式</string>
     <string name="live_display_outdoor_mode_summary">自動在陽光下提高亮度和飽和度</string>
     <string name="live_display_low_power_title">降低耗電</string>

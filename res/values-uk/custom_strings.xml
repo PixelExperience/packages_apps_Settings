@@ -207,13 +207,7 @@
     <string name="pocket_judge_title">Режим \"У кишені\"</string>
     <string name="pocket_judge_summary">Заблокувати екран та кнопки коли пристрій знаходиться в кишені</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Налаштовувати екран залежно від часу доби і умов освітлення для підвищення зручності читання і зменшення втоми очей</string>
-    <string name="live_display_mode">Режим екрану</string>
-    <string name="live_display_color_temperature_title">Колірна температура</string>
-    <string name="live_display_color_temperature_summary">День: <xliff:g id="day_temperature">%1$d </xliff:g> K, ніч: <xliff:g id="night_temperature">%2$d </xliff:g></string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">День</string>
-    <string name="live_display_night">Ніч</string>
+    <string name="color_settings_title">Налаштування кольору</string>
     <string name="live_display_outdoor_mode_title">Автоматичний режим «На вулиці»</string>
     <string name="live_display_outdoor_mode_summary">Збільшувати яскравість та насиченість автоматично при яскравому світлі</string>
     <string name="live_display_low_power_title">Зменшення споживання енергії</string>

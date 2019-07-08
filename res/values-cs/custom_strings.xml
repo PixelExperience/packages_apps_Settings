@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Skrytý</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikace na celou obrazovku</string>
-    <string name="display_cutout_force_fullscreen_summary">Přinutit aplikace ignorovat výřez</string>
+    <string name="display_cutout_force_fullscreen_summary">Ignoruje výřez pro vybrané aplikace</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrace při volání</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Detekce uložení v kapse</string>
     <string name="pocket_judge_summary">Zamknout obrazovku a tlačítka když je zařízení v kapse</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimalizovat obrazovku podle denní doby a okolních podmínek pro lepší čitelnost a snížení namáhání očí</string>
-    <string name="live_display_mode">Režim zobrazení</string>
-    <string name="live_display_color_temperature_title">Teplota barev</string>
-    <string name="live_display_color_temperature_summary">Den: <xliff:g id="day_temperature">%1$d</xliff:g>K  Noc: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Den</string>
-    <string name="live_display_night">Noc</string>
+    <string name="color_settings_title">Nastavení barev</string>
+    <string name="color_settings_summary">Upravte a vylepšete barvy obrazovky</string>
     <string name="live_display_outdoor_mode_title">Automatický režim venku</string>
     <string name="live_display_outdoor_mode_summary">Automaticky zvýšit jas a sytost za slunečného světla</string>
     <string name="live_display_low_power_title">Snížit spotřebu energie</string>

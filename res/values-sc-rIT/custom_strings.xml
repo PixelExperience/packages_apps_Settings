@@ -53,9 +53,6 @@
     <string name="network_traffic_mode_disable">Disabilitadu</string>
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_color_temperature_summary">Die: <xliff:g id="day_temperature">%1$d</xliff:g>K Note: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_day">Die</string>
-    <string name="live_display_night">Note</string>
     <string name="live_display_color_profile_standard_title">Istandard</string>
     <string name="live_display_color_profile_natural_title">Naturale</string>
     <string name="live_display_color_profile_cinema_title">Tzìnema</string>

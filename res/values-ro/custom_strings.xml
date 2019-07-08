@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Ascuns</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicații ecran complet</string>
-    <string name="display_cutout_force_fullscreen_summary">Forţaţi aplicațiile să ignore spațiul pentru breton</string>
+    <string name="display_cutout_force_fullscreen_summary">Se ignoră spațiul bretonului pentru aplicațiile selectate</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrare pentru a indica starea apelului</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Detectare buzunar</string>
     <string name="pocket_judge_summary">Blocare ecran și butoane atunci când dispozitivul se află în buzunar</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimizați ecranul bazat pe timpul zilei şi condiţiile mediului ambient pentru a îmbunătăţi lizibilitatea şi a reduce oboseala ochilor</string>
-    <string name="live_display_mode">Mod de afișare</string>
-    <string name="live_display_color_temperature_title">Temperatura culorii</string>
-    <string name="live_display_color_temperature_summary">Zi: <xliff:g id="day_temperature">%1$d</xliff:g>K Noapte: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Zi</string>
-    <string name="live_display_night">Noapte</string>
+    <string name="color_settings_title">Setări culoare</string>
+    <string name="color_settings_summary">Reglați și îmbunătățiți culorile ecranului</string>
     <string name="live_display_outdoor_mode_title">Mod automat aer liber</string>
     <string name="live_display_outdoor_mode_summary">Crește luminozitatea și saturația automat în lumina strălucitoare a soarelui</string>
     <string name="live_display_low_power_title">Redu consumul de energie</string>

@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Detekcia režimu Vo vrecku</string>
     <string name="pocket_judge_summary">Zamknúť obrazovku a tlačidlá ak je zariadenie vo vačku</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimalizovať vašu obrazovku na základe dennej doby a podmienok okolia na zlepšenie čitateľnosti a zníženia únavy očí</string>
-    <string name="live_display_mode">Režim zobrazenia</string>
-    <string name="live_display_color_temperature_title">Teplota farieb</string>
-    <string name="live_display_color_temperature_summary">Deň: <xliff:g id="day_temperature">%1$d</xliff:g>K  Noc: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Deň</string>
-    <string name="live_display_night">Noc</string>
+    <string name="color_settings_title">Nastavenie farieb</string>
+    <string name="color_settings_summary">Upravte a vylepšite farby obrazovky</string>
     <string name="live_display_outdoor_mode_title">Automatický režim vonku</string>
     <string name="live_display_outdoor_mode_summary">Automaticky zvýšiť jas a sýtosť za jasného slnečného svetla</string>
     <string name="live_display_low_power_title">Znížiť spotrebu energie</string>

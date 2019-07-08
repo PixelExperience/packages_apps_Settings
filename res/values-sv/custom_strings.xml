@@ -172,11 +172,6 @@
     <string name="network_traffic_units_kilobits">Kilobits per sekund (kb/s)</string>
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_mode">Visningsläge</string>
-    <string name="live_display_color_temperature_title">Färgtemperatur</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Dag</string>
-    <string name="live_display_night">Natt</string>
     <string name="live_display_enhance_color_title">Förbättra färger</string>
     <string name="live_display_color_profile_title">Färgprofil</string>
     <string name="live_display_color_profile_standard_title">Standard</string>

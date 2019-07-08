@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">מוסתר</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">יישומים במסך מלא</string>
-    <string name="display_cutout_force_fullscreen_summary">אלץ אפליקציות להתעלם מאזור המגרעת</string>
+    <string name="display_cutout_force_fullscreen_summary">התעלם ממרחב המגרעת עבור יישומים נבחרים</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">הפעל רטט ע\'\'מ לסמן סיום שיחה</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">זיהוי כיס</string>
     <string name="pocket_judge_summary">נעל את המסך ואת הלחצנים כאשר המכשיר נמצא בכיס</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">התאם את מסך מכשירך בהתאם לשעה ולתנאי הסביבה על מנת לשפר את נוחות הקריאה ולהפחית את עייפות העין</string>
-    <string name="live_display_mode">מצב תצוגה</string>
-    <string name="live_display_color_temperature_title">טמפרטורת צבע</string>
-    <string name="live_display_color_temperature_summary">יום: <xliff:g id="day_temperature">%1$d</xliff:g>K לילה: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">יום</string>
-    <string name="live_display_night">לילה</string>
+    <string name="color_settings_title">הגדרות צבעים</string>
+    <string name="color_settings_summary">התאם ושפר צבעי מסך</string>
     <string name="live_display_outdoor_mode_title">מצב מחוץ לבית אוטומטית</string>
     <string name="live_display_outdoor_mode_summary">הגבר את הבהירות ורווית צבע באופן אוטומטי תחת אור שמש חזק</string>
     <string name="live_display_low_power_title">הפחת צריכת אנרגיה</string>

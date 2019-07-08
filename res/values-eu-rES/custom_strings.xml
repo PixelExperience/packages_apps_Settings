@@ -177,13 +177,6 @@
     <string name="network_traffic_show_units_summary">Trafikoa neurtzeko unitateak egoera-barran erakutsi ala ez</string>
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimizatu zure pantaila eguneko orduaren eta inguruneko baldintzen arabera irakurgarritasuna hobetzeko eta begien nekea gutxiagotzeko</string>
-    <string name="live_display_mode">Pantaila modua</string>
-    <string name="live_display_color_temperature_title">Kolore-tenperatura</string>
-    <string name="live_display_color_temperature_summary">Egunez: <xliff:g id="day_temperature">%1$d</xliff:g>K  Gauez: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Eguna</string>
-    <string name="live_display_night">Gaua</string>
     <string name="live_display_outdoor_mode_title">Kalerako modu automatikoa</string>
     <string name="live_display_outdoor_mode_summary">Automatikoki areagotu distira eta saturazioa eguzkipean</string>
     <string name="live_display_low_power_title">Gutxiagotu energia kontsumoa</string>

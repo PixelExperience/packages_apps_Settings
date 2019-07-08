@@ -141,7 +141,6 @@
     <string name="display_cutout_mode_hidden">Схаваць</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Поўнаэкранныя праграмы</string>
-    <string name="display_cutout_force_fullscreen_summary">Ігнараванне выразу выбранымі праграмамі</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Вібрацыя для індыкацыі статусу выкліку</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,9 +206,6 @@
     <string name="pocket_judge_title">Рэжым \"У кішэні\"</string>
     <string name="pocket_judge_summary">Заблакаваць экран і кнопкі калі прылада знаходзіцца ў кішэні</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Аптымізацыя вашага экрана ў залежнасці ад часу сутак і ўмоў навакольнага асяроддзя для паляпшэння чытальнасці тэксту і зніжэння стамляльнасці вачэй</string>
-    <string name="live_display_mode">Рэжым прагляду</string>
-    <string name="live_display_color_temperature_title">Каляровая тэмпература</string>
     <string name="live_display_color_profile_cinema_title">Кіно</string>
     <string name="live_display_color_profile_cinema_summary">Ідэальная колераперадача для відэа</string>
     <string name="live_display_color_profile_astronomy_title">Астраномія</string>

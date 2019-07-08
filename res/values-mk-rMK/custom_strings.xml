@@ -105,13 +105,6 @@
     <!-- Status bar - Network Traffic -->
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Оптимизирајте го вашиот екран врз основа на време од денот и амбиентални услови за да се подобри читливоста и да се намали обемот на очите</string>
-    <string name="live_display_mode">Режим на екранот</string>
-    <string name="live_display_color_temperature_title">Температура на бојата</string>
-    <string name="live_display_color_temperature_summary">Ден <xliff:g id="day_temperature">%1$d</xliff:g>K  Ноќ: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Ден</string>
-    <string name="live_display_night">Ноќ</string>
     <string name="live_display_outdoor_mode_title">Автоматски режим на отворено</string>
     <string name="live_display_outdoor_mode_summary">Зголемете ја осветленоста и сатурацијата автоматски под силна сончева светлина</string>
     <string name="live_display_low_power_title">Намали ја потрошувачката енергија</string>

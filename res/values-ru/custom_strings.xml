@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Скрыть вырез</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Полноэкранные приложения</string>
-    <string name="display_cutout_force_fullscreen_summary">Ингорирование выреза выбранными приложениями</string>
+    <string name="display_cutout_force_fullscreen_summary">Игнорировать пространство для выреза для выбранных приложений</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Вибрация для индикации статуса вызова</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Режим «В кармане»</string>
     <string name="pocket_judge_summary">Заблокировать экран и кнопки когда устройство находится в кармане</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Подстраивание экрана в зависимости от времени суток и освещения для улучшения читаемости текста и снижения утомляемости глаз</string>
-    <string name="live_display_mode">Режим экрана</string>
-    <string name="live_display_color_temperature_title">Цветовая температура</string>
-    <string name="live_display_color_temperature_summary">День: <xliff:g id="day_temperature">%1$d </xliff:g>K Ночь: <xliff:g id="night_temperature">%2$d </xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g> K</string>
-    <string name="live_display_day">День</string>
-    <string name="live_display_night">Ночь</string>
+    <string name="color_settings_title">Настройки цвета</string>
+    <string name="color_settings_summary">Отрегулировать и улучшить цвета дисплея</string>
     <string name="live_display_outdoor_mode_title">Автоматический режим для улицы</string>
     <string name="live_display_outdoor_mode_summary">Автоматическое увеличение яркости и насыщенности при ярком солнечном свете</string>
     <string name="live_display_low_power_title">Снизить энергопотребление</string>
@@ -244,7 +239,7 @@
     <string name="live_display_color_profile_dci_p3_title">Цветовое пространство DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Цвета, соответствующие цветовому пространству DCI-P3</string>
     <string name="live_display_reading_mode_title">Режим чтения</string>
-    <string name="live_display_reading_mode_summary">Режим оттенков серого для долговременного чтения</string>
+    <string name="live_display_reading_mode_summary">Режим оттенков серого для продолжительного чтения</string>
     <string name="color_calibration_title">Калибровка цвета</string>
     <string name="color_calibration_summary">Настройка цветопередачи экрана</string>
     <string name="color_red_title">Красный</string>

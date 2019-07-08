@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Escondido</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicativos em tela cheia</string>
-    <string name="display_cutout_force_fullscreen_summary">Forçar aplicativos a ignorar o espaço do notch</string>
+    <string name="display_cutout_force_fullscreen_summary">Ignore o espaço do notch para aplicativos selecionados</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrar para indicar o status da chamada</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Detectar quando estiver no bolso</string>
     <string name="pocket_judge_summary">Bloquear a tela e os botões quando o dispositivo estiver no bolso</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Otimiza sua tela com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir o cansaço visual</string>
-    <string name="live_display_mode">Modo da tela</string>
-    <string name="live_display_color_temperature_title">Temperatura da cor</string>
-    <string name="live_display_color_temperature_summary">Dia: <xliff:g id="day_temperature">%1$d</xliff:g>K  Noite: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Dia</string>
-    <string name="live_display_night">Noite</string>
+    <string name="color_settings_title">Configurações de cor</string>
+    <string name="color_settings_summary">Ajustar e melhorar as cores da tela</string>
     <string name="live_display_outdoor_mode_title">Modo automático ao ar livre</string>
     <string name="live_display_outdoor_mode_summary">Aumentar o brilho e a saturação automaticamente sob luz solar intensa</string>
     <string name="live_display_low_power_title">Reduzir o consumo de energia</string>
