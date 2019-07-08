@@ -228,6 +228,19 @@
     </string-array>
 
     <!-- Match this with the constants in AccessPoint. --> <skip />
+    <!-- Wi-Fi security types for New User Dialog. WPA3 is not configurable. -->
+    <string-array name="wifi_security_no_wpa3">
+        <!-- The Wi-Fi network does not have any security. -->
+        <item>@string/wifi_security_none</item>
+        <!-- Do not translate. -->
+        <item>@string/wifi_security_wep</item>
+        <!-- Do not translate. -->
+        <item>@string/wifi_security_psk_generic</item>
+        <!-- Do not translate. -->
+        <item>@string/wifi_security_eap</item>
+    </string-array>
+
+    <!-- Match this with the constants in AccessPoint. --> <skip />
     <!-- Wi-Fi security types for New User Dialog. EAP is not configurable. -->
     <string-array name="wifi_security_no_eap">
         <!-- The Wi-Fi network does not have any security. -->

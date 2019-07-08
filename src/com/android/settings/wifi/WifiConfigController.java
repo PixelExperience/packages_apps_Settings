@@ -187,6 +187,7 @@ public class WifiConfigController implements TextWatcher,
     private TelephonyManager mTelephonyManager;
     private SubscriptionManager mSubscriptionManager = null;
     private int selectedSimCardNumber;
+    private boolean mWPA3Support;
 
     public WifiConfigController(WifiConfigUiBase parent, View view, AccessPoint accessPoint,
             int mode) {
@@ -245,13 +246,20 @@ public class WifiConfigController implements TextWatcher,
                         : View.VISIBLE);
         mShareThisWifiCheckBox = (CheckBox) mView.findViewById(R.id.share_this_wifi);
         mWifiManager = (WifiManager) mContext.getSystemService(Context.WIFI_SERVICE);
+        mWPA3Support = mContext.getResources().getBoolean(com.android.internal.R.bool.config_wifi_wpa3_supported);
 
         if (mAccessPoint == null) { // new network
             mConfigUi.setTitle(R.string.wifi_add_network);
 
             mSsidView = (TextView) mView.findViewById(R.id.ssid);
             mSsidView.addTextChangedListener(this);
-            mSecuritySpinner = ((Spinner) mView.findViewById(R.id.security));
+
+            if (mWPA3Support) {
+                mSecuritySpinner = ((Spinner) mView.findViewById(R.id.security));
+            } else {
+                mSecuritySpinner = ((Spinner) mView.findViewById(R.id.security_no_wpa3));
+            }
+            mSecuritySpinner.setVisibility(View.VISIBLE);
             mSecuritySpinner.setOnItemSelectedListener(this);
             mView.findViewById(R.id.type).setVisibility(View.VISIBLE);
 
