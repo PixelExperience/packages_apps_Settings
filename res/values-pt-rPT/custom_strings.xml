@@ -142,7 +142,6 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">display_cutout_force_fullscreen_title
 Notch: Aplicações em ecrã cheio</string>
-    <string name="display_cutout_force_fullscreen_summary">Forçar aplicações a ignorar o espaço do notch</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrar para indicar estado da chamada</string>
     <!-- Fingerprint authentication vibration -->
@@ -205,13 +204,6 @@ Notch: Aplicações em ecrã cheio</string>
     <string name="network_traffic_show_units_summary">Mostrar as unidades de medida do tráfego na barra de estado</string>
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Otimiza o ecrã com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir a fadiga ocular</string>
-    <string name="live_display_mode">Modo do ecrã</string>
-    <string name="live_display_color_temperature_title">Temperatura da cor</string>
-    <string name="live_display_color_temperature_summary">Dia: <xliff:g id="day_temperature">%1$d</xliff:g>K  Noite: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Dia</string>
-    <string name="live_display_night">Noite</string>
     <string name="live_display_outdoor_mode_title">Modo de exterior automático</string>
     <string name="live_display_outdoor_mode_summary">Aumentar o brilho e saturação automaticamente sob luz solar intensa</string>
     <string name="live_display_low_power_title">Reduzir o consumo de energia</string>

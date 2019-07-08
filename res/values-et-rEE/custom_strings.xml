@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Peidetud</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Täisekraanis rakendused</string>
-    <string name="display_cutout_force_fullscreen_summary">Sundige rakendust ignoreerima \"kulmu\"</string>
+    <string name="display_cutout_force_fullscreen_summary">Ignoreerige valitud rakenduste väljalõiget</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibreeri, et näidata kõne olekut</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Tasku tuvastamine</string>
     <string name="pocket_judge_summary">Lukustage ekraan ja nupud, kui seade on taskus</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimeeri oma ekraani vastavalt kellaajale ja keskkonnavalgusele, parandamaks loetavust ja vähendamaks silmade pinget</string>
-    <string name="live_display_mode">Ekraani režiim</string>
-    <string name="live_display_color_temperature_title">Värvitemperatuur</string>
-    <string name="live_display_color_temperature_summary">Päev: <xliff:g id="day_temperature">%1$d</xliff:g>K Öö: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Päev</string>
-    <string name="live_display_night">Öö</string>
+    <string name="color_settings_title">Värvi seaded</string>
+    <string name="color_settings_summary">Reguleerida ja parandada ekraani värve</string>
     <string name="live_display_outdoor_mode_title">Automaatne õuerežiim</string>
     <string name="live_display_outdoor_mode_summary">Suurenda ereda päikesevalgusega automaatselt heledust ja küllastust</string>
     <string name="live_display_low_power_title">Vähenda energiatarbimist</string>

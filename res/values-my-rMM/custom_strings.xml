@@ -91,7 +91,6 @@
     <string name="display_cutout_mode_hidden">ဖျောက်ထားသော</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">မျက်နှာပြင်အပြည့်ပေါ်ပေးသည့် အက်ပ်များ</string>
-    <string name="display_cutout_force_fullscreen_summary">အက်ပ်များအား ကင်မရာကွယ်နေသည့်နေရာကို လျစ်လျူရှုစေမည်။</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">ဖုန်း၀င်သွားသည့်အခါ ဖုန်းကို တုန်ခါရန် သို့  တုန်ခါမှုမရှိရန် ပေးထားမှု ရှိမရှိ</string>
     <!-- Fingerprint authentication vibration -->

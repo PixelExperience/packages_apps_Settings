@@ -133,13 +133,6 @@
     <string name="network_traffic_show_units_summary">Për të shfaqur matjet e trafikut në shiritin e statusit</string>
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimizo ekranin në bazë të orës së ditës dhe konditave të mjedisit për të përmirësuar lexueshmërinë dhe për të reduktuar lodhjen e syve</string>
-    <string name="live_display_mode">Profili i ekranit</string>
-    <string name="live_display_color_temperature_title">Temperatura e ngjyrave</string>
-    <string name="live_display_color_temperature_summary">Ditën: <xliff:g id="day_temperature">%1$d</xliff:g>K Natën: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Ditë</string>
-    <string name="live_display_night">Natë</string>
     <string name="live_display_outdoor_mode_title">Profili jashtë shtëpisë automatik</string>
     <string name="live_display_outdoor_mode_summary">Ngri automatikisht ndriçimin dhe saturimin nën dritë të fortë dielli</string>
     <string name="live_display_low_power_title">Redukto konsumimin e energjisë</string>

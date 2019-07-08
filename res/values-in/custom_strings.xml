@@ -141,7 +141,6 @@
     <string name="display_cutout_mode_hidden">Tersembunyi</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikasi layar penuh</string>
-    <string name="display_cutout_force_fullscreen_summary">Paksa aplikasi untuk mengabaikan jarak notch</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Bergetar untuk mengindikasikan status panggilan</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +206,6 @@
     <string name="pocket_judge_title">Deteksi saku</string>
     <string name="pocket_judge_summary">Kunci layar dan tombol ketika perangkat berada didalam saku</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimalkan layar berdasarkan waktu dan kondisi ruangan untuk meningkatkan keterbacaan dan mengurangi kelelahan mata</string>
-    <string name="live_display_mode">Mode tampilan</string>
-    <string name="live_display_color_temperature_title">Suhu pada warna</string>
-    <string name="live_display_color_temperature_summary">Pagi: <xliff:g id="day_temperature">%1$d</xliff:g>K;  Malam: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Siang</string>
-    <string name="live_display_night">Malam</string>
     <string name="live_display_outdoor_mode_title">Mode luar ruangan otomatis</string>
     <string name="live_display_outdoor_mode_summary">Meningkatkan kecerahan dan saturasi otomatis saat dibawah sinar matahari</string>
     <string name="live_display_low_power_title">Mengurangi konsumsi daya</string>

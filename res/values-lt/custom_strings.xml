@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Paslėptas</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Viso ekrano programėlės</string>
-    <string name="display_cutout_force_fullscreen_summary">Priversti programėles nepaisyti išpjovų vietos</string>
+    <string name="display_cutout_force_fullscreen_summary">Ignoruokite pasirinktų programų riba</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibracija, rodanti skambučio būseną</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Režimas \"kišenėje\"</string>
     <string name="pocket_judge_summary">Užrakinkite ekraną ir mygtukus, kai prietaisas yra kišenėje</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimizuoti ekraną remiantis paros metu ir aplinkos sąlygomis, siekiant pagerinti įskaitomumą ir sumažinti akių įtampą</string>
-    <string name="live_display_mode">Rodymo režimas</string>
-    <string name="live_display_color_temperature_title">Spalvos temperatūra</string>
-    <string name="live_display_color_temperature_summary">Diena: <xliff:g id="day_temperature">%1$d</xliff:g>K Naktis: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Diena</string>
-    <string name="live_display_night">Naktis</string>
+    <string name="color_settings_title">Spalvų nustatymai</string>
+    <string name="color_settings_summary">Sureguliuokite ir pagerinkite ekrano spalvas</string>
     <string name="live_display_outdoor_mode_title">Automatinis lauko režimas</string>
     <string name="live_display_outdoor_mode_summary">Padidinkite ryškumą ir sodrumą ryškioje saulės šviesoje</string>
     <string name="live_display_low_power_title">Sumažinkite energijos suvartojimą</string>

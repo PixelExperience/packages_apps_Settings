@@ -182,13 +182,6 @@
     <string name="network_traffic_show_units_summary">ಸ್ಥಿತಿಪಟ್ಟಿಕೆಯಲ್ಲಿ ಸಾಗಾಟ ಮಾಪನ ಘಟಕಗಳನ್ನು ತೋರಿಸಬೇಕೆ</string>
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_summary">ದಿನದ ಸಮಯ ಮತ್ತು ಪರಿಸರದ ಪರಿಸ್ಥಿತಿ ಆಧಾರಿಸಿ ನಿಮ್ಮ ಪರದೆಯನ್ನು ಉತ್ತಮವಾಗಿಸಿ ವಾಚನೀಯತೆ ಉತ್ತಮಗೊಳಿಸಿ ಕಣ್ಣಿನ ಆಯಾಸ ಕಡಿಮೆ ಮಾಡು</string>
-    <string name="live_display_mode">ಪ್ರದರ್ಶನ ರೀತಿ</string>
-    <string name="live_display_color_temperature_title">ಬಣ್ಣದ ತಾಪಮಾನ</string>
-    <string name="live_display_color_temperature_summary">ಹಗಲು: <xliff:g id="day_temperature">%1$d</xliff:g>K  ರಾತ್ರಿ: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">ಹಗಲು</string>
-    <string name="live_display_night">ರಾತ್ರಿ</string>
     <string name="live_display_outdoor_mode_title">ಸ್ವಯಂ ಹೊರಾಂಗಣ ರೀತಿ</string>
     <string name="live_display_outdoor_mode_summary">ಪ್ರಖರ ಸೂರ್ಯನಡಿ ಪರದೆಯ ಪ್ರಖರತೆ ಮತ್ತು ಆರ್ದ್ರೀಯತೆ ಸ್ವಯಂ ಹೆಚ್ಚಿಸು</string>
     <string name="live_display_low_power_title">ಶಕ್ತಿ ಬಳಕೆ ಕುಗ್ಗಿಸು</string>

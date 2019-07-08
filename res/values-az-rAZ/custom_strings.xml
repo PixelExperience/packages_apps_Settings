@@ -141,7 +141,6 @@
     <string name="display_cutout_mode_hidden">Gizli</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Tam ekran tətbiqlər</string>
-    <string name="display_cutout_force_fullscreen_summary">Tətbiqləri çərtik sahəsini yox saymağa məcbur et</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Zəngin vəziyyətini bildirmək üçün titrəyiş</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +206,6 @@
     <string name="pocket_judge_title">Cib rejimi aşkarlama</string>
     <string name="pocket_judge_summary">Cihaz cibinizdə olarkən ekranı və düymələri kilidlə</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Oxunaqlılığı artırmaq və göz yorğunluğunu azaltmaq üçün günün saatına və mühit şərtlərinə görə ekranınızı uyğunlaşdırın</string>
-    <string name="live_display_mode">Ekran rejimi</string>
-    <string name="live_display_color_temperature_title">Rəng temperaturu</string>
-    <string name="live_display_color_temperature_summary">Gündüz: <xliff:g id="day_temperature">%1$d</xliff:g>K  Gecə: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Gündüz</string>
-    <string name="live_display_night">Gecə</string>
     <string name="live_display_outdoor_mode_title">Avtomatik açıq hava rejimi</string>
     <string name="live_display_outdoor_mode_summary">Parlaq günəş işığı altında parlaqlığı və doyğunluğu artırır</string>
     <string name="live_display_low_power_title">Enerji sərfiyyatını azalt</string>
@@ -243,8 +235,6 @@
     <string name="live_display_color_profile_srgb_summary">Rənglər, sRGB rəng aralığına görə dəqiqdir</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Rənglər, DCI-P3 rəng aralığına görə dəqiqdir</string>
-    <string name="live_display_reading_mode_title">Oxuma rejimi</string>
-    <string name="live_display_reading_mode_summary">Uzun müddətli oxuma üçün boz çalar rejimi</string>
     <string name="color_calibration_title">Rəng kalibrasiyası</string>
     <string name="color_calibration_summary">Ekran rənglərini kalibrasiya et</string>
     <string name="color_red_title">Qırmızı</string>

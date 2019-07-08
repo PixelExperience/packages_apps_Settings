@@ -23,14 +23,14 @@
     <string name="lights_category_title">Axustes da luz</string>
     <string name="notification_light_title">Luz de notificación</string>
     <string name="battery_light_title">Luz da batería</string>
-    <string name="battery_low_pulse_title">Parpadear se hai pouca batería</string>
+    <string name="battery_low_pulse_title">Prema de haber pouca batería</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> é <xliff:g id="status" example="disabled">%2$s </xliff:g></string>
     <string name="sim_disabled">desactivada</string>
     <string name="sim_missing">ausente ou defectuosa</string>
-    <string name="sim_enabler_need_disable_sim">Desactivarase a tarxeta SIM. Quere continuar?</string>
+    <string name="sim_enabler_need_disable_sim">Desactivarase a tarxeta SIM. Quer continuar?</string>
     <string name="sim_enabler_will_disable_sim_title">Atención</string>
-    <string name="sim_enabler_need_switch_data_service">Esta tarxeta SIM será deshabilitada e a tarxeta SIM <xliff:g id="slotid">%1$s</xliff:g> será empregada para servizos de datos. Estás seguro que desexas continuar?</string>
+    <string name="sim_enabler_need_switch_data_service">Esta tarxeta SIM será deshabilitada e a tarxeta SIM <xliff:g id="slotid">%1$s</xliff:g> será empregada pra servizos de datos. Está seguro que desexa continuar?</string>
     <string name="sim_enabler_airplane_on">Non se pode realizar a operación co modo avión activado.</string>
     <string name="sim_enabler_in_call">Non se pode realizar a operación durante unha chamada.</string>
     <string name="sim_enabler_both_inactive">Non se poden deshabilitar todas as tarxetas SIM</string>
@@ -44,34 +44,34 @@
     <string name="reset">Restabelecer</string>
     <!-- Buttons -->
     <string name="button_pref_title">Botóns</string>
-    <string name="navigation_bar_title">Botóns e disposición</string>
+    <string name="navigation_bar_title">Barra de navegación</string>
     <string name="hardware_keys_power_key_title">Botón de acendido</string>
-    <string name="hardware_keys_home_key_title">Botón a principal</string>
-    <string name="hardware_keys_back_key_title">Botón Atrás</string>
-    <string name="hardware_keys_menu_key_title">Botón de menú</string>
-    <string name="hardware_keys_assist_key_title">Botón de buscas</string>
-    <string name="hardware_keys_appswitch_key_title">Botón Recentes</string>
-    <string name="hardware_keys_camera_key_title">Botón Cámara</string>
+    <string name="hardware_keys_home_key_title">Botón de inicio</string>
+    <string name="hardware_keys_back_key_title">Botón de retroceso</string>
+    <string name="hardware_keys_menu_key_title">Botón do menú</string>
+    <string name="hardware_keys_assist_key_title">Botón de pescudas</string>
+    <string name="hardware_keys_appswitch_key_title">Botón de recentes</string>
+    <string name="hardware_keys_camera_key_title">Botón da cámara</string>
     <string name="hardware_keys_volume_keys_title">Botóns de volume</string>
-    <string name="hardware_keys_short_press_title">Acción con presión breve</string>
+    <string name="hardware_keys_short_press_title">Acción con presión curta</string>
     <string name="hardware_keys_long_press_title">Acción con presión longa</string>
-    <string name="hardware_keys_double_tap_title">Acción con toque duplo</string>
+    <string name="hardware_keys_double_tap_title">Acción de dobre toque</string>
     <string name="hardware_keys_action_nothing">Ningunha acción</string>
     <string name="hardware_keys_action_menu">Abrir/Pechar menú</string>
     <string name="hardware_keys_action_app_switch">Selector de aplicacións recentes</string>
-    <string name="hardware_keys_action_search">Axudante de buscas</string>
-    <string name="hardware_keys_action_voice_search">Busca con voz</string>
-    <string name="hardware_keys_action_in_app_search">Busca na aplicación</string>
-    <string name="hardware_keys_action_launch_camera">Lanzar cámara</string>
+    <string name="hardware_keys_action_search">Axudante de pescudas</string>
+    <string name="hardware_keys_action_voice_search">Pescuda con voz</string>
+    <string name="hardware_keys_action_in_app_search">Pescuda na aplicación</string>
+    <string name="hardware_keys_action_launch_camera">Executar cámara</string>
     <string name="hardware_keys_action_sleep">Apagar a pantalla</string>
     <string name="hardware_keys_action_last_app">Última aplicación</string>
-    <string name="hardware_keys_action_split_screen">Pantalla dividida</string>
+    <string name="hardware_keys_action_split_screen">Dividir a pantalla</string>
     <string name="hardware_keys_swipe_right_key_title">Esvarar á dereita</string>
     <string name="hardware_keys_swipe_left_key_title">Esvarar á esquerda</string>
     <string name="hardware_keys_long_tap_key_title">Toque longo</string>
-    <string name="hardware_keys_swipe_tap_title">Accións ao pasar o dedo</string>
+    <string name="hardware_keys_swipe_tap_title">Accións ao esvarar</string>
     <string name="hardware_keys_long_tap_title">Acción de toque longo</string>
-    <string name="button_wake_title">Despertar dispositivo</string>
+    <string name="button_wake_title">Espertar o dispositivo</string>
     <string name="camera_sleep_on_release_title">Vista rápida</string>
     <string name="camera_sleep_on_release_summary">Unha leve pulsación manterá a pantalla acendida ata que se solte o botón</string>
     <string name="camera_launch_title">Lanzar cámara</string>
@@ -119,55 +119,65 @@
     <string name="ambient_play_saving_options_quiet_period_enable_title">Activar tempo de inactividad</string>
     <string name="ambient_play_saving_options_quiet_period_enable_summary">Deshabilitar o recoñecemento durante un determinado período de tempo</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Hora de comezo</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Tempo Final</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">Hora de finalización</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">Desbloqueo facial automatico</string>
-    <string name="face_auto_unlock_summary">Despedir a pantalla de bloqueo despois de desbloquear coa cara</string>
+    <string name="face_auto_unlock_summary">Desbotar a pantalla de bloqueo despois do desbloqueo facial</string>
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Reinicio avanzado</string>
     <string name="advanced_reboot_summary">Desbloqueado, inclúe opcións no menú de apagado para reiniciar no modo recuperación ou cargador de arranque</string>
     <!-- Thermal control per app -->
-    <string name="thermal_control_per_app">Optimizacion de perfil</string>
-    <string name="thermal_control_per_app_default">No optimizacion</string>
-    <string name="thermal_control_per_app_benchmark">Desempeño</string>
+    <string name="thermal_control_per_app">Optimizacion do perfil</string>
+    <string name="thermal_control_per_app_default">Sen optimización</string>
+    <string name="thermal_control_per_app_benchmark">Rendemento</string>
     <string name="thermal_control_per_app_games">Xogos</string>
     <string name="thermal_control_per_app_browser">Navegador</string>
     <string name="thermal_control_per_app_video_playback">Reprodución de vídeo</string>
     <string name="thermal_control_per_app_dialer">Marcador</string>
-    <string name="thermal_control_per_app_camera">Camara</string>
+    <string name="thermal_control_per_app_camera">Cámara</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Comportamento Pimario</string>
-    <string name="display_cutout_mode_normal">Por defecto</string>
+    <string name="display_cutout_mode_title">Comportamento do Notch</string>
+    <string name="display_cutout_mode_normal">Valores predefinidos</string>
     <string name="display_cutout_mode_hidden">Agochados</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicacións a pantalla completa</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">Vibrar pra indicar o estatus da chamada</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">Autentificación coa pegada dactilar</string>
+    <string name="fp_success_auth_vib_summary">Vibrar cando a autenticación coa pegada dactilar foi correcta</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
-    <string name="status_bar_double_tap_to_sleep_title">Doble toque para apagar a pantalla</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Toque dúas veces na barra de estado para apagar a visualización</string>
+    <string name="status_bar_double_tap_to_sleep_title">Dobre toque pra apagar a pantalla</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Dobre toque na barra de estado pra apagar a visualización</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Amosar a portada do álbum</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">Inverter disposición</string>
+    <string name="nav_bar_layout_inverse_summary">Inverter os botóns da barra de navegación</string>
     <!-- Torch long press power button -->
-    <string name="torch_long_press_power_gesture_title">Manteña pulsado para activar a linterna</string>
-    <string name="torch_long_press_power_gesture_desc">Encender lanterna ao mantener presionado o botón de encendido mentres a pantalla esté apagada</string>
-    <string name="torch_long_press_power_timeout_title">Apagar a lanterna automaticamente</string>
-    <string name="torch_long_press_power_timeout_never">Nunca</string>
+    <string name="torch_long_press_power_gesture_title">Manteña pulsado pra activar a linterna</string>
+    <string name="torch_long_press_power_gesture_desc">Prender lanterna ao manter presionado o botón de acendido mentres a pantalla estea apagada</string>
+    <string name="torch_long_press_power_timeout_title">Apagar o facho de xeito automático</string>
+    <string name="torch_long_press_power_timeout_never">Endexamais</string>
     <string name="torch_long_press_power_timeout_1min">1 minuto</string>
     <string name="torch_long_press_power_timeout_2min">2 minutos</string>
     <string name="torch_long_press_power_timeout_5min">5 minutos</string>
     <string name="torch_long_press_power_timeout_10min">10 minutos</string>
     <!-- Volume control playback -->
-    <string name="volbtn_music_controls_title">Controla la reproducción</string>
-    <string name="volbtn_music_controls_summary">Buscar pistas de música por longo presionando as teclas de volume mentres o visor está desactivado</string>
+    <string name="volbtn_music_controls_title">Controlar a reproducción</string>
+    <string name="volbtn_music_controls_summary">Buscar pistas de música por toque longo nas teclas do volume mentres o visor se atopa desactivado</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Desactivar en pantalla de bloqueo</string>
+    <string name="lockscreen_power_menu_disabled_summary">Desactivar o menú de enerxía na pantalla de bloqueo protexida</string>
     <!-- Others settings -->
+    <string name="others_settings_title">Outros axustes</string>
     <string name="additional_buttons_title">Botóns adicionais</string>
     <!-- Status bar -->
     <string name="status_bar_title">Barra de estado</string>
-    <string name="status_bar_quick_qs_pulldown_title">Tirar para abaixo</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s na esquina da barra de estado abre a Configuración rápida</string>
+    <string name="lockscreen_qs_disabled_title">Desactivar en pantalla de bloqueo</string>
+    <string name="lockscreen_qs_disabled_summary">Desactivar a barra de estatus expandida na pantalla de bloqueo protexida</string>
+    <string name="status_bar_quick_qs_pulldown_title">Tirar pra abaixo</string>
+    <string name="status_bar_quick_qs_pulldown_summary">%1$s o canto da barra de estado abren os axustes rápidos</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Esquerda</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Dereita</string>
     <string name="status_bar_quick_qs_pulldown_off">Apagado</string>
@@ -193,14 +203,9 @@
     <string name="network_traffic_show_units">Amosa unidades</string>
     <string name="network_traffic_show_units_summary">Se queres amosar as unidades de medición do tráfico na barra de estado</string>
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">Detección en peto</string>
+    <string name="pocket_judge_summary">Bloquear a pantalla e botóns cando o dispositivo se atope en peto</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimizar a súa pantalla baseandose na hora do día e as condicións ambientais para mellorar a lexibilidade e reducir o cansanzo visual</string>
-    <string name="live_display_mode">Modo de visualización</string>
-    <string name="live_display_color_temperature_title">Cor de temperatura</string>
-    <string name="live_display_color_temperature_summary">Día: <xliff:g id="day_temperature">%1$d</xliff:g>K Noite:<xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Dia</string>
-    <string name="live_display_night">Noite</string>
     <string name="live_display_outdoor_mode_title">Modo exterior automático</string>
     <string name="live_display_outdoor_mode_summary">Aumenta o brillo e saturación automáticamente ao estar baixo luz solar intensa</string>
     <string name="live_display_low_power_title">Reducir o consumo de enerxía</string>
@@ -247,5 +252,10 @@
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">Automático (segundo a hora do día)</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Deslizar pra capturar a pantalla</string>
+    <string name="swipe_to_screenshot_gesture_summary">Deslizar tres dedos pra capturar a pantalla</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Estilo do tema escuro</string>
+    <string name="dark_theme_style_default">Por defecto</string>
+    <string name="dark_theme_style_black">Negro</string>
 </resources>

@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Détecteur de poche</string>
     <string name="pocket_judge_summary">Verrouiller l\'écran et les boutons quand l\'appareil est dans votre poche</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimiser votre écran en fonction de l\'heure et des conditions ambiantes pour améliorer la lisibilité et réduire la fatigue oculaire</string>
-    <string name="live_display_mode">Mode d\'affichage</string>
-    <string name="live_display_color_temperature_title">Température de la couleur</string>
-    <string name="live_display_color_temperature_summary">Jour : <xliff:g id="day_temperature">%1$d</xliff:g>K  Nuit : <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Jour</string>
-    <string name="live_display_night">Nuit</string>
+    <string name="color_settings_title">Paramètres de couleur</string>
+    <string name="color_settings_summary">Ajuster et améliorer les couleurs de l\'écran</string>
     <string name="live_display_outdoor_mode_title">Mode extérieur automatique</string>
     <string name="live_display_outdoor_mode_summary">Augmenter la luminosité et la saturation automatiquement sous la lumière du soleil</string>
     <string name="live_display_low_power_title">Réduire la consommation d\'énergie</string>

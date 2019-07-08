@@ -176,7 +176,7 @@
     <!-- Status bar -->
     <string name="status_bar_title">Barra di stato</string>
     <string name="lockscreen_qs_disabled_title">Disabilita sulla schermata di blocco</string>
-    <string name="lockscreen_qs_disabled_summary">Disabilita la barra estesa di stato sul blocco schermo</string>
+    <string name="lockscreen_qs_disabled_summary">Disabilita espansione barra di stato sulla schermata di blocco</string>
     <string name="status_bar_quick_qs_pulldown_title">Impostazioni rapide</string>
     <string name="status_bar_quick_qs_pulldown_summary">Scorri la barra di stato verso il basso da %1$s per aprire le impostazioni rapide</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Sinistra</string>
@@ -205,15 +205,10 @@
     <string name="network_traffic_show_units_summary">Indica se mostrare l\'unità di misura del traffico nella barra di stato</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">Rilevamento tasca</string>
-    <string name="pocket_judge_summary">Blocca lo schermo e i pulsanti quando il dispositivo é nella tua tasca</string>
+    <string name="pocket_judge_summary">Blocca lo schermo e i pulsanti quando il dispositivo è in tasca</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Ottimizza lo schermo in base all\'ora del giorno e alle condizioni ambientali per migliorare la leggibilità e ridurre l\'affaticamento degli occhi</string>
-    <string name="live_display_mode">Modalità display</string>
-    <string name="live_display_color_temperature_title">Temperatura colore</string>
-    <string name="live_display_color_temperature_summary">Giorno: <xliff:g id="day_temperature">%1$d</xliff:g>K  Notte: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Giorno</string>
-    <string name="live_display_night">Notte</string>
+    <string name="color_settings_title">Impostazioni colore</string>
+    <string name="color_settings_summary">Regola e migliora i colori dello schermo</string>
     <string name="live_display_outdoor_mode_title">Modalità all\'aperto automatica</string>
     <string name="live_display_outdoor_mode_summary">Aumenta la luminosità e la saturazione automaticamente sotto la luce del sole</string>
     <string name="live_display_low_power_title">Riduci consumo energetico</string>

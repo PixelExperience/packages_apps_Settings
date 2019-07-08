@@ -27,19 +27,19 @@
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g>이(가) <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">비활성화됨</string>
-    <string name="sim_missing">누락 또는 잘못됨</string>
+    <string name="sim_missing">누락되거나 잘못됨</string>
     <string name="sim_enabler_need_disable_sim">SIM 카드가 비활성화됩니다. 계속하시겠습니까?</string>
-    <string name="sim_enabler_will_disable_sim_title">경고</string>
-    <string name="sim_enabler_need_switch_data_service">이 SIM은 비활성화되며 SIM <xliff:g id="slotid">%1$s</xliff:g>은(는) 데이터 서비스에 사용됩니다. 계속하시겠습니까?</string>
+    <string name="sim_enabler_will_disable_sim_title">주의</string>
+    <string name="sim_enabler_need_switch_data_service">이 SIM은 비활성화되며 SIM <xliff:g id="slotid">%1$s</xliff:g>이(가) 데이터 서비스에 사용됩니다. 계속하시겠습니까?</string>
     <string name="sim_enabler_airplane_on">비행기 모드에서는 작업을 수행할 수 없습니다.</string>
-    <string name="sim_enabler_in_call">통화중에는 작업을 수행할 수 없습니다.</string>
+    <string name="sim_enabler_in_call">통화 중에는 작업을 수행할 수 없습니다.</string>
     <string name="sim_enabler_both_inactive">모든 SIM 카드를 비활성화할 수 없습니다</string>
     <string name="sim_enabler_enabling">활성화 중\u2026</string>
     <string name="sim_enabler_disabling">비활성화 중\u2026</string>
     <string name="sub_activate_success">SIM이 활성화되었습니다.</string>
-    <string name="sub_activate_failed">활성화에 실패했습니다.</string>
+    <string name="sub_activate_failed">활성화하지 못했습니다.</string>
     <string name="sub_deactivate_success">SIM이 비활성화되었습니다.</string>
-    <string name="sub_deactivate_failed">비활성화에 실패했습니다.</string>
+    <string name="sub_deactivate_failed">비활성화하지 못했습니다.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">초기화</string>
     <!-- Buttons -->
@@ -61,16 +61,16 @@
     <string name="hardware_keys_action_app_switch">최근 앱 전환기</string>
     <string name="hardware_keys_action_search">검색 도우미</string>
     <string name="hardware_keys_action_voice_search">음성 검색</string>
-    <string name="hardware_keys_action_in_app_search">앱에서 검색</string>
+    <string name="hardware_keys_action_in_app_search">앱 내에서 검색</string>
     <string name="hardware_keys_action_launch_camera">카메라 실행</string>
     <string name="hardware_keys_action_sleep">화면 끄기</string>
     <string name="hardware_keys_action_last_app">마지막으로 사용한 앱</string>
     <string name="hardware_keys_action_split_screen">화면 분할</string>
     <string name="hardware_keys_swipe_right_key_title">오른쪽으로 스와이프</string>
-    <string name="hardware_keys_swipe_left_key_title">왼쪽으로 스 와이프</string>
+    <string name="hardware_keys_swipe_left_key_title">왼쪽으로 스와이프</string>
     <string name="hardware_keys_long_tap_key_title">길게 누르기</string>
-    <string name="hardware_keys_swipe_tap_title">스와이프 동작</string>
-    <string name="hardware_keys_long_tap_title">길게 누르기 동작</string>
+    <string name="hardware_keys_swipe_tap_title">스와이프할 때 동작</string>
+    <string name="hardware_keys_long_tap_title">길게 누를 때 동작</string>
     <string name="button_wake_title">기기 깨우기</string>
     <string name="camera_sleep_on_release_title">화면 엿보기</string>
     <string name="camera_sleep_on_release_summary">버튼을 반만 누르고 있는 동안 화면을 계속 켜두기</string>
@@ -79,7 +79,7 @@
     <!-- Key backlight -->
     <string name="button_backlight_title">백라이트</string>
     <string name="button_backlight_enabled">버튼 조명 사용</string>
-    <string name="button_backlight_only_when_pressed_title">버튼이 눌렸을 때만 조명을 켭니다.</string>
+    <string name="button_backlight_only_when_pressed_title">버튼이 눌렸을 때만 조명 켜기</string>
     <string name="button_backlight_seekbar_title">버튼 조명 밝기</string>
     <string name="backlight_timeout_title">조명 시간 제한</string>
     <string name="backlight_timeout_unlimited">끄지 않음</string>
@@ -90,42 +90,42 @@
     <string name="weather_title">날씨</string>
     <string name="weather_unit">온도 단위</string>
     <!-- Ambient Play -->
-    <string name="ambient_play_summary">모든 노래 표시</string>
-    <string name="ambient_play_lockscreen_title">잠금화면에 음악 표시</string>
-    <string name="ambient_play_lockscreen_summary">노래가 인식되면 잠금화면에 표시됩니다.</string>
+    <string name="ambient_play_summary">주변의 노래 표시</string>
+    <string name="ambient_play_lockscreen_title">잠금 화면에 노래 표시</string>
+    <string name="ambient_play_lockscreen_summary">노래가 인식되면 잠금 화면에 표시</string>
     <string name="ambient_play_notifications_title">알림</string>
-    <string name="ambient_play_notifications_summary">노래가 인식되면 알림으로 표시됩니다.</string>
+    <string name="ambient_play_notifications_summary">노래가 인식되면 알림 표시</string>
     <string name="ambient_play_switch_bar_on">켜짐</string>
     <string name="ambient_play_switch_bar_off">꺼짐</string>
     <string name="ambient_play_help_text">근처에서 음악이 재생 중일 경우 해당 음악의 제목과 아티스트를 알려 줍니다. 이 기능은 배터리와 데이터 사용량에 영향을 미칠 수 있습니다.</string>
-    <string name="ambient_play_history">지금 재생 중 기록</string>
+    <string name="ambient_play_history">Now Playing 기록</string>
     <string name="ambient_play_loading_data">데이터 로드 중…</string>
     <string name="ambient_play_history_today">오늘</string>
     <string name="ambient_play_history_yesterday">어제</string>
     <string name="ambient_play_history_dialog_play">지금 재생</string>
     <string name="ambient_play_history_dialog_search">웹에서 검색</string>
     <string name="ambient_play_history_dialog_remove">삭제</string>
-    <string name="ambient_play_history_empty">음악 기록이 비어 있습니다.</string>
+    <string name="ambient_play_history_empty">음악 기록이 비어있습니다</string>
     <string name="ambient_play_history_menu_remove_all">모두 삭제</string>
     <string name="ambient_play_history_menu_add_to_home">홈 화면에 추가</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">계속하시겠습니까?</string>
     <string name="ambient_play_saving_options_title">절약 설정</string>
     <string name="ambient_play_saving_options_summary">배터리와 네트워크 사용량을 줄이는 설정</string>
     <string name="ambient_play_saving_options_low_battery_title">배터리 부족</string>
-    <string name="ambient_play_saving_options_low_battery_summary">배터리가 적을 때 인식을 비활성화합니다</string>
+    <string name="ambient_play_saving_options_low_battery_summary">배터리가 적을 때 인식 비활성화</string>
     <string name="ambient_play_saving_options_mobile_data_title">모바일 데이터</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">모바일 데이터가 사용 설정되면 인식을 비활성화합니다</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">모바일 데이터가 사용되면 인식 비활성화</string>
     <string name="ambient_play_saving_options_quiet_period_title">방해 금지 모드</string>
     <string name="ambient_play_saving_options_quiet_period_enable_title">방해 금지 모드 사용</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">설정한 시간 동안 인식을 비활성화합니다</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">설정한 시간 동안 인식 비활성화</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">시작 시간</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">종료 시간</string>
     <!-- Face auto unlock -->
-    <string name="face_auto_unlock_title">자동으로 얼굴 인식 잠금 해제</string>
-    <string name="face_auto_unlock_summary">얼굴 인식 후 잠금이 해제 됩니다.</string>
+    <string name="face_auto_unlock_title">자동으로 얼굴 인식 후 잠금 해제</string>
+    <string name="face_auto_unlock_summary">얼굴 인식 후 잠금 화면 해제</string>
     <!-- Advanced restart options -->
-    <string name="advanced_reboot_title">고급 다시 시작 기능</string>
-    <string name="advanced_reboot_summary">화면 잠금이 해제되어 있으면 전원 메뉴에 복구 모드 및 부트로더로 다시 시작하는 옵션을 추가합니다.</string>
+    <string name="advanced_reboot_title">고급 다시 시작</string>
+    <string name="advanced_reboot_summary">잠금 해제되어 있을 때 전원 메뉴에 복구 모드 및 부트로더로 다시 시작하는 옵션 추가</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">최적화 프로파일</string>
     <string name="thermal_control_per_app_default">최적화 비활성화</string>
@@ -141,17 +141,17 @@
     <string name="display_cutout_mode_hidden">숨김</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">전체 화면 앱</string>
-    <string name="display_cutout_force_fullscreen_summary">앱이 노치 공간을 무시하도록 합니다</string>
+    <string name="display_cutout_force_fullscreen_summary">선택한 앱에 한해 노치 공간 무시하기</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">통화 상태를 나타내는 진동</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fp_success_auth_vib_title">지문 인식</string>
-    <string name="fp_success_auth_vib_summary">지문 인식에 성공하면 진동이 울립니다</string>
+    <string name="fp_success_auth_vib_summary">지문이 인식되면 진동</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">두드려 화면 끄기</string>
     <string name="status_bar_double_tap_to_sleep_summary">상태 표시줄이나 잠금 화면을 두 번 두드려 화면 끄기</string>
     <!-- Lock screen cover art -->
-    <string name="lockscreen_media_art_title">앨범 커버 이미지 표시</string>
+    <string name="lockscreen_media_art_title">미디어 커버 아트 표시</string>
     <!-- Button that controls inversion of layout of navigation bar -->
     <string name="nav_bar_layout_inverse_title">레이아웃 반전</string>
     <string name="nav_bar_layout_inverse_summary">내비게이션 바 레이아웃 반전</string>
@@ -178,7 +178,7 @@
     <string name="lockscreen_qs_disabled_title">잠금 화면에서 비활성화</string>
     <string name="lockscreen_qs_disabled_summary">보안 잠금 화면에서 설정 패널 비활성화</string>
     <string name="status_bar_quick_qs_pulldown_title">빠르게 설정 패널 열기</string>
-    <string name="status_bar_quick_qs_pulldown_summary">상태 표시줄의 %1$s 모서리를 내려 설정 패널을 봅니다</string>
+    <string name="status_bar_quick_qs_pulldown_summary">상태 표시줄의 %1$s 모서리를 내려 설정 패널 보기</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">왼쪽</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">오른쪽</string>
     <string name="status_bar_quick_qs_pulldown_off">비활성화</string>
@@ -195,25 +195,20 @@
     <string name="network_traffic_mode_disable">사용 안 함</string>
     <string name="network_traffic_mode_all">업로드와 다운로드</string>
     <string name="network_traffic_autohide">자동으로 숨기기</string>
-    <string name="network_traffic_autohide_summary">활동이 없을 때 자동으로 트래픽 모니터를 숨깁니다</string>
+    <string name="network_traffic_autohide_summary">아무런 활동이 없을때 트래픽 모니터 숨기기</string>
     <string name="network_traffic_units_title">트래픽 측정 단위</string>
     <string name="network_traffic_units_kilobits">초당 킬로비트 (kb/s)</string>
     <string name="network_traffic_units_megabits">초당 메가비트 (Mb/s)</string>
     <string name="network_traffic_units_kilobytes">초당 킬로바이트 (kB/s)</string>
     <string name="network_traffic_units_megabytes">초당 메가바이트 (MB/s)</string>
     <string name="network_traffic_show_units">단위 표시</string>
-    <string name="network_traffic_show_units_summary">상태 표시줄에 트래픽 측정 단위를 표시할 것인지 설정합니다</string>
+    <string name="network_traffic_show_units_summary">상태 표시줄에 트래픽 측정 단위 표시 여부</string>
     <!-- Pocket judge -->
     <string name="pocket_judge_title">주머니 감지</string>
     <string name="pocket_judge_summary">기기가 주머니에 있을 때 화면과 버튼 입력을 잠급니다</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">가독성을 향상시키고 눈의 피로를 줄이기 위해 주변 환경과 시간에 따라 화면을 최적화</string>
-    <string name="live_display_mode">디스플레이 모드</string>
-    <string name="live_display_color_temperature_title">색 온도</string>
-    <string name="live_display_color_temperature_summary">주간: <xliff:g id="day_temperature">%1$d</xliff:g>K  야간: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">주간</string>
-    <string name="live_display_night">야간</string>
+    <string name="color_settings_title">색상 설정</string>
+    <string name="color_settings_summary">화면 색상 조절 및 개선</string>
     <string name="live_display_outdoor_mode_title">자동 야외 모드</string>
     <string name="live_display_outdoor_mode_summary">밝은 햇빛 아래에서 자동으로 밝기와 채도 증가</string>
     <string name="live_display_low_power_title">전력 소모 절약</string>
@@ -260,8 +255,8 @@
     <!-- LiveDisplay - Custom theme mode -->
     <string name="systemui_theme_time">자동 (시간에 따라)</string>
     <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">화면을 스와이프 하여 스크린샷 찍기</string>
-    <string name="swipe_to_screenshot_gesture_summary">세 손가락을 스와이프 해서 스크린샷을 찍습니다</string>
+    <string name="swipe_to_screenshot_gesture_title">스와이프 하여 스크린샷 찍기</string>
+    <string name="swipe_to_screenshot_gesture_summary">세 손가락을 스와이프해서 스크린샷 찍기</string>
     <!-- Dark theme style -->
     <string name="dark_theme_style_title">어두운 테마 스타일</string>
     <string name="dark_theme_style_default">기본</string>

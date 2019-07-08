@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">مخفية</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">تطبيقات الشاشة الكاملة</string>
-    <string name="display_cutout_force_fullscreen_summary">إجبار التطبيقات على تجاهل مساحة الحز</string>
+    <string name="display_cutout_force_fullscreen_summary">تجاهل مساحة الحز للتطبيقات المحددة</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">إهتزاز للإشارة إلى حالة الإتصال</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">إستشعار الجيب</string>
     <string name="pocket_judge_summary">قفل الشاشة والأزرار عندما يكون الجهاز في جيبك</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">تحسين الشاشة استناداً إلى الوقت من اليوم والظروف المحيطة لتحسين قابلية القراءة وتقليل إجهاد العين</string>
-    <string name="live_display_mode">نمط العرض</string>
-    <string name="live_display_color_temperature_title">درجة حرارة اللون</string>
-    <string name="live_display_color_temperature_summary">النهار: <xliff:g id="day_temperature">%1$d</xliff:g>K  الليل: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">النهار</string>
-    <string name="live_display_night">الليل</string>
+    <string name="color_settings_title">إعدادات اللون</string>
+    <string name="color_settings_summary">ضبط وتحسين ألوان الشاشة</string>
     <string name="live_display_outdoor_mode_title">وضع في الخارج التلقائي</string>
     <string name="live_display_outdoor_mode_summary">زيادة الإضاءة والإشباع تلقائياً تحت أشعة الشمس</string>
     <string name="live_display_low_power_title">تقليل استهلاك الطاقة</string>

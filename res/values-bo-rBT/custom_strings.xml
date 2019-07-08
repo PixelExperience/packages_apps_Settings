@@ -16,13 +16,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">ཉིད་ཀྱི་ཁ་པར་སྟེང་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front">ཉིད་ཀྱིས་ཁ་པར་སྟེང་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">ཉིད་ཀྱིས་ཁ་པར་གྱི་གཡོན་ངོས་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">ཉིད་ཀྱིས་ཁ་པར་གྱི་གཡས་ངོས་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
     <!-- Notification light settings -->
     <string name="lights_category_title">སྟོན་སྒྲོན་གྱི་སྒྲིག་འགོད།</string>
     <string name="notification_light_title">བརྡ་ཐོའི་སྟོན་སྒྲོན།</string>
     <string name="battery_light_title">གློག་ཚད་སྟོན་སྒྲོན།</string>
+    <string name="battery_low_pulse_title">གློག་ཚད་དམའ་དུས་སྟོན་སྒྲོན་བཀར་བ། </string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g>ཟིན།<xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">སྤྱོད་མཚམས་བཞག་ཟིན།</string>
@@ -43,12 +44,15 @@
     <string name="reset">བསྐྱར་སྒྲིག</string>
     <!-- Buttons -->
     <string name="button_pref_title">ནོན་མཐེབ།</string>
+    <string name="navigation_bar_title">ནོན་མཐེབ་དང་སྒྲིག་བཀོད། </string>
+    <string name="hardware_keys_power_key_title">གློག་སྒོའི་མཐེབ། </string>
     <string name="hardware_keys_home_key_title">ངང་སྒུག་ཕྱིར་ལོག་མཐེབ།</string>
     <string name="hardware_keys_back_key_title">ཕྱིར་ལོག་མཐེབ།</string>
     <string name="hardware_keys_menu_key_title">ཐོ་གཞུང་མཐེབ།</string>
     <string name="hardware_keys_assist_key_title">འཚོལ་བཤེར་མཐེབ།</string>
     <string name="hardware_keys_appswitch_key_title">ཉེ་ཆར་གྱི་བྱ་རིམ་མཐེབ།</string>
     <string name="hardware_keys_camera_key_title">པར་ཆས་མཐེབ།</string>
+    <string name="hardware_keys_volume_keys_title">སྒྲའི་མཐེབ། </string>
     <string name="hardware_keys_short_press_title">ཡུན་ཐུང་ངུར་མནན་པའི་བྱེད་ནུས།</string>
     <string name="hardware_keys_long_press_title">ཡུན་རིང་བར་མནན་པའི་བྱེད་ནུས།</string>
     <string name="hardware_keys_double_tap_title">ཉིས་རྡེབ་ཀྱི་བྱེད་ནུས།</string>
@@ -80,7 +84,7 @@
     <string name="backlight_timeout_title">ནོན་མཐེབ་ཀྱི་གློག་གི་དུས་ཡུན།</string>
     <string name="backlight_timeout_unlimited">ཁ་མི་རྒྱག་པ།</string>
     <string name="backlight_summary_disabled">སྤྱོད་མཚམས་བཞག་ཟིན།</string>
-    <string name="backlight_summary_enabled_with_timeout">མཐེབ་ཀྱི་གློག་དེ་ <xliff:g id="timeout">%s</xliff:g>ལ་བཀར་བ།</string>
+    <string name="backlight_summary_enabled_with_timeout">ནོན་མཐེབ་ཀྱི་གློག་དེ་ <xliff:g id="timeout">%s</xliff:g>ལ་བཀར་བ།</string>
     <string name="backlight_summary_enabled">སྤྱོད་བཞིན་པ།</string>
     <!-- Weather -->
     <string name="weather_title">གནམ་གཤིས།</string>
@@ -88,7 +92,7 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">ཐག་ཉེ་སར་གཏོང་ལེན་བྱེད་བཞིན་པའི་གཞས་འཆར་བ།</string>
     <string name="ambient_play_lockscreen_title">བརྙན་ཤེལ་ཟྭའི་འཆར་ངོས་སྟེང་རོལ་དབྱངས་འཆར་བ།</string>
-    <string name="ambient_play_lockscreen_summary">བརྙན་ཤེལ་ཟྭ་བརྒྱུ་བ་དུས་ཀྱང་གླུ་གཞས་ངོས་འཛིན་གྱི་བྱེད་ནུས་འཆར་བ།</string>
+    <string name="ambient_play_lockscreen_summary">བརྙན་ཤེལ་ཟྭ་བརྒྱབ་དུས་ཀྱང་གླུ་གཞས་ངོས་འཛིན་གྱི་བྱེད་ནུས་འཆར་བ།</string>
     <string name="ambient_play_notifications_title">བརྡ་ཐོ།</string>
     <string name="ambient_play_notifications_summary">གླུ་གཞས་ངོས་འཛིན་བྱེད་སྐབས་བརྡ་ཐོ་འཆར་བ།</string>
     <string name="ambient_play_switch_bar_on">ཁ་འབྱེད།</string>
@@ -132,23 +136,129 @@
     <string name="thermal_control_per_app_dialer">ཁ་པར།</string>
     <string name="thermal_control_per_app_camera">པར་ཆས།</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">ཉག་གའི་སྤྱོད་སྒོ། </string>
+    <string name="display_cutout_mode_normal">སོར་བཞག</string>
+    <string name="display_cutout_mode_hidden">མི་མངོན་པ། </string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">བརྙན་ཤེལ་ཁ་གང་པའི་ཉེར་སྤྱོད། </string>
+    <string name="display_cutout_force_fullscreen_summary">བཙན་ཤེད་ཀྱིས་བརྙན་ཤེལ་གྱི་ཉག་ག་སྣང་མེད་བྱེད་པ།</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">འདར་འགུལ་བྱས་ཏེ་ཁ་པར་འབྱོར་མིན་གྱི་གནས་ཚུལ་སྟོན་པ། </string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">མཛུབ་གུའི་ཞིབ་བཤེར། </string>
+    <string name="fp_success_auth_vib_summary">མཛུབ་གུའི་ཞིབ་བཤེར་ལེགས་འགྲུབ་བྱུང་དུས་འདར་འགུལ་བྱེད་པ། </string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">ཉིས་རྡེབ་བྱས་ཏེ་ཟྭ་རྒྱག་པ། </string>
+    <string name="status_bar_double_tap_to_sleep_summary">གནས་སྟངས་སྒྲོམ་ལ་ཉིས་རྡེབ་བྱས་ཏེ་ཟྭ་རྒྱག་པ། </string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">སྨྱན་རྫས་ཀྱི་སྒྱུ་རྩལ་པར་ངོས་མངོན་པ། </string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">སྒྲིག་བཀོད་སློག་པ། </string>
+    <string name="nav_bar_layout_inverse_summary">སྣེ་སྟོན་སྒྲོམ་གྱི་སྒྲིག་བཀོད་སློག་པ། </string>
     <!-- Torch long press power button -->
+    <string name="torch_long_press_power_gesture_title">ཡུན་རིང་བོར་མནན་པས་གློག་སྒྲོན་བཀར་བ། </string>
+    <string name="torch_long_press_power_gesture_desc">བརྙན་ཤེལ་གྱི་གློག་འཆར་མེད་དུས།  གློག་སྒོའི་མཐེབ་ཡུན་རིང་བོར་མནན་པས་གློག་སྒྲོན་བཀར་བ། </string>
+    <string name="torch_long_press_power_timeout_title">རང་འགུལ་གྱིས་གློག་སྒྲོན་གཟིམས་པ། </string>
+    <string name="torch_long_press_power_timeout_never">གཏན་དུ་མི་བྱེད།</string>
+    <string name="torch_long_press_power_timeout_1min">སྐར་མ 1</string>
+    <string name="torch_long_press_power_timeout_2min">སྐར་མ 2</string>
+    <string name="torch_long_press_power_timeout_5min">སྐར་མ 5</string>
+    <string name="torch_long_press_power_timeout_10min">སྐར་མ 10</string>
     <!-- Volume control playback -->
+    <string name="volbtn_music_controls_title">གཏོང་ལེན་ཚོད་འཛིན། </string>
+    <string name="volbtn_music_controls_summary">བརྙན་ཤེལ་གྱི་གློག་འཆར་མེད་དུས།  སྒྲའི་མཐེབ་ཡུན་རིང་པོར་མནན་པསགཞས་བརྗེ་བ། </string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">ཟྭ་བརྒྱབ་ཡོད་དུས་བཀོལ་མི་རུང་། </string>
+    <string name="lockscreen_power_menu_disabled_summary">ཟྭ་བརྒྱབ་ཡོད་པའི་བརྙན་ཡོལ་སྟེང་གློག་སྒོའི་གདམ་གཞུང་བཀོལ་མི་རུང་བ། </string>
     <!-- Others settings -->
+    <string name="others_settings_title">སྒྲིག་འགོད་གཞན་པ། </string>
+    <string name="additional_buttons_title">ཟུར་སྣོན་མཐེབ། </string>
     <!-- Status bar -->
+    <string name="status_bar_title">གནས་སྟངས་སྒྲོམ། </string>
+    <string name="lockscreen_qs_disabled_title">ཟྭ་བརྒྱབ་ཡོད་དུས་བཀོལ་མི་རུང་། </string>
+    <string name="lockscreen_qs_disabled_summary">ཟྭ་བརྒྱབ་ཡོད་པའི་བརྙན་ཡོལ་སྟེང་གློག་སྒོའི་གདམ་གཞུང་བཀོལ་མི་རུང་བ། </string>
+    <string name="status_bar_quick_qs_pulldown_title">མྱུར་མོར་མར་འདྲུད་པ། </string>
+    <string name="status_bar_quick_qs_pulldown_summary">གནའ་སྟངས་སྒྲོམ་གྱི %1$s གི་ཚད་ནས་མར་དྲུད་ན་མྱུར་མོའི་སྒྲིག་འགོད་ལ་འཇུག་པ། </string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">གཡོན།</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">གཡས། </string>
+    <string name="status_bar_quick_qs_pulldown_off">ཁ་རྒྱག</string>
+    <string name="status_bar_quick_qs_pulldown_left">གཡོན་གཞོགས། </string>
+    <string name="status_bar_quick_qs_pulldown_right">གཡས་གཞོགས། </string>
     <!-- Status bar - icons -->
+    <string name="status_bar_icons_title">གནས་སྟངས་སྒྲོམ་གྱི་རིས་འདྲ། </string>
+    <string name="status_bar_system_icons_title">བརྒྱུད་ཁོངས་ཀྱི་རིས་འདྲ། </string>
+    <string name="status_bar_system_icons_summary">གནས་སྟངས་སྒྲོམ་དུ་མངོན་པའི་རིས་འདྲ་ལ་ཚོད་འཛིན་བྱེད་པ། </string>
     <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_settings_title">དྲ་རྒྱའི་བཞུར་ཚད་ལ་ལྟ་འཛིན། </string>
+    <string name="network_traffic_settings_summary">གནས་སྟངས་སྒྲོམ་དུ་ད་སྐབས་ཀྱི་དྲ་རྒྱའི་་བཞུར་ཚད་ཀྱི་རིམ་པ་མངོན་པ། </string>
+    <string name="network_traffic_mode_title">འཆར་ཤེལ་གྱི་དཔེ་ཚུལ། </string>
+    <string name="network_traffic_mode_disable">སྤྱོད་མཚམས་འཇོག་པ། </string>
+    <string name="network_traffic_mode_all">ཡར་སྐྱེལ་དང་ཕབ་ལེན། </string>
+    <string name="network_traffic_autohide">རང་འགུལ་གྱིས་ཡིབ་པ། </string>
+    <string name="network_traffic_autohide_summary">དྲ་རྒྱ་སྤྱོད་མཚམས་བཞག་དུས་གནས་སྟངས་སྒྲོམ་གྱི་དྲ་རྒྱའི་མྱུར་ཚད་མི་མངོན་པ། </string>
+    <string name="network_traffic_units_title">དྲ་རྒྱའི་ལྟ་འཛིན་གྱི་འཇལ་བྱེད། </string>
+    <string name="network_traffic_units_kilobits">སྐར་ཆ་རེར་པི་ཐེ་སྟོང་རེ།  (kb/s)</string>
+    <string name="network_traffic_units_megabits">སྐར་ཆ་རེར་པི་ཐེ་ས་ཡ་རེ།  (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">སྐར་ཆ་རེར་ཡིག་ཚིགས་སྟོང་རེ། (kB/s)</string>
+    <string name="network_traffic_units_megabytes">སྐར་ཆ་རེར་ཡིག་ཚིགས་ས་ཡ་རེ། (Mb/s)</string>
+    <string name="network_traffic_show_units">འཇལ་བྱེད། </string>
+    <string name="network_traffic_show_units_summary">གནས་སྟངས་སྒྲོམ་དུ་དྲ་རྒྱའི་བཞུར་ཚད་ཀྱི་འཇལ་བྱེད་འཆར་བ་བྱེད་དམ། </string>
     <!-- Pocket judge -->
+    <string name="pocket_judge_title">པང་ཁུག་ནང་ཡོད་མིན་ལ་ཞིབ་བཤེར། </string>
+    <string name="pocket_judge_summary">པང་ཁུག་ནང་ཡོད་དུས་བརྙན་ཤེལ་དང་ནོན་མཐེབ་ལ་ཟྭ་རྒྱག་པ། </string>
     <!-- LiveDisplay -->
+    <string name="color_settings_title">ཁ་དོག་གི་སྒྲིག་འགོད། </string>
+    <string name="color_settings_summary">བརྙན་ཤེལ་གྱི་ཁ་དོག་ལེགས་སྒྲིག་དང་ལེགས་བཅོས། </string>
+    <string name="live_display_outdoor_mode_title">རང་འགུལ་གྱིས་ཕྱི་རོལ་གྱི་རྣམ་པར་བསྒྱུར་བ། </string>
+    <string name="live_display_outdoor_mode_summary">ཉི་འོད་དྲག་པོའི་འོག་བརྙན་ཤེལ་གྱི་གསལ་ཚད་སོགས་ཇེ་མཐོར་གཏོང་བ། </string>
+    <string name="live_display_low_power_title">གློག་ཟད་ཚད་ཇེ་དམར་གཏོང་བ། </string>
+    <string name="live_display_low_power_summary">གསལ་ཚད་ཇེ་དམའ་ལ་མི་འགྲོ་བའི་ཆ་རྐྱེན་འོག་བརྙན་ཤེལ་གྱི་གློག་ཟད་ཚད་ཆེས་ཆུང་བར་གཏོང་བ། </string>
+    <string name="live_display_enhance_color_title">ཚོན་མདོག་ཇེ་ཆེར་གཏོང་བ། </string>
+    <string name="live_display_enhance_color_summary">ཤ་མདངས་དང་ཡུལ་ལྗོངས་སོགས་ཀྱི་འདྲ་པར་གྱི་ཚོན་མདོག་གི་ཚད་ལོངས་ཚད་ཇེ་མཐོར་གཏོང་བ། </string>
+    <string name="live_display_color_profile_title">ཚོན་མདོག་གི་སྒྲིག་འགོད་ཡིག་ཆ། </string>
+    <string name="live_display_color_profile_standard_title">ཚད་ལྡན། </string>
+    <string name="live_display_color_profile_standard_summary">ཡང་དག་པའི་ཚོན་མདོག་དང་དྭངས་གསལ་གྱི་དཀར་པོ། </string>
+    <string name="live_display_color_profile_natural_title">རང་བྱུང་། </string>
+    <string name="live_display_color_profile_natural_summary">དངོས་དོན་གྱི་ཚོན་མདོག་དང་ཤ་མདངས།</string>
+    <string name="live_display_color_profile_dynamic_title">འགུལ་རྣམ། </string>
+    <string name="live_display_color_profile_dynamic_summary">ཇེ་དྲག་ཏུ་སོང་བའི་ཁ་དོག་དང་དྭངས་གསལ་གྱི་དཀར་པོ། </string>
+    <string name="live_display_color_profile_cinema_title">གློག་བརྙན་ཁང་། </string>
+    <string name="live_display_color_profile_cinema_summary">བརྙན་ཟློས་ལ་དམིགས་པའི་ཚོན་མདོག་བསྐྱར་མངོན། </string>
+    <string name="live_display_color_profile_astronomy_title">གནམ་དཔྱད། </string>
+    <string name="live_display_color_profile_astronomy_summary">མཚན་མཐོང་གི་དམར་ནག</string>
+    <string name="live_display_color_profile_photography_title">བརྙན་ལེན། </string>
+    <string name="live_display_color_profile_photography_summary">འདྲ་པར་ལ་དམིགས་པའི་ཚོན་མདོག་བསྐྱར་མངོན། </string>
+    <string name="live_display_color_profile_basic_title">རྨང་གཞི། </string>
+    <string name="live_display_color_profile_basic_summary">དག་བཅོས་བྱས་མེད་པའི་བརྙན་ཤེལ་བེད་སྤྱོད་བྱེད་པ། </string>
+    <string name="live_display_color_profile_adaptive_title">རང་འཕྲོད།</string>
+    <string name="live_display_color_profile_adaptive_summary">ཁོར་ཡུག་གི་ཆ་རྐྱེན་དང་བསྟུན་ནས་ཚོན་མདོག་རང་བསྒྱུར།</string>
+    <string name="live_display_color_profile_reading_title">དཔེ་ཀློག</string>
+    <string name="live_display_color_profile_reading_summary">དྲོད་མདོག་བཀོལ་ནས་ངལ་དུབ་ཉུང་དུ་གཏོང་བ།</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">ཚོན་མདོགsRGBཡི་ཚད་གཞིར་དག་བཅོས་བྱེད་པ།</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">ཚོན་མདོག་DCI-P3གྱི་ཚད་གཞིར་དག་བཅོས་བྱེད་པ།</string>
+    <string name="live_display_reading_mode_title">དཔེ་ཀློག་གི་རྣམ་པ།</string>
+    <string name="live_display_reading_mode_summary">ཡུན་རིང་པོའི་དཔེ་ཀློག་ལ་འཚམ་པའི་སྐྱ་མདོག་དཔེ་ཚུལ།</string>
+    <string name="color_calibration_title">ཚོན་མདོག་དག་བཅོས།</string>
+    <string name="color_calibration_summary">ཚད་ལྡན་གྱི་བརྙན་ཤེལ་ཚོན་མདོག</string>
+    <string name="color_red_title">དམར་པོ།</string>
+    <string name="color_green_title">ལྗང་ཁུ།</string>
+    <string name="color_blue_title">སྔོན་པོ།</string>
     <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">འདྲ་པར་ལེགས་སྒྲིག</string>
+    <string name="picture_adjustment_summary">མདོག་དང་། འདང་ཚད། གསལ་ཚད། བསྡུར་ཚད་བཅས་ལེགས་སྒྲིག</string>
+    <string name="adj_hue_title">མདོག</string>
+    <string name="adj_saturation_title">འདང་ཚད། </string>
+    <string name="adj_intensity_title">གསལ་ཚད།</string>
+    <string name="adj_contrast_title">བསྡུར་ཚད།</string>
     <!-- LiveDisplay - Custom theme mode -->
+    <string name="systemui_theme_time">རང་འགུལ། (གནམ་མདོག)</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">འདྲེད་འགུལ་གྱིས་བརྙན་ཤེལ་བཅད་ལེན།</string>
+    <string name="swipe_to_screenshot_gesture_summary">མཛུབ་གུ་གསུམ་འདྲེད་འགུལ་བྱས་ཏེ་བརྙན་ཤེལ་བཅད་ལེན། </string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">མདོག་ནག་པོའི་རྣམ་པ། </string>
+    <string name="dark_theme_style_default">སོར་བཞག</string>
+    <string name="dark_theme_style_black">ནག་པོ།</string>
 </resources>

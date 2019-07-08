@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Детекција када је уређај у џепу</string>
     <string name="pocket_judge_summary">Закључај екран и дугмиће када је уређај у џепу</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Прилагодите екран на основу доба дана и осветљености, како би се повећала читљивост и смањило напрезање очију.</string>
-    <string name="live_display_mode">Режим приказа</string>
-    <string name="live_display_color_temperature_title">Температура боје</string>
-    <string name="live_display_color_temperature_summary">Дан: <xliff:g id="day_temperature">%1$d</xliff:g> K, ноћ: <xliff:g id="night_temperature">%2$d</xliff:g> K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g> K</string>
-    <string name="live_display_day">Дан</string>
-    <string name="live_display_night">Ноћ</string>
+    <string name="color_settings_title">Подешавање боје</string>
+    <string name="color_settings_summary">Прилагоди и унапреди боје екрана</string>
     <string name="live_display_outdoor_mode_title">Аутоматски режим „на отвореном“</string>
     <string name="live_display_outdoor_mode_summary">Аутоматски повећајте осветљеност и засићеност под јаким светлом.</string>
     <string name="live_display_low_power_title">Смањи потрошњу енергије</string>

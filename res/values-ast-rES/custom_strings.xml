@@ -137,13 +137,6 @@
     <string name="network_traffic_show_units_summary">Si quies amosar les unidaes de midición del tráficu na barra d\'estáu</string>
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimiza la to pantalla según la hora\'l día y les condiciones ambientales p\'ameyorar la llexibilidá y amenorgar el cansanciu de güeyos</string>
-    <string name="live_display_mode">Mou de pantalla</string>
-    <string name="live_display_color_temperature_title">Temperatura de color</string>
-    <string name="live_display_color_temperature_summary">Día: <xliff:g id="day_temperature">%1$d</xliff:g>K  Nueche: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Día</string>
-    <string name="live_display_night">Nueche</string>
     <string name="live_display_outdoor_mode_title">Mou automáticu d\'esteriores</string>
     <string name="live_display_outdoor_mode_summary">Aumenta automáticamente\'l brilléu y saturación so la lluz solar</string>
     <string name="live_display_low_power_title">Amenorgar consumu d\'enerxía</string>

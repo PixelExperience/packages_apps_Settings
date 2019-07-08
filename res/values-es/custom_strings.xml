@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Oculto</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicaciones en pantalla completa</string>
-    <string name="display_cutout_force_fullscreen_summary">Forzar que las apps ignoren el espacio del notch</string>
+    <string name="display_cutout_force_fullscreen_summary">Ignorar espacio del notch para determinadas aplicaciones</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrar para indicar el estado de la llamada</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Detección de bolsillo</string>
     <string name="pocket_judge_summary">Bloquear la pantalla y los botones cuando el dispositivo está en el bolsillo</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimizar su pantalla basada en la hora del día y las condiciones ambientales para mejorar la legibilidad y reducir la fatiga visual</string>
-    <string name="live_display_mode">Modo de visualización</string>
-    <string name="live_display_color_temperature_title">Temperatura de color</string>
-    <string name="live_display_color_temperature_summary">Día: <xliff:g id="day_temperature">%1$d</xliff:g>K Noche: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Día</string>
-    <string name="live_display_night">Noche</string>
+    <string name="color_settings_title">Ajustes de color</string>
+    <string name="color_settings_summary">Ajustar y mejorar los colores en pantalla</string>
     <string name="live_display_outdoor_mode_title">Modo automático al aire libre</string>
     <string name="live_display_outdoor_mode_summary">Aumentar automáticamente el brillo y la saturación bajo la luz del sol</string>
     <string name="live_display_low_power_title">Reducir el consumo de energía</string>

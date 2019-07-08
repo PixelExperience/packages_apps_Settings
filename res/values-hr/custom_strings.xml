@@ -141,7 +141,6 @@
     <string name="display_cutout_mode_hidden">Skriveno</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikacije koriste cijeli zaslon</string>
-    <string name="display_cutout_force_fullscreen_summary">Prisili aplikacije da ignoriraju notch</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibriraj za označavanje statusa poziva</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +206,6 @@
     <string name="pocket_judge_title">Otkrivanje uređaja u džepu</string>
     <string name="pocket_judge_summary">Zaključaj zaslon i tipke kada je uređaj u džepu</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Prilagođuje zaslon prema vremenu dana i okolini za poboljšanje čitljivosti i smanjenje naprezanja očiju</string>
-    <string name="live_display_mode">Način prikaza</string>
-    <string name="live_display_color_temperature_title">Temperatura boje</string>
-    <string name="live_display_color_temperature_summary">Dan: <xliff:g id="day_temperature">%1$d</xliff:g>K Noć: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="stupnjeva">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Dan</string>
-    <string name="live_display_night">Noć</string>
     <string name="live_display_outdoor_mode_title">Automatski vanjski način</string>
     <string name="live_display_outdoor_mode_summary">Automatski povećaj svjetlinu i zasićenost pod jakim svjetlom</string>
     <string name="live_display_low_power_title">Smanji potrošnju energije</string>

@@ -148,7 +148,7 @@
     <string name="fp_success_auth_vib_title">การตรวจสอบลายนิ้วมือ</string>
     <string name="fp_success_auth_vib_summary">สั่นเมื่อตรวจสอบลายนิ้วมือสำเร็จ</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
-    <string name="status_bar_double_tap_to_sleep_title">แตะสองครั้งเพื่อปิดจอ</string>
+    <string name="status_bar_double_tap_to_sleep_title">แตะเพื่อหลับ</string>
     <string name="status_bar_double_tap_to_sleep_summary">แตะสองครั้งที่แถบสถานะเพื่อปิดหน้าจอ</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">แสดงหน้าปกสื่อ</string>
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">การตรวจจับขณะอยู่ในกระเป๋า</string>
     <string name="pocket_judge_summary">ล็อคหน้าจอและปุ่มเมื่ออุปกรณ์ของคุณอยู่ในกระเป๋า</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">ปรับหน้าจอแสดงผลให้เหมาะสมตามเวลาของวันและสภาพแวดล้อมเพื่อปรับปรุงความสามารถในการอ่านและลดอาการปวดตา</string>
-    <string name="live_display_mode">โหมดการแสดงผล</string>
-    <string name="live_display_color_temperature_title">อุณหภูมิสี</string>
-    <string name="live_display_color_temperature_summary">กลางวัน: <xliff:g id="day_temperature">%1$d</xliff:g>K  กลางคืน: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">กลางวัน</string>
-    <string name="live_display_night">กลางคืน</string>
+    <string name="color_settings_title">การตั้งค่าสี</string>
+    <string name="color_settings_summary">ปรับและปรับปรุงสีของหน้าจอ</string>
     <string name="live_display_outdoor_mode_title">โหมดกลางแจ้งอัตโนมัติ</string>
     <string name="live_display_outdoor_mode_summary">เพิ่มความสว่างและความอิ่มตัวของสีโดยอัตโนมัติภายใต้แสงแดด</string>
     <string name="live_display_low_power_title">ลดการใช้พลังงาน</string>

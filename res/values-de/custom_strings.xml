@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Taschen-Erkennung</string>
     <string name="pocket_judge_summary">Deaktivieren des Bildschirms bzw. Buttons, wenn das Gerät in der Hosentasche ist</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimiert Ihren Bildschirm basierend auf der Tageszeit und den Umgebungsbedingungen, um die Lesbarkeit zu verbessern und die Ermüdung der Augen zu mildern</string>
-    <string name="live_display_mode">Bildschirmmodus</string>
-    <string name="live_display_color_temperature_title">Farbtemperatur</string>
-    <string name="live_display_color_temperature_summary">Tag: <xliff:g id="day_temperature">%1$d</xliff:g> K Nacht: <xliff:g id="night_temperature">%2$d</xliff:g> K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g> K</string>
-    <string name="live_display_day">Tag</string>
-    <string name="live_display_night">Nacht</string>
+    <string name="color_settings_title">Farb-Einstellungen</string>
+    <string name="color_settings_summary">Bildschirmfarben einstellen und verbessern</string>
     <string name="live_display_outdoor_mode_title">Automatischer Außen-Modus</string>
     <string name="live_display_outdoor_mode_summary">Bei grellem Sonnenlicht Helligkeit und Sättigung automatisch erhöhen</string>
     <string name="live_display_low_power_title">Akkuverbrauch reduzieren</string>

@@ -141,7 +141,6 @@
     <string name="display_cutout_mode_hidden">Piilotettu</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Koko näytön sovellukset</string>
-    <string name="display_cutout_force_fullscreen_summary">Pakota sovellukset olemaan huomioimatta näyttölovea</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Värise puhelun tilan osoittamiseksi</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +206,8 @@
     <string name="pocket_judge_title">Taskun havaitseminen</string>
     <string name="pocket_judge_summary">Lukitse näyttö ja näppäimet, kun laite on taskussasi</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimoi näyttösi kellonajan ja ympäristöolosuhteiden perusteella parantaaksesi luettavuutta ja vähentääksesi silmien rasitusta</string>
-    <string name="live_display_mode">Näyttötila</string>
-    <string name="live_display_color_temperature_title">Värilämpötila</string>
-    <string name="live_display_color_temperature_summary">Päivä: <xliff:g id="day_temperature">%1$d</xliff:g>K Yö: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Päivä</string>
-    <string name="live_display_night">Yö</string>
+    <string name="color_settings_title">Väriasetukset</string>
+    <string name="color_settings_summary">Säädä ja paranna näytön värejä</string>
     <string name="live_display_outdoor_mode_title">Automaattinen ulkoilmatila</string>
     <string name="live_display_outdoor_mode_summary">Lisää kirkkautta ja värikylläisyyttä automaattisesti kirkkaassa auringonvalossa</string>
     <string name="live_display_low_power_title">Vähennä virrankulutusta</string>

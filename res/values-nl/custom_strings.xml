@@ -22,14 +22,14 @@
     <!-- Notification light settings -->
     <string name="lights_category_title">Licht instellingen</string>
     <string name="notification_light_title">Meldingsled</string>
-    <string name="battery_light_title">Acculed</string>
+    <string name="battery_light_title">Batterijlicht</string>
     <string name="battery_low_pulse_title">Knipperen bij lage accuspanning</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">uitgeschakeld</string>
     <string name="sim_missing">afwezig of defect</string>
     <string name="sim_enabler_need_disable_sim">Simkaart wordt uitgeschakeld? Wilt u doorgaan?</string>
-    <string name="sim_enabler_will_disable_sim_title">Opgelet</string>
+    <string name="sim_enabler_will_disable_sim_title">Let op</string>
     <string name="sim_enabler_need_switch_data_service">Deze simkaart wordt uitgeschakeld en simkaart <xliff:g id="slotid">%1$s</xliff:g> zal worden gebruikt voor gegevensverbinding. Weet u zeker dat u wilt doorgaan?</string>
     <string name="sim_enabler_airplane_on">Kan de bewerking niet uitvoeren in vliegtuigmodus.</string>
     <string name="sim_enabler_in_call">Kan de bewerking niet uitvoeren tijdens gesprek.</string>
@@ -41,7 +41,7 @@
     <string name="sub_deactivate_success">Simkaart uitgeschakeld.</string>
     <string name="sub_deactivate_failed">Uitschakelen mislukt.</string>
     <!-- Generic stuff used everywhere -->
-    <string name="reset">Opnieuw instellen</string>
+    <string name="reset">Reset</string>
     <!-- Buttons -->
     <string name="button_pref_title">Knoppen</string>
     <string name="navigation_bar_title">Knoppen en indeling</string>
@@ -141,7 +141,7 @@
     <string name="display_cutout_mode_hidden">Verborgen</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Volledig scherm apps</string>
-    <string name="display_cutout_force_fullscreen_summary">Dwing apps om de notch te negeren</string>
+    <string name="display_cutout_force_fullscreen_summary">Negeer ruimte voor geselecteerde toepassingen</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibreer om belstatus aan te geven</string>
     <!-- Fingerprint authentication vibration -->
@@ -207,13 +207,8 @@
     <string name="pocket_judge_title">Broekzak detectie</string>
     <string name="pocket_judge_summary">Vergrendel het scherm en toetsen wanneer het toestel zich in uw broekzak bevindt</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
-    <string name="live_display_mode">Weergavemodus</string>
-    <string name="live_display_color_temperature_title">Kleurtemperatuur</string>
-    <string name="live_display_color_temperature_summary">Overdag: <xliff:g id="day_temperature">%1$d</xliff:g> K, \'s nachts: <xliff:g id="night_temperature">%2$d</xliff:g> K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g> K</string>
-    <string name="live_display_day">Overdag</string>
-    <string name="live_display_night">\'s Nachts</string>
+    <string name="color_settings_title">Kleurinstellingen</string>
+    <string name="color_settings_summary">Schermkleuren aanpassen en verbeteren</string>
     <string name="live_display_outdoor_mode_title">Automatische buitenshuismodus</string>
     <string name="live_display_outdoor_mode_summary">Helderheid en verzadiging automatisch verhogen bij helder zonlicht</string>
     <string name="live_display_low_power_title">Energieverbruik verminderen</string>

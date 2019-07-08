@@ -207,13 +207,6 @@
     <string name="pocket_judge_title">Ανίχνευση τσέπης</string>
     <string name="pocket_judge_summary">Κλείδωμα της συσκευής και των φυσικών κουμπιών όταν αυτή βρίσκεται στη τσέπη σας</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Βελτιστοποίηση της οθόνης σας με βάση την ώρα της ημέρας και τις συνθήκες περιβάλλοντος για βελτίωση της αναγνωσιμότητας και μείωση της καταπόνησης των ματιών</string>
-    <string name="live_display_mode">Λειτουργία οθόνης</string>
-    <string name="live_display_color_temperature_title">Θερμοκρασία χρώματος</string>
-    <string name="live_display_color_temperature_summary">Ημέρα: <xliff:g id="day_temperature">%1$d</xliff:g>K  Νύχτα: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Ημέρα</string>
-    <string name="live_display_night">Νύχτα</string>
     <string name="live_display_outdoor_mode_title">Αυτόματη λειτουργία εξωτερικού χώρου</string>
     <string name="live_display_outdoor_mode_summary">Αυτόματη αύξηση της φωτεινότητας και του κορεσμού κάτω από έντονο ηλιακό φως</string>
     <string name="live_display_low_power_title">Μείωση της κατανάλωσης ενέργειας</string>

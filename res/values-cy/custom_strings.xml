@@ -137,13 +137,6 @@
     <string name="network_traffic_show_units_summary">Dangos unedau mesur traffig yn y bar statws</string>
     <!-- Pocket judge -->
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Addasa dy sgrin i\'r gorau yn dibynnu ar yr amser o\'r dydd ac amgylchiadau amgylchynol fel ei bod yn haws darllen a bod llai o straen ar y llygaid.</string>
-    <string name="live_display_mode">Modd dangosydd</string>
-    <string name="live_display_color_temperature_title">Tymheredd lliwiau</string>
-    <string name="live_display_color_temperature_summary">Dydd: <xliff:g id="day_temperature">%1$d</xliff:g>K  Nos: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
-    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
-    <string name="live_display_day">Dydd</string>
-    <string name="live_display_night">Nos</string>
     <string name="live_display_outdoor_mode_title">Modd awyr agored awtomatig</string>
     <string name="live_display_outdoor_mode_summary">Cynyddu\'r disgleirdeb a dyfnder lliw yn awtomatig dan olau heulwen llachar</string>
     <string name="live_display_low_power_title">Lleihau defnydd pŵer</string>
