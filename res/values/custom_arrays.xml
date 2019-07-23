@@ -52,7 +52,6 @@
         split-screen is not supported on Android Go devices
         <item>@string/hardware_keys_action_split_screen</item>
         -->
-        <item>@string/hardware_keys_action_last_app</item>
         <item>@*android:string/global_action_screenshot</item>
     </string-array>
 
