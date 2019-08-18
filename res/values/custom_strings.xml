@@ -53,4 +53,38 @@
     <string name="weather_unit_metric" translatable="false">Celsius</string>
     <string name="weather_unit_imperial" translatable="false">Fahrenheit</string>
 
+    <!-- Ambient Play -->
+    <string name="ambient_play_title" translatable="false">@*android:string/ambient_recognition_notification</string>
+    <string name="ambient_play_recognition_information" translatable="false">@*android:string/ambient_recognition_information</string>
+    <string name="ambient_play_summary">Show nearby songs</string>
+    <string name="ambient_play_lockscreen_title">Show songs on lock screen</string>
+    <string name="ambient_play_lockscreen_summary">Show on lock screen when a song is recognized</string>
+    <string name="ambient_play_notifications_title">Notifications</string>
+    <string name="ambient_play_notifications_summary">Show notification when a song is recognized</string>
+    <string name="ambient_play_switch_bar_on">On</string>
+    <string name="ambient_play_switch_bar_off">Off</string>
+    <string name="ambient_play_help_text">When music is playing nearby, you can see the song name and artist. Battery life and data usage may be affected if this is enabled.</string>
+    <string name="ambient_play_history">Now Playing History</string>
+    <string name="ambient_play_loading_data">Loading data…</string>
+    <string name="ambient_play_history_today">Today</string>
+    <string name="ambient_play_history_yesterday">Yesterday</string>
+    <string name="ambient_play_history_dialog_play">Play now</string>
+    <string name="ambient_play_history_dialog_search">Search on web</string>
+    <string name="ambient_play_history_dialog_remove">Remove</string>
+    <string name="ambient_play_history_empty">Music history is empty</string>
+    <string name="ambient_play_history_menu_remove_all">Remove all</string>
+    <string name="ambient_play_history_menu_add_to_home">Add to Home Screen</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Are you sure?</string>
+    <string name="ambient_play_saving_options_title">Saving options</string>
+    <string name="ambient_play_saving_options_summary">Options to decrease battery and network usage</string>
+    <string name="ambient_play_saving_options_low_battery_title">Low battery</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Disable recognition when battery is low</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobile data</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Disable recognition when mobile data is enabled</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Quiet period</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Enable quiet period</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Disable recognition for a certain period of time</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">Start time</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">End time</string>
+
 </resources>
