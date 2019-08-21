@@ -38,6 +38,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
             android:text="@string/ambient_play_history_dialog_play"
+            android:fontFamily="@*android:string/config_headlineFontFamily"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="15sp" />
     </LinearLayout>
@@ -64,6 +65,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
             android:text="@string/ambient_play_history_dialog_search"
+            android:fontFamily="@*android:string/config_headlineFontFamily"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="15sp" />
     </LinearLayout>
@@ -90,6 +92,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
             android:text="@string/ambient_play_history_dialog_remove"
+            android:fontFamily="@*android:string/config_headlineFontFamily"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="15sp" />
     </LinearLayout>

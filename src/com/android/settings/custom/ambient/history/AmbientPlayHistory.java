@@ -120,7 +120,7 @@ public class AmbientPlayHistory extends SettingsPreferenceFragment implements Pr
                         Map<String, List<AmbientPlayHistoryPreferenceEntry>> treeMap = new TreeMap<>(allSongs);
                         for (String date : treeMap.keySet()) {
                             final List<AmbientPlayHistoryPreferenceEntry> songsByDate = allSongs.get(date);
-                            final PreferenceCategory cat = new PreferenceCategory(getActivity());
+                            final PreferenceCategory cat = new CustomPreferenceCategory(getActivity());
                             String catTitle = TimeDateUtils.getDaysAgo(getActivity(), songsByDate.get(0).geMatchTimestamp(),false);
                             cat.setTitle(catTitle);
                             cat.setKey(date);

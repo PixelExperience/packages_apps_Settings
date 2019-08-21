@@ -29,6 +29,7 @@
             android:ellipsize="marquee"
             android:fadingEdge="horizontal"
             android:singleLine="true"
+            android:fontFamily="@*android:string/config_headlineFontFamily"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="15sp" />
 
