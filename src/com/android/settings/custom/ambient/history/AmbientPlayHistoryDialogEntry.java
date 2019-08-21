@@ -61,18 +61,18 @@ class AmbientPlayHistoryDialogEntry extends BottomSheetDialog implements View.On
             escapedQuery = URLEncoder.encode(query, "UTF-8");
         } catch (Exception ignored) {
         }
-        return new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/#q=" + escapedQuery));
+        return new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=" + escapedQuery));
     }
 
     private boolean isSearchAvailable() {
         return getSearchIntent("").resolveActivity(mContext.getPackageManager()) != null;
     }
 
-    private Intent getPlayNowIntent(String song, String artist) {
+    private Intent getPlayNowIntent(String artist, String song) {
         Intent intent = new Intent(MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH);
         intent.putExtra(MediaStore.EXTRA_MEDIA_ARTIST, artist);
         intent.putExtra(MediaStore.EXTRA_MEDIA_TITLE, song);
-        intent.putExtra(SearchManager.QUERY, song + " - " + artist);
+        intent.putExtra(SearchManager.QUERY, artist + " - " + song);
         return intent;
     }
 
@@ -88,14 +88,14 @@ class AmbientPlayHistoryDialogEntry extends BottomSheetDialog implements View.On
     public void onClick(View view) {
         if (view == playNowButton) {
             try {
-                mContext.startActivity(getPlayNowIntent(historyEntry.getSongTitle(), historyEntry.getArtistTitle()));
+                mContext.startActivity(getPlayNowIntent(historyEntry.getArtistTitle(), historyEntry.getSongTitle()));
             } catch (Exception ignored) {
 
             }
             dismiss();
         } else if (view == searchButton) {
             try {
-                mContext.startActivity(getSearchIntent(historyEntry.getSongTitle() + " - " + historyEntry.getArtistTitle()));
+                mContext.startActivity(getSearchIntent(historyEntry.getArtistTitle() + " - " + historyEntry.getSongTitle()));
             } catch (Exception ignored) {
 
             }
