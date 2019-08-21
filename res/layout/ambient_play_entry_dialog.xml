@@ -3,7 +3,7 @@
     android:id="@+id/fragment_history_menu_bottom"
     android:layout_width="match_parent"
     android:layout_height="180dp"
-    android:background="?android:attr/colorBackground"
+    android:background="?android:attr/colorBackgroundFloating"
     android:textColor="?android:attr/textColorPrimary"
     android:orientation="vertical">
 
