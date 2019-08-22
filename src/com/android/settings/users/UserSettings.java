@@ -197,6 +197,8 @@ public class UserSettings extends SettingsPreferenceFragment
             getActivity().finish();
             return;
         }
+        getActivity().setTitle(UserManager.supportsMultipleUsers() ?
+                R.string.user_settings_title : R.string.profile_info_settings_title);
         final Context context = getActivity();
         mAddUserWhenLockedPreferenceController = new AddUserWhenLockedPreferenceController(
                 context, KEY_ADD_USER_WHEN_LOCKED, getLifecycle());
@@ -230,9 +232,6 @@ public class UserSettings extends SettingsPreferenceFragment
                 null /* delete icon handler */);
         mMePreference.setKey(KEY_USER_ME);
         mMePreference.setOnPreferenceClickListener(this);
-        if (mUserCaps.mIsAdmin) {
-            mMePreference.setSummary(R.string.user_admin);
-        }
         mAddUser = (RestrictedPreference) findPreference(KEY_ADD_USER);
         mAddUser.useAdminDisabledSummary(false);
         // Determine if add user/profile button should be visible
@@ -762,6 +761,10 @@ public class UserSettings extends SettingsPreferenceFragment
     private void updateUserList() {
         if (getActivity() == null) return;
         List<UserInfo> users = mUserManager.getUsers(true);
+        if (mMePreference != null) {
+            mMePreference.setSummary(mUserCaps.mIsAdmin && users.size() > 1 ? R.string.user_admin :
+                    R.string.summary_empty);
+        }
         final Context context = getActivity();
 
         final boolean voiceCapable = Utils.isVoiceCapable(context);
@@ -801,7 +804,7 @@ public class UserSettings extends SettingsPreferenceFragment
                         showDelete ? this : null);
                 pref.setKey("id=" + user.id);
                 userPreferences.add(pref);
-                if (user.isAdmin()) {
+                if (user.isAdmin() && users.size() > 1) {
                     pref.setSummary(R.string.user_admin);
                 }
                 pref.setTitle(user.name);
