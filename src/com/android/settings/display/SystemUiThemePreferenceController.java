@@ -17,6 +17,7 @@
 package com.android.settings.display;
 
 import static android.provider.Settings.Secure.THEME_MODE;
+import static android.provider.Settings.Secure.THEME_MODE_LIGHT;
 
 import android.content.Context;
 import android.provider.Settings;
@@ -37,6 +38,8 @@ public class SystemUiThemePreferenceController extends BasePreferenceController
         implements Preference.OnPreferenceChangeListener {
 
     private ListPreference mSystemUiThemePref;
+    private ListPreference mDarkThemePref;
+    private String KEY_DARK_THEME_STYLE = "dark_theme_style";
 
     public SystemUiThemePreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -52,8 +55,10 @@ public class SystemUiThemePreferenceController extends BasePreferenceController
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mSystemUiThemePref = (ListPreference) screen.findPreference(getPreferenceKey());
+        mDarkThemePref = (ListPreference) screen.findPreference(KEY_DARK_THEME_STYLE);
         int value = Settings.Secure.getInt(mContext.getContentResolver(), THEME_MODE, 0);
         mSystemUiThemePref.setValue(Integer.toString(value));
+        mDarkThemePref.setEnabled(value != THEME_MODE_LIGHT);
     }
 
     @Override
@@ -61,6 +66,7 @@ public class SystemUiThemePreferenceController extends BasePreferenceController
         int value = Integer.parseInt((String) newValue);
         Settings.Secure.putInt(mContext.getContentResolver(), THEME_MODE, value);
         refreshSummary(preference);
+        mDarkThemePref.setEnabled(value != THEME_MODE_LIGHT);
         return true;
     }
 
