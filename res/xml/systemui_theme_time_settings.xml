@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="theme_time_settings"
+        android:title="@string/systemui_theme_time_title">
+
+    <Preference
+        android:key="systemui_theme_time_start_time"
+        android:title="@string/systemui_theme_time_start_time_title" />
+
+    <Preference
+        android:key="systemui_theme_time_end_time"
+        android:title="@string/systemui_theme_time_end_time_title" />
+
+</PreferenceScreen>

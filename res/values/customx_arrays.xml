@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Titles for SystemUI theme preference. -->
+    <string-array name="systemui_theme_entries" >
+        <item>@string/systemui_theme_wallpaper</item>
+        <item>@string/systemui_theme_time</item>
+        <item>@string/systemui_theme_light</item>
+        <item>@string/systemui_theme_dark</item>
+    </string-array>
+
+    <!-- Values for SystemUI theme preference. -->
+    <string-array name="systemui_theme_values" translatable="false" >
+        <item>0</item>
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

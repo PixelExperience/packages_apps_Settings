@@ -172,6 +172,12 @@
         android:entryValues="@array/dark_theme_style_values"
         android:defaultValue="0" />
 
+    <Preference
+        android:key="theme_time_settings"
+        android:title="@string/systemui_theme_time_title"
+        android:fragment="com.android.settings.display.SystemUiThemeTimeSettings"
+        settings:controller="com.android.settings.display.SystemUiThemeTimePreferenceController" />
+
     <ListPreference
         android:key="theme"
         android:title="@string/color_theme"
