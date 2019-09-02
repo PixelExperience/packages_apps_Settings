@@ -68,5 +68,4 @@
     <string name="backlight_summary_enabled_with_timeout">I aktivizuar për <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">I aktivizuar</string>
     <!-- Buttons - Enable navbar -->
-    <!-- User profile -->
 </resources>

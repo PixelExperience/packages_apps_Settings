@@ -116,5 +116,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">བརྙན་ཤེལ་གྱི་ཕྱོགས་ཁྲིད་འཕྲེད་བྱང་སྤྱོད་པ།</string>
     <string name="disable_navkeys_summary">བརྙན་ཤེལ་གྱི་ཕྱོགས་ཁྲིད་མཐེབ་སྤྱོད་པ་མ་ཟད་མཐེབ་གནོན་གཞན་དག་འགོག་པ།</string>
-    <!-- User profile -->
 </resources>

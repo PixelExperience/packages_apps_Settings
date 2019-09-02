@@ -16,11 +16,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localize o sensor de imp. digitais na parte da frente do seu telemóvel.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localize o sensor de imp. digitais na lateral esquerda do seu telemóvel.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Localize o sensor de imp. digitais na lateral direita do seu telemóvel.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localize o sensor de impressões digitais na parte frontal do seu telemóvel.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localize o sensor de impressões digitais na lateral esquerda do seu telemóvel.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Localize o sensor de impressões digitais na lateral direita do seu telemóvel.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Localize o sensor de impressões digitais na parte frontal do seu telemóvel.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Localize o sensor de impressões digitais na lateral esquerda do seu telemóvel.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Localize o sensor de impressões digitais na lateral direita do seu telemóvel.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Localize o sensor de impressões digitais na parte frontal do seu tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localize o sensor de impressões digitais na lateral esquerda do seu tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localize o sensor de impressões digitais na lateral direita do seu tablet.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> está <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">desativado</string>
@@ -43,13 +49,13 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Mostrar músicas próximas</string>
     <string name="ambient_play_lockscreen_title">Mostrar músicas no ecrã de bloqueio</string>
-    <string name="ambient_play_lockscreen_summary">Mostrar notificação quando a musica for reconhecida</string>
+    <string name="ambient_play_lockscreen_summary">Mostrar no ecrã de bloqueio quando a música for reconhecida</string>
     <string name="ambient_play_notifications_title">Notificações</string>
     <string name="ambient_play_notifications_summary">Mostrar notificação quando a musica for reconhecida</string>
     <string name="ambient_play_switch_bar_on">Ligado</string>
     <string name="ambient_play_switch_bar_off">Desligado</string>
     <string name="ambient_play_help_text">Quando estiver a tocar música nas proximidades, poderá ver o nome da música e o artista. A duração de bateria e dados móveis poderá ser afectada se esta opção estiver activada.</string>
-    <string name="ambient_play_history">Agora a tocar história</string>
+    <string name="ambient_play_history">Histórico de músicas</string>
     <string name="ambient_play_loading_data">A carregar dados…</string>
     <string name="ambient_play_history_today">Hoje</string>
     <string name="ambient_play_history_yesterday">Ontem</string>
@@ -57,18 +63,18 @@
     <string name="ambient_play_history_dialog_search">Procurar na Web</string>
     <string name="ambient_play_history_dialog_remove">Remover</string>
     <string name="ambient_play_history_empty">O histórico de músicas está vazio</string>
-    <string name="ambient_play_history_menu_remove_all">Remover todas</string>
+    <string name="ambient_play_history_menu_remove_all">Remover tudo</string>
     <string name="ambient_play_history_menu_add_to_home">Adicionar ao ecrã principal</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Tens a certeza?</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Tem a certeza?</string>
     <string name="ambient_play_saving_options_title">A gravar opções</string>
-    <string name="ambient_play_saving_options_summary">Opção de diminuir o uso da bateria e da rede</string>
+    <string name="ambient_play_saving_options_summary">Opções para diminuir o uso da bateria e da rede</string>
     <string name="ambient_play_saving_options_low_battery_title">Bateria fraca</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Desactiva reconhecimento quando a bateria está fraca</string>
+    <string name="ambient_play_saving_options_low_battery_summary">Desativar o reconhecimento quando a bateria está fraca</string>
     <string name="ambient_play_saving_options_mobile_data_title">Dados móveis</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Desactiva reconhecimento quando os dados móveis estão activos</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Período silenciado</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Activar período silenciado</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Desactivar reconhecimento por um período de tempo</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">Desactiva reconhecimento quando os dados móveis estão ativos</string>
+    <string name="ambient_play_saving_options_quiet_period_title">Período de silêncio</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Ativar período de silêncio</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">Desativar reconhecimento por um período de tempo</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Hora de Início</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">Hora do fim</string>
     <!-- Generic stuff used everywhere -->
@@ -100,7 +106,7 @@
     <string name="hardware_keys_long_tap_title">Ação de toque longo</string>
     <string name="button_wake_title">Acordar o dispositivo</string>
     <string name="camera_sleep_on_release_title">Apresentação rápida</string>
-    <string name="camera_sleep_on_release_summary">Pressionar até metade irá manter o ecrã ligado apenas enquanto o botão estiver pressionado</string>
+    <string name="camera_sleep_on_release_summary">Um toque parcial irá manter o ecrã ligado apenas enquanto o botão estiver pressionado</string>
     <string name="camera_launch_title">Iniciar a câmara</string>
     <string name="camera_launch_summary">Pressionar algum tempo e depois soltar iniciará a câmara</string>
     <!-- Key backlight -->
@@ -110,11 +116,10 @@
     <string name="button_backlight_seekbar_title">Brilho dos botões</string>
     <string name="backlight_timeout_title">Tempo limite de iluminação</string>
     <string name="backlight_timeout_unlimited">Não desligar</string>
-    <string name="backlight_summary_disabled">Inativa</string>
+    <string name="backlight_summary_disabled">Desativado</string>
     <string name="backlight_summary_enabled_with_timeout">Ativada por <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Ativada</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Ativar os botões virtuais</string>
     <string name="disable_navkeys_summary">Ativar os botões virtuais e desativar os botões físicos</string>
-    <!-- User profile -->
 </resources>

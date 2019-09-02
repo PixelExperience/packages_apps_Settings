@@ -72,5 +72,4 @@
     <string name="backlight_summary_enabled_with_timeout">Habilitáu pa <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Habilitáu</string>
     <!-- Buttons - Enable navbar -->
-    <!-- User profile -->
 </resources>

@@ -113,5 +113,4 @@
     <string name="backlight_summary_enabled_with_timeout">പ്രവർത്തിപ്പിക്കുക <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">പ്രവർത്തനമാക്കുക</string>
     <!-- Buttons - Enable navbar -->
-    <!-- User profile -->
 </resources>

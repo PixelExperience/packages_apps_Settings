@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">იპოვეთ თქვენი ტელეფონის უკანა ნაწილზე მდებარე თითის ანაბეჭდების სენსორი.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">იპოვეთ თქვენი ტელეფონის უკანა ნაწილზე მდებარე თითის ანაბეჭდების სენსორი.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">იპოვეთ თქვენი ტელეფონის უკანა ნაწილზე მდებარე თითის ანაბეჭდების სენსორი.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">მოძებნეთ თქვენ მოწყობილებაზე თითის ანაბეჭდის სენსორი</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">მოძებნეთ თქვენს მოწყობილებაზე თითს ანაბეჭდის სენსორი</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">მოძებნეთ თქვენს მოწყობილებაზე თითს ანაბეჭდის სენსორი</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">მოძებნეთ თქვენს მოწყობილებაზე თითს ანაბეჭდის სენსორი</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">მოძებნეთ თქვენს მოწყობილებაზე თითს ანაბეჭდის სენსორი</string>
     <!-- Manual provisioning support -->
     <string name="sim_disabled">გამორთვა</string>
     <string name="sim_missing">არსებობს ან არასწორია</string>
@@ -46,5 +52,4 @@
     <string name="hardware_keys_menu_key_title">მენიუს ღილაკი</string>
     <!-- Key backlight -->
     <!-- Buttons - Enable navbar -->
-    <!-- User profile -->
 </resources>

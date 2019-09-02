@@ -92,5 +92,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Միացնել կառավարման վահանակը</string>
     <string name="disable_navkeys_summary">Միացրեք կառավարման վահանակը էկրանին և անջատեք սարքի կոճակները</string>
-    <!-- User profile -->
 </resources>
