@@ -178,6 +178,13 @@
         android:fragment="com.android.settings.display.SystemUiThemeTimeSettings"
         settings:controller="com.android.settings.display.SystemUiThemeTimePreferenceController" />
 
+    <com.android.settings.custom.preference.SystemSettingListPreference
+        android:key="notification_theme"
+        android:title="@string/notification_theme_title"
+        android:entries="@array/notification_theme_entries"
+        android:entryValues="@array/notification_theme_values"
+        android:defaultValue="0" />
+
     <ListPreference
         android:key="theme"
         android:title="@string/color_theme"
