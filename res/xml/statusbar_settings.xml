@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform"
     android:key="status_bar_settings"
     android:title="@string/status_bar_title">
@@ -56,6 +57,39 @@
             android:title="@string/network_traffic_show_units"
             android:summary="@string/network_traffic_show_units_summary"
             android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/qs_title">
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="5"
+            settings:min="1"
+            settings:units="" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="qs_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:max="3"
+            settings:min="1"
+            settings:units="" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="qs_columns_portrait"
+            android:title="@string/qs_columns_portrait_title"
+            android:max="7"
+            settings:min="1"
+            settings:units="" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="qs_columns_landscape"
+            android:title="@string/qs_columns_landscape_title"
+            android:max="9"
+            settings:min="1"
+            settings:units="" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
