@@ -184,4 +184,11 @@
     <string name="systemui_theme_time_start_time_title">Start time</string>
     <string name="systemui_theme_time_end_time_title">End time</string>
 
+    <!-- QS settings -->
+    <string name="qs_title">Quick settings</string>
+    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (landscape)</string>
+    <string name="qs_columns_portrait_title">Columns (portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+
 </resources>
