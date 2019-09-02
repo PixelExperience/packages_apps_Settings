@@ -116,5 +116,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Уключэнне экраннай панэлі навігацыі</string>
     <string name="disable_navkeys_summary">Задзейнічаць навігацыйны радок, але не задзейнічаць кнопкі прылады</string>
-    <!-- User profile -->
 </resources>

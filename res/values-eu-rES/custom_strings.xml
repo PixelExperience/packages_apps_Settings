@@ -111,5 +111,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Nabigazio barra gaitu</string>
     <string name="disable_navkeys_summary">Pantailako nabigazio-barra gaitu eta ezgaitu botoi fisikoak</string>
-    <!-- User profile -->
 </resources>

@@ -27,5 +27,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Uključi navigacijsku traku na ekranu</string>
     <string name="disable_navkeys_summary">Omogući zaslonske navigacijske tipke i onemogući hardverske tipke</string>
-    <!-- User profile -->
 </resources>

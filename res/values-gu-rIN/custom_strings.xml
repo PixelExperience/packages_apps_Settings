@@ -45,6 +45,7 @@
     <string name="ambient_play_lockscreen_title">લૉક સ્ક્રીન પર ગીતો બતાવો</string>
     <string name="ambient_play_lockscreen_summary">જ્યારે ગીત ઓળખાય છે ત્યારે લોક સ્ક્રીન પર બતાવો</string>
     <string name="ambient_play_notifications_title">સૂચના</string>
+    <string name="ambient_play_notifications_summary">જ્યારે ગીત ઓળખાય છે ત્યારે સૂચના આપો</string>
     <string name="ambient_play_switch_bar_on">ચાલુ</string>
     <string name="ambient_play_switch_bar_off">બંધ</string>
     <string name="ambient_play_help_text">જ્યારે સંગીત નજીકમાં વાગી રહ્યું છે, ત્યારે તમે ગીતનું નામ અને કલાકાર જોઈ શકો છો. બેટરી જીવન અને ડેટા વપરાશ પ્રભાવિત થઈ શકે છે જો આ ચાલુ હસે.</string>
@@ -59,6 +60,17 @@
     <string name="ambient_play_history_menu_remove_all">બધું દૂર કરો</string>
     <string name="ambient_play_history_menu_add_to_home">હોમ સ્ક્રીન પર ઉમેરો</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">શું તમે ખાતરી કરો છો?</string>
+    <string name="ambient_play_saving_options_title">સાચવ્વા ના વિકલ્પો</string>
+    <string name="ambient_play_saving_options_summary">બેટરી અને નેટવર્ક વપરાશ ઘટાડવાનાં વિકલ્પો</string>
+    <string name="ambient_play_saving_options_low_battery_title">ઓછી બેટરી</string>
+    <string name="ambient_play_saving_options_low_battery_summary">જ્યારે બેટરી ઓછી હોય ત્યારે ઓડખ​વાનુ બન્ધ કરો</string>
+    <string name="ambient_play_saving_options_mobile_data_title">મોબાઇલ ડેટા</string>
+    <string name="ambient_play_saving_options_mobile_data_summary">જ્યારે મોબાઇલ ડેટા ચાલુ કરેલો હોય ત્યારે ઓડખ​વાનુ બન્ધ કરો</string>
+    <string name="ambient_play_saving_options_quiet_period_title">શાંત સમયગાળો</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">શાંત સમયગાળો ચાલુ કરો</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_summary">થોડા સમય માટે ઓડખ​વાનુ બન્ધ કરો</string>
+    <string name="ambient_play_saving_options_quiet_period_start_time_title">પ્રારંભ સમય</string>
+    <string name="ambient_play_saving_options_quiet_period_end_time_title">અંત સમય</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">ફરીથી સેટ કરો</string>
     <!-- Buttons -->
@@ -104,5 +116,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">સ્ક્રીન પર નેવિગેશન બટન ચાલુ કરો</string>
     <string name="disable_navkeys_summary">સ્ક્રીન પર નેવિગેશન બટન ચાલુ કરો અને હાર્ડવેર બટન બંધ કરો</string>
-    <!-- User profile -->
 </resources>

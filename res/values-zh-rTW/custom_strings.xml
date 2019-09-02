@@ -116,5 +116,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">啟用螢幕上的導覽列</string>
     <string name="disable_navkeys_summary">啟用螢幕上的導覽列和停用實體按鍵</string>
-    <!-- User profile -->
 </resources>

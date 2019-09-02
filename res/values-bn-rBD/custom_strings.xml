@@ -111,5 +111,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">অন-স্ক্রীন নেভ বার সক্রিয় করুন</string>
     <string name="disable_navkeys_summary">অন-স্ক্রীন নেভিগেশন বার সক্রিয় করুন এবং হার্ডওয়্যার বাটন নিষ্ক্রিয় করুন</string>
-    <!-- User profile -->
 </resources>

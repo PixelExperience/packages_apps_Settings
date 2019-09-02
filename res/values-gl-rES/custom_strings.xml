@@ -116,5 +116,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Activar a barra de navegación</string>
     <string name="disable_navkeys_summary">Activar a barra de navegación na pantalla e desactivar os botones físicos</string>
-    <!-- User profile -->
 </resources>
