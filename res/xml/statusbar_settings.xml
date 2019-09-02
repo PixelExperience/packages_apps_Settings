@@ -58,4 +58,37 @@
             android:defaultValue="true" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/qs_title">
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="5"
+            settings:min="1"
+            settings:units="" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="qs_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:max="3"
+            settings:min="1"
+            settings:units="" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="qs_columns_portrait"
+            android:title="@string/qs_columns_portrait_title"
+            android:max="7"
+            settings:min="1"
+            settings:units="" />
+
+        <com.android.settings.custom.preference.CustomSeekBarPreference
+            android:key="qs_columns_landscape"
+            android:title="@string/qs_columns_landscape_title"
+            android:max="9"
+            settings:min="1"
+            settings:units="" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
