@@ -17,12 +17,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localisez le lecteur d\'empreintes digitales à l\'avant de votre téléphone.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localisez le lecteur d\'empreintes digitales sur la tranche gauche de votre téléphone.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Localisez le lecteur d\'empreintes digitales sur la tranche droite de votre téléphone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Locate the fingerprint sensor on the left side of your phone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Locate the fingerprint sensor on the right side of your phone.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Locate the fingerprint sensor on the right side of your device.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localiza el sensor de huella digital en el lado izquierdo del tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
     <!-- Manual provisioning support -->
-    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> est <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">désactivée</string>
     <string name="sim_missing">manquante ou défectueuse</string>
     <string name="sim_enabler_need_disable_sim">La carte SIM va être désactivée. Voulez-vous continuer ?</string>
@@ -61,10 +67,10 @@
     <string name="ambient_play_history_menu_add_to_home">Ajouter à l\'écran d\'accueil</string>
     <string name="ambient_play_history_dialog_remove_all_confirmation">Êtes-vous sûr ?</string>
     <string name="ambient_play_saving_options_title">Options de sauvegarde</string>
-    <string name="ambient_play_saving_options_summary">Options pour diminuer l\'utilisation de la batterie et du réseau</string>
+    <string name="ambient_play_saving_options_summary">Tùy chọn để giảm mức sử dụng pin và dữ liệu di động</string>
     <string name="ambient_play_saving_options_low_battery_title">Batterie faible</string>
     <string name="ambient_play_saving_options_low_battery_summary">Désactiver la reconnaissance lorsque la batterie est faible</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Données mobiles</string>
+    <string name="ambient_play_saving_options_mobile_data_title">Mobile data</string>
     <string name="ambient_play_saving_options_mobile_data_summary">Désactiver la reconnaissance lorsque les données mobiles sont activées</string>
     <string name="ambient_play_saving_options_quiet_period_title">Période de silence</string>
     <string name="ambient_play_saving_options_quiet_period_enable_title">Activer la période de silence</string>
@@ -116,5 +122,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Activer la barre de navigation à l\'écran</string>
     <string name="disable_navkeys_summary">Activer la barre de navigation à l\'écran et désactiver les touches physiques</string>
-    <!-- User profile -->
 </resources>

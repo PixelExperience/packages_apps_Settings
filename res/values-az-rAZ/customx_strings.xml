@@ -137,9 +137,9 @@
     <string name="live_display_color_profile_reading_title">Oxuma</string>
     <string name="live_display_color_profile_reading_summary">Daha az göz yorğunluğu üçün isti rənglər</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
-    <string name="live_display_color_profile_srgb_summary">Rənglər, sRGB rəng aralığına görə dəqiqdir</string>
+    <string name="live_display_color_profile_srgb_summary">Rənglər, sRGB rəng aralığına uyğundur</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
-    <string name="live_display_color_profile_dci_p3_summary">Rənglər, DCI-P3 rəng aralığına görə dəqiqdir</string>
+    <string name="live_display_color_profile_dci_p3_summary">Rənglər, DCI-P3 rəng aralığına uyğundur</string>
     <string name="live_display_reading_mode_title">Oxuma rejimi</string>
     <string name="live_display_reading_mode_summary">Uzun müddətli oxuma üçün boz çalar rejimi</string>
     <string name="color_calibration_title">Rəng kalibrasiyası</string>
@@ -154,4 +154,19 @@
     <string name="adj_saturation_title">Doyğunluq</string>
     <string name="adj_intensity_title">İntensivlik</string>
     <string name="adj_contrast_title">Kontrast</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Avtomatik üz kilidi açma</string>
+    <string name="face_auto_unlock_summary">Üz kilidi ilə açılandan sonra kilid ekranını keç</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Avtomatik (günün saatına uyğun)</string>
+    <string name="systemui_theme_time_title">Tünd temanı planla</string>
+    <string name="systemui_theme_time_start_time_title">Başlama vaxtı</string>
+    <string name="systemui_theme_time_end_time_title">Bitmə vaxtı</string>
+    <!-- QS settings -->
+    <string name="qs_title">Sürətli tənzimləmələr</string>
+    <string name="qs_rows_portrait_title">Sətirlər (şaquli)</string>
+    <string name="qs_rows_landscape_title">Sətirlər (üfüqi)</string>
+    <string name="qs_columns_portrait_title">Sütunlar (şaquli)</string>
+    <string name="qs_columns_landscape_title">Sütunlar (üfüqi)</string>
+    <!-- Notification theme -->
 </resources>

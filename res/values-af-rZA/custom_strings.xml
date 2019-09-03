@@ -73,5 +73,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktiveer op-skerm navigasiebalk</string>
     <string name="disable_navkeys_summary">Aktiveer op-skerm navigasiebalk en deaktiveer hardewareknoppies</string>
-    <!-- User profile -->
 </resources>

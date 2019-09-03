@@ -16,24 +16,30 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Individua il sensore di impronte digitali sulla parte anteriore del tuo telefono.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Individua il sensore di impronte digitali sul lato sinistro del tuo telefono.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Individua il sensore di impronte digitali sul lato destro del tuo telefono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Si trova sulla parte anteriore del telefono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Si trova sul lato sinistro del telefono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Si trova sul lato destro del telefono.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Si trova sulla parte anteriore del dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Si trova sul lato sinistro del dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Si trova sul lato destro del dispositivo.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Si trova sulla parte anteriore del tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Si trova sul lato sinistro del tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Si trova sul lato destro del tablet.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> è <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-    <string name="sim_disabled">disattivato</string>
-    <string name="sim_missing">mancante o difettoso</string>
-    <string name="sim_enabler_need_disable_sim">La scheda SIM verrà disattivata. Vuoi continuare?</string>
+    <string name="sim_disabled">disattivata</string>
+    <string name="sim_missing">mancante o non leggibile</string>
+    <string name="sim_enabler_need_disable_sim">La SIM verrà disattivata. Vuoi continuare?</string>
     <string name="sim_enabler_will_disable_sim_title">Attenzione</string>
-    <string name="sim_enabler_need_switch_data_service">Questa SIM verrà disabilitata e la SIM <xliff:g id="slotid">%1$s</xliff:g> verrà utilizzata per i dati. Sei sicuro di voler continuare?</string>
-    <string name="sim_enabler_airplane_on">Impossibile eseguire l\'operazione mentre la modalità aereo è attiva.</string>
-    <string name="sim_enabler_in_call">Impossibile eseguire l\'operazione durante la chiamata.</string>
-    <string name="sim_enabler_both_inactive">Impossibile disabilitare tutte le SIM</string>
+    <string name="sim_enabler_need_switch_data_service">Questa SIM verrà disattivata e la SIM <xliff:g id="slotid">%1$s</xliff:g> verrà utilizzata per i dati. Vuoi continuare?</string>
+    <string name="sim_enabler_airplane_on">Impossibile eseguire l\'operazione mentre è attiva la modalità aereo.</string>
+    <string name="sim_enabler_in_call">Impossibile eseguire l\'operazione durante una chiamata.</string>
+    <string name="sim_enabler_both_inactive">Impossibile disattivare tutte le SIM</string>
     <string name="sim_enabler_enabling">Attivazione\u2026</string>
     <string name="sim_enabler_disabling">Disattivazione\u2026</string>
-    <string name="sub_activate_success">SIM attiva.</string>
+    <string name="sub_activate_success">SIM attivata.</string>
     <string name="sub_activate_failed">Attivazione fallita.</string>
     <string name="sub_deactivate_success">SIM disattivata.</string>
     <string name="sub_deactivate_failed">Disattivazione fallita.</string>
@@ -43,9 +49,9 @@
     <!-- Ambient Play -->
     <string name="ambient_play_summary">Mostra le informazioni sulle canzoni nelle vicinanze</string>
     <string name="ambient_play_lockscreen_title">Mostra i brani nella schermata di blocco</string>
-    <string name="ambient_play_lockscreen_summary">Mostra sulla schermata di blocco quando viene riconosciuto un brano</string>
+    <string name="ambient_play_lockscreen_summary">Mostra nella schermata di blocco quando viene riconosciuto un brano</string>
     <string name="ambient_play_notifications_title">Notifiche</string>
-    <string name="ambient_play_notifications_summary">Mostra una notifica quando viene riconosciuto un brano</string>
+    <string name="ambient_play_notifications_summary">Invia una notifica quando viene riconosciuto un brano</string>
     <string name="ambient_play_switch_bar_on">On</string>
     <string name="ambient_play_switch_bar_off">Off</string>
     <string name="ambient_play_help_text">Quando nelle vicinanze viene riprodotta una canzone, puoi vedere il titolo del brano e il nome dell\'artista. La durata della batteria e l\'utilizzo dei dati potrebbero risentirne se Now Playing è abilitato.</string>
@@ -53,13 +59,13 @@
     <string name="ambient_play_loading_data">Caricamento dati…</string>
     <string name="ambient_play_history_today">Oggi</string>
     <string name="ambient_play_history_yesterday">Ieri</string>
-    <string name="ambient_play_history_dialog_play">Riproduci ora</string>
-    <string name="ambient_play_history_dialog_search">Cerca online</string>
+    <string name="ambient_play_history_dialog_play">Riproduci</string>
+    <string name="ambient_play_history_dialog_search">Cerca sul Web</string>
     <string name="ambient_play_history_dialog_remove">Rimuovi</string>
     <string name="ambient_play_history_empty">Ancora nessun brano identificato</string>
     <string name="ambient_play_history_menu_remove_all">Rimuovi tutto</string>
     <string name="ambient_play_history_menu_add_to_home">Aggiungi a schermata Home</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Sei sicuro?</string>
+    <string name="ambient_play_history_dialog_remove_all_confirmation">Rimuovere tutte le canzoni dalla cronologia di Now Playing?</string>
     <string name="ambient_play_saving_options_title">Opzioni di risparmio energetico</string>
     <string name="ambient_play_saving_options_summary">Opzioni per ridurre l\'utilizzo della batteria e dei dati</string>
     <string name="ambient_play_saving_options_low_battery_title">Batteria scarica</string>
@@ -67,7 +73,7 @@
     <string name="ambient_play_saving_options_mobile_data_title">Dati mobili</string>
     <string name="ambient_play_saving_options_mobile_data_summary">Disattiva il riconoscimento quando i dati mobili sono attivati</string>
     <string name="ambient_play_saving_options_quiet_period_title">Periodo di pausa</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Abilita il periodo di pausa</string>
+    <string name="ambient_play_saving_options_quiet_period_enable_title">Attiva periodo di pausa</string>
     <string name="ambient_play_saving_options_quiet_period_enable_summary">Disattiva il riconoscimento per un certo periodo di tempo</string>
     <string name="ambient_play_saving_options_quiet_period_start_time_title">Ora inizio</string>
     <string name="ambient_play_saving_options_quiet_period_end_time_title">Ora fine</string>
@@ -85,24 +91,24 @@
     <string name="hardware_keys_long_press_title">Azione pressione lunga</string>
     <string name="hardware_keys_double_tap_title">Azione doppio tocco</string>
     <string name="hardware_keys_action_nothing">Nessuna azione</string>
-    <string name="hardware_keys_action_menu">Apri/Chiudi menù</string>
+    <string name="hardware_keys_action_menu">Apri/chiudi menù</string>
     <string name="hardware_keys_action_app_switch">Selettore app recenti</string>
     <string name="hardware_keys_action_search">Assistente di ricerca</string>
     <string name="hardware_keys_action_voice_search">Ricerca vocale</string>
     <string name="hardware_keys_action_in_app_search">Ricerca in-app</string>
     <string name="hardware_keys_action_launch_camera">Avvia fotocamera</string>
-    <string name="hardware_keys_action_sleep">Spegni lo schermo</string>
+    <string name="hardware_keys_action_sleep">Disattiva lo schermo</string>
     <string name="hardware_keys_action_split_screen">Schermo diviso</string>
     <string name="hardware_keys_swipe_right_key_title">Scorri verso destra</string>
     <string name="hardware_keys_swipe_left_key_title">Scorri verso sinistra</string>
-    <string name="hardware_keys_long_tap_key_title">Tocco prolungato</string>
+    <string name="hardware_keys_long_tap_key_title">Tocco lungo</string>
     <string name="hardware_keys_swipe_tap_title">Azione di scorrimento</string>
-    <string name="hardware_keys_long_tap_title">Azione del tocco prolungato</string>
+    <string name="hardware_keys_long_tap_title">Azione tocco lungo</string>
     <string name="button_wake_title">Riattiva il dispositivo</string>
-    <string name="camera_sleep_on_release_title">Anteprima dello schermo</string>
-    <string name="camera_sleep_on_release_summary">Una leggera pressione manterrà lo schermo acceso solo mentre il pulsante verrà tenuto premuto</string>
+    <string name="camera_sleep_on_release_title">Tieni premuto a metà per controllare le notifiche</string>
+    <string name="camera_sleep_on_release_summary">Controlla l\'ora, le icone di notifica e altre informazioni finché tieni premuto a metà</string>
     <string name="camera_launch_title">Avvia fotocamera</string>
-    <string name="camera_launch_summary">Una pressione prolungata e il successivo rilascio avvieranno la fotocamera</string>
+    <string name="camera_launch_summary">Premi a fondo e rilascia per avviare la fotocamera</string>
     <!-- Key backlight -->
     <string name="button_backlight_title">Retroilluminazione</string>
     <string name="button_backlight_enabled">Illumina pulsanti</string>
@@ -116,5 +122,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Attiva la barra di navigazione su schermo</string>
     <string name="disable_navkeys_summary">Attiva la barra di navigazione su schermo e disattiva i pulsanti fisici</string>
-    <!-- User profile -->
 </resources>

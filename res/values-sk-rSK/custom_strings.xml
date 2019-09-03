@@ -116,5 +116,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Navigačný panel na obrazovke</string>
     <string name="disable_navkeys_summary">Povoliť navigačný panel na obrazovke a zakázať hardvérové tlačidlá</string>
-    <!-- User profile -->
 </resources>

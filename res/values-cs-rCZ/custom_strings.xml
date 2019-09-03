@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Vyhledejte snímač otisků prstů na levé straně telefonu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Vyhledejte snímač otisků prstů na pravé straně telefonu.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Vyhledejte snímač otisků prstů na přední straně zařízení.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Vyhledejte snímač otisků prstů na levé straně zařízení.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Vyhledejte snímač otisků prstů na pravé straně zařízení.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Vyhledejte snímač otisků prstů na přední straně tabletu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Vyhledejte snímač otisků prstů na levé straně tabletu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Vyhledejte snímač otisků prstů na pravé straně tabletu.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">zakázána</string>
@@ -116,5 +122,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Povolit navigační panel na obrazovce</string>
     <string name="disable_navkeys_summary">Povolit navigační panel na obrazovce a zakázat hardwarová tlačítka</string>
-    <!-- User profile -->
 </resources>

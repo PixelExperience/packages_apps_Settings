@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Löydä sormenjälkitunnistin puhelimesi vasemmasta reunasta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Löydä sormenjälkitunnistin puhelimesi oikeasta reunasta.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Löydä sormenjälkitunnistin laitteesi etuosasta.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Löydä sormenjälkitunnistin laitteesi vasemmasta reunasta.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Löydä sormenjälkitunnistin laitteesi oikeasta reunasta.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Löydä sormenjälkitunnistin tablettisi etuosasta.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Löydä sormenjälkitunnistin tablettisi vasemmasta reunasta.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Löydä sormenjälkitunnistin tablettisi oikeasta reunasta.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> on <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">pois käytöstä</string>
@@ -116,5 +122,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Näytön navigointipalkki</string>
     <string name="disable_navkeys_summary">Ota näytön navigointipalkki käyttöön ja poista fyysiset näppäimet käytöstä</string>
-    <!-- User profile -->
 </resources>

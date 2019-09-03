@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στη δεξιά πλευρά του τηλεφώνου σας.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στο εμπρόσθιο ή οπίσθιο μέρος του τηλεφώνου σας.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στο εμπρόσθιο μέρος του τηλεφώνου σας.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> είναι <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">απενεργοποιημένη</string>
@@ -116,5 +122,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Ενεργοποίηση γραμμής πλοήγησης στην οθόνη</string>
     <string name="disable_navkeys_summary">Ενεργοποίηση της γραμμής πλοήγησης στην οθόνη και απενεργοποίηση των φυσικών πλήκτρων</string>
-    <!-- User profile -->
 </resources>

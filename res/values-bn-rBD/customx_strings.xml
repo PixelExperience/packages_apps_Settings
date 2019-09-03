@@ -46,4 +46,13 @@
     <!-- Three-fingers-swipe to screenshot -->
     <!-- LiveDisplay -->
     <!-- LiveDisplay : Picture Adjustment -->
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time_start_time_title">শুরু</string>
+    <string name="systemui_theme_time_end_time_title">শেষ</string>
+    <!-- QS settings -->
+    <!-- Notification theme -->
+    <string name="notification_theme_title">বিজ্ঞপ্তির ধরন</string>
+    <string name="notification_style_default">পূর্ব-নির্ধারিত (সাদা)</string>
+    <string name="notification_style_dark">অন্ধকার (ব্যাকগ্রাউন্ড অনুসরণ কর)</string>
 </resources>

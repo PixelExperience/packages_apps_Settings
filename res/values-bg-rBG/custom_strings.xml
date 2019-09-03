@@ -116,5 +116,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Разреши екранната лента за навигация</string>
     <string name="disable_navkeys_summary">Разреши екранна навигационна лента и забрани хардуерните бутони</string>
-    <!-- User profile -->
 </resources>

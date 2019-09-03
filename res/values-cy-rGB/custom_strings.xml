@@ -74,5 +74,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Galluogi bar llywio ar y sgrin</string>
     <string name="disable_navkeys_summary">Galluogi\'r bar llywio ar y sgrin ac analluogi\'r botymau caledwedd</string>
-    <!-- User profile -->
 </resources>

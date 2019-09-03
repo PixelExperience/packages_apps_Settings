@@ -36,4 +36,11 @@
     <!-- Three-fingers-swipe to screenshot -->
     <!-- LiveDisplay -->
     <!-- LiveDisplay : Picture Adjustment -->
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <!-- QS settings -->
+    <!-- Notification theme -->
+    <string name="notification_theme_title">સૂચના શૈલી</string>
+    <string name="notification_style_default">ડિફોલ્ટ (સફેદ)</string>
+    <string name="notification_style_dark">ડાર્ક (પૃષ્ઠભૂમિ અનુસરો)</string>
 </resources>

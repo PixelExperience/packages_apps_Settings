@@ -154,4 +154,19 @@
     <string name="adj_saturation_title">Saturație</string>
     <string name="adj_intensity_title">Intensitate</string>
     <string name="adj_contrast_title">Contrast</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Deblocare automată cu fața</string>
+    <string name="face_auto_unlock_summary">Deblocare ecran după recunoașterea feței</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Automat (timpul zilei)</string>
+    <string name="systemui_theme_time_title">Temă întunecată programată</string>
+    <string name="systemui_theme_time_start_time_title">Ora de începere</string>
+    <string name="systemui_theme_time_end_time_title">Ora de terminare</string>
+    <!-- QS settings -->
+    <string name="qs_title">Setări rapide</string>
+    <string name="qs_rows_portrait_title">Rânduri (portret)</string>
+    <string name="qs_rows_landscape_title">Rânduri (peisaj)</string>
+    <string name="qs_columns_portrait_title">Coloane (portret)</string>
+    <string name="qs_columns_landscape_title">Coloane (peisaj)</string>
+    <!-- Notification theme -->
 </resources>

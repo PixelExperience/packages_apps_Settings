@@ -116,5 +116,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktivera navigeringsfält på skärmen</string>
     <string name="disable_navkeys_summary">Aktivera navigeringsfältet på skärmen och inaktivera hårdvaruknapparna</string>
-    <!-- User profile -->
 </resources>

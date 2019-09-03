@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localitza el sensor d\'empremta al costat esquerre del teu telèfon.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Localitza el sensor d\'empremta al costat dret del teu telèfon.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Localitzeu el sensor d’empremtes dactilars a la part frontal del telèfon.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Localitzeu el sensor d’empremtes dactilars al costat esquerre del telèfon.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Localitzeu el sensor d’empremtes dactilars al costat dret del telèfon.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Localitzeu el sensor d’empremtes dactilars a la part frontal del tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localitzeu el sensor d’empremtes dactilars al costat esquerre del tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localitzeu el sensor d’empremtes dactilars al costat dret del tablet.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> està <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">deshabilitada</string>
@@ -116,5 +122,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Habilita la barra de navegació a la pantalla</string>
     <string name="disable_navkeys_summary">Habilita la barra de navegació a la pantalla i deshabilita els botons físics</string>
-    <!-- User profile -->
 </resources>

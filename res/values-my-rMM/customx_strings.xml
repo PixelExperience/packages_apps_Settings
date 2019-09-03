@@ -109,4 +109,11 @@
     <string name="adj_saturation_title">တောက်ပမှုပြင်းအား</string>
     <string name="adj_intensity_title">အလင်းတောက်ပမှု</string>
     <string name="adj_contrast_title">အလင်းအမှောင်</string>
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">နေ့ညအလိုက် အလိုအလျောက်ပြောင်းလဲစေမည်။</string>
+    <string name="systemui_theme_time_start_time_title">စတင်ချိန်</string>
+    <string name="systemui_theme_time_end_time_title">ပြီးဆုံးချိန်</string>
+    <!-- QS settings -->
+    <!-- Notification theme -->
 </resources>

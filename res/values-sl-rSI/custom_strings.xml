@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Poiščite tipalo za prstne odtise na zadnji strani vašega telefona.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Poiščite tipalo za prstne odtise na desni strani vašega telefona.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Poiščite tipalo za prstne odtise na sprednji strani vaše naprave.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Poiščite tipalo za prstne odtise na levi strani vaše naprave.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Poiščite tipalo za prstne odtise na desni strani vaše naprave.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Poiščite tipalo za prstne odtise na sprednji strani vašega tabličnega računalnika.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Poiščite tipalo za prstne odtise na levi strani vašega tabličnega računalnika.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Poiščite tipalo za prstne odtise na desni strani vašega tabličnega računalnika.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">onemogočeno</string>
@@ -116,5 +122,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Omogoči vrstico za krmarjenje na zaslonu</string>
     <string name="disable_navkeys_summary">Omogoči vrstico za krmarjenje na zaslonu in onemogoči fizične gumbe</string>
-    <!-- User profile -->
 </resources>

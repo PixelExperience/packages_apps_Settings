@@ -30,5 +30,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Iestatīt uz-ekrāna navigācijas joslu</string>
     <string name="disable_navkeys_summary">Ieslēgt ekrāna navigācijas joslu un atslēgt aparatūras pogas</string>
-    <!-- User profile -->
 </resources>

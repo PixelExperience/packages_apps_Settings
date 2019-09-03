@@ -154,4 +154,22 @@
     <string name="adj_saturation_title">饱和度</string>
     <string name="adj_intensity_title">亮度</string>
     <string name="adj_contrast_title">对比度</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">自动人脸解锁</string>
+    <string name="face_auto_unlock_summary">人脸解锁后自动解锁</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">自动 (天色)</string>
+    <string name="systemui_theme_time_title">定时黑暗模式</string>
+    <string name="systemui_theme_time_start_time_title">开始时间</string>
+    <string name="systemui_theme_time_end_time_title">结束时间</string>
+    <!-- QS settings -->
+    <string name="qs_title">快速设置</string>
+    <string name="qs_rows_portrait_title">行 （纵向）</string>
+    <string name="qs_rows_landscape_title">行 （横向）</string>
+    <string name="qs_columns_portrait_title">列 （纵向）</string>
+    <string name="qs_columns_landscape_title">列 （横向）</string>
+    <!-- Notification theme -->
+    <string name="notification_theme_title">通知栏风格</string>
+    <string name="notification_style_default">默认 (白)</string>
+    <string name="notification_style_dark">黑 (按背景)</string>
 </resources>

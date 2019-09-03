@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">Кнопки и их расположение</string>
+    <string name="navigation_bar_title">Навигационная панель</string>
     <string name="hardware_keys_power_key_title">Кнопка питания</string>
     <string name="hardware_keys_volume_keys_title">Кнопки громкости</string>
     <!-- Advanced restart options -->
@@ -29,10 +29,10 @@
     <string name="thermal_control_per_app_games">Игры</string>
     <string name="thermal_control_per_app_browser">Браузер</string>
     <string name="thermal_control_per_app_video_playback">Воспроизведение видео</string>
-    <string name="thermal_control_per_app_dialer">Номеронабиратель</string>
+    <string name="thermal_control_per_app_dialer">Телефон</string>
     <string name="thermal_control_per_app_camera">Камера</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Параметры выреза</string>
+    <string name="display_cutout_mode_title">Настройки выреза</string>
     <string name="display_cutout_mode_normal">По умолчанию</string>
     <string name="display_cutout_mode_hidden">Скрыть вырез</string>
     <!-- Dark theme style -->
@@ -48,7 +48,7 @@
     <string name="fp_success_auth_vib_title">Аутентификация по отпечатку пальца</string>
     <string name="fp_success_auth_vib_summary">Вибрировать при успешном распознавании отпечатка пальцев</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
-    <string name="status_bar_double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
+    <string name="status_bar_double_tap_to_sleep_title">Выключать экран при нажатии</string>
     <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния или экрана блокировки, чтобы перевести устройство в спящий режим</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Отображать обложку мультимедиа</string>
@@ -154,4 +154,19 @@
     <string name="adj_saturation_title">Насыщенность</string>
     <string name="adj_intensity_title">Интенсивность</string>
     <string name="adj_contrast_title">Контраст</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Автоматическая разблокировка по лицу</string>
+    <string name="face_auto_unlock_summary">Пропустить экран блокировки после разблокировки по лицу</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Автоматически (время суток)</string>
+    <string name="systemui_theme_time_title">Запланируйте включение тёмной темы</string>
+    <string name="systemui_theme_time_start_time_title">Время начала</string>
+    <string name="systemui_theme_time_end_time_title">Время окончания</string>
+    <!-- QS settings -->
+    <string name="qs_title">Быстрые настройки</string>
+    <string name="qs_rows_portrait_title">Строки (портретный режим)</string>
+    <string name="qs_rows_landscape_title">Строки (ландшафтный режим)</string>
+    <string name="qs_columns_portrait_title">Колонки (портретный режим)</string>
+    <string name="qs_columns_landscape_title">Колонки (ландшафтный режим)</string>
+    <!-- Notification theme -->
 </resources>

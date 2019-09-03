@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Temukan lokasi pemindai sidik jari di sisi kiri telepon anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Temukan pemindai sidik jari di sisi kanan telepon anda.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Temukan lokasi sensor sidik jari di bagian depan telepon anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Temukan lokasi sensor sidik jari di bagian sisi kiri telepon anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Temukan lokasi sensor sidik jari di bagian sisi kanan telepon anda.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Temukan lokasi sensor sidik jari di bagian depan tablet anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Temukan lokasi sensor sidik jari di bagian sisi kiri tablet anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Temukan lokasi sensor sidik jari di bagian sisi kanan tablet anda.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> adalah <xliff:g id="status" example="disabled">%2$s </xliff:g></string>
     <string name="sim_disabled">nonaktif</string>
@@ -114,7 +120,6 @@
     <string name="backlight_summary_enabled_with_timeout">Diaktifkan untuk <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Dihidupkan</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Aktifkan navigasi pada layar</string>
+    <string name="disable_navkeys_title">Aktifkan bilah navigasi pada layar</string>
     <string name="disable_navkeys_summary">Aktifkan navigasi pada layar dan matikan tombol fisik</string>
-    <!-- User profile -->
 </resources>

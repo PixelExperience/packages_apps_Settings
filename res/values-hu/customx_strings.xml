@@ -154,4 +154,19 @@
     <string name="adj_saturation_title">Telítettség</string>
     <string name="adj_intensity_title">Erősség</string>
     <string name="adj_contrast_title">Kontraszt</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatikus arcalapú feloldás</string>
+    <string name="face_auto_unlock_summary">Sikeres arcalapú feloldás után a rendszer hagyja ki a záróképernyőt</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Automatikus (napszaktól függő)</string>
+    <string name="systemui_theme_time_title">A sötét téma időzítése</string>
+    <string name="systemui_theme_time_start_time_title">Kezdési idő</string>
+    <string name="systemui_theme_time_end_time_title">Befejezési idő</string>
+    <!-- QS settings -->
+    <string name="qs_title">Gyorsbeállítások</string>
+    <string name="qs_rows_portrait_title">Sorok (álló módban)</string>
+    <string name="qs_rows_landscape_title">Sorok (fekvő módban)</string>
+    <string name="qs_columns_portrait_title">Oszlopok (álló módban)</string>
+    <string name="qs_columns_landscape_title">Oszlopok (fekvő módban)</string>
+    <!-- Notification theme -->
 </resources>

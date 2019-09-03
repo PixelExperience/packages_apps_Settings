@@ -116,5 +116,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Paganahin ang on-screen nav bar</string>
     <string name="disable_navkeys_summary">Paganahin ang on-screen navigation bar at huwag paganahin ang mga button ng hardware</string>
-    <!-- User profile -->
 </resources>

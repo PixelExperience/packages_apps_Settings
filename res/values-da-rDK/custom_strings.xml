@@ -110,5 +110,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktivér navigationslinje</string>
     <string name="disable_navkeys_summary">Aktivér navigationslinje på skærmen og deaktivér hardwareknapper</string>
-    <!-- User profile -->
 </resources>

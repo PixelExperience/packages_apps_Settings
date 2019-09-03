@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Găsiți senzorul de amprentă pe partea stângă a telefonului.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Găsiți senzorul de amprentă pe partea dreaptă a telefonului.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Găsiți senzorul de amprentă pe partea din faţă a dispozitivului.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Găsiți senzorul de amprentă pe partea stângă a dispozitivului.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Găsiți senzorul de amprentă pe partea dreaptă a dispozitivului.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Găsiți senzorul de amprentă pe partea din faţă a tabletei.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Găsiți senzorul de amprentă pe partea stângă a tabletei.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Găsiți senzorul de amprentă pe partea dreaptă a tabletei.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> este <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">dezactivat</string>
@@ -116,5 +122,4 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Activare bară de navigare pe ecran</string>
     <string name="disable_navkeys_summary">Activează bara de navigare pe ecran și dezactivează butoanele hardware</string>
-    <!-- User profile -->
 </resources>

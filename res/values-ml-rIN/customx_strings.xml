@@ -74,4 +74,10 @@
     <string name="color_green_title">പച്ച</string>
     <string name="color_blue_title">നീല</string>
     <!-- LiveDisplay : Picture Adjustment -->
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time_start_time_title">ആരംഭിക്കുന്ന സമയം</string>
+    <string name="systemui_theme_time_end_time_title">അവസാനിക്കുന്ന സമയം</string>
+    <!-- QS settings -->
+    <!-- Notification theme -->
 </resources>
