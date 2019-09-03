@@ -127,4 +127,11 @@
     <string name="adj_saturation_title">Saturazioa</string>
     <string name="adj_intensity_title">Intentsitatea</string>
     <string name="adj_contrast_title">Kontrastea</string>
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Automatikoa (eguneko ordua)</string>
+    <string name="systemui_theme_time_start_time_title">Hasiera ordua</string>
+    <string name="systemui_theme_time_end_time_title">Amaiera ordua</string>
+    <!-- QS settings -->
+    <!-- Notification theme -->
 </resources>

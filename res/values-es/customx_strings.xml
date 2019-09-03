@@ -154,4 +154,17 @@
     <string name="adj_saturation_title">Saturación</string>
     <string name="adj_intensity_title">Intensidad</string>
     <string name="adj_contrast_title">Contraste</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Desbloqueo facial automático</string>
+    <string name="face_auto_unlock_summary">Quitar la pantalla de bloqueo tras desbloqueo facial</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Automático (hora del día)</string>
+    <string name="systemui_theme_time_title">Programar tema oscuro</string>
+    <string name="systemui_theme_time_start_time_title">Hora de inicio</string>
+    <string name="systemui_theme_time_end_time_title">Hora de finalización</string>
+    <!-- QS settings -->
+    <string name="qs_title">Ajustes rápidos</string>
+    <string name="qs_columns_portrait_title">Columnas (vertical)</string>
+    <string name="qs_columns_landscape_title">Columnas (horizontal)</string>
+    <!-- Notification theme -->
 </resources>

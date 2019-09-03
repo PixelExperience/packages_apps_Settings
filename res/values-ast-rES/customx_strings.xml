@@ -126,4 +126,9 @@
     <string name="adj_saturation_title">Saturación</string>
     <string name="adj_intensity_title">Intensidá</string>
     <string name="adj_contrast_title">Contraste</string>
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Automáticu (hora del día)</string>
+    <!-- QS settings -->
+    <!-- Notification theme -->
 </resources>

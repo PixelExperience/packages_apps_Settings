@@ -21,7 +21,7 @@
     <string name="hardware_keys_volume_keys_title">Phím âm lượng</string>
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Khởi động lại nâng cao</string>
-    <string name="advanced_reboot_summary">Khi mở khóa, thêm các lựa chọn vào power menu để khởi động lại vào recovery hoặc bootloader</string>
+    <string name="advanced_reboot_summary">Khi mở khóa, bao gồm các tùy chọn trong menu nguồn để khởi động lại vào phục hồi hoặc trình nạp khởi động</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Hồ sơ tối ưu hóa</string>
     <string name="thermal_control_per_app_default">Không tối ưu hóa</string>
@@ -32,7 +32,7 @@
     <string name="thermal_control_per_app_dialer">Trình quay số</string>
     <string name="thermal_control_per_app_camera">Máy ảnh</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Cách hiển thị tai thỏ</string>
+    <string name="display_cutout_mode_title">Trạng thái tai thỏ</string>
     <string name="display_cutout_mode_normal">Mặc định</string>
     <string name="display_cutout_mode_hidden">Ẩn</string>
     <!-- Dark theme style -->
@@ -41,7 +41,7 @@
     <string name="dark_theme_style_black">Đen</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Ứng dụng toàn màn hình</string>
-    <string name="display_cutout_force_fullscreen_summary">Buộc các ứng dụng bỏ qua notch</string>
+    <string name="display_cutout_force_fullscreen_summary">Bỏ qua phần tai thỏ cho các ứng dụng được chọn</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Rung để chỉ trạng thái cuộc gọi</string>
     <!-- Fingerprint authentication vibration -->
@@ -54,7 +54,7 @@
     <string name="lockscreen_media_art_title">Hiển thị ảnh bìa đa phương tiện</string>
     <!-- Button that controls inversion of layout of navigation bar -->
     <string name="nav_bar_layout_inverse_title">Đảo ngược bố cục</string>
-    <string name="nav_bar_layout_inverse_summary">Đảo ngược bố cục của thanh điều hướng</string>
+    <string name="nav_bar_layout_inverse_summary">Đảo ngược bố cục các phím của thanh điều hướng</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">Nhấn giữ bật đèn pin</string>
     <string name="torch_long_press_power_gesture_desc">Bật đèn pin bằng cách nhấn giữ phím nguồn khi màn hình đang tắt</string>
@@ -69,7 +69,7 @@
     <string name="volbtn_music_controls_summary">Chuyển bài hát bằng nhấn giữ các phím âm lượng khi màn hình đang tắt</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Vô hiệu hóa trên màn hình khóa</string>
-    <string name="lockscreen_power_menu_disabled_summary">Vô hiệu hoá power menu trên màn hình khoá có bảo mật</string>
+    <string name="lockscreen_power_menu_disabled_summary">Vô hiệu hoá menu nguồn trên màn hình khoá có bảo mật</string>
     <!-- Others settings -->
     <string name="others_settings_title">Các cài đặt khác</string>
     <string name="additional_buttons_title">Các nút bổ sung</string>
@@ -97,7 +97,7 @@
     <string name="network_traffic_units_kilobits">Kilobit mỗi giây (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabit mỗi giây (Mb/s)</string>
     <string name="network_traffic_units_kilobytes">Kilobyte mỗi giây (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabit mỗi giây (Mb/s)</string>
+    <string name="network_traffic_units_megabytes">Megabyte mỗi giây (MB/s)</string>
     <string name="network_traffic_show_units">Hiển thị các đơn vị</string>
     <string name="network_traffic_show_units_summary">Hiển thị các đơn vị đo lưu lượng truy cập trong thanh trạng thái</string>
     <!-- Three-fingers-swipe to screenshot -->
@@ -145,7 +145,7 @@
     <string name="color_calibration_title">Hiệu chỉnh màu sắc</string>
     <string name="color_calibration_summary">Hiệu chỉnh màu sắc trên màn hình</string>
     <string name="color_red_title">Đỏ</string>
-    <string name="color_green_title">Xanh lá</string>
+    <string name="color_green_title">Lục</string>
     <string name="color_blue_title">Lam</string>
     <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Hiệu chỉnh hình ảnh</string>
@@ -154,4 +154,19 @@
     <string name="adj_saturation_title">Độ bão hoà</string>
     <string name="adj_intensity_title">Cường độ</string>
     <string name="adj_contrast_title">Độ tương phản</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Mở khóa khuôn mặt tự động</string>
+    <string name="face_auto_unlock_summary">Bỏ qua màn hình khóa sau khi mở khóa khuôn mặt</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Tự động (thời gian trong ngày)</string>
+    <string name="systemui_theme_time_title">Lịch trình chủ đề tối</string>
+    <string name="systemui_theme_time_start_time_title">Bắt đầu lúc</string>
+    <string name="systemui_theme_time_end_time_title">Kết thúc lúc</string>
+    <!-- QS settings -->
+    <string name="qs_title">Cài đặt nhanh</string>
+    <string name="qs_rows_portrait_title">Hàng (màn hình dọc)</string>
+    <string name="qs_rows_landscape_title">Hàng (màn hình ngang)</string>
+    <string name="qs_columns_portrait_title">Cột (màn hình dọc)</string>
+    <string name="qs_columns_landscape_title">Cột (màn hình ngang)</string>
+    <!-- Notification theme -->
 </resources>

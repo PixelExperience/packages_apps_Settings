@@ -154,4 +154,15 @@
     <string name="adj_saturation_title">Saturasi</string>
     <string name="adj_intensity_title">Intensitas</string>
     <string name="adj_contrast_title">Kontras</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Membuka kunci dengan wajah otomatis</string>
+    <string name="face_auto_unlock_summary">Lewati kunci layar setelah terbuka dengan wajah</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Otomatis (waktu dalam sehari)</string>
+    <string name="systemui_theme_time_title">Tema Gelap Terjadwal</string>
+    <string name="systemui_theme_time_start_time_title">Waktu mulai</string>
+    <string name="systemui_theme_time_end_time_title">Waktu berakhir</string>
+    <!-- QS settings -->
+    <string name="qs_title">Configurações rápidas</string>
+    <!-- Notification theme -->
 </resources>

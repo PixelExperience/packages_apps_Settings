@@ -154,4 +154,11 @@
     <string name="adj_saturation_title">Verzadiging</string>
     <string name="adj_intensity_title">Intensiteit</string>
     <string name="adj_contrast_title">Contrast</string>
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Automatisch (tijdstip van de dag)</string>
+    <string name="systemui_theme_time_start_time_title">Starttijd</string>
+    <string name="systemui_theme_time_end_time_title">Eindtijd</string>
+    <!-- QS settings -->
+    <!-- Notification theme -->
 </resources>

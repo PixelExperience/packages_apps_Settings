@@ -36,4 +36,14 @@
     <!-- Three-fingers-swipe to screenshot -->
     <!-- LiveDisplay -->
     <!-- LiveDisplay : Picture Adjustment -->
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">სახით ავტომატური განბლოკვა</string>
+    <string name="face_auto_unlock_summary">გახსენით სახით განბლოკვის შემდეგ</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">ავტომატური დროის მართვა</string>
+    <string name="systemui_theme_time_title">გრაფიკის შავი თემა</string>
+    <string name="systemui_theme_time_start_time_title">დროის დაწყება</string>
+    <string name="systemui_theme_time_end_time_title">დროის დასრულება</string>
+    <!-- QS settings -->
+    <!-- Notification theme -->
 </resources>

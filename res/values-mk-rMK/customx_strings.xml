@@ -109,4 +109,8 @@
     <string name="adj_saturation_title">Сатурација</string>
     <string name="adj_intensity_title">Интензитет</string>
     <string name="adj_contrast_title">Контраст</string>
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <!-- QS settings -->
+    <!-- Notification theme -->
 </resources>

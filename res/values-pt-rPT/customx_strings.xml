@@ -20,11 +20,11 @@
     <string name="hardware_keys_power_key_title">Botão ligar/desligar</string>
     <string name="hardware_keys_volume_keys_title">Botões de volume</string>
     <!-- Advanced restart options -->
-    <string name="advanced_reboot_title">Reinicialização avançada</string>
+    <string name="advanced_reboot_title">Reinício avançado</string>
     <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções no menu ligar/desligar para reiniciar em modo de recuperação ou bootloader</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Perfil de optimização</string>
-    <string name="thermal_control_per_app_default">Sem optimização</string>
+    <string name="thermal_control_per_app_default">Sem otimização</string>
     <string name="thermal_control_per_app_benchmark">Desempenho</string>
     <string name="thermal_control_per_app_games">Jogos</string>
     <string name="thermal_control_per_app_browser">Navegador</string>
@@ -34,7 +34,7 @@
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Comportamento do recorte (notch) de ecrã</string>
     <string name="display_cutout_mode_normal">Predefinição</string>
-    <string name="display_cutout_mode_hidden">Ocultos</string>
+    <string name="display_cutout_mode_hidden">Oculto</string>
     <!-- Dark theme style -->
     <string name="dark_theme_style_title">Estilo do tema escuro</string>
     <string name="dark_theme_style_default">Padrão</string>
@@ -57,7 +57,7 @@ Notch: Aplicações em ecrã cheio</string>
     <string name="nav_bar_layout_inverse_title">Inverter disposição</string>
     <string name="nav_bar_layout_inverse_summary">Inventer disposição dos botões da barra de navegação</string>
     <!-- Torch long press power button -->
-    <string name="torch_long_press_power_gesture_title">Lanterna através de pressão longa</string>
+    <string name="torch_long_press_power_gesture_title">Manter pressionado para ligar a lanterna</string>
     <string name="torch_long_press_power_gesture_desc">Ativar a lanterna através de pressão longa no botão de ligar/desligar quando o ecrã estiver desligado</string>
     <string name="torch_long_press_power_timeout_title">Desligar automaticamente a lanterna</string>
     <string name="torch_long_press_power_timeout_never">Nunca</string>
@@ -70,7 +70,7 @@ Notch: Aplicações em ecrã cheio</string>
     <string name="volbtn_music_controls_summary">Procurar músicas com uma pressão longa das teclas de volume, enquanto o ecrã estiver desligado</string>
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Desativar no ecrã de bloqueio</string>
-    <string name="lockscreen_power_menu_disabled_summary">Desativar o menu de energia na ecrã de bloqueio</string>
+    <string name="lockscreen_power_menu_disabled_summary">Desativar o menu de energia no ecrã de bloqueio</string>
     <!-- Others settings -->
     <string name="others_settings_title">Outras definições</string>
     <string name="additional_buttons_title">Botões adicionais</string>
@@ -155,4 +155,19 @@ Notch: Aplicações em ecrã cheio</string>
     <string name="adj_saturation_title">Saturação</string>
     <string name="adj_intensity_title">Intensidade</string>
     <string name="adj_contrast_title">Contraste</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Desbloqueio por reconhecimento facial automático</string>
+    <string name="face_auto_unlock_summary">Não mostrar ecrã de bloqueio após reconhecimento facial</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Automático (baseado na hora do dia)</string>
+    <string name="systemui_theme_time_title">Programar modo escuro</string>
+    <string name="systemui_theme_time_start_time_title">Hora de Início</string>
+    <string name="systemui_theme_time_end_time_title">Hora do fim</string>
+    <!-- QS settings -->
+    <string name="qs_title">Definições rápidas</string>
+    <string name="qs_rows_portrait_title">Linhas (retrato)</string>
+    <string name="qs_rows_landscape_title">Linhas (paisagem)</string>
+    <string name="qs_columns_portrait_title">Colunas (retrato)</string>
+    <string name="qs_columns_landscape_title">Colunas (paisagem)</string>
+    <!-- Notification theme -->
 </resources>

@@ -16,15 +16,15 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">내비게이션 바</string>
+    <string name="navigation_bar_title">탐색 메뉴</string>
     <string name="hardware_keys_power_key_title">전원 버튼</string>
     <string name="hardware_keys_volume_keys_title">볼륨 버튼</string>
     <!-- Advanced restart options -->
-    <string name="advanced_reboot_title">고급 다시 시작 기능</string>
-    <string name="advanced_reboot_summary">화면 잠금이 해제되어 있으면 전원 메뉴에 복구 모드 및 부트로더로 다시 시작하는 옵션을 추가합니다.</string>
+    <string name="advanced_reboot_title">고급 다시 시작</string>
+    <string name="advanced_reboot_summary">잠금 해제되어 있을 때, 전원 메뉴에 복구 모드 및 부트로더로 다시 시작하는 옵션 추가</string>
     <!-- Thermal control per app -->
-    <string name="thermal_control_per_app">최적화 프로파일</string>
-    <string name="thermal_control_per_app_default">최적화 비활성화</string>
+    <string name="thermal_control_per_app">최적화 프로필</string>
+    <string name="thermal_control_per_app_default">최적화 안 함</string>
     <string name="thermal_control_per_app_benchmark">성능</string>
     <string name="thermal_control_per_app_games">게임</string>
     <string name="thermal_control_per_app_browser">브라우저</string>
@@ -38,50 +38,50 @@
     <!-- Dark theme style -->
     <string name="dark_theme_style_title">어두운 테마 스타일</string>
     <string name="dark_theme_style_default">기본</string>
-    <string name="dark_theme_style_black">검정색</string>
+    <string name="dark_theme_style_black">검은색</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">전체 화면 앱</string>
-    <string name="display_cutout_force_fullscreen_summary">앱이 노치 공간을 무시하도록 합니다</string>
+    <string name="display_cutout_force_fullscreen_summary">선택한 앱에 한해 노치 공간 무시</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">통화 상태를 나타내는 진동</string>
     <!-- Fingerprint authentication vibration -->
-    <string name="fp_success_auth_vib_title">지문 인식</string>
-    <string name="fp_success_auth_vib_summary">지문 인식에 성공하면 진동이 울립니다</string>
+    <string name="fp_success_auth_vib_title">지문 인증</string>
+    <string name="fp_success_auth_vib_summary">지문 인증에 성공하면 진동</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
-    <string name="status_bar_double_tap_to_sleep_title">두드려 화면 끄기</string>
-    <string name="status_bar_double_tap_to_sleep_summary">상태 표시줄이나 잠금 화면을 두 번 두드려 화면 끄기</string>
+    <string name="status_bar_double_tap_to_sleep_title">탭하여 절전 모드</string>
+    <string name="status_bar_double_tap_to_sleep_summary">상태 표시줄이나 잠금 화면을 두 번 탭하여 화면 끄기</string>
     <!-- Lock screen cover art -->
-    <string name="lockscreen_media_art_title">앨범 커버 이미지 표시</string>
+    <string name="lockscreen_media_art_title">미디어 커버 아트 표시</string>
     <!-- Button that controls inversion of layout of navigation bar -->
     <string name="nav_bar_layout_inverse_title">레이아웃 반전</string>
-    <string name="nav_bar_layout_inverse_summary">내비게이션 바 레이아웃 반전</string>
+    <string name="nav_bar_layout_inverse_summary">탐색 메뉴 버튼의 레이아웃 반전</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">길게 눌러 손전등 켜기</string>
     <string name="torch_long_press_power_gesture_desc">화면이 꺼져 있을 때 전원 버튼을 길게 눌러 손전등 켜기</string>
     <string name="torch_long_press_power_timeout_title">자동으로 손전등 끄기</string>
-    <string name="torch_long_press_power_timeout_never">사용 안함</string>
+    <string name="torch_long_press_power_timeout_never">사용 안 함</string>
     <string name="torch_long_press_power_timeout_1min">1분</string>
     <string name="torch_long_press_power_timeout_2min">2분</string>
     <string name="torch_long_press_power_timeout_5min">5분</string>
     <string name="torch_long_press_power_timeout_10min">10분</string>
     <!-- Volume control playback -->
-    <string name="volbtn_music_controls_title">음악 재생 컨트롤</string>
+    <string name="volbtn_music_controls_title">재생 제어</string>
     <string name="volbtn_music_controls_summary">화면이 꺼진 상태에서 볼륨 키를 길게 눌러 음악 트랙 탐색</string>
     <!-- Power menu on lockscreen -->
-    <string name="lockscreen_power_menu_disabled_title">잠금 화면에서 비활성화</string>
-    <string name="lockscreen_power_menu_disabled_summary">보안 잠금 화면에서 전원 메뉴 비활성화</string>
+    <string name="lockscreen_power_menu_disabled_title">잠금 화면에서 사용 안 함</string>
+    <string name="lockscreen_power_menu_disabled_summary">보안 잠금 화면에서 전원 메뉴 사용 안 함</string>
     <!-- Others settings -->
     <string name="others_settings_title">기타 설정</string>
     <string name="additional_buttons_title">추가 버튼</string>
     <!-- Status bar -->
     <string name="status_bar_title">상태 표시줄</string>
-    <string name="lockscreen_qs_disabled_title">잠금 화면에서 비활성화</string>
-    <string name="lockscreen_qs_disabled_summary">보안 잠금 화면에서 설정 패널 비활성화</string>
-    <string name="status_bar_quick_qs_pulldown_title">빠르게 설정 패널 열기</string>
-    <string name="status_bar_quick_qs_pulldown_summary">상태 표시줄의 %1$s 모서리를 내려 설정 패널을 봅니다</string>
+    <string name="lockscreen_qs_disabled_title">잠금 화면에서 사용 안 함</string>
+    <string name="lockscreen_qs_disabled_summary">보안 잠금 화면에서 확장 상태 표시줄 사용 안 함</string>
+    <string name="status_bar_quick_qs_pulldown_title">빠르게 내리기</string>
+    <string name="status_bar_quick_qs_pulldown_summary">상태 표시줄의 %1$s 끝을 내려 빠른 설정 열기</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">왼쪽</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">오른쪽</string>
-    <string name="status_bar_quick_qs_pulldown_off">비활성화</string>
+    <string name="status_bar_quick_qs_pulldown_off">꺼짐</string>
     <string name="status_bar_quick_qs_pulldown_left">왼쪽</string>
     <string name="status_bar_quick_qs_pulldown_right">오른쪽</string>
     <!-- Status bar - icons -->
@@ -92,20 +92,20 @@
     <string name="network_traffic_settings_title">네트워크 트래픽 모니터</string>
     <string name="network_traffic_settings_summary">상태 표시줄에 현재 네트워크 트래픽 수준 표시</string>
     <string name="network_traffic_autohide">자동으로 숨기기</string>
-    <string name="network_traffic_autohide_summary">활동이 없을 때 자동으로 트래픽 모니터를 숨깁니다</string>
+    <string name="network_traffic_autohide_summary">아무런 활동이 없을 때 트래픽 모니터 숨기기</string>
     <string name="network_traffic_units_title">트래픽 측정 단위</string>
     <string name="network_traffic_units_kilobits">초당 킬로비트 (kb/s)</string>
     <string name="network_traffic_units_megabits">초당 메가비트 (Mb/s)</string>
     <string name="network_traffic_units_kilobytes">초당 킬로바이트 (kB/s)</string>
     <string name="network_traffic_units_megabytes">초당 메가바이트 (MB/s)</string>
     <string name="network_traffic_show_units">단위 표시</string>
-    <string name="network_traffic_show_units_summary">상태 표시줄에 트래픽 측정 단위를 표시할 것인지 설정합니다</string>
+    <string name="network_traffic_show_units_summary">상태 표시줄에 트래픽 측정 단위 표시 여부</string>
     <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">화면을 스와이프 하여 스크린샷 찍기</string>
-    <string name="swipe_to_screenshot_gesture_summary">세 손가락을 스와이프 해서 스크린샷을 찍습니다</string>
+    <string name="swipe_to_screenshot_gesture_title">스와이프하여 스크린샷</string>
+    <string name="swipe_to_screenshot_gesture_summary">세 손가락을 스와이프하여 스크린샷 찍기</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">가독성을 향상시키고 눈의 피로를 줄이기 위해 주변 환경과 시간에 따라 화면을 최적화</string>
-    <string name="live_display_mode">디스플레이 모드</string>
+    <string name="live_display_summary">가독성을 향상시키고 눈의 피로를 줄이기 위해 시간과 주변 환경에 따라 화면 최적화</string>
+    <string name="live_display_mode">화면 모드</string>
     <string name="live_display_color_temperature_title">색 온도</string>
     <string name="live_display_color_temperature_summary">주간: <xliff:g id="day_temperature">%1$d</xliff:g>K  야간: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
@@ -116,32 +116,32 @@
     <string name="live_display_low_power_title">전력 소모 절약</string>
     <string name="live_display_low_power_summary">열화 없는 한도 내에서 화면을 조정하여 전력 소모 감소</string>
     <string name="live_display_enhance_color_title">색상 향상</string>
-    <string name="live_display_enhance_color_summary">피부 톤, 풍경 및 기타 이미지에서 색의 생동감을 향상</string>
+    <string name="live_display_enhance_color_summary">피부 톤, 풍경 및 기타 이미지에서 색의 생동감 향상</string>
     <string name="live_display_color_profile_title">색상 프로필</string>
     <string name="live_display_color_profile_standard_title">표준</string>
     <string name="live_display_color_profile_standard_summary">정확한 색상 및 밝은 흰색</string>
     <string name="live_display_color_profile_natural_title">자연</string>
     <string name="live_display_color_profile_natural_summary">사실적인 색상 및 피부 톤</string>
-    <string name="live_display_color_profile_dynamic_title">다이나믹</string>
+    <string name="live_display_color_profile_dynamic_title">역동적</string>
     <string name="live_display_color_profile_dynamic_summary">향상된 색상 및 밝은 흰색</string>
     <string name="live_display_color_profile_cinema_title">영화</string>
     <string name="live_display_color_profile_cinema_summary">영상을 위한 완벽한 색 재현력</string>
-    <string name="live_display_color_profile_astronomy_title">우주</string>
+    <string name="live_display_color_profile_astronomy_title">천문학</string>
     <string name="live_display_color_profile_astronomy_summary">야간에 눈이 피로하지 않게 진한 붉은 색감</string>
     <string name="live_display_color_profile_photography_title">사진</string>
     <string name="live_display_color_profile_photography_summary">사진을 위한 완벽한 색 재현력</string>
     <string name="live_display_color_profile_basic_title">기본</string>
-    <string name="live_display_color_profile_basic_summary">디스플레이를 보정하지 않은 상태로 사용</string>
+    <string name="live_display_color_profile_basic_summary">화면을 보정하지 않은 상태로 사용</string>
     <string name="live_display_color_profile_adaptive_title">적응형</string>
     <string name="live_display_color_profile_adaptive_summary">주변 상황에 맞는 색상 적용</string>
     <string name="live_display_color_profile_reading_title">독서</string>
-    <string name="live_display_color_profile_reading_summary">안구 피로를 줄이기 위한 따뜻한 색상</string>
+    <string name="live_display_color_profile_reading_summary">눈의 피로를 줄이기 위한 따뜻한 색상</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
     <string name="live_display_color_profile_srgb_summary">sRGB 색 공간에 적합한 색상</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">DCI-P3 색 공간에 적합한 색상</string>
     <string name="live_display_reading_mode_title">독서 모드</string>
-    <string name="live_display_reading_mode_summary">긴 시간 독서에 유용한 흑백 모드</string>
+    <string name="live_display_reading_mode_summary">긴 시간 독서를 위한 흑백 모드</string>
     <string name="color_calibration_title">색상 보정</string>
     <string name="color_calibration_summary">화면 색상 보정</string>
     <string name="color_red_title">빨강</string>
@@ -154,4 +154,19 @@
     <string name="adj_saturation_title">채도</string>
     <string name="adj_intensity_title">명도</string>
     <string name="adj_contrast_title">대비</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">자동 얼굴 인식 잠금 해제</string>
+    <string name="face_auto_unlock_summary">얼굴 인식 잠금 해제 후 잠금 화면 해제</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">자동(시간에 따라)</string>
+    <string name="systemui_theme_time_title">어두운 테마 시간 설정</string>
+    <string name="systemui_theme_time_start_time_title">시작 시간</string>
+    <string name="systemui_theme_time_end_time_title">종료 시간</string>
+    <!-- QS settings -->
+    <string name="qs_title">빠른 설정</string>
+    <string name="qs_rows_portrait_title">행 (세로 모드)</string>
+    <string name="qs_rows_landscape_title">행 (가로 모드)</string>
+    <string name="qs_columns_portrait_title">열 (세로 모드)</string>
+    <string name="qs_columns_landscape_title">열 (가로 모드)</string>
+    <!-- Notification theme -->
 </resources>

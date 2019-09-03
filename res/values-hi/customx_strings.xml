@@ -92,4 +92,11 @@
     <string name="color_blue_title">नीला</string>
     <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">चित्र समायोजन</string>
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Otomatis (waktu dalam sehari)</string>
+    <string name="systemui_theme_time_start_time_title">Waktu mulai</string>
+    <string name="systemui_theme_time_end_time_title">Waktu berakhir</string>
+    <!-- QS settings -->
+    <!-- Notification theme -->
 </resources>
