@@ -46,4 +46,10 @@
     <!-- Three-fingers-swipe to screenshot -->
     <!-- LiveDisplay -->
     <!-- LiveDisplay : Picture Adjustment -->
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time_start_time_title">শুরু</string>
+    <string name="systemui_theme_time_end_time_title">শেষ</string>
+    <!-- QS settings -->
+    <!-- Notification theme -->
 </resources>

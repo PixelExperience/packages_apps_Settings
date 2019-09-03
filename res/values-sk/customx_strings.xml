@@ -154,4 +154,11 @@
     <string name="adj_saturation_title">Sýtosť</string>
     <string name="adj_intensity_title">Intenzita</string>
     <string name="adj_contrast_title">Kontrast</string>
+    <!-- Face auto unlock -->
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Automaticky (podľa času dňa)</string>
+    <string name="systemui_theme_time_start_time_title">Čas spustenia</string>
+    <string name="systemui_theme_time_end_time_title">Čas ukončenia</string>
+    <!-- QS settings -->
+    <!-- Notification theme -->
 </resources>

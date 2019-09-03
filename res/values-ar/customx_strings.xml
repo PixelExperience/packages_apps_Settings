@@ -154,4 +154,19 @@
     <string name="adj_saturation_title">التشبع</string>
     <string name="adj_intensity_title">الكثافة</string>
     <string name="adj_contrast_title">التباين</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">فتح الوجه التلقائي</string>
+    <string name="face_auto_unlock_summary">صرف النظر عن قفل الشاشة بعد إلغاء قفل الوجه</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">تلقائي (الوقت من اليوم)</string>
+    <string name="systemui_theme_time_title">جدولة السمة الداكنة</string>
+    <string name="systemui_theme_time_start_time_title">وقت البدء</string>
+    <string name="systemui_theme_time_end_time_title">وقت الانتهـاء</string>
+    <!-- QS settings -->
+    <string name="qs_title">الإعدادات السريعة</string>
+    <string name="qs_rows_portrait_title">الصفوف (رأسي)</string>
+    <string name="qs_rows_landscape_title">الصفوف (أفقي)</string>
+    <string name="qs_columns_portrait_title">الأعمدة (رأسي)</string>
+    <string name="qs_columns_landscape_title">الأعمدة (أفقي)</string>
+    <!-- Notification theme -->
 </resources>
