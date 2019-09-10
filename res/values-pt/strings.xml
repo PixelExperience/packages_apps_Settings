@@ -4469,7 +4469,7 @@
     <string name="left_edge" msgid="1513576842959071849">"Borda esquerda"</string>
     <string name="right_edge" msgid="1505309103265829121">"Borda direita"</string>
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"O aumento da sensibilidade pode prejudicar gestos que usam as bordas da tela."</string>
-    <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Sensibilidade da parte de trás"</string>
+    <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Sensibilidade do gesto de voltar"</string>
     <string name="gesture_settings_activity_title" msgid="6047431928567911330">"Configurações de gestos"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"navegação por gestos, sensibilidade na parte de trás, gestos de retorno"</string>
     <string name="ambient_display_title" product="default" msgid="5885136049497127396">"Tocar duas vezes na tela para verificar o smartphone"</string>
