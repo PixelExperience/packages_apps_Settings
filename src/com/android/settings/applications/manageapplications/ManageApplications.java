@@ -145,7 +145,7 @@ public class ManageApplications extends InstrumentedFragment
         implements View.OnClickListener, OnItemSelectedListener, SearchView.OnQueryTextListener {
 
     static final String TAG = "ManageApplications";
-    static final boolean DEBUG = Build.IS_DEBUGGABLE;
+    static final boolean DEBUG = Build.IS_ENG;
 
     // Intent extras.
     public static final String EXTRA_CLASSNAME = "classname";
