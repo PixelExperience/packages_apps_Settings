@@ -46,8 +46,6 @@ import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 import com.android.settingslib.development.DevelopmentSettingsEnabler;
 
-import android.os.SystemProperties;
-
 public class BuildNumberPreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin, LifecycleObserver, OnResume {
 
@@ -87,7 +85,7 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
             try {
                 StringBuilder sb = new StringBuilder();
                 sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
-                String pixelExperienceVersion = getPixelExperienceVersion();
+                String pixelExperienceVersion = VersionUtils.getPixelExperienceVersion();
                 if (!pixelExperienceVersion.equals("")){
                     sb.append("\n");
                     sb.append(pixelExperienceVersion);
@@ -98,12 +96,6 @@ public class BuildNumberPreferenceController extends AbstractPreferenceControlle
                 preference.setSummary(R.string.device_info_default);
             }
         }
-    }
-
-    public static String getPixelExperienceVersion(){
-        String buildDate = SystemProperties.get("org.pixelexperience.build_date","");
-        String buildType = SystemProperties.get("org.pixelexperience.build_type","unofficial").toUpperCase();
-        return buildDate.equals("") ? "" : "PixelExperience-" + buildDate + "-" + buildType;
     }
 
     @Override
