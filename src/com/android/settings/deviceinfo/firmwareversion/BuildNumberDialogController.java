@@ -27,6 +27,8 @@ import android.os.SystemProperties;
 import com.android.settings.deviceinfo.BuildNumberPreferenceController;
 import com.android.settings.deviceinfo.DeviceModelPreferenceController;
 
+import com.android.settings.deviceinfo.VersionUtils;
+
 public class BuildNumberDialogController {
 
     @VisibleForTesting
@@ -42,10 +44,9 @@ public class BuildNumberDialogController {
      * Updates the build number to the dialog.
      */
     public void initialize() {
-        
         StringBuilder sb = new StringBuilder();
         sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
-        String pixelExperienceVersion = BuildNumberPreferenceController.getPixelExperienceVersion();
+        String pixelExperienceVersion = VersionUtils.getPixelExperienceVersion();
         if (!pixelExperienceVersion.equals("")){
             sb.append("\n");
             sb.append(pixelExperienceVersion);
