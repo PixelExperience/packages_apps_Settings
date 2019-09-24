@@ -95,9 +95,6 @@
     <uses-permission android:name="android.permission.USE_RESERVED_DISK" />
     <uses-permission android:name="android.permission.MANAGE_SCOPED_ACCESS_DIRECTORY_PERMISSIONS" />
 
-    <!-- Ambient Indication -->
-    <uses-permission android:name="org.pixelexperience.ambient.play.history.MANAGE_HISTORY" />
-
     <!-- Thermal controller -->
     <uses-permission android:name="org.pixelexperience.thermalcontroller.MANAGE_SETTINGS" />
 
@@ -3298,18 +3295,6 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.applications.manageapplications.ManageApplications" />
-        </activity>
-
-        <!-- Ambient play history activity. -->
-        <activity android:name="Settings$AmbientPlayHistoryActivity"
-                android:label="@string/ambient_play_history"
-                android:launchMode="singleInstance">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.custom.ambient.history.AmbientPlayHistory" />
         </activity>
 
         <!-- LiveDisplay -->
