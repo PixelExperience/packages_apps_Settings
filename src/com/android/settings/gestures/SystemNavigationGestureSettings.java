@@ -173,7 +173,8 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
         if (info.getKey() == KEY_SYSTEM_NAV_GESTURAL) {
             p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_SETTING);
             p.setExtraWidgetOnClickListener((v) -> GestureNavigationBackSensitivityDialog
-                    .show(this, getBackSensitivity(getContext(), mOverlayManager)));
+                    .show(this, getBackSensitivity(getContext(), mOverlayManager),
+                    getBackHeight(getContext())));
         } else {
             p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_GONE);
         }
@@ -287,6 +288,21 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment {
         } else {
             return KEY_SYSTEM_NAV_3BUTTONS;
         }
+    }
+
+    static void setBackHeight(Context context, int height) {
+        // height cant be range 0 - 3
+        // 0 means full height
+        // 1 measns half of the screen
+        // 2 means lower third of the screen
+        // 3 means lower sixth of the screen
+        Settings.System.putInt(context.getContentResolver(),
+                Settings.System.BACK_GESTURE_HEIGHT, height);
+    }
+
+    static int getBackHeight(Context context) {
+        return Settings.System.getInt(context.getContentResolver(),
+                Settings.System.BACK_GESTURE_HEIGHT, 0);
     }
 
     @VisibleForTesting
