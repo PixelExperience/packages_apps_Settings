@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Vyhľadajte snímač odtlačkov prstov na ľavej strane telefónu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Vyhľadajte snímač odtlačkov prstov na pravej strane telefónu.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Vyhľadajte snímač odtlačkov prstov na prednej strane zariadenia.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Vyhľadajte snímač odtlačkov prstov na ľavej strane zariadenia.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Vyhľadajte snímač odtlačkov prstov na pravej strane zariadenia.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Vyhľadajte snímač odtlačkov prstov na prednej strane tabletu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Vyhľadajte snímač odtlačkov prstov na ľavej strane tabletu.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Vyhľadajte snímač odtlačkov prstov na pravej strane tabletu.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">vypnutá</string>
@@ -37,40 +43,6 @@
     <string name="sub_activate_failed">Aktivácia zlyhala.</string>
     <string name="sub_deactivate_success">SIM bola deaktivovaná.</string>
     <string name="sub_deactivate_failed">Deaktivácia sa nepodarila.</string>
-    <!-- Weather -->
-    <string name="weather_title">Počasie</string>
-    <string name="weather_unit">Jednotky teploty</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Zobraziť všetky skladby</string>
-    <string name="ambient_play_lockscreen_title">Zobraziť skladby na obrazovke uzamknutia</string>
-    <string name="ambient_play_lockscreen_summary">Zobraziť rozpoznané skladby na uzamykacej obrazovke</string>
-    <string name="ambient_play_notifications_title">Upozornenia</string>
-    <string name="ambient_play_notifications_summary">Zobraziť notifikáciu pri rozpoznaní skladby</string>
-    <string name="ambient_play_switch_bar_on">Zap.</string>
-    <string name="ambient_play_switch_bar_off">Vyp.</string>
-    <string name="ambient_play_help_text">Keď v okolí bude hrať hudba, zobrazí sa vám názov skladby a interpret. Životnosť batérie a využitie dát môžu byť ovplyvnené, ak je táto funkcia povolená.</string>
-    <string name="ambient_play_history">História prehrávania</string>
-    <string name="ambient_play_loading_data">Načítavam dáta …</string>
-    <string name="ambient_play_history_today">Dnes</string>
-    <string name="ambient_play_history_yesterday">Včera</string>
-    <string name="ambient_play_history_dialog_play">Prehráva sa teraz</string>
-    <string name="ambient_play_history_dialog_search">Hľadať na webe</string>
-    <string name="ambient_play_history_dialog_remove">Odstrániť</string>
-    <string name="ambient_play_history_empty">História hudby je prázdna</string>
-    <string name="ambient_play_history_menu_remove_all">Odstrániť všetko</string>
-    <string name="ambient_play_history_menu_add_to_home">Pridať na domovskú obrazovku</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Ste si istí?</string>
-    <string name="ambient_play_saving_options_title">Možnosti ukladania</string>
-    <string name="ambient_play_saving_options_summary">Možnosti k zníženiu spotreby batérie a využitia siete</string>
-    <string name="ambient_play_saving_options_low_battery_title">Slabá batéria</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Zakázať rozpoznávanie pri nízkom stave batérie</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Mobilné dáta</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Zakázať rozpoznávanie, pokiaľ sú zapnuté mobilné dáta</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Obdobie ticha</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Povoliť obdobie ticha</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Zakázať rozpoznávanie na určitú dobu</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Čas spustenia</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Čas ukončenia</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Resetovať</string>
     <!-- Buttons -->

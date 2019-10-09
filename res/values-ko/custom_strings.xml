@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">활성화하지 못했습니다.</string>
     <string name="sub_deactivate_success">SIM이 비활성화되었습니다.</string>
     <string name="sub_deactivate_failed">비활성화하지 못했습니다.</string>
-    <!-- Weather -->
-    <string name="weather_title">날씨</string>
-    <string name="weather_unit">온도 단위</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">주변의 노래 표시</string>
-    <string name="ambient_play_lockscreen_title">잠금 화면에 노래 표시</string>
-    <string name="ambient_play_lockscreen_summary">노래가 인식되면 잠금 화면에 표시</string>
-    <string name="ambient_play_notifications_title">알림</string>
-    <string name="ambient_play_notifications_summary">노래가 인식되면 알림 표시</string>
-    <string name="ambient_play_switch_bar_on">켜짐</string>
-    <string name="ambient_play_switch_bar_off">꺼짐</string>
-    <string name="ambient_play_help_text">근처에서 음악이 재생 중일 경우 해당 음악의 제목과 아티스트를 알려 줍니다. 이 기능은 배터리와 데이터 사용량에 영향을 미칠 수 있습니다.</string>
-    <string name="ambient_play_history">Now Playing 기록</string>
-    <string name="ambient_play_loading_data">데이터 로드 중…</string>
-    <string name="ambient_play_history_today">오늘</string>
-    <string name="ambient_play_history_yesterday">어제</string>
-    <string name="ambient_play_history_dialog_play">지금 재생</string>
-    <string name="ambient_play_history_dialog_search">웹에서 검색</string>
-    <string name="ambient_play_history_dialog_remove">삭제</string>
-    <string name="ambient_play_history_empty">음악 기록이 비어있습니다</string>
-    <string name="ambient_play_history_menu_remove_all">모두 삭제</string>
-    <string name="ambient_play_history_menu_add_to_home">홈 화면에 추가</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">계속하시겠습니까?</string>
-    <string name="ambient_play_saving_options_title">절약 옵션</string>
-    <string name="ambient_play_saving_options_summary">배터리와 네트워크 사용량을 줄이는 옵션</string>
-    <string name="ambient_play_saving_options_low_battery_title">배터리 부족</string>
-    <string name="ambient_play_saving_options_low_battery_summary">배터리가 부족하면 인식 사용 중지</string>
-    <string name="ambient_play_saving_options_mobile_data_title">모바일 데이터</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">모바일 데이터가 사용되면 인식 사용 중지</string>
-    <string name="ambient_play_saving_options_quiet_period_title">방해 금지 시간</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">방해 금지 시간 사용</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">설정한 시간 동안 인식 사용 중지</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">시작 시간</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">종료 시간</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">초기화</string>
     <!-- Buttons -->

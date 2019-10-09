@@ -32,8 +32,6 @@
     <string name="sub_activate_failed">Aktivering het misluk.</string>
     <string name="sub_deactivate_success">SIM gedeaktiveer.</string>
     <string name="sub_deactivate_failed">Deaktivering het misluk.</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <string name="reset">Stel terug</string>
     <!-- Buttons -->

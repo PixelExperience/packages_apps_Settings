@@ -37,27 +37,6 @@
     <string name="sub_activate_failed">සක්‍රීය කිරීම අසාර්ථකයි.</string>
     <string name="sub_deactivate_success">SIM පත අක්‍රීයයි.</string>
     <string name="sub_deactivate_failed">අක්‍රීය කිරීම අසමත්.</string>
-    <!-- Weather -->
-    <string name="weather_title">කාලගුණය</string>
-    <string name="weather_unit">උෂ්ණත්ව ඒකකය</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">ලඟ ඇති සිංදු පෙන්වන්න</string>
-    <string name="ambient_play_lockscreen_title">ගීත Lock screenයේ ⁣පෙන්වන්න</string>
-    <string name="ambient_play_notifications_title">දැනුම්දීම්</string>
-    <string name="ambient_play_switch_bar_on">සක්‍රීයයි</string>
-    <string name="ambient_play_switch_bar_off">අක්‍රීයයි</string>
-    <string name="ambient_play_help_text">අසල ගීතයක් play වන විට ගීතයේ නම හා කළාකරුගේ නම බලාගත හැක. Battery කාලය හා දත්ත මේ සඳහා වැඩියෙන් වැයවිය හැක.</string>
-    <string name="ambient_play_history">Now playing ඉතිහාසය</string>
-    <string name="ambient_play_loading_data">දත්ත නංවමින්…</string>
-    <string name="ambient_play_history_today">අද</string>
-    <string name="ambient_play_history_yesterday">ඊයෙ</string>
-    <string name="ambient_play_history_dialog_play">දැන් play කරන්න</string>
-    <string name="ambient_play_history_dialog_search">අන්තර්ජාලයේ සොයන්න</string>
-    <string name="ambient_play_history_dialog_remove">ඉවත් කරන්න</string>
-    <string name="ambient_play_history_empty">සංගීත ඉතිහාසය හිස්</string>
-    <string name="ambient_play_history_menu_remove_all">සියල්ල ඉවත් කරන්න</string>
-    <string name="ambient_play_history_menu_add_to_home">මුල් තිරය වෙත එක් කරන්න</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">ඔබට විශ්වාස ද?</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">යළි පිහිටුවන්න</string>
     <!-- Buttons -->

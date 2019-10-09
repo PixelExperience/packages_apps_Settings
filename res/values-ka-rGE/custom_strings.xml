@@ -41,8 +41,6 @@
     <string name="sub_activate_failed">აქტივაციის შეცდომა.</string>
     <string name="sub_deactivate_success">სიმბარათი გამოირთო</string>
     <string name="sub_deactivate_failed">შეცდომა გააქტიურების დროს</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <string name="reset">განულება</string>
     <!-- Buttons -->

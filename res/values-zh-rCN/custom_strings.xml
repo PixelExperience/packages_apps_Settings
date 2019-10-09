@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">激活失败。</string>
     <string name="sub_deactivate_success">SIM 卡已停用。</string>
     <string name="sub_deactivate_failed">停用失败。</string>
-    <!-- Weather -->
-    <string name="weather_title">天气</string>
-    <string name="weather_unit">温度单位</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">显示附近歌曲</string>
-    <string name="ambient_play_lockscreen_title">在锁屏界面显示歌曲</string>
-    <string name="ambient_play_lockscreen_summary">在锁屏界面显示已识别的歌曲</string>
-    <string name="ambient_play_notifications_title">通知</string>
-    <string name="ambient_play_notifications_summary">在锁屏界面显示已识别的歌曲</string>
-    <string name="ambient_play_switch_bar_on">开启</string>
-    <string name="ambient_play_switch_bar_off">关闭</string>
-    <string name="ambient_play_help_text">启用识别附近播放的音乐，你可以看到歌名和演奏者，耗电量和数据流量也许会受到影响。</string>
-    <string name="ambient_play_history">播放历史</string>
-    <string name="ambient_play_loading_data">正在加载数据...</string>
-    <string name="ambient_play_history_today">今天</string>
-    <string name="ambient_play_history_yesterday">昨天</string>
-    <string name="ambient_play_history_dialog_play">立即播放</string>
-    <string name="ambient_play_history_dialog_search">网络搜索</string>
-    <string name="ambient_play_history_dialog_remove">清除</string>
-    <string name="ambient_play_history_empty">音乐播放记录为空</string>
-    <string name="ambient_play_history_menu_remove_all">清除所有</string>
-    <string name="ambient_play_history_menu_add_to_home">添加到桌面</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">你确定要这样做吗?</string>
-    <string name="ambient_play_saving_options_title">保存选项</string>
-    <string name="ambient_play_saving_options_summary">降低电池和网络使用的选项</string>
-    <string name="ambient_play_saving_options_low_battery_title">低电量</string>
-    <string name="ambient_play_saving_options_low_battery_summary">电池电量不足时禁用识别</string>
-    <string name="ambient_play_saving_options_mobile_data_title">移动数据</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">移动网络开启时禁用识别</string>
-    <string name="ambient_play_saving_options_quiet_period_title">免打扰时段</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">打开免打扰时段</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">在特定的时间段内关闭识别</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">开始时间</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">结束时间</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">重置</string>
     <!-- Buttons -->

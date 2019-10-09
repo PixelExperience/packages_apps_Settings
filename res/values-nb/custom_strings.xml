@@ -37,8 +37,6 @@
     <string name="sub_activate_failed">Aktivering mislyktes.</string>
     <string name="sub_deactivate_success">SIM deaktivert.</string>
     <string name="sub_deactivate_failed">Deaktivering mislyktes.</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <string name="reset">Nullstill</string>
     <!-- Buttons -->

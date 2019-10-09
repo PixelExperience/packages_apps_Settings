@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Sikertelen aktiválás.</string>
     <string name="sub_deactivate_success">SIM deaktiválva.</string>
     <string name="sub_deactivate_failed">Sikertelen deaktiválás.</string>
-    <!-- Weather -->
-    <string name="weather_title">Időjárás</string>
-    <string name="weather_unit">A hőmérséklet mértékegysége</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Közelben szóló zene megjelenítése</string>
-    <string name="ambient_play_lockscreen_title">Lejátszott zeneszám megjelenése a zárképernyőn</string>
-    <string name="ambient_play_lockscreen_summary">Ha sikerült a zeneszámot beazonosítani, megjelenik a záróképernyőn</string>
-    <string name="ambient_play_notifications_title">Értesítések</string>
-    <string name="ambient_play_notifications_summary">Ha sikerült a zeneszámot beazonosítani, értesítés jelenik meg</string>
-    <string name="ambient_play_switch_bar_on">Be</string>
-    <string name="ambient_play_switch_bar_off">Ki</string>
-    <string name="ambient_play_help_text">Ha a készülék közelében zene szól, az felismeri azt és kiírja a dal címét és szerzőjét. Ha engedélyezve van, az kihatással lesz az akkuidőre és a felhasznált adatforgalomra.</string>
-    <string name="ambient_play_history">A \'Now Playing\' előzményei</string>
-    <string name="ambient_play_loading_data">Adatok betöltése…</string>
-    <string name="ambient_play_history_today">Ma</string>
-    <string name="ambient_play_history_yesterday">Tegnap</string>
-    <string name="ambient_play_history_dialog_play">Azonnali lejátszás</string>
-    <string name="ambient_play_history_dialog_search">Keresés a weben</string>
-    <string name="ambient_play_history_dialog_remove">Eltávolítás</string>
-    <string name="ambient_play_history_empty">A zenei előzmények üres</string>
-    <string name="ambient_play_history_menu_remove_all">Az összes eltávolítása</string>
-    <string name="ambient_play_history_menu_add_to_home">Hozzáadás a Kezdőképernyőhöz</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Biztos ebben?</string>
-    <string name="ambient_play_saving_options_title">Energiatakarékossági lehetőségek</string>
-    <string name="ambient_play_saving_options_summary">Az akkumulátor- és a hálózathasználat csökkentésének lehetőségei</string>
-    <string name="ambient_play_saving_options_low_battery_title">Merülő akkumulátor</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Zeneszám-felismerés tiltása alacsony akkumulátorszint esetén</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Mobiladat</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Zeneszám-felismerés tlitása mobiladat-használatkor</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Csendes időszak</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">A csendes időszak engedélyezése</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Zeneszám-felismerés tiltása egy előre megadott idószakban</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Kezdési idő</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Befejezési idő</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Visszaállitás</string>
     <!-- Buttons -->

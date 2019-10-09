@@ -32,10 +32,6 @@
     <string name="sub_activate_success">ဖုန်းကဒ် ဖွင့်ထားပါသည်။</string>
     <string name="sub_deactivate_success">ဖုန်းကဒ် ပိတ်ထားပါသည်။</string>
     <string name="sub_deactivate_failed">ဖုန်းကဒ် ပိတ်မရပါ။</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">စတင်ချိန်</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">ပြီးဆုံးချိန်</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">မူလအတိုင်း ပြန်လည်ပြောင်းလဲမည်။</string>
     <!-- Buttons -->

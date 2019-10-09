@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">הפעלה נכשלה.</string>
     <string name="sub_deactivate_success">SIM בוטל.</string>
     <string name="sub_deactivate_failed">ביטול הפעלה נכשלה.</string>
-    <!-- Weather -->
-    <string name="weather_title">מזג אוויר</string>
-    <string name="weather_unit">יחידת טמפרטורה</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">הצג שירים קרובים</string>
-    <string name="ambient_play_lockscreen_title">הצג שירים במסך הנעילה</string>
-    <string name="ambient_play_lockscreen_summary">הצג במסך הנעילה כשמזוהה שיר</string>
-    <string name="ambient_play_notifications_title">התראות</string>
-    <string name="ambient_play_notifications_summary">הצג התראה כשמזוהה שיר</string>
-    <string name="ambient_play_switch_bar_on">מופעל</string>
-    <string name="ambient_play_switch_bar_off">כבוי</string>
-    <string name="ambient_play_help_text">כאשר המוסיקה מופעלת בקרבת מקום, תוכל לראות את שם השיר ואת האמן. חיי הסוללה ושימוש בנתונים עשויים להיות מושפעים אם אפשרות זו מופעלת.</string>
-    <string name="ambient_play_history">כעת מנגן את ההיסטוריה</string>
-    <string name="ambient_play_loading_data">טוען נתונים…</string>
-    <string name="ambient_play_history_today">היום</string>
-    <string name="ambient_play_history_yesterday">אתמול</string>
-    <string name="ambient_play_history_dialog_play">נגן עכשיו</string>
-    <string name="ambient_play_history_dialog_search">חפש ברשת</string>
-    <string name="ambient_play_history_dialog_remove">הסר</string>
-    <string name="ambient_play_history_empty">היסטוריית השירים ריקה</string>
-    <string name="ambient_play_history_menu_remove_all">הסר הכל</string>
-    <string name="ambient_play_history_menu_add_to_home">הוסף למסך דף הבית</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">האם אתה בטוח?</string>
-    <string name="ambient_play_saving_options_title">שומר אפשרויות</string>
-    <string name="ambient_play_saving_options_summary">אפשרות להקטנת הצריכה בסוללה והשימוש ברשת</string>
-    <string name="ambient_play_saving_options_low_battery_title">סוללה חלשה</string>
-    <string name="ambient_play_saving_options_low_battery_summary">השבתת טעינת תמונות כאשר הסוללה חלשה</string>
-    <string name="ambient_play_saving_options_mobile_data_title">נתונים סלולריים</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">ביטול טעינת תמונות כאשר הנתונים הסלולריים מופעלים</string>
-    <string name="ambient_play_saving_options_quiet_period_title">תקופה שקטה</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">הפעלת תקופה שקטה</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">בטל זיהוי לפרק זמן מסוים</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">זמן התחלה</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">סיים זמן</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">איפוס</string>
     <!-- Buttons -->

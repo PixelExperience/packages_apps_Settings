@@ -32,29 +32,6 @@
     <string name="sub_activate_failed">Ակտիվացումը ձախողվեց։</string>
     <string name="sub_deactivate_success">SIM քարտը ակտիվ չէ:</string>
     <string name="sub_deactivate_failed">Ակտիվացումը ձախողվեց։</string>
-    <!-- Weather -->
-    <string name="weather_title">Եղանակ</string>
-    <string name="weather_unit">Ջերմաստիճանի միավոր</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_notifications_title">Ծանուցում</string>
-    <string name="ambient_play_switch_bar_on">Միաց</string>
-    <string name="ambient_play_switch_bar_off">Անջատել</string>
-    <string name="ambient_play_loading_data">Տվյալները բեռնում…</string>
-    <string name="ambient_play_history_today">Այսօր</string>
-    <string name="ambient_play_history_yesterday">Երեկ</string>
-    <string name="ambient_play_history_dialog_play">Այժմ նվագարկվում է</string>
-    <string name="ambient_play_history_dialog_search">Որոնել համացանցում</string>
-    <string name="ambient_play_history_dialog_remove">Հեռացնել</string>
-    <string name="ambient_play_history_empty">Երգերի պատմությունը դատարկ է</string>
-    <string name="ambient_play_history_menu_remove_all">Հեռացնել բոլորը</string>
-    <string name="ambient_play_history_menu_add_to_home">Ավելացնել Հիմնական էկրանին</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Դուք համոզվա՞ծ եք:</string>
-    <string name="ambient_play_saving_options_title">Պահպանման դրույթները</string>
-    <string name="ambient_play_saving_options_low_battery_title">Մարտկոցի լիցքը քիչ է</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Բջջային համացանց</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Հերթի ժամկետը</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Մեկնարկի ժամը</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Ավարտի ժամը</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Վերակայել</string>
     <!-- Buttons -->

@@ -4,7 +4,7 @@
     <plurals name="backlight_timeout_time">
         <item quantity="one"><xliff:g id="sekundė">%d</xliff:g> sekundė</item>
         <item quantity="few"><xliff:g id="sekundės">%d</xliff:g> sekundės</item>
-        <item quantity="many"><xliff:g id="sekundžių">%d</xliff:g> sekundės</item>
+        <item quantity="many"><xliff:g id="sekundžių">%d</xliff:g> sekundžių</item>
         <item quantity="other"><xliff:g id="sekundžių">%d</xliff:g> sekundės</item>
     </plurals>
 </resources>

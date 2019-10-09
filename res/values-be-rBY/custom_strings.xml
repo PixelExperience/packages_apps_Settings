@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Знайдзіце сканер адбіткаў пальцаў на левай паверхні тэлефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Знайдзіце сканер адбіткаў пальцаў на правай паверхні тэлефона.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Знайдзіце сканер адбіткаў пальцаў на задняй панэлi прылады.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Знайдзіце сканер адбіткаў пальцаў на левай гранi тэлефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Знайдзіце сканер адбіткаў пальцаў на правай гранi прылады.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Знайдзіце сканер адбіткаў пальцаў на задняй панэлi планшэта.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Знайдзіце сканер адбіткаў пальцаў на левай паверхні планшэта.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Знайдзіце сканер адбіткаў пальцаў на правай паверхні планшэта.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> — <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">адключана</string>
@@ -37,40 +43,6 @@
     <string name="sub_activate_failed">Памылка падчас актывацыі.</string>
     <string name="sub_deactivate_success">SIM дэактывована.</string>
     <string name="sub_deactivate_failed">Памылка падчас дэактывацыі.</string>
-    <!-- Weather -->
-    <string name="weather_title">Надвор\'е</string>
-    <string name="weather_unit">Адзінкі тэмпературы</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Паказаць бліжэйшыя песні</string>
-    <string name="ambient_play_lockscreen_title">Паказваць песні на экране блакавання</string>
-    <string name="ambient_play_lockscreen_summary">Паказаць на экране блакавання, калі песня распазнаецца</string>
-    <string name="ambient_play_notifications_title">Апавяшчэнні</string>
-    <string name="ambient_play_notifications_summary">Паказаць апавяшчэнне, калі песня распазнаецца</string>
-    <string name="ambient_play_switch_bar_on">Уключыць</string>
-    <string name="ambient_play_switch_bar_off">Адключыць</string>
-    <string name="ambient_play_help_text">Калі музыка гуляе побач, вы можаце бачыць назву песні і імя выканаўцы. Тэрмін службы батарэі і выкарыстанне дадзеных можа паўплываць, калі гэта дазволена.</string>
-    <string name="ambient_play_history">Чарга прайгравання</string>
-    <string name="ambient_play_loading_data">Загрузка даных...</string>
-    <string name="ambient_play_history_today">Сёння</string>
-    <string name="ambient_play_history_yesterday">Учора</string>
-    <string name="ambient_play_history_dialog_play">Прайграць зараз</string>
-    <string name="ambient_play_history_dialog_search">Пошук у Інтэрнэце</string>
-    <string name="ambient_play_history_dialog_remove">Выдаліць</string>
-    <string name="ambient_play_history_empty">У гісторыі пакуль няма песень</string>
-    <string name="ambient_play_history_menu_remove_all">Выдаліць усё</string>
-    <string name="ambient_play_history_menu_add_to_home">Дадаць на Галоўны экран</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Вы ўпэўнены?</string>
-    <string name="ambient_play_saving_options_title">Параметры захавання</string>
-    <string name="ambient_play_saving_options_summary">Настройкі для змяншэння расходу батарэі і мабільных дадзеных</string>
-    <string name="ambient_play_saving_options_low_battery_title">Нізкі узровень батарэі</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Адключыць распазнаванне пры нізкім узроўні зарада</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Мабільныя дадзеныя</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Адключыць распазнаванне па мабільных дадзеных</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Ціхі перыяд</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Ўключыць ціхі перыяд</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Выключыць распазнаванне на пэўны перыяд часу</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Час пачатку</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Час заканчэння</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Скінуць налады</string>
     <!-- Buttons -->

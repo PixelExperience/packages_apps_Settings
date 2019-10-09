@@ -36,40 +36,6 @@
     <string name="sub_activate_failed">സജീവമാക്കൽ പരാജയപ്പെട്ടു.</string>
     <string name="sub_deactivate_success">സിം നിർജീവമാക്കി.</string>
     <string name="sub_deactivate_failed">നിർജീവമാക്കല്‍ പരാജയപ്പെട്ടു.</string>
-    <!-- Weather -->
-    <string name="weather_title">കാലാവസ്ഥ</string>
-    <string name="weather_unit">താപനില യൂണിറ്റുകൾ</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">ചുറ്റുവട്ടത്തുള്ള പാട്ടുകൾ കാണിക്കുക</string>
-    <string name="ambient_play_lockscreen_title">ലോക്ക് സ്ക്രീനിലെ പാട്ടുകൾ കാണുവാൻ</string>
-    <string name="ambient_play_lockscreen_summary">തിരിച്ചറിഞ്ഞ പാട്ടുകൾ ലോക്ക് സ്‌ക്രീനിൽ കാണുവാൻ</string>
-    <string name="ambient_play_notifications_title">നോട്ടിഫിക്കേഷൻ</string>
-    <string name="ambient_play_notifications_summary">തിരിച്ചറിഞ്ഞ പാട്ട് നോട്ടിഫിക്കേഷനായി കാണിക്കുവാൻ</string>
-    <string name="ambient_play_switch_bar_on">ഓണ്‍</string>
-    <string name="ambient_play_switch_bar_off">ഓഫ്</string>
-    <string name="ambient_play_help_text">തൊട്ടടുത്ത് കേൾക്കുന്ന പാട്ടിന്റെ പേരും പാടിയത്  ആരെന്നും അറിയുവാൻ. ഇത് പ്രവർത്തിക്കുവാൻ ബാറ്റെറി ലൈഫും  ഇന്റർനെറ്റും ആവശ്യമാണ്.</string>
-    <string name="ambient_play_history">ഹിസ്റ്ററി പ്ലേയ് ചെയ്യുന്നു</string>
-    <string name="ambient_play_loading_data">ഡാറ്റാ ലോഡ് ചെയ്യുന്നു…</string>
-    <string name="ambient_play_history_today">ഇന്ന്</string>
-    <string name="ambient_play_history_yesterday">ഇന്നലെ</string>
-    <string name="ambient_play_history_dialog_play">ഇപ്പോൾ പ്ലേ ചെയ്യുക</string>
-    <string name="ambient_play_history_dialog_search">ഇൻറർനെറ്റിൽ തിരയുവാൻ</string>
-    <string name="ambient_play_history_dialog_remove">നീക്കം ചെയ്യുക</string>
-    <string name="ambient_play_history_empty">മ്യൂസിക് ഹിസ്റ്ററി ശ്യൂന്യമാണ്‌</string>
-    <string name="ambient_play_history_menu_remove_all">എല്ലാം നീക്കം ചെയ്യുക</string>
-    <string name="ambient_play_history_menu_add_to_home">ഹോം സ്ക്രീനിൽ ചേർക്കുക</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">ഉറപ്പാണോ?</string>
-    <string name="ambient_play_saving_options_title">സേവ് ചെയ്യുവാൻ</string>
-    <string name="ambient_play_saving_options_summary">ബാറ്റെറിയുടെയും ഇന്റർനെറ്റിന്റെയും ഉപയോഗം കുറയ്ക്കുവാൻ</string>
-    <string name="ambient_play_saving_options_low_battery_title">ബാറ്ററി ചാർജ് കുറവാണ്</string>
-    <string name="ambient_play_saving_options_low_battery_summary">ബാറ്ററി ചാർജ് കുറവായിരിക്കുമ്പോൾ തിരിച്ചറിയുന്നത് നിർത്തുവാൻ</string>
-    <string name="ambient_play_saving_options_mobile_data_title">മൊബൈൽ ഡാറ്റാ</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">മൊബൈൽ ഡാറ്റാ ഓൺ ആയിരിക്കുമ്പോൾ തിരിച്ചറിയുന്നത് ഒഴിവാക്കാൻ</string>
-    <string name="ambient_play_saving_options_quiet_period_title">നിശബ്ദ സമയം</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">നിശബ്ദ സമയം സജ്ജമാക്കാൻ</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">നിശ്ചിത സമയത്തേക്ക് തിരിച്ചറിയുന്നത് ഒഴിവാക്കാൻ</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">ആരംഭിക്കുന്ന സമയം</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">അവസാനിക്കുന്ന സമയം</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">പുനഃക്രമീകരിക്കുക</string>
     <!-- Buttons -->

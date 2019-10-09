@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Ошибка активации.</string>
     <string name="sub_deactivate_success">SIM-карта отключена.</string>
     <string name="sub_deactivate_failed">Ошибка при отключении.</string>
-    <!-- Weather -->
-    <string name="weather_title">Погода</string>
-    <string name="weather_unit">Единицы измерения температуры</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Показать ближайшие песни</string>
-    <string name="ambient_play_lockscreen_title">Показывать песни на экране блокировки</string>
-    <string name="ambient_play_lockscreen_summary">Показать на экране блокировки, когда песня распознана</string>
-    <string name="ambient_play_notifications_title">Уведомления</string>
-    <string name="ambient_play_notifications_summary">Показать уведомление, когда песня распознана</string>
-    <string name="ambient_play_switch_bar_on">Вкл</string>
-    <string name="ambient_play_switch_bar_off">Выкл</string>
-    <string name="ambient_play_help_text">Когда рядом играет музыка, вы можете увидеть название песни и исполнителя. Может расходовать заряд батареи и повлиять на расход трафика.</string>
-    <string name="ambient_play_history">Очередь воспроизведения</string>
-    <string name="ambient_play_loading_data">Загрузка данных…</string>
-    <string name="ambient_play_history_today">Сегодня</string>
-    <string name="ambient_play_history_yesterday">Вчера</string>
-    <string name="ambient_play_history_dialog_play">Воспроизвести сейчас</string>
-    <string name="ambient_play_history_dialog_search">Поиск в Интернете</string>
-    <string name="ambient_play_history_dialog_remove">Удалить</string>
-    <string name="ambient_play_history_empty">В истории пока нет песен</string>
-    <string name="ambient_play_history_menu_remove_all">Удалить все</string>
-    <string name="ambient_play_history_menu_add_to_home">Добавить на главный экран</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Вы уверены?</string>
-    <string name="ambient_play_saving_options_title">Параметры сохранения</string>
-    <string name="ambient_play_saving_options_summary">Настройки для уменьшения расхода батареи и мобильных данных</string>
-    <string name="ambient_play_saving_options_low_battery_title">Низкий заряд батареи</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Отключить распознавание при низком уровне заряда</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Мобильные данные</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Отключить распознавание по мобильным данным</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Тихий период</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Включить тихий период</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Выключить распознавание на определенный период времени</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Время начала</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Время окончания</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Сбросить</string>
     <!-- Buttons -->

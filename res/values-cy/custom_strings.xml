@@ -16,13 +16,24 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Darganfyddi’r synhwyrydd olion bysedd ar blaen dy ffôn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Darganfyddi’r synhwyrydd olion bysedd ar ochr chwith dy ffôn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Darganfyddi’r synhwyrydd olion bysedd ar ochr dde dy ffôn.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Darganfyddi’r synhwyrydd olion bysedd ar blaen dy ddyfais.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Darganfyddi’r synhwyrydd olion bysedd ar ochr chwith dy ddyfais.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Darganfyddi’r synhwyrydd olion bysedd ar ochr dde dy ddyfais.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Darganfyddi’r synhwyrydd olion bysedd ar blaen dy tabled.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Darganfyddi’r synhwyrydd olion bysedd ar ochr chwith dy tabled.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Darganfyddi’r synhwyrydd olion bysedd ar ochr dde dy tabled.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary">Statws <xliff:g id="displayName">%1$s</xliff:g>: <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">analluogwyd</string>
     <string name="sim_missing">ar goll neu\'n wallus</string>
     <string name="sim_enabler_need_disable_sim">Caiff y cerdyn SIM ei ddadactifadu. Wyt ti am barhau?</string>
+    <string name="sim_enabler_will_disable_sim_title">Sylw</string>
+    <string name="sim_enabler_need_switch_data_service">Caiff y SIM hwn ei analluogi a defnyddir SIM <xliff:g id="slotid">%1$s</xliff:g> ar gyfer gwasanaethau data. Wyt ti am barhau?</string>
     <string name="sim_enabler_airplane_on">Nid yw\'n bosib cyflawni\'r dasg tra ym modd awyren.</string>
     <string name="sim_enabler_in_call">Nid yw\'n bosib cyflawni\'r dasg tra bod galwad ar y gweill.</string>
     <string name="sim_enabler_both_inactive">Methu ag analluogi pob cerdyn SIM</string>
@@ -32,8 +43,6 @@
     <string name="sub_activate_failed">Methwyd â\'i roi ar waith.</string>
     <string name="sub_deactivate_success">Wedi dadactifadu\'r SIM.</string>
     <string name="sub_deactivate_failed">Methodd y dadactifadu.</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <string name="reset">Ailosod</string>
     <!-- Buttons -->

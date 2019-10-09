@@ -28,8 +28,6 @@
     <string name="sub_activate_failed">Aktivizimi dështoi.</string>
     <string name="sub_deactivate_success">Karta SIM u çaktivizua.</string>
     <string name="sub_deactivate_failed">Çaktivizimi dështoi.</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <string name="reset">Rivendos</string>
     <!-- Buttons -->

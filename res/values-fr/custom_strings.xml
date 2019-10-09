@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Échec de l\'activation.</string>
     <string name="sub_deactivate_success">Carte SIM désactivée.</string>
     <string name="sub_deactivate_failed">Échec de la désactivation.</string>
-    <!-- Weather -->
-    <string name="weather_title">Météo</string>
-    <string name="weather_unit">Unité de température</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Afficher les titres diffusés à proximité</string>
-    <string name="ambient_play_lockscreen_title">Afficher les musiques sur l\'écran de verrouillage</string>
-    <string name="ambient_play_lockscreen_summary">Afficher sur l\'écran de verrouillage lorsqu\'une chanson est reconnue</string>
-    <string name="ambient_play_notifications_title">Notifications</string>
-    <string name="ambient_play_notifications_summary">Afficher la notification quand une chanson est reconnue</string>
-    <string name="ambient_play_switch_bar_on">Activé</string>
-    <string name="ambient_play_switch_bar_off">Désactivé</string>
-    <string name="ambient_play_help_text">Quand une musique est joué à proximité, vous pouvez voir le titre et l\'artiste. L\'utilisation de la batterie et les données mobile peuvent être affectés.</string>
-    <string name="ambient_play_history">Historique des titres</string>
-    <string name="ambient_play_loading_data">Chargement des données…</string>
-    <string name="ambient_play_history_today">Aujourd\'hui</string>
-    <string name="ambient_play_history_yesterday">Hier</string>
-    <string name="ambient_play_history_dialog_play">Lire maintenant</string>
-    <string name="ambient_play_history_dialog_search">Rechercher sur le web</string>
-    <string name="ambient_play_history_dialog_remove">Supprimer</string>
-    <string name="ambient_play_history_empty">L\'historique est vide</string>
-    <string name="ambient_play_history_menu_remove_all">Tout supprimer</string>
-    <string name="ambient_play_history_menu_add_to_home">Ajouter à l\'écran d\'accueil</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Êtes-vous sûr ?</string>
-    <string name="ambient_play_saving_options_title">Options de sauvegarde</string>
-    <string name="ambient_play_saving_options_summary">Tùy chọn để giảm mức sử dụng pin và dữ liệu di động</string>
-    <string name="ambient_play_saving_options_low_battery_title">Batterie faible</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Désactiver la reconnaissance lorsque la batterie est faible</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Mobile data</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Désactiver la reconnaissance lorsque les données mobiles sont activées</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Période de silence</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Activer la période de silence</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Désactiver la reconnaissance pendant un certain temps</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Heure début</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Heure de fin</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Réinitialiser</string>
     <!-- Buttons -->

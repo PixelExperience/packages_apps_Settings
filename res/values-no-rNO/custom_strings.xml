@@ -36,8 +36,6 @@
     <string name="sub_activate_failed">Aktivering feilet.</string>
     <string name="sub_deactivate_success">Sim deaktivert.</string>
     <string name="sub_deactivate_failed">Deaktivering feilet.</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <string name="reset">Nullstille</string>
     <!-- Buttons -->

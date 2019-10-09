@@ -32,8 +32,6 @@
     <string name="sub_activate_failed">Falló l\'activación.</string>
     <string name="sub_deactivate_success">Desactivóse la SIM.</string>
     <string name="sub_deactivate_failed">Falló la desactivación.</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <string name="reset">Reafitar</string>
     <!-- Buttons -->
