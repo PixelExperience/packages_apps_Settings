@@ -37,35 +37,6 @@
     <string name="sub_activate_failed">Aktibazioak huts egin du.</string>
     <string name="sub_deactivate_success">SIMa desaktibatu da.</string>
     <string name="sub_deactivate_failed">Desaktibazioak huts egin du.</string>
-    <!-- Weather -->
-    <string name="weather_title">Eguraldia</string>
-    <string name="weather_unit">Tenperatura unitatea</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Erakutsi inguruko kantak</string>
-    <string name="ambient_play_lockscreen_title">Kantuak blokeo pantailan erakutsi</string>
-    <string name="ambient_play_notifications_title">Jakinarazpenak</string>
-    <string name="ambient_play_notifications_summary">Erakutsi jakinarazpena abesti bat antzematen duenean</string>
-    <string name="ambient_play_switch_bar_on">Piztu</string>
-    <string name="ambient_play_switch_bar_off">Itzali</string>
-    <string name="ambient_play_help_text">Hurbil musika erreproduzitzen denean, abestiaren izena eta artista ikus dezakezu. Hau gaituta egonez gero bateriaren iraupena eta datuen erabilera kaltetu daitezke.</string>
-    <string name="ambient_play_history">Erregistro orain entzuten</string>
-    <string name="ambient_play_loading_data">Datuak kargatzen…</string>
-    <string name="ambient_play_history_today">Gaur</string>
-    <string name="ambient_play_history_yesterday">Atzo</string>
-    <string name="ambient_play_history_dialog_play">Erreproduzitu orain</string>
-    <string name="ambient_play_history_dialog_search">Sarean bilatu</string>
-    <string name="ambient_play_history_dialog_remove">Kendu</string>
-    <string name="ambient_play_history_empty">Musika-ren historikoa hutzik dago</string>
-    <string name="ambient_play_history_menu_remove_all">Kendu denak</string>
-    <string name="ambient_play_history_menu_add_to_home">Hasierako pantailan gehitu</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Ziur zaude?</string>
-    <string name="ambient_play_saving_options_low_battery_title">Bateria baxua</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Ezagutzea desgaitu bateria baxua denean</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Datu mugikorrak</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Ezagutzea desgaitu datu mugikorrak gaituta daudenean</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Ezagutzea desgaitu denbora tarte baterako</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Hasiera ordua</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Amaiera ordua</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Berrezarri</string>
     <!-- Buttons -->

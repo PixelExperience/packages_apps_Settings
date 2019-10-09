@@ -20,6 +20,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">আপনার ফোনের বাঁ পাশে অবস্থিত অঙ্গুলাঙ্ক সেন্সর খুঁজে বের করুন।</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">আপনার ফোনের ডান পাশে অবস্থিত অঙ্গুলাঙ্ক সেন্সর খুঁজে বের করুন।</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">আপনার আঙ্গুলটিকে ডিভাইসের সামনে থাকা সেন্সরের উপর রাখুন.</string>
     <!-- Fingerprint location message - tablet -->
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> হয় <xliff:g id="status" example="disabled">%2$s</xliff:g>।</string>
@@ -37,35 +38,6 @@
     <string name="sub_activate_failed">সক্রিয়করণ ব্যর্থ হয়েছে।</string>
     <string name="sub_deactivate_success">সিম নিস্ক্রিয় করা হয়েছে।</string>
     <string name="sub_deactivate_failed">নিস্ক্রিয়করণ ব্যর্থ হয়েছে।</string>
-    <!-- Weather -->
-    <string name="weather_title">আবহাওয়া</string>
-    <string name="weather_unit">তাপমাত্রার একক</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">কাছের গানগুলো দেখাও</string>
-    <string name="ambient_play_lockscreen_title">লক স্ক্রিনে গান দেখাও</string>
-    <string name="ambient_play_lockscreen_summary">পরিচিত গান পেলে লকস্ক্রিনে দেখাবে</string>
-    <string name="ambient_play_notifications_title">বিজ্ঞপ্তি</string>
-    <string name="ambient_play_notifications_summary">পরিচিত গান পেলে নোটিফিকেশন দেখাবে</string>
-    <string name="ambient_play_switch_bar_on">চালু</string>
-    <string name="ambient_play_switch_bar_off">বন্ধ</string>
-    <string name="ambient_play_help_text">যখন আশেপাশে গান বাজবে তখন আপনি গানের নাম,লেখক ইত্যাদি তথ্য দেখতে পাবেন। তবে এতে আপনার চার্জ বেশি যাবে এবং ডাটার সাথে যুক্ত হতে পারে</string>
-    <string name="ambient_play_history">এখন পূর্ববর্তী চলছে</string>
-    <string name="ambient_play_loading_data">তথ্য প্রস্তুত হচ্ছে…</string>
-    <string name="ambient_play_history_today">আজ</string>
-    <string name="ambient_play_history_yesterday">গতকাল</string>
-    <string name="ambient_play_history_dialog_play">এখন চলাও</string>
-    <string name="ambient_play_history_dialog_search">ওয়েবে খুঁজুন</string>
-    <string name="ambient_play_history_dialog_remove">অপসারণ করুন</string>
-    <string name="ambient_play_history_empty">মিউজিক হিস্টোরি ফাঁকা</string>
-    <string name="ambient_play_history_menu_remove_all">সবগুলো সরান</string>
-    <string name="ambient_play_history_menu_add_to_home">নীড়ের স্ক্রিনে যোগ করুন</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">আপনি কি নিশ্চিত?</string>
-    <string name="ambient_play_saving_options_title">সংরক্ষণ অপশন</string>
-    <string name="ambient_play_saving_options_summary">ব্যাটারি ও নেটওয়ার্কের ব্যবহার কমানোর অপশনগুলো</string>
-    <string name="ambient_play_saving_options_low_battery_title">ব্যাটারি কম</string>
-    <string name="ambient_play_saving_options_mobile_data_title">মোবাইল ডাটা</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">শুরু</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">শেষ</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">পুনঃস্থাপন</string>
     <!-- Buttons -->

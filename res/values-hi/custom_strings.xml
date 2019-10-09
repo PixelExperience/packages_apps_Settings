@@ -21,6 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">अपने फोन के दांए तरफ फिंगरप्रिंट सेंसर को ढूंडें</string>
     <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">अपने डिवाइस के मोर्चे पर फिंगरप्रिंट सेंसर का पता लगाएँ।</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
     <!-- Fingerprint location message - tablet -->
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
@@ -38,39 +39,6 @@
     <string name="sub_activate_failed">सक्रिय करना विफल रहा</string>
     <string name="sub_deactivate_success">सिम अब निष्क्रिय है</string>
     <string name="sub_deactivate_failed">निष्क्रिय नहीं हुआ</string>
-    <!-- Weather -->
-    <string name="weather_title">मौसम</string>
-    <string name="weather_unit">तापमान इकाई</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">पास के गाने दिखाओ</string>
-    <string name="ambient_play_lockscreen_title">लॉक स्क्रीन पर गाने दिखाएं</string>
-    <string name="ambient_play_lockscreen_summary">जब कोई गाना पहचाना जाता है तो लॉक स्क्रीन पर दिखाएं</string>
-    <string name="ambient_play_notifications_title">सूचनाएँ</string>
-    <string name="ambient_play_notifications_summary">जब कोई गाना पहचाना जाता है तो सूचना दिखाएं</string>
-    <string name="ambient_play_switch_bar_on">चालू</string>
-    <string name="ambient_play_switch_bar_off">बंद</string>
-    <string name="ambient_play_help_text">जब संगीत पास में बज रहा हो, तो आप गीत का नाम और कलाकार देख सकते हैं। यदि यह सक्षम है तो बैटरी और डेटा उपयोग प्रभावित हो सकता है।</string>
-    <string name="ambient_play_loading_data">डेटा लोड हो रहा है…</string>
-    <string name="ambient_play_history_today">आज</string>
-    <string name="ambient_play_history_yesterday">कल</string>
-    <string name="ambient_play_history_dialog_play">चलायें अब</string>
-    <string name="ambient_play_history_dialog_search">वेब पर खोजें</string>
-    <string name="ambient_play_history_dialog_remove">हटाएं</string>
-    <string name="ambient_play_history_empty">संगीत इतिहास खाली है</string>
-    <string name="ambient_play_history_menu_remove_all">सारे हटाएँ</string>
-    <string name="ambient_play_history_menu_add_to_home">होम स्क्रीन पर जोड़ें</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">क्या आप सुनिश्चित हैं?</string>
-    <string name="ambient_play_saving_options_title">विकल्प सहेजें</string>
-    <string name="ambient_play_saving_options_summary">बैटरी और नेटवर्क उपयोग को कम करने के विकल्प</string>
-    <string name="ambient_play_saving_options_low_battery_title">कम बैटरी</string>
-    <string name="ambient_play_saving_options_low_battery_summary">बैटरी कम होने पर पहचान अक्षम करें</string>
-    <string name="ambient_play_saving_options_mobile_data_title">मोबाइल डेटा</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">मोबाइल डेटा सक्षम होने पर पहचान अक्षम करें</string>
-    <string name="ambient_play_saving_options_quiet_period_title">शांत अवधि</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">शांत अवधि सक्षम करें</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">एक निश्चित अवधि के लिए मान्यता को अक्षम करें</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">आरंभ समय</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">अंत समय</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">रीसेट</string>
     <!-- Buttons -->

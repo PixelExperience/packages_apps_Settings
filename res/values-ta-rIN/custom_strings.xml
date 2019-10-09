@@ -36,8 +36,6 @@
     <string name="sub_activate_failed">செயல்படுத்துதல் தோல்வியடைந்தது.</string>
     <string name="sub_deactivate_success">SIM முடக்கப்பட்டது.</string>
     <string name="sub_deactivate_failed">முடக்குதல் தோல்வியடைந்தது.</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->
     <string name="button_pref_title">பட்டன்கள்</string>

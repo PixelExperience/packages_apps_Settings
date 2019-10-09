@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">فشل التنشيط.</string>
     <string name="sub_deactivate_success">تم إلغاء تنشيط SIM.</string>
     <string name="sub_deactivate_failed">فشل إلغاء التنشيط.</string>
-    <!-- Weather -->
-    <string name="weather_title">الطقس</string>
-    <string name="weather_unit">وحدة درجة الحرارة</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">عرض الأغاني القريبة</string>
-    <string name="ambient_play_lockscreen_title">عرض الأغاني على شاشة القفل</string>
-    <string name="ambient_play_lockscreen_summary">عرض على شاشة القفل عندما يتم التعرف على الأغنية</string>
-    <string name="ambient_play_notifications_title">الإشعارات</string>
-    <string name="ambient_play_notifications_summary">إظهار الإخطار عند التعرف على الأغنية</string>
-    <string name="ambient_play_switch_bar_on">مفعل</string>
-    <string name="ambient_play_switch_bar_off">معطل</string>
-    <string name="ambient_play_help_text">عندما يتم تشغيل الموسيقى في مكان قريب ، يمكنك رؤية اسم الأغنية والفنان. قد يتأثر عمر البطارية واستخدام البيانات إذا تم تمكين ذلك.</string>
-    <string name="ambient_play_history">سجل التشغيل الحالي</string>
-    <string name="ambient_play_loading_data">تحميل البيانات…</string>
-    <string name="ambient_play_history_today">اليوم</string>
-    <string name="ambient_play_history_yesterday">أمس</string>
-    <string name="ambient_play_history_dialog_play">تشغيل الآن</string>
-    <string name="ambient_play_history_dialog_search">البحث على الإنترنت</string>
-    <string name="ambient_play_history_dialog_remove">إزالة</string>
-    <string name="ambient_play_history_empty">سجل الموسيقى فارغ</string>
-    <string name="ambient_play_history_menu_remove_all">ازالة الكل</string>
-    <string name="ambient_play_history_menu_add_to_home">إضافة إلى الشاشة الرئيسية</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">هل أنت متأكد؟</string>
-    <string name="ambient_play_saving_options_title">خيارات الحفظ</string>
-    <string name="ambient_play_saving_options_summary">خيارات لتقليل استخدام البطارية وبيانات الشبكة</string>
-    <string name="ambient_play_saving_options_low_battery_title">البطـارية منخفضة</string>
-    <string name="ambient_play_saving_options_low_battery_summary">تعطيل التعرف عندما تكون البطارية منخفضة</string>
-    <string name="ambient_play_saving_options_mobile_data_title">بيانات الجوال</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">تعطيل التعرف عند تمكين بيانات الجوال</string>
-    <string name="ambient_play_saving_options_quiet_period_title">الفترة الهادئة</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">تمكين الفترة الهادئة</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">تعطيل التعرف لفترة زمنية معينة</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">وقت البدء</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">وقت الانتهـاء</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">إعادة ضبط</string>
     <!-- Buttons -->

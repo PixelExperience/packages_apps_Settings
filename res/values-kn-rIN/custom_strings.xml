@@ -37,40 +37,6 @@
     <string name="sub_activate_failed">ಸಕ್ರಿಯಗೊಳಿಸುವಿಕೆ ವಿಫಲಗೊಂಡಿದೆ.</string>
     <string name="sub_deactivate_success">SIM ನಿಷ್ಕ್ರಿಯಗೊಂಡಿದೆ.</string>
     <string name="sub_deactivate_failed">ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವಿಕೆ ವಿಫಲಗೊಂಡಿದೆ.</string>
-    <!-- Weather -->
-    <string name="weather_title">ಹವಾಮಾನ</string>
-    <string name="weather_unit">ತಾಪಮಾನ ಯುನಿಟ್‌ಗಳು</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">ಹತ್ತಿರದ ಹಾಡುಗಳನ್ನು ತೋರಿಸು</string>
-    <string name="ambient_play_lockscreen_title">ಲಾಕ್‌ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ ಹಾಡುಗಳನ್ನು ತೋರಿಸು</string>
-    <string name="ambient_play_lockscreen_summary">ಹಾಡನ್ನು ಗುರುತಿಸಿದಾಗ ಲಾಕ್‌ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ ತೋರಿಸು</string>
-    <string name="ambient_play_notifications_title">ಅಧಿಸೂಚನೆಗಳು</string>
-    <string name="ambient_play_notifications_summary">ಹಾಡನ್ನು ಗುರುತಿಸಿದಾಗ ಅಧಿಸೂಚನೆಯನ್ನು ತೋರಿಸು</string>
-    <string name="ambient_play_switch_bar_on">ಆನ್</string>
-    <string name="ambient_play_switch_bar_off">ಆಫ್</string>
-    <string name="ambient_play_help_text">ಹಾಡು ಸಮೀಪದಲ್ಲಿ ಸಿಕ್ಕಾಗ, ನೀವು ಹಾಡಿನ ಹೆಸರು ಮತ್ತು ಕಲಾವಿದರನ್ನು ನೋಡಬಹುದು. ಇದನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ ಬ್ಯಾಟರಿ ಲೈಫ್ ಮತ್ತು ಡೇಟಾ ಬಳಕೆಗೆ ಪರಿಣಾಮ ಬೀರಬಹುದು.</string>
-    <string name="ambient_play_history">ನೌ ಪ್ಲೇಯಿಂಗ್ ಹಿಸ್ಟರಿ</string>
-    <string name="ambient_play_loading_data">ಡೇಟಾ ಲೋಡ್‌ ಮಾಡಲಾಗುತ್ತಿದೆ…</string>
-    <string name="ambient_play_history_today">ಇಂದು</string>
-    <string name="ambient_play_history_yesterday">ನಿನ್ನೆ</string>
-    <string name="ambient_play_history_dialog_play">ಈಗ ಪ್ಲೇ ಮಾಡು</string>
-    <string name="ambient_play_history_dialog_search">ವೆಬ್‌ನಲ್ಲಿ ಶೋಧಿಸಿ</string>
-    <string name="ambient_play_history_dialog_remove">ತೆಗೆಯಿರಿ</string>
-    <string name="ambient_play_history_empty">ಮ್ಯೂಸಿಕ್ ಹಿಸ್ಟರಿ ಖಾಲಿ ಇದೆ</string>
-    <string name="ambient_play_history_menu_remove_all">ಎಲ್ಲವನ್ನೂ ತೆಗೆದುಹಾಕಿ</string>
-    <string name="ambient_play_history_menu_add_to_home">ಮುಖಪುಟಕ್ಕೆ ಸೇರಿಸು</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">ನೀವು ಖಚಿತವಾಗಿರುವಿರಾ?</string>
-    <string name="ambient_play_saving_options_title">ಉಳಿಸುವ ಆಯ್ಕೆಗಳು</string>
-    <string name="ambient_play_saving_options_summary">ಬ್ಯಾಟರಿ ಮತ್ತು ನೆಟ್ವರ್ಕ್ ಉಪಯೋಗವನ್ನು ಕಡಿತಗೊಳಿಸಲು ಆಯ್ಕೆಗಳು</string>
-    <string name="ambient_play_saving_options_low_battery_title">ಕಡಿಮೆ ಬ್ಯಾಟರಿ</string>
-    <string name="ambient_play_saving_options_low_battery_summary">ಬ್ಯಾಟರಿ ಕಡಿಮೆಯಾದಾಗ ಗುರುತಿಸುವಿಕೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</string>
-    <string name="ambient_play_saving_options_mobile_data_title">ಮೊಬೈಲ್ ಡೇಟಾ</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">ಮೊಬೈಲ್ ಡೇಟಾ ಸಕ್ರಿಯೆಯಲ್ಲಿರುವಾಗ ಗುರುತಿಸುವಿಕೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</string>
-    <string name="ambient_play_saving_options_quiet_period_title">ನಿಶ್ಯಬ್ದ ಸಮಯ</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">ನಿಶ್ಯಬ್ದ ಸಮಯವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">ಗುರುತಿಸುವಿಕೆಯನ್ನು ಸ್ವಲ್ಪ ಸಮಯದ ತನಕ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">ಪ್ರಾರಂಭದ ಸಮಯ</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">ಮುಕ್ತಾಯದ ಸಮಯ</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">ಮರುಹೊಂದಿಸು</string>
     <!-- Buttons -->

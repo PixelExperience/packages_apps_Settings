@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Pronađite senzor otiska prsta na lijevoj strani telefona.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Pronađite senzor otiska prsta na desnoj strani telefona.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Pronađite senzor otiska prsta na prednjoj strani uređaja.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Pronađite senzor otiska prsta na lijevoj strani uređaja.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Pronađite senzor otiska prsta na desnoj strani uređaja.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Pronađite senzor otiska prsta na prednjoj strani tableta.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Pronađite senzor otiska prsta na lijevoj strani tableta.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Pronađite senzor otiska prsta na desnoj strani tableta.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">onemogućeno</string>
@@ -37,40 +43,6 @@
     <string name="sub_activate_failed">Aktivacija nije uspjela.</string>
     <string name="sub_deactivate_success">SIM deaktiviran.</string>
     <string name="sub_deactivate_failed">Deaktivacija nije uspjela.</string>
-    <!-- Weather -->
-    <string name="weather_title">Vrijeme</string>
-    <string name="weather_unit">Jedinica temperature</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Prikaži pjesme u blizini</string>
-    <string name="ambient_play_lockscreen_title">Prikaži pjesme na zaključanom zaslonu</string>
-    <string name="ambient_play_lockscreen_summary">Prikaži na zaključanom zaslonu kada je pjesma prepoznata</string>
-    <string name="ambient_play_notifications_title">Obavijesti</string>
-    <string name="ambient_play_notifications_summary">Pokaži obavijest kada je pjesma prepoznata</string>
-    <string name="ambient_play_switch_bar_on">Uključeno</string>
-    <string name="ambient_play_switch_bar_off">Isključeno</string>
-    <string name="ambient_play_help_text">Kada muzika svira u blizini, vidjeti ćete ime pjesme i autora. Ako je omogućeno, to može utjecati na vijek trajanja baterije i korištenje podataka.</string>
-    <string name="ambient_play_history">\"Sada svira\" Povijest</string>
-    <string name="ambient_play_loading_data">Učitavanje podataka…</string>
-    <string name="ambient_play_history_today">Danas</string>
-    <string name="ambient_play_history_yesterday">Jučer</string>
-    <string name="ambient_play_history_dialog_play">Sviraj sada</string>
-    <string name="ambient_play_history_dialog_search">Pretraži na internetu</string>
-    <string name="ambient_play_history_dialog_remove">Ukloni</string>
-    <string name="ambient_play_history_empty">Povijest sviranja je prazna</string>
-    <string name="ambient_play_history_menu_remove_all">Ukloni sve</string>
-    <string name="ambient_play_history_menu_add_to_home">Dodaj na početni zaslon</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Jeste li sigurni?</string>
-    <string name="ambient_play_saving_options_title">Opcije spremanja</string>
-    <string name="ambient_play_saving_options_summary">Opcije za smanjenje potrošnje baterije i podataka</string>
-    <string name="ambient_play_saving_options_low_battery_title">Slaba baterija</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Onemogući prepoznavanje kada je baterija pri kraju</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Mobilni internet</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Onemogući prepoznavanje kada je mobilni internet uključen</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Tihi period</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Omogući tihi period</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Onemogući prepoznavanje na određeno vrijeme</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Vrijeme početka</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Vrijeme završetka</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Poništi</string>
     <!-- Buttons -->

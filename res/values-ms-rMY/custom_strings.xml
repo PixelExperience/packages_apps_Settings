@@ -20,9 +20,15 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Cari pengesan cap jari di bahagian tepi telefon anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Cari pengesan cap jari di bahagian kanan telefon anda.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Cari pengesan cap jari di hadapan telefon anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Cari pengesan cap jari di sebelah kiri peranti anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Cari pengesan cap jari di sebelah kanan peranti anda.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Cari pengesan cap jari di hadapan telefon anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Cari pengesan cap jari di bahagian kiri telefon anda.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Cari pengesan cap jari di bahagian kanan telefon anda.</string>
     <!-- Manual provisioning support -->
-    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> ialah <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabler_summary"><xliff:g id="namapaparan">%1$s</xliff:g> ialah <xliff:g id="status" contoh="nyahaktif">%2$s</xliff:g></string>
     <string name="sim_disabled">dilumpuhkan</string>
     <string name="sim_missing">hilang atau rosak</string>
     <string name="sim_enabler_need_disable_sim">Kad SIM akan dinyahaktifkan. Adakah anda mahu meneruskan?</string>
@@ -37,40 +43,6 @@
     <string name="sub_activate_failed">Pengaktifan gagal.</string>
     <string name="sub_deactivate_success">SIM dinyahaktifkan.</string>
     <string name="sub_deactivate_failed">Penyahaktifan gagal.</string>
-    <!-- Weather -->
-    <string name="weather_title">Cuaca</string>
-    <string name="weather_unit">Unit suhu</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Tunjukkan lagu kawasan sekitar</string>
-    <string name="ambient_play_lockscreen_title">Paparkan lagu pada skrin kunci</string>
-    <string name="ambient_play_lockscreen_summary">5</string>
-    <string name="ambient_play_notifications_title">Notifikasi</string>
-    <string name="ambient_play_notifications_summary">Paparkan notifikasi di skrinkunci apabila lagu dikenali</string>
-    <string name="ambient_play_switch_bar_on">Dihidupkan</string>
-    <string name="ambient_play_switch_bar_off">Dimatikan</string>
-    <string name="ambient_play_help_text">Apabila musik dimainkan berdekatan dengan peranti, nama dan tajuk lagu akan dapat dilihat. Ianya akan mempengaruhi penggunaan data dan bateri jika fungsi ini dihidupkan.</string>
-    <string name="ambient_play_history">Senarai lagu yang pernah dimainkan</string>
-    <string name="ambient_play_loading_data">Memuatkan data…</string>
-    <string name="ambient_play_history_today">Hari ini</string>
-    <string name="ambient_play_history_yesterday">Semalam</string>
-    <string name="ambient_play_history_dialog_play">Main Sekarang</string>
-    <string name="ambient_play_history_dialog_search">Carian di laman sesawang</string>
-    <string name="ambient_play_history_dialog_remove">Buang</string>
-    <string name="ambient_play_history_empty">Tiada lagu di dalam senarai</string>
-    <string name="ambient_play_history_menu_remove_all">Buang semua</string>
-    <string name="ambient_play_history_menu_add_to_home">Tambahkan pada Paparan Utama</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Adakah anda pasti?</string>
-    <string name="ambient_play_saving_options_title">Tetapan simpanan</string>
-    <string name="ambient_play_saving_options_summary">Tetapan untuk mengurangkan menggunaan bateri dan rangkaian</string>
-    <string name="ambient_play_saving_options_low_battery_title">Bateri lemah</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Matikan pengiktirafan apabila bateri lemah</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Data mobile</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Matikan pengesan wifi apabila data dihidupkan</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Tempoh tenang</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Aktifkan tempoh tenang</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Matikan fungsi pengenalpastian untuk tempoh masa tertentu</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Masa mula</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Masa tamat</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Tetapkan semula</string>
     <!-- Buttons -->
@@ -81,8 +53,8 @@
     <string name="hardware_keys_assist_key_title">Butang Carian</string>
     <string name="hardware_keys_appswitch_key_title">Butang terdahulu</string>
     <string name="hardware_keys_camera_key_title">Butang kamera</string>
-    <string name="hardware_keys_short_press_title">Tekan sekejap sahaja</string>
-    <string name="hardware_keys_long_press_title">Tekan dengan lama</string>
+    <string name="hardware_keys_short_press_title">Tindakan tekan sekejap</string>
+    <string name="hardware_keys_long_press_title">Tindakan tekan lama</string>
     <string name="hardware_keys_double_tap_title">Tindakan sentuh dua kali</string>
     <string name="hardware_keys_action_nothing">Tiada tindakan</string>
     <string name="hardware_keys_action_menu">Buka/tutup menu</string>

@@ -20,7 +20,11 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Локализирайте сензора за пръстови отпечатаци отляво на телефона ви.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Локализирайте сензора за пръстови отпечатаци отдясно на телефона ви.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Открийте сензора за пръстови отпечатъци отпред на телефона ви.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Открийте сензора за пръстови отпечатъци отляво на телефона ви.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Открийте сензора за пръстови отпечатъци отдясно на телефона ви.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Открийте сензора за пръстови отпечатаци отпред на таблета ви.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> е <xliff:g id="status" example="disabled">%2$s </xliff:g></string>
     <string name="sim_disabled">забранена</string>
@@ -37,40 +41,6 @@
     <string name="sub_activate_failed">Активирането е неуспешно.</string>
     <string name="sub_deactivate_success">СИМ картата е деактивирана.</string>
     <string name="sub_deactivate_failed">Неуспешно дезактивиране.</string>
-    <!-- Weather -->
-    <string name="weather_title">Времето</string>
-    <string name="weather_unit">Температурни единици</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Показване на близките песни</string>
-    <string name="ambient_play_lockscreen_title">Показване на песните на заключен екран</string>
-    <string name="ambient_play_lockscreen_summary">Показване на заключен екран при разпознаване на песен</string>
-    <string name="ambient_play_notifications_title">Известия</string>
-    <string name="ambient_play_notifications_summary">Показване на известие при разпознаване на песен</string>
-    <string name="ambient_play_switch_bar_on">Включи</string>
-    <string name="ambient_play_switch_bar_off">Изключи</string>
-    <string name="ambient_play_help_text">Когато близката музика се възпроизвежда, можете да видите името на песента и изпълнителя. Това може да повлияе на живота на батерията и използването на данни, ако е активирано.</string>
-    <string name="ambient_play_history">Хронология на възпроизвеждане</string>
-    <string name="ambient_play_loading_data">Зареждане на данни…</string>
-    <string name="ambient_play_history_today">Днес</string>
-    <string name="ambient_play_history_yesterday">Вчера</string>
-    <string name="ambient_play_history_dialog_play">Възпр. сега</string>
-    <string name="ambient_play_history_dialog_search">Търсене в мрежата</string>
-    <string name="ambient_play_history_dialog_remove">Премахни</string>
-    <string name="ambient_play_history_empty">Хронологията на Музика е празна</string>
-    <string name="ambient_play_history_menu_remove_all">Премахване на всички</string>
-    <string name="ambient_play_history_menu_add_to_home">Добавяне към Начален екран</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Сигурни ли сте?</string>
-    <string name="ambient_play_saving_options_title">Опции за запазване</string>
-    <string name="ambient_play_saving_options_summary">Опции за намаляване на използването на батерията и мрежата</string>
-    <string name="ambient_play_saving_options_low_battery_title">Изтощена батерия</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Деактивиране разпознаването, когато батерията е изтощена</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Мобилни данни</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Деактивиране на разпознаването, когато мобилните данни са активирани</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Тих период</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Активиране на тих период</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Деактивиране разпознаването за определен период от време</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Време на започване</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Време за край</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Нулиране</string>
     <!-- Buttons -->

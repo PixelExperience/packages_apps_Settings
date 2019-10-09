@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Omogočanje je spodletelo.</string>
     <string name="sub_deactivate_success">Kartica SIM onemogočena.</string>
     <string name="sub_deactivate_failed">Onemogočanje je spodletelo.</string>
-    <!-- Weather -->
-    <string name="weather_title">Vreme</string>
-    <string name="weather_unit">Enote za temperaturo</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Prikaži skladbe v bližini</string>
-    <string name="ambient_play_lockscreen_title">Prikaži skladbe na zaklenjenem zaslonu</string>
-    <string name="ambient_play_lockscreen_summary">Prikaži na zaklenjenem zaslonu, ko je prepoznana skladba</string>
-    <string name="ambient_play_notifications_title">Obvestila</string>
-    <string name="ambient_play_notifications_summary">Prikaži obvestilo, ko je prepoznana skladba</string>
-    <string name="ambient_play_switch_bar_on">Vklopljeno</string>
-    <string name="ambient_play_switch_bar_off">Izklopljeno</string>
-    <string name="ambient_play_help_text">Ob predvajanju glasbe v bližini, lahko vidite ime skladbe in izvajalca. Lahko vpliva na življenjsko dobo akumulatorja in porabo podatkov, če je omogočeno.</string>
-    <string name="ambient_play_history">Zgodovina trenutnega predvajanja</string>
-    <string name="ambient_play_loading_data">Nalaganje podatkov …</string>
-    <string name="ambient_play_history_today">Danes</string>
-    <string name="ambient_play_history_yesterday">Včeraj</string>
-    <string name="ambient_play_history_dialog_play">Predvajaj</string>
-    <string name="ambient_play_history_dialog_search">Išči po spletu</string>
-    <string name="ambient_play_history_dialog_remove">Odstrani</string>
-    <string name="ambient_play_history_empty">Zgodovina glasbe je prazna</string>
-    <string name="ambient_play_history_menu_remove_all">Odstrani vse</string>
-    <string name="ambient_play_history_menu_add_to_home">Dodaj na začetni zaslon</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Ali ste prepričani?</string>
-    <string name="ambient_play_saving_options_title">Možnosti varčevanja</string>
-    <string name="ambient_play_saving_options_summary">Možnosti za zmanjšanje porabe akumulatorja in omrežja</string>
-    <string name="ambient_play_saving_options_low_battery_title">Nizko stanje baterije</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Onemogoči prepoznavanje ob nizkem stanju akumulatorja</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Mobilni podatki</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Onemogoči prepoznavanje, ko so omogočeni mobilni podatki</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Obdobje tišine</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Omogoči obdobje tišine</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Onemogoči prepoznavanje za določeno časovno obdobje</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Čas začetka</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Čas konca</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Ponastavi</string>
     <!-- Buttons -->

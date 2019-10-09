@@ -37,46 +37,12 @@
     <string name="sim_enabler_airplane_on">Tidak dapat melakukan operasi saat mode pesawat aktif.</string>
     <string name="sim_enabler_in_call">Tidak dapat melakukan operasi saat dalam panggilan.</string>
     <string name="sim_enabler_both_inactive">Tidak dapat menonaktifkan semua kartu SIM</string>
-    <string name="sim_enabler_enabling">Mengaktivasi\u2026</string>
+    <string name="sim_enabler_enabling">Mengaktifkan\u2026</string>
     <string name="sim_enabler_disabling">Menonaktifkan\u2026</string>
     <string name="sub_activate_success">SIM diaktifkan.</string>
     <string name="sub_activate_failed">Aktivasi gagal.</string>
     <string name="sub_deactivate_success">SIM dinonaktifkan.</string>
     <string name="sub_deactivate_failed">Penonaktifan gagal.</string>
-    <!-- Weather -->
-    <string name="weather_title">Cuaca</string>
-    <string name="weather_unit">Satuan temperatur</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Tampilkan lagu-lagu terdekat</string>
-    <string name="ambient_play_lockscreen_title">Tampilkan lagu pada layar kunci</string>
-    <string name="ambient_play_lockscreen_summary">Tunjukkan di layar kunci saat lagu teridentifikasi</string>
-    <string name="ambient_play_notifications_title">Pemberitahuan</string>
-    <string name="ambient_play_notifications_summary">Tunjukkan notifikasi saat lagu teridentifikasi</string>
-    <string name="ambient_play_switch_bar_on">Hidup</string>
-    <string name="ambient_play_switch_bar_off">Mati</string>
-    <string name="ambient_play_help_text">Ketika musik dimainkan di dekat Anda, Anda dapat melihat nama lagu dan artis. Masa pakai baterai dan penggunaan data mungkin terpengaruh jika ini diaktifkan.</string>
-    <string name="ambient_play_history">Mainkan histori sekarang</string>
-    <string name="ambient_play_loading_data">Memuat data...</string>
-    <string name="ambient_play_history_today">Hari ini</string>
-    <string name="ambient_play_history_yesterday">Kemarin</string>
-    <string name="ambient_play_history_dialog_play">Putar sekarang</string>
-    <string name="ambient_play_history_dialog_search">Cari pada web</string>
-    <string name="ambient_play_history_dialog_remove">Hapus</string>
-    <string name="ambient_play_history_empty">Riwayat musik kosong</string>
-    <string name="ambient_play_history_menu_remove_all">Hapus semua</string>
-    <string name="ambient_play_history_menu_add_to_home">Tambah ke layar beranda</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Apakah anda yakin?</string>
-    <string name="ambient_play_saving_options_title">Opsi menyimpan</string>
-    <string name="ambient_play_saving_options_summary">Opsi untuk mengurangi baterai dan penggunaan seluler</string>
-    <string name="ambient_play_saving_options_low_battery_title">Baterai lemah</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Nonaktifkan pengenalan saat baterai lemah</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Data Seluler</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Nonaktifkan pengenalan saat data seluler diaktifkan</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Waktu hening</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Aktifkan waktu hening</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Hentikan pengenalan untuk waktu tertentu</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Waktu mulai</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Waktu berakhir</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Atur kembali</string>
     <!-- Buttons -->
@@ -92,17 +58,17 @@
     <string name="hardware_keys_double_tap_title">Tindakan dua kali ketuk tombol</string>
     <string name="hardware_keys_action_nothing">Tidak ada tindakan</string>
     <string name="hardware_keys_action_menu">Buka/tutup menu</string>
-    <string name="hardware_keys_action_app_switch">Pengalih aplikasi terbaru</string>
+    <string name="hardware_keys_action_app_switch">Pengganti Aplikasi Terkini</string>
     <string name="hardware_keys_action_search">Asisten pencarian</string>
     <string name="hardware_keys_action_voice_search">Pencarian suara</string>
     <string name="hardware_keys_action_in_app_search">Penelusuran di dalam app</string>
     <string name="hardware_keys_action_launch_camera">Buka kamera</string>
     <string name="hardware_keys_action_sleep">Matikan layar</string>
-    <string name="hardware_keys_action_split_screen">Tukar layar</string>
-    <string name="hardware_keys_swipe_right_key_title">Geser ke kanan</string>
-    <string name="hardware_keys_swipe_left_key_title">Geser ke kiri</string>
+    <string name="hardware_keys_action_split_screen">Layar belah</string>
+    <string name="hardware_keys_swipe_right_key_title">Usap ke kanan</string>
+    <string name="hardware_keys_swipe_left_key_title">Usap ke kiri</string>
     <string name="hardware_keys_long_tap_key_title">Tekan tombol yang lama</string>
-    <string name="hardware_keys_swipe_tap_title">Tindakan geser</string>
+    <string name="hardware_keys_swipe_tap_title">Tindakan mengusap</string>
     <string name="hardware_keys_long_tap_title">Tindakan tekan tombol yang lama</string>
     <string name="button_wake_title">Bangunkan perangkat</string>
     <string name="camera_sleep_on_release_title">Intip layar</string>
@@ -114,7 +80,7 @@
     <string name="button_backlight_enabled">Cahaya tombol</string>
     <string name="button_backlight_only_when_pressed_title">Nyalakan tombol hanya jika ditekan</string>
     <string name="button_backlight_seekbar_title">Tombol kecerahan</string>
-    <string name="backlight_timeout_title">Waktu habis iluminasi</string>
+    <string name="backlight_timeout_title">Batas waktu pencahayaan</string>
     <string name="backlight_timeout_unlimited">Jangan matikan</string>
     <string name="backlight_summary_disabled">Dimatikan</string>
     <string name="backlight_summary_enabled_with_timeout">Diaktifkan untuk <xliff:g id="timeout">%s</xliff:g></string>

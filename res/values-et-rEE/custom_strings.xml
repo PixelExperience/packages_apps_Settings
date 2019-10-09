@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Aktiveerimine ebaõnnestus.</string>
     <string name="sub_deactivate_success">SIM on deaktiveeritud.</string>
     <string name="sub_deactivate_failed">Deaktiveerimine ebaõnnestus.</string>
-    <!-- Weather -->
-    <string name="weather_title">Ilm</string>
-    <string name="weather_unit">Temperatuuri ühik</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Näita lähedal asuvaid lugusid</string>
-    <string name="ambient_play_lockscreen_title">Näita lugusid lukustusekraanil</string>
-    <string name="ambient_play_lockscreen_summary">Näita lukustusekraanil kui lugu on ära tuntud</string>
-    <string name="ambient_play_notifications_title">Teavitused</string>
-    <string name="ambient_play_notifications_summary">Näita teavitust kui lugu on ära tuntud</string>
-    <string name="ambient_play_switch_bar_on">Sees</string>
-    <string name="ambient_play_switch_bar_off">Väljas</string>
-    <string name="ambient_play_help_text">Kui muusika on lähedal mängimas, saad näha loo nime ja autorit. Aku kestus ja andme kasutus võib olla mõjutatud kui see on sisse lülitatud.</string>
-    <string name="ambient_play_history">Nüüd mängib ajalugu</string>
-    <string name="ambient_play_loading_data">Andmete laadimine…</string>
-    <string name="ambient_play_history_today">Täna</string>
-    <string name="ambient_play_history_yesterday">Eile</string>
-    <string name="ambient_play_history_dialog_play">Mängi nüüd</string>
-    <string name="ambient_play_history_dialog_search">Otsi internetist</string>
-    <string name="ambient_play_history_dialog_remove">Eemalda</string>
-    <string name="ambient_play_history_empty">Muusika ajalugu on tühi</string>
-    <string name="ambient_play_history_menu_remove_all">Eemalda kõik</string>
-    <string name="ambient_play_history_menu_add_to_home">Lisa avaekraanile</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Kas oled kindel?</string>
-    <string name="ambient_play_saving_options_title">Salvesta valikud</string>
-    <string name="ambient_play_saving_options_summary">Valikud vähendamaks aku ja andmeside kasutust</string>
-    <string name="ambient_play_saving_options_low_battery_title">Madal akutase</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Peata tuvastus kui akutase on madal</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Mobiilne andmeside</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Peata tuvastus kui mobiilse andmeside on aktiveeritud</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Vaikne periood</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Akriveeri vaikne periood</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Peata tuvastus kindlaks perioodiks</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Algusaeg</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Lõpuaeg</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Lähtesta</string>
     <!-- Buttons -->

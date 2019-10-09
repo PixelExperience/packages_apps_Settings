@@ -20,8 +20,6 @@
     <!-- Fingerprint location message - tablet -->
     <!-- Manual provisioning support -->
     <string name="sim_disabled">disabilitada</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <string name="reset">Reseta</string>
     <!-- Buttons -->

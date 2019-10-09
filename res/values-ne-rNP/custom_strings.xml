@@ -37,8 +37,6 @@
     <string name="sub_activate_failed">सक्रिय हुन सकेन ।</string>
     <string name="sub_deactivate_success">सिम निष्क्रय भयो।</string>
     <string name="sub_deactivate_failed">निष्क्रिय हुन सकेन ।</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <string name="reset">रिसेट</string>
     <!-- Buttons -->

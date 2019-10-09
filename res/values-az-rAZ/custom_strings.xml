@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Aktivləşdirmə uğursuz oldu.</string>
     <string name="sub_deactivate_success">SIM qeyri aktivləşdirildi.</string>
     <string name="sub_deactivate_failed">Qeyri aktivləşdirmə uğursuz oldu.</string>
-    <!-- Weather -->
-    <string name="weather_title">Hava Məlumatı</string>
-    <string name="weather_unit">Temperatur vahidi</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Yaxındakı mahnıları göstər</string>
-    <string name="ambient_play_lockscreen_title">Kilid ekranında mahnıları göstər</string>
-    <string name="ambient_play_lockscreen_summary">Mahnı tanınanda kilid ekranında göstər</string>
-    <string name="ambient_play_notifications_title">Bildirişlər</string>
-    <string name="ambient_play_notifications_summary">Mahnı tanınanda bildiriş göndər</string>
-    <string name="ambient_play_switch_bar_on">Açıq</string>
-    <string name="ambient_play_switch_bar_off">Qapalı</string>
-    <string name="ambient_play_help_text">Yaxınlığınızda mahnı oxunanda, mahnı adını və sənətçini görə bilərsiniz. Bu xüsusiyyətin aktivləşdirilməsi batareya ömrü və məlumat istifadəsinə təsir edə bilər.</string>
-    <string name="ambient_play_history">İndi Oxunur Tarixçəsi</string>
-    <string name="ambient_play_loading_data">Məlumat yüklənir…</string>
-    <string name="ambient_play_history_today">Bu gün</string>
-    <string name="ambient_play_history_yesterday">Dünən</string>
-    <string name="ambient_play_history_dialog_play">İndi Oxut</string>
-    <string name="ambient_play_history_dialog_search">İnternetdə axtar</string>
-    <string name="ambient_play_history_dialog_remove">Sil</string>
-    <string name="ambient_play_history_empty">Musiqi tarixçəsi boşdur</string>
-    <string name="ambient_play_history_menu_remove_all">Hamısını sil</string>
-    <string name="ambient_play_history_menu_add_to_home">Ana ekrana əlavə edin</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Əminsiniz?</string>
-    <string name="ambient_play_saving_options_title">Yadda saxlama seçimləri</string>
-    <string name="ambient_play_saving_options_summary">Batareya və şəbəkə istifadəsini azaltmaq üçün seçimlər</string>
-    <string name="ambient_play_saving_options_low_battery_title">Batareya zəifdir</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Batareya zəif olarkən təyinetməni q-aktivləşdir</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Mobil məlumat</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Mobil məlumat aktiv olarkən təyin etməni q-aktivləşdir</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Səssiz dövr</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Səssiz dövrü aktiv et</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Təyin edilmiş dövr üçün təyin etməni q-aktivləşdir</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Başlama vaxtı</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Bitmə vaxtı</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Sıfırla</string>
     <!-- Buttons -->
