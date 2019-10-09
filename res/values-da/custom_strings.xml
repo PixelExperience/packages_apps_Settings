@@ -37,34 +37,6 @@
     <string name="sub_activate_failed">Aktivering mislykkedes.</string>
     <string name="sub_deactivate_success">SIM-kort deaktiveret.</string>
     <string name="sub_deactivate_failed">Deaktivering mislykkedes.</string>
-    <!-- Weather -->
-    <string name="weather_title">Vejr</string>
-    <string name="weather_unit">Temperaturenhed</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Vis sange i nærheden</string>
-    <string name="ambient_play_lockscreen_title">Vis sang på låseskærmen</string>
-    <string name="ambient_play_lockscreen_summary">Vis på låseskærmen, når en sang er genkendt</string>
-    <string name="ambient_play_notifications_title">Notifikationer</string>
-    <string name="ambient_play_notifications_summary">Vis notifikation på låseskærmen, når en sang er genkendt</string>
-    <string name="ambient_play_switch_bar_on">Til</string>
-    <string name="ambient_play_switch_bar_off">Fra</string>
-    <string name="ambient_play_help_text">Når musik afspilles i nærheden, kan du se navn titel og kunstner. Batteriets levetid og dataforbrug kan blive påvirket, hvis slået til.</string>
-    <string name="ambient_play_history">Afspilles nu historik</string>
-    <string name="ambient_play_loading_data">Indlæser data...</string>
-    <string name="ambient_play_history_today">I dag</string>
-    <string name="ambient_play_history_yesterday">I går</string>
-    <string name="ambient_play_history_dialog_play">Afspil nu</string>
-    <string name="ambient_play_history_dialog_search">Søg på nettet</string>
-    <string name="ambient_play_history_dialog_remove">Fjern</string>
-    <string name="ambient_play_history_empty">Musikhistorikken er tom</string>
-    <string name="ambient_play_history_menu_remove_all">Fjern alle</string>
-    <string name="ambient_play_history_menu_add_to_home">Føj til startskærm</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Er du sikker?</string>
-    <string name="ambient_play_saving_options_title">Gem Indstillinger</string>
-    <string name="ambient_play_saving_options_summary">Indstillinger til nedbringelse af batteri- og dataforbrug</string>
-    <string name="ambient_play_saving_options_low_battery_title">Lavt batteri</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Deaktivér genkendelse, når batteriniveauet er lavt</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Mobilt netværk</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Nulstil</string>
     <!-- Buttons -->

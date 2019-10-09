@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Attivazione fallita.</string>
     <string name="sub_deactivate_success">SIM disattivata.</string>
     <string name="sub_deactivate_failed">Disattivazione fallita.</string>
-    <!-- Weather -->
-    <string name="weather_title">Meteo</string>
-    <string name="weather_unit">Unità di misura della temperatura</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Mostra le informazioni sulle canzoni nelle vicinanze</string>
-    <string name="ambient_play_lockscreen_title">Mostra i brani nella schermata di blocco</string>
-    <string name="ambient_play_lockscreen_summary">Mostra nella schermata di blocco quando viene riconosciuto un brano</string>
-    <string name="ambient_play_notifications_title">Notifiche</string>
-    <string name="ambient_play_notifications_summary">Invia una notifica quando viene riconosciuto un brano</string>
-    <string name="ambient_play_switch_bar_on">On</string>
-    <string name="ambient_play_switch_bar_off">Off</string>
-    <string name="ambient_play_help_text">Quando nelle vicinanze viene riprodotta una canzone, puoi vedere il titolo del brano e il nome dell\'artista. La durata della batteria e l\'utilizzo dei dati potrebbero risentirne se Now Playing è abilitato.</string>
-    <string name="ambient_play_history">Cronologia Now Playing</string>
-    <string name="ambient_play_loading_data">Caricamento dati…</string>
-    <string name="ambient_play_history_today">Oggi</string>
-    <string name="ambient_play_history_yesterday">Ieri</string>
-    <string name="ambient_play_history_dialog_play">Riproduci</string>
-    <string name="ambient_play_history_dialog_search">Cerca sul Web</string>
-    <string name="ambient_play_history_dialog_remove">Rimuovi</string>
-    <string name="ambient_play_history_empty">Ancora nessun brano identificato</string>
-    <string name="ambient_play_history_menu_remove_all">Rimuovi tutto</string>
-    <string name="ambient_play_history_menu_add_to_home">Aggiungi a schermata Home</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Rimuovere tutte le canzoni dalla cronologia di Now Playing?</string>
-    <string name="ambient_play_saving_options_title">Opzioni di risparmio energetico</string>
-    <string name="ambient_play_saving_options_summary">Opzioni per ridurre l\'utilizzo della batteria e dei dati</string>
-    <string name="ambient_play_saving_options_low_battery_title">Batteria scarica</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Disattiva il riconoscimento quando la batteria è scarica</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Dati mobili</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Disattiva il riconoscimento quando i dati mobili sono attivati</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Periodo di pausa</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Attiva periodo di pausa</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Disattiva il riconoscimento per un certo periodo di tempo</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Ora inizio</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Ora fine</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Reimposta</string>
     <!-- Buttons -->
@@ -116,7 +82,7 @@
     <string name="button_backlight_seekbar_title">Luminosità pulsanti</string>
     <string name="backlight_timeout_title">Tempo di illuminazione</string>
     <string name="backlight_timeout_unlimited">Non spegnere</string>
-    <string name="backlight_summary_disabled">Disabilitato</string>
+    <string name="backlight_summary_disabled">Disattivata</string>
     <string name="backlight_summary_enabled_with_timeout">Attivata per <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Attivata</string>
     <!-- Buttons - Enable navbar -->

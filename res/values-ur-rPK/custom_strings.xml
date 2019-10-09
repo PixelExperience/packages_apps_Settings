@@ -37,31 +37,6 @@
     <string name="sub_activate_failed">چالو کرنے میں ناکامی.</string>
     <string name="sub_deactivate_success">سم غیر فعال.</string>
     <string name="sub_deactivate_failed">عمل میں نہ لانا ناکام ہو گیا ہے.</string>
-    <!-- Weather -->
-    <string name="weather_title">موسم</string>
-    <string name="weather_unit">درجہ حرارت کی اکائی</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">قریبی گانے نمایش کریں</string>
-    <string name="ambient_play_lockscreen_title">لاک سکرین پر گانے دکھائیں</string>
-    <string name="ambient_play_lockscreen_summary">لاک اسکرین پر نمایاں کریں جب اس گیت کو تسلیم کر لیا ہے</string>
-    <string name="ambient_play_notifications_title">اطلاعات</string>
-    <string name="ambient_play_notifications_summary">جب آپ ایک گیت پہچان لیں تونوٹیفیکیشن دکھائیں</string>
-    <string name="ambient_play_switch_bar_on">چالو</string>
-    <string name="ambient_play_switch_bar_off">بند</string>
-    <string name="ambient_play_help_text">جب موسیقی قریبی چل رہی ہو، آپ کے گیت اور آرٹسٹ کے نام سے دیکھ سکتے ہیں ۔ اس اہل ہونے کی صورت بیٹری کی زندگی اور ڈیٹا کا استعمال متاثررہے گا.</string>
-    <string name="ambient_play_history">پلے بیک کی ہسٹری</string>
-    <string name="ambient_play_loading_data">ڈیٹا لوڈ کر رہا ہے…</string>
-    <string name="ambient_play_history_today">آج</string>
-    <string name="ambient_play_history_yesterday">کل</string>
-    <string name="ambient_play_history_dialog_play">ابھی چلائیں</string>
-    <string name="ambient_play_history_dialog_search">ویب پر تلاش کریں</string>
-    <string name="ambient_play_history_dialog_remove">ختم کریں</string>
-    <string name="ambient_play_history_empty">موسیقی ریکارڈ خالی ہے</string>
-    <string name="ambient_play_history_menu_remove_all">سبھی کو ہٹائیں</string>
-    <string name="ambient_play_history_menu_add_to_home">ہوم اسکرین میں شامل کریں</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">کیا آپ کو یقین ہے?</string>
-    <string name="ambient_play_saving_options_title">محفوظ کرنے کے آپشن</string>
-    <string name="ambient_play_saving_options_summary">بیٹری استعمال اور نیٹ ورک کے کوائف کو کم کرنے کے لیے اختیارات</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">ری سیٹ کریں</string>
     <!-- Buttons -->

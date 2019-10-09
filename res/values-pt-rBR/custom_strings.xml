@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Falha na ativação.</string>
     <string name="sub_deactivate_success">Chip desativado.</string>
     <string name="sub_deactivate_failed">Falha na desativação.</string>
-    <!-- Weather -->
-    <string name="weather_title">Previsão do tempo</string>
-    <string name="weather_unit">Unidade de temperatura</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Mostrar músicas próximas</string>
-    <string name="ambient_play_lockscreen_title">Mostrar na tela de bloqueio</string>
-    <string name="ambient_play_lockscreen_summary">Mostrar na tela de bloqueio quando uma música for reconhecida</string>
-    <string name="ambient_play_notifications_title">Notificações</string>
-    <string name="ambient_play_notifications_summary">Mostrar notificação quando uma música for reconhecida</string>
-    <string name="ambient_play_switch_bar_on">Ligado</string>
-    <string name="ambient_play_switch_bar_off">Desligado</string>
-    <string name="ambient_play_help_text">Quando alguma música estiver tocando nas proximidades, você poderá ver o nome e o artista. O uso de bateria e de dados podem ser afetados se isso estiver ativado.</string>
-    <string name="ambient_play_history">Histórico de músicas</string>
-    <string name="ambient_play_loading_data">Carregando dados…</string>
-    <string name="ambient_play_history_today">Hoje</string>
-    <string name="ambient_play_history_yesterday">Ontem</string>
-    <string name="ambient_play_history_dialog_play">Escutar agora</string>
-    <string name="ambient_play_history_dialog_search">Procurar na web</string>
-    <string name="ambient_play_history_dialog_remove">Remover</string>
-    <string name="ambient_play_history_empty">O histórico está vazio</string>
-    <string name="ambient_play_history_menu_remove_all">Limpar</string>
-    <string name="ambient_play_history_menu_add_to_home">Adicionar à tela inicial</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Você tem certeza?</string>
-    <string name="ambient_play_saving_options_title">Opções de economia</string>
-    <string name="ambient_play_saving_options_summary">Opções para diminuir o uso da bateria e da rede</string>
-    <string name="ambient_play_saving_options_low_battery_title">Bateria fraca</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Desativar o reconhecimento quando a bateria estiver fraca</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Dados móveis</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Desativar o reconhecimento quando os dados móveis estiverem ativados</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Período de silêncio</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Habilitar</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Desativar o reconhecimento por um determinado período de tempo</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Hora de início</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Hora de término</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Redefinir</string>
     <!-- Buttons -->

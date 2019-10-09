@@ -20,7 +20,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Hanapin ang fingerprint sensor sa kaliwang bahagi ng iyong telepono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Hanapin ang fingerprint sensor sa kanang bahagi ng iyong telepono.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Hanapin ang sensor ng fingerprint sa harap ng iyong device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Hanapin ang sensor ng fingerprint sa kaliwa ng iyong device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Hanapin ang sensor ng fingerprint sa kanang bahagi ng iyong device.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Hanapin ang sensor ng fingerprint sa harapan ng iyong device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Hanapin ang sensor ng fingerprint sa kaliwa ng iyong tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Hanapin ang sensor ng fingerprint sa kanang bahagi ng iyong tablet.</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> ay <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">naka-disable</string>
@@ -37,40 +43,6 @@
     <string name="sub_activate_failed">Ang pag-activate ay nabigo.</string>
     <string name="sub_deactivate_success">Ang SIM ay naka-deactivate na.</string>
     <string name="sub_deactivate_failed">Bigo ang pag deactivate.</string>
-    <!-- Weather -->
-    <string name="weather_title">Panahon</string>
-    <string name="weather_unit">Yunit ng temperatura</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Ipakita ang mga kantang malapit</string>
-    <string name="ambient_play_lockscreen_title">Ipakita ang mga kanta sa lock screen</string>
-    <string name="ambient_play_lockscreen_summary">Ipakita sa lock screen kapag ang kanta ay nalaman</string>
-    <string name="ambient_play_notifications_title">Mga abiso</string>
-    <string name="ambient_play_notifications_summary">Magpakita ng notification kapag ang kanta ay nalaman</string>
-    <string name="ambient_play_switch_bar_on">Bukas</string>
-    <string name="ambient_play_switch_bar_off">Patay</string>
-    <string name="ambient_play_help_text">Kapag may tumutugtog na kanta, makikita mo ang pamagat ng kanta at ang artista. Ang battery life at data usage ay maaaring maapektuhan kapag ito ay naka-enable.</string>
-    <string name="ambient_play_history">Nakaraang napakinggan</string>
-    <string name="ambient_play_loading_data">Naglo-load na datos …</string>
-    <string name="ambient_play_history_today">Ngayong araw</string>
-    <string name="ambient_play_history_yesterday">Kahapon</string>
-    <string name="ambient_play_history_dialog_play">Patugtugin</string>
-    <string name="ambient_play_history_dialog_search">Maghanap sa web</string>
-    <string name="ambient_play_history_dialog_remove">Tanggalin</string>
-    <string name="ambient_play_history_empty">Walang nakaraang patugtog</string>
-    <string name="ambient_play_history_menu_remove_all">Alisin lahat</string>
-    <string name="ambient_play_history_menu_add_to_home">Idagdag sa Home screen</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Sigurado ka ba?</string>
-    <string name="ambient_play_saving_options_title">Pagpipilian sa pag-save</string>
-    <string name="ambient_play_saving_options_summary">Pagpipilian sa pag bawas ng consumo ng baterya at paggamit sa network</string>
-    <string name="ambient_play_saving_options_low_battery_title">Mababang baterya</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Patayin ang recognition kung mababa na ang lebel ng baterya</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Cellular data</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Patayin ng recognition kung nakabukas ng cellular data</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Tahimik na oras</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Buksan ang tahimik na oras</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Ikansela ang recognition sa espesipikong oras</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Umpisa ng Oras</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Katapusan ng oras</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">I-reset</string>
     <!-- Buttons -->

@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Aktivace selhala.</string>
     <string name="sub_deactivate_success">SIM karta deaktivována.</string>
     <string name="sub_deactivate_failed">Deaktivace selhala.</string>
-    <!-- Weather -->
-    <string name="weather_title">Počasí</string>
-    <string name="weather_unit">Jednotky teploty</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Zobrazit skladby v okolí</string>
-    <string name="ambient_play_lockscreen_title">Zobrazit skladby na zamykací obrazovce</string>
-    <string name="ambient_play_lockscreen_summary">Zobrazit rozpoznané skladby na zamykací obrazovce</string>
-    <string name="ambient_play_notifications_title">Oznámení</string>
-    <string name="ambient_play_notifications_summary">Zobrazit oznámení při rozpoznání skladby</string>
-    <string name="ambient_play_switch_bar_on">Zap.</string>
-    <string name="ambient_play_switch_bar_off">Vyp.</string>
-    <string name="ambient_play_help_text">Když v okolí bude hrát hudba, zobrazí se vám název skladby a interpret. Životnost baterie a využití dat mohou být ovlivněny, pokud je tato funkce povolena.</string>
-    <string name="ambient_play_history">Historie přehrávání</string>
-    <string name="ambient_play_loading_data">Načítání dat…</string>
-    <string name="ambient_play_history_today">Dnes</string>
-    <string name="ambient_play_history_yesterday">Včera</string>
-    <string name="ambient_play_history_dialog_play">Přehrávání nyní</string>
-    <string name="ambient_play_history_dialog_search">Hledat na webu</string>
-    <string name="ambient_play_history_dialog_remove">Odstranit</string>
-    <string name="ambient_play_history_empty">Historie hudby je prázdná</string>
-    <string name="ambient_play_history_menu_remove_all">Odstranit vše</string>
-    <string name="ambient_play_history_menu_add_to_home">Přidat na plochu</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Jste si jisti?</string>
-    <string name="ambient_play_saving_options_title">Možnosti ukládání</string>
-    <string name="ambient_play_saving_options_summary">Možnosti ke snížení spotřeby baterie a využití sítě</string>
-    <string name="ambient_play_saving_options_low_battery_title">Nízký stav baterie</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Zakázat rozpoznávání při nízkém stavu baterie</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Mobilní data</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Zakázat rozpoznávání, pokud jsou zapnuta mobilní data</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Tiché období</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Povolit tiché období</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Zakázat rozpoznávání po určitou dobu</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Čas spuštění</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Čas ukončení</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Restartovat</string>
     <!-- Buttons -->

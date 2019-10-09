@@ -20,7 +20,11 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">ཉིད་ཀྱིས་ཁ་པར་གྱི་གཡོན་ངོས་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">ཉིད་ཀྱིས་ཁ་པར་གྱི་གཡས་ངོས་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">ཉིད་ཀྱིས་ཁ་པར་སྟེང་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">ཉིད་ཀྱིས་ཁ་པར་གྱི་གཡོན་ངོས་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">ཉིད་ཀྱིས་ཁ་པར་གྱི་གཡས་ངོས་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">ཉིད་ཀྱིས་ཁ་པར་སྟེང་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g>ཟིན།<xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">སྤྱོད་མཚམས་བཞག་ཟིན།</string>
@@ -37,40 +41,6 @@
     <string name="sub_activate_failed">དགོངས་དག   སྐུལ་སློང་བྱེད་མ་ཐུབ།</string>
     <string name="sub_deactivate_success">SIM ཁཱ་སྤྱོད་མཚམས་བཞག་ཟིན།</string>
     <string name="sub_deactivate_failed">དགོངས་དག སྤྱོད་མཚམས་འཇོག་མ་ཐུབ།</string>
-    <!-- Weather -->
-    <string name="weather_title">གནམ་གཤིས།</string>
-    <string name="weather_unit">དྲོད་ཚད་ཀྱི་འཇལ་བྱེད།</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">ཐག་ཉེ་སར་གཏོང་ལེན་བྱེད་བཞིན་པའི་གཞས་འཆར་བ།</string>
-    <string name="ambient_play_lockscreen_title">བརྙན་ཤེལ་ཟྭའི་འཆར་ངོས་སྟེང་རོལ་དབྱངས་འཆར་བ།</string>
-    <string name="ambient_play_lockscreen_summary">བརྙན་ཤེལ་ཟྭ་བརྒྱབ་དུས་ཀྱང་གླུ་གཞས་ངོས་འཛིན་གྱི་བྱེད་ནུས་འཆར་བ།</string>
-    <string name="ambient_play_notifications_title">བརྡ་ཐོ།</string>
-    <string name="ambient_play_notifications_summary">གླུ་གཞས་ངོས་འཛིན་བྱེད་སྐབས་བརྡ་ཐོ་འཆར་བ།</string>
-    <string name="ambient_play_switch_bar_on">ཁ་འབྱེད།</string>
-    <string name="ambient_play_switch_bar_off">ཁ་རྒྱག</string>
-    <string name="ambient_play_help_text">ཉེ་འཁོར་གྱི་གཞས་ངོས་འཛིན་གྱི་བྱེད་ནུས་ཁ་ཕྱེ་ན། ཁྱེད་ཀྱིས་གཞས་ཀྱི་མིང་དང་གཞས་པ་སོགས་ཀྱི་ཆ་འཕྲིན་ཤེས་ཐུབ། ཡིན་ཡང་གློག་རྫས་དང་གཞི་ཚད་ལ་ཤུགས་རྐྱེན་ཐེབས་ངེས།</string>
-    <string name="ambient_play_history">གཏོང་ལེན་གྱི་ཟིན་ཐོ།</string>
-    <string name="ambient_play_loading_data">གཞི་གྲངས་འཇུག་བཞིན་ཡོད།</string>
-    <string name="ambient_play_history_today">དེ་རིང་།</string>
-    <string name="ambient_play_history_yesterday">ཁ་སང་།</string>
-    <string name="ambient_play_history_dialog_play">མྱུར་དུ་གཏོང་།</string>
-    <string name="ambient_play_history_dialog_search">དྲ་རྒྱ་ནས་འཚོལ་བཤེར།</string>
-    <string name="ambient_play_history_dialog_remove">བསུབ་པ།</string>
-    <string name="ambient_play_history_empty">གཞས་གཏོང་ལེན་གྱི་ཟིན་ཐོ་མི་འདུག</string>
-    <string name="ambient_play_history_menu_remove_all">ཚང་མ་བསུབ་པ།</string>
-    <string name="ambient_play_history_menu_add_to_home">གཙོ་ངོས་སུུ་སྣོན་པ།</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">ཐག་གཅོད་བྱེད་དམ།</string>
-    <string name="ambient_play_saving_options_title">གདམ་ཚན་གསོག་ཉར་བྱེད།</string>
-    <string name="ambient_play_saving_options_summary">གློག་རྗས་དང་གཞི་གྲངས་དྲ་རྒྱའི་སྤྱོད་ཚད་ཇེ་ཉུང་ལ་གཏོང་བའི་གདམ་ཚན།</string>
-    <string name="ambient_play_saving_options_low_battery_title">གློག་རྫས་ཚར་ལ་ཉེ།</string>
-    <string name="ambient_play_saving_options_low_battery_summary">གློག་རྗས་ཚར་ལ་ཉེ་དུས་གླུ་གཞས་ངོས་འཛིན་ཀྱི་བྱེད་ནུས་སྤྱོད་མཚམས་འཇོག</string>
-    <string name="ambient_play_saving_options_mobile_data_title">གཞི་གྲངས་དྲ་རྒྱ།</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">གཞི་གྲངས་དྲ་རྒྱ་སྤྱོད་བཞིན་པའི་སྐབས་སུ་གླུ་གཞས་ངོས་འཛིན་གྱི་བྱེད་ནུས་ཁ་བརྒྱག་པ།</string>
-    <string name="ambient_play_saving_options_quiet_period_title">སྒྲ་མེད་པའི་དུས་སྐབས།</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">སྒྲ་མེད་པར་གཏོང་བ།</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">སྒྲ་མེད་སྐབས་གླུ་གཞས་ངོས་འཛིན་གྱི་བྱེད་ནུས་ཁ་རྒྱག་པ།</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">མགོ་རྩོམ་དུས།</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">མཇུག་རྫོགས་དུས།</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">བསྐྱར་སྒྲིག</string>
     <!-- Buttons -->

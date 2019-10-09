@@ -16,13 +16,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message - default -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Barmog\'ingizni qurilmangiz ortidagi barmoq izi skaneriga tekkizing.</string>
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
     <!-- Manual provisioning support -->
     <string name="sim_disabled">o\'chirilgan</string>
     <string name="sim_enabler_will_disable_sim_title">Diqqat</string>
-    <!-- Weather -->
-    <!-- Ambient Play -->
     <!-- Generic stuff used everywhere -->
     <!-- Buttons -->
     <string name="button_pref_title">Tugmalar</string>

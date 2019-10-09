@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">L\'activació ha fallat.</string>
     <string name="sub_deactivate_success">SIM desactivada.</string>
     <string name="sub_deactivate_failed">La desactivació ha fallat.</string>
-    <!-- Weather -->
-    <string name="weather_title">El temps</string>
-    <string name="weather_unit">Unitat de temperatura</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Mostra cançons properes</string>
-    <string name="ambient_play_lockscreen_title">Mostra cançons a la pantalla de bloqueig</string>
-    <string name="ambient_play_lockscreen_summary">Mostra a la pantalla de bloqueig quan es reconeix una cançó</string>
-    <string name="ambient_play_notifications_title">Notificacions</string>
-    <string name="ambient_play_notifications_summary">Mostra una notificació quan es reconeix una cançó</string>
-    <string name="ambient_play_switch_bar_on">Activat</string>
-    <string name="ambient_play_switch_bar_off">Desactivat</string>
-    <string name="ambient_play_help_text">Quan la música s\'està reproduint a prop, pots veure el nom de la cançó i l\'artista. La vida útil de la bateria i l\'ús de dades es poden veure afectats si està habilitat.</string>
-    <string name="ambient_play_history">Historial de reproducció</string>
-    <string name="ambient_play_loading_data">S\'estan carregant les dades…</string>
-    <string name="ambient_play_history_today">Avui</string>
-    <string name="ambient_play_history_yesterday">Ahir</string>
-    <string name="ambient_play_history_dialog_play">Reprodueix ara</string>
-    <string name="ambient_play_history_dialog_search">Cerca al web</string>
-    <string name="ambient_play_history_dialog_remove">Elimina</string>
-    <string name="ambient_play_history_empty">L\'historial de música és buit</string>
-    <string name="ambient_play_history_menu_remove_all">Suprimeix-ho tot</string>
-    <string name="ambient_play_history_menu_add_to_home">Afegeix a la pantalla d\'inici</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Estàs segur?</string>
-    <string name="ambient_play_saving_options_title">Opcions d\'estalvi</string>
-    <string name="ambient_play_saving_options_summary">Opcions per a reduir l\'ús de la bateria i de la xarxa</string>
-    <string name="ambient_play_saving_options_low_battery_title">Bateria baixa</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Desactiva el reconeixement amb bateria baixa</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Dades mòbils</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Desactiva el reconeixement quan les dades mòbils estiguin activades</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Període silenciós</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Habilita període silenciós</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Deshabilita el reconeixement durant un període de temps</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Hora d\'inici</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Hora de finalització</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Restableix</string>
     <!-- Buttons -->

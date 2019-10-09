@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">فعال‌سازی ناموفق بود.</string>
     <string name="sub_deactivate_success">سیم‌کارت غیرفعال شد.</string>
     <string name="sub_deactivate_failed">غیرفعال‌سازی ناموفق بود.</string>
-    <!-- Weather -->
-    <string name="weather_title">آب و هوا</string>
-    <string name="weather_unit">واحد دما</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">نمایش آهنگ های اطراف</string>
-    <string name="ambient_play_lockscreen_title">نمایش آهنگ ها روی صفحه قفل</string>
-    <string name="ambient_play_lockscreen_summary">وقتی یک آهنگ شناسایی شد روی صفحه قفل نمایش داده شود</string>
-    <string name="ambient_play_notifications_title">اعلان‌ها</string>
-    <string name="ambient_play_notifications_summary">زمانی که آهنگ شناسایی شد اعلان را نشان دهد</string>
-    <string name="ambient_play_switch_bar_on">روشن</string>
-    <string name="ambient_play_switch_bar_off">خاموش</string>
-    <string name="ambient_play_help_text">زمانی که موسیقی در نزدیکی شما در حال پخش باشد، می توانید نام آهنگ و هنرمند را ببینید. اگر این گزینه فعال باشد امکان تحت تاثیر قرار گرفتن عمر باتری و استفاده از داده وجود دارد.</string>
-    <string name="ambient_play_history">تاریخچه پخش کنونی</string>
-    <string name="ambient_play_loading_data">در حال بارگذاری داده‌ها…</string>
-    <string name="ambient_play_history_today">امروز</string>
-    <string name="ambient_play_history_yesterday">دیروز</string>
-    <string name="ambient_play_history_dialog_play">حالا پخش کن</string>
-    <string name="ambient_play_history_dialog_search">جستجو در وب</string>
-    <string name="ambient_play_history_dialog_remove">حذف</string>
-    <string name="ambient_play_history_empty">تاریخچه موسیقی خالی است</string>
-    <string name="ambient_play_history_menu_remove_all">حذف همه</string>
-    <string name="ambient_play_history_menu_add_to_home">افزودن به صفحه اصلی</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">آیا مطمئن هستید?</string>
-    <string name="ambient_play_saving_options_title">ذخیره کردن گزینه ها</string>
-    <string name="ambient_play_saving_options_summary">گزینه‌ هایی برای کاهش مصرف شبکه و باتری</string>
-    <string name="ambient_play_saving_options_low_battery_title">باتری ضعیف است</string>
-    <string name="ambient_play_saving_options_low_battery_summary">هنگام کم بودن باتری تشخیص غیر فعال شود</string>
-    <string name="ambient_play_saving_options_mobile_data_title">داده همراه</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">با فعال شدن داده همراه تشخیص غیرفعال شود</string>
-    <string name="ambient_play_saving_options_quiet_period_title">دوره کامل</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">فعال کردن دوره کامل</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">غیرفعال سازی تشخیص برای مدت معینی</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">زمان شروع</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">زمان پایان</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">بازنشانی</string>
     <!-- Buttons -->

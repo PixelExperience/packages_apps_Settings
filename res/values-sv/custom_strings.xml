@@ -20,6 +20,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Lokalisera fingeravtrycks-sensorn på vänster sidan av din mobilen.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Lokalisera fingeravtrycks-sensorn på högre sidan av din mobil.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Lokalisera fingeravtryckssensorn på din enhets framsida.</string>
     <!-- Fingerprint location message - tablet -->
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> är <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
@@ -37,40 +38,6 @@
     <string name="sub_activate_failed">Aktivering misslyckades.</string>
     <string name="sub_deactivate_success">SIM inaktiveras.</string>
     <string name="sub_deactivate_failed">Inaktivering misslyckades.</string>
-    <!-- Weather -->
-    <string name="weather_title">Väder</string>
-    <string name="weather_unit">Temperaturenhet</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Visa nära låtar</string>
-    <string name="ambient_play_lockscreen_title">Visa låtar på låsskärmen</string>
-    <string name="ambient_play_lockscreen_summary">Visa på låsskärmen när en låt känns igen</string>
-    <string name="ambient_play_notifications_title">Aviseringar</string>
-    <string name="ambient_play_notifications_summary">Visa notis när en låt känns igen</string>
-    <string name="ambient_play_switch_bar_on">På</string>
-    <string name="ambient_play_switch_bar_off">Av</string>
-    <string name="ambient_play_help_text">När musik spelas nära, du kan se sång namnen och musikartisten. Batteri och data användning kommer att vara påverkad om detta är påsatt.</string>
-    <string name="ambient_play_history">Nu spelas historik</string>
-    <string name="ambient_play_loading_data">Laddar data…</string>
-    <string name="ambient_play_history_today">Idag</string>
-    <string name="ambient_play_history_yesterday">Igår</string>
-    <string name="ambient_play_history_dialog_play">Spela nu</string>
-    <string name="ambient_play_history_dialog_search">Sök på webben</string>
-    <string name="ambient_play_history_dialog_remove">Ta bort</string>
-    <string name="ambient_play_history_empty">Musik historiken är tom</string>
-    <string name="ambient_play_history_menu_remove_all">Ta bort allt</string>
-    <string name="ambient_play_history_menu_add_to_home">Lägg till på hemskärmen</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Är du säker?</string>
-    <string name="ambient_play_saving_options_title">Spara alternativ</string>
-    <string name="ambient_play_saving_options_summary">Alternativ för att minska batteri och nätverks användning</string>
-    <string name="ambient_play_saving_options_low_battery_title">Lågt batteri</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Inaktivera igenkänning när batteriet är lågt</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Mobildata</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Inaktivera igenkänning när mobildata är aktiverat</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Tyst period</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Aktivera tyst period</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Inaktivera igenkänning under vissa tids perioder</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Starttid</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Sluttid</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Återställ</string>
     <!-- Buttons -->

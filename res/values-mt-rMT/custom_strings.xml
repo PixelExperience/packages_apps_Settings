@@ -37,40 +37,6 @@
     <string name="sub_activate_failed">Attivazzjoni falliet.</string>
     <string name="sub_deactivate_success">SIM diżattivat.</string>
     <string name="sub_deactivate_failed">Deattivazzjoni falliet.</string>
-    <!-- Weather -->
-    <string name="weather_title">It-temp</string>
-    <string name="weather_unit">Unità tat-temperatura</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Uri diski fil-qrib</string>
-    <string name="ambient_play_lockscreen_title">Uri diski fil-lock screen</string>
-    <string name="ambient_play_lockscreen_summary">Uri fil-lock screen meta diska hija magħrufa</string>
-    <string name="ambient_play_notifications_title">Notifiki</string>
-    <string name="ambient_play_notifications_summary">Uri notifiku meta diska hija magħrufa</string>
-    <string name="ambient_play_switch_bar_on">Mixgħul</string>
-    <string name="ambient_play_switch_bar_off">Mitfi</string>
-    <string name="ambient_play_help_text">Meta diska qed tilgħab fil-qrib, inti tista tara l-isem tad-diska u l-artist. Il-ħajja tal-batterija u l-użu tad-data tista\' tiġi affettwata jekk tinxtgħel.</string>
-    <string name="ambient_play_history">Now Playing History</string>
-    <string name="ambient_play_loading_data">Tagħbija tad-data…</string>
-    <string name="ambient_play_history_today">Illum</string>
-    <string name="ambient_play_history_yesterday">Ilbieraħ</string>
-    <string name="ambient_play_history_dialog_play">Ilgħab issa</string>
-    <string name="ambient_play_history_dialog_search">Fittex fuq l-internet</string>
-    <string name="ambient_play_history_dialog_remove">Neħħi</string>
-    <string name="ambient_play_history_empty">L-istorja tal-mużika hija vojta</string>
-    <string name="ambient_play_history_menu_remove_all">Neħħi kollox</string>
-    <string name="ambient_play_history_menu_add_to_home">Żid fuq l-iskrin prinċipali</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Żgur?</string>
-    <string name="ambient_play_saving_options_title">L-għażla tal-iffrankar</string>
-    <string name="ambient_play_saving_options_summary">L-għażla biex tnaqqas l-użu tal-batterija u tan-netwerk</string>
-    <string name="ambient_play_saving_options_low_battery_title">Batterija baxxa</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Itfi r-rikonoxximent meta l-batterija hija baxxa</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Id-data tal-mowbajl</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Itfi rikonoxximent meta d-data tal-mowbajl hija mixgħula</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Perjodu ta\' silenzju</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Ixgħel il-perjodu tas-silenzju</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Itfi rikonoxximent għal ċertu perjodu ta\' ħin</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Ħin tal-bidu</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Ħin tat-tmiem</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Reset</string>
     <!-- Buttons -->

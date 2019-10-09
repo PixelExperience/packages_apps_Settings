@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Activare eșuată.</string>
     <string name="sub_deactivate_success">SIM dezactivat.</string>
     <string name="sub_deactivate_failed">Dezactivarea a eșuat.</string>
-    <!-- Weather -->
-    <string name="weather_title">Meteo</string>
-    <string name="weather_unit">Unitate de temperatură</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Arată toate melodiile din preajmă</string>
-    <string name="ambient_play_lockscreen_title">Afișează melodiile pe ecranul blocat </string>
-    <string name="ambient_play_lockscreen_summary">Afișați pe ecranul de blocare atunci când o melodie este recunoscută</string>
-    <string name="ambient_play_notifications_title">Notificări</string>
-    <string name="ambient_play_notifications_summary">Afișați o notificare atunci când o melodie este recunoscută</string>
-    <string name="ambient_play_switch_bar_on">Pornit</string>
-    <string name="ambient_play_switch_bar_off">Oprit</string>
-    <string name="ambient_play_help_text">Când se redă muzica, puteți vedea numele melodiei și a artistului. Durata de viață a bateriei și utilizarea datelor pot fi afectate dacă această opțiune este activată.</string>
-    <string name="ambient_play_history">Istoric Redare acum</string>
-    <string name="ambient_play_loading_data">Se încarcă datele…</string>
-    <string name="ambient_play_history_today">Azi</string>
-    <string name="ambient_play_history_yesterday">Ieri</string>
-    <string name="ambient_play_history_dialog_play">Redare acum</string>
-    <string name="ambient_play_history_dialog_search">Căutare pe web</string>
-    <string name="ambient_play_history_dialog_remove">Eliminare</string>
-    <string name="ambient_play_history_empty">Istoricul este gol</string>
-    <string name="ambient_play_history_menu_remove_all">Eliminare totală</string>
-    <string name="ambient_play_history_menu_add_to_home">Adăugați pe ecranul de pornire</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Sunteți sigur?</string>
-    <string name="ambient_play_saving_options_title">Opţiuni salvare</string>
-    <string name="ambient_play_saving_options_summary">Opțiuni pentru a reduce consumul de baterie și date în rețea</string>
-    <string name="ambient_play_saving_options_low_battery_title">Baterie descărcată</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Dezactivați recunoașterea atunci când bateria este descărcată</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Date mobile</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Dezactivați recunoașterea atunci când datele mobile sunt activate</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Perioadă de tăcere</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Activare perioadă de tăcere</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Dezactivați recunoașterea pentru o anumită perioadă de timp</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Ora de începere</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Ora de terminare</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Resetați</string>
     <!-- Buttons -->

@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">Грешка при активацији.</string>
     <string name="sub_deactivate_success">SIM картица је деактивирана.</string>
     <string name="sub_deactivate_failed">Грешка при деактивацији.</string>
-    <!-- Weather -->
-    <string name="weather_title">Временска прогноза</string>
-    <string name="weather_unit">Јединица температуре</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">Прикажи оближње песме</string>
-    <string name="ambient_play_lockscreen_title">Прикажи песме на екрану за откључавање</string>
-    <string name="ambient_play_lockscreen_summary">Прикажи на закључаном екрану када је песма препозната</string>
-    <string name="ambient_play_notifications_title">Обавештења</string>
-    <string name="ambient_play_notifications_summary">Прикажи обавештење на екрану када је песма препозната</string>
-    <string name="ambient_play_switch_bar_on">Укључено</string>
-    <string name="ambient_play_switch_bar_off">Искључено</string>
-    <string name="ambient_play_help_text">Када свира музика у близини, обавештенје о песми и извођачу ће бити приказна. Ово може утицати на трајање батерије и пренос података.</string>
-    <string name="ambient_play_history">Историја функције тренутног слушања</string>
-    <string name="ambient_play_loading_data">Учитавање података…</string>
-    <string name="ambient_play_history_today">Данас</string>
-    <string name="ambient_play_history_yesterday">Јуче</string>
-    <string name="ambient_play_history_dialog_play">Пусти одмах</string>
-    <string name="ambient_play_history_dialog_search">Претражи интернет</string>
-    <string name="ambient_play_history_dialog_remove">Уклони</string>
-    <string name="ambient_play_history_empty">Историја музике је празна</string>
-    <string name="ambient_play_history_menu_remove_all">Уклони све</string>
-    <string name="ambient_play_history_menu_add_to_home">Додај на почетни екран</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">Да ли сте сигурни?</string>
-    <string name="ambient_play_saving_options_title">Опције чувања</string>
-    <string name="ambient_play_saving_options_summary">Опције за смањивање потрошње батерије и преноса података</string>
-    <string name="ambient_play_saving_options_low_battery_title">Слаба батерија</string>
-    <string name="ambient_play_saving_options_low_battery_summary">Укини препознавање када је слаба батерија</string>
-    <string name="ambient_play_saving_options_mobile_data_title">Прехос података путем мреже</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">Укини препознавање када је укључен пренос података путем мобилне мреже</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Тихи период</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Омогући тихи период</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">Укини препознавање на одређено време</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">Време почетка</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">Време завршетка</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Поништи</string>
     <!-- Buttons -->

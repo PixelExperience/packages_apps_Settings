@@ -33,7 +33,7 @@
     <string name="sim_missing">未検出または問題が発生しています</string>
     <string name="sim_enabler_need_disable_sim">SIM カードはアクティベート解除されます。続けますか?</string>
     <string name="sim_enabler_will_disable_sim_title">注意</string>
-    <string name="sim_enabler_need_switch_data_service">この SIM は無効になり SIM <xliff:g id="slotid">%1$s</xliff:g>がデータサービスに使用されます。続けてもよろしいですか?</string>
+    <string name="sim_enabler_need_switch_data_service">この SIM は無効になり、SIM <xliff:g id="slotid">%1$s</xliff:g> がデータ通信に使用されます。続行しますか?</string>
     <string name="sim_enabler_airplane_on">機内モードが ON になっている間はこの操作を実行することはできません</string>
     <string name="sim_enabler_in_call">通話中はこの操作を実行することはできません</string>
     <string name="sim_enabler_both_inactive">全ての SIM カードを無効にはできません</string>
@@ -43,40 +43,6 @@
     <string name="sub_activate_failed">アクティベーションに失敗しました</string>
     <string name="sub_deactivate_success">SIM をアクティベート解除しました</string>
     <string name="sub_deactivate_failed">アクティベート解除に失敗しました</string>
-    <!-- Weather -->
-    <string name="weather_title">天気</string>
-    <string name="weather_unit">温度の単位</string>
-    <!-- Ambient Play -->
-    <string name="ambient_play_summary">近隣の曲を表示する</string>
-    <string name="ambient_play_lockscreen_title">ロック画面で曲を表示する</string>
-    <string name="ambient_play_lockscreen_summary">楽曲認識時にロック画面に表示する</string>
-    <string name="ambient_play_notifications_title">通知</string>
-    <string name="ambient_play_notifications_summary">楽曲認識時に通知を表示する</string>
-    <string name="ambient_play_switch_bar_on">ON</string>
-    <string name="ambient_play_switch_bar_off">OFF</string>
-    <string name="ambient_play_help_text">近隣で音楽が再生中の時に曲名とアーティスト名を表示できます。この機能を有効にするとバッテリー消費とデータ通信が増加することがあります。</string>
-    <string name="ambient_play_history">Now Playing の履歴</string>
-    <string name="ambient_play_loading_data">データを読み込み中…</string>
-    <string name="ambient_play_history_today">今日</string>
-    <string name="ambient_play_history_yesterday">昨日</string>
-    <string name="ambient_play_history_dialog_play">今すぐ再生</string>
-    <string name="ambient_play_history_dialog_search">ウェブを検索</string>
-    <string name="ambient_play_history_dialog_remove">削除</string>
-    <string name="ambient_play_history_empty">音楽の履歴がありません</string>
-    <string name="ambient_play_history_menu_remove_all">全て解除</string>
-    <string name="ambient_play_history_menu_add_to_home">ホーム画面に追加</string>
-    <string name="ambient_play_history_dialog_remove_all_confirmation">よろしいですか?</string>
-    <string name="ambient_play_saving_options_title">設定を保存</string>
-    <string name="ambient_play_saving_options_summary">バッテリー消費とネットワーク通信量を減らす設定</string>
-    <string name="ambient_play_saving_options_low_battery_title">バッテリー残量低下</string>
-    <string name="ambient_play_saving_options_low_battery_summary">バッテリー残量低下時に認識を無効にする</string>
-    <string name="ambient_play_saving_options_mobile_data_title">モバイルデータ</string>
-    <string name="ambient_play_saving_options_mobile_data_summary">モバイルデータ通信有効時に認識を無効にする</string>
-    <string name="ambient_play_saving_options_quiet_period_title">Quiet Period</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_title">Quiet Period を有効化</string>
-    <string name="ambient_play_saving_options_quiet_period_enable_summary">一定期間認識を無効化する</string>
-    <string name="ambient_play_saving_options_quiet_period_start_time_title">開始時刻</string>
-    <string name="ambient_play_saving_options_quiet_period_end_time_title">終了時刻</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">リセット</string>
     <!-- Buttons -->
