@@ -41,9 +41,9 @@
     <string name="dark_theme_style_black">Чорний</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Повноекранні додатки</string>
-    <string name="display_cutout_force_fullscreen_summary">Змушувати додаткам не зважаючи на брову</string>
+    <string name="display_cutout_force_fullscreen_summary">Змусити додатки ігнорувати виріз</string>
     <!-- In-call feedback -->
-    <string name="incall_feeedback_vibrate_title">Вірувати для індексації статусу виклику</string>
+    <string name="incall_feeedback_vibrate_title">Вібрація під час індексації статусу виклику</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fp_success_auth_vib_title">Автентифікація відбитком пальця</string>
     <string name="fp_success_auth_vib_summary">Вібрувати після успішної автентифікації відбитком пальця</string>
@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">Стовпці (портретна орієнтація)</string>
     <string name="qs_columns_landscape_title">Стовпці (альбомна орієнтація)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Стиль сповіщень</string>
+    <string name="notification_style_default">Стандартний (білий)</string>
+    <string name="notification_style_dark">Темний (як тло)</string>
 </resources>

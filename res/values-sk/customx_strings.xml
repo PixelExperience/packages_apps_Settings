@@ -155,10 +155,21 @@
     <string name="adj_intensity_title">Intenzita</string>
     <string name="adj_contrast_title">Kontrast</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatické odomknutie pomocou tváre</string>
+    <string name="face_auto_unlock_summary">Zbaliť obrazovku uzamknutia po odomknutí pomocou tváre</string>
     <!-- Automatic theme based on time -->
     <string name="systemui_theme_time">Automaticky (podľa času dňa)</string>
+    <string name="systemui_theme_time_title">Naplánovať tmavý motív</string>
     <string name="systemui_theme_time_start_time_title">Čas spustenia</string>
     <string name="systemui_theme_time_end_time_title">Čas ukončenia</string>
     <!-- QS settings -->
+    <string name="qs_title">Rýchle nastavenia</string>
+    <string name="qs_rows_portrait_title">Riadky (na výšku)</string>
+    <string name="qs_rows_landscape_title">Riadky (na šírku)</string>
+    <string name="qs_columns_portrait_title">Stĺpce (na výšku)</string>
+    <string name="qs_columns_landscape_title">Stĺpce (na šírku)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Štýl upozornenia</string>
+    <string name="notification_style_default">Predvolený (biely)</string>
+    <string name="notification_style_dark">Tmavý (podľa pozadia)</string>
 </resources>

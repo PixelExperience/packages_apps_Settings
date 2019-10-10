@@ -164,5 +164,12 @@
     <string name="systemui_theme_time_end_time_title">Waktu berakhir</string>
     <!-- QS settings -->
     <string name="qs_title">Configurações rápidas</string>
+    <string name="qs_rows_portrait_title">Baris (potret)</string>
+    <string name="qs_rows_landscape_title">Baris (lanskap)</string>
+    <string name="qs_columns_portrait_title">Kolom (potret)</string>
+    <string name="qs_columns_landscape_title">Kolom (mendatar)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Gaya notifikasi</string>
+    <string name="notification_style_default">Bawaan (Putih)</string>
+    <string name="notification_style_dark">Gelap (mengikuti latar belakang)</string>
 </resources>

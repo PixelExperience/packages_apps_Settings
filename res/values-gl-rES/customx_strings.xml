@@ -160,6 +160,7 @@
     <string name="systemui_theme_time_start_time_title">Hora de comezo</string>
     <string name="systemui_theme_time_end_time_title">Hora de finalización</string>
     <!-- QS settings -->
+    <string name="qs_title">Axustes Rápidos</string>
     <!-- Notification theme -->
     <string name="notification_theme_title">Estilo de notificación</string>
     <string name="notification_style_default">Por defecto (blanco)</string>

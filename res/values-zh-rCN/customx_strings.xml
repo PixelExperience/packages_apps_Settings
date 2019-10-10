@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">按键与布局</string>
+    <string name="navigation_bar_title">导航栏</string>
     <string name="hardware_keys_power_key_title">电源键</string>
     <string name="hardware_keys_volume_keys_title">音量键</string>
     <!-- Advanced restart options -->
@@ -156,9 +156,9 @@
     <string name="adj_contrast_title">对比度</string>
     <!-- Face auto unlock -->
     <string name="face_auto_unlock_title">自动人脸解锁</string>
-    <string name="face_auto_unlock_summary">人脸解锁后自动解锁</string>
+    <string name="face_auto_unlock_summary">人脸识别后自动解锁</string>
     <!-- Automatic theme based on time -->
-    <string name="systemui_theme_time">自动 (天色)</string>
+    <string name="systemui_theme_time">自动 (一天中的时间)</string>
     <string name="systemui_theme_time_title">定时黑暗模式</string>
     <string name="systemui_theme_time_start_time_title">开始时间</string>
     <string name="systemui_theme_time_end_time_title">结束时间</string>

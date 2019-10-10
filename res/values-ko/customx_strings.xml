@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">열 (세로 모드)</string>
     <string name="qs_columns_landscape_title">열 (가로 모드)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">알림 스타일</string>
+    <string name="notification_style_default">기본 (흰색)</string>
+    <string name="notification_style_dark">어둡게 (배경에 따라)</string>
 </resources>

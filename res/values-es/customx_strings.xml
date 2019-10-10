@@ -164,7 +164,12 @@
     <string name="systemui_theme_time_end_time_title">Hora de finalización</string>
     <!-- QS settings -->
     <string name="qs_title">Ajustes rápidos</string>
+    <string name="qs_rows_portrait_title">Filas (vertical)</string>
+    <string name="qs_rows_landscape_title">Filas (horizontal)</string>
     <string name="qs_columns_portrait_title">Columnas (vertical)</string>
     <string name="qs_columns_landscape_title">Columnas (horizontal)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Estilo de notificación</string>
+    <string name="notification_style_default">Por defecto (blanco)</string>
+    <string name="notification_style_dark">Oscuro (Según el fondo)</string>
 </resources>

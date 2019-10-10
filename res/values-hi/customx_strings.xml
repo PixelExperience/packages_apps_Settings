@@ -99,4 +99,7 @@
     <string name="systemui_theme_time_end_time_title">Waktu berakhir</string>
     <!-- QS settings -->
     <!-- Notification theme -->
+    <string name="notification_theme_title">अधिसूचना शैली</string>
+    <string name="notification_style_default">डिफ़ॉल्ट (सफेद)</string>
+    <string name="notification_style_dark">अंधेरा (पृष्ठभूमि का पालन करें)</string>
 </resources>

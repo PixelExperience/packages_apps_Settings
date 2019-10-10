@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">Sloupce (na výšku)</string>
     <string name="qs_columns_landscape_title">Sloupce (na šířku)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Styl oznámení</string>
+    <string name="notification_style_default">Výchozí (bílý)</string>
+    <string name="notification_style_dark">Tmavý (podle pozadí)</string>
 </resources>

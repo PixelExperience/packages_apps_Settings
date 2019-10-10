@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">الأعمدة (رأسي)</string>
     <string name="qs_columns_landscape_title">الأعمدة (أفقي)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">ستايل الإشعارات</string>
+    <string name="notification_style_default">افتراضي (بيضاء)</string>
+    <string name="notification_style_dark">غامق (تابع للخلفيه)</string>
 </resources>

@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">Stolpci (pokončno)</string>
     <string name="qs_columns_landscape_title">Stolpci (ležeče)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Slog obvestila</string>
+    <string name="notification_style_default">Privzeto (bela)</string>
+    <string name="notification_style_dark">Temno (sledi ozadju)</string>
 </resources>

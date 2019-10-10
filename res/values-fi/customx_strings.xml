@@ -166,5 +166,10 @@
     <string name="qs_title">Pika-asetukset</string>
     <string name="qs_rows_portrait_title">Rivit (pysty)</string>
     <string name="qs_rows_landscape_title">Rivit (vaaka)</string>
+    <string name="qs_columns_portrait_title">Sarakkeet (pysty)</string>
+    <string name="qs_columns_landscape_title">Sarakkeet (vaakatila)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Ilmoitusten tyyli</string>
+    <string name="notification_style_default">Oletus (valkoinen)</string>
+    <string name="notification_style_dark">Tumma(taustaväristä)</string>
 </resources>

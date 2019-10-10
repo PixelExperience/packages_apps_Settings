@@ -32,16 +32,16 @@
     <string name="thermal_control_per_app_dialer">Telefon</string>
     <string name="thermal_control_per_app_camera">Kamera</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Kerbeverhalten</string>
+    <string name="display_cutout_mode_title">Notch-Verhalten</string>
     <string name="display_cutout_mode_normal">Standard</string>
     <string name="display_cutout_mode_hidden">Ausgeblendet</string>
     <!-- Dark theme style -->
-    <string name="dark_theme_style_title">Dunkler stil thema</string>
+    <string name="dark_theme_style_title">Dunkler Themenstil</string>
     <string name="dark_theme_style_default">Standard/Default</string>
     <string name="dark_theme_style_black">Schwarz</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Vollbild Apps</string>
-    <string name="display_cutout_force_fullscreen_summary">Zwinge die Applikationen die Einkerbung zu ignorieren</string>
+    <string name="display_cutout_force_fullscreen_summary">Zwinge die Applikationen die Notch zu ignorieren</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrieren, um den Anrufstatus anzuzeigen</string>
     <!-- Fingerprint authentication vibration -->
@@ -76,11 +76,11 @@
     <!-- Status bar -->
     <string name="status_bar_title">Statusleiste</string>
     <string name="lockscreen_qs_disabled_title">Auf Sperrbildschirm deaktivieren</string>
-    <string name="lockscreen_qs_disabled_summary">Status Bar auf sicherem Sperrbildschirm deaktivieren</string>
+    <string name="lockscreen_qs_disabled_summary">Statusleiste auf sicherem Sperrbildschirm deaktivieren</string>
     <string name="status_bar_quick_qs_pulldown_title">Schnelles Öffnen</string>
     <string name="status_bar_quick_qs_pulldown_summary">Herunterziehen der Benachrichtigungsleiste am %1$s Rand öffnet die Schnelleinstellungen</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">linken</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">rechten</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">Links</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">Rechts</string>
     <string name="status_bar_quick_qs_pulldown_off">Aus</string>
     <string name="status_bar_quick_qs_pulldown_left">Links</string>
     <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
@@ -155,10 +155,21 @@
     <string name="adj_intensity_title">Leuchtdichte</string>
     <string name="adj_contrast_title">Kontrast</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatische Gesichtsentsperrung</string>
+    <string name="face_auto_unlock_summary">Sperrbildschirm nach Gesichtsentsperrung verlassen</string>
     <!-- Automatic theme based on time -->
     <string name="systemui_theme_time">Automatisch (Tageszeit)</string>
+    <string name="systemui_theme_time_title">Zeitplan für dunkles Thema</string>
     <string name="systemui_theme_time_start_time_title">Startzeit</string>
     <string name="systemui_theme_time_end_time_title">Endzeit</string>
     <!-- QS settings -->
+    <string name="qs_title">Schnelleinstellungen</string>
+    <string name="qs_rows_portrait_title">Zeilen (Hochformat)</string>
+    <string name="qs_rows_landscape_title">Zeilen (Querformat)</string>
+    <string name="qs_columns_portrait_title">Spalten (Hochformat)</string>
+    <string name="qs_columns_landscape_title">Spalten (Querformat)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Benachrichtigungsstil</string>
+    <string name="notification_style_default">Standard weiß</string>
+    <string name="notification_style_dark">Dunkel (je nach Hintergrundbild)</string>
 </resources>

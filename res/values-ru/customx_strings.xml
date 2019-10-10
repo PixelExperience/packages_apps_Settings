@@ -164,9 +164,12 @@
     <string name="systemui_theme_time_end_time_title">Время окончания</string>
     <!-- QS settings -->
     <string name="qs_title">Быстрые настройки</string>
-    <string name="qs_rows_portrait_title">Строки (портретный режим)</string>
-    <string name="qs_rows_landscape_title">Строки (ландшафтный режим)</string>
-    <string name="qs_columns_portrait_title">Колонки (портретный режим)</string>
-    <string name="qs_columns_landscape_title">Колонки (ландшафтный режим)</string>
+    <string name="qs_rows_portrait_title">Количество строк (вертикаль)</string>
+    <string name="qs_rows_landscape_title">Количество строк (горизонталь)</string>
+    <string name="qs_columns_portrait_title">Количество столбцов (вертикаль)</string>
+    <string name="qs_columns_landscape_title">Количество столбцов (горизонталь)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Стиль уведомлений</string>
+    <string name="notification_style_default">По умолчанию (белый)</string>
+    <string name="notification_style_dark">Тёмный (как фон)</string>
 </resources>

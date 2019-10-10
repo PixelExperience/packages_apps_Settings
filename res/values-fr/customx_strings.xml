@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">Colonnes (portrait)</string>
     <string name="qs_columns_landscape_title">Colonnes (paysage)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Style de notification</string>
+    <string name="notification_style_default">Par défaut (blanc)</string>
+    <string name="notification_style_dark">Sombre (suivant le fond d\'écran)</string>
 </resources>

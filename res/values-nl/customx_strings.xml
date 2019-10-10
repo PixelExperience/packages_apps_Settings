@@ -24,15 +24,15 @@
     <string name="advanced_reboot_summary">Indien ontgrendeld, opties tonen in het aan/uit-knopmenu voor herstarten naar recovery of bootloader</string>
     <!-- Thermal control per app -->
     <string name="thermal_control_per_app">Optimalisatie profiel</string>
-    <string name="thermal_control_per_app_default">Geen optimalisatie</string>
+    <string name="thermal_control_per_app_default">Niet optimaliseren</string>
     <string name="thermal_control_per_app_benchmark">Prestatie</string>
-    <string name="thermal_control_per_app_games">Spellen</string>
+    <string name="thermal_control_per_app_games">Games</string>
     <string name="thermal_control_per_app_browser">Browser</string>
     <string name="thermal_control_per_app_video_playback">Video afspelen</string>
     <string name="thermal_control_per_app_dialer">Telefoon</string>
     <string name="thermal_control_per_app_camera">Camera</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Notch gedrag</string>
+    <string name="display_cutout_mode_title">Gedrag inkeping</string>
     <string name="display_cutout_mode_normal">Standaard</string>
     <string name="display_cutout_mode_hidden">Verborgen</string>
     <!-- Dark theme style -->
@@ -40,8 +40,8 @@
     <string name="dark_theme_style_default">Standaard</string>
     <string name="dark_theme_style_black">Zwart</string>
     <!-- Notch: Full screen apps -->
-    <string name="display_cutout_force_fullscreen_title">Volledig scherm apps</string>
-    <string name="display_cutout_force_fullscreen_summary">Dwing apps om de notch te negeren</string>
+    <string name="display_cutout_force_fullscreen_title">Apps in volledig scherm</string>
+    <string name="display_cutout_force_fullscreen_summary">Dwing apps om inkeping te negeren</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibreer om belstatus aan te geven</string>
     <!-- Fingerprint authentication vibration -->
@@ -51,7 +51,7 @@
     <string name="status_bar_double_tap_to_sleep_title">Dubbeltikken voor slaapstand</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dubbeltikken op de statusbalk voor slaapstand</string>
     <!-- Lock screen cover art -->
-    <string name="lockscreen_media_art_title">Albumhoezen weergeven</string>
+    <string name="lockscreen_media_art_title">Albumcover weergeven</string>
     <!-- Button that controls inversion of layout of navigation bar -->
     <string name="nav_bar_layout_inverse_title">Omgekeerde layout</string>
     <string name="nav_bar_layout_inverse_summary">Omgekeerde layout navigatietoetsen</string>
@@ -82,8 +82,8 @@
     <string name="status_bar_quick_qs_pulldown_summary_left">Linkerkant</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Rechterkant</string>
     <string name="status_bar_quick_qs_pulldown_off">Uit</string>
-    <string name="status_bar_quick_qs_pulldown_left">Linkerkant</string>
-    <string name="status_bar_quick_qs_pulldown_right">Rechterkant</string>
+    <string name="status_bar_quick_qs_pulldown_left">Links</string>
+    <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
     <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Statusbalkpictogrammen</string>
     <string name="status_bar_system_icons_title">Systeempictogrammen</string>
@@ -94,20 +94,20 @@
     <string name="network_traffic_autohide">Automatisch verbergen</string>
     <string name="network_traffic_autohide_summary">Verberg de netwerkverkeersindicator wanneer er geen activiteit is</string>
     <string name="network_traffic_units_title">Netwerkverkeer eenheden</string>
-    <string name="network_traffic_units_kilobits">Kilobit per seconde (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabit per seconde (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobyte per seconde (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabyte per seconde (MB/s)</string>
+    <string name="network_traffic_units_kilobits">Kilobits per seconde (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabits per seconde (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes per seconde (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabytes per seconde (MB/s)</string>
     <string name="network_traffic_show_units">Eenheden weergeven</string>
     <string name="network_traffic_show_units_summary">Of netwerkverkeerseenheden getoond worden in de statusbalk</string>
     <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Swipe voor screenshot</string>
-    <string name="swipe_to_screenshot_gesture_summary">Swipe met drie vingers om screenshot te maken</string>
+    <string name="swipe_to_screenshot_gesture_title">Veeg voor schermafdruk</string>
+    <string name="swipe_to_screenshot_gesture_summary">Veeg met drie vingers om schermafbeelding te maken</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
+    <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
     <string name="live_display_mode">Weergavemodus</string>
     <string name="live_display_color_temperature_title">Kleurtemperatuur</string>
-    <string name="live_display_color_temperature_summary">Overdag: <xliff:g id="day_temperature">%1$d</xliff:g> K, \'s nachts: <xliff:g id="night_temperature">%2$d</xliff:g> K</string>
+    <string name="live_display_color_temperature_summary">Overdag: <xliff:g id="day_temperature">%1$d</xliff:g> K, \'s Nachts: <xliff:g id="night_temperature">%2$d</xliff:g> K</string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g> K</string>
     <string name="live_display_day">Overdag</string>
     <string name="live_display_night">\'s Nachts</string>
@@ -132,7 +132,7 @@
     <string name="live_display_color_profile_photography_summary">Perfecte kleurweergave voor foto\'s</string>
     <string name="live_display_color_profile_basic_title">Basis</string>
     <string name="live_display_color_profile_basic_summary">Scherm ongekalibreerd gebruiken</string>
-    <string name="live_display_color_profile_adaptive_title">Aanpasbaar</string>
+    <string name="live_display_color_profile_adaptive_title">Adaptief</string>
     <string name="live_display_color_profile_adaptive_summary">Kleuren passen zich aan aan de omgeving</string>
     <string name="live_display_color_profile_reading_title">Lezen</string>
     <string name="live_display_color_profile_reading_summary">Warmere kleuren voor minder vermoeidheid van de ogen</string>
@@ -142,7 +142,7 @@
     <string name="live_display_color_profile_dci_p3_summary">Kleuren binnen het DCI-P3-kleurenpalet</string>
     <string name="live_display_reading_mode_title">Leesmodus</string>
     <string name="live_display_reading_mode_summary">Grijsschaalmodus voor langdurig lezen</string>
-    <string name="color_calibration_title">Kleuren kalibreren</string>
+    <string name="color_calibration_title">Kleurkalibratie</string>
     <string name="color_calibration_summary">Schermkleur kalibreren</string>
     <string name="color_red_title">Rood</string>
     <string name="color_green_title">Groen</string>
@@ -155,10 +155,21 @@
     <string name="adj_intensity_title">Intensiteit</string>
     <string name="adj_contrast_title">Contrast</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatische gezichtsontgrendeling</string>
+    <string name="face_auto_unlock_summary">Vergrendelscherm overslaan na gezichtsontgrendeling</string>
     <!-- Automatic theme based on time -->
     <string name="systemui_theme_time">Automatisch (tijdstip van de dag)</string>
+    <string name="systemui_theme_time_title">Donkere modus planning</string>
     <string name="systemui_theme_time_start_time_title">Starttijd</string>
     <string name="systemui_theme_time_end_time_title">Eindtijd</string>
     <!-- QS settings -->
+    <string name="qs_title">Quick settings</string>
+    <string name="qs_rows_portrait_title">Rijen (portrait)</string>
+    <string name="qs_rows_landscape_title">Rijen (landscape)</string>
+    <string name="qs_columns_portrait_title">Kolommen (portrait)</string>
+    <string name="qs_columns_landscape_title">Kolommen (landscape)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Meldingen stijl</string>
+    <string name="notification_style_default">Standaard (wit)</string>
+    <string name="notification_style_dark">Donker (volgens achtergrond)</string>
 </resources>

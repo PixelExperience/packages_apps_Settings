@@ -155,10 +155,21 @@
     <string name="adj_intensity_title">ความเข้ม</string>
     <string name="adj_contrast_title">คอนทราสต์</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">ปลดล็อคอัตโนมัติด้วยใบหน้า</string>
+    <string name="face_auto_unlock_summary">เลิกล็อคหน้าจอ หลังจากได้ปลดล็อคด้วยใบหน้า</string>
     <!-- Automatic theme based on time -->
     <string name="systemui_theme_time">อัตโนมัติ (ตามเวลาของวัน)</string>
+    <string name="systemui_theme_time_title">กำหนดธีมมืด</string>
     <string name="systemui_theme_time_start_time_title">เวลาเริ่มต้น</string>
     <string name="systemui_theme_time_end_time_title">เวลาสิ้นสุด</string>
     <!-- QS settings -->
+    <string name="qs_title">การตั้งค่าด่วน</string>
+    <string name="qs_rows_portrait_title">แถว (แนวตั้ง)</string>
+    <string name="qs_rows_landscape_title">แถว (แนวนอน)</string>
+    <string name="qs_columns_portrait_title">คอลัมน์ (แนวตั้ง)</string>
+    <string name="qs_columns_landscape_title">คอลัมน์ (แนวนอน)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">รูปแบบการแจ้งเตือน</string>
+    <string name="notification_style_default">ค่าเริ่มต้น (ขาว)</string>
+    <string name="notification_style_dark">มืด (ตามสีพื้นหลัง)</string>
 </resources>

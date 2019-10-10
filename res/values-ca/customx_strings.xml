@@ -161,4 +161,7 @@
     <string name="systemui_theme_time_end_time_title">Hora de finalització</string>
     <!-- QS settings -->
     <!-- Notification theme -->
+    <string name="notification_theme_title">Estil de notificació</string>
+    <string name="notification_style_default">Per defecte (blanc)</string>
+    <string name="notification_style_dark">Fosc (segueix fons)</string>
 </resources>

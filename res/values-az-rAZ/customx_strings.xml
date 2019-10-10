@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">Sütunlar (şaquli)</string>
     <string name="qs_columns_landscape_title">Sütunlar (üfüqi)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Bildiriş stili</string>
+    <string name="notification_style_default">Standart (ağ)</string>
+    <string name="notification_style_dark">Qaranlıq (arxa fona uyğun)</string>
 </resources>

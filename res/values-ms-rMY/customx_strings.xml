@@ -28,6 +28,7 @@
     <string name="thermal_control_per_app_benchmark">Prestasi</string>
     <string name="thermal_control_per_app_games">Permainan</string>
     <string name="thermal_control_per_app_browser">Pelayar</string>
+    <string name="thermal_control_per_app_video_playback">Main semula video</string>
     <string name="thermal_control_per_app_dialer">Pendail</string>
     <string name="thermal_control_per_app_camera">Kamera</string>
     <!-- Notch behavior -->
@@ -100,7 +101,16 @@
     <string name="network_traffic_show_units">Tunjukan unit</string>
     <string name="network_traffic_show_units_summary">Sama ada untuk memaparkan unit pengukuran trafik di bar status</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Leret untuk tangkapan skrin</string>
+    <string name="swipe_to_screenshot_gesture_summary">Leret tiga jari untuk mengambil tangkapan skrin</string>
     <!-- LiveDisplay -->
+    <string name="live_display_summary">Optimalkan skrin anda berdasarkan waktu harian dan keadaan sekitar untuk meningkatkan kebolehbacaan dan mengurangkan ketegangan mata</string>
+    <string name="live_display_mode">Mod Paparan</string>
+    <string name="live_display_color_temperature_title">Suhu warna</string>
+    <string name="live_display_color_temperature_summary">Siang: <xliff:g id="suhu_siang">%1$d</xliff:g>K Malam: <xliff:g id="suhu_malam">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="darjah">%1$d</xliff:g>K</string>
+    <string name="live_display_day">Siang</string>
+    <string name="live_display_night">Malam</string>
     <string name="live_display_outdoor_mode_title">Mod luar automatik</string>
     <string name="live_display_outdoor_mode_summary">Tingkatkan kecerahan dan kepekatan secara automatik ketika cahaya matahari cerah</string>
     <string name="live_display_low_power_title">Kurangkan penggunaan bateri</string>
@@ -117,6 +127,7 @@
     <string name="live_display_color_profile_cinema_title">Pawagam</string>
     <string name="live_display_color_profile_cinema_summary">Reproduksi warna yang terbaik untuk video</string>
     <string name="live_display_color_profile_astronomy_title">Astronomi</string>
+    <string name="live_display_color_profile_astronomy_summary">Merah untuk mengekalkan penglihatan malam</string>
     <string name="live_display_color_profile_photography_title">Fotografi</string>
     <string name="live_display_color_profile_photography_summary">Reproduksi warna yang terbaik untuk foto</string>
     <string name="live_display_color_profile_basic_title">Asas</string>
@@ -124,10 +135,13 @@
     <string name="live_display_color_profile_adaptive_title">Penyesuaian</string>
     <string name="live_display_color_profile_adaptive_summary">Warna menyesuai pada keadaan sekitar</string>
     <string name="live_display_color_profile_reading_title">Membaca</string>
+    <string name="live_display_color_profile_reading_summary">Warna yang lebih panas untuk kurangkan ketegangan mata</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
     <string name="live_display_color_profile_srgb_summary">Warna tepat pada ruang warna sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Warna tepat pada ruang warna DCI-P3</string>
+    <string name="live_display_reading_mode_title">Mod Membaca</string>
+    <string name="live_display_reading_mode_summary">Mod skala kelabu untuk bacaan jangka panjang</string>
     <string name="color_calibration_title">Penentukuran warna</string>
     <string name="color_calibration_summary">Tentukur warna atas paparan</string>
     <string name="color_red_title">Merah</string>
@@ -141,10 +155,21 @@
     <string name="adj_intensity_title">Intensiti</string>
     <string name="adj_contrast_title">Kontras</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Telefon Dibuka Secara Automatik Melalui Pengimbasan Muka</string>
+    <string name="face_auto_unlock_summary">Tutup skrin kunci selepas face unlock</string>
     <!-- Automatic theme based on time -->
     <string name="systemui_theme_time">Automatik (waktu hari)</string>
+    <string name="systemui_theme_time_title">Jadualkan tema gelap</string>
     <string name="systemui_theme_time_start_time_title">Masa mula</string>
     <string name="systemui_theme_time_end_time_title">Masa tamat</string>
     <!-- QS settings -->
+    <string name="qs_title">Tetapan pantas</string>
+    <string name="qs_rows_portrait_title">Baris (potret)</string>
+    <string name="qs_rows_landscape_title">Baris (landskap)</string>
+    <string name="qs_columns_portrait_title">Lajur (potret)</string>
+    <string name="qs_columns_landscape_title">Lajur (landskap)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Gaya pemberitahuan</string>
+    <string name="notification_style_default">Lalai (putih)</string>
+    <string name="notification_style_dark">Gelap (mengikut latar belakang)</string>
 </resources>

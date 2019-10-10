@@ -17,8 +17,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
     <string name="navigation_bar_title">Дугмад и распоред</string>
-    <string name="hardware_keys_power_key_title">Дугме за напајање</string>
-    <string name="hardware_keys_volume_keys_title">Дугмад за јачину звука</string>
+    <string name="hardware_keys_power_key_title">Дугме за укључивање</string>
+    <string name="hardware_keys_volume_keys_title">Дугмад за гласноћу звука</string>
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Напредно поновно покретање</string>
     <string name="advanced_reboot_summary">Када је откључан, обухвати опције у менију напајања, за рестарт у \'опоравак\' или \'bootloader\'</string>
@@ -155,10 +155,21 @@
     <string name="adj_intensity_title">Интензитет</string>
     <string name="adj_contrast_title">Контраст</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Аутоматско откључаванје препознвањем лица</string>
+    <string name="face_auto_unlock_summary">Поништите закључан ектан после препознатог лица</string>
     <!-- Automatic theme based on time -->
     <string name="systemui_theme_time">Аутоматско (доба дана)</string>
+    <string name="systemui_theme_time_title">Убележи тамну тему</string>
     <string name="systemui_theme_time_start_time_title">Време почетка</string>
     <string name="systemui_theme_time_end_time_title">Време завршетка</string>
     <!-- QS settings -->
+    <string name="qs_title">Брза подешавања</string>
+    <string name="qs_rows_portrait_title">Редови (портрет)</string>
+    <string name="qs_rows_landscape_title">Редови (положено)</string>
+    <string name="qs_columns_portrait_title">Колоне (портрет)</string>
+    <string name="qs_columns_landscape_title">Колоне (положено)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Стил обавештења</string>
+    <string name="notification_style_default">Стил_обавештења_подразумевано</string>
+    <string name="notification_style_dark">Стил_обавештења_подразумевано</string>
 </resources>

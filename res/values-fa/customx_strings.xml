@@ -163,5 +163,13 @@
     <string name="systemui_theme_time_start_time_title">زمان شروع</string>
     <string name="systemui_theme_time_end_time_title">زمان پایان</string>
     <!-- QS settings -->
+    <string name="qs_title">تنظیمات سریع</string>
+    <string name="qs_rows_portrait_title">ردیف‌ها (عمودی)</string>
+    <string name="qs_rows_landscape_title">ردیف‌ها (افقی)</string>
+    <string name="qs_columns_portrait_title">ستونها (عمودی)</string>
+    <string name="qs_columns_landscape_title">ستون ها(حالت افقی)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">سبک اعلانیه ها</string>
+    <string name="notification_style_default">پیشفرض (سفید)</string>
+    <string name="notification_style_dark">تیره (پیرو پس زمینه)</string>
 </resources>

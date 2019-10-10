@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">Oszlopok (álló módban)</string>
     <string name="qs_columns_landscape_title">Oszlopok (fekvő módban)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Értesítések stílusa</string>
+    <string name="notification_style_default">Alapértelmezett fehér</string>
+    <string name="notification_style_dark">Sötét (követi a háttér színét)</string>
 </resources>

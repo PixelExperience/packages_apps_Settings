@@ -16,10 +16,25 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
+    <string name="navigation_bar_title">வழிநடத்தும் பட்டன்கள்</string>
+    <string name="hardware_keys_power_key_title">பவர் பட்டன்</string>
+    <string name="hardware_keys_volume_keys_title">ஒலியளவு பொத்தான்கள்</string>
     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">மேம்பட்ட மறுதொடக்கம்
+
+powermenu_restart_recovery
+கோப்பு: strings. xml</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app_benchmark">செயற்திறன்</string>
+    <string name="thermal_control_per_app_games">ஆட்டங்கள்</string>
+    <string name="thermal_control_per_app_browser">உலாவி</string>
+    <string name="thermal_control_per_app_camera">கேமரா</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_normal">இயல்புநிலை</string>
+    <string name="display_cutout_mode_hidden">மறைந்துள்ள</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_default">இயல்புநிலை</string>
+    <string name="dark_theme_style_black">கருப்பு</string>
     <!-- Notch: Full screen apps -->
     <!-- In-call feedback -->
     <!-- Fingerprint authentication vibration -->
@@ -27,10 +42,24 @@
     <!-- Lock screen cover art -->
     <!-- Button that controls inversion of layout of navigation bar -->
     <!-- Torch long press power button -->
+    <string name="torch_long_press_power_timeout_never">எப்போதும் வேண்டாம்</string>
+    <string name="torch_long_press_power_timeout_1min">1 நிமிடம்</string>
+    <string name="torch_long_press_power_timeout_2min">2 நிமிடங்கள்</string>
+    <string name="torch_long_press_power_timeout_5min">5 நிமிடங்கள்</string>
+    <string name="torch_long_press_power_timeout_10min">10 நிமிடங்கள்</string>
     <!-- Volume control playback -->
     <!-- Power menu on lockscreen -->
     <!-- Others settings -->
+    <string name="others_settings_title">பிற அமைப்புகள்</string>
+    <string name="additional_buttons_title">கூடுதல் பொத்தான்கள்</string>
     <!-- Status bar -->
+    <string name="status_bar_title">நிலை பட்டை</string>
+    <string name="status_bar_quick_qs_pulldown_title">விரைவான கீழிறக்கும்</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">இடது
+
+smartbar_left
+கோப்பு: strings. xml</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">வலது</string>
     <!-- Status bar - icons -->
     <!-- Status bar - Network Traffic -->
     <!-- Three-fingers-swipe to screenshot -->

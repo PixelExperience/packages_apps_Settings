@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">Στήλες (κατακόρυφος προσανατολισμός)</string>
     <string name="qs_columns_landscape_title">Στήλες (οριζόντια)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Στυλ ειδοποιήσεων</string>
+    <string name="notification_style_default">Προεπιλογή (Άσπρο)</string>
+    <string name="notification_style_dark">Σκοτεινό (ταίριασμα χρώματος παρασκηνίου)</string>
 </resources>

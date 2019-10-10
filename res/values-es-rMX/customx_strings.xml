@@ -48,8 +48,8 @@
     <string name="fp_success_auth_vib_title">Autenticación con huella dactilar</string>
     <string name="fp_success_auth_vib_summary">Vibrar cuando la autenticación con la huella sea correcta</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
-    <string name="status_bar_double_tap_to_sleep_title">Doble toque para suspender</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Doble toque en la barra de estado o pantalla de bloqueo para apagar la pantalla</string>
+    <string name="status_bar_double_tap_to_sleep_title">Toque para suspender pantalla</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doble toque en la barra de notificaciones o pantalla de bloqueo para apagar la pantalla</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Mostrar portada del álbum</string>
     <!-- Button that controls inversion of layout of navigation bar -->
@@ -163,7 +163,9 @@
     <string name="systemui_theme_time_start_time_title">Hora de inicio</string>
     <string name="systemui_theme_time_end_time_title">Hora de finalización</string>
     <!-- QS settings -->
-    <string name="qs_title">Ajustes rápidos</string>
+    <string name="qs_title">Configuración rápida</string>
+    <string name="qs_rows_portrait_title">Columnas (vertical)</string>
+    <string name="qs_rows_landscape_title">Columnas (horizontal)</string>
     <string name="qs_columns_portrait_title">Columnas (vertical)</string>
     <string name="qs_columns_landscape_title">Columnas (horizontal)</string>
     <!-- Notification theme -->

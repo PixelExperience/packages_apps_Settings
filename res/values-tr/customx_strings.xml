@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">Sütunlar (dikey)</string>
     <string name="qs_columns_landscape_title">Sütunlar (yatay)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Bildirim stili</string>
+    <string name="notification_style_default">Varsayılan (beyaz)</string>
+    <string name="notification_style_dark">Karanlık (arka planı takip et)</string>
 </resources>

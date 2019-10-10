@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">Kolumny (pion)</string>
     <string name="qs_columns_landscape_title">Kolumny (poziom)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Styl powiadomień</string>
+    <string name="notification_style_default">Domyślny (biały)</string>
+    <string name="notification_style_dark">Ciemny (dopasowany do tła)</string>
 </resources>

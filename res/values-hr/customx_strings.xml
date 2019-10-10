@@ -155,10 +155,21 @@
     <string name="adj_intensity_title">Intenzitet</string>
     <string name="adj_contrast_title">Kontrast</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatsko otključavanje licem</string>
+    <string name="face_auto_unlock_summary">Preskočite zaslon zaključavanja nakon otključavanja licem</string>
     <!-- Automatic theme based on time -->
     <string name="systemui_theme_time">Automatski (prema dobu dana)</string>
+    <string name="systemui_theme_time_title">Zakažite mračnu temu</string>
     <string name="systemui_theme_time_start_time_title">Starttid</string>
     <string name="systemui_theme_time_end_time_title">Sluttid</string>
     <!-- QS settings -->
+    <string name="qs_title">Brze postavke</string>
+    <string name="qs_rows_portrait_title">Redci (portret)</string>
+    <string name="qs_rows_landscape_title">Redci (pejzaž)</string>
+    <string name="qs_columns_portrait_title">Stupci (portret)</string>
+    <string name="qs_columns_landscape_title">Stupci (pejzaž)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Stil obavijesti</string>
+    <string name="notification_style_default">Zadani (bijeli)</string>
+    <string name="notification_style_dark">Tamni (prema pozadini)</string>
 </resources>

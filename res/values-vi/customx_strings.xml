@@ -169,4 +169,7 @@
     <string name="qs_columns_portrait_title">Cột (màn hình dọc)</string>
     <string name="qs_columns_landscape_title">Cột (màn hình ngang)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Kiểu thông báo</string>
+    <string name="notification_style_default">Mặc định (trắng)</string>
+    <string name="notification_style_dark">Tối (theo nền)</string>
 </resources>

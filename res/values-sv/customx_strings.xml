@@ -35,6 +35,7 @@
     <string name="display_cutout_mode_normal">Standard</string>
     <string name="display_cutout_mode_hidden">Gömd</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_black">Svart</string>
     <!-- Notch: Full screen apps -->
     <!-- In-call feedback -->
     <!-- Fingerprint authentication vibration -->
@@ -98,4 +99,6 @@
     <!-- Automatic theme based on time -->
     <!-- QS settings -->
     <!-- Notification theme -->
+    <string name="notification_style_default">Standard (vit)</string>
+    <string name="notification_style_dark">Mörk (baserat på bakgrund)</string>
 </resources>

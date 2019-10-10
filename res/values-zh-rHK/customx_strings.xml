@@ -155,11 +155,19 @@
     <string name="adj_intensity_title">強度</string>
     <string name="adj_contrast_title">對比</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">自動人臉辨識解鎖</string>
+    <string name="face_auto_unlock_summary">人臉辨識後將自動解鎖螢幕</string>
     <!-- Automatic theme based on time -->
     <string name="systemui_theme_time">自動 (一天之中)</string>
+    <string name="systemui_theme_time_title">安排深色主題</string>
     <string name="systemui_theme_time_start_time_title">開始時間</string>
     <string name="systemui_theme_time_end_time_title">結束時間</string>
     <!-- QS settings -->
+    <string name="qs_title">快速設置</string>
+    <string name="qs_rows_portrait_title">列 (縱向)</string>
+    <string name="qs_rows_landscape_title">列 (橫向)</string>
+    <string name="qs_columns_portrait_title">行 (縱向)</string>
+    <string name="qs_columns_landscape_title">行 (橫向)</string>
     <!-- Notification theme -->
     <string name="notification_theme_title">通知樣式</string>
     <string name="notification_style_default">預設值（白色）</string>

@@ -40,4 +40,5 @@
     <!-- Automatic theme based on time -->
     <!-- QS settings -->
     <!-- Notification theme -->
+    <string name="notification_style_default">Noklusējuma balts</string>
 </resources>
