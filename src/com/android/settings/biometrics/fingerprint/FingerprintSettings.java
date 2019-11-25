@@ -66,6 +66,8 @@ import com.android.settingslib.widget.FooterPreference;
 import java.util.HashMap;
 import java.util.List;
 
+import com.android.internal.util.custom.FodUtils;
+
 /**
  * Settings screen for fingerprints
  */
@@ -437,7 +439,10 @@ public class FingerprintSettings extends SubSettings {
 
         private void updatePreferences() {
             createPreferenceHierarchy();
-            retryFingerprint();
+            // Don't listen if has fod support
+            if (FodUtils.hasFodSupport(getContext())){
+                retryFingerprint();
+            }
         }
 
         @Override
