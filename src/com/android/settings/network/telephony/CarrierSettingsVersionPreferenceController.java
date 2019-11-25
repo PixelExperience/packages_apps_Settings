@@ -49,6 +49,6 @@ public class CarrierSettingsVersionPreferenceController extends BasePreferenceCo
 
     @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE;
+        return UNSUPPORTED_ON_DEVICE;
     }
 }
