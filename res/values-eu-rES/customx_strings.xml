@@ -23,18 +23,38 @@
     <string name="advanced_reboot_title">Berrabiarazte aurreratua</string>
     <string name="advanced_reboot_summary">Desblokeatutako gailuetan, berreskuratze eta abiarazle moduetan berrabiatzeko aukerak gehitu itzaltze menuan</string>
     <!-- Thermal control per app -->
+    <string name="thermal_control_per_app">Optimizazio profila</string>
+    <string name="thermal_control_per_app_default">Optimizaziorik gabe</string>
+    <string name="thermal_control_per_app_benchmark">Errendimendua</string>
+    <string name="thermal_control_per_app_games">Jokoak</string>
     <string name="thermal_control_per_app_browser">Nabigatzailea</string>
+    <string name="thermal_control_per_app_video_playback">Bideoa erreproduzitzea</string>
+    <string name="thermal_control_per_app_dialer">Markatzailea</string>
+    <string name="thermal_control_per_app_camera">Kamera</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Notch-aren jokabidea</string>
+    <string name="display_cutout_mode_normal">Lehenetsia</string>
+    <string name="display_cutout_mode_hidden">Ezkututa</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Gai ilunaren estiloa</string>
+    <string name="dark_theme_style_default">Lehenetsia</string>
+    <string name="dark_theme_style_black">Beltza</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Pantaila osoko aplikazioak</string>
+    <string name="display_cutout_force_fullscreen_summary">Ezikusi noth-aren lekua hautatutako aplikazioetarako</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">Bibratu deiaren egoera adierazteko</string>
     <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_auth_vib_title">Hatz-marka egiaztaketa</string>
+    <string name="fp_success_auth_vib_summary">Bibratu hatz markako autentikazio arrakastatsuan</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Birritan sakatu lokartzeko</string>
     <string name="status_bar_double_tap_to_sleep_summary">Birritan sakatu egoera-barran pantaila itzaltzeko</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Bistaratu azalaren irudia</string>
     <!-- Button that controls inversion of layout of navigation bar -->
+    <string name="nav_bar_layout_inverse_title">Alderantzikatu diseinua</string>
+    <string name="nav_bar_layout_inverse_summary">Nabigazio butoien diseinua alderantzikatu</string>
     <!-- Torch long press power button -->
     <string name="torch_long_press_power_gesture_title">Sakatu luze linternarako</string>
     <string name="torch_long_press_power_gesture_desc">Aktibatu linterna itzaltze botoia luze sakatuz pantaila itzalita dagoenean</string>
@@ -48,10 +68,15 @@
     <string name="volbtn_music_controls_title">Kontrolatu erreprodukzioa</string>
     <string name="volbtn_music_controls_summary">Aurreratu edo atzeratu musika pistak bolumen teklak luze sakatuz pantaila itzalita dagoenean</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Desgaitu blokeo-pantailan</string>
+    <string name="lockscreen_power_menu_disabled_summary">Pizteko menua desgaitu babestutako bokeo pantailan</string>
     <!-- Others settings -->
+    <string name="others_settings_title">Beste ezarpenak</string>
     <string name="additional_buttons_title">Botoi gehigarriak</string>
     <!-- Status bar -->
     <string name="status_bar_title">Egoera-barra</string>
+    <string name="lockscreen_qs_disabled_title">Desgaitu blokeo-pantailan</string>
+    <string name="lockscreen_qs_disabled_summary">Zabaldutako egoera barra desgaitu bokeo pantailan</string>
     <string name="status_bar_quick_qs_pulldown_title">Hedapen azkarra</string>
     <string name="status_bar_quick_qs_pulldown_summary">Jakinarazpen barraren %1$s ertzak ezarpen azkarren taula hedatuko du</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Ezkerrean</string>
@@ -76,6 +101,8 @@
     <string name="network_traffic_show_units">Erakutsi unitateak</string>
     <string name="network_traffic_show_units_summary">Trafikoa neurtzeko unitateak egoera-barran erakutsi ala ez</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Pantaila-argazkira aldatu</string>
+    <string name="swipe_to_screenshot_gesture_summary">Hiru hatzekin deslizatu pantaila-argazkia ateratzeko</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizatu zure pantaila eguneko orduaren eta inguruneko baldintzen arabera irakurgarritasuna hobetzeko eta begien nekea gutxiagotzeko</string>
     <string name="live_display_mode">Pantaila modua</string>
@@ -128,10 +155,21 @@
     <string name="adj_intensity_title">Intentsitatea</string>
     <string name="adj_contrast_title">Kontrastea</string>
     <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Aurpegiko desblokeatze automatikoa</string>
+    <string name="face_auto_unlock_summary">Aurpegiko desblokeatze automatikoa erabili eta gero blokeo-pantaila baztertu</string>
     <!-- Automatic theme based on time -->
     <string name="systemui_theme_time">Automatikoa (eguneko ordua)</string>
+    <string name="systemui_theme_time_title">Ilun-gaia antolatu</string>
     <string name="systemui_theme_time_start_time_title">Hasiera ordua</string>
     <string name="systemui_theme_time_end_time_title">Amaiera ordua</string>
     <!-- QS settings -->
+    <string name="qs_title">Ezarpen azkarrak</string>
+    <string name="qs_rows_portrait_title">Lerroak (erretratua)</string>
+    <string name="qs_rows_landscape_title">Lerroak (paisaia)</string>
+    <string name="qs_columns_portrait_title">Zutabeak (erretratua)</string>
+    <string name="qs_columns_landscape_title">Zutabeak (paisaia)</string>
     <!-- Notification theme -->
+    <string name="notification_theme_title">Jakinarazpenen estiloa</string>
+    <string name="notification_style_default">Lehenetsia (Zuria)</string>
+    <string name="notification_style_dark">Iluna (jarraitu atzeko planoa)</string>
 </resources>

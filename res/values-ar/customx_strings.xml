@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">الأزرار والتخطيط</string>
+    <string name="navigation_bar_title">شريط التنقل</string>
     <string name="hardware_keys_power_key_title">زر الطاقة</string>
     <string name="hardware_keys_volume_keys_title">أزرار الصوت</string>
     <!-- Advanced restart options -->

@@ -35,8 +35,10 @@
     <string name="display_cutout_mode_normal">Standard</string>
     <string name="display_cutout_mode_hidden">Gömd</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_default">Standard</string>
     <string name="dark_theme_style_black">Svart</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Fullskärms-appar</string>
     <!-- In-call feedback -->
     <!-- Fingerprint authentication vibration -->
     <!-- Double tap to sleep on status bar or lockscreen -->

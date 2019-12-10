@@ -36,6 +36,7 @@
     <string name="display_cutout_mode_normal">Default</string>
     <string name="display_cutout_mode_hidden">Nakatago</string>
     <!-- Dark theme style -->
+    <string name="dark_theme_style_title">Itim na tema</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
     <!-- In-call feedback -->

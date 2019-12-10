@@ -164,8 +164,8 @@
     <string name="systemui_theme_time_end_time_title">結束時間：</string>
     <!-- QS settings -->
     <string name="qs_title">快速設置</string>
-    <string name="qs_rows_portrait_title">列 (縱向)</string>
-    <string name="qs_rows_landscape_title">列 (橫向)</string>
+    <string name="qs_rows_portrait_title">行 (縱向)</string>
+    <string name="qs_rows_landscape_title">行 (橫向)</string>
     <string name="qs_columns_portrait_title">行 (縱向)</string>
     <string name="qs_columns_landscape_title">行 (橫向)</string>
     <!-- Notification theme -->

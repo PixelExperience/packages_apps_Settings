@@ -52,7 +52,16 @@
     <!-- Status bar -->
     <!-- Status bar - icons -->
     <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_autohide">स्वतः छुपाना</string>
+    <string name="network_traffic_units_title">यातायात मापन इकाइयां</string>
+    <string name="network_traffic_units_kilobits">किलोबिट्स प्रति सेकंड (kb/s)</string>
+    <string name="network_traffic_units_megabits">मेगाबिट्स प्रति सेकंड (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">किलोबाइट प्रति सेकंड (kB/s)</string>
+    <string name="network_traffic_units_megabytes">मेगाबाइट प्रति सेकंड (MB/s)</string>
+    <string name="network_traffic_show_units">इकाइयां दिखाएं</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">स्क्रीनशॉट के लिए स्वाइप करे</string>
+    <string name="swipe_to_screenshot_gesture_summary">स्क्रीनशॉट के लिए तीन अंगुलियां स्वाइप करे</string>
     <!-- LiveDisplay -->
     <string name="live_display_outdoor_mode_title">स्वचालित आउटडोर मोड</string>
     <string name="live_display_outdoor_mode_summary">सूरज की तेज़ रौशनी में चमक और संतृप्ति को स्वचालित रूप से बढ़ाएं</string>
