@@ -31,7 +31,7 @@
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">letiltva</string>
     <string name="sim_missing">hiányzik vagy hibás</string>
-    <string name="sim_enabler_need_disable_sim">SIM-kártya deaktiválva lesz. Szeretné folytatni?</string>
+    <string name="sim_enabler_need_disable_sim">A SIM-kártya deaktiválásra kerül. Szeretné folytatni?</string>
     <string name="sim_enabler_will_disable_sim_title">Figyelmeztetés</string>
     <string name="sim_enabler_need_switch_data_service">Ez a SIM tiltásra kerül és a SIM <xliff:g id="slotid">%1$s</xliff:g> lesz adatszolgáltatáshoz beállítva. Biztosan folytatni kívánja?</string>
     <string name="sim_enabler_airplane_on">Nem lehet végrehajtani a műveletet, amíg a repülőgép-üzemmód aktív.</string>
@@ -44,7 +44,7 @@
     <string name="sub_deactivate_success">SIM deaktiválva.</string>
     <string name="sub_deactivate_failed">Sikertelen deaktiválás.</string>
     <!-- Generic stuff used everywhere -->
-    <string name="reset">Visszaállitás</string>
+    <string name="reset">Visszaállítás</string>
     <!-- Buttons -->
     <string name="button_pref_title">Gombok</string>
     <string name="hardware_keys_home_key_title">Kezdőgomb</string>

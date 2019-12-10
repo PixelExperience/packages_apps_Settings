@@ -22,6 +22,7 @@
     <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">अपने डिवाइस के मोर्चे पर फिंगरप्रिंट सेंसर का पता लगाएँ।</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">अपने फोन के दांए तरफ फिंगरप्रिंट सेंसर को ढूंडें</string>
     <!-- Fingerprint location message - tablet -->
     <!-- Manual provisioning support -->
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
