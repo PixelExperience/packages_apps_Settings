@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="HatsLibFlatButton">
+        <item name="colorControlHighlight">@color/hats_lib_survey_highlight_color</item>
+    </style>
+
+    <style name="HatsLibPromptTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorControlNormal">@color/hats_lib_survey_control_normal</item>
+        <item name="android:colorControlActivated">#4285f4</item>
+        <item name="android:colorPrimaryDark">@android:color/transparent</item>
+    </style>
+
+    <style name="HatsLibQuestionTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/hats_lib_survey_question_text_color</item>
+        <item name="android:background">@color/hats_lib_white_100</item>
+        <item name="android:lineSpacingMultiplier">@dimen/hats_lib_survey_header_question_line_spacing_multiplier</item>
+    </style>
+
+    <style name="HatsLibThankYouTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/hats_lib_prompt_text_color</item>
+        <item name="android:fontFamily">roboto-medium</item>
+    </style>
+</resources>
