@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="hats_lib_checkbox_tint">#8c333333</color>
+    <color name="hats_lib_open_text_underline">#4285f4</color>
+    <color name="hats_lib_prompt_take_survey_blue">#4285f4</color>
+    <color name="hats_lib_prompt_take_survey_blue_focused">#21437c</color>
+    <color name="hats_lib_prompt_take_survey_blue_pressed">#3d7ce3</color>
+    <color name="hats_lib_prompt_text_color">#212121</color>
+    <color name="hats_lib_survey_control_normal">#9b9b9b</color>
+    <color name="hats_lib_survey_highlight_color">#eeeeee</color>
+    <color name="hats_lib_survey_question_text_color">#333333</color>
+    <color name="hats_lib_survey_text_color">#757575</color>
+    <color name="hats_lib_survey_white_ripple_color">#757575</color>
+    <color name="hats_lib_survey_white_shape_color">#ffffff</color>
+    <color name="hats_lib_survey_white_shape_focused_color">#848484</color>
+    <color name="hats_lib_survey_white_shape_pressed_color">#eeeeee</color>
+    <color name="hats_lib_white_100">#ffffff</color>
+</resources>
