@@ -105,4 +105,8 @@ Notifications may be delayed for these apps."</string>
     <!-- Battery light -->
     <string name="battery_light_title">Turn on the light when charging</string>
 
+    <!-- Gestures: Touchscreen gestures -->
+    <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
+    <string name="touchscreen_gesture_settings_summary">Perform various touchscreen gestures for quick actions</string>
+
 </resources>
