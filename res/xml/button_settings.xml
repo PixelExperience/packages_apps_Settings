@@ -19,12 +19,6 @@
             android:title="@string/system_navigation_title"
             android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings" />
 
-        <SwitchPreference
-            android:key="navbar_gesture_pill_switch"
-            android:title="@string/navbar_gesture_pill_toggle_title"
-            android:summary="@string/navbar_gesture_pill_toggle_summary"
-            android:defaultValue="false" />
-
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="navigation_bar_compact_layout"
             android:title="@string/navigation_bar_compact_layout_title"

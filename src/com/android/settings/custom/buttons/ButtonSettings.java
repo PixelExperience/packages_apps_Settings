@@ -60,9 +60,7 @@ import java.util.List;
 import java.util.UUID;
 
 import com.android.settings.custom.preference.CustomDialogPreference;
-
 import com.android.settings.gestures.SystemNavigationPreferenceController;
-import com.android.settings.gestures.SystemNavigationGestureSettings;
 
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON_OVERLAY;
 import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
@@ -85,7 +83,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAV_INVERSE = "navbar_inverse";
     private static final String KEY_NAV_GESTURES = "navbar_gestures";
     private static final String KEY_NAV_COMPACT_LAYOUT = "navigation_bar_compact_layout";
-    private static final String KEY_NAV_GESTURE_PILL = "navbar_gesture_pill_switch";
     private static final String KEY_ADDITIONAL_BUTTONS = "additional_buttons";
     private static final String KEY_TORCH_LONG_PRESS_POWER = "torch_long_press_power_gesture";
     private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT = "torch_long_press_power_timeout";
@@ -130,7 +127,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mNavigationInverse;
     private Preference mNavigationGestures;
     private SwitchPreference mNavigationCompactLayout;
-    private SwitchPreference mNavigationGesturePill;
     private Preference mAdditionalButtonsPreference;
     private SwitchPreference mTorchLongPressPower;
     private ListPreference mTorchLongPressPowerTimeout;
@@ -222,10 +218,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mNavigationInverse.setOnPreferenceChangeListener(this);
         mNavigationGestures = (Preference) findPreference(KEY_NAV_GESTURES);
         mNavigationCompactLayout = (SwitchPreference) findPreference(KEY_NAV_COMPACT_LAYOUT);
-        mNavigationGesturePill = (SwitchPreference) findPreference(KEY_NAV_GESTURE_PILL);
-        mNavigationGesturePill.setChecked((Settings.System.getInt(getContentResolver(),
-                Settings.System.GESTURE_PILL_TOGGLE, 0) == 1));
-        mNavigationGesturePill.setOnPreferenceChangeListener(this);
 
         Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
                 com.android.internal.R.integer.config_longPressOnHomeBehaviorHwkeys));
@@ -288,7 +280,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mNavigationAppSwitchLongPressAction.setDependency(DISABLE_NAV_KEYS);
             mNavigationGestures.setDependency(DISABLE_NAV_KEYS);
             mNavigationCompactLayout.setDependency(DISABLE_NAV_KEYS);
-            mNavigationGesturePill.setDependency(DISABLE_NAV_KEYS);
         } else {
             mNavbarCategory.removePreference(mDisableNavigationKeys);
             mDisableNavigationKeys = null;
@@ -529,18 +520,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mNavigationAppSwitchLongPressAction = null;
                 removedCount++;
             }
-            if (mNavigationGesturePill != null){
-                mNavbarCategory.removePreference(mNavigationGesturePill);
-                mNavigationGesturePill = null;
-                removedCount++;
-            }
-        }else if (mode.equals(NAV_BAR_MODE_3BUTTON_OVERLAY)){
-            if (mNavigationGesturePill != null){
-                mNavbarCategory.removePreference(mNavigationGesturePill);
-                mNavigationGesturePill = null;
-                removedCount++;
-            }
-        }else{
+        }else if (!mode.equals(NAV_BAR_MODE_3BUTTON_OVERLAY)){
             if (mNavigationMenuArrowKeys != null){
                 mNavbarCategory.removePreference(mNavigationMenuArrowKeys);
                 mNavigationMenuArrowKeys = null;
@@ -586,7 +566,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mNavigationGestures.setSummary(SystemNavigationPreferenceController.getPrefSummary(getActivity()));
             }
         }
-        if (mNavbarCategory != null && removedCount > 8){
+        if (mNavbarCategory != null && removedCount > 7){
             getPreferenceScreen().removePreference(mNavbarCategory);
             mNavbarCategory = null;
         }
@@ -702,13 +682,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             handleListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
             return true;
-        } else if (preference == mNavigationGesturePill) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.GESTURE_PILL_TOGGLE, value ? 1 : 0);
-            SystemNavigationGestureSettings.setBackGestureOverlaysToUse(getActivity());
-            SystemNavigationGestureSettings.setCurrentSystemNavigationMode(getActivity(),
-                    mOverlayManager, SystemNavigationGestureSettings.getCurrentSystemNavigationMode(getActivity()));
         }
         return false;
     }
