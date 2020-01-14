@@ -58,7 +58,8 @@
     <Preference
         android:key="livedisplay"
         android:title="@*android:string/live_display_title"
-        android:summary="@string/live_display_summary">
+        android:summary="@string/live_display_summary"
+        settings:controller="com.android.settings.livedisplay.LiveDisplayPreferenceController">
         <intent android:action="com.android.settings.LIVEDISPLAY_SETTINGS" />
     </Preference>
 
