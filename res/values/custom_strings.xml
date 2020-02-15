@@ -342,4 +342,8 @@
     <string name="navigation_bar_compact_layout_title">Compact layout</string>
     <string name="navigation_bar_compact_layout_summary">Use a compact layout in the navigation bar</string>
 
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Full screen gestures</string>
+    <string name="navbar_gesture_pill_toggle_summary">This will hide both the navigation bar and the pill for a seamless fullscreen gesture experience.</string>
+
 </resources>
