@@ -88,6 +88,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             mAirplanePref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_AIRPLANE));
         }
 
+        if (mLockDownPref != null) {
+            mLockDownPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_LOCKDOWN));
+        }
+
         if (mUsersPref != null) {
             if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
                 getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
