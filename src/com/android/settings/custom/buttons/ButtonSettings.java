@@ -23,11 +23,13 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ComponentName;
+import android.content.om.IOverlayManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
 import android.os.UserHandle;
+import android.os.ServiceManager;
 import android.os.SystemProperties;
 import android.provider.Settings;
 import android.util.Log;
@@ -58,6 +60,10 @@ import java.util.List;
 import java.util.UUID;
 
 import com.android.settings.custom.preference.CustomDialogPreference;
+import com.android.settings.gestures.SystemNavigationPreferenceController;
+
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_2BUTTON_OVERLAY;
+import static android.view.WindowManagerPolicyConstants.NAV_BAR_MODE_3BUTTON_OVERLAY;
 
 public class ButtonSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -126,6 +132,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mVolumeWakeScreen;
     private SwitchPreference mVolumeMusicControls;
     private SwitchPreference mSwapVolumeButtons;
+    private PreferenceCategory mNavbarCategory;
 
     private Handler mHandler;
     
@@ -134,11 +141,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
     private static List<String> sNonIndexableKeys = new ArrayList<>();
 
+    private IOverlayManager mOverlayManager;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.button_settings);
+
+        mOverlayManager = IOverlayManager.Stub.asInterface(
+                ServiceManager.getService(Context.OVERLAY_SERVICE));
 
         final Resources res = getResources();
         final ContentResolver resolver = getActivity().getContentResolver();
@@ -182,12 +194,13 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_CAMERA);
         final PreferenceCategory backlightCat =
                 (PreferenceCategory) findPreference(CATEGORY_BACKLIGHT);
-        final PreferenceCategory navbarCategory =
-                (PreferenceCategory) prefScreen.findPreference(CATEGORY_NAVBAR);
         final PreferenceCategory powerCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_POWER);
         final PreferenceCategory othersCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_OTHERS);
+
+        mNavbarCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_NAVBAR);
 
         // Home button answers calls.
         mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);
@@ -260,7 +273,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mNavigationHomeDoubleTapAction.setDependency(DISABLE_NAV_KEYS);
             mNavigationAppSwitchLongPressAction.setDependency(DISABLE_NAV_KEYS);
         } else {
-            navbarCategory.removePreference(mDisableNavigationKeys);
+            mNavbarCategory.removePreference(mDisableNavigationKeys);
         }
 
         if (hasHomeKey) {
@@ -485,6 +498,39 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             prefScreen.removePreference(volumeCategory);
         }
 
+        // Navigation bar modes
+        updateNavigationBarModeState();
+    }
+
+    private void updateNavigationBarModeState(){
+        String mode = NavbarUtils.getNavigationBarModeOverlay(getActivity(), mOverlayManager);
+        if (mode.equals(NAV_BAR_MODE_2BUTTON_OVERLAY)){
+            if (mNavigationAppSwitchLongPressAction != null){
+                mNavbarCategory.removePreference(mNavigationAppSwitchLongPressAction);
+                mNavigationAppSwitchLongPressAction = null;
+            }
+        }else if (!mode.equals(NAV_BAR_MODE_3BUTTON_OVERLAY)){
+            if (mNavigationMenuArrowKeys != null){
+                mNavbarCategory.removePreference(mNavigationMenuArrowKeys);
+                mNavigationMenuArrowKeys = null;
+            }
+            if (mNavigationInverse != null){
+                mNavbarCategory.removePreference(mNavigationInverse);
+                mNavigationInverse = null;
+            }
+            if (mNavigationHomeLongPressAction != null){
+                mNavbarCategory.removePreference(mNavigationHomeLongPressAction);
+                mNavigationHomeLongPressAction = null;
+            }
+            if (mNavigationHomeDoubleTapAction != null){
+                mNavbarCategory.removePreference(mNavigationHomeDoubleTapAction);
+                mNavigationHomeDoubleTapAction = null;
+            }
+            if (mNavigationAppSwitchLongPressAction != null){
+                mNavbarCategory.removePreference(mNavigationAppSwitchLongPressAction);
+                mNavigationAppSwitchLongPressAction = null;
+            }
+        }
     }
 
     @Override
@@ -510,6 +556,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (incallHomeBehavior == Settings.System.RING_HOME_BUTTON_BEHAVIOR_ANSWER);
             mHomeAnswerCall.setChecked(homeButtonAnswersCall);
         }
+
+        // Navigation bar modes
+        updateNavigationBarModeState();
     }
 
     private ListPreference initList(String key, Action value) {
