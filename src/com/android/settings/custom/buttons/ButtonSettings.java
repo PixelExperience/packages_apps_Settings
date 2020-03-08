@@ -73,6 +73,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_APP_SWITCH_PRESS = "hardware_keys_app_switch_press";
     private static final String KEY_APP_SWITCH_LONG_PRESS = "hardware_keys_app_switch_long_press";
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
+    private static final String KEY_NAV_MENU_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
     private static final String KEY_NAV_INVERSE = "navbar_inverse";
     private static final String KEY_ADDITIONAL_BUTTONS = "additional_buttons";
     private static final String KEY_TORCH_LONG_PRESS_POWER = "torch_long_press_power_gesture";
@@ -114,6 +115,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
     private ListPreference mNavigationAppSwitchLongPressAction;
+    private SwitchPreference mNavigationMenuArrowKeys;
     private SwitchPreference mNavigationInverse;
     private Preference mAdditionalButtonsPreference;
     private SwitchPreference mTorchLongPressPower;
@@ -195,6 +197,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // Force Navigation bar related options
         mDisableNavigationKeys = (SwitchPreference) findPreference(DISABLE_NAV_KEYS);
         mNavigationInverse = (SwitchPreference) findPreference(KEY_NAV_INVERSE);
+        mNavigationMenuArrowKeys = (SwitchPreference) findPreference(KEY_NAV_MENU_ARROW_KEYS);
         mNavigationInverse.setOnPreferenceChangeListener(this);
 
         Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
@@ -251,7 +254,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             // Remove keys that can be provided by the navbar
             updateDisableNavkeysOption();
             updateDisableNavkeysCategories(mDisableNavigationKeys.isChecked());
+            mNavigationMenuArrowKeys.setDependency(DISABLE_NAV_KEYS);
             mNavigationInverse.setDependency(DISABLE_NAV_KEYS);
+            mNavigationHomeLongPressAction.setDependency(DISABLE_NAV_KEYS);
+            mNavigationHomeDoubleTapAction.setDependency(DISABLE_NAV_KEYS);
+            mNavigationAppSwitchLongPressAction.setDependency(DISABLE_NAV_KEYS);
         } else {
             navbarCategory.removePreference(mDisableNavigationKeys);
         }
