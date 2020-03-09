@@ -18,11 +18,7 @@ package com.android.settings.display;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.Handler;
-import android.os.Looper;
 import android.provider.Settings;
-import android.os.PowerManager;
-import android.os.SystemClock;
 
 import com.android.settings.core.BasePreferenceController;
 
@@ -32,13 +28,8 @@ import java.util.Objects;
 public class DisplayCutoutPreferenceController extends BasePreferenceController
         implements Preference.OnPreferenceChangeListener {
 
-    private final Handler mHandler;
-    private final PowerManager mPowerManager;
-
     public DisplayCutoutPreferenceController(Context context, String key) {
         super(context, key);
-        mHandler = new Handler(Looper.getMainLooper());
-        mPowerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
     }
 
     private int getConfig(){
@@ -58,14 +49,7 @@ public class DisplayCutoutPreferenceController extends BasePreferenceController
             return true;
         }
         try {
-            mPowerManager.goToSleep(SystemClock.uptimeMillis());
             ((Activity) mContext).recreate();
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mPowerManager.wakeUp(SystemClock.uptimeMillis());
-                }
-            }, 1000);
         }catch(Exception e){
         }
         return true;
