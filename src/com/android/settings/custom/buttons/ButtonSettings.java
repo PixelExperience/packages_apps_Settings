@@ -81,6 +81,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String DISABLE_NAV_KEYS = "disable_nav_keys";
     private static final String KEY_NAV_MENU_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
     private static final String KEY_NAV_INVERSE = "navbar_inverse";
+    private static final String KEY_NAV_GESTURES = "navbar_gestures";
     private static final String KEY_ADDITIONAL_BUTTONS = "additional_buttons";
     private static final String KEY_TORCH_LONG_PRESS_POWER = "torch_long_press_power_gesture";
     private static final String KEY_TORCH_LONG_PRESS_POWER_TIMEOUT = "torch_long_press_power_timeout";
@@ -123,6 +124,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mNavigationAppSwitchLongPressAction;
     private SwitchPreference mNavigationMenuArrowKeys;
     private SwitchPreference mNavigationInverse;
+    private Preference mNavigationGestures;
     private Preference mAdditionalButtonsPreference;
     private SwitchPreference mTorchLongPressPower;
     private ListPreference mTorchLongPressPowerTimeout;
@@ -212,6 +214,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mNavigationInverse = (SwitchPreference) findPreference(KEY_NAV_INVERSE);
         mNavigationMenuArrowKeys = (SwitchPreference) findPreference(KEY_NAV_MENU_ARROW_KEYS);
         mNavigationInverse.setOnPreferenceChangeListener(this);
+        mNavigationGestures = (Preference) findPreference(KEY_NAV_GESTURES);
 
         Action defaultHomeLongPressAction = Action.fromIntSafe(res.getInteger(
                 com.android.internal.R.integer.config_longPressOnHomeBehaviorHwkeys));
@@ -272,8 +275,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mNavigationHomeLongPressAction.setDependency(DISABLE_NAV_KEYS);
             mNavigationHomeDoubleTapAction.setDependency(DISABLE_NAV_KEYS);
             mNavigationAppSwitchLongPressAction.setDependency(DISABLE_NAV_KEYS);
+            mNavigationGestures.setDependency(DISABLE_NAV_KEYS);
         } else {
             mNavbarCategory.removePreference(mDisableNavigationKeys);
+            mDisableNavigationKeys = null;
         }
 
         if (hasHomeKey) {
@@ -503,33 +508,58 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     private void updateNavigationBarModeState(){
+        int removedCount = 0;
         String mode = NavbarUtils.getNavigationBarModeOverlay(getActivity(), mOverlayManager);
         if (mode.equals(NAV_BAR_MODE_2BUTTON_OVERLAY)){
             if (mNavigationAppSwitchLongPressAction != null){
                 mNavbarCategory.removePreference(mNavigationAppSwitchLongPressAction);
                 mNavigationAppSwitchLongPressAction = null;
+                removedCount++;
             }
         }else if (!mode.equals(NAV_BAR_MODE_3BUTTON_OVERLAY)){
             if (mNavigationMenuArrowKeys != null){
                 mNavbarCategory.removePreference(mNavigationMenuArrowKeys);
                 mNavigationMenuArrowKeys = null;
+                removedCount++;
             }
             if (mNavigationInverse != null){
                 mNavbarCategory.removePreference(mNavigationInverse);
                 mNavigationInverse = null;
+                removedCount++;
             }
             if (mNavigationHomeLongPressAction != null){
                 mNavbarCategory.removePreference(mNavigationHomeLongPressAction);
                 mNavigationHomeLongPressAction = null;
+                removedCount++;
             }
             if (mNavigationHomeDoubleTapAction != null){
                 mNavbarCategory.removePreference(mNavigationHomeDoubleTapAction);
                 mNavigationHomeDoubleTapAction = null;
+                removedCount++;
             }
             if (mNavigationAppSwitchLongPressAction != null){
                 mNavbarCategory.removePreference(mNavigationAppSwitchLongPressAction);
                 mNavigationAppSwitchLongPressAction = null;
+                removedCount++;
             }
+        }
+        if (mDisableNavigationKeys == null){
+            removedCount++;
+        }
+        if (!SystemNavigationPreferenceController.isGestureAvailable(getActivity())){
+            if (mNavigationGestures != null){
+                mNavbarCategory.removePreference(mNavigationGestures);
+                mNavigationGestures = null;
+                removedCount++;
+            }
+        }else{
+            if (mNavigationGestures != null){
+                mNavigationGestures.setSummary(SystemNavigationPreferenceController.getPrefSummary(getActivity()));
+            }
+        }
+        if (mNavbarCategory != null && removedCount > 6){
+            getPreferenceScreen().removePreference(mNavbarCategory);
+            mNavbarCategory = null;
         }
     }
 

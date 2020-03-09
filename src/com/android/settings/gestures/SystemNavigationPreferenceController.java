@@ -40,21 +40,25 @@ public class SystemNavigationPreferenceController extends BasePreferenceControll
 
     @Override
     public int getAvailabilityStatus() {
-        return isGestureAvailable(mContext) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return isGestureAvailable(mContext) && NavbarUtils.isEnabled(mContext) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public CharSequence getSummary() {
-        if (isEdgeToEdgeEnabled(mContext)) {
-            return mContext.getText(R.string.edge_to_edge_navigation_title);
-        } else if (isSwipeUpEnabled(mContext)) {
-            return mContext.getText(R.string.swipe_up_to_switch_apps_title);
+        return getPrefSummary(mContext);
+    }
+
+    public static String getPrefSummary(Context context){
+        if (isEdgeToEdgeEnabled(context)) {
+            return context.getString(R.string.edge_to_edge_navigation_title);
+        } else if (isSwipeUpEnabled(context)) {
+            return context.getString(R.string.swipe_up_to_switch_apps_title);
         } else {
-            return mContext.getText(R.string.legacy_navigation_title);
+            return context.getString(R.string.legacy_navigation_title);
         }
     }
 
-    static boolean isGestureAvailable(Context context) {
+    public static boolean isGestureAvailable(Context context) {
         // Skip if the swipe up settings are not available
         if (!context.getResources().getBoolean(
                 com.android.internal.R.bool.config_swipe_up_gesture_setting_available)) {
@@ -73,11 +77,6 @@ public class SystemNavigationPreferenceController extends BasePreferenceControll
                 .setPackage(recentsComponentName.getPackageName());
         if (context.getPackageManager().resolveService(quickStepIntent,
                 PackageManager.MATCH_SYSTEM_ONLY) == null) {
-            return false;
-        }
-
-        // Check if navbar visible
-        if (!NavbarUtils.isEnabled(context)){
             return false;
         }
 
