@@ -95,6 +95,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mAssistLongPressAction;
     private ListPreference mAppSwitchPressAction;
     private ListPreference mAppSwitchLongPressAction;
+    private ListPreference mEdgeLongSwipeAction;
     private SwitchPreference mCameraWakeScreen;
     private SwitchPreference mCameraSleepOnRelease;
     private SwitchPreference mCameraLaunch;
@@ -118,6 +119,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
     private static final String KEY_GESTURE_POWER_MENU = "gesture_power_menu_summary";
+    private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
 
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "button_backlight_cat";
@@ -242,6 +244,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         Action appSwitchLongPressAction = Action.fromSettings(resolver,
                 Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION,
                 defaultAppSwitchLongPressAction);
+        Action edgeLongSwipeAction = Action.fromSettings(resolver,
+                Settings.System.KEY_EDGE_LONG_SWIPE_ACTION,
+                Action.NOTHING);
+
+        // Edge long swipe gesture
+        mEdgeLongSwipeAction = initList(KEY_EDGE_LONG_SWIPE, edgeLongSwipeAction);
 
         // Only visible on devices that does not have a navigation bar already
         if (NavbarUtils.canDisable(getActivity())) {
@@ -252,6 +260,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mNavigationInverse.setDependency(DISABLE_NAV_KEYS);
             mNavigationGestures.setDependency(DISABLE_NAV_KEYS);
             mNavigationCompactLayout.setDependency(DISABLE_NAV_KEYS);
+            mEdgeLongSwipeAction.setDependency(DISABLE_NAV_KEYS);
         } else {
             mNavbarCategory.removePreference(mDisableNavigationKeys);
             mDisableNavigationKeys = null;
@@ -442,6 +451,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Others preferences
         updateOthersSummaries();
+
+        // Edge swipe gesture
+        updateEdgeSwipeGesturePreference();
     }
 
     private static boolean isKeySwapperSupported(Context context) {
@@ -464,6 +476,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             if (mNavigationCompactLayout != null){
                 mNavbarCategory.removePreference(mNavigationCompactLayout);
                 mNavigationCompactLayout = null;
+            }
+        }else{
+            if (mEdgeLongSwipeAction != null){
+                mNavbarCategory.removePreference(mEdgeLongSwipeAction);
+                mEdgeLongSwipeAction = null;
             }
         }
         if (!SystemNavigationPreferenceController.isGestureAvailable(getActivity())){
@@ -523,11 +540,24 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
         // Others preferences
         updateOthersSummaries();
+
+        // Edge swipe gesture
+        updateEdgeSwipeGesturePreference();
     }
 
     private void updateOthersSummaries(){
         if (mGesturePowerMenu != null){
             mGesturePowerMenu.setSummary(PowerMenuPreferenceController.getPrefSummary(getActivity()));
+        }
+    }
+
+    private void updateEdgeSwipeGesturePreference(){
+        final ContentResolver resolver = getActivity().getContentResolver();
+        if (mEdgeLongSwipeAction != null){
+            mEdgeLongSwipeAction.setValue(Integer.toString(Action.fromSettings(resolver,
+                Settings.System.KEY_EDGE_LONG_SWIPE_ACTION,
+                Action.NOTHING).ordinal()));
+            mEdgeLongSwipeAction.setSummary(mEdgeLongSwipeAction.getEntry());
         }
     }
 
@@ -613,6 +643,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }else if (preference == mVolumeKeyCursorControl) {
             handleListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
+            return true;
+        } else if (preference == mEdgeLongSwipeAction) {
+            handleListChange(mEdgeLongSwipeAction, newValue,
+                    Settings.System.KEY_EDGE_LONG_SWIPE_ACTION);
             return true;
         }
         return false;
