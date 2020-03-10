@@ -23,6 +23,15 @@
     android:title="@string/gesture_settings_activity_title"
     settings:keywords="@string/keywords_gesture_navigation_settings">
 
+    <com.android.settings.custom.preference.SystemSettingListPreference
+        android:key="key_edge_long_swipe_action"
+        android:dialogTitle="@string/navigation_bar_edge_long_swipe_title"
+        android:title="@string/navigation_bar_edge_long_swipe_title"
+        android:summary="%s"
+        android:entries="@array/hardware_keys_action_entries"
+        android:entryValues="@array/hardware_keys_action_values"
+        android:defaultValue="0" />
+
     <PreferenceCategory
         android:key="assistant_gesture_category"
         android:persistent="false"
