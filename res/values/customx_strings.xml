@@ -209,4 +209,7 @@
     <string name="auto_brightness_one_shot_title">One shot auto-brightness</string>
     <string name="auto_brightness_one_shot_summary">Brightness adjustment will only occur at the moment the screen is turned on</string>
 
+    <!-- Edge gesture -->
+    <string name="navigation_bar_edge_long_swipe_title">Edge long swipe action</string>
+
 </resources>
