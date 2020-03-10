@@ -95,6 +95,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
     private static final String KEY_NAVIGATION_APP_SWITCH_LONG_PRESS =
             "navigation_app_switch_long_press";
+    private static final String KEY_EDGE_LONG_SWIPE = "navigation_bar_edge_long_swipe";
 
     private static final String CATEGORY_HOME = "home_key";
     private static final String CATEGORY_BACK = "back_key";
@@ -123,6 +124,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private ListPreference mNavigationHomeLongPressAction;
     private ListPreference mNavigationHomeDoubleTapAction;
     private ListPreference mNavigationAppSwitchLongPressAction;
+    private ListPreference mEdgeLongSwipeAction;
     private SwitchPreference mNavigationMenuArrowKeys;
     private SwitchPreference mNavigationInverse;
     private Preference mNavigationGestures;
@@ -240,6 +242,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         Action appSwitchLongPressAction = Action.fromSettings(resolver,
                 Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION,
                 defaultAppSwitchLongPressAction);
+        Action edgeLongSwipeAction = Action.fromSettings(resolver,
+                Settings.System.KEY_EDGE_LONG_SWIPE_ACTION,
+                Action.NOTHING);
 
         // Navigation bar home long press
         Action defaultHomeLongPressActionNavbar = Action.fromIntSafe(res.getInteger(
@@ -268,6 +273,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mNavigationAppSwitchLongPressAction = initList(KEY_NAVIGATION_APP_SWITCH_LONG_PRESS,
                 appSwitchLongPressActionNavbar);
 
+        // Edge long swipe gesture
+        mEdgeLongSwipeAction = initList(KEY_EDGE_LONG_SWIPE, edgeLongSwipeAction);
+
         // Only visible on devices that does not have a navigation bar already
         if (NavbarUtils.canDisable(getActivity())) {
             // Remove keys that can be provided by the navbar
@@ -278,6 +286,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             mNavigationHomeLongPressAction.setDependency(DISABLE_NAV_KEYS);
             mNavigationHomeDoubleTapAction.setDependency(DISABLE_NAV_KEYS);
             mNavigationAppSwitchLongPressAction.setDependency(DISABLE_NAV_KEYS);
+            mEdgeLongSwipeAction.setDependency(DISABLE_NAV_KEYS);
             mNavigationGestures.setDependency(DISABLE_NAV_KEYS);
             mNavigationCompactLayout.setDependency(DISABLE_NAV_KEYS);
         } else {
@@ -441,6 +450,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
             mNavigationAppSwitchLongPressAction.setEntries(actionEntriesGo);
             mNavigationAppSwitchLongPressAction.setEntryValues(actionValuesGo);
+
+            mEdgeLongSwipeAction.setEntries(actionEntriesGo);
+            mEdgeLongSwipeAction.setEntryValues(actionValuesGo);
         }
         mAdditionalButtonsAvailable = !getResources().getString(R.string.config_customButtonsPackage).equals("");
         if (mAdditionalButtonsAvailable){
@@ -514,6 +526,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private void updateNavigationBarModeState(){
         int removedCount = 0;
         String mode = NavbarUtils.getNavigationBarModeOverlay(getActivity(), mOverlayManager);
+        boolean isGesturalMode = !mode.equals(NAV_BAR_MODE_2BUTTON_OVERLAY) && !mode.equals(NAV_BAR_MODE_3BUTTON_OVERLAY);
         if (mode.equals(NAV_BAR_MODE_2BUTTON_OVERLAY)){
             if (mNavigationAppSwitchLongPressAction != null){
                 mNavbarCategory.removePreference(mNavigationAppSwitchLongPressAction);
@@ -555,6 +568,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         if (mDisableNavigationKeys == null){
             removedCount++;
         }
+        if (!isGesturalMode && mEdgeLongSwipeAction != null){
+            mNavbarCategory.removePreference(mEdgeLongSwipeAction);
+            mEdgeLongSwipeAction = null;
+            removedCount++;
+        }
         if (!SystemNavigationPreferenceController.isGestureAvailable(getActivity())){
             if (mNavigationGestures != null){
                 mNavbarCategory.removePreference(mNavigationGestures);
@@ -566,7 +584,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mNavigationGestures.setSummary(SystemNavigationPreferenceController.getPrefSummary(getActivity()));
             }
         }
-        if (mNavbarCategory != null && removedCount > 7){
+        if (mNavbarCategory != null && removedCount > 8){
             getPreferenceScreen().removePreference(mNavbarCategory);
             mNavbarCategory = null;
         }
@@ -681,6 +699,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }else if (preference == mVolumeKeyCursorControl) {
             handleListChange(mVolumeKeyCursorControl, newValue,
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL);
+            return true;
+        } else if (preference == mEdgeLongSwipeAction) {
+            handleListChange(mEdgeLongSwipeAction, newValue,
+                    Settings.System.KEY_EDGE_LONG_SWIPE_ACTION);
             return true;
         }
         return false;
