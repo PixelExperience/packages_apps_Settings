@@ -69,5 +69,12 @@
     <string name="disable_navkeys_title">Omogoči vrstico za krmarjenje na zaslonu</string>
     <string name="disable_navkeys_summary">Omogoči vrstico za krmarjenje na zaslonu in onemogoči fizične gumbe</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prepreči nenamerno bujenje</string>
+    <string name="proximity_wake_summary">Pred bujenjem zaslona preveri tipalo bližine</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Hitrost osveževanja zaslona</string>
+    <string name="refresh_rate_summary_auto">Samodejno / Samodejno zviša hitrost osveževanja iz 60 na 90Hz za nekatere vsebine</string>
+    <string name="refresh_rate_summary_60">60Hz / Hitrost osveževanja zaklenjena na 60Hz za vse vsebine</string>
+    <string name="refresh_rate_summary_90">90Hz / Hitrost osveževanja zaklenjena na 90Hz za vse vsebine. Povišana poraba akumulatorja</string>
+    <string name="auto_refresh_rate">Samodejno</string>
 </resources>

@@ -69,5 +69,12 @@
     <string name="disable_navkeys_title">Luba navigeerimisriba ekraanil</string>
     <string name="disable_navkeys_summary">Luba navigeerimisriba ekraanil ja keela riistvara nupud</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Väldi juhuslikku äratamist</string>
+    <string name="proximity_wake_summary">Kontrollige lähedussensorit enne ekraani äratamist</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Ekraani värskenduskiirus</string>
+    <string name="refresh_rate_summary_auto">Automaatne / Automaatselt tõstab värskenduskiiruse 60 pealt 90Hz peale teatud sisu juures</string>
+    <string name="refresh_rate_summary_60">60Hz / Värskenduskiirus lukustatud 60Hz peale mistahes sisu korral</string>
+    <string name="refresh_rate_summary_90">90Hz / Värskenduskiirus lukustatud 90Hz peale mistahes sisu korral, suurem akukasutus</string>
+    <string name="auto_refresh_rate">Autom</string>
 </resources>

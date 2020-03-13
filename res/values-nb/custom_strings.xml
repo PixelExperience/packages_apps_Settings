@@ -39,6 +39,7 @@
     <string name="hardware_keys_action_launch_camera">Start kamera</string>
     <string name="hardware_keys_action_sleep">Slå skjermen av</string>
     <string name="hardware_keys_action_split_screen">Delt skjerm</string>
+    <string name="hardware_keys_swipe_right_key_title">Sveip høyre</string>
     <string name="button_wake_title">Vekke enhet</string>
     <string name="camera_sleep_on_release_title">Skjermtitt</string>
     <string name="camera_sleep_on_release_summary">Et halvt trykk holder bare skjermen påslått mens knappen holdes nede</string>

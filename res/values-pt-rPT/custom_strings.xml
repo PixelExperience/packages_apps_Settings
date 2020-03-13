@@ -69,5 +69,11 @@
     <string name="disable_navkeys_title">Ativar os botões virtuais</string>
     <string name="disable_navkeys_summary">Ativar os botões virtuais e desativar os botões físicos</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Impedir que o ecrã se ligue acidentalmente</string>
+    <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar o ecrã</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Taxa de atualização do ecrã</string>
+    <string name="refresh_rate_summary_auto">Automático / Aumenta automaticamente a taxa de atualização de 60 para 90Hz para alguns conteúdos</string>
+    <string name="refresh_rate_summary_60">60Hz / Taxa de atualização bloqueada em 60Hz para todos os conteúdos</string>
+    <string name="refresh_rate_summary_90">90Hz / Taxa de atualização bloqueada em 90Hz para todos os conteúdos. Maior uso de bateria</string>
 </resources>

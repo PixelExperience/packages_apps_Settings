@@ -69,5 +69,12 @@
     <string name="disable_navkeys_title">Omogući navigacijsku traku zaslona</string>
     <string name="disable_navkeys_summary">Omogući zaslonsku navigacijsku traku i onemogući hardverske tipke</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Sprječavanje slučajnog buđenja</string>
+    <string name="proximity_wake_summary">Provjera senzora blizine prije buđenja zaslona</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Brzina osvježavanja zaslona</string>
+    <string name="refresh_rate_summary_auto">Automatski / Automatski povećava brzinu osvježavanja zaslona s 60Hz na 90Hz za neke sadržaje</string>
+    <string name="refresh_rate_summary_60">60Hz / Osvježavanje zaslona zaključano je na 60Hz za sav sadržaj</string>
+    <string name="refresh_rate_summary_90">90Hz / Osvježavanje zaslona je zaključano na 90Hz za sav sadržaj. Povećana potrošnja baterije</string>
+    <string name="auto_refresh_rate">Auto</string>
 </resources>

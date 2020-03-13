@@ -69,5 +69,12 @@
     <string name="disable_navkeys_title">Activare bară de navigare pe ecran</string>
     <string name="disable_navkeys_summary">Activează bara de navigare pe ecran și dezactivează butoanele hardware</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevenire trezire accidentală</string>
+    <string name="proximity_wake_summary">Se verifică senzorul de proximitate înainte de trezirea ecranului</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Rata de actualizare a ecranului</string>
+    <string name="refresh_rate_summary_auto">Auto / Crește rata de actualizare de la 60 la 90 Hz pentru un anumit conținut in mod automat</string>
+    <string name="refresh_rate_summary_60">60Hz / Rata de actualizare blocată la 60Hz pentru tot conținutul</string>
+    <string name="refresh_rate_summary_90">90Hz / Rata de actualizare blocată la 90Hz pentru tot conținutul. Utilizează mai multă baterie</string>
+    <string name="auto_refresh_rate">Automat</string>
 </resources>

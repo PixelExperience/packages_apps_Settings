@@ -16,9 +16,9 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στη δεξιά πλευρά του τηλεφώνου σας.</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στο εμπρόσθιο ή οπίσθιο μέρος του τηλεφώνου σας.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στο εμπρόσθιο μέρος του τηλεφώνου σας.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην δεξιά πλευρά του τηλεφώνου σας.</string>
     <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στο εμπρόσθιο μέρος του τηλεφώνου σας.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
@@ -74,5 +74,8 @@
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Συχνότητα ανανέωσης οθόνης</string>
     <string name="refresh_rate_summary_auto">Αυτόματη / αυτοματοποιημένη αύξηση της ταχύτατος ανανέωσης από 60 σε 90 Hz για ορισμένα περιεχόμενα </string>
+    <string name="refresh_rate_summary_60">60Hz / Ο Ρυθμός ανανέωσης κλείδωσε στα 60Hz για όλο το περιεχόμενο</string>
+    <string name="refresh_rate_summary_90">90Hz / Ο Ρυθμός ανανέωσης κλείδωσε στα 90Hz για όλο το περιεχόμενο.
+Αυξημένη χρήση μπαταρίας</string>
     <string name="auto_refresh_rate">Αυτόματο</string>
 </resources>

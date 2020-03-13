@@ -69,5 +69,12 @@
     <string name="disable_navkeys_title">เปิดใช้งานแถบนำทางบนหน้าจอ</string>
     <string name="disable_navkeys_summary">เปิดใช้งานแถบนำทางบนหน้าจอและปิดการใช้งานปุ่มฮาร์ดแวร์</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">ป้องกันการปลุกโดยไม่ตั้งใจ</string>
+    <string name="proximity_wake_summary">ตรวจสอบเซนเซอร์แนบหน้าจอก่อนที่จะปลุกหน้าจอ</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">อัตราการรีเฟรชของหน้าจอ</string>
+    <string name="refresh_rate_summary_auto">อัตโนมัติ / เพิ่มอัตราการรีเฟรชโดยอัตโนมัติจาก 60 เป็น 90Hz สำหรับเนื้อหาบางส่วน</string>
+    <string name="refresh_rate_summary_60">60Hz / อัตราการรีเฟรชถูกล็อคที่ 60Hz สำหรับเนื้อหาทั้งหมด</string>
+    <string name="refresh_rate_summary_90">90Hz / อัตราการรีเฟรชถูกล็อคที่ 90Hz สำหรับเนื้อหาทั้งหมด เพิ่มการใช้งานแบตเตอรี่</string>
+    <string name="auto_refresh_rate">อัตโนมัติ</string>
 </resources>
