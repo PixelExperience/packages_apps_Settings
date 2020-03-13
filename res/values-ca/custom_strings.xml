@@ -69,5 +69,12 @@
     <string name="disable_navkeys_title">Habilita la barra de navegació a la pantalla</string>
     <string name="disable_navkeys_summary">Habilita la barra de navegació a la pantalla i deshabilita els botons físics</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Evita l\'encesa accidental</string>
+    <string name="proximity_wake_summary">Comprova el sensor de proximitat abans d\'encendre la pantalla</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Freqüència d\'actualització de la pantalla </string>
+    <string name="refresh_rate_summary_auto">Auto / Automàticament eleva la freqüència d\'actualització de 60 a 90Hz per a alguns continguts </string>
+    <string name="refresh_rate_summary_60">60Hz / Freqüència d\'actualització bloquejada a 60Hz per a qualsevol contingut  </string>
+    <string name="refresh_rate_summary_90">90Hz / Freqüència d\'actualització bloquejada a 90Hz per a qualsevol contingut  </string>
+    <string name="auto_refresh_rate">Automàtic</string>
 </resources>

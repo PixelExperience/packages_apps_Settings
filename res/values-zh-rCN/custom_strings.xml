@@ -69,5 +69,12 @@
     <string name="disable_navkeys_title">启用虚拟按键</string>
     <string name="disable_navkeys_summary">启用虚拟按键并禁用硬件按键</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">防止意外唤醒</string>
+    <string name="proximity_wake_summary">唤醒屏幕前检查距离传感器</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">屏幕刷新率</string>
+    <string name="refresh_rate_summary_auto">自动 / 一些内容的显示将被自动从60Hz提升到90Hz</string>
+    <string name="refresh_rate_summary_60">60Hz / 所有的内容都将以60Hz的刷新率来显示</string>
+    <string name="refresh_rate_summary_90">90Hz / 所有的内容都将以90Hz的刷新率来显示。这将增加电池使用量</string>
+    <string name="auto_refresh_rate">自动</string>
 </resources>

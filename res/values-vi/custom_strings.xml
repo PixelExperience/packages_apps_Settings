@@ -12,17 +12,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Định vị trí cảm biến vân tay trên mặt trước điện thoại của bạn.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Định vị trí cảm biến vân tay trên cạnh trái điện thoại của bạn.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Định vị trí cảm biến vân tay trên cạnh phải điện thoại của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Định vị cảm biến vân tay trên mặt trước điện thoại của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Định vị cảm biến vân tay trên cạnh trái điện thoại của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Định vị cảm biến vân tay trên cạnh phải điện thoại của bạn.</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Định vị trí cảm biến vân tay trên mặt trước thiết bị của bạn.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Định vị trí cảm biến vân tay trên cạnh trái thiết bị của bạn.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Định vị trí cảm biến vân tay trên cạnh phải thiết bị của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Định vị cảm biến vân tay trên mặt trước thiết bị của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Định vị cảm biến vân tay trên cạnh trái thiết bị của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Định vị cảm biến vân tay trên cạnh phải thiết bị của bạn.</string>
     <!-- Fingerprint location message - tablet -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Định vị trí cảm biến vân tay trên mặt trước máy tính bảng của bạn.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Định vị trí cảm biến vân tay trên cạnh trái máy tính bảng của bạn.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Định vị trí cảm biến vân tay trên cạnh phải máy tính bảng của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Định vị cảm biến vân tay trên mặt trước máy tính bảng của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Định vị cảm biến vân tay trên cạnh trái máy tính bảng của bạn.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Định vị cảm biến vân tay trên cạnh phải máy tính bảng của bạn.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Thiết lập lại</string>
     <!-- Buttons -->
@@ -60,7 +60,7 @@
     <string name="button_backlight_enabled">Phát sáng các phím</string>
     <string name="button_backlight_only_when_pressed_title">Phát sáng các nút chỉ khi được nhấn</string>
     <string name="button_backlight_seekbar_title">Độ sáng phím</string>
-    <string name="backlight_timeout_title">Thời gian chờ phát sáng</string>
+    <string name="backlight_timeout_title">Thời gian phát sáng</string>
     <string name="backlight_timeout_unlimited">Không tắt</string>
     <string name="backlight_summary_disabled">Đã tắt</string>
     <string name="backlight_summary_enabled_with_timeout">Đã bật trong <xliff:g id="timeout">%s</xliff:g></string>
@@ -69,5 +69,12 @@
     <string name="disable_navkeys_title">Bật thanh điều hướng trên màn hình</string>
     <string name="disable_navkeys_summary">Bật thanh điều hướng trên màn hình và tắt các phím cứng</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Ngăn chặn đánh thức tình cờ</string>
+    <string name="proximity_wake_summary">Kiểm tra cảm biến tiệm cận trước khi đánh thức màn hình</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Tốc độ làm tươi màn hình</string>
+    <string name="refresh_rate_summary_auto">Tự động / Tự động tăng tốc độ làm mới từ 60 đến 90Hz cho một số nội dung</string>
+    <string name="refresh_rate_summary_60">60Hz / Tốc độ làm mới bị khóa ở 60Hz cho tất cả nội dung</string>
+    <string name="refresh_rate_summary_90">90Hz / Tốc độ làm mới bị khóa ở 90Hz cho tất cả nội dung.  Tăng mức sử dụng pin</string>
+    <string name="auto_refresh_rate">Tự động</string>
 </resources>

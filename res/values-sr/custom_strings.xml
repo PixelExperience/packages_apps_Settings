@@ -69,5 +69,12 @@
     <string name="disable_navkeys_title">Омогући навигациону траку на екрану</string>
     <string name="disable_navkeys_summary">Омогућите навигациону траку на екрану и онемогућите хардверску дугмад</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Спречити случајна паљења</string>
+    <string name="proximity_wake_summary">Провери сензор близине пре паљења екрана</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Освежавање екрана</string>
+    <string name="refresh_rate_summary_auto">Ауто / Аутоматски повећава освежавање екрана са 60 на 90Hz за неке садржаје </string>
+    <string name="refresh_rate_summary_60">60Hz / Освежавање екрана закључано на 60Hz за сав садржај</string>
+    <string name="refresh_rate_summary_90">90Hz / Освежавање екрана закључано на 90Hz за сав садржај. Повећано коришћење батерије</string>
+    <string name="auto_refresh_rate">Аутоматски</string>
 </resources>

@@ -56,6 +56,7 @@
     <string name="camera_launch_title">Buksan ang camera</string>
     <string name="camera_launch_summary">Ang mahabang pagpindut at pagbitiw ay magbubukas ng kamera</string>
     <!-- Key backlight -->
+    <string name="button_backlight_title">Backlight</string>
     <string name="button_backlight_enabled">Pa-ilawin ang mga button</string>
     <string name="button_backlight_only_when_pressed_title">Pa-ilawin ang mga button kapag pinindot lamang</string>
     <string name="button_backlight_seekbar_title">Tingkad ng button</string>
