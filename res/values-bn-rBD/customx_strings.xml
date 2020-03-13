@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Buttons -->
+    <string name="navigation_bar_title">ন্যাভিগেশন বার</string>
+    <string name="hardware_keys_power_key_title">পাওয়ার বাটন</string>
+    <string name="hardware_keys_volume_keys_title">ভলিউম বাটন</string>
+    <!-- Buttons - Enable navbar -->
+    <!-- Kill app long-press back -->
+    <string name="kill_app_longpress_back">ব্যাক বোতাম দ্বারা অ্যাপ নিস্ক্রিয় করুন</string>
+    <!-- Hostname setting -->
+    <string name="device_hostname">ডিভাইস হোস্টনেম</string>
+    <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">অ্যাডভান্সড রিস্টার্ট</string>
+    <!-- Lock screen cover art -->
+    <!-- PIN scramble -->
+    <string name="unlock_scramble_pin_layout_title">একত্র বিন্যাস</string>
+    <string name="unlock_scramble_pin_layout_summary">একত্র পিন বিন্যাস যখন ডিভাইস অবমুক্ত করার সময়</string>
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">প্লাগইন অবস্থায় জেগে উঠা</string>
+    <string name="wake_when_plugged_or_unplugged_summary">শক্তির উৎস যখন যুক্ত অথবা বিচ্ছিন্ন করা হচ্ছে তখন পর্দা সচল করুন</string>
+    <!-- Lock screen pattern size -->
+    <string name="lock_settings_picker_pattern_size_message">প্যাটার্নের আকার নির্ধারন করুন</string>
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <!-- Hotspot custom extras -->
+    <!-- Notification sound timeout -->
+    <!-- Volume link notification -->
+    <!-- Increasing ring tone volume -->
+    <!-- Display : Rotation -->
+    <!-- Lock screen visualizer -->
+    <!-- In-call feedback -->
+    <!-- Navigation bar customization -->
+    <!-- Volume keys customization -->
+    <!-- Home key customization -->
+    <!-- Power menu key customization -->
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <!-- Status bar - icons -->
+    <!-- Status bar - Clock -->
+    <!-- Status bar - Battery -->
+    <!-- Status bar - Battery percentage -->
+    <!-- Status bar - Brightness -->
+    <!-- Status bar - Network Traffic -->
+    <!-- QS settings -->
+    <!-- QS title visibility -->
+    <!-- QS tiles haptic feedback -->
+    <!-- QS animation/interpolator styles  -->
+    <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Navigation compact layout -->
+    <!-- Full screen gestures -->
+    <!-- LiveDisplay -->
+    <!-- LiveDisplay : Picture Adjustment -->
+</resources>

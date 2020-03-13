@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Buttons -->
+    <!-- Buttons - Enable navbar -->
+    <!-- Kill app long-press back -->
+    <!-- Hostname setting -->
+    <!-- Advanced restart options -->
+    <!-- Lock screen cover art -->
+    <!-- PIN scramble -->
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <!-- Wake on plug -->
+    <!-- Lock screen pattern size -->
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <!-- Hotspot custom extras -->
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minutu</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
+    <!-- Volume link notification -->
+    <!-- Increasing ring tone volume -->
+    <!-- Display : Rotation -->
+    <string name="display_rotation_unit">grados</string>
+    <string name="display_rotation_0_title">0 grados</string>
+    <string name="display_rotation_90_title">90 grados</string>
+    <string name="display_rotation_180_title">180 grados</string>
+    <string name="display_rotation_270_title">270 grados</string>
+    <!-- Lock screen visualizer -->
+    <!-- In-call feedback -->
+    <!-- Navigation bar customization -->
+    <!-- Volume keys customization -->
+    <string name="volbtn_cursor_control_off">Disabilitadu</string>
+    <!-- Home key customization -->
+    <!-- Power menu key customization -->
+    <string name="power_menu_screenshot_title">Ischermada</string>
+    <string name="power_menu_screenshot_summary">Incarca a longu pro un\'ischermada partziale</string>
+    <string name="power_menu_lockdown_title">Bloca</string>
+    <string name="power_end_call_title">Acabba sa mutida</string>
+    <string name="torch_long_press_power_timeout_never">Mai</string>
+    <string name="torch_long_press_power_timeout_1min">1 minutu</string>
+    <string name="torch_long_press_power_timeout_2min">2 minutos</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutos</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutos</string>
+    <!-- Others settings -->
+    <!-- Status bar -->
+    <string name="status_bar_quick_qs_pulldown_off">Istudadu</string>
+    <!-- Status bar - icons -->
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_title">Relògiu</string>
+    <string name="status_bar_clock_position_title">Positzione de su relògiu</string>
+    <string name="status_bar_am_pm_normal">Normale</string>
+    <string name="status_bar_am_pm_small">Minore</string>
+    <string name="status_bar_am_pm_hidden">Cuada</string>
+    <!-- Status bar - Battery -->
+    <!-- Status bar - Battery percentage -->
+    <!-- Status bar - Brightness -->
+    <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_mode_disable">Disabilitadu</string>
+    <!-- QS settings -->
+    <!-- QS title visibility -->
+    <!-- QS tiles haptic feedback -->
+    <!-- QS animation/interpolator styles  -->
+    <!-- Notch behavior -->
+    <!-- Notch: Full screen apps -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Navigation compact layout -->
+    <!-- Full screen gestures -->
+    <!-- LiveDisplay -->
+    <string name="live_display_color_temperature_summary">Die: <xliff:g id="day_temperature">%1$d</xliff:g>K Note: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_day">Die</string>
+    <string name="live_display_night">Note</string>
+    <string name="live_display_color_profile_standard_title">Istandard</string>
+    <string name="live_display_color_profile_natural_title">Naturale</string>
+    <string name="live_display_color_profile_cinema_title">Tzìnema</string>
+    <string name="live_display_color_profile_astronomy_title">Astronomia</string>
+    <string name="live_display_color_profile_photography_title">Fotografia</string>
+    <string name="color_red_title">Ruju</string>
+    <string name="color_green_title">Birde</string>
+    <string name="color_blue_title">Biaitu</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="adj_saturation_title">Saturatzione</string>
+    <string name="adj_intensity_title">Intensidade</string>
+    <string name="adj_contrast_title">Cuntrastu</string>
+</resources>
