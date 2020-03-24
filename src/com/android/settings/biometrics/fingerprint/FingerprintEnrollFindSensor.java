@@ -34,7 +34,7 @@ import com.android.settings.password.ChooseLockSettingsHelper;
 import com.google.android.setupcompat.template.FooterBarMixin;
 import com.google.android.setupcompat.template.FooterButton;
 
-import com.android.internal.util.custom.FodUtils;
+import com.android.internal.util.custom.fod.FodUtils;
 
 /**
  * Activity explaining the fingerprint sensor location for fingerprint enrollment.
