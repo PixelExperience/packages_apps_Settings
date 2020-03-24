@@ -121,7 +121,6 @@ public class StorageVolumePreference extends Preference {
         setIcon(icon);
 
         if (volume.getType() == VolumeInfo.TYPE_PUBLIC
-                && !volume.disk.isNonRemovable()
                 && volume.isMountedReadable()) {
             setWidgetLayoutResource(R.layout.preference_storage_action);
         }
