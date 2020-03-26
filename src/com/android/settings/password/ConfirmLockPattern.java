@@ -66,6 +66,7 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
 
     @Override
     public Intent getIntent() {
+            android.util.Log.d("henrique", "WE REACHED HERE 4800");
         Intent modIntent = new Intent(super.getIntent());
         modIntent.putExtra(EXTRA_SHOW_FRAGMENT, ConfirmLockPatternFragment.class.getName());
         return modIntent;
@@ -128,10 +129,13 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
                     = (LinearLayoutWithDefaultTouchRecepient) view.findViewById(R.id.topLayout);
             topLayout.setDefaultTouchRecepient(mLockPatternView);
 
+            android.util.Log.d("henrique", "WE REACHED HERE 1");
             Intent intent = getActivity().getIntent();
             if (intent != null) {
+            android.util.Log.d("henrique", "WE REACHED HERE 2");
                 mHeaderText = intent.getCharSequenceExtra(
                         ConfirmDeviceCredentialBaseFragment.HEADER_TEXT);
+            android.util.Log.d("henrique", "WE REACHED HERE 20455");
                 mDetailsText = intent.getCharSequenceExtra(
                         ConfirmDeviceCredentialBaseFragment.DETAILS_TEXT);
             }
@@ -402,6 +406,7 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
 
                 mLockPatternView.setEnabled(false);
 
+            android.util.Log.d("henrique", "WE REACHED HERE 56");
                 final boolean verifyChallenge = getActivity().getIntent().getBooleanExtra(
                         ChooseLockSettingsHelper.EXTRA_KEY_HAS_CHALLENGE, false);
                 Intent intent = new Intent();
@@ -426,6 +431,7 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
                     final Intent intent) {
                 final int localEffectiveUserId = mEffectiveUserId;
                 final int localUserId = mUserId;
+            android.util.Log.d("henrique", "WE REACHED HERE 450");
                 long challenge = getActivity().getIntent().getLongExtra(
                         ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE, 0);
                 final LockPatternChecker.OnVerifyCallback onVerifyCallback =

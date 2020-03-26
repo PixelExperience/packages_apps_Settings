@@ -27,6 +27,9 @@ import android.content.IntentSender;
 import android.os.Bundle;
 import android.os.UserManager;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.Fragment;
 
@@ -414,6 +417,21 @@ public final class ChooseLockSettingsHelper {
         return launched;
     }
 
+public static void dumpIntent(Intent i){
+
+    Bundle bundle = i.getExtras();
+    if (bundle != null) {
+        Set<String> keys = bundle.keySet();
+        Iterator<String> it = keys.iterator();
+        android.util.Log.e("henroqiue","Dumping Intent start");
+        while (it.hasNext()) {
+            String key = it.next();
+            android.util.Log.e("henroqiue","[" + key + "=" + bundle.get(key)+"]");
+        }
+        android.util.Log.e("henroqiue","Dumping Intent end");
+    }
+}
+
     private boolean launchConfirmationActivity(int request, CharSequence title, CharSequence header,
             CharSequence message, Class<?> activityClass, boolean returnCredentials,
             boolean external, boolean hasChallenge, long challenge,
@@ -442,17 +460,21 @@ public final class ChooseLockSettingsHelper {
             intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
             if (mFragment != null) {
                 copyOptionalExtras(mFragment.getActivity().getIntent(), intent);
+                dumpIntent(intent);
                 mFragment.startActivity(intent);
             } else {
                 copyOptionalExtras(mActivity.getIntent(), intent);
+                dumpIntent(intent);
                 mActivity.startActivity(intent);
             }
         } else {
             if (mFragment != null) {
                 copyInternalExtras(mFragment.getActivity().getIntent(), intent);
+                dumpIntent(intent);
                 mFragment.startActivityForResult(intent, request);
             } else {
                 copyInternalExtras(mActivity.getIntent(), intent);
+                dumpIntent(intent);
                 mActivity.startActivityForResult(intent, request);
             }
         }

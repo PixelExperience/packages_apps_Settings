@@ -24,6 +24,8 @@ import com.android.settings.Settings;
 import com.android.settings.Utils;
 import com.android.settings.biometrics.BiometricStatusPreferenceController;
 
+import com.android.settings.biometrics.face.LaunchMotoFaceEnroll;
+
 public class FaceStatusPreferenceController extends BiometricStatusPreferenceController {
 
     public static final String KEY_FACE_SETTINGS = "face_settings";
@@ -63,11 +65,17 @@ public class FaceStatusPreferenceController extends BiometricStatusPreferenceCon
 
     @Override
     protected String getSettingsClassName() {
+        if (Utils.isMotoFaceUnlock()){
+            return LaunchMotoFaceEnroll.class.getName();
+        }
         return Settings.FaceSettingsActivity.class.getName();
     }
 
     @Override
     protected String getEnrollClassName() {
+        if (Utils.isMotoFaceUnlock()){
+            return LaunchMotoFaceEnroll.class.getName();
+        }
         return FaceEnrollIntroduction.class.getName();
     }
 

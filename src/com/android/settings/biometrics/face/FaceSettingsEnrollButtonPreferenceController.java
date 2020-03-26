@@ -25,6 +25,8 @@ import androidx.preference.Preference;
 
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
+import com.android.settings.Utils;
+import com.android.settings.biometrics.face.LaunchMotoFaceEnroll;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.password.ChooseLockSettingsHelper;
 import com.android.settingslib.widget.LayoutPreference;
@@ -65,10 +67,14 @@ public class FaceSettingsEnrollButtonPreferenceController extends BasePreference
     @Override
     public void onClick(View v) {
         mIsClicked = true;
-        final Intent intent = new Intent();
-        intent.setClassName("com.android.settings", FaceEnrollIntroduction.class.getName());
-        intent.putExtra(Intent.EXTRA_USER_ID, mUserId);
-        intent.putExtra(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN, mToken);
+        Intent intent = new Intent();
+        if (Utils.isMotoFaceUnlock()){
+            intent = LaunchMotoFaceEnroll.getIntent(mToken, mUserId);
+        }else{
+            intent.setClassName("com.android.settings", FaceEnrollIntroduction.class.getName());
+            intent.putExtra(Intent.EXTRA_USER_ID, mUserId);
+            intent.putExtra(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN, mToken);
+        }
         mContext.startActivity(intent);
     }
 

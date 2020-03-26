@@ -3321,5 +3321,10 @@
         </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <!-- Moto Face Unlock -->
+        <activity android:name=".biometrics.face.LaunchMotoFaceEnroll"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
     </application>
 </manifest>
