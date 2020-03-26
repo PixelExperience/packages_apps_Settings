@@ -83,6 +83,15 @@ public abstract class BiometricEnrollBase extends InstrumentedActivity {
     protected int mUserId;
     protected boolean mFromSettingsSummary;
     protected FooterBarMixin mFooterBarMixin;
+    protected boolean mIsNotAbandon;
+
+    public boolean isEnrollAbandonedOnBackPress() {
+        return false;
+    }
+
+    public boolean isEnrollingFingerprint() {
+        return false;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,6 +106,18 @@ public abstract class BiometricEnrollBase extends InstrumentedActivity {
                     savedInstanceState.getBoolean(EXTRA_FROM_SETTINGS_SUMMARY, false);
         }
         mUserId = getIntent().getIntExtra(Intent.EXTRA_USER_ID, UserHandle.myUserId());
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mIsNotAbandon = false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        mIsNotAbandon = !isEnrollAbandonedOnBackPress();
+        super.onBackPressed();
     }
 
     @Override

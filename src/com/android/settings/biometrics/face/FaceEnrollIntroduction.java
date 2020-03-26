@@ -18,6 +18,7 @@ package com.android.settings.biometrics.face;
 
 import android.app.admin.DevicePolicyManager;
 import android.app.settings.SettingsEnums;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.hardware.face.FaceManager;
 import android.os.Bundle;
@@ -97,15 +98,53 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
                         ? R.string.security_settings_face_enroll_introduction_footer_part_2
                         : R.string.security_settings_face_settings_footer_attention_not_supported;
         footer2.setText(footer2TextResource);
+        if (Utils.hasMotoFaceUnlock() && mHasPassword && mToken != null) {
+            openMotoFaceUnlock();
+        }
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-
         if (!isChangingConfigurations() && !mConfirmingCredentials && !mNextClicked
                 && !WizardManagerHelper.isAnySetupWizard(getIntent())) {
             finish();
+        }
+    }
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (!Utils.hasMotoFaceUnlock()) {
+            return;
+        }
+        if (requestCode != CHOOSE_LOCK_GENERIC_REQUEST) {
+            if (requestCode != CONFIRM_REQUEST) {
+                if (requestCode == ENROLL_REQUEST) {
+                    if (resultCode == RESULT_FIRST_USER || resultCode == RESULT_OK) {
+                        setResult(RESULT_FIRST_USER);
+                        finish();
+                        return;
+                    }
+                    setResult(RESULT_CANCELED);
+                    finish();
+                }
+            } else if (resultCode == RESULT_OK && data != null) {
+                openMotoFaceUnlock();
+            }
+        } else if (resultCode == RESULT_FIRST_USER) {
+            openMotoFaceUnlock();
+        }
+    }
+
+    private void openMotoFaceUnlock() {
+        Intent intent = new Intent();
+        intent.putExtra(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN, mToken);
+        if (mUserId != UserHandle.USER_NULL) {
+            intent.putExtra(Intent.EXTRA_USER_ID, mUserId);
+        }
+        intent.setComponent(new ComponentName("com.motorola.faceunlock", "com.motorola.faceunlock.SetupFaceIntroActivity"));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(intent, 5);
         }
     }
 
