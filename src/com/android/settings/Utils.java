@@ -63,6 +63,7 @@ import android.os.IBinder;
 import android.os.INetworkManagementService;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.os.storage.StorageManager;
@@ -1066,5 +1067,24 @@ public final class Utils extends com.android.settingslib.Utils {
             return input.toLowerCase();
         }
         return input;
+    }
+
+    public static boolean isMotoFaceUnlock() {
+        return SystemProperties.getBoolean("ro.face.moto_unlock_service", false);
+    }
+
+    public static boolean isFaceDisabledByAdmin(Context context) {
+        DevicePolicyManager devicePolicyManager = (DevicePolicyManager) context.getSystemService("device_policy");
+        try {
+            if (devicePolicyManager.getPasswordQuality(null) > 32768) {
+                return true;
+            }
+        } catch (SecurityException e) {
+            Log.e("Settings", "isFaceDisabledByAdmin error:", e);
+        }
+        if ((devicePolicyManager.getKeyguardDisabledFeatures(null) & 128) != 0) {
+            return true;
+        }
+        return false;
     }
 }

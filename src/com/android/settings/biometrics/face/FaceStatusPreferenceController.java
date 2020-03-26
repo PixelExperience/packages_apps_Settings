@@ -18,6 +18,7 @@ package com.android.settings.biometrics.face;
 
 import android.content.Context;
 import android.hardware.face.FaceManager;
+import androidx.preference.Preference;
 
 import com.android.settings.R;
 import com.android.settings.Settings;
@@ -51,14 +52,18 @@ public class FaceStatusPreferenceController extends BiometricStatusPreferenceCon
 
     @Override
     protected String getSummaryTextEnrolled() {
-        return mContext.getResources()
-                .getString(R.string.security_settings_face_preference_summary);
+        if (!Utils.isMotoFaceUnlock() || !Utils.isFaceDisabledByAdmin(mContext)) {
+            return mContext.getResources().getString(R.string.security_settings_face_preference_summary);
+        }
+        return mContext.getResources().getString(R.string.disabled_by_administrator_summary);
     }
 
     @Override
     protected String getSummaryTextNoneEnrolled() {
-        return mContext.getResources()
-                .getString(R.string.security_settings_face_preference_summary_none);
+        if (Utils.isMotoFaceUnlock() && Utils.isFaceDisabledByAdmin(mContext)) {
+            return mContext.getResources().getString(R.string.disabled_by_administrator_summary);
+        }
+        return mContext.getResources().getString(R.string.security_settings_face_preference_summary_none);
     }
 
     @Override
@@ -69,6 +74,14 @@ public class FaceStatusPreferenceController extends BiometricStatusPreferenceCon
     @Override
     protected String getEnrollClassName() {
         return FaceEnrollIntroduction.class.getName();
+    }
+
+    @Override
+    public void updateState(Preference preference) {
+        if (Utils.isMotoFaceUnlock()) {
+            preference.setEnabled(!Utils.isFaceDisabledByAdmin(this.mContext));
+        }
+        super.updateState(preference);
     }
 
 }

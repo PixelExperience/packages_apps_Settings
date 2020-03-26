@@ -18,6 +18,7 @@ package com.android.settings.biometrics.face;
 
 import android.app.admin.DevicePolicyManager;
 import android.app.settings.SettingsEnums;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.hardware.face.FaceManager;
 import android.os.Bundle;
@@ -97,15 +98,46 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
                         ? R.string.security_settings_face_enroll_introduction_footer_part_2
                         : R.string.security_settings_face_settings_footer_attention_not_supported;
         footer2.setText(footer2TextResource);
+        if (Utils.isMotoFaceUnlock() && this.mHasPassword && this.mToken != null) {
+            openMotoFaceUnlock();
+        }
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
+    public void onActivityResult(int i, int i2, Intent intent) {
+        super.onActivityResult(i, i2, intent);
+        if (!Utils.isMotoFaceUnlock()) {
+            return;
+        }
+        if (i != 1) {
+            if (i != 4) {
+                if (i == 5) {
+                    if (i2 == 1 || i2 == -1) {
+                        setResult(1);
+                        finish();
+                        return;
+                    }
+                    setResult(0);
+                    finish();
+                }
+            } else if (i2 == -1 && intent != null) {
+                openMotoFaceUnlock();
+            }
+        } else if (i2 == 1) {
+            openMotoFaceUnlock();
+        }
+    }
 
-        if (!isChangingConfigurations() && !mConfirmingCredentials && !mNextClicked
-                && !WizardManagerHelper.isAnySetupWizard(getIntent())) {
-            finish();
+    private void openMotoFaceUnlock() {
+        Intent intent = new Intent();
+        intent.putExtra("hw_auth_token", this.mToken);
+        int i = this.mUserId;
+        if (i != -10000) {
+            intent.putExtra("android.intent.extra.USER_ID", i);
+        }
+        intent.setComponent(new ComponentName("com.motorola.faceunlock", "com.motorola.faceunlock.SetupFaceIntroActivity"));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(intent, 5);
         }
     }
 
