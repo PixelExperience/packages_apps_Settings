@@ -28,6 +28,7 @@ import android.widget.TextView;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.SetupWizardUtils;
+import com.android.settings.Utils;
 import com.android.settings.password.ChooseLockGeneric;
 import com.android.settings.password.ChooseLockGeneric.ChooseLockGenericFragment;
 import com.android.settings.password.ChooseLockSettingsHelper;
@@ -44,11 +45,9 @@ public abstract class BiometricEnrollIntroduction extends BiometricEnrollBase
         implements LinkSpan.OnClickListener {
 
     private UserManager mUserManager;
-    private boolean mHasPassword;
+    public boolean mHasPassword;
     private boolean mBiometricUnlockDisabledByAdmin;
     private TextView mErrorText;
-    protected boolean mConfirmingCredentials;
-    protected boolean mNextClicked;
 
     /**
      * @return true if the biometric is disabled by a device administrator
@@ -124,6 +123,11 @@ public abstract class BiometricEnrollIntroduction extends BiometricEnrollBase
     public abstract void onClick(LinkSpan span);
 
     @Override
+    public boolean isEnrollAbandonedOnBackPress() {
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -151,12 +155,10 @@ public abstract class BiometricEnrollIntroduction extends BiometricEnrollBase
 
         if (!mHasPassword) {
             // No password registered, launch into enrollment wizard.
-            mConfirmingCredentials = true;
             launchChooseLock();
         } else if (mToken == null) {
             // It's possible to have a token but mLaunchedConfirmLock == false, since
             // ChooseLockGeneric can pass us a token.
-            mConfirmingCredentials = true;
             launchConfirmLock(getConfirmLockTitleResId(), getChallenge());
         }
     }
@@ -186,7 +188,6 @@ public abstract class BiometricEnrollIntroduction extends BiometricEnrollBase
 
     @Override
     protected void onNextButtonClick(View view) {
-        mNextClicked = true;
         if (checkMaxEnrolled() == 0) {
             // Lock thingy is already set up, launch directly to the next page
             launchNextEnrollingActivity(mToken);
@@ -212,6 +213,7 @@ public abstract class BiometricEnrollIntroduction extends BiometricEnrollBase
     }
 
     private void launchNextEnrollingActivity(byte[] token) {
+        mIsNotAbandon = true;
         Intent intent = getEnrollingIntent();
         if (token != null) {
             intent.putExtra(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN, token);
@@ -220,7 +222,14 @@ public abstract class BiometricEnrollIntroduction extends BiometricEnrollBase
             intent.putExtra(Intent.EXTRA_USER_ID, mUserId);
         }
         intent.putExtra(EXTRA_FROM_SETTINGS_SUMMARY, mFromSettingsSummary);
-        startActivityForResult(intent, BIOMETRIC_FIND_SENSOR_REQUEST);
+        if (!isEnrollingFingerprint() || isTaskRoot() || !Utils.isDeviceProvisioned(this)) {
+            startActivityForResult(intent, 2);
+            return;
+        }
+        intent.addFlags(268468224);
+        startActivity(intent);
+        setResult(-1);
+        finish();
     }
 
     protected Intent getChooseLockIntent() {
@@ -254,14 +263,12 @@ public abstract class BiometricEnrollIntroduction extends BiometricEnrollBase
                 mToken = data.getByteArrayExtra(
                         ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN);
                 overridePendingTransition(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
-                mConfirmingCredentials = false;
                 return;
             } else {
                 setResult(resultCode, data);
                 finish();
             }
         } else if (requestCode == CONFIRM_REQUEST) {
-            mConfirmingCredentials = false;
             if (resultCode == RESULT_OK && data != null) {
                 mToken = data.getByteArrayExtra(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN);
                 overridePendingTransition(R.anim.sud_slide_next_in, R.anim.sud_slide_next_out);
