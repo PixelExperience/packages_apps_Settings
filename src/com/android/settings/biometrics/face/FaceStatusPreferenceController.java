@@ -51,14 +51,18 @@ public class FaceStatusPreferenceController extends BiometricStatusPreferenceCon
 
     @Override
     protected String getSummaryTextEnrolled() {
-        return mContext.getResources()
-                .getString(R.string.security_settings_face_preference_summary);
+        if (!Utils.isMotoFaceUnlock() || !Utils.isFaceDisabledByAdmin(mContext)) {
+            return mContext.getResources().getString(R.string.security_settings_face_preference_summary);
+        }
+        return mContext.getResources().getString(R.string.disabled_by_administrator_summary);
     }
 
     @Override
     protected String getSummaryTextNoneEnrolled() {
-        return mContext.getResources()
-                .getString(R.string.security_settings_face_preference_summary_none);
+        if (Utils.isMotoFaceUnlock() && Utils.isFaceDisabledByAdmin(mContext)) {
+            return mContext.getResources().getString(R.string.disabled_by_administrator_summary);
+        }
+        return mContext.getResources().getString(R.string.security_settings_face_preference_summary_none);
     }
 
     @Override
