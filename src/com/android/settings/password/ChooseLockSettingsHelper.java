@@ -419,6 +419,7 @@ public final class ChooseLockSettingsHelper {
             boolean external, boolean hasChallenge, long challenge,
             int userId, @Nullable CharSequence alternateButton, Bundle extras,
             boolean foregroundOnly) {
+        android.util.Log.d("launchConfirmationActivity", "trying to launch " + activityClass.getSimpleName());
         final Intent intent = new Intent();
         intent.putExtra(ConfirmDeviceCredentialBaseFragment.TITLE_TEXT, title);
         intent.putExtra(ConfirmDeviceCredentialBaseFragment.HEADER_TEXT, header);

@@ -119,6 +119,6 @@ public class FaceSettingsAttentionPreferenceController extends FaceSettingsPrefe
 
     @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE;
+        return Utils.isMotoFaceUnlock() ? 2 : 0;
     }
 }
