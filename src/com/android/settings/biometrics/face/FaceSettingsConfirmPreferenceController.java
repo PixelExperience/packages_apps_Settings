@@ -76,6 +76,9 @@ public class FaceSettingsConfirmPreferenceController extends FaceSettingsPrefere
 
     @Override
     public int getAvailabilityStatus() {
+        if (Utils.hasMotoFaceUnlock() ){
+            return UNSUPPORTED_ON_DEVICE;
+        }
         return AVAILABLE;
     }
 }
