@@ -78,8 +78,12 @@ public class FaceSettingsAppPreferenceController extends FaceSettingsPreferenceC
 
     @Override
     public int getAvailabilityStatus() {
+        if (Utils.hasMotoFaceUnlock() ){
+            return UNSUPPORTED_ON_DEVICE;
+        }
+
         if(mFaceManager == null){
-            return AVAILABLE_UNSEARCHABLE;
+            return AVAILABLE_UNVAILABLE_ON_DEVICE;
         }
 
         // By only allowing this preference controller to be searchable when the feature is turned
