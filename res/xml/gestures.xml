@@ -45,11 +45,11 @@
         android:fragment="com.android.settings.gestures.DoubleTwistGestureSettings"
         settings:controller="com.android.settings.gestures.DoubleTwistPreferenceController" />
 
-    <!--Preference
+    <Preference
         android:key="gesture_system_navigation_input_summary"
         android:title="@string/system_navigation_title"
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
-        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" /-->
+        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
 
     <Preference
         android:key="gesture_tap_screen_input_summary"
