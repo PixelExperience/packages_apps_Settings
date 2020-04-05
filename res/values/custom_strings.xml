@@ -86,4 +86,7 @@
     <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
     <string name="auto_refresh_rate">Auto</string>
 
+    <!-- Battery light -->
+    <string name="battery_light_title">Turn on the light when charging</string>
+
 </resources>
