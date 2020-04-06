@@ -11,6 +11,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <!-- Moto Face Unlock -->
+    <!-- Adaptive battery -->
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Darganfyddi’r synhwyrydd olion bysedd ar blaen dy ffôn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Darganfyddi’r synhwyrydd olion bysedd ar ochr chwith dy ffôn.</string>
@@ -65,4 +68,5 @@
     <string name="disable_navkeys_summary">Galluogi\'r bar llywio ar y sgrin ac analluogi\'r botymau caledwedd</string>
     <!-- Proximity wake -->
     <!-- Refresh rate -->
+    <!-- Battery light -->
 </resources>

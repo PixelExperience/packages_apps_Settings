@@ -11,6 +11,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">1 წუთზე ნაკლები</string>
+    <string name="screen_time_summary_usage_today">%1$s დღეს</string>
+    <!-- Moto Face Unlock -->
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Adaptive Battery-ს ჩართვა</string>
+    <string name="smart_battery_footer_custom">"ბატარეის მუშაობის გასახანგრძლივებლად, Adaptive Battery ზღუდავს ბატარეის მოხმარებას იშვიათად გამოყენებული აპების მიერ. თქვენი ტელეფონი დროთა განმავლობაში ისწავლის თქვენ მიერ აპების გამოყენების სპეციფიკა.
+
+ასეთი აპებიდან შეტყობინებები შესაძლოა დაგვიანდეს."</string>
+    <string name="smart_battery_manager_title_custom">Adaptive Battery</string>
+    <string name="smart_battery_title_custom">Adaptive Battery-ს გამოყენება</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">იპოვეთ თქვენი ტელეფონის უკანა ნაწილზე მდებარე თითის ანაბეჭდების სენსორი.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">იპოვეთ თქვენი ტელეფონის უკანა ნაწილზე მდებარე თითის ანაბეჭდების სენსორი.</string>
@@ -34,4 +45,5 @@
     <!-- Buttons - Enable navbar -->
     <!-- Proximity wake -->
     <!-- Refresh rate -->
+    <!-- Battery light -->
 </resources>

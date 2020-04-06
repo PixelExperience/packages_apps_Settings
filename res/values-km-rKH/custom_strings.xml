@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">តិចជាង 1 នាទី</string>
+    <string name="screen_time_summary_usage_today">%1$s ថ្ងៃនេះ</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">ប្រើការដោះសោតាមមុខ ដើម្បីដោះសោឧបករណ៍របស់អ្នក។\n\nសូមចងចាំ៖ \nការក្រឡេកមើលទូរសព្ទអាចដោះសោបាន នៅពេលដែលអ្នកមិនមានបំណងធ្វើវា។\n\nទូរសព្ទរបស់អ្នកអាចត្រូវបានដោះសោដោយអ្នកផ្សេង ប្រសិនបើដាក់វានៅចំមុខរបស់អ្នក ខណៈពេលដែលភ្នែករបស់អ្នកបើក។\n\nទូរសព្ទរបស់អ្នកអាចត្រូវបានដោះសោដោយអ្នកដែលមានមុខមាត់ដូចនឹងអ្នកបំផុត ពោលកូនរបស់អ្នក ឬបងប្អូនដែលមានមុខដូចគ្នា។</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">ទិន្នន័យដែលបានកត់ត្រាដោយការដោះសោតាមមុខនឹងត្រូវបានលុបជាអចិន្ត្រៃយ៍ និងប្រកបដោយសុវត្ថិភាព។ បន្ទាប់ពីការដកចេញ អ្នកនឹងត្រូវការលេខកូដ PIN លំនាំ ឬពាក្យសម្ងាត់របស់អ្នក ដើម្បីដោះសោទូរសព្ទរបស់អ្នក។</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">បើក​កម្មវិធី​ថ្ម​មានភាពបត់បែន</string>
+    <string name="smart_battery_footer_custom">"ដើម្បី​បង្កើន​រយៈពេល​ប្រើប្រាស់​ថាមពល​ថ្ម កម្មវិធី​​ថ្ម​មានភាព​បត់បែនដាក់​កម្រិត​លើ​ការប្រើប្រាស់ថ្ម​ចំពោះ​កម្មវិធី​ដែលមិន​សូវ​ប្រើ។ ទូរសព្ទ​របស់អ្នក​នឹង​ស្វែងយល់​ពី​របៀប​ដែល​អ្នក​ប្រើ​កម្មវិធី​ជាបន្តបន្ទាប់។
+
+ការជូន​ដំណឹងអាច​មាន​ការពន្យារពេល​សម្រាប់​កម្មវិធី​ទាំងនេះ។"</string>
+    <string name="smart_battery_manager_title_custom">​កម្មវិធីថ្ម​មាន​ភាព​បត់បែន</string>
+    <string name="smart_battery_title_custom">ប្រើ​កម្មវិធី​ថ្ម​មាន​ភាព​បត់បែន</string>
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
@@ -22,4 +35,5 @@
     <string name="disable_navkeys_summary">បើកដំណើរការអេក្រង់របារុករក និងបិទប៊ូតុងផ្នែករឹង</string>
     <!-- Proximity wake -->
     <!-- Refresh rate -->
+    <!-- Battery light -->
 </resources>
