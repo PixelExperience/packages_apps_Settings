@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Kevesebb mint 1 perc</string>
+    <string name="screen_time_summary_usage_today">Ma: %1$s</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Használja az arcalapú feloldás funkciót az eszköz feloldásához.\n\nNe feledje:\nElőfordulhat, hogy a telefonra nézve szándéka ellenére is feloldja az eszközt.\n\nTelefonját más is feloldhatja, amennyiben az Ön arcához tartja a telefont, amikor szemei nyitva vannak.\n\nTelefonját egy Önhöz nagy mértékben hasonlító személy, például gyermeke vagy ikertestvére is képes feloldani.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Az arcalapú feloldás által rögzített adatok véglegesen és biztonságosan törlődnek. Az eltávolítást követően PIN-kódjára, feloldási mintázatára vagy jelszavára lesz szükség a telefon feloldásához.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Az Alkalmazkodó akkumulátor bekapcsolása</string>
+    <string name="smart_battery_footer_custom">"Az akkumulátor üzemidejének növelése érdekében az Alkalmazkodó akkumulátor korlátozza a ritkán használt alkalmazások akkumulátorhasználatát. A telefon idővel megtanulja, hogy Ön hogyan használja az alkalmazásokat.
+
+Előfordulhat, hogy az érintett alkalmazások értesítései késnek majd."</string>
+    <string name="smart_battery_manager_title_custom">Alkalmazkodó akkumulátor</string>
+    <string name="smart_battery_title_custom">Alkalmazkodó akkumulátor használata</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Telefonja előlapján találhatja meg az ujjlenyomat-olvasót.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Telefonja bal oldalán találhatja meg az ujjlenyomat-olvasót.</string>
@@ -77,4 +90,5 @@
     <string name="refresh_rate_summary_60">60Hz / A frissítési értéket 60Hz-en rögzíti minden tartalomhoz</string>
     <string name="refresh_rate_summary_90">90Hz / A frissítési értéket 90Hz-en rögzíti minden tartalomhoz. Nő a fogyasztás!</string>
     <string name="auto_refresh_rate">Automatikus</string>
+    <!-- Battery light -->
 </resources>

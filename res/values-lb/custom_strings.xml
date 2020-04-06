@@ -11,6 +11,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <!-- Moto Face Unlock -->
+    <!-- Adaptive battery -->
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
@@ -21,4 +24,5 @@
     <string name="disable_navkeys_title">Opgräift Bildschirm um Navette aktivéieren</string>
     <!-- Proximity wake -->
     <!-- Refresh rate -->
+    <!-- Battery light -->
 </resources>

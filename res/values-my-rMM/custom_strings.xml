@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">၁ မိနစ်အောက်</string>
+    <string name="screen_time_summary_usage_today">ယနေ့ %1$s</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">သင့်ရဲ့ device ကို unlock လုပ်ဖို့မျက်နှာသော့ဖွင့်သုံးပါ။\n\n စိတျထဲမှာသိမ်းဆည်းထားပါ: \n အခါသင်ဖုန်းကိုကြည့်ပါကသော့ဖွင့်နိုင်ပါတယ် don’t ရည်ရွယ်။\n\n သင့်ရဲ့ဖုန်းပါလျှင်အခြားသူတစ်ဦးဦးကသော့ဖွင့နိုင်ပါသည် it’s သင်၏မျက်စိပွင့်လင်းနေစဉ်သင်၏မျက်နှာကိုမှတက်ကျင်းပခဲ့တယ်။\n\n သင့်ရဲ့ဖုန်းဆို, သင်နှင့်တူတွေအများကြီးကြည့်သင့်ကလေးကိုသို့မဟုတ်တစ်ခုတူညီမှေးခငျြးသူတစ်ဦးကသော့ဖွင့နိုင်ပါသည်။</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">မကျြနှာကိုသော့ဖွင့်ခြင်းဖြင့်မှတ်တမ်းတင်ထားသောဒေတာများအပြီးတိုင်နဲ့လုံလုံခြုံခြုံဖျက်ပါမည်။ ဖယ်ရှားရေးပြီးနောက်, သင်သည်သင်၏ဖုန်းကိုသော့ဖွင့်ရန်သင့် PIN နံပါတ်, ပုံစံ, ဒါမှမဟုတ် password ကိုလိုအပ်ပါလိမ့်မယ်။</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">\'အလိုက်အထိုက် ဘက်ထရီအားထိန်း\' ကို ဖွင့်ပါ</string>
+    <string name="smart_battery_footer_custom">"ဘက်ထရီသက်တမ်း တိုးလာစေရန် 'အလိုက်သင့် ဘက်ထရီအားထိန်း' သည် အသုံးနည်းသည့် အက်ပ်များအတွက် ဘက်ထရီကို ကန့်သတ်ပေးပါသည်။ သင်၏ဖုန်းသည် အချိန်ကြာလာသည်နှင့် အမျှ အက်ပ်များကို မည်ကဲ့သို့ အသုံးပြုသင့်ကြောင်း လေ့လာသွားပါမည်။
+
+ဤအက်ပ်များအတွက် အကြောင်းကြားချက်များသည် ကြန့်ကြာမှု ရှိနိုင်ပါသည်။"</string>
+    <string name="smart_battery_manager_title_custom">အလိုက်အထိုက် ဘက်ထရီအားထိန်း</string>
+    <string name="smart_battery_title_custom">\'အလိုက်အထိုက် ဘက်ထရီအားထိန်း\' ကို သုံးပါ</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">လက်ဗွေရာ အာရုံခံကိရိယာအား သင့်ဖုန်း၏ မျက်နှာပြင်တွင် ရှာဖွေပါ။</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">လက်ဗွေရာ အာရုံခံကိရိယာအား သင့်ဖုန်း၏ ဘယ်ဘက်ဘေးဘောင်တွင် ရှာဖွေပါ။</string>
@@ -49,4 +62,5 @@
     <string name="disable_navkeys_summary">မျက်နှာပြင်အတွင်း ခလုတ်များကို သုံခြင်းနှင့် ရိုးရိုးခလုတ်များကို သုံးမရစေရန် ပြုလုပ်ခြင်း</string>
     <!-- Proximity wake -->
     <!-- Refresh rate -->
+    <!-- Battery light -->
 </resources>

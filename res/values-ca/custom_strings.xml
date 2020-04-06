@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Menys d\'1 minut</string>
+    <string name="screen_time_summary_usage_today">%1$s avui</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Fes servir el desbloqueig facial per desbloquejar el dispositiu.\n\nTingues en compte:\nMirar el telèfon el pot desbloquejar encara que no ho vulguis.\n\nUna altra persona pot desbloquejar el telèfon si l\'acosta a la teva cara quan tens els ulls oberts.\n\nEl telèfon es pot desbloquejar si hi ha algú que s\'assembla molt a tu, com un fill o un germà.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Les dades registrades pel desbloqueig facial s\'esborraràn permanentment de manera segura. Després d\'eliminar-les, necessitaràs el PIN, patró o contrasenya del telèfon per desbloquejar-lo.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Activa la bateria intel·ligent</string>
+    <string name="smart_battery_footer_custom">"Per augmentar la durada de la bateria, la bateria intel·ligent en limita l'ús a les aplicacions que utilitzes amb poca freqüència. El teu telèfon aprendrà com fas servir les aplicacions al llarg del temps.
+
+És possible que rebis les notificacions d'aquestes aplicacions amb retard."</string>
+    <string name="smart_battery_manager_title_custom">Bateria intel·ligent</string>
+    <string name="smart_battery_title_custom">Fes servir la bateria intel·ligent</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localitza el sensor d\'empremta al frontal del teu telèfon.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localitza el sensor d\'empremta al costat esquerre del teu telèfon.</string>
@@ -77,4 +90,5 @@
     <string name="refresh_rate_summary_60">60Hz / Freqüència d\'actualització bloquejada a 60Hz per a qualsevol contingut  </string>
     <string name="refresh_rate_summary_90">90Hz / Freqüència d\'actualització bloquejada a 90Hz per a qualsevol contingut  </string>
     <string name="auto_refresh_rate">Automàtic</string>
+    <!-- Battery light -->
 </resources>

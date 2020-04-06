@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Mање од 1 минута</string>
+    <string name="screen_time_summary_usage_today">%1$s данас</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Користите Откључавање лицем да бисте откључали уређај.\n\nИмајте на уму:\nГледањем у телефон можете да га откључате када то не желите.\n\nНеко други може да откључа ваш телефон ако га принесе вашем лицу док су вам очи отворене.\n\nВаш телефон може да откључа неко други ко веома личи на вас, на пример, ваше дете или близанац.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Подаци које снима откључавање лицем се трајно и безбедно бришу. После уклањања, биће вам потребан PIN, шаблон или лозинка да бисте откључали телефон.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Укључите прилагодљиву батерију</string>
+    <string name="smart_battery_footer_custom">"Да бисте продужили трајање батерије, прилагодљива батерија ограничава потрошњу батерије за апликације које се не користе често. Телефон ће временом научити како да користи апликације.
+
+Обавештења о овим апликацијама могу да касне."</string>
+    <string name="smart_battery_manager_title_custom">Прилагодљива батерија</string>
+    <string name="smart_battery_title_custom">Користи прилагодљиву батерију</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Пронађите сензор за отиске прстију са предње стране вашег телефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Пронађите сензор за отиске прстију са леве стране вашег телефона.</string>
@@ -77,4 +90,5 @@
     <string name="refresh_rate_summary_60">60Hz / Освежавање екрана закључано на 60Hz за сав садржај</string>
     <string name="refresh_rate_summary_90">90Hz / Освежавање екрана закључано на 90Hz за сав садржај. Повећано коришћење батерије</string>
     <string name="auto_refresh_rate">Аутоматски</string>
+    <!-- Battery light -->
 </resources>

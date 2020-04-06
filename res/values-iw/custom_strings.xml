@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">פחות מדקה</string>
+    <string name="screen_time_summary_usage_today">%1$s היום</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">השתמש בזיהוי פרצוף כדי לבטל את נעילת המכשיר.\n\nשים לב:\nנעילת הטלפון עלולה להתבטל כשאתה מביט בו, גם אם אינך מתכנן זאת.\n\nביטול נעילת הטלפון יכול להתבצע על-ידי מישהו אחר אם הטלפון מוחזק מול פניך בזמן שעיניך פקוחות.\n\nביטול נעילת הטלפון יכול להתבצע על-ידי מישהו שדומה לך מאוד, למשל הילד שלך או אח זהה.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">נתונים שמתועדים על-ידי זיהוי פרצוף יימחקו לצמיתות באופן מאובטח. לאחר ההסרה, תצטרך להשתמש ב-PIN, בקו ביטול נעילה או בסיסמה כדי לבטל את נעילת הטלפון.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">‏הפעלת Adaptive Battery</string>
+    <string name="smart_battery_footer_custom">"‏כדי להאריך את חיי הסוללה, התכונה Adaptive Battery מגבילה את השימוש בסוללה לאפליקציות שנעשה בהן שימוש לעיתים רחוקות. לאורך זמן, הטלפון ילמד את אופן השימוש שלך באפליקציות.
+
+ייתכן עיכוב בקבלת התראות מאפליקציות אלה."</string>
+    <string name="smart_battery_manager_title_custom">Adaptive Battery</string>
+    <string name="smart_battery_title_custom">‏שימוש ב-Adaptive Battery</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">אתר את חיישן טביעת האצבע בקידמת המכשיר.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">אתר את חיישן טביעת האצבע בצידו השמאלי של המכשיר.</string>
@@ -69,5 +82,14 @@
     <string name="disable_navkeys_title">הפעל מקשי ניווט על המסך</string>
     <string name="disable_navkeys_summary">מפעיל את מקשי ניווט על המסך ומשבית מקשים פיזיים</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">מנע התעוררות מקרית</string>
+    <string name="proximity_wake_summary">בדוק את חיישן הקירבה לפני הפעלת המסך</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">קצב רענון המסך:</string>
+    <string name="refresh_rate_summary_auto">אוטמטי \ החלף אוטומטית בין קצב רענון של 60 ו־90Hz לפי התוכן</string>
+    <string name="refresh_rate_summary_60">60 הרץ / קצב רענון נעול על 60 הרץ לכל התוכן</string>
+    <string name="refresh_rate_summary_90">90 הרץ / קצב רענון נעול על 90 הרץ לכל התוכן. שימור מוגבר בסוללה</string>
+    <string name="auto_refresh_rate">אוטומטי</string>
+    <!-- Battery light -->
+    <string name="battery_light_title">הדלק את האור בעת טעינה</string>
 </resources>

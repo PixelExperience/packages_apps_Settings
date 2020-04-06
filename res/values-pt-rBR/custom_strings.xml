@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Menos de um minuto</string>
+    <string name="screen_time_summary_usage_today">%1$s hoje</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Use o Desbloqueio facial para desbloquear seu dispositivo.\n\nLembre-se:\nOlhar para o telefone pode desbloqueá-lo, mesmo quando você não quiser.\n\nSeu telefone poderá ser desbloqueado por outra pessoa se ele for segurado na altura do seu rosto quando seus olhos estiverem abertos.\n\nSeu telefone pode ser desbloqueado por alguém que se parece muito com você, como seu filho ou gêmeo idêntico.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Os dados gravados pelo desbloqueio facial serão excluídos permanentemente e com segurança. Após a remoção, você precisará do PIN, da senha ou do padrão para desbloquear o telefone.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Ative a Bateria adaptável</string>
+    <string name="smart_battery_footer_custom">"Para aumentar a duração da bateria, a Bateria adaptável limita a bateria para apps pouco utilizados. Com o tempo, seu smartphone aprenderá como você usa os apps.
+
+É possível que as notificações desses apps sejam entregues com atraso."</string>
+    <string name="smart_battery_manager_title_custom">Bateria adaptável</string>
+    <string name="smart_battery_title_custom">Usar Bateria adaptável</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localize o sensor de impressão digital na parte frontal do seu telefone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localize o sensor de impressão digital no lado esquerdo do seu telefone.</string>
@@ -77,4 +90,6 @@
     <string name="refresh_rate_summary_60">60Hz / Taxa de atualização bloqueada em 60Hz para todo o conteúdo</string>
     <string name="refresh_rate_summary_90">90Hz / Taxa de atualização bloqueada em 90Hz para todo o conteúdo. Maior uso de bateria</string>
     <string name="auto_refresh_rate">Automático</string>
+    <!-- Battery light -->
+    <string name="battery_light_title">Ligar a luz quando estiver carregando</string>
 </resources>
