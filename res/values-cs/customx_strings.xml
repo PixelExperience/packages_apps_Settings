@@ -84,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">Akce dlouhého stisku tlačítka „Domů“</string>
     <string name="navigation_bar_home_double_tap_title">Akce dvojitého stisku tlačítka „Domů“</string>
     <string name="navigation_bar_app_switch_long_press_title">Akce dlouhého stisku tlačítka „Nedávné“</string>
+    <string name="navigation_bar_edge_long_swipe_title">Akce dlouhým přejetím po okraji</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Ovládání přehrávání</string>
     <string name="volbtn_music_controls_summary">Při vypnuté obrazovce posouvat v hudebních stopách dlouhým stiskem tlačítek hlasitosti</string>
@@ -229,9 +230,6 @@
     <!-- Navigation compact layout -->
     <string name="navigation_bar_compact_layout_title">Kompaktní rozložení</string>
     <string name="navigation_bar_compact_layout_summary">Použít kompaktní rozložení v navigačním panelu</string>
-    <!-- Full screen gestures -->
-    <string name="navbar_gesture_pill_toggle_title">Gesta přes celou obrazovku</string>
-    <string name="navbar_gesture_pill_toggle_summary">Tímto skryjete jak navigační panel, tak pilulku pro plynulé používání gest přes celou obrazovku.</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalizovat obrazovku podle denní doby a okolních podmínek pro lepší čitelnost a snížení namáhání očí</string>
     <string name="live_display_mode">Režim zobrazení</string>
@@ -283,4 +281,11 @@
     <string name="adj_saturation_title">Sytost</string>
     <string name="adj_intensity_title">Intenzita</string>
     <string name="adj_contrast_title">Kontrast</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Celá</string>
+    <string name="back_height_high_label">Spodní oblast</string>
+    <string name="back_options_dialog_title">Možnosti</string>
+    <string name="back_height_message">Hodnota výšky obrazovky použité jako dotyková oblast pro gesto „Zpět“.</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Skrýt pilulku navigačního panelu</string>
 </resources>

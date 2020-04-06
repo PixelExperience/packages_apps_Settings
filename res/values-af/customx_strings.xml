@@ -157,7 +157,6 @@
     <!-- Notch: Full screen apps -->
     <!-- Three-fingers-swipe to screenshot -->
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimaliseer jou skerm gebaseer op die tyd van die dag en die omringende omstandighede om leesbaarheid te verbeter en oogspanning te verminder</string>
     <string name="live_display_mode">Skerm modus</string>
@@ -207,4 +206,6 @@
     <string name="adj_saturation_title">Versadiging</string>
     <string name="adj_intensity_title">Intensiteit</string>
     <string name="adj_contrast_title">Kontras</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

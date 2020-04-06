@@ -36,7 +36,7 @@
     <string name="status_bar_double_tap_to_sleep_summary">Doble toque en la barra de estado o pantalla de bloqueo para apagar la pantalla</string>
     <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Despertar al conectar</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Enciende la patanlla cuando se conecta o se desconecta el cargador</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Enciende la pantalla cuando se conecta o se desconecta el cargador</string>
     <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Elije un tamaño de patrón</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
@@ -44,6 +44,8 @@
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Mostrar puntos de patrón</string>
     <!-- Hotspot custom extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Permitir a los clientes usar VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permitir a los clientes de hotspot usar las conexiones VPN de este dispositivo\u2019 como conectividad principal</string>
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Tiempo mínimo entre sonidos de notificaciones</string>
     <string name="app_notification_sound_timeout_summary_template">Permite sonidos o vibraciones no más de una vez cada <xliff:g id="duration">%1$s </xliff:g></string>
@@ -82,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">Acción de pulsación larga en inicio</string>
     <string name="navigation_bar_home_double_tap_title">Acción de doble toque en inicio</string>
     <string name="navigation_bar_app_switch_long_press_title">Acción de pulsación larga en recientes</string>
+    <string name="navigation_bar_edge_long_swipe_title">Acción de deslizamiento largo en el borde</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Control de reproducción</string>
     <string name="volbtn_music_controls_summary">Cambia entre pistas de música manteniendo pulsadas las teclas de volumen cuando la pantalla esté apagada</string>
@@ -102,6 +105,7 @@
     <string name="power_menu_screenshot_summary">Pulsación larga para captura de pantalla parcial</string>
     <string name="power_menu_airplane_title">Modo avión</string>
     <string name="power_menu_users_title">Selector de usuario</string>
+    <string name="power_menu_lockdown_title">Bloqueo</string>
     <string name="power_end_call_title">Finalizar llamada</string>
     <string name="power_end_call_summary">Finalizar la llamada actual pulsando el botón de encendido</string>
     <string name="lockscreen_power_menu_disabled_title">Deshabilitar en pantalla de bloqueo</string>
@@ -132,6 +136,8 @@
     <string name="status_bar_system_icons_summary">Configurar que iconos se muestran en la barra de estado</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Reloj</string>
+    <string name="status_bar_clock_show_seconds_title">Mostrar segundos</string>
+    <string name="status_bar_clock_show_seconds_summary">Mostrar horas, minutos y segundos</string>
     <string name="status_bar_clock_position_title">Posición del reloj</string>
     <string name="status_bar_clock_position_right">Derecha</string>
     <string name="status_bar_clock_position_left">Izquierda</string>
@@ -177,6 +183,7 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundo (MB/s)</string>
     <string name="network_traffic_show_units">Mostrar unidades</string>
     <string name="network_traffic_show_units_summary">Mostrar/ocultar unidades de medida de tráfico en la barra de estado</string>
+    <string name="network_traffic_disabled_clock">Tráfico de red deshabilitado debido a la posición del reloj</string>
     <!-- QS settings -->
     <string name="qs_title">Configuración rápida</string>
     <string name="qs_rows_portrait_title">Filas en modo vertical</string>
@@ -190,13 +197,14 @@
     <string name="qs_vibrate_title">Vibrar al tocar</string>
     <string name="qs_vibrate_summary">Vibrar al tocar los ajustes rápidos</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Ajustes rápidos de animaciones</string>
     <string name="qs_tile_animation_style_title">Estilo de animación</string>
     <string name="qs_tile_animation_duration_title">Duración de la animación</string>
     <string name="qs_tile_animation_interpolator_title">Interpolador de la animación de los ajustes rápidos</string>
     <string name="qs_tile_animation_style_off">Sin animación</string>
     <string name="qs_tile_animation_style_flip">Voltear</string>
     <string name="qs_tile_animation_style_rotate">Rotar</string>
-    <string name="qs_tile_animation_duration_low">Lento</string>
+    <string name="qs_tile_animation_duration_low">Lenta</string>
     <string name="qs_tile_animation_duration_default">Predeterminado</string>
     <string name="qs_tile_animation_duration_fast">Rápido</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Lineal</string>
@@ -214,11 +222,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicaciones en pantalla completa</string>
     <string name="display_cutout_force_fullscreen_summary">Forzar que las apps ignoren el espacio del notch</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Por favor, reinicie la aplicación para aplicar los cambios.</string>
+    <string name="cutout_force_fullscreen_no_apps">No hay aplicaciones</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Deslizar para capturar pantalla</string>
     <string name="swipe_to_screenshot_gesture_summary">Deslizar con tres dedos para capturar pantalla</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Diseño compacto</string>
+    <string name="navigation_bar_compact_layout_summary">Usar diseño compacto en la barra de navegación</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizar su pantalla basada en la hora del día y las condiciones ambientales para mejorar la legibilidad y reducir la fatiga visual</string>
     <string name="live_display_mode">Modo de visualización</string>
@@ -270,4 +281,11 @@
     <string name="adj_saturation_title">Saturación</string>
     <string name="adj_intensity_title">Intensidad</string>
     <string name="adj_contrast_title">Contraste</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Completo</string>
+    <string name="back_height_high_label">Área inferior</string>
+    <string name="back_options_dialog_title">Opciones</string>
+    <string name="back_height_message">Altura de pantalla usada como región tocable para el gesto Atrás.</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Ocultar la píldora de la barra de navegación.</string>
 </resources>

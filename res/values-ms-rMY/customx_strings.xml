@@ -109,7 +109,6 @@
     <string name="swipe_to_screenshot_gesture_title">Leret untuk tangkapan skrin</string>
     <string name="swipe_to_screenshot_gesture_summary">Leret tiga jari untuk mengambil tangkapan skrin</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalkan skrin anda berdasarkan waktu harian dan keadaan sekitar untuk meningkatkan kebolehbacaan dan mengurangkan ketegangan mata</string>
     <string name="live_display_mode">Mod Paparan</string>
@@ -159,4 +158,6 @@
     <string name="adj_saturation_title">Kepekatan</string>
     <string name="adj_intensity_title">Intensiti</string>
     <string name="adj_contrast_title">Kontras</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

@@ -190,14 +190,15 @@
     <string name="qs_columns_portrait_title">行 (縱向)</string>
     <string name="qs_columns_landscape_title">行 (橫向)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">快速啟動標題</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">觸控時震動</string>
     <!-- QS animation/interpolator styles  -->
     <string name="qs_tile_animation_style_title">動畫樣式</string>
     <string name="qs_tile_animation_duration_title">動畫長度</string>
     <string name="qs_tile_animation_style_off">無動畫</string>
     <string name="qs_tile_animation_style_flip">翻轉</string>
     <string name="qs_tile_animation_style_rotate">旋轉</string>
-    <string name="qs_tile_animation_duration_low">低</string>
     <string name="qs_tile_animation_duration_default">預設</string>
     <string name="qs_tile_animation_duration_fast">快</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">直線</string>
@@ -219,7 +220,6 @@
     <string name="swipe_to_screenshot_gesture_title">滑動截圖</string>
     <string name="swipe_to_screenshot_gesture_summary">同時滑動三支指頭以擷取螢幕畫面</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
     <string name="live_display_mode">顯示模式</string>
@@ -271,4 +271,6 @@
     <string name="adj_saturation_title">飽和度</string>
     <string name="adj_intensity_title">強度</string>
     <string name="adj_contrast_title">對比</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

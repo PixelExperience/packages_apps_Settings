@@ -44,6 +44,8 @@
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Zobraziť body vzoru</string>
     <!-- Hotspot custom extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Povoliť klientom používanie sietí VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Povoliť hotspot klientom pripojenie cez VPN</string>
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Minimálny čas medzi zvukmi upozornenia</string>
     <string name="app_notification_sound_timeout_summary_template">Povoliť zvuky alebo vibrácie nie viac ako raz za <xliff:g id="duration">%1$s </xliff:g></string>
@@ -180,6 +182,7 @@
     <string name="network_traffic_units_megabytes">Megabajty za sekundu (MB/s)</string>
     <string name="network_traffic_show_units">Zobrazovať jednotky</string>
     <string name="network_traffic_show_units_summary">Zobrazenie jednotiek merania sieť. prevádzky v stavovom riadku</string>
+    <string name="network_traffic_disabled_clock">Sieťová prevádzka sa nezobrazí kvôli umiestneniu hodín</string>
     <!-- QS settings -->
     <string name="qs_title">Rýchle nastavenia</string>
     <string name="qs_rows_portrait_title">Riadky (na výšku)</string>
@@ -187,14 +190,19 @@
     <string name="qs_columns_portrait_title">Stĺpce (na výšku)</string>
     <string name="qs_columns_landscape_title">Stĺpce (na šírku)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Názvy dláždic</string>
+    <string name="qs_tile_title_visibility_summary">Zobraziť názvy pod dlaždicami QS</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibrácia pri dotyku</string>
+    <string name="qs_vibrate_summary">Vibrovať pri kliknutí na ikonu rýchlych nastavení</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Animácia rýchlych nastavení</string>
     <string name="qs_tile_animation_style_title">Štýl animácie</string>
     <string name="qs_tile_animation_duration_title">Dĺžka trvania animácie</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolátor</string>
     <string name="qs_tile_animation_style_off">Bez animácie</string>
     <string name="qs_tile_animation_style_flip">Preklopenie</string>
     <string name="qs_tile_animation_style_rotate">Otočenie</string>
-    <string name="qs_tile_animation_duration_low">Krátka</string>
     <string name="qs_tile_animation_duration_default">Predvolené</string>
     <string name="qs_tile_animation_duration_fast">Rýchla</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Lineárne</string>
@@ -212,11 +220,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikácie v plnom rozlíšení</string>
     <string name="display_cutout_force_fullscreen_summary">Prinútiť aplikácie ignorovať výrez</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Prosím reštartujte aplikáciu na aplikovanie zmien.</string>
+    <string name="cutout_force_fullscreen_no_apps">Žiadne aplikácie</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Screenshot potiahnutím</string>
     <string name="swipe_to_screenshot_gesture_summary">Screenshot potiahnutím tromi prstami</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Kompaktné rozloženie</string>
+    <string name="navigation_bar_compact_layout_summary">Použiť kompaktné rozloženie v navigačnej lište</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalizovať vašu obrazovku na základe dennej doby a podmienok okolia na zlepšenie čitateľnosti a zníženia únavy očí</string>
     <string name="live_display_mode">Režim zobrazenia</string>
@@ -268,4 +279,6 @@
     <string name="adj_saturation_title">Sýtosť</string>
     <string name="adj_intensity_title">Intenzita</string>
     <string name="adj_contrast_title">Kontrast</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

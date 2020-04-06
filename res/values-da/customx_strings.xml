@@ -159,7 +159,6 @@
     <!-- Notch: Full screen apps -->
     <!-- Three-fingers-swipe to screenshot -->
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimér din skærm, baseret på tid på dagen, og omkringværende forhold, for at forbedre læsbarhed og reducere øjen-anstrengelse</string>
     <string name="live_display_mode">Visningstilstand</string>
@@ -207,4 +206,6 @@
     <string name="adj_saturation_title">Farvemætning</string>
     <string name="adj_intensity_title">Intensitet</string>
     <string name="adj_contrast_title">Kontrast</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

@@ -133,7 +133,6 @@
     <!-- Notch: Full screen apps -->
     <!-- Three-fingers-swipe to screenshot -->
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Оптимизирајте го вашиот екран врз основа на време од денот и амбиентални услови за да се подобри читливоста и да се намали обемот на очите</string>
     <string name="live_display_mode">Режим на екранот</string>
@@ -183,4 +182,6 @@
     <string name="adj_saturation_title">Сатурација</string>
     <string name="adj_intensity_title">Интензитет</string>
     <string name="adj_contrast_title">Контраст</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

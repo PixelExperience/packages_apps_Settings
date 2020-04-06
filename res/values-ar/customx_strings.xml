@@ -84,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">إجراء الضغط الطويل على زر الرئيسية</string>
     <string name="navigation_bar_home_double_tap_title">إجراء الضغط مرتين على زر الرئيسية</string>
     <string name="navigation_bar_app_switch_long_press_title">إجراء الضغط المطوّل على زر الحديثة</string>
+    <string name="navigation_bar_edge_long_swipe_title">إجراء السحب الطويل من الحافة</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">التحكم في التشغيل</string>
     <string name="volbtn_music_controls_summary">تبديل مسار الموسيقى بضغطة طويلة على مفاتيح الصوت والشاشة مغلقة</string>
@@ -193,14 +194,17 @@
     <string name="qs_tile_title_visibility_title">عناوين المربعات</string>
     <string name="qs_tile_title_visibility_summary">تمكين إظهار عناوين مربعات الإعدادات السريعة</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">هُز عن اللمس</string>
+    <string name="qs_vibrate_summary">الإهتزاز عند لمس مربعات الإعدادات السريعة</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">الإعدادات السريعة</string>
     <string name="qs_tile_animation_style_title">نمط الرسوم المتحركة</string>
     <string name="qs_tile_animation_duration_title">مدة تأثير الحركة</string>
     <string name="qs_tile_animation_interpolator_title">مستقطب مؤثرات الحركة لمربعات الإعدادات</string>
     <string name="qs_tile_animation_style_off">لا مؤثرات حركية</string>
     <string name="qs_tile_animation_style_flip">انقلاب</string>
     <string name="qs_tile_animation_style_rotate">تدوير</string>
-    <string name="qs_tile_animation_duration_low">منخفض</string>
+    <string name="qs_tile_animation_duration_low">بطيئ</string>
     <string name="qs_tile_animation_duration_default">الافتراضي</string>
     <string name="qs_tile_animation_duration_fast">سريع</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">خطي</string>
@@ -212,17 +216,20 @@
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">توقع</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">توقع ثم انحسار</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">سلوك النوتش</string>
+    <string name="display_cutout_mode_title">سلوك نتوء الشاشة</string>
     <string name="display_cutout_mode_normal">الإفتراضي</string>
     <string name="display_cutout_mode_hidden">مخفية</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">تطبيقات الشاشة الكاملة</string>
     <string name="display_cutout_force_fullscreen_summary">إجبار التطبيقات على تجاهل مساحة الحز</string>
+    <string name="display_cutout_force_fullscreen_restart_app">يرجى إعادة تشغيل التطبيق لتطبيق التغييرات.</string>
+    <string name="cutout_force_fullscreen_no_apps">ليس هناك أي تطبيقات</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">اسحب لأخذ لقطة للشاشة</string>
     <string name="swipe_to_screenshot_gesture_summary">السحب بثلاثة أصابع لأخذ لقطة للشاشة</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">الأزرار المتقاربة</string>
+    <string name="navigation_bar_compact_layout_summary">استخدم وضع  الأزرار المتقاربة في شريط التنقل</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">تحسين الشاشة استناداً إلى الوقت من اليوم والظروف المحيطة لتحسين قابلية القراءة وتقليل إجهاد العين</string>
     <string name="live_display_mode">نمط العرض</string>
@@ -274,4 +281,10 @@
     <string name="adj_saturation_title">التشبع</string>
     <string name="adj_intensity_title">الكثافة</string>
     <string name="adj_contrast_title">التباين</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_high_label">المنطقة السفلية</string>
+    <string name="back_options_dialog_title">خيارات</string>
+    <string name="back_height_message">مقدار ارتفاع الشاشة المستخدم كمنطقة ملموسة لإيماءة الرجوع.</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">إخفاء خط شريط التنقل</string>
 </resources>

@@ -32,8 +32,8 @@
     <string name="unlock_scramble_pin_layout_title">Layout casuale</string>
     <string name="unlock_scramble_pin_layout_summary">Mescola la disposizione del tastierino PIN per lo sblocco del disposivo</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
-    <string name="status_bar_double_tap_to_sleep_title">Doppio tocco per sospensione</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere lo schermo</string>
+    <string name="status_bar_double_tap_to_sleep_title">Tocca per disattivare</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Tocca due volte la barra di stato o la schermata di blocco per disattivare lo schermo</string>
     <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Risveglia al collegamento</string>
     <string name="wake_when_plugged_or_unplugged_summary">Accendi lo schermo quando colleghi o scolleghi il dispositivo all\'alimentazione</string>
@@ -84,9 +84,10 @@
     <string name="navigation_bar_home_long_press_title">Azione pressione prolungata Home</string>
     <string name="navigation_bar_home_double_tap_title">Azione doppio tap Home</string>
     <string name="navigation_bar_app_switch_long_press_title">Azione pressione prolungata Panoramica</string>
+    <string name="navigation_bar_edge_long_swipe_title">Azione di scorrimento lungo il bordo</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Controllo riproduzione</string>
-    <string name="volbtn_music_controls_summary">Cambia la traccia musicale premendo a lungo i tasti del volume quando lo schermo è spento</string>
+    <string name="volbtn_music_controls_summary">Quando lo schermo è spento, passa da un brano all\'altro tenendo premuti i tasti del volume</string>
     <string name="volume_answer_call_title">Rispondi alla chiamata</string>
     <string name="volume_answer_call_summary">Rispondi alla chiamata in arrivo premendo i pulsanti del volume</string>
     <string name="volbtn_cursor_control_title">Controllo cursore input</string>
@@ -109,7 +110,7 @@
     <string name="power_end_call_summary">Termina la chiamata in corso premendo il tasto di accensione</string>
     <string name="lockscreen_power_menu_disabled_title">Disabilita in blocco schermo</string>
     <string name="lockscreen_power_menu_disabled_summary">Disabilita il menù di spegnimento nel blocco schermo</string>
-    <string name="torch_long_press_power_gesture_title">Pressione prolungata sul pulsante accensione per accendere la torcia</string>
+    <string name="torch_long_press_power_gesture_title">Tieni premuto per la torcia</string>
     <string name="torch_long_press_power_gesture_desc">Attiva la torcia tenendo premuto a lungo il pulsante d\'accensione quando lo schermo é spento</string>
     <string name="torch_long_press_power_timeout_title">Spegni automaticamente la torcia</string>
     <string name="torch_long_press_power_timeout_never">Mai</string>
@@ -124,8 +125,8 @@
     <string name="status_bar_title">Barra di stato</string>
     <string name="status_bar_quick_qs_pulldown_title">Impostazioni rapide</string>
     <string name="status_bar_quick_qs_pulldown_summary">Scorri la barra di stato verso il basso da %1$s per aprire le impostazioni rapide</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Il bordo sinistro della barra di stato tira giù le impostazioni rapide</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Il bordo destro della barra di stato tira giù le impostazioni rapide</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">sinistra</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">destra</string>
     <string name="status_bar_quick_qs_pulldown_off">Off</string>
     <string name="status_bar_quick_qs_pulldown_left">Sinistra</string>
     <string name="status_bar_quick_qs_pulldown_right">Destra</string>
@@ -193,14 +194,17 @@
     <string name="qs_tile_title_visibility_title">Mostra i titoli dei tiles</string>
     <string name="qs_tile_title_visibility_summary">Mostra i titoli al di sotto dei tile quando controllati</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibra al tocco</string>
+    <string name="qs_vibrate_summary">Vibra al tocco dei tile delle impostazioni rapide</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Animazioni impostazioni rapide</string>
     <string name="qs_tile_animation_style_title">Stile animazione</string>
     <string name="qs_tile_animation_duration_title">Durata animazione</string>
     <string name="qs_tile_animation_interpolator_title">Interpolazione animazione</string>
     <string name="qs_tile_animation_style_off">Nessuna animazione</string>
     <string name="qs_tile_animation_style_flip">Capovolgi</string>
     <string name="qs_tile_animation_style_rotate">Ruota</string>
-    <string name="qs_tile_animation_duration_low">Bassa</string>
+    <string name="qs_tile_animation_duration_low">Lento</string>
     <string name="qs_tile_animation_duration_default">Predefinito</string>
     <string name="qs_tile_animation_duration_fast">Veloce</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Lineare</string>
@@ -218,50 +222,53 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">App a schermo intero</string>
     <string name="display_cutout_force_fullscreen_summary">Ignora il ritaglio per le applicazioni selezionate</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Riavvia l\'app per applicare le modifiche.</string>
+    <string name="cutout_force_fullscreen_no_apps">Nessuna app</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Screenshot con tre dita</string>
     <string name="swipe_to_screenshot_gesture_summary">Per acquisire uno screenshot, scorri verso il basso con tre dita</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Layout compatto</string>
+    <string name="navigation_bar_compact_layout_summary">Usa un layout compatto nella barra di navigazione</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Ottimizza lo schermo in base all\'ora del giorno e alle condizioni ambientali per migliorare la leggibilità e ridurre l\'affaticamento degli occhi</string>
-    <string name="live_display_mode">Modalità display</string>
+    <string name="live_display_summary">Ottimizza i colori dello schermo in base all\'ora del giorno e alle condizioni ambientali per migliorare la leggibilità e ridurre l\'affaticamento degli occhi</string>
+    <string name="live_display_mode">Modalità schermo</string>
     <string name="live_display_color_temperature_title">Temperatura colore</string>
     <string name="live_display_color_temperature_summary">Giorno: <xliff:g id="day_temperature">%1$d</xliff:g>K  Notte: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
     <string name="live_display_day">Giorno</string>
     <string name="live_display_night">Notte</string>
     <string name="live_display_outdoor_mode_title">Modalità all\'aperto automatica</string>
-    <string name="live_display_outdoor_mode_summary">Aumenta la luminosità e la saturazione automaticamente sotto la luce del sole</string>
+    <string name="live_display_outdoor_mode_summary">Aumenta automaticamente la luminosità e la saturazione alla luce del sole</string>
     <string name="live_display_low_power_title">Riduci consumo energetico</string>
-    <string name="live_display_low_power_summary">Regola il display per un minore consumo energetico senza degradazione</string>
+    <string name="live_display_low_power_summary">Regola il display per il minor consumo energetico senza degradare la qualità dell\'immagine</string>
     <string name="live_display_enhance_color_title">Migliora colori</string>
-    <string name="live_display_enhance_color_summary">Migliora la vividezza del colore dei toni della pelle, paesaggi e altre immagini</string>
+    <string name="live_display_enhance_color_summary">Migliora la vividezza della tonalità incarnato, dei paesaggi e delle altre immagini</string>
     <string name="live_display_color_profile_title">Profilo colore</string>
     <string name="live_display_color_profile_standard_title">Predefinito</string>
     <string name="live_display_color_profile_standard_summary">Colori accurati e bianchi luminosi</string>
     <string name="live_display_color_profile_natural_title">Naturale</string>
-    <string name="live_display_color_profile_natural_summary">Colori e toni della pelle realistici</string>
+    <string name="live_display_color_profile_natural_summary">Colori e tonalità incarnato realistici</string>
     <string name="live_display_color_profile_dynamic_title">Dinamico</string>
-    <string name="live_display_color_profile_dynamic_summary">Colori intensi e bianchi luminosi</string>
+    <string name="live_display_color_profile_dynamic_summary">Colori intensi e bianchi brillanti</string>
     <string name="live_display_color_profile_cinema_title">Cinema</string>
-    <string name="live_display_color_profile_cinema_summary">Riproduzione del colore perfetto per i video</string>
+    <string name="live_display_color_profile_cinema_summary">Riproduzione del colore ideale per video</string>
     <string name="live_display_color_profile_astronomy_title">Astronomia</string>
-    <string name="live_display_color_profile_astronomy_summary">Rosso profondo per la visione notturna</string>
+    <string name="live_display_color_profile_astronomy_summary">Rosso intenso per preservare la visione notturna</string>
     <string name="live_display_color_profile_photography_title">Fotografia</string>
-    <string name="live_display_color_profile_photography_summary">Colori perfetti per riproduzione foto</string>
-    <string name="live_display_color_profile_basic_title">Base</string>
-    <string name="live_display_color_profile_basic_summary">Usa il display non calibrato</string>
+    <string name="live_display_color_profile_photography_summary">Riproduzione del colore ideale per foto</string>
+    <string name="live_display_color_profile_basic_title">Di base</string>
+    <string name="live_display_color_profile_basic_summary">Usa lo schermo senza calibrazione</string>
     <string name="live_display_color_profile_adaptive_title">Adattivo</string>
     <string name="live_display_color_profile_adaptive_summary">I colori si adattano alle condizioni ambientali</string>
     <string name="live_display_color_profile_reading_title">Lettura</string>
-    <string name="live_display_color_profile_reading_summary">Colori più caldi per occhi meno affaticati</string>
+    <string name="live_display_color_profile_reading_summary">Colori più caldi per ridurre l\'affaticamento degli occhi</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
-    <string name="live_display_color_profile_srgb_summary">Colori accurati allo spazio di colore sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Colori conformi allo spazio colore sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
-    <string name="live_display_color_profile_dci_p3_summary">Colori accurati allo spazio di colore DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Colori conformi allo spazio colore DCI-P3</string>
     <string name="live_display_reading_mode_title">Modalità lettura</string>
-    <string name="live_display_reading_mode_summary">Modalità scala di grigi per lettura a lungo termine</string>
+    <string name="live_display_reading_mode_summary">Modalità in scala di grigi per letture prolungate</string>
     <string name="color_calibration_title">Calibrazione colore</string>
     <string name="color_calibration_summary">Calibra i colori dello schermo</string>
     <string name="color_red_title">Rosso</string>
@@ -274,4 +281,11 @@
     <string name="adj_saturation_title">Saturazione</string>
     <string name="adj_intensity_title">Intensità</string>
     <string name="adj_contrast_title">Contrasto</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Completo</string>
+    <string name="back_height_high_label">Area in basso</string>
+    <string name="back_options_dialog_title">Opzioni</string>
+    <string name="back_height_message">Altezza di schermo utilizzata come regione toccabile per la gesture indietro.</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Nascondi la pillola della barra di navigazione.</string>
 </resources>

@@ -45,6 +45,7 @@
     <string name="lockpattern_settings_enable_dots_title">Tunjukkan titik-titik pola</string>
     <!-- Hotspot custom extras -->
     <string name="tethering_allow_vpn_upstreams_title">Izinkan klien menggunakan VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Izinkan klien hotspot untuk menggunakan koneksi VPN perangkat\u2019 ini untuk konektivitas upstream</string>
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Waktu minimum antara suara pemberitahuan</string>
     <string name="app_notification_sound_timeout_summary_template">Memungkinkan suara atau getaran tidak lebih dari sekali setiap <xliff:g id="duration">%1$s </xliff:g></string>
@@ -72,6 +73,7 @@
     <string name="display_rotation_180_title">180 derajat</string>
     <string name="display_rotation_270_title">270 derajat</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Tampilkan visualisasi musik</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Bergetar untuk mengindikasikan status panggilan</string>
     <!-- Navigation bar customization -->
@@ -188,8 +190,29 @@
     <string name="qs_columns_portrait_title">Kolom (potret)</string>
     <string name="qs_columns_landscape_title">Kolom (mendatar)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Visibilitas judul</string>
+    <string name="qs_tile_title_visibility_summary">Tampilkan judul dibawah ubin QS</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Bergetar ketika disentuh</string>
+    <string name="qs_vibrate_summary">Bergetar saat menyentuh ubin QS</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Animasi pengaturan cepat</string>
+    <string name="qs_tile_animation_style_title">Gaya</string>
+    <string name="qs_tile_animation_duration_title">Durasi</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolasi</string>
+    <string name="qs_tile_animation_style_off">Tidak ada</string>
+    <string name="qs_tile_animation_style_flip">Membalik</string>
+    <string name="qs_tile_animation_style_rotate">Memutar</string>
+    <string name="qs_tile_animation_duration_default">Standar</string>
+    <string name="qs_tile_animation_duration_fast">Cepat</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linier</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Mempercepat</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Memperlambat</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Mempercepat dan memperlambat</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Melambung</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Melampaui</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Antisipasi</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Antisipasi terlampaui</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Perilaku Notch</string>
     <string name="display_cutout_mode_normal">Bawaan</string>
@@ -197,11 +220,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikasi layar penuh</string>
     <string name="display_cutout_force_fullscreen_summary">Paksa aplikasi untuk mengabaikan jarak notch</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Harap mulai ulang aplikasi untuk menerapkan perubahan.</string>
+    <string name="cutout_force_fullscreen_no_apps">Tidak ada aplikasi</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Usap untuk menangkap layar</string>
     <string name="swipe_to_screenshot_gesture_summary">Usap 3 jari untuk mengambil tangkapan layar</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Tata letak yang padat</string>
+    <string name="navigation_bar_compact_layout_summary">Gunakan tatak letak padat pada bar navigasi</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalkan layar berdasarkan waktu dan kondisi ruangan untuk meningkatkan keterbacaan dan mengurangi kelelahan mata</string>
     <string name="live_display_mode">Mode tampilan</string>
@@ -253,4 +279,6 @@
     <string name="adj_saturation_title">Saturasi</string>
     <string name="adj_intensity_title">Intensitas</string>
     <string name="adj_contrast_title">Kontras</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

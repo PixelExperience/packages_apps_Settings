@@ -85,7 +85,6 @@
     <!-- Notch: Full screen apps -->
     <!-- Three-fingers-swipe to screenshot -->
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_enhance_color_title">നിറങ്ങൾ കൂട്ടുക</string>
     <string name="live_display_reading_mode_title">വായനയ്ക്ക് വേണ്ടിയുള്ള മോഡ്</string>
@@ -93,4 +92,6 @@
     <string name="color_green_title">പച്ച</string>
     <string name="color_blue_title">നീല</string>
     <!-- LiveDisplay : Picture Adjustment -->
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

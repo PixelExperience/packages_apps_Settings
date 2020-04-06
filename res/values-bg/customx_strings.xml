@@ -73,6 +73,7 @@
     <string name="display_rotation_180_title">180 градуса</string>
     <string name="display_rotation_270_title">270 градуса</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Покажи музикален визуализатор</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Вибриране за показване състоянието на повикването</string>
     <!-- Navigation bar customization -->
@@ -183,9 +184,15 @@
     <string name="network_traffic_show_units_summary">Дали да се показват мерните единици за измерване на трафика в лентата на състоянието</string>
     <string name="network_traffic_disabled_clock">Мрежовия трафик е изключен поради позицията на часовника</string>
     <!-- QS settings -->
+    <string name="qs_title">Бързи настройки</string>
     <!-- QS title visibility -->
     <!-- QS tiles haptic feedback -->
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_tile_animation_style_off">Няма</string>
+    <string name="qs_tile_animation_style_flip">Обърни</string>
+    <string name="qs_tile_animation_style_rotate">Завъртане</string>
+    <string name="qs_tile_animation_duration_default">По подразбиране</string>
+    <string name="qs_tile_animation_duration_fast">Бързо</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Поведение на Notch</string>
     <string name="display_cutout_mode_normal">По подразбиране</string>
@@ -197,7 +204,6 @@
     <string name="swipe_to_screenshot_gesture_title">Плъзни за екранна снимка</string>
     <string name="swipe_to_screenshot_gesture_summary">Плъзнете три пръста за заснемане на екранна снимка</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Оптимизира настройките на дисплея, въз основа на времето от деня и условията на околната среда за да се подобри четливостта и да намали умората на очите</string>
     <string name="live_display_mode">Режим на екрана</string>
@@ -249,4 +255,6 @@
     <string name="adj_saturation_title">Насищане</string>
     <string name="adj_intensity_title">Интензивност</string>
     <string name="adj_contrast_title">Контраст</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

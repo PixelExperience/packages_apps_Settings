@@ -150,7 +150,6 @@
     <string name="swipe_to_screenshot_gesture_title">Свайп для стварэння скрыншота</string>
     <string name="swipe_to_screenshot_gesture_summary">Правядзіце трыма пальцамі для стварэння скрыншота</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Аптымізацыя вашага экрана ў залежнасці ад часу сутак і ўмоў навакольнага асяроддзя для паляпшэння чытальнасці тэксту і зніжэння стамляльнасці вачэй</string>
     <string name="live_display_mode">Рэжым прагляду</string>
@@ -199,4 +198,6 @@
     <string name="adj_saturation_title">Насычанасць</string>
     <string name="adj_intensity_title">Насычанасьць</string>
     <string name="adj_contrast_title">Кантраснасць</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

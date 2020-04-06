@@ -12,7 +12,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">Boutons et disposition</string>
+    <string name="navigation_bar_title">Barre de navigation</string>
     <string name="hardware_keys_power_key_title">Bouton d\'alimentation</string>
     <string name="hardware_keys_volume_keys_title">Boutons de volume</string>
     <!-- Buttons - Enable navbar -->
@@ -45,6 +45,7 @@
     <string name="lockpattern_settings_enable_dots_title">Afficher les points du schéma</string>
     <!-- Hotspot custom extras -->
     <string name="tethering_allow_vpn_upstreams_title">Autoriser les clients à utiliser des VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permettre aux clients de point d\'accès d\'utiliser les connexions VPN de cet appareil\u2019 pour la connectivité en amont</string>
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Temps minimum entre les sons de notification</string>
     <string name="app_notification_sound_timeout_summary_template">Ne pas permettre plus d\'un son ou une vibration toutes les <xliff:g id="duration">%1$s</xliff:g></string>
@@ -189,16 +190,19 @@
     <string name="qs_columns_portrait_title">Colonnes (portrait)</string>
     <string name="qs_columns_landscape_title">Colonnes (paysage)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Visibilité du titre</string>
     <string name="qs_tile_title_visibility_summary">Afficher les titres sous les tuiles des réglages rapides</string>
     <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">Vibrer au toucher</string>
     <string name="qs_vibrate_summary">Vibrer au toucher des tuiles des réglages rapides</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Animations des réglages rapides</string>
+    <string name="qs_tile_animation_style_title">Style</string>
     <string name="qs_tile_animation_duration_title">Durée</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolateur</string>
     <string name="qs_tile_animation_style_off">Aucune animation</string>
     <string name="qs_tile_animation_style_flip">Inverser</string>
     <string name="qs_tile_animation_style_rotate">Rotation</string>
-    <string name="qs_tile_animation_duration_low">Basse</string>
     <string name="qs_tile_animation_duration_default">Par défaut</string>
     <string name="qs_tile_animation_duration_fast">Rapide</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Linéaire</string>
@@ -206,7 +210,9 @@
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">Ralentir</string>
     <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accélérer ralentir</string>
     <string name="qs_tile_animation_interpolator_bounceInterpolator">Rebondir</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Dépasser</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticiper</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipation du dépassement</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Comportement de l\'encoche</string>
     <string name="display_cutout_mode_normal">Par défaut</string>
@@ -214,11 +220,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Applications en plein écran</string>
     <string name="display_cutout_force_fullscreen_summary">Forcer les applications à ignorer l\'emplacement du notch</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Merci de redémarrer l\'application pour appliquer les changements.</string>
+    <string name="cutout_force_fullscreen_no_apps">Aucune application</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Glisser pour prendre une capture d\'écran</string>
     <string name="swipe_to_screenshot_gesture_summary">Balayer l\'écran avec trois doigts pour faire une capture d\'écran</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Mise en page compacte</string>
+    <string name="navigation_bar_compact_layout_summary">Utiliser une mise en page compacte dans la barre de navigation</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimiser votre écran en fonction de l\'heure et des conditions ambiantes pour améliorer la lisibilité et réduire la fatigue oculaire</string>
     <string name="live_display_mode">Mode d\'affichage</string>
@@ -270,4 +279,6 @@
     <string name="adj_saturation_title">Saturation</string>
     <string name="adj_intensity_title">Intensité</string>
     <string name="adj_contrast_title">Contraste</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

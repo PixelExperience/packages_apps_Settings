@@ -179,7 +179,6 @@
     <!-- Notch: Full screen apps -->
     <!-- Three-fingers-swipe to screenshot -->
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizo ekranin në bazë të orës së ditës dhe konditave të mjedisit për të përmirësuar lexueshmërinë dhe për të reduktuar lodhjen e syve</string>
     <string name="live_display_mode">Profili i ekranit</string>
@@ -231,4 +230,6 @@
     <string name="adj_saturation_title">Saturimi</string>
     <string name="adj_intensity_title">Intensiteti</string>
     <string name="adj_contrast_title">Kontrasti</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

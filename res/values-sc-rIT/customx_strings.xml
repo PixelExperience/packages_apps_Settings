@@ -78,7 +78,6 @@
     <!-- Notch: Full screen apps -->
     <!-- Three-fingers-swipe to screenshot -->
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_color_temperature_summary">Die: <xliff:g id="day_temperature">%1$d</xliff:g>K Note: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="live_display_day">Die</string>
@@ -95,4 +94,6 @@
     <string name="adj_saturation_title">Saturatzione</string>
     <string name="adj_intensity_title">Intensidade</string>
     <string name="adj_contrast_title">Cuntrastu</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

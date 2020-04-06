@@ -196,13 +196,13 @@
     <string name="qs_vibrate_title">Kachel-Vibration</string>
     <string name="qs_vibrate_summary">Bei Berührung der Schnelleinstellungs-Kacheln vibrieren</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Schnelleinstellungs Animationen</string>
     <string name="qs_tile_animation_style_title">Animationsstil</string>
     <string name="qs_tile_animation_duration_title">Dauer der Kachelanimation</string>
     <string name="qs_tile_animation_interpolator_title">Art der Kachelanimation</string>
     <string name="qs_tile_animation_style_off">Keine Animation</string>
     <string name="qs_tile_animation_style_flip">Drehen</string>
     <string name="qs_tile_animation_style_rotate">Rotieren</string>
-    <string name="qs_tile_animation_duration_low">Langsam</string>
     <string name="qs_tile_animation_duration_default">Standard</string>
     <string name="qs_tile_animation_duration_fast">Schnell</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Gleichmäßig</string>
@@ -220,11 +220,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Vollbild Apps</string>
     <string name="display_cutout_force_fullscreen_summary">Zwinge die Applikationen die Notch zu ignorieren</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Bitte die Anwendung neustarten, um die Änderungen anzuwenden.</string>
+    <string name="cutout_force_fullscreen_no_apps">Keine Apps</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Wischen für Screenshot</string>
     <string name="swipe_to_screenshot_gesture_summary">Wische mit drei Fingern für Screenshot</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Kompaktes Layout</string>
+    <string name="navigation_bar_compact_layout_summary">Benutze ein kompaktes Layout in der Navigationsleiste</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimiert Ihren Bildschirm basierend auf der Tageszeit und den Umgebungsbedingungen, um die Lesbarkeit zu verbessern und die Ermüdung der Augen zu mildern</string>
     <string name="live_display_mode">Bildschirmmodus</string>
@@ -276,4 +279,6 @@
     <string name="adj_saturation_title">Sättigung</string>
     <string name="adj_intensity_title">Leuchtdichte</string>
     <string name="adj_contrast_title">Kontrast</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

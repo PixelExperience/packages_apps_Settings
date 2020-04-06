@@ -102,7 +102,6 @@
     <string name="swipe_to_screenshot_gesture_title">Isswipja għal screenshot</string>
     <string name="swipe_to_screenshot_gesture_summary">Isswipja tletti swaba biex tieħu screenshot</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_outdoor_mode_title">Mod awtomatiku ta\' barra</string>
     <string name="live_display_outdoor_mode_summary">Żid luminożità u saturazzjoni awtomatikament taħt id-dawl tax-xemx</string>
@@ -144,4 +143,6 @@
     <string name="adj_saturation_title">Saturazzjoni</string>
     <string name="adj_intensity_title">Intensità</string>
     <string name="adj_contrast_title">Kuntrast</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

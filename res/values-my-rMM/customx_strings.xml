@@ -85,7 +85,6 @@
     <string name="swipe_to_screenshot_gesture_title">ဖိဆွဲ၍ Screenshot ယူခြင်း</string>
     <string name="swipe_to_screenshot_gesture_summary">Screenshot ရယူရန် လက်သုံးချောင်းအသုံးပြု၍ ဖိဆွဲပါ။</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_color_profile_photography_summary">ဓာတ်ပုံများအတွက် ပြီးပြည့်စုံသော အ‌ရောင်များ စုံလင်စွာ ထုတ်ပေးနိုင်မှု</string>
     <string name="live_display_color_profile_basic_title">အခြေခံ စတိုင်လ်</string>
@@ -110,4 +109,6 @@
     <string name="adj_saturation_title">တောက်ပမှုပြင်းအား</string>
     <string name="adj_intensity_title">အလင်းတောက်ပမှု</string>
     <string name="adj_contrast_title">အလင်းအမှောင်</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>
