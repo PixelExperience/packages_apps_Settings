@@ -11,6 +11,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <!-- Moto Face Unlock -->
+    <!-- Adaptive battery -->
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">ཉིད་ཀྱིས་ཁ་པར་སྟེང་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">ཉིད་ཀྱིས་ཁ་པར་གྱི་གཡོན་ངོས་ནས་མཛུབ་རིས་བརྒྱུད་སྤྲོད་ཆས་རྙེད་ཐུབ།</string>
@@ -68,4 +71,5 @@
     <string name="disable_navkeys_summary">བརྙན་ཤེལ་གྱི་ཕྱོགས་ཁྲིད་མཐེབ་སྤྱོད་པ་མ་ཟད་མཐེབ་གནོན་གཞན་དག་འགོག་པ།</string>
     <!-- Proximity wake -->
     <!-- Refresh rate -->
+    <!-- Battery light -->
 </resources>

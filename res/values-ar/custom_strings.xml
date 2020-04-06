@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">أقل من دقيقة واحدة</string>
+    <string name="screen_time_summary_usage_today">%1$s اليوم</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">استخدم إلغاء قفل الجهاز بالوجه لإلغاء قفل جهازك.\n\nتذكّر:\nقد يؤدي النظر إلى الهاتف إلى إلغاء قفله حتى إذا لم تكن تنوِي القيام بذلك.\n\nيمكن إلغاء قفل هاتفك من قبل شخص آخر إذا تم توجيهه نحو وجهك عندما تكون عيناك مفتوحتَين.\n\nيمكن إلغاء قفل هاتفك من قبل شخص آخر يشبهك كثيرًا كأحد أولادك أو أشقائك الذين يتمتعون بالملامح نفسها كملامحك.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">سيتم حذف البيانات التي يتم تسجيلها بواسطة ميزة إلغاء قفل الجهاز بالوجه بشكل دائم وآمن. بعد الإزالة، ستحتاج إلى رقم التعريف الشخصي أو النقش أو كلمة المرور لإلغاء قفل هاتفك.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">تفعيل البطارية التكيُّفية</string>
+    <string name="smart_battery_footer_custom">"لإطالة عمر البطارية، يعمل خيار \"البطارية التكيُّفية\" على تقييد استخدام البطارية للتطبيقات التي لا تستخدمها إلا نادرًا. وسيتعلم هاتفك كيفية استخدام التطبيقات مع مرور الوقت.
+
+قد تتأخر إشعارات هذه التطبيقات."</string>
+    <string name="smart_battery_manager_title_custom">البطارية التكيُّفية</string>
+    <string name="smart_battery_title_custom">استخدام البطارية التكيُّفية</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">حدد موقع مستشعر بصمة الإصبع في الجزء الأمامي من هاتفك.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">حدد موقع مستشعر بصمة الإصبع على الجانب الأيسر من هاتفك.</string>
@@ -69,5 +82,14 @@
     <string name="disable_navkeys_title">تفعيل شريط التنقل على الشاشة</string>
     <string name="disable_navkeys_summary">تفعيل شريط التنقل على الشاشة وتعطيل أزرار الجهاز</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">منع الاستيقاظ بالخطأ</string>
+    <string name="proximity_wake_summary">التحقق من مستشعر القرب قبل إيقاظ الشاشة</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">معدل تحديث الرسم البياني</string>
+    <string name="refresh_rate_summary_auto">تلقائي / تلقائيًا يرفع معدل التحديث من 60 إلى 90 هرتز لبعض المحتوى</string>
+    <string name="refresh_rate_summary_60">60 هرتز / معدل التحديث مغلق بـ 60 هرتز لجميع المحتويات</string>
+    <string name="refresh_rate_summary_90">90Hz / معدل التحديث مغلق بـ 90 هرتز لجميع المحتويات. زيادة استخدام البطارية</string>
+    <string name="auto_refresh_rate">تلقائي</string>
+    <!-- Battery light -->
+    <string name="battery_light_title">تشغيل ضوء التنبيهات عند توصيل الشاحن</string>
 </resources>

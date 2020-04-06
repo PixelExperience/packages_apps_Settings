@@ -11,6 +11,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">1 నిమిషం కంటే తక్కువ</string>
+    <string name="screen_time_summary_usage_today">ఈ రోజు %1$s</string>
+    <!-- Moto Face Unlock -->
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">అనుకూల బ్యాటరీని ఆన్ చేయండి</string>
+    <string name="smart_battery_footer_custom">"బ్యాటరీ జీవితకాలాన్ని పొడిగించడానికి, అనుకూల బ్యాటరీ అరుదుగా ఉపయోగించే యాప్‌ల కోసం బ్యాటరీని పరిమితం చేస్తుంది. మీరు యాప్‌లను ఎలా వినియోగిస్తారో అన్నది కాలక్రమేణా మీ ఫోన్ అర్థం చేసుకుంటుంది. 
+
+ ఈ యాప్‌ల కోసం నోటిఫికేషన్‌లు రావడానికి ఆలస్యం కావచ్చు."</string>
+    <string name="smart_battery_manager_title_custom">అనుకూల బ్యాటరీ</string>
+    <string name="smart_battery_title_custom">అనుకూల బ్యాటరీని ఉపయోగించండి</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">మీ ఫోన్ వెనుకవైపున వేలిముద్ర సెన్సార్‌ని గుర్తించండి.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">మీ ఫోన్ ఎడమ వైపున వేలిముద్ర సెన్సార్‌ని గుర్తించండి.</string>
@@ -25,4 +36,5 @@
     <string name="disable_navkeys_summary">ఆన్-స్క్రీన్ నావిగేషన్ బార్ని ప్రారంభించి హార్డ్వేర్ బటన్లను నిలిపివేస్తుంది</string>
     <!-- Proximity wake -->
     <!-- Refresh rate -->
+    <!-- Battery light -->
 </resources>

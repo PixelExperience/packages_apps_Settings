@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Alla ühe minuti</string>
+    <string name="screen_time_summary_usage_today">Täna: %1$s</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Seadme avamiseks kasutage näotuvastamis funktsiooni.\n\nPidage meeles: \nPilk telefonile võib selle avada ka siis, kui te ei kavatse seda teha.\n\nTeine inimene saab telefoni lukust lahti, kui telefoni hoitakse teie näo kohal ja teie silmad on avatud.\n\nTeie telefoni saab avada keegi, kes on teiega väga sarnane, näiteks teie laps või identne kaksik.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Näoktuvastamis funktsiooni abil salvestatud andmed kustutatakse jäädavalt. Pärast eemaldamist peate telefoni avamiseks sisestama PIN-koodi, mustrit või parooli.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Kohanduva akuhalduri sisselülitamine</string>
+    <string name="smart_battery_footer_custom">"Aku tööea pikendamiseks piirab kohanduv akuhaldur akukasutust harva kasutatavate rakenduste jaoks. Teie telefon õpib aja jooksul, kuidas rakendusi kasutada.
+
+Nende rakenduste märguanded võivad viibida."</string>
+    <string name="smart_battery_manager_title_custom">Kohanduv akuhaldur</string>
+    <string name="smart_battery_title_custom">Kohanduva akuhalduri kasutamine</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Leidke enda telefoni esiküljel olev sõrmejäljeandur.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Leidke enda telefoni vasakul küljel olev sõrmejäljeandur.</string>
@@ -77,4 +90,6 @@
     <string name="refresh_rate_summary_60">60Hz / Värskenduskiirus lukustatud 60Hz peale mistahes sisu korral</string>
     <string name="refresh_rate_summary_90">90Hz / Värskenduskiirus lukustatud 90Hz peale mistahes sisu korral, suurem akukasutus</string>
     <string name="auto_refresh_rate">Autom</string>
+    <!-- Battery light -->
+    <string name="battery_light_title">Laadimise ajal lülita laadimistuli sisse</string>
 </resources>

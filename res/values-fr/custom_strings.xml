@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Moins d\'une minute</string>
+    <string name="screen_time_summary_usage_today">%1$s aujourd\'hui</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Utilisez la fonction de déverrouillage par reconnaissance faciale pour déverrouiller votre appareil.\n\nSouvenez-vous :\nVotre téléphone peut se déverrouiller lorsque vous le regardez, même si vous n’en avez pas l’intention.\n\nVotre téléphone peut se déverrouiller si quiconque le tient devant vous lorsque vos yeux sont ouverts.\n\nUne personne qui vous ressemble peut également déverrouiller votre téléphone (par exemple, vos enfants ou vos frères et sœurs).</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Les données de reconnaissance faciale enregistrées seront supprimées de façon permanente et de manière sécurisée. Après leur suppression, vous devrez utiliser votre code PIN, schéma ou mot de passe pour déverrouiller votre téléphone.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Activer la batterie intelligente</string>
+    <string name="smart_battery_footer_custom">"Afin de prolonger l'autonomie de la batterie, la fonctionnalité Batterie intelligente limite l'utilisation de la batterie pour les applications peu utilisées. Au fil du temps, votre téléphone mémorisera vos habitudes d'utilisation.
+
+Vous ne recevrez peut-être pas immédiatement les notifications de ces applications."</string>
+    <string name="smart_battery_manager_title_custom">Batterie intelligente</string>
+    <string name="smart_battery_title_custom">Utiliser la batterie intelligente</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localisez le lecteur d\'empreintes digitales à l\'avant de votre téléphone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localisez le lecteur d\'empreintes digitales sur la tranche gauche de votre téléphone.</string>
@@ -77,4 +90,6 @@
     <string name="refresh_rate_summary_60">Taux de rafraîchissement bloqué à 60Hz </string>
     <string name="refresh_rate_summary_90">Taux de rafraîchissement bloqué à 90Hz.</string>
     <string name="auto_refresh_rate">Automatique</string>
+    <!-- Battery light -->
+    <string name="battery_light_title">Allumer la lumière pendant la charge</string>
 </resources>

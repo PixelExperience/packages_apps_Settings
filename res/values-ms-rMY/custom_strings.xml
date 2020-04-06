@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Kurang daripada seminit</string>
+    <string name="screen_time_summary_usage_today">%1$s hari ini</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Gunakan Buka kunci menggunakan pengecaman wajah untuk membuka kunci peranti anda.\n\nJangan lupa:.\nMelihat ke arah telefon boleh membuka kuncinya walaupun anda tidak ingin berbuat demikian.\n\nTelefon anda boleh dibuka kunci oleh orang lain jika telefon dihalakan ke arah muka anda semasa mata anda terbuka.\n\nTelefon anda boleh dibuka kunci oleh seseorang yang menyerupai anda, contohnya, anak anda atau adik-beradik yang berupa sama.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Data yang direkodkan oleh buka kunci menggunakan pengecaman wajah akan dipadamkan secara kekal dan selamat. Selepas dialih keluar, anda akan memerlukan PIN, corak, atau kata laluan untuk membuka kunci telefon anda.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Hidupkan Bateri Mudah Suai</string>
+    <string name="smart_battery_footer_custom">"Untuk melanjutkan hayat bateri, Bateri Mudah Suai mengehadkan bateri untuk apl yang jarang digunakan. Telefon anda akan mempelajari cara anda menggunakan apl dari semasa ke semasa.
+
+Pemberitahuan mungkin ditangguhkan untuk apl ini."</string>
+    <string name="smart_battery_manager_title_custom">Bateri Mudah Suai</string>
+    <string name="smart_battery_title_custom">Gunakan Bateri Mudah Suai</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Cari pengesan cap jari di hadapan telefon anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Cari pengesan cap jari di sebelah kiri telefon anda.</string>
@@ -77,4 +90,5 @@
     <string name="refresh_rate_summary_60">60Hz / Kadar segaran semua kandungan terkunci pada 60Hz</string>
     <string name="refresh_rate_summary_90">90Hz / Kadar segaran semua kandungan terkunci pada 90Hz. Penggunaan beteri meningkat</string>
     <string name="auto_refresh_rate">Auto</string>
+    <!-- Battery light -->
 </resources>

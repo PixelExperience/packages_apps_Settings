@@ -11,6 +11,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <!-- Moto Face Unlock -->
+    <!-- Adaptive battery -->
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Finn fingersensoren på framsiden av telefonen din.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Finn fingerleseren på venstre side av telefonen din.</string>
@@ -39,4 +42,5 @@
     <!-- Buttons - Enable navbar -->
     <!-- Proximity wake -->
     <!-- Refresh rate -->
+    <!-- Battery light -->
 </resources>

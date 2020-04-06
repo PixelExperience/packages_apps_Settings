@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">меньше 1 минуты</string>
+    <string name="screen_time_summary_usage_today">Сегодня: %1$s</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Используйте функцию фейсконтроля, чтобы разблокировать устройство.\n\nПомните:\nВзгляд на телефон может разблокировать его, даже если вы не собирались этого делать.\n\nТелефон может быть разблокирован другим человеком, если он поднесет его к вашему лицу, когда ваши глаза открыты.\n\nТелефон может быть разблокирован человеком, сильно похожим на вас, например вашим ребенком или близнецом.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Данные, записанные с помощью функции фейсконтроля, будут безвозвратно удалены. После удаления потребуется ввести PIN-код, графический ключ или пароль для разблокировки телефона.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Включите Adaptive Battery</string>
+    <string name="smart_battery_footer_custom">"Чтобы продлить время работы от батареи, функция Adaptive Battery ограничивает фоновые процессы редко используемых приложений. Со временем ваш телефон запоминает, какие приложения вы используете чаще, а какие реже.
+
+Уведомления от приложений, работу которых вы ограничиваете, могут приходить с задержкой."</string>
+    <string name="smart_battery_manager_title_custom">Адаптивное энергопотребление</string>
+    <string name="smart_battery_title_custom">Включить Adaptive Battery</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Найдите сканер отпечатков пальцев на задней поверхности вашего телефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Найдите сканер отпечатков пальцев на левой грани вашего телефона.</string>
@@ -77,4 +90,6 @@
     <string name="refresh_rate_summary_60">60Гц / Частота обновления принудительно 60 Гц для всех приложений</string>
     <string name="refresh_rate_summary_90">90Гц / Частота обновления принудительно 90 Гц для всех приложений. Увеличенный расход батареи</string>
     <string name="auto_refresh_rate">Авто</string>
+    <!-- Battery light -->
+    <string name="battery_light_title">Включить световой индикатор во время зарядки</string>
 </resources>
