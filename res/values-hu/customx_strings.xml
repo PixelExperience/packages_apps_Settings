@@ -196,13 +196,13 @@
     <string name="qs_vibrate_title">Rezgés érintéskor</string>
     <string name="qs_vibrate_summary">A Gyorsbeállítások csempéi érintéskor rezegni fognak</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Gyorsbeállítási animációk</string>
     <string name="qs_tile_animation_style_title">Animáció stílusa</string>
     <string name="qs_tile_animation_duration_title">Animáció hossza</string>
     <string name="qs_tile_animation_interpolator_title">Csempeanimáció közbeiktató</string>
     <string name="qs_tile_animation_style_off">Nincs animáció</string>
     <string name="qs_tile_animation_style_flip">Lapozás</string>
     <string name="qs_tile_animation_style_rotate">Elforgatás</string>
-    <string name="qs_tile_animation_duration_low">Lassú</string>
     <string name="qs_tile_animation_duration_default">Alapértelmezett</string>
     <string name="qs_tile_animation_duration_fast">Gyors</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Egyenletes</string>
@@ -220,11 +220,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Teljesképernyős alkalmazások</string>
     <string name="display_cutout_force_fullscreen_summary">Alkalmazások rákényszerítése, hogy a képernyőkivágást is használják</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Kérjük, indítsa újra az alkalmazást, hogy a változások érvénybe léphessenek.</string>
+    <string name="cutout_force_fullscreen_no_apps">Nincsenek alkalmazások</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Képernyőkép csúsztatással</string>
     <string name="swipe_to_screenshot_gesture_summary">Képernyőmentés három ujjas csúsztatással</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Kompakt kinézet</string>
+    <string name="navigation_bar_compact_layout_summary">A navigációs sáv kompakt kinézetének használata</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalizálja a képernyőt a napszaknak és a fényviszonyoknak megfelelően, javítva az olvashatóságot és csökkentve a szemek terhelését</string>
     <string name="live_display_mode">Képernyő mód</string>
@@ -276,4 +279,6 @@
     <string name="adj_saturation_title">Telítettség</string>
     <string name="adj_intensity_title">Erősség</string>
     <string name="adj_contrast_title">Kontraszt</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

@@ -84,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">Akcja długiego naciśnięcia Home</string>
     <string name="navigation_bar_home_double_tap_title">Akcja podwójnego puknięcia Home</string>
     <string name="navigation_bar_app_switch_long_press_title">Akcja długiego naciśnięcia Ostatnio Używanych</string>
+    <string name="navigation_bar_edge_long_swipe_title">Akcja długiego przeciągnięcia krawędzi</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Sterowanie odtwarzaniem</string>
     <string name="volbtn_music_controls_summary">Przełączanie utworów muzycznych przy wyłączonym ekranie poprzez przytrzymanie klawiszy głośności</string>
@@ -203,7 +204,7 @@
     <string name="qs_tile_animation_style_off">Brak</string>
     <string name="qs_tile_animation_style_flip">Obróć</string>
     <string name="qs_tile_animation_style_rotate">Obróć</string>
-    <string name="qs_tile_animation_duration_low">Niski</string>
+    <string name="qs_tile_animation_duration_low">Wolno</string>
     <string name="qs_tile_animation_duration_default">Domyślne</string>
     <string name="qs_tile_animation_duration_fast">Szybko</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Liniowo</string>
@@ -229,9 +230,6 @@
     <!-- Navigation compact layout -->
     <string name="navigation_bar_compact_layout_title">Układ kompaktowy</string>
     <string name="navigation_bar_compact_layout_summary">Użyj układu kompaktowego w pasku nawigacyjnym</string>
-    <!-- Full screen gestures -->
-    <string name="navbar_gesture_pill_toggle_title">Gesty pełnoekranowe</string>
-    <string name="navbar_gesture_pill_toggle_summary">Ukryty zostanie pasek nawigacyjny dla zapewnienia płynnego wykonywania gestów na pełnym ekranie</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Zoptymalizuj swój ekran w zależności od pory dnia, aby poprawić czytelność i zredukować zmęczenie oczu</string>
     <string name="live_display_mode">Tryb wyświetlania</string>
@@ -283,4 +281,11 @@
     <string name="adj_saturation_title">Nasycenie</string>
     <string name="adj_intensity_title">Intensywność</string>
     <string name="adj_contrast_title">Kontrast</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Pełna</string>
+    <string name="back_height_high_label">Dolny obszar</string>
+    <string name="back_options_dialog_title">Ustawienia</string>
+    <string name="back_height_message">Ilość ekranu użyta jako obszar dotykowy dla gestu wstecz.</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Ukryj belkę nawigacji za pomocą gestów. </string>
 </resources>

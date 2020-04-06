@@ -171,7 +171,6 @@
     <!-- Notch: Full screen apps -->
     <!-- Three-fingers-swipe to screenshot -->
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">ದಿನದ ಸಮಯ ಮತ್ತು ಪರಿಸರದ ಪರಿಸ್ಥಿತಿ ಆಧಾರಿಸಿ ನಿಮ್ಮ ಪರದೆಯನ್ನು ಉತ್ತಮವಾಗಿಸಿ ವಾಚನೀಯತೆ ಉತ್ತಮಗೊಳಿಸಿ ಕಣ್ಣಿನ ಆಯಾಸ ಕಡಿಮೆ ಮಾಡು</string>
     <string name="live_display_mode">ಪ್ರದರ್ಶನ ರೀತಿ</string>
@@ -223,4 +222,6 @@
     <string name="adj_saturation_title">ಆರ್ದ್ರೀಯತೆ</string>
     <string name="adj_intensity_title">ತೀವ್ರತೆ</string>
     <string name="adj_contrast_title">ವೈದೃಶ್ಯ</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

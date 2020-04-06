@@ -84,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">Ação de toque longo no botão início</string>
     <string name="navigation_bar_home_double_tap_title">Ação de toque duplo no botão de Página Inicial</string>
     <string name="navigation_bar_app_switch_long_press_title">Pressionar e segurar no botão de visão geral</string>
+    <string name="navigation_bar_edge_long_swipe_title">Ação de deslize longo na borda</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Controlar a reprodução</string>
     <string name="volbtn_music_controls_summary">Procurar faixas de músicas ao manter pressionadas as teclas de volume enquanto a tela estiver desligada</string>
@@ -229,9 +230,6 @@
     <!-- Navigation compact layout -->
     <string name="navigation_bar_compact_layout_title">Layout compacto</string>
     <string name="navigation_bar_compact_layout_summary">Usar um layout compacto na barra de navegação</string>
-    <!-- Full screen gestures -->
-    <string name="navbar_gesture_pill_toggle_title">Gestos em tela cheia</string>
-    <string name="navbar_gesture_pill_toggle_summary">Isso ocultará a barra de navegação e o ícone de pílula para uma experiência perfeita de gestos em tela cheia.</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Otimiza sua tela com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir o cansaço visual</string>
     <string name="live_display_mode">Modo da tela</string>
@@ -283,4 +281,11 @@
     <string name="adj_saturation_title">Saturação</string>
     <string name="adj_intensity_title">Intensidade</string>
     <string name="adj_contrast_title">Contraste</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Completo</string>
+    <string name="back_height_high_label">Área inferior</string>
+    <string name="back_options_dialog_title">Opções</string>
+    <string name="back_height_message">Altura de tela usada como região tocável para o gesto de voltar.</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Ocultar a pílula da barra de navegação.</string>
 </resources>

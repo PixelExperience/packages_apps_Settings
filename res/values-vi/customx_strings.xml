@@ -44,6 +44,8 @@
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Hiện dấu chấm mẫu hình</string>
     <!-- Hotspot custom extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Cho phép máy khách sử dụng VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Cho phép hotspot các máy khách sử dụng các kết nối VPN của thiết bị\u2019 này để kết nối ngược dòng</string>
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Thời gian tối thiểu giữa các âm thanh thông báo</string>
     <string name="app_notification_sound_timeout_summary_template">Cho phép âm thanh hoặc rung không nhiều hơn một lần mỗi <xliff:g id="duration">%1$s</xliff:g></string>
@@ -71,6 +73,7 @@
     <string name="display_rotation_180_title">180 độ</string>
     <string name="display_rotation_270_title">270 độ</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Hiển thị trình trực quan âm nhạc</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Rung để chỉ trạng thái cuộc gọi</string>
     <!-- Navigation bar customization -->
@@ -81,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">Hành động khi nhấn giữ phím Trang chính</string>
     <string name="navigation_bar_home_double_tap_title">Hành động nhấn phím Trang chính hai lần</string>
     <string name="navigation_bar_app_switch_long_press_title">Thao tác nhấn giữ phím gần đây</string>
+    <string name="navigation_bar_edge_long_swipe_title">Hành động vuốt từ cạnh và giữ</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Điều khiển phát lại</string>
     <string name="volbtn_music_controls_summary">Chuyển bài hát bằng nhấn giữ các phím âm lượng khi màn hình đang tắt</string>
@@ -179,6 +183,7 @@
     <string name="network_traffic_units_megabytes">Megabit mỗi giây (Mb/s)</string>
     <string name="network_traffic_show_units">Hiển thị các đơn vị</string>
     <string name="network_traffic_show_units_summary">Hiển thị các đơn vị đo lưu lượng truy cập trong thanh trạng thái</string>
+    <string name="network_traffic_disabled_clock">Lưu lượng mạng bị vô hiệu hóa do vị trí đồng hồ</string>
     <!-- QS settings -->
     <string name="qs_title">Cài đặt nhanh</string>
     <string name="qs_rows_portrait_title">Hàng (màn hình dọc)</string>
@@ -186,13 +191,20 @@
     <string name="qs_columns_portrait_title">Cột (màn hình dọc)</string>
     <string name="qs_columns_landscape_title">Cột (màn hình ngang)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Khả năng hiển thị tiêu đề</string>
+    <string name="qs_tile_title_visibility_summary">Hiển thị các tiêu đề bên dưới ô cài đặt nhanh</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Rung khi chạm</string>
+    <string name="qs_vibrate_summary">Rung khi chạm các ô cài đặt nhanh</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Hình động cài đặt nhanh</string>
+    <string name="qs_tile_animation_style_title">Kiểu</string>
     <string name="qs_tile_animation_duration_title">Thời lượng hoạt ảnh</string>
+    <string name="qs_tile_animation_interpolator_title">Tiên đoán</string>
     <string name="qs_tile_animation_style_off">Không có hoạt ảnh</string>
     <string name="qs_tile_animation_style_flip">Lật lại</string>
     <string name="qs_tile_animation_style_rotate">Xoay</string>
-    <string name="qs_tile_animation_duration_low">Thấp</string>
+    <string name="qs_tile_animation_duration_low">Chậm</string>
     <string name="qs_tile_animation_duration_default">Mặc định</string>
     <string name="qs_tile_animation_duration_fast">Nhanh</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Đường thẳng</string>
@@ -210,11 +222,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Ứng dụng toàn màn hình</string>
     <string name="display_cutout_force_fullscreen_summary">Bỏ qua phần tai thỏ cho các ứng dụng được chọn</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Vui lòng khởi động lại ứng dụng để áp dụng các thay đổi</string>
+    <string name="cutout_force_fullscreen_no_apps">Không có ứng dụng</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Vuốt để chụp màn hình</string>
     <string name="swipe_to_screenshot_gesture_summary">Vuốt ba ngón tay để chụp màn hình</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Bố cục nhỏ gọn</string>
+    <string name="navigation_bar_compact_layout_summary">Sử dụng bố cục nhỏ gọn trong thanh điều hướng</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Tối ưu hóa màn hình dựa trên điều kiện môi trường và thời gian trong ngày để cải thiện khả năng đọc và giảm mỏi mắt</string>
     <string name="live_display_mode">Chế độ hiển thị</string>
@@ -266,4 +281,11 @@
     <string name="adj_saturation_title">Độ bão hoà</string>
     <string name="adj_intensity_title">Cường độ</string>
     <string name="adj_contrast_title">Độ tương phản</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Đầy đủ</string>
+    <string name="back_height_high_label">Khu vực phía dưới</string>
+    <string name="back_options_dialog_title">Tùy chọn</string>
+    <string name="back_height_message">Số lượng chiều cao màn hình được sử dụng làm vùng có thể chạm cho cử chỉ quay lại.</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Ẩn thanh điều hướng bên dưới.</string>
 </resources>

@@ -195,7 +195,6 @@
     <string name="qs_tile_animation_style_off">Geen animatie</string>
     <string name="qs_tile_animation_style_flip">Omkeren</string>
     <string name="qs_tile_animation_style_rotate">Draaien</string>
-    <string name="qs_tile_animation_duration_low">Traag</string>
     <string name="qs_tile_animation_duration_default">Standaard</string>
     <string name="qs_tile_animation_duration_fast">Snel</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Lineair</string>
@@ -217,7 +216,6 @@
     <string name="swipe_to_screenshot_gesture_title">Veeg voor schermafdruk</string>
     <string name="swipe_to_screenshot_gesture_summary">Veeg met drie vingers om schermafbeelding te maken</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
     <string name="live_display_mode">Weergavemodus</string>
@@ -269,4 +267,6 @@
     <string name="adj_saturation_title">Verzadiging</string>
     <string name="adj_intensity_title">Intensiteit</string>
     <string name="adj_contrast_title">Contrast</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

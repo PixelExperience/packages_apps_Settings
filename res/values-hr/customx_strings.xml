@@ -44,6 +44,8 @@
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Pokaži točke uzorka</string>
     <!-- Hotspot custom extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Dopustite klijentima da koriste VPN-ove</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Dopustite klijentima žarišne točke da koriste VPN\u2019 vezu ovog uređaja za povezivanje</string>
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Minimalno vrijeme između zvukova obavijesti</string>
     <string name="app_notification_sound_timeout_summary_template">Dopusti zvukove ili vibraciju ne više od jednom svakih <xliff:g id="duration">%1$s</xliff:g></string>
@@ -71,6 +73,7 @@
     <string name="display_rotation_180_title">180 stupnjeva</string>
     <string name="display_rotation_270_title">270 stupnjeva</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Prikaži vizualizator glazbe</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibriraj za označavanje statusa poziva</string>
     <!-- Navigation bar customization -->
@@ -132,6 +135,8 @@
     <string name="status_bar_system_icons_summary">Odaberite koje se ikone prikazuju u statusnoj traci</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Sat</string>
+    <string name="status_bar_clock_show_seconds_title">Prikaži sekunde</string>
+    <string name="status_bar_clock_show_seconds_summary">Prikaži sate, minute i sekunde</string>
     <string name="status_bar_clock_position_title">Pozicija sata</string>
     <string name="status_bar_clock_position_right">Desno</string>
     <string name="status_bar_clock_position_left">Lijevo</string>
@@ -177,6 +182,7 @@
     <string name="network_traffic_units_megabytes">Megabita u sekundi (MB/s)</string>
     <string name="network_traffic_show_units">Prikaz jedinica mjere</string>
     <string name="network_traffic_show_units_summary">Odaberite hoće li se u statusnoj traci prikazivati mjerenje prometa</string>
+    <string name="network_traffic_disabled_clock">Praćenje mrežnog prometa onemogućeno zbog pozicije sata</string>
     <!-- QS settings -->
     <string name="qs_title">Brze postavke</string>
     <string name="qs_rows_portrait_title">Redci (portret)</string>
@@ -184,8 +190,29 @@
     <string name="qs_columns_portrait_title">Stupci (portret)</string>
     <string name="qs_columns_landscape_title">Stupci (pejzaž)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Vidljivost imena brzih postavki</string>
+    <string name="qs_tile_title_visibility_summary">Prikaži nazive u brzim postavkama</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibracija pri dodiru</string>
+    <string name="qs_vibrate_summary">Vibracija pri dodiru pločica brzih postavki</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Animacija brzih postavki</string>
+    <string name="qs_tile_animation_style_title">Stil</string>
+    <string name="qs_tile_animation_duration_title">Trajanje</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
+    <string name="qs_tile_animation_style_off">Nijedan</string>
+    <string name="qs_tile_animation_style_flip">Okreni</string>
+    <string name="qs_tile_animation_style_rotate">Rotiraj</string>
+    <string name="qs_tile_animation_duration_default">Zadano</string>
+    <string name="qs_tile_animation_duration_fast">Brzo</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linearno</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Ubrzaj</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Uspori</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Ubrzavanje i usporavanje</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Poskakivanje</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Prelijetanje</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Predviđanje</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Predviđanje i prelijetanje</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Upravljanje urezom</string>
     <string name="display_cutout_mode_normal">Zadano</string>
@@ -193,11 +220,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikacije koriste cijeli zaslon</string>
     <string name="display_cutout_force_fullscreen_summary">Prisili aplikacije da ignoriraju notch</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Restartuj aplikaciju za primjenu izmjena.</string>
+    <string name="cutout_force_fullscreen_no_apps">Nema aplikacija</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Povuci za slikanje zaslona</string>
     <string name="swipe_to_screenshot_gesture_summary">Povucite tri prsta po zaslonu za snimku zaslona</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Kompaktni prikaz</string>
+    <string name="navigation_bar_compact_layout_summary">Koristi kompaktni prikaz u navi traci</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Prilagođuje zaslon prema vremenu dana i okolini za poboljšanje čitljivosti i smanjenje naprezanja očiju</string>
     <string name="live_display_mode">Način prikaza</string>
@@ -249,4 +279,6 @@
     <string name="adj_saturation_title">Zasićenje</string>
     <string name="adj_intensity_title">Intenzitet</string>
     <string name="adj_contrast_title">Kontrast</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

@@ -14,10 +14,10 @@
     <!-- Buttons -->
     <string name="navigation_bar_title">导航栏</string>
     <string name="hardware_keys_power_key_title">电源键</string>
-    <string name="hardware_keys_volume_keys_title">音量摇杆</string>
+    <string name="hardware_keys_volume_keys_title">音量按钮</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">启用屏幕上的导航栏</string>
-    <string name="disable_navkeys_summary">启用屏幕上导航栏并禁用硬件按钮</string>
+    <string name="disable_navkeys_title">启用虚拟按键</string>
+    <string name="disable_navkeys_summary">启用虚拟按键并禁用硬件按键</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">使用返回键强行关闭应用</string>
     <string name="kill_app_longpress_back_summary">长按返回键终止前台应用</string>
@@ -140,7 +140,7 @@
     <string name="status_bar_clock_position_title">时钟位置</string>
     <string name="status_bar_clock_position_right">右侧</string>
     <string name="status_bar_clock_position_left">左侧</string>
-    <string name="status_bar_clock_position_center">中心</string>
+    <string name="status_bar_clock_position_center">居中</string>
     <string name="status_bar_am_pm_title">上午/下午</string>
     <string name="status_bar_am_pm_info">24 小时时钟已启用</string>
     <string name="status_bar_am_pm_normal">正常</string>
@@ -193,14 +193,16 @@
     <string name="qs_tile_title_visibility_title">磁贴标题</string>
     <string name="qs_tile_title_visibility_summary">启用以显示快速设置磁贴标题</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">触摸时震动</string>
+    <string name="qs_vibrate_summary">触摸QS瓷砖时振动</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">快速设置动画</string>
     <string name="qs_tile_animation_style_title">动画风格</string>
     <string name="qs_tile_animation_duration_title">瓷块动画持续时间</string>
     <string name="qs_tile_animation_interpolator_title">瓷砖动画插值器</string>
     <string name="qs_tile_animation_style_off">无动画</string>
     <string name="qs_tile_animation_style_flip">空翻</string>
     <string name="qs_tile_animation_style_rotate">旋转</string>
-    <string name="qs_tile_animation_duration_low">低</string>
     <string name="qs_tile_animation_duration_default">默认</string>
     <string name="qs_tile_animation_duration_fast">快速</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">线性</string>
@@ -218,11 +220,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">全屏应用</string>
     <string name="display_cutout_force_fullscreen_summary">强制应用忽略全面屏上缘</string>
+    <string name="display_cutout_force_fullscreen_restart_app">请重新启动应用程序以应用更改。</string>
+    <string name="cutout_force_fullscreen_no_apps">没有应用</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">滑动截屏</string>
     <string name="swipe_to_screenshot_gesture_summary">三指滑动截屏</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">紧凑布局</string>
+    <string name="navigation_bar_compact_layout_summary">在导航栏中使用紧凑布局</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">基于当前时间和环境条件来优化您的屏幕以改善可读性和减少视疲劳</string>
     <string name="live_display_mode">显示模式</string>
@@ -274,4 +279,11 @@
     <string name="adj_saturation_title">饱和度</string>
     <string name="adj_intensity_title">亮度</string>
     <string name="adj_contrast_title">对比度</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">全部</string>
+    <string name="back_height_high_label">底部</string>
+    <string name="back_options_dialog_title">选项</string>
+    <string name="back_height_message">返回手势的触发区域</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">隐藏导航栏的药丸</string>
 </resources>

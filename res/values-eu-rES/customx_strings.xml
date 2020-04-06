@@ -200,7 +200,6 @@
     <string name="swipe_to_screenshot_gesture_title">Pantaila-argazkira aldatu</string>
     <string name="swipe_to_screenshot_gesture_summary">Hiru hatzekin deslizatu pantaila-argazkia ateratzeko</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizatu zure pantaila eguneko orduaren eta inguruneko baldintzen arabera irakurgarritasuna hobetzeko eta begien nekea gutxiagotzeko</string>
     <string name="live_display_mode">Pantaila modua</string>
@@ -252,4 +251,6 @@
     <string name="adj_saturation_title">Saturazioa</string>
     <string name="adj_intensity_title">Intentsitatea</string>
     <string name="adj_contrast_title">Kontrastea</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

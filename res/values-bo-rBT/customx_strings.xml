@@ -104,7 +104,6 @@
     <string name="swipe_to_screenshot_gesture_title">འདྲེད་འགུལ་གྱིས་བརྙན་ཤེལ་བཅད་ལེན།</string>
     <string name="swipe_to_screenshot_gesture_summary">མཛུབ་གུ་གསུམ་འདྲེད་འགུལ་བྱས་ཏེ་བརྙན་ཤེལ་བཅད་ལེན། </string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_outdoor_mode_title">རང་འགུལ་གྱིས་ཕྱི་རོལ་གྱི་རྣམ་པར་བསྒྱུར་བ། </string>
     <string name="live_display_outdoor_mode_summary">ཉི་འོད་དྲག་པོའི་འོག་བརྙན་ཤེལ་གྱི་གསལ་ཚད་སོགས་ཇེ་མཐོར་གཏོང་བ། </string>
@@ -147,4 +146,6 @@
     <string name="adj_saturation_title">འདང་ཚད། </string>
     <string name="adj_intensity_title">གསལ་ཚད།</string>
     <string name="adj_contrast_title">བསྡུར་ཚད།</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

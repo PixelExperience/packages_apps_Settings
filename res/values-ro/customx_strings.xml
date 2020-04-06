@@ -12,7 +12,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">Butoane și aspect</string>
+    <string name="navigation_bar_title">Bară de navigare</string>
     <string name="hardware_keys_power_key_title">Butonul de pornire</string>
     <string name="hardware_keys_volume_keys_title">Butoane Volum</string>
     <!-- Buttons - Enable navbar -->
@@ -73,6 +73,7 @@
     <string name="display_rotation_180_title">180 de grade</string>
     <string name="display_rotation_270_title">270 de grade</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Afișează vizualizatorul muzicii</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrare pentru a indica starea apelului</string>
     <!-- Navigation bar customization -->
@@ -83,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">Acțiunea apăsării lungi pe Acasă</string>
     <string name="navigation_bar_home_double_tap_title">Acțiunea apăsării duble pe Acasă</string>
     <string name="navigation_bar_app_switch_long_press_title">Acțiunea apăsării lungi pe Recente</string>
+    <string name="navigation_bar_edge_long_swipe_title">Acțiune glisare lungă de pe margine</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Controlați redarea</string>
     <string name="volbtn_music_controls_summary">Căutați piese prin apăsarea lungă a butoanelor de volum când ecranul este oprit</string>
@@ -189,8 +191,29 @@
     <string name="qs_columns_portrait_title">Coloane (portret)</string>
     <string name="qs_columns_landscape_title">Coloane (peisaj)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Vizibilitate titlu</string>
+    <string name="qs_tile_title_visibility_summary">Afișați titlurile de sub plăci</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibrare la atingere</string>
+    <string name="qs_vibrate_summary">Vibrează la atingerea dalelor setări rapide</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Animații setări rapide</string>
+    <string name="qs_tile_animation_style_title">Stil</string>
+    <string name="qs_tile_animation_duration_title">Durată</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
+    <string name="qs_tile_animation_style_off">Niciunul</string>
+    <string name="qs_tile_animation_style_flip">Răsucire</string>
+    <string name="qs_tile_animation_style_rotate">Rotire</string>
+    <string name="qs_tile_animation_duration_default">Implicit</string>
+    <string name="qs_tile_animation_duration_fast">Rapid</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Liniar</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerare</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Reducere viteză</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerare şi reducere viteză</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Săritură</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Depăşire</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipare</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipare depășire</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Comportament breton</string>
     <string name="display_cutout_mode_normal">Implicit</string>
@@ -198,11 +221,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicații ecran complet</string>
     <string name="display_cutout_force_fullscreen_summary">Forţaţi aplicațiile să ignore spațiul pentru breton</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Reporniți aplicația pentru a aplica modificările.</string>
+    <string name="cutout_force_fullscreen_no_apps">Nicio aplicație</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Glisați pentru captura de ecran</string>
     <string name="swipe_to_screenshot_gesture_summary">Glisați trei degete pentru captură de ecran</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Aspect compact</string>
+    <string name="navigation_bar_compact_layout_summary">Utilizați un aspect compact în bara de navigare</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizați ecranul bazat pe timpul zilei şi condiţiile mediului ambient pentru a îmbunătăţi lizibilitatea şi a reduce oboseala ochilor</string>
     <string name="live_display_mode">Mod de afișare</string>
@@ -254,4 +280,11 @@
     <string name="adj_saturation_title">Saturație</string>
     <string name="adj_intensity_title">Intensitate</string>
     <string name="adj_contrast_title">Contrast</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Complet</string>
+    <string name="back_height_high_label">Zona de jos</string>
+    <string name="back_options_dialog_title">Opţiuni</string>
+    <string name="back_height_message">Valoarea înălțimii ecranului utilizată ca regiune pentru gestul de înapoi.</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Ascundeți pilula de pe bara de navigare.</string>
 </resources>

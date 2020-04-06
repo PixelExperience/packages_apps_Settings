@@ -44,6 +44,8 @@
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Прикажи тачкице шаблона</string>
     <!-- Hotspot custom extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Дозволи клијентима да користе VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Дозволите клијентима хотспота да користе VPN везе овог уређаја за повезивање на интернет</string>
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Учесталост звучних обавештења</string>
     <string name="app_notification_sound_timeout_summary_template">Звуци и вибрација не чешће од једном сваких <xliff:g id="duration">%1$s</xliff:g>.</string>
@@ -71,6 +73,7 @@
     <string name="display_rotation_180_title">180 степени</string>
     <string name="display_rotation_270_title">270 степени</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Прикажи визуализатор музике</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Вибрација за индикацију статуса позива</string>
     <!-- Navigation bar customization -->
@@ -132,6 +135,8 @@
     <string name="status_bar_system_icons_summary">Подесите које иконе ће бити приказане у статусној траци.</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Сат</string>
+    <string name="status_bar_clock_show_seconds_title">Прикажи секунде</string>
+    <string name="status_bar_clock_show_seconds_summary">Прикажи сате, минуте и секунде</string>
     <string name="status_bar_clock_position_title">Положај сата</string>
     <string name="status_bar_clock_position_right">Десно</string>
     <string name="status_bar_clock_position_left">Лево</string>
@@ -177,6 +182,7 @@
     <string name="network_traffic_units_megabytes">Мегабајта у секунди (MB/с)</string>
     <string name="network_traffic_show_units">Прикажи јединице</string>
     <string name="network_traffic_show_units_summary">Да ли приказати мерне јединице протока у на статусној траци</string>
+    <string name="network_traffic_disabled_clock">Мрежни саобраћај је онемогућен због положаја сата</string>
     <!-- QS settings -->
     <string name="qs_title">Брза подешавања</string>
     <string name="qs_rows_portrait_title">Редови (портрет)</string>
@@ -184,8 +190,29 @@
     <string name="qs_columns_portrait_title">Колоне (портрет)</string>
     <string name="qs_columns_landscape_title">Колоне (положено)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Видљивост Имена</string>
+    <string name="qs_tile_title_visibility_summary">Прикажи текст у брзим подешавањима</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Вибрација при додиру</string>
+    <string name="qs_vibrate_summary">Вибрација при додиру плочица брзих подешавања</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Анимација брзих подешавања</string>
+    <string name="qs_tile_animation_style_title">Стил</string>
+    <string name="qs_tile_animation_duration_title">Трајање</string>
+    <string name="qs_tile_animation_interpolator_title">Интерполатор</string>
+    <string name="qs_tile_animation_style_off">Ниједан</string>
+    <string name="qs_tile_animation_style_flip">Обрни</string>
+    <string name="qs_tile_animation_style_rotate">Ротирање</string>
+    <string name="qs_tile_animation_duration_default">Подразумевано</string>
+    <string name="qs_tile_animation_duration_fast">Брзо</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Линеарно</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Убрзај</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Успори</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Убрзавање и успоравање</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Поскакивање</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Прескакање</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Очекивано</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Предвиђање и прескакање</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Понашање зареза</string>
     <string name="display_cutout_mode_normal">Подразумевано</string>
@@ -193,11 +220,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Апликације преко целог екрана</string>
     <string name="display_cutout_force_fullscreen_summary">Форсирај апликације да игноришу простор зуба</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Рестартујте апликацију за примену измена.</string>
+    <string name="cutout_force_fullscreen_no_apps">Нема апликација</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Потез за снимак екрана</string>
     <string name="swipe_to_screenshot_gesture_summary">Потез са три прста за снимак екрана</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Компактни приказ</string>
+    <string name="navigation_bar_compact_layout_summary">Користи компактни приказ у навигационом бару</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Прилагодите екран на основу доба дана и осветљености, како би се повећала читљивост и смањило напрезање очију.</string>
     <string name="live_display_mode">Режим приказа</string>
@@ -249,4 +279,6 @@
     <string name="adj_saturation_title">Засићеност</string>
     <string name="adj_intensity_title">Интензитет</string>
     <string name="adj_contrast_title">Контраст</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

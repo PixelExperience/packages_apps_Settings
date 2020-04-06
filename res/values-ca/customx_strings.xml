@@ -202,7 +202,6 @@
     <string name="swipe_to_screenshot_gesture_title">Fes lliscar els dits per fer captura de pantalla</string>
     <string name="swipe_to_screenshot_gesture_summary">Passeu tres dits per fer una captura de pantalla</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimitza la teva pantalla basant-se en l\'hora del dia i les condicions ambientals per millorar la llegibilitat i reduir la fatiga ocular</string>
     <string name="live_display_mode">Mode de pantalla</string>
@@ -254,4 +253,6 @@
     <string name="adj_saturation_title">Saturació</string>
     <string name="adj_intensity_title">Intensitat</string>
     <string name="adj_contrast_title">Contrast</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

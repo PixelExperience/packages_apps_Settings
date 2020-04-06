@@ -12,7 +12,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">Nupud ja paigutus</string>
+    <string name="navigation_bar_title">Navigeerimisriba</string>
     <string name="hardware_keys_power_key_title">Toitenupp</string>
     <string name="hardware_keys_volume_keys_title">Helitugevuse nupud</string>
     <!-- Buttons - Enable navbar -->
@@ -38,6 +38,7 @@
     <string name="wake_when_plugged_or_unplugged_title">Ärka laadija ühendamisel</string>
     <string name="wake_when_plugged_or_unplugged_summary">Lülita ekraan sisse kui ühendatakse või eemaldatakse toite allikas</string>
     <!-- Lock screen pattern size -->
+    <string name="lock_settings_picker_pattern_size_message">Vali mustri suurus</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">Näita mustri vigu</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -46,6 +47,15 @@
     <string name="tethering_allow_vpn_upstreams_title">Luba klientidel kasutada VPN-e</string>
     <string name="tethering_allow_vpn_upstreams_summary">Luba kuumkoha klientidel kasutada selle seadme VPN-ühendusi ülesvoolu ühenduvuseks</string>
     <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Väikseim aeg teavitushelide vahel</string>
+    <string name="app_notification_sound_timeout_summary_template">Ära luba heli või vibratsiooni rohkem kui üks kord iga <xliff:g id="duration">%1$s </xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Piiranguid ei ole</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekundit</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 sekundit</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutit</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutit</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutit</string>
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Ühenda helina ja teadete helitugevus</string>
     <!-- Increasing ring tone volume -->
@@ -63,6 +73,7 @@
     <string name="display_rotation_180_title">180 kraadi</string>
     <string name="display_rotation_270_title">270 kraadi</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Näita muusika visualiseerijat</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibreeri, et näidata kõne olekut</string>
     <!-- Navigation bar customization -->
@@ -73,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">Kodunupu pika vajutuse tegevus</string>
     <string name="navigation_bar_home_double_tap_title">Kodunupu topeltkoputuse tegevus</string>
     <string name="navigation_bar_app_switch_long_press_title">Viimatiste nupu pika vajutuse tegevus</string>
+    <string name="navigation_bar_edge_long_swipe_title">Serva pikk pühkimine</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Taasesituse juhtimine</string>
     <string name="volbtn_music_controls_summary">Liigu lugude vahel, vajutades helitugevusklahve pikalt, kui ekraan on väljas</string>
@@ -179,8 +191,30 @@
     <string name="qs_columns_portrait_title">Veerud (vertikaalpaigutus)</string>
     <string name="qs_columns_landscape_title">Veerud (horisontaalpaigutus)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Plaatide nimed</string>
+    <string name="qs_tile_title_visibility_summary">Kuva pealkirjad QS-plaatide all</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibreeri puudutusel</string>
+    <string name="qs_vibrate_summary">Vibratsioon Kiir seadete plaatide puudutamisel</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Kiirseadete animatsioonid</string>
+    <string name="qs_tile_animation_style_title">Stiil</string>
+    <string name="qs_tile_animation_duration_title">Kestus</string>
+    <string name="qs_tile_animation_interpolator_title">Plaatide animatsiooni interpolatsioon</string>
+    <string name="qs_tile_animation_style_off">Puudub</string>
+    <string name="qs_tile_animation_style_flip">Pööra ümber</string>
+    <string name="qs_tile_animation_style_rotate">Pööra</string>
+    <string name="qs_tile_animation_duration_low">Aeglane</string>
+    <string name="qs_tile_animation_duration_default">Vaikeseade</string>
+    <string name="qs_tile_animation_duration_fast">Kiire</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Lineaarne</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Kiirendage</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Aeglustage</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Kiirendada ja aeglustada</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Hüpitamine</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Ületage</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Prognoosige</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Enneta ületamist</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Aste käitumine</string>
     <string name="display_cutout_mode_normal">Vaikimisi</string>
@@ -188,11 +222,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Täisekraanis rakendused</string>
     <string name="display_cutout_force_fullscreen_summary">Sundige rakendust ignoreerima \"kulmu\"</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Muudatuste rakendamiseks taaskäivitage rakendus.</string>
+    <string name="cutout_force_fullscreen_no_apps">Rakendusi ei ole</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Libistage et teha kuvatõmmis</string>
     <string name="swipe_to_screenshot_gesture_summary">Libistage kolme sõrmega et teha kuvatõmmis</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Kompaktne paigutus</string>
+    <string name="navigation_bar_compact_layout_summary">Kasutage navigeerimisribal kompaktset paigutust</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimeeri oma ekraani vastavalt kellaajale ja keskkonnavalgusele, parandamaks loetavust ja vähendamaks silmade pinget</string>
     <string name="live_display_mode">Ekraani režiim</string>
@@ -244,4 +281,11 @@
     <string name="adj_saturation_title">Küllastus</string>
     <string name="adj_intensity_title">Intensiivsus</string>
     <string name="adj_contrast_title">Kontrastsus</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Täielik</string>
+    <string name="back_height_high_label">Alumine piirkond</string>
+    <string name="back_options_dialog_title">Seaded</string>
+    <string name="back_height_message">Ekraani kõrgus, mida kasutatakse tagasiviipe puutealana.</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Peida navigeerimisriba</string>
 </resources>

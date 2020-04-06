@@ -44,6 +44,8 @@
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Näytä kuvion pisteet</string>
     <!-- Hotspot custom extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Salli asiakkaan käyttää VPN:ää</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Salli hotspot yhteyksien kayttää tämän laitteen VPN yhteyksiä yhteyden muodostamiseen</string>
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Vähimmäisväli ilmoitusäänissä</string>
     <string name="app_notification_sound_timeout_summary_template">Sallii äänen tai värinän vain seuraavin välein: <xliff:g id="duration">%1$s</xliff:g></string>
@@ -71,32 +73,34 @@
     <string name="display_rotation_180_title">180 astetta</string>
     <string name="display_rotation_270_title">270 astetta</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Näytä musiikin visualisointi</string>
     <!-- In-call feedback -->
-    <string name="incall_feeedback_vibrate_title">Värise puhelun tilan osoittamiseksi</string>
+    <string name="incall_feeedback_vibrate_title">Värise puhelulle</string>
     <!-- Navigation bar customization -->
-    <string name="navigation_bar_arrow_keys_title">Näytä nuolinäppäimet kirjottaessa</string>
-    <string name="navigation_bar_arrow_keys_summary">Näytä vasen ja oikea nuolinäppäin kirjoittaessa. Ohittaa syöttötavan valinnan.</string>
+    <string name="navigation_bar_arrow_keys_title">Näytä nuolinäppäimet kirjoittaessa</string>
+    <string name="navigation_bar_arrow_keys_summary">Näytä vasen ja oikea nuolinäppäin kirjoittaessa. Ohittaa IME syöttötavan valinnan.</string>
     <string name="nav_bar_layout_inverse_title">Käänteinen asettelu</string>
     <string name="nav_bar_layout_inverse_summary">Käännä navigointipalkin painikkeiden asettelu</string>
     <string name="navigation_bar_home_long_press_title">Kotinäppäimen pitkän painalluksen tehtävä</string>
     <string name="navigation_bar_home_double_tap_title">Kotinäppäimen kaksoisnapautuksen tehtävä</string>
-    <string name="navigation_bar_app_switch_long_press_title">Viimeisimmät-painikkeen pitkän painalluksen tehtävä</string>
+    <string name="navigation_bar_app_switch_long_press_title">Viimeisimmät painikkeen pitkän painalluksen tehtävä</string>
+    <string name="navigation_bar_edge_long_swipe_title">Reunan pitkän vetäisyn toiminto</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Toiston ohjaus</string>
     <string name="volbtn_music_controls_summary">Vaihda kappaletta pitämällä äänenvoimakkuusnäppäimiä pohjassa näytön ollessa suljettu</string>
     <string name="volume_answer_call_title">Vastaa puheluun</string>
     <string name="volume_answer_call_summary">Vastaa puheluun painamalla äänenvoimakkuusnäppäintä</string>
     <string name="volbtn_cursor_control_title">Kohdistimen ohjaus näppäimistöllä</string>
-    <string name="volbtn_cursor_control_off">Pois käytöstä</string>
-    <string name="volbtn_cursor_control_on">Äänenvoimakkuus ylös/alas ohjaa kohdistinta vasemmalle/oikealle</string>
-    <string name="volbtn_cursor_control_on_reverse">Äänenvoimakkuus ylös/alas ohjaa kohdistinta oikealle/vasemmalle</string>
-    <string name="swap_volume_buttons_title">Käännä</string>
+    <string name="volbtn_cursor_control_off">Ei käytössä</string>
+    <string name="volbtn_cursor_control_on">Äänenvoimakkuus ylös/alas liikuttaa kohdistinta vasemmalle/oikealle</string>
+    <string name="volbtn_cursor_control_on_reverse">Äänenvoimakkuus ylös/alas liikuttaa kohdistinta oikealle/vasemmalle</string>
+    <string name="swap_volume_buttons_title">Käännä äänenvoimakkuusnäppäimet</string>
     <string name="swap_volume_buttons_summary">Vaihda äänenvoimakkuusnäppäimien paikkoja näytön ollessa käännettynä</string>
     <!-- Home key customization -->
     <string name="home_answer_call_title">Vastaa puheluun</string>
     <string name="home_answer_call_summary">Vastaa puheluun painamalla kotinäppäintä</string>
     <!-- Power menu key customization -->
-    <string name="power_menu_title">Käynnistysvalikko</string>
+    <string name="power_menu_title">Virtavalikko</string>
     <string name="power_menu_screenshot_title">Kuvakaappaus</string>
     <string name="power_menu_screenshot_summary">Ositttainen kuvakaappaus pitkällä painalluksella</string>
     <string name="power_menu_airplane_title">Lentotila</string>
@@ -119,7 +123,7 @@
     <string name="additional_buttons_title">Lisänäppäimet</string>
     <!-- Status bar -->
     <string name="status_bar_title">Tilapalkki</string>
-    <string name="status_bar_quick_qs_pulldown_title">Nopea avaaminen</string>
+    <string name="status_bar_quick_qs_pulldown_title">Nopea alasvetovalikko</string>
     <string name="status_bar_quick_qs_pulldown_summary">Näytä pika-asetukset vedettäessä ilmoitusvalikko alas näytön %1$s reunasta</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Vasen</string>
     <string name="status_bar_quick_qs_pulldown_summary_right">Oikea</string>
@@ -150,7 +154,7 @@
     <string name="status_bar_battery_style_circle">Ympyrä</string>
     <string name="status_bar_battery_style_text">Teksti</string>
     <!-- Status bar - Battery percentage -->
-    <string name="status_bar_battery_percentage_title">Akun prosentti</string>
+    <string name="status_bar_battery_percentage_title">Akun prosentit</string>
     <string name="status_bar_battery_percentage_default">Piilotettu</string>
     <string name="status_bar_battery_percentage_text_inside">Kuvakkeen sisällä</string>
     <string name="status_bar_battery_percentage_text_next">Kuvakkeen vieressä</string>
@@ -163,15 +167,15 @@
     <string name="status_bar_toggle_brightness">Kirkkauden säätö</string>
     <string name="status_bar_toggle_brightness_summary">Säädä kirkkautta liu\'ttamalla tilapalkkia pitkin</string>
     <!-- Status bar - Network Traffic -->
-    <string name="network_traffic_settings_title">Verkkoliikenne</string>
-    <string name="network_traffic_settings_summary">Näyttää verkon nopeuden tilapalkissa</string>
+    <string name="network_traffic_settings_title">Verkkoliikenteen seuranta</string>
+    <string name="network_traffic_settings_summary">Näytä verkkoliikenteen nopeus tilapalkissa</string>
     <string name="network_traffic_mode_title">Näyttötila</string>
     <string name="network_traffic_mode_disable">Pois</string>
     <string name="network_traffic_mode_up">Vain lähetys</string>
     <string name="network_traffic_mode_down">Vain lataus</string>
     <string name="network_traffic_mode_all">Lähetys ja lataus</string>
     <string name="network_traffic_autohide">Piilota automaattisesti</string>
-    <string name="network_traffic_autohide_summary">Piilota verkkoliikenne kun toimintaa ei ole</string>
+    <string name="network_traffic_autohide_summary">Piilota verkkoliikenteen seuranta, kun toimintaa ei ole</string>
     <string name="network_traffic_units_title">Verkkoliikenteen yksiköt</string>
     <string name="network_traffic_units_kilobits">Kilobittiä sekunnissa (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabittiä sekunnissa (Mb/s)</string>
@@ -179,7 +183,7 @@
     <string name="network_traffic_units_megabytes">Megatavua sekunnissa (Mt/s)</string>
     <string name="network_traffic_show_units">Näytä yksiköt</string>
     <string name="network_traffic_show_units_summary">Näytä verkkoliikenteen yksiköt tilapalkissa</string>
-    <string name="network_traffic_disabled_clock">Verkkoliikenne poistettu käytöstä kellon sijainnin vuoksi</string>
+    <string name="network_traffic_disabled_clock">Verkkoliikenteen näyttö poistettu käytöstä kellon sijainnin vuoksi</string>
     <!-- QS settings -->
     <string name="qs_title">Pika-asetukset</string>
     <string name="qs_rows_portrait_title">Rivit (pysty)</string>
@@ -187,8 +191,30 @@
     <string name="qs_columns_portrait_title">Sarakkeet (pysty)</string>
     <string name="qs_columns_landscape_title">Sarakkeet (vaakatila)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Nimen näkyvyys</string>
+    <string name="qs_tile_title_visibility_summary">Näytä nimet QS :n alta</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Värinä kosketuksesta</string>
+    <string name="qs_vibrate_summary">Värisee kun koskee QS kuvaketta</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Pika-asetus animaatiot</string>
+    <string name="qs_tile_animation_style_title">Tyyli</string>
+    <string name="qs_tile_animation_duration_title">Kesto</string>
+    <string name="qs_tile_animation_interpolator_title">Välitys</string>
+    <string name="qs_tile_animation_style_off">Ei mitään</string>
+    <string name="qs_tile_animation_style_flip">Käännä</string>
+    <string name="qs_tile_animation_style_rotate">Kierrä</string>
+    <string name="qs_tile_animation_duration_low">Hidas</string>
+    <string name="qs_tile_animation_duration_default">Oletus</string>
+    <string name="qs_tile_animation_duration_fast">Nopea</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Lineaarinen</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Kiihdytä</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Hidasta</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Kiihdytä ja hidasta</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Ponnahdus</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Yliammu</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Ennakoi</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Ennakoi ja yliammu</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Loven käyttäytyminen</string>
     <string name="display_cutout_mode_normal">Oletus</string>
@@ -196,11 +222,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Koko näytön sovellukset</string>
     <string name="display_cutout_force_fullscreen_summary">Pakota sovellukset olemaan huomioimatta näyttölovea</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Aloita ohjelma uudestaan saadaksesi uudet asetukset</string>
+    <string name="cutout_force_fullscreen_no_apps">Ei sovelluksia</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Pyyhkäise ottaaksesi kuvakaappauksen</string>
     <string name="swipe_to_screenshot_gesture_summary">Pyyhkäise kolmella sormella ottaaksesi kuvakaappauksen</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
+    <string name="navigation_bar_compact_layout_title">Kompakti näyttö</string>
+    <string name="navigation_bar_compact_layout_summary">Käytä Kompaktin näytön navikointi kohdistinta</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimoi näyttösi kellonajan ja ympäristöolosuhteiden perusteella parantaaksesi luettavuutta ja vähentääksesi silmien rasitusta</string>
     <string name="live_display_mode">Näyttötila</string>
@@ -252,4 +281,11 @@
     <string name="adj_saturation_title">Kylläisyys</string>
     <string name="adj_intensity_title">Intensiteetti</string>
     <string name="adj_contrast_title">Kontrasti</string>
+    <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Täysi</string>
+    <string name="back_height_high_label">Alaosa</string>
+    <string name="back_options_dialog_title">Asetukset</string>
+    <string name="back_height_message">Taaksepäin menon kosketettavan alueen korkeus.</string>
+    <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Piilota navigointipalkin viiva</string>
 </resources>

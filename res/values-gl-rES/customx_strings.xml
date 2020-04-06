@@ -198,7 +198,6 @@
     <string name="swipe_to_screenshot_gesture_title">Deslizar pra capturar a pantalla</string>
     <string name="swipe_to_screenshot_gesture_summary">Deslizar tres dedos pra capturar a pantalla</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizar a súa pantalla baseandose na hora do día e as condicións ambientais para mellorar a lexibilidade e reducir o cansanzo visual</string>
     <string name="live_display_mode">Modo de visualización</string>
@@ -250,4 +249,6 @@
     <string name="adj_saturation_title">Saturación</string>
     <string name="adj_intensity_title">Intensidade</string>
     <string name="adj_contrast_title">Contraste</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

@@ -16,6 +16,7 @@
     <string name="hardware_keys_power_key_title">Dugme za uključenje</string>
     <string name="hardware_keys_volume_keys_title">Dugmad za jačinu zvuka</string>
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">Uključi navigacijsku traku na ekranu</string>
     <!-- Kill app long-press back -->
     <!-- Hostname setting -->
     <!-- Advanced restart options -->
@@ -104,7 +105,6 @@
     <string name="swipe_to_screenshot_gesture_title">Prevuci za snimak ekrana</string>
     <string name="swipe_to_screenshot_gesture_summary">Prevuci sa tri prsta za snimak ekrana</string>
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Prilagodi ekran na osnovu dana/noć i i uslova osvetljenja za lakše čitanje</string>
     <string name="live_display_mode">Mod ekrana</string>
@@ -153,4 +153,6 @@
     <string name="adj_saturation_title">Zasićenje</string>
     <string name="adj_intensity_title">Jačina</string>
     <string name="adj_contrast_title">Kontrast</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>

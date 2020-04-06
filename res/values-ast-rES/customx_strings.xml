@@ -182,7 +182,6 @@
     <!-- Notch: Full screen apps -->
     <!-- Three-fingers-swipe to screenshot -->
     <!-- Navigation compact layout -->
-    <!-- Full screen gestures -->
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimiza la to pantalla según la hora\'l día y les condiciones ambientales p\'ameyorar la llexibilidá y amenorgar el cansanciu de güeyos</string>
     <string name="live_display_mode">Mou de pantalla</string>
@@ -234,4 +233,6 @@
     <string name="adj_saturation_title">Saturación</string>
     <string name="adj_intensity_title">Intensidá</string>
     <string name="adj_contrast_title">Contraste</string>
+    <!-- Back Gesture Height -->
+    <!-- Full screen gestures -->
 </resources>
