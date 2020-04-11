@@ -54,6 +54,8 @@ import com.android.settings.custom.utils.ResourceUtils;
 
 import com.android.settings.custom.preference.CustomDialogPreference;
 
+import com.android.internal.util.custom.PackageManagerUtils;
+
 import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_CABC;
 import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
 import static com.android.internal.custom.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
@@ -222,8 +224,10 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements
         }
 
         mReadingMode = (SwitchPreference) findPreference(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
-        if (liveDisplayPrefs != null && mReadingMode != null
-                && !mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
+        if (liveDisplayPrefs != null && mReadingMode != null &&
+                (!mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT) ||
+                PackageManagerUtils.isAppEnabled(getContext(), getContext().getString(
+                        com.android.internal.R.string.config_defaultWellbeingPackage)))) {
             liveDisplayPrefs.removePreference(mReadingMode);
             mReadingMode = null;
         } else {
@@ -452,7 +456,9 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements
             if (!config.hasFeature(FEATURE_PICTURE_ADJUSTMENT)) {
                 result.add(KEY_PICTURE_ADJUSTMENT);
             }
-            if (!config.hasFeature(FEATURE_READING_ENHANCEMENT)) {
+            if (!config.hasFeature(FEATURE_READING_ENHANCEMENT) ||
+                    PackageManagerUtils.isAppEnabled(context, context.getString(
+                            com.android.internal.R.string.config_defaultWellbeingPackage))) {
                 result.add(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
             }
             if (ColorDisplayManager.isNightDisplayAvailable(context)) {
