@@ -58,6 +58,11 @@
             android:defaultValue="false" />
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_translucent_notifications_bg_enabled"
+            android:title="@string/translucent_lockscreen_notifications_bg_title"
+            android:defaultValue="false" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="lockscreen_disable_power_menu"
             android:title="@string/lockscreen_power_menu_disabled_title"
             android:summary="@string/lockscreen_power_menu_disabled_summary"
