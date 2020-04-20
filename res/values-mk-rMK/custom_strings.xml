@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Помалку од 1 минута</string>
+    <string name="screen_time_summary_usage_today">%1$s денес</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Користете го отклучувањето со лице за да го отклучувате вашиот уред.\n\nИмајте предвид:\nтелефонот може да се отклучи и кога гледате во него без да имате намера да го отклучите.\n\nТелефонот може да го отклучи и некој друг ако го држи до вашето лице кога очите ви се отворени.\n\nТелефонот може да го отклучи и некој кој многу личи на вас, на пример, вашето дете или идентичен брат/сестра.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Податоците што ги регистрира отклучувањето со лице ќе бидат трајно и безбедно избришани. По отстранувањето, ќе ви биде потребен PIN-код, шема или лозинка за да го отклучите телефонот.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Вклучете „Адаптивна батерија“</string>
+    <string name="smart_battery_footer_custom">"За да го продолжи траењето на батеријата, „Адаптивната батерија“ ја ограничува батеријата за ретко користените апликации. Со тек на време, телефонот ќе научи како ги користите апликациите.
+
+Известувањата може да бидат одложени за овие апликации."</string>
+    <string name="smart_battery_manager_title_custom">Адаптивна батерија</string>
+    <string name="smart_battery_title_custom">Користи „Адаптивна батерија“</string>
     <!-- Fingerprint location message - default -->
     <!-- Fingerprint location message - generic -->
     <!-- Fingerprint location message - tablet -->
@@ -53,4 +66,5 @@
     <!-- Buttons - Enable navbar -->
     <!-- Proximity wake -->
     <!-- Refresh rate -->
+    <!-- Battery light -->
 </resources>

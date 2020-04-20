@@ -11,6 +11,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">1 minutu baino gutxiago</string>
+    <string name="screen_time_summary_usage_today">%1$s gaur</string>
+    <!-- Moto Face Unlock -->
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Aktibatu bateria doigarria</string>
+    <string name="smart_battery_footer_custom">"Bateriak gehiago iraun dezan, bateria doigarriak mugatu egiten du gutxitan erabiltzen dituzun aplikazioek erabiltzen duten bateria. Denborarekin, aplikazioak nola erabiltzen dituzun ikasiko du telefonoak.
+
+Baliteke aplikazio horietan jakinarazpenak atzeratzea."</string>
+    <string name="smart_battery_manager_title_custom">Bateria doigarria</string>
+    <string name="smart_battery_title_custom">Erabili bateria doigarria</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Pantaila aurrean hatz-marka sentsorea aurkitu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Bilatu hatz-marken sentsorea; telefonoaren ezkarreko aldean dago.</string>
@@ -70,4 +81,5 @@
     <string name="disable_navkeys_summary">Pantailako nabigazio-barra gaitu eta ezgaitu botoi fisikoak</string>
     <!-- Proximity wake -->
     <!-- Refresh rate -->
+    <!-- Battery light -->
 </resources>

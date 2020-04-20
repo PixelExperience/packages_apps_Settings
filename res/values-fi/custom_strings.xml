@@ -11,6 +11,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Alle 1 minuutti</string>
+    <string name="screen_time_summary_usage_today">%1$s tänään</string>
+    <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Avaa näytön lukitus kasvojentunnistuksella.\n\nOta huomioon seuraavat seikat:\nKatsomalla puhelinta voit avata puhelimen lukituksen myös tahattomasti.\n\nJoku muu voi avata puhelimesi lukituksen, jos se kohdistetaan kasvoihisi, kun silmäsi ovat auki.\n\nPuhelimen lukituksen voi avata joku, joka on samannäköinen kuin sinä, kuten lapsesi tai identtinen kaksosesi.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Kasvojentunnistuksen tallentamat tiedot poistetaan pysyvästi ja turvallisesti. Poistamisen jälkeen tarvitse PIN-koodin, kuvion tai salasanan puhelimen lukituksen avaamiseen.</string>
+    <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Ota käyttöön mukautuva virta</string>
+    <string name="smart_battery_footer_custom">"Mukautuva virta pidentää akun kestoa rajoittamalla harvoin käytettyjen sovellusten akunkäyttöä. Puhelin oppii, miten käytät sovelluksia.
+
+Rajoitettujen sovellusten ilmoitukset voidaan näyttää viiveellä."</string>
+    <string name="smart_battery_manager_title_custom">Mukautuva virta</string>
+    <string name="smart_battery_title_custom">Käytä mukautuvaa virtaa</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Löydä sormenjälkitunnistin puhelimesi etuosasta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Löydä sormenjälkitunnistin puhelimesi vasemmasta reunasta.</string>
@@ -69,5 +82,14 @@
     <string name="disable_navkeys_title">Näytön navigointipalkki</string>
     <string name="disable_navkeys_summary">Ota näytön navigointipalkki käyttöön ja poista fyysiset näppäimet käytöstä</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Estä vahinkoheräämiset</string>
+    <string name="proximity_wake_summary">Tarkista läheisyysanturi ennen näytön herättämistä</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Näytön virkistystaajuus</string>
+    <string name="refresh_rate_summary_auto">Automaattinen / Nostaa virkistystaajuuden automaattisesti 60 hertsistä 90 hertsiin joillekin sisällöille</string>
+    <string name="refresh_rate_summary_60">60Hz / Virkistystaajuus lukittu 60Hz kaikelle sisällölle</string>
+    <string name="refresh_rate_summary_90">90Hz / Virkistystaajuus lukittu 90Hz kaikellle sisällölle. Lisää virrankulutusta</string>
+    <string name="auto_refresh_rate">Automaattinen</string>
+    <!-- Battery light -->
+    <string name="battery_light_title">Latausvalo ladattaessa</string>
 </resources>
