@@ -91,7 +91,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
 
-        mNetworkTrafficPref = (PreferenceScreen) findPreference(NETWORK_TRAFFIC_SETTINGS);
+        mNetworkTrafficPref = findPreference(NETWORK_TRAFFIC_SETTINGS);
 
         sHasCenteredNotch = CutoutUtils.hasCenteredCutout(getActivity());
 
