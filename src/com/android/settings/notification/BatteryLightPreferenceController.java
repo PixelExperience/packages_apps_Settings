@@ -16,7 +16,7 @@
 
 package com.android.settings.notification;
 
-import static android.provider.Settings.System.BATTERY_LIGHT_ENABLED;
+import static android.provider.Settings.Global.BATTERY_LIGHT_ENABLED;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -78,20 +78,20 @@ public class BatteryLightPreferenceController extends TogglePreferenceController
     public boolean isChecked() {
         boolean enabledByDefault = mContext.getResources().getBoolean(
                         com.android.internal.R.bool.config_intrusiveBatteryLed);
-        return Settings.System.getInt(mContext.getContentResolver(), BATTERY_LIGHT_ENABLED,
+        return Settings.Global.getInt(mContext.getContentResolver(), BATTERY_LIGHT_ENABLED,
                 enabledByDefault ? ON : OFF) == ON;
     }
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        return Settings.System.putInt(mContext.getContentResolver(), BATTERY_LIGHT_ENABLED,
+        return Settings.Global.putInt(mContext.getContentResolver(), BATTERY_LIGHT_ENABLED,
                 isChecked ? ON : OFF);
     }
 
     class SettingObserver extends ContentObserver {
 
         private final Uri BATTERY_LIGHT_ENABLED_URI =
-                Settings.System.getUriFor(Settings.System.BATTERY_LIGHT_ENABLED);
+                Settings.Global.getUriFor(Settings.Global.BATTERY_LIGHT_ENABLED);
 
         private final Preference mPreference;
 
