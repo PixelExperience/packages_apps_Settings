@@ -29,16 +29,18 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.android.internal.util.custom.cutout.CutoutUtils;
+
 public class NetworkTrafficSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener  {
 
     private static final String TAG = "NetworkTrafficSettings";
-    private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
 
     private DropDownPreference mNetTrafficMode;
     private SwitchPreference mNetTrafficAutohide;
     private DropDownPreference mNetTrafficUnits;
-    private SwitchPreference mNetTrafficShowUnits;
+
+    private boolean mHasNotch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,11 +48,13 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.network_traffic_settings);
         final ContentResolver resolver = getActivity().getContentResolver();
 
+        mHasNotch = CutoutUtils.hasCutout(getActivity());
+
         mNetTrafficMode = (DropDownPreference)
-                findPreference(Settings.System.NETWORK_TRAFFIC_MODE);
+                findPreference(Settings.System.NETWORK_TRAFFIC_LOCATION);
         mNetTrafficMode.setOnPreferenceChangeListener(this);
         int mode = Settings.System.getInt(resolver,
-                Settings.System.NETWORK_TRAFFIC_MODE, 0);
+                Settings.System.NETWORK_TRAFFIC_LOCATION, 0);
         mNetTrafficMode.setValue(String.valueOf(mode));
 
         mNetTrafficAutohide = (SwitchPreference)
@@ -64,12 +68,14 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
                 Settings.System.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1);
         mNetTrafficUnits.setValue(String.valueOf(units));
 
-        mNetTrafficShowUnits = (SwitchPreference)
-                findPreference(Settings.System.NETWORK_TRAFFIC_SHOW_UNITS);
-        mNetTrafficShowUnits.setOnPreferenceChangeListener(this);
+        if (mHasNotch){
+            String[] locationEntriesNotch = getResources().getStringArray(R.array.network_traffic_mode_entries_notch);
+            String[] locationEntriesNotchValues = getResources().getStringArray(R.array.network_traffic_mode_values_notch);
+            mNetTrafficMode.setEntries(locationEntriesNotch);
+            mNetTrafficMode.setEntryValues(locationEntriesNotchValues);
+        }
 
         updateEnabledStates(mode);
-        updateForClockConflicts();
     }
 
     @Override
@@ -77,9 +83,8 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         if (preference == mNetTrafficMode) {
             int mode = Integer.valueOf((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_MODE, mode);
+                    Settings.System.NETWORK_TRAFFIC_LOCATION, mode);
             updateEnabledStates(mode);
-            updateForClockConflicts();
         } else if (preference == mNetTrafficUnits) {
             int units = Integer.valueOf((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
@@ -92,22 +97,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         final boolean enabled = mode != 0;
         mNetTrafficAutohide.setEnabled(enabled);
         mNetTrafficUnits.setEnabled(enabled);
-        mNetTrafficShowUnits.setEnabled(enabled);
-    }
-
-    private void updateForClockConflicts() {
-        int clockPosition = Settings.System.getInt(getActivity().getContentResolver(),
-                STATUS_BAR_CLOCK_STYLE, 2);
-
-        if (clockPosition != 1) {
-            return;
-        }
-
-        mNetTrafficMode.setEnabled(false);
-        Toast.makeText(getActivity(),
-                R.string.network_traffic_disabled_clock,
-                Toast.LENGTH_LONG).show();
-        updateEnabledStates(0);
     }
 
     @Override
