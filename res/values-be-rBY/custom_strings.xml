@@ -15,6 +15,8 @@
     <string name="duration_less_than_one_minute">Менш за 1 хвіліну</string>
     <string name="screen_time_summary_usage_today">Сёння %1$s</string>
     <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Выкарыстоўвайце функцыю фэйскантроль, каб разблакаваць прыладу.\n\nПамятайце:\nПогляд на тэлефон можа разблакаваць яго, нават калі вы не збіраліся гэтага рабіць.\n\nТэлефон можа быць разблакаваны іншым чалавекам, калі ён паднясе яго да вашага твару, калі вашы вочы раскрыты.\n\nТэлефон можа быць разблакаваны чалавекам, моцна падобным на вас, напрыклад вашым дзіцём або блізнюком.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Дадзеныя, запісаныя з дапамогай функцыі фэйскантроль, будуць незваротна выдаленыя.  Пасля выдалення спатрэбіцца ўвесці PIN-код, графічны ключ або пароль для разблакоўкі тэлефона.</string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Уключыць адаптацыю акумулятара</string>
     <string name="smart_battery_footer_custom">"Каб падоўжыць тэрмін службы акумулятара, адаптацыя акумулятара абмяжоўвае яго выкарыстанне праграмамі, якія запускаюцца рэдка. Ваш тэлефон з часам прыстасуецца да таго, як вы карыстаецеся праграмамі.
@@ -80,8 +82,14 @@
     <string name="disable_navkeys_title">Уключэнне экраннай панэлі навігацыі</string>
     <string name="disable_navkeys_summary">Задзейнічаць навігацыйны радок, але не задзейнічаць кнопкі прылады</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Прадухіляць выпадковае ўключэнне экрана</string>
+    <string name="proximity_wake_summary">Правяраць датчык набліжэння перад уключэннем экрана</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Частата абнаўлення экрана</string>
+    <string name="refresh_rate_summary_auto">Аўта / Аўтаматычнае павышэнне частаты абнаўлення з 60 да 90 Гц для некаторага кантэнту</string>
+    <string name="refresh_rate_summary_60">60Гц / Частата абнаўлення заблакаваная на 60 Гц для ўсяго кантэнту</string>
+    <string name="refresh_rate_summary_90">90Гц / Частата абнаўлення заблакавана на 90 Гц для ўсяго кантэнту. Павялічаны расход батарэі</string>
     <string name="auto_refresh_rate">Аўтаматычна</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Уключыць светлавы індыкатар падчас зарадкі</string>
 </resources>

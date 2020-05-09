@@ -25,15 +25,15 @@
     <string name="smart_battery_manager_title_custom">自動調節電池用量</string>
     <string name="smart_battery_title_custom">使用自動調節電池用量功能</string>
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">指紋感應器位於手機背面。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">指紋感應器位於手機正面。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">指紋感應器位於手機左側。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">指紋感應器位於手機右側。</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">指紋感應器位於裝置背面。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">指紋感應器位於裝置正面。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">指紋感應器位於裝置左側。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">指紋感應器位於裝置右側。</string>
     <!-- Fingerprint location message - tablet -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">指紋感應器位於平板背面。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">指紋感應器位於平板正面。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">指紋感應器位於平板左側。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">指紋感應器位於平板右側。</string>
     <!-- Generic stuff used everywhere -->
@@ -91,4 +91,5 @@
     <string name="refresh_rate_summary_90">90Hz / 所有內容的螢幕更新率鎖定在90Hz。將會增加耗電量</string>
     <string name="auto_refresh_rate">自動</string>
     <!-- Battery light -->
+    <string name="battery_light_title">充電的時候打開手電筒</string>
 </resources>

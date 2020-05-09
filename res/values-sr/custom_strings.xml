@@ -91,4 +91,5 @@
     <string name="refresh_rate_summary_90">90Hz / Освежавање екрана закључано на 90Hz за сав садржај. Повећано коришћење батерије</string>
     <string name="auto_refresh_rate">Аутоматски</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Укључи светло када се пуни</string>
 </resources>

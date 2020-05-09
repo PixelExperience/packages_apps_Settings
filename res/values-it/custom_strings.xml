@@ -16,7 +16,7 @@
     <string name="screen_time_summary_usage_today">Oggi: %1$s</string>
     <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Usa lo sblocco con il viso per sbloccare il dispositivo.\n\nTieni presente che:\nSe guardi il telefono puoi sbloccarlo inavvertitamente.\n\nIl telefono può essere sbloccato da un\'altra persona se lo rivolge verso il tuo viso mentre hai gli occhi aperti.\n\nIl telefono può essere sbloccato da qualcuno che ti somiglia molto, ad esempio tuo figlio o un tuo gemello identico.</string>
-    <string name="security_settings_face_settings_remove_dialog_details_moto">I dati registrati tramite lo sblocco con il viso verranno eliminati in modo definitivo e sicuro. Dopo la rimozione, per sbloccare il telefono sarà necessario inserire il PIN, la sequenza o la password.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Elimina i dati del volto attuali per configurare nuovamente Sblocco con il volto.\n\nI dati del volto di Sblocco con il volto verranno eliminati in modo definitivo e sicuro. Dopo la rimozione, ti serviranno PIN, sequenza o password per sbloccare il telefono, accedere alle app e confermare i pagamenti.</string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Attiva Batteria adattiva</string>
     <string name="smart_battery_footer_custom">"Per prolungare la durata della batteria, la funzione Batteria adattiva limita l'utilizzo della batteria per le app usate di rado. Il telefono capirà come usi le app nel corso del tempo.
@@ -64,7 +64,7 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <string name="hardware_keys_swipe_tap_title">Azione di scorrimento</string>
     <string name="hardware_keys_long_tap_title">Azione di tocco prolungato</string>
     <string name="button_wake_title">Riattiva il dispositivo</string>
-    <string name="camera_sleep_on_release_title">Tieni premuto a metà per controllare le notifiche</string>
+    <string name="camera_sleep_on_release_title">Tieni premuto a metà per controllare il telefono</string>
     <string name="camera_sleep_on_release_summary">Controlla l\'ora, le icone di notifica e altre informazioni finché tieni premuto a metà</string>
     <string name="camera_launch_title">Avvia fotocamera</string>
     <string name="camera_launch_summary">Premi a fondo e rilascia per avviare la fotocamera</string>
@@ -82,14 +82,14 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <string name="disable_navkeys_title">Attiva la barra di navigazione su schermo</string>
     <string name="disable_navkeys_summary">Attiva la barra di navigazione su schermo e disattiva i pulsanti fisici</string>
     <!-- Proximity wake -->
-    <string name="proximity_wake_title">Previeni risvegli accidentali</string>
-    <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di accendere lo schermo</string>
+    <string name="proximity_wake_title">Evita riattivazioni involontarie</string>
+    <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di riattivare il dispositivo</string>
     <!-- Refresh rate -->
-    <string name="refresh_rate_title">Frequenza di aggiornamento dello schermo</string>
-    <string name="refresh_rate_summary_auto">Auto / Aumenta automaticamente la frequenza di aggiornamento da 60 a 90Hz per alcuni contenuti</string>
-    <string name="refresh_rate_summary_60">60Hz / Frequenza di aggiornamento dello schermo bloccata a 60Hz per tutti i contenuti</string>
-    <string name="refresh_rate_summary_90">90Hz / Frequenza di aggiornamento dello schermo bloccata a 90Hz per tutti i contenuti. Maggior consumo di batteria.</string>
-    <string name="auto_refresh_rate">Auto</string>
+    <string name="refresh_rate_title">Frequenza di aggiornamento</string>
+    <string name="refresh_rate_summary_auto">Automatica/Aumenta automaticamente da 60 a 90 Hz per alcuni contenuti</string>
+    <string name="refresh_rate_summary_60">60 Hz/Fissata a 60 Hz per tutti i contenuti</string>
+    <string name="refresh_rate_summary_90">90 Hz/Fissata a 90 Hz per tutti i contenuti. Aumenta il consumo della batteria</string>
+    <string name="auto_refresh_rate">Automatica</string>
     <!-- Battery light -->
-    <string name="battery_light_title">Accendi la luce durante la ricarica</string>
+    <string name="battery_light_title">Attiva il LED durante la ricarica</string>
 </resources>
