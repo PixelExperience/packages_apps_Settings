@@ -82,6 +82,14 @@
     <string name="disable_navkeys_title">Разреши екранната лента за навигация</string>
     <string name="disable_navkeys_summary">Разреши екранна навигационна лента и забрани хардуерните бутони</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Предотвратяване на случайно събуждане</string>
+    <string name="proximity_wake_summary">Провери сензора за близост преди събуждане на екрана</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Опресняване на екрана</string>
+    <string name="refresh_rate_summary_auto">Автоматично / Вдига автоматично честотата на опресняване от 60 до 90Hz за определено съдържание</string>
+    <string name="refresh_rate_summary_60">60Hz/ Честотата на опресняване е заключена на 60Hz за всякакво съдържание</string>
+    <string name="refresh_rate_summary_90">60Hz/ Честотата на опресняване е заключена на 90Hz за всякакво съдържание. Увеличена консумация на батерията</string>
+    <string name="auto_refresh_rate">Автоматично</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Включете светлината при зареждане</string>
 </resources>

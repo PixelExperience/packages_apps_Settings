@@ -91,4 +91,5 @@ Előfordulhat, hogy az érintett alkalmazások értesítései késnek majd."</st
     <string name="refresh_rate_summary_90">90Hz / A frissítési értéket 90Hz-en rögzíti minden tartalomhoz. Nő a fogyasztás!</string>
     <string name="auto_refresh_rate">Automatikus</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Töltéskor kapcsolódjon be fényjelzés</string>
 </resources>

@@ -91,4 +91,5 @@
     <string name="refresh_rate_summary_90">90Hz / อัตราการรีเฟรชถูกล็อคที่ 90Hz สำหรับเนื้อหาทั้งหมด เพิ่มการใช้งานแบตเตอรี่</string>
     <string name="auto_refresh_rate">อัตโนมัติ</string>
     <!-- Battery light -->
+    <string name="battery_light_title">เปิดแสงไฟเมื่อชาร์จแบตเตอรี่</string>
 </resources>

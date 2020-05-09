@@ -12,15 +12,32 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Wellbeing -->
+    <string name="duration_less_than_one_minute">Inqas minn minuta</string>
+    <string name="screen_time_summary_usage_today">%1$s illum</string>
     <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Sabiex tuża l-apparat pemezz tal-Face unlock.\n\nTrid iżomm f\'rasek:\nTħares lejn il-mowbajl jista jiftħu meta mhux apposta.\n\nIl-mowbajl tiegħek jista\' jinfetaħ minn xi ħadd ieħor jekk huwa fil-livell ma\' wiċċek, b\'għajnejk miftuħin.\n\nIl-mowbajl tiegħek jista\' jinfetaħ minn persuna li jinxtiebaħ, forsi, it-tifel tiegħek jew ħutek identiċi.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">L-informazzjoni rrikordjata mill-face unlock ser ikun permanenti u ser jitħassar b\'mod sigur. Wara li jitħassar, ser ikollok bżonn PIN, disinn, jew password sabiex tiftaħ il-mowbajl tiegħek.</string>
     <!-- Adaptive battery -->
+    <string name="battery_tip_smart_battery_summary_custom">Ixgħel Adaptive Battery</string>
+    <string name="smart_battery_footer_custom">"Sabiex testendi l-ħajja tal-batterija, Adaptive Battery jillimita l-użu ta' applikazzjonijiet li jintużaw b'mod rari. Il-mowbajl tiegħek se jitgħallem kif tuża dawn l-applikazzjonijiet maż-żmien.
+
+In-notifiki jistgħu jittardjaw għal dawn l-applikazzjonijiet."</string>
+    <string name="smart_battery_manager_title_custom">Batterija Adattiva</string>
+    <string name="smart_battery_title_custom">Uża l-Batterija Adattiva</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Sib is-sensur tal-fingerprint fuq quddiem tal-mowbajl.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Sib is-sensur tal-fingerprint fuq il-ġenb tax-xellug tal-mowbajl.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Sib is-sensur tal-fingerprint fuq il-ġenb tal-lemin tal-mowbajl.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Sib is-senser tal-fingerprint fuq quddiem tal-mowbajl.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Sib is-senser tal-fingerprint fuq il-ġenb tax-xellug tal-mowbajl.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Sib is-senser tal-fingerprint fuq il-ġenb tal-lemin tal-mowbajl.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Sib is-sensur tal-fingerprint fuq quddiem tat-tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Sib is-sensur tal-fingerprint fuq il-ġenb tax-xellug tat-tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Sib is-sensur tal-fingerprint fuq il-ġenb tal-lemin tat-tablet.</string>
     <!-- Generic stuff used everywhere -->
+    <string name="reset">Irrisettja</string>
     <!-- Buttons -->
     <string name="button_pref_title">Buttuni</string>
     <string name="hardware_keys_home_key_title">Buttuna tal-home</string>
@@ -52,6 +69,7 @@
     <string name="camera_launch_title">Iftaħ kamera</string>
     <string name="camera_launch_summary">Żomm il-buttuna għall-ħin twil u itlaqa biex tiftaħ il-kamera</string>
     <!-- Key backlight -->
+    <string name="button_backlight_title">Backlight</string>
     <string name="button_backlight_enabled">Buttuni mdawwlin</string>
     <string name="button_backlight_only_when_pressed_title">Il-buttuni jixgħelu biss meta mgħafsin</string>
     <string name="button_backlight_seekbar_title">Il-luminożità tal-buttuna</string>
@@ -64,6 +82,14 @@
     <string name="disable_navkeys_title">Ixgħel on-screen nav bar</string>
     <string name="disable_navkeys_summary">Ixgħel on-screen navigation bar u itfi buttuni fiżiċi</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Waqqaf il-qawmien aċċidentali</string>
+    <string name="proximity_wake_summary">Iċċekkja is-senser qrubija qabel ma tqajjem l-iskrin</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Ir-refresh rate tal-iskrin</string>
+    <string name="refresh_rate_summary_auto">Auto / Jgħolli r-refresh rate awtomatikament minn 60 sa 90Hz għal xi kontenut</string>
+    <string name="refresh_rate_summary_60">60Hz / Illokja ir-refresh rate f\'60Hz għal kontenut kollu</string>
+    <string name="refresh_rate_summary_90">90Hz / Illokja ir-refresh rate f\'90Hz għal kontenut kollu. Iżid l-użu tal-batterija</string>
+    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Ixgħel id-dawl waqt li qed tiċċarġja</string>
 </resources>

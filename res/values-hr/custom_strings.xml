@@ -91,4 +91,5 @@ Obavijesti za te aplikacije mogu kasniti."</string>
     <string name="refresh_rate_summary_90">90Hz / Osvježavanje zaslona je zaključano na 90Hz za sav sadržaj. Povećana potrošnja baterije</string>
     <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Uključite svijetlo prilikom punjenja</string>
 </resources>

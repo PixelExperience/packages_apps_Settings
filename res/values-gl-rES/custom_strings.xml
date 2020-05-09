@@ -15,6 +15,7 @@
     <string name="duration_less_than_one_minute">Menos de 1 minuto</string>
     <string name="screen_time_summary_usage_today">%1$s hoxe</string>
     <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Utilice Desbloqueo facial para desbloquear o dispositivo.\n\nTeña presente:\nA hora de mirar o teléfono pódelo desbloquear cando non ten intención de facer.\n\nO seu teléfono pode ser desbloqueado por alguén máis se mantén a súa cara mentres estea  os teus ollos están abertos.\n\nO teu teléfono pode desbloquealo por alguén que se parece moito a ti, digamos, ao teu fillo ou a un irmán idéntico.</string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Activa a batería automática</string>
     <string name="smart_battery_footer_custom">"Para aumentar a duración da batería, a batería automática limita o consumo das aplicacións que se utilizan con pouca frecuencia. Co paso do tempo, o teléfono saberá como utilizas as aplicacións.
@@ -27,6 +28,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localiza o sensor da pegada dixital no lado esquerdo do teléfono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Localiza o sensor da pegada dixital no lado dereito do teléfono.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Localiza o sensor da pegada dixital no frontal do dispositivo.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Localiza o sensor da pegada dixital no lado esquerdo do teléfono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Localiza o sensor da pegada dixital no lado esquerdo do teléfono.</string>
     <!-- Fingerprint location message - tablet -->
@@ -77,6 +79,9 @@
     <string name="disable_navkeys_title">Activar a barra de navegación</string>
     <string name="disable_navkeys_summary">Activar a barra de navegación na pantalla e desactivar os botones físicos</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Previr acender de forma accidental</string>
+    <string name="proximity_wake_summary">Comprobar o sensor de proximidade antes de acender a pantalla</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Tasa de refresco da pantalla</string>
     <!-- Battery light -->
 </resources>

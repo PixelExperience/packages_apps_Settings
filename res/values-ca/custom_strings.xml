@@ -91,4 +91,5 @@
     <string name="refresh_rate_summary_90">90Hz / Freqüència d\'actualització bloquejada a 90Hz per a qualsevol contingut  </string>
     <string name="auto_refresh_rate">Automàtic</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Encendre la llum quan el dispositiu s\'està carregant </string>
 </resources>

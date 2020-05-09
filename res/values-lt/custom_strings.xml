@@ -91,5 +91,5 @@
     <string name="refresh_rate_summary_90">90Hz / atnaujinimo dažnis priverstinis 90 Hz visoms programoms. Padidėjęs akumuliatoriaus sunaudojimas</string>
     <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
-    <string name="battery_light_title">Įjunkite šviesą kraunant</string>
+    <string name="battery_light_title">Įjunkite šviesos indikatorių,akumuliatoriaus įkrovimo metu</string>
 </resources>
