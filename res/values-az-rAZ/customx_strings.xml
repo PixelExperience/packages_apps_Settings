@@ -170,9 +170,6 @@
     <string name="network_traffic_settings_summary">Vəziyyət sətrində hazırki şəbəkə trafik səviyyələrini göstər</string>
     <string name="network_traffic_mode_title">Görüntü rejimi</string>
     <string name="network_traffic_mode_disable">Sıradan çıxarıldı</string>
-    <string name="network_traffic_mode_up">Yalnız yükləmə</string>
-    <string name="network_traffic_mode_down">Yalnız endirmə</string>
-    <string name="network_traffic_mode_all">Yükləmə və endirmə</string>
     <string name="network_traffic_autohide">Avtomatik gizlət</string>
     <string name="network_traffic_autohide_summary">Fəaliyyət olmayanda trafik göstəricisini gizlət</string>
     <string name="network_traffic_units_title">Trafik ölçü vahidi</string>
@@ -182,7 +179,6 @@
     <string name="network_traffic_units_megabytes">Saniyədə megabayt (MB/s)</string>
     <string name="network_traffic_show_units">Vahidləri göstər</string>
     <string name="network_traffic_show_units_summary">Vəziyyət sətrində trafik ölçmə vahidlərini göstərilib göstərilməyəcəyi</string>
-    <string name="network_traffic_disabled_clock">Saat mövqeyinə görə şəbəkə trafiki sıradan çıxarıldı</string>
     <!-- QS settings -->
     <string name="qs_title">Sürətli tənzimləmələr</string>
     <string name="qs_rows_portrait_title">Sətirlər (şaquli)</string>
@@ -192,6 +188,7 @@
     <!-- QS title visibility -->
     <!-- QS tiles haptic feedback -->
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_tile_animation_duration_low">Yavaş</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Çərtik tənzimləmələri</string>
     <string name="display_cutout_mode_normal">Standart</string>
@@ -261,4 +258,6 @@
     <string name="back_height_message">Arxa jest üçün toxunulabilən bölgə olaraq istifadə olunan ekran boyu miqdarı.</string>
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Naviqasiya bar çubuğunu gizlət.</string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

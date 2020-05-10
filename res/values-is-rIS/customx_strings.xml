@@ -44,7 +44,6 @@
     <!-- Status bar - Battery percentage -->
     <!-- Status bar - Brightness -->
     <!-- Status bar - Network Traffic -->
-    <string name="network_traffic_disabled_clock">Netumferð hefur verið gerð óvirk vegna stöðu klukkunnar</string>
     <!-- QS settings -->
     <!-- QS title visibility -->
     <!-- QS tiles haptic feedback -->
@@ -57,4 +56,6 @@
     <!-- LiveDisplay : Picture Adjustment -->
     <!-- Back Gesture Height -->
     <!-- Full screen gestures -->
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

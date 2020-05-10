@@ -111,4 +111,6 @@
     <string name="adj_contrast_title">အလင်းအမှောင်</string>
     <!-- Back Gesture Height -->
     <!-- Full screen gestures -->
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

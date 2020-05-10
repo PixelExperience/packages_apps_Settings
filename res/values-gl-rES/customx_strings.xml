@@ -169,9 +169,6 @@
     <string name="network_traffic_settings_summary">Amosar os niveis actuais do tráfico de rede na barra de estado</string>
     <string name="network_traffic_mode_title">Modo de visualización</string>
     <string name="network_traffic_mode_disable">Desactivado</string>
-    <string name="network_traffic_mode_up">Só subida</string>
-    <string name="network_traffic_mode_down">Só baixada</string>
-    <string name="network_traffic_mode_all">Subida e baixada</string>
     <string name="network_traffic_autohide">Ocultar automáticamente</string>
     <string name="network_traffic_autohide_summary">Ocultar o monitor de tráfico cando non hai actividade</string>
     <string name="network_traffic_units_title">Unidades de medición do tráfico</string>
@@ -181,7 +178,6 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundo (kb/s)</string>
     <string name="network_traffic_show_units">Amosa unidades</string>
     <string name="network_traffic_show_units_summary">Se queres amosar as unidades de medición do tráfico na barra de estado</string>
-    <string name="network_traffic_disabled_clock">Tráfico de rede desactivado devido á posición do reloxo</string>
     <!-- QS settings -->
     <string name="qs_title">Axustes Rápidos</string>
     <!-- QS title visibility -->
@@ -251,4 +247,6 @@
     <string name="adj_contrast_title">Contraste</string>
     <!-- Back Gesture Height -->
     <!-- Full screen gestures -->
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

@@ -171,9 +171,6 @@
     <string name="network_traffic_settings_summary">Pokaż bieżące poziomy ruchu sieciowego na pasku stanu</string>
     <string name="network_traffic_mode_title">Tryb wyświetlania</string>
     <string name="network_traffic_mode_disable">Wyłączone</string>
-    <string name="network_traffic_mode_up">Tylko wysyłanie</string>
-    <string name="network_traffic_mode_down">Tylko pobieranie</string>
-    <string name="network_traffic_mode_all">Wysyłanie i pobieranie</string>
     <string name="network_traffic_autohide">Autoukrywanie</string>
     <string name="network_traffic_autohide_summary">Ukryj monitor ruchu, przy braku aktywności</string>
     <string name="network_traffic_units_title">Jednostki pomiaru ruchu</string>
@@ -183,7 +180,6 @@
     <string name="network_traffic_units_megabytes">Megabajty na sekundę (MB/s)</string>
     <string name="network_traffic_show_units">Pokaż jednostki</string>
     <string name="network_traffic_show_units_summary">Określa, czy pokazywać jednostki pomiaru ruchu sieciowego na pasku stanu</string>
-    <string name="network_traffic_disabled_clock">Wskaźnik ruchu sieciowego jest wyłączony ze względu na położenie zegara</string>
     <!-- QS settings -->
     <string name="qs_title">Szybkie ustawienia</string>
     <string name="qs_rows_portrait_title">Liczba kafelków w wierszu w pionie</string>
@@ -288,4 +284,6 @@
     <string name="back_height_message">Ilość ekranu użyta jako obszar dotykowy dla gestu wstecz.</string>
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Ukryj belkę nawigacji za pomocą gestów. </string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

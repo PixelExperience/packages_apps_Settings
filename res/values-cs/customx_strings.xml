@@ -171,9 +171,6 @@
     <string name="network_traffic_settings_summary">Zobrazit rychlost přenosu dat ve stavové liště</string>
     <string name="network_traffic_mode_title">Režim zobrazení</string>
     <string name="network_traffic_mode_disable">Zakázáno</string>
-    <string name="network_traffic_mode_up">Pouze odchozí data</string>
-    <string name="network_traffic_mode_down">Pouze příchozí data</string>
-    <string name="network_traffic_mode_all">Příchozí a odchozí data</string>
     <string name="network_traffic_autohide">Automatické skrytí</string>
     <string name="network_traffic_autohide_summary">Skrýt Indikátor síťového provozu, pokud neprobíhá žádná síťová aktivita</string>
     <string name="network_traffic_units_title">Jednotky měření síťového provozu</string>
@@ -183,7 +180,6 @@
     <string name="network_traffic_units_megabytes">Megabajty za sekundu (MB/s)</string>
     <string name="network_traffic_show_units">Zobrazit jednotky</string>
     <string name="network_traffic_show_units_summary">Zobrazení jednotek měření síť. provozu ve stavové liště</string>
-    <string name="network_traffic_disabled_clock">Síťový provoz se nezobrazí kvůli umístění hodin</string>
     <!-- QS settings -->
     <string name="qs_title">Rychlá nastavení</string>
     <string name="qs_rows_portrait_title">Řádky (na výšku)</string>
@@ -288,4 +284,6 @@
     <string name="back_height_message">Hodnota výšky obrazovky použité jako dotyková oblast pro gesto „Zpět“.</string>
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Skrýt pilulku navigačního panelu</string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

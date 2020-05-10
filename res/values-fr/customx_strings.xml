@@ -84,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">Appui long sur bouton d\'accueil</string>
     <string name="navigation_bar_home_double_tap_title">Appui double sur bouton d\'accueil</string>
     <string name="navigation_bar_app_switch_long_press_title">Appui long sur le bouton d\'applications récentes</string>
+    <string name="navigation_bar_edge_long_swipe_title">Action de balayage long sur le bord</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Contrôler la lecture</string>
     <string name="volbtn_music_controls_summary">Changer de piste audio à l\'aide d\'une pression longue sur les boutons de volume lorsque l\'écran est éteint</string>
@@ -170,9 +171,6 @@
     <string name="network_traffic_settings_summary">Afficher les débits réseau actuels dans la barre d\'état</string>
     <string name="network_traffic_mode_title">Mode d\'affichage</string>
     <string name="network_traffic_mode_disable">Désactivé</string>
-    <string name="network_traffic_mode_up">Débit montant uniquement</string>
-    <string name="network_traffic_mode_down">Débit descendant uniquement</string>
-    <string name="network_traffic_mode_all">Débits montant et descendant</string>
     <string name="network_traffic_autohide">Masquer automatiquement</string>
     <string name="network_traffic_autohide_summary">Masquer le moniteur réseau lorsqu\'il n\'y a pas d\'activité</string>
     <string name="network_traffic_units_title">Unités de mesure du trafic</string>
@@ -182,7 +180,6 @@
     <string name="network_traffic_units_megabytes">Mégaoctets par seconde (Mo/s)</string>
     <string name="network_traffic_show_units">Afficher les unités</string>
     <string name="network_traffic_show_units_summary">Afficher ou non les unités de mesure du débit dans la barre d’état</string>
-    <string name="network_traffic_disabled_clock">Trafic réseau désactivé à cause de la position de l\'horloge</string>
     <!-- QS settings -->
     <string name="qs_title">Réglages rapides</string>
     <string name="qs_rows_portrait_title">Lignes (portrait)</string>
@@ -203,6 +200,7 @@
     <string name="qs_tile_animation_style_off">Aucune animation</string>
     <string name="qs_tile_animation_style_flip">Inverser</string>
     <string name="qs_tile_animation_style_rotate">Rotation</string>
+    <string name="qs_tile_animation_duration_low">Lent</string>
     <string name="qs_tile_animation_duration_default">Par défaut</string>
     <string name="qs_tile_animation_duration_fast">Rapide</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Linéaire</string>
@@ -280,5 +278,12 @@
     <string name="adj_intensity_title">Intensité</string>
     <string name="adj_contrast_title">Contraste</string>
     <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Complet</string>
+    <string name="back_height_high_label">Barre de navigation</string>
+    <string name="back_options_dialog_title">Paramètres</string>
+    <string name="back_height_message">Zone d\'écran utilisée pour le geste arrière (en hauteur)</string>
     <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Cacher la barre de navigation</string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

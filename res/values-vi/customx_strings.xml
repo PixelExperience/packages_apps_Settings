@@ -171,9 +171,6 @@
     <string name="network_traffic_settings_summary">Hiển thị mức lưu lượng mạng hiện tại trên thanh trạng thái</string>
     <string name="network_traffic_mode_title">Chế độ hiển thị</string>
     <string name="network_traffic_mode_disable">Tắt</string>
-    <string name="network_traffic_mode_up">Chỉ tải lên</string>
-    <string name="network_traffic_mode_down">Chỉ tải xuống</string>
-    <string name="network_traffic_mode_all">Tải lên và tải xuống</string>
     <string name="network_traffic_autohide">Tự động ẩn</string>
     <string name="network_traffic_autohide_summary">Ẩn giám sát lưu lượng mạng khi không có hoạt động</string>
     <string name="network_traffic_units_title">Đơn vị đo lưu lượng</string>
@@ -183,7 +180,6 @@
     <string name="network_traffic_units_megabytes">Megabit mỗi giây (Mb/s)</string>
     <string name="network_traffic_show_units">Hiển thị các đơn vị</string>
     <string name="network_traffic_show_units_summary">Hiển thị các đơn vị đo lưu lượng truy cập trong thanh trạng thái</string>
-    <string name="network_traffic_disabled_clock">Lưu lượng mạng bị vô hiệu hóa do vị trí đồng hồ</string>
     <!-- QS settings -->
     <string name="qs_title">Cài đặt nhanh</string>
     <string name="qs_rows_portrait_title">Hàng (màn hình dọc)</string>
@@ -288,4 +284,6 @@
     <string name="back_height_message">Số lượng chiều cao màn hình được sử dụng làm vùng có thể chạm cho cử chỉ quay lại.</string>
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Ẩn thanh điều hướng bên dưới.</string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

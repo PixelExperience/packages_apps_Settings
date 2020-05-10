@@ -73,6 +73,7 @@
     <string name="display_rotation_180_title">180 graus</string>
     <string name="display_rotation_270_title">270 graus</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Mostra la visualització de la música</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibració per indicar l\'estat de la trucada</string>
     <!-- Navigation bar customization -->
@@ -83,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">Acció de pulsació llarga d\'Inici</string>
     <string name="navigation_bar_home_double_tap_title">Acció de doble pulsació d\'Inici</string>
     <string name="navigation_bar_app_switch_long_press_title">Acció pulsació llarga de Recents</string>
+    <string name="navigation_bar_edge_long_swipe_title">Acció de lliscament llarg a la vora</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Controla la reproducció</string>
     <string name="volbtn_music_controls_summary">Busca les pistes de música fent una pulsació llarga a les tecles de volum mentre la pantalla està apagada</string>
@@ -169,9 +171,6 @@
     <string name="network_traffic_settings_summary">Mostra els nivells actuals de trànsit de xarxa a la barra d\'estat</string>
     <string name="network_traffic_mode_title">Mode de pantalla</string>
     <string name="network_traffic_mode_disable">Deshabilitat</string>
-    <string name="network_traffic_mode_up">Només pujada</string>
-    <string name="network_traffic_mode_down">Només baixada</string>
-    <string name="network_traffic_mode_all">Pujada i baixada</string>
     <string name="network_traffic_autohide">Amaga automàticament</string>
     <string name="network_traffic_autohide_summary">Amaga el monitor de trànsit quan no hi hagi activitat</string>
     <string name="network_traffic_units_title">Unitats de mesura de trànsit</string>
@@ -181,7 +180,6 @@
     <string name="network_traffic_units_megabytes">Megabytes per segon (MB/s)</string>
     <string name="network_traffic_show_units">Mostra les unitats</string>
     <string name="network_traffic_show_units_summary">Si vols mostrar les unitats de mesura del trànsit a la barra d\'estat</string>
-    <string name="network_traffic_disabled_clock">Tràfic de la xarxa deshabilitat a causa de la posició de rellotge</string>
     <!-- QS settings -->
     <string name="qs_title">Ajustos ràpids</string>
     <string name="qs_rows_portrait_title">Files (retrat)</string>
@@ -189,8 +187,30 @@
     <string name="qs_columns_portrait_title">Columnes (vertical)</string>
     <string name="qs_columns_landscape_title">Columnes (apaïsat)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Visibilitat del títol</string>
+    <string name="qs_tile_title_visibility_summary">Mostra els títols que hi ha a sota de les rajoles QS</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibrar al tocar</string>
+    <string name="qs_vibrate_summary">Vibra en tocar els ajustos ràpids</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Animacions dels ajustos ràpids</string>
+    <string name="qs_tile_animation_style_title">Estil</string>
+    <string name="qs_tile_animation_duration_title">Duració</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolador</string>
+    <string name="qs_tile_animation_style_off">Cap</string>
+    <string name="qs_tile_animation_style_flip">Girar</string>
+    <string name="qs_tile_animation_style_rotate">Rotar</string>
+    <string name="qs_tile_animation_duration_low">Lenta</string>
+    <string name="qs_tile_animation_duration_default">Per defecte</string>
+    <string name="qs_tile_animation_duration_fast">Ràpida</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Lineal</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerar</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Desaccelerar</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerar i desaccelerar</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Rebotar</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Avançar</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipar</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipar sobrepassi</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Comportament de muesca</string>
     <string name="display_cutout_mode_normal">Predeterminat</string>
@@ -198,10 +218,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicacions a pantalla completa</string>
     <string name="display_cutout_force_fullscreen_summary">Fes que les aplicacions ignorin l’espai de l’notch</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Si us plau, reinicia l\'aplicació per a aplicar els canvis</string>
+    <string name="cutout_force_fullscreen_no_apps">No hi ha aplicacions</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Fes lliscar els dits per fer captura de pantalla</string>
     <string name="swipe_to_screenshot_gesture_summary">Passeu tres dits per fer una captura de pantalla</string>
     <!-- Navigation compact layout -->
+    <string name="navigation_bar_compact_layout_title">Disseny compacte</string>
+    <string name="navigation_bar_compact_layout_summary">Utilitza un disseny compacte a la barra de navegació</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimitza la teva pantalla basant-se en l\'hora del dia i les condicions ambientals per millorar la llegibilitat i reduir la fatiga ocular</string>
     <string name="live_display_mode">Mode de pantalla</string>
@@ -254,5 +278,12 @@
     <string name="adj_intensity_title">Intensitat</string>
     <string name="adj_contrast_title">Contrast</string>
     <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Completa</string>
+    <string name="back_height_high_label">Zona inferior</string>
+    <string name="back_options_dialog_title">Opcions</string>
+    <string name="back_height_message">Quantitat d\'altura de la pantalla que es fa servir com a regió per al gest enrere.</string>
     <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Amagar el botó de la barra de navegació.</string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

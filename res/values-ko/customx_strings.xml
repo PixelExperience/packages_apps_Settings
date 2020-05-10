@@ -170,9 +170,6 @@
     <string name="network_traffic_settings_summary">상태 표시줄에 현재 네트워크 트래픽 수준 표시</string>
     <string name="network_traffic_mode_title">표시 모드</string>
     <string name="network_traffic_mode_disable">사용 안 함</string>
-    <string name="network_traffic_mode_up">업로드만</string>
-    <string name="network_traffic_mode_down">다운로드만</string>
-    <string name="network_traffic_mode_all">업로드와 다운로드</string>
     <string name="network_traffic_autohide">자동 숨기기</string>
     <string name="network_traffic_autohide_summary">아무런 활동이 없을 때 트래픽 모니터 숨기기</string>
     <string name="network_traffic_units_title">트래픽 측정 단위</string>
@@ -182,7 +179,6 @@
     <string name="network_traffic_units_megabytes">초당 메가바이트 (MB/s)</string>
     <string name="network_traffic_show_units">단위 표시</string>
     <string name="network_traffic_show_units_summary">상태 표시줄에 트래픽 측정 단위 표시 여부</string>
-    <string name="network_traffic_disabled_clock">시계의 위치 때문에 네트워크 트래픽을 사용할 수 없음</string>
     <!-- QS settings -->
     <string name="qs_title">빠른 설정</string>
     <string name="qs_rows_portrait_title">행 (세로 모드)</string>
@@ -282,4 +278,6 @@
     <string name="adj_contrast_title">대비</string>
     <!-- Back Gesture Height -->
     <!-- Full screen gestures -->
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

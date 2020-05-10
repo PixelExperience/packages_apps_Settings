@@ -35,8 +35,8 @@
     <string name="status_bar_double_tap_to_sleep_title">Tocca per disattivare</string>
     <string name="status_bar_double_tap_to_sleep_summary">Tocca due volte la barra di stato o la schermata di blocco per disattivare lo schermo</string>
     <!-- Wake on plug -->
-    <string name="wake_when_plugged_or_unplugged_title">Risveglia al collegamento</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Accendi lo schermo quando colleghi o scolleghi il dispositivo all\'alimentazione</string>
+    <string name="wake_when_plugged_or_unplugged_title">Riattiva al collegamento</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Riattiva il dispositivo quando collegato o scollegato a una presa di corrente</string>
     <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Scegli la dimensione della sequenza</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
@@ -171,9 +171,6 @@
     <string name="network_traffic_settings_summary">Mostra i livelli attuali del traffico di rete nella barra di stato</string>
     <string name="network_traffic_mode_title">Modalità di visualizzazione</string>
     <string name="network_traffic_mode_disable">Disabilitato</string>
-    <string name="network_traffic_mode_up">Solo upload</string>
-    <string name="network_traffic_mode_down">Solo download</string>
-    <string name="network_traffic_mode_all">Upload e download</string>
     <string name="network_traffic_autohide">Nascondi automaticamente</string>
     <string name="network_traffic_autohide_summary">Nascondi l\'indicatore di traffico quando non c\'è nessuna attività</string>
     <string name="network_traffic_units_title">Unità di misura del traffico</string>
@@ -183,7 +180,6 @@
     <string name="network_traffic_units_megabytes">Megabytes al secondo (MB/s)</string>
     <string name="network_traffic_show_units">Mostra unità di misura</string>
     <string name="network_traffic_show_units_summary">Indica se mostrare l\'unità di misura del traffico nella barra di stato</string>
-    <string name="network_traffic_disabled_clock">Indicatore traffico di rete disattivato a causa della posizione dell\'orologio</string>
     <!-- QS settings -->
     <string name="qs_title">Impostazioni rapide</string>
     <string name="qs_rows_portrait_title">Righe dei tiles in verticale</string>
@@ -288,4 +284,6 @@
     <string name="back_height_message">Altezza di schermo utilizzata come regione toccabile per la gesture indietro.</string>
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Nascondi la pillola della barra di navigazione.</string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

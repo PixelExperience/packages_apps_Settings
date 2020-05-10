@@ -208,4 +208,6 @@
     <string name="adj_contrast_title">Kontras</string>
     <!-- Back Gesture Height -->
     <!-- Full screen gestures -->
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

@@ -171,9 +171,6 @@
     <string name="network_traffic_settings_summary">ステータスバーに現在のネットワークトラフィック量を表示します</string>
     <string name="network_traffic_mode_title">表示モード</string>
     <string name="network_traffic_mode_disable">無効</string>
-    <string name="network_traffic_mode_up">アップロードのみ</string>
-    <string name="network_traffic_mode_down">ダウンロードのみ</string>
-    <string name="network_traffic_mode_all">アップロードとダウンロード</string>
     <string name="network_traffic_autohide">自動的に隠す</string>
     <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にします</string>
     <string name="network_traffic_units_title">トラフィックの単位</string>
@@ -183,7 +180,6 @@
     <string name="network_traffic_units_megabytes">メガバイト/秒 (MB/s)</string>
     <string name="network_traffic_show_units">単位を表示</string>
     <string name="network_traffic_show_units_summary">ステータスバーにネットワークトラフィックの単位を表示</string>
-    <string name="network_traffic_disabled_clock">時計の位置が原因でネットワーク通信量表示が無効です</string>
     <!-- QS settings -->
     <string name="qs_title">クイック設定</string>
     <string name="qs_rows_portrait_title">行数 (縦向き)</string>
@@ -204,6 +200,7 @@
     <string name="qs_tile_animation_style_off">なし</string>
     <string name="qs_tile_animation_style_flip">左右に回転</string>
     <string name="qs_tile_animation_style_rotate">上下に回転</string>
+    <string name="qs_tile_animation_duration_low">低速</string>
     <string name="qs_tile_animation_duration_default">既定</string>
     <string name="qs_tile_animation_duration_fast">速い</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">等速</string>
@@ -287,4 +284,6 @@
     <string name="back_height_message">戻るジェスチャーに使用される操作可能な画面領域の高さ</string>
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">ナビゲーションバーのピルを隠す</string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

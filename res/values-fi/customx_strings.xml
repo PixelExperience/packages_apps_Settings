@@ -75,7 +75,7 @@
     <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Näytä musiikin visualisointi</string>
     <!-- In-call feedback -->
-    <string name="incall_feeedback_vibrate_title">Värise puhelulle</string>
+    <string name="incall_feeedback_vibrate_title">Värise puhelun tilan osoittamiseksi</string>
     <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">Näytä nuolinäppäimet kirjoittaessa</string>
     <string name="navigation_bar_arrow_keys_summary">Näytä vasen ja oikea nuolinäppäin kirjoittaessa. Ohittaa IME syöttötavan valinnan.</string>
@@ -171,9 +171,6 @@
     <string name="network_traffic_settings_summary">Näytä verkkoliikenteen nopeus tilapalkissa</string>
     <string name="network_traffic_mode_title">Näyttötila</string>
     <string name="network_traffic_mode_disable">Pois</string>
-    <string name="network_traffic_mode_up">Vain lähetys</string>
-    <string name="network_traffic_mode_down">Vain lataus</string>
-    <string name="network_traffic_mode_all">Lähetys ja lataus</string>
     <string name="network_traffic_autohide">Piilota automaattisesti</string>
     <string name="network_traffic_autohide_summary">Piilota verkkoliikenteen seuranta, kun toimintaa ei ole</string>
     <string name="network_traffic_units_title">Verkkoliikenteen yksiköt</string>
@@ -183,7 +180,6 @@
     <string name="network_traffic_units_megabytes">Megatavua sekunnissa (Mt/s)</string>
     <string name="network_traffic_show_units">Näytä yksiköt</string>
     <string name="network_traffic_show_units_summary">Näytä verkkoliikenteen yksiköt tilapalkissa</string>
-    <string name="network_traffic_disabled_clock">Verkkoliikenteen näyttö poistettu käytöstä kellon sijainnin vuoksi</string>
     <!-- QS settings -->
     <string name="qs_title">Pika-asetukset</string>
     <string name="qs_rows_portrait_title">Rivit (pysty)</string>
@@ -195,7 +191,7 @@
     <string name="qs_tile_title_visibility_summary">Näytä nimet QS :n alta</string>
     <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">Värinä kosketuksesta</string>
-    <string name="qs_vibrate_summary">Värisee kun koskee QS kuvaketta</string>
+    <string name="qs_vibrate_summary">Värise kosketettaessa QS-kuvaketta</string>
     <!-- QS animation/interpolator styles  -->
     <string name="qs_animation_options_title">Pika-asetus animaatiot</string>
     <string name="qs_tile_animation_style_title">Tyyli</string>
@@ -288,4 +284,6 @@
     <string name="back_height_message">Taaksepäin menon kosketettavan alueen korkeus.</string>
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Piilota navigointipalkin viiva</string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

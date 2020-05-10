@@ -84,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">Ilgai paspauskite namų mygtuką</string>
     <string name="navigation_bar_home_double_tap_title">Namų dviejų bakstelėjimų veiksmas</string>
     <string name="navigation_bar_app_switch_long_press_title">Naujausių ilgo paspaudimo veiksmas</string>
+    <string name="navigation_bar_edge_long_swipe_title">Ilgo paspaudimo veiksmas</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Valdykite atkūrimą</string>
     <string name="volbtn_music_controls_summary">Ilgai spausdami garsumo mygtukus, kol ekranas išjungtas, ieškokite muzikos įrašų</string>
@@ -170,9 +171,6 @@
     <string name="network_traffic_settings_summary">Rodyti dabartinius tinklo srauto lygius būsenos juostoje</string>
     <string name="network_traffic_mode_title">Ekrano režimas</string>
     <string name="network_traffic_mode_disable">Išjungta</string>
-    <string name="network_traffic_mode_up">Tik įkelti</string>
-    <string name="network_traffic_mode_down">Tik atsisiųsti</string>
-    <string name="network_traffic_mode_all">Įkelti ir atsisiųsti</string>
     <string name="network_traffic_autohide">Automatiškai slėpti</string>
     <string name="network_traffic_autohide_summary">Slėpti tinklo indikatorių, kai nėra jokios veiklos</string>
     <string name="network_traffic_units_title">Srauto matavimo vienetai</string>
@@ -182,7 +180,6 @@
     <string name="network_traffic_units_megabytes">Megabitai per sekundę (Mb/s)</string>
     <string name="network_traffic_show_units">Rodyti vienetus</string>
     <string name="network_traffic_show_units_summary">Rodyti duomenų perdavimo spartą būsenos juostoje</string>
-    <string name="network_traffic_disabled_clock">Tinklo srautas išjungtas dėl laikrodžio padėties</string>
     <!-- QS settings -->
     <string name="qs_title">Greiti nustatymai</string>
     <string name="qs_rows_portrait_title">Eilutės (portretas)</string>
@@ -203,6 +200,7 @@
     <string name="qs_tile_animation_style_off">Nieko</string>
     <string name="qs_tile_animation_style_flip">Apversti</string>
     <string name="qs_tile_animation_style_rotate">Sukti</string>
+    <string name="qs_tile_animation_duration_low">Lėtas</string>
     <string name="qs_tile_animation_duration_default">Numatytasis</string>
     <string name="qs_tile_animation_duration_fast">Greitas</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Linijinis</string>
@@ -280,5 +278,12 @@
     <string name="adj_intensity_title">Intensyvumas</string>
     <string name="adj_contrast_title">Kontrastas</string>
     <!-- Back Gesture Height -->
+    <string name="back_height_low_label">pilnas</string>
+    <string name="back_height_high_label">Apatinė sritis</string>
+    <string name="back_options_dialog_title">Nustatymai</string>
+    <string name="back_height_message">Ekrano aukščio dydis, naudojamas kaip jutiklinė zona judant atgal.</string>
     <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Paslėpti naršymo juostos juostelę</string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

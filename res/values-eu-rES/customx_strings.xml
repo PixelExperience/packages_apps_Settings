@@ -167,9 +167,6 @@
     <string name="network_traffic_settings_summary">Erakutsi uneko sare-trafiko mailak egoera-barran</string>
     <string name="network_traffic_mode_title">Bistaratze modua</string>
     <string name="network_traffic_mode_disable">Desgaituta</string>
-    <string name="network_traffic_mode_up">Igoera besterik ez</string>
-    <string name="network_traffic_mode_down">Jaitsiera besterik ez</string>
-    <string name="network_traffic_mode_all">Igoera eta jaitsiera</string>
     <string name="network_traffic_autohide">Ezkutatu automatikoki</string>
     <string name="network_traffic_autohide_summary">Ezkutatu trafikoaren monitorea jarduerarik ez badago</string>
     <string name="network_traffic_units_title">Trafikoa neurtzeko unitateak</string>
@@ -179,7 +176,6 @@
     <string name="network_traffic_units_megabytes">Megabyte-ak segundoko (MB/s)</string>
     <string name="network_traffic_show_units">Erakutsi unitateak</string>
     <string name="network_traffic_show_units_summary">Trafikoa neurtzeko unitateak egoera-barran erakutsi ala ez</string>
-    <string name="network_traffic_disabled_clock">Sare-trafikoaren ikonoa desgaituta erlojuaren posizioa dela eta</string>
     <!-- QS settings -->
     <string name="qs_title">Ezarpen azkarrak</string>
     <string name="qs_rows_portrait_title">Lerroak (erretratua)</string>
@@ -253,4 +249,6 @@
     <string name="adj_contrast_title">Kontrastea</string>
     <!-- Back Gesture Height -->
     <!-- Full screen gestures -->
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

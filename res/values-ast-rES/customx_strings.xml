@@ -161,9 +161,6 @@
     <string name="network_traffic_settings_summary">Amosar los niveles actuales del tráficu de rede na barra d\'estáu</string>
     <string name="network_traffic_mode_title">Mou de pantalla</string>
     <string name="network_traffic_mode_disable">Deshabilitáu</string>
-    <string name="network_traffic_mode_up">Sólo xubida</string>
-    <string name="network_traffic_mode_down">Sólo descarga</string>
-    <string name="network_traffic_mode_all">Xubida y descarga</string>
     <string name="network_traffic_autohide">Tapecer automáticamente</string>
     <string name="network_traffic_autohide_summary">Tapecer el monitor de tráficu cuando nun heba actividá</string>
     <string name="network_traffic_units_title">Unidades de midida de tráficu</string>
@@ -173,7 +170,6 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundu (MB/s)</string>
     <string name="network_traffic_show_units">Amosar unidaes</string>
     <string name="network_traffic_show_units_summary">Si quies amosar les unidaes de midición del tráficu na barra d\'estáu</string>
-    <string name="network_traffic_disabled_clock">Tráficu de rede desactiváu pola posición del reló</string>
     <!-- QS settings -->
     <!-- QS title visibility -->
     <!-- QS tiles haptic feedback -->
@@ -235,4 +231,6 @@
     <string name="adj_contrast_title">Contraste</string>
     <!-- Back Gesture Height -->
     <!-- Full screen gestures -->
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>

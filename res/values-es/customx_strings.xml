@@ -171,9 +171,6 @@
     <string name="network_traffic_settings_summary">Muestra los niveles de tráfico de red actuales en la barra de estado</string>
     <string name="network_traffic_mode_title">Modo de visualización</string>
     <string name="network_traffic_mode_disable">Deshabilitado</string>
-    <string name="network_traffic_mode_up">Sólo subida</string>
-    <string name="network_traffic_mode_down">Sólo descarga</string>
-    <string name="network_traffic_mode_all">Subida y descarga</string>
     <string name="network_traffic_autohide">Ocultar automáticamente</string>
     <string name="network_traffic_autohide_summary">Ocultar al monitor de tráfico cuando no haya actividad</string>
     <string name="network_traffic_units_title">Unidades de medida del tráfico de red</string>
@@ -183,7 +180,6 @@
     <string name="network_traffic_units_megabytes">Megabytes por segundo (MB/s)</string>
     <string name="network_traffic_show_units">Mostrar unidades</string>
     <string name="network_traffic_show_units_summary">Mostrar/ocultar unidades de medida de tráfico en la barra de estado</string>
-    <string name="network_traffic_disabled_clock">Tráfico de red deshabilitado debido a la posición del reloj</string>
     <!-- QS settings -->
     <string name="qs_title">Configuración rápida</string>
     <string name="qs_rows_portrait_title">Filas en modo vertical</string>
@@ -288,4 +284,6 @@
     <string name="back_height_message">Altura de pantalla usada como región tocable para el gesto Atrás.</string>
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Ocultar la píldora de la barra de navegación.</string>
+    <!-- Per-app data restrictions -->
+    <!-- Translucent lockscreen notifications background -->
 </resources>
