@@ -38,7 +38,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
 
     private DropDownPreference mNetTrafficMode;
     private SwitchPreference mNetTrafficAutohide;
-    private DropDownPreference mNetTrafficUnits;
+    private DropDownPreference mNetTrafficUnitType;
 
     private boolean mHasNotch;
 
@@ -59,11 +59,11 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         mNetTrafficAutohide = findPreference(Settings.System.NETWORK_TRAFFIC_AUTOHIDE);
         mNetTrafficAutohide.setOnPreferenceChangeListener(this);
 
-        mNetTrafficUnits = findPreference(Settings.System.NETWORK_TRAFFIC_UNITS);
-        mNetTrafficUnits.setOnPreferenceChangeListener(this);
+        mNetTrafficUnitType = findPreference(Settings.System.NETWORK_TRAFFIC_UNIT_TYPE);
+        mNetTrafficUnitType.setOnPreferenceChangeListener(this);
         int units = Settings.System.getInt(resolver,
-                Settings.System.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1);
-        mNetTrafficUnits.setValue(String.valueOf(units));
+                Settings.System.NETWORK_TRAFFIC_UNIT_TYPE, /* Mbps */ 1);
+        mNetTrafficUnitType.setValue(String.valueOf(units));
 
         if (mHasNotch){
             String[] locationEntriesNotch = getResources().getStringArray(R.array.network_traffic_mode_entries_notch);
@@ -82,10 +82,10 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_LOCATION, mode);
             updateEnabledStates(mode);
-        } else if (preference == mNetTrafficUnits) {
-            int units = Integer.valueOf((String) newValue);
+        } else if (preference == mNetTrafficUnitType) {
+            int unitType = Integer.valueOf((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_UNITS, units);
+                    Settings.System.NETWORK_TRAFFIC_UNIT_TYPE, unitType);
         }
         return true;
     }
@@ -93,7 +93,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     private void updateEnabledStates(int mode) {
         final boolean enabled = mode != 0;
         mNetTrafficAutohide.setEnabled(enabled);
-        mNetTrafficUnits.setEnabled(enabled);
+        mNetTrafficUnitType.setEnabled(enabled);
     }
 
     @Override
