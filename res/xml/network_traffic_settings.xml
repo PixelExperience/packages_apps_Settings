@@ -33,7 +33,7 @@
         android:defaultValue="false" />
 
     <DropDownPreference
-        android:key="network_traffic_units"
+        android:key="network_traffic_unit_type"
         android:title="@string/network_traffic_units_title"
         android:entries="@array/network_traffic_units_entries"
         android:entryValues="@array/network_traffic_units_values"
