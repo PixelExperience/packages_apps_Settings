@@ -32,6 +32,12 @@
         android:entryValues="@array/hardware_keys_action_values"
         android:defaultValue="0" />
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="navigation_bar_hint"
+        android:title="@string/show_navbar_gesture_bar_title"
+        android:summary="@string/show_navbar_gesture_bar_summary"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="assistant_gesture_category"
         android:persistent="false"
