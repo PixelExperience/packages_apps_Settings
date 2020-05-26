@@ -367,4 +367,18 @@
         <item>1</item>
     </string-array>
 
+    <!-- Statusbar brightness -->
+    <string-array name="status_bar_brightness_slider_entries" translatable="false">
+        <item>@string/status_bar_brightness_slider_show_never</item>
+        <item>@string/status_bar_brightness_slider_show_expanded</item>
+        <item>@string/status_bar_brightness_slider_show_always</item>
+    </string-array>
+
+    <string-array name="status_bar_brightness_slider_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
 </resources>
