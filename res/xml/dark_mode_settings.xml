@@ -39,6 +39,12 @@
         settings:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController"
         settings:keywords="@string/keywords_dark_ui_mode"/>
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="use_grey_theme"
+        android:title="@string/use_grey_theme_title"
+        android:summary="@string/use_grey_theme_summary"
+        android:defaultValue="false" />
+
     <com.android.settingslib.widget.FooterPreference
             android:key="dark_ui_footer"
             android:title="@string/dark_ui_text"

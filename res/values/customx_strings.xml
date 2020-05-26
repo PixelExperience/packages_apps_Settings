@@ -343,4 +343,8 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
 
+    <!-- Grey theme for dark mode -->
+    <string name="use_grey_theme_title">Use grey theme</string>
+    <string name="use_grey_theme_summary">Use a grayish background color instead of black</string>
+
 </resources>
