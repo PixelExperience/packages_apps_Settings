@@ -347,4 +347,7 @@
     <string name="use_grey_theme_title">Use grey theme</string>
     <string name="use_grey_theme_summary">Use a grayish background color instead of black</string>
 
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
+
 </resources>
