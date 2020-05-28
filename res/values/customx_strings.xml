@@ -343,4 +343,7 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
 
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
+
 </resources>
