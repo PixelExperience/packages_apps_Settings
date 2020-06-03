@@ -30,7 +30,12 @@ Aviseringar från dessa appar kan fördröjas."</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Lokalisera fingeravtrycks-sensorn på högre sidan av din mobil.</string>
     <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Lokalisera fingeravtryckssensorn på din enhets framsida.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Locate the fingerprint sensor on the right side of your device.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Locate the fingerprint sensor on the left side of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Återställ</string>
     <!-- Buttons -->
@@ -77,6 +82,14 @@ Aviseringar från dessa appar kan fördröjas."</string>
     <string name="disable_navkeys_title">Aktivera navigeringsfält på skärmen</string>
     <string name="disable_navkeys_summary">Aktivera navigeringsfältet på skärmen och inaktivera hårdvaruknapparna</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+    <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz for some content</string>
+    <string name="refresh_rate_summary_60">60Hz / Refresh rate locked at 60Hz for all content</string>
+    <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
+    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Turn on the light when charging</string>
 </resources>

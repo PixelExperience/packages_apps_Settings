@@ -30,8 +30,12 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">अपने फोन के दांए तरफ फिंगरप्रिंट सेंसर को ढूंडें</string>
     <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">अपने डिवाइस के मोर्चे पर फिंगरप्रिंट सेंसर का पता लगाएँ।</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">अपने फोन के दांए तरफ फिंगरप्रिंट सेंसर को ढूंडें</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Locate the fingerprint sensor on the left side of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">रीसेट</string>
     <!-- Buttons -->
@@ -60,7 +64,10 @@
     <string name="hardware_keys_swipe_tap_title">स्वाइप एक्शन</string>
     <string name="hardware_keys_long_tap_title">लॉन्ग टैप एक्शन</string>
     <string name="button_wake_title">फोन को चालू करें</string>
+    <string name="camera_sleep_on_release_title">Screen peek</string>
+    <string name="camera_sleep_on_release_summary">A half press will keep the screen on only while the button is held down</string>
     <string name="camera_launch_title">कैमरा चालू करे</string>
+    <string name="camera_launch_summary">A longpress and release will launch camera</string>
     <!-- Key backlight -->
     <string name="button_backlight_title">बैकलाइट</string>
     <string name="button_backlight_enabled">प्रकाश बटन</string>
@@ -75,7 +82,14 @@
     <string name="disable_navkeys_title">ऑन-स्क्रीन नेविगेशन पट्टी सक्षम करें</string>
     <string name="disable_navkeys_summary">ऑनस्क्रीन नाविगेशन बार शुरू करें और हार्डवेअर बटन बंद करें</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+    <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz for some content</string>
+    <string name="refresh_rate_summary_60">60Hz / Refresh rate locked at 60Hz for all content</string>
+    <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
+    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
     <string name="battery_light_title">Acenda a luz ao carregar</string>
 </resources>

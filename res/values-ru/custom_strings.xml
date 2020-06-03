@@ -29,7 +29,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Найдите сканер отпечатков пальцев на левой грани вашего телефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Найдите сканер отпечатков пальцев на правой грани вашего телефона.</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Найдите сканер отпечатков пальцев на задней поверхности вашего телефона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Найдите сканер отпечатков пальцев на передней поверхности телефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Найдите датчик отпечатков пальцев на левой грани вашего устройства.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Найдите датчик отпечатков пальцев на правой грани вашего устройства.</string>
     <!-- Fingerprint location message - tablet -->

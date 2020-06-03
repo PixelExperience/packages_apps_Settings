@@ -37,7 +37,7 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Si trova sul lato sinistro del tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Si trova sul lato destro del tablet.</string>
     <!-- Generic stuff used everywhere -->
-    <string name="reset">Ripristina</string>
+    <string name="reset">Resetta</string>
     <!-- Buttons -->
     <string name="button_pref_title">Tasti</string>
     <string name="hardware_keys_home_key_title">Tasto Home</string>
@@ -72,7 +72,7 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <string name="button_backlight_title">Retroilluminazione</string>
     <string name="button_backlight_enabled">Illumina pulsanti</string>
     <string name="button_backlight_only_when_pressed_title">Illumina i pulsanti solo quando vengono premuti</string>
-    <string name="button_backlight_seekbar_title">Luminosità pulsanti</string>
+    <string name="button_backlight_seekbar_title">Luminosità dei pulsanti</string>
     <string name="backlight_timeout_title">Tempo di illuminazione</string>
     <string name="backlight_timeout_unlimited">Non spegnere</string>
     <string name="backlight_summary_disabled">Disattivata</string>
@@ -87,8 +87,8 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Frequenza di aggiornamento</string>
     <string name="refresh_rate_summary_auto">Automatica/Aumenta automaticamente da 60 a 90 Hz per alcuni contenuti</string>
-    <string name="refresh_rate_summary_60">60 Hz/Fissata a 60 Hz per tutti i contenuti</string>
-    <string name="refresh_rate_summary_90">90 Hz/Fissata a 90 Hz per tutti i contenuti. Aumenta il consumo della batteria</string>
+    <string name="refresh_rate_summary_60">60 Hz/Bloccata a 60 Hz per tutti i contenuti</string>
+    <string name="refresh_rate_summary_90">90 Hz/Bloccata a 90 Hz per tutti i contenuti. Aumenta il consumo della batteria</string>
     <string name="auto_refresh_rate">Automatica</string>
     <!-- Battery light -->
     <string name="battery_light_title">Attiva il LED durante la ricarica</string>

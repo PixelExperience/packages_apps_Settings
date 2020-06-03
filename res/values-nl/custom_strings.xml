@@ -37,6 +37,7 @@ Meldingen kunnen worden vertraagd voor deze apps."</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Zoek de vingerafdrukscanner aan de linkerkant van uw tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Zoek de vingerafdrukscanner aan de rechterkant van uw tablet.</string>
     <!-- Generic stuff used everywhere -->
+    <string name="reset">Reset</string>
     <!-- Buttons -->
     <string name="button_pref_title">Knoppen</string>
     <string name="hardware_keys_home_key_title">Thuisknop</string>
@@ -81,6 +82,14 @@ Meldingen kunnen worden vertraagd voor deze apps."</string>
     <string name="disable_navkeys_title">On-screen navigatiebalk inschakelen</string>
     <string name="disable_navkeys_summary">On-screen navigatiebalk inschakelen en hardware-knoppen uitschakelen</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+    <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz for some content</string>
+    <string name="refresh_rate_summary_60">60Hz / Refresh rate locked at 60Hz for all content</string>
+    <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
+    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Turn on the light when charging</string>
 </resources>
