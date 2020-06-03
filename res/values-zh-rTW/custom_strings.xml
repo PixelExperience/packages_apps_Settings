@@ -91,5 +91,5 @@
     <string name="refresh_rate_summary_90">90Hz / 所有內容的螢幕更新率鎖定在90Hz。將會增加耗電量</string>
     <string name="auto_refresh_rate">自動</string>
     <!-- Battery light -->
-    <string name="battery_light_title">充電的時候打開手電筒</string>
+    <string name="battery_light_title">充電時打開充電指示燈</string>
 </resources>

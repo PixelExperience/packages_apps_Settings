@@ -15,6 +15,8 @@
     <string name="duration_less_than_one_minute">1 minutu baino gutxiago</string>
     <string name="screen_time_summary_usage_today">%1$s gaur</string>
     <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Use Face unlock to unlock your device.\n\nKeep in mind:\nLooking at the phone can unlock it when you don’t intend to.\n\nYour phone can be unlocked by someone else if it’s held up to your face while your eyes are open.\n\nYour phone can be unlocked by someone who looks a lot like you, say, your child or an identical sibling.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Data recorded by face unlock will be permanently and securely deleted. After removal, you will need your PIN, pattern, or password to unlock your phone.</string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Aktibatu bateria doigarria</string>
     <string name="smart_battery_footer_custom">"Bateriak gehiago iraun dezan, bateria doigarriak mugatu egiten du gutxitan erabiltzen dituzun aplikazioek erabiltzen duten bateria. Denborarekin, aplikazioak nola erabiltzen dituzun ikasiko du telefonoak.
@@ -80,6 +82,14 @@ Baliteke aplikazio horietan jakinarazpenak atzeratzea."</string>
     <string name="disable_navkeys_title">Nabigazio barra gaitu</string>
     <string name="disable_navkeys_summary">Pantailako nabigazio-barra gaitu eta ezgaitu botoi fisikoak</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+    <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz for some content</string>
+    <string name="refresh_rate_summary_60">60Hz / Refresh rate locked at 60Hz for all content</string>
+    <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
+    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Turn on the light when charging</string>
 </resources>

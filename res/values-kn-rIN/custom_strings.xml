@@ -15,6 +15,8 @@
     <string name="duration_less_than_one_minute">1 ನಿಮಿಷಕ್ಕಿಂತ ಕಡಿಮೆ</string>
     <string name="screen_time_summary_usage_today">ಇಂದಿನ ಬಳಕೆ %1$s</string>
     <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Use Face unlock to unlock your device.\n\nKeep in mind:\nLooking at the phone can unlock it when you don’t intend to.\n\nYour phone can be unlocked by someone else if it’s held up to your face while your eyes are open.\n\nYour phone can be unlocked by someone who looks a lot like you, say, your child or an identical sibling.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Data recorded by face unlock will be permanently and securely deleted. After removal, you will need your PIN, pattern, or password to unlock your phone.</string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">ಅಡಾಪ್ಟಿವ್‌ ಬ್ಯಾಟರಿಯನ್ನು ಆನ್ ಮಾಡಿ</string>
     <string name="smart_battery_footer_custom">"ಬ್ಯಾಟರಿ ಬಾಳಿಕೆಯನ್ನು ಹೆಚ್ಚಿಸಲು, ಅಡಾಪ್ಟಿವ್‌ ಬ್ಯಾಟರಿ ಮ್ಯಾನೇಜರ್ ಅಪರೂಪವಾಗಿ ಬಳಸುವ ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಬ್ಯಾಟರಿಯನ್ನು ಸೀಮಿತಗೊಳಿಸುತ್ತದೆ. ಕಾಲಾಂತರದಲ್ಲಿ ನಿಮ್ಮ ಫೋನ್ ನೀವು ಹೇಗೆ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಉಪಯೋಗಿಸುತ್ತೀರಿ ಎಂಬುದನ್ನು ಕಲಿಯುತ್ತದೆ.
@@ -27,7 +29,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">ನಿಮ್ಮ ಫೋನಿನ ಎಡಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">ನಿಮ್ಮ ಫೋನಿನ ಬಲಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Locate the fingerprint sensor on the right side of your device.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Locate the fingerprint sensor on the left side of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">ಮರುಹೊಂದಿಸು</string>
     <!-- Buttons -->
@@ -75,6 +83,14 @@
     <string name="disable_navkeys_summary">ಆನ್-ಸ್ಕ್ರೀನ್ ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ ಮತ್ತು ಹಾರ್ಡ್ವೇರ್ ಬಟನ್ ಗಳನ್ನು
  ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+    <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz for some content</string>
+    <string name="refresh_rate_summary_60">60Hz / Refresh rate locked at 60Hz for all content</string>
+    <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
+    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Turn on the light when charging</string>
 </resources>

@@ -29,7 +29,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">လက်ဗွေရာ အာရုံခံကိရိယာအား သင့်ဖုန်း၏ ဘယ်ဘက်ဘေးဘောင်တွင် ရှာဖွေပါ။</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">လက်ဗွေရာ အာရုံခံကိရိယာအား သင့်ဖုန်း၏ ညာဘက်ဘေးဘောင်တွင် ရှာဖွေပါ။</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Locate the fingerprint sensor on the right side of your device.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Locate the fingerprint sensor on the left side of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">မူလအတိုင်း ပြန်လည်ပြောင်းလဲမည်။</string>
     <!-- Buttons -->
@@ -56,11 +62,34 @@
     <string name="hardware_keys_swipe_left_key_title">မျက်နှာပြင် ဘယ်ဘက်သို့ ဖိဆွဲပါ။</string>
     <string name="hardware_keys_long_tap_key_title">အကြာကြီး ဖိထားခြင်း</string>
     <string name="hardware_keys_swipe_tap_title">မျက်နှာပြင်ဖိဆွဲခြင်း လုပ်ဆောင်ချက်</string>
+    <string name="hardware_keys_long_tap_title">Long tap action</string>
+    <string name="button_wake_title">Wake device</string>
+    <string name="camera_sleep_on_release_title">Screen peek</string>
+    <string name="camera_sleep_on_release_summary">A half press will keep the screen on only while the button is held down</string>
+    <string name="camera_launch_title">Launch camera</string>
+    <string name="camera_launch_summary">A longpress and release will launch camera</string>
     <!-- Key backlight -->
+    <string name="button_backlight_title">Backlight</string>
+    <string name="button_backlight_enabled">Illuminate buttons</string>
+    <string name="button_backlight_only_when_pressed_title">Illuminate buttons only when pressed</string>
+    <string name="button_backlight_seekbar_title">Button brightness</string>
+    <string name="backlight_timeout_title">Illumination timeout</string>
+    <string name="backlight_timeout_unlimited">Don\'t turn off</string>
+    <string name="backlight_summary_disabled">Disabled</string>
+    <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Enabled</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">မျက်နှာပြင်အတွင်း ခလုတ်များကို သုံခြင်း</string>
     <string name="disable_navkeys_summary">မျက်နှာပြင်အတွင်း ခလုတ်များကို သုံခြင်းနှင့် ရိုးရိုးခလုတ်များကို သုံးမရစေရန် ပြုလုပ်ခြင်း</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
     <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+    <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz for some content</string>
+    <string name="refresh_rate_summary_60">60Hz / Refresh rate locked at 60Hz for all content</string>
+    <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
+    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Turn on the light when charging</string>
 </resources>

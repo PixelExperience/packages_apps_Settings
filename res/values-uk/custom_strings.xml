@@ -35,7 +35,7 @@
     <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Сканер відбитків пальців знаходиться на лівій грані вашого планшета.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Сканер відбитків пальців знаходиться на правій грані вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Знайдіть сканер відбитків пальців на правій грані вашого планшета.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Скинути</string>
     <!-- Buttons -->
@@ -61,8 +61,8 @@
     <string name="hardware_keys_swipe_right_key_title">Свайп вправо</string>
     <string name="hardware_keys_swipe_left_key_title">Свайп вліво</string>
     <string name="hardware_keys_long_tap_key_title">Довгий дотик</string>
-    <string name="hardware_keys_swipe_tap_title">Свайп для дії</string>
-    <string name="hardware_keys_long_tap_title">Дії довгого натиску</string>
+    <string name="hardware_keys_swipe_tap_title">Дія свайпом</string>
+    <string name="hardware_keys_long_tap_title">Дія при довгому натисканні</string>
     <string name="button_wake_title">Розбудити пристрій</string>
     <string name="camera_sleep_on_release_title">Швидкий перегляд</string>
     <string name="camera_sleep_on_release_summary">Тримати екран увімкненим тільки при утриманні кнопки</string>

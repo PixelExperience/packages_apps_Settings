@@ -15,6 +15,8 @@
     <string name="duration_less_than_one_minute">1 منٹ سے کم</string>
     <string name="screen_time_summary_usage_today">%1$s آج</string>
     <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_footer_moto">Use Face unlock to unlock your device.\n\nKeep in mind:\nLooking at the phone can unlock it when you don’t intend to.\n\nYour phone can be unlocked by someone else if it’s held up to your face while your eyes are open.\n\nYour phone can be unlocked by someone who looks a lot like you, say, your child or an identical sibling.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Data recorded by face unlock will be permanently and securely deleted. After removal, you will need your PIN, pattern, or password to unlock your phone.</string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">تغیر پذیر بیٹری آن کریں</string>
     <string name="smart_battery_footer_custom">"بیٹری لائف بڑھانے کے لیے، تغیر پذیر بیٹری کبھی کبھار استعمال کی جانے والی ایپس کے لیے بیٹری کو محدود کرتی ہے۔ وقت گزرنے پر، آپ کا فون ایپس استعمال کرنے کا طریقہ سیکھے گا۔
@@ -27,7 +29,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">اپنے فون کی بائیں جانب فنگرپرنٹ سینسر تلاش کریں.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">اپنے فون کی دائیں جانب فنگرپرنٹ سینسر تلاش کریں.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Locate the fingerprint sensor on the right side of your device.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Locate the fingerprint sensor on the left side of your tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">ری سیٹ کریں</string>
     <!-- Buttons -->
@@ -74,8 +82,14 @@
     <string name="disable_navkeys_title">آن سکرین نیویگیشن بار کو فعال کریں</string>
     <string name="disable_navkeys_summary">اسکرین نیویگیشن بار کو فعال کریں اور ہارڈویئر کے بٹن کو غیر فعال کریں</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">اسکرین ریفرش ریٹ</string>
+    <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz for some content</string>
+    <string name="refresh_rate_summary_60">60Hz / Refresh rate locked at 60Hz for all content</string>
+    <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
     <string name="auto_refresh_rate">خودکار</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Turn on the light when charging</string>
 </resources>
