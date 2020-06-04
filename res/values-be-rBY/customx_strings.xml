@@ -44,14 +44,36 @@
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Паказваць кропкі</string>
     <!-- Hotspot custom extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Дазволіць кліентам выкарыстоўваць VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Дазволіць кліентам пункта доступу выкарыстоўваць VPN-злучэнні гэтай прылады для падлучэння да сеткі</string>
     <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Частата гукавых апавяшчэнняў</string>
+    <string name="app_notification_sound_timeout_summary_template">Дазволіць гукі ці вібрацыю не больш чым адзін раз у <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">Без абмежаванняў</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 хвіліна</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 хвілін</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 хвілін</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 хвілін</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Звязаць гучнасць выкліку і апавяшчэнняў</string>
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Нарастальная гучнасць званку</string>
     <string name="increasing_ring_min_volume_title">Пачатковая гучнасць</string>
     <string name="increasing_ring_ramp_up_time_title">Час павелічэння</string>
     <!-- Display : Rotation -->
+    <string name="display_rotation_title">Параметры аўтапаварота</string>
+    <string name="display_rotation_enabled">Аўтапаварот уключаны</string>
+    <string name="display_rotation_disabled">Аўтапаварот адключаны</string>
+    <string name="display_rotation_unit">градусаў</string>
+    <string name="display_rotation_category_title">Рэжымы паварота экрана</string>
+    <string name="display_rotation_0_title">0 градусаў</string>
+    <string name="display_rotation_90_title">90 градусаў</string>
+    <string name="display_rotation_180_title">180 градусаў</string>
+    <string name="display_rotation_270_title">270 градусаў</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Візуалізацыя спектра музыкі</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Вібрацыя для індыкацыі статусу выкліку</string>
     <!-- Navigation bar customization -->
@@ -61,6 +83,8 @@
     <string name="nav_bar_layout_inverse_summary">Памяняць месцамі кнопкі навігацыйнай панэлі</string>
     <string name="navigation_bar_home_long_press_title">Доўгае утрыманьне кнопкі \"Хатоўка\"</string>
     <string name="navigation_bar_home_double_tap_title">Падвойнае крананьне кнопкі \"Хатоўка\"</string>
+    <string name="navigation_bar_app_switch_long_press_title">Доўгае утрыманне кнопкі Нядаўнія</string>
+    <string name="navigation_bar_edge_long_swipe_title">Дзеянне па доўгаму свайпу</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Для кіравання прайграваннем</string>
     <string name="volbtn_music_controls_summary">Пераключаць музычныя трэкі доўгім націскам кнопак гучнасці пры выключаным экране</string>
@@ -74,12 +98,16 @@
     <string name="swap_volume_buttons_summary">Мяняе месцамі кнопкі кіраваньня гучнасьці згодна экрану</string>
     <!-- Home key customization -->
     <string name="home_answer_call_title">Адказваць на выклікі</string>
+    <string name="home_answer_call_summary">Адказваць на выклік клавішай «Дадому»</string>
     <!-- Power menu key customization -->
     <string name="power_menu_title">Дзеяньні пры ўтрыманьні кнопкі выключэньня</string>
     <string name="power_menu_screenshot_title">Здымак экрану</string>
+    <string name="power_menu_screenshot_summary">Утрымлівайце, каб вылучыць вобласць для здымку экрана</string>
     <string name="power_menu_airplane_title">Рэжым лёту</string>
     <string name="power_menu_users_title">Зьмяніць карыстальніка</string>
+    <string name="power_menu_lockdown_title">Блакіроўка</string>
     <string name="power_end_call_title">Скончыць размову</string>
+    <string name="power_end_call_summary">Завяршаць тэлефонны выклік націскам кнопкі сілкавання</string>
     <string name="lockscreen_power_menu_disabled_title">Адключыць на экране блакавання</string>
     <string name="lockscreen_power_menu_disabled_summary">Адключыць меню сілкавання на заблакаваным экране</string>
     <string name="torch_long_press_power_gesture_title">Доўгі нац. для укл. ліхтарыка</string>
@@ -107,29 +135,50 @@
     <string name="status_bar_system_icons_title">Сістэмныя цэтлікі</string>
     <string name="status_bar_system_icons_summary">Налада бачнасці значкоў у радку стану</string>
     <!-- Status bar - Clock -->
+    <string name="status_bar_clock_title">Гадзіннік</string>
+    <string name="status_bar_clock_show_seconds_title">Паказаць секунды</string>
+    <string name="status_bar_clock_show_seconds_summary">Паказваць гадзіны, хвіліны і секунды</string>
+    <string name="status_bar_clock_position_title">Размяшчэнне гадзінніка</string>
+    <string name="status_bar_clock_position_right">Справа</string>
+    <string name="status_bar_clock_position_left">Злева</string>
+    <string name="status_bar_clock_position_center">Па цэнтры</string>
     <string name="status_bar_am_pm_title">Варыянт \"AM/PM\"</string>
     <string name="status_bar_am_pm_info">24-гадзінны фармат часу</string>
     <string name="status_bar_am_pm_normal">Нармальна</string>
     <string name="status_bar_am_pm_small">Маленькі</string>
     <string name="status_bar_am_pm_hidden">Схаваць</string>
     <!-- Status bar - Battery -->
+    <string name="status_bar_battery_title">Індыкатар батарэі</string>
     <string name="status_bar_battery_style_title">Варыянт адлюстроўвання батарэі</string>
+    <string name="status_bar_battery_style_icon_portrait">Вертыкальны значок</string>
+    <string name="status_bar_battery_style_circle">Круг</string>
+    <string name="status_bar_battery_style_text">Тэкст</string>
     <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Працэнт зарада батарэі</string>
+    <string name="status_bar_battery_percentage_default">Схавана</string>
+    <string name="status_bar_battery_percentage_text_inside">Унутры значка</string>
+    <string name="status_bar_battery_percentage_text_next">Побач са значком</string>
     <!-- Status bar - Brightness -->
+    <string name="status_bar_brightness_category">Яркасць</string>
+    <string name="status_bar_brightness_slider_title">Рэгулятар яркасці</string>
+    <string name="status_bar_brightness_slider_summary">Налада яркасці ў хуткіх наладах</string>
+    <string name="status_bar_brightness_slider_auto_title">Аўтаматычная яркасць</string>
+    <string name="status_bar_brightness_slider_auto_summary">Паказаць перамыкач для адаптыўнай яркасці слайдера</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Кіраваньне яскравасьцьцю</string>
     <string name="status_bar_toggle_brightness_summary">Рэгуляваць яскравасьць экрану рухам пальца, па радку стану</string>
     <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Індыкатар сеткавага трафіку</string>
     <string name="network_traffic_settings_summary">Адлюстроўваць бягучую хуткасць злучэння ў радку стану</string>
+    <string name="network_traffic_mode_title">Рэжым прагляду</string>
+    <string name="network_traffic_mode_disable">Адключана</string>
+    <string name="network_traffic_mode_status_bar">Радок стану</string>
+    <string name="network_traffic_mode_qs">Хуткія налады</string>
     <string name="network_traffic_autohide">Хаваць аўтаматычна</string>
     <string name="network_traffic_autohide_summary">Хаваць індыкатар трафіку, калі няма актыўнасці</string>
     <string name="network_traffic_units_title">Адзінкі вымярэння трафіку</string>
-    <string name="network_traffic_units_kilobits">Кілабіт у секунду (кБ/с)</string>
-    <string name="network_traffic_units_megabits">Мегабіт у секунду (Мб/с)</string>
-    <string name="network_traffic_units_kilobytes">Кілабайт у секунду (КБ/с)</string>
-    <string name="network_traffic_units_megabytes">Мегабайт у секунду (МБ/с)</string>
-    <string name="network_traffic_show_units">Паказаць адзінкі</string>
-    <string name="network_traffic_show_units_summary">Паказваць хуткасць перадачы дадзеных у радку стану</string>
     <!-- QS settings -->
     <string name="qs_title">Хуткія налады</string>
     <string name="qs_rows_portrait_title">Радкі (партрэт)</string>
@@ -137,8 +186,30 @@
     <string name="qs_columns_portrait_title">Калонкі (партрэт)</string>
     <string name="qs_columns_landscape_title">Калонкі (ландшафт)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Бачнасць назвы</string>
+    <string name="qs_tile_title_visibility_summary">Уключыць для адлюстравання загалоўка плітак</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Вібрацыя пры дотыку</string>
+    <string name="qs_vibrate_summary">Вібраваць пры націску на пліткі хуткіх налад</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Анімацыя плітак налад</string>
+    <string name="qs_tile_animation_style_title">Стыль</string>
+    <string name="qs_tile_animation_duration_title">Працягласць</string>
+    <string name="qs_tile_animation_interpolator_title">Інтэрпалятар</string>
+    <string name="qs_tile_animation_style_off">Нічога</string>
+    <string name="qs_tile_animation_style_flip">Пераварот</string>
+    <string name="qs_tile_animation_style_rotate">Павярнуць</string>
+    <string name="qs_tile_animation_duration_low">Павольная</string>
+    <string name="qs_tile_animation_duration_default">Па змаўчанні</string>
+    <string name="qs_tile_animation_duration_fast">Хутка</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Лінейная</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Паскарэнне</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Запаволенне</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Паскарэнне і запаволенне</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Адскок</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Выкід</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Апераджэнне</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Апераждэнне і выкід</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Параметры выразу</string>
     <string name="display_cutout_mode_normal">Па змаўчанні</string>
@@ -146,15 +217,20 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Поўнаэкранныя праграмы</string>
     <string name="display_cutout_force_fullscreen_summary">Ігнараванне выразу выбранымі праграмамі</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Калі ласка перазапусціце праграму для прымянення змен</string>
+    <string name="cutout_force_fullscreen_no_apps">Няма праграм</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Свайп для стварэння скрыншота</string>
     <string name="swipe_to_screenshot_gesture_summary">Правядзіце трыма пальцамі для стварэння скрыншота</string>
     <!-- Navigation compact layout -->
+    <string name="navigation_bar_compact_layout_title">Кампактная планіроўка</string>
+    <string name="navigation_bar_compact_layout_summary">Use a compact layout in the navigation bar</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Аптымізацыя вашага экрана ў залежнасці ад часу сутак і ўмоў навакольнага асяроддзя для паляпшэння чытальнасці тэксту і зніжэння стамляльнасці вачэй</string>
     <string name="live_display_mode">Рэжым прагляду</string>
     <string name="live_display_color_temperature_title">Каляровая тэмпература</string>
     <string name="live_display_color_temperature_summary">Дзень: <xliff:g id="day_temperature">%1$d </xliff:g>K Ноч: <xliff:g id="night_temperature">%2$d </xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
     <string name="live_display_day">Дзень</string>
     <string name="live_display_night">Ноч</string>
     <string name="live_display_outdoor_mode_title">Аўтаматычны рэжым для вуліцы</string>
@@ -182,7 +258,9 @@
     <string name="live_display_color_profile_adaptive_summary">Колеру адаптуюцца да ўмоў навакольнага асяроддзя</string>
     <string name="live_display_color_profile_reading_title">Чытанне</string>
     <string name="live_display_color_profile_reading_summary">Больш цёплага колеру для меншага напружання вачэй</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
     <string name="live_display_color_profile_srgb_summary">Дакладнасць колеру sRGB каляровай прасторы</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Колеры, адпаведныя каляровай прасторы DCI-P3</string>
     <string name="live_display_reading_mode_title">Рэжым чытання</string>
     <string name="live_display_reading_mode_summary">Рэжым адценняў шэрага для доўгачасовага чытання</string>
@@ -199,7 +277,21 @@
     <string name="adj_intensity_title">Насычанасьць</string>
     <string name="adj_contrast_title">Кантраснасць</string>
     <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Full</string>
+    <string name="back_height_high_label">Bottom area</string>
+    <string name="back_options_dialog_title">Параметры</string>
+    <string name="back_height_message">Аб\'ём вышыні экрана, які выкарыстоўваецца як кранальная вобласць для жэсту \"Назад\".</string>
     <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Схаваць палоску панэлі навігацыі</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Перадача дадзеных</string>
+    <string name="data_usage_app_restrict_data_summary">Уключыць выкарыстанне мабільных дадзеных</string>
+    <string name="data_usage_app_restrict_vpn">Дадзеныя VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Уключыць выкарыстанне дадзеных VPN</string>
+    <string name="data_usage_app_restrict_wifi">Дадзеныя Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Уключыць выкарыстанне дадзеных Wi\u2011Fi</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Напаўпразрысты фон апавяшчэнняў</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

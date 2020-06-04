@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">Dostosuj jasność z Szybkich Ustawień</string>
     <string name="status_bar_brightness_slider_auto_title">Automatyczna jasność</string>
     <string name="status_bar_brightness_slider_auto_summary">Pokaż przełącznik dla automatycznej jasności blisko suwaka</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
     <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">Pokaż bieżące poziomy ruchu sieciowego na pasku stanu</string>
     <string name="network_traffic_mode_title">Tryb wyświetlania</string>
     <string name="network_traffic_mode_disable">Wyłączone</string>
+    <string name="network_traffic_mode_status_bar">Pasek statusu</string>
+    <string name="network_traffic_mode_qs">Szybkie ustawienia</string>
     <string name="network_traffic_autohide">Autoukrywanie</string>
     <string name="network_traffic_autohide_summary">Ukryj monitor ruchu, przy braku aktywności</string>
     <string name="network_traffic_units_title">Jednostki pomiaru ruchu</string>
-    <string name="network_traffic_units_kilobits">Kilobity na sekundę (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabity na sekundę (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobajty na sekundę (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabajty na sekundę (MB/s)</string>
-    <string name="network_traffic_show_units">Pokaż jednostki</string>
-    <string name="network_traffic_show_units_summary">Określa, czy pokazywać jednostki pomiaru ruchu sieciowego na pasku stanu</string>
     <!-- QS settings -->
     <string name="qs_title">Szybkie ustawienia</string>
     <string name="qs_rows_portrait_title">Liczba kafelków w wierszu w pionie</string>
@@ -285,5 +284,14 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Ukryj belkę nawigacji za pomocą gestów. </string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Dane komórkowe</string>
+    <string name="data_usage_app_restrict_data_summary">Włącz użycie danych komórkowych</string>
+    <string name="data_usage_app_restrict_vpn">Dane VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Włącz użycie danych poprzez VPN</string>
+    <string name="data_usage_app_restrict_wifi">Dane Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Włącz użycie danych Wi\u2011Fi</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Przezroczysty pasek powiadomień</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

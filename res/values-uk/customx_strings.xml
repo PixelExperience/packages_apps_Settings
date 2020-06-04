@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">Регулювання яскравості з швидких налаштувань</string>
     <string name="status_bar_brightness_slider_auto_title">Авто налаштування яскравості</string>
     <string name="status_bar_brightness_slider_auto_summary">Показати перемикач адаптивної яскравості поряд з повзунком</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Керування яскравістю</string>
     <string name="status_bar_toggle_brightness_summary">Регулювати яскравість екрану рухом пальця по рядку стану</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">Відображати поточну швидкість з\'єднання в рядку стану</string>
     <string name="network_traffic_mode_title">Режим відображення</string>
     <string name="network_traffic_mode_disable">Вимкнено</string>
+    <string name="network_traffic_mode_status_bar">Рядок стану</string>
+    <string name="network_traffic_mode_qs">Швидкі налаштування</string>
     <string name="network_traffic_autohide">Приховувати автоматично</string>
     <string name="network_traffic_autohide_summary">Не відображати швидкість при відсутності активності</string>
     <string name="network_traffic_units_title">Одиниці виміру трафіку</string>
-    <string name="network_traffic_units_kilobits">Кілобіт за секунду (Кбіт/с)</string>
-    <string name="network_traffic_units_megabits">Мегабіт за секунду (Мбіт/с)</string>
-    <string name="network_traffic_units_kilobytes">Кілобайт за секунду (Кб/с)</string>
-    <string name="network_traffic_units_megabytes">Мегабайт за секунду (Мб/с)</string>
-    <string name="network_traffic_show_units">Відображати одиниці виміру</string>
-    <string name="network_traffic_show_units_summary">Відображати швидкість передачі даних в рядку стану</string>
     <!-- QS settings -->
     <string name="qs_title">Швидкі налаштування</string>
     <string name="qs_rows_portrait_title">Рядки (портретна орієнтація)</string>
@@ -285,5 +284,14 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Сховати риску навігаційної панелі.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Cтільникові дані</string>
+    <string name="data_usage_app_restrict_data_summary">Увімкнути використання стільникових даних</string>
+    <string name="data_usage_app_restrict_vpn">Дані VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Увімкнути використання даних VPN</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi данні</string>
+    <string name="data_usage_app_restrict_wifi_summary">Увімкнути використання Wi\u2011Fi даних</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Напівпрозорий фон сповіщень</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

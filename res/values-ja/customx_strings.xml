@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">クイック設定で明るさを調節します</string>
     <string name="status_bar_brightness_slider_auto_title">明るさの自動調節</string>
     <string name="status_bar_brightness_slider_auto_summary">スライダーの近くに明るさの自動調節のトグルを表示します</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">明るさコントロール</string>
     <string name="status_bar_toggle_brightness_summary">ステータスバー上でスライドして明るさを調整します</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">ステータスバーに現在のネットワークトラフィック量を表示します</string>
     <string name="network_traffic_mode_title">表示モード</string>
     <string name="network_traffic_mode_disable">無効</string>
+    <string name="network_traffic_mode_status_bar">ステータスバー</string>
+    <string name="network_traffic_mode_qs">クイック設定</string>
     <string name="network_traffic_autohide">自動的に隠す</string>
     <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にします</string>
     <string name="network_traffic_units_title">トラフィックの単位</string>
-    <string name="network_traffic_units_kilobits">キロビット/秒 (kb/s)</string>
-    <string name="network_traffic_units_megabits">メガビット/秒 (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">キロバイト/秒 (kB/s)</string>
-    <string name="network_traffic_units_megabytes">メガバイト/秒 (MB/s)</string>
-    <string name="network_traffic_show_units">単位を表示</string>
-    <string name="network_traffic_show_units_summary">ステータスバーにネットワークトラフィックの単位を表示</string>
     <!-- QS settings -->
     <string name="qs_title">クイック設定</string>
     <string name="qs_rows_portrait_title">行数 (縦向き)</string>
@@ -285,5 +284,14 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">ナビゲーションバーのピルを隠す</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">モバイルデータ</string>
+    <string name="data_usage_app_restrict_data_summary">モバイルデータ使用量を有効化する</string>
+    <string name="data_usage_app_restrict_vpn">VPN データ</string>
+    <string name="data_usage_app_restrict_vpn_summary">VPN データ使用量を有効化する</string>
+    <string name="data_usage_app_restrict_wifi">Wi‑Fi データ</string>
+    <string name="data_usage_app_restrict_wifi_summary">Wi\u2011Fi データ使用量を有効化する</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">通知パネルの透過</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

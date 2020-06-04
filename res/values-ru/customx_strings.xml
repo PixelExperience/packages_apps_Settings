@@ -64,7 +64,7 @@
     <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Параметры вращения</string>
-    <string name="display_rotation_enabled">Auto-rotation is enabled</string>
+    <string name="display_rotation_enabled">Автоповорот включен</string>
     <string name="display_rotation_disabled">Автоповорот выключен</string>
     <string name="display_rotation_unit">градусов</string>
     <string name="display_rotation_category_title">Режимы вращения</string>
@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">Регулировка яркости в быстрых настройках</string>
     <string name="status_bar_brightness_slider_auto_title">Автоматическая яркость</string>
     <string name="status_bar_brightness_slider_auto_summary">Переключатель адаптивной регулировки яркости рядом с ползунком</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Управление яркостью</string>
     <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">Отображать текущую скорость соединения в строке состояния</string>
     <string name="network_traffic_mode_title">Режим отображения</string>
     <string name="network_traffic_mode_disable">Отключено</string>
+    <string name="network_traffic_mode_status_bar">Строка состояния</string>
+    <string name="network_traffic_mode_qs">Быстрые настройки</string>
     <string name="network_traffic_autohide">Автоскрытие</string>
     <string name="network_traffic_autohide_summary">Скрывать индикатор трафика, когда нет активности</string>
     <string name="network_traffic_units_title">Единицы измерения трафика</string>
-    <string name="network_traffic_units_kilobits">Килобит в секунду (кбит/с)</string>
-    <string name="network_traffic_units_megabits">Мегабит в секунду (Мбит/с)</string>
-    <string name="network_traffic_units_kilobytes">Килобайт в секунду (кБ/с)</string>
-    <string name="network_traffic_units_megabytes">Мегабайт в секунду (МБ/с)</string>
-    <string name="network_traffic_show_units">Показать единицы</string>
-    <string name="network_traffic_show_units_summary">Отображать скорость передачи данных в строке состояния</string>
     <!-- QS settings -->
     <string name="qs_title">Быстрые настройки</string>
     <string name="qs_rows_portrait_title">Строки (портрет)</string>
@@ -285,5 +284,14 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Скрыть полоску панели навигации</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Мобильные данные</string>
+    <string name="data_usage_app_restrict_data_summary">Включить мониторинг мобильных данных</string>
+    <string name="data_usage_app_restrict_vpn">Данные VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Включить использование данных VPN</string>
+    <string name="data_usage_app_restrict_wifi">Данные Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Включить мониторинг Wi\u2011Fi data</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Полупрозрачный фон уведомлений</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

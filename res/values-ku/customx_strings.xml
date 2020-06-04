@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">ڕێکخستنی ڕۆشنایی لە ڕێکخستنی خێرادا</string>
     <string name="status_bar_brightness_slider_auto_title">ڕۆشنایی خۆکار</string>
     <string name="status_bar_brightness_slider_auto_summary">پیشاندانی چەسپاوی ڕۆشنایی نزیک لە ئامرازەکەدا</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">کۆنترۆڵکردنی ڕۆشنایی</string>
     <string name="status_bar_toggle_brightness_summary">ڕێکخستنی ڕۆشنایی بە هێنانەخوارەوەی شریتی ئامرازەکان</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">پیشاندانی ئاستی ترافیکی ئێستای تۆڕ لە شریتی ئامرازەکان</string>
     <string name="network_traffic_mode_title">دۆخی پیشاندان</string>
     <string name="network_traffic_mode_disable">ناچالاککراوە</string>
+    <string name="network_traffic_mode_status_bar">شريتی زانیاری</string>
+    <string name="network_traffic_mode_qs">ڕێکخستنی خێرا</string>
     <string name="network_traffic_autohide">شاردنەوەی خۆکار</string>
     <string name="network_traffic_autohide_summary">شاردنەوەی چاودێری ترافیکی کاتێ هیچ چالاکییەک نەبوو</string>
     <string name="network_traffic_units_title">یەکەکانی پێوانەکردنی ترافیک</string>
-    <string name="network_traffic_units_kilobits">کیلۆبیت لە چرکەیەکدا (کب/چ)</string>
-    <string name="network_traffic_units_megabits">مێگابیت لە چرکەیەکدا (مب/چ)</string>
-    <string name="network_traffic_units_kilobytes">کیلۆبایت لە چرکەیەکدا (کب/چ)</string>
-    <string name="network_traffic_units_megabytes">مێگابایت لە چرکەدا (مب/چ)</string>
-    <string name="network_traffic_show_units">پیشاندانی یەکەکان</string>
-    <string name="network_traffic_show_units_summary">کاتی پیشاندانی یەکەکانی پێوانەی ترافیک لە شریتی ئامرازەکان</string>
     <!-- QS settings -->
     <string name="qs_title">ڕێکخستنی خێرا</string>
     <string name="qs_rows_portrait_title">ڕیزەکان (درێژی)</string>
@@ -281,7 +280,18 @@
     <string name="back_height_low_label">پڕ</string>
     <string name="back_height_high_label">ناوچەی دوگمە</string>
     <string name="back_options_dialog_title">بژاردەکان</string>
+    <string name="back_height_message">بەشێکی شاشەکە بەکاردێت وەک شوێنی دەسلێدانی گەڕانەوە بۆ ئاماژەکان.</string>
     <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">شاردنەوەی دوگمەی ئاراستەکان</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">داتای سیمکارت</string>
+    <string name="data_usage_app_restrict_data_summary">چالاککردنی تۆماری بەکارهێنانی داتای سیمکارت</string>
+    <string name="data_usage_app_restrict_vpn">داتای VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">چالاککردنی تۆماری بەکارهێنانی داتای VPN</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi داتای</string>
+    <string name="data_usage_app_restrict_wifi_summary">چالاککردنی تۆماری بەکارهێنانی داتای Wi\u2011Fi</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">ڕوونی پشت شاشەی ئاگادارکردنەوەکان</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

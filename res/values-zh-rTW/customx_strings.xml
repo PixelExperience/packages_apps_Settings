@@ -12,12 +12,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">導覽列</string>
+    <string name="navigation_bar_title">導航欄</string>
     <string name="hardware_keys_power_key_title">電源鍵</string>
     <string name="hardware_keys_volume_keys_title">音量搖杆</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">啟用螢幕上的導覽列</string>
-    <string name="disable_navkeys_summary">啟用螢幕上的導覽列和停用實體按鍵</string>
+    <string name="disable_navkeys_title">啟用螢幕上的導航欄</string>
+    <string name="disable_navkeys_summary">啟用螢幕上的導覽欄和停用實體按鍵</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">返回鍵可終止應用程式</string>
     <string name="kill_app_longpress_back_summary">長按返回鍵終止前景應用程式</string>
@@ -35,7 +35,7 @@
     <string name="status_bar_double_tap_to_sleep_title">輕觸即可休眠</string>
     <string name="status_bar_double_tap_to_sleep_summary">輕觸兩下狀態列或鎖定來關閉螢幕</string>
     <!-- Wake on plug -->
-    <string name="wake_when_plugged_or_unplugged_title">接上時喚醒</string>
+    <string name="wake_when_plugged_or_unplugged_title">接上或移除電源時喚醒螢幕</string>
     <string name="wake_when_plugged_or_unplugged_summary">接上或移除電源時開啟螢幕</string>
     <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">選擇解鎖圖案大小</string>
@@ -49,7 +49,7 @@
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">通知音效之間的最短時間</string>
     <string name="app_notification_sound_timeout_summary_template">允許音效或震動每一次不超過 <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">無限制</string>
+    <string name="app_notification_sound_timeout_value_none">沒有限制</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 秒</string>
     <string name="app_notification_sound_timeout_value_30_seconds">30 秒</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 分鐘</string>
@@ -59,13 +59,13 @@
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">連結鈴聲與通知音量</string>
     <!-- Increasing ring tone volume -->
-    <string name="increasing_ring_volume_option_title">漸強鈴聲音量</string>
+    <string name="increasing_ring_volume_option_title">遞增鈴聲音量</string>
     <string name="increasing_ring_min_volume_title">開始音量</string>
     <string name="increasing_ring_ramp_up_time_title">漸強時間</string>
     <!-- Display : Rotation -->
     <string name="display_rotation_title">旋轉設定</string>
-    <string name="display_rotation_enabled">啟用自動旋轉</string>
-    <string name="display_rotation_disabled">停用自動旋轉</string>
+    <string name="display_rotation_enabled">已啟用自動旋轉</string>
+    <string name="display_rotation_disabled">已停用自動旋轉</string>
     <string name="display_rotation_unit">度</string>
     <string name="display_rotation_category_title">旋轉模式</string>
     <string name="display_rotation_0_title">0 度</string>
@@ -73,14 +73,14 @@
     <string name="display_rotation_180_title">180 度</string>
     <string name="display_rotation_270_title">270 度</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">音樂視覺化檢視</string>
+    <string name="lockscreen_visualizer_title">顯示音樂視覺效果</string>
     <!-- In-call feedback -->
-    <string name="incall_feeedback_vibrate_title">使用震動來指示通話狀態</string>
+    <string name="incall_feeedback_vibrate_title">震動以指示通話狀態</string>
     <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">輸入時顯示方向鍵</string>
     <string name="navigation_bar_arrow_keys_summary">輸入時顯示游標鍵。取代輸入法切換器。</string>
     <string name="nav_bar_layout_inverse_title">反轉佈局</string>
-    <string name="nav_bar_layout_inverse_summary">反轉導航列按鈕佈局</string>
+    <string name="nav_bar_layout_inverse_summary">反轉導航欄按鈕佈局</string>
     <string name="navigation_bar_home_long_press_title">主畫面鍵長按動作</string>
     <string name="navigation_bar_home_double_tap_title">主畫面輕觸兩下動作</string>
     <string name="navigation_bar_app_switch_long_press_title">多工鍵長按動作</string>
@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">在快速設定中調整亮度</string>
     <string name="status_bar_brightness_slider_auto_title">自動調整亮度</string>
     <string name="status_bar_brightness_slider_auto_summary">在亮度滑動條附近顯示自動調節亮度開關</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">亮度控制</string>
     <string name="status_bar_toggle_brightness_summary">在狀態列上左右滑動調整亮度</string>
     <!-- Status bar - Network Traffic -->
@@ -171,39 +174,35 @@
     <string name="network_traffic_settings_summary">在狀態列中顯示目前的網路級別</string>
     <string name="network_traffic_mode_title">顯示模式</string>
     <string name="network_traffic_mode_disable">已停用</string>
+    <string name="network_traffic_mode_status_bar">狀態列</string>
+    <string name="network_traffic_mode_qs">快速設定</string>
     <string name="network_traffic_autohide">自動隱藏</string>
     <string name="network_traffic_autohide_summary">沒有活動時隱藏流量監測器</string>
     <string name="network_traffic_units_title">流量單位</string>
-    <string name="network_traffic_units_kilobits">每秒千位元組 (kb/s)</string>
-    <string name="network_traffic_units_megabits">每秒百萬位元組 (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">每秒千位元組 (kB/s)</string>
-    <string name="network_traffic_units_megabytes">每秒百位元組(MB/s)</string>
-    <string name="network_traffic_show_units">顯示單位</string>
-    <string name="network_traffic_show_units_summary">是否在狀態列中顯示流量單位</string>
     <!-- QS settings -->
-    <string name="qs_title">快速設置</string>
+    <string name="qs_title">快速設定</string>
     <string name="qs_rows_portrait_title">列 (縱向)</string>
     <string name="qs_rows_landscape_title">列 (橫向)</string>
     <string name="qs_columns_portrait_title">行 (縱向)</string>
     <string name="qs_columns_landscape_title">行 (橫向)</string>
     <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">快速啟動標題</string>
-    <string name="qs_tile_title_visibility_summary">在QS磁標下顯示標題</string>
+    <string name="qs_tile_title_visibility_summary">快速設定圖標下方顯示標題</string>
     <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">觸控時震動</string>
-    <string name="qs_vibrate_summary">輕觸圖塊時震動</string>
+    <string name="qs_vibrate_summary">輕觸快速設定圖標時震動</string>
     <!-- QS animation/interpolator styles  -->
     <string name="qs_animation_options_title">快速設定動畫</string>
     <string name="qs_tile_animation_style_title">動畫樣式</string>
     <string name="qs_tile_animation_duration_title">動畫長度</string>
-    <string name="qs_tile_animation_interpolator_title">補幀器</string>
+    <string name="qs_tile_animation_interpolator_title">動畫補幀器</string>
     <string name="qs_tile_animation_style_off">無動畫</string>
     <string name="qs_tile_animation_style_flip">翻轉</string>
     <string name="qs_tile_animation_style_rotate">旋轉</string>
     <string name="qs_tile_animation_duration_low">慢</string>
     <string name="qs_tile_animation_duration_default">預設</string>
     <string name="qs_tile_animation_duration_fast">快</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">直線</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">線性</string>
     <string name="qs_tile_animation_interpolator_accelerateInterpolator">加速</string>
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">減速</string>
     <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">先快後慢</string>
@@ -218,13 +217,13 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">全螢幕應用程式</string>
     <string name="display_cutout_force_fullscreen_summary">強制應用程式使用瀏海區域</string>
-    <string name="display_cutout_force_fullscreen_restart_app">請重新啓動程式來套用更改。</string>
+    <string name="display_cutout_force_fullscreen_restart_app">請重新啓動程式來套用變更。</string>
     <string name="cutout_force_fullscreen_no_apps">沒有應用程式</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">滑動截圖</string>
     <string name="swipe_to_screenshot_gesture_summary">同時滑動三支指頭以擷取螢幕畫面</string>
     <!-- Navigation compact layout -->
-    <string name="navigation_bar_compact_layout_title">緊湊的佈局</string>
+    <string name="navigation_bar_compact_layout_title">精簡配置</string>
     <string name="navigation_bar_compact_layout_summary">在導航欄中使用緊湊的佈局</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
@@ -278,12 +277,21 @@
     <string name="adj_intensity_title">強度</string>
     <string name="adj_contrast_title">對比</string>
     <!-- Back Gesture Height -->
-    <string name="back_height_low_label">滿了</string>
+    <string name="back_height_low_label">全部區域</string>
     <string name="back_height_high_label">底部區域</string>
-    <string name="back_options_dialog_title">設定</string>
-    <string name="back_height_message">屏幕高度用作後手勢的可觸摸區域。</string>
+    <string name="back_options_dialog_title">選項</string>
+    <string name="back_height_message">返回手勢可觸發範圍</string>
     <!-- Full screen gestures -->
-    <string name="navbar_gesture_pill_toggle_title">隱藏導航欄藥丸</string>
+    <string name="navbar_gesture_pill_toggle_title">隱藏導航欄圖標</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">行動數據</string>
+    <string name="data_usage_app_restrict_data_summary">啟用行動網路用量</string>
+    <string name="data_usage_app_restrict_vpn">VPN 資料</string>
+    <string name="data_usage_app_restrict_vpn_summary">啟用 VPN 資料用量</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 數據</string>
+    <string name="data_usage_app_restrict_wifi_summary">啟用 Wi\u2011Fi 數據用量</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">半透明的通知背景</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

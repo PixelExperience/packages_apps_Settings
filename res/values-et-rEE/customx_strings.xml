@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">Määra heledust kiirseadetest</string>
     <string name="status_bar_brightness_slider_auto_title">Automaatne heledus</string>
     <string name="status_bar_brightness_slider_auto_summary">Kuva kohanduva heleduse lülitit liuguri lähedal</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Heleduse reguleerimine</string>
     <string name="status_bar_toggle_brightness_summary">Reguleeri heledust, libistades mööda ülariba</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">Kuva olekuribal võrguliikluse hetketasemeid</string>
     <string name="network_traffic_mode_title">Kuvamise režiim</string>
     <string name="network_traffic_mode_disable">Keelatud</string>
+    <string name="network_traffic_mode_status_bar">Olekuriba</string>
+    <string name="network_traffic_mode_qs">Kiirseaded</string>
     <string name="network_traffic_autohide">Peida automaatselt</string>
     <string name="network_traffic_autohide_summary">Peida võrguliikluse jälgija, kui tegevus puudub</string>
     <string name="network_traffic_units_title">Liikluse mõõtühikud</string>
-    <string name="network_traffic_units_kilobits">Kilobitte sekundis (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabitte sekundis (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobaite sekundis (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabaite sekundis (MB/s)</string>
-    <string name="network_traffic_show_units">Kuva ühikud</string>
-    <string name="network_traffic_show_units_summary">Määrab olekuribal võrguliikluse ühikute kuvamist</string>
     <!-- QS settings -->
     <string name="qs_title">Kiirseaded</string>
     <string name="qs_rows_portrait_title">Read (vertikaalpaigutus)</string>
@@ -285,5 +284,14 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Peida navigeerimisriba</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Mobiilne andmeside</string>
+    <string name="data_usage_app_restrict_data_summary">Luba mobiilse andmeside kasutus</string>
+    <string name="data_usage_app_restrict_vpn">VPNi andmeside</string>
+    <string name="data_usage_app_restrict_vpn_summary">Lubage VPNi andmeside kasutus</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi andmeside</string>
+    <string name="data_usage_app_restrict_wifi_summary">Luba Wi\u2011Fi andmeside kasutus</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Läbipaistev märguannete taust</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

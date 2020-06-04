@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">ضبط السطوع من الإعدادات السريعة</string>
     <string name="status_bar_brightness_slider_auto_title">السطوع التلقائي</string>
     <string name="status_bar_brightness_slider_auto_summary">إظهار رمز السطوع التلقائي قرب شريط تمرير السطوع</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">التحكم بالسطوع</string>
     <string name="status_bar_toggle_brightness_summary">التحكم بالسطوع عبر السحب على شريط الحالة</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">عرض مستويات حركة مرور الشبكة الحالية في شريط الحالة</string>
     <string name="network_traffic_mode_title">وضع العرض</string>
     <string name="network_traffic_mode_disable">معطّل</string>
+    <string name="network_traffic_mode_status_bar">شريط الحالة</string>
+    <string name="network_traffic_mode_qs">قائمة الإعدادات السريعة</string>
     <string name="network_traffic_autohide">إخفاء تلقائي</string>
     <string name="network_traffic_autohide_summary">اخفاء رصد حركة تنقل البيانات عند عدم وجود نشاط</string>
     <string name="network_traffic_units_title">وحدات قياس حركة البيانات</string>
-    <string name="network_traffic_units_kilobits">كيلوبت في الثانية (kb/s)</string>
-    <string name="network_traffic_units_megabits">ميجابت في الثانية (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">كيلوبايت في الثانية (kB/s)</string>
-    <string name="network_traffic_units_megabytes">ميغابايت في الثانية (MB/s)</string>
-    <string name="network_traffic_show_units">عرض الوحدات</string>
-    <string name="network_traffic_show_units_summary">ما إذا كان سيتم عرض وحدات قياس حركة المرور في شريط الحالة أم لا</string>
     <!-- QS settings -->
     <string name="qs_title">الإعدادات السريعة</string>
     <string name="qs_rows_portrait_title">صفوف المربعات في الوضع القائم</string>
@@ -285,5 +284,14 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">إخفاء خط شريط التنقل</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">البيانات الخلوية</string>
+    <string name="data_usage_app_restrict_data_summary">تمكين استخدام البيانات الخلوية</string>
+    <string name="data_usage_app_restrict_vpn">بيانات الـ VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">تمكين استخدام بيانات الـ VPN</string>
+    <string name="data_usage_app_restrict_wifi">‏بيانات Wi‑Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">تمكين استخدام بيانات WiFi</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">قائمة التنبيهات ذات خلفية شفافة</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

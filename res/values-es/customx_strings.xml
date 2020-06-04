@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">Ajuste el brillo desde los ajustes rápidos</string>
     <string name="status_bar_brightness_slider_auto_title">Brillo automático</string>
     <string name="status_bar_brightness_slider_auto_summary">Mostrar el interruptor de brillo automático al lado de la barra de brillo</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
     <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">Muestra los niveles de tráfico de red actuales en la barra de estado</string>
     <string name="network_traffic_mode_title">Modo de visualización</string>
     <string name="network_traffic_mode_disable">Deshabilitado</string>
+    <string name="network_traffic_mode_status_bar">Barra de estado</string>
+    <string name="network_traffic_mode_qs">Ajustes rápidos</string>
     <string name="network_traffic_autohide">Ocultar automáticamente</string>
     <string name="network_traffic_autohide_summary">Ocultar al monitor de tráfico cuando no haya actividad</string>
     <string name="network_traffic_units_title">Unidades de medida del tráfico de red</string>
-    <string name="network_traffic_units_kilobits">Kilobits por segundo (Kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabits por segundo (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobytes por segundo (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabytes por segundo (MB/s)</string>
-    <string name="network_traffic_show_units">Mostrar unidades</string>
-    <string name="network_traffic_show_units_summary">Mostrar/ocultar unidades de medida de tráfico en la barra de estado</string>
     <!-- QS settings -->
     <string name="qs_title">Configuración rápida</string>
     <string name="qs_rows_portrait_title">Filas en modo vertical</string>
@@ -285,5 +284,14 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Ocultar la píldora de la barra de navegación.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Datos móviles</string>
+    <string name="data_usage_app_restrict_data_summary">Habilitar el uso de datos móviles</string>
+    <string name="data_usage_app_restrict_vpn">Datos VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Habilitar uso de datos VPN</string>
+    <string name="data_usage_app_restrict_wifi">Datos Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Habilitar el uso de datos Wi\u2011Fi</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Fondo translúcido de las notificaciones</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

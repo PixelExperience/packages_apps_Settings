@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">Ryškumo reguliavimas greitais nustatymais</string>
     <string name="status_bar_brightness_slider_auto_title">Automatinis ryškumas</string>
     <string name="status_bar_brightness_slider_auto_summary">Adaptyvus ryškumo valdymo jungiklis šalia slankiklio</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Ryškumo valdymas</string>
     <string name="status_bar_toggle_brightness_summary">Sureguliuokite ryškumą slinkdami per būsenos juostą</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">Rodyti dabartinius tinklo srauto lygius būsenos juostoje</string>
     <string name="network_traffic_mode_title">Ekrano režimas</string>
     <string name="network_traffic_mode_disable">Išjungta</string>
+    <string name="network_traffic_mode_status_bar">Būsenos juosta</string>
+    <string name="network_traffic_mode_qs">Greitieji nustatymai</string>
     <string name="network_traffic_autohide">Automatiškai slėpti</string>
     <string name="network_traffic_autohide_summary">Slėpti tinklo indikatorių, kai nėra jokios veiklos</string>
     <string name="network_traffic_units_title">Srauto matavimo vienetai</string>
-    <string name="network_traffic_units_kilobits">Kilobaitai per sekundę (kB/s)</string>
-    <string name="network_traffic_units_megabits">Megabitai per sekundę (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobitai per sekundę (kb/s)</string>
-    <string name="network_traffic_units_megabytes">Megabitai per sekundę (Mb/s)</string>
-    <string name="network_traffic_show_units">Rodyti vienetus</string>
-    <string name="network_traffic_show_units_summary">Rodyti duomenų perdavimo spartą būsenos juostoje</string>
     <!-- QS settings -->
     <string name="qs_title">Greiti nustatymai</string>
     <string name="qs_rows_portrait_title">Eilutės (portretas)</string>
@@ -285,5 +284,14 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Paslėpti naršymo juostos juostelę</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Mobilieji duomenys</string>
+    <string name="data_usage_app_restrict_data_summary">Įjungti mobiliojo ryšio duomenų naudojimą</string>
+    <string name="data_usage_app_restrict_vpn">VPN duomenys</string>
+    <string name="data_usage_app_restrict_vpn_summary">Įgalinti VPN duomenų naudojimą</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi duomenys</string>
+    <string name="data_usage_app_restrict_wifi_summary">Įgalinti Wi\u2011Fi duomenų naudojimą</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Skaidrus pranešimų fonas</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

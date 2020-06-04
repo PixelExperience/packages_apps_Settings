@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">Upravte jas z rychlého nastavení</string>
     <string name="status_bar_brightness_slider_auto_title">Automatický jas</string>
     <string name="status_bar_brightness_slider_auto_summary">Zobrazit přepínač pro automatický jas poblíž posuvníku</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Ovládání jasu</string>
     <string name="status_bar_toggle_brightness_summary">Umožňuje nastavit jas tažením prstu na stavové liště</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">Zobrazit rychlost přenosu dat ve stavové liště</string>
     <string name="network_traffic_mode_title">Režim zobrazení</string>
     <string name="network_traffic_mode_disable">Zakázáno</string>
+    <string name="network_traffic_mode_status_bar">Stavový řádek</string>
+    <string name="network_traffic_mode_qs">Rychlá nastavení</string>
     <string name="network_traffic_autohide">Automatické skrytí</string>
     <string name="network_traffic_autohide_summary">Skrýt Indikátor síťového provozu, pokud neprobíhá žádná síťová aktivita</string>
     <string name="network_traffic_units_title">Jednotky měření síťového provozu</string>
-    <string name="network_traffic_units_kilobits">Kilobity za sekundu (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabity za sekundu (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobajty za sekundu (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabajty za sekundu (MB/s)</string>
-    <string name="network_traffic_show_units">Zobrazit jednotky</string>
-    <string name="network_traffic_show_units_summary">Zobrazení jednotek měření síť. provozu ve stavové liště</string>
     <!-- QS settings -->
     <string name="qs_title">Rychlá nastavení</string>
     <string name="qs_rows_portrait_title">Řádky (na výšku)</string>
@@ -285,5 +284,14 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Skrýt pilulku navigačního panelu</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Mobilní data</string>
+    <string name="data_usage_app_restrict_data_summary">Povolit používání mobilních dat</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi\u2011Fi dat</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Průsvitné pozadí oznámení</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

@@ -44,6 +44,8 @@
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Amosar puntos del patrón</string>
     <!-- Hotspot custom extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Tiempu mínimo ente soníos d\'avisu</string>
     <string name="app_notification_sound_timeout_summary_template">Permite soníos o vibración namái una vegada cada <xliff:g id="duration">%1$s</xliff:g></string>
@@ -71,13 +73,18 @@
     <string name="display_rotation_180_title">180 graos</string>
     <string name="display_rotation_270_title">270 graos</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Display music visualizer</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">Vibrate to indicate call status</string>
     <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">Amosar fleches entrín teclexes</string>
     <string name="navigation_bar_arrow_keys_summary">Amuesa los cursores izquierda y drecha entrín teclexes. Anula\'l conmutador d\'IME.</string>
+    <string name="nav_bar_layout_inverse_title">Invert layout</string>
+    <string name="nav_bar_layout_inverse_summary">Invert layout of navigation bar buttons</string>
     <string name="navigation_bar_home_long_press_title">Aición de primíu llargu d\'Aniciu</string>
     <string name="navigation_bar_home_double_tap_title">Aición de calcu doblu d\'Aniciu</string>
     <string name="navigation_bar_app_switch_long_press_title">Aición de primíu llargu de Recientes</string>
+    <string name="navigation_bar_edge_long_swipe_title">Edge long swipe action</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Controlar reproducción</string>
     <string name="volbtn_music_controls_summary">Gueta pente les pistes faciendo primíos llargos nes tecles de volume entrín la pantalla tea apagada</string>
@@ -101,6 +108,8 @@
     <string name="power_menu_lockdown_title">Torgar</string>
     <string name="power_end_call_title">Finar llamada</string>
     <string name="power_end_call_summary">Fina la llamada actual primiendo\'l botón de prendíu</string>
+    <string name="lockscreen_power_menu_disabled_title">Disable on lock screen</string>
+    <string name="lockscreen_power_menu_disabled_summary">Disable power menu on protected lock screen</string>
     <string name="torch_long_press_power_gesture_title">Primíu llargu pa la llinterna</string>
     <string name="torch_long_press_power_gesture_desc">Activa la llinterna teniendo primíu\'l botón de prendíu entrín la pantalla tea apagada</string>
     <string name="torch_long_press_power_timeout_title">Apagar llinterna automáticamente</string>
@@ -110,6 +119,7 @@
     <string name="torch_long_press_power_timeout_5min">5 minutos</string>
     <string name="torch_long_press_power_timeout_10min">10 minutos</string>
     <!-- Others settings -->
+    <string name="others_settings_title">Others settings</string>
     <string name="additional_buttons_title">Botones adicionales</string>
     <!-- Status bar -->
     <string name="status_bar_title">Barra d\'estáu</string>
@@ -154,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">Axusta\'l brilléu dende los axustes rápidos</string>
     <string name="status_bar_brightness_slider_auto_title">Auto-brilléu</string>
     <string name="status_bar_brightness_slider_auto_summary">Amuesa l\'alternador pal brilléu adautativu cierca l\'eslizador</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Control de brilléu</string>
     <string name="status_bar_toggle_brightness_summary">Axusta\'l brilléu eslizando\'l deu pela barra d\'estáu</string>
     <!-- Status bar - Network Traffic -->
@@ -161,23 +174,57 @@
     <string name="network_traffic_settings_summary">Amosar los niveles actuales del tráficu de rede na barra d\'estáu</string>
     <string name="network_traffic_mode_title">Mou de pantalla</string>
     <string name="network_traffic_mode_disable">Deshabilitáu</string>
+    <string name="network_traffic_mode_status_bar">Status bar</string>
+    <string name="network_traffic_mode_qs">Quick settings</string>
     <string name="network_traffic_autohide">Tapecer automáticamente</string>
     <string name="network_traffic_autohide_summary">Tapecer el monitor de tráficu cuando nun heba actividá</string>
     <string name="network_traffic_units_title">Unidades de midida de tráficu</string>
-    <string name="network_traffic_units_kilobits">Kilobits por segundu (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabits por segundu (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobytes por segundu (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabytes por segundu (MB/s)</string>
-    <string name="network_traffic_show_units">Amosar unidaes</string>
-    <string name="network_traffic_show_units_summary">Si quies amosar les unidaes de midición del tráficu na barra d\'estáu</string>
     <!-- QS settings -->
+    <string name="qs_title">Quick settings</string>
+    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (landscape)</string>
+    <string name="qs_columns_portrait_title">Columns (portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (landscape)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Title visibility</string>
+    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibrate on touch</string>
+    <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Quick settings animations</string>
+    <string name="qs_tile_animation_style_title">Style</string>
+    <string name="qs_tile_animation_duration_title">Duration</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
+    <string name="qs_tile_animation_style_off">None</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Rotate</string>
+    <string name="qs_tile_animation_duration_low">Slow</string>
+    <string name="qs_tile_animation_duration_default">Default</string>
+    <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate and decelerate</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Notch behavior</string>
+    <string name="display_cutout_mode_normal">Default</string>
+    <string name="display_cutout_mode_hidden">Hidden</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Ignore notch space for selected applications</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Please restart the application to apply the changes.</string>
+    <string name="cutout_force_fullscreen_no_apps">No apps</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Swipe to screenshot</string>
+    <string name="swipe_to_screenshot_gesture_summary">Swipe three fingers to take screenshot</string>
     <!-- Navigation compact layout -->
+    <string name="navigation_bar_compact_layout_title">Compact layout</string>
+    <string name="navigation_bar_compact_layout_summary">Use a compact layout in the navigation bar</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimiza la to pantalla según la hora\'l día y les condiciones ambientales p\'ameyorar la llexibilidá y amenorgar el cansanciu de güeyos</string>
     <string name="live_display_mode">Mou de pantalla</string>
@@ -230,7 +277,21 @@
     <string name="adj_intensity_title">Intensidá</string>
     <string name="adj_contrast_title">Contraste</string>
     <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Full</string>
+    <string name="back_height_high_label">Bottom area</string>
+    <string name="back_options_dialog_title">Options</string>
+    <string name="back_height_message">Amount of screen height used as touchable region for back gesture.</string>
     <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Hide the navigation bar pill.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Cellular data</string>
+    <string name="data_usage_app_restrict_data_summary">Enable usage of cellular data</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Enable usage of VPN data</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

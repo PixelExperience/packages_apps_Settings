@@ -164,6 +164,9 @@
     <string name="status_bar_brightness_slider_summary">Prilagajanje svetlosti iz Hitrih nastavitev</string>
     <string name="status_bar_brightness_slider_auto_title">Samodejna svetlost</string>
     <string name="status_bar_brightness_slider_auto_summary">Prikaži preklopnik za prilagodljivo svetlost blizu drsnika</string>
+    <string name="status_bar_brightness_slider_show_never">Never show</string>
+    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
+    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Nadzor svetlosti</string>
     <string name="status_bar_toggle_brightness_summary">Prilagodite svetlost tako, da povlečete preko vrstice stanja</string>
     <!-- Status bar - Network Traffic -->
@@ -171,15 +174,11 @@
     <string name="network_traffic_settings_summary">Prikaz trenutnih ravni omrežnega prometa v vrstici stanja</string>
     <string name="network_traffic_mode_title">Način prikaza</string>
     <string name="network_traffic_mode_disable">Onemogočen</string>
+    <string name="network_traffic_mode_status_bar">Vrstica stanja</string>
+    <string name="network_traffic_mode_qs">Hitre nastavitve</string>
     <string name="network_traffic_autohide">Samodejno skrij</string>
     <string name="network_traffic_autohide_summary">Skrij nadzornika prometa, ko ni dejavnosti</string>
     <string name="network_traffic_units_title">Merske enote prometa</string>
-    <string name="network_traffic_units_kilobits">Kilobitov na sekundo (kb/s)</string>
-    <string name="network_traffic_units_megabits">Megabitov na sekundo (Mb/s)</string>
-    <string name="network_traffic_units_kilobytes">Kilobajtov na sekundo (kB/s)</string>
-    <string name="network_traffic_units_megabytes">Megabajtov na sekundo (MB/s)</string>
-    <string name="network_traffic_show_units">Prikaži enote</string>
-    <string name="network_traffic_show_units_summary">Prikaz merskih enot prometa v vrstici stanja</string>
     <!-- QS settings -->
     <string name="qs_title">Hitre nastavitve</string>
     <string name="qs_rows_portrait_title">Vrstice (pokončno)</string>
@@ -285,5 +284,14 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Skrij tableto vrstice za krmarjenje.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Mobilni podatki</string>
+    <string name="data_usage_app_restrict_data_summary">Omogoči uporabo mobilnih podatkov</string>
+    <string name="data_usage_app_restrict_vpn">VPN podatki</string>
+    <string name="data_usage_app_restrict_vpn_summary">Omogoči uporabo VPN podatkov</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi podatki</string>
+    <string name="data_usage_app_restrict_wifi_summary">Omogoči uporabo Wi\u2011Fi podatkov</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Prosojno ozadje obvestil</string>
+    <!-- Search keywords -->
+    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>
