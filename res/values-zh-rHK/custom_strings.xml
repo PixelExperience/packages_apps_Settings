@@ -25,15 +25,15 @@
     <string name="smart_battery_manager_title_custom">自動調節電池用量</string>
     <string name="smart_battery_title_custom">使用自動調節電池用量</string>
     <!-- Fingerprint location message - default -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">指紋傳感器位於手機正面。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">指紋感應器位於手機正面</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">指紋感應器位於手機左側。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">指紋感應器位於手機右側。</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">指紋感應器位於裝置背面。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">指紋感應器位於裝置正面</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">指紋感應器位於裝置左側。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">指紋感應器位於裝置右側。</string>
     <!-- Fingerprint location message - tablet -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">指紋感應器位於平板背面。</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">指紋感應器位於平板正面。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">指紋感應器位於平板左側。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">指紋感應器位於平板右側。</string>
     <!-- Generic stuff used everywhere -->
@@ -44,15 +44,15 @@
     <string name="hardware_keys_back_key_title">返回鍵</string>
     <string name="hardware_keys_menu_key_title">選單鍵</string>
     <string name="hardware_keys_assist_key_title">搜尋鍵</string>
-    <string name="hardware_keys_appswitch_key_title">最近使用程式</string>
+    <string name="hardware_keys_appswitch_key_title">最近使用的程式</string>
     <string name="hardware_keys_camera_key_title">相機鍵</string>
     <string name="hardware_keys_short_press_title">短按動作</string>
     <string name="hardware_keys_long_press_title">長按動作</string>
     <string name="hardware_keys_double_tap_title">連按兩下動作</string>
     <string name="hardware_keys_action_nothing">無動作</string>
     <string name="hardware_keys_action_menu">開啟/關閉選單</string>
-    <string name="hardware_keys_action_app_switch">最近應用程式切換器</string>
-    <string name="hardware_keys_action_search">搜尋助理</string>
+    <string name="hardware_keys_action_app_switch">最近使用的應用程式切換器</string>
+    <string name="hardware_keys_action_search">搜尋助手</string>
     <string name="hardware_keys_action_voice_search">語音搜尋</string>
     <string name="hardware_keys_action_in_app_search">應用程式內搜尋</string>
     <string name="hardware_keys_action_launch_camera">啟動相機</string>
@@ -65,13 +65,13 @@
     <string name="hardware_keys_long_tap_title">長按動作</string>
     <string name="button_wake_title">喚醒裝置</string>
     <string name="camera_sleep_on_release_title">螢幕窺視</string>
-    <string name="camera_sleep_on_release_summary">僅當按鈕被按下的時候，半按將會保持螢幕點亮</string>
+    <string name="camera_sleep_on_release_summary">半按按鈕時，螢幕只會在按鈕按下時保持開啟</string>
     <string name="camera_launch_title">啟動相機</string>
     <string name="camera_launch_summary">長按後放開將啟動相機</string>
     <!-- Key backlight -->
     <string name="button_backlight_title">背光</string>
-    <string name="button_backlight_enabled">照亮按鈕</string>
-    <string name="button_backlight_only_when_pressed_title">僅在按下按鍵時點亮指示燈</string>
+    <string name="button_backlight_enabled">按鈕發光</string>
+    <string name="button_backlight_only_when_pressed_title">僅在按下按鍵時發光</string>
     <string name="button_backlight_seekbar_title">按鍵亮度</string>
     <string name="backlight_timeout_title">背光逾時</string>
     <string name="backlight_timeout_unlimited">不要關閉</string>
@@ -83,13 +83,13 @@
     <string name="disable_navkeys_summary">啟用導航列並停用實體按鍵</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">防止意外喚醒</string>
-    <string name="proximity_wake_summary">在喚醒螢幕之前檢查距離傳感器</string>
+    <string name="proximity_wake_summary">喚醒螢幕前檢查鄰近感測器</string>
     <!-- Refresh rate -->
-    <string name="refresh_rate_title">螢幕更新率</string>
-    <string name="refresh_rate_summary_auto">自動將部分內容的螢幕更新率從 60Hz 提升到 90Hz</string>
-    <string name="refresh_rate_summary_60">60Hz / 所有內容的螢幕更新率鎖定在 60 Hz</string>
-    <string name="refresh_rate_summary_90">90Hz / 所有內容的螢幕更新率鎖定在90Hz。將會增加耗電量</string>
+    <string name="refresh_rate_title">螢幕刷新率</string>
+    <string name="refresh_rate_summary_auto">自動 / 在部分情況下自動提升螢幕刷新率到 90Hz</string>
+    <string name="refresh_rate_summary_60">60Hz / 鎖定螢幕刷新率在 60Hz</string>
+    <string name="refresh_rate_summary_90">90Hz / 鎖定螢幕刷新率在 90Hz ( 將會增加耗電量 )</string>
     <string name="auto_refresh_rate">自動</string>
     <!-- Battery light -->
-    <string name="battery_light_title">充電時打開充電指示燈</string>
+    <string name="battery_light_title">充電時保持指示燈開啟</string>
 </resources>

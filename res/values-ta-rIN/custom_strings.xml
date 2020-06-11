@@ -26,11 +26,11 @@
     <string name="smart_battery_title_custom">அடாப்டிவ் பேட்டரியைப் பயன்படுத்து</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">உங்கள் தொலைப்பேசியின் முன்புறத்தில் இருக்கும் கைரேகை உணர்வியைக் கண்டறியுங்கள்.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Locate the fingerprint sensor on the left side of your phone.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">கைப்பேசியின் இடது பக்கத்தில் உள்ள கைரேகை சென்சார் ஐ கண்டுபிடிக்கவும்.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">உங்கள் தொலைப்பேசியின் வலதுபுறத்தில் இருக்கும் கைரேகை உணர்வியைக் கண்டறியுங்கள்.</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">சாதனத்தின் முன் பக்கத்தில் உள்ள கைரேகை சென்சார் ஐ கண்டுபிடிக்கவும்.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">சாதனத்தின் இடது பக்கத்தில் உள்ள கைரேகை சென்சார் ஐ கண்டுபிடிக்கவும்.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Locate the fingerprint sensor on the right side of your device.</string>
     <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
