@@ -231,11 +231,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mQuickPulldown.setSummary(summary);
     }
 
-    private int getClockPosition() {
-        return Settings.System.getInt(getActivity().getContentResolver(),
-                STATUS_BAR_CLOCK_STYLE, 2);
-    }
-
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.CUSTOM_SETTINGS;
