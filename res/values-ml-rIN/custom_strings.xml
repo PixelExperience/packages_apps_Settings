@@ -15,8 +15,6 @@
     <string name="duration_less_than_one_minute">ഒരു മിനിറ്റിൽ താഴെ</string>
     <string name="screen_time_summary_usage_today">ഇന്ന് %1$s</string>
     <!-- Moto Face Unlock -->
-    <string name="security_settings_face_settings_footer_moto">Use Face unlock to unlock your device.\n\nKeep in mind:\nLooking at the phone can unlock it when you don’t intend to.\n\nYour phone can be unlocked by someone else if it’s held up to your face while your eyes are open.\n\nYour phone can be unlocked by someone who looks a lot like you, say, your child or an identical sibling.</string>
-    <string name="security_settings_face_settings_remove_dialog_details_moto">Data recorded by face unlock will be permanently and securely deleted. After removal, you will need your PIN, pattern, or password to unlock your phone.</string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">അഡാപ്റ്റീവ് ബാറ്ററി ഓണാക്കുക</string>
     <string name="smart_battery_footer_custom">"ബാറ്ററി ലൈഫ് വർദ്ധിപ്പിക്കാൻ, അപൂര്‍വ്വമായി ഉപയോഗിക്കുന്ന ആപ്പുകൾക്കായുള്ള ബാറ്ററി ഉപഭോഗം അഡാപ്റ്റീവ് ബാറ്ററി പരിമിതപ്പെടുത്തുന്നു. കാലക്രമത്തിൽ നിങ്ങൾ എങ്ങനെയാണ് ആപ്പുകൾ ഉപയോഗിക്കുന്നതെന്ന് ഫോൺ മനസിലാക്കും.
@@ -29,13 +27,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">നിങ്ങളുടെ ഫോണിന്റെ ഇടത് ഭാഗത്ത് ഫിംഗർപ്രിന്റ് സെൻസർ കണ്ടെത്തുക.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">നിങ്ങളുടെ ഫോണിന്റെ വലത് ഭാഗത്ത് ഫിംഗർപ്രിന്റ് സെൻസർ കണ്ടെത്തുക.</string>
     <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Locate the fingerprint sensor on the left side of your device.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Locate the fingerprint sensor on the right side of your device.</string>
     <!-- Fingerprint location message - tablet -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Locate the fingerprint sensor on the left side of your tablet.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">പുനഃക്രമീകരിക്കുക</string>
     <!-- Buttons -->
@@ -65,31 +57,18 @@
     <string name="hardware_keys_long_tap_title">നീട്ടി അമർത്തുക</string>
     <string name="button_wake_title">ഉപകരണം ഉണർത്തുക</string>
     <string name="camera_sleep_on_release_title">സ്ക്രീൻ പീക്ക്</string>
-    <string name="camera_sleep_on_release_summary">A half press will keep the screen on only while the button is held down</string>
     <string name="camera_launch_title">ക്യാമറ തുറക്കുക</string>
-    <string name="camera_launch_summary">A longpress and release will launch camera</string>
     <!-- Key backlight -->
     <string name="button_backlight_title">ബാക്ക്‌ലൈറ്</string>
     <string name="button_backlight_enabled">ബട്ടണുകൾ പ്രകാശിപ്പിക്കുക</string>
     <string name="button_backlight_only_when_pressed_title">അമർത്തുമ്പോൾ മാത്രം ബട്ടണുകൾ പ്രകാശിപ്പിക്കുക</string>
-    <string name="button_backlight_seekbar_title">Button brightness</string>
     <string name="backlight_timeout_title">ഡിസ്പ്ലേ വെളിച്ചം നിർത്തേണ്ട സമയം</string>
     <string name="backlight_timeout_unlimited">ദയവായി ബക്കലൈറ് ഓഫ് ചെയ്യരുത്</string>
     <string name="backlight_summary_disabled">പ്രവർത്തനരഹിതമായി</string>
     <string name="backlight_summary_enabled_with_timeout">പ്രവർത്തിപ്പിക്കുക <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">പ്രവർത്തനമാക്കുക</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Enable on-screen nav bar</string>
-    <string name="disable_navkeys_summary">Enable on-screen navigation bar and disable hardware buttons</string>
     <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
     <!-- Refresh rate -->
-    <string name="refresh_rate_title">Screen refresh rate</string>
-    <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz for some content</string>
-    <string name="refresh_rate_summary_60">60Hz / Refresh rate locked at 60Hz for all content</string>
-    <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
-    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
-    <string name="battery_light_title">Turn on the light when charging</string>
 </resources>

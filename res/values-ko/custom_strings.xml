@@ -91,5 +91,4 @@
     <string name="refresh_rate_summary_90">90Hz / 재생 빈도가 모든 콘텐츠에 대해 90Hz로 고정됨. 배터리 사용량 증가</string>
     <string name="auto_refresh_rate">자동</string>
     <!-- Battery light -->
-    <string name="battery_light_title">Turn on the light when charging</string>
 </resources>

@@ -79,7 +79,7 @@
     <string name="backlight_summary_enabled_with_timeout">Включена на <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Включена</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Включить наэкранные кнопки</string>
+    <string name="disable_navkeys_title">Включение панели навигации</string>
     <string name="disable_navkeys_summary">Включить панель навигации и отключить аппаратные кнопки</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Предотвращать случайное включение экрана</string>
