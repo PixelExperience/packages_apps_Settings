@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Barra di stato</string>
     <string name="status_bar_quick_qs_pulldown_title">Impostazioni rapide</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Scorri la barra di stato verso il basso da %1$s per aprire le impostazioni rapide</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">sinistra</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">destra</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Il bordo sinistro della barra di stato tira giù le impostazioni rapide</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Il bordo destro della barra di stato tira giù le impostazioni rapide</string>
     <string name="status_bar_quick_qs_pulldown_off">Off</string>
     <string name="status_bar_quick_qs_pulldown_left">Sinistra</string>
     <string name="status_bar_quick_qs_pulldown_right">Destra</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Regola la luminostà dalle impostazioni rapide</string>
     <string name="status_bar_brightness_slider_auto_title">Luminosità automatica</string>
     <string name="status_bar_brightness_slider_auto_summary">Mostra il toggle per la luminosità adattiva vicino allo slider</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Non mostrare mai</string>
+    <string name="status_bar_brightness_slider_show_expanded">Mostra quando esteso</string>
+    <string name="status_bar_brightness_slider_show_always">Mostra sempre</string>
     <string name="status_bar_toggle_brightness">Controllo luminosità</string>
     <string name="status_bar_toggle_brightness_summary">Modifica la luminosità strisciando sulla barra di stato</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Sfondo delle notifiche traslucido</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">notifiches,  il registro cronologico</string>
 </resources>

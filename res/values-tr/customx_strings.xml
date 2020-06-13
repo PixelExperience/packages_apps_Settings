@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Durum çubuğu</string>
     <string name="status_bar_quick_qs_pulldown_title">Hızlı aşağı çekme</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Durum çubuğunun %1$s tarafından aşağı çekmek Hızlı Ayarları açar</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Sol</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Sağ</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Durum çubuğunun sol tarafından aşağı çekmek hızlı ayarları açar</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Durum çubuğunun sağ tarafından aşağı çekmek hızlı ayarları açar</string>
     <string name="status_bar_quick_qs_pulldown_off">Kapalı</string>
     <string name="status_bar_quick_qs_pulldown_left">Sol</string>
     <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Hızlı ayarlardan parlaklığı ayarlayın</string>
     <string name="status_bar_brightness_slider_auto_title">Otomatik parlaklık</string>
     <string name="status_bar_brightness_slider_auto_summary">Otomatik parlaklık simgesini hızlı ayarlarda göster</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Asla gösterme</string>
+    <string name="status_bar_brightness_slider_show_expanded">Genişletildiğinde göster</string>
+    <string name="status_bar_brightness_slider_show_always">Her zaman göster</string>
     <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
     <string name="status_bar_toggle_brightness_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarla</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Yarı şeffaf bildirim arkaplanı</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">bildirimler, bildirim günlüğü</string>
 </resources>

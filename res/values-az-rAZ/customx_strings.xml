@@ -73,7 +73,6 @@
     <string name="display_rotation_180_title">180 dərəcə</string>
     <string name="display_rotation_270_title">270 dərəcə</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Display music visualizer</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Zəngin vəziyyətini bildirmək üçün titrəyiş</string>
     <!-- Navigation bar customization -->
@@ -124,9 +123,6 @@
     <!-- Status bar -->
     <string name="status_bar_title">Vəziyyət sətri</string>
     <string name="status_bar_quick_qs_pulldown_title">Cəld aşağı çəkmə</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Vəziyyət sətrinin %1$s tərəfindən aşağı çəkərək Cəld Tənzimləmələri aç</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Sol</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Sağ</string>
     <string name="status_bar_quick_qs_pulldown_off">Bağlı</string>
     <string name="status_bar_quick_qs_pulldown_left">Sol</string>
     <string name="status_bar_quick_qs_pulldown_right">Sağ</string>
@@ -164,9 +160,6 @@
     <string name="status_bar_brightness_slider_summary">Cəld Tənzimləmələrdən parlaqlığı nizamla</string>
     <string name="status_bar_brightness_slider_auto_title">Avto parlaqlıq</string>
     <string name="status_bar_brightness_slider_auto_summary">Avtomatik parlaqlıq nişanını diyircəyin yanında göstər</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Parlaqlıq nəzarəti</string>
     <string name="status_bar_toggle_brightness_summary">Vəziyyət sətrinin üzərində sürüşdürərək parlaqlığı nizamla</string>
     <!-- Status bar - Network Traffic -->
@@ -174,8 +167,6 @@
     <string name="network_traffic_settings_summary">Vəziyyət sətrində hazırki şəbəkə trafik səviyyələrini göstər</string>
     <string name="network_traffic_mode_title">Görüntü rejimi</string>
     <string name="network_traffic_mode_disable">Sıradan çıxarıldı</string>
-    <string name="network_traffic_mode_status_bar">Status bar</string>
-    <string name="network_traffic_mode_qs">Quick settings</string>
     <string name="network_traffic_autohide">Avtomatik gizlət</string>
     <string name="network_traffic_autohide_summary">Fəaliyyət olmayanda trafik göstəricisini gizlət</string>
     <string name="network_traffic_units_title">Trafik ölçü vahidi</string>
@@ -186,30 +177,9 @@
     <string name="qs_columns_portrait_title">Sütunlar (şaquli)</string>
     <string name="qs_columns_landscape_title">Sütunlar (üfüqi)</string>
     <!-- QS title visibility -->
-    <string name="qs_tile_title_visibility_title">Title visibility</string>
-    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
     <!-- QS tiles haptic feedback -->
-    <string name="qs_vibrate_title">Vibrate on touch</string>
-    <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
     <!-- QS animation/interpolator styles  -->
-    <string name="qs_animation_options_title">Quick settings animations</string>
-    <string name="qs_tile_animation_style_title">Style</string>
-    <string name="qs_tile_animation_duration_title">Duration</string>
-    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
-    <string name="qs_tile_animation_style_off">None</string>
-    <string name="qs_tile_animation_style_flip">Flip</string>
-    <string name="qs_tile_animation_style_rotate">Rotate</string>
     <string name="qs_tile_animation_duration_low">Yavaş</string>
-    <string name="qs_tile_animation_duration_default">Default</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
-    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate and decelerate</string>
-    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Çərtik tənzimləmələri</string>
     <string name="display_cutout_mode_normal">Standart</string>
@@ -217,14 +187,10 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Tam ekran tətbiqlər</string>
     <string name="display_cutout_force_fullscreen_summary">Tətbiqləri çərtik sahəsini yox saymağa məcbur et</string>
-    <string name="display_cutout_force_fullscreen_restart_app">Please restart the application to apply the changes.</string>
-    <string name="cutout_force_fullscreen_no_apps">No apps</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Ekran şəkli üçün sürüşdür</string>
     <string name="swipe_to_screenshot_gesture_summary">Ekran şəkli çəkmək üçün 3 barmaqla sürüşdür</string>
     <!-- Navigation compact layout -->
-    <string name="navigation_bar_compact_layout_title">Compact layout</string>
-    <string name="navigation_bar_compact_layout_summary">Use a compact layout in the navigation bar</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Oxunaqlılığı artırmaq və göz yorğunluğu azaltmaq üçün ekranınızı günün saatına və mühit şərtlərinə görə optimallaşdırın</string>
     <string name="live_display_mode">Görüntü rejimi</string>
@@ -284,14 +250,6 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Naviqasiya bar çubuğunu gizlət.</string>
     <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_data">Cellular data</string>
-    <string name="data_usage_app_restrict_data_summary">Enable usage of cellular data</string>
-    <string name="data_usage_app_restrict_vpn">VPN data</string>
-    <string name="data_usage_app_restrict_vpn_summary">Enable usage of VPN data</string>
-    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
-    <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
     <!-- Translucent lockscreen notifications background -->
-    <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

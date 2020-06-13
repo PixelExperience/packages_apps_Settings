@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Barre d\'état</string>
     <string name="status_bar_quick_qs_pulldown_title">Menu déroulant rapide</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Déployer le volet de configuration rapide en appuyant sur la %1$s de la barre d\'état</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Gauche</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Droite</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Tirer le bord gauche de la barre d\'état vers le bas ouvre les paramètres rapides</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Tirer le bord droit de la barre d\'état vers le bas ouvre les paramètres rapides</string>
     <string name="status_bar_quick_qs_pulldown_off">Désactivé</string>
     <string name="status_bar_quick_qs_pulldown_left">Gauche</string>
     <string name="status_bar_quick_qs_pulldown_right">Droite</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Régler la luminosité à partir du volet de configuration rapide</string>
     <string name="status_bar_brightness_slider_auto_title">Luminosité automatique</string>
     <string name="status_bar_brightness_slider_auto_summary">Afficher le bouton pour la luminosité adaptative près du curseur</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Ne jamais montrer</string>
+    <string name="status_bar_brightness_slider_show_expanded">Montrer quand étendu</string>
+    <string name="status_bar_brightness_slider_show_always">Toujours montrer</string>
     <string name="status_bar_toggle_brightness">Contrôle de la luminosité</string>
     <string name="status_bar_toggle_brightness_summary">Régler la luminosité en faisant glisser le doigt sur la barre d\'état</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Transparence de l\'arrière-plan des notifications</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">Notifications, journal de notification</string>
 </resources>

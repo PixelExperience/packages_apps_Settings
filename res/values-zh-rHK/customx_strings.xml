@@ -13,11 +13,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
     <string name="navigation_bar_title">導航欄</string>
-    <string name="hardware_keys_power_key_title">電源按鈕</string>
-    <string name="hardware_keys_volume_keys_title">音量按钮</string>
+    <string name="hardware_keys_power_key_title">電源鍵</string>
+    <string name="hardware_keys_volume_keys_title">音量鍵</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">啟用螢幕上的導航欄</string>
-    <string name="disable_navkeys_summary">啟用螢幕上的導覽欄和停用實體按鍵</string>
+    <string name="disable_navkeys_summary">啟用螢幕上的導航欄和停用硬件按鍵</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">返回按鈕可終止應用程式</string>
     <string name="kill_app_longpress_back_summary">長按返回按鈕以終止前景應用程式</string>
@@ -25,7 +25,7 @@
     <string name="device_hostname">裝置主機名稱</string>
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">進階重新啟動</string>
-    <string name="advanced_reboot_summary">設備已解鎖時，在電源選單中加入重啟至 Recovery 模式及 Bootloader 的選項</string>
+    <string name="advanced_reboot_summary">解鎖後，在電源選單中加入重啟至恢復模式 (Recovery) 和重啟至載入模式 (Bootloader)</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">顯示媒體封面</string>
     <!-- PIN scramble -->
@@ -33,23 +33,23 @@
     <string name="unlock_scramble_pin_layout_summary">解鎖裝置時使用無序 PIN 佈局</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">點按即可入睡</string>
-    <string name="status_bar_double_tap_to_sleep_summary">雙擊狀態欄或鎖定屏幕以關閉顯示屏</string>
+    <string name="status_bar_double_tap_to_sleep_summary">雙擊狀態欄或鎖定時雙擊螢幕以關閉螢幕</string>
     <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">當接上喚醒</string>
     <string name="wake_when_plugged_or_unplugged_summary">當連接或拔除電源時開啓螢幕</string>
     <!-- Lock screen pattern size -->
-    <string name="lock_settings_picker_pattern_size_message">選擇解鎖圖案大小</string>
+    <string name="lock_settings_picker_pattern_size_message">選擇解鎖圖案的大小</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">顯示圖樣錯誤</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">顯示圖樣圓點</string>
     <!-- Hotspot custom extras -->
-    <string name="tethering_allow_vpn_upstreams_title">允許客戶端使用 VPN</string>
-    <string name="tethering_allow_vpn_upstreams_summary">允許熱點客戶端使用此裝置的 VPN 連線進行上游連線</string>
+    <string name="tethering_allow_vpn_upstreams_title">允許客戶端使用 VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">允許熱點客戶端使用此裝置的 VPN 連線進行上載連線</string>
     <!-- Notification sound timeout -->
-    <string name="app_notification_sound_timeout_title">通知音效之間的最短時間</string>
-    <string name="app_notification_sound_timeout_summary_template">允許音效或震動每一次不超過 <xliff:g id="duration">%1$s</xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">沒有限制</string>
+    <string name="app_notification_sound_timeout_title">通知音效之間的最短間隔</string>
+    <string name="app_notification_sound_timeout_summary_template">每<xliff:g id="duration">%1$s</xliff:g>最多允許一次聲音或振動</string>
+    <string name="app_notification_sound_timeout_value_none">無限制</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 秒</string>
     <string name="app_notification_sound_timeout_value_30_seconds">30 秒</string>
     <string name="app_notification_sound_timeout_value_1_minute">1 分鐘</string>
@@ -57,10 +57,10 @@
     <string name="app_notification_sound_timeout_value_15_minutes">10 分鐘</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 分鐘</string>
     <!-- Volume link notification -->
-    <string name="volume_link_notification_title">連結鈴聲與通知音量</string>
+    <string name="volume_link_notification_title">鈴聲與通知音量掛勾</string>
     <!-- Increasing ring tone volume -->
-    <string name="increasing_ring_volume_option_title">遞增鈴聲音量</string>
-    <string name="increasing_ring_min_volume_title">開始音量</string>
+    <string name="increasing_ring_volume_option_title">遞增的鈴聲音量</string>
+    <string name="increasing_ring_min_volume_title">起始音量</string>
     <string name="increasing_ring_ramp_up_time_title">漸強時間</string>
     <!-- Display : Rotation -->
     <string name="display_rotation_title">旋轉設定</string>
@@ -73,65 +73,64 @@
     <string name="display_rotation_180_title">180 度</string>
     <string name="display_rotation_270_title">270 度</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">顯示音樂視覺效果</string>
+    <string name="lockscreen_visualizer_title">顯示音樂視覺化效果</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">振動以指示呼叫狀態</string>
     <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">輸入時顯示方向鍵</string>
-    <string name="navigation_bar_arrow_keys_summary">輸入時顯示游標鍵。取代輸入法切換器。</string>
+    <string name="navigation_bar_arrow_keys_summary">輸入時顯示左右游標鍵。取代輸入法切換器。</string>
     <string name="nav_bar_layout_inverse_title">反轉佈局</string>
-    <string name="nav_bar_layout_inverse_summary">反轉導航欄按鈕的佈局</string>
-    <string name="navigation_bar_home_long_press_title">主畫面鍵長按動作</string>
-    <string name="navigation_bar_home_double_tap_title">主畫面輕觸兩下動作</string>
-    <string name="navigation_bar_app_switch_long_press_title">多工鍵長按動作</string>
+    <string name="nav_bar_layout_inverse_summary">反轉導航欄的佈局</string>
+    <string name="navigation_bar_home_long_press_title">長按主畫面鍵動作</string>
+    <string name="navigation_bar_home_double_tap_title">輕按主畫面兩下動作</string>
+    <string name="navigation_bar_app_switch_long_press_title">長按多工鍵動作</string>
     <string name="navigation_bar_edge_long_swipe_title">邊緣長滑動作</string>
     <!-- Volume keys customization -->
-    <string name="volbtn_music_controls_title">控製播放</string>
-    <string name="volbtn_music_controls_summary">在顯示屏關閉時長按音量鍵可以搜索音樂曲目</string>
-    <string name="volume_answer_call_title">接聽電話</string>
-    <string name="volume_answer_call_summary">按音量鍵接聽來電</string>
+    <string name="volbtn_music_controls_title">控制回放</string>
+    <string name="volbtn_music_controls_summary">在顯示屏關閉時長按音量鍵可以搜尋音樂</string>
+    <string name="volume_answer_call_title">接聽來電</string>
+    <string name="volume_answer_call_summary">按音量鍵以接聽來電</string>
     <string name="volbtn_cursor_control_title">鍵盤游標控制</string>
     <string name="volbtn_cursor_control_off">已停用</string>
-    <string name="volbtn_cursor_control_on">音量上/下使游標右/左移動</string>
-    <string name="volbtn_cursor_control_on_reverse">音量上/下使游標右/左移動</string>
-    <string name="swap_volume_buttons_title">調整方向</string>
-    <string name="swap_volume_buttons_summary">根據裝置旋轉交換音量鍵</string>
+    <string name="volbtn_cursor_control_on">按音量上/下控制游標左/右移動</string>
+    <string name="volbtn_cursor_control_on_reverse">按音量上/下控制游標右/左移動</string>
+    <string name="swap_volume_buttons_title">重新定向</string>
+    <string name="swap_volume_buttons_summary">根據裝置旋轉調換音量鍵</string>
     <!-- Home key customization -->
-    <string name="home_answer_call_title">接聽電話</string>
-    <string name="home_answer_call_summary">按主畫面鍵接聽來電</string>
+    <string name="home_answer_call_title">接聽來電</string>
+    <string name="home_answer_call_summary">按下主畫面鍵以接聽來電</string>
     <!-- Power menu key customization -->
     <string name="power_menu_title">電源選單</string>
-    <string name="power_menu_screenshot_title">螢幕擷取</string>
-    <string name="power_menu_screenshot_summary">長按即可部分螢幕擷取</string>
-    <string name="power_menu_airplane_title">飛航模式</string>
+    <string name="power_menu_screenshot_title">截圖</string>
+    <string name="power_menu_screenshot_summary">長按即可部分螢幕截圖</string>
+    <string name="power_menu_airplane_title">飛行模式</string>
     <string name="power_menu_users_title">使用者切換器</string>
     <string name="power_menu_lockdown_title">鎖定</string>
     <string name="power_end_call_title">結束通話</string>
-    <string name="power_end_call_summary">按電源鍵結束目前通話</string>
-    <string name="lockscreen_power_menu_disabled_title">在鎖定屏幕上禁用</string>
+    <string name="power_end_call_summary">按下電源鍵以結束目前通話</string>
+    <string name="lockscreen_power_menu_disabled_title">在鎖定螢幕上停用</string>
     <string name="lockscreen_power_menu_disabled_summary">禁用受保護鎖定屏幕上的電源菜單</string>
-    <string name="torch_long_press_power_gesture_title">長按火炬</string>
-    <string name="torch_long_press_power_gesture_desc">在顯示屏關閉時長按電源按鈕激活割炬</string>
-    <string name="torch_long_press_power_timeout_title">自動關閉割炬</string>
-    <string name="torch_long_press_power_timeout_never">決不</string>
-    <string name="torch_long_press_power_timeout_1min">一分钟</string>
-    <string name="torch_long_press_power_timeout_2min">二分钟</string>
-    <string name="torch_long_press_power_timeout_5min">五分钟</string>
-    <string name="torch_long_press_power_timeout_10min">十分钟</string>
+    <string name="torch_long_press_power_gesture_title">長按啟動電筒</string>
+    <string name="torch_long_press_power_gesture_desc">在螢幕關閉時長按電源鍵啟動電筒</string>
+    <string name="torch_long_press_power_timeout_title">自動關閉電筒</string>
+    <string name="torch_long_press_power_timeout_never">永不</string>
+    <string name="torch_long_press_power_timeout_1min">1 分鐘</string>
+    <string name="torch_long_press_power_timeout_2min">2 分鐘</string>
+    <string name="torch_long_press_power_timeout_5min">5 分鐘</string>
+    <string name="torch_long_press_power_timeout_10min">10 分鐘</string>
     <!-- Others settings -->
     <string name="others_settings_title">其他設置</string>
-    <string name="additional_buttons_title">附加按鈕</string>
+    <string name="additional_buttons_title">附加按鍵</string>
     <!-- Status bar -->
     <string name="status_bar_title">狀態欄</string>
     <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
-    <string name="status_bar_quick_qs_pulldown_summary">從狀態列的%1$s邊拉下快速設定</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">左</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">右</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">從狀態欄左邊下拉開啟快速設定</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">從狀態欄右邊下拉開啟快速設定</string>
     <string name="status_bar_quick_qs_pulldown_off">關閉</string>
     <string name="status_bar_quick_qs_pulldown_left">左</string>
     <string name="status_bar_quick_qs_pulldown_right">右</string>
     <!-- Status bar - icons -->
-    <string name="status_bar_icons_title">狀態列圖示</string>
+    <string name="status_bar_icons_title">狀態欄圖示</string>
     <string name="status_bar_system_icons_title">系統圖示</string>
     <string name="status_bar_system_icons_summary">控制顯示哪些狀態列圖示</string>
     <!-- Status bar - Clock -->
@@ -139,42 +138,42 @@
     <string name="status_bar_clock_show_seconds_title">顯示秒數</string>
     <string name="status_bar_clock_show_seconds_summary">顯示小時、分鐘和秒數</string>
     <string name="status_bar_clock_position_title">時鐘位置</string>
-    <string name="status_bar_clock_position_right">靠右</string>
-    <string name="status_bar_clock_position_left">靠左</string>
+    <string name="status_bar_clock_position_right">右</string>
+    <string name="status_bar_clock_position_left">左</string>
     <string name="status_bar_clock_position_center">置中</string>
-    <string name="status_bar_am_pm_title">上午/下午</string>
-    <string name="status_bar_am_pm_info">24 小時時鐘已啟用</string>
+    <string name="status_bar_am_pm_title">上午/下午樣式</string>
+    <string name="status_bar_am_pm_info">已啟用24小時制時鐘</string>
     <string name="status_bar_am_pm_normal">正常</string>
     <string name="status_bar_am_pm_small">小</string>
     <string name="status_bar_am_pm_hidden">隱藏</string>
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">電池指示器</string>
-    <string name="status_bar_battery_style_title">電池狀態樣式</string>
+    <string name="status_bar_battery_style_title">電池狀態風格</string>
     <string name="status_bar_battery_style_icon_portrait">直立圖示</string>
-    <string name="status_bar_battery_style_circle">環狀圖示</string>
-    <string name="status_bar_battery_style_text">純文字</string>
+    <string name="status_bar_battery_style_circle">環形</string>
+    <string name="status_bar_battery_style_text">文字</string>
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">電量百分比</string>
     <string name="status_bar_battery_percentage_default">隱藏</string>
-    <string name="status_bar_battery_percentage_text_inside">圖示內</string>
-    <string name="status_bar_battery_percentage_text_next">圖示旁</string>
+    <string name="status_bar_battery_percentage_text_inside">圖標內</string>
+    <string name="status_bar_battery_percentage_text_next">圖標旁</string>
     <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">亮度</string>
-    <string name="status_bar_brightness_slider_title">亮度滑動條</string>
+    <string name="status_bar_brightness_slider_title">亮度滑條</string>
     <string name="status_bar_brightness_slider_summary">在快速設定中調整亮度</string>
     <string name="status_bar_brightness_slider_auto_title">自動調整亮度</string>
-    <string name="status_bar_brightness_slider_auto_summary">在亮度滑動條附近顯示自動調節亮度開關</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_auto_summary">在亮度滑條旁顯示自動調節亮度開關</string>
+    <string name="status_bar_brightness_slider_show_never">永不顯示</string>
+    <string name="status_bar_brightness_slider_show_expanded">當展開時顯示</string>
+    <string name="status_bar_brightness_slider_show_always">一律顯示</string>
     <string name="status_bar_toggle_brightness">亮度控制</string>
-    <string name="status_bar_toggle_brightness_summary">在狀態列上左右滑動調整亮度</string>
+    <string name="status_bar_toggle_brightness_summary">透過在狀態欄上左右滑動調整亮度</string>
     <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">網路流量監測器</string>
-    <string name="network_traffic_settings_summary">在狀態列中顯示目前的網路級別</string>
+    <string name="network_traffic_settings_summary">在狀態欄中顯示目前的網路級別</string>
     <string name="network_traffic_mode_title">顯示模式</string>
     <string name="network_traffic_mode_disable">已停用</string>
-    <string name="network_traffic_mode_status_bar">狀態列</string>
+    <string name="network_traffic_mode_status_bar">狀態欄</string>
     <string name="network_traffic_mode_qs">快速設定</string>
     <string name="network_traffic_autohide">自動隱藏</string>
     <string name="network_traffic_autohide_summary">沒有活動時隱藏流量監測器</string>
@@ -182,21 +181,21 @@
     <!-- QS settings -->
     <string name="qs_title">快速設置</string>
     <string name="qs_rows_portrait_title">列 (縱向)</string>
-    <string name="qs_rows_landscape_title">列 (橫向)</string>
-    <string name="qs_columns_portrait_title">行 (縱向)</string>
-    <string name="qs_columns_landscape_title">行 (橫向)</string>
+    <string name="qs_rows_landscape_title">列 (橫向時)</string>
+    <string name="qs_columns_portrait_title">行 (直向時)</string>
+    <string name="qs_columns_landscape_title">行 (橫向時)</string>
     <!-- QS title visibility -->
-    <string name="qs_tile_title_visibility_title">快速啟動標題</string>
+    <string name="qs_tile_title_visibility_title">快速啟動標題可見度</string>
     <string name="qs_tile_title_visibility_summary">快速設定圖標下方顯示標題</string>
     <!-- QS tiles haptic feedback -->
-    <string name="qs_vibrate_title">觸控時震動</string>
+    <string name="qs_vibrate_title">輕觸時震動</string>
     <string name="qs_vibrate_summary">輕觸快速設定圖標時震動</string>
     <!-- QS animation/interpolator styles  -->
     <string name="qs_animation_options_title">快速設定動畫</string>
-    <string name="qs_tile_animation_style_title">動畫樣式</string>
+    <string name="qs_tile_animation_style_title">風格</string>
     <string name="qs_tile_animation_duration_title">動畫長度</string>
-    <string name="qs_tile_animation_interpolator_title">動畫補幀器</string>
-    <string name="qs_tile_animation_style_off">無動畫</string>
+    <string name="qs_tile_animation_interpolator_title">補幀器</string>
+    <string name="qs_tile_animation_style_off">無</string>
     <string name="qs_tile_animation_style_flip">翻轉</string>
     <string name="qs_tile_animation_style_rotate">旋轉</string>
     <string name="qs_tile_animation_duration_low">慢</string>
@@ -211,22 +210,22 @@
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">預備</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">預備和過衝</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">瀏海顯示</string>
+    <string name="display_cutout_mode_title">劉海顯示</string>
     <string name="display_cutout_mode_normal">預設</string>
     <string name="display_cutout_mode_hidden">隱藏</string>
     <!-- Notch: Full screen apps -->
-    <string name="display_cutout_force_fullscreen_title">全屏應用</string>
-    <string name="display_cutout_force_fullscreen_summary">強制應用忽略缺口空間</string>
-    <string name="display_cutout_force_fullscreen_restart_app">請重新啓動程式來套用變更。</string>
+    <string name="display_cutout_force_fullscreen_title">全面屏應用</string>
+    <string name="display_cutout_force_fullscreen_summary">強制應用忽略劉海空間</string>
+    <string name="display_cutout_force_fullscreen_restart_app">請重新啓動應用程式以套用變更</string>
     <string name="cutout_force_fullscreen_no_apps">沒有應用程式</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">滑動截圖</string>
-    <string name="swipe_to_screenshot_gesture_summary">同時滑動三支指頭以擷取螢幕畫面</string>
+    <string name="swipe_to_screenshot_gesture_summary">三指下滑螢幕以截圖</string>
     <!-- Navigation compact layout -->
-    <string name="navigation_bar_compact_layout_title">精簡配置</string>
+    <string name="navigation_bar_compact_layout_title">緊湊的佈局</string>
     <string name="navigation_bar_compact_layout_summary">在導航欄中使用緊湊的佈局</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
+    <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，以改善可讀性和減少眼睛疲勞</string>
     <string name="live_display_mode">顯示模式</string>
     <string name="live_display_color_temperature_title">色溫</string>
     <string name="live_display_color_temperature_summary">日間：<xliff:g id="day_temperature">%1$d</xliff:g>K 夜間：<xliff:g id="night_temperature">%2$d</xliff:g>K</string>
@@ -234,64 +233,64 @@
     <string name="live_display_day">日間</string>
     <string name="live_display_night">夜間</string>
     <string name="live_display_outdoor_mode_title">自動戶外模式</string>
-    <string name="live_display_outdoor_mode_summary">自動在陽光下提高亮度和飽和度</string>
+    <string name="live_display_outdoor_mode_summary">在陽光下自動提升亮度和飽和度</string>
     <string name="live_display_low_power_title">降低耗電</string>
-    <string name="live_display_low_power_summary">在不降低亮度的情況下調整顯示即可降低耗電</string>
+    <string name="live_display_low_power_summary">在不降低亮度的情況下調整顯示以降低耗電</string>
     <string name="live_display_enhance_color_title">增強色彩</string>
-    <string name="live_display_enhance_color_summary">為色調、 風景和其他圖片提高色調</string>
+    <string name="live_display_enhance_color_summary">為人像、 風景和其他圖像提高顏色鮮豔度</string>
     <string name="live_display_color_profile_title">色彩設定檔</string>
     <string name="live_display_color_profile_standard_title">標準</string>
     <string name="live_display_color_profile_standard_summary">準確的色彩和明亮的白色</string>
     <string name="live_display_color_profile_natural_title">自然</string>
-    <string name="live_display_color_profile_natural_summary">現實的色彩和自然的膚色</string>
+    <string name="live_display_color_profile_natural_summary">逼真的色彩和膚色</string>
     <string name="live_display_color_profile_dynamic_title">動態</string>
     <string name="live_display_color_profile_dynamic_summary">增強的色彩和明亮的白色</string>
     <string name="live_display_color_profile_cinema_title">劇院</string>
     <string name="live_display_color_profile_cinema_summary">完美重現影片色彩</string>
-    <string name="live_display_color_profile_astronomy_title">天文學</string>
-    <string name="live_display_color_profile_astronomy_summary">深紅色即可保護夜間視力</string>
+    <string name="live_display_color_profile_astronomy_title">天文</string>
+    <string name="live_display_color_profile_astronomy_summary">深紅色以保護夜間視力</string>
     <string name="live_display_color_profile_photography_title">攝影</string>
     <string name="live_display_color_profile_photography_summary">完美重現相片色彩</string>
     <string name="live_display_color_profile_basic_title">基本</string>
-    <string name="live_display_color_profile_basic_summary">使用未校正的顯示</string>
+    <string name="live_display_color_profile_basic_summary">使用未校準的顯示</string>
     <string name="live_display_color_profile_adaptive_title">自動調整</string>
     <string name="live_display_color_profile_adaptive_summary">自動按環境條件調整顏色</string>
     <string name="live_display_color_profile_reading_title">閱讀</string>
-    <string name="live_display_color_profile_reading_summary">溫暖的色彩減少眼睛疲勞</string>
+    <string name="live_display_color_profile_reading_summary">暖色減少眼睛疲勞</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
     <string name="live_display_color_profile_srgb_summary">顏色準確到 sRGB 色域</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">顏色準確到 DCI-P3 色域</string>
     <string name="live_display_reading_mode_title">閱讀模式</string>
-    <string name="live_display_reading_mode_summary">用於長期閱讀的灰度模式</string>
+    <string name="live_display_reading_mode_summary">用於長期閱讀的灰階模式</string>
     <string name="color_calibration_title">顏色校準</string>
     <string name="color_calibration_summary">校準螢幕上的顏色</string>
     <string name="color_red_title">紅色</string>
     <string name="color_green_title">綠色</string>
     <string name="color_blue_title">藍色</string>
     <!-- LiveDisplay : Picture Adjustment -->
-    <string name="picture_adjustment_title">調整圖片</string>
-    <string name="picture_adjustment_summary">調整色相、飽和度、強度和對比度</string>
-    <string name="adj_hue_title">色相</string>
+    <string name="picture_adjustment_title">調整圖像</string>
+    <string name="picture_adjustment_summary">調整色調、飽和度、亮度和對比度</string>
+    <string name="adj_hue_title">色調</string>
     <string name="adj_saturation_title">飽和度</string>
-    <string name="adj_intensity_title">強度</string>
-    <string name="adj_contrast_title">對比</string>
+    <string name="adj_intensity_title">亮度</string>
+    <string name="adj_contrast_title">對比度</string>
     <!-- Back Gesture Height -->
-    <string name="back_height_low_label">滿了</string>
+    <string name="back_height_low_label">全部區域</string>
     <string name="back_height_high_label">底部區域</string>
-    <string name="back_options_dialog_title">設定</string>
-    <string name="back_height_message">屏幕高度用作後手勢的可觸摸區域。</string>
+    <string name="back_options_dialog_title">選項</string>
+    <string name="back_height_message">觸發返回手勢的範圍</string>
     <!-- Full screen gestures -->
-    <string name="navbar_gesture_pill_toggle_title">隱藏導航欄圖標</string>
+    <string name="navbar_gesture_pill_toggle_title">隱藏導航欄的圖標</string>
     <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_data">行動數據</string>
-    <string name="data_usage_app_restrict_data_summary">啟用行動網路用量</string>
-    <string name="data_usage_app_restrict_vpn">VPN 資料</string>
-    <string name="data_usage_app_restrict_vpn_summary">啟用 VPN 資料用量</string>
+    <string name="data_usage_app_restrict_data">流動數據</string>
+    <string name="data_usage_app_restrict_data_summary">啟用流動數據用量</string>
+    <string name="data_usage_app_restrict_vpn">VPN 數據</string>
+    <string name="data_usage_app_restrict_vpn_summary">啟用 VPN 數據用量</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 數據</string>
     <string name="data_usage_app_restrict_wifi_summary">啟用 Wi\u2011Fi 數據用量</string>
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">半透明的通知背景</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">通知、通知紀錄</string>
 </resources>

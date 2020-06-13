@@ -124,9 +124,6 @@
     <!-- Status bar -->
     <string name="status_bar_title">Állapotsáv</string>
     <string name="status_bar_quick_qs_pulldown_title">Gyors lehúzás</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Gyors beállítások megjelenítése az értesítési sáv %1$s oldalán történő lehúzásakor</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Gyorsbeállítások megjelenítése az állapotsor bal szélén lefelé húzással</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Gyorsbeállítások megjelenítése az állapotsor jobb szélén lefelé húzással</string>
     <string name="status_bar_quick_qs_pulldown_off">Ki</string>
     <string name="status_bar_quick_qs_pulldown_left">Bal</string>
     <string name="status_bar_quick_qs_pulldown_right">Jobb</string>
@@ -164,9 +161,9 @@
     <string name="status_bar_brightness_slider_summary">Fényerő állítása a Gyors Beállításokról</string>
     <string name="status_bar_brightness_slider_auto_title">Automatikus fényerő</string>
     <string name="status_bar_brightness_slider_auto_summary">Adaptív fényerő váltása a fényerő csúszka közelében</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Sose jelenítse meg</string>
+    <string name="status_bar_brightness_slider_show_expanded">Kiterjesztéskor jelenítse meg</string>
+    <string name="status_bar_brightness_slider_show_always">Állandóan jelenítse meg</string>
     <string name="status_bar_toggle_brightness">Fényerő vezérlés</string>
     <string name="status_bar_toggle_brightness_summary">Engedélyezi az értesítési sávon a fényerő változtatását ujjának csúsztatásával</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +290,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Áttetsző értesítésháttér</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">értesítések, értesítési jegyzék</string>
 </resources>

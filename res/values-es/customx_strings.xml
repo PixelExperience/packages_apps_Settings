@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Barra de estado</string>
     <string name="status_bar_quick_qs_pulldown_title">Desplegado rápido</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s del borde de la barra de estado que despliega los ajustes rapidos</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">El borde izquierdo de la barra de notificaciones despliega los ajustes rápidos</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">El borde derecho de la barra de notificaciones despliega los ajustes rápidos</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">El borde izquierdo de la barra de notificaciones despliega los ajustes rápidos</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">El borde derecho de la barra de notificaciones despliega hacia abajo los ajustes rápidos</string>
     <string name="status_bar_quick_qs_pulldown_off">Apagado</string>
     <string name="status_bar_quick_qs_pulldown_left">Izquierda</string>
     <string name="status_bar_quick_qs_pulldown_right">Derecha</string>
@@ -143,7 +142,7 @@
     <string name="status_bar_clock_position_left">Izquierda</string>
     <string name="status_bar_clock_position_center">Centrado</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">reloj 24 horas habilitado</string>
+    <string name="status_bar_am_pm_info">Reloj 24 horas habilitado</string>
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Pequeño</string>
     <string name="status_bar_am_pm_hidden">Oculto</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Ajuste el brillo desde los ajustes rápidos</string>
     <string name="status_bar_brightness_slider_auto_title">Brillo automático</string>
     <string name="status_bar_brightness_slider_auto_summary">Mostrar el interruptor de brillo automático al lado de la barra de brillo</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">No mostrar nunca</string>
+    <string name="status_bar_brightness_slider_show_expanded">Mostrar al expandir</string>
+    <string name="status_bar_brightness_slider_show_always">Mostrar siempre</string>
     <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
     <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Fondo translúcido de las notificaciones</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">notificaciones, log de notificación</string>
 </resources>

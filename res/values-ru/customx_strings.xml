@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Строка состояния</string>
     <string name="status_bar_quick_qs_pulldown_title">Быстрый доступ</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s край строки состояния вытягивает быстрые настройки</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Левый край строки состояния вытягивает вниз быстрые настройки</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Правый край строки состояния вытягивает вниз быстрые настройки</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Левый край строки состояния вытягивает вниз быстрые настройки</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Правый край строки состояния вытягивает вниз быстрые настройки</string>
     <string name="status_bar_quick_qs_pulldown_off">Выкл.</string>
     <string name="status_bar_quick_qs_pulldown_left">Левый</string>
     <string name="status_bar_quick_qs_pulldown_right">Правый</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Регулировка яркости в быстрых настройках</string>
     <string name="status_bar_brightness_slider_auto_title">Автоматическая яркость</string>
     <string name="status_bar_brightness_slider_auto_summary">Переключатель адаптивной регулировки яркости рядом с ползунком</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Не показывать</string>
+    <string name="status_bar_brightness_slider_show_expanded">Показывать в развернутом виде</string>
+    <string name="status_bar_brightness_slider_show_always">Показывать всегда</string>
     <string name="status_bar_toggle_brightness">Управление яркостью</string>
     <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Полупрозрачный фон уведомлений</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">Уведомления, журнал уведомлений</string>
 </resources>

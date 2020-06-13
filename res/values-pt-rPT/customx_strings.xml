@@ -124,9 +124,6 @@
     <!-- Status bar -->
     <string name="status_bar_title">Barra de estado</string>
     <string name="status_bar_quick_qs_pulldown_title">Abertura rápida</string>
-    <string name="status_bar_quick_qs_pulldown_summary">O %1$s da barra de estado faz baixar o painel de definições rápidas</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">O canto direito da barra de estado faz baixar o painel de definições rápidas</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">O canto direito da barra de estado faz baixar o painel de definições rápidas</string>
     <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
     <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
     <string name="status_bar_quick_qs_pulldown_right">Direita</string>
@@ -164,9 +161,9 @@
     <string name="status_bar_brightness_slider_summary">Ajustar a luminosidade nas definições rápidas</string>
     <string name="status_bar_brightness_slider_auto_title">Luminosidade automática</string>
     <string name="status_bar_brightness_slider_auto_summary">Mostrar ativador de luminosidade adaptável junto ao controlo deslizante de brilho</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Nunca mostrar</string>
+    <string name="status_bar_brightness_slider_show_expanded">Mostrar enquanto expandido</string>
+    <string name="status_bar_brightness_slider_show_always">Mostrar sempre</string>
     <string name="status_bar_toggle_brightness">Controlo de brilho</string>
     <string name="status_bar_toggle_brightness_summary">Ajustar o brilho deslizando através da barra de estado</string>
     <!-- Status bar - Network Traffic -->
@@ -294,5 +291,5 @@ Notch: Aplicações em ecrã cheio</string>
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Fundo de notificações translúcido</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">notificações, log de noticações</string>
 </resources>

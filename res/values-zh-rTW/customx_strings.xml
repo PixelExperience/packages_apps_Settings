@@ -124,9 +124,6 @@
     <!-- Status bar -->
     <string name="status_bar_title">狀態列</string>
     <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
-    <string name="status_bar_quick_qs_pulldown_summary">從狀態列的%1$s邊拉下快速設定</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">狀態列的左邊緣拉下快速設定</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">在狀態列的右側下拉時直接進入快速設定</string>
     <string name="status_bar_quick_qs_pulldown_off">關閉</string>
     <string name="status_bar_quick_qs_pulldown_left">左</string>
     <string name="status_bar_quick_qs_pulldown_right">右</string>
@@ -164,9 +161,9 @@
     <string name="status_bar_brightness_slider_summary">在快速設定中調整亮度</string>
     <string name="status_bar_brightness_slider_auto_title">自動調整亮度</string>
     <string name="status_bar_brightness_slider_auto_summary">在亮度滑動條附近顯示自動調節亮度開關</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">永不顯示</string>
+    <string name="status_bar_brightness_slider_show_expanded">當展開時顯示</string>
+    <string name="status_bar_brightness_slider_show_always">一律顯示</string>
     <string name="status_bar_toggle_brightness">亮度控制</string>
     <string name="status_bar_toggle_brightness_summary">在狀態列上左右滑動調整亮度</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +290,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">半透明的通知背景</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">通知、通知紀錄</string>
 </resources>
