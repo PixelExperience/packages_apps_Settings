@@ -1,9 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <plurals name="backlight_timeout_time">
-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> sekonda</item>
-        <item quantity="few"><xliff:g id="seconds">%d</xliff:g> seconds</item>
-        <item quantity="many"><xliff:g id="seconds">%d</xliff:g> seconds</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> sekondi</item>
-    </plurals>
-</resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"></resources>

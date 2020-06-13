@@ -12,18 +12,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Wellbeing -->
-    <string name="duration_less_than_one_minute">Less than 1 minute</string>
-    <string name="screen_time_summary_usage_today">%1$s today</string>
     <!-- Moto Face Unlock -->
-    <string name="security_settings_face_settings_footer_moto">Use Face unlock to unlock your device.\n\nKeep in mind:\nLooking at the phone can unlock it when you don’t intend to.\n\nYour phone can be unlocked by someone else if it’s held up to your face while your eyes are open.\n\nYour phone can be unlocked by someone who looks a lot like you, say, your child or an identical sibling.</string>
-    <string name="security_settings_face_settings_remove_dialog_details_moto">Data recorded by face unlock will be permanently and securely deleted. After removal, you will need your PIN, pattern, or password to unlock your phone.</string>
     <!-- Adaptive battery -->
-    <string name="battery_tip_smart_battery_summary_custom">Turn on Adaptive Battery</string>
-    <string name="smart_battery_footer_custom">"To extend battery life, Adaptive Battery limits battery for infrequently used apps. Your phone will learn how you use apps over time.
-
-Notifications may be delayed for these apps."</string>
-    <string name="smart_battery_manager_title_custom">Adaptive Battery</string>
-    <string name="smart_battery_title_custom">Use Adaptive Battery</string>
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Darganfyddi’r synhwyrydd olion bysedd ar blaen dy ffôn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Darganfyddi’r synhwyrydd olion bysedd ar ochr chwith dy ffôn.</string>
@@ -58,11 +48,6 @@ Notifications may be delayed for these apps."</string>
     <string name="hardware_keys_action_launch_camera">Agor camera</string>
     <string name="hardware_keys_action_sleep">Troi\'r sgrin i ffwrdd</string>
     <string name="hardware_keys_action_split_screen">Sgrin hollt</string>
-    <string name="hardware_keys_swipe_right_key_title">Swipe right</string>
-    <string name="hardware_keys_swipe_left_key_title">Swipe left</string>
-    <string name="hardware_keys_long_tap_key_title">Long tap</string>
-    <string name="hardware_keys_swipe_tap_title">Swipe action</string>
-    <string name="hardware_keys_long_tap_title">Long tap action</string>
     <string name="button_wake_title">Deffro\'r ddyfais</string>
     <string name="camera_sleep_on_release_title">Cipolwg sgrin</string>
     <string name="camera_sleep_on_release_summary">Bydd hanner gwasgu yn cadw\'r sgrin ymlaen dim ond tra bod y botwm yn cael ei dal i lawr</string>
@@ -82,14 +67,6 @@ Notifications may be delayed for these apps."</string>
     <string name="disable_navkeys_title">Galluogi bar llywio ar y sgrin</string>
     <string name="disable_navkeys_summary">Galluogi\'r bar llywio ar y sgrin ac analluogi\'r botymau caledwedd</string>
     <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
     <!-- Refresh rate -->
-    <string name="refresh_rate_title">Screen refresh rate</string>
-    <string name="refresh_rate_summary_auto">Auto / Automatically raises the refresh rate from 60 to 90Hz for some content</string>
-    <string name="refresh_rate_summary_60">60Hz / Refresh rate locked at 60Hz for all content</string>
-    <string name="refresh_rate_summary_90">90Hz / Refresh rate locked at 90Hz for all content. Increased battery usage</string>
-    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
-    <string name="battery_light_title">Turn on the light when charging</string>
 </resources>
