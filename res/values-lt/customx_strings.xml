@@ -124,9 +124,6 @@
     <!-- Status bar -->
     <string name="status_bar_title">Būsenos juosta</string>
     <string name="status_bar_quick_qs_pulldown_title">Greita prieiga</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Atidarius būsenos juostą %1$s, atidaromi Greitieji nustatymai</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Kairė</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Dešinė</string>
     <string name="status_bar_quick_qs_pulldown_off">Išjungti</string>
     <string name="status_bar_quick_qs_pulldown_left">Kairėn</string>
     <string name="status_bar_quick_qs_pulldown_right">Dešinėn</string>
@@ -164,9 +161,9 @@
     <string name="status_bar_brightness_slider_summary">Ryškumo reguliavimas greitais nustatymais</string>
     <string name="status_bar_brightness_slider_auto_title">Automatinis ryškumas</string>
     <string name="status_bar_brightness_slider_auto_summary">Adaptyvus ryškumo valdymo jungiklis šalia slankiklio</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Niekada nerodyti</string>
+    <string name="status_bar_brightness_slider_show_expanded">Rodyti išplėtus</string>
+    <string name="status_bar_brightness_slider_show_always">Rodyti visada</string>
     <string name="status_bar_toggle_brightness">Ryškumo valdymas</string>
     <string name="status_bar_toggle_brightness_summary">Sureguliuokite ryškumą slinkdami per būsenos juostą</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +290,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Skaidrus pranešimų fonas</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">pranešimai, pranešimų žurnalas</string>
 </resources>

@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Stavová lišta</string>
     <string name="status_bar_quick_qs_pulldown_title">Rychlé stažení nabídky</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Tažením dolů z %1$s strany stavové lišty se vysune rychlé nastavení</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Vlevo</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Vpravo</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Tažení dolů na levé straně stavové lišty vysune Rychlá nastavení</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Tažením dolů na pravé straně stavové lišty vysunout Rychlá nastavení</string>
     <string name="status_bar_quick_qs_pulldown_off">Vypnuto</string>
     <string name="status_bar_quick_qs_pulldown_left">levé</string>
     <string name="status_bar_quick_qs_pulldown_right">pravé</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Upravte jas z rychlého nastavení</string>
     <string name="status_bar_brightness_slider_auto_title">Automatický jas</string>
     <string name="status_bar_brightness_slider_auto_summary">Zobrazit přepínač pro automatický jas poblíž posuvníku</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Nikdy nezobrazovat</string>
+    <string name="status_bar_brightness_slider_show_expanded">Zobrazit po rozbalení</string>
+    <string name="status_bar_brightness_slider_show_always">Vždy zobrazit</string>
     <string name="status_bar_toggle_brightness">Ovládání jasu</string>
     <string name="status_bar_toggle_brightness_summary">Umožňuje nastavit jas tažením prstu na stavové liště</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Průsvitné pozadí oznámení</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">oznámení, protokol oznámení</string>
 </resources>

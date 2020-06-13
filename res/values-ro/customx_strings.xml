@@ -124,9 +124,6 @@
     <!-- Status bar -->
     <string name="status_bar_title">Bară de stare</string>
     <string name="status_bar_quick_qs_pulldown_title">Derulare în jos rapidă</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Marginea %1$s a bării de stare aduce în jos Setările Rapide</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Stânga</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Dreapta</string>
     <string name="status_bar_quick_qs_pulldown_off">Dezactivat</string>
     <string name="status_bar_quick_qs_pulldown_left">Stânga</string>
     <string name="status_bar_quick_qs_pulldown_right">Dreapta</string>
@@ -164,9 +161,9 @@
     <string name="status_bar_brightness_slider_summary">Reglați luminozitatea din Setările Rapide</string>
     <string name="status_bar_brightness_slider_auto_title">Luminozitate auto</string>
     <string name="status_bar_brightness_slider_auto_summary">Arată comutatorul pentru luminozitate adaptivă lângă glisor</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Nu mai arăta</string>
+    <string name="status_bar_brightness_slider_show_expanded">Arată la extindere</string>
+    <string name="status_bar_brightness_slider_show_always">Arată întotdeauna</string>
     <string name="status_bar_toggle_brightness">Control luminozitate</string>
     <string name="status_bar_toggle_brightness_summary">Reglați luminozitatea prin alunecarea peste bara de stare</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +290,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Fundal transparent pt. notificări</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">notificări, log notificări</string>
 </resources>

@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">شريتی زانیاری</string>
     <string name="status_bar_quick_qs_pulldown_title">خێرا ڕاکێشان بۆ خوارەوە</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s  لە لێواری شریتی زانیارییەکان بۆ خوارەوە ڕابکێشرێت بۆ ڕێکخستنی خێرا</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">چەپ</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">ڕاست</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">لە لێواری شریتی زانیارییەکان بۆ خوارەوە ڕابکێشرێت بۆ ڕێکخستنی خێرا</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">لە لێواری شریتی زانیارییەکان بۆ خوارەوە ڕابکێشرێت بۆ ڕێکخستنی خێرا</string>
     <string name="status_bar_quick_qs_pulldown_off">ناچالاک</string>
     <string name="status_bar_quick_qs_pulldown_left">چەپ</string>
     <string name="status_bar_quick_qs_pulldown_right">ڕاست</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">ڕێکخستنی ڕۆشنایی لە ڕێکخستنی خێرادا</string>
     <string name="status_bar_brightness_slider_auto_title">ڕۆشنایی خۆکار</string>
     <string name="status_bar_brightness_slider_auto_summary">پیشاندانی چەسپاوی ڕۆشنایی نزیک لە ئامرازەکەدا</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">هەرگیز پیشانی مەدە</string>
+    <string name="status_bar_brightness_slider_show_expanded">پیشاندانی کاتێ کرایەوە</string>
+    <string name="status_bar_brightness_slider_show_always">پیشاندان هەمیشە</string>
     <string name="status_bar_toggle_brightness">کۆنترۆڵکردنی ڕۆشنایی</string>
     <string name="status_bar_toggle_brightness_summary">ڕێکخستنی ڕۆشنایی بە هێنانەخوارەوەی شریتی ئامرازەکان</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">ڕوونی پشت شاشەی ئاگادارکردنەوەکان</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">ئاگادارکردنەوە، تۆماری ئاگادارکردنەوەکان</string>
 </resources>

@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">홈을 길게 누를 때 작업</string>
     <string name="navigation_bar_home_double_tap_title">홈을 두 번 탬할 때 작업</string>
     <string name="navigation_bar_app_switch_long_press_title">최근 앱을 길게 누를 때 작업</string>
-    <string name="navigation_bar_edge_long_swipe_title">Edge long swipe action</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">재생 제어</string>
     <string name="volbtn_music_controls_summary">화면이 꺼진 상태에서 볼륨 키를 길게 눌러 음악 트랙 탐색</string>
@@ -124,9 +123,6 @@
     <!-- Status bar -->
     <string name="status_bar_title">상태 표시줄</string>
     <string name="status_bar_quick_qs_pulldown_title">빠르게 내리기</string>
-    <string name="status_bar_quick_qs_pulldown_summary">상태 표시줄의 %1$s 끝을 내려 빠른 설정 열기</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">왼쪽</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">오른쪽</string>
     <string name="status_bar_quick_qs_pulldown_off">꺼짐</string>
     <string name="status_bar_quick_qs_pulldown_left">왼쪽</string>
     <string name="status_bar_quick_qs_pulldown_right">오른쪽</string>
@@ -164,9 +160,6 @@
     <string name="status_bar_brightness_slider_summary">빠른 설정에서 밝기 조절</string>
     <string name="status_bar_brightness_slider_auto_title">자동 밝기</string>
     <string name="status_bar_brightness_slider_auto_summary">슬라이더 옆쪽에 밝기 자동 조절 토글 표시</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">밝기 조절</string>
     <string name="status_bar_toggle_brightness_summary">상태 표시줄을 슬라이드하여 화면 밝기 조절</string>
     <!-- Status bar - Network Traffic -->
@@ -277,12 +270,7 @@
     <string name="adj_intensity_title">명도</string>
     <string name="adj_contrast_title">대비</string>
     <!-- Back Gesture Height -->
-    <string name="back_height_low_label">Full</string>
-    <string name="back_height_high_label">Bottom area</string>
-    <string name="back_options_dialog_title">Options</string>
-    <string name="back_height_message">Amount of screen height used as touchable region for back gesture.</string>
     <!-- Full screen gestures -->
-    <string name="navbar_gesture_pill_toggle_title">Hide the navigation bar pill.</string>
     <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_data">모바일 데이터</string>
     <string name="data_usage_app_restrict_data_summary">모바일 데이터를 사용합니다.</string>
@@ -293,5 +281,4 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">반투명 알림 배경</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

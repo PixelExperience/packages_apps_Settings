@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Pasek statusu</string>
     <string name="status_bar_quick_qs_pulldown_title">Szybkie rozwijanie</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s krawędź ekranu rozwija szybkie ustawienia</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Prawa krawędź ekranu rozwija Szybkie Ustawienia</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Prawa krawędź ekranu rozwija Szybkie Ustawienia</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Lewa krawędź ekranu rozwija Szybkie Ustawienia</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Prawa krawędź ekranu rozwija Szybkie Ustawienia</string>
     <string name="status_bar_quick_qs_pulldown_off">Wył</string>
     <string name="status_bar_quick_qs_pulldown_left">Po lewej</string>
     <string name="status_bar_quick_qs_pulldown_right">Po prawej</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Dostosuj jasność z Szybkich Ustawień</string>
     <string name="status_bar_brightness_slider_auto_title">Automatyczna jasność</string>
     <string name="status_bar_brightness_slider_auto_summary">Pokaż przełącznik dla automatycznej jasności blisko suwaka</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Nigdy nie pokazuj</string>
+    <string name="status_bar_brightness_slider_show_expanded">Pokaż po rozwinięciu</string>
+    <string name="status_bar_brightness_slider_show_always">Zawsze pokazuj</string>
     <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
     <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Przezroczysty pasek powiadomień</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">powiadomienia, logi powiadomień</string>
 </resources>

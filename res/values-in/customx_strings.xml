@@ -124,9 +124,6 @@
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_quick_qs_pulldown_title">Keruntuhan cepat</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Menarik %1$s tepi status bar ke bawah untuk Pengaturan Cepat</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Kiri</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Kanan</string>
     <string name="status_bar_quick_qs_pulldown_off">Mati</string>
     <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
     <string name="status_bar_quick_qs_pulldown_right">Kanan</string>
@@ -164,9 +161,9 @@
     <string name="status_bar_brightness_slider_summary">Sesuaikan kecerahan dari setelan cepat</string>
     <string name="status_bar_brightness_slider_auto_title">Kecerahan otomatis</string>
     <string name="status_bar_brightness_slider_auto_summary">Tampilkan tombol hidup/matikan kecerahan adaptif di dekat slider</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Jangan pernah tampilkan</string>
+    <string name="status_bar_brightness_slider_show_expanded">Tampil ketika diperluas</string>
+    <string name="status_bar_brightness_slider_show_always">Selalu tampilkan</string>
     <string name="status_bar_toggle_brightness">Kontrol kecerahan</string>
     <string name="status_bar_toggle_brightness_summary">Sesuaikan kecerahan dengan menggeser di statusbar</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +290,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Latar belakang pemberitahuan transparan</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">notifikasi, log notifikasi</string>
 </resources>

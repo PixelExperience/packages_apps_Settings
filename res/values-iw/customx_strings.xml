@@ -124,9 +124,6 @@
     <!-- Status bar -->
     <string name="status_bar_title">שורת מצב</string>
     <string name="status_bar_quick_qs_pulldown_title">משיכה מהירה</string>
-    <string name="status_bar_quick_qs_pulldown_summary">משיכה מצד %1$s לפתיחה מהירה של ההגדרות המהירות</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">שמאל</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">ימין</string>
     <string name="status_bar_quick_qs_pulldown_off">כבוי</string>
     <string name="status_bar_quick_qs_pulldown_left">שמאל</string>
     <string name="status_bar_quick_qs_pulldown_right">ימין</string>
@@ -164,9 +161,6 @@
     <string name="status_bar_brightness_slider_summary">כוונון בהירות דרך ההגדרות המהירות</string>
     <string name="status_bar_brightness_slider_auto_title">בהירות אוטומוטית</string>
     <string name="status_bar_brightness_slider_auto_summary">הראה כפתור להפעלת בהירות אוטומטית ליד המחוון</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">בקרת בהירות</string>
     <string name="status_bar_toggle_brightness_summary">שנה הבהירות על ידי הזזת האצבע על שורת המצב</string>
     <!-- Status bar - Network Traffic -->
@@ -175,7 +169,6 @@
     <string name="network_traffic_mode_title">מצב תצוגה</string>
     <string name="network_traffic_mode_disable">כבוי</string>
     <string name="network_traffic_mode_status_bar"> שורת מצב</string>
-    <string name="network_traffic_mode_qs">Quick settings</string>
     <string name="network_traffic_autohide">הסתרה אוטומטית</string>
     <string name="network_traffic_autohide_summary">מנטר תעבורת הרשת יוסתר כאשר אין פעילות</string>
     <string name="network_traffic_units_title">יחידות מידה לתעבורה</string>
@@ -284,14 +277,6 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">הסתר את כדור סרגל הניווט.</string>
     <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_data">Cellular data</string>
-    <string name="data_usage_app_restrict_data_summary">Enable usage of cellular data</string>
-    <string name="data_usage_app_restrict_vpn">VPN data</string>
-    <string name="data_usage_app_restrict_vpn_summary">Enable usage of VPN data</string>
-    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
-    <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
     <!-- Translucent lockscreen notifications background -->
-    <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

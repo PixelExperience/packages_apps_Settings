@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Olekuriba</string>
     <string name="status_bar_quick_qs_pulldown_title">Kiire rippmenüü</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s olekuriba äär tõmbab alla kiirseaded</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Vasak</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Parem</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Olekuriba vasak serv tõmbab kiirsätted alla</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Olekuriba parem serv tõmbab kiirsätted alla</string>
     <string name="status_bar_quick_qs_pulldown_off">Väljas</string>
     <string name="status_bar_quick_qs_pulldown_left">Vasak</string>
     <string name="status_bar_quick_qs_pulldown_right">Parem</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Määra heledust kiirseadetest</string>
     <string name="status_bar_brightness_slider_auto_title">Automaatne heledus</string>
     <string name="status_bar_brightness_slider_auto_summary">Kuva kohanduva heleduse lülitit liuguri lähedal</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Ära näita kunagi</string>
+    <string name="status_bar_brightness_slider_show_expanded">Kuva laiendamisel</string>
+    <string name="status_bar_brightness_slider_show_always">Näita alati</string>
     <string name="status_bar_toggle_brightness">Heleduse reguleerimine</string>
     <string name="status_bar_toggle_brightness_summary">Reguleeri heledust, libistades mööda ülariba</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Läbipaistev märguannete taust</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">teated, teadete logi</string>
 </resources>

@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Traka statusa</string>
     <string name="status_bar_quick_qs_pulldown_title">Brzo potezanje</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s rub trake stanja povlači dolje Brze postavke</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Lijevo</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Desno</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Lijevi rub statusne trake povlači brze postavke.</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Desni rub statusne trake povlači brze postavke.</string>
     <string name="status_bar_quick_qs_pulldown_off">Isključen</string>
     <string name="status_bar_quick_qs_pulldown_left">Lijevi</string>
     <string name="status_bar_quick_qs_pulldown_right">Desni</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Podesite svjetlinu u Brzim postavkama</string>
     <string name="status_bar_brightness_slider_auto_title">Autom. svjetlina</string>
     <string name="status_bar_brightness_slider_auto_summary">Prikaži prečac za prilagodljivu svjetlinu pored klizača</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">Nikad ne prikaži</string>
+    <string name="status_bar_brightness_slider_show_expanded">Prikaži kada je prošireno</string>
+    <string name="status_bar_brightness_slider_show_always">Prikaži uvijek</string>
     <string name="status_bar_toggle_brightness">Kontrola svjetline</string>
     <string name="status_bar_toggle_brightness_summary">Prilagodite svjetlinu klizanjem po statusnoj traci</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Prozirna pozadina obavijesti</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">obavijesti, zapisnik obavijesti, povijest obavijesti</string>
 </resources>

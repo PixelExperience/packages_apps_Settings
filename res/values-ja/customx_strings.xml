@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">ステータスバー</string>
     <string name="status_bar_quick_qs_pulldown_title">クイックプルダウン</string>
-    <string name="status_bar_quick_qs_pulldown_summary">ステータスバーの%1$s端をプルダウンしてクイック設定を開く</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">ステータスバーの左端をプルダウンしてクイック設定を開く</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">ステータスバーの右端をプルダウンしてクイック設定を開く</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">ステータスバーの左端をプルダウンしてクイック設定を開く</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">ステータスバーの右端をプルダウンしてクイック設定を開く</string>
     <string name="status_bar_quick_qs_pulldown_off">OFF</string>
     <string name="status_bar_quick_qs_pulldown_left">左</string>
     <string name="status_bar_quick_qs_pulldown_right">右</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">クイック設定で明るさを調節します</string>
     <string name="status_bar_brightness_slider_auto_title">明るさの自動調節</string>
     <string name="status_bar_brightness_slider_auto_summary">スライダーの近くに明るさの自動調節のトグルを表示します</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">非表示</string>
+    <string name="status_bar_brightness_slider_show_expanded">拡張時に表示</string>
+    <string name="status_bar_brightness_slider_show_always">常に表示</string>
     <string name="status_bar_toggle_brightness">明るさコントロール</string>
     <string name="status_bar_toggle_brightness_summary">ステータスバー上でスライドして明るさを調整します</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">通知パネルの透過</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">通知、通知ログ</string>
 </resources>

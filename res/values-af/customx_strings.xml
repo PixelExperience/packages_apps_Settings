@@ -25,7 +25,6 @@
     <string name="device_hostname">Toestel gasheernaam</string>
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Gevorderde herlaai</string>
-    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Wys media kuns</string>
     <!-- PIN scramble -->
@@ -44,8 +43,6 @@
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Wys patroon kolle</string>
     <!-- Hotspot custom extras -->
-    <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
     <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Minimum tyd tussen kennisgewingklanke</string>
     <string name="app_notification_sound_timeout_summary_template">Laat geluide of vibrasie nie meer as een keer elke <xliff:g id="duration">%1$s </xliff:g> toe</string>
@@ -57,7 +54,6 @@
     <string name="app_notification_sound_timeout_value_15_minutes">10 minute</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minute</string>
     <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Toenemende luitoon volume</string>
     <string name="increasing_ring_min_volume_title">Begin volume</string>
@@ -73,18 +69,12 @@
     <string name="display_rotation_180_title">180 grade</string>
     <string name="display_rotation_270_title">270 grade</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Display music visualizer</string>
     <!-- In-call feedback -->
-    <string name="incall_feeedback_vibrate_title">Vibrate to indicate call status</string>
     <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">Wys pyltjiesleutels terwyl jy tik</string>
     <string name="navigation_bar_arrow_keys_summary">Wys links en regs wyser knoppies terwyl tik. Oorskryf IME wisselaar.</string>
-    <string name="nav_bar_layout_inverse_title">Invert layout</string>
-    <string name="nav_bar_layout_inverse_summary">Invert layout of navigation bar buttons</string>
     <string name="navigation_bar_home_long_press_title">Tuis lang druk aksie</string>
     <string name="navigation_bar_home_double_tap_title">Tuis dubbel tik aksie</string>
-    <string name="navigation_bar_app_switch_long_press_title">Recents long press action</string>
-    <string name="navigation_bar_edge_long_swipe_title">Edge long swipe action</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Beheer terugspeel</string>
     <string name="volbtn_music_controls_summary">Soek musiek snitte deur die volume sleutels lank te druk terwyl die skerm af is</string>
@@ -102,14 +92,10 @@
     <!-- Power menu key customization -->
     <string name="power_menu_title">Krag kieslys</string>
     <string name="power_menu_screenshot_title">Skermkiekie</string>
-    <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
     <string name="power_menu_airplane_title">Vliegtuigmodus</string>
     <string name="power_menu_users_title">Gebruiker wisselaar</string>
-    <string name="power_menu_lockdown_title">Lockdown</string>
     <string name="power_end_call_title">Beëindig oproep</string>
     <string name="power_end_call_summary">Beeindig die huidige oproep deur die krag-knoppie te druk</string>
-    <string name="lockscreen_power_menu_disabled_title">Disable on lock screen</string>
-    <string name="lockscreen_power_menu_disabled_summary">Disable power menu on protected lock screen</string>
     <string name="torch_long_press_power_gesture_title">Lang-druk vir flits</string>
     <string name="torch_long_press_power_gesture_desc">Aktiveer die flits deur die kragknoppie lang te druk terwyl die skerm af is</string>
     <string name="torch_long_press_power_timeout_title">Skakel flits outomaties af</string>
@@ -119,14 +105,9 @@
     <string name="torch_long_press_power_timeout_5min">5 minute</string>
     <string name="torch_long_press_power_timeout_10min">10 minute</string>
     <!-- Others settings -->
-    <string name="others_settings_title">Others settings</string>
-    <string name="additional_buttons_title">Additional buttons</string>
     <!-- Status bar -->
     <string name="status_bar_title">Statusbalk</string>
     <string name="status_bar_quick_qs_pulldown_title">Vinnige Instellings</string>
-    <string name="status_bar_quick_qs_pulldown_summary">%1$s rand van die statusbalk vertoon Vinnige Instellings</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Links</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Regs</string>
     <string name="status_bar_quick_qs_pulldown_off">Af</string>
     <string name="status_bar_quick_qs_pulldown_left">Links</string>
     <string name="status_bar_quick_qs_pulldown_right">Regs</string>
@@ -136,8 +117,6 @@
     <string name="status_bar_system_icons_summary">Beheer watter status balk ikone word getoon</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Horlosie</string>
-    <string name="status_bar_clock_show_seconds_title">Show seconds</string>
-    <string name="status_bar_clock_show_seconds_summary">Show hours, minutes, and seconds</string>
     <string name="status_bar_clock_position_title">Horlosieposisie</string>
     <string name="status_bar_clock_position_right">Regs</string>
     <string name="status_bar_clock_position_left">Links</string>
@@ -164,67 +143,17 @@
     <string name="status_bar_brightness_slider_summary">Verstel die helderheid van vinnige instellings</string>
     <string name="status_bar_brightness_slider_auto_title">Outomatiese helderheid</string>
     <string name="status_bar_brightness_slider_auto_summary">Wys wisselaar vir aanpasbare helderheid naby die glyer</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Helderheid beheer</string>
     <string name="status_bar_toggle_brightness_summary">Verander helderheid aan deur te gly oor die statusbalk</string>
     <!-- Status bar - Network Traffic -->
-    <string name="network_traffic_settings_title">Network traffic monitor</string>
-    <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>
-    <string name="network_traffic_mode_title">Display mode</string>
-    <string name="network_traffic_mode_disable">Disabled</string>
-    <string name="network_traffic_mode_status_bar">Status bar</string>
-    <string name="network_traffic_mode_qs">Quick settings</string>
-    <string name="network_traffic_autohide">Auto hide</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-    <string name="network_traffic_units_title">Traffic measurement units</string>
     <!-- QS settings -->
-    <string name="qs_title">Quick settings</string>
-    <string name="qs_rows_portrait_title">Rows (portrait)</string>
-    <string name="qs_rows_landscape_title">Rows (landscape)</string>
-    <string name="qs_columns_portrait_title">Columns (portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (landscape)</string>
     <!-- QS title visibility -->
-    <string name="qs_tile_title_visibility_title">Title visibility</string>
-    <string name="qs_tile_title_visibility_summary">Show the titles underneath QS tiles</string>
     <!-- QS tiles haptic feedback -->
-    <string name="qs_vibrate_title">Vibrate on touch</string>
-    <string name="qs_vibrate_summary">Vibrate when touching QS tiles</string>
     <!-- QS animation/interpolator styles  -->
-    <string name="qs_animation_options_title">Quick settings animations</string>
-    <string name="qs_tile_animation_style_title">Style</string>
-    <string name="qs_tile_animation_duration_title">Duration</string>
-    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
-    <string name="qs_tile_animation_style_off">None</string>
-    <string name="qs_tile_animation_style_flip">Flip</string>
-    <string name="qs_tile_animation_style_rotate">Rotate</string>
-    <string name="qs_tile_animation_duration_low">Slow</string>
-    <string name="qs_tile_animation_duration_default">Default</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
-    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate and decelerate</string>
-    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">Notch behavior</string>
-    <string name="display_cutout_mode_normal">Default</string>
-    <string name="display_cutout_mode_hidden">Hidden</string>
     <!-- Notch: Full screen apps -->
-    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
-    <string name="display_cutout_force_fullscreen_summary">Ignore notch space for selected applications</string>
-    <string name="display_cutout_force_fullscreen_restart_app">Please restart the application to apply the changes.</string>
-    <string name="cutout_force_fullscreen_no_apps">No apps</string>
     <!-- Three-fingers-swipe to screenshot -->
-    <string name="swipe_to_screenshot_gesture_title">Swipe to screenshot</string>
-    <string name="swipe_to_screenshot_gesture_summary">Swipe three fingers to take screenshot</string>
     <!-- Navigation compact layout -->
-    <string name="navigation_bar_compact_layout_title">Compact layout</string>
-    <string name="navigation_bar_compact_layout_summary">Use a compact layout in the navigation bar</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimaliseer jou skerm gebaseer op die tyd van die dag en die omringende omstandighede om leesbaarheid te verbeter en oogspanning te verminder</string>
     <string name="live_display_mode">Skerm modus</string>
@@ -262,8 +191,6 @@
     <string name="live_display_color_profile_srgb_summary">Kleure akkuraat tot die sRGB kleurruimte</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Kleure akkuraat tot die DCI-P3 kleur spektrum</string>
-    <string name="live_display_reading_mode_title">Reading mode</string>
-    <string name="live_display_reading_mode_summary">Grayscale mode for long-term reading</string>
     <string name="color_calibration_title">Kleur kalibrasie</string>
     <string name="color_calibration_summary">Kalibreer skermkleure</string>
     <string name="color_red_title">Rooi</string>
@@ -277,21 +204,8 @@
     <string name="adj_intensity_title">Intensiteit</string>
     <string name="adj_contrast_title">Kontras</string>
     <!-- Back Gesture Height -->
-    <string name="back_height_low_label">Full</string>
-    <string name="back_height_high_label">Bottom area</string>
-    <string name="back_options_dialog_title">Options</string>
-    <string name="back_height_message">Amount of screen height used as touchable region for back gesture.</string>
     <!-- Full screen gestures -->
-    <string name="navbar_gesture_pill_toggle_title">Hide the navigation bar pill.</string>
     <!-- Per-app data restrictions -->
-    <string name="data_usage_app_restrict_data">Cellular data</string>
-    <string name="data_usage_app_restrict_data_summary">Enable usage of cellular data</string>
-    <string name="data_usage_app_restrict_vpn">VPN data</string>
-    <string name="data_usage_app_restrict_vpn_summary">Enable usage of VPN data</string>
-    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
-    <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
     <!-- Translucent lockscreen notifications background -->
-    <string name="translucent_lockscreen_notifications_bg_title">Translucent notifications background</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
 </resources>

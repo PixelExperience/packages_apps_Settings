@@ -124,9 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">شريط الحالة</string>
     <string name="status_bar_quick_qs_pulldown_title">السحب السريع لأسفل</string>
-    <string name="status_bar_quick_qs_pulldown_summary">سحب الحافّة %1$s لشريط الحالة إلى أسفل يُظهر لوحة الإعدادات السّريعة</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">سحب الحافة اليسرى من شريط الحالة الى الأسفل ينقل الإعدادات السريعة</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">سحب الحافة اليمنى من شريط الحالة الى الأسفل ينقل الإعدادات السريعة</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">سحب الحافة اليسرى من شريط الحالة الى الأسفل يظهر الإعدادات السريعة</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">سحب الحافة اليمنى من شريط الحالة الى الأسفل يظهر الإعدادات السريعة</string>
     <string name="status_bar_quick_qs_pulldown_off">إيقاف</string>
     <string name="status_bar_quick_qs_pulldown_left">اليسار</string>
     <string name="status_bar_quick_qs_pulldown_right">إيقاف</string>
@@ -164,9 +163,9 @@
     <string name="status_bar_brightness_slider_summary">ضبط السطوع من الإعدادات السريعة</string>
     <string name="status_bar_brightness_slider_auto_title">السطوع التلقائي</string>
     <string name="status_bar_brightness_slider_auto_summary">إظهار رمز السطوع التلقائي قرب شريط تمرير السطوع</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
+    <string name="status_bar_brightness_slider_show_never">لا تظهر نهائياً</string>
+    <string name="status_bar_brightness_slider_show_expanded">إظهار عند التوسيع</string>
+    <string name="status_bar_brightness_slider_show_always">إظهار دائما</string>
     <string name="status_bar_toggle_brightness">التحكم بالسطوع</string>
     <string name="status_bar_toggle_brightness_summary">التحكم بالسطوع عبر السحب على شريط الحالة</string>
     <!-- Status bar - Network Traffic -->
@@ -293,5 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">قائمة التنبيهات ذات خلفية شفافة</string>
     <!-- Search keywords -->
-    <string name="keywords_notification_log">notifications, notification log</string>
+    <string name="keywords_notification_log">التنبيهات، سجل التنبيهات</string>
 </resources>
