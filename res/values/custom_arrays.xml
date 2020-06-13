@@ -162,12 +162,6 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="status_bar_clock_position_values_rtl" translatable="false">
-        <item>2</item>
-        <item>1</item>
-        <item>0</item>
-    </string-array>
-
     <string-array name="status_bar_clock_position_entries_notch" translatable="false">
         <item>@string/status_bar_clock_position_right</item>
         <item>@string/status_bar_clock_position_left</item>
@@ -181,11 +175,6 @@
     <string-array name="status_bar_clock_position_values_notch" translatable="false">
         <item>0</item>
         <item>2</item>
-    </string-array>
-
-    <string-array name="status_bar_clock_position_values_notch_rtl" translatable="false">
-        <item>2</item>
-        <item>0</item>
     </string-array>
 
     <string-array name="status_bar_am_pm_entries" translatable="false">
@@ -239,11 +228,6 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
-    </string-array>
-    <string-array name="status_bar_quick_qs_pulldown_values_rtl" translatable="false">
-        <item>2</item>
-        <item>1</item>
-        <item>0</item>
     </string-array>
 
     <!-- Network Traffic -->
