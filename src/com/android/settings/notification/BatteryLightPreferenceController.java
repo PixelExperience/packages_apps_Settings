@@ -70,7 +70,7 @@ public class BatteryLightPreferenceController extends TogglePreferenceController
     @Override
     public int getAvailabilityStatus() {
         return mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_intrusiveNotificationLed) ? AVAILABLE
+                com.android.internal.R.bool.config_intrusiveBatteryLed) ? AVAILABLE
                 : UNSUPPORTED_ON_DEVICE;
     }
 
