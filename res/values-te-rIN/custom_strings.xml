@@ -37,4 +37,10 @@
     <!-- Proximity wake -->
     <!-- Refresh rate -->
     <!-- Battery light -->
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">అధిక స్పర్శ సున్నితత్వం</string>
+    <string name="high_touch_sensitivity_summary">టచ్ స్క్రీన్ సున్నితత్వాన్ని పెంచండి ఎందుకంటే చేతి తొడుగులు వేసుకున్నప్పుడు అది ఉపయోగపడుతుంది</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">టచ్ స్క్రీన్ యొక్క హోవరింగ్ స్వభావం</string>
+    <string name="touchscreen_hovering_summary">వెబ్ బౌజర్లు, రిమోట్ డెస్క్‌టాప్‌లు, మొదలైన వాటిలో మౌస్ వలే తెరను హోవర్ చేయడానికి అనుమతిస్తుంది</string>
 </resources>

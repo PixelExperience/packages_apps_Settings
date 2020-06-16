@@ -92,4 +92,10 @@
     <string name="auto_refresh_rate">تلقائي</string>
     <!-- Battery light -->
     <string name="battery_light_title">تشغيل ضوء التنبيهات عند توصيل الشاحن</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">حساسية ذات لمس عالي</string>
+    <string name="high_touch_sensitivity_summary">زيادة حساسية شاشة اللمس حتى يمكن استخدامها أثناء ارتداء القفازات</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">المرور فوق الشاشة اللمسية</string>
+    <string name="touchscreen_hovering_summary">يسمح لك بالمرور فوق الشاشة مثل الماوس في مستعرضات الويب، أو سطح المكتب عن بُعد، إلخ</string>
 </resources>

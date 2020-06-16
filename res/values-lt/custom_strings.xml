@@ -92,4 +92,10 @@
     <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
     <string name="battery_light_title">Įjunkite šviesos indikatorių,akumuliatoriaus įkrovimo metu</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Didelis lietimo jautrumas</string>
+    <string name="high_touch_sensitivity_summary">Padidinti liečiamojo ekrano jautrumą tam, kad juo būtų galima naudotis dėvint pirštines</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Jutiklinio ekrano slankiojimas</string>
+    <string name="touchscreen_hovering_summary">Leidžia slankioti ekraną kaip pelę internetinėse naršyklėse, nuotoliniuose staliniuose kompiuteriuose ir kt.</string>
 </resources>

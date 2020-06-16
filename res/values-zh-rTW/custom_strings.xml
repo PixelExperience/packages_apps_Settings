@@ -92,4 +92,10 @@
     <string name="auto_refresh_rate">自動</string>
     <!-- Battery light -->
     <string name="battery_light_title">充電時打開充電指示燈</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">高觸控靈敏度</string>
+    <string name="high_touch_sensitivity_summary">增加觸控螢幕的靈敏度，因此戴著手套也可以使用手機</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">懸浮操作</string>
+    <string name="touchscreen_hovering_summary">允許您把手指懸停在螢幕上作為瀏覽器、遠程桌面等的滑鼠</string>
 </resources>

@@ -69,4 +69,6 @@
     <!-- Refresh rate -->
     <string name="auto_refresh_rate">ինքնաշխատ</string>
     <!-- Battery light -->
+    <!-- High touch sensitivity -->
+    <!-- Touchscreen hovering -->
 </resources>

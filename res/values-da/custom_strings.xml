@@ -91,4 +91,10 @@ Notifikationer fra disse apps kan være forsinkede."</string>
     <string name="refresh_rate_summary_90">90 Hz / Opdateringsfrekvens låst til 90 Hz for alt indhold (forøget strømforbrug)</string>
     <string name="auto_refresh_rate">Automatisk</string>
     <!-- Battery light -->
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Høj berøringsfølsomhed</string>
+    <string name="high_touch_sensitivity_summary">Forøg berøringsfølsom skærms følsomhed, så den kan bruges med handsker på</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Berøringsfølsom skærm-svævning</string>
+    <string name="touchscreen_hovering_summary">Tillader dig at holde fingeren over skærmen, som en mus i netlæsere, på fjernskriveborde, osv.</string>
 </resources>

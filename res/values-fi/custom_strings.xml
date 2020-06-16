@@ -92,4 +92,10 @@ Rajoitettujen sovellusten ilmoitukset voidaan näyttää viiveellä."</string>
     <string name="auto_refresh_rate">Automaattinen</string>
     <!-- Battery light -->
     <string name="battery_light_title">Latausvalo ladattaessa</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Korkea kosketusherkkyys</string>
+    <string name="high_touch_sensitivity_summary">Lisää kosketusnäytön herkkyyttä käyttääksesi laitetta käsineiden kanssa</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Kosketusnäytön leijunta</string>
+    <string name="touchscreen_hovering_summary">Sallii näytön leijuttamisen kuten hiiri selaimessa, etätyöpöytäyhteyksissä, jne.</string>
 </resources>

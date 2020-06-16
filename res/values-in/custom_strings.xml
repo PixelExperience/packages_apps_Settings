@@ -92,4 +92,10 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="auto_refresh_rate">Otomatis</string>
     <!-- Battery light -->
     <string name="battery_light_title">Nyalakan lampu saat mengisi daya</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Kepekaan sentuh tinggi</string>
+    <string name="high_touch_sensitivity_summary">Tingkatkan kepekaan layar sentuh sehingga dapat digunakan saat mengenakan sarung tangan</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Ambang jari di layar sentuh</string>
+    <string name="touchscreen_hovering_summary">Mengizinkan Anda mengambang jari di atas layar seperti menggunakan tetikus dalam peramban web, destop jarak jauh, dll</string>
 </resources>

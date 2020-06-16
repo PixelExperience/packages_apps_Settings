@@ -85,4 +85,10 @@ Həmin tətbiqlərin bildirişləri gecikə bilər."</string>
     <!-- Refresh rate -->
     <!-- Battery light -->
     <string name="battery_light_title">Şarj edərkən işığı yandırın</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Yüksək toxunuş həssaslığı</string>
+    <string name="high_touch_sensitivity_summary">Toxunuş həssaslığını artıraraq əlcəklə istifadəni mümkün edər</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Toxunuşlu ekranda toxunmadan hərəkət</string>
+    <string name="touchscreen_hovering_summary">Ekrana toxunmadan barmağınızı yaxınlaşdıraraq siçan (maus) kimi veb səyyahlarda, uzaq masaüstlərində və s. hərəkətinizi təmin edər</string>
 </resources>

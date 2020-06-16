@@ -78,4 +78,6 @@
     <string name="refresh_rate_title">اسکرین ریفرش ریٹ</string>
     <string name="auto_refresh_rate">خودکار</string>
     <!-- Battery light -->
+    <!-- High touch sensitivity -->
+    <!-- Touchscreen hovering -->
 </resources>
