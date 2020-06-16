@@ -92,4 +92,10 @@
     <string name="auto_refresh_rate">อัตโนมัติ</string>
     <!-- Battery light -->
     <string name="battery_light_title">เปิดแสงไฟเมื่อชาร์จแบตเตอรี่</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">ความไวต่อสัมผัสสูง</string>
+    <string name="high_touch_sensitivity_summary">เพิ่มความไวของหน้าจอสัมผัสเพื่อสามารถใช้ขณะสวมถุงมือ</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">วางนิ้วเหนือจอ</string>
+    <string name="touchscreen_hovering_summary">อนุญาตให้คุณสามารถวางนิ้วเหนือจอเหมือนการวางเม้าส์เหนือปุ่มในคอมพิวเตอร์</string>
 </resources>

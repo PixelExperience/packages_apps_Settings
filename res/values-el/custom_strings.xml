@@ -93,4 +93,10 @@
     <string name="auto_refresh_rate">Αυτόματο</string>
     <!-- Battery light -->
     <string name="battery_light_title">Ενεργοποίησε το φωτισμό κατά τη φόρτιση</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Υψηλή ευαισθησία αφής</string>
+    <string name="high_touch_sensitivity_summary">Αύξηση της ευαισθησίας της οθόνης αφής έτσι ώστε να μπορεί να χρησιμοποιηθεί φορώντας γάντια</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Αιώρηση οθόνης αφής</string>
+    <string name="touchscreen_hovering_summary">Σας επιτρέπει να αιωρείτε πάνω από την οθόνη όπως ένα ποντίκι σε προγράμματα περιήγησης στο web, απομακρυσμένες επιφάνειες εργασίας, κλπ</string>
 </resources>

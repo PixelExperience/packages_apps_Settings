@@ -91,4 +91,8 @@
     <string name="refresh_rate_summary_90">90Hz / রিফ্রেশ রেট সকল ক্ষেত্রে 90Hz নির্ধারিত। ব্যাটারির ব্যবহার বাড়াবে</string>
     <string name="auto_refresh_rate">স্বয়ংক্রিয়</string>
     <!-- Battery light -->
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">উচ্চ স্পর্শ সংবেদনশীলতা</string>
+    <string name="high_touch_sensitivity_summary">টাচস্ক্রীন সংবেদনশীলতা বৃদ্ধি করুন যাতে গ্লাভস পরিহিত অবস্থায় ব্যবহার করা যেতে পারে</string>
+    <!-- Touchscreen hovering -->
 </resources>

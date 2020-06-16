@@ -92,4 +92,10 @@ Nende rakenduste märguanded võivad viibida."</string>
     <string name="auto_refresh_rate">Autom</string>
     <!-- Battery light -->
     <string name="battery_light_title">Laadimise ajal lülita laadimistuli sisse</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Kõrge puutetundlikus</string>
+    <string name="high_touch_sensitivity_summary">Suurenda puuteekraani tundlikust, et saaksid seda kasutada kindaid kandes</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Puuteekraani hõljumine</string>
+    <string name="touchscreen_hovering_summary">Lubab hõljuda ekraani kohal nagu hiirega veebilehitsejas, kaugtöölaual jne</string>
 </resources>

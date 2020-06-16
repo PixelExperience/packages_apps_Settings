@@ -92,4 +92,10 @@ Obavijesti za te aplikacije mogu kasniti."</string>
     <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
     <string name="battery_light_title">Uključite svijetlo prilikom punjenja</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Visoka osjetljivost na dodir</string>
+    <string name="high_touch_sensitivity_summary">Povećaj osjetljivost na dodir tako da se mogu koristiti rukavice</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Lebdenje zaslonom</string>
+    <string name="touchscreen_hovering_summary">Dopušta vam da lebdite zaslonom kao miš u web pretraživaču, udaljenom desktopu, itd</string>
 </resources>

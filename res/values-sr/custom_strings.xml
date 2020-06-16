@@ -92,4 +92,10 @@
     <string name="auto_refresh_rate">Аутоматски</string>
     <!-- Battery light -->
     <string name="battery_light_title">Укључи светло када се пуни</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Велика осетљивост на додир</string>
+    <string name="high_touch_sensitivity_summary">Повећава осетљивост екрана ради коришћења уређаја у рукавицама.</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Задржавање прста</string>
+    <string name="touchscreen_hovering_summary">Дозвољава ти да лебдиш екраном као миш у веб претраживачу, удаљеном десктопу, итд</string>
 </resources>

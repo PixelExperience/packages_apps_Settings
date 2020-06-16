@@ -92,4 +92,10 @@ Obvestila za te aplikacije bodo morda zakasnjena."</string>
     <string name="auto_refresh_rate">Samodejno</string>
     <!-- Battery light -->
     <string name="battery_light_title">Vklopi lučko ob polnjenju</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Visoka občutljivost dotika</string>
+    <string name="high_touch_sensitivity_summary">Povečaj občutljivost dotika, tako da ga lahko uporabite, ko nosite rokavice</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Prehod zaslona na dotik</string>
+    <string name="touchscreen_hovering_summary">Dovoli vam prehod nad zaslonom, kot miška v spletnih brskalnikih, oddaljenih namizjih itd.</string>
 </resources>

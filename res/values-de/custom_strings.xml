@@ -92,4 +92,10 @@ Benachrichtigungen werden für die entsprechenden Apps eventuell verzögert ange
     <string name="auto_refresh_rate">Automatisch</string>
     <!-- Battery light -->
     <string name="battery_light_title">Licht beim Laden aktivieren</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Hohe Touch-Empfindlichkeit</string>
+    <string name="high_touch_sensitivity_summary">Touch-Empfindlichkeit erhöhen, um den Touchscreen auch mit Handschuhen bedienen zu können</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Touchscreen als Maus verwenden</string>
+    <string name="touchscreen_hovering_summary">Erlaubt es, den über dem Touchscreen schwebenden Finger im Browser, Remote Desktop usw. als Mauszeiger zu verwenden.</string>
 </resources>

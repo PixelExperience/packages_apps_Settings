@@ -92,4 +92,10 @@
     <string name="auto_refresh_rate">Automático</string>
     <!-- Battery light -->
     <string name="battery_light_title">Acenda a luz ao carregar</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Alta sensibilidade</string>
+    <string name="high_touch_sensitivity_summary">Aumentar a sensibilidade do ecrã para ser manuseado quando estiver a usar luvas</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Flutuar sobre o ecrã</string>
+    <string name="touchscreen_hovering_summary">Permite que flutue o dedo sobre o ecrã como um rato nos navegadores de internet, áreas de trabalho remotas, etc</string>
 </resources>

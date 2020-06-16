@@ -92,4 +92,10 @@
     <string name="auto_refresh_rate">Авто</string>
     <!-- Battery light -->
     <string name="battery_light_title">Включить световой индикатор во время зарядки</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Режим перчаток</string>
+    <string name="high_touch_sensitivity_summary">Увеличить чувствительность экрана для возможности работы в перчатках</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Наведение пальца</string>
+    <string name="touchscreen_hovering_summary">Распознавать приближение пальца к экрану для событий наведения курсора в браузере или других приложениях</string>
 </resources>

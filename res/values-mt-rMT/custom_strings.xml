@@ -92,4 +92,6 @@ In-notifiki jistgħu jittardjaw għal dawn l-applikazzjonijiet."</string>
     <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
     <string name="battery_light_title">Ixgħel id-dawl waqt li qed tiċċarġja</string>
+    <!-- High touch sensitivity -->
+    <!-- Touchscreen hovering -->
 </resources>

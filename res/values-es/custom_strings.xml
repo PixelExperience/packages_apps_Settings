@@ -92,4 +92,10 @@ Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."
     <string name="auto_refresh_rate">Automático</string>
     <!-- Battery light -->
     <string name="battery_light_title">Encender la luz mientras está cargando</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Alta sensibilidad táctil</string>
+    <string name="high_touch_sensitivity_summary">Incrementar la sensibilidad del panel táctil para que pueda usarse llevando guantes</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Pantalla táctil deslizante</string>
+    <string name="touchscreen_hovering_summary">Te permitirá deslizar por la pantalla como un ratón en navegadores, escritorios remotos, etc.</string>
 </resources>
