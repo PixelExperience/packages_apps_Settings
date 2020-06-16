@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Рядок стану</string>
     <string name="status_bar_quick_qs_pulldown_title">Швидкий доступ</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Лівий край рядка панелі стану при опусканні вниз відкриває Швидкі Налаштування</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Правий край рядка панелі стану при опусканні вниз відкриває Швидкі Налаштування</string>
     <string name="status_bar_quick_qs_pulldown_off">Вимкнено</string>
     <string name="status_bar_quick_qs_pulldown_left">Зліва</string>
     <string name="status_bar_quick_qs_pulldown_right">Справа</string>

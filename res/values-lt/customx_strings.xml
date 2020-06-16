@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Būsenos juosta</string>
     <string name="status_bar_quick_qs_pulldown_title">Greita prieiga</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Kairysis būsenos juostos kraštas nustumia žemyn greitus nustatymus</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Dešinysis būsenos juostos kraštas nustumia žemyn greitus nustatymus</string>
     <string name="status_bar_quick_qs_pulldown_off">Išjungti</string>
     <string name="status_bar_quick_qs_pulldown_left">Kairėn</string>
     <string name="status_bar_quick_qs_pulldown_right">Dešinėn</string>

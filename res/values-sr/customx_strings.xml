@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Статусна трака</string>
     <string name="status_bar_quick_qs_pulldown_title">Брзи приступ</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Лева ивица статусне траке повлачи Брза Подешавања</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Десна ивица статусне траке повлачи Брза Подешавања</string>
     <string name="status_bar_quick_qs_pulldown_off">Искључено</string>
     <string name="status_bar_quick_qs_pulldown_left">Лево</string>
     <string name="status_bar_quick_qs_pulldown_right">Десно</string>
@@ -161,6 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Прилагодите осветљеност из брзих подешавања.</string>
     <string name="status_bar_brightness_slider_auto_title">Аутоматска осветљеност</string>
     <string name="status_bar_brightness_slider_auto_summary">Приказује дугме за аутоматско прилагођавање осветљености поред клизача.</string>
+    <string name="status_bar_brightness_slider_show_never">Никада не приказуј</string>
+    <string name="status_bar_brightness_slider_show_expanded">Прикажи када је проширено</string>
+    <string name="status_bar_brightness_slider_show_always">Стално прикажи</string>
     <string name="status_bar_toggle_brightness">Управљање осветљеношћу</string>
     <string name="status_bar_toggle_brightness_summary">Прилагодите осветљеност померањем прста по статусној траци.</string>
     <!-- Status bar - Network Traffic -->
@@ -168,6 +173,8 @@
     <string name="network_traffic_settings_summary">Прикажи тренутни проток мрежног саобраћаја у статусној траци</string>
     <string name="network_traffic_mode_title">Режим приказа</string>
     <string name="network_traffic_mode_disable">Онемогућено</string>
+    <string name="network_traffic_mode_status_bar">Статусна трака</string>
+    <string name="network_traffic_mode_qs">Брза подешавања</string>
     <string name="network_traffic_autohide">Аутоматски сакриј</string>
     <string name="network_traffic_autohide_summary">Сакриј контролу протока у одсуству активности</string>
     <string name="network_traffic_units_title">Мерне јединице протока</string>
@@ -276,6 +283,12 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Сакри пилулу навигационог бара.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Мобилни подаци</string>
+    <string name="data_usage_app_restrict_data_summary">Укључи употребу мобилних података</string>
+    <string name="data_usage_app_restrict_vpn">ВПН подаци</string>
+    <string name="data_usage_app_restrict_vpn_summary">Дозволи употребу података преко ВПН-а</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Прозирна позадина обавештења</string>
     <!-- Search keywords -->
+    <string name="keywords_notification_log">Обавештења,белешке обавештења</string>
 </resources>

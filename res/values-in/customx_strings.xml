@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_quick_qs_pulldown_title">Keruntuhan cepat</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Menarik tepi kiri dari bilah status untuk Setelan Cepat</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Menarik tepi kanan dari status bar untuk Setelan Cepat</string>
     <string name="status_bar_quick_qs_pulldown_off">Mati</string>
     <string name="status_bar_quick_qs_pulldown_left">Kiri</string>
     <string name="status_bar_quick_qs_pulldown_right">Kanan</string>

@@ -124,8 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Pasek statusu</string>
     <string name="status_bar_quick_qs_pulldown_title">Szybkie rozwijanie</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Lewa krawędź ekranu rozwija Szybkie Ustawienia</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Prawa krawędź ekranu rozwija Szybkie Ustawienia</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Lewa krawędź ekranu rozwija Szybkie ustawienia</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Prawa krawędź ekranu rozwija Szybkie ustawienia</string>
     <string name="status_bar_quick_qs_pulldown_off">Wył</string>
     <string name="status_bar_quick_qs_pulldown_left">Po lewej</string>
     <string name="status_bar_quick_qs_pulldown_right">Po prawej</string>

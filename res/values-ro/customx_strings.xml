@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Bară de stare</string>
     <string name="status_bar_quick_qs_pulldown_title">Derulare în jos rapidă</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">La tragerea în jos a barei de stare din partea stângă se deschid Setările Rapide</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">La tragerea în jos a barei de stare din partea dreaptă se deschid Setările Rapide</string>
     <string name="status_bar_quick_qs_pulldown_off">Dezactivat</string>
     <string name="status_bar_quick_qs_pulldown_left">Stânga</string>
     <string name="status_bar_quick_qs_pulldown_right">Dreapta</string>

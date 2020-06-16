@@ -123,6 +123,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">상태 표시줄</string>
     <string name="status_bar_quick_qs_pulldown_title">빠르게 내리기</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">상태 표시줄의 왼쪽된 가장자리 빠른 설정 내리기</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">상태 표시줄의 오른쪽 모서리를 끌어 내려 빠른 설정 보기</string>
     <string name="status_bar_quick_qs_pulldown_off">꺼짐</string>
     <string name="status_bar_quick_qs_pulldown_left">왼쪽</string>
     <string name="status_bar_quick_qs_pulldown_right">오른쪽</string>

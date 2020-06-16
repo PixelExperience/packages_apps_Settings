@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">状态栏</string>
     <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">状态栏左侧下拉打开快速设置</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">状态栏右侧下拉打开快速设置</string>
     <string name="status_bar_quick_qs_pulldown_off">关闭</string>
     <string name="status_bar_quick_qs_pulldown_left">左侧</string>
     <string name="status_bar_quick_qs_pulldown_right">右侧</string>
