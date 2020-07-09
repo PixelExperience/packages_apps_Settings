@@ -98,4 +98,5 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Ambang jari di layar sentuh</string>
     <string name="touchscreen_hovering_summary">Mengizinkan Anda mengambang jari di atas layar seperti menggunakan tetikus dalam peramban web, destop jarak jauh, dll</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

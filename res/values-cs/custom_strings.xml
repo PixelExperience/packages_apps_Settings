@@ -94,8 +94,9 @@ Oznámení z těchto aplikací se mohou zobrazovat se zpožděním."</string>
     <string name="battery_light_title">Zapnout kontrolku baterie při nabíjení</string>
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Vysoká citlivost dotyku</string>
-    <string name="high_touch_sensitivity_summary">Zvýšení citlivosti dotykové vrstvy, což umožňuje použít rukavice</string>
+    <string name="high_touch_sensitivity_summary">Zvýšení citlivosti dotykové vrstvy, což umožňuje používání v rukavicích</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Detekce nad obrazovkou</string>
     <string name="touchscreen_hovering_summary">Umožňuje pohybovat se jakoby nad obsahem obrazovky podobně, jako když myší najedete na nějaký ovládací prvek</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

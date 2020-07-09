@@ -31,4 +31,5 @@
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Iwwerschwiewe vum Touchscreen</string>
     <string name="touchscreen_hovering_summary">Erméiglecht et, mam Fanger iwwer dem Schierm ze schwieren an den Zeiger wéi mat enger Maus ze beweegen</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

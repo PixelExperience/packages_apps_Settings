@@ -75,4 +75,5 @@
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Hofran sgrin gyffwrdd</string>
     <string name="touchscreen_hovering_summary">Mae\'n dy ganiatáu i hofran ar y sgrin fel defnyddio llygoden mewn porwyr, byrddau gwaith pell, ayyb</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

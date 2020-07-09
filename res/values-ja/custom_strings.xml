@@ -98,4 +98,5 @@
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">タッチ画面のホバリング</string>
     <string name="touchscreen_hovering_summary">ウェブブラウザやリモードデスクトップなどでマウスのようにホバリングできるようにする</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

@@ -89,4 +89,5 @@ Meldingen kunnen worden vertraagd voor deze apps."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Zweven boven scherm</string>
     <string name="touchscreen_hovering_summary">Met uw vinger boven het zwerm zweven, zoals een muis in browsers, bureaublad op afstand, etc.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

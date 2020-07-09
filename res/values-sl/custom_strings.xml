@@ -98,4 +98,5 @@ Obvestila za te aplikacije bodo morda zakasnjena."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Prehod zaslona na dotik</string>
     <string name="touchscreen_hovering_summary">Dovoli vam prehod nad zaslonom, kot miška v spletnih brskalnikih, oddaljenih namizjih itd.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

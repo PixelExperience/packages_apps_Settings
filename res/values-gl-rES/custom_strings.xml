@@ -90,4 +90,5 @@
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Pantalla táctil deslizante</string>
     <string name="touchscreen_hovering_summary">Permítelle utilizar o dedo coma un rato ao deslizalo en navegadores web, escritorios remotos, etc.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

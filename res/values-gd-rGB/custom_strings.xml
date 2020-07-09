@@ -64,4 +64,5 @@
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Fantainn os cionn na sgrìn</string>
     <string name="touchscreen_hovering_summary">Bheir seo comas dhut fantainn os cionn na sgrìn, mar luchag ann am brabhsairean-lìn, desktops cèin is msaa</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

@@ -97,4 +97,5 @@ Notifikationer fra disse apps kan være forsinkede."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Berøringsfølsom skærm-svævning</string>
     <string name="touchscreen_hovering_summary">Tillader dig at holde fingeren over skærmen, som en mus i netlæsere, på fjernskriveborde, osv.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

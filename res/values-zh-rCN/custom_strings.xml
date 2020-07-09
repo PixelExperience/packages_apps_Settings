@@ -86,7 +86,7 @@
     <string name="proximity_wake_summary">唤醒屏幕前检查距离传感器</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">屏幕刷新率</string>
-    <string name="refresh_rate_summary_auto">自动 / 一些内容的显示将被自动从60Hz提升到90Hz</string>
+    <string name="refresh_rate_summary_auto">自动 / 自动将某些内容的刷新率从60Hz提升到90Hz</string>
     <string name="refresh_rate_summary_60">60Hz / 所有的内容都将以60Hz的刷新率来显示</string>
     <string name="refresh_rate_summary_90">90Hz / 所有的内容都将以90Hz的刷新率来显示。这将增加电池使用量</string>
     <string name="auto_refresh_rate">自动</string>
@@ -98,4 +98,5 @@
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">悬空操作</string>
     <string name="touchscreen_hovering_summary">允许您将手指悬停在屏幕上作为浏览器、远程桌面等处的鼠标指针</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

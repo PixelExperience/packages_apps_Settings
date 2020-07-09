@@ -94,4 +94,5 @@ Moguće je da će obavještenja za te aplikacije kasniti."</string>
     <string name="battery_light_title">Uključi svijetlo prilikom punjenja</string>
     <!-- High touch sensitivity -->
     <!-- Touchscreen hovering -->
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

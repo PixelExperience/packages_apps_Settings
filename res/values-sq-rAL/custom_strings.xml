@@ -69,4 +69,5 @@ Njoftimet mund të vonohen për këto aplikacione."</string>
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Ndjesi e lartë e prekjes</string>
     <!-- Touchscreen hovering -->
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

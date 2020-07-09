@@ -88,4 +88,5 @@ Baliteke aplikazio horietan jakinarazpenak atzeratzea."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Pantailaren gainetik pasatu</string>
     <string name="touchscreen_hovering_summary">Sagua bailitzan pantailaren gainetik pasatzea ahalbidetzen dizu, nabigatzaileetan, urruneko mahaigainetan, eta abar</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

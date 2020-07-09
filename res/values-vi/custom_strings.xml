@@ -98,4 +98,5 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Di trên màn hình cảm ứng</string>
     <string name="touchscreen_hovering_summary">Cho phép bạn di trên màn hình như chuột trong trình duyệt web, điều khiển máy tính từ xa, v.v.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>
