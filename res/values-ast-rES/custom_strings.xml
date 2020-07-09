@@ -64,4 +64,5 @@
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Pantalla táctil eslizante</string>
     <string name="touchscreen_hovering_summary">Permite eslizase pela pantalla como un mur en navegadores, escritorios remotos, etc.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

@@ -98,4 +98,5 @@ Obavijesti za te aplikacije mogu kasniti."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Lebdenje zaslonom</string>
     <string name="touchscreen_hovering_summary">Dopušta vam da lebdite zaslonom kao miš u web pretraživaču, udaljenom desktopu, itd</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

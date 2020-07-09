@@ -98,4 +98,5 @@ Nende rakenduste märguanded võivad viibida."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Puuteekraani hõljumine</string>
     <string name="touchscreen_hovering_summary">Lubab hõljuda ekraani kohal nagu hiirega veebilehitsejas, kaugtöölaual jne</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

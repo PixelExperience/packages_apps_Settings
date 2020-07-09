@@ -91,4 +91,5 @@ Həmin tətbiqlərin bildirişləri gecikə bilər."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Toxunuşlu ekranda toxunmadan hərəkət</string>
     <string name="touchscreen_hovering_summary">Ekrana toxunmadan barmağınızı yaxınlaşdıraraq siçan (maus) kimi veb səyyahlarda, uzaq masaüstlərində və s. hərəkətinizi təmin edər</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

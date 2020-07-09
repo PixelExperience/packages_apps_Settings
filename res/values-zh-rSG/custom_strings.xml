@@ -98,4 +98,5 @@
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">懸浮操作</string>
     <string name="touchscreen_hovering_summary">允許您把手指懸停在螢幕上作為瀏覽器、遠程桌面等的滑鼠</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

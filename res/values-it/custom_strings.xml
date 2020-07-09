@@ -98,4 +98,5 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Touch a puntamento</string>
     <string name="touchscreen_hovering_summary">Consente di utilizzare il tocco come un mouse nei browser e nei desktop remoti</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

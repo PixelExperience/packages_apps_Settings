@@ -98,4 +98,5 @@ Benachrichtigungen werden für die entsprechenden Apps eventuell verzögert ange
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Touchscreen als Maus verwenden</string>
     <string name="touchscreen_hovering_summary">Erlaubt es, den über dem Touchscreen schwebenden Finger im Browser, Remote Desktop usw. als Mauszeiger zu verwenden.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

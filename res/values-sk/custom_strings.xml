@@ -98,4 +98,5 @@ Upozornenia z týchto aplikácií môžu byť oneskorené."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Pohyb nad dotykovou obrazovkou</string>
     <string name="touchscreen_hovering_summary">Pohybovať sa nad obrazovkou podobne ako myš vo webovom prehliadači, vzdielaneých plochý, atď</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

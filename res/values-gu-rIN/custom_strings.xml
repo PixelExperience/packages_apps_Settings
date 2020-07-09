@@ -82,4 +82,5 @@
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">ટચસ્ક્રીન ભમવું</string>
     <string name="touchscreen_hovering_summary">વેબ બ્રાઉઝરો, રિમોટ ડેસ્કટૉપ વગેરેમાં માઉસ હોય તે પ્રમાણે તમને સ્ક્રીન પર ભમતાં રહેવાની છૂટ આપે છે</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

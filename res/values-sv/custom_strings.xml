@@ -85,4 +85,5 @@ Aviseringar från dessa appar kan fördröjas."</string>
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Tryckskärm-hovring</string>
     <string name="touchscreen_hovering_summary">Låter dig hovra över skärmen som en mus i webbläsare, fjärrskrivbord, etc</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>

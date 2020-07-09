@@ -98,4 +98,5 @@ Előfordulhat, hogy az érintett alkalmazások értesítései késnek majd."</st
     <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Lebegő érintés</string>
     <string name="touchscreen_hovering_summary">Engedélyezi a lebegéssel való vezérlést, mint egy egérrel a böngészőknél, távoli asztaloknál, stb.</string>
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
 </resources>
