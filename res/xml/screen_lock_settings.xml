@@ -54,4 +54,11 @@
         android:title="@string/unlock_scramble_pin_layout_title"
         android:summary="@string/unlock_scramble_pin_layout_summary" />
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="fod_gesture"
+        android:title="@string/fod_gesture_title"
+        android:summary="@string/fod_gesture_summary"
+        android:defaultValue="true"
+        settings:controller="com.android.settings.security.FodGesturePreferenceController" />
+
 </PreferenceScreen>
