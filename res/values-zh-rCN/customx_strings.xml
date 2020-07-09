@@ -164,6 +164,7 @@
     <string name="status_bar_brightness_slider_auto_title">自动调节亮度</string>
     <string name="status_bar_brightness_slider_auto_summary">在亮度滑块附近显示自动调节亮度开关</string>
     <string name="status_bar_brightness_slider_show_never">始终不显示</string>
+    <string name="status_bar_brightness_slider_show_expanded">展开时显示</string>
     <string name="status_bar_brightness_slider_show_always">始终显示</string>
     <string name="status_bar_toggle_brightness">亮度控制</string>
     <string name="status_bar_toggle_brightness_summary">通过在状态栏上滑动调整亮度</string>
@@ -195,7 +196,7 @@
     <string name="qs_tile_animation_duration_title">瓷块动画持续时间</string>
     <string name="qs_tile_animation_interpolator_title">瓷砖动画插值器</string>
     <string name="qs_tile_animation_style_off">无动画</string>
-    <string name="qs_tile_animation_style_flip">空翻</string>
+    <string name="qs_tile_animation_style_flip">翻转</string>
     <string name="qs_tile_animation_style_rotate">旋转</string>
     <string name="qs_tile_animation_duration_low">慢</string>
     <string name="qs_tile_animation_duration_default">默认</string>
@@ -291,4 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">半透明通知栏背景</string>
     <!-- Search keywords -->
+    <string name="keywords_notification_log">通知，通知日志</string>
 </resources>

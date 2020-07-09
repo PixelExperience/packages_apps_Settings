@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Stavový riadok</string>
     <string name="status_bar_quick_qs_pulldown_title">Rýchle vysunutie</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Ľavá strana stavového riadku vysunie rýchle nastavenia</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Pravá strana stavového riadku vysunie rýchle nastavenia</string>
     <string name="status_bar_quick_qs_pulldown_off">Vyp.</string>
     <string name="status_bar_quick_qs_pulldown_left">vľavo</string>
     <string name="status_bar_quick_qs_pulldown_right">vpravo</string>
@@ -161,6 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Nastavenie jasu z panela rýchlych nastavení</string>
     <string name="status_bar_brightness_slider_auto_title">Automatický jas</string>
     <string name="status_bar_brightness_slider_auto_summary">Zobraziť prepínač automatického jasu v blízkosti posuvníka</string>
+    <string name="status_bar_brightness_slider_show_never">Nikdy nezobrazovať</string>
+    <string name="status_bar_brightness_slider_show_expanded">Zobraziť po rozbalení</string>
+    <string name="status_bar_brightness_slider_show_always">Vždy zobraziť</string>
     <string name="status_bar_toggle_brightness">Ovládanie jasu</string>
     <string name="status_bar_toggle_brightness_summary">Nastaviť jas posúvaním po stavovom riadku</string>
     <!-- Status bar - Network Traffic -->
@@ -287,4 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Priesvitné pozadie oznámenia</string>
     <!-- Search keywords -->
+    <string name="keywords_notification_log">oznámenia, záznam oznámení</string>
 </resources>

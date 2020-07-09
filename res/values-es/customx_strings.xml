@@ -225,7 +225,7 @@
     <string name="navigation_bar_compact_layout_title">Diseño compacto</string>
     <string name="navigation_bar_compact_layout_summary">Usar diseño compacto en la barra de navegación</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimizar su pantalla basada en la hora del día y las condiciones ambientales para mejorar la legibilidad y reducir la fatiga visual</string>
+    <string name="live_display_summary">Optimiza tu pantalla basado en la hora del día y las condiciones ambientales para mejorar la legibilidad y reducir la fatiga visual</string>
     <string name="live_display_mode">Modo de visualización</string>
     <string name="live_display_color_temperature_title">Temperatura del color</string>
     <string name="live_display_color_temperature_summary">Día: <xliff:g id="day_temperature">%1$d</xliff:g>K Noche: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>

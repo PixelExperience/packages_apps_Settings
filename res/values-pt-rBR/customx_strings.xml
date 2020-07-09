@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Ocultar a pílula da barra de navegação.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Permitir o acesso a rede</string>
+    <string name="data_usage_app_restrict_all_summary">Permitir que o aplicativo acesse a rede</string>
     <string name="data_usage_app_restrict_data">Dados móveis</string>
     <string name="data_usage_app_restrict_data_summary">Permitir o uso de dados móveis</string>
     <string name="data_usage_app_restrict_vpn">Dados VPN</string>

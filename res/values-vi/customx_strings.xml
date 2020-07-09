@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Thanh trạng thái</string>
     <string name="status_bar_quick_qs_pulldown_title">Kéo xuống nhanh</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Kéo cạnh trái của thanh trạng thái xuống để truy cập Cài đặt nhanh</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Kéo xuống cạnh phải thanh trạng thái để truy cập Cài đặt nhanh</string>
     <string name="status_bar_quick_qs_pulldown_off">Tắt</string>
     <string name="status_bar_quick_qs_pulldown_left">Trái</string>
     <string name="status_bar_quick_qs_pulldown_right">Phải</string>
@@ -161,6 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Điều chỉnh độ sáng từ Cài đặt nhanh</string>
     <string name="status_bar_brightness_slider_auto_title">Độ sáng tự động</string>
     <string name="status_bar_brightness_slider_auto_summary">Hiển thị bật/tắt độ sáng thích nghi gần thanh trượt</string>
+    <string name="status_bar_brightness_slider_show_never">Không bao giờ hiển thị</string>
+    <string name="status_bar_brightness_slider_show_expanded">Hiển thị khi mở rộng</string>
+    <string name="status_bar_brightness_slider_show_always">Luôn hiển thị</string>
     <string name="status_bar_toggle_brightness">Điều khiển độ sáng</string>
     <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt trên thanh trạng thái</string>
     <!-- Status bar - Network Traffic -->
@@ -287,4 +292,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Thông báo mờ nền</string>
     <!-- Search keywords -->
+    <string name="keywords_notification_log">thông báo, báo cáo thông báo</string>
 </resources>

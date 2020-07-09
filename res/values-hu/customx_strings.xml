@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Állapotsáv</string>
     <string name="status_bar_quick_qs_pulldown_title">Gyors lehúzás</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Gyorsbeállítások megjelenítése az állapotsor bal szélén lefelé húzással</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Gyorsbeállítások megjelenítése az állapotsor jobb szélén lefelé húzással</string>
     <string name="status_bar_quick_qs_pulldown_off">Ki</string>
     <string name="status_bar_quick_qs_pulldown_left">Bal</string>
     <string name="status_bar_quick_qs_pulldown_right">Jobb</string>
