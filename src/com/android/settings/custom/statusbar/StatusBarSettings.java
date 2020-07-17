@@ -136,6 +136,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarQsAnimationTileInterpolator =
                 (SystemSettingListPreference) mStatusBarQsAnimationCategory.findPreference(STATUS_BAR_QUICK_QS_ANIMATION_TILE_INTERPOLATOR);
         mStatusBarQsAnimationTileInterpolator.setOnPreferenceChangeListener(this);
+
+        updateQsAnimationDependents(Integer.parseInt(mStatusBarQsAnimationStyle.getValue()));
     }
 
     @Override
