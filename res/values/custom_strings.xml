@@ -113,4 +113,9 @@ Notifications may be delayed for these apps."</string>
     <string name="fod_gesture_title">Screen off fingerprint</string>
     <string name="fod_gesture_summary">Allows unlocking the device without having to wake up the screen first</string>
 
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+    <string name="refresh_rate_auto">Automatic</string>
+    <string name="refresh_rate_60">60Hz (saves battery)</string>
+
 </resources>
