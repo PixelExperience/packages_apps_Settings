@@ -109,4 +109,9 @@ Notifications may be delayed for these apps."</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Saved Earbuds</string>
 
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Screen refresh rate</string>
+    <string name="refresh_rate_auto">Automatic</string>
+    <string name="refresh_rate_60">60Hz (saves battery)</string>
+
 </resources>
