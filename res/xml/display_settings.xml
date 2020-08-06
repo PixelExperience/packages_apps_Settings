@@ -117,6 +117,12 @@
         android:fragment="com.android.settings.display.ScreenZoomSettings"
         settings:searchable="false"/>
 
+    <ListPreference
+        android:key="refresh_rate"
+        android:title="@string/refresh_rate_title"
+        android:summary="%s"
+        settings:controller="com.android.settings.display.RefreshRatePreferenceController" />
+
     <com.android.settings.custom.preference.SystemSettingListPreference
         android:key="display_cutout_hidden"
         android:title="@string/display_cutout_mode_title"
