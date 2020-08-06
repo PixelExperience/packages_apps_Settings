@@ -44,7 +44,6 @@ import com.android.settings.Utils;
 import com.android.settings.dashboard.RestrictedDashboardFragment;
 import com.android.settings.development.autofill.AutofillLoggingLevelPreferenceController;
 import com.android.settings.development.autofill.AutofillResetOptionsPreferenceController;
-import com.android.settings.development.RefreshRatePreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
@@ -497,7 +496,6 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new AutofillResetOptionsPreferenceController(context));
         controllers.add(new TrustAgentsExtendUnlockPreferenceController(context));
         controllers.add(new TrustLostLocksScreenPreferenceController(context));
-        controllers.add(new RefreshRatePreferenceController(context));
         return controllers;
     }
 
