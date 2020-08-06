@@ -80,6 +80,7 @@
         <item>8</item>
     </string-array>
 
+<<<<<<< HEAD   (6885c9 Settings: Screen off fod [2/2])
     <!-- Refresh rate -->
     <string-array name="refresh_rate_entries">
         <item>@string/auto_refresh_rate</item>
@@ -91,5 +92,279 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+=======
+    <!-- Per-app notification settings: Timeout period in which the app notifications are muted. These are shown in a list dialog. -->
+    <string-array name="app_notification_sound_timeout_entries" translatable="false">
+        <item>@string/app_notification_sound_timeout_value_none</item>
+        <item>@string/app_notification_sound_timeout_value_10_seconds</item>
+        <item>@string/app_notification_sound_timeout_value_30_seconds</item>
+        <item>@string/app_notification_sound_timeout_value_1_minute</item>
+        <item>@string/app_notification_sound_timeout_value_5_minutes</item>
+        <item>@string/app_notification_sound_timeout_value_15_minutes</item>
+        <item>@string/app_notification_sound_timeout_value_30_minutes</item>
+    </string-array>
+
+    <!-- Do not translate. -->
+    <string-array name="app_notification_sound_timeout_values" translatable="false">
+        <item>0</item>
+        <item>10000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>900000</item>
+        <item>1800000</item>
+    </string-array>
+
+    <!-- Torch long press power button -->
+    <string-array name="torch_long_press_power_timeout_entries" translatable="false">
+        <item>@string/torch_long_press_power_timeout_never</item>
+        <item>@string/torch_long_press_power_timeout_1min</item>
+        <item>@string/torch_long_press_power_timeout_2min</item>
+        <item>@string/torch_long_press_power_timeout_5min</item>
+        <item>@string/torch_long_press_power_timeout_10min</item>
+    </string-array>
+    <string-array name="torch_long_press_power_timeout_values" translatable="false">
+        <item>0</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+    </string-array>
+
+    <!-- Volume key cursor control -->
+    <string-array name="volbtn_cursor_control_entries" translatable="false">
+        <item>@string/volbtn_cursor_control_off</item>
+        <item>@string/volbtn_cursor_control_on</item>
+        <item>@string/volbtn_cursor_control_on_reverse</item>
+    </string-array>
+
+    <string-array name="volbtn_cursor_control_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Status bar -->
+    <string-array name="status_bar_clock_position_entries" translatable="false">
+        <item>@string/status_bar_clock_position_right</item>
+        <item>@string/status_bar_clock_position_center</item>
+        <item>@string/status_bar_clock_position_left</item>
+    </string-array>
+
+    <string-array name="status_bar_clock_position_entries_rtl" translatable="false">
+        <item>@string/status_bar_clock_position_left</item>
+        <item>@string/status_bar_clock_position_center</item>
+        <item>@string/status_bar_clock_position_right</item>
+    </string-array>
+
+    <string-array name="status_bar_clock_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="status_bar_clock_position_entries_notch" translatable="false">
+        <item>@string/status_bar_clock_position_right</item>
+        <item>@string/status_bar_clock_position_left</item>
+    </string-array>
+
+    <string-array name="status_bar_clock_position_entries_notch_rtl" translatable="false">
+        <item>@string/status_bar_clock_position_left</item>
+        <item>@string/status_bar_clock_position_right</item>
+    </string-array>
+
+    <string-array name="status_bar_clock_position_values_notch" translatable="false">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="status_bar_am_pm_entries" translatable="false">
+        <item>@string/status_bar_am_pm_normal</item>
+        <item>@string/status_bar_am_pm_small</item>
+        <item>@string/status_bar_am_pm_hidden</item>
+    </string-array>
+
+    <string-array name="status_bar_am_pm_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_style_entries" translatable="false">
+        <item>@string/status_bar_battery_style_icon_portrait</item>
+        <item>@string/status_bar_battery_style_circle</item>
+        <item>@string/status_bar_battery_style_text</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_entries" translatable="false">
+        <item>@string/status_bar_battery_percentage_default</item>
+        <item>@string/status_bar_battery_percentage_text_inside</item>
+        <item>@string/status_bar_battery_percentage_text_next</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Quick pulldown -->
+    <string-array name="status_bar_quick_qs_pulldown_entries" translatable="false">
+        <item>@string/status_bar_quick_qs_pulldown_off</item>
+        <item>@string/status_bar_quick_qs_pulldown_right</item>
+        <item>@string/status_bar_quick_qs_pulldown_left</item>
+    </string-array>
+    <string-array name="status_bar_quick_qs_pulldown_entries_rtl" translatable="false">
+        <item>@string/status_bar_quick_qs_pulldown_off</item>
+        <item>@string/status_bar_quick_qs_pulldown_left</item>
+        <item>@string/status_bar_quick_qs_pulldown_right</item>
+    </string-array>
+    <string-array name="status_bar_quick_qs_pulldown_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Network Traffic -->
+    <string-array name="network_traffic_mode_entries" translatable="false">
+        <item>@string/network_traffic_mode_disable</item>
+        <item>@string/network_traffic_mode_status_bar</item>
+        <item>@string/network_traffic_mode_qs</item>
+    </string-array>
+
+    <string-array name="network_traffic_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="network_traffic_mode_entries_notch" translatable="false">
+        <item>@string/network_traffic_mode_disable</item>
+        <item>@string/network_traffic_mode_qs</item>
+    </string-array>
+
+    <string-array name="network_traffic_mode_values_notch" translatable="false">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="network_traffic_units_entries" translatable="false">
+        <item>@string/network_traffic_units_bytes</item>
+        <item>@string/network_traffic_units_bits</item>
+    </string-array>
+
+    <string-array name="network_traffic_units_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- QS customization -->
+    <string-array name="qs_rows_portrait_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="qs_rows_landscape_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="qs_columns_portrait_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="qs_columns_landscape_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <!-- Tiles animation style -->
+    <string-array name="qs_tile_animation_style_entries" translatable="false">
+        <item>@string/qs_tile_animation_style_off</item>
+        <item>@string/qs_tile_animation_style_flip</item>
+        <item>@string/qs_tile_animation_style_rotate</item>
+    </string-array>
+
+    <string-array name="qs_tile_animation_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Tiles animation duration -->
+    <string-array name="qs_tile_animation_duration_entries" translatable="false">
+        <item>@string/qs_tile_animation_duration_low</item>
+        <item>@string/qs_tile_animation_duration_default</item>
+        <item>@string/qs_tile_animation_duration_fast</item>
+    </string-array>
+
+    <string-array name="qs_tile_animation_duration_values" translatable="false">
+        <item>2500</item>
+        <item>2000</item>
+        <item>1500</item>
+    </string-array>
+
+    <!-- Tiles animation interpolator -->
+    <string-array name="qs_tile_animation_interpolator_entries" translatable="false">
+        <item>@string/qs_tile_animation_interpolator_linearInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_accelerateInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_decelerateInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_accelerateDecelerateInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_bounceInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_overshootInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_anticipateInterpolator</item>
+        <item>@string/qs_tile_animation_interpolator_anticipateOvershootInterpolator</item>
+    </string-array>
+
+    <string-array name="qs_tile_animation_interpolator_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <!-- Notch behavior -->
+    <string-array name="display_cutout_mode_entries" translatable="false">
+        <item>@string/display_cutout_mode_normal</item>
+        <item>@string/display_cutout_mode_hidden</item>
+    </string-array>
+    <string-array name="display_cutout_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- Statusbar brightness -->
+    <string-array name="status_bar_brightness_slider_entries" translatable="false">
+        <item>@string/status_bar_brightness_slider_show_never</item>
+        <item>@string/status_bar_brightness_slider_show_expanded</item>
+        <item>@string/status_bar_brightness_slider_show_always</item>
+    </string-array>
+
+    <string-array name="status_bar_brightness_slider_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+>>>>>>> CHANGE (c7f6a2 Revert "Settings: Add refresh rate setting [2/2]")
 
 </resources>
