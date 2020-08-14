@@ -37,7 +37,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localize o sensor de impressões digitais na lateral esquerda do seu tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localize o sensor de impressões digitais na lateral direita do seu tablet.</string>
     <!-- Generic stuff used everywhere -->
-    <string name="reset">Repor</string>
+    <string name="reset">Restaurar</string>
     <!-- Buttons -->
     <string name="button_pref_title">Botões</string>
     <string name="hardware_keys_home_key_title">Botão Página Inicial</string>
@@ -84,12 +84,6 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Impedir que o ecrã se ligue acidentalmente</string>
     <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar o ecrã</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Taxa de atualização do ecrã</string>
-    <string name="refresh_rate_summary_auto">Automático / Aumenta automaticamente a taxa de atualização de 60 para 90Hz para alguns conteúdos</string>
-    <string name="refresh_rate_summary_60">60Hz / Taxa de atualização bloqueada em 60Hz para todos os conteúdos</string>
-    <string name="refresh_rate_summary_90">90Hz / Taxa de atualização bloqueada em 90Hz para todos os conteúdos. Maior uso de bateria</string>
-    <string name="auto_refresh_rate">Automático</string>
     <!-- Battery light -->
     <string name="battery_light_title">Acenda a luz ao carregar</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,12 @@
     <string name="touchscreen_hovering_title">Flutuar sobre o ecrã</string>
     <string name="touchscreen_hovering_summary">Permite que flutue o dedo sobre o ecrã como um rato nos navegadores de internet, áreas de trabalho remotas, etc</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Auriculares Bluetooth guardados</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Desbloquear com impressão digital quando o ecrã estiver desligado</string>
+    <string name="fod_gesture_summary">Permite desbloquear o diapositivo sem ativar o ecrã</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Taxa de atualização do ecrã</string>
+    <string name="refresh_rate_auto">Automático</string>
+    <string name="refresh_rate_60">60 Hz (poupa bateria)</string>
 </resources>

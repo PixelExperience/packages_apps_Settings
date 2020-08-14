@@ -76,11 +76,12 @@
     <string name="disable_navkeys_title">තිරය මත nav bar සක්‍රීය කරන්න</string>
     <string name="disable_navkeys_summary">තිරය මත nav bar සක්‍රීය කර දෘඪාංගමය යතුරු අක්‍රීය කරන්න</string>
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">ඉහළ ස්පර්ශ සංවේදිතාව</string>
     <string name="high_touch_sensitivity_summary">ස්පර්ශ තීරයේ සංවේදීතාව වැඩිකරන්න, එබැවින් අත්මේස් පළඳා ඇතිවිට එය භාවිතාකලහැකිය</string>
     <!-- Touchscreen hovering -->
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
 </resources>

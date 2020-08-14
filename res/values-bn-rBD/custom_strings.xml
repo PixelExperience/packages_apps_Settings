@@ -84,16 +84,13 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">দুর্ঘটনাবশত স্ক্রীন জেগেউঠা প্রতিরোধ করুন</string>
     <string name="proximity_wake_summary">স্ক্রীন জেগে উঠার আগে প্রক্সিমিটি সেন্সরটি চেক করুন</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">স্ক্রিন রিফ্রেশ রেট</string>
-    <string name="refresh_rate_summary_auto">কিছু ক্ষেত্রে রিফ্রেশ রেট স্বয়ংক্রিয় / প্রয়োজন অনুসারে 60 থেকে 90Hz পর্যন্ত বাড়বে</string>
-    <string name="refresh_rate_summary_60">60Hz / রিফ্রেশ রেট সকল ক্ষেত্রে 60Hz নির্ধারিত</string>
-    <string name="refresh_rate_summary_90">90Hz / রিফ্রেশ রেট সকল ক্ষেত্রে 90Hz নির্ধারিত। ব্যাটারির ব্যবহার বাড়াবে</string>
-    <string name="auto_refresh_rate">স্বয়ংক্রিয়</string>
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">উচ্চ স্পর্শ সংবেদনশীলতা</string>
     <string name="high_touch_sensitivity_summary">টাচস্ক্রীন সংবেদনশীলতা বৃদ্ধি করুন যাতে গ্লাভস পরিহিত অবস্থায় ব্যবহার করা যেতে পারে</string>
     <!-- Touchscreen hovering -->
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">স্ক্রিন রিফ্রেশ রেট</string>
 </resources>

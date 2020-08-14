@@ -84,12 +84,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Cegah bangun yang tak disengaja</string>
     <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Rating penyegaran layar</string>
-    <string name="refresh_rate_summary_auto">Otomatis / Otomatis meningkatkan penyegaran layar dari 60 ke 90Hz untuk beberapa konten</string>
-    <string name="refresh_rate_summary_60">60Hz / Rating penyegaran dikunci pada 60Hz untuk semua konten</string>
-    <string name="refresh_rate_summary_90">90 Hz / Rating penyegaran dikunci pada 90Hz untuk semua konten. Meningkatkan penggunaan baterai</string>
-    <string name="auto_refresh_rate">Otomatis</string>
     <!-- Battery light -->
     <string name="battery_light_title">Nyalakan lampu saat mengisi daya</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,10 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="touchscreen_hovering_title">Ambang jari di layar sentuh</string>
     <string name="touchscreen_hovering_summary">Mengizinkan Anda mengambang jari di atas layar seperti menggunakan tetikus dalam peramban web, destop jarak jauh, dll</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Earbud tersimpan</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Buka kunci dengan sidik jari saat layar padam</string>
+    <string name="fod_gesture_summary">Izinkan membuka kunci tanpa harus mengaktifkan layar terlebih dahulu</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Rating penyegaran layar</string>
 </resources>

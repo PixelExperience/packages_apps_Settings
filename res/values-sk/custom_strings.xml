@@ -84,12 +84,6 @@ Upozornenia z týchto aplikácií môžu byť oneskorené."</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Zabrániť nechcenému prebudeniu</string>
     <string name="proximity_wake_summary">Pred prebudením obrazovky skontrolovať senzor priblíženia</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Obnovovacia frekvencia displeju</string>
-    <string name="refresh_rate_summary_auto">Automaticky / Pre určitý obsah sa zvýši obnovovacia frekvencia obrazovky z 60Hz na 90Hz</string>
-    <string name="refresh_rate_summary_60">60Hz / Pre všetok obsah je obnovovacia frekvencia obrazovky uzamknutá na 60Hz</string>
-    <string name="refresh_rate_summary_90">90Hz / Pre všetok obsah je obnovovacia frekvencia obrazovky uzamknutá na 90Hz. Zvýšená spotreba batérie</string>
-    <string name="auto_refresh_rate">Automaticky</string>
     <!-- Battery light -->
     <string name="battery_light_title">Rozsvieti pri nabíjaní</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,8 @@ Upozornenia z týchto aplikácií môžu byť oneskorené."</string>
     <string name="touchscreen_hovering_title">Pohyb nad dotykovou obrazovkou</string>
     <string name="touchscreen_hovering_summary">Pohybovať sa nad obrazovkou podobne ako myš vo webovom prehliadači, vzdielaneých plochý, atď</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Obnovovacia frekvencia displeju</string>
 </resources>

@@ -84,13 +84,6 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Αποτροπή τυχαίας ενεργοποίησης </string>
     <string name="proximity_wake_summary">Έλεγχος τον αισθητήρα εγγύτητας για την αφύπνιση της οθόνης</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Συχνότητα ανανέωσης οθόνης</string>
-    <string name="refresh_rate_summary_auto">Αυτόματη / αυτοματοποιημένη αύξηση της ταχύτατος ανανέωσης από 60 σε 90 Hz για ορισμένα περιεχόμενα </string>
-    <string name="refresh_rate_summary_60">60Hz / Ο Ρυθμός ανανέωσης κλείδωσε στα 60Hz για όλο το περιεχόμενο</string>
-    <string name="refresh_rate_summary_90">90Hz / Ο Ρυθμός ανανέωσης κλείδωσε στα 90Hz για όλο το περιεχόμενο.
-Αυξημένη χρήση μπαταρίας</string>
-    <string name="auto_refresh_rate">Αυτόματο</string>
     <!-- Battery light -->
     <string name="battery_light_title">Ενεργοποίησε το φωτισμό κατά τη φόρτιση</string>
     <!-- High touch sensitivity -->
@@ -100,4 +93,12 @@
     <string name="touchscreen_hovering_title">Αιώρηση οθόνης αφής</string>
     <string name="touchscreen_hovering_summary">Σας επιτρέπει να αιωρείτε πάνω από την οθόνη όπως ένα ποντίκι σε προγράμματα περιήγησης, απομακρυσμένες επιφάνειες εργασίας, κλπ</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Αποθηκευμένα ακουστικά</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Ξεκλείδωμα με αποτύπωμα όταν η οθόνη είναι απενεργοποιημένη</string>
+    <string name="fod_gesture_summary">Επιτρέπει το ξεκλείδωμα της συσκευής χωρίς να χρειάζεται να ενεργοποιήσετε πρώτα την οθόνη</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Συχνότητα ανανέωσης οθόνης</string>
+    <string name="refresh_rate_auto">Αυτόματα</string>
+    <string name="refresh_rate_60">60Hz (εξοικονομεί μπαταρία)</string>
 </resources>

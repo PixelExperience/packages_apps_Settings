@@ -84,12 +84,6 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">실수로 화면 켜기 방지</string>
     <string name="proximity_wake_summary">화면을 켜기 전에 근접 센서 확인</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">화면 재생 빈도</string>
-    <string name="refresh_rate_summary_auto">자동 / 자동으로 일부 콘텐츠의 재생 빈도를 60에서 90Hz로 높임</string>
-    <string name="refresh_rate_summary_60">60Hz / 재생 빈도가 모든 콘텐츠에 대해 60Hz로 고정됨</string>
-    <string name="refresh_rate_summary_90">90Hz / 재생 빈도가 모든 콘텐츠에 대해 90Hz로 고정됨. 배터리 사용량 증가</string>
-    <string name="auto_refresh_rate">자동</string>
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">터치 감도 높이기</string>
@@ -98,4 +92,7 @@
     <string name="touchscreen_hovering_title">터치스크린 호버링</string>
     <string name="touchscreen_hovering_summary">웹 브라우저나 원격 데스크톱과 같은 앱에서 마우스처럼 화면에 호버링하여 사용할 수 있습니다.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">화면 재생 빈도</string>
 </resources>

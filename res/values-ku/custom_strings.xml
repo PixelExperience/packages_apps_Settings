@@ -84,13 +84,6 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">ڕێگیری لە هەڵبوونی هەڵە</string>
     <string name="proximity_wake_summary">پێش و پاشی هەستەوەرەکە بپشکنە پێش کردنەوەی ڕوونما</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">ڕێژەی نوێبوونەوەی ڕوونما</string>
-    <string name="refresh_rate_summary_auto">خۆکاری/ خۆکارانە گۆڕینی ڕێژەی نوێبوونەوەی ڕوونما لە ٦٠ هێرتز بۆ ٩٠ هێرتز لەهەندێ ناوەڕۆکدا</string>
-    <string name="refresh_rate_summary_60">٦٠ هێرتز / نوێبوونەوەی ڕوونما جێگیرکراوە لە ,٦٠ هێرتز بۆ سەرجەم ناوەڕۆکەکان</string>
-    <string name="refresh_rate_summary_90">٩٠ هێرتز/ نوێبوونەوەی ڕوونما جێگیرکراوە لە ٩٠ هێرتز بۆ سەرجەم ناوەڕۆکەکان.
-ووزەی زیاتر بەکاردەبات</string>
-    <string name="auto_refresh_rate">خۆکاری</string>
     <!-- Battery light -->
     <string name="battery_light_title">هەڵبوونی ڕووناکی لەکاتی بارگاویکردنەوە</string>
     <!-- High touch sensitivity -->
@@ -100,4 +93,7 @@
     <string name="touchscreen_hovering_title">دەستلێدانی شاشە سوڕانەوە</string>
     <string name="touchscreen_hovering_summary">هەمیشە شاشەکە بسوڕێنەوە وەکو مشک لە وێبگەری ماڵپەر، ڕومێزی دور،هتد</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">ڕێژەی نوێبوونەوەی ڕوونما</string>
 </resources>

@@ -59,6 +59,7 @@
     <string name="camera_launch_title">Միացնել տեսախցիկը</string>
     <!-- Key backlight -->
     <string name="button_backlight_title">Լուսավորումը</string>
+    <string name="button_backlight_enabled">Լուսավորել կոճակները</string>
     <string name="backlight_timeout_unlimited">Չանջատել</string>
     <string name="backlight_summary_disabled">Անջատված է</string>
     <string name="backlight_summary_enabled">Միացված</string>
@@ -66,10 +67,13 @@
     <string name="disable_navkeys_title">Միացնել կառավարման վահանակը</string>
     <string name="disable_navkeys_summary">Միացրեք կառավարման վահանակը էկրանին և անջատեք սարքի կոճակները</string>
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
-    <string name="auto_refresh_rate">ինքնաշխատ</string>
     <!-- Battery light -->
     <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Հպման բարձր զգայունություն</string>
     <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Մատի սահում</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Պահված ականջակալներ</string>
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
 </resources>
