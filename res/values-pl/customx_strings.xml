@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Ukryj belkę nawigacji za pomocą gestów. </string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Zezwól na dostęp do sieci</string>
+    <string name="data_usage_app_restrict_all_summary">Zezwól aplikacji na dostęp do sieci</string>
     <string name="data_usage_app_restrict_data">Dane komórkowe</string>
     <string name="data_usage_app_restrict_data_summary">Włącz użycie danych komórkowych</string>
     <string name="data_usage_app_restrict_vpn">Dane VPN</string>
@@ -293,4 +295,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">Przezroczysty pasek powiadomień</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">powiadomienia, logi powiadomień</string>
+    <!-- Heads-up -->
 </resources>

@@ -84,6 +84,7 @@
     <string name="navigation_bar_home_long_press_title">홈을 길게 누를 때 작업</string>
     <string name="navigation_bar_home_double_tap_title">홈을 두 번 탬할 때 작업</string>
     <string name="navigation_bar_app_switch_long_press_title">최근 앱을 길게 누를 때 작업</string>
+    <string name="navigation_bar_edge_long_swipe_title">가장자리 스와이프 동작</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">재생 제어</string>
     <string name="volbtn_music_controls_summary">화면이 꺼진 상태에서 볼륨 키를 길게 눌러 음악 트랙 탐색</string>
@@ -162,6 +163,9 @@
     <string name="status_bar_brightness_slider_summary">빠른 설정에서 밝기 조절</string>
     <string name="status_bar_brightness_slider_auto_title">자동 밝기</string>
     <string name="status_bar_brightness_slider_auto_summary">슬라이더 옆쪽에 밝기 자동 조절 토글 표시</string>
+    <string name="status_bar_brightness_slider_show_never">절대 보여주지 않기</string>
+    <string name="status_bar_brightness_slider_show_expanded">펼치면 표시</string>
+    <string name="status_bar_brightness_slider_show_always">항상 표시</string>
     <string name="status_bar_toggle_brightness">밝기 조절</string>
     <string name="status_bar_toggle_brightness_summary">상태 표시줄을 슬라이드하여 화면 밝기 조절</string>
     <!-- Status bar - Network Traffic -->
@@ -272,8 +276,15 @@
     <string name="adj_intensity_title">명도</string>
     <string name="adj_contrast_title">대비</string>
     <!-- Back Gesture Height -->
+    <string name="back_height_low_label">완충됨</string>
+    <string name="back_height_high_label">바닥 면적</string>
+    <string name="back_options_dialog_title">생성 옵션 변경</string>
+    <string name="back_height_message">뒤로가기 제스처를 위해 터치 가능한 영역으로 사용되는 화면 높이입니다.</string>
     <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">탐색 막대 알약을 숨 깁니다.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">네트워크 액세스 허용</string>
+    <string name="data_usage_app_restrict_all_summary">애플리케이션이 네트워크에 액세스하도록 허용</string>
     <string name="data_usage_app_restrict_data">모바일 데이터</string>
     <string name="data_usage_app_restrict_data_summary">모바일 데이터를 사용합니다.</string>
     <string name="data_usage_app_restrict_vpn">VPN 데이터</string>
@@ -283,4 +294,6 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">반투명 알림 배경</string>
     <!-- Search keywords -->
+    <string name="keywords_notification_log">알림, 알림 로그</string>
+    <!-- Heads-up -->
 </resources>

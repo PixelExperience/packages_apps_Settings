@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">隱藏導航欄圖標</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">允許網路存取</string>
+    <string name="data_usage_app_restrict_all_summary">允許應用程式存取網路</string>
     <string name="data_usage_app_restrict_data">行動數據</string>
     <string name="data_usage_app_restrict_data_summary">啟用行動網路用量</string>
     <string name="data_usage_app_restrict_vpn">VPN 資料</string>
@@ -293,4 +295,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">半透明的通知背景</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">通知、通知紀錄</string>
+    <!-- Heads-up -->
 </resources>

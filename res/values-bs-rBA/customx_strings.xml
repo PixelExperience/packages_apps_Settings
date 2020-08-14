@@ -93,6 +93,7 @@
     <string name="volbtn_cursor_control_title">Upravljanje kursorom na tipkovnici</string>
     <string name="volbtn_cursor_control_off">Onemogućeno</string>
     <string name="volbtn_cursor_control_on">Tipka za glasnoću gore/dolje pomiče kursor lijevo/desno</string>
+    <string name="volbtn_cursor_control_on_reverse">Tipka za glasnoću gore/dolje pomiče kursor desno/lijevo</string>
     <string name="swap_volume_buttons_title">Preorijentacija</string>
     <string name="swap_volume_buttons_summary">Zamijeni tipke za glasnoću kada je ekran rotiran</string>
     <!-- Home key customization -->
@@ -123,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_quick_qs_pulldown_title">Brzo spuštanje</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Lijevi rub statusne trake povlači brze postavke.</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Desni rub statusne trake povlači brze postavke.</string>
     <string name="status_bar_quick_qs_pulldown_off">Isključen</string>
     <string name="status_bar_quick_qs_pulldown_left">Levo</string>
     <string name="status_bar_quick_qs_pulldown_right">Desno</string>
@@ -160,6 +163,9 @@
     <string name="status_bar_brightness_slider_summary">Podesite svjetlinu u Brzim postavkama</string>
     <string name="status_bar_brightness_slider_auto_title">Automatsko osvjetljenje</string>
     <string name="status_bar_brightness_slider_auto_summary">Pokažite preklopnik za prilagodljivu svjetlinu u blizini klizača</string>
+    <string name="status_bar_brightness_slider_show_never">Nikad ne pokazuj</string>
+    <string name="status_bar_brightness_slider_show_expanded">Prikaži kad je prošireno</string>
+    <string name="status_bar_brightness_slider_show_always">Prikaži uvijek</string>
     <string name="status_bar_toggle_brightness">Kontrola svjetline</string>
     <string name="status_bar_toggle_brightness_summary">Prilagodite svjetlinu klizanjem preko trake statusa</string>
     <!-- Status bar - Network Traffic -->
@@ -167,6 +173,8 @@
     <string name="network_traffic_settings_summary">Prikazuj trenutni mrežni saobraćaj u status baru</string>
     <string name="network_traffic_mode_title">Mod ekrana</string>
     <string name="network_traffic_mode_disable">Onemogućeno</string>
+    <string name="network_traffic_mode_status_bar">Status bar</string>
+    <string name="network_traffic_mode_qs">Brzo podešavanje</string>
     <string name="network_traffic_autohide">Automatski sakrij</string>
     <string name="network_traffic_autohide_summary">Ne prikazuj mrežni saobraćaj ako nema aktivnosti</string>
     <string name="network_traffic_units_title">Jedinica za merenje protoka</string>
@@ -275,6 +283,17 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Sakrij pilulu navigacione trake.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Dopusti pristup mreži</string>
+    <string name="data_usage_app_restrict_all_summary">Dopusti aplikaciji pristup mreži</string>
+    <string name="data_usage_app_restrict_data">Mobilni podaci</string>
+    <string name="data_usage_app_restrict_data_summary">Omogući korištenje mobilnih podataka</string>
+    <string name="data_usage_app_restrict_vpn">VPN podaci</string>
+    <string name="data_usage_app_restrict_vpn_summary">Omogući upotrebu VPN podataka</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi podaci</string>
+    <string name="data_usage_app_restrict_wifi_summary">Omogući korištenje Wi\u2011Fi podataka</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Prozirna pozadina obavijesti</string>
     <!-- Search keywords -->
+    <string name="keywords_notification_log">Notifikacije, izvještaj notifikacija</string>
+    <!-- Heads-up -->
 </resources>

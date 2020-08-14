@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Barra de estado</string>
     <string name="status_bar_quick_qs_pulldown_title">Abertura rápida</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">O canto direito da barra de estado faz baixar o painel de definições rápidas</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">O canto direito da barra de estado faz baixar o painel de definições rápidas</string>
     <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
     <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
     <string name="status_bar_quick_qs_pulldown_right">Direita</string>
@@ -282,6 +284,8 @@ Notch: Aplicações em ecrã cheio</string>
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Esconder a pílula de navegação</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Permitir ligação à rede</string>
+    <string name="data_usage_app_restrict_all_summary">Permitir aplicações ligar-se à rede</string>
     <string name="data_usage_app_restrict_data">Dados móveis</string>
     <string name="data_usage_app_restrict_data_summary">Ativar uso de dados móveis</string>
     <string name="data_usage_app_restrict_vpn">Dados VPN</string>
@@ -292,4 +296,7 @@ Notch: Aplicações em ecrã cheio</string>
     <string name="translucent_lockscreen_notifications_bg_title">Fundo de notificações translúcido</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">notificações, log de noticações</string>
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Notificação de pop-up</string>
+    <string name="heads_up_notifications_enabled_summary">Mostrar notificações prioritárias numa pequena janela flutuante</string>
 </resources>

@@ -12,12 +12,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">Tombol dan tata letak</string>
-    <string name="hardware_keys_power_key_title">Tombol power</string>
+    <string name="navigation_bar_title">Bilah navigasi</string>
+    <string name="hardware_keys_power_key_title">Tombol daya</string>
     <string name="hardware_keys_volume_keys_title">Tombol volume</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktifkan navigasi pada layar</string>
-    <string name="disable_navkeys_summary">Aktifkan layar navigasi bar dan menonaktifkan tombol pada perangkat keras</string>
+    <string name="disable_navkeys_summary">Aktifkan layar navigasi bar dan nonaktifkan tombol perangkat keras</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Matikan aplikasi dengan tombol kembali</string>
     <string name="kill_app_longpress_back_summary">Matikan aplikasi latar dengan menahan tombol kembali</string>
@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Sembunyikan pil bar navigasi.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Izinkan akses jaringan</string>
+    <string name="data_usage_app_restrict_all_summary">Izinkan aplikasi untuk mengakses jaringan</string>
     <string name="data_usage_app_restrict_data">Data seluler</string>
     <string name="data_usage_app_restrict_data_summary">Aktifkan penggunaan data seluler</string>
     <string name="data_usage_app_restrict_vpn">Data VPN</string>
@@ -293,4 +295,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">Latar belakang pemberitahuan transparan</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">notifikasi, log notifikasi</string>
+    <!-- Heads-up -->
 </resources>

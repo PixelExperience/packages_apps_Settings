@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Paslėpti naršymo juostos juostelę</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Leisti prieigą prie tinklo</string>
+    <string name="data_usage_app_restrict_all_summary">Leisti programai pasiekti tinklą</string>
     <string name="data_usage_app_restrict_data">Mobilieji duomenys</string>
     <string name="data_usage_app_restrict_data_summary">Įjungti mobiliojo ryšio duomenų naudojimą</string>
     <string name="data_usage_app_restrict_vpn">VPN duomenys</string>
@@ -293,4 +295,7 @@
     <string name="translucent_lockscreen_notifications_bg_title">Skaidrus pranešimų fonas</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">pranešimai, pranešimų žurnalas</string>
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Iššokantys pranešimai</string>
+    <string name="heads_up_notifications_enabled_summary">Rodyti prioritetinius pranešimus mažame plaukiojančiame lange</string>
 </resources>

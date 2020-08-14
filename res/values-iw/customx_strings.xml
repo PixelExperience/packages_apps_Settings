@@ -12,25 +12,25 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">מקשים ופריסה</string>
-    <string name="hardware_keys_power_key_title">מקש הפעלה</string>
-    <string name="hardware_keys_volume_keys_title">מקשי עוצמת השמע</string>
+    <string name="navigation_bar_title">סרגל ניווט</string>
+    <string name="hardware_keys_power_key_title">לחצן הפעלה</string>
+    <string name="hardware_keys_volume_keys_title">לחצני עוצמת השמע</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">הפעל מקשי ניווט על המסך</string>
+    <string name="disable_navkeys_title">אפשר מקשי ניווט על המסך</string>
     <string name="disable_navkeys_summary">מפעיל את מקשי ניווט על המסך ומשבית מקשים פיזיים</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">הרוג יישום עם לחצן חזור</string>
-    <string name="kill_app_longpress_back_summary">הרוג יישום נראה על ידי לחיצה ארוכה על לחצן החזרה</string>
+    <string name="kill_app_longpress_back_summary">הרוג את היישום הנוכחי עם לחיצה ארוכה על לחצן ה\"חזור\"</string>
     <!-- Hostname setting -->
-    <string name="device_hostname">שם הרשת עבור המכשיר</string>
+    <string name="device_hostname">שם המארח של המכשיר</string>
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">אתחול מתקדם</string>
-    <string name="advanced_reboot_summary">כאשר פתוח, הוסף אפשרויות של הפעלה מחדש ל־מצב שחזור (Recovery) או Bootloader</string>
+    <string name="advanced_reboot_summary">כאשר המכשיר לא נעול, אפשר הפעלה מחדש ל־Recovery או Bootloader מתפריט הכיבוי</string>
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">הצג תמונת אלבום/מדיה</string>
     <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">ערבב פריסה</string>
-    <string name="unlock_scramble_pin_layout_summary">ערבב פריסת PIN בעת פתיחת המכשיר</string>
+    <string name="unlock_scramble_pin_layout_summary">ערבב את סדר לוח המקשים של הקוד בפתיחת המכשיר</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">הקש בכדי לכבות מסך</string>
     <string name="status_bar_double_tap_to_sleep_summary">הקש פעמיים על שורת המצב או על מסך נעילה בכדי לכבות את המסך</string>
@@ -124,6 +124,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">שורת מצב</string>
     <string name="status_bar_quick_qs_pulldown_title">משיכה מהירה</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">משיכה מהקצה השמאלי של סרגל המצב פותחת את ההגדרות המהירות</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">משיכה מהקצה הימני של סרגל המצב פותחת את ההגדרות המהירות</string>
     <string name="status_bar_quick_qs_pulldown_off">כבוי</string>
     <string name="status_bar_quick_qs_pulldown_left">שמאל</string>
     <string name="status_bar_quick_qs_pulldown_right">ימין</string>
@@ -161,6 +163,9 @@
     <string name="status_bar_brightness_slider_summary">כוונון בהירות דרך ההגדרות המהירות</string>
     <string name="status_bar_brightness_slider_auto_title">בהירות אוטומוטית</string>
     <string name="status_bar_brightness_slider_auto_summary">הראה כפתור להפעלת בהירות אוטומטית ליד המחוון</string>
+    <string name="status_bar_brightness_slider_show_never">אל תציג אף פעם</string>
+    <string name="status_bar_brightness_slider_show_expanded">הצג כאשר מורחב</string>
+    <string name="status_bar_brightness_slider_show_always">הצג תמיד</string>
     <string name="status_bar_toggle_brightness">בקרת בהירות</string>
     <string name="status_bar_toggle_brightness_summary">שנה הבהירות על ידי הזזת האצבע על שורת המצב</string>
     <!-- Status bar - Network Traffic -->
@@ -169,6 +174,7 @@
     <string name="network_traffic_mode_title">מצב תצוגה</string>
     <string name="network_traffic_mode_disable">כבוי</string>
     <string name="network_traffic_mode_status_bar"> שורת מצב</string>
+    <string name="network_traffic_mode_qs">הגדרות מהירות</string>
     <string name="network_traffic_autohide">הסתרה אוטומטית</string>
     <string name="network_traffic_autohide_summary">מנטר תעבורת הרשת יוסתר כאשר אין פעילות</string>
     <string name="network_traffic_units_title">יחידות מידה לתעבורה</string>
@@ -277,6 +283,16 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">הסתר את כדור סרגל הניווט.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">אפשר גישה לרשת</string>
+    <string name="data_usage_app_restrict_all_summary">אפשר לאפליקציה לגשת לרשת</string>
+    <string name="data_usage_app_restrict_data">נתונים סלולריים</string>
+    <string name="data_usage_app_restrict_data_summary">אפשר שימוש בנתונים סלולריים</string>
+    <string name="data_usage_app_restrict_vpn">נתוני VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">אפשר שימוש בנתוני VPN</string>
+    <string name="data_usage_app_restrict_wifi">נתוני Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">אפשר שימוש בנתוני Wi\u2011Fi</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">רקע שקוף למחצה להתראות</string>
     <!-- Search keywords -->
+    <!-- Heads-up -->
 </resources>

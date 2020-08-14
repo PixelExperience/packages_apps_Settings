@@ -161,6 +161,9 @@
     <string name="status_bar_brightness_slider_summary">Настройка на яркост от бързи настройки</string>
     <string name="status_bar_brightness_slider_auto_title">Автоматична яркост</string>
     <string name="status_bar_brightness_slider_auto_summary">Покажи на превключвач за адаптивна яркост близо до плъзгача</string>
+    <string name="status_bar_brightness_slider_show_never">Никога не показвай</string>
+    <string name="status_bar_brightness_slider_show_expanded">Показване при разгъване</string>
+    <string name="status_bar_brightness_slider_show_always">Показвай винаги</string>
     <string name="status_bar_toggle_brightness">Контрол на яркостта</string>
     <string name="status_bar_toggle_brightness_summary">Настройване на яркостта чрез плъзгане в лентата на състоянието</string>
     <!-- Status bar - Network Traffic -->
@@ -168,6 +171,8 @@
     <string name="network_traffic_settings_summary">Покажи нивата на текущия мрежов трафик в лентата на състоянието</string>
     <string name="network_traffic_mode_title">Режим на екрана</string>
     <string name="network_traffic_mode_disable">Деактивирано</string>
+    <string name="network_traffic_mode_status_bar">Лента на състоянието</string>
+    <string name="network_traffic_mode_qs">Бързи настройки</string>
     <string name="network_traffic_autohide">Автоматично скриване</string>
     <string name="network_traffic_autohide_summary">Скриване на трафик индикатора, когато няма дейност</string>
     <string name="network_traffic_units_title">Трафик мерни единици</string>
@@ -274,6 +279,13 @@
     <string name="back_options_dialog_title">Настройки</string>
     <!-- Full screen gestures -->
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_data">Мобилни данни</string>
+    <string name="data_usage_app_restrict_vpn">VPN данни</string>
+    <string name="data_usage_app_restrict_vpn_summary">Активиране използването на VPN данни</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi данни</string>
+    <string name="data_usage_app_restrict_wifi_summary">Разреши използването на Wi\u2011Fi данни</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Прозрачен фон за известията</string>
     <!-- Search keywords -->
+    <!-- Heads-up -->
 </resources>

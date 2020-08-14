@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">ナビゲーションバーのピルを隠す</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">ネットワークアクセスを許可</string>
+    <string name="data_usage_app_restrict_all_summary">アプリのネットワークへのアクセスを許可する</string>
     <string name="data_usage_app_restrict_data">モバイルデータ</string>
     <string name="data_usage_app_restrict_data_summary">モバイルデータ使用量を有効化する</string>
     <string name="data_usage_app_restrict_vpn">VPN データ</string>
@@ -293,4 +295,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">通知パネルの透過</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">通知、通知ログ</string>
+    <!-- Heads-up -->
 </resources>

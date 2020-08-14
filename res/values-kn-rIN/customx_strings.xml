@@ -214,4 +214,7 @@
     <!-- Per-app data restrictions -->
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">ಪಾಪ್ ಅಪ್ ಅಧಿಸೂಚನೆಗಳು </string>
+    <string name="heads_up_notifications_enabled_summary">ಆದ್ಯತೆ ಸೂಚನೆಗಳನ್ನು ಸಣ್ಣ ತೇಲುವ ಕಿಟಕಿಯಲ್ಲಿ ಪ್ರದರ್ಶಿಸು</string>
 </resources>
