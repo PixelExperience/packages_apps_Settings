@@ -48,7 +48,6 @@
     <!-- Key backlight -->
     <!-- Buttons - Enable navbar -->
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">உயர்ந்த தொடல் உணர்திறன்</string>
@@ -57,4 +56,6 @@
     <string name="touchscreen_hovering_title">தொடல்திறைக்கு மேல் நகர்தல்</string>
     <string name="touchscreen_hovering_summary">வலைதள உலாவிகள், ரிமோட்-டெஸ்க்டாப்புகள் உள்ளிட்டவற்றில் மவுஸ் போன்று நீங்கள் திரையின் மீது உலாவ உங்களை அனுமதிக்கிறது</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
 </resources>

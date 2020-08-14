@@ -84,12 +84,6 @@ Powiadomienia z takich aplikacji mogą być opóźnione."</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Zapobiegaj przypadkowemu wybudzeniu</string>
     <string name="proximity_wake_summary">Używaj czujnika zbliżeniowego podczas wybudzania ekranu</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Częstotliwość odświeżania ekranu</string>
-    <string name="refresh_rate_summary_auto">Auto / Automatycznie podnoś częstotliwość odświeżania z 60 do 90 Hz dla niektórych treści</string>
-    <string name="refresh_rate_summary_60">60Hz / Prędkość odświeżania zablokowana na 60Hz dla wszystkich treści</string>
-    <string name="refresh_rate_summary_90">90Hz / Prędkość odświeżania zablokowana na 90Hz dla wszystkich treści. (Zwiększone zużycie baterii)</string>
-    <string name="auto_refresh_rate">Automatycznie</string>
     <!-- Battery light -->
     <string name="battery_light_title">Włącz diodę powiadomień podczas ładowania</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,8 @@ Powiadomienia z takich aplikacji mogą być opóźnione."</string>
     <string name="touchscreen_hovering_title">Wskazywanie ekranu dotykowego</string>
     <string name="touchscreen_hovering_summary">Pozwala na wskazywanie na ekranie jak myszką w przeglądarce internetowej, pulpicie zdalnym itd.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Zapisane słuchawki douszne</string>
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Częstotliwość odświeżania ekranu</string>
 </resources>

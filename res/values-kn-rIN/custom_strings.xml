@@ -15,6 +15,7 @@
     <string name="duration_less_than_one_minute">1 ನಿಮಿಷಕ್ಕಿಂತ ಕಡಿಮೆ</string>
     <string name="screen_time_summary_usage_today">ಇಂದಿನ ಬಳಕೆ %1$s</string>
     <!-- Moto Face Unlock -->
+    <string name="security_settings_face_settings_remove_dialog_details_moto">ಫೇಸ್ ಆನ್ಲಾಕ್ ನಿಂದ ಸಂಗಹಿಸಿದ ದತ್ತಾಂಶಗಳು ಶಾಶ್ವತವಾಗಿ ಮತ್ತು ಸುರಕ್ಷಿತವಾಗಿ ನಾಶಗೊಳಿಸಲ್ಪಡುತ್ತದೆ. ನಂತರ ನಿಮ್ಮ ಫೋನ್ಅನ್ನು  ಅನ್ಲಾಕ್ ಗೊಳಿಸಲು ಪಿನ್, ಪ್ಯಾಟರ್ನ್ ಅಥವಾ ಪಾಸ್ವರ್ಡ್ಗಳು ಬೇಕಾಗುತ್ತದೆ.</string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">ಅಡಾಪ್ಟಿವ್‌ ಬ್ಯಾಟರಿಯನ್ನು ಆನ್ ಮಾಡಿ</string>
     <string name="smart_battery_footer_custom">"ಬ್ಯಾಟರಿ ಬಾಳಿಕೆಯನ್ನು ಹೆಚ್ಚಿಸಲು, ಅಡಾಪ್ಟಿವ್‌ ಬ್ಯಾಟರಿ ಮ್ಯಾನೇಜರ್ ಅಪರೂಪವಾಗಿ ಬಳಸುವ ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಬ್ಯಾಟರಿಯನ್ನು ಸೀಮಿತಗೊಳಿಸುತ್ತದೆ. ಕಾಲಾಂತರದಲ್ಲಿ ನಿಮ್ಮ ಫೋನ್ ನೀವು ಹೇಗೆ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಉಪಯೋಗಿಸುತ್ತೀರಿ ಎಂಬುದನ್ನು ಕಲಿಯುತ್ತದೆ.
@@ -27,7 +28,13 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">ನಿಮ್ಮ ಫೋನಿನ ಎಡಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">ನಿಮ್ಮ ಫೋನಿನ ಬಲಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.</string>
     <!-- Fingerprint location message - generic -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">ನಿಮ್ಮ ಫೋನಿನ ಮು೦ಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಗುರುತಿಸಿ.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">ನಿಮ್ಮ ಫೋನಿನ ಬಲಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಗುರುತಿಸಿರಿ.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">ನಿಮ್ಮ ಫೋನಿನ ಬಲಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಗುರುತಿಸಿರಿ.</string>
     <!-- Fingerprint location message - tablet -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್ ನ ಮು೦ಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಗುರುತಿಸಿರಿ.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್ ನ ಎಡಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಗುರುತಿಸಿರಿ.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್ ನ ಎಡಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಗುರುತಿಸಿರಿ.</string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">ಮರುಹೊಂದಿಸು</string>
     <!-- Buttons -->
@@ -75,8 +82,10 @@
     <string name="disable_navkeys_summary">ಆನ್-ಸ್ಕ್ರೀನ್ ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ ಮತ್ತು ಹಾರ್ಡ್ವೇರ್ ಬಟನ್ ಗಳನ್ನು
  ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</string>
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
+    <string name="proximity_wake_title">ಆಕಸ್ಮಿಕವಾಗಿ ಎಚ್ಚರವಾಗುವಿಕೆಯನ್ನು ತಡೆಯಿರಿ.</string>
+    <string name="proximity_wake_summary">ಪರದೆಯನ್ನು ಎಚ್ಚರಿಸುವ ಮೊದಲು ಸಾಮೀಪ್ಯ ಸಂವೇದಕವನ್ನು ಪರಿಶೀಲಿಸಿರಿ.</string>
     <!-- Battery light -->
+    <string name="battery_light_title">ಚಾರ್ಜ್ ಸಕ್ರಿಯವಾಗಿರುವಾಗ ದೀಪವನ್ನು ಬೆಳಗಿಸಿ..</string>
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">ಅಧಿಕ ಸ್ಪರ್ಶ ಸಂವೇದನೆ</string>
     <string name="high_touch_sensitivity_summary">ಸ್ಪರ್ಶಪರದೆ ಸಂವೇದನೆಯನ್ನು ವೃದ್ಧಿಸುವುದರಿಂದ ಕೈಗವಸನ್ನು ಧರಿಸಿದಾಗಲೂ ಸಹ ಇದನ್ನು ಉಪಯೋಗಿಸಬಹುದು</string>
@@ -84,4 +93,12 @@
     <string name="touchscreen_hovering_title">ಸ್ಪರ್ಶಪರದೆ ಹರಿದಾಡುವಿಕೆ</string>
     <string name="touchscreen_hovering_summary">ವೆಬ್ ಬ್ರೌಸರ್ಸ್, ರಿಮೋಟ್ ಡೆಸ್ಕ್ ಟಾಪ್ಸ್, ಇತರೆಗಳಲ್ಲಿ ಮೌಸ್‍ನ ಹಾಗೆ ಪರದೆಯನ್ನು ಹರಿದಾಡಲು ನಿಮಗೆ ಅನುವುಮಾಡುತ್ತದೆ</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">ಶೇಖರಿತ ಇಯರ್ ಬಡ್ ಗಳು</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">ಪರದೆ  ನಿಷ್ಕ್ರಯವಾಗಿರುವಾಗ ಬೆರಳಚ್ಚು ಸಂವೇದಕದಿಂದ ಅನ್ಲಾಕ್ ಮಾಡಿ</string>
+    <string name="fod_gesture_summary">ಪರದೆಯನ್ನು ಎಚ್ಚರಿಸದೆ ಅನ್ಲಾಕ್ ಮಾಡಲು ಅನುಮತಿಸಿ</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">ಪರದೆ ರಿಫ್ರೆಶ್ ಸಂಖ್ಯೆ</string>
+    <string name="refresh_rate_auto">ಸ್ವಯಂಚಾಲಿತ</string>
+    <string name="refresh_rate_60">60Hz (ಬ್ಯಾಟರಿಯನ್ನು ಉಳಿಸುತ್ತದೆ)</string>
 </resources>

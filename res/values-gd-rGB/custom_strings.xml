@@ -56,7 +56,6 @@
     <string name="backlight_summary_enabled">An comas</string>
     <!-- Buttons - Enable navbar -->
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Mothalachd àrd air an t-suathadh</string>
@@ -65,4 +64,6 @@
     <string name="touchscreen_hovering_title">Fantainn os cionn na sgrìn</string>
     <string name="touchscreen_hovering_summary">Bheir seo comas dhut fantainn os cionn na sgrìn, mar luchag ann am brabhsairean-lìn, desktops cèin is msaa</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
 </resources>

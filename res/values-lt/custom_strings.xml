@@ -84,12 +84,6 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Neleiskite atsitiktinai įjungti ekrano</string>
     <string name="proximity_wake_summary">Išeidami iš miego režimo, patikrinkite artumo jutiklį</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Ekrano atnaujinimo dažnis</string>
-    <string name="refresh_rate_summary_auto">Auto / automatinis atnaujinimas nuo 60 Hz iki 90 Hz kai kurioms programoms</string>
-    <string name="refresh_rate_summary_60">60Hz / atnaujinimo dažnis užfiksuotas 60Hz visam turiniui</string>
-    <string name="refresh_rate_summary_90">90Hz / atnaujinimo dažnis priverstinis 90 Hz visoms programoms. Padidėjęs akumuliatoriaus sunaudojimas</string>
-    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
     <string name="battery_light_title">Įjunkite šviesos indikatorių,akumuliatoriaus įkrovimo metu</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,12 @@
     <string name="touchscreen_hovering_title">Jutiklinio ekrano slankiojimas</string>
     <string name="touchscreen_hovering_summary">Leidžia slankioti ekraną kaip pelę internetinėse naršyklėse, nuotoliniuose staliniuose kompiuteriuose ir kt.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Išsaugotos ausinės</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Atrakinkite pirštų atspaudu, kai ekranas išjungtas</string>
+    <string name="fod_gesture_summary">Leidžia atrakinti įrenginį, prieš tai neįjungiant ekrano</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Ekrano atnaujinimo dažnis</string>
+    <string name="refresh_rate_auto">Automatiškai</string>
+    <string name="refresh_rate_60">60Hz (taupo akumuliatorių)</string>
 </resources>

@@ -84,12 +84,6 @@ Rajoitettujen sovellusten ilmoitukset voidaan näyttää viiveellä."</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Estä vahinkoheräämiset</string>
     <string name="proximity_wake_summary">Tarkista läheisyysanturi ennen näytön herättämistä</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Näytön virkistystaajuus</string>
-    <string name="refresh_rate_summary_auto">Automaattinen / Nostaa virkistystaajuuden automaattisesti 60 hertsistä 90 hertsiin joillekin sisällöille</string>
-    <string name="refresh_rate_summary_60">60Hz / Virkistystaajuus lukittu 60Hz kaikelle sisällölle</string>
-    <string name="refresh_rate_summary_90">90Hz / Virkistystaajuus lukittu 90Hz kaikellle sisällölle. Lisää virrankulutusta</string>
-    <string name="auto_refresh_rate">Automaattinen</string>
     <!-- Battery light -->
     <string name="battery_light_title">Latausvalo ladattaessa</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,12 @@ Rajoitettujen sovellusten ilmoitukset voidaan näyttää viiveellä."</string>
     <string name="touchscreen_hovering_title">Kosketusnäytön leijunta</string>
     <string name="touchscreen_hovering_summary">Sallii näytön leijuttamisen kuten hiiri selaimessa, etätyöpöytäyhteyksissä, jne.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Tallennetut kuulokkeet</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Avaa sormenjäljellä, kun näyttö on pois päältä.</string>
+    <string name="fod_gesture_summary">Salli laitteen avaus ilman näytön herärystä.</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Näytön virkistystaajuus</string>
+    <string name="refresh_rate_auto">Automaattinen</string>
+    <string name="refresh_rate_60">60 Herziä (säästää akkua)</string>
 </resources>

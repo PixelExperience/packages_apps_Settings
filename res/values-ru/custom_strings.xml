@@ -84,12 +84,6 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Предотвращать случайное включение экрана</string>
     <string name="proximity_wake_summary">Проверять датчик приближения при выходе из режима сна</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Частота обновления экрана</string>
-    <string name="refresh_rate_summary_auto">Авто / Автоматическое повышение частоты обновления с 60 до 90 Гц для некоторых приложений</string>
-    <string name="refresh_rate_summary_60">60Гц / Частота обновления принудительно 60 Гц для всех приложений</string>
-    <string name="refresh_rate_summary_90">90Гц / Частота обновления принудительно 90 Гц для всех приложений. Увеличенный расход батареи</string>
-    <string name="auto_refresh_rate">Авто</string>
     <!-- Battery light -->
     <string name="battery_light_title">Включить световой индикатор во время зарядки</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,8 @@
     <string name="touchscreen_hovering_title">Наведение пальца</string>
     <string name="touchscreen_hovering_summary">Распознавать приближение пальца к экрану для событий наведения курсора в браузере или других приложениях</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Частота обновления экрана</string>
 </resources>

@@ -84,12 +84,6 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Evita riattivazioni involontarie</string>
     <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di riattivare il dispositivo</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Frequenza di aggiornamento</string>
-    <string name="refresh_rate_summary_auto">Automatica/Aumenta automaticamente da 60 a 90 Hz per alcuni contenuti</string>
-    <string name="refresh_rate_summary_60">60 Hz/Bloccata a 60 Hz per tutti i contenuti</string>
-    <string name="refresh_rate_summary_90">90 Hz/Bloccata a 90 Hz per tutti i contenuti. Aumenta il consumo della batteria</string>
-    <string name="auto_refresh_rate">Automatica</string>
     <!-- Battery light -->
     <string name="battery_light_title">Attiva il LED durante la ricarica</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,8 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <string name="touchscreen_hovering_title">Touch a puntamento</string>
     <string name="touchscreen_hovering_summary">Consente di utilizzare il tocco come un mouse nei browser e nei desktop remoti</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Auricolari salvati</string>
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Frequenza di aggiornamento</string>
 </resources>

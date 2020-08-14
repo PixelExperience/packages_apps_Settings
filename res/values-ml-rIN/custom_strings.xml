@@ -69,7 +69,6 @@
     <string name="backlight_summary_enabled">പ്രവർത്തനമാക്കുക</string>
     <!-- Buttons - Enable navbar -->
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">ഉയര്‍ന്ന സ്പര്‍ശന സംവേദനക്ഷമത</string>
@@ -78,4 +77,6 @@
     <string name="touchscreen_hovering_title">ടച്ച്സ്ക്രീൻ ഹോവറിംഗ്</string>
     <string name="touchscreen_hovering_summary">വെബ് ബ്രൌസറുകള്‍, റിമോട്ട് ഡെസ്ക്ടോപ്പുകള്‍ തുടങ്ങിയവയിലെ മൌസ് എന്നപോലെ സ്ക്രീന്‍ ഹോവര്‍ ചെയ്യാന്‍ നിങ്ങളെ അനുവദിക്കുന്നു.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
 </resources>

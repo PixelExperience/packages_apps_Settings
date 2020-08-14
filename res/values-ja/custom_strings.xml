@@ -84,12 +84,6 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">偶発的なスリープ解除を防止</string>
     <string name="proximity_wake_summary">スリープ解除する前に接近センサーで確認する</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">画面リフレッシュレート</string>
-    <string name="refresh_rate_summary_auto">自動 / いくつかのコンテンツでリフレッシュレートを60Hzから90Hzに自動的に変更</string>
-    <string name="refresh_rate_summary_60">60Hz / 全てのコンテンツでリフレッシュレートを60Hzに固定</string>
-    <string name="refresh_rate_summary_90">90Hz / 全てのコンテンツでリフレッシュレートを90Hzに固定。バッテリー使用量が増加します。</string>
-    <string name="auto_refresh_rate">自動</string>
     <!-- Battery light -->
     <string name="battery_light_title">充電時にライト点灯</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,8 @@
     <string name="touchscreen_hovering_title">タッチ画面のホバリング</string>
     <string name="touchscreen_hovering_summary">ウェブブラウザやリモードデスクトップなどでマウスのようにホバリングできるようにする</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">保存されたイヤホン</string>
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">画面リフレッシュレート</string>
 </resources>

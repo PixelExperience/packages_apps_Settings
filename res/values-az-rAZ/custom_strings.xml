@@ -82,7 +82,6 @@ Həmin tətbiqlərin bildirişləri gecikə bilər."</string>
     <string name="disable_navkeys_title">Naviqasiya sətrini aktivləşdir</string>
     <string name="disable_navkeys_summary">Naviqasiya sətrini aktivləşdir və fiziki düymələri qeyri aktivləşdir</string>
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
     <!-- Battery light -->
     <string name="battery_light_title">Şarj edərkən işığı yandırın</string>
     <!-- High touch sensitivity -->
@@ -92,4 +91,6 @@ Həmin tətbiqlərin bildirişləri gecikə bilər."</string>
     <string name="touchscreen_hovering_title">Toxunuşlu ekranda toxunmadan hərəkət</string>
     <string name="touchscreen_hovering_summary">Ekrana toxunmadan barmağınızı yaxınlaşdıraraq siçan (maus) kimi veb səyyahlarda, uzaq masaüstlərində və s. hərəkətinizi təmin edər</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
 </resources>

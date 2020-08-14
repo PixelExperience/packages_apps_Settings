@@ -84,12 +84,6 @@ Benachrichtigungen werden für die entsprechenden Apps eventuell verzögert ange
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Unbeabsichtigtes Aufwecken verhindern</string>
     <string name="proximity_wake_summary">Vor dem Einschalten des Bildschirms den Näherungssensor überprüfen</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Bildwiederholrate</string>
-    <string name="refresh_rate_summary_auto">Erhöht automatisch die Bildwiederholrate für einige Inhalte von 60 auf 90 Hz</string>
-    <string name="refresh_rate_summary_60">Bildwiederholrate für alle Inhalte auf 60 Hz festlegen.</string>
-    <string name="refresh_rate_summary_90">Bildwiederholrate für alle Inhalte auf 90 Hz festlegen (erhöht Akkuverbrauch)</string>
-    <string name="auto_refresh_rate">Automatisch</string>
     <!-- Battery light -->
     <string name="battery_light_title">Licht beim Laden aktivieren</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,7 @@ Benachrichtigungen werden für die entsprechenden Apps eventuell verzögert ange
     <string name="touchscreen_hovering_title">Touchscreen als Maus verwenden</string>
     <string name="touchscreen_hovering_summary">Erlaubt es, den über dem Touchscreen schwebenden Finger im Browser, Remote Desktop usw. als Mauszeiger zu verwenden.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Bildwiederholrate</string>
 </resources>

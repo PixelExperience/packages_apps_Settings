@@ -84,12 +84,6 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Evitar despertar acidental</string>
     <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de despertar a tela</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Taxa de atualização da tela</string>
-    <string name="refresh_rate_summary_auto">Automático / Aumenta automaticamente a taxa de atualização de 60 para 90Hz para alguns conteúdos</string>
-    <string name="refresh_rate_summary_60">60Hz / Taxa de atualização bloqueada em 60Hz para todo o conteúdo</string>
-    <string name="refresh_rate_summary_90">90Hz / Taxa de atualização bloqueada em 90Hz para todo o conteúdo. Maior uso de bateria</string>
-    <string name="auto_refresh_rate">Automático</string>
     <!-- Battery light -->
     <string name="battery_light_title">Ligar a luz quando estiver carregando</string>
     <!-- High touch sensitivity -->
@@ -100,4 +94,11 @@
     <string name="touchscreen_hovering_summary">Permite que você flutue o dedo na tela como um mouse em navegadores web, desktops remotos, etc</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Fones de ouvido salvos</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Desbloquear com impressão digital quando a tela estiver desligada</string>
+    <string name="fod_gesture_summary">Permite desbloquear o dispositivo sem ter que ligar a tela primeiro</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Taxa de atualização da tela</string>
+    <string name="refresh_rate_auto">Automático</string>
+    <string name="refresh_rate_60">60Hz (economiza bateria)</string>
 </resources>

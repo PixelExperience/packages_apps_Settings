@@ -34,9 +34,10 @@
     <string name="disable_navkeys_title">បើកដំណើរការអេក្រង់របារុករក</string>
     <string name="disable_navkeys_summary">បើកដំណើរការអេក្រង់របារុករក និងបិទប៊ូតុងផ្នែករឹង</string>
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <!-- Touchscreen hovering -->
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
 </resources>

@@ -84,15 +84,12 @@ In-notifiki jistgħu jittardjaw għal dawn l-applikazzjonijiet."</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Waqqaf il-qawmien aċċidentali</string>
     <string name="proximity_wake_summary">Iċċekkja is-senser qrubija qabel ma tqajjem l-iskrin</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Ir-refresh rate tal-iskrin</string>
-    <string name="refresh_rate_summary_auto">Auto / Jgħolli r-refresh rate awtomatikament minn 60 sa 90Hz għal xi kontenut</string>
-    <string name="refresh_rate_summary_60">60Hz / Illokja ir-refresh rate f\'60Hz għal kontenut kollu</string>
-    <string name="refresh_rate_summary_90">90Hz / Illokja ir-refresh rate f\'90Hz għal kontenut kollu. Iżid l-użu tal-batterija</string>
-    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
     <string name="battery_light_title">Ixgħel id-dawl waqt li qed tiċċarġja</string>
     <!-- High touch sensitivity -->
     <!-- Touchscreen hovering -->
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Ir-refresh rate tal-iskrin</string>
 </resources>

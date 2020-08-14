@@ -84,12 +84,6 @@ Vous ne recevrez peut-être pas immédiatement les notifications de ces applicat
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Éviter l\'allumage de l\'écran accidentellement</string>
     <string name="proximity_wake_summary">Vérifier le capteur de proximité avant d\'allumer l\'écran </string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Taux de rafraîchissement de l\'écran </string>
-    <string name="refresh_rate_summary_auto">Basculer automatiquement le taux de rafraîchissement de 60 à 90Hz pour les contenus disponibles. </string>
-    <string name="refresh_rate_summary_60">Taux de rafraîchissement bloqué à 60Hz </string>
-    <string name="refresh_rate_summary_90">Taux de rafraîchissement bloqué à 90Hz.</string>
-    <string name="auto_refresh_rate">Automatique</string>
     <!-- Battery light -->
     <string name="battery_light_title">Allumer la lumière pendant la charge</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,8 @@ Vous ne recevrez peut-être pas immédiatement les notifications de ces applicat
     <string name="touchscreen_hovering_title">Survol de l\'écran tactile</string>
     <string name="touchscreen_hovering_summary">Permet de survoler l\'écran comme avec une souris dans les navigateurs web, les bureaux à distance, etc.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Écouteurs sauvegardés</string>
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Taux de rafraîchissement de l\'écran </string>
 </resources>

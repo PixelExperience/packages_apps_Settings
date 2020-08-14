@@ -84,12 +84,6 @@ Notifikationer fra disse apps kan være forsinkede."</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Undgå utilsigtet vækning</string>
     <string name="proximity_wake_summary">Check nærhedscensoren før skærmen vækkes</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Skærmopdateringsfrekvens</string>
-    <string name="refresh_rate_summary_auto">Auto / øger automatisk opdateringsfrekvensen fra 60 til 90 Hz for noget indhold</string>
-    <string name="refresh_rate_summary_60">60 Hz / Opdateringsfrekvens låst til 60 Hz for alt indhold</string>
-    <string name="refresh_rate_summary_90">90 Hz / Opdateringsfrekvens låst til 90 Hz for alt indhold (forøget strømforbrug)</string>
-    <string name="auto_refresh_rate">Automatisk</string>
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Høj berøringsfølsomhed</string>
@@ -98,4 +92,7 @@ Notifikationer fra disse apps kan være forsinkede."</string>
     <string name="touchscreen_hovering_title">Berøringsfølsom skærm-svævning</string>
     <string name="touchscreen_hovering_summary">Tillader dig at holde fingeren over skærmen, som en mus i netlæsere, på fjernskriveborde, osv.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Skærmopdateringsfrekvens</string>
 </resources>

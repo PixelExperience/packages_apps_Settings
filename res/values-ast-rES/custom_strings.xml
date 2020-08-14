@@ -56,7 +56,6 @@
     <string name="backlight_summary_enabled">Habilitáu</string>
     <!-- Buttons - Enable navbar -->
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Sensibilidá alta al tactu</string>
@@ -65,4 +64,6 @@
     <string name="touchscreen_hovering_title">Pantalla táctil eslizante</string>
     <string name="touchscreen_hovering_summary">Permite eslizase pela pantalla como un mur en navegadores, escritorios remotos, etc.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
 </resources>
