@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Сховати риску навігаційної панелі.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Дозволити доступ до мережі</string>
+    <string name="data_usage_app_restrict_all_summary">Дозволити додатку доступ до мережі</string>
     <string name="data_usage_app_restrict_data">Cтільникові дані</string>
     <string name="data_usage_app_restrict_data_summary">Увімкнути використання стільникових даних</string>
     <string name="data_usage_app_restrict_vpn">Дані VPN</string>
@@ -293,4 +295,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">Напівпрозорий фон сповіщень</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">сповіщення, журнал сповіщень</string>
+    <!-- Heads-up -->
 </resources>

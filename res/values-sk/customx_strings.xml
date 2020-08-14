@@ -293,4 +293,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">Priesvitné pozadie oznámenia</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">oznámenia, záznam oznámení</string>
+    <!-- Heads-up -->
 </resources>

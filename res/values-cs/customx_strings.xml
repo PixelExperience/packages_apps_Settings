@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Skrýt pilulku navigačního panelu</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Povolit přístup k síti</string>
+    <string name="data_usage_app_restrict_all_summary">Povolit aplikaci přístup k síti</string>
     <string name="data_usage_app_restrict_data">Mobilní data</string>
     <string name="data_usage_app_restrict_data_summary">Povolit používání mobilních dat</string>
     <string name="data_usage_app_restrict_vpn">VPN data</string>
@@ -293,4 +295,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">Průsvitné pozadí oznámení</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">oznámení, protokol oznámení</string>
+    <!-- Heads-up -->
 </resources>

@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Nascondi la pillola della barra di navigazione.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Consenti accesso alla rete</string>
+    <string name="data_usage_app_restrict_all_summary">Consenti all\'applicazione di accedere alla rete</string>
     <string name="data_usage_app_restrict_data">Dati mobili</string>
     <string name="data_usage_app_restrict_data_summary">Abilita l\'utilizzo dei dati mobili</string>
     <string name="data_usage_app_restrict_vpn">Dati VPN</string>
@@ -293,4 +295,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">Sfondo delle notifiche traslucido</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">notifiches,  il registro cronologico</string>
+    <!-- Heads-up -->
 </resources>

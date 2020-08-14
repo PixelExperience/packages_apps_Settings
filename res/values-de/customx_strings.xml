@@ -291,4 +291,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">Durchsichtiger Benachrichtigungshintergrund</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">Benachrichtigungen, Benarchtigungsprotokoll</string>
+    <!-- Heads-up -->
 </resources>

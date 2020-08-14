@@ -283,6 +283,7 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">شاردنەوەی دوگمەی ئاراستەکان</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all_summary">ڕێگەبدە داوانامە ڕایەڵە بەکاربێنی</string>
     <string name="data_usage_app_restrict_data">داتای سیمکارت</string>
     <string name="data_usage_app_restrict_data_summary">چالاککردنی تۆماری بەکارهێنانی داتای سیمکارت</string>
     <string name="data_usage_app_restrict_vpn">داتای VPN</string>
@@ -293,4 +294,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">ڕوونی پشت شاشەی ئاگادارکردنەوەکان</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">ئاگادارکردنەوە، تۆماری ئاگادارکردنەوەکان</string>
+    <!-- Heads-up -->
 </resources>

@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Ocultar la píldora de la barra de navegación.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Permitir acceso a la red</string>
+    <string name="data_usage_app_restrict_all_summary">Permitir a la aplicación el acceso a la red</string>
     <string name="data_usage_app_restrict_data">Datos móviles</string>
     <string name="data_usage_app_restrict_data_summary">Habilitar el uso de datos móviles</string>
     <string name="data_usage_app_restrict_vpn">Datos VPN</string>
@@ -293,4 +295,7 @@
     <string name="translucent_lockscreen_notifications_bg_title">Fondo translúcido de las notificaciones</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">notificaciones, log de notificación</string>
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Notificaciones emergentes</string>
+    <string name="heads_up_notifications_enabled_summary">Mostrar las notificaciones prioritarias en una pequeña ventana flotante</string>
 </resources>

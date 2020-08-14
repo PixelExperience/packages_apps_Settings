@@ -287,4 +287,5 @@
     <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Prosojno ozadje obvestil</string>
     <!-- Search keywords -->
+    <!-- Heads-up -->
 </resources>

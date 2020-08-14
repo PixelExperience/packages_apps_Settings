@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Gezinme çubuğunu gizle.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Ağ erişimine izin ver</string>
+    <string name="data_usage_app_restrict_all_summary">Uygulamanın ağa erişmesine izin ver</string>
     <string name="data_usage_app_restrict_data">Hücresel veri</string>
     <string name="data_usage_app_restrict_data_summary">Hücresel veri kullanımını etkinleştir</string>
     <string name="data_usage_app_restrict_vpn">VPN verileri</string>
@@ -293,4 +295,7 @@
     <string name="translucent_lockscreen_notifications_bg_title">Yarı şeffaf bildirim arkaplanı</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">bildirimler, bildirim günlüğü</string>
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Bildirim pencereleri</string>
+    <string name="heads_up_notifications_enabled_summary">Küçük bir yüzen pencerede öncelikli bildirimleri görüntüle</string>
 </resources>

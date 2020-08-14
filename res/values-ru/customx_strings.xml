@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Скрыть полоску панели навигации</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Разрешить доступ к сети</string>
+    <string name="data_usage_app_restrict_all_summary">Разрешить приложению доступ к сети</string>
     <string name="data_usage_app_restrict_data">Мобильные данные</string>
     <string name="data_usage_app_restrict_data_summary">Включить мониторинг мобильных данных</string>
     <string name="data_usage_app_restrict_vpn">Данные VPN</string>
@@ -293,4 +295,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">Полупрозрачный фон уведомлений</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">Уведомления, журнал уведомлений</string>
+    <!-- Heads-up -->
 </resources>

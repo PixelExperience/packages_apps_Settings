@@ -295,4 +295,7 @@
     <string name="translucent_lockscreen_notifications_bg_title">Notificações translúcidas</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">notificações, histórico de notificações</string>
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Notificações flutuantes</string>
+    <string name="heads_up_notifications_enabled_summary">Mostrar notificações prioritárias em uma pequena janela flutuante</string>
 </resources>

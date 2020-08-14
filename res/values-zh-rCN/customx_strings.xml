@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">隐藏导航栏的药丸</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">允许网络访问</string>
+    <string name="data_usage_app_restrict_all_summary">允许应用访问网络</string>
     <string name="data_usage_app_restrict_data">移动数据</string>
     <string name="data_usage_app_restrict_data_summary">启用移动网络的流量使用统计</string>
     <string name="data_usage_app_restrict_vpn">VPN 数据</string>
@@ -293,4 +295,7 @@
     <string name="translucent_lockscreen_notifications_bg_title">半透明通知栏背景</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">通知，通知日志</string>
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">浮动通知</string>
+    <string name="heads_up_notifications_enabled_summary">在浮动窗口中显示优先通知</string>
 </resources>

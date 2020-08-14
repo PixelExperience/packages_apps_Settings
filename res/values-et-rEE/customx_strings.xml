@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Peida navigeerimisriba</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Lubage võrgule juurdepääs</string>
+    <string name="data_usage_app_restrict_all_summary">Lubage rakendusel võrgule juurde pääseda</string>
     <string name="data_usage_app_restrict_data">Mobiilne andmeside</string>
     <string name="data_usage_app_restrict_data_summary">Luba mobiilse andmeside kasutus</string>
     <string name="data_usage_app_restrict_vpn">VPNi andmeside</string>
@@ -293,4 +295,5 @@
     <string name="translucent_lockscreen_notifications_bg_title">Läbipaistev märguannete taust</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">teated, teadete logi</string>
+    <!-- Heads-up -->
 </resources>

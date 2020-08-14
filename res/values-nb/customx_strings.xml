@@ -12,40 +12,43 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
-    <string name="navigation_bar_title">Knapper og oppsett</string>
-    <string name="hardware_keys_power_key_title">Strøm-knappen</string>
-    <string name="hardware_keys_volume_keys_title">Volumknappene</string>
+    <string name="navigation_bar_title">Navigasjonslinje</string>
+    <string name="hardware_keys_power_key_title">Strømknapp</string>
+    <string name="hardware_keys_volume_keys_title">Volumknapper</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Aktiver navigasjonsfelt på skjermen</string>
-    <string name="disable_navkeys_summary">Aktiverer navigasjonsfelt på skjermen og deaktiverer de fysiske knappene</string>
+    <string name="disable_navkeys_title">Aktiver navigasjonslinje på skjermen</string>
+    <string name="disable_navkeys_summary">Aktiver navigasjonslinje på skjermen og deaktiver fysiske knapper</string>
     <!-- Kill app long-press back -->
-    <string name="kill_app_longpress_back">Stopp app-tilbake-knappen</string>
-    <string name="kill_app_longpress_back_summary">Stopp aktivt program ved å trykke lenge på tilbake-knappen</string>
+    <string name="kill_app_longpress_back">Tvangsavslutt app med tilbakeknappen</string>
+    <string name="kill_app_longpress_back_summary">Tvangsavslutt appen i forgrunnen ved langt trykk på tilbakeknappen</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Enhetens vertsnavn</string>
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Avansert omstart</string>
+    <string name="advanced_reboot_summary">Når ulåst, inkluder alternativer i strøm-menyen for omstart til gjenoppretting eller bootloader</string>
     <!-- Lock screen cover art -->
-    <string name="lockscreen_media_art_title">Vis media coverbilde</string>
+    <string name="lockscreen_media_art_title">Vis medieomslag</string>
     <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Endre layout</string>
     <string name="unlock_scramble_pin_layout_summary">Endre PIN layout når enheten låses opp</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
-    <string name="status_bar_double_tap_to_sleep_title">Dobbelttrykk for å slukke skjermen</string>
+    <string name="status_bar_double_tap_to_sleep_title">Trykk for å slå av skjermen</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dobbelttrykk på statuslinjen for å slå av skjermen</string>
     <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Våkne ved tilkobling av strøm</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Skjermen slås på når du kobler til eller kobler fra en strømkilde</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Skjermen slås på når du kobler til eller fra en strømkilde</string>
     <!-- Lock screen pattern size -->
-    <string name="lock_settings_picker_pattern_size_message">Velg størrelse på mønster</string>
+    <string name="lock_settings_picker_pattern_size_message">Velg mønsterstørrelse</string>
     <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
-    <string name="lockpattern_settings_enable_error_path_title">Vis feil</string>
+    <string name="lockpattern_settings_enable_error_path_title">Vis mønsterfeil</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
-    <string name="lockpattern_settings_enable_dots_title">Vis mønster prikker</string>
+    <string name="lockpattern_settings_enable_dots_title">Vis mønsterprikker</string>
     <!-- Hotspot custom extras -->
+    <string name="tethering_allow_vpn_upstreams_title">La klienter bruke VPN-er</string>
+    <string name="tethering_allow_vpn_upstreams_summary">La hotspot-klienter bruke denne enhetens VPN-tilkoblinger for oppstrøms tilkoblinger</string>
     <!-- Notification sound timeout -->
-    <string name="app_notification_sound_timeout_title">Minimum tid imellom varsellyder</string>
-    <string name="app_notification_sound_timeout_summary_template">Gi lyder og vibrasjoner bare lov å ringe hvert <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_title">Minste tid mellom varsellyder</string>
+    <string name="app_notification_sound_timeout_summary_template">Tillat lyder eller vibrasjoner maksimalt én gang i løpet av <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Ingen begrensning</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 sekunder</string>
     <string name="app_notification_sound_timeout_value_30_seconds">30 sekunder</string>
@@ -54,10 +57,11 @@
     <string name="app_notification_sound_timeout_value_15_minutes">10 minutter</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minutter</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Link ringe- og varslingsvolum</string>
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Økende ringevolum</string>
-    <string name="increasing_ring_min_volume_title">Start volum</string>
-    <string name="increasing_ring_ramp_up_time_title">Ramp-up tid</string>
+    <string name="increasing_ring_min_volume_title">Startvolum</string>
+    <string name="increasing_ring_ramp_up_time_title">Opprampingstid</string>
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotasjonsinnstillinger</string>
     <string name="display_rotation_enabled">Auto-rotasjon er aktivert</string>
@@ -69,13 +73,18 @@
     <string name="display_rotation_180_title">180 grader</string>
     <string name="display_rotation_270_title">270 grader</string>
     <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Musikk visualiserer</string>
+    <string name="lockscreen_visualizer_title">Vis musikkvisualiserer</string>
     <!-- In-call feedback -->
+    <string name="incall_feeedback_vibrate_title">Vibrer for å indikere samtalestatus</string>
     <!-- Navigation bar customization -->
-    <string name="navigation_bar_arrow_keys_title">Vis piltastene mens du skriver</string>
-    <string name="navigation_bar_arrow_keys_summary">Vise venstre og høyre markørknapper mens du skriver. Overstyrer IME skifter.</string>
-    <string name="navigation_bar_home_long_press_title">Hjem langt trykk handling</string>
-    <string name="navigation_bar_home_double_tap_title">Hjem dobbelttrykk handling</string>
+    <string name="navigation_bar_arrow_keys_title">Vis piltaster under skriving</string>
+    <string name="navigation_bar_arrow_keys_summary">Vis venstre og høyre piltaster under skriving. Overstyrer IME-bytter.</string>
+    <string name="nav_bar_layout_inverse_title">Inverter oppsett</string>
+    <string name="nav_bar_layout_inverse_summary">Inverter oppsett av navigasjonslinjeknapper</string>
+    <string name="navigation_bar_home_long_press_title">Handling ved langt trykk på hjem-knappen</string>
+    <string name="navigation_bar_home_double_tap_title">Handling ved dobbelttrykk på hjem-knappen</string>
+    <string name="navigation_bar_app_switch_long_press_title">Handling ved langt trykk på nylige-knappen</string>
+    <string name="navigation_bar_edge_long_swipe_title">Lang kantsveip-handling</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Kontrollere avspilling</string>
     <string name="volbtn_music_controls_summary">Søk musikkspor ved å holde inne volumtastene mens skjermen er av</string>
@@ -83,20 +92,24 @@
     <string name="volume_answer_call_summary">Besvar innkommende anrop ved å trykke på volumknappene</string>
     <string name="volbtn_cursor_control_title">Kontroll av tastaturmarkør</string>
     <string name="volbtn_cursor_control_off">Deaktivert</string>
-    <string name="volbtn_cursor_control_on">Volum opp/ned flytter markøren venstre/høyre</string>
+    <string name="volbtn_cursor_control_on">Volum opp/ned flytter markøren til venstre/høyre</string>
     <string name="volbtn_cursor_control_on_reverse">Volum opp/ned flytter markøren høyre/venstre</string>
-    <string name="swap_volume_buttons_title">Reorientere</string>
-    <string name="swap_volume_buttons_summary">Tilpass volumknappene ettersom skjermen er rotert</string>
+    <string name="swap_volume_buttons_title">Reorienter</string>
+    <string name="swap_volume_buttons_summary">Byttom om på volumknappene når skjermen roteres</string>
     <!-- Home key customization -->
     <string name="home_answer_call_title">Besvar anrop</string>
-    <string name="home_answer_call_summary">Besvar innkommende anrop ved å trykke på hjem-knappen</string>
+    <string name="home_answer_call_summary">Besvar innkommende anrop ved å trykke på hjemknappen</string>
     <!-- Power menu key customization -->
     <string name="power_menu_title">Av/På meny</string>
     <string name="power_menu_screenshot_title">Skjermbilde</string>
+    <string name="power_menu_screenshot_summary">Langt trykk for delvis skjermbilde</string>
     <string name="power_menu_airplane_title">Flymodus</string>
-    <string name="power_menu_users_title">Brukerbytte</string>
+    <string name="power_menu_users_title">Brukerbytter</string>
+    <string name="power_menu_lockdown_title">Nedlåsning</string>
     <string name="power_end_call_title">Avslutt samtale</string>
-    <string name="power_end_call_summary">Avslutt anropet ved å trykke på strømknappen</string>
+    <string name="power_end_call_summary">Avslutt den nåværende samtalen ved å trykke på strømknappen</string>
+    <string name="lockscreen_power_menu_disabled_title">Deaktiver på låseskjerm</string>
+    <string name="lockscreen_power_menu_disabled_summary">Deaktiver strøm-meny på beskyttet låseskjerm</string>
     <string name="torch_long_press_power_gesture_title">Hold inne for lommelykt</string>
     <string name="torch_long_press_power_gesture_desc">Aktiver lommelykten ved å holde inne strøm-knappen mens skjermen er av</string>
     <string name="torch_long_press_power_timeout_title">Deaktiver lommelykten automatisk</string>
@@ -106,9 +119,13 @@
     <string name="torch_long_press_power_timeout_5min">5 minutter</string>
     <string name="torch_long_press_power_timeout_10min">10 minutter</string>
     <!-- Others settings -->
+    <string name="others_settings_title">Andre innstillinger</string>
+    <string name="additional_buttons_title">Ytterligere knapper</string>
     <!-- Status bar -->
     <string name="status_bar_title">Statuslinje</string>
-    <string name="status_bar_quick_qs_pulldown_title">Rask rullegardinmeny</string>
+    <string name="status_bar_quick_qs_pulldown_title">Hurtig nedtrekk</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Venstre kant av statuslinjen drar ned hurtiginnstillinger</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Høyre kant av statuslinjen drar ned hurtiginnstillinger</string>
     <string name="status_bar_quick_qs_pulldown_off">Av</string>
     <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
     <string name="status_bar_quick_qs_pulldown_right">Høyre</string>
@@ -118,11 +135,13 @@
     <string name="status_bar_system_icons_summary">Velg hvilke av statusikonene som skal vises</string>
     <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Klokke</string>
+    <string name="status_bar_clock_show_seconds_title">Vis sekunder</string>
+    <string name="status_bar_clock_show_seconds_summary">Vis timer, minutter og sekunder</string>
     <string name="status_bar_clock_position_title">Klokkeposisjon</string>
     <string name="status_bar_clock_position_right">Høyre</string>
     <string name="status_bar_clock_position_left">Venstre</string>
     <string name="status_bar_clock_position_center">I midten</string>
-    <string name="status_bar_am_pm_title">AM/PM stil</string>
+    <string name="status_bar_am_pm_title">AM-/PM-stil</string>
     <string name="status_bar_am_pm_info">24-timers klokke er aktivert</string>
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Liten</string>
@@ -140,22 +159,71 @@
     <string name="status_bar_battery_percentage_text_next">Ved siden av ikonet</string>
     <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Lysstyrke</string>
-    <string name="status_bar_brightness_slider_title">Lysstyrke-dimmer</string>
-    <string name="status_bar_brightness_slider_summary">Juster lysstyrken i fra Hurtiginnstillingene</string>
+    <string name="status_bar_brightness_slider_title">Lysstyrke-glidebryter</string>
+    <string name="status_bar_brightness_slider_summary">Juster lysstyrken i fra hurtiginnstillingene</string>
     <string name="status_bar_brightness_slider_auto_title">Automatisk lysstyrke</string>
-    <string name="status_bar_brightness_slider_auto_summary">Vis av/på knapp for automatisk lysstyrke ved siden av dimmeren</string>
+    <string name="status_bar_brightness_slider_auto_summary">Vis knapp for tilpassende lysstyrke ved siden av glidebryteren</string>
+    <string name="status_bar_brightness_slider_show_never">Aldri vis</string>
+    <string name="status_bar_brightness_slider_show_expanded">Vis når utvidet</string>
+    <string name="status_bar_brightness_slider_show_always">Vis alltid</string>
     <string name="status_bar_toggle_brightness">Lysstyrkekontroll</string>
     <string name="status_bar_toggle_brightness_summary">Juster lysstyrken ved å sveipe langs statuslinjen</string>
     <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_settings_title">Nettverkstrafikkmåler</string>
+    <string name="network_traffic_settings_summary">Vis nåværende nettverkstrafikkmålinger i statuslinjen</string>
+    <string name="network_traffic_mode_title">Visningsmodus</string>
+    <string name="network_traffic_mode_disable">Deaktivert</string>
+    <string name="network_traffic_mode_status_bar">Statuslinje</string>
+    <string name="network_traffic_mode_qs">Hurtiginnstillinger</string>
+    <string name="network_traffic_autohide">Skjul automatisk</string>
+    <string name="network_traffic_autohide_summary">Skjul trafikkmåleren når det ikke er noen aktivitet</string>
+    <string name="network_traffic_units_title">Trafikkmåleenheter</string>
     <!-- QS settings -->
+    <string name="qs_title">Hurtiginnstillinger</string>
+    <string name="qs_rows_portrait_title">Rader (portrett)</string>
+    <string name="qs_rows_landscape_title">Rader (landskap)</string>
+    <string name="qs_columns_portrait_title">Kolonner (portrett)</string>
+    <string name="qs_columns_landscape_title">Kolonner (landskap)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Tittelsynlighet</string>
+    <string name="qs_tile_title_visibility_summary">Vis titler under hurtiginnstillingsfliser</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibrer ved berøring</string>
+    <string name="qs_vibrate_summary">Vibrer når hurtiginnstillingsfliser berøres</string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Hurtiginnstillingsanimasjoner</string>
+    <string name="qs_tile_animation_style_title">Stil</string>
+    <string name="qs_tile_animation_duration_title">Varighet</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolator</string>
+    <string name="qs_tile_animation_style_off">Ingen</string>
+    <string name="qs_tile_animation_style_flip">Vend</string>
+    <string name="qs_tile_animation_style_rotate">Roter</string>
+    <string name="qs_tile_animation_duration_low">Langsom</string>
     <string name="qs_tile_animation_duration_default">Standard</string>
+    <string name="qs_tile_animation_duration_fast">Rask</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Lineær</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Akselerer</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Avta</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Akselerer og avta</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Sprett</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Forutse</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Forutse overshoot</string>
     <!-- Notch behavior -->
+    <string name="display_cutout_mode_title">Skjermleppeoppførsel</string>
+    <string name="display_cutout_mode_normal">Standard</string>
+    <string name="display_cutout_mode_hidden">Skjult</string>
     <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Fullskjermapper</string>
+    <string name="display_cutout_force_fullscreen_summary">Ignorer skjermleppeområde for valgte applikasjoner</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Vennligst start applikasjonen på nytt for å anvende endringene.</string>
+    <string name="cutout_force_fullscreen_no_apps">Ingen apper</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="swipe_to_screenshot_gesture_title">Sveip for å ta skjermbilde</string>
+    <string name="swipe_to_screenshot_gesture_summary">Sveip tre fingre for å ta skjermbilde</string>
     <!-- Navigation compact layout -->
+    <string name="navigation_bar_compact_layout_title">Kompakt oppsett</string>
+    <string name="navigation_bar_compact_layout_summary">Bruk et kompakt oppsett i navigasjonslinjen</string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalisere skjermen basert på tidspunkt av dagen og omgivelsesforhold for å forbedre lesbarhet og redusere belastningen på øynene</string>
     <string name="live_display_mode">Visningsmodus</string>
@@ -164,37 +232,39 @@
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
     <string name="live_display_day">Dag</string>
     <string name="live_display_night">Natt</string>
-    <string name="live_display_outdoor_mode_title">Automatisk utendørs modus</string>
+    <string name="live_display_outdoor_mode_title">Automatisk utendørsmodus</string>
     <string name="live_display_outdoor_mode_summary">Øk lysstyrke og metning automatisk under sterkt sollys</string>
-    <string name="live_display_low_power_title">Reduser strømforbruket</string>
-    <string name="live_display_low_power_summary">Justere visningen for laveste strømforbruk uten degradering</string>
+    <string name="live_display_low_power_title">Reduser strømforbruk</string>
+    <string name="live_display_low_power_summary">Justere skjermen for laveste strømforbruk uten degradering</string>
     <string name="live_display_enhance_color_title">Forbedre farger</string>
-    <string name="live_display_enhance_color_summary">Forbedre fargefullhet på hudfarger, natur og andre bilder</string>
+    <string name="live_display_enhance_color_summary">Forbedre fargeglød på hudtoner natur og andre bilder</string>
     <string name="live_display_color_profile_title">Fargeprofil</string>
     <string name="live_display_color_profile_standard_title">Standard</string>
     <string name="live_display_color_profile_standard_summary">Nøyaktige farger og lyse hvitfarger</string>
     <string name="live_display_color_profile_natural_title">Naturlig</string>
-    <string name="live_display_color_profile_natural_summary">Realistiske farger og varme toner</string>
+    <string name="live_display_color_profile_natural_summary">Realistiske farger og hudtoner</string>
     <string name="live_display_color_profile_dynamic_title">Dynamisk</string>
     <string name="live_display_color_profile_dynamic_summary">Forbedrede farger og lyse hvitfarger</string>
     <string name="live_display_color_profile_cinema_title">Kino</string>
     <string name="live_display_color_profile_cinema_summary">Perfekt fargegjengivelse for video</string>
     <string name="live_display_color_profile_astronomy_title">Astronomi</string>
-    <string name="live_display_color_profile_astronomy_summary">Dyp rød for å bevare nattsynet</string>
+    <string name="live_display_color_profile_astronomy_summary">Dyp rød for å bevare nattsyn</string>
     <string name="live_display_color_profile_photography_title">Fotografi</string>
     <string name="live_display_color_profile_photography_summary">Perfekt fargegjengivelse for bilder</string>
     <string name="live_display_color_profile_basic_title">Grunnleggende</string>
     <string name="live_display_color_profile_basic_summary">Bruk skjermen ukalibrert</string>
     <string name="live_display_color_profile_adaptive_title">Tilpassende</string>
     <string name="live_display_color_profile_adaptive_summary">Farger tilpasser seg til omgivelsene</string>
-    <string name="live_display_color_profile_reading_title">Leser</string>
-    <string name="live_display_color_profile_reading_summary">Varmere farger for mindre belastning på øyene</string>
+    <string name="live_display_color_profile_reading_title">Lesing</string>
+    <string name="live_display_color_profile_reading_summary">Varmere farger for mindre øyebelastning</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
     <string name="live_display_color_profile_srgb_summary">Farger nøyaktige i forhold til fargerommet sRGB</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
     <string name="live_display_color_profile_dci_p3_summary">Farger nøyaktige i forhold til fargerommet DCI-P3</string>
+    <string name="live_display_reading_mode_title">Lesemodus</string>
+    <string name="live_display_reading_mode_summary">Gråskalamodus for langtidslesing</string>
     <string name="color_calibration_title">Fargekalibrering</string>
-    <string name="color_calibration_summary">Kalibrere skjermens farger</string>
+    <string name="color_calibration_summary">Kalibrer skjermens farger</string>
     <string name="color_red_title">Rød</string>
     <string name="color_green_title">Grønn</string>
     <string name="color_blue_title">Blå</string>
@@ -206,8 +276,24 @@
     <string name="adj_intensity_title">Intensitet</string>
     <string name="adj_contrast_title">Kontrast</string>
     <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Full</string>
+    <string name="back_height_high_label">Nedre del</string>
+    <string name="back_options_dialog_title">Alternativer</string>
+    <string name="back_height_message">Andel av skjermhøyde brukt som område for tilbakebevegelse.</string>
     <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Skjul navigasjonslinjepillen.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Tillat nettverksbruk</string>
+    <string name="data_usage_app_restrict_all_summary">Tillat applikasjon nettverksbruk</string>
+    <string name="data_usage_app_restrict_data">Mobildata</string>
+    <string name="data_usage_app_restrict_data_summary">Aktiver bruk av mobildata</string>
+    <string name="data_usage_app_restrict_vpn">VPN-data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Aktiver bruk av VPN-data</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi-data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Aktiver bruk av Wi\u2011Fi-data</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Gjennomsiktig varselbakgrunn</string>
     <!-- Search keywords -->
+    <string name="keywords_notification_log">varsler, varsellogg</string>
+    <!-- Heads-up -->
 </resources>

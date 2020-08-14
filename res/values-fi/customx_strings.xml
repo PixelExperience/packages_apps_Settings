@@ -283,6 +283,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Piilota navigointipalkin viiva</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Salli verkkoyhteys</string>
+    <string name="data_usage_app_restrict_all_summary">Salli ohjelmalle pääsy verkkoon</string>
     <string name="data_usage_app_restrict_data">Mobiilidata</string>
     <string name="data_usage_app_restrict_data_summary">Ota mobiilidata käyttöön</string>
     <string name="data_usage_app_restrict_vpn">VPN data</string>
@@ -293,4 +295,6 @@
     <string name="translucent_lockscreen_notifications_bg_title">Läpinäkyvät ilmoitusten taustat</string>
     <!-- Search keywords -->
     <string name="keywords_notification_log">ilmoitukset, ilmoitusloki</string>
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Ponnahdusikkunailmoitukset</string>
 </resources>
