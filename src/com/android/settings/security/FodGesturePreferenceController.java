@@ -16,6 +16,7 @@
 
 package com.android.settings.security;
 
+import android.hardware.fingerprint.FingerprintManager;
 import android.content.Context;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.Utils;
@@ -23,6 +24,8 @@ import com.android.settings.Utils;
 public class FodGesturePreferenceController extends BasePreferenceController {
 
     public static final String KEY = "fod_gesture";
+
+    private FingerprintManager fpm;
 
     public FodGesturePreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
