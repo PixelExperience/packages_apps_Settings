@@ -32,7 +32,6 @@
     <!-- Key backlight -->
     <!-- Buttons - Enable navbar -->
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">उच्च स्पर्श संवेदनक्षमता</string>
@@ -41,4 +40,6 @@
     <string name="touchscreen_hovering_title">टचस्क्रीन हॉवरिंग</string>
     <string name="touchscreen_hovering_summary">वेब ब्राउझर्स, दूरस्थ डेस्कटॉप्स इ. मध्ये तुम्हाला माउसप्रमाणे स्क्रीनवर हॉवर करू देते</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
 </resources>

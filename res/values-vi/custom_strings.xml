@@ -84,12 +84,6 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Ngăn chặn đánh thức tình cờ</string>
     <string name="proximity_wake_summary">Kiểm tra cảm biến tiệm cận trước khi đánh thức màn hình</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Tốc độ làm tươi màn hình</string>
-    <string name="refresh_rate_summary_auto">Tự động / Tự động tăng tốc độ làm mới từ 60 đến 90Hz cho một số nội dung</string>
-    <string name="refresh_rate_summary_60">60Hz / Tốc độ làm mới bị khóa ở 60Hz cho tất cả nội dung</string>
-    <string name="refresh_rate_summary_90">90Hz / Tốc độ làm mới bị khóa ở 90Hz cho tất cả nội dung.  Tăng mức sử dụng pin</string>
-    <string name="auto_refresh_rate">Tự động</string>
     <!-- Battery light -->
     <string name="battery_light_title">Bật đèn khi sạc</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,8 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <string name="touchscreen_hovering_title">Di trên màn hình cảm ứng</string>
     <string name="touchscreen_hovering_summary">Cho phép bạn di trên màn hình như chuột trong trình duyệt web, điều khiển máy tính từ xa, v.v.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Tai nghe đã lưu</string>
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Tốc độ làm tươi màn hình</string>
 </resources>

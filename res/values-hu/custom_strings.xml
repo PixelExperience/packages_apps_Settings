@@ -84,12 +84,6 @@ Előfordulhat, hogy az érintett alkalmazások értesítései késnek majd."</st
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Véletlenébresztés-gátló</string>
     <string name="proximity_wake_summary">A közelségérzékelő ellenőrzése a képernyő felébresztése előtt</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">A képernyő frissítési értéke</string>
-    <string name="refresh_rate_summary_auto">Automatikus / Egyes esetekben automatikusan megemeli a frissítés értékét 60-ról 90Hz-re</string>
-    <string name="refresh_rate_summary_60">60Hz / A frissítési értéket 60Hz-en rögzíti minden tartalomhoz</string>
-    <string name="refresh_rate_summary_90">90Hz / A frissítési értéket 90Hz-en rögzíti minden tartalomhoz. Nő a fogyasztás!</string>
-    <string name="auto_refresh_rate">Automatikus</string>
     <!-- Battery light -->
     <string name="battery_light_title">Töltéskor kapcsolódjon be fényjelzés</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,12 @@ Előfordulhat, hogy az érintett alkalmazások értesítései késnek majd."</st
     <string name="touchscreen_hovering_title">Lebegő érintés</string>
     <string name="touchscreen_hovering_summary">Engedélyezi a lebegéssel való vezérlést, mint egy egérrel a böngészőknél, távoli asztaloknál, stb.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Mentett Earbuds fülhallgatók</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Ujjlenyomatos feloldás kikapcsolt képernyőről</string>
+    <string name="fod_gesture_summary">Fel tudja oldani a készüléket anélkül, hogy előbb felébresztené a képernyőt</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">A képernyő frissítési értéke</string>
+    <string name="refresh_rate_auto">Automatikus</string>
+    <string name="refresh_rate_60">60Hz (akkukímélő)</string>
 </resources>

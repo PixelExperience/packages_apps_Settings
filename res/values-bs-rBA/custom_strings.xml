@@ -84,15 +84,17 @@ Moguće je da će obavještenja za te aplikacije kasniti."</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Sprečavanje slučajnog buđenja</string>
     <string name="proximity_wake_summary">Provera senzora blizine prije buđenja ekrana</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Brzina osvježavanja ekrana</string>
-    <string name="refresh_rate_summary_auto">Automatski / Automatski povećava brzinu osvježavanja ekrana sa 60Hz na 90Hz za neke sadržaje</string>
-    <string name="refresh_rate_summary_60">60Hz / Osvježavanje ekrana zaključano je na 60Hz za sav sadržaj</string>
-    <string name="refresh_rate_summary_90">90Hz / Osvježavanje ekrana je zaključano na 90Hz za sav sadržaj. Povećana potrošnja baterije</string>
-    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
     <string name="battery_light_title">Uključi svijetlo prilikom punjenja</string>
     <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">Velika osjetljivost na dodir</string>
+    <string name="high_touch_sensitivity_summary">Pojačaj osjetljivost ekrana da se može koristiti i sa rukavicama</string>
     <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Lebdenje nad zaslonom</string>
+    <string name="touchscreen_hovering_summary">Dopušta vam da lebdite nad zaslonom kao kursor miša u web pretraživaču, udaljenom desktopu, itd</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Sačuvane slušalice</string>
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Brzina osvježavanja ekrana</string>
 </resources>

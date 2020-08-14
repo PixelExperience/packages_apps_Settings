@@ -65,7 +65,6 @@ Kennisgewings sal dalk vir hierdie programme vertraag word."</string>
     <string name="disable_navkeys_title">Aktiveer op-skerm navigasiebalk</string>
     <string name="disable_navkeys_summary">Aktiveer op-skerm navigasiebalk en deaktiveer hardewareknoppies</string>
     <!-- Proximity wake -->
-    <!-- Refresh rate -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Hoë raak sensitiwiteit</string>
@@ -74,4 +73,6 @@ Kennisgewings sal dalk vir hierdie programme vertraag word."</string>
     <string name="touchscreen_hovering_title">Raakskerm swewing</string>
     <string name="touchscreen_hovering_summary">Laat toe om bo die sekrm te sweef soos \'n muis in die web blaaiers, Remote desktops, ens</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
 </resources>

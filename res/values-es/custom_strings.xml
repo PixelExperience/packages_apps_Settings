@@ -84,12 +84,6 @@ Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Evitar el encendido accidental</string>
     <string name="proximity_wake_summary">Comprobar el sensor de proximidad antes de encender la pantalla</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Frecuencia de actualización de la pantalla</string>
-    <string name="refresh_rate_summary_auto">Auto / Automáticamente aumenta la tasa de actualización de 60 a 90Hz para algún contenido</string>
-    <string name="refresh_rate_summary_60">60Hz / Tasa de actualización bloqueada a 60Hz para todo el contenido</string>
-    <string name="refresh_rate_summary_90">90Hz / Tasa de actualización bloqueada a 90Hz para todo el contenido. Aumenta el uso de batería</string>
-    <string name="auto_refresh_rate">Automático</string>
     <!-- Battery light -->
     <string name="battery_light_title">Encender la luz mientras está cargando</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,12 @@ Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."
     <string name="touchscreen_hovering_title">Pantalla táctil deslizante</string>
     <string name="touchscreen_hovering_summary">Te permitirá deslizar por la pantalla como un ratón en navegadores, escritorios remotos, etc.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Auriculares guardados</string>
+    <!-- Screen off fod -->
+    <string name="fod_gesture_title">Desbloquear con huella dactilar cuando la pantalla está apagada</string>
+    <string name="fod_gesture_summary">Permitir desbloquear el dispositivo sin tener que despertar primero la pantalla</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Frecuencia de actualización de la pantalla</string>
+    <string name="refresh_rate_auto">Automático</string>
+    <string name="refresh_rate_60">60Hz (ahorra batería)</string>
 </resources>

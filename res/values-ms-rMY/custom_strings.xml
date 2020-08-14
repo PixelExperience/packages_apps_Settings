@@ -84,15 +84,12 @@ Pemberitahuan mungkin ditangguhkan untuk apl ini."</string>
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Elak buka tak sengaja</string>
     <string name="proximity_wake_summary">Periksa pengesan jarak sebelum buka paparan</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Kadar segaran paparan</string>
-    <string name="refresh_rate_summary_auto">Tingkatkan kadar segaran dari 60Hz ke 90Hz untuk sesuatu kandungan</string>
-    <string name="refresh_rate_summary_60">60Hz / Kadar segaran semua kandungan terkunci pada 60Hz</string>
-    <string name="refresh_rate_summary_90">90Hz / Kadar segaran semua kandungan terkunci pada 90Hz. Penggunaan beteri meningkat</string>
-    <string name="auto_refresh_rate">Auto</string>
     <!-- Battery light -->
     <string name="battery_light_title">Hidupkan lampu semasa mengecas</string>
     <!-- High touch sensitivity -->
     <!-- Touchscreen hovering -->
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Kadar segaran paparan</string>
 </resources>

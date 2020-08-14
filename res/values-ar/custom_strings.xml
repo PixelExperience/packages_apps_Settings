@@ -84,12 +84,6 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">منع الاستيقاظ بالخطأ</string>
     <string name="proximity_wake_summary">التحقق من مستشعر القرب قبل إيقاظ الشاشة</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">معدل تحديث الرسم البياني</string>
-    <string name="refresh_rate_summary_auto">تلقائي / تلقائيًا يرفع معدل التحديث من 60 إلى 90 هرتز لبعض المحتوى</string>
-    <string name="refresh_rate_summary_60">60 هرتز / معدل التحديث مغلق بـ 60 هرتز لجميع المحتويات</string>
-    <string name="refresh_rate_summary_90">90Hz / معدل التحديث مغلق بـ 90 هرتز لجميع المحتويات. زيادة استخدام البطارية</string>
-    <string name="auto_refresh_rate">تلقائي</string>
     <!-- Battery light -->
     <string name="battery_light_title">تشغيل ضوء التنبيهات عند توصيل الشاحن</string>
     <!-- High touch sensitivity -->
@@ -99,4 +93,8 @@
     <string name="touchscreen_hovering_title">المرور فوق الشاشة اللمسية</string>
     <string name="touchscreen_hovering_summary">يسمح لك بالمرور فوق الشاشة مثل الماوس في مستعرضات الويب، أو سطح المكتب عن بُعد، إلخ</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">سماعات الأذن المحفوظة</string>
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">معدل تحديث الرسم البياني</string>
 </resources>

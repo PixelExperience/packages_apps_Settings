@@ -81,8 +81,6 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Previr acender de forma accidental</string>
     <string name="proximity_wake_summary">Comprobar o sensor de proximidade antes de acender a pantalla</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Tasa de refresco da pantalla</string>
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Alta sensibilidade</string>
@@ -91,4 +89,7 @@
     <string name="touchscreen_hovering_title">Pantalla táctil deslizante</string>
     <string name="touchscreen_hovering_summary">Permítelle utilizar o dedo coma un rato ao deslizalo en navegadores web, escritorios remotos, etc.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <!-- Screen off fod -->
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">Tasa de refresco da pantalla</string>
 </resources>
