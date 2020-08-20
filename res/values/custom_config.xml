@@ -27,4 +27,9 @@
     <!-- Device specific doze package -->
     <string name="config_customDozePackage" translatable="false"></string>
 
+    <!-- Whether device supports refresh rate switch
+         config_defaultPeakRefreshRate shouldn't be defined as 60 on frameworks/base
+    -->
+    <bool name="config_supportsRefreshRateSwitch">true</bool>
+
 </resources>
