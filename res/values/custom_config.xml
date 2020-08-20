@@ -27,4 +27,27 @@
     <!-- Device specific doze package -->
     <string name="config_customDozePackage" translatable="false"></string>
 
+<<<<<<< HEAD   (0074f6 Fix derp on 6b80f4949889d68080b66751f442072c2626ddb9)
+=======
+    <!-- Device specific custom buttons package -->
+    <string name="config_customButtonsPackage" translatable="false"></string>
+
+    <!-- The position of the volume rocker, as opposed to the natural
+         orientation of the display.
+         Currently used for the volume button re-orient functionality.
+         This integer should be set to:
+         1 - if the volume rocker is on (or parallel to) one the lateral
+             sides, relative to the natural orientation of the display
+             (true for all phones and some tablets)
+         2 - the volume rocker is on (or parallel to) the top or bottom,
+             relative to the natural orientation of the display
+             (true for some tablets) -->
+    <integer name="config_volumeRockerVsDisplayOrientation">1</integer>
+
+    <!-- Whether device supports refresh rate switch
+         config_defaultPeakRefreshRate shouldn't be defined as 60 on frameworks/base
+    -->
+    <bool name="config_supportsRefreshRateSwitch">true</bool>
+
+>>>>>>> CHANGE (9c6acf RefreshRatePreferenceController: Add overlay to disable it)
 </resources>
