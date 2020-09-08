@@ -22,7 +22,6 @@
     <!-- Key backlight -->
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Opgräift Bildschirm um Navette aktivéieren</string>
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Héich Beréierungsempfindlechkeet</string>

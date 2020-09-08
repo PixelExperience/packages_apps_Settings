@@ -63,7 +63,6 @@ Njoftimet mund të vonohen për këto aplikacione."</string>
     <string name="backlight_summary_enabled_with_timeout">I aktivizuar për <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">I aktivizuar</string>
     <!-- Buttons - Enable navbar -->
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Ndjesi e lartë e prekjes</string>

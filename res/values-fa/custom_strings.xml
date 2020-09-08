@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">فعال کردن نوار پیمایش بر روی صفحه</string>
     <string name="disable_navkeys_summary">فعال کردن نوار پیمایش بر روی صفحه و غیرفعال کردن دکمه‌های سخت‌افزاری</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">جلوگیری از روشن شدن تصادفی</string>
-    <string name="proximity_wake_summary">بررسی حسگر مجاورت جهت روشن شدن</string>
     <!-- Battery light -->
     <string name="battery_light_title">روشن کردن چراغ اعلان هنگام شارژ شدن </string>
     <!-- High touch sensitivity -->

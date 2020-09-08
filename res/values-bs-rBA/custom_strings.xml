@@ -81,9 +81,6 @@ Moguće je da će obavještenja za te aplikacije kasniti."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Uključi navigacijsku traku na ekranu</string>
     <string name="disable_navkeys_summary">Omogući zaslonske navigacijske tipke i onemogući hardverske tipke</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Sprečavanje slučajnog buđenja</string>
-    <string name="proximity_wake_summary">Provera senzora blizine prije buđenja ekrana</string>
     <!-- Battery light -->
     <string name="battery_light_title">Uključi svijetlo prilikom punjenja</string>
     <!-- High touch sensitivity -->

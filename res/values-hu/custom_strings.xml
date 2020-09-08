@@ -81,9 +81,6 @@ Előfordulhat, hogy az érintett alkalmazások értesítései késnek majd."</st
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Képernyős navigáció engedélyezése</string>
     <string name="disable_navkeys_summary">Képernyős navigáció engedélyezése és a hardver gombok letiltása</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Véletlenébresztés-gátló</string>
-    <string name="proximity_wake_summary">A közelségérzékelő ellenőrzése a képernyő felébresztése előtt</string>
     <!-- Battery light -->
     <string name="battery_light_title">Töltéskor kapcsolódjon be fényjelzés</string>
     <!-- High touch sensitivity -->

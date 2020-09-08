@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">เปิดใช้งานแถบนำทางบนหน้าจอ</string>
     <string name="disable_navkeys_summary">เปิดใช้งานแถบนำทางบนหน้าจอและปิดการใช้งานปุ่มฮาร์ดแวร์</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">ป้องกันการปลุกโดยไม่ตั้งใจ</string>
-    <string name="proximity_wake_summary">ตรวจสอบเซนเซอร์แนบหน้าจอก่อนที่จะปลุกหน้าจอ</string>
     <!-- Battery light -->
     <string name="battery_light_title">เปิดแสงไฟเมื่อชาร์จแบตเตอรี่</string>
     <!-- High touch sensitivity -->

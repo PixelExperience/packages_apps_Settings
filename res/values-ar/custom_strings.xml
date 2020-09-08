@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">تفعيل شريط التنقل على الشاشة</string>
     <string name="disable_navkeys_summary">تفعيل شريط التنقل على الشاشة وتعطيل أزرار الجهاز</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">منع الاستيقاظ بالخطأ</string>
-    <string name="proximity_wake_summary">التحقق من مستشعر القرب قبل إيقاظ الشاشة</string>
     <!-- Battery light -->
     <string name="battery_light_title">تشغيل ضوء التنبيهات عند توصيل الشاحن</string>
     <!-- High touch sensitivity -->

@@ -70,7 +70,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">မျက်နှာပြင်အတွင်း ခလုတ်များကို သုံခြင်း</string>
     <string name="disable_navkeys_summary">မျက်နှာပြင်အတွင်း ခလုတ်များကို သုံခြင်းနှင့် ရိုးရိုးခလုတ်များကို သုံးမရစေရန် ပြုလုပ်ခြင်း</string>
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <!-- Touchscreen hovering -->

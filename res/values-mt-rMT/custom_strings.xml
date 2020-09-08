@@ -81,9 +81,6 @@ In-notifiki jistgħu jittardjaw għal dawn l-applikazzjonijiet."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Ixgħel on-screen nav bar</string>
     <string name="disable_navkeys_summary">Ixgħel on-screen navigation bar u itfi buttuni fiżiċi</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Waqqaf il-qawmien aċċidentali</string>
-    <string name="proximity_wake_summary">Iċċekkja is-senser qrubija qabel ma tqajjem l-iskrin</string>
     <!-- Battery light -->
     <string name="battery_light_title">Ixgħel id-dawl waqt li qed tiċċarġja</string>
     <!-- High touch sensitivity -->

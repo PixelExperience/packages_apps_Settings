@@ -81,9 +81,6 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Gezinme çubuğunu etkinleştir</string>
     <string name="disable_navkeys_summary">Ekranda gezinme çubuğunu etkinleştirin ve donanım tuşlarını devre dışı bırakın</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
-    <string name="proximity_wake_summary">Ekranı uyandırmadan önce yakınlık sensörünü kontrol et</string>
     <!-- Battery light -->
     <string name="battery_light_title">Şarj ederken ışığı aç</string>
     <!-- High touch sensitivity -->

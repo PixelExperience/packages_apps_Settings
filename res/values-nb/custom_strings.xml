@@ -81,9 +81,6 @@ Varsler kan bli forsinket for disse appene."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktiver navigasjonsfelt på skjermen</string>
     <string name="disable_navkeys_summary">Aktiver navigasjonslinje på skjermen og deaktiver fysiske knapper</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Forhindre utilsiktet vekking</string>
-    <string name="proximity_wake_summary">Sjekk nærhetssensoren før skjermen vekkes</string>
     <!-- Battery light -->
     <string name="battery_light_title">Skru på lyset under lading</string>
     <!-- High touch sensitivity -->
@@ -95,6 +92,10 @@ Varsler kan bli forsinket for disse appene."</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Lagrede ørepropper</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">Lås opp med fingeravtrykk når skjermen er av</string>
+    <string name="fod_gesture_summary">Lar deg låse opp enheten uten å måtte slå på skjermen først</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Skjermoppdateringsfrekvens</string>
+    <string name="refresh_rate_auto">Automatisk</string>
+    <string name="refresh_rate_60">60 Hz (sparer batteri)</string>
 </resources>

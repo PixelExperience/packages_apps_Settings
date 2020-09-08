@@ -81,9 +81,6 @@ Obvestila za te aplikacije bodo morda zakasnjena."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Omogoči vrstico za krmarjenje na zaslonu</string>
     <string name="disable_navkeys_summary">Omogoči vrstico za krmarjenje na zaslonu in onemogoči fizične gumbe</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prepreči nenamerno bujenje</string>
-    <string name="proximity_wake_summary">Pred bujenjem zaslona preveri tipalo bližine</string>
     <!-- Battery light -->
     <string name="battery_light_title">Vklopi lučko ob polnjenju</string>
     <!-- High touch sensitivity -->

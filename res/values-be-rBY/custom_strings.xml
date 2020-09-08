@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Уключэнне экраннай панэлі навігацыі</string>
     <string name="disable_navkeys_summary">Задзейнічаць навігацыйны радок, але не задзейнічаць кнопкі прылады</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Прадухіляць выпадковае ўключэнне экрана</string>
-    <string name="proximity_wake_summary">Правяраць датчык набліжэння перад уключэннем экрана</string>
     <!-- Battery light -->
     <string name="battery_light_title">Уключыць светлавы індыкатар падчас зарадкі</string>
     <!-- High touch sensitivity -->
@@ -95,6 +92,10 @@
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Захаваныя навушнікі</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">Разблакуйце адбіткам пальца, калі экран выключаны</string>
+    <string name="fod_gesture_summary">Дазваляе разблакаваць прыладу без папярэдняга абуджэння экрана</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Частата абнаўлення экрана</string>
+    <string name="refresh_rate_auto">Аўтаматычна</string>
+    <string name="refresh_rate_60">60Hz (эканоміць батарэю)</string>
 </resources>

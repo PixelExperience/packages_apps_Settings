@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">啟用螢幕上的導覽列</string>
     <string name="disable_navkeys_summary">啟用螢幕上的導覽列和停用實體按鍵</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">防止意外喚醒</string>
-    <string name="proximity_wake_summary">在喚醒螢幕之前檢查距離傳感器</string>
     <!-- Battery light -->
     <string name="battery_light_title">充電時打開充電指示燈</string>
     <!-- High touch sensitivity -->
@@ -95,6 +92,10 @@
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">已儲存耳塞耳機</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">螢幕關閉以指紋解鎖</string>
+    <string name="fod_gesture_summary">無需先喚醒螢幕才能解鎖裝置</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">螢幕更新率</string>
+    <string name="refresh_rate_auto">自動</string>
+    <string name="refresh_rate_60">60Hz（省電）</string>
 </resources>

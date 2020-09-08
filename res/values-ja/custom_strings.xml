@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">画面内ナビゲーション有効化</string>
     <string name="disable_navkeys_summary">画面内ナビゲーションを有効にしてハードウェアボタンを無効にする</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">偶発的なスリープ解除を防止</string>
-    <string name="proximity_wake_summary">スリープ解除する前に接近センサーで確認する</string>
     <!-- Battery light -->
     <string name="battery_light_title">充電時にライト点灯</string>
     <!-- High touch sensitivity -->
@@ -95,6 +92,10 @@
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">保存されたイヤホン</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">画面消灯時に指紋でロック解除</string>
+    <string name="fod_gesture_summary">画面点灯なしでの端末の復帰を許可する</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">画面リフレッシュレート</string>
+    <string name="refresh_rate_auto">自動</string>
+    <string name="refresh_rate_60">60Hz (バッテリー節約)</string>
 </resources>

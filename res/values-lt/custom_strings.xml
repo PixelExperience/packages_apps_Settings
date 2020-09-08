@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Įgalinti ekrano juostą</string>
     <string name="disable_navkeys_summary">Įjunkite naršymo juostą ekrane ir išjunkite aparatūros mygtukus</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Neleiskite atsitiktinai įjungti ekrano</string>
-    <string name="proximity_wake_summary">Išeidami iš miego režimo, patikrinkite artumo jutiklį</string>
     <!-- Battery light -->
     <string name="battery_light_title">Įjunkite šviesos indikatorių,akumuliatoriaus įkrovimo metu</string>
     <!-- High touch sensitivity -->

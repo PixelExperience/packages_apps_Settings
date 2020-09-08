@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">چالاککردنی دوگمەکانی سەر ڕوونما</string>
     <string name="disable_navkeys_summary">چالاککردنی دوگمەکانی سەر ڕوونما و ناچالاککردنی دوگمەکانی ڕەقەکاڵا</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">ڕێگیری لە هەڵبوونی هەڵە</string>
-    <string name="proximity_wake_summary">پێش و پاشی هەستەوەرەکە بپشکنە پێش کردنەوەی ڕوونما</string>
     <!-- Battery light -->
     <string name="battery_light_title">هەڵبوونی ڕووناکی لەکاتی بارگاویکردنەوە</string>
     <!-- High touch sensitivity -->

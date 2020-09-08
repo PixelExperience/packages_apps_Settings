@@ -68,7 +68,6 @@
     <string name="backlight_summary_enabled_with_timeout">പ്രവർത്തിപ്പിക്കുക <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">പ്രവർത്തനമാക്കുക</string>
     <!-- Buttons - Enable navbar -->
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">ഉയര്‍ന്ന സ്പര്‍ശന സംവേദനക്ഷമത</string>

@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Разреши екранната лента за навигация</string>
     <string name="disable_navkeys_summary">Разреши екранна навигационна лента и забрани хардуерните бутони</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Предотвратяване на случайно събуждане</string>
-    <string name="proximity_wake_summary">Провери сензора за близост преди събуждане на екрана</string>
     <!-- Battery light -->
     <string name="battery_light_title">Включете светлината при зареждане</string>
     <!-- High touch sensitivity -->

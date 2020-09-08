@@ -81,9 +81,6 @@ Upozornenia z týchto aplikácií môžu byť oneskorené."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Navigačný panel na obrazovke</string>
     <string name="disable_navkeys_summary">Povoliť navigačný panel na obrazovke a zakázať hardvérové tlačidlá</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Zabrániť nechcenému prebudeniu</string>
-    <string name="proximity_wake_summary">Pred prebudením obrazovky skontrolovať senzor priblíženia</string>
     <!-- Battery light -->
     <string name="battery_light_title">Rozsvieti pri nabíjaní</string>
     <!-- High touch sensitivity -->

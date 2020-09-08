@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Ativar barra de navegação na tela</string>
     <string name="disable_navkeys_summary">Ativar barra de navegação na tela e desativar botões físicos</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Evitar despertar acidental</string>
-    <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de despertar a tela</string>
     <!-- Battery light -->
     <string name="battery_light_title">Ligar a luz quando estiver carregando</string>
     <!-- High touch sensitivity -->

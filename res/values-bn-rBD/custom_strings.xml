@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">স্ক্রীনে বাটন দেখানো চালু করুন</string>
     <string name="disable_navkeys_summary">স্ক্রীনে বাটন দেখানো চালু করুন এবং মোবাইলের বাটন বন্ধ করুন</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">দুর্ঘটনাবশত স্ক্রীন জেগেউঠা প্রতিরোধ করুন</string>
-    <string name="proximity_wake_summary">স্ক্রীন জেগে উঠার আগে প্রক্সিমিটি সেন্সরটি চেক করুন</string>
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">উচ্চ স্পর্শ সংবেদনশীলতা</string>
