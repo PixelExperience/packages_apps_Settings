@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Ενεργοποίηση γραμμής πλοήγησης στην οθόνη</string>
     <string name="disable_navkeys_summary">Ενεργοποίηση της γραμμής πλοήγησης στην οθόνη και απενεργοποίηση των φυσικών πλήκτρων</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Αποτροπή τυχαίας ενεργοποίησης </string>
-    <string name="proximity_wake_summary">Έλεγχος τον αισθητήρα εγγύτητας για την αφύπνιση της οθόνης</string>
     <!-- Battery light -->
     <string name="battery_light_title">Ενεργοποίησε το φωτισμό κατά τη φόρτιση</string>
     <!-- High touch sensitivity -->

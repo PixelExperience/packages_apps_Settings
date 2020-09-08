@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">הפעל מקשי ניווט על המסך</string>
     <string name="disable_navkeys_summary">מפעיל את מקשי ניווט על המסך ומשבית מקשים פיזיים</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">מנע התעוררות מקרית</string>
-    <string name="proximity_wake_summary">בדוק את חיישן הקירבה לפני הפעלת המסך</string>
     <!-- Battery light -->
     <string name="battery_light_title">הדלק את האור בעת טעינה</string>
     <!-- High touch sensitivity -->

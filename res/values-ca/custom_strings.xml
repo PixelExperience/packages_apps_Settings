@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Habilita la barra de navegació a la pantalla</string>
     <string name="disable_navkeys_summary">Habilita la barra de navegació a la pantalla i deshabilita els botons físics</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Evita l\'encesa accidental</string>
-    <string name="proximity_wake_summary">Comprova el sensor de proximitat abans d\'encendre la pantalla</string>
     <!-- Battery light -->
     <string name="battery_light_title">Encendre la llum quan el dispositiu s\'està carregant </string>
     <!-- High touch sensitivity -->

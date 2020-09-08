@@ -81,9 +81,6 @@
     <string name="disable_navkeys_title">ಆನ್-ಸ್ಕ್ರೀನ್ ನ್ಯಾವ್ ಬಾರ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
     <string name="disable_navkeys_summary">ಆನ್-ಸ್ಕ್ರೀನ್ ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ ಮತ್ತು ಹಾರ್ಡ್ವೇರ್ ಬಟನ್ ಗಳನ್ನು
  ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">ಆಕಸ್ಮಿಕವಾಗಿ ಎಚ್ಚರವಾಗುವಿಕೆಯನ್ನು ತಡೆಯಿರಿ.</string>
-    <string name="proximity_wake_summary">ಪರದೆಯನ್ನು ಎಚ್ಚರಿಸುವ ಮೊದಲು ಸಾಮೀಪ್ಯ ಸಂವೇದಕವನ್ನು ಪರಿಶೀಲಿಸಿರಿ.</string>
     <!-- Battery light -->
     <string name="battery_light_title">ಚಾರ್ಜ್ ಸಕ್ರಿಯವಾಗಿರುವಾಗ ದೀಪವನ್ನು ಬೆಳಗಿಸಿ..</string>
     <!-- High touch sensitivity -->

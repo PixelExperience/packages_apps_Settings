@@ -81,9 +81,6 @@ Notificările de la aceste aplicații se pot primi cu întârziere."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Activare bară de navigare pe ecran</string>
     <string name="disable_navkeys_summary">Activează bara de navigare pe ecran și dezactivează butoanele hardware</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevenire trezire accidentală</string>
-    <string name="proximity_wake_summary">Se verifică senzorul de proximitate înainte de trezirea ecranului</string>
     <!-- Battery light -->
     <string name="battery_light_title">Se pornește LED-ul la încărcare</string>
     <!-- High touch sensitivity -->

@@ -81,9 +81,6 @@ Powiadomienia z takich aplikacji mogą być opóźnione."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Włącz ekranowy pasek nawigacji</string>
     <string name="disable_navkeys_summary">Włącz ekranowy pasek nawigacji i wyłącz przyciski sprzętowe</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Zapobiegaj przypadkowemu wybudzeniu</string>
-    <string name="proximity_wake_summary">Używaj czujnika zbliżeniowego podczas wybudzania ekranu</string>
     <!-- Battery light -->
     <string name="battery_light_title">Włącz diodę powiadomień podczas ładowania</string>
     <!-- High touch sensitivity -->
@@ -95,6 +92,10 @@ Powiadomienia z takich aplikacji mogą być opóźnione."</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Zapisane słuchawki douszne</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">Odblokowywanie odcisków palców, gdy ekran jest wyłączony</string>
+    <string name="fod_gesture_summary">Umożliwia odblokowanie urządzenia bez konieczności wcześniejszego wybudzania ekranu</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Częstotliwość odświeżania ekranu</string>
+    <string name="refresh_rate_auto">Automatyczny</string>
+    <string name="refresh_rate_60">60 Hz (oszczędza baterię)</string>
 </resources>

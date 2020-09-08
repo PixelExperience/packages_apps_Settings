@@ -64,7 +64,6 @@
     <string name="backlight_summary_enabled_with_timeout">Овозможено за <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Овозможено</string>
     <!-- Buttons - Enable navbar -->
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <!-- Touchscreen hovering -->

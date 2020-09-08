@@ -81,9 +81,6 @@ Nende rakenduste märguanded võivad viibida."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Luba navigeerimisriba ekraanil</string>
     <string name="disable_navkeys_summary">Luba navigeerimisriba ekraanil ja keela riistvara nupud</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Väldi juhuslikku äratamist</string>
-    <string name="proximity_wake_summary">Kontrollige lähedussensorit enne ekraani äratamist</string>
     <!-- Battery light -->
     <string name="battery_light_title">Laadimise ajal lülita laadimistuli sisse</string>
     <!-- High touch sensitivity -->
@@ -95,6 +92,10 @@ Nende rakenduste märguanded võivad viibida."</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Salvestatud nööpkuularid</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">Avage sõrmejäljega, kui ekraan on välja lülitatud</string>
+    <string name="fod_gesture_summary">Võimaldab seadme lukust lahti võtta, ilma et peaksite kõigepealt ekraani üles äratama</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Ekraani värskenduskiirus</string>
+    <string name="refresh_rate_auto">Automaatne</string>
+    <string name="refresh_rate_60">60Hz (säästab akut)</string>
 </resources>

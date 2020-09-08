@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Омогући навигациону траку на екрану</string>
     <string name="disable_navkeys_summary">Омогућите навигациону траку на екрану и онемогућите хардверску дугмад</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Спречити случајна паљења</string>
-    <string name="proximity_wake_summary">Провери сензор близине пре паљења екрана</string>
     <!-- Battery light -->
     <string name="battery_light_title">Укључи светло када се пуни</string>
     <!-- High touch sensitivity -->
@@ -95,6 +92,10 @@
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Сачуване бежичне слушалице </string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">Откључај отиском прста када је екран искључен.</string>
+    <string name="fod_gesture_summary">Омогућава откључавање уређаја без претходног буђења екрана</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Освежавање екрана</string>
+    <string name="refresh_rate_auto">Аутоматски</string>
+    <string name="refresh_rate_60">60Hz (чува батерију)</string>
 </resources>

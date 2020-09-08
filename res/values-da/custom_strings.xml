@@ -81,9 +81,6 @@ Notifikationer fra disse apps kan være forsinkede."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktivér navigationslinje</string>
     <string name="disable_navkeys_summary">Aktivér navigationslinje på skærmen og deaktivér hardwareknapper</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Undgå utilsigtet vækning</string>
-    <string name="proximity_wake_summary">Check nærhedscensoren før skærmen vækkes</string>
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Høj berøringsfølsomhed</string>

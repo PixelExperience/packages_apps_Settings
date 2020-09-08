@@ -73,7 +73,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">સ્ક્રીન પર નેવિગેશન બટન ચાલુ કરો</string>
     <string name="disable_navkeys_summary">સ્ક્રીન પર નેવિગેશન બટન ચાલુ કરો અને હાર્ડવેર બટન બંધ કરો</string>
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">ઉચ્ચ ટચ સંવેદનશીલતા</string>

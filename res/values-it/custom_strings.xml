@@ -81,20 +81,21 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Attiva la barra di navigazione su schermo</string>
     <string name="disable_navkeys_summary">Attiva la barra di navigazione su schermo e disattiva i pulsanti fisici</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Evita riattivazioni involontarie</string>
-    <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di riattivare il dispositivo</string>
     <!-- Battery light -->
     <string name="battery_light_title">Attiva il LED durante la ricarica</string>
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Tocco ad alta sensibilità</string>
     <string name="high_touch_sensitivity_summary">Aumenta la sensibilità del touchscreen per l\'utilizzo con i guanti</string>
     <!-- Touchscreen hovering -->
-    <string name="touchscreen_hovering_title">Touch a puntamento</string>
-    <string name="touchscreen_hovering_summary">Consente di utilizzare il tocco come un mouse nei browser e nei desktop remoti</string>
+    <string name="touchscreen_hovering_title">Touchscreen a puntamento</string>
+    <string name="touchscreen_hovering_summary">Consente di utilizzare il tocco come un mouse nei browser, nei desktop remoti, ecc</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Auricolari salvati</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">Sbloccare con l\'impronta digitale quando lo schermo è spento</string>
+    <string name="fod_gesture_summary">Consente di sbloccare il dispositivo senza dovere prima accendere lo schermo</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Frequenza di aggiornamento</string>
+    <string name="refresh_rate_auto">Automatico</string>
+    <string name="refresh_rate_60">60Hz (risparmia batteria)</string>
 </resources>

@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">화면에 표시되는 탐색 메뉴 사용</string>
     <string name="disable_navkeys_summary">화면에 표시되는 탐색 메뉴를 사용하고 하드웨어 버튼을 사용 중지합니다</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">실수로 화면 켜기 방지</string>
-    <string name="proximity_wake_summary">화면을 켜기 전에 근접 센서 확인</string>
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">터치 감도 높이기</string>
@@ -93,6 +90,10 @@
     <string name="touchscreen_hovering_summary">웹 브라우저나 원격 데스크톱과 같은 앱에서 마우스처럼 화면에 호버링하여 사용할 수 있습니다.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">화면이 꺼졌을 때 지문으로 잠금해제</string>
+    <string name="fod_gesture_summary">화면 켜짐 없이 잠금해제하는 것을 허용</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">화면 재생 빈도</string>
+    <string name="refresh_rate_auto">자동</string>
+    <string name="refresh_rate_60">60Hz (배터리 절약)</string>
 </resources>

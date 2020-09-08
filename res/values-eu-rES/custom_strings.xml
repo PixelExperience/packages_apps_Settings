@@ -79,7 +79,6 @@ Baliteke aplikazio horietan jakinarazpenak atzeratzea."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Nabigazio barra gaitu</string>
     <string name="disable_navkeys_summary">Pantailako nabigazio-barra gaitu eta ezgaitu botoi fisikoak</string>
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Ukipen sentsibilitate altua</string>

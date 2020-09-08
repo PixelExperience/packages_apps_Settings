@@ -55,7 +55,6 @@
     <string name="backlight_summary_enabled_with_timeout">An comas fad <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">An comas</string>
     <!-- Buttons - Enable navbar -->
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Mothalachd àrd air an t-suathadh</string>

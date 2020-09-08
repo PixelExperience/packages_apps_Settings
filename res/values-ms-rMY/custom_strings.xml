@@ -81,9 +81,6 @@ Pemberitahuan mungkin ditangguhkan untuk apl ini."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Mengaktifkan bar navigasi di atas paparan</string>
     <string name="disable_navkeys_summary">Mengaktifkan bar navigasi di atas skrin dan melumpuhkan butang perkakasan</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Elak buka tak sengaja</string>
-    <string name="proximity_wake_summary">Periksa pengesan jarak sebelum buka paparan</string>
     <!-- Battery light -->
     <string name="battery_light_title">Hidupkan lampu semasa mengecas</string>
     <!-- High touch sensitivity -->

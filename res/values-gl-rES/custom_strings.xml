@@ -16,6 +16,7 @@
     <string name="screen_time_summary_usage_today">%1$s hoxe</string>
     <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Utilice Desbloqueo facial para desbloquear o dispositivo.\n\nTeña presente:\nA hora de mirar o teléfono pódelo desbloquear cando non ten intención de facer.\n\nO seu teléfono pode ser desbloqueado por alguén máis se mantén a súa cara mentres estea  os teus ollos están abertos.\n\nO teu teléfono pode desbloquealo por alguén que se parece moito a ti, digamos, ao teu fillo ou a un irmán idéntico.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Os datos rexistrados polo desbloqueo facial eliminaranse de xeito permanente e seguro. Despois da eliminación, necesitará o seu PIN, padrón ou contrasinal para desbloquear o seu teléfono móbil </string>
     <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Activa a batería automática</string>
     <string name="smart_battery_footer_custom">"Para aumentar a duración da batería, a batería automática limita o consumo das aplicacións que se utilizan con pouca frecuencia. Co paso do tempo, o teléfono saberá como utilizas as aplicacións.
@@ -33,6 +34,8 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Localiza o sensor da pegada dixital no lado esquerdo do teléfono.</string>
     <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Localiza o sensor da pegada dixital no frontal teléfono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localizar o sensor de pegadas dixitais no lado esquerdo da súa tableta. </string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localiza o sensor da pegada dixital no lado dereito da súa tableta. </string>
     <!-- Generic stuff used everywhere -->
     <string name="reset">Restabelecer</string>
     <!-- Buttons -->
@@ -78,10 +81,8 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Activar a barra de navegación</string>
     <string name="disable_navkeys_summary">Activar a barra de navegación na pantalla e desactivar os botones físicos</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Previr acender de forma accidental</string>
-    <string name="proximity_wake_summary">Comprobar o sensor de proximidade antes de acender a pantalla</string>
     <!-- Battery light -->
+    <string name="battery_light_title">Acende a luz ao cargar</string>
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Alta sensibilidade</string>
     <string name="high_touch_sensitivity_summary">Aumentar a sensibilidade da pantalla para poder utilizalo con luvas</string>
@@ -89,7 +90,12 @@
     <string name="touchscreen_hovering_title">Pantalla táctil deslizante</string>
     <string name="touchscreen_hovering_summary">Permítelle utilizar o dedo coma un rato ao deslizalo en navegadores web, escritorios remotos, etc.</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Auriculares gardados</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">Desbloquear coa pegada dixital cando a pantalla está apagada</string>
+    <string name="fod_gesture_summary">Permite desbloquea-lo dispositivo sen ter que activa-la pantalla</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Tasa de refresco da pantalla</string>
+    <string name="refresh_rate_auto">Automático</string>
+    <string name="refresh_rate_60">60Hz (aforra batería) </string>
 </resources>

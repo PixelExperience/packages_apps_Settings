@@ -81,9 +81,6 @@ Obavijesti za te aplikacije mogu kasniti."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Omogući navigacijsku traku zaslona</string>
     <string name="disable_navkeys_summary">Omogući zaslonsku navigacijsku traku i onemogući hardverske tipke</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Sprječavanje slučajnog buđenja</string>
-    <string name="proximity_wake_summary">Provjera senzora blizine prije buđenja zaslona</string>
     <!-- Battery light -->
     <string name="battery_light_title">Uključite svijetlo prilikom punjenja</string>
     <!-- High touch sensitivity -->
@@ -95,6 +92,10 @@ Obavijesti za te aplikacije mogu kasniti."</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Spremljene bežične slušalice</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">Otključaj otiskom prsta kad je ekran isključen</string>
+    <string name="fod_gesture_summary">Omogućuje otključavanje uređaja bez prethodnog buđenja zaslona</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Brzina osvježavanja zaslona</string>
+    <string name="refresh_rate_auto">Automatski</string>
+    <string name="refresh_rate_60">60Hz (štedi bateriju)</string>
 </resources>

@@ -81,9 +81,6 @@ Rajoitettujen sovellusten ilmoitukset voidaan näyttää viiveellä."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Näytön navigointipalkki</string>
     <string name="disable_navkeys_summary">Ota näytön navigointipalkki käyttöön ja poista fyysiset näppäimet käytöstä</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Estä vahinkoheräämiset</string>
-    <string name="proximity_wake_summary">Tarkista läheisyysanturi ennen näytön herättämistä</string>
     <!-- Battery light -->
     <string name="battery_light_title">Latausvalo ladattaessa</string>
     <!-- High touch sensitivity -->
@@ -96,9 +93,9 @@ Rajoitettujen sovellusten ilmoitukset voidaan näyttää viiveellä."</string>
     <string name="connected_tws_device_saved_title">Tallennetut kuulokkeet</string>
     <!-- Screen off fod -->
     <string name="fod_gesture_title">Avaa sormenjäljellä, kun näyttö on pois päältä.</string>
-    <string name="fod_gesture_summary">Salli laitteen avaus ilman näytön herärystä.</string>
+    <string name="fod_gesture_summary">Sallii laitteen lukituksen avaamisen ilman näytön herätystä.</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Näytön virkistystaajuus</string>
     <string name="refresh_rate_auto">Automaattinen</string>
-    <string name="refresh_rate_60">60 Herziä (säästää akkua)</string>
+    <string name="refresh_rate_60">60Hz (säästää akkua)</string>
 </resources>

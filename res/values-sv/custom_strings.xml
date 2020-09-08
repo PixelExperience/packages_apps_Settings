@@ -76,7 +76,6 @@ Aviseringar från dessa appar kan fördröjas."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktivera navigeringsfält på skärmen</string>
     <string name="disable_navkeys_summary">Aktivera navigeringsfältet på skärmen och inaktivera hårdvaruknapparna</string>
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Hög fingerkänslighet</string>

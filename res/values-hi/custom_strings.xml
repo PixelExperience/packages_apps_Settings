@@ -74,7 +74,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">ऑन-स्क्रीन नेविगेशन पट्टी सक्षम करें</string>
     <string name="disable_navkeys_summary">ऑनस्क्रीन नाविगेशन बार शुरू करें और हार्डवेअर बटन बंद करें</string>
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <string name="battery_light_title">Acenda a luz ao carregar</string>
     <!-- High touch sensitivity -->

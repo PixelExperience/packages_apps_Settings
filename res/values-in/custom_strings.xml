@@ -81,9 +81,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktifkan bilah navigasi pada layar</string>
     <string name="disable_navkeys_summary">Aktifkan navigasi pada layar dan matikan tombol fisik</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Cegah bangun yang tak disengaja</string>
-    <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
     <!-- Battery light -->
     <string name="battery_light_title">Nyalakan lampu saat mengisi daya</string>
     <!-- High touch sensitivity -->
@@ -99,4 +96,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="fod_gesture_summary">Izinkan membuka kunci tanpa harus mengaktifkan layar terlebih dahulu</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Rating penyegaran layar</string>
+    <string name="refresh_rate_auto">Otomatis</string>
+    <string name="refresh_rate_60">60Hz (hemat baterai)</string>
 </resources>

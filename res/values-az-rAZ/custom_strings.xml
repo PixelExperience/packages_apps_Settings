@@ -81,7 +81,6 @@ Həmin tətbiqlərin bildirişləri gecikə bilər."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Naviqasiya sətrini aktivləşdir</string>
     <string name="disable_navkeys_summary">Naviqasiya sətrini aktivləşdir və fiziki düymələri qeyri aktivləşdir</string>
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <string name="battery_light_title">Şarj edərkən işığı yandırın</string>
     <!-- High touch sensitivity -->

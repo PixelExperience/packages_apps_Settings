@@ -81,7 +81,6 @@ Maaaring maantala ang mga notification para sa mga app na ito."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Paganahin ang on-screen nav bar</string>
     <string name="disable_navkeys_summary">Paganahin ang on-screen navigation bar at huwag paganahin ang mga button ng hardware</string>
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <!-- Touchscreen hovering -->

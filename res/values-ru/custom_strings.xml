@@ -81,9 +81,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Включение панели навигации</string>
     <string name="disable_navkeys_summary">Включить панель навигации и отключить аппаратные кнопки</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Предотвращать случайное включение экрана</string>
-    <string name="proximity_wake_summary">Проверять датчик приближения при выходе из режима сна</string>
     <!-- Battery light -->
     <string name="battery_light_title">Включить световой индикатор во время зарядки</string>
     <!-- High touch sensitivity -->
@@ -95,6 +92,10 @@
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">Разблокировка с помощью отпечатка пальца при выключенном экране</string>
+    <string name="fod_gesture_summary">Позволяет разблокировать устройство без предварительного пробуждения экрана</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Частота обновления экрана</string>
+    <string name="refresh_rate_auto">Автоматически</string>
+    <string name="refresh_rate_60">60Hz (экономит батарею)</string>
 </resources>

@@ -64,7 +64,6 @@ Kennisgewings sal dalk vir hierdie programme vertraag word."</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktiveer op-skerm navigasiebalk</string>
     <string name="disable_navkeys_summary">Aktiveer op-skerm navigasiebalk en deaktiveer hardewareknoppies</string>
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Hoë raak sensitiwiteit</string>

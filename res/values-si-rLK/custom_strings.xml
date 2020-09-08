@@ -75,7 +75,6 @@
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">තිරය මත nav bar සක්‍රීය කරන්න</string>
     <string name="disable_navkeys_summary">තිරය මත nav bar සක්‍රීය කර දෘඪාංගමය යතුරු අක්‍රීය කරන්න</string>
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">ඉහළ ස්පර්ශ සංවේදිතාව</string>

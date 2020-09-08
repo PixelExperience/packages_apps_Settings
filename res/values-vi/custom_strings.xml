@@ -81,9 +81,6 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Bật thanh điều hướng trên màn hình</string>
     <string name="disable_navkeys_summary">Bật thanh điều hướng trên màn hình và tắt các phím cứng</string>
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Ngăn chặn đánh thức tình cờ</string>
-    <string name="proximity_wake_summary">Kiểm tra cảm biến tiệm cận trước khi đánh thức màn hình</string>
     <!-- Battery light -->
     <string name="battery_light_title">Bật đèn khi sạc</string>
     <!-- High touch sensitivity -->
@@ -95,6 +92,10 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Tai nghe đã lưu</string>
     <!-- Screen off fod -->
+    <string name="fod_gesture_title">Mở khóa bằng vân tay khi màn hình tắt</string>
+    <string name="fod_gesture_summary">Cho phép mở khóa thiết bị mà không cần phải đánh thức màn hình trước</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Tốc độ làm tươi màn hình</string>
+    <string name="refresh_rate_auto">Tự động</string>
+    <string name="refresh_rate_60">60Hz (tiết kiệm pin)</string>
 </resources>

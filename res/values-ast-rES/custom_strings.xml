@@ -55,7 +55,6 @@
     <string name="backlight_summary_enabled_with_timeout">Habilitáu pa <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Habilitáu</string>
     <!-- Buttons - Enable navbar -->
-    <!-- Proximity wake -->
     <!-- Battery light -->
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Sensibilidá alta al tactu</string>
