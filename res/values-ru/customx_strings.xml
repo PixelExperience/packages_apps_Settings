@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Длительное нажатие кнопки \'Домой\'</string>
     <string name="navigation_bar_home_double_tap_title">Двойное нажатие кнопки «Домой»</string>
     <string name="navigation_bar_app_switch_long_press_title">Длительное нажатие кнопки \'Недавние\'</string>
-    <string name="navigation_bar_edge_long_swipe_title">Действие по долгому свайпу</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Управление плеером</string>
     <string name="volbtn_music_controls_summary">Переключать музыкальные треки длительным нажатием кнопок громкости при выключенном экране</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">Уведомления, журнал уведомлений</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Всплывающие уведомления</string>
+    <string name="heads_up_notifications_enabled_summary">Показывать приоритетные уведомления небольшими плавающими окнами</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Предотвращать случайное включение экрана</string>
+    <string name="proximity_wake_summary">Проверять датчик приближения при выходе из режима сна</string>
 </resources>

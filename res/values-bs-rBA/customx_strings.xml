@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Akcija dugog pritiska Home tipke</string>
     <string name="navigation_bar_home_double_tap_title">Akcija dvostrukog dodira Home tipke</string>
     <string name="navigation_bar_app_switch_long_press_title">Nedavne akcije dugog pritiska</string>
-    <string name="navigation_bar_edge_long_swipe_title">Radnja dugim prijelazom po rubu</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Kontrola reprodukcije</string>
     <string name="volbtn_music_controls_summary">Pretražuj pesme dugim pritiskom na dugmad za kontrolu zvuka dok je ekran isključen</string>
@@ -296,4 +295,7 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">Notifikacije, izvještaj notifikacija</string>
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Sprečavanje slučajnog buđenja</string>
+    <string name="proximity_wake_summary">Provera senzora blizine prije buđenja ekrana</string>
 </resources>

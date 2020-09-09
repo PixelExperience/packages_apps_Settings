@@ -13,6 +13,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">સ્ક્રીન પર નેવિગેશન બટન ચાલુ કરો</string>
+    <string name="disable_navkeys_summary">સ્ક્રીન પર નેવિગેશન બટન ચાલુ કરો અને હાર્ડવેર બટન બંધ કરો</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">સંપૂર્ણપણે એપ્લિકેશન બંધ કરવાનું બૅક બટન</string>
     <string name="kill_app_longpress_back_summary">અગ્રભૂમિ પર રહેલ ઍપને સંપૂર્ણપણે બંધ કરવા માટે લંબાંણપૂર્વક બૅક બટન દબાવો</string>
@@ -70,4 +72,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

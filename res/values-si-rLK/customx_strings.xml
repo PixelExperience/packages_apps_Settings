@@ -16,6 +16,8 @@
     <string name="hardware_keys_power_key_title">බල බොත්තම</string>
     <string name="hardware_keys_volume_keys_title">ශබ්ද බොත්තම්</string>
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">තිරය මත nav bar සක්‍රීය කරන්න</string>
+    <string name="disable_navkeys_summary">තිරය මත nav bar සක්‍රීය කර දෘඪාංගමය යතුරු අක්‍රීය කරන්න</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">ආපසු බොත්තම යෙදුම නසයි</string>
     <!-- Hostname setting -->
@@ -67,4 +69,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

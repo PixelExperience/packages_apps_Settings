@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Hành động khi nhấn giữ phím Trang chính</string>
     <string name="navigation_bar_home_double_tap_title">Hành động nhấn phím Trang chính hai lần</string>
     <string name="navigation_bar_app_switch_long_press_title">Thao tác nhấn giữ phím gần đây</string>
-    <string name="navigation_bar_edge_long_swipe_title">Hành động vuốt từ cạnh và giữ</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Điều khiển phát lại</string>
     <string name="volbtn_music_controls_summary">Chuyển bài hát bằng nhấn giữ các phím âm lượng khi màn hình đang tắt</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">thông báo, báo cáo thông báo</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Cửa sổ thông báo</string>
+    <string name="heads_up_notifications_enabled_summary">Hiển thị các thông báo ưu tiên trong một cửa sổ nổi nhỏ</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Ngăn chặn đánh thức tình cờ</string>
+    <string name="proximity_wake_summary">Kiểm tra cảm biến tiệm cận trước khi đánh thức màn hình</string>
 </resources>

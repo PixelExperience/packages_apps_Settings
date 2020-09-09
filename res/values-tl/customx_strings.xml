@@ -16,6 +16,8 @@
     <string name="hardware_keys_power_key_title">Pindutan ng Power</string>
     <string name="hardware_keys_volume_keys_title">Mga buton ng lakas ng tunog</string>
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">Paganahin ang on-screen nav bar</string>
+    <string name="disable_navkeys_summary">Paganahin ang on-screen navigation bar at huwag paganahin ang mga button ng hardware</string>
     <!-- Kill app long-press back -->
     <!-- Hostname setting -->
     <!-- Advanced restart options -->
@@ -88,4 +90,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

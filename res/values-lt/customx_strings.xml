@@ -16,8 +16,8 @@
     <string name="hardware_keys_power_key_title">Maitinimo mygtukas</string>
     <string name="hardware_keys_volume_keys_title">Garsumo mygtukai</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Įgalinti ekrano naršymo juostą</string>
-    <string name="disable_navkeys_summary">Įgalinkite ekrano naršymo juostą ir išjunkite aparatūros mygtukus</string>
+    <string name="disable_navkeys_title">Įgalinti ekrano juostą</string>
+    <string name="disable_navkeys_summary">Įjunkite naršymo juostą ekrane ir išjunkite aparatūros mygtukus</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Priverstinai uždaryti programą mygtuku atgal</string>
     <string name="kill_app_longpress_back_summary">Priverstinai uždaryti programą ilgai spaudžiant mygtuką atgal</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Ilgai paspauskite namų mygtuką</string>
     <string name="navigation_bar_home_double_tap_title">Namų dviejų bakstelėjimų veiksmas</string>
     <string name="navigation_bar_app_switch_long_press_title">Naujausių ilgo paspaudimo veiksmas</string>
-    <string name="navigation_bar_edge_long_swipe_title">Ilgo paspaudimo veiksmas</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Valdykite atkūrimą</string>
     <string name="volbtn_music_controls_summary">Ilgai spausdami garsumo mygtukus, kol ekranas išjungtas, ieškokite muzikos įrašų</string>
@@ -298,4 +297,7 @@
     <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Iššokantys pranešimai</string>
     <string name="heads_up_notifications_enabled_summary">Rodyti prioritetinius pranešimus mažame plaukiojančiame lange</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Neleiskite atsitiktinai įjungti ekrano</string>
+    <string name="proximity_wake_summary">Išeidami iš miego režimo, patikrinkite artumo jutiklį</string>
 </resources>

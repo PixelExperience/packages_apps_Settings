@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">إجراء الضغط الطويل على زر الرئيسية</string>
     <string name="navigation_bar_home_double_tap_title">إجراء الضغط مرتين على زر الرئيسية</string>
     <string name="navigation_bar_app_switch_long_press_title">إجراء الضغط المطوّل على زر الحديثة</string>
-    <string name="navigation_bar_edge_long_swipe_title">إجراء السحب الطويل من الحافة</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">التحكم في التشغيل</string>
     <string name="volbtn_music_controls_summary">تبديل مسار الموسيقى بضغطة طويلة على مفاتيح الصوت والشاشة مغلقة</string>
@@ -296,4 +295,7 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">التنبيهات، سجل التنبيهات</string>
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">منع الاستيقاظ بالخطأ</string>
+    <string name="proximity_wake_summary">التحقق من مستشعر القرب قبل إيقاظ الشاشة</string>
 </resources>

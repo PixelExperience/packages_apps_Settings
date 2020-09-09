@@ -61,7 +61,6 @@
     <string name="navigation_bar_home_long_press_title">Azzjoni għall-għafsa twila fuq il-buttuna tal-home</string>
     <string name="navigation_bar_home_double_tap_title">Azzjoni għall-għafsa doppja fuq il-buttuna tal-home</string>
     <string name="navigation_bar_app_switch_long_press_title">Azzjoni għall-għafsa twila fuq il-buttuna tal-recents</string>
-    <string name="navigation_bar_edge_long_swipe_title">Azzjoni għal swipe twila max-xifer</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Kontroll tal-playback</string>
     <string name="volbtn_music_controls_summary">Fittex it-tracks tal-musika minn agħfsa twila mill-buttuni tal-volum waqt li l-iskrin hu mitfi</string>
@@ -172,4 +171,7 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Waqqaf il-qawmien aċċidentali</string>
+    <string name="proximity_wake_summary">Iċċekkja is-senser qrubija qabel ma tqajjem l-iskrin</string>
 </resources>

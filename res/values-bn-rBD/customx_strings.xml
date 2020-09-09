@@ -16,6 +16,8 @@
     <string name="hardware_keys_power_key_title">পাওয়ার বাটন</string>
     <string name="hardware_keys_volume_keys_title">ভলিউম বাটন</string>
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">স্ক্রীনে বাটন দেখানো চালু করুন</string>
+    <string name="disable_navkeys_summary">স্ক্রীনে বাটন দেখানো চালু করুন এবং মোবাইলের বাটন বন্ধ করুন</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">ব্যাক বোতাম দ্বারা অ্যাপ নিস্ক্রিয় করুন</string>
     <!-- Hostname setting -->
@@ -69,4 +71,7 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">দুর্ঘটনাবশত স্ক্রীন জেগেউঠা প্রতিরোধ করুন</string>
+    <string name="proximity_wake_summary">স্ক্রীন জেগে উঠার আগে প্রক্সিমিটি সেন্সরটি চেক করুন</string>
 </resources>

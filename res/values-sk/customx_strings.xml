@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Akcia dlhého stlačenia tlačidla Domov</string>
     <string name="navigation_bar_home_double_tap_title">Akcia dvojkliku tlačidla Domov</string>
     <string name="navigation_bar_app_switch_long_press_title">Akcia dlhého stlačenia tlačidla Nedávne</string>
-    <string name="navigation_bar_edge_long_swipe_title">Akcia dlhým prejdením na okraji</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Ovládanie prehrávania</string>
     <string name="volbtn_music_controls_summary">Dlhé stlačenie tlačidiel hlasitosti počas vypnutej obrazovky prepne hudobné stopy</string>
@@ -294,4 +293,7 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">oznámenia, záznam oznámení</string>
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Zabrániť nechcenému prebudeniu</string>
+    <string name="proximity_wake_summary">Pred prebudením obrazovky skontrolovať senzor priblíženia</string>
 </resources>

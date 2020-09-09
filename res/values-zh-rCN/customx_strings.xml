@@ -14,15 +14,15 @@
     <!-- Buttons -->
     <string name="navigation_bar_title">导航栏</string>
     <string name="hardware_keys_power_key_title">电源键</string>
-    <string name="hardware_keys_volume_keys_title">音量按钮</string>
+    <string name="hardware_keys_volume_keys_title">音量键</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">启用虚拟按键</string>
-    <string name="disable_navkeys_summary">启用虚拟按键并禁用硬件按键</string>
+    <string name="disable_navkeys_summary">启用屏幕上导航栏并禁用硬件按钮</string>
     <!-- Kill app long-press back -->
-    <string name="kill_app_longpress_back">使用返回键强行关闭应用</string>
+    <string name="kill_app_longpress_back">长按返回键强行关闭应用</string>
     <string name="kill_app_longpress_back_summary">长按返回键终止前台应用</string>
     <!-- Hostname setting -->
-    <string name="device_hostname">设备主机名</string>
+    <string name="device_hostname">设备的网络主机名</string>
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">高级重启</string>
     <string name="advanced_reboot_summary">设备已解锁时，在电源菜单的重启选项下加入重启至恢复模式或引导程序的选项</string>
@@ -32,10 +32,10 @@
     <string name="unlock_scramble_pin_layout_title">乱序布局</string>
     <string name="unlock_scramble_pin_layout_summary">解锁设备时使用乱序的 PIN 布局</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
-    <string name="status_bar_double_tap_to_sleep_title">点击睡眠</string>
-    <string name="status_bar_double_tap_to_sleep_summary">双击状态栏来关闭屏幕</string>
+    <string name="status_bar_double_tap_to_sleep_title">双击通知栏以睡眠</string>
+    <string name="status_bar_double_tap_to_sleep_summary">双击状态栏或锁屏以关闭屏幕</string>
     <!-- Wake on plug -->
-    <string name="wake_when_plugged_or_unplugged_title">充电唤醒</string>
+    <string name="wake_when_plugged_or_unplugged_title">连接或移除电源时唤醒</string>
     <string name="wake_when_plugged_or_unplugged_summary">在连接或者断开充电器时打开屏幕</string>
     <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">选择图案大小</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Home 键的长按操作</string>
     <string name="navigation_bar_home_double_tap_title">Home 键双击行为</string>
     <string name="navigation_bar_app_switch_long_press_title">最近应用键的长按操作</string>
-    <string name="navigation_bar_edge_long_swipe_title">边缘上的长滑动作</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">播放控制</string>
     <string name="volbtn_music_controls_summary">屏幕关闭时，长按音量键切换曲目</string>
@@ -95,16 +94,16 @@
     <string name="volbtn_cursor_control_on">音量+/-光标左/右移动</string>
     <string name="volbtn_cursor_control_on_reverse">音量+/-光标右/左移动</string>
     <string name="swap_volume_buttons_title">重新调整</string>
-    <string name="swap_volume_buttons_summary">根据设备旋转交换音量按钮</string>
+    <string name="swap_volume_buttons_summary">旋转屏幕时交换音量键的布局</string>
     <!-- Home key customization -->
     <string name="home_answer_call_title">接听电话</string>
     <string name="home_answer_call_summary">按 Home 键接听来电</string>
     <!-- Power menu key customization -->
     <string name="power_menu_title">电源菜单</string>
     <string name="power_menu_screenshot_title">屏幕截图</string>
-    <string name="power_menu_screenshot_summary">长按以进行局部截图</string>
+    <string name="power_menu_screenshot_summary">长按电源按键局部截图</string>
     <string name="power_menu_airplane_title">飞行模式</string>
-    <string name="power_menu_users_title">用户切换器</string>
+    <string name="power_menu_users_title">用户切换</string>
     <string name="power_menu_lockdown_title">锁定</string>
     <string name="power_end_call_title">结束通话</string>
     <string name="power_end_call_summary">按电源键结束当前通话</string>
@@ -141,7 +140,7 @@
     <string name="status_bar_clock_position_right">右侧</string>
     <string name="status_bar_clock_position_left">左侧</string>
     <string name="status_bar_clock_position_center">居中</string>
-    <string name="status_bar_am_pm_title">上午/下午</string>
+    <string name="status_bar_am_pm_title">上午 / 下午样式</string>
     <string name="status_bar_am_pm_info">24 小时时钟已启用</string>
     <string name="status_bar_am_pm_normal">正常</string>
     <string name="status_bar_am_pm_small">较小</string>
@@ -163,7 +162,7 @@
     <string name="status_bar_brightness_slider_summary">在快速设置中调节亮度</string>
     <string name="status_bar_brightness_slider_auto_title">自动调节亮度</string>
     <string name="status_bar_brightness_slider_auto_summary">在亮度滑块附近显示自动调节亮度开关</string>
-    <string name="status_bar_brightness_slider_show_never">始终不显示</string>
+    <string name="status_bar_brightness_slider_show_never">始终隐藏</string>
     <string name="status_bar_brightness_slider_show_expanded">展开时显示</string>
     <string name="status_bar_brightness_slider_show_always">始终显示</string>
     <string name="status_bar_toggle_brightness">亮度控制</string>
@@ -180,21 +179,21 @@
     <string name="network_traffic_units_title">网络流量单位</string>
     <!-- QS settings -->
     <string name="qs_title">快速设置</string>
-    <string name="qs_rows_portrait_title">纵向时磁贴行数</string>
-    <string name="qs_rows_landscape_title">横向时磁贴行数</string>
-    <string name="qs_columns_portrait_title">纵向时磁贴列数</string>
-    <string name="qs_columns_landscape_title">横向时磁贴列数</string>
+    <string name="qs_rows_portrait_title">行 （竖屏）</string>
+    <string name="qs_rows_landscape_title">行 （横屏）</string>
+    <string name="qs_columns_portrait_title">列 （竖屏）</string>
+    <string name="qs_columns_landscape_title">列 （横屏）</string>
     <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">磁贴标题</string>
-    <string name="qs_tile_title_visibility_summary">启用以显示快速设置磁贴标题</string>
+    <string name="qs_tile_title_visibility_summary">在快速设置磁贴下显示标题</string>
     <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">触摸时震动</string>
     <string name="qs_vibrate_summary">触摸QS瓷砖时振动</string>
     <!-- QS animation/interpolator styles  -->
     <string name="qs_animation_options_title">快速设置动画</string>
     <string name="qs_tile_animation_style_title">动画风格</string>
-    <string name="qs_tile_animation_duration_title">瓷块动画持续时间</string>
-    <string name="qs_tile_animation_interpolator_title">瓷砖动画插值器</string>
+    <string name="qs_tile_animation_duration_title">持续时间</string>
+    <string name="qs_tile_animation_interpolator_title">动画插值器</string>
     <string name="qs_tile_animation_style_off">无动画</string>
     <string name="qs_tile_animation_style_flip">翻转</string>
     <string name="qs_tile_animation_style_rotate">旋转</string>
@@ -204,18 +203,18 @@
     <string name="qs_tile_animation_interpolator_linearInterpolator">线性</string>
     <string name="qs_tile_animation_interpolator_accelerateInterpolator">加速</string>
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">减速</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">加速减速</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">加速并减速</string>
     <string name="qs_tile_animation_interpolator_bounceInterpolator">反弹</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">过冲</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">提前</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">预测过度</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">越过</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">预留</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">预留并越过</string>
     <!-- Notch behavior -->
-    <string name="display_cutout_mode_title">缺口行为</string>
+    <string name="display_cutout_mode_title">刘海样式</string>
     <string name="display_cutout_mode_normal">默认</string>
     <string name="display_cutout_mode_hidden">隐藏</string>
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">全屏应用</string>
-    <string name="display_cutout_force_fullscreen_summary">强制应用忽略全面屏上缘</string>
+    <string name="display_cutout_force_fullscreen_summary">选定应用中忽略刘海</string>
     <string name="display_cutout_force_fullscreen_restart_app">请重新启动应用程序以应用更改。</string>
     <string name="cutout_force_fullscreen_no_apps">没有应用</string>
     <!-- Three-fingers-swipe to screenshot -->
@@ -276,7 +275,7 @@
     <string name="adj_intensity_title">亮度</string>
     <string name="adj_contrast_title">对比度</string>
     <!-- Back Gesture Height -->
-    <string name="back_height_low_label">全部</string>
+    <string name="back_height_low_label">完整</string>
     <string name="back_height_high_label">底部</string>
     <string name="back_options_dialog_title">选项</string>
     <string name="back_height_message">返回手势的触发区域</string>
@@ -298,4 +297,7 @@
     <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">浮动通知</string>
     <string name="heads_up_notifications_enabled_summary">在浮动窗口中显示优先通知</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">防止意外唤醒</string>
+    <string name="proximity_wake_summary">唤醒屏幕前检查距离传感器</string>
 </resources>

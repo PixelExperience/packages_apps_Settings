@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Dejanje dolgega pritiska Domov</string>
     <string name="navigation_bar_home_double_tap_title">Dejanje dvojnega tapa Domov</string>
     <string name="navigation_bar_app_switch_long_press_title">Dejanje dolgega pritiska Nedavno</string>
-    <string name="navigation_bar_edge_long_swipe_title">Dejanje dolgega potega z roba</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Nadzor predvajanja</string>
     <string name="volbtn_music_controls_summary">Iščite skladbe z dolgim pritiskom na tipki za glasnost med izklopljenim zaslonom</string>
@@ -288,4 +287,7 @@
     <string name="translucent_lockscreen_notifications_bg_title">Prosojno ozadje obvestil</string>
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Prepreči nenamerno bujenje</string>
+    <string name="proximity_wake_summary">Pred bujenjem zaslona preveri tipalo bližine</string>
 </resources>

@@ -16,8 +16,8 @@
     <string name="hardware_keys_power_key_title">Itzaltze botoia</string>
     <string name="hardware_keys_volume_keys_title">Bolumen botoiak</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Gaitu pantailako nabigazio-barra</string>
-    <string name="disable_navkeys_summary">Gaitu pantailako nabigazio-barra eta ezgaitu botoi fisikoak</string>
+    <string name="disable_navkeys_title">Nabigazio barra gaitu</string>
+    <string name="disable_navkeys_summary">Pantailako nabigazio-barra gaitu eta ezgaitu botoi fisikoak</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Hil aplikazioa atzera botoiarekin</string>
     <string name="kill_app_longpress_back_summary">Hil aurrealdeko aplikazioa atzera botoia luze sakatuz</string>
@@ -244,4 +244,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

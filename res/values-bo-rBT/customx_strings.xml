@@ -16,6 +16,8 @@
     <string name="hardware_keys_power_key_title">གློག་སྒོའི་མཐེབ། </string>
     <string name="hardware_keys_volume_keys_title">སྒྲའི་མཐེབ། </string>
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">བརྙན་ཤེལ་གྱི་ཕྱོགས་ཁྲིད་འཕྲེད་བྱང་སྤྱོད་པ།</string>
+    <string name="disable_navkeys_summary">བརྙན་ཤེལ་གྱི་ཕྱོགས་ཁྲིད་མཐེབ་སྤྱོད་པ་མ་ཟད་མཐེབ་གནོན་གཞན་དག་འགོག་པ།</string>
     <!-- Kill app long-press back -->
     <!-- Hostname setting -->
     <!-- Advanced restart options -->
@@ -143,4 +145,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

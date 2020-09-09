@@ -17,7 +17,7 @@
     <string name="hardware_keys_volume_keys_title">Tombol volume</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktifkan navigasi pada layar</string>
-    <string name="disable_navkeys_summary">Aktifkan layar navigasi bar dan nonaktifkan tombol perangkat keras</string>
+    <string name="disable_navkeys_summary">Aktifkan navigasi pada layar dan matikan tombol fisik</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Matikan aplikasi dengan tombol kembali</string>
     <string name="kill_app_longpress_back_summary">Matikan aplikasi latar dengan menahan tombol kembali</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Tindakan menekan lama home</string>
     <string name="navigation_bar_home_double_tap_title">Tindakan dua kali ketuk home</string>
     <string name="navigation_bar_app_switch_long_press_title">Tindakan menekan lama recent</string>
-    <string name="navigation_bar_edge_long_swipe_title">Tindakan geser panjang dari tepi</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Kontrol pemutaran</string>
     <string name="volbtn_music_controls_summary">Mencari trek musik dengan menekan lama tombol volume saat layar mati</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">notifikasi, log notifikasi</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Notifikasi mengambang</string>
+    <string name="heads_up_notifications_enabled_summary">Menampilkan pemberitahuan prioritas dalam jendela kecil yang mengambang</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Cegah bangun yang tak disengaja</string>
+    <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
 </resources>

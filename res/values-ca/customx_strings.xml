@@ -16,8 +16,8 @@
     <string name="hardware_keys_power_key_title">Botó d\'apagat</string>
     <string name="hardware_keys_volume_keys_title">Botons de volum</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Habilita la barra de navegació en pantalla</string>
-    <string name="disable_navkeys_summary">Habilita la barra de navegació en pantalla i deshabilita els botons físics</string>
+    <string name="disable_navkeys_title">Habilita la barra de navegació a la pantalla</string>
+    <string name="disable_navkeys_summary">Habilita la barra de navegació a la pantalla i deshabilita els botons físics</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Mata l\'aplicació amb la tecla enrera</string>
     <string name="kill_app_longpress_back_summary">Mata l\'aplicació en primer pla fent una pulsació llarga del botó enrera</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Acció de pulsació llarga d\'Inici</string>
     <string name="navigation_bar_home_double_tap_title">Acció de doble pulsació d\'Inici</string>
     <string name="navigation_bar_app_switch_long_press_title">Acció pulsació llarga de Recents</string>
-    <string name="navigation_bar_edge_long_swipe_title">Acció de lliscament llarg a la vora</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Controla la reproducció</string>
     <string name="volbtn_music_controls_summary">Busca les pistes de música fent una pulsació llarga a les tecles de volum mentre la pantalla està apagada</string>
@@ -279,4 +278,7 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Evita l\'encesa accidental</string>
+    <string name="proximity_wake_summary">Comprova el sensor de proximitat abans d\'encendre la pantalla</string>
 </resources>

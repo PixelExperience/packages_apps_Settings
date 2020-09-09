@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">عمل فشار طولانی دکمه خانه</string>
     <string name="navigation_bar_home_double_tap_title">عمل دوبار ضربه روی دکمه خانه</string>
     <string name="navigation_bar_app_switch_long_press_title">عمل فشار طولانی دکمه موارد اخیر</string>
-    <string name="navigation_bar_edge_long_swipe_title">حساسیت لبه ها به کشیدن </string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">کنترل پخش</string>
     <string name="volbtn_music_controls_summary">دنبال موسیقی ها گشتن با فشار طولانی کلید های صدا هنگامی که صفحه نمایش خاموش است</string>
@@ -279,4 +278,7 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">جلوگیری از روشن شدن تصادفی</string>
+    <string name="proximity_wake_summary">بررسی حسگر مجاورت جهت روشن شدن</string>
 </resources>

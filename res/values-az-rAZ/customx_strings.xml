@@ -16,8 +16,8 @@
     <string name="hardware_keys_power_key_title">Güc düyməsi</string>
     <string name="hardware_keys_volume_keys_title">Səs düymələri</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Hərəkət sətrini fəallaşdır</string>
-    <string name="disable_navkeys_summary">Ekranda hərəkət sətrini fəallaşdır və aparat təminatı düymələrini sıradan çıxart</string>
+    <string name="disable_navkeys_title">Naviqasiya sətrini aktivləşdir</string>
+    <string name="disable_navkeys_summary">Naviqasiya sətrini aktivləşdir və fiziki düymələri qeyri aktivləşdir</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Tətbiq dayandırıcı geri düyməsi</string>
     <string name="kill_app_longpress_back_summary">Geri düyməsinə uzun basmaq önplandakı tətbiqi dayandırar</string>
@@ -83,7 +83,6 @@
     <string name="navigation_bar_home_long_press_title">Əsas ekran düyməsinə uzun basma</string>
     <string name="navigation_bar_home_double_tap_title">Əsas ekran düyməsinə cüt toxunma</string>
     <string name="navigation_bar_app_switch_long_press_title">Son tətbiqlər düyməsinə uzun basma</string>
-    <string name="navigation_bar_edge_long_swipe_title">Kənar boyunca sürüşdürmə hərəkəti</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Musiqi nəzarəti</string>
     <string name="volbtn_music_controls_summary">Ekran sönülü olarkən səs düymələrinə uzun basaraq musiqini dəyişdir</string>
@@ -253,4 +252,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

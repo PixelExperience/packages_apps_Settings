@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Действие при дълго натисканане на начало</string>
     <string name="navigation_bar_home_double_tap_title">Действие при двукратно натискане на начало</string>
     <string name="navigation_bar_app_switch_long_press_title">Последни дълги натискания действия</string>
-    <string name="navigation_bar_edge_long_swipe_title">Действие при дълго плъзване от ъгъла</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Управление на музика</string>
     <string name="volbtn_music_controls_summary">Смяна на песни чрез дълъго натискане на бутоните на звука докато дисплеят е изключен</string>
@@ -288,4 +287,7 @@
     <string name="translucent_lockscreen_notifications_bg_title">Прозрачен фон за известията</string>
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Предотвратяване на случайно събуждане</string>
+    <string name="proximity_wake_summary">Провери сензора за близост преди събуждане на екрана</string>
 </resources>

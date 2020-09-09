@@ -13,6 +13,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">ਸਕ੍ਰੀਨ \'ਤੇ ਆਵਾਗੌਣ ਪੱਟੀ ਚਾਲੂ ਕਰੋ</string>
+    <string name="disable_navkeys_summary">ਸਕ੍ਰੀਨ \'ਤੇ ਆਵਾਗੌਣ ਪੱਟੀ ਚਾਲੂ ਕਰਕੇ ਮਸ਼ੀਨੀ ਹਾਰਡਵੇਅਰ ਬਟਨਾਂ ਨੂੰ ਬੰਦ ਕਰੋ</string>
     <!-- Kill app long-press back -->
     <!-- Hostname setting -->
     <!-- Advanced restart options -->
@@ -58,4 +60,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

@@ -16,8 +16,8 @@
     <string name="hardware_keys_power_key_title">Дугме за укључивање</string>
     <string name="hardware_keys_volume_keys_title">Дугмад за јачину звука</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Навигациона трака на екрану</string>
-    <string name="disable_navkeys_summary">Омогућите навигациону траку на екрану и онемогућите хардверску дугмад.</string>
+    <string name="disable_navkeys_title">Омогући навигациону траку на екрану</string>
+    <string name="disable_navkeys_summary">Омогућите навигациону траку на екрану и онемогућите хардверску дугмад</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Окончавање апликација дугметом за назад</string>
     <string name="kill_app_longpress_back_summary">Окончајте позадинску апликацију задржавањем дугмета „Назад“.</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Дуги притисак на дугме „Почетна“</string>
     <string name="navigation_bar_home_double_tap_title">Двоструки додир дугмета „Почетна“</string>
     <string name="navigation_bar_app_switch_long_press_title">Акција на дуги притисак дугмета „скорашње“</string>
-    <string name="navigation_bar_edge_long_swipe_title">Акција при  дугом превлачењу на рубу</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Управљање репродукцијом</string>
     <string name="volbtn_music_controls_summary">Премотавајте нумере дугим притиском на дугмад за јачину звука док је екран искључен.</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">Обавештења,белешке обавештења</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Искачућа обавештења</string>
+    <string name="heads_up_notifications_enabled_summary">Приказује приоритетна обавештења у малим искачућим прозорима.</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Спречити случајна паљења</string>
+    <string name="proximity_wake_summary">Провери сензор близине пре паљења екрана</string>
 </resources>

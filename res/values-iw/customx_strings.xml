@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">פעולת לחיצה ארוכה על מקש הבית</string>
     <string name="navigation_bar_home_double_tap_title">פעולת לחיצה כפולה על מקש הבית</string>
     <string name="navigation_bar_app_switch_long_press_title">פעולת לחיצה ארוכה על מקש יישומים אחרונים</string>
-    <string name="navigation_bar_edge_long_swipe_title">פעולת החלקה ארוכה ב Edge</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">שלוט במוסיקה</string>
     <string name="volbtn_music_controls_summary">מעבר בין שירים על ידי לחיצה ארוכה על מקשי עוצמת השמע כאשר המסך כבוי</string>
@@ -295,4 +294,7 @@
     <string name="translucent_lockscreen_notifications_bg_title">רקע שקוף למחצה להתראות</string>
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">מנע התעוררות מקרית</string>
+    <string name="proximity_wake_summary">בדוק את חיישן הקירבה לפני הפעלת המסך</string>
 </resources>

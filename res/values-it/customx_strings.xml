@@ -16,7 +16,7 @@
     <string name="hardware_keys_power_key_title">Tasto di accensione</string>
     <string name="hardware_keys_volume_keys_title">Tasti Volume</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Abilita barra di navigazione su schermo</string>
+    <string name="disable_navkeys_title">Attiva la barra di navigazione su schermo</string>
     <string name="disable_navkeys_summary">Attiva la barra di navigazione su schermo e disattiva i pulsanti fisici</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Chiudi app con pulsante indietro</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Azione pressione prolungata Home</string>
     <string name="navigation_bar_home_double_tap_title">Azione doppio tap Home</string>
     <string name="navigation_bar_app_switch_long_press_title">Azione pressione prolungata Panoramica</string>
-    <string name="navigation_bar_edge_long_swipe_title">Azione di scorrimento lungo il bordo</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Controllo della riproduzione</string>
     <string name="volbtn_music_controls_summary">Quando lo schermo è spento, passa da un brano all\'altro tenendo premuti i tasti del volume</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">notifiches,  il registro cronologico</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Notifiche pop-up</string>
+    <string name="heads_up_notifications_enabled_summary">Visualizza le notifiche prioritarie in una piccola finestra fluttuante</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Evita riattivazioni involontarie</string>
+    <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di riattivare il dispositivo</string>
 </resources>

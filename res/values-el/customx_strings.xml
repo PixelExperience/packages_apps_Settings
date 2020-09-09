@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Ενέργεια παρατεταμένης πίεσης αρχικής οθόνης</string>
     <string name="navigation_bar_home_double_tap_title">Ενέργεια διπλού χτυπήματος αρχικής οθόνης</string>
     <string name="navigation_bar_app_switch_long_press_title">Ενέργεια παρατεταμένης πίεσης προσφάτων</string>
-    <string name="navigation_bar_edge_long_swipe_title">Ενέργεια μακράς κίνησης σε άκρη</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Έλεγχος αναπαραγωγής</string>
     <string name="volbtn_music_controls_summary">Αναζήτηση μουσικών κομμάτιών πιέζοντας παρατεταμένα τα πλήκτρα έντασης ενώ η οθόνη είναι απενεργοποιημένη</string>
@@ -298,4 +297,7 @@
     <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Αναδυόμενες ειδοποιήσεις</string>
     <string name="heads_up_notifications_enabled_summary">Εμφάνιση ειδοποιήσεων προτεραιότητας σε μικρό αιωρούμενο παράθυρο</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Αποτροπή τυχαίας ενεργοποίησης </string>
+    <string name="proximity_wake_summary">Έλεγχος τον αισθητήρα εγγύτητας για την αφύπνιση της οθόνης</string>
 </resources>

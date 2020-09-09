@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Akcja długiego naciśnięcia Home</string>
     <string name="navigation_bar_home_double_tap_title">Akcja podwójnego puknięcia Home</string>
     <string name="navigation_bar_app_switch_long_press_title">Akcja długiego naciśnięcia Ostatnio Używanych</string>
-    <string name="navigation_bar_edge_long_swipe_title">Akcja długiego przeciągnięcia krawędzi</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Sterowanie odtwarzaniem</string>
     <string name="volbtn_music_controls_summary">Przełączanie utworów muzycznych przy wyłączonym ekranie poprzez przytrzymanie klawiszy głośności</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">powiadomienia, logi powiadomień</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Wyskakujące powiadomienia</string>
+    <string name="heads_up_notifications_enabled_summary">Wyświetlaj powiadomienia priorytetowe w małym ruchomym oknie</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Zapobiegaj przypadkowemu wybudzeniu</string>
+    <string name="proximity_wake_summary">Używaj czujnika zbliżeniowego podczas wybudzania ekranu</string>
 </resources>

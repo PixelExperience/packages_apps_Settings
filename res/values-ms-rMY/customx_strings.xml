@@ -16,6 +16,8 @@
     <string name="hardware_keys_power_key_title">Butang kuasa</string>
     <string name="hardware_keys_volume_keys_title">Butang nada</string>
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">Mengaktifkan bar navigasi di atas paparan</string>
+    <string name="disable_navkeys_summary">Mengaktifkan bar navigasi di atas skrin dan melumpuhkan butang perkakasan</string>
     <!-- Kill app long-press back -->
     <!-- Hostname setting -->
     <!-- Advanced restart options -->
@@ -157,4 +159,7 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Elak buka tak sengaja</string>
+    <string name="proximity_wake_summary">Periksa pengesan jarak sebelum buka paparan</string>
 </resources>

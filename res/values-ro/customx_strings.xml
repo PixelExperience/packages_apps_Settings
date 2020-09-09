@@ -17,7 +17,7 @@
     <string name="hardware_keys_volume_keys_title">Butoane Volum</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Activare bară de navigare pe ecran</string>
-    <string name="disable_navkeys_summary">Activare bara de navigare pe ecran și dezactivează butoanele hardware</string>
+    <string name="disable_navkeys_summary">Activează bara de navigare pe ecran și dezactivează butoanele hardware</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Butonul înapoi închide aplicația</string>
     <string name="kill_app_longpress_back_summary">Aplicația din prim-plan este închisă prin apăsarea lungă a butonului Înapoi</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Acțiunea apăsării lungi pe Acasă</string>
     <string name="navigation_bar_home_double_tap_title">Acțiunea apăsării duble pe Acasă</string>
     <string name="navigation_bar_app_switch_long_press_title">Acțiunea apăsării lungi pe Recente</string>
-    <string name="navigation_bar_edge_long_swipe_title">Acțiune glisare lungă de pe margine</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Controlați redarea</string>
     <string name="volbtn_music_controls_summary">Căutați piese prin apăsarea lungă a butoanelor de volum când ecranul este oprit</string>
@@ -294,4 +293,7 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">notificări, log notificări</string>
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Prevenire trezire accidentală</string>
+    <string name="proximity_wake_summary">Se verifică senzorul de proximitate înainte de trezirea ecranului</string>
 </resources>

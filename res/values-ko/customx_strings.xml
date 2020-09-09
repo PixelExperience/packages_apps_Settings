@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">홈을 길게 누를 때 작업</string>
     <string name="navigation_bar_home_double_tap_title">홈을 두 번 탬할 때 작업</string>
     <string name="navigation_bar_app_switch_long_press_title">최근 앱을 길게 누를 때 작업</string>
-    <string name="navigation_bar_edge_long_swipe_title">가장자리 스와이프 동작</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">재생 제어</string>
     <string name="volbtn_music_controls_summary">화면이 꺼진 상태에서 볼륨 키를 길게 눌러 음악 트랙 탐색</string>
@@ -296,4 +295,7 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">알림, 알림 로그</string>
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">실수로 화면 켜기 방지</string>
+    <string name="proximity_wake_summary">화면을 켜기 전에 근접 센서 확인</string>
 </resources>

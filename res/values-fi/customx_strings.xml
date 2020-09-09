@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Kotinäppäimen pitkän painalluksen tehtävä</string>
     <string name="navigation_bar_home_double_tap_title">Kotinäppäimen kaksoisnapautuksen tehtävä</string>
     <string name="navigation_bar_app_switch_long_press_title">Viimeisimmät painikkeen pitkän painalluksen tehtävä</string>
-    <string name="navigation_bar_edge_long_swipe_title">Reunan pitkän vetäisyn toiminto</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Toiston ohjaus</string>
     <string name="volbtn_music_controls_summary">Vaihda kappaletta pitämällä äänenvoimakkuusnäppäimiä pohjassa näytön ollessa suljettu</string>
@@ -297,4 +296,8 @@
     <string name="keywords_notification_log">ilmoitukset, ilmoitusloki</string>
     <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Ponnahdusikkunailmoitukset</string>
+    <string name="heads_up_notifications_enabled_summary">Näytä tärkeät ilmoitukset pienessä kelluvassa ikkunassa</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Estä vahinkoheräämiset</string>
+    <string name="proximity_wake_summary">Tarkista läheisyysanturi ennen näytön herättämistä</string>
 </resources>

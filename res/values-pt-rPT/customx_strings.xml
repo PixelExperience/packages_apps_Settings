@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Ação de pressão longa no botão de Página Inicial</string>
     <string name="navigation_bar_home_double_tap_title">Toque duplo</string>
     <string name="navigation_bar_app_switch_long_press_title">Ação de pressão longa no botão de Visão geral</string>
-    <string name="navigation_bar_edge_long_swipe_title">Ação de deslize longo na borda</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Controlo de reprodução</string>
     <string name="volbtn_music_controls_summary">Procurar músicas com uma pressão longa das teclas de volume, enquanto o ecrã estiver desligado</string>
@@ -299,4 +298,7 @@ Notch: Aplicações em ecrã cheio</string>
     <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Notificação de pop-up</string>
     <string name="heads_up_notifications_enabled_summary">Mostrar notificações prioritárias numa pequena janela flutuante</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Impedir que o ecrã se ligue acidentalmente</string>
+    <string name="proximity_wake_summary">Verificar o sensor de proximidade antes de ligar o ecrã</string>
 </resources>

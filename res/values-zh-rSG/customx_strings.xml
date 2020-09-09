@@ -16,8 +16,8 @@
     <string name="hardware_keys_power_key_title">電源鍵</string>
     <string name="hardware_keys_volume_keys_title">音量鍵</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">啟用螢幕上的導航欄</string>
-    <string name="disable_navkeys_summary">啟用螢幕上的導覽欄和停用實體按鍵</string>
+    <string name="disable_navkeys_title">啟用螢幕上的導覽列</string>
+    <string name="disable_navkeys_summary">啟用螢幕上的導覽列和停用實體按鍵</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">返回鍵可終止應用程式</string>
     <string name="kill_app_longpress_back_summary">長按返回鍵終止前景應用程式</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">主畫面鍵長按動作</string>
     <string name="navigation_bar_home_double_tap_title">主畫面輕觸兩下動作</string>
     <string name="navigation_bar_app_switch_long_press_title">多工鍵長按動作</string>
-    <string name="navigation_bar_edge_long_swipe_title">邊緣長滑動作</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">控制播放</string>
     <string name="volbtn_music_controls_summary">在顯示螢幕關閉時長按音量鍵可尋找音樂曲目</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">通知、通知紀錄</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">彈出式通知</string>
+    <string name="heads_up_notifications_enabled_summary">在小型的浮動式視窗顯示優先通知</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">防止意外喚醒</string>
+    <string name="proximity_wake_summary">在喚醒螢幕之前檢查距離傳感器</string>
 </resources>

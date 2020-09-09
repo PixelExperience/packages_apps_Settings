@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">เมื่อกดปุ่มโฮมค้าง</string>
     <string name="navigation_bar_home_double_tap_title">เมื่อกดปุ่มโฮม2ครั้ง</string>
     <string name="navigation_bar_app_switch_long_press_title">เมื่อกดปุ่มแอปล่าสุดค้าง</string>
-    <string name="navigation_bar_edge_long_swipe_title">ท่าทางการเลื่อนยาวจากขอบ</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">ควบคุมการเล่น</string>
     <string name="volbtn_music_controls_summary">ค้นหาแทร็คเพลง โดยกดปุ่มระดับเสียงค้างไว้ขณะที่จอแสดงผลปิดอยู่</string>
@@ -279,4 +278,7 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">ป้องกันการปลุกโดยไม่ตั้งใจ</string>
+    <string name="proximity_wake_summary">ตรวจสอบเซนเซอร์แนบหน้าจอก่อนที่จะปลุกหน้าจอ</string>
 </resources>

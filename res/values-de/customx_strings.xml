@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Home (langes Drücken)</string>
     <string name="navigation_bar_home_double_tap_title">Home (doppeltes Tippen)</string>
     <string name="navigation_bar_app_switch_long_press_title">Aktion für langes Drücken auf Anwendungsverlauf</string>
-    <string name="navigation_bar_edge_long_swipe_title">Langes Wischen-Aktion am Rand</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Wiedergabe steuern</string>
     <string name="volbtn_music_controls_summary">Bei abgeschaltetem Bildschirm durch langes Drücken der Lautstärketasten zum nächsten/vorherigen Titel springen</string>
@@ -124,6 +123,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Statusleiste</string>
     <string name="status_bar_quick_qs_pulldown_title">Schnelles Öffnen</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Am linken Rand der Statusleiste werden die Schnelleinstellungen geöffnet</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Der rechte Rand der Statusleiste öffnet die Schnelleinstellungen</string>
     <string name="status_bar_quick_qs_pulldown_off">Aus</string>
     <string name="status_bar_quick_qs_pulldown_left">Links</string>
     <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
@@ -281,6 +282,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">\"Pille\" zur Navigation am unteren Bildschirmrand verstecken</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Erlaube Netzwerkzugriff</string>
+    <string name="data_usage_app_restrict_all_summary">Ermöglicht Apps den Zugriff auf das Netzwerk</string>
     <string name="data_usage_app_restrict_data">Mobile Daten</string>
     <string name="data_usage_app_restrict_data_summary">Mobile Datennutzung aktivieren</string>
     <string name="data_usage_app_restrict_vpn">VPN-Datennutzung</string>
@@ -292,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">Benachrichtigungen, Benarchtigungsprotokoll</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Pop-up Benachrichtigungen</string>
+    <string name="heads_up_notifications_enabled_summary">Wichtige Benachrichtigungen in einem kleinen, schwebenden Fenster anzeigen</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Unbeabsichtigtes Aufwecken verhindern</string>
+    <string name="proximity_wake_summary">Vor dem Einschalten des Bildschirms den Näherungssensor überprüfen</string>
 </resources>

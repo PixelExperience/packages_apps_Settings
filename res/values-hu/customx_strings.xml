@@ -16,8 +16,8 @@
     <string name="hardware_keys_power_key_title">Bekapcsoló gomb</string>
     <string name="hardware_keys_volume_keys_title">Hangerőgomb</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Navigációs sáv engedélyezése</string>
-    <string name="disable_navkeys_summary">Navigációs sáv engedélyezése és a hardveres gombok letiltása</string>
+    <string name="disable_navkeys_title">Képernyős navigáció engedélyezése</string>
+    <string name="disable_navkeys_summary">Képernyős navigáció engedélyezése és a hardver gombok letiltása</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Alkalmazás bezárás</string>
     <string name="kill_app_longpress_back_summary">Alkalmazás bezárása nyomva tartott vissza gombbal</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Kezdőlap hosszan nyomási művelet</string>
     <string name="navigation_bar_home_double_tap_title">Kezdőlap dupla érintési művelet</string>
     <string name="navigation_bar_app_switch_long_press_title">Hosszan nyomva tartott Előzmények-gomb</string>
-    <string name="navigation_bar_edge_long_swipe_title">Az oldalsó él hosszú csúsztatási művelete</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Lejátszás vezérlése</string>
     <string name="volbtn_music_controls_summary">Zeneszámok keresése a hangerőgombok hosszan nyomásával a kijelző kikapcsolt állapotában</string>
@@ -298,4 +297,7 @@
     <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Felugró értesítések</string>
     <string name="heads_up_notifications_enabled_summary">A fontos értesítések megjelenítése egy kis lebegő ablakban</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Véletlenébresztés-gátló</string>
+    <string name="proximity_wake_summary">A közelségérzékelő ellenőrzése a képernyő felébresztése előtt</string>
 </resources>

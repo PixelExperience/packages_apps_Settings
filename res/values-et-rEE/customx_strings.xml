@@ -17,7 +17,7 @@
     <string name="hardware_keys_volume_keys_title">Helitugevuse nupud</string>
     <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Luba navigeerimisriba ekraanil</string>
-    <string name="disable_navkeys_summary">Luba navigeerimisriba ekraanil ning keela riistvaralised nupud</string>
+    <string name="disable_navkeys_summary">Luba navigeerimisriba ekraanil ja keela riistvara nupud</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Välju rakendusest tagasi nupuga</string>
     <string name="kill_app_longpress_back_summary">Sulge esiplaani rakendus pikalt vajutades tagasi nuppu</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Kodunupu pika vajutuse tegevus</string>
     <string name="navigation_bar_home_double_tap_title">Kodunupu topeltkoputuse tegevus</string>
     <string name="navigation_bar_app_switch_long_press_title">Viimatiste nupu pika vajutuse tegevus</string>
-    <string name="navigation_bar_edge_long_swipe_title">Serva pikk pühkimine</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Taasesituse juhtimine</string>
     <string name="volbtn_music_controls_summary">Liigu lugude vahel, vajutades helitugevusklahve pikalt, kui ekraan on väljas</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">teated, teadete logi</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Hüpikteatis</string>
+    <string name="heads_up_notifications_enabled_summary">Kuvage prioriteetsed teated väikeses ujuvas aknas</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Väldi juhuslikku äratamist</string>
+    <string name="proximity_wake_summary">Kontrollige lähedussensorit enne ekraani äratamist</string>
 </resources>

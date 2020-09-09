@@ -16,8 +16,9 @@
     <string name="hardware_keys_power_key_title">ಶಕ್ತಿ ಗುಂಡಿ</string>
     <string name="hardware_keys_volume_keys_title">ಧ್ವನಿಮಟ್ಟ ಗುಂಡಿಗಳು</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">ಪರದೆ ಸಂಚರಣೆಪಟ್ಟಿ ಸಶಕ್ತಿಸು</string>
-    <string name="disable_navkeys_summary">ಪರದೆ ಸಂಚರಣೆಪಟ್ಟಿ ಸಶಕ್ತಿಸಿ, ಯಂತ್ರಾಂಶ ಗುಂಡಿಗಳನ್ನು ಅಶಕ್ತಿಸು</string>
+    <string name="disable_navkeys_title">ಆನ್-ಸ್ಕ್ರೀನ್ ನ್ಯಾವ್ ಬಾರ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="disable_navkeys_summary">ಆನ್-ಸ್ಕ್ರೀನ್ ನ್ಯಾವಿಗೇಶನ್ ಬಾರ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ ಮತ್ತು ಹಾರ್ಡ್ವೇರ್ ಬಟನ್ ಗಳನ್ನು
+ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">ಆಪ್ ಕೊಲ್ಲು ಹಿಂದೆ ಬಟನ್</string>
     <string name="kill_app_longpress_back_summary">ಹಿಂದೆ ಬಟನ್‍ನನ್ನು ದೀರ್ಘ-ಸ್ಪರ್ಶಿಸುವ ಮೂಲಕ ಮುನ್ನೆಲೆ ಆಪನ್ನು ಕೊಲ್ಲಿರಿ</string>
@@ -217,4 +218,7 @@
     <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">ಪಾಪ್ ಅಪ್ ಅಧಿಸೂಚನೆಗಳು </string>
     <string name="heads_up_notifications_enabled_summary">ಆದ್ಯತೆ ಸೂಚನೆಗಳನ್ನು ಸಣ್ಣ ತೇಲುವ ಕಿಟಕಿಯಲ್ಲಿ ಪ್ರದರ್ಶಿಸು</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">ಆಕಸ್ಮಿಕವಾಗಿ ಎಚ್ಚರವಾಗುವಿಕೆಯನ್ನು ತಡೆಯಿರಿ.</string>
+    <string name="proximity_wake_summary">ಪರದೆಯನ್ನು ಎಚ್ಚರಿಸುವ ಮೊದಲು ಸಾಮೀಪ್ಯ ಸಂವೇದಕವನ್ನು ಪರಿಶೀಲಿಸಿರಿ.</string>
 </resources>

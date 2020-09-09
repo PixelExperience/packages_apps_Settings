@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Appui long sur bouton d\'accueil</string>
     <string name="navigation_bar_home_double_tap_title">Appui double sur bouton d\'accueil</string>
     <string name="navigation_bar_app_switch_long_press_title">Appui long sur le bouton d\'applications récentes</string>
-    <string name="navigation_bar_edge_long_swipe_title">Action de balayage long sur le bord</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Contrôler la lecture</string>
     <string name="volbtn_music_controls_summary">Changer de piste audio à l\'aide d\'une pression longue sur les boutons de volume lorsque l\'écran est éteint</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">Notifications, journal de notification</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Notifications pop-up</string>
+    <string name="heads_up_notifications_enabled_summary">Afficher les notifications prioritaires dans une petite fenêtre de notification flottante</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Éviter l\'allumage de l\'écran accidentellement</string>
+    <string name="proximity_wake_summary">Vérifier le capteur de proximité avant d\'allumer l\'écran </string>
 </resources>

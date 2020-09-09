@@ -16,8 +16,8 @@
     <string name="hardware_keys_power_key_title">Botón de acendido</string>
     <string name="hardware_keys_volume_keys_title">Botóns de volume</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Habilitar barra de navegación</string>
-    <string name="disable_navkeys_summary">Habilitar a barra de navegación na pantalla e deshabilitar os botóns físicos</string>
+    <string name="disable_navkeys_title">Activar a barra de navegación</string>
+    <string name="disable_navkeys_summary">Activar a barra de navegación na pantalla e desactivar os botones físicos</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Terminar aplicación co botón Atrás</string>
     <string name="kill_app_longpress_back_summary">Peche a aplicación en primeiro plano mantendo presionado o botón Atrás</string>
@@ -73,6 +73,7 @@
     <string name="display_rotation_180_title">180 graos</string>
     <string name="display_rotation_270_title">270 graos</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Amosar visualizador de música</string>
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrar pra indicar o estatus da chamada</string>
     <!-- Navigation bar customization -->
@@ -122,6 +123,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Barra de estado</string>
     <string name="status_bar_quick_qs_pulldown_title">Tirar para abaixo</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">O bordo esquerdo da barra de estado desprega Configuración rápida</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">O bordo dereito da barra de estado desprega a Configuración rápida</string>
     <string name="status_bar_quick_qs_pulldown_off">Apagado</string>
     <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
     <string name="status_bar_quick_qs_pulldown_right">Dereita</string>
@@ -159,6 +162,9 @@
     <string name="status_bar_brightness_slider_summary">Axustar o brillo dende os axustes rápidos</string>
     <string name="status_bar_brightness_slider_auto_title">Brillo automático</string>
     <string name="status_bar_brightness_slider_auto_summary">Amosar a caixa de brillo automático ao carón da barra de brillo</string>
+    <string name="status_bar_brightness_slider_show_never">Non amosar nunca</string>
+    <string name="status_bar_brightness_slider_show_expanded">Amosar ao expandir</string>
+    <string name="status_bar_brightness_slider_show_always">Amosar sempre</string>
     <string name="status_bar_toggle_brightness">Control de brillo</string>
     <string name="status_bar_toggle_brightness_summary">Axustar o brillo arrastrando pola barra de estado</string>
     <!-- Status bar - Network Traffic -->
@@ -166,14 +172,42 @@
     <string name="network_traffic_settings_summary">Amosar os niveis actuais do tráfico de rede na barra de estado</string>
     <string name="network_traffic_mode_title">Modo de visualización</string>
     <string name="network_traffic_mode_disable">Desactivado</string>
+    <string name="network_traffic_mode_status_bar">Barra de estado</string>
+    <string name="network_traffic_mode_qs">Axustes Rápidos</string>
     <string name="network_traffic_autohide">Ocultar automáticamente</string>
     <string name="network_traffic_autohide_summary">Ocultar o monitor de tráfico cando non hai actividade</string>
     <string name="network_traffic_units_title">Unidades de medición do tráfico</string>
     <!-- QS settings -->
     <string name="qs_title">Axustes Rápidos</string>
+    <string name="qs_rows_portrait_title">Ringleiras (vertical) </string>
+    <string name="qs_rows_landscape_title">Ringleira (horizontal) </string>
+    <string name="qs_columns_portrait_title">Columnas (Vertical)</string>
+    <string name="qs_columns_landscape_title">Columnas (apaisado)</string>
     <!-- QS title visibility -->
+    <string name="qs_tile_title_visibility_title">Visibilidade do título</string>
+    <string name="qs_tile_title_visibility_summary">Amosa os títulos debaixo das funcións de axustes rápidos</string>
     <!-- QS tiles haptic feedback -->
+    <string name="qs_vibrate_title">Vibrar ao tocar</string>
+    <string name="qs_vibrate_summary">Vibrar ao tocar as funcións de axustes rápidos </string>
     <!-- QS animation/interpolator styles  -->
+    <string name="qs_animation_options_title">Animacións de axustes rápidos </string>
+    <string name="qs_tile_animation_style_title">Estilo</string>
+    <string name="qs_tile_animation_duration_title">Duración</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolador</string>
+    <string name="qs_tile_animation_style_off">Ningún</string>
+    <string name="qs_tile_animation_style_flip">Virar</string>
+    <string name="qs_tile_animation_style_rotate">Xirar</string>
+    <string name="qs_tile_animation_duration_low">Lento</string>
+    <string name="qs_tile_animation_duration_default">Por defecto</string>
+    <string name="qs_tile_animation_duration_fast">Rápido</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Apurar</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Desacelerar</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Acelerar e decelerar</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Rebotar</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Adiantar</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Adiantar</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Previr sobrecarga </string>
     <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Comportamento Pimario</string>
     <string name="display_cutout_mode_normal">Por defecto</string>
@@ -181,10 +215,14 @@
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplicacións a pantalla completa</string>
     <string name="display_cutout_force_fullscreen_summary">Ignorar o espazo notch para as aplicacións seleccionadas</string>
+    <string name="display_cutout_force_fullscreen_restart_app">Reinicia-la aplicación para aplica-los trocos</string>
+    <string name="cutout_force_fullscreen_no_apps">Ningunha aplicación</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Deslizar pra capturar a pantalla</string>
     <string name="swipe_to_screenshot_gesture_summary">Deslizar tres dedos pra capturar a pantalla</string>
     <!-- Navigation compact layout -->
+    <string name="navigation_bar_compact_layout_title">Deseño compacto</string>
+    <string name="navigation_bar_compact_layout_summary">Empregar un deseño compacto na barra de navegación </string>
     <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizar a súa pantalla baseandose na hora do día e as condicións ambientais para mellorar a lexibilidade e reducir o cansanzo visual</string>
     <string name="live_display_mode">Modo de visualización</string>
@@ -237,9 +275,29 @@
     <string name="adj_intensity_title">Intensidade</string>
     <string name="adj_contrast_title">Contraste</string>
     <!-- Back Gesture Height -->
+    <string name="back_height_low_label">Completo</string>
+    <string name="back_height_high_label">Área inferior </string>
+    <string name="back_options_dialog_title">Opcións</string>
+    <string name="back_height_message">Cantidade de altura de pantalla usada como rexión para o xesto de atrás</string>
     <!-- Full screen gestures -->
+    <string name="navbar_gesture_pill_toggle_title">Agochar a pílula da barra de navegación</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Permitir acceso á rede</string>
+    <string name="data_usage_app_restrict_all_summary">Permitir o acceso da aplicación á rede</string>
+    <string name="data_usage_app_restrict_data">Datos móbiles</string>
+    <string name="data_usage_app_restrict_data_summary">Activar o uso dos datos móbiles</string>
+    <string name="data_usage_app_restrict_vpn">Datos VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Activar o uso de datos por VPN</string>
+    <string name="data_usage_app_restrict_wifi">Datos Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Activar o uso dos datos Wi\u2011Fi</string>
     <!-- Translucent lockscreen notifications background -->
+    <string name="translucent_lockscreen_notifications_bg_title">Fondo das notificacións translúcido</string>
     <!-- Search keywords -->
+    <string name="keywords_notification_log">notificacións, rexistro de notificacións</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Notificacións emerxentes</string>
+    <string name="heads_up_notifications_enabled_summary">Amosar notificacions de prioridad nunha pequena xanela flotante</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Previr acender de forma accidental</string>
+    <string name="proximity_wake_summary">Comprobar o sensor de proximidade antes de acender a pantalla</string>
 </resources>

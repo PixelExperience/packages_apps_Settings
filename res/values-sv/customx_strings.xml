@@ -15,6 +15,8 @@
     <string name="hardware_keys_power_key_title">Avstängningsknapp</string>
     <string name="hardware_keys_volume_keys_title">Volymknappar</string>
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">Aktivera navigeringsfält på skärmen</string>
+    <string name="disable_navkeys_summary">Aktivera navigeringsfältet på skärmen och inaktivera hårdvaruknapparna</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Döda appar med bakåtknapp</string>
     <string name="kill_app_longpress_back_summary">Döda appen i förgrunden genom att långtrycka på bakåtknappen</string>
@@ -156,4 +158,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

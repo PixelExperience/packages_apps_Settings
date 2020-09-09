@@ -16,6 +16,8 @@
     <string name="hardware_keys_power_key_title">ပါ၀ါခလုတ်</string>
     <string name="hardware_keys_volume_keys_title">အသံတိုးကျယ် ခလုတ်များ</string>
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">မျက်နှာပြင်အတွင်း ခလုတ်များကို သုံခြင်း</string>
+    <string name="disable_navkeys_summary">မျက်နှာပြင်အတွင်း ခလုတ်များကို သုံခြင်းနှင့် ရိုးရိုးခလုတ်များကို သုံးမရစေရန် ပြုလုပ်ခြင်း</string>
     <!-- Kill app long-press back -->
     <!-- Hostname setting -->
     <!-- Advanced restart options -->
@@ -113,4 +115,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

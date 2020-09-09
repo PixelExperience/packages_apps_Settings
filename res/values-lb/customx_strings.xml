@@ -13,6 +13,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">Opgräift Bildschirm um Navette aktivéieren</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Appe mam \"Zréck\"-Knäppchen zoumaachen</string>
     <string name="kill_app_longpress_back_summary">D\'App am Virgrond zoumaache wann den \"Zréck\"-Knäppche laang gedréckt gëtt</string>
@@ -70,4 +71,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

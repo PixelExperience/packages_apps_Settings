@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Ana ekran tuşuna uzun basma eylemi</string>
     <string name="navigation_bar_home_double_tap_title">Ana ekran tuşuna çift dokunma eylemi</string>
     <string name="navigation_bar_app_switch_long_press_title">Son uygulamalar tuşuna uzun basma eylemi</string>
-    <string name="navigation_bar_edge_long_swipe_title">Kenardan uzun kaydırma eylemi</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Müzik kontrolü</string>
     <string name="volbtn_music_controls_summary">Ekran kapalıyken ses tuşlarına uzun basarak müziği değiştirin</string>
@@ -298,4 +297,7 @@
     <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Bildirim pencereleri</string>
     <string name="heads_up_notifications_enabled_summary">Küçük bir yüzen pencerede öncelikli bildirimleri görüntüle</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Yanlış uyandırmaları önle</string>
+    <string name="proximity_wake_summary">Ekranı uyandırmadan önce yakınlık sensörünü kontrol et</string>
 </resources>

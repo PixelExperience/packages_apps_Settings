@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">کرداری پەنجە ڕاگرتنی درێژی دوگمەی ماڵەوە</string>
     <string name="navigation_bar_home_double_tap_title">کرداری دووجار داگرتنی دوگمەی ماڵەوە</string>
     <string name="navigation_bar_app_switch_long_press_title">کرداری پەنجە ڕاگرتنی درێژی دواین ئەپەکان</string>
-    <string name="navigation_bar_edge_long_swipe_title">کرداری ڕاکێشانی درێژخایەنی لێوار</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">کۆنتڕۆڵی کارپێکەر</string>
     <string name="volbtn_music_controls_summary">بردنە پێشی مۆسیقاکان بە پەنجە ڕاگرتنی درێژی دوگمەکانی دەنگ لەکاتی داخراوی ڕوونمادا</string>
@@ -295,4 +294,7 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">ئاگادارکردنەوە، تۆماری ئاگادارکردنەوەکان</string>
     <!-- Heads-up -->
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">ڕێگیری لە هەڵبوونی هەڵە</string>
+    <string name="proximity_wake_summary">پێش و پاشی هەستەوەرەکە بپشکنە پێش کردنەوەی ڕوونما</string>
 </resources>

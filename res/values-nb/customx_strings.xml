@@ -84,13 +84,12 @@
     <string name="navigation_bar_home_long_press_title">Handling ved langt trykk på hjem-knappen</string>
     <string name="navigation_bar_home_double_tap_title">Handling ved dobbelttrykk på hjem-knappen</string>
     <string name="navigation_bar_app_switch_long_press_title">Handling ved langt trykk på nylige-knappen</string>
-    <string name="navigation_bar_edge_long_swipe_title">Lang kantsveip-handling</string>
     <!-- Volume keys customization -->
-    <string name="volbtn_music_controls_title">Kontrollere avspilling</string>
+    <string name="volbtn_music_controls_title">Kontroller avspilling</string>
     <string name="volbtn_music_controls_summary">Søk musikkspor ved å holde inne volumtastene mens skjermen er av</string>
     <string name="volume_answer_call_title">Besvar anrop</string>
     <string name="volume_answer_call_summary">Besvar innkommende anrop ved å trykke på volumknappene</string>
-    <string name="volbtn_cursor_control_title">Kontroll av tastaturmarkør</string>
+    <string name="volbtn_cursor_control_title">Kontroller tastaturmarkør</string>
     <string name="volbtn_cursor_control_off">Deaktivert</string>
     <string name="volbtn_cursor_control_on">Volum opp/ned flytter markøren til venstre/høyre</string>
     <string name="volbtn_cursor_control_on_reverse">Volum opp/ned flytter markøren høyre/venstre</string>
@@ -100,7 +99,7 @@
     <string name="home_answer_call_title">Besvar anrop</string>
     <string name="home_answer_call_summary">Besvar innkommende anrop ved å trykke på hjemknappen</string>
     <!-- Power menu key customization -->
-    <string name="power_menu_title">Av/På meny</string>
+    <string name="power_menu_title">Strøm-meny</string>
     <string name="power_menu_screenshot_title">Skjermbilde</string>
     <string name="power_menu_screenshot_summary">Langt trykk for delvis skjermbilde</string>
     <string name="power_menu_airplane_title">Flymodus</string>
@@ -112,7 +111,7 @@
     <string name="lockscreen_power_menu_disabled_summary">Deaktiver strøm-meny på beskyttet låseskjerm</string>
     <string name="torch_long_press_power_gesture_title">Hold inne for lommelykt</string>
     <string name="torch_long_press_power_gesture_desc">Aktiver lommelykten ved å holde inne strøm-knappen mens skjermen er av</string>
-    <string name="torch_long_press_power_timeout_title">Deaktiver lommelykten automatisk</string>
+    <string name="torch_long_press_power_timeout_title">Skru av lommelykten automatisk</string>
     <string name="torch_long_press_power_timeout_never">Aldri</string>
     <string name="torch_long_press_power_timeout_1min">1 minutt</string>
     <string name="torch_long_press_power_timeout_2min">2 minutter</string>
@@ -225,7 +224,7 @@
     <string name="navigation_bar_compact_layout_title">Kompakt oppsett</string>
     <string name="navigation_bar_compact_layout_summary">Bruk et kompakt oppsett i navigasjonslinjen</string>
     <!-- LiveDisplay -->
-    <string name="live_display_summary">Optimalisere skjermen basert på tidspunkt av dagen og omgivelsesforhold for å forbedre lesbarhet og redusere belastningen på øynene</string>
+    <string name="live_display_summary">Optimaliser skjermen basert på tidspunkt av dagen og omgivelser for å forbedre lesbarhet og redusere øyebelastning</string>
     <string name="live_display_mode">Visningsmodus</string>
     <string name="live_display_color_temperature_title">Fargetemperatur</string>
     <string name="live_display_color_temperature_summary">Dag: <xliff:g id="day_temperature">%1$d</xliff:g>K  Natt: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">varsler, varsellogg</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Popup-varsler</string>
+    <string name="heads_up_notifications_enabled_summary">Vis prioriterte varsler i et lite flytende vindu</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Forhindre utilsiktet vekking</string>
+    <string name="proximity_wake_summary">Sjekk nærhetssensoren før skjermen vekkes</string>
 </resources>

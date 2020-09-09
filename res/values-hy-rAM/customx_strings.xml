@@ -14,6 +14,8 @@
     <!-- Buttons -->
     <string name="hardware_keys_volume_keys_title">Ձայնի կոճակներ</string>
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">Միացնել կառավարման վահանակը</string>
+    <string name="disable_navkeys_summary">Միացրեք կառավարման վահանակը էկրանին և անջատեք սարքի կոճակները</string>
     <!-- Kill app long-press back -->
     <!-- Hostname setting -->
     <!-- Advanced restart options -->
@@ -71,4 +73,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

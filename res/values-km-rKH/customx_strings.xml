@@ -13,6 +13,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">បើកដំណើរការអេក្រង់របារុករក</string>
+    <string name="disable_navkeys_summary">បើកដំណើរការអេក្រង់របារុករក និងបិទប៊ូតុងផ្នែករឹង</string>
     <!-- Kill app long-press back -->
     <!-- Hostname setting -->
     <!-- Advanced restart options -->
@@ -58,4 +60,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

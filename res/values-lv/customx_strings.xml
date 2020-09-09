@@ -13,6 +13,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">Iestatīt uz-ekrāna navigācijas joslu</string>
+    <string name="disable_navkeys_summary">Ieslēgt ekrāna navigācijas joslu un atslēgt aparatūras pogas</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Ilgi nospiesta Atpakaļ poga nokauj lietotni</string>
     <!-- Hostname setting -->
@@ -64,4 +66,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>

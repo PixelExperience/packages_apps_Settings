@@ -16,8 +16,8 @@
     <string name="hardware_keys_power_key_title">Tipka za napajanje</string>
     <string name="hardware_keys_volume_keys_title">Tipke za glasnoću</string>
     <!-- Buttons - Enable navbar -->
-    <string name="disable_navkeys_title">Omogući zaslonsku navigacijsku traku</string>
-    <string name="disable_navkeys_summary">Omogućite zaslonsku navigacijsku traku i onemogućite hardverske tipke</string>
+    <string name="disable_navkeys_title">Omogući navigacijsku traku zaslona</string>
+    <string name="disable_navkeys_summary">Omogući zaslonsku navigacijsku traku i onemogući hardverske tipke</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Zatvori aplikaciju tipkom natrag</string>
     <string name="kill_app_longpress_back_summary">Zatvori pozadinske aplikacije dugim pritiskom tipke natrag</string>
@@ -84,7 +84,6 @@
     <string name="navigation_bar_home_long_press_title">Akcija dugog dodira Home tipke</string>
     <string name="navigation_bar_home_double_tap_title">Dvostruki dodir</string>
     <string name="navigation_bar_app_switch_long_press_title">Nedavne akcije dugog dodira</string>
-    <string name="navigation_bar_edge_long_swipe_title">Radnja dugim prijelazom po rubu</string>
     <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Kontrola reprodukcije</string>
     <string name="volbtn_music_controls_summary">Preskačite pjesme dugim pritiskom gumba za glasnoću kad je zaslon isključen</string>
@@ -296,4 +295,9 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">obavijesti, zapisnik obavijesti, povijest obavijesti</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Skočne obavijesti</string>
+    <string name="heads_up_notifications_enabled_summary">Prikaz prioritetnih obavijesti u malim plutajućim prozorima</string>
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Sprječavanje slučajnog buđenja</string>
+    <string name="proximity_wake_summary">Provjera senzora blizine prije buđenja zaslona</string>
 </resources>

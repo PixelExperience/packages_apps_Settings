@@ -13,6 +13,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Buttons -->
     <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">ఆన్-స్క్రీన్ నావ్ బార్ని ప్రారంభించు</string>
+    <string name="disable_navkeys_summary">ఆన్-స్క్రీన్ నావిగేషన్ బార్ని ప్రారంభించి హార్డ్వేర్ బటన్లను నిలిపివేస్తుంది</string>
     <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">అనువర్తనాన్ని తొలిగించే బ్యాక్ బటన్</string>
     <string name="kill_app_longpress_back_summary">బ్యాక్ బటనును ఎక్కువసేపు నొక్కి పట్టుకుని ఉంచడం ద్వారా ఉపయోగిస్తున్న అనువర్తనాన్ని తొలిగించవచ్చు</string>
@@ -70,4 +72,5 @@
     <!-- Translucent lockscreen notifications background -->
     <!-- Search keywords -->
     <!-- Heads-up -->
+    <!-- Pocket mode -->
 </resources>
