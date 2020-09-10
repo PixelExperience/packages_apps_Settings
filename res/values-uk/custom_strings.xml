@@ -82,7 +82,7 @@
     <string name="disable_navkeys_title">Увімкнути екранну панель навігації</string>
     <string name="disable_navkeys_summary">Увімкнути екранну панель навігації і вимкнути апаратні кнопки</string>
     <!-- Battery light -->
-    <string name="battery_light_title">Включити світло під час зарядки</string>
+    <string name="battery_light_title">Увімкнути світло під час зарядки</string>
     <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Висока чутливість дотику</string>
     <string name="high_touch_sensitivity_summary">Підвищити чутливість сенсорного екрану для користуванням пристроєм у рукавичках</string>
@@ -93,7 +93,7 @@
     <string name="connected_tws_device_saved_title">Збережені навушники</string>
     <!-- Screen off fod -->
     <string name="fod_gesture_title">Розблокування за відбитком пальця, коли екран вимкнено</string>
-    <string name="fod_gesture_summary">Дозволяє розблокувати пристрій без попереднього пробудження екрану</string>
+    <string name="fod_gesture_summary">Дозволяє розблокувати пристрій відбитком без попереднього пробудження екрану</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Частота оновлення екрана</string>
     <string name="refresh_rate_auto">Автоматично</string>
