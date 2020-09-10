@@ -299,5 +299,5 @@
     <string name="heads_up_notifications_enabled_summary">Εμφάνιση ειδοποιήσεων προτεραιότητας σε μικρό αιωρούμενο παράθυρο</string>
     <!-- Pocket mode -->
     <string name="proximity_wake_title">Αποτροπή τυχαίας ενεργοποίησης </string>
-    <string name="proximity_wake_summary">Έλεγχος τον αισθητήρα εγγύτητας για την αφύπνιση της οθόνης</string>
+    <string name="proximity_wake_summary">Έλεγχος τον αισθητήρα εγγύτητας πριν την αφύπνιση της οθόνης</string>
 </resources>

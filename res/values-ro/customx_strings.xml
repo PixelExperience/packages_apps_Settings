@@ -282,6 +282,8 @@
     <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Ascundeți pilula de pe bara de navigare.</string>
     <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Permiteți accesul la rețea</string>
+    <string name="data_usage_app_restrict_all_summary">Permiteți aplicației să acceseze rețeaua</string>
     <string name="data_usage_app_restrict_data">Date mobile</string>
     <string name="data_usage_app_restrict_data_summary">Activați utilizarea datelor mobile</string>
     <string name="data_usage_app_restrict_vpn">Date VPN</string>
@@ -293,6 +295,8 @@
     <!-- Search keywords -->
     <string name="keywords_notification_log">notificări, log notificări</string>
     <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Atenționare</string>
+    <string name="heads_up_notifications_enabled_summary">Afișează notificările prioritare într-o fereastră micuță plutitoare</string>
     <!-- Pocket mode -->
     <string name="proximity_wake_title">Prevenire trezire accidentală</string>
     <string name="proximity_wake_summary">Se verifică senzorul de proximitate înainte de trezirea ecranului</string>
