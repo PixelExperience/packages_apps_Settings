@@ -110,7 +110,7 @@
     <string name="lockscreen_power_menu_disabled_title">Deaktiver på låseskjerm</string>
     <string name="lockscreen_power_menu_disabled_summary">Deaktiver strøm-meny på beskyttet låseskjerm</string>
     <string name="torch_long_press_power_gesture_title">Hold inne for lommelykt</string>
-    <string name="torch_long_press_power_gesture_desc">Aktiver lommelykten ved å holde inne strøm-knappen mens skjermen er av</string>
+    <string name="torch_long_press_power_gesture_desc">Aktiver lommelykten ved å holde inne strømknappen mens skjermen er av</string>
     <string name="torch_long_press_power_timeout_title">Skru av lommelykten automatisk</string>
     <string name="torch_long_press_power_timeout_never">Aldri</string>
     <string name="torch_long_press_power_timeout_1min">1 minutt</string>
@@ -257,9 +257,9 @@
     <string name="live_display_color_profile_reading_title">Lesing</string>
     <string name="live_display_color_profile_reading_summary">Varmere farger for mindre øyebelastning</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
-    <string name="live_display_color_profile_srgb_summary">Farger nøyaktige i forhold til fargerommet sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Nøyaktige farger i sRGB-fargerommet</string>
     <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
-    <string name="live_display_color_profile_dci_p3_summary">Farger nøyaktige i forhold til fargerommet DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Nøyaktige farger i DCI-P3-fargerommet</string>
     <string name="live_display_reading_mode_title">Lesemodus</string>
     <string name="live_display_reading_mode_summary">Gråskalamodus for langtidslesing</string>
     <string name="color_calibration_title">Fargekalibrering</string>
