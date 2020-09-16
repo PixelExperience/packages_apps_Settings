@@ -55,7 +55,7 @@ Varsler kan bli forsinket for disse appene."</string>
     <string name="hardware_keys_action_search">Søkeassistent</string>
     <string name="hardware_keys_action_voice_search">Talesøk</string>
     <string name="hardware_keys_action_in_app_search">I-app søk</string>
-    <string name="hardware_keys_action_launch_camera">Start kamera</string>
+    <string name="hardware_keys_action_launch_camera">Åpne kamera</string>
     <string name="hardware_keys_action_sleep">Slå av skjermen</string>
     <string name="hardware_keys_action_split_screen">Delt skjerm</string>
     <string name="hardware_keys_swipe_right_key_title">Sveip til høyre</string>
@@ -65,9 +65,9 @@ Varsler kan bli forsinket for disse appene."</string>
     <string name="hardware_keys_long_tap_title">Handling ved langt trykk</string>
     <string name="button_wake_title">Vekk enhet</string>
     <string name="camera_sleep_on_release_title">Skjermtitt</string>
-    <string name="camera_sleep_on_release_summary">Et halvt trykk holder skjermen påslått kun mens knappen holdes nede</string>
-    <string name="camera_launch_title">Start kamera</string>
-    <string name="camera_launch_summary">Et langt trykk-og-slipp starter kameraet</string>
+    <string name="camera_sleep_on_release_summary">Et halvt trykk holder skjermen påslått kun mens knappen holdes inne</string>
+    <string name="camera_launch_title">Åpne kamera</string>
+    <string name="camera_launch_summary">Et langt trykk-og-slipp åpner kameraet</string>
     <!-- Key backlight -->
     <string name="button_backlight_title">Bakgrunnsbelysning</string>
     <string name="button_backlight_enabled">Lys opp knapper</string>
