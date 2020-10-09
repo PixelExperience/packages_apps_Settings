@@ -92,7 +92,7 @@ Obavijesti za te aplikacije mogu kasniti."</string>
     <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Spremljene bežične slušalice</string>
     <!-- Screen off fod -->
-    <string name="fod_gesture_title">Otključaj otiskom prsta kad je ekran isključen</string>
+    <string name="fod_gesture_title">Otključaj otiskom prsta kad je zaslon isključen</string>
     <string name="fod_gesture_summary">Omogućuje otključavanje uređaja bez prethodnog buđenja zaslona</string>
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Brzina osvježavanja zaslona</string>

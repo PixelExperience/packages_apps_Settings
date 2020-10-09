@@ -95,7 +95,7 @@
     <string name="fod_gesture_title">Розблокування за відбитком пальця, коли екран вимкнено</string>
     <string name="fod_gesture_summary">Дозволяє розблокувати пристрій відбитком без попереднього пробудження екрану</string>
     <!-- Refresh rate -->
-    <string name="refresh_rate_title">Частота оновлення екрана</string>
+    <string name="refresh_rate_title">Частота оновлення екрану</string>
     <string name="refresh_rate_auto">Автоматично</string>
     <string name="refresh_rate_60">60Hz (економить акумулятор)</string>
 </resources>
