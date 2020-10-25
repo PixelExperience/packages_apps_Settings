@@ -109,6 +109,7 @@
             android:title="@string/notification_pulse_title"
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
 
+<<<<<<< HEAD   (d0a5a7 Settings: Allow removing livedisplay pref screen with config)
         <!-- Battery light -->
         <SwitchPreference
             android:key="battery_light_enabled"
@@ -122,6 +123,8 @@
             android:summary="@string/heads_up_notifications_enabled_summary"
             settings:controller="com.android.settings.notification.HeadsUpPreferenceController" />
 
+=======
+>>>>>>> CHANGE (f41817 Settings: Move battery lights pref to Battery settings categ)
         <!-- Default notification ringtone -->
         <com.android.settings.DefaultRingtonePreference
             android:key="notification_default_ringtone"
