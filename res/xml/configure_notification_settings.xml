@@ -109,12 +109,6 @@
             android:title="@string/notification_pulse_title"
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
 
-        <!-- Battery light -->
-        <SwitchPreference
-            android:key="battery_light_enabled"
-            android:title="@string/battery_light_title"
-            settings:controller="com.android.settings.notification.BatteryLightPreferenceController"/>
-
         <!-- Heads up -->
         <SwitchPreference
             android:key="heads_up_notifications_enabled"
