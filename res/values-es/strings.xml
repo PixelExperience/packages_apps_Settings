@@ -1190,7 +1190,7 @@
     <string name="display_white_balance_summary" msgid="7625456704950209050"></string>
     <string name="peak_refresh_rate_title" msgid="1878771412897140903">"Pantalla fluida"</string>
     <string name="peak_refresh_rate_summary" msgid="1527087897198455042">"Aumenta automáticamente la frecuencia de actualización de 60 a 90 Hz en determinados tipos de contenido, lo que gasta más batería."</string>
-    <string name="force_high_refresh_rate_toggle" msgid="7458268305727889355">"Pantalla fluida"</string>
+    <string name="force_high_refresh_rate_toggle" msgid="5861514655252832828">"Forzar frecuencia de actualización de 90 Hz"</string>
     <string name="force_high_refresh_rate_desc" msgid="7794566420873814875">"Se utiliza la mayor frecuencia de actualización posible para mejorar la capacidad de respuesta a toques y la calidad de las animaciones. Aumenta el uso de batería."</string>
     <string name="adaptive_sleep_title" msgid="2987961991423539233">"Atención a la pantalla"</string>
     <string name="adaptive_sleep_summary_on" msgid="313187971631243800">"Activado / La pantalla no se apagará si estás mirándola"</string>
@@ -1329,7 +1329,6 @@
     <string name="firmware_version" msgid="1606901586501447275">"Versión de Android"</string>
     <string name="security_patch" msgid="4071756145347865382">"Actualización de seguridad de Android"</string>
     <string name="model_info" msgid="8997566254717810904">"Modelo"</string>
-    <string name="model_summary" msgid="2246651782442466213">"Modelo: %1$s"</string>
     <string name="hardware_info" msgid="7035211991066637019">"Modelo y hardware"</string>
     <string name="hardware_revision" msgid="3454709180861965025">"Versión de hardware"</string>
     <string name="fcc_equipment_id" msgid="6596668314025646129">"ID de equipo"</string>
@@ -1858,6 +1857,12 @@
     <string name="forgot_password_text" msgid="2583194470767613163">"Te podrá ayudar a cambiar el PIN, el patrón o la contraseña"</string>
     <string name="install_all_warning" product="tablet" msgid="7010749217925069520">"Tu tablet y tus datos personales son más vulnerables a los ataques de aplicaciones desconocidas. Al instalar aplicaciones de esta fuente, aceptas ser responsable de cualquier daño que sufra tu tablet o la pérdida de datos que se pueda derivar de su uso."</string>
     <string name="install_all_warning" product="default" msgid="652516435709047343">"Tu teléfono y tus datos personales son más vulnerables a los ataques de aplicaciones desconocidas. Al instalar aplicaciones de esta fuente, aceptas ser responsable de cualquier daño que sufra tu teléfono o la pérdida de datos que se pueda derivar de su uso."</string>
+    <string name="fdr_esim_failure_title" msgid="4776006228989385163">"Error al eliminar las tarjetas SIM descargadas"</string>
+    <string name="fdr_esim_failure_text" msgid="8353414537422446964">"Reinicia el dispositivo e inténtalo de nuevo. Si quieres seguir y restablecer el estado de fábrica, es posible que las tarjetas SIM descargadas no se eliminen."</string>
+    <string name="fdr_esim_failure_reboot_btn" msgid="8629204185016602747">"Reiniciar"</string>
+    <string name="fdr_continue_title" msgid="5343622664826823937">"¿Restablecer estado de fábrica?"</string>
+    <string name="fdr_continue_text" msgid="860874694422515489">"Las tarjetas SIM descargadas no se eliminarán."</string>
+    <string name="fdr_continue_btn" msgid="1875421470422667092">"Restablecer estado de fábrica"</string>
     <string name="install_all_warning" product="device" msgid="2348262609815354500">"Tu dispositivo y tus datos personales son más vulnerables a los ataques de aplicaciones desconocidas. Al instalar aplicaciones de esta fuente, aceptas ser responsable de cualquier daño que sufra tu dispositivo o de la pérdida de datos que se pueda derivar de su uso."</string>
     <string name="advanced_settings" msgid="2368905204839169094">"Ajustes avanzados"</string>
     <string name="advanced_settings_summary" msgid="1823765348195530035">"Habilitar más opciones de configuración"</string>

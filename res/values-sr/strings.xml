@@ -1210,7 +1210,7 @@
     <string name="display_white_balance_summary" msgid="7625456704950209050"></string>
     <string name="peak_refresh_rate_title" msgid="1878771412897140903">"Течни приказ"</string>
     <string name="peak_refresh_rate_summary" msgid="1527087897198455042">"Аутоматски подиже учесталост освежавања са 60 на 90 Hz за одређени садржај. Повећава потрошњу батерије."</string>
-    <string name="force_high_refresh_rate_toggle" msgid="7458268305727889355">"Течни приказ"</string>
+    <string name="force_high_refresh_rate_toggle" msgid="5861514655252832828">"Наметни учесталост освежавања од 90 Hz"</string>
     <string name="force_high_refresh_rate_desc" msgid="7794566420873814875">"Највећа учесталост освежавања за побољшан одзив на додир и квалитет анимације. Повећава потрошњу батерије."</string>
     <string name="adaptive_sleep_title" msgid="2987961991423539233">"Пажња екрана"</string>
     <string name="adaptive_sleep_summary_on" msgid="313187971631243800">"Укључено/екран се неће искључити ако гледате у њега"</string>
@@ -1350,7 +1350,6 @@
     <string name="firmware_version" msgid="1606901586501447275">"Android верзија"</string>
     <string name="security_patch" msgid="4071756145347865382">"Безбедносно ажурирање за Android"</string>
     <string name="model_info" msgid="8997566254717810904">"Модел"</string>
-    <string name="model_summary" msgid="2246651782442466213">"Модел: %1$s"</string>
     <string name="hardware_info" msgid="7035211991066637019">"Модел и хардвер"</string>
     <string name="hardware_revision" msgid="3454709180861965025">"Верзија хардвера"</string>
     <string name="fcc_equipment_id" msgid="6596668314025646129">"ИД опреме"</string>
@@ -1413,7 +1412,7 @@
     <string name="memory_media_usage" msgid="5161308657995646963">"Медији"</string>
     <string name="memory_downloads_usage" msgid="8252462247720191179">"Преузимања"</string>
     <string name="memory_dcim_usage" msgid="3568913845973164352">"Слике, видео снимци"</string>
-    <string name="memory_music_usage" msgid="8100634000114206429">"Аудио (музика, звукови звона, поткасти итд.)"</string>
+    <string name="memory_music_usage" msgid="8100634000114206429">"Аудио (музика, звукови звона, подкасти итд.)"</string>
     <string name="memory_media_misc_usage" msgid="7066851245178533269">"Друге датотеке"</string>
     <string name="memory_media_cache_usage" msgid="780808666853685824">"Кеширани подаци"</string>
     <string name="sd_eject" product="nosdcard" msgid="6136102589751843304">"Искљ. дељене меморије"</string>
@@ -1881,6 +1880,12 @@
     <string name="forgot_password_text" msgid="2583194470767613163">"Он може да вам помогне да ресетујете PIN, шаблон или лозинку"</string>
     <string name="install_all_warning" product="tablet" msgid="7010749217925069520">"Таблет и лични подаци су подложнији нападу непознатих апликација. Инсталирањем апликација из овог извора прихватате да сте одговорни за оштећења телефона или губитак података до којих може да дође због њиховог коришћења."</string>
     <string name="install_all_warning" product="default" msgid="652516435709047343">"Телефон и лични подаци су подложнији нападу непознатих апликација. Инсталирањем апликација из овог извора прихватате да сте одговорни за оштећења телефона или губитак података до којих може да дође због њиховог коришћења."</string>
+    <string name="fdr_esim_failure_title" msgid="4776006228989385163">"Проблем при брисању преузетих SIM картица"</string>
+    <string name="fdr_esim_failure_text" msgid="8353414537422446964">"Рестартујте уређај и пробајте поново. Ако наставите са ресетовањем на фабричка подешавања, преузете SIM картице могу да остану на уређају."</string>
+    <string name="fdr_esim_failure_reboot_btn" msgid="8629204185016602747">"Рестартуј"</string>
+    <string name="fdr_continue_title" msgid="5343622664826823937">"Ресетовати на фабричка подешавања?"</string>
+    <string name="fdr_continue_text" msgid="860874694422515489">"Преузете SIM картице ће остати на уређају."</string>
+    <string name="fdr_continue_btn" msgid="1875421470422667092">"Ресетуј на фабричка подешавања"</string>
     <string name="install_all_warning" product="device" msgid="2348262609815354500">"Уређај и лични подаци су подложнији нападу непознатих апликација. Ако инсталирате апликације из овог извора, прихватате да сте одговорни за евентуална оштећења уређаја или губитак података до којих може да дође због њиховог коришћења."</string>
     <string name="advanced_settings" msgid="2368905204839169094">"Напредна подешавања"</string>
     <string name="advanced_settings_summary" msgid="1823765348195530035">"Омогући још опција подешавања"</string>

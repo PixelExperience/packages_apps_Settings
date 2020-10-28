@@ -1190,7 +1190,7 @@
     <string name="display_white_balance_summary" msgid="7625456704950209050"></string>
     <string name="peak_refresh_rate_title" msgid="1878771412897140903">"Smooth Display"</string>
     <string name="peak_refresh_rate_summary" msgid="1527087897198455042">"Néhány tartalomnál automatikusan megemeli a frissítés gyakoriságát 60-ról 90 Hz-re. Növeli az akkumulátorhasználatot."</string>
-    <string name="force_high_refresh_rate_toggle" msgid="7458268305727889355">"Smooth Display"</string>
+    <string name="force_high_refresh_rate_toggle" msgid="5861514655252832828">"90 Hz-es frissítési gyakoriság kényszerítése"</string>
     <string name="force_high_refresh_rate_desc" msgid="7794566420873814875">"Legnagyobb frissítési gyakoriság a kifinomultabb érintési érzékenység és a jobb minőségű animációk érdekében. Növeli az akkumulátorhasználatot."</string>
     <string name="adaptive_sleep_title" msgid="2987961991423539233">"Képernyőfigyelő"</string>
     <string name="adaptive_sleep_summary_on" msgid="313187971631243800">"Be / A képernyő nem kapcsol majd ki, ha Ön épp azt nézi"</string>
@@ -1329,7 +1329,6 @@
     <string name="firmware_version" msgid="1606901586501447275">"Android verziója"</string>
     <string name="security_patch" msgid="4071756145347865382">"Android biztonsági frissítés"</string>
     <string name="model_info" msgid="8997566254717810904">"Modell"</string>
-    <string name="model_summary" msgid="2246651782442466213">"Modell: %1$s"</string>
     <string name="hardware_info" msgid="7035211991066637019">"Modell és hardver"</string>
     <string name="hardware_revision" msgid="3454709180861965025">"Hardververzió"</string>
     <string name="fcc_equipment_id" msgid="6596668314025646129">"Eszközazonosító"</string>
@@ -1858,6 +1857,12 @@
     <string name="forgot_password_text" msgid="2583194470767613163">"A rendszergazda segíthet a PIN-kód, a minta vagy a jelszó visszaállításában"</string>
     <string name="install_all_warning" product="tablet" msgid="7010749217925069520">"Az ismeretlen alkalmazások nagyobb eséllyel támadják meg táblagépét és személyes adatait. Az ebből a forrásból származó alkalmazások telepítésével egyidejűleg kijelenti, hogy Ön viseli a felelősséget az alkalmazások használatából eredő, táblagépét vagy személyes adatait ért bármilyen kár vagy bármilyen adatvesztés esetén."</string>
     <string name="install_all_warning" product="default" msgid="652516435709047343">"Az ismeretlen alkalmazások nagyobb eséllyel támadják meg telefonját és személyes adatait. Az ebből a forrásból származó alkalmazások telepítésével egyidejűleg kijelenti, hogy Ön viseli a felelősséget az alkalmazások használatából eredő, telefonját vagy személyes adatait ért bármilyen kár vagy adatvesztés esetén."</string>
+    <string name="fdr_esim_failure_title" msgid="4776006228989385163">"Probléma történt a letöltött SIM-ek törlésekor"</string>
+    <string name="fdr_esim_failure_text" msgid="8353414537422446964">"Indítsa újra az eszközt, majd próbálja meg újra. Ha folytatja a gyári beállítások visszaállítását, a letöltött SIM-ek az eszközön maradhatnak."</string>
+    <string name="fdr_esim_failure_reboot_btn" msgid="8629204185016602747">"Újraindítás"</string>
+    <string name="fdr_continue_title" msgid="5343622664826823937">"Folytatja a visszaállítást?"</string>
+    <string name="fdr_continue_text" msgid="860874694422515489">"A letöltött SIM-ek az eszközön maradnak."</string>
+    <string name="fdr_continue_btn" msgid="1875421470422667092">"Gyári beállítások visszaállítása"</string>
     <string name="install_all_warning" product="device" msgid="2348262609815354500">"Az ismeretlen alkalmazások nagyobb eséllyel támadják meg eszközét és személyes adatait. Az ebből a forrásból származó alkalmazások telepítésével egyidejűleg elfogadja, hogy Ön viseli a felelősséget az alkalmazások használatából eredő, eszközét vagy személyes adatait ért bármilyen kár vagy adatvesztés esetén."</string>
     <string name="advanced_settings" msgid="2368905204839169094">"Speciális beállítások"</string>
     <string name="advanced_settings_summary" msgid="1823765348195530035">"További beállítási lehetőségek engedélyezése"</string>

@@ -1190,7 +1190,7 @@
     <string name="display_white_balance_summary" msgid="7625456704950209050"></string>
     <string name="peak_refresh_rate_title" msgid="1878771412897140903">"Smooth Display"</string>
     <string name="peak_refresh_rate_summary" msgid="1527087897198455042">"Höjer uppdateringsfrekvensen dynamiskt från 60 till 90 Hz för visst innehåll. Ökar batteriförbrukningen."</string>
-    <string name="force_high_refresh_rate_toggle" msgid="7458268305727889355">"Smooth Display"</string>
+    <string name="force_high_refresh_rate_toggle" msgid="5861514655252832828">"Tvinga fram 90 Hz i uppdateringsfrekvens"</string>
     <string name="force_high_refresh_rate_desc" msgid="7794566420873814875">"Den högsta uppdateringsfrekvensen ger bättre tryckkänslighet och animationskvalitet. Ökar batteriförbrukningen."</string>
     <string name="adaptive_sleep_title" msgid="2987961991423539233">"Blickavkänning"</string>
     <string name="adaptive_sleep_summary_on" msgid="313187971631243800">"På/Skärmen stängs inte av om du tittar på den"</string>
@@ -1329,7 +1329,6 @@
     <string name="firmware_version" msgid="1606901586501447275">"Android-version"</string>
     <string name="security_patch" msgid="4071756145347865382">"Säkerhetsuppdatering för Android"</string>
     <string name="model_info" msgid="8997566254717810904">"Modell"</string>
-    <string name="model_summary" msgid="2246651782442466213">"Modell: %1$s"</string>
     <string name="hardware_info" msgid="7035211991066637019">"Modell och maskinvara"</string>
     <string name="hardware_revision" msgid="3454709180861965025">"Maskinvaruversion"</string>
     <string name="fcc_equipment_id" msgid="6596668314025646129">"Utrustnings-ID"</string>
@@ -1858,6 +1857,12 @@
     <string name="forgot_password_text" msgid="2583194470767613163">"Administratören kan hjälpa dig att återställa pinkoden, lösenordet eller det grafiska lösenordet"</string>
     <string name="install_all_warning" product="tablet" msgid="7010749217925069520">"Surfplattan och dina personliga uppgifter är mer sårbara när attackerna kommer från okända appar. Genom att installera appar från den här källan accepterar du att du är ansvarig för eventuella skador på surfplattan eller förlust av data som kan uppstå när du använder dessa appar."</string>
     <string name="install_all_warning" product="default" msgid="652516435709047343">"Mobilen och dina personliga uppgifter är mer sårbara när attackerna kommer från okända appar. Genom att installera appar från den här källan accepterar du att du är ansvarig för eventuella skador på mobilen eller förlust av data som kan uppstå när du använder dessa appar."</string>
+    <string name="fdr_esim_failure_title" msgid="4776006228989385163">"Det gick inte att rensa nedladdade SIM-kort"</string>
+    <string name="fdr_esim_failure_text" msgid="8353414537422446964">"Starta om enheten och försök igen. Om du fortsätter med återställningen kan nedladdade SIM-kort finnas kvar på enheten."</string>
+    <string name="fdr_esim_failure_reboot_btn" msgid="8629204185016602747">"Starta om"</string>
+    <string name="fdr_continue_title" msgid="5343622664826823937">"VIll du fortsätta att återställa?"</string>
+    <string name="fdr_continue_text" msgid="860874694422515489">"Nedladdade SIM-kort finns kvar på enheten."</string>
+    <string name="fdr_continue_btn" msgid="1875421470422667092">"Återställ standardinställningarna"</string>
     <string name="install_all_warning" product="device" msgid="2348262609815354500">"Enheten och dina personliga uppgifter är mer sårbara när attackerna kommer från okända appar. Genom att installera appar från den här källan accepterar du att du är ansvarig för eventuella skador på enheten eller förlust av data som kan uppstå när du använder dessa appar."</string>
     <string name="advanced_settings" msgid="2368905204839169094">"Avancerade inställningar"</string>
     <string name="advanced_settings_summary" msgid="1823765348195530035">"Aktivera fler inställningsalternativ"</string>
@@ -4325,7 +4330,7 @@
     <string name="data_saver_switch_title" msgid="7111538580123722959">"Använd databesparing"</string>
     <string name="unrestricted_app_title" msgid="7117585996574329284">"Obegränsad dataanvändning"</string>
     <string name="unrestricted_app_summary" msgid="282698963532000403">"Tillåt obegränsad dataåtkomst med Databesparing på"</string>
-    <string name="home_app" msgid="6056850504746902747">"Standardapp"</string>
+    <string name="home_app" msgid="6056850504746902747">"Startskärmsapp"</string>
     <string name="no_default_home" msgid="3588073707316139318">"Ingen standardapp"</string>
     <string name="lockpattern_settings_require_cred_before_startup" msgid="4098653943835666086">"Säker start"</string>
     <string name="lockpattern_settings_require_pattern_before_startup_summary" msgid="311325321794497404">"Kräv grafiskt lösenord när enheten startar. Du kan inte ta emot samtal, meddelanden, aviseringar eller ställa alarm om inte enheten är påslagen."</string>

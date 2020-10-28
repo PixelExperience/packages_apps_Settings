@@ -1190,7 +1190,7 @@
     <string name="display_white_balance_summary" msgid="7625456704950209050"></string>
     <string name="peak_refresh_rate_title" msgid="1878771412897140903">"Smooth Display"</string>
     <string name="peak_refresh_rate_summary" msgid="1527087897198455042">"Aumenta automaticamente a taxa de atualização de 60 para 90 Hz para alguns conteúdos. Maior uso da bateria."</string>
-    <string name="force_high_refresh_rate_toggle" msgid="7458268305727889355">"Smooth Display"</string>
+    <string name="force_high_refresh_rate_toggle" msgid="5861514655252832828">"Forçar a taxa de atualização de 90 Hz"</string>
     <string name="force_high_refresh_rate_desc" msgid="7794566420873814875">"Maior taxa de atualização para melhoria na resposta tátil e na qualidade das animações. Maior uso da bateria."</string>
     <string name="adaptive_sleep_title" msgid="2987961991423539233">"Reconhecimento de tela em uso"</string>
     <string name="adaptive_sleep_summary_on" msgid="313187971631243800">"Ativado / A tela não será desativada se você estiver olhando para ela"</string>
@@ -1329,7 +1329,6 @@
     <string name="firmware_version" msgid="1606901586501447275">"Versão do Android"</string>
     <string name="security_patch" msgid="4071756145347865382">"Atualização de segurança do Android"</string>
     <string name="model_info" msgid="8997566254717810904">"Modelo"</string>
-    <string name="model_summary" msgid="2246651782442466213">"Modelo: %1$s"</string>
     <string name="hardware_info" msgid="7035211991066637019">"Modelo e hardware"</string>
     <string name="hardware_revision" msgid="3454709180861965025">"Versão do hardware"</string>
     <string name="fcc_equipment_id" msgid="6596668314025646129">"ID do equipamento"</string>
@@ -1858,6 +1857,12 @@
     <string name="forgot_password_text" msgid="2583194470767613163">"Ele pode ajudar você a redefinir seu PIN, seu padrão ou sua senha"</string>
     <string name="install_all_warning" product="tablet" msgid="7010749217925069520">"Seu tablet e seus dados pessoais estão mais vulneráveis a ataques de apps desconhecidos. Ao instalar apps dessa fonte, você concorda que é responsável por qualquer dano causado ao seu tablet ou pela perda de dados que possa resultar do uso desses apps."</string>
     <string name="install_all_warning" product="default" msgid="652516435709047343">"Seu smartphone e seus dados pessoais estão mais vulneráveis a ataques de apps desconhecidos. Ao instalar apps dessa fonte, você concorda que é responsável por qualquer dano causado ao seu smartphone ou pela perda de dados que possa resultar do uso desses apps."</string>
+    <string name="fdr_esim_failure_title" msgid="4776006228989385163">"Falha ao apagar os chips transferidos por download"</string>
+    <string name="fdr_esim_failure_text" msgid="8353414537422446964">"Reinicialize o dispositivo e tente novamente. Se você continuar a redefinição para a configuração original, os chips transferidos por download poderão permanecer no dispositivo."</string>
+    <string name="fdr_esim_failure_reboot_btn" msgid="8629204185016602747">"Reinicializar"</string>
+    <string name="fdr_continue_title" msgid="5343622664826823937">"Continuar redefinição?"</string>
+    <string name="fdr_continue_text" msgid="860874694422515489">"Os chips transferidos por download permanecerão no dispositivo."</string>
+    <string name="fdr_continue_btn" msgid="1875421470422667092">"Redefinir para a configuração original"</string>
     <string name="install_all_warning" product="device" msgid="2348262609815354500">"Seus dados pessoais e do seu dispositivo são mais vulneráveis a ataques de apps desconhecidos. Ao instalar apps dessa fonte, você concorda que é responsável por qualquer dano causado ao seu dispositivo ou pela perda de dados que possa resultar do uso desses apps."</string>
     <string name="advanced_settings" msgid="2368905204839169094">"Configurações avançadas"</string>
     <string name="advanced_settings_summary" msgid="1823765348195530035">"Ativa mais opções de configuração"</string>
@@ -4490,7 +4495,7 @@
     <string name="fingerprint_swipe_for_notifications_suggestion_title" msgid="2956636269742745449">"Ver notificações rapidamente"</string>
     <string name="gesture_setting_on" msgid="3223448394997988591">"Ativado"</string>
     <string name="gesture_setting_off" msgid="3444029475726294919">"Desativado"</string>
-    <string name="oem_unlock_enable_disabled_summary_bootloader_unlocked" msgid="65713754674288193">"O bootloader já está desbloqueado"</string>
+    <string name="oem_unlock_enable_disabled_summary_bootloader_unlocked" msgid="65713754674288193">"O carregador de inicialização já está desbloqueado"</string>
     <string name="oem_unlock_enable_disabled_summary_connectivity" msgid="8045017109714463041">"Conecte-se à Internet primeiro"</string>
     <string name="oem_unlock_enable_disabled_summary_connectivity_or_locked" msgid="7425519481227423860">"Conecte-se à Internet ou entre em contato com sua operadora"</string>
     <string name="oem_unlock_enable_disabled_summary_sim_locked_device" msgid="168124660162907358">"Indisponível em dispositivos bloqueados pela operadora"</string>

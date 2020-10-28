@@ -1190,7 +1190,7 @@
     <string name="display_white_balance_summary" msgid="7625456704950209050"></string>
     <string name="peak_refresh_rate_title" msgid="1878771412897140903">"Smooth Display"</string>
     <string name="peak_refresh_rate_summary" msgid="1527087897198455042">"Айрым мазмундар үчүн жаңыртуу ылдамдыгын 60 Герцтен 90 Герцке көтөрөт. Батареянын колдонулушун жогорулатат."</string>
-    <string name="force_high_refresh_rate_toggle" msgid="7458268305727889355">"Smooth Display"</string>
+    <string name="force_high_refresh_rate_toggle" msgid="5861514655252832828">"90 Герц жаңыртуу ылдамдыгын колдонуу"</string>
     <string name="force_high_refresh_rate_desc" msgid="7794566420873814875">"Сенсордун функциясын жана анимациянын сапатын жакшыртуу үчүн жаңыртуу ылдамдыгы жогорулатылды. Батареянын колдонулушун жогорулатат."</string>
     <string name="adaptive_sleep_title" msgid="2987961991423539233">"Ыңгайлашуучу көшүү режими"</string>
     <string name="adaptive_sleep_summary_on" msgid="313187971631243800">"Күйүк / Экранды карап турганда, ал өчүп калбайт"</string>
@@ -1329,7 +1329,6 @@
     <string name="firmware_version" msgid="1606901586501447275">"Android версиясы"</string>
     <string name="security_patch" msgid="4071756145347865382">"Android\'дин коопсуздукту жаңыртуусу"</string>
     <string name="model_info" msgid="8997566254717810904">"Үлгүсү"</string>
-    <string name="model_summary" msgid="2246651782442466213">"Үлгүсү: %1$s"</string>
     <string name="hardware_info" msgid="7035211991066637019">"Түзмөктүн үлгүсү/аппараттык камсыздалышы"</string>
     <string name="hardware_revision" msgid="3454709180861965025">"Аппараттык камсыздоонун версиясы"</string>
     <string name="fcc_equipment_id" msgid="6596668314025646129">"Жабдуунун ID\'си"</string>
@@ -1858,6 +1857,12 @@
     <string name="forgot_password_text" msgid="2583194470767613163">"Ал PIN кодду, графикалык ачкычты же сырсөздү кайра коюуга жардам берет"</string>
     <string name="install_all_warning" product="tablet" msgid="7010749217925069520">"Планшетиңиз жана жеке дайын-даректериңиз белгисиз колдонмолордон зыян тартып калышы мүмкүн. Бул булактан келген колдонмолорду орнотуу менен, аларды пайдалануудан улам планшетиңизге кандайдыр бир зыян келтирилсе же дайын-даректериңизды жоготуп алсаңыз, өзүңүз жооптуу болосуз."</string>
     <string name="install_all_warning" product="default" msgid="652516435709047343">"Телефонуңуз жана жеке дайын-даректериңиз белгисиз колдонмолордон зыян тартып калышы мүмкүн. Бул булактан келген колдонмолорду орнотуу менен, аларды пайдалануудан улам телефонуңузга кандайдыр бир зыян келтирилсе же дайын-даректериңизды жоготуп алсаңыз, өзүңүз жооптуу болосуз."</string>
+    <string name="fdr_esim_failure_title" msgid="4776006228989385163">"Жүктөлүп алынган SIM-карталар өчүрүлгөн жок"</string>
+    <string name="fdr_esim_failure_text" msgid="8353414537422446964">"Түзмөктү өчүрүп-күйгүзүп, кайталап көрүңүз. Эгер баштапкы абалга келтирсеңиз, жүктөлүп алынган SIM-карталар түзмөктө калышы мүмкүн."</string>
+    <string name="fdr_esim_failure_reboot_btn" msgid="8629204185016602747">"Өчүрүп-күйгүзүү"</string>
+    <string name="fdr_continue_title" msgid="5343622664826823937">"Баштапкы абалга келтирилсинби?"</string>
+    <string name="fdr_continue_text" msgid="860874694422515489">"Жүктөлүп алынган SIM-карталар түзмөктө сакталып калат."</string>
+    <string name="fdr_continue_btn" msgid="1875421470422667092">"Баштапкы абалга кайтаруу"</string>
     <string name="install_all_warning" product="device" msgid="2348262609815354500">"Түзмөгүңүз жана жеке дайын-даректериңиз белгисиз колдонмолордон зыян тартып калышы мүмкүн. Бул булактан келген колдонмолорду орнотуп, түзмөгүңүзгө кандайдыр бир зыян келтирип алсаңыз же дайын-даректериңизди жоготуп алсаңыз, өзүңүз жооптуу болосуз."</string>
     <string name="advanced_settings" msgid="2368905204839169094">"Өркүндөтүлгөн жөндөөлөр"</string>
     <string name="advanced_settings_summary" msgid="1823765348195530035">"Көбүрөөк тууралоо опцияларын көрсөтүү"</string>
@@ -4515,7 +4520,7 @@
     <string name="enterprise_privacy_settings" msgid="786350385374794180">"Башкарылган түзмөк жөнүндө маалымат"</string>
     <string name="enterprise_privacy_settings_summary_generic" msgid="5471858290610344646">"Өзгөртүүлөр жана жөндөөлөр уюмуңуз тарабынан башкарылат"</string>
     <string name="enterprise_privacy_settings_summary_with_name" msgid="1315413275836515937">"Өзгөртүүлөр жана жөндөөлөр <xliff:g id="ORGANIZATION_NAME">%s</xliff:g> тарабынан башкарылат"</string>
-    <string name="enterprise_privacy_header" msgid="4626225398848641603">"Жумуш дайындарына кирүүгө уруксат берүү үчүн, уюмуңуз жөндөөлөрдү өзгөртүп, түзмөгүңүзгө программа орнотушу мүмкүн. \n\nКененирээк маалымат алуу үчүн уюмуңуздун администратору менен байланышыңыз."</string>
+    <string name="enterprise_privacy_header" msgid="4626225398848641603">"Жумуш дайындарына кирүүгө уруксат берүү үчүн, уюмуңуз жөндөөлөрдү өзгөртүп, түзмөгүңүзгө программа орнотушу мүмкүн. \n\nКененирээк маалымат алуу үчүн, уюмуңуздун администратору менен байланышыңыз."</string>
     <string name="enterprise_privacy_exposure_category" msgid="2507761423540037308">"Уюмуңуз көрө алган маалыматтын түрлөрү"</string>
     <string name="enterprise_privacy_exposure_changes_category" msgid="5459989751333816587">"Уюмуңуздун администратору киргизген өзгөртүүлөр"</string>
     <string name="enterprise_privacy_device_access_category" msgid="140157499478630004">"Бул түзмөккө кирүү мүмкүнчүлүгүңүз"</string>
@@ -4894,7 +4899,7 @@
     <string name="enable_mms_notification_summary" msgid="6432752438276672500">"Мобилдик Интернет өчүп турса да, <xliff:g id="OPERATOR_NAME">%1$s</xliff:g> операторунан MMS билдирүүлөрдү алып туруу үчүн басып коюңуз"</string>
     <string name="enable_mms_notification_channel_title" msgid="1798206332620642108">"MMS билдирүүлөр"</string>
     <string name="sim_combination_warning_notification_title" msgid="1365401631492986487">"SIM карталар айкалышпай жатат"</string>
-    <string name="dual_cdma_sim_warning_notification_summary" msgid="2826474790710586487">"<xliff:g id="OPERATOR_NAMES">%1$s</xliff:g> операторунун эки SIM картасын колдонсоңуз, түзмөк жакшы иштебей калышы мүмкүн. Кененирээк маалымат алуу үчүн таптап коюңуз."</string>
+    <string name="dual_cdma_sim_warning_notification_summary" msgid="2826474790710586487">"<xliff:g id="OPERATOR_NAMES">%1$s</xliff:g> операторунун эки SIM картасын колдонсоңуз, түзмөк жакшы иштебей калышы мүмкүн. Кененирээк маалымат алуу үчүн, таптап коюңуз."</string>
     <string name="dual_cdma_sim_warning_notification_channel_title" msgid="1049161096896074364">"SIM карталардын айкалышы"</string>
     <string name="work_policy_privacy_settings" msgid="2702644843505242596">"Жумуш саясатыңыздын маалыматы"</string>
     <string name="work_policy_privacy_settings_summary" msgid="690118670737638405">"IT администраторуңуз тарабынан башкарылган жөндөөлөр"</string>
