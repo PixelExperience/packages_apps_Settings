@@ -11,23 +11,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
-    <!-- Moto Face Unlock -->
-    <!-- Adaptive battery -->
-    <!-- Fingerprint location message - default -->
-    <!-- Fingerprint location message - generic -->
-    <!-- Fingerprint location message - tablet -->
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Reseta</string>
-    <!-- Buttons -->
-    <!-- Key backlight -->
     <string name="backlight_summary_disabled">Disabilitadu</string>
     <string name="backlight_summary_enabled">Abilitadu</string>
-    <!-- Buttons - Enable navbar -->
-    <!-- Battery light -->
-    <!-- High touch sensitivity -->
-    <!-- Touchscreen hovering -->
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
+    <string name="refresh_rate_auto">Automàticu</string>
 </resources>

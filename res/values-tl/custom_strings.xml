@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Wala pang 1 minuto</string>
     <string name="screen_time_summary_usage_today">%1$s ngayong araw</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Gamitin ang pag-unlock ng Mukha upang i-unlock ang iyong device.\n\nLaging isipin:\nAng pagtingin sa telepono ay maaaring makapag-unlock dito kung hindi mo sinasadya.\n\nMaaari ring ma-unlock ng ibang tao ang iyong telepono kung ito ays naitapat sa iyong mukha habang nakadilat ang iyong mga mata.\n\nMaaari ring ma-unlock ng ibang tao na kamukha mo ang iyong telepono, tulad ng, iyong anak o kamukha mong kapatid mo.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Ang data na narekord ng pag-unlock ng mukha ay permanente at ligtas na tatanggalin. Matapos matanggal, kakailanganin mo ang iyong PIN, pattern, o password upang i-unlock ang iyong telepono.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">I-on ang Adaptive Battery</string>
     <string name="smart_battery_footer_custom">"Para mapatagal ang baterya, nililimitahan ng Adaptive Battery ang baterya para sa mga app na hindi madalas na ginagamit. Matututunan ng iyong telepono kung paano mo ginagamit ang mga app sa paglipas ng panahon.
 
 Maaaring maantala ang mga notification para sa mga app na ito."</string>
     <string name="smart_battery_manager_title_custom">Adaptive Battery</string>
     <string name="smart_battery_title_custom">Gamitin ang Adaptive Battery</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Hanapin ang fingerprint sensor sa harap ng iyong telepono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Hanapin ang fingerprint sensor sa kaliwang bahagi ng iyong telepono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Hanapin ang fingerprint sensor sa kanang bahagi ng iyong telepono.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Hanapin ang sensor ng fingerprint sa harap ng iyong device.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Hanapin ang sensor ng fingerprint sa kaliwa ng iyong device.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Hanapin ang sensor ng fingerprint sa kanang bahagi ng iyong device.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Hanapin ang sensor ng fingerprint sa harapan ng iyong device.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Hanapin ang sensor ng fingerprint sa kaliwa ng iyong tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Hanapin ang sensor ng fingerprint sa kanang bahagi ng iyong tablet.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">I-reset</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Mga pindutan</string>
     <string name="hardware_keys_home_key_title">Pindutan ng Home</string>
     <string name="hardware_keys_back_key_title">Pindutan ng pabalik</string>
@@ -68,7 +60,6 @@ Maaaring maantala ang mga notification para sa mga app na ito."</string>
     <string name="camera_sleep_on_release_summary">Ang pag pindot ng sandali ay mapapanatiling bukas ng screen habang nananatili ang daliri sa button</string>
     <string name="camera_launch_title">Buksan ang camera</string>
     <string name="camera_launch_summary">Ang mahabang pagpindut at pagbitiw ay magbubukas ng kamera</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Backlight</string>
     <string name="button_backlight_enabled">Pa-ilawin ang mga button</string>
     <string name="button_backlight_only_when_pressed_title">Pa-ilawin ang mga button kapag pinindot lamang</string>
@@ -78,15 +69,9 @@ Maaaring maantala ang mga notification para sa mga app na ito."</string>
     <string name="backlight_summary_disabled">Naka-disable</string>
     <string name="backlight_summary_enabled_with_timeout">Pinagana para sa <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Naka-enable</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Paganahin ang on-screen nav bar</string>
     <string name="disable_navkeys_summary">Paganahin ang on-screen navigation bar at huwag paganahin ang mga button ng hardware</string>
-    <!-- Battery light -->
-    <!-- High touch sensitivity -->
-    <!-- Touchscreen hovering -->
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Nai-save ang Earbuds</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">I-unlock gamit ang fingerprint kapag naka-off ang screen</string>
-    <!-- Refresh rate -->
+    <string name="refresh_rate_auto">Awtomatik</string>
 </resources>

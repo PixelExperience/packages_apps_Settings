@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Kurang dari 1 menit</string>
     <string name="screen_time_summary_usage_today">%1$s hari ini</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Gunakan fitur pengenalan Wajah untuk membuka perangkat.\n\nPerlu diingat:\nMelihat ke ponsel dapat membuka kunci bahkan saat Anda tidak berniat melakukannya.\n\nPonsel Anda dapat dibuka oleh orang lain jika ponsel dihadapkan ke wajah Anda dengan mata terbuka.\n\nPonsel Anda dapat dibuka oleh orang lain yang mirip dengan Anda, seperti anak atau saudara yang mirip.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Data yang disimpan dengan metode pengenalan wajah akan dihapus dan diamankan secara permanen. Setelah dihapus, Anda akan memerlukan PIN, pola, atau kata sandi untuk membuka ponsel Anda.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Aktifkan Baterai Adaptif</string>
     <string name="smart_battery_footer_custom">"Untuk memperpanjang masa pakai baterai, Baterai Adaptif membatasi baterai untuk aplikasi yang jarang dipakai. Ponsel akan mempelajari cara Anda menggunakan aplikasi seiring waktu.
 
 Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="smart_battery_manager_title_custom">Baterai Adaptif</string>
     <string name="smart_battery_title_custom">Gunakan Baterai Adaptif</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Temukan pemindai sidik jari di bagian depan telepon Anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Temukan pemindai sidik jari di sisi kiri telepon Anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Temukan pemindai sidik jari di sisi kanan telepon Anda.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Temukan pemindai sidik jari di bagian depan perangkat Anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Temukan pemindai sidik jari di sisi kiri perangkat Anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Temukan pemindai sidik jari di sisi kanan perangkat Anda.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Temukan pemindai sidik jari di bagian depan tablet Anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Temukan pemindai sidik jari di sisi kiri tablet Anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Temukan pemindai sidik jari di sisi kanan tablet Anda.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Setel ulang</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Tombol</string>
     <string name="hardware_keys_home_key_title">Tombol beranda</string>
     <string name="hardware_keys_back_key_title">Tombol kembali</string>
@@ -68,7 +60,6 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="camera_sleep_on_release_summary">Menekan setengah akan menyalakan layar hanya saat tombol ditekan</string>
     <string name="camera_launch_title">Buka kamera</string>
     <string name="camera_launch_summary">Tekan lama dan lepas akan membuka kamera</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Lampu latar</string>
     <string name="button_backlight_enabled">Nyalakan cahaya tombol</string>
     <string name="button_backlight_only_when_pressed_title">Nyalakan cahaya tombol hanya jika ditekan</string>
@@ -78,23 +69,16 @@ Notifikasi dapat tertunda untuk aplikasi ini."</string>
     <string name="backlight_summary_disabled">Dinonaktifkan</string>
     <string name="backlight_summary_enabled_with_timeout">Diaktifkan untuk <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Diaktifkan</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktifkan bilah navigasi pada layar</string>
     <string name="disable_navkeys_summary">Aktifkan navigasi pada layar dan matikan tombol fisik</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Nyalakan lampu saat mengisi daya</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Kepekaan sentuh tinggi</string>
     <string name="high_touch_sensitivity_summary">Tingkatkan kepekaan layar sentuh sehingga dapat digunakan saat mengenakan sarung tangan</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Ambang jari di layar sentuh</string>
     <string name="touchscreen_hovering_summary">Mengizinkan Anda mengambang jari di atas layar seperti menggunakan tetikus dalam peramban web, destop jarak jauh, dll</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Earbud tersimpan</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Buka kunci dengan sidik jari saat layar padam</string>
     <string name="fod_gesture_summary">Izinkan membuka kunci tanpa harus mengaktifkan layar terlebih dahulu</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Rating penyegaran layar</string>
     <string name="refresh_rate_auto">Otomatis</string>
     <string name="refresh_rate_60">60Hz (hemat baterai)</string>

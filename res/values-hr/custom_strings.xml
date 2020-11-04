@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Manje od jedne minute</string>
     <string name="screen_time_summary_usage_today">%1$s danas</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Za otključavanje uređaja poslužite se licem.\n\nObratite pažnju na sljedeće:\nMogli biste nehotično otključati telefon gledajući u njega.\n\nNetko drugi mogao bi otključati vaš telefon tako da ga okrene prema vašem licu dok su vam oči otvorene.\n\nTelefon bi mogao otključati netko tko vam je jako sličan, primjerice dijete ili blizanac.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Podaci snimljeni otključavanjem licem trajno će se i sigurno izbrisati. Nakon uklanjanja, za otključavanje telefona trebat će vam PIN, uzorak ili lozinka.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Uključite Adaptive Battery</string>
     <string name="smart_battery_footer_custom">"Da bi se produljilo trajanje baterije, Adaptive Battery ograničava potrošnju baterije za aplikacije koje se upotrebljavaju rjeđe. Telefon će s vremenom saznati kako upotrebljavate aplikacije.
 
 Obavijesti za te aplikacije mogu kasniti."</string>
     <string name="smart_battery_manager_title_custom">Prilagodljiva baterija</string>
     <string name="smart_battery_title_custom">Koristi Adaptive Battery</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Pronađite senzor otiska prsta na prednjoj strani telefona.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Pronađite senzor otiska prsta na lijevoj strani telefona.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Pronađite senzor otiska prsta na desnoj strani telefona.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Pronađite senzor otiska prsta na prednjoj strani uređaja.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Pronađite senzor otiska prsta na lijevoj strani uređaja.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Pronađite senzor otiska prsta na desnoj strani uređaja.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Pronađite senzor otiska prsta na prednjoj strani tableta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Pronađite senzor otiska prsta na lijevoj strani tableta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Pronađite senzor otiska prsta na desnoj strani tableta.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Poništi</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Tipke</string>
     <string name="hardware_keys_home_key_title">Tipka za početni zaslon</string>
     <string name="hardware_keys_back_key_title">Tipka za natrag</string>
@@ -68,7 +60,6 @@ Obavijesti za te aplikacije mogu kasniti."</string>
     <string name="camera_sleep_on_release_summary">Polupritisak će držati zaslon uključen samo dok se tipka drži pritisnuta</string>
     <string name="camera_launch_title">Pokreni kameru</string>
     <string name="camera_launch_summary">Dugi pritisak i puštanje će pokrenuti kameru</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Pozadinsko osvjetljenje</string>
     <string name="button_backlight_enabled">Osvjetljenje tipki</string>
     <string name="button_backlight_only_when_pressed_title">Osvijetli gumbe samo pri pritisku</string>
@@ -78,23 +69,16 @@ Obavijesti za te aplikacije mogu kasniti."</string>
     <string name="backlight_summary_disabled">Onemogućeno</string>
     <string name="backlight_summary_enabled_with_timeout">Omogućeno za <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Omogućeno</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Omogući navigacijsku traku zaslona</string>
     <string name="disable_navkeys_summary">Omogući zaslonsku navigacijsku traku i onemogući hardverske tipke</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Uključite svijetlo prilikom punjenja</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Visoka osjetljivost na dodir</string>
     <string name="high_touch_sensitivity_summary">Povećaj osjetljivost na dodir tako da se mogu koristiti rukavice</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Lebdenje nad zaslonom</string>
     <string name="touchscreen_hovering_summary">Dopušta vam da lebdite zaslonom kao miš u web pretraživaču, udaljenom desktopu, itd</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Spremljene bežične slušalice</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Otključaj otiskom prsta kad je zaslon isključen</string>
     <string name="fod_gesture_summary">Omogućuje otključavanje uređaja bez prethodnog buđenja zaslona</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Brzina osvježavanja zaslona</string>
     <string name="refresh_rate_auto">Automatski</string>
     <string name="refresh_rate_60">60Hz (štedi bateriju)</string>

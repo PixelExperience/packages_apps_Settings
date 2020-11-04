@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">1 分未満</string>
     <string name="screen_time_summary_usage_today">今日: %1$s</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">[顔認証でロック解除]を使用してデバイスのロックを解除してください。\n\n注意: \n電話を見ると、意図しないときにロック解除されることがあります。\n\nあなたが目を開いているときに他の誰かに電話を顔の近くにかざされた場合、ロック解除されることがあります。\n\n自分の子供や双子など、自分によく似た誰かによって電話がロック解除されることがあります。</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">[顔認証でロック解除]によって記録されたデータは、完全かつ安全に削除されます。削除後、電話のロックを解除するには、PIN、パターン、またはパスワードが必要です。</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">自動調整バッテリーを ON にしてください</string>
     <string name="smart_battery_footer_custom">"自動調整バッテリーで使用頻度の低いアプリの電池使用を制限すると、電池が長持ちします。時間の経過とともに、スマートフォンがアプリの使用状況を学習します。
 
 このアプリの通知は遅れることがあります。"</string>
     <string name="smart_battery_manager_title_custom">自動調整バッテリー</string>
     <string name="smart_battery_title_custom">自動調整バッテリーの使用</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">端末前面にある指紋認証センサーを探します</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">端末左側にある指紋認証センサーを探します</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">端末右側にある指紋認証センサーを探します</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">端末前面にある指紋認証センサーを探します</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">端末左側にある指紋認証センサーを探します</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">端末右側にある指紋認証センサーを探します</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">端末前面にある指紋認証センサーを探します</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">端末左側にある指紋認証センサーを探します</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">端末右側にある指紋認証センサーを探します</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">リセット</string>
-    <!-- Buttons -->
     <string name="button_pref_title">ボタン</string>
     <string name="hardware_keys_home_key_title">ホームボタン</string>
     <string name="hardware_keys_back_key_title">戻るボタン</string>
@@ -68,7 +60,6 @@
     <string name="camera_sleep_on_release_summary">ボタンを半押しし続けている間だけ画面を点灯する</string>
     <string name="camera_launch_title">カメラを起動</string>
     <string name="camera_launch_summary">長押しして離したときにカメラを起動する</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">バックライト</string>
     <string name="button_backlight_enabled">ボタンを点灯</string>
     <string name="button_backlight_only_when_pressed_title">ボタンを押したときだけ光らせる</string>
@@ -78,23 +69,16 @@
     <string name="backlight_summary_disabled">無効</string>
     <string name="backlight_summary_enabled_with_timeout"><xliff:g id="timeout">%s</xliff:g>間有効です</string>
     <string name="backlight_summary_enabled">有効</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">画面内ナビゲーション有効化</string>
     <string name="disable_navkeys_summary">画面内ナビゲーションを有効にしてハードウェアボタンを無効にする</string>
-    <!-- Battery light -->
     <string name="battery_light_title">充電時にライト点灯</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">高感度タッチ</string>
     <string name="high_touch_sensitivity_summary">手袋を着けたまま使用できるようにタッチ画面の感度を向上させる</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">タッチ画面のホバリング</string>
     <string name="touchscreen_hovering_summary">ウェブブラウザやリモードデスクトップなどでマウスのようにホバリングできるようにする</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">保存されたイヤホン</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">画面消灯時に指紋でロック解除</string>
     <string name="fod_gesture_summary">画面点灯なしでの端末の復帰を許可する</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">画面リフレッシュレート</string>
     <string name="refresh_rate_auto">自動</string>
     <string name="refresh_rate_60">60Hz (バッテリー節約)</string>

@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">פחות מדקה</string>
     <string name="screen_time_summary_usage_today">%1$s היום</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">השתמש בזיהוי פרצוף כדי לבטל את נעילת המכשיר.\n\nשים לב:\nנעילת הטלפון עלולה להתבטל כשאתה מביט בו, גם אם אינך מתכנן זאת.\n\nביטול נעילת הטלפון יכול להתבצע על-ידי מישהו אחר אם הטלפון מוחזק מול פניך בזמן שעיניך פקוחות.\n\nביטול נעילת הטלפון יכול להתבצע על-ידי מישהו שדומה לך מאוד, למשל הילד שלך או אח זהה.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">נתונים שמתועדים על-ידי זיהוי פרצוף יימחקו לצמיתות באופן מאובטח. לאחר ההסרה, תצטרך להשתמש ב-PIN, בקו ביטול נעילה או בסיסמה כדי לבטל את נעילת הטלפון.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">‏הפעלת Adaptive Battery</string>
     <string name="smart_battery_footer_custom">"‏כדי להאריך את חיי הסוללה, התכונה Adaptive Battery מגבילה את השימוש בסוללה לאפליקציות שנעשה בהן שימוש לעיתים רחוקות. לאורך זמן, הטלפון ילמד את אופן השימוש שלך באפליקציות.
 
 ייתכן עיכוב בקבלת התראות מאפליקציות אלה."</string>
     <string name="smart_battery_manager_title_custom">Adaptive Battery</string>
     <string name="smart_battery_title_custom">‏שימוש ב-Adaptive Battery</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">אתר את חיישן טביעת האצבע בקידמת המכשיר.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">אתר את חיישן טביעת האצבע בצידו השמאלי של המכשיר.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">אתר את חיישן טביעת האצבע בצידו הימני של המכשיר.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">אתר את חיישן טביעת האצבע בקידמת המכשיר.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">אתר את חיישן טביעת האצבע בצידו השמאלי של המכשיר.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">אתר את חיישן טביעת האצבע בצידו הימני של המכשיר.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">אתר את חיישן טביעת האצבע בקידמת המכשיר.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">אתר את חיישן טביעת האצבע בצידו השמאלי של המכשיר.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">אתר את חיישן טביעת האצבע בצידו הימני של המכשיר.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">איפוס</string>
-    <!-- Buttons -->
     <string name="button_pref_title">מקשים</string>
     <string name="hardware_keys_home_key_title">מקש הבית</string>
     <string name="hardware_keys_back_key_title">מקש \"הקודם\"</string>
@@ -68,7 +60,6 @@
     <string name="camera_sleep_on_release_summary">לחיצה חלקית תשאיר את המסך פעיל כל עוד המקש לחוץ</string>
     <string name="camera_launch_title">הפעל מצלמה</string>
     <string name="camera_launch_summary">לחיצה ארוכה ושחרור תפעיל את המצלמה</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">תאורה אחורית</string>
     <string name="button_backlight_enabled">האר מקשים</string>
     <string name="button_backlight_only_when_pressed_title">האר את המקשים רק כאשר נוגעים בהם</string>
@@ -78,20 +69,14 @@
     <string name="backlight_summary_disabled">מבוטל</string>
     <string name="backlight_summary_enabled_with_timeout">מאיר למשך <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">מופעל</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">הפעל מקשי ניווט על המסך</string>
     <string name="disable_navkeys_summary">מפעיל את מקשי ניווט על המסך ומשבית מקשים פיזיים</string>
-    <!-- Battery light -->
     <string name="battery_light_title">הדלק את האור בעת טעינה</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">רגישות גבוהה למגע</string>
     <string name="high_touch_sensitivity_summary">הגבר את רגישות מסך המגע, כך שניתן יהיה להשתמש בו בעת לבישת כפפות</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">מגע בריחוף</string>
     <string name="touchscreen_hovering_summary">מאפשר להעביר את האצבע מעל המסך כמו עכבר של מחשב בדפדפנים, בעמדות שליטה מרחוק וכד\'</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">אוזניות שמורות</string>
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">קצב רענון המסך:</string>
+    <string name="refresh_rate_auto">אוטומטי</string>
 </resources>

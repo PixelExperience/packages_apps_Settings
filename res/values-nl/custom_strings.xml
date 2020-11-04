@@ -11,33 +11,25 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Minder dan een minuut</string>
     <string name="screen_time_summary_usage_today">%1$s vandaag</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Gebruik Ontgrendelen via gezichtsherkenning om je apparaat te ontgrendelen.\n\nHoud er rekening mee dat je het apparaat onbedoeld kunt ontgrendelen.\n\nJe telefoon kan door iemand anders worden ontgrendeld als deze op je gezicht is gericht terwijl je ogen open zijn.\n\nEn je telefoon kan worden ontgrendeld door iemand die veel op je lijkt, zoals een kind of een broer/zus.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Gegevens die worden vastgelegd via Ontgrendelen via gezichtsherkenning, worden permanent en veilig verwijderd. Na het verwijderen heb je je pincode, patroon of wachtwoord nodig om je telefoon te ontgrendelen.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">\'Aanpasbaar batterijbeheer\' inschakelen</string>
     <string name="smart_battery_footer_custom">"'Aanpasbaar batterijbeheer' beperkt het batterijgebruik van weinig gebruikte apps om de levensduur van de batterij te verlengen. Je telefoon leert in de loop van de tijd hoe je apps gebruikt.
 
 Meldingen kunnen worden vertraagd voor deze apps."</string>
     <string name="smart_battery_manager_title_custom">Aanpasbaar batterijbeheer</string>
     <string name="smart_battery_title_custom">\'Aanpasbaar batterijbeheer\' gebruiken</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Zoek de vingerafdruksensor op de voorkant van je telefoon.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Zoek de vingerafdruksensor op de linker zijkant van uw telefoon.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Zoek de vingerafdruksensor op de rechter zijkant van uw telefoon.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Zoek de vingerafdrukscanner aan de voorkant van uw apparaat.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Zoek de vingerafdrukscanner aan de linkerkant van uw apparaat.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Zoek de vingerafdrukscanner aan de rechterkant van uw apparaat.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Zoek de vingerafdrukscanner aan de voorkant van uw tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Zoek de vingerafdrukscanner aan de linkerkant van uw tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Zoek de vingerafdrukscanner aan de rechterkant van uw tablet.</string>
-    <!-- Generic stuff used everywhere -->
-    <!-- Buttons -->
     <string name="button_pref_title">Knoppen</string>
     <string name="hardware_keys_home_key_title">Thuisknop</string>
     <string name="hardware_keys_back_key_title">Terugknop</string>
@@ -67,7 +59,6 @@ Meldingen kunnen worden vertraagd voor deze apps."</string>
     <string name="camera_sleep_on_release_summary">Een halve druk op de knop houdt het scherm ingeschakeld</string>
     <string name="camera_launch_title">Camera openen</string>
     <string name="camera_launch_summary">Lang indrukken en loslaten om camera te openen</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Verlichting</string>
     <string name="button_backlight_enabled">Knoppen verlichten</string>
     <string name="button_backlight_only_when_pressed_title">Licht alleen de knoppen op wanneer u erop drukt</string>
@@ -77,17 +68,11 @@ Meldingen kunnen worden vertraagd voor deze apps."</string>
     <string name="backlight_summary_disabled">Uitgeschakeld</string>
     <string name="backlight_summary_enabled_with_timeout">Ingeschakeld voor <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Ingeschakeld</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">On-screen navigatiebalk inschakelen</string>
     <string name="disable_navkeys_summary">On-screen navigatiebalk inschakelen en hardware-knoppen uitschakelen</string>
-    <!-- Battery light -->
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Hoge aanraakgevoeligheid</string>
     <string name="high_touch_sensitivity_summary">Gevoeligheid van het scherm verhogen, zodat het bediend kan worden met handschoenen</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Zweven boven scherm</string>
     <string name="touchscreen_hovering_summary">Met uw vinger boven het zwerm zweven, zoals een muis in browsers, bureaublad op afstand, etc.</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
+    <string name="refresh_rate_auto">Automatisch</string>
 </resources>
