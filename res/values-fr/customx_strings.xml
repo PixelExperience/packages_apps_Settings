@@ -11,42 +11,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Buttons -->
     <string name="navigation_bar_title">Barre de navigation</string>
     <string name="hardware_keys_power_key_title">Bouton d\'alimentation</string>
     <string name="hardware_keys_volume_keys_title">Boutons de volume</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Activer la barre de navigation à l\'écran</string>
     <string name="disable_navkeys_summary">Activer la barre de navigation à l\'écran et désactiver les touches physiques</string>
-    <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Fermer l\'application à l\'aide du bouton Retour</string>
     <string name="kill_app_longpress_back_summary">Tuer l\'application en premier plan par un appui long sur le bouton Retour</string>
-    <!-- Hostname setting -->
     <string name="device_hostname">Nom d\'hôte de l\'appareil</string>
-    <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Redémarrage avancé</string>
     <string name="advanced_reboot_summary">Inclure les options de redémarrage en mode recovery et bootloader dans le menu Marche/Arrêt lorsque l\'appareil est déverrouillé</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Afficher la couverture du média</string>
-    <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Disposition aléatoire</string>
     <string name="unlock_scramble_pin_layout_summary">Disposer aléatoirement les touches lors du déverrouillage</string>
-    <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Tapoter pour mettre en veille</string>
     <string name="status_bar_double_tap_to_sleep_summary">Appui double sur la barre d\'état pour éteindre l\'écran</string>
-    <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
     <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque l\'appareil est connecté à une source d\'alimentation</string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Choisissez une taille de modèle</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">Afficher l\'erreur de schéma</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Afficher les points du schéma</string>
-    <!-- Hotspot custom extras -->
     <string name="tethering_allow_vpn_upstreams_title">Autoriser les clients à utiliser des VPNs</string>
     <string name="tethering_allow_vpn_upstreams_summary">Permettre aux clients de point d\'accès d\'utiliser les connexions VPN de cet appareil\u2019 pour la connectivité en amont</string>
-    <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Temps minimum entre les sons de notification</string>
     <string name="app_notification_sound_timeout_summary_template">Ne pas permettre plus d\'un son ou une vibration toutes les <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Aucune restriction</string>
@@ -56,13 +42,10 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
-    <!-- Volume link notification -->
     <string name="volume_link_notification_title">Lier les volumes de la sonnerie &amp; des notifications</string>
-    <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Sonnerie progressive</string>
     <string name="increasing_ring_min_volume_title">Volume de démarrage</string>
     <string name="increasing_ring_ramp_up_time_title">Durée de progression</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">Paramètres de rotation</string>
     <string name="display_rotation_enabled">Rotation automatique activée</string>
     <string name="display_rotation_disabled">Rotation automatique désactivée</string>
@@ -72,11 +55,8 @@
     <string name="display_rotation_90_title">90 degrés</string>
     <string name="display_rotation_180_title">180 degrés</string>
     <string name="display_rotation_270_title">270 degrés</string>
-    <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Afficher le visualiseur de musique</string>
-    <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrer pour indiquer le statut de l\'appel</string>
-    <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">Afficher les flèches lors de la frappe</string>
     <string name="navigation_bar_arrow_keys_summary">Afficher les touches de curseur gauche et droite lors de la saisie. Remplace le changeur de mode de saisie.</string>
     <string name="nav_bar_layout_inverse_title">Inverser le schéma</string>
@@ -84,7 +64,6 @@
     <string name="navigation_bar_home_long_press_title">Appui long sur bouton d\'accueil</string>
     <string name="navigation_bar_home_double_tap_title">Appui double sur bouton d\'accueil</string>
     <string name="navigation_bar_app_switch_long_press_title">Appui long sur le bouton d\'applications récentes</string>
-    <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Contrôler la lecture</string>
     <string name="volbtn_music_controls_summary">Changer de piste audio à l\'aide d\'une pression longue sur les boutons de volume lorsque l\'écran est éteint</string>
     <string name="volume_answer_call_title">Répondre à l\'appel</string>
@@ -95,10 +74,8 @@
     <string name="volbtn_cursor_control_on_reverse">Déplacer le curseur vers la droite à l\'aide du bouton de volume du haut et vers la gauche à l\'aide du bouton du bas</string>
     <string name="swap_volume_buttons_title">Réorienter</string>
     <string name="swap_volume_buttons_summary">Inverser les boutons de volume lorsque l\'écran pivote</string>
-    <!-- Home key customization -->
     <string name="home_answer_call_title">Répondre à l\'appel</string>
     <string name="home_answer_call_summary">Répondre aux appels entrants en appuyant sur le bouton d\'accueil</string>
-    <!-- Power menu key customization -->
     <string name="power_menu_title">Menu Marche/Arrêt</string>
     <string name="power_menu_screenshot_title">Capture d\'écran</string>
     <string name="power_menu_screenshot_summary">Maintenir appuyé pour effectuer une capture d\'écran partielle</string>
@@ -117,10 +94,8 @@
     <string name="torch_long_press_power_timeout_2min">2 minutes</string>
     <string name="torch_long_press_power_timeout_5min">5 minutes</string>
     <string name="torch_long_press_power_timeout_10min">10 minutes</string>
-    <!-- Others settings -->
     <string name="others_settings_title">Autres paramètres</string>
     <string name="additional_buttons_title">Boutons supplémentaires</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Barre d\'état</string>
     <string name="status_bar_quick_qs_pulldown_title">Menu déroulant rapide</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Tirer le bord gauche de la barre d\'état vers le bas ouvre les paramètres rapides</string>
@@ -128,11 +103,9 @@
     <string name="status_bar_quick_qs_pulldown_off">Désactivé</string>
     <string name="status_bar_quick_qs_pulldown_left">Gauche</string>
     <string name="status_bar_quick_qs_pulldown_right">Droite</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Icônes de la barre d\'état</string>
     <string name="status_bar_system_icons_title">Icônes système</string>
     <string name="status_bar_system_icons_summary">Choisir les icônes à afficher dans la barre d\'état</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Horloge</string>
     <string name="status_bar_clock_show_seconds_title">Afficher les secondes</string>
     <string name="status_bar_clock_show_seconds_summary">Afficher les heures, minutes et secondes</string>
@@ -145,18 +118,15 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Petit</string>
     <string name="status_bar_am_pm_hidden">Masquée</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Niveau de la batterie</string>
     <string name="status_bar_battery_style_title">Style du niveau de batterie</string>
     <string name="status_bar_battery_style_icon_portrait">Icône portrait</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
     <string name="status_bar_battery_style_text">Texte</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Pourcentage de la batterie</string>
     <string name="status_bar_battery_percentage_default">Masqué</string>
     <string name="status_bar_battery_percentage_text_inside">Dans l\'icône</string>
     <string name="status_bar_battery_percentage_text_next">À côté de l\'icône</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Luminosité</string>
     <string name="status_bar_brightness_slider_title">Curseur de luminosité</string>
     <string name="status_bar_brightness_slider_summary">Régler la luminosité à partir du volet de configuration rapide</string>
@@ -167,7 +137,6 @@
     <string name="status_bar_brightness_slider_show_always">Toujours montrer</string>
     <string name="status_bar_toggle_brightness">Contrôle de la luminosité</string>
     <string name="status_bar_toggle_brightness_summary">Régler la luminosité en faisant glisser le doigt sur la barre d\'état</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Moniteur de trafic réseau</string>
     <string name="network_traffic_settings_summary">Afficher les débits réseau actuels dans la barre d\'état</string>
     <string name="network_traffic_mode_title">Mode d\'affichage</string>
@@ -177,19 +146,15 @@
     <string name="network_traffic_autohide">Masquer automatiquement</string>
     <string name="network_traffic_autohide_summary">Masquer le moniteur réseau lorsqu\'il n\'y a pas d\'activité</string>
     <string name="network_traffic_units_title">Unités de mesure du trafic</string>
-    <!-- QS settings -->
     <string name="qs_title">Réglages rapides</string>
     <string name="qs_rows_portrait_title">Lignes (portrait)</string>
     <string name="qs_rows_landscape_title">Lignes (paysage)</string>
     <string name="qs_columns_portrait_title">Colonnes (portrait)</string>
     <string name="qs_columns_landscape_title">Colonnes (paysage)</string>
-    <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">Visibilité du titre</string>
     <string name="qs_tile_title_visibility_summary">Afficher les titres sous les tuiles des réglages rapides</string>
-    <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">Vibrer au toucher</string>
     <string name="qs_vibrate_summary">Vibrer au toucher des tuiles des réglages rapides</string>
-    <!-- QS animation/interpolator styles  -->
     <string name="qs_animation_options_title">Animations des réglages rapides</string>
     <string name="qs_tile_animation_style_title">Style</string>
     <string name="qs_tile_animation_duration_title">Durée</string>
@@ -208,22 +173,17 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Dépasser</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticiper</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipation du dépassement</string>
-    <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Comportement de l\'encoche</string>
     <string name="display_cutout_mode_normal">Par défaut</string>
     <string name="display_cutout_mode_hidden">Cachée</string>
-    <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Applications en plein écran</string>
     <string name="display_cutout_force_fullscreen_summary">Forcer les applications à ignorer l\'emplacement du notch</string>
     <string name="display_cutout_force_fullscreen_restart_app">Merci de redémarrer l\'application pour appliquer les changements.</string>
     <string name="cutout_force_fullscreen_no_apps">Aucune application</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Glisser pour prendre une capture d\'écran</string>
     <string name="swipe_to_screenshot_gesture_summary">Balayer l\'écran avec trois doigts pour faire une capture d\'écran</string>
-    <!-- Navigation compact layout -->
     <string name="navigation_bar_compact_layout_title">Mise en page compacte</string>
     <string name="navigation_bar_compact_layout_summary">Utiliser une mise en page compacte dans la barre de navigation</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Optimiser votre écran en fonction de l\'heure et des conditions ambiantes pour améliorer la lisibilité et réduire la fatigue oculaire</string>
     <string name="live_display_mode">Mode d\'affichage</string>
     <string name="live_display_color_temperature_title">Température de la couleur</string>
@@ -267,21 +227,17 @@
     <string name="color_red_title">Rouge</string>
     <string name="color_green_title">Vert</string>
     <string name="color_blue_title">Bleu</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Ajustement de l\'image</string>
     <string name="picture_adjustment_summary">Ajustement de la teinte, de la saturation, de l\'intensité et du contraste</string>
     <string name="adj_hue_title">Teinte</string>
     <string name="adj_saturation_title">Saturation</string>
     <string name="adj_intensity_title">Intensité</string>
     <string name="adj_contrast_title">Contraste</string>
-    <!-- Back Gesture Height -->
     <string name="back_height_low_label">Complet</string>
     <string name="back_height_high_label">Barre de navigation</string>
     <string name="back_options_dialog_title">Paramètres</string>
     <string name="back_height_message">Zone d\'écran utilisée pour le geste arrière (en hauteur)</string>
-    <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Cacher la barre de navigation</string>
-    <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Permettre l\'accès au réseau</string>
     <string name="data_usage_app_restrict_all_summary">Permettre l\'application à accéder au réseau</string>
     <string name="data_usage_app_restrict_data">Données mobiles</string>
@@ -290,14 +246,10 @@
     <string name="data_usage_app_restrict_vpn_summary">Activer les données VPN</string>
     <string name="data_usage_app_restrict_wifi">Données Wi\u2011-Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Activer les données Wi\u2011-Fi</string>
-    <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Transparence de l\'arrière-plan des notifications</string>
-    <!-- Search keywords -->
     <string name="keywords_notification_log">Notifications, journal de notification</string>
-    <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Notifications pop-up</string>
     <string name="heads_up_notifications_enabled_summary">Afficher les notifications prioritaires dans une petite fenêtre de notification flottante</string>
-    <!-- Pocket mode -->
     <string name="proximity_wake_title">Éviter l\'allumage de l\'écran accidentellement</string>
     <string name="proximity_wake_summary">Vérifier le capteur de proximité avant d\'allumer l\'écran </string>
 </resources>

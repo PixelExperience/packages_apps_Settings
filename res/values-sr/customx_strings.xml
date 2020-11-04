@@ -11,42 +11,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Buttons -->
     <string name="navigation_bar_title">Навигациона трака</string>
     <string name="hardware_keys_power_key_title">Дугме за укључивање</string>
     <string name="hardware_keys_volume_keys_title">Дугмад за јачину звука</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Омогући навигациону траку на екрану</string>
     <string name="disable_navkeys_summary">Омогућите навигациону траку на екрану и онемогућите хардверску дугмад</string>
-    <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Окончавање апликација дугметом за назад</string>
     <string name="kill_app_longpress_back_summary">Окончајте позадинску апликацију задржавањем дугмета „Назад“.</string>
-    <!-- Hostname setting -->
     <string name="device_hostname">Име уређаја</string>
-    <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Напредно поновно покретање</string>
     <string name="advanced_reboot_summary">Када је уређај откључан, прикажи опције у менију поновног покретања, за рестарт у \'recovery\' или \'bootloader\'</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Прикажи омот медија</string>
-    <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Насумични распоред</string>
     <string name="unlock_scramble_pin_layout_summary">Приказује дугмад за унос PIN кода у насумичном реду.</string>
-    <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Додирни за искључивање екрана</string>
     <string name="status_bar_double_tap_to_sleep_summary">Додирните двапут на статусну траку или на закључани екран да бисте искључили екран</string>
-    <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Буђење при пуњењу</string>
     <string name="wake_when_plugged_or_unplugged_summary">Укључује екран при повезивању или прекиду везе са извором напајања.</string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Изаберите величину шаблона</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">Прикажи грешку шаблона</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Прикажи тачкице шаблона</string>
-    <!-- Hotspot custom extras -->
     <string name="tethering_allow_vpn_upstreams_title">Дозволи клијентима да користе VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Дозволите клијентима хотспота да користе VPN везе овог уређаја за повезивање на интернет</string>
-    <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Учесталост звучних обавештења</string>
     <string name="app_notification_sound_timeout_summary_template">Звуци и вибрација не чешће од једном сваких <xliff:g id="duration">%1$s</xliff:g>.</string>
     <string name="app_notification_sound_timeout_value_none">Без ограничења</string>
@@ -56,13 +42,10 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 минута</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 минута</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 минута</string>
-    <!-- Volume link notification -->
     <string name="volume_link_notification_title">Повежи јачину звука звона &amp; обавештења</string>
-    <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Постепено појачавање мелодије звона</string>
     <string name="increasing_ring_min_volume_title">Почетна јачина звука</string>
     <string name="increasing_ring_ramp_up_time_title">Време појачавања</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">Подешавања ротације</string>
     <string name="display_rotation_enabled">Аутоматска ротација је омогућена.</string>
     <string name="display_rotation_disabled">Аутоматска ротација је онемогућена.</string>
@@ -72,11 +55,8 @@
     <string name="display_rotation_90_title">90 степени</string>
     <string name="display_rotation_180_title">180 степени</string>
     <string name="display_rotation_270_title">270 степени</string>
-    <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Прикажи визуализатор музике</string>
-    <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Вибрација за индикацију статуса позива</string>
-    <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">Стрелице при уносу текста</string>
     <string name="navigation_bar_arrow_keys_summary">Приказује дугмад за померање курсора улево или удесно при уносу текста. Дугме за промену метода уноса неће бити приказано.</string>
     <string name="nav_bar_layout_inverse_title">Обрни распоред</string>
@@ -84,7 +64,6 @@
     <string name="navigation_bar_home_long_press_title">Дуги притисак на дугме „Почетна“</string>
     <string name="navigation_bar_home_double_tap_title">Двоструки додир дугмета „Почетна“</string>
     <string name="navigation_bar_app_switch_long_press_title">Акција на дуги притисак дугмета „скорашње“</string>
-    <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Управљање репродукцијом</string>
     <string name="volbtn_music_controls_summary">Премотавајте нумере дугим притиском на дугмад за јачину звука док је екран искључен.</string>
     <string name="volume_answer_call_title">Одговори на позив</string>
@@ -95,10 +74,8 @@
     <string name="volbtn_cursor_control_on_reverse">Дугмад за појачавање/утишавање померају курсор удесно/улево.</string>
     <string name="swap_volume_buttons_title">Преоријентација</string>
     <string name="swap_volume_buttons_summary">Замените места дугмади за јачину звука када је екран ротиран.</string>
-    <!-- Home key customization -->
     <string name="home_answer_call_title">Одговори на позив</string>
     <string name="home_answer_call_summary">Одговорите на долазни позив притиском на дугме „Почетна“.</string>
-    <!-- Power menu key customization -->
     <string name="power_menu_title">Мени за напајање</string>
     <string name="power_menu_screenshot_title">Снимак екрана</string>
     <string name="power_menu_screenshot_summary">Додирните и задржите да бисте одредили област за снимак екрана</string>
@@ -117,10 +94,8 @@
     <string name="torch_long_press_power_timeout_2min">2 минута</string>
     <string name="torch_long_press_power_timeout_5min">5 минута</string>
     <string name="torch_long_press_power_timeout_10min">10 минута</string>
-    <!-- Others settings -->
     <string name="others_settings_title">Друга подешавања</string>
     <string name="additional_buttons_title">Додатна дугмад</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Статусна трака</string>
     <string name="status_bar_quick_qs_pulldown_title">Брзи приступ</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Лева ивица статусне траке повлачи Брза Подешавања</string>
@@ -128,11 +103,9 @@
     <string name="status_bar_quick_qs_pulldown_off">Искључено</string>
     <string name="status_bar_quick_qs_pulldown_left">Лево</string>
     <string name="status_bar_quick_qs_pulldown_right">Десно</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Иконе у статусној траци</string>
     <string name="status_bar_system_icons_title">Системске иконе</string>
     <string name="status_bar_system_icons_summary">Подесите које иконе ће бити приказане у статусној траци.</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Сат</string>
     <string name="status_bar_clock_show_seconds_title">Прикажи секунде</string>
     <string name="status_bar_clock_show_seconds_summary">Прикажи сате, минуте и секунде</string>
@@ -145,18 +118,15 @@
     <string name="status_bar_am_pm_normal">Нормалан</string>
     <string name="status_bar_am_pm_small">Мали</string>
     <string name="status_bar_am_pm_hidden">Скривено</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Индикатор батерије</string>
     <string name="status_bar_battery_style_title">Стил индикатора батерије</string>
     <string name="status_bar_battery_style_icon_portrait">Усправна икона</string>
     <string name="status_bar_battery_style_circle">Круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Проценат батерије</string>
     <string name="status_bar_battery_percentage_default">Скривено</string>
     <string name="status_bar_battery_percentage_text_inside">Унутар иконе</string>
     <string name="status_bar_battery_percentage_text_next">Поред иконе</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Осветљеност</string>
     <string name="status_bar_brightness_slider_title">Клизач за осветљеност</string>
     <string name="status_bar_brightness_slider_summary">Прилагодите осветљеност из брзих подешавања.</string>
@@ -167,7 +137,6 @@
     <string name="status_bar_brightness_slider_show_always">Стално прикажи</string>
     <string name="status_bar_toggle_brightness">Управљање осветљеношћу</string>
     <string name="status_bar_toggle_brightness_summary">Прилагодите осветљеност померањем прста по статусној траци.</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Контролор мрежног саобраћаја</string>
     <string name="network_traffic_settings_summary">Прикажи тренутни проток мрежног саобраћаја у статусној траци</string>
     <string name="network_traffic_mode_title">Режим приказа</string>
@@ -177,19 +146,15 @@
     <string name="network_traffic_autohide">Аутоматски сакриј</string>
     <string name="network_traffic_autohide_summary">Сакриј контролу протока у одсуству активности</string>
     <string name="network_traffic_units_title">Мерне јединице протока</string>
-    <!-- QS settings -->
     <string name="qs_title">Брза подешавања</string>
     <string name="qs_rows_portrait_title">Редови (портрет)</string>
     <string name="qs_rows_landscape_title">Редови (положено)</string>
     <string name="qs_columns_portrait_title">Колоне (портрет)</string>
     <string name="qs_columns_landscape_title">Колоне (положено)</string>
-    <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">Видљивост Имена</string>
     <string name="qs_tile_title_visibility_summary">Прикажи текст у брзим подешавањима</string>
-    <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">Вибрација при додиру</string>
     <string name="qs_vibrate_summary">Вибрација при додиру плочица брзих подешавања</string>
-    <!-- QS animation/interpolator styles  -->
     <string name="qs_animation_options_title">Анимација брзих подешавања</string>
     <string name="qs_tile_animation_style_title">Стил</string>
     <string name="qs_tile_animation_duration_title">Трајање</string>
@@ -208,22 +173,17 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Прескакање</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Очекивано</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Предвиђање и прескакање</string>
-    <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Понашање зареза</string>
     <string name="display_cutout_mode_normal">Подразумевано</string>
     <string name="display_cutout_mode_hidden">Скривено</string>
-    <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Апликације преко целог екрана</string>
     <string name="display_cutout_force_fullscreen_summary">Форсирај апликације да игноришу простор зуба</string>
     <string name="display_cutout_force_fullscreen_restart_app">Рестартујте апликацију за примену измена.</string>
     <string name="cutout_force_fullscreen_no_apps">Нема апликација</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Потез за снимак екрана</string>
     <string name="swipe_to_screenshot_gesture_summary">Потез са три прста за снимак екрана</string>
-    <!-- Navigation compact layout -->
     <string name="navigation_bar_compact_layout_title">Компактни приказ</string>
     <string name="navigation_bar_compact_layout_summary">Користи компактни приказ у навигационом бару</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Прилагодите екран на основу доба дана и осветљености, како би се повећала читљивост и смањило напрезање очију.</string>
     <string name="live_display_mode">Режим приказа</string>
     <string name="live_display_color_temperature_title">Температура боје</string>
@@ -267,21 +227,17 @@
     <string name="color_red_title">Црвена</string>
     <string name="color_green_title">Зелена</string>
     <string name="color_blue_title">Плава</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Подешавање слике</string>
     <string name="picture_adjustment_summary">Подесите нијансу, засићеност, интензитет и контраст.</string>
     <string name="adj_hue_title">Нијанса</string>
     <string name="adj_saturation_title">Засићеност</string>
     <string name="adj_intensity_title">Интензитет</string>
     <string name="adj_contrast_title">Контраст</string>
-    <!-- Back Gesture Height -->
     <string name="back_height_low_label">Пуна</string>
     <string name="back_height_high_label">На дну</string>
     <string name="back_options_dialog_title">Опције</string>
     <string name="back_height_message">Вредност висине екрана која се користи као додирна површина за гесте уназад</string>
-    <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Сакри пилулу навигационог бара.</string>
-    <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Дозволи мрежни приступ</string>
     <string name="data_usage_app_restrict_all_summary">Дозволи апликацијама да приступе интернет мрежи</string>
     <string name="data_usage_app_restrict_data">Мобилни подаци</string>
@@ -290,14 +246,10 @@
     <string name="data_usage_app_restrict_vpn_summary">Дозволи употребу података преко ВПН-а</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi подаци</string>
     <string name="data_usage_app_restrict_wifi_summary">Укључи употребу Wi\u2011Fi података</string>
-    <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Прозирна позадина обавештења</string>
-    <!-- Search keywords -->
     <string name="keywords_notification_log">Обавештења,белешке обавештења</string>
-    <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Искачућа обавештења</string>
     <string name="heads_up_notifications_enabled_summary">Приказује приоритетна обавештења у малим искачућим прозорима.</string>
-    <!-- Pocket mode -->
     <string name="proximity_wake_title">Спречити случајна паљења</string>
     <string name="proximity_wake_summary">Провери сензор близине пре паљења екрана</string>
 </resources>
