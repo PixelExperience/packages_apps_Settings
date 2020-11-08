@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Dưới 1 phút</string>
     <string name="screen_time_summary_usage_today">%1$s hôm nay</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Sử dụng Mở khóa bằng khuôn mặt để mở khóa thiết bị của bạn.\n\nHãy nhớ:\nViệc nhìn vào điện thoại có thể mở khóa khi bạn không có ý định này.\n\nĐiện thoại của bạn có thể bị một người khác mở khóa nếu điện thoại điện giữ trước mặt bạn khi bạn mở mắt.\n\nĐiện thoại của bạn có thể bị ai đó trông rất giống bạn, ví như con hay anh chị em song sinh của bạn mở khóa.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Dữ liệu được ghi lại bằng tính năng mở khóa bằng khuôn mặt sẽ bị xóa vĩnh viễn và an toàn. Sau khi xóa, bạn sẽ cần mã PIN, mẫu hình, mật khẩu để mở khóa điện thoại.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Bật tùy chọn Pin thích ứng</string>
     <string name="smart_battery_footer_custom">"Để kéo dài thời lượng pin, tùy chọn Pin thích ứng sẽ giới hạn mức sử dụng pin đối với các ứng dụng ít dùng. Điện thoại sẽ tìm hiểu cách bạn sử dụng ứng dụng theo thời gian.
 
 Thông báo có thể bị chậm trễ đối với những ứng dụng này."</string>
     <string name="smart_battery_manager_title_custom">Pin thích ứng</string>
     <string name="smart_battery_title_custom">Sử dụng Pin thích ứng</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Định vị cảm biến vân tay trên mặt trước điện thoại của bạn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Định vị cảm biến vân tay trên cạnh trái điện thoại của bạn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Định vị cảm biến vân tay trên cạnh phải điện thoại của bạn.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Định vị cảm biến vân tay trên mặt trước thiết bị của bạn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Định vị cảm biến vân tay trên cạnh trái thiết bị của bạn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Định vị cảm biến vân tay trên cạnh phải thiết bị của bạn.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Định vị cảm biến vân tay trên mặt trước máy tính bảng của bạn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Định vị cảm biến vân tay trên cạnh trái máy tính bảng của bạn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Định vị cảm biến vân tay trên cạnh phải máy tính bảng của bạn.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Thiết lập lại</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Phím</string>
     <string name="hardware_keys_home_key_title">Phím Trang chủ</string>
     <string name="hardware_keys_back_key_title">Phím Quay lại</string>
@@ -68,7 +60,6 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <string name="camera_sleep_on_release_summary">Nhấn nửa chừng sẽ giữ màn hình bật trong khi còn giữ nút</string>
     <string name="camera_launch_title">Mở máy ảnh</string>
     <string name="camera_launch_summary">Nhấn giữ và thả sẽ mở máy ảnh</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Đèn nền</string>
     <string name="button_backlight_enabled">Phát sáng các phím</string>
     <string name="button_backlight_only_when_pressed_title">Phát sáng các nút chỉ khi được nhấn</string>
@@ -78,23 +69,16 @@ Thông báo có thể bị chậm trễ đối với những ứng dụng này."
     <string name="backlight_summary_disabled">Đã tắt</string>
     <string name="backlight_summary_enabled_with_timeout">Đã bật trong <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Đã bật</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Bật thanh điều hướng trên màn hình</string>
     <string name="disable_navkeys_summary">Bật thanh điều hướng trên màn hình và tắt các phím cứng</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Bật đèn khi sạc</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Độ nhạy cảm ứng cao</string>
     <string name="high_touch_sensitivity_summary">Tăng độ nhạy màn hình cảm ứng để nó có thể được sử dụng trong khi đeo găng tay</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Di trên màn hình cảm ứng</string>
     <string name="touchscreen_hovering_summary">Cho phép bạn di trên màn hình như chuột trong trình duyệt web, điều khiển máy tính từ xa, v.v.</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Tai nghe đã lưu</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Mở khóa bằng vân tay khi màn hình tắt</string>
     <string name="fod_gesture_summary">Cho phép mở khóa thiết bị mà không cần phải đánh thức màn hình trước</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Tốc độ làm tươi màn hình</string>
     <string name="refresh_rate_auto">Tự động</string>
     <string name="refresh_rate_60">60Hz (tiết kiệm pin)</string>

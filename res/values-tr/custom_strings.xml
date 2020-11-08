@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">1 dakikadan az</string>
     <string name="screen_time_summary_usage_today">Bugün %1$s</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Cihazınızın kilidini açmak için Yüz tanıma kilidini kullanın.\n\nŞunları unutmayın:\nFarkında olmadığınız durumlarda bile telefona baktığınızda telefonun kilidi açılabilir.\n\nGözleriniz açıkken telefonunuz yüzünüze doğru çevrilirse telefonunuzun kilidi başka biri tarafından açılabilir.\n\nTelefonunuzun kilidi, size çok benzeyen biri (ör. çocuğunuz ya da ikiz kardeşiniz) tarafından açılabilir.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Yüz tanıma kilidi ile kaydedilen veriler kalıcı ve güvenli bir şekilde silinir. Kaldırma işleminden sonra telefonunuzun kilidini açmak için PIN, desen veya şifre kullanmanız gerekir.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Uyarlamalı Pil\'i aç</string>
     <string name="smart_battery_footer_custom">"Uyarlamalı Pil özelliği pil ömrünü uzatmak için, sık kullanılmayan uygulamaların pil tüketimini sınırlar. Telefonunuz, zamanla uygulamaları nasıl kullandığınızı öğrenir.
 
 Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <string name="smart_battery_manager_title_custom">Uyarlamalı Pil</string>
     <string name="smart_battery_title_custom">Uyarlamalı Pil özelliğini kullan</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Telefonunuzun önündeki parmak izi sensörünü bulun.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Telefonunuzun sol tarafındaki parmak izi sensörünü bulun.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Telefonunuzun sağ tarafındaki parmak izi sensörünü bulun.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Telefonunuzun önündeki parmak izi sensörünü bulun.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Telefonunuzun sol tarafındaki parmak izi sensörünü bulun.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Telefonunuzun sağ tarafındaki parmak izi sensörünü bulun.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Tabletinizin önündeki parmak izi sensörünü bulun.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Tabletinizin sol tarafındaki parmak izi sensörünü bulun.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Tabletinizin sağ tarafındaki parmak izi sensörünü bulun.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Sıfırla</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Tuşlar</string>
     <string name="hardware_keys_home_key_title">Ana ekran tuşu</string>
     <string name="hardware_keys_back_key_title">Geri tuşu</string>
@@ -68,7 +60,6 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <string name="camera_sleep_on_release_summary">Sadece tuşa basılı tutulduğunda yarım basma ekranı açık tutacaktır</string>
     <string name="camera_launch_title">Kamerayı başlat</string>
     <string name="camera_launch_summary">Uzun basıp bırakma kamerayı başlatacak</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Aydınlatma ışığı</string>
     <string name="button_backlight_enabled">Tuşları aydınlat</string>
     <string name="button_backlight_only_when_pressed_title">Tuşları sadece basıldığında aydınlat</string>
@@ -78,23 +69,16 @@ Bu uygulamalara ait bildirimlerde gecikme olabilir."</string>
     <string name="backlight_summary_disabled">Devre dışı</string>
     <string name="backlight_summary_enabled_with_timeout"><xliff:g id="timeout">%s</xliff:g> için aktif</string>
     <string name="backlight_summary_enabled">Etkin</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Gezinme çubuğunu etkinleştir</string>
     <string name="disable_navkeys_summary">Ekranda gezinme çubuğunu etkinleştirin ve donanım tuşlarını devre dışı bırakın</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Şarj ederken ışığı aç</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Yüksek dokunma hassasiyeti</string>
     <string name="high_touch_sensitivity_summary">Dokunmatik ekran hassasiyetini arttırarak eldiven ile kullanıma olanak verir</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Dokunmatik ekrana dokunmadan gezinme</string>
     <string name="touchscreen_hovering_summary">Ekrana dokunmadan parmağınızı yakınlaştırarak bir fare kullanıyormuş gibi web tarayıcılarında, uzak masaüstlerinde, vb. dolaşmanızı sağlar</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Kaydedilmiş Kulaklıklar</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Ekran kapalıyken parmak iziyle kilidi açın</string>
     <string name="fod_gesture_summary">Önce ekranı uyandırmak zorunda kalmadan cihazın kilidini açmaya izin verir</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Ekran yenileme oranı</string>
     <string name="refresh_rate_auto">Otomatik</string>
     <string name="refresh_rate_60">60Hz (pil tasarrufu sağlar)</string>

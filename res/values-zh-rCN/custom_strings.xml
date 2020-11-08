@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">不到 1 分钟</string>
     <string name="screen_time_summary_usage_today">今天使用了 %1$s</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">使用人脸解锁功能解锁设备。\n\n请记住：\n看向手机可能会将其解锁，即便您无意如此。\n\n如果他人将您的手机对着您的面部，而您的眼睛处于睁开状态，则您的手机会被解锁。\n\n长相很像您的人（如您的孩子或同胞胎兄弟姐妹）可以解锁您的手机。</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">人脸解锁功能记录的数据将被永久安全删除。删除后，您将需要使用 PIN、图案或密码来解锁您的手机。</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">开启自适应电池</string>
     <string name="smart_battery_footer_custom">"为了延长电池续航时间，“自适应电池”功能会针对不常用的应用限制用电量。久而久之，您的手机就会逐渐了解应用的使用情况。
 
 这些应用的通知可能会有所延迟。"</string>
     <string name="smart_battery_manager_title_custom">自适应电池</string>
     <string name="smart_battery_title_custom">使用自适应电池</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">您可以在手机正面找到指纹传感器。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">您可以在手机左侧找到指纹传感器。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">您可以在手机右侧找到指纹传感器。</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">您可以在手机正面找到指纹传感器。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">您可以在手机左侧找到指纹传感器。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">您可以在手机右侧找到指纹传感器。</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">您可以在平板正面找到指纹传感器。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">您可以在平板左侧找到指纹传感器。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">您可以在平板右侧找到指纹传感器。</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">重置</string>
-    <!-- Buttons -->
     <string name="button_pref_title">按键</string>
     <string name="hardware_keys_home_key_title">Home 键</string>
     <string name="hardware_keys_back_key_title">返回键</string>
@@ -68,7 +60,6 @@
     <string name="camera_sleep_on_release_summary">半按保持屏幕开启</string>
     <string name="camera_launch_title">启动相机</string>
     <string name="camera_launch_summary">长按后释放将会打开相机</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">背光</string>
     <string name="button_backlight_enabled">点亮按键</string>
     <string name="button_backlight_only_when_pressed_title">仅在按下时点亮按钮</string>
@@ -78,23 +69,16 @@
     <string name="backlight_summary_disabled">已禁用</string>
     <string name="backlight_summary_enabled_with_timeout">保持背光灯 <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">已启用</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">启用虚拟按键</string>
     <string name="disable_navkeys_summary">启用虚拟按键并禁用实体按钮</string>
-    <!-- Battery light -->
     <string name="battery_light_title">在充电时开启指示灯</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">触摸屏高灵敏度</string>
     <string name="high_touch_sensitivity_summary">增加触摸屏的灵敏度，以便在戴手套时使用</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">悬空操作</string>
     <string name="touchscreen_hovering_summary">允许您将手指悬停在屏幕上作为浏览器、远程桌面等处的鼠标指针</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">已保存的耳机</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">允许屏幕关闭时使用指纹解锁</string>
     <string name="fod_gesture_summary">无需唤醒屏幕即可解锁设备</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">屏幕刷新率</string>
     <string name="refresh_rate_auto">自动</string>
     <string name="refresh_rate_60">60赫兹（节能）</string>

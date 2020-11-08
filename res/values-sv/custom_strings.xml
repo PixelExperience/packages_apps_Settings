@@ -11,29 +11,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Mindre än 1 minut</string>
     <string name="screen_time_summary_usage_today">%1$s i dag</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Använd Ansiktslås för att låsa upp enheten.\n\nObs!\nOm du tittar på telefonen kan du av misstag låsa upp den.\n\nTelefonen kan låsas upp av någon annan om den hålls upp framför ditt ansikte om du har ögonen öppna.\n\nTelefonen kan låsas upp av någon som är lik dig, till exempel ditt barn eller ett identiskt syskon.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Data som registrerats av Ansiktslås tas bort permanent och säkert. Efter borttagning behöver du PIN-kod, grafiskt lösenord eller lösenord för att låsa upp telefonen.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Aktivera Smart batteri</string>
     <string name="smart_battery_footer_custom">"Med Smart batteri förlängs batteritiden genom att batterianvändningen begränsas för appar som används sällan. Mobilen lär sig hur du använder appar med tiden.
 
 Aviseringar från dessa appar kan fördröjas."</string>
     <string name="smart_battery_manager_title_custom">Smart batteri</string>
     <string name="smart_battery_title_custom">Använd Smart batteri</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Leta reda på fingeravtryckssensorn på baksidan av din telefon.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Lokalisera fingeravtrycks-sensorn på vänster sidan av din mobilen.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Lokalisera fingeravtrycks-sensorn på högre sidan av din mobil.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Lokalisera fingeravtryckssensorn på din enhets framsida.</string>
-    <!-- Fingerprint location message - tablet -->
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Återställ</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Knappar</string>
     <string name="hardware_keys_home_key_title">Hemknapp</string>
     <string name="hardware_keys_back_key_title">Bakåtknapp</string>
@@ -63,7 +55,6 @@ Aviseringar från dessa appar kan fördröjas."</string>
     <string name="camera_sleep_on_release_summary">Ett halvtryck kommer att slå på skärmen medan knappen är nedtryckt</string>
     <string name="camera_launch_title">Starta kamera</string>
     <string name="camera_launch_summary">Ett långtryck och släpp kommer att starta kameran</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Bakgrundsbelysning</string>
     <string name="button_backlight_enabled">Knappljus</string>
     <string name="button_backlight_only_when_pressed_title">Tänd bara knapparna när de trycks ned</string>
@@ -73,17 +64,11 @@ Aviseringar från dessa appar kan fördröjas."</string>
     <string name="backlight_summary_disabled">Avaktiverad</string>
     <string name="backlight_summary_enabled_with_timeout">Aktiverat för <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Aktiverad</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktivera navigeringsfält på skärmen</string>
     <string name="disable_navkeys_summary">Aktivera navigeringsfältet på skärmen och inaktivera hårdvaruknapparna</string>
-    <!-- Battery light -->
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Hög fingerkänslighet</string>
     <string name="high_touch_sensitivity_summary">Öka tryckskärmens känslighet så att den kan användas samtidigt som du bär handskar</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Tryckskärm-hovring</string>
     <string name="touchscreen_hovering_summary">Låter dig hovra över skärmen som en mus i webbläsare, fjärrskrivbord, etc</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
+    <string name="refresh_rate_auto">Automatisk</string>
 </resources>

@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Under ett minutt</string>
     <string name="screen_time_summary_usage_today">%1$s i dag</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Bruk Ansiktslås til å låse opp enheten.\n\nHusk:\nDet kan hende du utilsiktet låser opp telefonen når du ser på den.\n\nTelefonen kan låses opp av andre hvis den holdes opp mot ansiktet ditt mens du har øynene åpne.\n\nTelefonen kan låses opp av noen som ligner på deg, for eksempel barnet ditt eller en identisk tvilling.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Data som er registrert av Ansiktslås, slettes for godt og på en sikker måte. Når du har fjernet funksjonen, trenger du PIN-kode, mønster eller passord for å låse opp telefonen.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Slå på Tilpasset batteri</string>
     <string name="smart_battery_footer_custom">"Tilpasset batteri begrenser batteribruken for apper du bruker sjelden, for å forlenge batterilevetiden. Telefonen lærer hvordan du bruker apper over tid.
 
 Varsler kan bli forsinket for disse appene."</string>
     <string name="smart_battery_manager_title_custom">Tilpasset batteri</string>
     <string name="smart_battery_title_custom">Bruk Tilpasset batteri</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Finn fingeravtrykksleseren på fremsiden av telefonen din.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Finn fingeravtrykksleseren på venstre side av telefonen din.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Finn fingeravtrykksleseren på høyre side av telefonen din.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Finn fingeravtrykksleseren på fremsiden av enheten din.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Finn fingeravtrykksleseren på venstre side av enheten din.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Finn fingeravtrykksleseren på høyre side av enheten din.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Finn fingeravtrykksleseren på fremsiden av nettbrettet ditt.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Finn fingeravtrykksleseren på venstre side av nettbrettet ditt.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Finn fingeravtrykksleseren på høyre side av nettbrettet ditt.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Nullstill</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Knapper</string>
     <string name="hardware_keys_home_key_title">Hjemknapp</string>
     <string name="hardware_keys_back_key_title">Tilbakeknapp</string>
@@ -68,7 +60,6 @@ Varsler kan bli forsinket for disse appene."</string>
     <string name="camera_sleep_on_release_summary">Et halvt trykk holder skjermen påslått kun mens knappen holdes inne</string>
     <string name="camera_launch_title">Åpne kamera</string>
     <string name="camera_launch_summary">Et langt trykk-og-slipp åpner kameraet</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Bakgrunnsbelysning</string>
     <string name="button_backlight_enabled">Lys opp knapper</string>
     <string name="button_backlight_only_when_pressed_title">Lys opp knapper kun etter trykk</string>
@@ -78,23 +69,16 @@ Varsler kan bli forsinket for disse appene."</string>
     <string name="backlight_summary_disabled">Deaktivert</string>
     <string name="backlight_summary_enabled_with_timeout">Aktivert for <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Aktivert</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktiver navigasjonsfelt på skjermen</string>
     <string name="disable_navkeys_summary">Aktiver navigasjonslinje på skjermen og deaktiver fysiske knapper</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Skru på lyset under lading</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Høy touch sensitivitet</string>
     <string name="high_touch_sensitivity_summary">Øk berøringsskjermens følsomhet slik at den kan brukes med hansker</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Berøringsskjerm hovring</string>
     <string name="touchscreen_hovering_summary">Lar deg hovre over skjermen som en mus på en nettleser, eksternt skrivebord osv</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Lagrede ørepropper</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Lås opp med fingeravtrykk når skjermen er av</string>
     <string name="fod_gesture_summary">Lar deg låse opp enheten uten å måtte slå på skjermen først</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Skjermoppdateringsfrekvens</string>
     <string name="refresh_rate_auto">Automatisk</string>
     <string name="refresh_rate_60">60 Hz (sparer batteri)</string>

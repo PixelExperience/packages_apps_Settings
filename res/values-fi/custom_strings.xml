@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Alle 1 minuutti</string>
     <string name="screen_time_summary_usage_today">%1$s tänään</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Avaa näytön lukitus kasvojentunnistuksella.\n\nOta huomioon seuraavat seikat:\nKatsomalla puhelinta voit avata puhelimen lukituksen myös tahattomasti.\n\nJoku muu voi avata puhelimesi lukituksen, jos se kohdistetaan kasvoihisi, kun silmäsi ovat auki.\n\nPuhelimen lukituksen voi avata joku, joka on samannäköinen kuin sinä, kuten lapsesi tai identtinen kaksosesi.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Kasvojentunnistuksen tallentamat tiedot poistetaan pysyvästi ja turvallisesti. Poistamisen jälkeen tarvitse PIN-koodin, kuvion tai salasanan puhelimen lukituksen avaamiseen.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Ota käyttöön mukautuva virta</string>
     <string name="smart_battery_footer_custom">"Mukautuva virta pidentää akun kestoa rajoittamalla harvoin käytettyjen sovellusten akunkäyttöä. Puhelin oppii, miten käytät sovelluksia.
 
 Rajoitettujen sovellusten ilmoitukset voidaan näyttää viiveellä."</string>
     <string name="smart_battery_manager_title_custom">Mukautuva virta</string>
     <string name="smart_battery_title_custom">Käytä mukautuvaa virtaa</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Löydä sormenjälkitunnistin puhelimesi etuosasta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Löydä sormenjälkitunnistin puhelimesi vasemmasta reunasta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Löydä sormenjälkitunnistin puhelimesi oikeasta reunasta.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Löydä sormenjälkitunnistin laitteesi etuosasta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Löydä sormenjälkitunnistin laitteesi vasemmasta reunasta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Löydä sormenjälkitunnistin laitteesi oikeasta reunasta.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Löydä sormenjälkitunnistin tablettisi etuosasta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Löydä sormenjälkitunnistin tablettisi vasemmasta reunasta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Löydä sormenjälkitunnistin tablettisi oikeasta reunasta.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Palauta oletukset</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Painikkeet</string>
     <string name="hardware_keys_home_key_title">Kotinäppäin</string>
     <string name="hardware_keys_back_key_title">Takaisin-näppäin</string>
@@ -68,7 +60,6 @@ Rajoitettujen sovellusten ilmoitukset voidaan näyttää viiveellä."</string>
     <string name="camera_sleep_on_release_summary">Puolikas painallus pitää näytön päällä vain kun näppäintä pidetään alhaalla</string>
     <string name="camera_launch_title">Käynnistä kamera</string>
     <string name="camera_launch_summary">Pitkä painallus ja vapautus avaa kameran</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Taustavalo</string>
     <string name="button_backlight_enabled">Valaise painikkeet</string>
     <string name="button_backlight_only_when_pressed_title">Valaise painikkeita vain painettaessa</string>
@@ -78,23 +69,16 @@ Rajoitettujen sovellusten ilmoitukset voidaan näyttää viiveellä."</string>
     <string name="backlight_summary_disabled">Pois käytöstä</string>
     <string name="backlight_summary_enabled_with_timeout">Käytössä <xliff:g id="timeout">%s</xliff:g> ajan</string>
     <string name="backlight_summary_enabled">Käytössä</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Näytön navigointipalkki</string>
     <string name="disable_navkeys_summary">Ota näytön navigointipalkki käyttöön ja poista fyysiset näppäimet käytöstä</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Latausvalo ladattaessa</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Korkea kosketusherkkyys</string>
     <string name="high_touch_sensitivity_summary">Lisää kosketusnäytön herkkyyttä käyttääksesi laitetta käsineiden kanssa</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Kosketusnäytön leijunta</string>
     <string name="touchscreen_hovering_summary">Sallii näytön leijuttamisen kuten hiiri selaimessa, etätyöpöytäyhteyksissä, jne.</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Tallennetut kuulokkeet</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Avaa sormenjäljellä, kun näyttö on pois päältä.</string>
     <string name="fod_gesture_summary">Sallii laitteen lukituksen avaamisen ilman näytön herätystä.</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Näytön virkistystaajuus</string>
     <string name="refresh_rate_auto">Automaattinen</string>
     <string name="refresh_rate_60">60Hz (säästää akkua)</string>

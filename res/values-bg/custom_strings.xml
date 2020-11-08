@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">По-малко от 1 минута</string>
     <string name="screen_time_summary_usage_today">Днес: %1$s</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Използвайте функцията за отключване с лице, за да отключите устройството си. \n\nИмайте предвид:\nГледането към телефона може да го отключи, без да искате това.\n\nВашият телефон може да бъде отключен от някой друг, ако той държи телефона срещу лицето Ви, докато очите Ви са отворени.\n\nВашият телефон може да се отключи от човек, който много прилича на Вас, например Вашето дете или идентичен брат или сестра.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Данните, записани чрез отключване с лице, ще бъдат изтрити за постоянно и сигурно. След премахването ще Ви трябва PIN (код), модел или парола, за да отключите телефона си.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Включете режима за адаптивна батерия</string>
     <string name="smart_battery_footer_custom">"За да удължи живота на батерията, режимът за адаптивна батерия ограничава изразходването й от рядко използваните приложения. С течение на времето телефонът ви ще научи как използвате приложенията.
 
 Може да има забавяне на известията от тези приложения."</string>
     <string name="smart_battery_manager_title_custom">Адаптивна батерия</string>
     <string name="smart_battery_title_custom">Използване на режима за адаптивна батерия</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Намерете сензора за пръстови отпечатъци от предната страна на телефона си.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Локализирайте сензора за пръстови отпечатаци отляво на телефона ви.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Локализирайте сензора за пръстови отпечатаци отдясно на телефона ви.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Открийте сензора за пръстови отпечатъци отпред на телефона ви.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Открийте сензора за пръстови отпечатъци отляво на телефона ви.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Открийте сензора за пръстови отпечатъци отдясно на телефона ви.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Открийте сензора за пръстови отпечатаци отпред на таблета ви.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Намерете сензора за пръстови отпечатъци от лявата страна на таблета.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Намерете сензора за пръстови отпечатъци от дясната страна на вашия таблет.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Нулиране</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Бутони</string>
     <string name="hardware_keys_home_key_title">Бутон \"Начало\"</string>
     <string name="hardware_keys_back_key_title">Бутон \"Назад\"</string>
@@ -68,7 +60,6 @@
     <string name="camera_sleep_on_release_summary">Леко натискане ще запази екрана само, докато бутонът е натиснат</string>
     <string name="camera_launch_title">Стартиране на камерата</string>
     <string name="camera_launch_summary">Дълго натискане и освобождаване за стартиране на камерата</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Подсветка</string>
     <string name="button_backlight_enabled">Осветяване на бутоните</string>
     <string name="button_backlight_only_when_pressed_title">Осветяване на бутоните само при натискане</string>
@@ -78,20 +69,14 @@
     <string name="backlight_summary_disabled">Деактивирани</string>
     <string name="backlight_summary_enabled_with_timeout">Разрешена за <xliff:g id="timeout">%s </xliff:g></string>
     <string name="backlight_summary_enabled">Активирани</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Разреши екранната лента за навигация</string>
     <string name="disable_navkeys_summary">Разреши екранна навигационна лента и забрани хардуерните бутони</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Включете светлината при зареждане</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Висока чувствителност на допир</string>
     <string name="high_touch_sensitivity_summary">Увеличи сензорната чувствителност, така че може да се използва докато носите ръкавици</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Сочейки по сензорния екран</string>
     <string name="touchscreen_hovering_summary">Позволява ви да сочите по екрана като с мишка в уеб браузъри, отдалечени настолни компютри и др</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Запазени слушалки</string>
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Опресняване на екрана</string>
+    <string name="refresh_rate_auto">Автоматично</string>
 </resources>

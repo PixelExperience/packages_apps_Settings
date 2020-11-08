@@ -11,15 +11,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
-    <!-- Moto Face Unlock -->
-    <!-- Adaptive battery -->
-    <!-- Fingerprint location message - default -->
-    <!-- Fingerprint location message - generic -->
-    <!-- Fingerprint location message - tablet -->
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Reafitar</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Botones</string>
     <string name="hardware_keys_home_key_title">Botón Aniciu</string>
     <string name="hardware_keys_back_key_title">Botón Atrás</string>
@@ -44,7 +36,6 @@
     <string name="camera_sleep_on_release_summary">Un primíu mediu caltendrá la pantalla prendida namái si\'l botón sigue primíu</string>
     <string name="camera_launch_title">Llanzar cámara</string>
     <string name="camera_launch_summary">Un primíu llargu pa llanzar la cámara</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Contralluz</string>
     <string name="button_backlight_enabled">Illuminar botones</string>
     <string name="button_backlight_only_when_pressed_title">Illuminar los botones solamente cuando se calquen</string>
@@ -54,15 +45,9 @@
     <string name="backlight_summary_disabled">Deshabilitáu</string>
     <string name="backlight_summary_enabled_with_timeout">Habilitáu pa <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Habilitáu</string>
-    <!-- Buttons - Enable navbar -->
-    <!-- Battery light -->
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Sensibilidá alta al tactu</string>
     <string name="high_touch_sensitivity_summary">Incrementar la sensibilidá del panel táctil pa que pueda usase llevando guantes</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Pantalla táctil eslizante</string>
     <string name="touchscreen_hovering_summary">Permite eslizase pela pantalla como un mur en navegadores, escritorios remotos, etc.</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
+    <string name="refresh_rate_auto">Automáticu</string>
 </resources>

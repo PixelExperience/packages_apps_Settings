@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Meno di un minuto</string>
     <string name="screen_time_summary_usage_today">Oggi: %1$s</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Usa lo sblocco con il viso per sbloccare il dispositivo.\n\nTieni presente che:\nSe guardi il telefono puoi sbloccarlo inavvertitamente.\n\nIl telefono può essere sbloccato da un\'altra persona se lo rivolge verso il tuo viso mentre hai gli occhi aperti.\n\nIl telefono può essere sbloccato da qualcuno che ti somiglia molto, ad esempio tuo figlio o un tuo gemello identico.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Elimina i dati del volto attuali per configurare nuovamente Sblocco con il volto.\n\nI dati del volto di Sblocco con il volto verranno eliminati in modo definitivo e sicuro. Dopo la rimozione, ti serviranno PIN, sequenza o password per sbloccare il telefono, accedere alle app e confermare i pagamenti.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Attiva Batteria adattiva</string>
     <string name="smart_battery_footer_custom">"Per prolungare la durata della batteria, la funzione Batteria adattiva limita l'utilizzo della batteria per le app usate di rado. Il telefono capirà come usi le app nel corso del tempo.
 
 Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <string name="smart_battery_manager_title_custom">Batteria adattiva</string>
     <string name="smart_battery_title_custom">Usa Batteria adattiva</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Si trova sulla parte anteriore del telefono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Si trova sul lato sinistro del telefono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Si trova sul lato destro del telefono.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Si trova sulla parte anteriore del dispositivo.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Si trova sul lato sinistro del dispositivo.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Si trova sul lato destro del dispositivo.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Si trova sulla parte anteriore del tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Si trova sul lato sinistro del tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Si trova sul lato destro del tablet.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Resetta</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Tasti</string>
     <string name="hardware_keys_home_key_title">Tasto Home</string>
     <string name="hardware_keys_back_key_title">Tasto Indietro</string>
@@ -68,7 +60,6 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <string name="camera_sleep_on_release_summary">Controlla l\'ora, le icone di notifica e altre informazioni finché tieni premuto a metà</string>
     <string name="camera_launch_title">Avvia fotocamera</string>
     <string name="camera_launch_summary">Premi a fondo e rilascia per avviare la fotocamera</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Retroilluminazione</string>
     <string name="button_backlight_enabled">Illumina pulsanti</string>
     <string name="button_backlight_only_when_pressed_title">Illumina i pulsanti solo quando vengono premuti</string>
@@ -78,23 +69,16 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <string name="backlight_summary_disabled">Disattivata</string>
     <string name="backlight_summary_enabled_with_timeout">Attivata per <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Attivata</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Attiva la barra di navigazione su schermo</string>
     <string name="disable_navkeys_summary">Attiva la barra di navigazione su schermo e disattiva i pulsanti fisici</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Attiva il LED durante la ricarica</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Tocco ad alta sensibilità</string>
     <string name="high_touch_sensitivity_summary">Aumenta la sensibilità del touchscreen per l\'utilizzo con i guanti</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Touchscreen a puntamento</string>
     <string name="touchscreen_hovering_summary">Consente di utilizzare il tocco come un mouse nei browser, nei desktop remoti, ecc</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Auricolari salvati</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Sbloccare con l\'impronta digitale quando lo schermo è spento</string>
     <string name="fod_gesture_summary">Consente di sbloccare il dispositivo senza dovere prima accendere lo schermo</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Frequenza di aggiornamento</string>
     <string name="refresh_rate_auto">Automatico</string>
     <string name="refresh_rate_60">60Hz (risparmia batteria)</string>

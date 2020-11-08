@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">меньше 1 минуты</string>
     <string name="screen_time_summary_usage_today">Сегодня: %1$s</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Используйте функцию фейсконтроля, чтобы разблокировать устройство.\n\nПомните:\nВзгляд на телефон может разблокировать его, даже если вы не собирались этого делать.\n\nТелефон может быть разблокирован другим человеком, если он поднесет его к вашему лицу, когда ваши глаза открыты.\n\nТелефон может быть разблокирован человеком, сильно похожим на вас, например вашим ребенком или близнецом.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Данные, записанные с помощью функции фейсконтроля, будут безвозвратно удалены. После удаления потребуется ввести PIN-код, графический ключ или пароль для разблокировки телефона.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Включите Adaptive Battery</string>
     <string name="smart_battery_footer_custom">"Чтобы продлить время работы от батареи, функция Adaptive Battery ограничивает фоновые процессы редко используемых приложений. Со временем ваш телефон запоминает, какие приложения вы используете чаще, а какие реже.
 
 Уведомления от приложений, работу которых вы ограничиваете, могут приходить с задержкой."</string>
     <string name="smart_battery_manager_title_custom">Адаптивное энергопотребление</string>
     <string name="smart_battery_title_custom">Включить Adaptive Battery</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Найдите сканер отпечатков пальцев на задней поверхности вашего телефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Найдите сканер отпечатков пальцев на левой грани вашего телефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Найдите сканер отпечатков пальцев на правой грани вашего телефона.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Найдите сканер отпечатков пальцев на передней поверхности телефона.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Найдите датчик отпечатков пальцев на левой грани вашего устройства.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Найдите датчик отпечатков пальцев на правой грани вашего устройства.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Найдите датчик отпечатков пальцев на задней поверхности вашего планшета.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Найдите датчик отпечатков пальцев на левой грани вашего планшета.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Найдите датчик отпечатков пальцев на правой грани вашего планшета.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Сбросить</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Кнопки</string>
     <string name="hardware_keys_home_key_title">Кнопка «Домой»</string>
     <string name="hardware_keys_back_key_title">Кнопка «Назад»</string>
@@ -68,7 +60,6 @@
     <string name="camera_sleep_on_release_summary">Полу-нажатие будет держать экран включённым пока кнопка удерживается</string>
     <string name="camera_launch_title">Запуск камеры</string>
     <string name="camera_launch_summary">Длительное нажатие и отпускание кнопки будет запускать камеру</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Подсветка</string>
     <string name="button_backlight_enabled">Подсвечивать кнопки</string>
     <string name="button_backlight_only_when_pressed_title">Подсвечивать кнопки только при нажатии</string>
@@ -78,23 +69,16 @@
     <string name="backlight_summary_disabled">Выключено</string>
     <string name="backlight_summary_enabled_with_timeout">Включена на <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Включена</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Включение панели навигации</string>
     <string name="disable_navkeys_summary">Включить панель навигации и отключить аппаратные кнопки</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Включить световой индикатор во время зарядки</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Режим перчаток</string>
     <string name="high_touch_sensitivity_summary">Увеличить чувствительность экрана для возможности работы в перчатках</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Наведение пальца</string>
     <string name="touchscreen_hovering_summary">Распознавать приближение пальца к экрану для событий наведения курсора в браузере или других приложениях</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Разблокировка с помощью отпечатка пальца при выключенном экране</string>
     <string name="fod_gesture_summary">Позволяет разблокировать устройство без предварительного пробуждения экрана</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Частота обновления экрана</string>
     <string name="refresh_rate_auto">Автоматически</string>
     <string name="refresh_rate_60">60Hz (экономит батарею)</string>
