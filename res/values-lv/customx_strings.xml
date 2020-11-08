@@ -11,60 +11,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Buttons -->
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Iestatīt uz-ekrāna navigācijas joslu</string>
     <string name="disable_navkeys_summary">Ieslēgt ekrāna navigācijas joslu un atslēgt aparatūras pogas</string>
-    <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Ilgi nospiesta Atpakaļ poga nokauj lietotni</string>
-    <!-- Hostname setting -->
     <string name="device_hostname">Iekārtas nosaukums tīklā</string>
-    <!-- Advanced restart options -->
-    <!-- Lock screen cover art -->
-    <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Samaisīt izkārtojumu</string>
     <string name="unlock_scramble_pin_layout_summary">Atslēdzot iekārtu, samaisīt PIN izkārtojumu</string>
-    <!-- Double tap to sleep on status bar or lockscreen -->
-    <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Pamodināt, iespraužot vadu</string>
     <string name="wake_when_plugged_or_unplugged_summary">Pievienojot, vai atvienojot no barošanas avota, ieslēgt ekrānu</string>
-    <!-- Lock screen pattern size -->
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
-    <!-- Hotspot custom extras -->
-    <!-- Notification sound timeout -->
-    <!-- Volume link notification -->
-    <!-- Increasing ring tone volume -->
-    <!-- Display : Rotation -->
-    <!-- Lock screen visualizer -->
-    <!-- In-call feedback -->
-    <!-- Navigation bar customization -->
-    <!-- Volume keys customization -->
-    <!-- Home key customization -->
-    <!-- Power menu key customization -->
-    <!-- Others settings -->
-    <!-- Status bar -->
-    <!-- Status bar - icons -->
-    <!-- Status bar - Clock -->
-    <!-- Status bar - Battery -->
-    <!-- Status bar - Battery percentage -->
-    <!-- Status bar - Brightness -->
-    <!-- Status bar - Network Traffic -->
-    <!-- QS settings -->
-    <!-- QS title visibility -->
-    <!-- QS tiles haptic feedback -->
-    <!-- QS animation/interpolator styles  -->
-    <!-- Notch behavior -->
-    <!-- Notch: Full screen apps -->
-    <!-- Three-fingers-swipe to screenshot -->
-    <!-- Navigation compact layout -->
-    <!-- LiveDisplay -->
-    <!-- LiveDisplay : Picture Adjustment -->
-    <!-- Back Gesture Height -->
-    <!-- Full screen gestures -->
-    <!-- Per-app data restrictions -->
-    <!-- Translucent lockscreen notifications background -->
-    <!-- Search keywords -->
-    <!-- Heads-up -->
-    <!-- Pocket mode -->
+    <string name="status_bar_quick_qs_pulldown_off">Izslēgts</string>
+    <string name="live_display_day">Diena</string>
+    <string name="live_display_night">Nakts</string>
+    <string name="live_display_reading_mode_title">Lasīšanas režīms</string>
 </resources>

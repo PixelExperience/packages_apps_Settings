@@ -11,42 +11,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Buttons -->
     <string name="navigation_bar_title">Navigační panel</string>
     <string name="hardware_keys_power_key_title">Tlačítko napájení</string>
     <string name="hardware_keys_volume_keys_title">Tlačítka hlasitosti</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Povolit navigační panel na obrazovce</string>
     <string name="disable_navkeys_summary">Povolit navigační lištu na obrazovce a zakázat hardwarová tlačítka</string>
-    <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Ukončit aplikaci tlačítkem „Zpět“</string>
     <string name="kill_app_longpress_back_summary">Ukončit aplikaci na popředí dlouhým podržením tlačítka „Zpět“</string>
-    <!-- Hostname setting -->
     <string name="device_hostname">Hostitelské jméno zařízení</string>
-    <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Rozšířený restart</string>
     <string name="advanced_reboot_summary">Pokud je povoleno, v Menu napájení jsou také zahrnuty možnosti restartovat zařízení do recovery nebo bootloaderu</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Zobrazit obal médií</string>
-    <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Přeházet rozložení</string>
     <string name="unlock_scramble_pin_layout_summary">Přeházet rozložení pro zadání PINu při odemykání zařízení</string>
-    <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Klepnutím uspat</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dvojitým poklepáním na stavovou lištu nebo zamykací obrazovku vypnout obrazovku</string>
-    <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Probudit při nabíjení</string>
     <string name="wake_when_plugged_or_unplugged_summary">Zapnout obrazovku při připojení nebo odpojení zdroje napájení</string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Zvolit velikost vzoru</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">Zobrazit cestu chybného gesta</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Zobrazit body gesta</string>
-    <!-- Hotspot custom extras -->
     <string name="tethering_allow_vpn_upstreams_title">Umožnit klientům používat VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Povolit klientům hotspotu používat připojení VPN tohoto zařízení pro upstream konektivitu</string>
-    <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Minimální doba mezi zvuky oznámení</string>
     <string name="app_notification_sound_timeout_summary_template">Povolit zvuky nebo vibrace ne více než jednou každých <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Bez omezení</string>
@@ -56,13 +42,10 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
-    <!-- Volume link notification -->
     <string name="volume_link_notification_title">Spojit hlasitost vyzvánění a oznámení</string>
-    <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Narůstající hlasitost vyzvánění</string>
     <string name="increasing_ring_min_volume_title">Počáteční hlasitost</string>
     <string name="increasing_ring_ramp_up_time_title">Doba zesilování</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">Nastavení otáčení</string>
     <string name="display_rotation_enabled">Automatické otáčení povoleno</string>
     <string name="display_rotation_disabled">Automatické otáčení zakázáno</string>
@@ -72,11 +55,8 @@
     <string name="display_rotation_90_title">90°</string>
     <string name="display_rotation_180_title">180°</string>
     <string name="display_rotation_270_title">270°</string>
-    <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Hudební vizualizace</string>
-    <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibrace při volání</string>
-    <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">Zobrazit navigační šipky při psaní</string>
     <string name="navigation_bar_arrow_keys_summary">Zobrazit levý a pravý kurzor při psaní. Potlačí IME přepínač.</string>
     <string name="nav_bar_layout_inverse_title">Převrátit rozložení</string>
@@ -84,7 +64,6 @@
     <string name="navigation_bar_home_long_press_title">Akce dlouhého stisku tlačítka „Domů“</string>
     <string name="navigation_bar_home_double_tap_title">Akce dvojitého stisku tlačítka „Domů“</string>
     <string name="navigation_bar_app_switch_long_press_title">Akce dlouhého stisku tlačítka „Nedávné“</string>
-    <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Ovládání přehrávání</string>
     <string name="volbtn_music_controls_summary">Při vypnuté obrazovce posouvat v hudebních stopách dlouhým stiskem tlačítek hlasitosti</string>
     <string name="volume_answer_call_title">Přijmout hovor</string>
@@ -95,10 +74,8 @@
     <string name="volbtn_cursor_control_on_reverse">Tlačítka hlasitosti nahoru/dolů posunou kurzor vpravo/vlevo</string>
     <string name="swap_volume_buttons_title">Přeorientovat</string>
     <string name="swap_volume_buttons_summary">Výměna tlačítek hlasitosti při otočení obrazovky</string>
-    <!-- Home key customization -->
     <string name="home_answer_call_title">Přijmout hovor</string>
     <string name="home_answer_call_summary">Přijmout příchozí hovor stisknutím tlačítka „Domů“</string>
-    <!-- Power menu key customization -->
     <string name="power_menu_title">Menu napájení</string>
     <string name="power_menu_screenshot_title">Snímek obrazovky</string>
     <string name="power_menu_screenshot_summary">Dlouhým stiskem zhotovit částečný snímek obrazovky</string>
@@ -117,10 +94,8 @@
     <string name="torch_long_press_power_timeout_2min">2 minuty</string>
     <string name="torch_long_press_power_timeout_5min">5 minut</string>
     <string name="torch_long_press_power_timeout_10min">10 minut</string>
-    <!-- Others settings -->
     <string name="others_settings_title">Další nastavení</string>
     <string name="additional_buttons_title">Další tlačítka</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Stavová lišta</string>
     <string name="status_bar_quick_qs_pulldown_title">Rychlé stažení nabídky</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Tažení dolů na levé straně stavové lišty vysune Rychlá nastavení</string>
@@ -128,11 +103,9 @@
     <string name="status_bar_quick_qs_pulldown_off">Vypnuto</string>
     <string name="status_bar_quick_qs_pulldown_left">levé</string>
     <string name="status_bar_quick_qs_pulldown_right">pravé</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Ikony stavové lišty</string>
     <string name="status_bar_system_icons_title">Systémové ikony</string>
     <string name="status_bar_system_icons_summary">Upravit zobrazení ikon na stavové liště</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Hodiny</string>
     <string name="status_bar_clock_show_seconds_title">Zobrazit sekundy</string>
     <string name="status_bar_clock_show_seconds_summary">Zobrazit hodiny, minuty a sekundy</string>
@@ -145,18 +118,15 @@
     <string name="status_bar_am_pm_normal">Normální</string>
     <string name="status_bar_am_pm_small">Malé</string>
     <string name="status_bar_am_pm_hidden">Skryté</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Indikátor baterie</string>
     <string name="status_bar_battery_style_title">Styl baterie ve stavové liště</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona na výšku</string>
     <string name="status_bar_battery_style_circle">Kruh</string>
     <string name="status_bar_battery_style_text">Text</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Procenta baterie</string>
     <string name="status_bar_battery_percentage_default">Skryté</string>
     <string name="status_bar_battery_percentage_text_inside">Uvnitř ikony</string>
     <string name="status_bar_battery_percentage_text_next">Vedle ikony</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Jas</string>
     <string name="status_bar_brightness_slider_title">Posuvník jasu</string>
     <string name="status_bar_brightness_slider_summary">Upravte jas z rychlého nastavení</string>
@@ -167,7 +137,6 @@
     <string name="status_bar_brightness_slider_show_always">Vždy zobrazit</string>
     <string name="status_bar_toggle_brightness">Ovládání jasu</string>
     <string name="status_bar_toggle_brightness_summary">Umožňuje nastavit jas tažením prstu na stavové liště</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Sledování síťového provozu</string>
     <string name="network_traffic_settings_summary">Zobrazit rychlost přenosu dat ve stavové liště</string>
     <string name="network_traffic_mode_title">Režim zobrazení</string>
@@ -177,19 +146,15 @@
     <string name="network_traffic_autohide">Automatické skrytí</string>
     <string name="network_traffic_autohide_summary">Skrýt Indikátor síťového provozu, pokud neprobíhá žádná síťová aktivita</string>
     <string name="network_traffic_units_title">Jednotky měření síťového provozu</string>
-    <!-- QS settings -->
     <string name="qs_title">Rychlá nastavení</string>
     <string name="qs_rows_portrait_title">Řádky (na výšku)</string>
     <string name="qs_rows_landscape_title">Řádky (na šířku)</string>
     <string name="qs_columns_portrait_title">Sloupce (na výšku)</string>
     <string name="qs_columns_landscape_title">Sloupce (na šířku)</string>
-    <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">Názvy dlaždic</string>
     <string name="qs_tile_title_visibility_summary">Zobrazit názvy pod dlaždicemi QS</string>
-    <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">Vibrace při dotyku</string>
     <string name="qs_vibrate_summary">Vibrovat při dotyku QS dlaždice</string>
-    <!-- QS animation/interpolator styles  -->
     <string name="qs_animation_options_title">Animace rychlého nastavení</string>
     <string name="qs_tile_animation_style_title">Styl</string>
     <string name="qs_tile_animation_duration_title">Doba trvání</string>
@@ -208,22 +173,17 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Překročení</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Předbíhání</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Předbíhání a překročení</string>
-    <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Vlastnosti výřezu</string>
     <string name="display_cutout_mode_normal">Výchozí</string>
     <string name="display_cutout_mode_hidden">Skrytý</string>
-    <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Aplikace na celou obrazovku</string>
     <string name="display_cutout_force_fullscreen_summary">Přinutit aplikace ignorovat výřez</string>
     <string name="display_cutout_force_fullscreen_restart_app">Chcete-li použít změny, restartujte aplikaci.</string>
     <string name="cutout_force_fullscreen_no_apps">Žádné aplikace</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Gesto třemi prsty</string>
     <string name="swipe_to_screenshot_gesture_summary">Snímek obrazovky přejetím tří prstů</string>
-    <!-- Navigation compact layout -->
     <string name="navigation_bar_compact_layout_title">Kompaktní rozložení</string>
     <string name="navigation_bar_compact_layout_summary">Použít kompaktní rozložení v navigačním panelu</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Optimalizovat obrazovku podle denní doby a okolních podmínek pro lepší čitelnost a snížení namáhání očí</string>
     <string name="live_display_mode">Režim zobrazení</string>
     <string name="live_display_color_temperature_title">Teplota barev</string>
@@ -267,21 +227,17 @@
     <string name="color_red_title">Červená</string>
     <string name="color_green_title">Zelená</string>
     <string name="color_blue_title">Modrá</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Přizpůsobení obrazu</string>
     <string name="picture_adjustment_summary">Přizpůsobit odstín, sytost, intenzitu a kontrast</string>
     <string name="adj_hue_title">Odstín</string>
     <string name="adj_saturation_title">Sytost</string>
     <string name="adj_intensity_title">Intenzita</string>
     <string name="adj_contrast_title">Kontrast</string>
-    <!-- Back Gesture Height -->
     <string name="back_height_low_label">Celá</string>
     <string name="back_height_high_label">Spodní oblast</string>
     <string name="back_options_dialog_title">Možnosti</string>
     <string name="back_height_message">Hodnota výšky obrazovky použité jako dotyková oblast pro gesto „Zpět“.</string>
-    <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Skrýt pilulku navigačního panelu</string>
-    <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Povolit přístup k síti</string>
     <string name="data_usage_app_restrict_all_summary">Povolit aplikaci přístup k síti</string>
     <string name="data_usage_app_restrict_data">Mobilní data</string>
@@ -290,14 +246,10 @@
     <string name="data_usage_app_restrict_vpn_summary">Povolit používání VPN dat</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Povolit používání Wi\u2011Fi dat</string>
-    <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Průsvitné pozadí oznámení</string>
-    <!-- Search keywords -->
     <string name="keywords_notification_log">oznámení, protokol oznámení</string>
-    <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Vyskakovací oznámení</string>
     <string name="heads_up_notifications_enabled_summary">Zobrazit prioritní oznámení v malém plovoucím okně</string>
-    <!-- Pocket mode -->
     <string name="proximity_wake_title">Zabránit nechtěným probuzením</string>
     <string name="proximity_wake_summary">Kontrolovat senzor přiblížení pro zabránění nechtěného probuzení</string>
 </resources>

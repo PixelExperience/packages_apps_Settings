@@ -11,42 +11,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Buttons -->
     <string name="navigation_bar_title">Панель навигации</string>
     <string name="hardware_keys_power_key_title">Кнопка питания</string>
     <string name="hardware_keys_volume_keys_title">Кнопки громкости</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Включение экранной панели навигации</string>
     <string name="disable_navkeys_summary">Включить экранную панель навигации и отключить аппаратные кнопки</string>
-    <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Закрытие приложения кнопкой \'Назад\'</string>
     <string name="kill_app_longpress_back_summary">Завершить работу текущего приложения удерживанием кнопки \'Назад\'</string>
-    <!-- Hostname setting -->
     <string name="device_hostname">Имя устройства</string>
-    <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Варианты перезапуска</string>
     <string name="advanced_reboot_summary">Когда устройство разблокировано, в меню питания доступны опции перезагрузки в режим восстановления и загрузчик</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Отображать обложку мультимедиа</string>
-    <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Перемешивать кнопки</string>
     <string name="unlock_scramble_pin_layout_summary">Перемешивать кнопки ввода PIN-кода в случайном порядке</string>
-    <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
     <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния, чтобы перевести устройство в спящий режим</string>
-    <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Включение экрана при подключении зарядки</string>
     <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении зарядного устройства</string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Выберите размер графического ключа</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">Показывать неверный ввод</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Показывать точки</string>
-    <!-- Hotspot custom extras -->
     <string name="tethering_allow_vpn_upstreams_title">Разрешить клиентам использовать VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Разрешить клиентам точки доступа использовать VPN-соединения этого устройства для подключения к сети</string>
-    <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Частота звуковых уведомлений</string>
     <string name="app_notification_sound_timeout_summary_template">Звуки и вибрация не чаще, чем раз в <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Без ограничений</string>
@@ -56,13 +42,10 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 минут</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 минут</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 минут</string>
-    <!-- Volume link notification -->
     <string name="volume_link_notification_title">Связать громкость рингтона и уведомлений</string>
-    <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Возрастающая громкость звонка</string>
     <string name="increasing_ring_min_volume_title">Начальная громкость</string>
     <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">Параметры вращения</string>
     <string name="display_rotation_enabled">Автоповорот включен</string>
     <string name="display_rotation_disabled">Автоповорот выключен</string>
@@ -72,11 +55,8 @@
     <string name="display_rotation_90_title">90 градусов</string>
     <string name="display_rotation_180_title">180 градусов</string>
     <string name="display_rotation_270_title">270 градусов</string>
-    <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Визуализатор музыки</string>
-    <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Вибрация для индикации статуса вызова</string>
-    <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">Показать стрелки при вводе текста</string>
     <string name="navigation_bar_arrow_keys_summary">Отображать кнопки перемещения курсора влево или вправо при вводе текста. Кнопка выбора метода ввода отображаться не будет.</string>
     <string name="nav_bar_layout_inverse_title">Инвертировать порядок кнопок</string>
@@ -84,7 +64,6 @@
     <string name="navigation_bar_home_long_press_title">Длительное нажатие кнопки \'Домой\'</string>
     <string name="navigation_bar_home_double_tap_title">Двойное нажатие кнопки «Домой»</string>
     <string name="navigation_bar_app_switch_long_press_title">Длительное нажатие кнопки \'Недавние\'</string>
-    <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Управление плеером</string>
     <string name="volbtn_music_controls_summary">Переключать музыкальные треки длительным нажатием кнопок громкости при выключенном экране</string>
     <string name="volume_answer_call_title">Ответ на вызов</string>
@@ -95,10 +74,8 @@
     <string name="volbtn_cursor_control_on_reverse">Кнопка «+» двигает курсор вправо, «-» — влево</string>
     <string name="swap_volume_buttons_title">Автоповорот</string>
     <string name="swap_volume_buttons_summary">Поменять местами кнопки громкости на основе вращения устройства</string>
-    <!-- Home key customization -->
     <string name="home_answer_call_title">Ответ на вызов</string>
     <string name="home_answer_call_summary">Отвечать на входящие вызовы нажатием кнопки \'Домой\'</string>
-    <!-- Power menu key customization -->
     <string name="power_menu_title">Меню кнопки питания</string>
     <string name="power_menu_screenshot_title">Скриншот</string>
     <string name="power_menu_screenshot_summary">Удерживайте, чтобы выделить область для скриншота</string>
@@ -117,10 +94,8 @@
     <string name="torch_long_press_power_timeout_2min">2 минуты</string>
     <string name="torch_long_press_power_timeout_5min">5 минут</string>
     <string name="torch_long_press_power_timeout_10min">10 минут</string>
-    <!-- Others settings -->
     <string name="others_settings_title">Другие настройки</string>
     <string name="additional_buttons_title">Дополнительные кнопки</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Строка состояния</string>
     <string name="status_bar_quick_qs_pulldown_title">Быстрый доступ</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Левый край строки состояния вытягивает вниз быстрые настройки</string>
@@ -128,11 +103,9 @@
     <string name="status_bar_quick_qs_pulldown_off">Выкл.</string>
     <string name="status_bar_quick_qs_pulldown_left">Левый</string>
     <string name="status_bar_quick_qs_pulldown_right">Правый</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Значки в строке состояния</string>
     <string name="status_bar_system_icons_title">Системные значки</string>
     <string name="status_bar_system_icons_summary">Настройка видимости значков в строке состояния</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Часы</string>
     <string name="status_bar_clock_show_seconds_title">Показывать секунды</string>
     <string name="status_bar_clock_show_seconds_summary">Показывать часы, минуты и секунды</string>
@@ -145,18 +118,15 @@
     <string name="status_bar_am_pm_normal">Обычный</string>
     <string name="status_bar_am_pm_small">Небольшой</string>
     <string name="status_bar_am_pm_hidden">Не показывать</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Значок батареи</string>
     <string name="status_bar_battery_style_title">Индикатор батареи</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикальный значок</string>
     <string name="status_bar_battery_style_circle">Круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Процент заряда батареи</string>
     <string name="status_bar_battery_percentage_default">Не показывать</string>
     <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
     <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Яркость</string>
     <string name="status_bar_brightness_slider_title">Регулятор яркости</string>
     <string name="status_bar_brightness_slider_summary">Регулировка яркости в быстрых настройках</string>
@@ -167,7 +137,6 @@
     <string name="status_bar_brightness_slider_show_always">Показывать всегда</string>
     <string name="status_bar_toggle_brightness">Управление яркостью</string>
     <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Индикатор сетевого трафика</string>
     <string name="network_traffic_settings_summary">Отображать текущую скорость соединения в строке состояния</string>
     <string name="network_traffic_mode_title">Режим отображения</string>
@@ -177,19 +146,15 @@
     <string name="network_traffic_autohide">Автоскрытие</string>
     <string name="network_traffic_autohide_summary">Скрывать индикатор трафика, когда нет активности</string>
     <string name="network_traffic_units_title">Единицы измерения трафика</string>
-    <!-- QS settings -->
     <string name="qs_title">Быстрые настройки</string>
     <string name="qs_rows_portrait_title">Строки (портрет)</string>
     <string name="qs_rows_landscape_title">Строки (ландшафт)</string>
     <string name="qs_columns_portrait_title">Колонки (портрет)</string>
     <string name="qs_columns_landscape_title">Колонки (ландшафт)</string>
-    <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">Названия плиток</string>
     <string name="qs_tile_title_visibility_summary">Включить для отображения заголовка плиток</string>
-    <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">Вибрировать при касании</string>
     <string name="qs_vibrate_summary">Вибрировать при касании плиток быстрых настроек</string>
-    <!-- QS animation/interpolator styles  -->
     <string name="qs_animation_options_title">Анимация плиток</string>
     <string name="qs_tile_animation_style_title">Стиль анимации</string>
     <string name="qs_tile_animation_duration_title">Длительность анимации</string>
@@ -208,22 +173,17 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Вылет</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Опережение</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Опережение и вылет</string>
-    <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Настройки выреза</string>
     <string name="display_cutout_mode_normal">По умолчанию</string>
     <string name="display_cutout_mode_hidden">Скрыть вырез</string>
-    <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Полноэкранные приложения</string>
     <string name="display_cutout_force_fullscreen_summary">Ингорирование выреза выбранными приложениями</string>
     <string name="display_cutout_force_fullscreen_restart_app">Пожалуйста перезапустите приложение для применения изменений</string>
     <string name="cutout_force_fullscreen_no_apps">Нет приложений</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Провести для скриншота</string>
     <string name="swipe_to_screenshot_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
-    <!-- Navigation compact layout -->
     <string name="navigation_bar_compact_layout_title">Компактная навигация</string>
     <string name="navigation_bar_compact_layout_summary">Использовать компактную навигацию для навигационного бара</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Подстраивать экран на основе времени суток и освещения, чтобы повысить удобочитаемость и снизить нагрузку на глаза</string>
     <string name="live_display_mode">Режим</string>
     <string name="live_display_color_temperature_title">Цветовая температура</string>
@@ -267,21 +227,17 @@
     <string name="color_red_title">Красный</string>
     <string name="color_green_title">Зеленый</string>
     <string name="color_blue_title">Синий</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Регулировка изображения</string>
     <string name="picture_adjustment_summary">Отрегулируйте оттенок, насыщенность, глубину и контрастность</string>
     <string name="adj_hue_title">Оттенок</string>
     <string name="adj_saturation_title">Насыщенность</string>
     <string name="adj_intensity_title">Интенсивность</string>
     <string name="adj_contrast_title">Контраст</string>
-    <!-- Back Gesture Height -->
     <string name="back_height_low_label">Полный</string>
     <string name="back_height_high_label">Нижняя область</string>
     <string name="back_options_dialog_title">Параметры</string>
     <string name="back_height_message">Высота экрана, используемая в качестве сенсорной области для жеста \"Назад\".</string>
-    <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Скрыть полоску панели навигации</string>
-    <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Разрешить доступ к сети</string>
     <string name="data_usage_app_restrict_all_summary">Разрешить приложению доступ к сети</string>
     <string name="data_usage_app_restrict_data">Мобильные данные</string>
@@ -290,14 +246,10 @@
     <string name="data_usage_app_restrict_vpn_summary">Включить использование данных VPN</string>
     <string name="data_usage_app_restrict_wifi">Данные Wi\u2011Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">Включить мониторинг Wi\u2011Fi data</string>
-    <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Полупрозрачный фон уведомлений</string>
-    <!-- Search keywords -->
     <string name="keywords_notification_log">Уведомления, журнал уведомлений</string>
-    <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Всплывающие уведомления</string>
     <string name="heads_up_notifications_enabled_summary">Показывать приоритетные уведомления небольшими плавающими окнами</string>
-    <!-- Pocket mode -->
     <string name="proximity_wake_title">Предотвращать случайное включение экрана</string>
     <string name="proximity_wake_summary">Проверять датчик приближения при выходе из режима сна</string>
 </resources>

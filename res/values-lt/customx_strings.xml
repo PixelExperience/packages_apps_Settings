@@ -11,42 +11,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Buttons -->
     <string name="navigation_bar_title">Naršymo juosta</string>
     <string name="hardware_keys_power_key_title">Maitinimo mygtukas</string>
     <string name="hardware_keys_volume_keys_title">Garsumo mygtukai</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Įgalinti ekrano juostą</string>
     <string name="disable_navkeys_summary">Įjunkite naršymo juostą ekrane ir išjunkite aparatūros mygtukus</string>
-    <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Priverstinai uždaryti programą mygtuku atgal</string>
     <string name="kill_app_longpress_back_summary">Priverstinai uždaryti programą ilgai spaudžiant mygtuką atgal</string>
-    <!-- Hostname setting -->
     <string name="device_hostname">Įrenginio vardas tinkle</string>
-    <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Išplėstinis paleidimas iš naujo</string>
     <string name="advanced_reboot_summary">Jei atrakinta, įjunkite maitinimo meniu parinktis, kad iš naujo paleistumėte į atkūrimo arba įkrovos programą</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Rodyti medijos viršelius</string>
-    <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Sumaišyti išdėstymą</string>
     <string name="unlock_scramble_pin_layout_summary">Atrakinant įrenginį sumaišyti PIN išdėstymą</string>
-    <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Bakstelėti ir užmigdyti</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dukart bakstelkite būsenos juostą arba užrakinimo ekraną, kad išjungtumėte ekraną</string>
-    <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Pažadinti, kai prijungiama</string>
     <string name="wake_when_plugged_or_unplugged_summary">Įjungti ekraną, kai prijungiamas ar atjungiamas maitinimo šaltinis</string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Pasirinkite šablono dydį</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">Rodyti modelio klaidą</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Rodyti modelio taškus</string>
-    <!-- Hotspot custom extras -->
     <string name="tethering_allow_vpn_upstreams_title">Leisti klientams naudoti VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Leisti prieigos taško klientams prisijungti prie tinklo naudojant šio prietaiso VPN ryšius</string>
-    <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Minimalus laikas tarp pranešimo garsų</string>
     <string name="app_notification_sound_timeout_summary_template">Leisti skambėti ar vibruoti ne dažniau kaip <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Jokio apribojimo</string>
@@ -56,13 +42,10 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minutės</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minučių</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minučių</string>
-    <!-- Volume link notification -->
     <string name="volume_link_notification_title">Sujungti skambėjimo ir pranešimo garsus</string>
-    <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Didėjantis skambėjimo garsumas</string>
     <string name="increasing_ring_min_volume_title">Pradinis garsumas</string>
     <string name="increasing_ring_ramp_up_time_title">Didėjimo laikas</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">Sukimo nustatymai</string>
     <string name="display_rotation_enabled">Automatinis sukimas įjungtas</string>
     <string name="display_rotation_disabled">Automatinis sukimas išjungtas</string>
@@ -72,11 +55,8 @@
     <string name="display_rotation_90_title">90 laipsnių</string>
     <string name="display_rotation_180_title">180 laipsnių</string>
     <string name="display_rotation_270_title">270 laipsnių</string>
-    <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Rodyti muzikos vizualizaciją</string>
-    <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibracija, rodanti skambučio būseną</string>
-    <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">Rodyti rodyklių klavišus rašant</string>
     <string name="navigation_bar_arrow_keys_summary">Rašant rodyti kairį ir dešinį kursoriaus mygtukus. Nepaiso IME jungiklio.</string>
     <string name="nav_bar_layout_inverse_title">Atvirkštinis išdėstymas</string>
@@ -84,7 +64,6 @@
     <string name="navigation_bar_home_long_press_title">Ilgai paspauskite namų mygtuką</string>
     <string name="navigation_bar_home_double_tap_title">Namų dviejų bakstelėjimų veiksmas</string>
     <string name="navigation_bar_app_switch_long_press_title">Naujausių ilgo paspaudimo veiksmas</string>
-    <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Valdykite atkūrimą</string>
     <string name="volbtn_music_controls_summary">Ilgai spausdami garsumo mygtukus, kol ekranas išjungtas, ieškokite muzikos įrašų</string>
     <string name="volume_answer_call_title">Atsiliepti į skambutį</string>
@@ -95,10 +74,8 @@
     <string name="volbtn_cursor_control_on_reverse">Garsumas aukštyn / žemyn valdys žymeklį į dešinę / kairę</string>
     <string name="swap_volume_buttons_title">Perorentuoti</string>
     <string name="swap_volume_buttons_summary">Pasukus ekraną sukeisti garsumo mygtukus</string>
-    <!-- Home key customization -->
     <string name="home_answer_call_title">Atsiliepti į skambutį</string>
     <string name="home_answer_call_summary">Atsiliepti į įeinančius skambučius paspaudus namų mygtuką</string>
-    <!-- Power menu key customization -->
     <string name="power_menu_title">Maitinimo meniu</string>
     <string name="power_menu_screenshot_title">Ekrano kopija</string>
     <string name="power_menu_screenshot_summary">Laikykite nuspaudę norėdami pasirinkti ekrano kopijos sritį</string>
@@ -117,10 +94,8 @@
     <string name="torch_long_press_power_timeout_2min">2 minutės</string>
     <string name="torch_long_press_power_timeout_5min">5 minutės</string>
     <string name="torch_long_press_power_timeout_10min">10 minučių</string>
-    <!-- Others settings -->
     <string name="others_settings_title">Kiti nustatymai</string>
     <string name="additional_buttons_title">Papildomi mygtukai</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Būsenos juosta</string>
     <string name="status_bar_quick_qs_pulldown_title">Greita prieiga</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Kairysis būsenos juostos kraštas nustumia žemyn greitus nustatymus</string>
@@ -128,11 +103,9 @@
     <string name="status_bar_quick_qs_pulldown_off">Išjungti</string>
     <string name="status_bar_quick_qs_pulldown_left">Kairėn</string>
     <string name="status_bar_quick_qs_pulldown_right">Dešinėn</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Būsenos juostos piktogramos</string>
     <string name="status_bar_system_icons_title">Sistemos piktogramos</string>
     <string name="status_bar_system_icons_summary">Valdykite, kurios būsenos juostos piktogramos rodomos</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Laikrodis</string>
     <string name="status_bar_clock_show_seconds_title">Rodyti sekundes</string>
     <string name="status_bar_clock_show_seconds_summary">Rodyti valandas, minutes ir sekundes</string>
@@ -145,18 +118,15 @@
     <string name="status_bar_am_pm_normal">Normalus</string>
     <string name="status_bar_am_pm_small">Mažas</string>
     <string name="status_bar_am_pm_hidden">Paslėptas</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Akumuliatoriaus indikatorius</string>
     <string name="status_bar_battery_style_title">Akumuliatoriaus būsenos stilius</string>
     <string name="status_bar_battery_style_icon_portrait">Piktograma</string>
     <string name="status_bar_battery_style_circle">Apskritimas</string>
     <string name="status_bar_battery_style_text">Tekstas</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Akumuliatoriaus procentai</string>
     <string name="status_bar_battery_percentage_default">Paslėptas</string>
     <string name="status_bar_battery_percentage_text_inside">Piktogramos viduje</string>
     <string name="status_bar_battery_percentage_text_next">Šalia piktogramos</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Ryškumas</string>
     <string name="status_bar_brightness_slider_title">Ryškumo slankiklis</string>
     <string name="status_bar_brightness_slider_summary">Ryškumo reguliavimas greitais nustatymais</string>
@@ -167,7 +137,6 @@
     <string name="status_bar_brightness_slider_show_always">Rodyti visada</string>
     <string name="status_bar_toggle_brightness">Ryškumo valdymas</string>
     <string name="status_bar_toggle_brightness_summary">Sureguliuokite ryškumą slinkdami per būsenos juostą</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Tinklo srauto monitorius</string>
     <string name="network_traffic_settings_summary">Rodyti dabartinius tinklo srauto lygius būsenos juostoje</string>
     <string name="network_traffic_mode_title">Ekrano režimas</string>
@@ -177,19 +146,15 @@
     <string name="network_traffic_autohide">Automatiškai slėpti</string>
     <string name="network_traffic_autohide_summary">Slėpti tinklo indikatorių, kai nėra jokios veiklos</string>
     <string name="network_traffic_units_title">Srauto matavimo vienetai</string>
-    <!-- QS settings -->
     <string name="qs_title">Greiti nustatymai</string>
     <string name="qs_rows_portrait_title">Eilutės (portretas)</string>
     <string name="qs_rows_landscape_title">Eilutės (horizontalios)</string>
     <string name="qs_columns_portrait_title">Stulpeliai (portretas)</string>
     <string name="qs_columns_landscape_title">Stulpeliai (horizontalūs)</string>
-    <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">Pavadinimo matomumas</string>
     <string name="qs_tile_title_visibility_summary">Rodyti pavadinimus po QS plytelėmis</string>
-    <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">Vibruoti liečiant</string>
     <string name="qs_vibrate_summary">Vibruoti, kai paliesite greito nustatymo plyteles</string>
-    <!-- QS animation/interpolator styles  -->
     <string name="qs_animation_options_title">Greito nustatymo animacija</string>
     <string name="qs_tile_animation_style_title">Stilius</string>
     <string name="qs_tile_animation_duration_title">Trukmė</string>
@@ -208,22 +173,17 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Viršytas</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Numatyti</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Numatykite viršijimą</string>
-    <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Žiedų elgesys</string>
     <string name="display_cutout_mode_normal">Numatytasis</string>
     <string name="display_cutout_mode_hidden">Paslėptas</string>
-    <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Viso ekrano programėlės</string>
     <string name="display_cutout_force_fullscreen_summary">Priversti programėles nepaisyti išpjovų vietos</string>
     <string name="display_cutout_force_fullscreen_restart_app">Norėdami pritaikyti pakeitimus, paleiskite programą iš naujo.</string>
     <string name="cutout_force_fullscreen_no_apps">Nėra programų</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Braukite ekrano kopijai</string>
     <string name="swipe_to_screenshot_gesture_summary">Jie norite padaryti ekrano kopiją, braukite trim pirštais</string>
-    <!-- Navigation compact layout -->
     <string name="navigation_bar_compact_layout_title">Kompaktiškas išdėstymas</string>
     <string name="navigation_bar_compact_layout_summary">Naršymo juostoje naudokite kompaktišką išdėstymą</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Optimizuoti ekraną remiantis paros metu ir aplinkos sąlygomis, siekiant pagerinti įskaitomumą ir sumažinti akių įtampą</string>
     <string name="live_display_mode">Rodymo režimas</string>
     <string name="live_display_color_temperature_title">Spalvos temperatūra</string>
@@ -267,21 +227,17 @@
     <string name="color_red_title">Raudona</string>
     <string name="color_green_title">Žalia</string>
     <string name="color_blue_title">Mėlyna</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Nuotraukos koregavimas</string>
     <string name="picture_adjustment_summary">Sureguliuokite atspalvį, sodrumą, intensyvumą ir kontrastą</string>
     <string name="adj_hue_title">Atspalvis</string>
     <string name="adj_saturation_title">Spalvų sodrumas</string>
     <string name="adj_intensity_title">Intensyvumas</string>
     <string name="adj_contrast_title">Kontrastas</string>
-    <!-- Back Gesture Height -->
     <string name="back_height_low_label">pilnas</string>
     <string name="back_height_high_label">Apatinė sritis</string>
     <string name="back_options_dialog_title">Nustatymai</string>
     <string name="back_height_message">Ekrano aukščio dydis, naudojamas kaip jutiklinė zona judant atgal.</string>
-    <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">Paslėpti naršymo juostos juostelę</string>
-    <!-- Per-app data restrictions -->
     <string name="data_usage_app_restrict_all">Leisti prieigą prie tinklo</string>
     <string name="data_usage_app_restrict_all_summary">Leisti programai pasiekti tinklą</string>
     <string name="data_usage_app_restrict_data">Mobilieji duomenys</string>
@@ -290,14 +246,10 @@
     <string name="data_usage_app_restrict_vpn_summary">Įgalinti VPN duomenų naudojimą</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi duomenys</string>
     <string name="data_usage_app_restrict_wifi_summary">Įgalinti Wi\u2011Fi duomenų naudojimą</string>
-    <!-- Translucent lockscreen notifications background -->
     <string name="translucent_lockscreen_notifications_bg_title">Skaidrus pranešimų fonas</string>
-    <!-- Search keywords -->
     <string name="keywords_notification_log">pranešimai, pranešimų žurnalas</string>
-    <!-- Heads-up -->
     <string name="heads_up_notifications_enabled_title">Iššokantys pranešimai</string>
     <string name="heads_up_notifications_enabled_summary">Rodyti prioritetinius pranešimus mažame plaukiojančiame lange</string>
-    <!-- Pocket mode -->
     <string name="proximity_wake_title">Neleiskite atsitiktinai įjungti ekrano</string>
     <string name="proximity_wake_summary">Išeidami iš miego režimo, patikrinkite artumo jutiklį</string>
 </resources>

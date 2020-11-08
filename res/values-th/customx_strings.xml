@@ -11,42 +11,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Buttons -->
     <string name="navigation_bar_title">แถบนำทาง</string>
     <string name="hardware_keys_power_key_title">ปุ่มเพาเวอร์</string>
     <string name="hardware_keys_volume_keys_title">ปุ่มปรับเสียง</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">เปิดใช้งานแถบนำทางบนหน้าจอ</string>
     <string name="disable_navkeys_summary">เปิดใช้งานแถบนำทางบนหน้าจอและปิดการใช้งานปุ่มฮาร์ดแวร์</string>
-    <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">ปิดแอปด้วยปุ่มกลับ</string>
     <string name="kill_app_longpress_back_summary">ปิดแอปที่กำลังใช้งานโดยกดปุ่มกลับค้าง</string>
-    <!-- Hostname setting -->
     <string name="device_hostname">ชื่อโฮสต์ของอุปกรณ์</string>
-    <!-- Advanced restart options -->
     <string name="advanced_reboot_title">เริ่มระบบใหม่แบบขั้นสูง</string>
     <string name="advanced_reboot_summary">เมื่อปลดล็อค รวมตัวเลือกในเมนูปิดระบบเครื่องเพื่อเริ่มใหม่ในโหมดกู้คืนหรือโหมดดาวน์โหลด</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">แสดงหน้าปกสื่อ</string>
-    <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">แบบสุ่มสลับ</string>
     <string name="unlock_scramble_pin_layout_summary">สุ่มสลับรหัสเมื่อปลดล็อคอุปกรณ์</string>
-    <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">แตะเพื่อหลับ</string>
     <string name="status_bar_double_tap_to_sleep_summary">แตะสองครั้งที่แถบสถานะเพื่อพักหน้าจอ</string>
-    <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">ตื่นเมื่อเสียบปลั๊ก</string>
     <string name="wake_when_plugged_or_unplugged_summary">เปิดหน้าจอเมื่อเชื่อมต่อหรือตัดการเชื่อมต่อกับแหล่งจ่ายไฟ</string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">เลือกขนาดรูปแบบ</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">แสดงลายเส้นที่ผิดพลาด</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">แสดงจุดที่ลากผ่าน</string>
-    <!-- Hotspot custom extras -->
     <string name="tethering_allow_vpn_upstreams_title">อนุญาตให้ไคลเอ็นต์ใช้ VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">อนุญาตให้ไคลเอ็นต์ฮอตสปอตเชื่อมต่อ VPN ของอุปกรณ์นี้ สำหรับการเชื่อมต่ออัปสตรีม</string>
-    <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">ระยะเวลาขั้นต่ำระหว่างเสียงการแจ้งเตือน</string>
     <string name="app_notification_sound_timeout_summary_template">อนุญาตให้มีเสียงหรือการสั่นไม่เกินหนึ่งครั้งทุก <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">ไม่จำกัด</string>
@@ -56,13 +42,10 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 นาที</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 นาที</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 นาที</string>
-    <!-- Volume link notification -->
     <string name="volume_link_notification_title">เชื่อมต่อความดังเสียงเรียกเข้า&amp; เสียงแจ้งเตือน</string>
-    <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">การเพิ่มเสียงเรียกเข้า</string>
     <string name="increasing_ring_min_volume_title">ระดับเสียงเริ่มต้น</string>
     <string name="increasing_ring_ramp_up_time_title">ระยะเวลาที่ดังเพิ่มขึ้น</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">การตั้งค่าการหมุน</string>
     <string name="display_rotation_enabled">การหมุนอัตโนมัติ เปิดอยู่</string>
     <string name="display_rotation_disabled">การหมุนอัตโนมัติ ปิดอยู่</string>
@@ -72,11 +55,8 @@
     <string name="display_rotation_90_title">90 องศา</string>
     <string name="display_rotation_180_title">180 องศา</string>
     <string name="display_rotation_270_title">270 องศา</string>
-    <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">แสดงเส้นจังหวะเพลง</string>
-    <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">สั่นเพื่อระบุสถานะการโทร</string>
-    <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">แสดงปุ่มลูกศรขณะพิมพ์</string>
     <string name="navigation_bar_arrow_keys_summary">แสดงปุ่มเลื่อนเคอร์เซอร์ซ้ายขวาขณะพิมพ์ แทนที่ปุ่มสลับแป้นพิมพ์</string>
     <string name="nav_bar_layout_inverse_title">สลับรูปแบบ</string>
@@ -84,7 +64,6 @@
     <string name="navigation_bar_home_long_press_title">เมื่อกดปุ่มโฮมค้าง</string>
     <string name="navigation_bar_home_double_tap_title">เมื่อกดปุ่มโฮม2ครั้ง</string>
     <string name="navigation_bar_app_switch_long_press_title">เมื่อกดปุ่มแอปล่าสุดค้าง</string>
-    <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">ควบคุมการเล่น</string>
     <string name="volbtn_music_controls_summary">ค้นหาแทร็คเพลง โดยกดปุ่มระดับเสียงค้างไว้ขณะที่จอแสดงผลปิดอยู่</string>
     <string name="volume_answer_call_title">รับสาย</string>
@@ -95,10 +74,8 @@
     <string name="volbtn_cursor_control_on_reverse">เพิ่ม/ลด ระดับเสียง ขยับเคอเซอร์ ขวา/ซ้าย</string>
     <string name="swap_volume_buttons_title">ปรับทิศทางใหม่</string>
     <string name="swap_volume_buttons_summary">สลับปุ่มปรับเสียงเมื่อหมุนจอ</string>
-    <!-- Home key customization -->
     <string name="home_answer_call_title">รับสาย</string>
     <string name="home_answer_call_summary">รับสายเรียกเข้าโดยกดปุ่มโฮม</string>
-    <!-- Power menu key customization -->
     <string name="power_menu_title">ปุ่มเปิด/ปิดเครื่อง</string>
     <string name="power_menu_screenshot_title">ถ่ายภาพหน้าจอ</string>
     <string name="power_menu_screenshot_summary">กดค้างเพื่อถ่ายรูปหน้าจอบางส่วน</string>
@@ -117,20 +94,16 @@
     <string name="torch_long_press_power_timeout_2min">2 นาที</string>
     <string name="torch_long_press_power_timeout_5min">5 นาที</string>
     <string name="torch_long_press_power_timeout_10min">10 นาที</string>
-    <!-- Others settings -->
     <string name="others_settings_title">การตั้งค่าอื่น ๆ</string>
     <string name="additional_buttons_title">ปุ่มเพิ่มเติม</string>
-    <!-- Status bar -->
     <string name="status_bar_title">แถบสถานะ</string>
     <string name="status_bar_quick_qs_pulldown_title">ปัดแถบสถานะลงอย่างเร็ว</string>
     <string name="status_bar_quick_qs_pulldown_off">ปิด</string>
     <string name="status_bar_quick_qs_pulldown_left">ซ้าย</string>
     <string name="status_bar_quick_qs_pulldown_right">ขวา</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">ไอคอนแถบสถานะ</string>
     <string name="status_bar_system_icons_title">ไอคอนระบบ</string>
     <string name="status_bar_system_icons_summary">ควบคุมไอคอนที่จะแสดงบนแถบสถานะ</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">นาฬิกา</string>
     <string name="status_bar_clock_show_seconds_title">แสดงวินาที</string>
     <string name="status_bar_clock_show_seconds_summary">แสดงชั่วโมง, นาที, และวินาที</string>
@@ -143,18 +116,15 @@
     <string name="status_bar_am_pm_normal">ปกติ</string>
     <string name="status_bar_am_pm_small">เล็ก</string>
     <string name="status_bar_am_pm_hidden">ซ่อน</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">ไฟแสดงสถานะแบตเตอรี่</string>
     <string name="status_bar_battery_style_title">รูปแบบสถานะแบตเตอรี่</string>
     <string name="status_bar_battery_style_icon_portrait">ไอคอนแนวตั้ง</string>
     <string name="status_bar_battery_style_circle">วงกลม</string>
     <string name="status_bar_battery_style_text">ข้อความ</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">เปอร์เซ็นต์แบตเตอรี่</string>
     <string name="status_bar_battery_percentage_default">ซ่อน</string>
     <string name="status_bar_battery_percentage_text_inside">ภายในไอคอน</string>
     <string name="status_bar_battery_percentage_text_next">ถัดจากไอคอน</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">ความสว่าง</string>
     <string name="status_bar_brightness_slider_title">แถบเลื่อนความสว่าง</string>
     <string name="status_bar_brightness_slider_summary">ปรับความสว่างจากการตั้งค่าด่วน</string>
@@ -162,27 +132,24 @@
     <string name="status_bar_brightness_slider_auto_summary">แสดงเพื่อปรับความสว่างใกล้กับแถบเลื่อน</string>
     <string name="status_bar_toggle_brightness">ควบคุมความสว่าง</string>
     <string name="status_bar_toggle_brightness_summary">ปรับความสว่างหน้าจอโดยการเลื่อนแถบสถานะ</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">ตรวจสอบการรับส่งข้อมูลเครือข่าย</string>
     <string name="network_traffic_settings_summary">แสดงสถานะการรับส่งข้อมูลเครือข่ายปัจจุบันในแถบสถานะ</string>
     <string name="network_traffic_mode_title">โหมดการแสดงผล</string>
     <string name="network_traffic_mode_disable">ปิด</string>
+    <string name="network_traffic_mode_status_bar">แถบสถานะ</string>
+    <string name="network_traffic_mode_qs">การตั้งค่าด่วน</string>
     <string name="network_traffic_autohide">ซ่อนอัตโนมัติ</string>
     <string name="network_traffic_autohide_summary">ซ่อนการแสดงผลเมื่อมีไม่มีกิจกรรม</string>
     <string name="network_traffic_units_title">หน่วยการวัดปริมาณการใช้งาน</string>
-    <!-- QS settings -->
     <string name="qs_title">การตั้งค่าด่วน</string>
     <string name="qs_rows_portrait_title">แถว (แนวตั้ง)</string>
     <string name="qs_rows_landscape_title">แถว (แนวนอน)</string>
     <string name="qs_columns_portrait_title">คอลัมน์ (แนวตั้ง)</string>
     <string name="qs_columns_landscape_title">คอลัมน์ (แนวนอน)</string>
-    <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">การเปิดเผยชื่อ</string>
     <string name="qs_tile_title_visibility_summary">แสดงหัวเรื่องใต้ไทล์ QS</string>
-    <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">สั่นเมื่อแตะ</string>
     <string name="qs_vibrate_summary">สั่นเมื่อแตะแผงตั้งค่าด่วน</string>
-    <!-- QS animation/interpolator styles  -->
     <string name="qs_animation_options_title">แอนิเมชั่นของแถบตั้งค่าด่วน</string>
     <string name="qs_tile_animation_style_title">รูปแบบ</string>
     <string name="qs_tile_animation_duration_title">ระยะเวลา</string>
@@ -201,22 +168,17 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">นุ่มนวล</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">ถอยหลังแล้วไปข้างหน้า</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">ถอยหลังแล้วไปหน้าแบบนุ่มนวล</string>
-    <!-- Notch behavior -->
     <string name="display_cutout_mode_title">แสดงรอยบาก</string>
     <string name="display_cutout_mode_normal">ค่าเริ่มต้น</string>
     <string name="display_cutout_mode_hidden">ซ่อน</string>
-    <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">แอพแบบเต็มหน้าจอ</string>
     <string name="display_cutout_force_fullscreen_summary">บังคับแอปให้ละเลยจุดที่บาก</string>
     <string name="display_cutout_force_fullscreen_restart_app">โปรดเริ่มการทำงานแอปใหม่เพื่อใช้การเปลี่ยนแปลง</string>
     <string name="cutout_force_fullscreen_no_apps">ไม่มีแอป</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">ปัดนิ้วเพื่อจับภาพหน้าจอ</string>
     <string name="swipe_to_screenshot_gesture_summary">ใช้สามนิ้วปัดเพื่อถ่ายภาพหน้าจอ</string>
-    <!-- Navigation compact layout -->
     <string name="navigation_bar_compact_layout_title">รูปแบบกะทัดรัด</string>
     <string name="navigation_bar_compact_layout_summary">ใช้รูปแบบกะทัดรัดในแถบนำทาง</string>
-    <!-- LiveDisplay -->
     <string name="live_display_summary">ปรับหน้าความสว่างหน้าจอตามเวลาและแสงโดยรอบเพื่อทำให้อ่านได้ง่ายขึ้นและลดอาการปวดตา</string>
     <string name="live_display_mode">โหมดการแสดงผล</string>
     <string name="live_display_color_temperature_title">อุณหภูมิสี</string>
@@ -260,25 +222,17 @@
     <string name="color_red_title">แดง</string>
     <string name="color_green_title">เขียว</string>
     <string name="color_blue_title">น้ำเงิน</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">การปรับรูปภาพ</string>
     <string name="picture_adjustment_summary">ปรับโทนสี ความอิ่มตัว ความเข้ม และคอนทราสต์</string>
     <string name="adj_hue_title">โทนสี</string>
     <string name="adj_saturation_title">ความอิ่มตัว</string>
     <string name="adj_intensity_title">ความเข้ม</string>
     <string name="adj_contrast_title">คอนทราสต์</string>
-    <!-- Back Gesture Height -->
     <string name="back_height_low_label">เต็ม</string>
     <string name="back_height_high_label">บริเวณด้านล่าง</string>
     <string name="back_options_dialog_title">ตัวเลือก</string>
     <string name="back_height_message">ความสูงของหน้าจอที่ใช้เป็นพื้นที่สัมผัสได้สำหรับท่าทางกลับ</string>
-    <!-- Full screen gestures -->
     <string name="navbar_gesture_pill_toggle_title">ซ่อนแถบนำทาง</string>
-    <!-- Per-app data restrictions -->
-    <!-- Translucent lockscreen notifications background -->
-    <!-- Search keywords -->
-    <!-- Heads-up -->
-    <!-- Pocket mode -->
     <string name="proximity_wake_title">ป้องกันการปลุกโดยไม่ตั้งใจ</string>
     <string name="proximity_wake_summary">ตรวจสอบเซนเซอร์แนบหน้าจอก่อนที่จะปลุกหน้าจอ</string>
 </resources>
