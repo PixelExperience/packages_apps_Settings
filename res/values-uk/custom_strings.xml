@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Менше 1 хвилини</string>
     <string name="screen_time_summary_usage_today">%1$s сьогодні</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Для розблокування пристрою скористайтеся функцією фейсконтролю.\n\nПам’ятайте:\nколи ви дивитесь на телефон, то можете ненавмисне його розблокувати;\n\nтелефон може розблокувати інша особа, скерувавши його на ваше обличчя, коли у вас відкриті очі;\n\nтелефон може розблокувати інша особа, дуже схожа на вас, наприклад ваш близнюк або ваша дитина.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Дані, записані функцією розпізнавання обличчя, буде остаточно й безпечно видалено. Після їх видалення для розблокування телефону вам потрібно буде ввести PIN-код, графічний код або пароль.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Увімкнути адаптивний акумулятор</string>
     <string name="smart_battery_footer_custom">"Щоб пристрій працював довше, адаптивний акумулятор обмежує споживання заряду для додатків, які рідко використовуються. Телефон із часом визначить, як ви ними користуєтесь.
 
 Сповіщення з цих додатків можуть надходити із затримкою."</string>
     <string name="smart_battery_manager_title_custom">Адаптивний акумулятор</string>
     <string name="smart_battery_title_custom">Використовувати адаптивний акумулятор</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Знайдіть сканер відбитків пальців на лівій грані вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Знайдіть сканер відбитків пальців на правій грані вашого смартфона.</string>
-    <!-- Fingerprint location message - generic -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Знайдіть сканер відбитків пальців на лівій грані вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Знайдіть сканер відбитків пальців на правій грані вашого смартфона.</string>
-    <!-- Fingerprint location message - tablet -->
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Знайдіть сканер відбитків пальців на передній панелі вашого смартфона.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Сканер відбитків пальців знаходиться на лівій грані вашого планшета.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Знайдіть сканер відбитків пальців на правій грані вашого планшета.</string>
-    <!-- Generic stuff used everywhere -->
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Знайдіть сканер пальців на лівій грані вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Знайдіть сканер пальців на правій грані вашого смартфона.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Знайдіть сканер пальців на передній панелі вашого пристрою.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Знайдіть сканер пальців на лівій грані вашого пристрою.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Знайдіть сканер пальців на правій грані вашого пристрою.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Знайдіть сканер пальців на передній панелі вашого планшетного комп\'ютера.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Знайдіть сканер пальців на лівій грані вашого планшетного комп\'ютера.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Знайдіть сканер пальців на правій грані вашого планшетного комп\'ютера.</string>
     <string name="reset">Скинути</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Кнопки</string>
     <string name="hardware_keys_home_key_title">Кнопка «Додому»</string>
     <string name="hardware_keys_back_key_title">Кнопка «Назад»</string>
@@ -68,7 +60,6 @@
     <string name="camera_sleep_on_release_summary">Наполовину натиснута кнопка буде тримати екран увімкненим</string>
     <string name="camera_launch_title">Запустити камеру</string>
     <string name="camera_launch_summary">Довге натискання і відпускання запустить камеру</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Підсвічування</string>
     <string name="button_backlight_enabled">Підсвічування кнопок</string>
     <string name="button_backlight_only_when_pressed_title">Підсвічувати кнопки лише при натисканні</string>
@@ -78,24 +69,17 @@
     <string name="backlight_summary_disabled">Вимкнено</string>
     <string name="backlight_summary_enabled_with_timeout">Увімкнено на <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Увімкнено</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Увімкнути екранну панель навігації</string>
     <string name="disable_navkeys_summary">Увімкнути екранну панель навігації і вимкнути апаратні кнопки</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Увімкнути світло під час зарядки</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Висока чутливість дотику</string>
     <string name="high_touch_sensitivity_summary">Підвищити чутливість сенсорного екрану для користуванням пристроєм у рукавичках</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Зависання над сенсорним екраном</string>
     <string name="touchscreen_hovering_summary">Дозволяє виділяти елементи інтерфейсу при зависанні над ними без дотику</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Збережені навушники</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Розблокування за відбитком пальця, коли екран вимкнено</string>
-    <string name="fod_gesture_summary">Дозволяє розблокувати пристрій відбитком без попереднього пробудження екрану</string>
-    <!-- Refresh rate -->
-    <string name="refresh_rate_title">Частота оновлення екрану</string>
+    <string name="fod_gesture_summary">Дозволяє розблокувати пристрій без попереднього пробудження екрану</string>
+    <string name="refresh_rate_title">Частота оновлення екрана</string>
     <string name="refresh_rate_auto">Автоматично</string>
-    <string name="refresh_rate_60">60Hz (економить акумулятор)</string>
+    <string name="refresh_rate_60">60Гц (економить акумулятор)</string>
 </resources>

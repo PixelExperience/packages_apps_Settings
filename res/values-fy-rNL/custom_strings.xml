@@ -11,24 +11,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
-    <!-- Moto Face Unlock -->
-    <!-- Adaptive battery -->
-    <!-- Fingerprint location message - default -->
-    <!-- Fingerprint location message - generic -->
-    <!-- Fingerprint location message - tablet -->
-    <!-- Generic stuff used everywhere -->
-    <!-- Buttons -->
-    <!-- Key backlight -->
-    <!-- Buttons - Enable navbar -->
-    <!-- Battery light -->
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Hege gefoelichheid oanreitsjen</string>
     <string name="high_touch_sensitivity_summary">Gefoelichheid fan it skerm ferheegje, sadat it betsjinne wurde kin mei wanten</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Sweve boppe skerm</string>
     <string name="touchscreen_hovering_summary">Mei jo finger boppe it skerm sweve, lykas in mûs yn browsers, buroblêd op ôfstân, ensfh.</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
 </resources>

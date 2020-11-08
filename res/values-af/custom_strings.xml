@@ -11,23 +11,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Minder as 1 minuut</string>
     <string name="screen_time_summary_usage_today">%1$s vandag</string>
-    <!-- Moto Face Unlock -->
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Skakel Aanpasbare Battery aan</string>
     <string name="smart_battery_footer_custom">"Om die batterylewe te verleng, beperk Aanpasbare Battery die batterygebruik van programme wat selde gebruik word. Jou foon sal mettertyd leer hoe jy programme gebruik.
 
 Kennisgewings sal dalk vir hierdie programme vertraag word."</string>
     <string name="smart_battery_manager_title_custom">Aanpasbare Battery</string>
     <string name="smart_battery_title_custom">Gebruik Aanpasbare Battery</string>
-    <!-- Fingerprint location message - default -->
-    <!-- Fingerprint location message - generic -->
-    <!-- Fingerprint location message - tablet -->
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Stel terug</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Knoppies</string>
     <string name="hardware_keys_home_key_title">Kieslys knoppie</string>
     <string name="hardware_keys_back_key_title">Terug knoppie</string>
@@ -52,7 +44,6 @@ Kennisgewings sal dalk vir hierdie programme vertraag word."</string>
     <string name="camera_sleep_on_release_summary">\'n Half druk sal die skerm aanhou slegs terwyl die knoppie ingehou word</string>
     <string name="camera_launch_title">Begin kamera</string>
     <string name="camera_launch_summary">\'n Lang druk en los sal kamera begin</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Agtergrondlig</string>
     <string name="button_backlight_enabled">Verlig knoppies</string>
     <string name="button_backlight_seekbar_title">Knoppie helderheid</string>
@@ -61,17 +52,11 @@ Kennisgewings sal dalk vir hierdie programme vertraag word."</string>
     <string name="backlight_summary_disabled">Gedeaktiveer</string>
     <string name="backlight_summary_enabled_with_timeout">Aktiveer vir <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Geaktiveer</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktiveer op-skerm navigasiebalk</string>
     <string name="disable_navkeys_summary">Aktiveer op-skerm navigasiebalk en deaktiveer hardewareknoppies</string>
-    <!-- Battery light -->
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Hoë raak sensitiwiteit</string>
     <string name="high_touch_sensitivity_summary">Verhoog skerm sensitiwiteit, sodat dit kan gebruik word met die dra van handskoene</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Raakskerm swewing</string>
     <string name="touchscreen_hovering_summary">Laat toe om bo die sekrm te sweef soos \'n muis in die web blaaiers, Remote desktops, ens</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
+    <string name="refresh_rate_auto">Outomaties</string>
 </resources>

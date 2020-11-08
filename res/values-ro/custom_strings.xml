@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Mai puțin de 1 minut</string>
     <string name="screen_time_summary_usage_today">%1$s astăzi</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Utilizaţi funcţia Deblocare facială pentru deblocarea dispozitivului.\n\nReţineţi:\nDacă priviţi spre telefon, îl puteţi debloca neintenţionat.\n\nTelefonul poate fi deblocat de altă persoană dacă este îndreptat spre faţa dumneavoastră atunci când aveţi ochii deschişi.\n\nTelefonul poate fi deblocat de o persoană care seamănă cu dumneavoastră, de exemplu copilul sau un frate geamăn.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Datele înregistrate de funcţia Deblocare facială vor fi şterse permanent şi în siguranţă. După eliminare, veţi avea nevoie de codul PIN, de model sau de parolă pentru deblocarea telefonului.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Activați Adaptive Battery</string>
     <string name="smart_battery_footer_custom">"Pentru a prelungi autonomia bateriei, Adaptive Battery limitează bateria pentru aplicațiile utilizate rar. Telefonul va afla cum folosiți aplicațiile în timp.
 
 Notificările de la aceste aplicații se pot primi cu întârziere."</string>
     <string name="smart_battery_manager_title_custom">Baterie adaptabilă</string>
     <string name="smart_battery_title_custom">Folosiți Adaptive Battery</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Găsiți senzorul de amprentă pe partea din faţă a telefonului.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Găsiți senzorul de amprentă pe partea stângă a telefonului.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Găsiți senzorul de amprentă pe partea dreaptă a telefonului.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Găsiți senzorul de amprentă pe partea din faţă a dispozitivului.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Găsiți senzorul de amprentă pe partea stângă a dispozitivului.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Găsiți senzorul de amprentă pe partea dreaptă a dispozitivului.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Găsiți senzorul de amprentă pe partea din faţă a tabletei.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Găsiți senzorul de amprentă pe partea stângă a tabletei.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Găsiți senzorul de amprentă pe partea dreaptă a tabletei.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Resetați</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Butoane</string>
     <string name="hardware_keys_home_key_title">Butonul Acasă</string>
     <string name="hardware_keys_back_key_title">Butonul Înapoi</string>
@@ -68,7 +60,6 @@ Notificările de la aceste aplicații se pot primi cu întârziere."</string>
     <string name="camera_sleep_on_release_summary">O jumătate de apăsare va ține ecranul pornit doar atât timp cât butonul este apăsat</string>
     <string name="camera_launch_title">Lansare cameră foto</string>
     <string name="camera_launch_summary">O atingere lungă și o eliberare vor lansa camera foto</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Iluminare butoane</string>
     <string name="button_backlight_enabled">Iluminare butoane</string>
     <string name="button_backlight_only_when_pressed_title">Iluminare butoane numai când au fost apăsate</string>
@@ -78,23 +69,16 @@ Notificările de la aceste aplicații se pot primi cu întârziere."</string>
     <string name="backlight_summary_disabled">Dezactivat</string>
     <string name="backlight_summary_enabled_with_timeout">Activat pentru <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Activat</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Activare bară de navigare pe ecran</string>
     <string name="disable_navkeys_summary">Activează bara de navigare pe ecran și dezactivează butoanele hardware</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Se pornește LED-ul la încărcare</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Sensibilitate tactilă înaltă </string>
     <string name="high_touch_sensitivity_summary">Crește sensibilitatea ecranului tactil, astfel încât acesta poate fi utilizat în timp ce se poartă mănuși</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Plutire peste ecran</string>
     <string name="touchscreen_hovering_summary">Vă permite să plutiți degetul peste ecran ca un mouse în browserele web, remote desktop-uri, etc</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Earbud-uri salvate</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Deblocare cu amprenta când ecranul este oprit</string>
     <string name="fod_gesture_summary">Permite deblocarea dispozitivului fără a fi nevoie să porniţi mai întâi ecranul</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Rata de actualizare a ecranului</string>
     <string name="refresh_rate_auto">Automat</string>
     <string name="refresh_rate_60">60Hz (economisește bateria)</string>

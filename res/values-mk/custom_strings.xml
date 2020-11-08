@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="duration_less_than_one_minute">Помалку од 1 минута</string>
+    <string name="screen_time_summary_usage_today">%1$s денес</string>
+    <string name="security_settings_face_settings_footer_moto">Користете го отклучувањето со лице за да го отклучувате вашиот уред.\n\nИмајте предвид:\nтелефонот може да се отклучи и кога гледате во него без да имате намера да го отклучите.\n\nТелефонот може да го отклучи и некој друг ако го држи до вашето лице кога очите ви се отворени.\n\nТелефонот може да го отклучи и некој кој многу личи на вас, на пример, вашето дете или идентичен брат/сестра.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_moto">Податоците што ги регистрира отклучувањето со лице ќе бидат трајно и безбедно избришани. По отстранувањето, ќе ви биде потребен PIN-код, шема или лозинка за да го отклучите телефонот.</string>
+    <string name="battery_tip_smart_battery_summary_custom">Вклучете „Адаптивна батерија“</string>
+    <string name="smart_battery_footer_custom">"За да го продолжи траењето на батеријата, „Адаптивната батерија“ ја ограничува батеријата за ретко користените апликации. Со тек на време, телефонот ќе научи како ги користите апликациите.
+
+Известувањата може да бидат одложени за овие апликации."</string>
+    <string name="smart_battery_manager_title_custom">Адаптивна батерија</string>
+    <string name="smart_battery_title_custom">Користи „Адаптивна батерија“</string>
+    <string name="reset">Ресетирај</string>
+    <string name="button_pref_title">Копчиња</string>
+    <string name="hardware_keys_home_key_title">Копче за почеток</string>
+    <string name="hardware_keys_back_key_title">Копче за назад</string>
+    <string name="hardware_keys_menu_key_title">Копче за мени</string>
+    <string name="hardware_keys_assist_key_title">Копче за пребарување</string>
+    <string name="hardware_keys_appswitch_key_title">Копче за неодамнешни</string>
+    <string name="hardware_keys_camera_key_title">Копче за камера</string>
+    <string name="hardware_keys_short_press_title">Кратко притискање</string>
+    <string name="hardware_keys_long_press_title">Акција за долго притискање</string>
+    <string name="hardware_keys_double_tap_title">Акција за двојно притискање</string>
+    <string name="hardware_keys_action_nothing">Без акција</string>
+    <string name="hardware_keys_action_menu">Овори/затвори мени</string>
+    <string name="hardware_keys_action_app_switch">Приказ на неодамнешни апликации</string>
+    <string name="hardware_keys_action_search">Помошник за пребарување</string>
+    <string name="hardware_keys_action_voice_search">Гласовно пребарување</string>
+    <string name="hardware_keys_action_in_app_search">Пребарување во апликација</string>
+    <string name="hardware_keys_action_launch_camera">Стартувај камера</string>
+    <string name="hardware_keys_action_sleep">Исклучи го екранот</string>
+    <string name="hardware_keys_action_split_screen">Поделен екран</string>
+    <string name="button_wake_title">Разбуди уред</string>
+    <string name="camera_sleep_on_release_title">Ѕиркање на екранот</string>
+    <string name="camera_sleep_on_release_summary">Половина притискање ќе го задржи екранот уклучен само додека копчето се држи надолу</string>
+    <string name="camera_launch_title">Стартувај камера</string>
+    <string name="camera_launch_summary">Долго притискање и пуштање ќе ја стартува камерата</string>
+    <string name="button_backlight_title">Позадинско осветлување</string>
+    <string name="button_backlight_enabled">Осветлете ги копчињата</string>
+    <string name="button_backlight_seekbar_title">Светлост на копчињата</string>
+    <string name="backlight_timeout_title">Истек на светлоста</string>
+    <string name="backlight_timeout_unlimited">Не исклучувај</string>
+    <string name="backlight_summary_disabled">Оневозможено</string>
+    <string name="backlight_summary_enabled_with_timeout">Овозможено за <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Овозможено</string>
+</resources>

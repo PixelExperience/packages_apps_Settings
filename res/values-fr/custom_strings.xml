@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Moins d\'une minute</string>
     <string name="screen_time_summary_usage_today">%1$s aujourd\'hui</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Utilisez la fonction de déverrouillage par reconnaissance faciale pour déverrouiller votre appareil.\n\nSouvenez-vous :\nVotre téléphone peut se déverrouiller lorsque vous le regardez, même si vous n’en avez pas l’intention.\n\nVotre téléphone peut se déverrouiller si quiconque le tient devant vous lorsque vos yeux sont ouverts.\n\nUne personne qui vous ressemble peut également déverrouiller votre téléphone (par exemple, vos enfants ou vos frères et sœurs).</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Les données de reconnaissance faciale enregistrées seront supprimées de façon permanente et de manière sécurisée. Après leur suppression, vous devrez utiliser votre code PIN, schéma ou mot de passe pour déverrouiller votre téléphone.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Activer la batterie intelligente</string>
     <string name="smart_battery_footer_custom">"Afin de prolonger l'autonomie de la batterie, la fonctionnalité Batterie intelligente limite l'utilisation de la batterie pour les applications peu utilisées. Au fil du temps, votre téléphone mémorisera vos habitudes d'utilisation.
 
 Vous ne recevrez peut-être pas immédiatement les notifications de ces applications."</string>
     <string name="smart_battery_manager_title_custom">Batterie intelligente</string>
     <string name="smart_battery_title_custom">Utiliser la batterie intelligente</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localisez le lecteur d\'empreintes digitales à l\'avant de votre téléphone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localisez le lecteur d\'empreintes digitales sur la tranche gauche de votre téléphone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Localisez le lecteur d\'empreintes digitales sur la tranche droite de votre téléphone.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Localisez le lecteur d\'empreintes digitales à l\'avant de votre appareil.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Trouvez le capteur d\'empreintes situé à l\'arrière de votre appareil</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Trouvez le capteur d\'empreinte sur la tranche droite de votre appareil</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Localisez le lecteur d\'empreintes digitales à l\'avant de votre tablette.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localisez le lecteur d\'empreintes digitales sur la tranche gauche de votre tablette.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localisez le lecteur d\'empreintes digitales sur la tranche droite de votre tablette.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Réinitialiser</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Boutons</string>
     <string name="hardware_keys_home_key_title">Bouton d\'accueil</string>
     <string name="hardware_keys_back_key_title">Bouton retour</string>
@@ -68,7 +60,6 @@ Vous ne recevrez peut-être pas immédiatement les notifications de ces applicat
     <string name="camera_sleep_on_release_summary">Appuyer à moitié pour garder l\'écran allumé tant que le bouton est maintenu enfoncé</string>
     <string name="camera_launch_title">Démarrer l\'appareil photo</string>
     <string name="camera_launch_summary">Une pression longue avant de relâcher active la caméra</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Rétroéclairage</string>
     <string name="button_backlight_enabled">Rétroéclairage des boutons</string>
     <string name="button_backlight_only_when_pressed_title">Éclairer les boutons seulement lors de l\'appui</string>
@@ -78,23 +69,16 @@ Vous ne recevrez peut-être pas immédiatement les notifications de ces applicat
     <string name="backlight_summary_disabled">Désactivé</string>
     <string name="backlight_summary_enabled_with_timeout">Activé pendant <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Activé</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Activer la barre de navigation à l\'écran</string>
     <string name="disable_navkeys_summary">Activer la barre de navigation à l\'écran et désactiver les touches physiques</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Allumer la lumière pendant la charge</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Haute sensibilité tactile</string>
     <string name="high_touch_sensitivity_summary">Augmenter la sensibilité de l\'écran permettant ainsi le port de gants</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Survol de l\'écran tactile</string>
     <string name="touchscreen_hovering_summary">Permet de survoler l\'écran comme avec une souris dans les navigateurs web, les bureaux à distance, etc.</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Écouteurs sauvegardés</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Déverrouiller avec l\'empreinte digitale quand l\'écran est éteint</string>
     <string name="fod_gesture_summary">Autoriser le déverrouillage de l\'appareil sans devoir allumer l\'écran d\'habord</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Taux de rafraîchissement de l\'écran </string>
     <string name="refresh_rate_auto">Automatique</string>
     <string name="refresh_rate_60">60Hz (économise la batterie)</string>

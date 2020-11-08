@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">menej ako 1 minúta</string>
     <string name="screen_time_summary_usage_today">Dnes %1$s</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Odomykanie zariadenia pomocou funkcie odomknutia tvárou:\n\nMajte na pamäti toto:\nTelefón môžete neúmyselne odomknúť tým, že sa naň pozriete.\n\nVáš telefón môže odomknúť aj niekto iný, ak ho priloží k vašej tvári, kým máte otvorené oči.\n\nVáš telefón môže odomknúť aj niekto, kto vyzerá podobne ako vy, napríklad vaše dieťa alebo identický súrodenec.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Údaje zaznamenané funkciou odomknutia tvárou sa natrvalo a bezpečne odstránia. Po odstránení budete na odomknutie telefónu potrebovať svoj kód PIN, vzor alebo heslo.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Zapnite adaptáciu batérie</string>
     <string name="smart_battery_footer_custom">"Adaptácia batérie predĺži výdrž batérie tým, že obmedzí využívanie batérie zriedka používanými aplikáciami. Váš telefón sa časom naučí, ako využívate aplikácie.
 
 Upozornenia z týchto aplikácií môžu byť oneskorené."</string>
     <string name="smart_battery_manager_title_custom">Adaptácia batérie</string>
     <string name="smart_battery_title_custom">Používať adaptáciu batérie</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Vyhľadajte snímač odtlačkov prstov na prednej strane telefónu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Vyhľadajte snímač odtlačkov prstov na ľavej strane telefónu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Vyhľadajte snímač odtlačkov prstov na pravej strane telefónu.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Vyhľadajte snímač odtlačkov prstov na prednej strane zariadenia.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Vyhľadajte snímač odtlačkov prstov na ľavej strane zariadenia.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Vyhľadajte snímač odtlačkov prstov na pravej strane zariadenia.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Vyhľadajte snímač odtlačkov prstov na prednej strane tabletu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Vyhľadajte snímač odtlačkov prstov na ľavej strane tabletu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Vyhľadajte snímač odtlačkov prstov na pravej strane tabletu.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Resetovať</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Tlačidlá</string>
     <string name="hardware_keys_home_key_title">Tlačidlo Domov</string>
     <string name="hardware_keys_back_key_title">Tlačidlo Späť</string>
@@ -68,7 +60,6 @@ Upozornenia z týchto aplikácií môžu byť oneskorené."</string>
     <string name="camera_sleep_on_release_summary">Polovičné stlačenie rozsvieti obrazovku iba vtedy, kým je tlačidlo držané</string>
     <string name="camera_launch_title">Spustiť fotoaparát</string>
     <string name="camera_launch_summary">Dlhé stlačenie a uvoľnenie spustí fotoaparát</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Podsvietenie</string>
     <string name="button_backlight_enabled">Podsvietenie tlačidiel</string>
     <string name="button_backlight_only_when_pressed_title">Podsvietenie tlačidiel iba po stlačení</string>
@@ -78,20 +69,14 @@ Upozornenia z týchto aplikácií môžu byť oneskorené."</string>
     <string name="backlight_summary_disabled">Vypnuté</string>
     <string name="backlight_summary_enabled_with_timeout">Zapnúť na <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Zapnuté</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Navigačný panel na obrazovke</string>
     <string name="disable_navkeys_summary">Povoliť navigačný panel na obrazovke a zakázať hardvérové tlačidlá</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Rozsvieti pri nabíjaní</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Vysoká citlivosť na dotyky</string>
     <string name="high_touch_sensitivity_summary">Zvýšiť citlivosť dotykovej obrazovky, takže ju bude možné používať pri nosení rukavíc</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Pohyb nad dotykovou obrazovkou</string>
     <string name="touchscreen_hovering_summary">Pohybovať sa nad obrazovkou podobne ako myš vo webovom prehliadači, vzdielaneých plochý, atď</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Obnovovacia frekvencia displeju</string>
+    <string name="refresh_rate_auto">Automaticky</string>
 </resources>

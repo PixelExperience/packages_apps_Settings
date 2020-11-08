@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Menos de 1 minuto</string>
     <string name="screen_time_summary_usage_today">%1$s hoy</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Utiliza desbloqueo facial para desbloquear el dispositivo.\n\nRecuerda:\nMirar al teléfono puede desbloquearlo incluso cuando no sea tu intención.\n\nTu teléfono puede ser desbloqueado por alguien mas si es sostenido frente a tu cara con los ojos abiertos.\n\nTu teléfono puede ser desbloqueado por alguien que se parezca mucho a ti, como tu hijo o tu hermano idéntico.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Los datos registrados por el desbloqueo facial se borrarán de manera permanente y segura. Después de borrarlos, necesitarás tu PIN, patrón o contraseña para desbloquear el teléfono.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Activar batería inteligente</string>
     <string name="smart_battery_footer_custom">"Para aumentar la duración de la batería, el gestor de batería inteligente limita el consumo por parte de aplicaciones que se utilizan con poca frecuencia. Con el tiempo, el teléfono sabrá cómo utilizas las aplicaciones.
 
 Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."</string>
     <string name="smart_battery_manager_title_custom">Batería inteligente</string>
     <string name="smart_battery_title_custom">Usar batería inteligente</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Localiza el sensor de huella digital en el frontal del teléfono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Localiza el sensor de huella digital en el lado izquierdo de tu teléfono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Localiza el sensor de huella digital en el lado derecho de tu teléfono.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Localiza el sensor de huella digital en el frontal de tu dispositivo.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Localiza el sensor de huella digital en el lado izquierdo de tu teléfono.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Localiza el sensor de huella digital en el lado derecho de tu teléfono.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Localiza el sensor de huella digital en el frontal del tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localiza el sensor de huella digital en el lado izquierdo del tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localiza el sensor de huella digital en el lado derecho del tablet.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Restablecer</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Botones</string>
     <string name="hardware_keys_home_key_title">Botón de inicio</string>
     <string name="hardware_keys_back_key_title">Botón atrás</string>
@@ -68,7 +60,6 @@ Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."
     <string name="camera_sleep_on_release_summary">Una leve pulsación del botón de la cámara dejará la pantalla encendida mientras el botón se mantenga pulsado</string>
     <string name="camera_launch_title">Iniciar cámara</string>
     <string name="camera_launch_summary">Una pulsación larga iniciará la cámara</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Contraluz</string>
     <string name="button_backlight_enabled">Iluminar botones</string>
     <string name="button_backlight_only_when_pressed_title">Iluminar los botones únicamente cuando se presionan</string>
@@ -78,23 +69,16 @@ Es posible que las notificaciones de estas aplicaciones te lleguen con retraso."
     <string name="backlight_summary_disabled">Desactivado</string>
     <string name="backlight_summary_enabled_with_timeout">Activado durante <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Activado</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Activar la barra de navegación</string>
     <string name="disable_navkeys_summary">Activar la barra de navegación en pantalla y desactivar los botones físicos</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Encender la luz mientras está cargando</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Alta sensibilidad táctil</string>
     <string name="high_touch_sensitivity_summary">Incrementar la sensibilidad del panel táctil para que pueda usarse llevando guantes</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Pantalla táctil deslizante</string>
     <string name="touchscreen_hovering_summary">Te permitirá deslizar por la pantalla como un ratón en navegadores, escritorios remotos, etc.</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Auriculares guardados</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Desbloquear con huella dactilar cuando la pantalla está apagada</string>
     <string name="fod_gesture_summary">Permitir desbloquear el dispositivo sin tener que despertar primero la pantalla</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Frecuencia de actualización de la pantalla</string>
     <string name="refresh_rate_auto">Automático</string>
     <string name="refresh_rate_60">60Hz (ahorra batería)</string>

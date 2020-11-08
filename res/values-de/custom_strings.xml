@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Weniger als 1 Minute</string>
     <string name="screen_time_summary_usage_today">%1$s heute</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Verwenden Sie die Gesichtsentsperrung, um das Gerät zu entsperren.\n\nBitte beachten Sie:\nDurch das Ansehen des Telefons könnten Sie es auch entsperren, wenn Sie dies nicht möchten.\n\nIhr Telefon kann von einer anderen Person entsperrt werden, wenn es auf Ihr Gesicht gehalten wird und Sie die Augen geöffnet haben.\n\nIhr Telefon kann von jemandem entsperrt werden, der Ihnen sehr ähnlich sieht, etwa Ihr Kind oder ein eineiiger Zwilling.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Durch die Gesichtsentsperrung aufgezeichnete Daten werden dauerhaft und sicher gelöscht. Nach dem Entfernen benötigen Sie Ihre PIN, Ihr Muster oder Ihr Passwort, um Ihr Telefon zu entsperren.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Funktion \"Intelligenter Akku\" aktivieren</string>
     <string name="smart_battery_footer_custom">"Um die Akkulaufzeit zu verlängern, schränkt die Funktion \"Intelligenter Akku\" die Akkunutzung für selten verwendete Apps ein. Dein Smartphone lernt mit der Zeit, wie du deine Apps nutzt.
 
 Benachrichtigungen werden für die entsprechenden Apps eventuell verzögert angezeigt."</string>
     <string name="smart_battery_manager_title_custom">Intelligenter Akku</string>
     <string name="smart_battery_title_custom">Funktion \"Intelligenter Akku\" verwenden</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Finden Sie den Fingerabdrucksensor auf der Vorderseite des Telefons.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Finden Sie den Fingerabdrucksensor auf der linken Seite des Telefons.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Nutzten Sie den Fingerabdrucksensor auf der rechten Seite des Telefons.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Nutzten Sie den Fingerabdrucksensor auf der Vorderseite des Gerätes.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Nutzten Sie den Fingerabdrucksensor auf der rechten Seite des Gerätes.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Nutzten Sie den Fingerabdrucksensor auf der rechten Seite des Gerätes.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Nutzten Sie den Fingerabdrucksensor auf der Vorderseite des Tablets.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Nutzten Sie den Fingerabdrucksensor auf der linken Seite des Tablets.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Nutzten Sie den Fingerabdrucksensor auf der rechten Seite des Tablets.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Zurücksetzen</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Tasten</string>
     <string name="hardware_keys_home_key_title">Home-Taste</string>
     <string name="hardware_keys_back_key_title">Zurück-Taste</string>
@@ -68,7 +60,6 @@ Benachrichtigungen werden für die entsprechenden Apps eventuell verzögert ange
     <string name="camera_sleep_on_release_summary">Der Bildschirm bleibt aktiviert, solange die Kamera-Taste halb durchgedrückt gehalten wird.</string>
     <string name="camera_launch_title">Kamera starten</string>
     <string name="camera_launch_summary">Langes Drücken und Loslassen startet die Kamera</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Hintergrundbeleuchtung</string>
     <string name="button_backlight_enabled">Tasten beleuchten</string>
     <string name="button_backlight_only_when_pressed_title">Tasten nur beleuchten, wenn sie gedrückt wurden</string>
@@ -78,23 +69,16 @@ Benachrichtigungen werden für die entsprechenden Apps eventuell verzögert ange
     <string name="backlight_summary_disabled">Deaktiviert</string>
     <string name="backlight_summary_enabled_with_timeout">Für <xliff:g id="timeout">%s</xliff:g> aktiviert</string>
     <string name="backlight_summary_enabled">Aktiviert</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">On-Screen Navigationsleiste aktivieren</string>
     <string name="disable_navkeys_summary">Hardware Tasten deaktivieren und stattdessen Navigationsleiste auf dem Bildschirm anzeigen</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Licht beim Laden aktivieren</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Hohe Touch-Empfindlichkeit</string>
     <string name="high_touch_sensitivity_summary">Touch-Empfindlichkeit erhöhen, um den Touchscreen auch mit Handschuhen bedienen zu können</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Touchscreen als Maus verwenden</string>
     <string name="touchscreen_hovering_summary">Erlaubt es, den über dem Touchscreen schwebenden Finger im Browser, Remote Desktop usw. als Mauszeiger zu verwenden.</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Gespeicherte Earbuds</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Mit Fingerabdruck entsperren wenn der Bildschirm ausgeschaltet ist</string>
     <string name="fod_gesture_summary">Ermöglicht das Entsperren des Geräts, ohne zuerst den Bildschirm einschalten zu müssen</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Bildwiederholrate</string>
     <string name="refresh_rate_auto">Automatisch</string>
     <string name="refresh_rate_60">60Hz (spart Akku)</string>

@@ -11,24 +11,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
-    <!-- Moto Face Unlock -->
-    <!-- Adaptive battery -->
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Darganfyddi’r synhwyrydd olion bysedd ar blaen dy ffôn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Darganfyddi’r synhwyrydd olion bysedd ar ochr chwith dy ffôn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Darganfyddi’r synhwyrydd olion bysedd ar ochr dde dy ffôn.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Darganfyddi’r synhwyrydd olion bysedd ar blaen dy ddyfais.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Darganfyddi’r synhwyrydd olion bysedd ar ochr chwith dy ddyfais.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Darganfyddi’r synhwyrydd olion bysedd ar ochr dde dy ddyfais.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Darganfyddi’r synhwyrydd olion bysedd ar blaen dy tabled.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Darganfyddi’r synhwyrydd olion bysedd ar ochr chwith dy tabled.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Darganfyddi’r synhwyrydd olion bysedd ar ochr dde dy tabled.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Ailosod</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Botymau</string>
     <string name="hardware_keys_home_key_title">Botwm cartref</string>
     <string name="hardware_keys_back_key_title">Botwm nôl</string>
@@ -53,7 +45,6 @@
     <string name="camera_sleep_on_release_summary">Bydd hanner gwasgu yn cadw\'r sgrin ymlaen dim ond tra bod y botwm yn cael ei dal i lawr</string>
     <string name="camera_launch_title">Agor camera</string>
     <string name="camera_launch_summary">Bydd dal yn hir a rhyddhau yn lansio\'r camera</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Golau\'r sgrin</string>
     <string name="button_backlight_enabled">Goleuo botymau</string>
     <string name="button_backlight_only_when_pressed_title">Goleuo botymau dim ond wrth eu gwasgu</string>
@@ -63,17 +54,11 @@
     <string name="backlight_summary_disabled">Analluogwyd</string>
     <string name="backlight_summary_enabled_with_timeout">Galluogwyd am <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Galluogwyd</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Galluogi bar llywio ar y sgrin</string>
     <string name="disable_navkeys_summary">Galluogi\'r bar llywio ar y sgrin ac analluogi\'r botymau caledwedd</string>
-    <!-- Battery light -->
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Sensitifrwydd cyffwrdd uchel</string>
     <string name="high_touch_sensitivity_summary">Cynyddu sensitifrwydd y sgrin gyffwrdd fel y gellir ei defnyddio wrth wisgo menig</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Hofran sgrin gyffwrdd</string>
     <string name="touchscreen_hovering_summary">Mae\'n dy ganiatáu i hofran ar y sgrin fel defnyddio llygoden mewn porwyr, byrddau gwaith pell, ayyb</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
+    <string name="refresh_rate_auto">Awtomatig</string>
 </resources>

@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">Mažiau nei 1 min.</string>
     <string name="screen_time_summary_usage_today">%1$s šiandien</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">Norėdami atrakinti įrenginį, naudokite veido atpažinimo funkciją.\n\ nAtminkite: \nŽvilgsnis į telefoną gali jį atrakinti net ir neketinant.\n\ n Kitas asmuo gali atrakinti telefoną, laikydamas jį priešais jūsų veidą, atviromis akimis. \n\nTelefoną gali atrakinti asmuo, kuris jums daug ką primena, pavyzdžiui, jūsų vaikas ar dvynys.</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">Duomenys, įrašyti naudojant veido atpažinimo funkciją, būs visam laikui ištrinti. Po ištrynimo, turėsite įvesti PIN kodą, grafinį raktą arba slaptažodį.</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">Įjunkite prisitaikantį akumuliatorių</string>
     <string name="smart_battery_footer_custom">"Kad akumuliatorius veiktų ilgiau, prisitaikantis akumuliatorius apriboja retai naudojamų programų akumuliatoriaus energijos naudojimą. Telefonas laikui bėgant sužinos, kaip naudojate programas.
 
 Šių programų pranešimai gali vėluoti."</string>
     <string name="smart_battery_manager_title_custom">Prisitaikantis akumuliatorius</string>
     <string name="smart_battery_title_custom">Naudoti prisitaikantį akumuliatorių</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Raskite pirštų atspaudų jutiklį savo telefono priekyje.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Raskite pirštų atspaudų jutiklį kairėje telefono dalyje.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Raskite pirštų atspaudų jutiklį dešinėje telefono pusėje.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Raskite pirštų atspaudų jutiklį prietaiso priekyje.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Raskite pirštų atspaudų jutiklį kairėje telefono pusėje.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Raskite pirštų atspaudų jutiklį dešinėje telefono pusėje.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Raskite pirštų atspaudų jutiklį planšetinio kompiuterio priekinėje dalyje.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Kairėje planšetinio kompiuterio pusėje raskite pirštų atspaudų jutiklį.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Dešinėje planšetinio kompiuterio pusėje raskite pirštų atspaudų jutiklį.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">Nustatyti iš naujo</string>
-    <!-- Buttons -->
     <string name="button_pref_title">Mygtukai</string>
     <string name="hardware_keys_home_key_title">Pagrindinis mygtukas</string>
     <string name="hardware_keys_back_key_title">Mygtukas atgal</string>
@@ -68,7 +60,6 @@
     <string name="camera_sleep_on_release_summary">Išlaikyti ekraną įjungtą tik tada, kai mygtukas yra nuspaustas</string>
     <string name="camera_launch_title">Paleisti kamerą</string>
     <string name="camera_launch_summary">Ilgas paspaudimas paleis kamerą</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">Apšvietimas</string>
     <string name="button_backlight_enabled">Mygtukų apšvietimas</string>
     <string name="button_backlight_only_when_pressed_title">Mygtukus apšviesti tik kai paspaudžiama</string>
@@ -78,23 +69,16 @@
     <string name="backlight_summary_disabled">Išjungta</string>
     <string name="backlight_summary_enabled_with_timeout">Įjungta <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Įjungta</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Įgalinti ekrano juostą</string>
     <string name="disable_navkeys_summary">Įjunkite naršymo juostą ekrane ir išjunkite aparatūros mygtukus</string>
-    <!-- Battery light -->
     <string name="battery_light_title">Įjunkite šviesos indikatorių,akumuliatoriaus įkrovimo metu</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">Didelis lietimo jautrumas</string>
     <string name="high_touch_sensitivity_summary">Padidinti liečiamojo ekrano jautrumą tam, kad juo būtų galima naudotis dėvint pirštines</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">Jutiklinio ekrano slankiojimas</string>
     <string name="touchscreen_hovering_summary">Leidžia slankioti ekraną kaip pelę internetinėse naršyklėse, nuotoliniuose staliniuose kompiuteriuose ir kt.</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">Išsaugotos ausinės</string>
-    <!-- Screen off fod -->
     <string name="fod_gesture_title">Atrakinkite pirštų atspaudu, kai ekranas išjungtas</string>
     <string name="fod_gesture_summary">Leidžia atrakinti įrenginį, prieš tai neįjungiant ekrano</string>
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">Ekrano atnaujinimo dažnis</string>
     <string name="refresh_rate_auto">Automatiškai</string>
     <string name="refresh_rate_60">60Hz (taupo akumuliatorių)</string>

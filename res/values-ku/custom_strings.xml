@@ -11,34 +11,26 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Wellbeing -->
     <string name="duration_less_than_one_minute">کەمتر لە ١ خولەک</string>
     <string name="screen_time_summary_usage_today">%1$s ئەمڕۆ</string>
-    <!-- Moto Face Unlock -->
     <string name="security_settings_face_settings_footer_moto">اپنا آلہ انلاک کرنے کے لیے چہرہ لاک استعمال کریں۔\n\nیاد رہے کہ:\nجب آپ کا فون انلاک کرنے کا ارادہ نہ ہو تو فون پر دیکھنے سے انلاک ہوسکتا ہے۔\n\nآپ کی آنکھیں کھلی ہونے کے وقت اگر کوئی شخص آپ کا فون آپ کے چہرے کے قریب لے جاتا ہے تو اس سے بھی آپ کا فون انلاک ہوسکتا ہے۔\n\nجو شخص دکھنے میں کافی حد تک آپ کی طرح ہو تو اس کے چہرے سے بھی آپ کا فون انلاک ہوسکتا ہے، مثلا، آپ کا بچہ یا آپ کا بھائی بہن۔</string>
     <string name="security_settings_face_settings_remove_dialog_details_moto">چہرہ انلاک کے ذریعہ ریکارڈ کردہ ڈیٹا مستقل اور محفوظ طریقے سے حذف ہوجائے گا۔ ہٹانے کے بعد، آپ کو اپنا فون انلاک کرنے کے لیے آپ کو اپنے PIN، نمونہ، یا پاس ورڈ کی ضرورت ہوگی۔</string>
-    <!-- Adaptive battery -->
     <string name="battery_tip_smart_battery_summary_custom">ڕێکخەری پاتری چالاک بکە</string>
     <string name="smart_battery_footer_custom">"بۆ درێژکردنەوەی ژیانی پاتری ، ڕێکخەری پاتری هەڵدەستێ بە سنووردارکردنی بەکارهێنانی پاتری بۆ ئەو ئەپانەی زۆر کەم بەکاردەبرێن. مۆبایلەکەت بەپێی کات فێردەبێت چۆن ئەو ئەپانە دەستنیشان بکات.
 
 ڕەنگە ئاگانامەی ئەو ئەپانە وونبکرێن."</string>
     <string name="smart_battery_manager_title_custom">ڕێکخەری پاتری</string>
     <string name="smart_battery_title_custom">بەکارهێنانی ڕێکخەری پاتری</string>
-    <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">هەستەوەی پەنجەمۆر لەپشتەوەی مۆبایلەکەتدا دیاری بکە.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">هەستەوەی پەنجەمۆر لەلای چەپی مۆبایلەکەتدا دیاری بکە.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">هەستەوەی پەنجەمۆر لەلای ڕاستی مۆبایلەکەتدا دیاری بکە.</string>
-    <!-- Fingerprint location message - generic -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">هەستەوەی پەنجەمۆر لەپشتەوەی ئامێرەکەتدا دیاری بکە.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">هەستەوەی پەنجەمۆر لەلای چەپی ئامێرەکەتدا دیاری بکە.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">هەستەوەی پەنجەمۆر لەلای ڕاستی ئامێرەکەتدا دیاری بکە.</string>
-    <!-- Fingerprint location message - tablet -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">هەستەوەی پەنجەمۆر لەپشتەوەی تابلێتەکەتدا دیاری بکە.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">هەستەوەی پەنجەمۆر لەلای چەپی تابلێتەکەتدا دیاری بکە.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">هەستەوەی پەنجەمۆر لەلای ڕاستی تابلێتەکەتدا دیاری بکە.</string>
-    <!-- Generic stuff used everywhere -->
     <string name="reset">ڕێکخستنەوە</string>
-    <!-- Buttons -->
     <string name="button_pref_title">دوگمەکان</string>
     <string name="hardware_keys_home_key_title">دوگمەی ماڵەوە</string>
     <string name="hardware_keys_back_key_title">دوگمەی گەڕانەوە</string>
@@ -68,7 +60,6 @@
     <string name="camera_sleep_on_release_summary">نیوە داگرتنێک هەمیشە وادەکات ڕوونماکە بە هەڵکراوی بمێنێتەوە </string>
     <string name="camera_launch_title">کردنەوەی کامێرا</string>
     <string name="camera_launch_summary">لەڕێگای پەنجە ڕاگرتنی درێژ و پاشان بەردان دەچیتە نێو کامێراوە</string>
-    <!-- Key backlight -->
     <string name="button_backlight_title">ڕووناکی پشته‌وه‌</string>
     <string name="button_backlight_enabled">دوگمەکانی ڕووناککردنەوە</string>
     <string name="button_backlight_only_when_pressed_title">دوگمەکانی ڕووناککردنەوە تەنها ئەو کاتەی داگیرا</string>
@@ -78,21 +69,14 @@
     <string name="backlight_summary_disabled">ناچالاکە</string>
     <string name="backlight_summary_enabled_with_timeout">چالاککراوە بۆ <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">چالاککراوە</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">چالاککردنی دوگمەکانی سەر ڕوونما</string>
     <string name="disable_navkeys_summary">چالاککردنی دوگمەکانی سەر ڕوونما و ناچالاککردنی دوگمەکانی ڕەقەکاڵا</string>
-    <!-- Battery light -->
     <string name="battery_light_title">هەڵبوونی ڕووناکی لەکاتی بارگاویکردنەوە</string>
-    <!-- High touch sensitivity -->
     <string name="high_touch_sensitivity_title">هەستیاری ساوانی بەرز</string>
     <string name="high_touch_sensitivity_summary">هەستیاری ساوڕوونما برز بکەوە، ئەوە ئەتوانرێ بەکاربهێنرێت کاتێک دەستەوانت لە دەستدایە</string>
-    <!-- Touchscreen hovering -->
     <string name="touchscreen_hovering_title">دەستلێدانی شاشە سوڕانەوە</string>
     <string name="touchscreen_hovering_summary">هەمیشە شاشەکە بسوڕێنەوە وەکو مشک لە وێبگەری ماڵپەر، ڕومێزی دور،هتد</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
     <string name="connected_tws_device_saved_title">بیستۆکە خەزنکراوەکان</string>
-    <!-- Screen off fod -->
-    <!-- Refresh rate -->
     <string name="refresh_rate_title">ڕێژەی نوێبوونەوەی ڕوونما</string>
     <string name="refresh_rate_auto">خۆکار</string>
     <string name="refresh_rate_60">٦٠ هێرتز (پاراستنی ووزە)</string>
