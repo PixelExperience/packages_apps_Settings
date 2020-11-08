@@ -11,39 +11,25 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Buttons -->
     <string name="navigation_bar_title">Knapper og layout</string>
     <string name="hardware_keys_power_key_title">Tænd/sluk-knap</string>
     <string name="hardware_keys_volume_keys_title">Lydstyrke-knapper</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">Aktivér navigationslinje</string>
     <string name="disable_navkeys_summary">Aktivér navigationslinje på skærmen og deaktivér hardwareknapper</string>
-    <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Luk app tilbage-knap</string>
     <string name="kill_app_longpress_back_summary">Luk app\'en i forgrunden ved langt tryk på tilbage-knappen</string>
-    <!-- Hostname setting -->
     <string name="device_hostname">Enheds værtsnavn</string>
-    <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Avanceret genstart</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Vis medie-albumbilleder</string>
-    <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Omvælt opsætning</string>
     <string name="unlock_scramble_pin_layout_summary">Omvælt PIN-opsætning, ved oplåsning af enhed</string>
-    <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Tryk for at slumre</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dobbelt-tryk på statusbjælken eller låseskærmen, for at slukke for skærmen</string>
-    <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Vågn ved tilslutning</string>
     <string name="wake_when_plugged_or_unplugged_summary">Tænd for skærmen, ved tilslutning til, eller afbrydelse fra en strømkilde</string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Vælg en mønsterstørrelse</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">Vis mønster-fejl</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Vis mønster-prikker</string>
-    <!-- Hotspot custom extras -->
-    <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Minimumstid imellem notifikationslyde</string>
     <string name="app_notification_sound_timeout_summary_template">Tillad ikke lyde, eller vibration, mere end én gang hver <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Ingen restriktion</string>
@@ -53,12 +39,9 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minutter</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minutter</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minutter</string>
-    <!-- Volume link notification -->
-    <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Stigende ringe-lydstyrke</string>
     <string name="increasing_ring_min_volume_title">Start-lydstyrke</string>
     <string name="increasing_ring_ramp_up_time_title">Opvarmningstid</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotationsindstillinger</string>
     <string name="display_rotation_enabled">Auto-rotation er aktiveret</string>
     <string name="display_rotation_disabled">Auto-rotation er deaktiveret</string>
@@ -68,15 +51,11 @@
     <string name="display_rotation_90_title">90 grader</string>
     <string name="display_rotation_180_title">180 grader</string>
     <string name="display_rotation_270_title">270 grader</string>
-    <!-- Lock screen visualizer -->
-    <!-- In-call feedback -->
-    <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">Vis piletaster, imens du taster</string>
     <string name="navigation_bar_arrow_keys_summary">Vis venstre og højre piletaster, imens du skriver. Tilsidesætter IME-skifter.</string>
     <string name="navigation_bar_home_long_press_title">Hjem langt tryk-handling</string>
     <string name="navigation_bar_home_double_tap_title">Hjem dobbelt-tryk handling</string>
     <string name="navigation_bar_app_switch_long_press_title">Seneste langt tryk-handling</string>
-    <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Styr afspilning</string>
     <string name="volbtn_music_controls_summary">Søg musiknumre ved at trykke længe på lydstyrketasterne, mens skærmen er slukket</string>
     <string name="volume_answer_call_title">Besvar opkald</string>
@@ -87,10 +66,8 @@
     <string name="volbtn_cursor_control_on_reverse">Lydstyrke op/ned flytter markør højre/venstre</string>
     <string name="swap_volume_buttons_title">Omlæg</string>
     <string name="swap_volume_buttons_summary">Ombyt lydstyrkeknapper, når skærmen roteres</string>
-    <!-- Home key customization -->
     <string name="home_answer_call_title">Besvar opkald</string>
     <string name="home_answer_call_summary">Besvar indgående opkald, ved at trykke på hjem-knappen</string>
-    <!-- Power menu key customization -->
     <string name="power_menu_title">Tænd/sluk-menu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_airplane_title">Flytilstand</string>
@@ -100,19 +77,18 @@
     <string name="torch_long_press_power_gesture_title">Langt tryk for lommelygte</string>
     <string name="torch_long_press_power_gesture_desc">Aktivér lommelygten med et langt tryk på strømknappen, mens skærmen er slukket</string>
     <string name="torch_long_press_power_timeout_title">Sluk automatisk for lommelygte</string>
-    <!-- Others settings -->
+    <string name="torch_long_press_power_timeout_1min">1 minut</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutter</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutter</string>
     <string name="additional_buttons_title">Yderligere knapper</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Statusbjælke</string>
     <string name="status_bar_quick_qs_pulldown_title">Hurtigt nedtræk</string>
     <string name="status_bar_quick_qs_pulldown_off">Fra</string>
     <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
     <string name="status_bar_quick_qs_pulldown_right">Højre</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Statusbjælke-ikoner</string>
     <string name="status_bar_system_icons_title">System-ikoner</string>
     <string name="status_bar_system_icons_summary">Kontrollér hvilke statusbjælke-ikoner, der vises</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Ur</string>
     <string name="status_bar_clock_show_seconds_title">Vis sekunder</string>
     <string name="status_bar_clock_show_seconds_summary">Vis timer, minutter og sekunder</string>
@@ -125,18 +101,15 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Lille</string>
     <string name="status_bar_am_pm_hidden">Skjult</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Batteri-indikator</string>
     <string name="status_bar_battery_style_title">Batteristatus-stil</string>
     <string name="status_bar_battery_style_icon_portrait">Ikon, stående</string>
     <string name="status_bar_battery_style_circle">Cirkel</string>
     <string name="status_bar_battery_style_text">Tekst</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Batteri-procent</string>
     <string name="status_bar_battery_percentage_default">Skjult</string>
     <string name="status_bar_battery_percentage_text_inside">Indeni ikonet</string>
     <string name="status_bar_battery_percentage_text_next">Ved siden af ikonet</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Lysstyrke</string>
     <string name="status_bar_brightness_slider_title">Lysstyrke-skyder</string>
     <string name="status_bar_brightness_slider_summary">Justér lysstyrke fra Hurtig-Indstillinger</string>
@@ -144,18 +117,11 @@
     <string name="status_bar_brightness_slider_auto_summary">Vis skifter til adaptiv lysstyrke, nær skyderen</string>
     <string name="status_bar_toggle_brightness">Lysstyrkekontrol</string>
     <string name="status_bar_toggle_brightness_summary">Justér lysstyrken, ved at stryge tværs over statusbjælken</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Netværkstrafikovervågning</string>
     <string name="network_traffic_settings_summary">Vis aktuelle netværkstrafikniveauer i statusbjælken</string>
-    <!-- QS settings -->
-    <!-- QS title visibility -->
-    <!-- QS tiles haptic feedback -->
-    <!-- QS animation/interpolator styles  -->
-    <!-- Notch behavior -->
-    <!-- Notch: Full screen apps -->
-    <!-- Three-fingers-swipe to screenshot -->
-    <!-- Navigation compact layout -->
-    <!-- LiveDisplay -->
+    <string name="network_traffic_mode_disable">Deaktiveret</string>
+    <string name="network_traffic_mode_status_bar">Statusbjælke</string>
+    <string name="display_cutout_mode_hidden">Skjult</string>
     <string name="live_display_summary">Optimér din skærm, baseret på tid på dagen, og omkringværende forhold, for at forbedre læsbarhed og reducere øjen-anstrengelse</string>
     <string name="live_display_mode">Visningstilstand</string>
     <string name="live_display_color_temperature_title">Farvetemperatur</string>
@@ -190,25 +156,18 @@
     <string name="live_display_color_profile_reading_summary">Varmere farver til mindre belastning af øjnene</string>
     <string name="live_display_color_profile_srgb_title">sRGB</string>
     <string name="live_display_color_profile_srgb_summary">Farver, som matcher sRGB-farverummet</string>
+    <string name="live_display_reading_mode_title">Læsetilstand</string>
     <string name="color_calibration_title">Farvekalibrering</string>
     <string name="color_calibration_summary">Kalibrér skærmfarver</string>
     <string name="color_red_title">Rød</string>
     <string name="color_green_title">Grøn</string>
     <string name="color_blue_title">Blå</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Billedjustering</string>
     <string name="picture_adjustment_summary">Justerer farvetone, mætning, lysstyrke og kontrast</string>
     <string name="adj_hue_title">Farvetone</string>
     <string name="adj_saturation_title">Farvemætning</string>
     <string name="adj_intensity_title">Intensitet</string>
     <string name="adj_contrast_title">Kontrast</string>
-    <!-- Back Gesture Height -->
-    <!-- Full screen gestures -->
-    <!-- Per-app data restrictions -->
-    <!-- Translucent lockscreen notifications background -->
-    <!-- Search keywords -->
-    <!-- Heads-up -->
-    <!-- Pocket mode -->
     <string name="proximity_wake_title">Undgå utilsigtet vækning</string>
     <string name="proximity_wake_summary">Check nærhedscensoren før skærmen vækkes</string>
 </resources>

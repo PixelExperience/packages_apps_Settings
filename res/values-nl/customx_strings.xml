@@ -11,42 +11,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Buttons -->
     <string name="navigation_bar_title">Navigatiebalk</string>
     <string name="hardware_keys_power_key_title">Aan/uit-knop</string>
     <string name="hardware_keys_volume_keys_title">Volumeknop</string>
-    <!-- Buttons - Enable navbar -->
     <string name="disable_navkeys_title">On-screen navigatiebalk inschakelen</string>
     <string name="disable_navkeys_summary">On-screen navigatiebalk inschakelen en hardware-knoppen uitschakelen</string>
-    <!-- Kill app long-press back -->
     <string name="kill_app_longpress_back">Stoppen forceren</string>
     <string name="kill_app_longpress_back_summary">Openstaande app geforceerd stoppen door terugknop lang in te drukken</string>
-    <!-- Hostname setting -->
     <string name="device_hostname">Hostnaam apparaat</string>
-    <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Geavanceerd herstarten</string>
     <string name="advanced_reboot_summary">Indien ontgrendeld, opties tonen in het aan/uit-knopmenu voor herstarten naar recovery of bootloader</string>
-    <!-- Lock screen cover art -->
     <string name="lockscreen_media_art_title">Albumhoezen weergeven</string>
-    <!-- PIN scramble -->
     <string name="unlock_scramble_pin_layout_title">Lay-out husselen</string>
     <string name="unlock_scramble_pin_layout_summary">PIN lay-out husselen bij apparaat ontgrendelen</string>
-    <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Tikken voor slaapstand</string>
     <string name="status_bar_double_tap_to_sleep_summary">Dubbeltik op de statusbalk om het scherm uit te schakelen</string>
-    <!-- Wake on plug -->
     <string name="wake_when_plugged_or_unplugged_title">Ontwaken door aansluiten op lader</string>
     <string name="wake_when_plugged_or_unplugged_summary">Scherm aan bij het aansluiten of loskoppelen van een lader</string>
-    <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Grootte patroon kiezen</string>
-    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
     <string name="lockpattern_settings_enable_error_path_title">Patroonfout weergeven</string>
-    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Patroonknoppen weergeven</string>
-    <!-- Hotspot custom extras -->
     <string name="tethering_allow_vpn_upstreams_title">Clients toestaan om VPN\'s te gebruiken</string>
     <string name="tethering_allow_vpn_upstreams_summary">Sta hotspot-gebruikers toe om de VPN-verbindingen van dit apparaat te gebruiken om te uploaden</string>
-    <!-- Notification sound timeout -->
     <string name="app_notification_sound_timeout_title">Minimale tijd tussen meldingsgeluiden</string>
     <string name="app_notification_sound_timeout_summary_template">Geluid of trillen niet meer dan één keer per <xliff:g id="duration">%1$s</xliff:g> toestaan</string>
     <string name="app_notification_sound_timeout_value_none">Geen beperking</string>
@@ -56,13 +42,10 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minuten</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minuten</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minuten</string>
-    <!-- Volume link notification -->
     <string name="volume_link_notification_title">Volume beltoon en meldingen koppelen</string>
-    <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">In volume toenemende beltoon</string>
     <string name="increasing_ring_min_volume_title">Startvolume</string>
     <string name="increasing_ring_ramp_up_time_title">Ophoogtijd</string>
-    <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotatie-instellingen</string>
     <string name="display_rotation_enabled">Auto-rotatie is ingeschakeld</string>
     <string name="display_rotation_disabled">Auto-rotatie is uitgeschakeld</string>
@@ -72,18 +55,14 @@
     <string name="display_rotation_90_title">90 graden</string>
     <string name="display_rotation_180_title">180 graden</string>
     <string name="display_rotation_270_title">270 graden</string>
-    <!-- Lock screen visualizer -->
     <string name="lockscreen_visualizer_title">Muziek visualizer</string>
-    <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">Vibreer om belstatus aan te geven</string>
-    <!-- Navigation bar customization -->
     <string name="navigation_bar_arrow_keys_title">Pijltjestoetsen tijdens typen</string>
     <string name="navigation_bar_arrow_keys_summary">Cursor links en rechts weergeven tijdens typen. Verbergt invoermethodepictogram.</string>
     <string name="nav_bar_layout_inverse_title">Omgekeerde layout</string>
     <string name="nav_bar_layout_inverse_summary">Omgekeerde layout navigatietoetsen</string>
     <string name="navigation_bar_home_long_press_title">Thuisknop lang indrukken</string>
     <string name="navigation_bar_home_double_tap_title">Thuisknop twee keer indrukken</string>
-    <!-- Volume keys customization -->
     <string name="volbtn_music_controls_title">Afspelen beheren</string>
     <string name="volbtn_music_controls_summary">Door nummers spoelen door volumeknoppen lang in te drukken als het scherm uit is</string>
     <string name="volume_answer_call_title">Oproep beantwoorden</string>
@@ -94,10 +73,8 @@
     <string name="volbtn_cursor_control_on_reverse">Volume omhoog/omlaag beweegt cursor naar rechts/links</string>
     <string name="swap_volume_buttons_title">Oriëntatie</string>
     <string name="swap_volume_buttons_summary">Volumeknoppen omwisselen op basis van apparaat rotatie</string>
-    <!-- Home key customization -->
     <string name="home_answer_call_title">Oproep beantwoorden</string>
     <string name="home_answer_call_summary">Inkomende oproepen beantwoorden door op de thuisknop te drukken</string>
-    <!-- Power menu key customization -->
     <string name="power_menu_title">Opties in afsluitmenu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_airplane_title">Vliegtuigmodus</string>
@@ -114,20 +91,16 @@
     <string name="torch_long_press_power_timeout_2min">2 minuten</string>
     <string name="torch_long_press_power_timeout_5min">5 minuten</string>
     <string name="torch_long_press_power_timeout_10min">10 minuten</string>
-    <!-- Others settings -->
     <string name="others_settings_title">Overige instellingen</string>
     <string name="additional_buttons_title">Extra knoppen</string>
-    <!-- Status bar -->
     <string name="status_bar_title">Statusbalk</string>
     <string name="status_bar_quick_qs_pulldown_title">Snel openen</string>
     <string name="status_bar_quick_qs_pulldown_off">Uit</string>
     <string name="status_bar_quick_qs_pulldown_left">Linkerkant</string>
     <string name="status_bar_quick_qs_pulldown_right">Rechterkant</string>
-    <!-- Status bar - icons -->
     <string name="status_bar_icons_title">Statusbalkpictogrammen</string>
     <string name="status_bar_system_icons_title">Systeempictogrammen</string>
     <string name="status_bar_system_icons_summary">Instellen welke statusbalkpictogrammen worden weergegeven</string>
-    <!-- Status bar - Clock -->
     <string name="status_bar_clock_title">Klok</string>
     <string name="status_bar_clock_position_title">Indeling klok</string>
     <string name="status_bar_clock_position_right">Rechts</string>
@@ -138,18 +111,15 @@
     <string name="status_bar_am_pm_normal">Normaal</string>
     <string name="status_bar_am_pm_small">Klein</string>
     <string name="status_bar_am_pm_hidden">Verborgen</string>
-    <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Batterijpictogram</string>
     <string name="status_bar_battery_style_title">Opmaak accustatus</string>
     <string name="status_bar_battery_style_icon_portrait">Pictogram (staand)</string>
     <string name="status_bar_battery_style_circle">Cirkel</string>
     <string name="status_bar_battery_style_text">Tekst</string>
-    <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Accupercentage</string>
     <string name="status_bar_battery_percentage_default">Verborgen</string>
     <string name="status_bar_battery_percentage_text_inside">In het pictogram</string>
     <string name="status_bar_battery_percentage_text_next">Naast het pictogram</string>
-    <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Helderheid</string>
     <string name="status_bar_brightness_slider_title">Schuifregelaar helderheid</string>
     <string name="status_bar_brightness_slider_summary">Helderheid aanpassen vanuit snelle instellingen</string>
@@ -157,26 +127,22 @@
     <string name="status_bar_brightness_slider_auto_summary">Schakelaar voor aanpassende helderheid naast de schuifregelaar</string>
     <string name="status_bar_toggle_brightness">Helderheid beheren</string>
     <string name="status_bar_toggle_brightness_summary">Helderheid aanpassen door over de statusbalk te slepen</string>
-    <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Netwerkverkeerindicator</string>
     <string name="network_traffic_settings_summary">Netwerkverkeer weergeven in de statusbalk</string>
     <string name="network_traffic_mode_title">Weergave</string>
     <string name="network_traffic_mode_disable">Uitgeschakeld</string>
+    <string name="network_traffic_mode_status_bar">Statusbalk</string>
     <string name="network_traffic_autohide">Automatisch verbergen</string>
     <string name="network_traffic_autohide_summary">Netwerkverkeerindicator verbergen wanneer er geen activiteit is</string>
     <string name="network_traffic_units_title">Eenheid netwerkverkeer</string>
-    <!-- QS settings -->
     <string name="qs_rows_portrait_title">Rijen met tegels staand</string>
     <string name="qs_rows_landscape_title">Rijen met tegels liggend</string>
     <string name="qs_columns_portrait_title">Kolommen met tegels staand</string>
     <string name="qs_columns_landscape_title">Kolommen met tegels liggend</string>
-    <!-- QS title visibility -->
     <string name="qs_tile_title_visibility_title">Tegel titels</string>
     <string name="qs_tile_title_visibility_summary">Inschakelen om de titels van de Snelle instellingen-tegels te tonen</string>
-    <!-- QS tiles haptic feedback -->
     <string name="qs_vibrate_title">Trillen bij aanraken</string>
     <string name="qs_vibrate_summary">Trillen bij aanraken van QS-tegels</string>
-    <!-- QS animation/interpolator styles  -->
     <string name="qs_tile_animation_style_title">Animatiestijl</string>
     <string name="qs_tile_animation_duration_title">Animatieduur snelle instellingen-tegels</string>
     <string name="qs_tile_animation_interpolator_title">Tegels animatie vormgeving</string>
@@ -193,18 +159,13 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Voorbij schieten</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticiperen</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticiperen voorbij schieten</string>
-    <!-- Notch behavior -->
     <string name="display_cutout_mode_title">Gedrag inkeping</string>
     <string name="display_cutout_mode_normal">Standaard</string>
     <string name="display_cutout_mode_hidden">Verborgen</string>
-    <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Apps in volledig scherm</string>
     <string name="display_cutout_force_fullscreen_summary">Dwing apps om inkeping te negeren</string>
-    <!-- Three-fingers-swipe to screenshot -->
     <string name="swipe_to_screenshot_gesture_title">Veeg voor schermafdruk</string>
     <string name="swipe_to_screenshot_gesture_summary">Veeg met drie vingers om schermafbeelding te maken</string>
-    <!-- Navigation compact layout -->
-    <!-- LiveDisplay -->
     <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
     <string name="live_display_mode">Weergavemodus</string>
     <string name="live_display_color_temperature_title">Kleurtemperatuur</string>
@@ -248,18 +209,10 @@
     <string name="color_red_title">Rood</string>
     <string name="color_green_title">Groen</string>
     <string name="color_blue_title">Blauw</string>
-    <!-- LiveDisplay : Picture Adjustment -->
     <string name="picture_adjustment_title">Beeldaanpassingen</string>
     <string name="picture_adjustment_summary">Tint, verzadiging, intensiteit en contrast aanpassen</string>
     <string name="adj_hue_title">Tint</string>
     <string name="adj_saturation_title">Verzadiging</string>
     <string name="adj_intensity_title">Intensiteit</string>
     <string name="adj_contrast_title">Contrast</string>
-    <!-- Back Gesture Height -->
-    <!-- Full screen gestures -->
-    <!-- Per-app data restrictions -->
-    <!-- Translucent lockscreen notifications background -->
-    <!-- Search keywords -->
-    <!-- Heads-up -->
-    <!-- Pocket mode -->
 </resources>
