@@ -103,7 +103,7 @@ public class SliceContextualCardController implements ContextualCardController {
 
     @VisibleForTesting
     boolean isFeedbackEnabled(String email) {
-        return !TextUtils.isEmpty(email) && Build.IS_ENG;
+        return !TextUtils.isEmpty(email) && Build.IS_DEBUGGABLE;
     }
 
     private String getSimpleCardName(ContextualCard card) {
