@@ -33,4 +33,7 @@
     <!-- Battery light -->
     <string name="battery_light_title">Turn on the light when charging</string>
 
+    <!-- Min refresh rate -->
+    <string name="min_refresh_rate_title">Minimum refresh rate</string>
+
 </resources>
