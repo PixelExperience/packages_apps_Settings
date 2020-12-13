@@ -26,10 +26,6 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Locate the fingerprint sensor on the left side of your tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Locate the fingerprint sensor on the right side of your tablet.</string>
 
-    <!-- Screen off fod -->
-    <string name="fod_gesture_title">Unlock with fingerprint when the screen is off</string>
-    <string name="fod_gesture_summary">Allows unlocking the device without having to wake up the screen first</string>
-
     <!-- Battery light -->
     <string name="battery_light_title">Turn on the light when charging</string>
 
