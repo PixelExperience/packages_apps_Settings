@@ -11,6 +11,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="navigation_bar_title">Navigationfält</string>
     <string name="hardware_keys_power_key_title">Avstängningsknapp</string>
     <string name="hardware_keys_volume_keys_title">Volymknappar</string>
     <string name="disable_navkeys_title">Aktivera navigeringsfält på skärmen</string>
@@ -20,14 +21,20 @@
     <string name="device_hostname">Enhetens värdnamn</string>
     <string name="advanced_reboot_title">Avancerad omstart</string>
     <string name="advanced_reboot_summary">Lägg till alternativ för recovery- och bootloaderläge i omstartsmenyn när enheten är upplåst</string>
+    <string name="lockscreen_media_art_title">Visa mediets albumbild</string>
     <string name="unlock_scramble_pin_layout_title">Kasta om layout</string>
     <string name="unlock_scramble_pin_layout_summary">Kasta om PIN-layout vid upplåsning av enheten</string>
     <string name="status_bar_double_tap_to_sleep_title">Dubbeltryck för att släcka skärmen</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Dubbeltryck på statusfältet eller låsskärmen för att stänga av skärmen</string>
     <string name="wake_when_plugged_or_unplugged_title">Vakna vid koppling</string>
     <string name="wake_when_plugged_or_unplugged_summary">Starta skärmen vid anslutning till eller frånkoppling från strömkälla</string>
+    <string name="lock_settings_picker_pattern_size_message">Välj en mönsterstorlek</string>
     <string name="lockpattern_settings_enable_error_path_title">Visa mönster vid fel</string>
     <string name="lockpattern_settings_enable_dots_title">Visa mönsterpunkter</string>
+    <string name="tethering_allow_vpn_upstreams_title">Tillåt klienter att använda VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Tillåt hotspot-klienter att använda den här enheten\u2019s VPN-anslutningar för uppströmsanslutning</string>
     <string name="app_notification_sound_timeout_title">Minsta tid mellan aviseringsljud</string>
+    <string name="app_notification_sound_timeout_summary_template">Tillåt ljud eller vibrationer inte mer än en gång per dag varje <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Ingen begränsning</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 sekunder</string>
     <string name="app_notification_sound_timeout_value_30_seconds">30 sekunder</string>
@@ -35,15 +42,20 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minuter</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minuter</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minuter</string>
+    <string name="volume_link_notification_title">Länka ringsignals- och aviseringsvolym</string>
     <string name="increasing_ring_volume_option_title">Ökande ljudvolym</string>
     <string name="increasing_ring_min_volume_title">Startvolym</string>
     <string name="increasing_ring_ramp_up_time_title">Upprampningstid</string>
+    <string name="display_rotation_title">Rotationsinställningar</string>
+    <string name="display_rotation_enabled">Automatisk rotation är aktiverat</string>
+    <string name="display_rotation_disabled">Auto-rotation är inaktiverat</string>
     <string name="display_rotation_unit">grader</string>
     <string name="display_rotation_category_title">Rotationslägen</string>
     <string name="display_rotation_0_title">0 grader</string>
     <string name="display_rotation_90_title">90 grader</string>
     <string name="display_rotation_180_title">180 grader</string>
     <string name="display_rotation_270_title">270 grader</string>
+    <string name="lockscreen_visualizer_title">Visa musikvisualisering</string>
     <string name="volbtn_cursor_control_off">Inaktiverad</string>
     <string name="power_menu_title">Avstängningsmeny</string>
     <string name="power_menu_airplane_title">Flygplansläge</string>

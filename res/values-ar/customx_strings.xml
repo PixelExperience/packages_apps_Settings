@@ -248,6 +248,8 @@
     <string name="data_usage_app_restrict_wifi_summary">تمكين استخدام بيانات WiFi</string>
     <string name="translucent_lockscreen_notifications_bg_title">قائمة التنبيهات ذات خلفية شفافة</string>
     <string name="keywords_notification_log">التنبيهات، سجل التنبيهات</string>
+    <string name="heads_up_notifications_enabled_title">إشعارات منبثقة</string>
+    <string name="heads_up_notifications_enabled_summary">عرض الإشعارات ذات الأولوية في نافذة عائمة صغيرة</string>
     <string name="proximity_wake_title">منع الاستيقاظ بالخطأ</string>
     <string name="proximity_wake_summary">التحقق من مستشعر القرب قبل إيقاظ الشاشة</string>
 </resources>

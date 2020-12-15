@@ -18,7 +18,7 @@
     <string name="disable_navkeys_summary">Attiva la barra di navigazione su schermo e disattiva i pulsanti fisici</string>
     <string name="kill_app_longpress_back">Chiudi app con pulsante indietro</string>
     <string name="kill_app_longpress_back_summary">Termina l\'applicazione in primo piano tenendo premuto il tasto indietro</string>
-    <string name="device_hostname">Hostname dispositivo</string>
+    <string name="device_hostname">Hostname del dispositivo</string>
     <string name="advanced_reboot_title">Riavvio avanzato</string>
     <string name="advanced_reboot_summary">Quando sbloccato, mostra le opzioni per il riavvio in recovery o bootloader nel menù di accensione</string>
     <string name="lockscreen_media_art_title">Mostra copertina album</string>
@@ -32,7 +32,7 @@
     <string name="lockpattern_settings_enable_error_path_title">Mostra sequenza di sblocco errata</string>
     <string name="lockpattern_settings_enable_dots_title">Mostra punti sequenza di sblocco</string>
     <string name="tethering_allow_vpn_upstreams_title">Consenti ai dispositivi connessi di utilizzare le VPN</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Consenti ai dispositivi connessi all\'hotspot di questo dispositivo\u2019 di utilizzare le connessioni VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Consenti ai dispositivi connessi all\'hotspot di utilizzare le connessioni VPN di questo dispositivo</string>
     <string name="app_notification_sound_timeout_title">Tempo minimo tra i suoni di notifica</string>
     <string name="app_notification_sound_timeout_summary_template">Consenti suoni o vibrazioni non più di una volta ogni <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Nessuna restrizione</string>
@@ -50,7 +50,7 @@
     <string name="display_rotation_enabled">La rotazione automatica è attivata</string>
     <string name="display_rotation_disabled">La rotazione automatica è disattivata</string>
     <string name="display_rotation_unit">gradi</string>
-    <string name="display_rotation_category_title">Modalità rotazione</string>
+    <string name="display_rotation_category_title">Modalità di rotazione</string>
     <string name="display_rotation_0_title">0 gradi</string>
     <string name="display_rotation_90_title">90 gradi</string>
     <string name="display_rotation_180_title">180 gradi</string>
@@ -67,15 +67,15 @@
     <string name="volbtn_music_controls_title">Controllo della riproduzione</string>
     <string name="volbtn_music_controls_summary">Quando lo schermo è spento, passa da un brano all\'altro tenendo premuti i tasti del volume</string>
     <string name="volume_answer_call_title">Rispondi alla chiamata</string>
-    <string name="volume_answer_call_summary">Rispondi alla chiamata in arrivo premendo i pulsanti del volume</string>
+    <string name="volume_answer_call_summary">Rispondi alle chiamate in arrivo premendo i pulsanti del volume</string>
     <string name="volbtn_cursor_control_title">Controllo cursore tastiera</string>
     <string name="volbtn_cursor_control_off">Disattivato</string>
     <string name="volbtn_cursor_control_on">Volume su/giù muove il cursore a sinistra/destra</string>
     <string name="volbtn_cursor_control_on_reverse">Volume su/giù muove il cursore a destra/sinistra</string>
     <string name="swap_volume_buttons_title">Riorienta</string>
-    <string name="swap_volume_buttons_summary">Inverti i tasti del volume in base alla rotazione del telefono</string>
+    <string name="swap_volume_buttons_summary">Inverti i tasti del volume quando lo schermo è ruotato</string>
     <string name="home_answer_call_title">Rispondi alla chiamata</string>
-    <string name="home_answer_call_summary">Rispondi alla chiamata in arrivo premendo il tasto home</string>
+    <string name="home_answer_call_summary">Rispondi alle chiamate in arrivo premendo il tasto home</string>
     <string name="power_menu_title">Menu di accensione</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_screenshot_summary">Premi a lungo per screenshot parziale</string>

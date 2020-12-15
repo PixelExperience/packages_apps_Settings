@@ -98,6 +98,8 @@
     <string name="additional_buttons_title">Botons addicionals</string>
     <string name="status_bar_title">Barra d\'estat</string>
     <string name="status_bar_quick_qs_pulldown_title">Baixada ràpida</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">La vora esquerra de la barra d\'estat desplegarà el panell d\'ajustos ràpids</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">La vora dreta de la barra d\'estat desplegarà el panell d\'ajustos ràpids</string>
     <string name="status_bar_quick_qs_pulldown_off">No</string>
     <string name="status_bar_quick_qs_pulldown_left">Esquerra</string>
     <string name="status_bar_quick_qs_pulldown_right">Dreta</string>
@@ -130,6 +132,9 @@
     <string name="status_bar_brightness_slider_summary">Ajusta la lluminositat des de la configuració ràpida</string>
     <string name="status_bar_brightness_slider_auto_title">Lluminositat automàtica</string>
     <string name="status_bar_brightness_slider_auto_summary">Mostra el botó de lluminositat automàtica al costat de la barra</string>
+    <string name="status_bar_brightness_slider_show_never">No mostrar mai</string>
+    <string name="status_bar_brightness_slider_show_expanded">Mostra quan s\'expandeix</string>
+    <string name="status_bar_brightness_slider_show_always">Mostrar sempre</string>
     <string name="status_bar_toggle_brightness">Control de lluminositat</string>
     <string name="status_bar_toggle_brightness_summary">Ajusta la lluminositat lliscant a través de la barra d\'estat</string>
     <string name="network_traffic_settings_title">Monitor de trànsit de xarxa</string>
@@ -233,6 +238,17 @@
     <string name="back_options_dialog_title">Opcions</string>
     <string name="back_height_message">Quantitat d\'altura de la pantalla que es fa servir com a regió per al gest enrere.</string>
     <string name="navbar_gesture_pill_toggle_title">Amagar el botó de la barra de navegació.</string>
+    <string name="data_usage_app_restrict_all">Permet l\'accés a la xarxa</string>
+    <string name="data_usage_app_restrict_all_summary">Permet a l\'aplicació accedir a la xarxa</string>
+    <string name="data_usage_app_restrict_data">Dades mòbils</string>
+    <string name="data_usage_app_restrict_data_summary">Activa l\'ús de dades mòbils</string>
+    <string name="data_usage_app_restrict_vpn">Dades VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Activa l\'ús de dades via VPN</string>
+    <string name="data_usage_app_restrict_wifi">Dades Wi\u2011Fi</string>
+    <string name="translucent_lockscreen_notifications_bg_title">Fons de notificacions translúcid</string>
+    <string name="keywords_notification_log">notificacions, registre de notificacions</string>
+    <string name="heads_up_notifications_enabled_title">Notificacions emergents</string>
+    <string name="heads_up_notifications_enabled_summary">Mostra les notificacions prioritàries en una petita finestra flotant</string>
     <string name="proximity_wake_title">Evita l\'encesa accidental</string>
     <string name="proximity_wake_summary">Comprova el sensor de proximitat abans d\'encendre la pantalla</string>
 </resources>

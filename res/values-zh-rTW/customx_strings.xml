@@ -13,7 +13,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="navigation_bar_title">導航欄</string>
     <string name="hardware_keys_power_key_title">電源鍵</string>
-    <string name="hardware_keys_volume_keys_title">音量搖杆</string>
+    <string name="hardware_keys_volume_keys_title">音量鍵</string>
     <string name="disable_navkeys_title">啟用螢幕上的導航欄</string>
     <string name="disable_navkeys_summary">啟用螢幕上的導覽欄和停用實體按鍵</string>
     <string name="kill_app_longpress_back">返回鍵可終止應用程式</string>
