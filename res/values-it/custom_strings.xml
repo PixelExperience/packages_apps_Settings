@@ -77,8 +77,8 @@ Potresti ricevere in ritardo le notifiche relative a queste app."</string>
     <string name="touchscreen_hovering_title">Touchscreen a puntamento</string>
     <string name="touchscreen_hovering_summary">Consente di utilizzare il tocco come un mouse nei browser, nei desktop remoti, ecc</string>
     <string name="connected_tws_device_saved_title">Auricolari salvati</string>
-    <string name="fod_gesture_title">Sbloccare con l\'impronta digitale quando lo schermo è spento</string>
-    <string name="fod_gesture_summary">Consente di sbloccare il dispositivo senza dovere prima accendere lo schermo</string>
+    <string name="fod_gesture_title">Sblocca con l\'impronta digitale quando lo schermo è spento</string>
+    <string name="fod_gesture_summary">Consente di sbloccare il dispositivo senza dover prima accendere lo schermo</string>
     <string name="refresh_rate_title">Frequenza di aggiornamento</string>
     <string name="refresh_rate_auto">Automatico</string>
     <string name="refresh_rate_60">60Hz (risparmia batteria)</string>

@@ -70,5 +70,7 @@ Aviseringar från dessa appar kan fördröjas."</string>
     <string name="high_touch_sensitivity_summary">Öka tryckskärmens känslighet så att den kan användas samtidigt som du bär handskar</string>
     <string name="touchscreen_hovering_title">Tryckskärm-hovring</string>
     <string name="touchscreen_hovering_summary">Låter dig hovra över skärmen som en mus i webbläsare, fjärrskrivbord, etc</string>
+    <string name="refresh_rate_title">Skärm uppdateringsfrekvens</string>
     <string name="refresh_rate_auto">Automatisk</string>
+    <string name="refresh_rate_60">60Hz (sparar batteri)</string>
 </resources>

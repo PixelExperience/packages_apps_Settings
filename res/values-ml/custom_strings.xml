@@ -13,6 +13,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="duration_less_than_one_minute">ഒരു മിനിറ്റിൽ താഴെ</string>
     <string name="screen_time_summary_usage_today">ഇന്ന് %1$s</string>
+    <string name="security_settings_face_settings_footer_moto">നിങ്ങളുടെ ഡിവൈസ് അൺലോക്ക് ചെയ്യാൻ ഫേസ് അൺലോക്ക് ഉപയോഗിക്കാം\n\nശ്രദ്ധിക്കുക:\nവെറുതെ ഫോണിൽ നോക്കിയാൽ തന്നെ അൺലോക്ക് ആയേക്കാം.\n\nനിങ്ങൾ കണ്ണ് തുറന്നിരിക്കുമ്പോൾ ആരെങ്കിലും ഫോൺ മുഖത്തിന് നേരെ പിടിച്ചാൽ അത് അൺലോക്ക് ആയേക്കാം.\n\nനിങ്ങളോട് നല്ല സാമ്യമുള്ള ആർക്കും, നിങ്ങളുടെ കുഞ്ഞുങ്ങൾക്കോ, സഹോദരങ്ങൾക്കോ, ഐഡന്റിക്കൽ ട്വിന്നിനോ ഫോൺ അൺലോക്ക് ചെയ്യാൻ കഴിഞ്ഞേക്കാം.</string>
     <string name="battery_tip_smart_battery_summary_custom">അഡാപ്റ്റീവ് ബാറ്ററി ഓണാക്കുക</string>
     <string name="smart_battery_footer_custom">"ബാറ്ററി ലൈഫ് വർദ്ധിപ്പിക്കാൻ, അപൂര്‍വ്വമായി ഉപയോഗിക്കുന്ന ആപ്പുകൾക്കായുള്ള ബാറ്ററി ഉപഭോഗം അഡാപ്റ്റീവ് ബാറ്ററി പരിമിതപ്പെടുത്തുന്നു. കാലക്രമത്തിൽ നിങ്ങൾ എങ്ങനെയാണ് ആപ്പുകൾ ഉപയോഗിക്കുന്നതെന്ന് ഫോൺ മനസിലാക്കും.
 
@@ -58,9 +59,16 @@
     <string name="backlight_summary_disabled">പ്രവർത്തനരഹിതമായി</string>
     <string name="backlight_summary_enabled_with_timeout">പ്രവർത്തിപ്പിക്കുക <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">പ്രവർത്തനമാക്കുക</string>
+    <string name="disable_navkeys_summary">ഓൺ-സ്ക്രീൻ നാവിഗേഷൻ ബാർ ഓണ്ണാക്കുകയും ഹാർഡ്‌വെയർ ബട്ടണുകൾ ഓഫ് ചെയ്യുകയും ചെയ്യുക</string>
+    <string name="battery_light_title">ചാർജ് ചെയ്യുമ്പോൾ ലൈറ്റ് ഓണാക്കുക</string>
     <string name="high_touch_sensitivity_title">ഉയര്‍ന്ന സ്പര്‍ശന സംവേദനക്ഷമത</string>
     <string name="high_touch_sensitivity_summary">കയ്യുറകൾ ധരിച്ചിരിക്കുമ്പോള്‍ ഉപയോഗിക്കുന്നതിനായി ടച്ച്സ്ക്രീൻ സെന്‍സിറ്റിവിറ്റി വര്‍ദ്ധിപ്പിക്കുക</string>
     <string name="touchscreen_hovering_title">ടച്ച്സ്ക്രീൻ ഹോവറിംഗ്</string>
     <string name="touchscreen_hovering_summary">വെബ് ബ്രൌസറുകള്‍, റിമോട്ട് ഡെസ്ക്ടോപ്പുകള്‍ തുടങ്ങിയവയിലെ മൌസ് എന്നപോലെ സ്ക്രീന്‍ ഹോവര്‍ ചെയ്യാന്‍ നിങ്ങളെ അനുവദിക്കുന്നു.</string>
+    <string name="connected_tws_device_saved_title">സേവ് ചെയ്തിട്ടുള്ള ഇയർബഡ്ഡുകൾ</string>
+    <string name="fod_gesture_title">സ്‌ക്രീൻ ഓഫായിരിക്കുമ്പോൾ വിരലടയാളം വെച്ച് അൺലോക്ക് ചെയ്യാം</string>
+    <string name="fod_gesture_summary">ആദ്യം സ്‌ക്രീൻ ഉണർത്താതെ ഡിവൈസ് അൺലോക്ക് ചെയ്യുന്നതിനെ അനുവദിക്കാം</string>
+    <string name="refresh_rate_title">സ്‌ക്രീൻ റിഫ്രഷ് റേറ്റ്</string>
     <string name="refresh_rate_auto">ഓട്ടോമാറ്റിക്ക്</string>
+    <string name="refresh_rate_60">60Hz (ബാറ്ററി സേവ് ചെയ്യാം)</string>
 </resources>
