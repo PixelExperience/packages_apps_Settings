@@ -71,7 +71,7 @@
     <string name="backlight_summary_enabled">Ενεργοποιημένο</string>
     <string name="disable_navkeys_title">Ενεργοποίηση γραμμής πλοήγησης στην οθόνη</string>
     <string name="disable_navkeys_summary">Ενεργοποίηση της γραμμής πλοήγησης στην οθόνη και απενεργοποίηση των φυσικών πλήκτρων</string>
-    <string name="battery_light_title">Ενεργοποίησε το φωτισμό κατά τη φόρτιση</string>
+    <string name="battery_light_title">Ενεργοποίση φωτισμού κατά τη φόρτιση</string>
     <string name="high_touch_sensitivity_title">Υψηλή ευαισθησία αφής</string>
     <string name="high_touch_sensitivity_summary">Αύξηση της ευαισθησίας της οθόνης αφής έτσι ώστε να μπορεί να χρησιμοποιηθεί φορώντας γάντια</string>
     <string name="touchscreen_hovering_title">Αιώρηση οθόνης αφής</string>

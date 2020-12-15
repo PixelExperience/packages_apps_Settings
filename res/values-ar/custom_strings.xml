@@ -77,6 +77,9 @@
     <string name="touchscreen_hovering_title">المرور فوق الشاشة اللمسية</string>
     <string name="touchscreen_hovering_summary">يسمح لك بالمرور فوق الشاشة مثل الماوس في مستعرضات الويب، أو سطح المكتب عن بُعد، إلخ</string>
     <string name="connected_tws_device_saved_title">سماعات الأذن المحفوظة</string>
+    <string name="fod_gesture_title">إلغاء القفل بواسطة بصمة الإصبع عندما تكون الشاشة مقفلة</string>
+    <string name="fod_gesture_summary">تمكين إلغاء قفل الجهاز بدون الحاجة إلى إيقاظ الشاشة أولا</string>
     <string name="refresh_rate_title">معدل تحديث الرسم البياني</string>
     <string name="refresh_rate_auto">تلقائي</string>
+    <string name="refresh_rate_60">٦٠ هيرتز (يوفر البطارية)</string>
 </resources>

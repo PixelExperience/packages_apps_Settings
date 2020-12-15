@@ -3,9 +3,9 @@
     <plurals name="backlight_timeout_time">
         <item quantity="zero"><xliff:g id="seconds">%d</xliff:g>ثانية</item>
         <item quantity="one"><xliff:g id="seconds">%d</xliff:g> ثانية</item>
-        <item quantity="two"><xliff:g id="seconds">%d</xliff:g> ثواني</item>
-        <item quantity="few"><xliff:g id="seconds">%d</xliff:g> ثواني</item>
-        <item quantity="many"><xliff:g id="seconds">%d</xliff:g> ثواني</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> ثواني</item>
+        <item quantity="two"><xliff:g id="seconds">%d</xliff:g> ثوان</item>
+        <item quantity="few"><xliff:g id="seconds">%d</xliff:g> ثوان</item>
+        <item quantity="many"><xliff:g id="seconds">%d</xliff:g> ثانية</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> ثوان</item>
     </plurals>
 </resources>

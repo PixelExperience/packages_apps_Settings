@@ -23,13 +23,13 @@ Benachrichtigungen werden für die entsprechenden Apps eventuell verzögert ange
     <string name="smart_battery_title_custom">Funktion \"Intelligenter Akku\" verwenden</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Finden Sie den Fingerabdrucksensor auf der Vorderseite des Telefons.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Finden Sie den Fingerabdrucksensor auf der linken Seite des Telefons.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Nutzten Sie den Fingerabdrucksensor auf der rechten Seite des Telefons.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Nutzten Sie den Fingerabdrucksensor auf der Vorderseite des Gerätes.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Nutzten Sie den Fingerabdrucksensor auf der rechten Seite des Gerätes.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Nutzten Sie den Fingerabdrucksensor auf der rechten Seite des Gerätes.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Nutzten Sie den Fingerabdrucksensor auf der Vorderseite des Tablets.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Nutzten Sie den Fingerabdrucksensor auf der linken Seite des Tablets.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Nutzten Sie den Fingerabdrucksensor auf der rechten Seite des Tablets.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Nutzen Sie den Fingerabdrucksensor auf der rechten Seite des Telefons.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Nutzen Sie den Fingerabdrucksensor auf der Vorderseite des Gerätes.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Nutzen Sie den Fingerabdrucksensor auf der rechten Seite des Gerätes.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Nutzen Sie den Fingerabdrucksensor auf der rechten Seite des Gerätes.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Nutzen Sie den Fingerabdrucksensor auf der Vorderseite des Tablets.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Nutzen Sie den Fingerabdrucksensor auf der linken Seite des Tablets.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Nutzen Sie den Fingerabdrucksensor auf der rechten Seite des Tablets.</string>
     <string name="reset">Zurücksetzen</string>
     <string name="button_pref_title">Tasten</string>
     <string name="hardware_keys_home_key_title">Home-Taste</string>
