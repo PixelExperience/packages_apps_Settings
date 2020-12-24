@@ -21,6 +21,10 @@
     android:key="gesture_swipe_to_screenshot"
     android:title="@string/swipe_to_screenshot_gesture_title">
 
+    <com.android.settings.widget.VideoPreference 
+        android:key="swipe_to_screenshot_video"
+        app:lottieAnimation="@raw/gesture_swipe_to_screenshot" />
+
     <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="swipe_to_screenshot"
         android:title="@string/swipe_to_screenshot_gesture_title"

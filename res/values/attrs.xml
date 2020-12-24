@@ -118,6 +118,7 @@
         <attr name="animation" format="reference" />
         <attr name="preview" format="reference" />
         <attr name="vectorAnimation" format="reference" />
+        <attr name="lottieAnimation" format="reference" />
     </declare-styleable>
 
     <!-- For AspectRatioFrameLayout -->

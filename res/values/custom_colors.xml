@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lottie animation -->
+    <color name="illustration_color_bezel">#EDEDED</color>
+    <color name="illustration_color_frame">#DADADA</color>
+    <color name="illustration_color_screen">#FFFFFF</color>
+    <color name="illustration_color_screen_off">#101010</color>
+    <color name="illustration_color_highlight">@android:color/black</color>
+</resources>

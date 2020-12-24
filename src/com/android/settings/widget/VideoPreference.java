@@ -50,6 +50,7 @@ public class VideoPreference extends Preference {
     private int mPreviewId;
     private int mAnimationId;
     private int mVectorAnimationId;
+    private int mLottieAnimationId;
     private int mHeight = LinearLayout.LayoutParams.MATCH_PARENT - 1; // video height in pixels
     private TextureView mVideo;
     private ImageView mPreviewImage;
@@ -84,7 +85,10 @@ public class VideoPreference extends Preference {
                     : mPreviewId;
             mVectorAnimationId = attributes.getResourceId(
                     R.styleable.VideoPreference_vectorAnimation, 0);
-            if (mPreviewId == 0 && mAnimationId == 0 && mVectorAnimationId == 0) {
+            mLottieAnimationId = attributes.getResourceId(
+                    R.styleable.VideoPreference_lottieAnimation, 0);
+
+            if (mPreviewId == 0 && mAnimationId == 0 && mVectorAnimationId == 0 && mLottieAnimationId == 0) {
                 setVisible(false);
                 return;
             }
@@ -164,6 +168,10 @@ public class VideoPreference extends Preference {
     }
 
     private void initAnimationController() {
+        if (mLottieAnimationId != 0) {
+            mAnimationController = new LottieAnimationController(mContext, mLottieAnimationId);
+            return;
+        }
         if (mVectorAnimationId != 0) {
             mAnimationController = new VectorAnimationController(mContext, mVectorAnimationId);
             return;
@@ -206,7 +214,7 @@ public class VideoPreference extends Preference {
     /**
      * Handle animation operations.
      */
-    interface AnimationController {
+    public interface AnimationController {
         /**
          * Pauses the animation.
          */

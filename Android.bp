@@ -27,7 +27,7 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.java", "src/**/*.kt"],
 
     resource_dirs: ["res",
                     "TouchGestures/res"
@@ -62,6 +62,7 @@ android_library {
         "VendorSupport-preference",
         "faceunlock_framework",
         "vendor.lineage.fastcharge-V1.0-java",
+        "lottie",
     ],
 
     libs: [
