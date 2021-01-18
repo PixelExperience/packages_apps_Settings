@@ -107,6 +107,7 @@ android_library {
         "SystemUIUnfoldLib",
         "custom-preference",
         "faceunlock_framework",
+        "vendor.lineage.fastcharge-V1.0-java",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],
