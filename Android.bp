@@ -82,6 +82,7 @@ android_library {
         "WifiTrackerLib",
         "SettingsLibActivityEmbedding",
         "custom-preference",
+        "vendor.lineage.fastcharge-V1.0-java",
     ],
 
     libs: [
