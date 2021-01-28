@@ -21,6 +21,15 @@
         android:title="@string/gesture_preference_title"
         settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController" />
 
+    <!-- Button Settings -->
+    <Preference
+        android:key="button_settings"
+        android:title="@string/button_pref_title"
+        android:icon="@drawable/ic_button_settings"
+        android:order="-249"
+        android:fragment="com.android.settings.custom.buttons.ButtonSettings"
+        settings:controller="com.android.settings.custom.buttons.ButtonSettingsPreferenceController"/>
+
     <Preference
         android:fragment="com.android.settings.datetime.DateTimeSettings"
         android:icon="@drawable/ic_settings_date_time"
