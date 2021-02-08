@@ -26,6 +26,8 @@ import androidx.preference.Preference;
 
 import com.android.settings.Utils;
 
+import com.motorola.settings.biometrics.FaceUtils;
+
 /**
  * Preference controller giving the user an option to always require confirmation.
  */
@@ -75,6 +77,6 @@ public class FaceSettingsConfirmPreferenceController extends FaceSettingsPrefere
 
     @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE;
+        return FaceUtils.isFaceUnlockSupported() ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
     }
 }
