@@ -462,7 +462,8 @@
         <activity android:name="Settings$AssistGestureSettingsActivity"
             android:label="@string/assist_gesture_title"
             android:exported="true"
-            android:icon="@drawable/ic_settings_gestures">
+            android:icon="@drawable/ic_settings_gestures"
+            android:enabled="@bool/config_should_enable_assist_gesture_settings">
             <intent-filter>
                 <action android:name="android.settings.ASSIST_GESTURE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
