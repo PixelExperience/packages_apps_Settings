@@ -178,7 +178,7 @@
         android:key="double_tap_sleep_gesture"
         android:title="@string/status_bar_double_tap_to_sleep_title"
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <com.android.settings.custom.preference.GlobalSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
