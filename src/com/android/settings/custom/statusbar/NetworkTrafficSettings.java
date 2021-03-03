@@ -48,7 +48,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.network_traffic_settings);
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        mHasNotch = CutoutUtils.hasCutout(getActivity(), true /* ignoreCutoutMasked*/);
+        mHasNotch = CutoutUtils.hasCutout(getActivity());
 
         mNetTrafficMode = findPreference(Settings.System.NETWORK_TRAFFIC_LOCATION);
         mNetTrafficMode.setOnPreferenceChangeListener(this);
