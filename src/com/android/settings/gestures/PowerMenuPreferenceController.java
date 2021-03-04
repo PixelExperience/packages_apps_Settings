@@ -38,20 +38,24 @@ public class PowerMenuPreferenceController extends BasePreferenceController {
 
     @Override
     public CharSequence getSummary() {
-        boolean controlsVisible = isControlsAvailable()
-                && Settings.Secure.getInt(mContext.getContentResolver(),
+        return getPrefSummary(mContext);
+    }
+
+    public static String getPrefSummary(Context context){
+        boolean controlsVisible = isControlsAvailable(context)
+                && Settings.Secure.getInt(context.getContentResolver(),
                         CONTROLS_ENABLED_SETTING, 1) == 1;
-        boolean cardsVisible = isCardsAvailable()
-                && Settings.Secure.getInt(mContext.getContentResolver(),
+        boolean cardsVisible = isCardsAvailable(context)
+                && Settings.Secure.getInt(context.getContentResolver(),
                         CARDS_ENABLED_SETTING, 0) == 1;
         if (controlsVisible && cardsVisible) {
-            return mContext.getText(R.string.power_menu_cards_passes_device_controls);
+            return context.getString(R.string.power_menu_cards_passes_device_controls);
         } else if (controlsVisible) {
-            return mContext.getText(R.string.power_menu_device_controls);
+            return context.getString(R.string.power_menu_device_controls);
         } else if (cardsVisible) {
-            return mContext.getText(R.string.power_menu_cards_passes);
+            return context.getString(R.string.power_menu_cards_passes);
         } else {
-            return mContext.getText(R.string.power_menu_none);
+            return context.getString(R.string.power_menu_none);
         }
     }
 
@@ -60,12 +64,12 @@ public class PowerMenuPreferenceController extends BasePreferenceController {
         return AVAILABLE;
     }
 
-    private boolean isControlsAvailable() {
-        return mContext.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CONTROLS);
+    private static boolean isControlsAvailable(Context context) {
+        return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CONTROLS);
     }
 
-    private boolean isCardsAvailable() {
-        return Settings.Secure.getInt(mContext.getContentResolver(),
+    private static boolean isCardsAvailable(Context context) {
+        return Settings.Secure.getInt(context.getContentResolver(),
                 CARDS_AVAILABLE_SETTING, 0) == 1;
     }
 }
