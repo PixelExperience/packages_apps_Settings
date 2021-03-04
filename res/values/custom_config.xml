@@ -18,4 +18,16 @@
     <!-- Whether assist gesture settings should be enabled -->
     <bool name="config_should_enable_assist_gesture_settings">true</bool>
 
+    <!-- The position of the volume rocker, as opposed to the natural
+         orientation of the display.
+         Currently used for the volume button re-orient functionality.
+         This integer should be set to:
+         1 - if the volume rocker is on (or parallel to) one the lateral
+             sides, relative to the natural orientation of the display
+             (true for all phones and some tablets)
+         2 - the volume rocker is on (or parallel to) the top or bottom,
+             relative to the natural orientation of the display
+             (true for some tablets) -->
+    <integer name="config_volumeRockerVsDisplayOrientation">1</integer>
+
 </resources>
