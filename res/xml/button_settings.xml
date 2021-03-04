@@ -43,6 +43,11 @@
         android:key="power_key"
         android:title="@string/hardware_keys_power_key_title">
 
+        <Preference
+            android:key="gesture_power_menu_summary"
+            android:title="@string/power_menu_setting_name"
+            android:fragment="com.android.settings.gestures.PowerMenuSettings" />
+
         <SwitchPreference
             android:key="power_end_call"
             android:title="@string/power_end_call_title"

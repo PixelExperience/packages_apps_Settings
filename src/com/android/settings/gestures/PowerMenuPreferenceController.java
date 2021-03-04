@@ -32,14 +32,18 @@ public class PowerMenuPreferenceController extends BasePreferenceController {
 
     @Override
     public CharSequence getSummary() {
-        final int powerButtonValue = PowerMenuSettingsUtils.getPowerButtonSettingValue(mContext);
+        return getPrefSummary(mContext);
+    }
+
+    public static String getPrefSummary(Context context){
+        final int powerButtonValue = PowerMenuSettingsUtils.getPowerButtonSettingValue(context);
         if (powerButtonValue == LONG_PRESS_POWER_ASSISTANT_VALUE) {
-            return mContext.getText(R.string.power_menu_summary_long_press_for_assist_enabled);
+            return context.getString(R.string.power_menu_summary_long_press_for_assist_enabled);
         } else if (powerButtonValue == LONG_PRESS_POWER_GLOBAL_ACTIONS) {
-            return mContext.getText(
+            return context.getString(
                     R.string.power_menu_summary_long_press_for_assist_disabled_with_power_menu);
         } else {
-            return mContext.getText(
+            return context.getString(
                     R.string.power_menu_summary_long_press_for_assist_disabled_no_action);
         }
     }
