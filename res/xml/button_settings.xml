@@ -91,7 +91,7 @@
             android:key="volbtn_music_controls"
             android:title="@string/volbtn_music_controls_title"
             android:summary="@string/volbtn_music_controls_summary"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
         <ListPreference
             android:key="volume_key_cursor_control"
