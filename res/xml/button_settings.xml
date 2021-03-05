@@ -104,6 +104,12 @@
             android:key="swap_volume_buttons"
             android:title="@string/swap_volume_buttons_title"
             android:summary="@string/swap_volume_buttons_summary" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="click_partial_screenshot"
+            android:title="@string/click_partial_screenshot_title"
+            android:summary="@string/click_partial_screenshot_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -274,18 +280,6 @@
             android:key="camera_launch"
             android:title="@string/camera_launch_title"
             android:summary="@string/camera_launch_summary"
-            android:defaultValue="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="others_category"
-        android:title="@string/others_settings_title">
-
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="click_partial_screenshot"
-            android:title="@string/click_partial_screenshot_title"
-            android:summary="@string/click_partial_screenshot_summary"
             android:defaultValue="false" />
 
     </PreferenceCategory>
