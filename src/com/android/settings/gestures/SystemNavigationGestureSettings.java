@@ -40,6 +40,7 @@ import androidx.annotation.VisibleForTesting;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
+import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.SettingsTutorialDialogWrapperActivity;
 import com.android.settings.dashboard.suggestions.SuggestionFeatureProvider;
 import com.android.settings.overlay.FeatureFactory;
@@ -57,6 +58,10 @@ import com.android.settingslib.widget.RadioButtonPreference;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.android.settings.custom.buttons.LegacyNavigationSettingsFragment;
+
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 @SearchIndexable
 public class SystemNavigationGestureSettings extends RadioButtonPickerFragment implements
@@ -139,12 +144,18 @@ public class SystemNavigationGestureSettings extends RadioButtonPickerFragment i
         pref.setSummary(((CandidateInfoExtra) info).loadSummary());
 
         RadioButtonPreferenceWithExtraWidget p = (RadioButtonPreferenceWithExtraWidget) pref;
+        p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_SETTING);
         if (info.getKey() == KEY_SYSTEM_NAV_GESTURAL) {
-            p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_SETTING);
             p.setExtraWidgetOnClickListener((v) -> startActivity(new Intent(
                     GestureNavigationSettingsFragment.GESTURE_NAVIGATION_SETTINGS)));
         } else {
-            p.setExtraWidgetVisibility(EXTRA_WIDGET_VISIBILITY_GONE);
+            p.setExtraWidgetOnClickListener((v) -> {
+                new SubSettingLauncher(getContext())
+                    .setDestination(LegacyNavigationSettingsFragment.class.getName())
+                    .setTitleRes(R.string.navigation_bar_title)
+                    .setSourceMetricsCategory(MetricsEvent.CUSTOM_SETTINGS)
+                    .launch();
+            });
         }
     }
 
