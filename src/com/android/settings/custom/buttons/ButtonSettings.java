@@ -124,7 +124,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_SWAP_CAPACITIVE_KEYS = "swap_capacitive_keys_cat";
     private static final String CATEGORY_NAVBAR = "navbar_key";
     private static final String CATEGORY_POWER = "power_key";
-    private static final String CATEGORY_OTHERS = "others_category";
 
     private SwitchPreference mNavigationMenuArrowKeys;
     private SwitchPreference mNavigationInverse;
@@ -191,7 +190,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         final PreferenceCategory backlightCat = findPreference(CATEGORY_BACKLIGHT);
         final PreferenceCategory swapCapacitiveKeysCat = findPreference(CATEGORY_SWAP_CAPACITIVE_KEYS);
         final PreferenceCategory powerCategory = prefScreen.findPreference(CATEGORY_POWER);
-        final PreferenceCategory othersCategory = prefScreen.findPreference(CATEGORY_OTHERS);
 
         mHandler = new Handler();
 
@@ -482,8 +480,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
         } else {
             prefScreen.removePreference(volumeCategory);
-            prefScreen.removePreference(othersCategory);
-            //othersCategory.removePreference(findPreference(KEY_CLICK_PARTIAL_SCREENSHOT));
         }
 
         // Navigation bar modes

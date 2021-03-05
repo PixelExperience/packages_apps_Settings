@@ -105,6 +105,12 @@
             android:key="swap_volume_buttons"
             android:title="@string/swap_volume_buttons_title"
             android:summary="@string/swap_volume_buttons_summary" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="click_partial_screenshot"
+            android:title="@string/click_partial_screenshot_title"
+            android:summary="@string/click_partial_screenshot_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -298,12 +304,6 @@
             <intent
                 android:action="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
         </com.android.settings.custom.preference.RemotePreference>
-
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="click_partial_screenshot"
-            android:title="@string/click_partial_screenshot_title"
-            android:summary="@string/click_partial_screenshot_summary"
-            android:defaultValue="false" />
 
     </PreferenceCategory>
 </PreferenceScreen>
