@@ -200,7 +200,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mNavbarCategory = prefScreen.findPreference(CATEGORY_NAVBAR);
         mNavigationMenuArrowKeys = findPreference(KEY_NAV_MENU_ARROW_KEYS);
         mNavigationInverse = findPreference(KEY_NAV_INVERSE);
-        mNavigationInverse.setOnPreferenceChangeListener(this);
         mNavigationGestures = findPreference(KEY_NAV_GESTURES);
         mNavigationCompactLayout = findPreference(KEY_NAV_COMPACT_LAYOUT);
 
@@ -647,18 +646,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mAppSwitchLongPressAction) {
             handleListChange((ListPreference) preference, newValue,
                     Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
-            return true;
-        }else if (preference == mNavigationInverse) {
-            mNavigationInverse.setEnabled(false);
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        mNavigationInverse.setEnabled(true);
-                    }catch(Exception e){
-                    }
-                }
-            }, 1000);
             return true;
         }else if (preference == mVolumeKeyCursorControl) {
             handleListChange(mVolumeKeyCursorControl, newValue,
