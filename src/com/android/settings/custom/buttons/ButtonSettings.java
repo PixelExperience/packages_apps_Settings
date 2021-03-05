@@ -497,6 +497,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     }
 
     private void updateNavigationBarModeState(){
+        final ContentResolver resolver = getActivity().getContentResolver();
         String mode = NavbarUtils.getNavigationBarModeOverlay(getActivity(), mOverlayManager);
         if (!mode.equals(NAV_BAR_MODE_3BUTTON_OVERLAY) && !mode.equals(NAV_BAR_MODE_2BUTTON_OVERLAY)){
             if (mNavigationMenuArrowKeys != null){
@@ -525,6 +526,18 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         if (mNavbarCategory != null && mNavbarCategory.getPreferenceCount() == 0){
             getPreferenceScreen().removePreference(mNavbarCategory);
             mNavbarCategory = null;
+        }
+        if (mNavigationMenuArrowKeys != null){
+            mNavigationMenuArrowKeys.setChecked(
+                Settings.System.getInt(resolver, Settings.System.NAVIGATION_BAR_MENU_ARROW_KEYS, 0) != 0);
+        }
+        if (mNavigationInverse != null){
+            mNavigationInverse.setChecked(
+                Settings.Secure.getInt(resolver, KEY_NAV_INVERSE, 0) != 0);
+        }
+        if (mNavigationCompactLayout != null){
+            mNavigationCompactLayout.setChecked(
+                Settings.System.getInt(resolver, Settings.System.NAV_BAR_COMPACT_LAYOUT, 0) != 0);
         }
     }
 
