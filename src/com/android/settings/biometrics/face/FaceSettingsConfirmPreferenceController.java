@@ -26,8 +26,6 @@ import androidx.preference.Preference;
 
 import com.android.settings.Utils;
 
-import com.android.settings.custom.biometrics.FaceUtils;
-
 /**
  * Preference controller giving the user an option to always require confirmation.
  */
@@ -37,7 +35,7 @@ public class FaceSettingsConfirmPreferenceController extends FaceSettingsPrefere
 
     private static final int ON = 1;
     private static final int OFF = 0;
-    private static final int DEFAULT = OFF;
+    private static final int DEFAULT = ON;
 
     private FaceManager mFaceManager;
 
@@ -77,6 +75,6 @@ public class FaceSettingsConfirmPreferenceController extends FaceSettingsPrefere
 
     @Override
     public int getAvailabilityStatus() {
-        return FaceUtils.isFaceUnlockSupported() ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
+        return AVAILABLE;
     }
 }
