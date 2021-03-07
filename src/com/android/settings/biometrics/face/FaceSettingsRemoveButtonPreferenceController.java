@@ -36,7 +36,6 @@ import com.android.settings.SettingsActivity;
 import com.android.settings.biometrics.BiometricUtils;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
-import com.android.settings.custom.biometrics.FaceUtils;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.widget.LayoutPreference;
@@ -91,10 +90,6 @@ public class FaceSettingsRemoveButtonPreferenceController extends BasePreference
                 dialogMessageRes = isConvenience
                         ? R.string.security_settings_face_settings_remove_dialog_details_convenience
                         : R.string.security_settings_face_settings_remove_dialog_details;
-            }
-
-            if (FaceUtils.isFaceUnlockSupported()) {
-                dialogMessageRes = R.string.security_settings_face_settings_remove_dialog_details_custom;
             }
 
             builder.setTitle(R.string.security_settings_face_settings_remove_dialog_title)

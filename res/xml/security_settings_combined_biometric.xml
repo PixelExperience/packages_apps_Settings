@@ -51,8 +51,8 @@
 
     <PreferenceCategory
         android:key="biometric_ways_to_use"
-        android:title="@string/biometric_settings_category_use_face_fingerprint">
-
+        android:title="@string/biometric_settings_category_use_face_fingerprint"
+        settings:controller="com.android.settings.biometrics.combination.BiometricWaysToUsePreferenceController">
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="biometric_settings_biometric_keyguard"
             android:title="@string/biometric_settings_use_biometric_unlock_phone"

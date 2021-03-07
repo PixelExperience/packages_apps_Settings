@@ -36,7 +36,6 @@ import com.android.settings.utils.AnnotationSpan;
 import com.android.settingslib.HelpUtils;
 
 import java.util.List;
-import com.android.settings.custom.biometrics.FaceUtils;
 
 /**
  * Footer for face settings showing the help text and help link.
@@ -80,9 +79,7 @@ public class FaceSettingsFooterPreferenceController extends BasePreferenceContro
 
         int footerRes;
         boolean isAttentionSupported = mProvider.isAttentionSupported(mContext);
-        if (FaceUtils.isFaceUnlockSupported()) {
-            footerRes = R.string.security_settings_face_settings_footer_custom;
-        } else if (mIsFaceStrong) {
+        if (mIsFaceStrong) {
             footerRes = isAttentionSupported
                     ? R.string.security_settings_face_settings_footer_class3
                     : R.string.security_settings_face_settings_footer_attention_not_supported;
