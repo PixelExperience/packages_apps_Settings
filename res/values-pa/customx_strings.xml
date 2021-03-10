@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="display_cutout_mode_normal">ਪੂਰਵ-ਨਿਰਧਾਰਤ</string>
+    <string name="live_display_day">ਦਿਨ</string>
+    <string name="live_display_night">ਰਾਤ</string>
+</resources>

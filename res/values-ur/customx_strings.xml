@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="display_cutout_mode_normal">پہلے سے طے شدہ</string>
+    <string name="network_traffic_mode_disable">غیر فعال</string>
+    <string name="live_display_day">دن</string>
+    <string name="live_display_night">رات</string>
+    <string name="volbtn_cursor_control_off">غیر فعال</string>
+</resources>

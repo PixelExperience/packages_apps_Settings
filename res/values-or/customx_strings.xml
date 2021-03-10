@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wake_when_plugged_or_unplugged_title">ପ୍ଲଗ୍‍କୁ ଉଠାନ୍ତୁ</string>
+    <string name="wake_when_plugged_or_unplugged_summary">ଏକ ପାୱାର୍‍ ଉତ୍ସ ସଂଯୋଗ ବା ବିଛିନ୍ନ କରିବା ସମୟରେ ସ୍କ୍ରିନ୍‍ ଅନ୍‍ କରନ୍ତୁ</string>
+    <string name="unlock_scramble_pin_layout_title">ସ୍କ୍ରାମେବୁଲ୍‍ ଲେଆଉଟ୍‍</string>
+    <string name="unlock_scramble_pin_layout_summary">ଡିଭାଇସ୍‍ ଅ୍ନ୍‍ଲକ୍‍ କରିବା ସମୟରେ ସ୍କ୍ରାମେବୁଲ୍ PIN ଲେଆଉଟ୍‍</string>
+    <string name="increasing_ring_volume_option_title">ରିଙ୍ଗ୍‍ ଭୋଲ୍ୟୁମ୍‍ ବଢାଯାଉଛି</string>
+    <string name="increasing_ring_min_volume_title">ଭୋଲ୍ୟୁମ୍‍ ଆରଭ କରନ୍ତୁ</string>
+    <string name="increasing_ring_ramp_up_time_title">ସମୟ ରାମ୍ପ୍‍-ଅପ୍‍ କରନ୍ତୁ</string>
+    <string name="lockpattern_settings_enable_error_path_title">ପ୍ୟାଟର୍ଣ୍ଣ ତ୍ରୁଟି ଦେଖାନ୍ତୁ</string>
+    <string name="lockpattern_settings_enable_dots_title">ପାଟର୍ଣ୍ଣ ଡ୍ଟ୍ସ ଦେଖାନ୍ତୁ</string>
+    <string name="display_cutout_mode_normal">ଡିଫଲ୍ଟ</string>
+    <string name="live_display_day">ଦିନ</string>
+    <string name="live_display_night">ରାତ୍ରି</string>
+</resources>

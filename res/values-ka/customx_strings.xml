@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="display_cutout_mode_normal">ნაგულისხმევი</string>
+    <string name="status_bar_battery_style_icon_portrait">შვეული ხატულა</string>
+    <string name="status_bar_battery_style_circle">წრიული</string>
+    <string name="status_bar_battery_style_text">ტექსტი</string>
+    <string name="status_bar_battery_percentage_title">ბატარეის პროცენტი</string>
+    <string name="status_bar_battery_percentage_text_inside">ხატულას შიგნით</string>
+    <string name="status_bar_battery_percentage_text_next">ხატულას გვერდით</string>
+</resources>
