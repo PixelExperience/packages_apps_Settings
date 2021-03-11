@@ -112,4 +112,8 @@
     <!-- FastCharge feature -->
     <string name="fast_charging_title">Fast charging</string>
     <string name="fast_charging_summary">Disable to reduce the heat produced by the device while charging or to extend the lifespan of the battery</string>
+
+    <!-- Permissions used by remote preferences -->
+    <string name="permlab_manageRemotePrefs">manage remote settings</string>
+    <string name="permdesc_manageRemotePrefs">Allows an app to manage remote settings</string>
 </resources>
