@@ -25,4 +25,16 @@
         <attr name="defaultValuePure" format="float" />
         <attr name="digits" format="integer" />
     </declare-styleable>
+
+    <declare-styleable name="lineage_SelfRemovingPreference">
+        <attr name="requiresPackage" format="string" />
+        <attr name="requiresFeature" format="string" />
+        <attr name="requiresConfig" format="string" />
+        <attr name="requiresConfigMask" format="integer" />
+        <attr name="requiresProperty" format="string" />
+        <attr name="requiresOwner" format="boolean" />
+        <attr name="requiresAction" format="string" />
+        <attr name="replacesKey" format="string" />
+        <attr name="minSummaryLines" format="integer" />
+    </declare-styleable>
 </resources>
