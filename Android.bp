@@ -1,4 +1,4 @@
-java_library {
+teste {
     name: "settings-logtags",
     srcs: ["src/**/*.logtags"],
 }
