@@ -201,6 +201,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         mNavigationGestures = findPreference(KEY_NAV_GESTURES);
         mNavigationCompactLayout = findPreference(KEY_NAV_COMPACT_LAYOUT);
 
+        mSwapCapacitiveKeys = findPreference(KEY_SWAP_CAPACITIVE_KEYS);
+        if (mSwapCapacitiveKeys != null && !isKeySwapperSupported(getActivity())) {
+            prefScreen.removePreference(swapCapacitiveKeysCat);
+            mSwapCapacitiveKeys = null;
+        }
+
         // Home button answers calls.
         mHomeAnswerCall = findPreference(KEY_HOME_ANSWER_CALL);
 
@@ -371,13 +377,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                     com.android.internal.R.bool.config_singleStageCameraKey)) {
                 mCameraSleepOnRelease.setDependency(Settings.System.CAMERA_WAKE_SCREEN);
             }
-        }
-
-        mSwapCapacitiveKeys = findPreference(KEY_SWAP_CAPACITIVE_KEYS);
-        if (mSwapCapacitiveKeys != null && !isKeySwapperSupported(getActivity())) {
-            prefScreen.removePreference(swapCapacitiveKeysCat);
-        } else {
-            mSwapCapacitiveKeys.setDependency(DISABLE_NAV_KEYS);
         }
 
         // Override key actions on Go devices in order to hide any unsupported features
