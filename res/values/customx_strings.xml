@@ -300,5 +300,6 @@
     <string name="power_menu_users_title">User switcher</string>
     <string name="power_menu_lockdown_title">Lockdown</string>
     <string name="power_menu_lockdown_unavailable">Lockdown is disabled as keyguard isn\'t secure</string>
+    <string name="power_menu_emergency_title">Emergency</string>
 
 </resources>
