@@ -36,6 +36,7 @@ import java.util.List;
 
 import com.android.internal.custom.globalactions.LineageGlobalActions;
 import com.android.internal.custom.globalactions.PowerMenuConstants;
+import com.android.internal.widget.LockPatternUtils;
 
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -52,6 +53,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private LineageGlobalActions mLineageGlobalActions;
 
     Context mContext;
+    private LockPatternUtils mLockPatternUtils;
+    private UserManager mUserManager;
     private List<String> mLocalUserConfig = new ArrayList<String>();
 
     @Override
@@ -60,6 +63,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
         addPreferencesFromResource(R.xml.power_menu_shortcuts);
         mContext = getActivity().getApplicationContext();
+        mLockPatternUtils = new LockPatternUtils(mContext);
+        mUserManager = UserManager.get(mContext);
         mLineageGlobalActions = LineageGlobalActions.getInstance(mContext);
 
         for (String action : PowerMenuConstants.getAllActions()) {
@@ -101,19 +106,21 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
                 mUsersPref = null;
             } else {
-                List<UserInfo> users = ((UserManager) mContext.getSystemService(
-                        Context.USER_SERVICE)).getUsers();
+                List<UserInfo> users = mUserManager.getUsers();
                 boolean enabled = (users.size() > 1);
                 mUsersPref.setChecked(mLineageGlobalActions.userConfigContains(
                         GLOBAL_ACTION_KEY_USERS) && enabled);
                 mUsersPref.setEnabled(enabled);
             }
         }
+
+        updatePreferences();
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        updatePreferences();
     }
 
     @Override
@@ -144,6 +151,22 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         return true;
     }
 
+    private void updatePreferences() {
+        boolean isKeyguardSecure = mLockPatternUtils.isSecure(UserHandle.myUserId());
+        boolean lockdown = Settings.Secure.getIntForUser(
+                getContentResolver(), Settings.Secure.LOCKDOWN_IN_POWER_MENU, 0,
+                UserHandle.USER_CURRENT) == 1;
+        if (mLockDownPref != null) {
+            mLockDownPref.setEnabled(isKeyguardSecure);
+            if (isKeyguardSecure) {
+                mLockDownPref.setChecked(lockdown);
+                mLockDownPref.setSummary(null);
+            } else {
+                mLockDownPref.setChecked(false);
+                mLockDownPref.setSummary(R.string.power_menu_lockdown_unavailable);
+            }
+        }
+    }
 
     @Override
     public int getMetricsCategory() {
