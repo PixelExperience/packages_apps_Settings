@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="status_bar_double_tap_to_sleep_title">הקש בכדי לכבות מסך</string>
+    <string name="status_bar_double_tap_to_sleep_title">הקש בכדי לכבות את המסך</string>
     <string name="status_bar_double_tap_to_sleep_summary">הקש פעמיים על שורת המצב או על מסך נעילה בכדי לכבות את המסך</string>
     <string name="wake_when_plugged_or_unplugged_title">הער מסך בעת חיבור</string>
     <string name="wake_when_plugged_or_unplugged_summary">הפעל את המסך כאשר מקור חשמל מתחבר או מתנתק מהמכשיר</string>
@@ -16,6 +16,8 @@
     <string name="unlock_scramble_pin_layout_title">ערבב פריסה</string>
     <string name="unlock_scramble_pin_layout_summary">ערבב את סדר לוח המקשים של הקוד בפתיחת המכשיר</string>
     <string name="volume_link_notification_title">קשר את עוצמות הצלצול וההתראות</string>
+    <string name="heads_up_notifications_enabled_title">התראות קופצות</string>
+    <string name="heads_up_notifications_enabled_summary">הראה התראות חשובות בחלון צף קטן</string>
     <string name="increasing_ring_volume_option_title">עוצמת צלצול מתגברת</string>
     <string name="increasing_ring_min_volume_title">עוצמה התחלתית</string>
     <string name="increasing_ring_ramp_up_time_title">אורך זמן ההגברה</string>
@@ -37,6 +39,8 @@
     <string name="display_rotation_270_title">270 מעלות</string>
     <string name="data_usage_app_restrict_all">אפשר גישה לרשת</string>
     <string name="data_usage_app_restrict_all_summary">אפשר לאפליקציה לגשת לרשת</string>
+    <string name="data_usage_app_restrict_mobile">נתונים סלולריים</string>
+    <string name="data_usage_app_restrict_mobile_summary">אפשר שימוש בנתונים סלולריים</string>
     <string name="data_usage_app_restrict_vpn">נתוני VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">אפשר שימוש בנתוני VPN</string>
     <string name="data_usage_app_restrict_wifi">נתוני Wi\u2011Fi</string>
@@ -57,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">משיכה מהירה</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">משיכה מהקצה השמאלי של סרגל המצב פותחת את ההגדרות המהירות</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">משיכה מהקצה הימני של סרגל המצב פותחת את ההגדרות המהירות</string>
+    <string name="status_bar_quick_qs_pulldown_off">כבוי</string>
     <string name="status_bar_quick_qs_pulldown_left">שמאל</string>
     <string name="status_bar_quick_qs_pulldown_right">ימין</string>
     <string name="status_bar_icons_title">סמלי שורת המצב</string>
@@ -158,6 +163,8 @@
     <string name="adj_contrast_title">ניגודיות</string>
     <string name="proximity_wake_title">מנע התעוררות מקרית</string>
     <string name="proximity_wake_summary">בדוק את חיישן הקירבה לפני הפעלת המסך</string>
+    <string name="show_navbar_gesture_bar_title">תנועת מחווה</string>
+    <string name="show_navbar_gesture_bar_summary">הצג תנועת מחווה בתחתית המסך</string>
     <string name="navigation_bar_title">סרגל ניווט</string>
     <string name="hardware_keys_power_key_title">לחצן הפעלה</string>
     <string name="hardware_keys_volume_keys_title">לחצני עוצמת השמע</string>
@@ -189,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 דקות</string>
     <string name="torch_long_press_power_timeout_5min">5 דקות</string>
     <string name="torch_long_press_power_timeout_10min">10 דקות</string>
-    <string name="others_settings_title">הגדרות נוספות</string>
-    <string name="additional_buttons_title">מקשים נוספים</string>
+    <string name="click_partial_screenshot_title">לחץ לצילום מסך חלקי</string>
+    <string name="click_partial_screenshot_summary">לחיצה קצרה על כפתור ההדלקה והנמכת צליל ביחד לצילום מסך חלקי</string>
     <string name="back_height_low_label">מלא</string>
     <string name="back_height_high_label">אזור תחתון</string>
     <string name="back_options_dialog_title">אפשרויות</string>
+    <string name="back_height">קצה אזור מגע</string>
 </resources>

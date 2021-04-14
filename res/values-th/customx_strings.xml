@@ -178,8 +178,6 @@
     <string name="torch_long_press_power_timeout_2min">2 นาที</string>
     <string name="torch_long_press_power_timeout_5min">5 นาที</string>
     <string name="torch_long_press_power_timeout_10min">10 นาที</string>
-    <string name="others_settings_title">การตั้งค่าอื่น ๆ</string>
-    <string name="additional_buttons_title">ปุ่มเพิ่มเติม</string>
     <string name="back_height_low_label">เต็ม</string>
     <string name="back_height_high_label">บริเวณด้านล่าง</string>
     <string name="back_options_dialog_title">ตัวเลือก</string>

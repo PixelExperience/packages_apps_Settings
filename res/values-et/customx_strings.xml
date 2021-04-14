@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 kraadi</string>
     <string name="data_usage_app_restrict_all">Lubage võrgule juurdepääs</string>
     <string name="data_usage_app_restrict_all_summary">Lubage rakendusel võrgule juurde pääseda</string>
+    <string name="data_usage_app_restrict_mobile">Mobiilne andmeside</string>
+    <string name="data_usage_app_restrict_mobile_summary">Luba mobiilse andmeside kasutus</string>
     <string name="data_usage_app_restrict_vpn">VPNi andmeside</string>
     <string name="data_usage_app_restrict_vpn_summary">Lubage VPNi andmeside kasutus</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi andmeside</string>
@@ -161,6 +163,8 @@
     <string name="adj_contrast_title">Kontrastsus</string>
     <string name="proximity_wake_title">Väldi juhuslikku äratamist</string>
     <string name="proximity_wake_summary">Kontrollige lähedussensorit enne ekraani äratamist</string>
+    <string name="show_navbar_gesture_bar_title">Navigeerimise indikaator</string>
+    <string name="show_navbar_gesture_bar_summary">Kuva navigeerimise indikaator ekraani allosas</string>
     <string name="navigation_bar_title">Navigeerimisriba</string>
     <string name="hardware_keys_power_key_title">Toitenupp</string>
     <string name="hardware_keys_volume_keys_title">Helitugevuse nupud</string>
@@ -192,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 minutit</string>
     <string name="torch_long_press_power_timeout_5min">5 minutit</string>
     <string name="torch_long_press_power_timeout_10min">10 minutit</string>
-    <string name="others_settings_title">Teised seaded</string>
-    <string name="additional_buttons_title">Täiendavad nupud</string>
+    <string name="click_partial_screenshot_title">Klõpsa osalise ekraanipildi tegemiseks</string>
+    <string name="click_partial_screenshot_summary">Osalise ekraanipildi tegemiseks klõpsa lühidalt helitugevust alla ja toitenuppu</string>
     <string name="back_height_low_label">Täielik</string>
     <string name="back_height_high_label">Alumine piirkond</string>
     <string name="back_options_dialog_title">Seaded</string>
+    <string name="back_height">Serva puuteala</string>
 </resources>

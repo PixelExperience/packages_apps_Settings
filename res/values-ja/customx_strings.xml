@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270度</string>
     <string name="data_usage_app_restrict_all">ネットワークアクセスを許可</string>
     <string name="data_usage_app_restrict_all_summary">アプリのネットワークへのアクセスを許可する</string>
+    <string name="data_usage_app_restrict_mobile">モバイルデータ</string>
+    <string name="data_usage_app_restrict_mobile_summary">モバイルデータ使用量を有効化する</string>
     <string name="data_usage_app_restrict_vpn">VPN データ</string>
     <string name="data_usage_app_restrict_vpn_summary">VPN データ使用量を有効化する</string>
     <string name="data_usage_app_restrict_wifi">Wi‑Fi データ</string>
@@ -59,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">クイックプルダウン</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">ステータスバーの左端をプルダウンしてクイック設定を開く</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">ステータスバーの右端をプルダウンしてクイック設定を開く</string>
+    <string name="status_bar_quick_qs_pulldown_off">OFF</string>
     <string name="status_bar_quick_qs_pulldown_left">左</string>
     <string name="status_bar_quick_qs_pulldown_right">右</string>
     <string name="status_bar_icons_title">ステータスバーのアイコン</string>
@@ -160,6 +163,8 @@
     <string name="adj_contrast_title">コントラスト</string>
     <string name="proximity_wake_title">偶発的なスリープ解除を防止</string>
     <string name="proximity_wake_summary">スリープ解除する前に接近センサーで確認する</string>
+    <string name="show_navbar_gesture_bar_title">ジェスチャーアイコン</string>
+    <string name="show_navbar_gesture_bar_summary">ジェスチャーのインジケーターを画面の下部に表示する</string>
     <string name="navigation_bar_title">ナビゲーションバー</string>
     <string name="hardware_keys_power_key_title">電源ボタン</string>
     <string name="hardware_keys_volume_keys_title">音量キー</string>
@@ -191,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2分</string>
     <string name="torch_long_press_power_timeout_5min">5分</string>
     <string name="torch_long_press_power_timeout_10min">10分</string>
-    <string name="others_settings_title">その他の設定</string>
-    <string name="additional_buttons_title">追加のボタン</string>
+    <string name="click_partial_screenshot_title">押して部分スクリーンショット</string>
+    <string name="click_partial_screenshot_summary">音量ダウンと電源ボタンを短くクリックして部分スクリーンショットを取得する</string>
     <string name="back_height_low_label">全画面</string>
     <string name="back_height_high_label">下部</string>
     <string name="back_options_dialog_title">オプション</string>
+    <string name="back_height">タッチ範囲の縁</string>
 </resources>

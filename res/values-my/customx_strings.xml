@@ -108,6 +108,4 @@
     <string name="torch_long_press_power_timeout_2min">၂ မိနစ်</string>
     <string name="torch_long_press_power_timeout_5min">၅ မိနစ်</string>
     <string name="torch_long_press_power_timeout_10min">၁၀ မိနစ်</string>
-    <string name="others_settings_title">အခြား ချိန်ညှိစရာများ</string>
-    <string name="additional_buttons_title">ဖြည့်စွက် ခလုတ်များ</string>
 </resources>

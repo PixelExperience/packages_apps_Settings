@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 grader</string>
     <string name="data_usage_app_restrict_all">Tillat nettverksbruk</string>
     <string name="data_usage_app_restrict_all_summary">Tillat applikasjon nettverksbruk</string>
+    <string name="data_usage_app_restrict_mobile">Mobildata</string>
+    <string name="data_usage_app_restrict_mobile_summary">Aktiver bruk av mobildata</string>
     <string name="data_usage_app_restrict_vpn">VPN-data</string>
     <string name="data_usage_app_restrict_vpn_summary">Aktiver bruk av VPN-data</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi-data</string>
@@ -59,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">Hurtig nedtrekk</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Venstre kant av statuslinjen drar ned hurtiginnstillinger</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">Høyre kant av statuslinjen drar ned hurtiginnstillinger</string>
+    <string name="status_bar_quick_qs_pulldown_off">Av</string>
     <string name="status_bar_quick_qs_pulldown_left">Venstre</string>
     <string name="status_bar_quick_qs_pulldown_right">Høyre</string>
     <string name="status_bar_icons_title">Statuslinjeikoner</string>
@@ -160,6 +163,8 @@
     <string name="adj_contrast_title">Kontrast</string>
     <string name="proximity_wake_title">Forhindre utilsiktet vekking</string>
     <string name="proximity_wake_summary">Sjekk nærhetssensoren før skjermen vekkes</string>
+    <string name="show_navbar_gesture_bar_title">Indikator for bevegelser</string>
+    <string name="show_navbar_gesture_bar_summary">Vis indikator for bevegelser nederst på skjermen</string>
     <string name="navigation_bar_title">Navigasjonslinje</string>
     <string name="hardware_keys_power_key_title">Strømknapp</string>
     <string name="hardware_keys_volume_keys_title">Volumknapper</string>
@@ -191,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 minutter</string>
     <string name="torch_long_press_power_timeout_5min">5 minutter</string>
     <string name="torch_long_press_power_timeout_10min">10 minutter</string>
-    <string name="others_settings_title">Andre innstillinger</string>
-    <string name="additional_buttons_title">Ytterligere knapper</string>
+    <string name="click_partial_screenshot_title">Trykk for å ta skjermbilde av område</string>
+    <string name="click_partial_screenshot_summary">Kort trykk av volum ned og strømknapp for å ta skjermbilde av område</string>
     <string name="back_height_low_label">Full</string>
     <string name="back_height_high_label">Nedre del</string>
     <string name="back_options_dialog_title">Alternativer</string>
+    <string name="back_height">Kantberøringsområde</string>
 </resources>

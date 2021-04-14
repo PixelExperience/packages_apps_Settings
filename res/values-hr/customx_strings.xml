@@ -191,8 +191,6 @@
     <string name="torch_long_press_power_timeout_2min">2 minute</string>
     <string name="torch_long_press_power_timeout_5min">5 minuta</string>
     <string name="torch_long_press_power_timeout_10min">10 minuta</string>
-    <string name="others_settings_title">Ostale postavke</string>
-    <string name="additional_buttons_title">Dodatne tipke</string>
     <string name="back_height_low_label">Puna</string>
     <string name="back_height_high_label">Na dnu</string>
     <string name="back_options_dialog_title">Opcije</string>

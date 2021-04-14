@@ -6,12 +6,12 @@
     <string name="wake_when_plugged_or_unplugged_summary">Włącz ekran, gdy zostanie podłączone lub rozłączone źródło zasilania</string>
     <string name="app_notification_sound_timeout_title">Minimalny czas między dźwiękami powiadomień</string>
     <string name="app_notification_sound_timeout_summary_template">Zezwól na dźwięki i wibracje, nie więcej niż jeden raz co każde <xliff:g id="duration">%1$s </xliff:g></string>
-    <string name="app_notification_sound_timeout_value_none">Brak ograniczeń</string>
+    <string name="app_notification_sound_timeout_value_none">Bez ograniczeń</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 sekund</string>
     <string name="app_notification_sound_timeout_value_30_seconds">30 sekund</string>
-    <string name="app_notification_sound_timeout_value_1_minute">1 min</string>
-    <string name="app_notification_sound_timeout_value_5_minutes">5 min</string>
-    <string name="app_notification_sound_timeout_value_15_minutes">10 min</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minuta</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
     <string name="unlock_scramble_pin_layout_title">Wymieszany układ</string>
     <string name="unlock_scramble_pin_layout_summary">Wymieszany układ cyfr przy odblokowywaniu urządzenia kodem PIN</string>
@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 stopni</string>
     <string name="data_usage_app_restrict_all">Zezwól na dostęp do sieci</string>
     <string name="data_usage_app_restrict_all_summary">Zezwól aplikacji na dostęp do sieci</string>
+    <string name="data_usage_app_restrict_mobile">Dane mobilne</string>
+    <string name="data_usage_app_restrict_mobile_summary">Włącz użycie danych mobilnych</string>
     <string name="data_usage_app_restrict_vpn">Dane VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Włącz użycie danych poprzez VPN</string>
     <string name="data_usage_app_restrict_wifi">Dane Wi\u2011Fi</string>
@@ -161,6 +163,8 @@
     <string name="adj_contrast_title">Kontrast</string>
     <string name="proximity_wake_title">Zapobiegaj przypadkowemu wybudzeniu</string>
     <string name="proximity_wake_summary">Używaj czujnika zbliżeniowego podczas wybudzania ekranu</string>
+    <string name="show_navbar_gesture_bar_title">Wskaźnik gestów</string>
+    <string name="show_navbar_gesture_bar_summary">Pokaż wskaźnik gestów w dolnej części ekranu</string>
     <string name="navigation_bar_title">Pasek nawigacji</string>
     <string name="hardware_keys_power_key_title">Przycisk zasilania</string>
     <string name="hardware_keys_volume_keys_title">Poziom głośności</string>
@@ -188,13 +192,14 @@
     <string name="torch_long_press_power_gesture_desc">Włączanie latarki przy wyłączonym ekranie przez przytrzymanie przycisku zasilania</string>
     <string name="torch_long_press_power_timeout_title">Automatycznie wyłącz latarkę</string>
     <string name="torch_long_press_power_timeout_never">Nigdy</string>
-    <string name="torch_long_press_power_timeout_1min">1 min</string>
+    <string name="torch_long_press_power_timeout_1min">1 minuta</string>
     <string name="torch_long_press_power_timeout_2min">2 minuty</string>
-    <string name="torch_long_press_power_timeout_5min">5 min</string>
-    <string name="torch_long_press_power_timeout_10min">10 min</string>
-    <string name="others_settings_title">Inne ustawienia</string>
-    <string name="additional_buttons_title">Dodatkowe przyciski</string>
+    <string name="torch_long_press_power_timeout_5min">5 minut</string>
+    <string name="torch_long_press_power_timeout_10min">10 minut</string>
+    <string name="click_partial_screenshot_title">Kliknij, aby wykonać częściowy zrzut ekranu</string>
+    <string name="click_partial_screenshot_summary">Kliknij krótko przycisk zmniejszania głośności i zasilania, aby wykonać częściowy zrzut ekranu</string>
     <string name="back_height_low_label">Pełna</string>
     <string name="back_height_high_label">Dolny obszar</string>
     <string name="back_options_dialog_title">Ustawienia</string>
+    <string name="back_height">Obszar dotyku krawędzi</string>
 </resources>

@@ -49,6 +49,7 @@
     <string name="incall_feeedback_vibrate_title">لرزش برای مشخص کردن وضع تماس</string>
     <string name="status_bar_title">نوار وضعیت</string>
     <string name="status_bar_quick_qs_pulldown_title">پایین کشیدن سریع</string>
+    <string name="status_bar_quick_qs_pulldown_off">خاموش</string>
     <string name="status_bar_quick_qs_pulldown_left">چپ</string>
     <string name="status_bar_quick_qs_pulldown_right">راست</string>
     <string name="status_bar_icons_title">آیکون های نوار وضعیت</string>
@@ -178,8 +179,6 @@
     <string name="torch_long_press_power_timeout_2min">۲ دقیقه</string>
     <string name="torch_long_press_power_timeout_5min">5 دقیقه</string>
     <string name="torch_long_press_power_timeout_10min">10 دقیقه</string>
-    <string name="others_settings_title">تنظیمات دیگر</string>
-    <string name="additional_buttons_title">دکمه های اضافی</string>
     <string name="back_height_low_label">پر</string>
     <string name="back_height_high_label">لبه پایینی </string>
     <string name="back_options_dialog_title">گزینه ها</string>

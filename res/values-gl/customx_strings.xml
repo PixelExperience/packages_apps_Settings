@@ -191,8 +191,6 @@
     <string name="torch_long_press_power_timeout_2min">2 minutos</string>
     <string name="torch_long_press_power_timeout_5min">5 minutos</string>
     <string name="torch_long_press_power_timeout_10min">10 minutos</string>
-    <string name="others_settings_title">Outros axustes</string>
-    <string name="additional_buttons_title">Botóns adicionais</string>
     <string name="back_height_low_label">Completo</string>
     <string name="back_height_high_label">Área inferior </string>
     <string name="back_options_dialog_title">Opcións</string>

@@ -32,6 +32,4 @@
     <string name="torch_long_press_power_timeout_title">Awtomatikong i-off ang torch</string>
     <string name="torch_long_press_power_timeout_never">Hindi kailanman</string>
     <string name="torch_long_press_power_timeout_2min">2 minuto</string>
-    <string name="others_settings_title">Ibang mga settings</string>
-    <string name="additional_buttons_title">Karagdagang pindutan</string>
 </resources>

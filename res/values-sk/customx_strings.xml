@@ -16,6 +16,8 @@
     <string name="unlock_scramble_pin_layout_title">Dynamické rozloženie</string>
     <string name="unlock_scramble_pin_layout_summary">Prehádzať rozloženie pre zadanie kódu PIN pri odomykaní zariadenia</string>
     <string name="volume_link_notification_title">Spojiť hlasitosti zvonenia a upozornení</string>
+    <string name="heads_up_notifications_enabled_title">Plávajúce upozornenia</string>
+    <string name="heads_up_notifications_enabled_summary">Zobraziť prioritné upozornenia v malom plávajúcom okne</string>
     <string name="increasing_ring_volume_option_title">Zvyšovanie hlasitosti zvonenia</string>
     <string name="increasing_ring_min_volume_title">Počiatočná hlasitosť</string>
     <string name="increasing_ring_ramp_up_time_title">Doba zvyšovania</string>
@@ -35,6 +37,10 @@
     <string name="display_rotation_90_title">90 stupňov</string>
     <string name="display_rotation_180_title">180 stupňov</string>
     <string name="display_rotation_270_title">270 stupňov</string>
+    <string name="data_usage_app_restrict_all">Povoliť prístup k sieti</string>
+    <string name="data_usage_app_restrict_all_summary">Povoliť používanie siete</string>
+    <string name="data_usage_app_restrict_mobile">Mobilné dáta</string>
+    <string name="data_usage_app_restrict_mobile_summary">Povoliť používanie mobilných dát</string>
     <string name="data_usage_app_restrict_vpn">Dáta VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Povoliť používanie dát VPN</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi dáta</string>
@@ -157,6 +163,8 @@
     <string name="adj_contrast_title">Kontrast</string>
     <string name="proximity_wake_title">Zabrániť nechcenému prebudeniu</string>
     <string name="proximity_wake_summary">Pred prebudením obrazovky skontrolovať senzor priblíženia</string>
+    <string name="show_navbar_gesture_bar_title">Indikátor giest</string>
+    <string name="show_navbar_gesture_bar_summary">Zobraziť indikátor k navigácii naspodu obrazovky</string>
     <string name="navigation_bar_title">Navigačný panel</string>
     <string name="hardware_keys_power_key_title">Tlačidlo Napájanie</string>
     <string name="hardware_keys_volume_keys_title">Prebudenie pomocou tlačidiel hlasitosti</string>
@@ -180,17 +188,18 @@
     <string name="home_answer_call_summary">Prijať prichádzajúci hovor stlačením tlačidla Domov</string>
     <string name="power_end_call_title">Ukončiť hovor</string>
     <string name="power_end_call_summary">Stlačením tlačidla Napájanie sa ukončí aktuálny hovor</string>
-    <string name="torch_long_press_power_gesture_title">Zapnutie baterky dlhým stlačením tlačidla Napájanie</string>
-    <string name="torch_long_press_power_gesture_desc">Keď obrazovka je vypnutá, dlhé zatlačením tlačidla Napájanie zapne Baterku</string>
-    <string name="torch_long_press_power_timeout_title">Automatické vypnutie baterky</string>
+    <string name="torch_long_press_power_gesture_title">Zapnutie svietidla dlhým stlačením tlačidla Napájanie</string>
+    <string name="torch_long_press_power_gesture_desc">Keď obrazovka je vypnutá, dlhé zatlačením tlačidla Napájanie zapne Svietidlo</string>
+    <string name="torch_long_press_power_timeout_title">Automatické vypnutie Svietidla</string>
     <string name="torch_long_press_power_timeout_never">Nikdy</string>
     <string name="torch_long_press_power_timeout_1min">1 minúta</string>
     <string name="torch_long_press_power_timeout_2min">2 minúty</string>
     <string name="torch_long_press_power_timeout_5min">5 minút</string>
     <string name="torch_long_press_power_timeout_10min">10 minút</string>
-    <string name="others_settings_title">Ostatné nastavenia</string>
-    <string name="additional_buttons_title">Ďalšie tlačidlá</string>
+    <string name="click_partial_screenshot_title">Kliknutím vytvorte čiastočný snímok obrazovky</string>
+    <string name="click_partial_screenshot_summary">Krátkym súčasným stlačením tlačidiel zníženia hlasitosti a napájanie zhotoviť čiastočnú snímku obrazovky</string>
     <string name="back_height_low_label">Úplná</string>
     <string name="back_height_high_label">Spodná oblasť</string>
     <string name="back_options_dialog_title">Možnosti</string>
+    <string name="back_height">Plocha rohového dotyku</string>
 </resources>

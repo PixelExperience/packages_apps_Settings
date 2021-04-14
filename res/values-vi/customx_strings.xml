@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 độ</string>
     <string name="data_usage_app_restrict_all">Cho phép truy cập mạng</string>
     <string name="data_usage_app_restrict_all_summary">Cho phép ứng dụng truy cập mạng</string>
+    <string name="data_usage_app_restrict_mobile">Dữ liệu di động</string>
+    <string name="data_usage_app_restrict_mobile_summary">Cho phép sử dụng dữ liệu di động</string>
     <string name="data_usage_app_restrict_vpn">Dữ liệu VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Cho phép sử dụng dữ liệu VPN</string>
     <string name="data_usage_app_restrict_wifi">Dữ liệu Wi\u2011Fi</string>
@@ -59,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">Kéo xuống nhanh</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Kéo cạnh trái của thanh trạng thái xuống để truy cập Cài đặt nhanh</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">Kéo xuống cạnh phải thanh trạng thái để truy cập Cài đặt nhanh</string>
+    <string name="status_bar_quick_qs_pulldown_off">Tắt</string>
     <string name="status_bar_quick_qs_pulldown_left">Trái</string>
     <string name="status_bar_quick_qs_pulldown_right">Phải</string>
     <string name="status_bar_icons_title">Biểu tượng thanh trạng thái</string>
@@ -160,6 +163,8 @@
     <string name="adj_contrast_title">Độ tương phản</string>
     <string name="proximity_wake_title">Ngăn chặn đánh thức tình cờ</string>
     <string name="proximity_wake_summary">Kiểm tra cảm biến tiệm cận trước khi đánh thức màn hình</string>
+    <string name="show_navbar_gesture_bar_title">Chỉ báo cử chỉ</string>
+    <string name="show_navbar_gesture_bar_summary">Hiển thị thanh gợi ý điều hướng ở dưới cùng của màn hình</string>
     <string name="navigation_bar_title">Thanh điều hướng</string>
     <string name="hardware_keys_power_key_title">Phím nguồn</string>
     <string name="hardware_keys_volume_keys_title">Phím âm lượng</string>
@@ -191,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 phút</string>
     <string name="torch_long_press_power_timeout_5min">5 phút</string>
     <string name="torch_long_press_power_timeout_10min">10 phút</string>
-    <string name="others_settings_title">Các cài đặt khác</string>
-    <string name="additional_buttons_title">Nút bổ sung</string>
+    <string name="click_partial_screenshot_title">Nhấn chụp một phần ảnh chụp màn hình</string>
+    <string name="click_partial_screenshot_summary">Ấn nhanh nút Giảm âm lượng cùng với nút Nguồn để chụp một phần màn hình</string>
     <string name="back_height_low_label">Đầy đủ</string>
     <string name="back_height_high_label">Khu vực phía dưới</string>
     <string name="back_options_dialog_title">Tùy chọn</string>
+    <string name="back_height">Khu vực cảm ứng cạnh</string>
 </resources>

@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 graden</string>
     <string name="data_usage_app_restrict_all">Netwerktoegang toestaan</string>
     <string name="data_usage_app_restrict_all_summary">Netwerktoegang voor applicatie toestaan</string>
+    <string name="data_usage_app_restrict_mobile">Mobiele data</string>
+    <string name="data_usage_app_restrict_mobile_summary">Schakel het gebruik van mobiele data in</string>
     <string name="data_usage_app_restrict_vpn">VPN-data</string>
     <string name="data_usage_app_restrict_vpn_summary">Schakel gebruik VPN-data in</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
@@ -59,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">Snel openen</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Veeg de linkerkant van de statusbalk naar beneden om Snelle Instellingen te openen</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">Veeg de rechterkant van de statusbalk naar beneden om Snelle Instellingen te openen</string>
+    <string name="status_bar_quick_qs_pulldown_off">Uit</string>
     <string name="status_bar_quick_qs_pulldown_left">Linkerkant</string>
     <string name="status_bar_quick_qs_pulldown_right">Rechterkant</string>
     <string name="status_bar_icons_title">Statusbalkpictogrammen</string>
@@ -160,6 +163,8 @@
     <string name="adj_contrast_title">Contrast</string>
     <string name="proximity_wake_title">Voorkom onbedoeld ontwaken</string>
     <string name="proximity_wake_summary">Nabijheidssensor checken voorafgaand aan ontwaken van scherm</string>
+    <string name="show_navbar_gesture_bar_title">Gebaren indicator</string>
+    <string name="show_navbar_gesture_bar_summary">Toon gebaren indicator aan de onderkant van het scherm</string>
     <string name="navigation_bar_title">Navigatiebalk</string>
     <string name="hardware_keys_power_key_title">Aan/uit-knop</string>
     <string name="hardware_keys_volume_keys_title">Volumeknop</string>
@@ -191,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 minuten</string>
     <string name="torch_long_press_power_timeout_5min">5 minuten</string>
     <string name="torch_long_press_power_timeout_10min">10 minuten</string>
-    <string name="others_settings_title">Overige instellingen</string>
-    <string name="additional_buttons_title">Extra knoppen</string>
+    <string name="click_partial_screenshot_title">Klik voor een gedeeltelijk screenshot</string>
+    <string name="click_partial_screenshot_summary">Korte klik Volume - en Power om een gedeeltelijk screenshot te maken</string>
     <string name="back_height_low_label">Volledig</string>
     <string name="back_height_high_label">Onderkant</string>
     <string name="back_options_dialog_title">Opties</string>
+    <string name="back_height">Edge aanraak</string>
 </resources>

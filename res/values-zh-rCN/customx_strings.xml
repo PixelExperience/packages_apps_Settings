@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 度</string>
     <string name="data_usage_app_restrict_all">允许网络访问</string>
     <string name="data_usage_app_restrict_all_summary">允许应用访问网络</string>
+    <string name="data_usage_app_restrict_mobile">移动数据</string>
+    <string name="data_usage_app_restrict_mobile_summary">启用移动数据使用统计</string>
     <string name="data_usage_app_restrict_vpn">VPN 数据</string>
     <string name="data_usage_app_restrict_vpn_summary">启用 VPN 数据流量使用统计</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 数据</string>
@@ -161,6 +163,8 @@
     <string name="adj_contrast_title">对比度</string>
     <string name="proximity_wake_title">防止意外唤醒</string>
     <string name="proximity_wake_summary">唤醒屏幕前检查距离传感器</string>
+    <string name="show_navbar_gesture_bar_title">手势指示器</string>
+    <string name="show_navbar_gesture_bar_summary">在屏幕底部显示手势指示</string>
     <string name="navigation_bar_title">导航栏</string>
     <string name="hardware_keys_power_key_title">电源键</string>
     <string name="hardware_keys_volume_keys_title">音量键</string>
@@ -192,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 分钟</string>
     <string name="torch_long_press_power_timeout_5min">5 分钟</string>
     <string name="torch_long_press_power_timeout_10min">10 分钟</string>
-    <string name="others_settings_title">其他设置</string>
-    <string name="additional_buttons_title">附加按钮</string>
+    <string name="click_partial_screenshot_title">点按以进行局部截图</string>
+    <string name="click_partial_screenshot_summary">同时按音量下和电源键以截取局部截图</string>
     <string name="back_height_low_label">完整</string>
     <string name="back_height_high_label">底部</string>
     <string name="back_options_dialog_title">选项</string>
+    <string name="back_height">边缘触摸区域</string>
 </resources>

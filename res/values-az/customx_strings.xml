@@ -16,7 +16,7 @@
     <string name="unlock_scramble_pin_layout_title">Düzümü qarışdır</string>
     <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarkən PIN düzümünü qarışdır</string>
     <string name="volume_link_notification_title">Zəng səsi və bildiriş səs səviyyələrini birləşdir</string>
-    <string name="heads_up_notifications_enabled_title">Bildiriş pəncərələri</string>
+    <string name="heads_up_notifications_enabled_title">Açılan başlıqlar</string>
     <string name="heads_up_notifications_enabled_summary">Kiçik bir üzən pəncərədə birinci dərəcəli bildirişləri görüntülə</string>
     <string name="increasing_ring_volume_option_title">Artan zəng səsi</string>
     <string name="increasing_ring_min_volume_title">Başlanğıc səsi</string>
@@ -38,7 +38,9 @@
     <string name="display_rotation_180_title">180 dərəcə</string>
     <string name="display_rotation_270_title">270 dərəcə</string>
     <string name="data_usage_app_restrict_all">Şəbəkə müraciətinə icazə ver</string>
-    <string name="data_usage_app_restrict_all_summary">Tətbiqetmənin şəbəkəyə müraciət etməsinə icazə ver</string>
+    <string name="data_usage_app_restrict_all_summary">Şəbəkə istifadəsini fəallaşdır</string>
+    <string name="data_usage_app_restrict_mobile">Mobil verilənlər</string>
+    <string name="data_usage_app_restrict_mobile_summary">Mobil verilənlər istifadəsini fəallaşdır</string>
     <string name="data_usage_app_restrict_vpn">VPN verilənləri</string>
     <string name="data_usage_app_restrict_vpn_summary">VPN verilənlər istifadəsini fəallaşdır</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi verilənləri</string>
@@ -101,11 +103,11 @@
     <string name="network_traffic_mode_title">Görüntü rejimi</string>
     <string name="network_traffic_mode_disable">Sıradan çıxarıldı</string>
     <string name="network_traffic_mode_status_bar">Vəziyyət sətri</string>
-    <string name="network_traffic_mode_qs">Sürətli tənzimləmələr</string>
+    <string name="network_traffic_mode_qs">Cəld tənzimləmələr</string>
     <string name="network_traffic_autohide">Avtomatik gizlət</string>
     <string name="network_traffic_autohide_summary">Fəaliyyət olmayanda trafik göstəricisini gizlət</string>
     <string name="network_traffic_units_title">Trafik ölçü vahidi</string>
-    <string name="qs_title">Sürətli tənzimləmələr</string>
+    <string name="qs_title">Cəld tənzimləmələr</string>
     <string name="qs_rows_portrait_title">Sətirlər (şaquli)</string>
     <string name="qs_rows_landscape_title">Sətirlər (üfüqi)</string>
     <string name="qs_columns_portrait_title">Sütunlar (şaquli)</string>
@@ -117,7 +119,7 @@
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
     <string name="live_display_day">Gündüz</string>
     <string name="live_display_night">Gecə</string>
-    <string name="live_display_outdoor_mode_title">Avtomatik çöl rejimi</string>
+    <string name="live_display_outdoor_mode_title">Avtomatik açıq hava rejimi</string>
     <string name="live_display_outdoor_mode_summary">Parlaq günəş işığı altında parlaqlığı və doydurmanı avtomatik artırar</string>
     <string name="live_display_low_power_title">Enerji istehlakını azalt</string>
     <string name="live_display_low_power_summary">Ekranda xarablaşma olmadan ekranı ən aşağı enerji istehlakı üçün nizamlayın</string>
@@ -136,7 +138,7 @@
     <string name="live_display_color_profile_astronomy_summary">Gecə görünüşünü qorumaq üçün dərin qırmızı</string>
     <string name="live_display_color_profile_photography_title">Fotoqraflıq</string>
     <string name="live_display_color_profile_photography_summary">Fotolar üçün mükəmməl rəng istehsalı</string>
-    <string name="live_display_color_profile_basic_title">Əsas</string>
+    <string name="live_display_color_profile_basic_title">Təməl</string>
     <string name="live_display_color_profile_basic_summary">Ekranı kalibrasiya etmədən istifadə et</string>
     <string name="live_display_color_profile_adaptive_title">Uyğunlaşdırılmış</string>
     <string name="live_display_color_profile_adaptive_summary">Rəngləri mühit şərtlərinə görə uyğunlaşdır</string>
@@ -149,25 +151,27 @@
     <string name="live_display_reading_mode_title">Oxuma rejimi</string>
     <string name="live_display_reading_mode_summary">Uzun müddətli oxuma üçün boz çalarlı rejim</string>
     <string name="color_calibration_title">Rəng kalibrasiyası</string>
-    <string name="color_calibration_summary">Ekran rənglərini kalibrlə</string>
+    <string name="color_calibration_summary">Ekran rənglərini kalibrasiya et</string>
     <string name="color_red_title">Qırmızı</string>
     <string name="color_green_title">Yaşıl</string>
     <string name="color_blue_title">Mavi</string>
     <string name="picture_adjustment_title">Şəkil nizamlama</string>
-    <string name="picture_adjustment_summary">Çalar, doydurma, sıxlıq və ziddiyyət</string>
+    <string name="picture_adjustment_summary">Çalar, doydurma, sıxlıq və ziddiyyəti nizamla</string>
     <string name="adj_hue_title">Çalar</string>
     <string name="adj_saturation_title">Doydurma</string>
     <string name="adj_intensity_title">Sıxlıq</string>
     <string name="adj_contrast_title">Ziddiyyət</string>
     <string name="proximity_wake_title">Təsadüfi oyanmaların qarşısını al</string>
     <string name="proximity_wake_summary">Ekran oyandırmazdan əvvəl yaxnlıq sensoru yoxlaması</string>
-    <string name="navigation_bar_title">Naviqasiya sətri</string>
+    <string name="show_navbar_gesture_bar_title">Jest göstəricisi</string>
+    <string name="show_navbar_gesture_bar_summary">Jest göstəricisini ekranın altında göstər</string>
+    <string name="navigation_bar_title">Hərəkət sətri</string>
     <string name="hardware_keys_power_key_title">Güc düyməsi</string>
     <string name="hardware_keys_volume_keys_title">Səs düymələri</string>
     <string name="navigation_bar_arrow_keys_title">Yazı yazanda ox düymələrini göstər</string>
     <string name="navigation_bar_arrow_keys_summary">Yazı yazarkən sol və sağ kursor düymələrini göstər. Klaviatura dəyişdiricini göstərməz.</string>
     <string name="nav_bar_layout_inverse_title">Düzülüşü tərs çevir</string>
-    <string name="nav_bar_layout_inverse_summary">Naviqasiya düymələrinin düzülüşünü tərs çevir</string>
+    <string name="nav_bar_layout_inverse_summary">Hərəkət sətri düymələrini tərsinə düz</string>
     <string name="navigation_bar_compact_layout_title">Yığcam düzüm</string>
     <string name="navigation_bar_compact_layout_summary">Hərəkət sətrində yığcam düzümü istifadə edin</string>
     <string name="volbtn_music_controls_title">Musiqi nəzarəti</string>
@@ -184,7 +188,7 @@
     <string name="home_answer_call_summary">Gələn zəngləri əsas ekran düyməsinə basaraq cavabla</string>
     <string name="power_end_call_title">Zəngi bitir</string>
     <string name="power_end_call_summary">Güc düyməsinə basaraq mövcud zəngi bitir</string>
-    <string name="torch_long_press_power_gesture_title">Fənər üçün uzun basın</string>
+    <string name="torch_long_press_power_gesture_title">Fənər üçün basıb saxlayın</string>
     <string name="torch_long_press_power_gesture_desc">Ekran sönülü olarkən güc düyməsinə uzun basmaq fənəri yandırar</string>
     <string name="torch_long_press_power_timeout_title">Fənəri avtomatik söndür</string>
     <string name="torch_long_press_power_timeout_never">Heç vaxt</string>
@@ -192,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 dəqiqə</string>
     <string name="torch_long_press_power_timeout_5min">5 dəqiqə</string>
     <string name="torch_long_press_power_timeout_10min">10 dəqiqə</string>
-    <string name="others_settings_title">Digər tənzimləmələr</string>
-    <string name="additional_buttons_title">Əlavə düymələr</string>
-    <string name="back_height_low_label">tam</string>
+    <string name="click_partial_screenshot_title">Qismən ekran şəkli üçün klikləyin</string>
+    <string name="click_partial_screenshot_summary">Qismən ekran şəklini çəkmək üçün Səs Azaltma və Güc düyməsinə uzun basın</string>
+    <string name="back_height_low_label">Tam</string>
     <string name="back_height_high_label">Alt sahə</string>
-    <string name="back_options_dialog_title">Parametrlər</string>
+    <string name="back_options_dialog_title">Seçimlər</string>
+    <string name="back_height">Kənar toxunuş sahəsi</string>
 </resources>

@@ -182,8 +182,6 @@
     <string name="torch_long_press_power_timeout_2min">2 minuti</string>
     <string name="torch_long_press_power_timeout_5min">5 min.</string>
     <string name="torch_long_press_power_timeout_10min">10 min.</string>
-    <string name="others_settings_title">Druge nastavitve</string>
-    <string name="additional_buttons_title">Dodatni gumbi</string>
     <string name="back_height_low_label">Celotna</string>
     <string name="back_height_high_label">Spodnje področje</string>
     <string name="back_options_dialog_title">Možnosti</string>

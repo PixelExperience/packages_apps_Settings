@@ -39,6 +39,7 @@
     <string name="display_rotation_270_title">270 de grade</string>
     <string name="data_usage_app_restrict_all">Permiteți accesul la rețea</string>
     <string name="data_usage_app_restrict_all_summary">Permiteți aplicației să acceseze rețeaua</string>
+    <string name="data_usage_app_restrict_mobile">Date mobile</string>
     <string name="data_usage_app_restrict_vpn">Date VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Activați utilizarea datelor VPN</string>
     <string name="data_usage_app_restrict_wifi">Date Wi\u2011Fi</string>
@@ -59,6 +60,7 @@
     <string name="status_bar_quick_qs_pulldown_title">Derulare în jos rapidă</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">La tragerea în jos a barei de stare din partea stângă se deschid Setările Rapide</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">La tragerea în jos a barei de stare din partea dreaptă se deschid Setările Rapide</string>
+    <string name="status_bar_quick_qs_pulldown_off">Dezactivat</string>
     <string name="status_bar_quick_qs_pulldown_left">Stânga</string>
     <string name="status_bar_quick_qs_pulldown_right">Dreapta</string>
     <string name="status_bar_icons_title">Pictograme bară de stare</string>
@@ -191,8 +193,6 @@
     <string name="torch_long_press_power_timeout_2min">2 minute</string>
     <string name="torch_long_press_power_timeout_5min">5 minute</string>
     <string name="torch_long_press_power_timeout_10min">10 minute</string>
-    <string name="others_settings_title">Alte setări</string>
-    <string name="additional_buttons_title">Butoane suplimentare</string>
     <string name="back_height_low_label">Complet</string>
     <string name="back_height_high_label">Zona de jos</string>
     <string name="back_options_dialog_title">Opţiuni</string>

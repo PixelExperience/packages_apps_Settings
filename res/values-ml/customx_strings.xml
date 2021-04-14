@@ -85,6 +85,4 @@
     <string name="torch_long_press_power_timeout_2min">2 മിനിറ്റ്</string>
     <string name="torch_long_press_power_timeout_5min">5 മിനിറ്റ്</string>
     <string name="torch_long_press_power_timeout_10min">10 മിനിറ്റ്</string>
-    <string name="others_settings_title">മറ്റുള്ള സെറ്റിംഗ്സ്</string>
-    <string name="additional_buttons_title">കൂടുതലായുള്ള ബട്ടണുകൾ</string>
 </resources>

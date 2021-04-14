@@ -28,6 +28,4 @@ powermenu_restart_recovery
     <string name="hardware_keys_volume_keys_title">ஒலியளவு பொத்தான்கள்</string>
     <string name="torch_long_press_power_timeout_never">எப்போதும் வேண்டாம்</string>
     <string name="torch_long_press_power_timeout_2min">2 நிமிடங்கள்</string>
-    <string name="others_settings_title">பிற அமைப்புகள்</string>
-    <string name="additional_buttons_title">கூடுதல் பொத்தான்கள்</string>
 </resources>

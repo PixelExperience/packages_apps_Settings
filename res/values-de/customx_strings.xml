@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 Grad</string>
     <string name="data_usage_app_restrict_all">Erlaube Netzwerkzugriff</string>
     <string name="data_usage_app_restrict_all_summary">Ermöglicht Apps den Zugriff auf das Netzwerk</string>
+    <string name="data_usage_app_restrict_mobile">Mobile Daten</string>
+    <string name="data_usage_app_restrict_mobile_summary">Nutzung mobiler Daten aktivieren</string>
     <string name="data_usage_app_restrict_vpn">VPN-Datennutzung</string>
     <string name="data_usage_app_restrict_vpn_summary">Nutzung von VPN-Daten aktivieren</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi Daten</string>
@@ -59,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">Schnelles Öffnen</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Am linken Rand der Statusleiste werden die Schnelleinstellungen geöffnet</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">Der rechte Rand der Statusleiste öffnet die Schnelleinstellungen</string>
+    <string name="status_bar_quick_qs_pulldown_off">Aus</string>
     <string name="status_bar_quick_qs_pulldown_left">Links</string>
     <string name="status_bar_quick_qs_pulldown_right">Rechts</string>
     <string name="status_bar_icons_title">Statusleistensymbole</string>
@@ -160,6 +163,8 @@
     <string name="adj_contrast_title">Kontrast</string>
     <string name="proximity_wake_title">Unbeabsichtigtes Aufwecken verhindern</string>
     <string name="proximity_wake_summary">Vor dem Einschalten des Bildschirms den Näherungssensor überprüfen</string>
+    <string name="show_navbar_gesture_bar_title">Gestenanzeige</string>
+    <string name="show_navbar_gesture_bar_summary">Gestenanzeige am unteren Bildschirmrand anzeigen</string>
     <string name="navigation_bar_title">Navigationsleiste</string>
     <string name="hardware_keys_power_key_title">Ein-/Aus-Taste</string>
     <string name="hardware_keys_volume_keys_title">Lautstärketasten</string>
@@ -191,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 Minuten</string>
     <string name="torch_long_press_power_timeout_5min">5 Minuten</string>
     <string name="torch_long_press_power_timeout_10min">10 Minuten</string>
-    <string name="others_settings_title">Weitere Einstellungen</string>
-    <string name="additional_buttons_title">Weitere Tasten</string>
+    <string name="click_partial_screenshot_title">Zum Erstellen eines partiellen Screenshots klicken</string>
+    <string name="click_partial_screenshot_summary">Lautstärketaste nach unten und Powertaste kurz drücken, um einen partiellen Screenshot zu erstellen</string>
     <string name="back_height_low_label">Voll</string>
     <string name="back_height_high_label">unterer Bereich</string>
     <string name="back_options_dialog_title">Optionen</string>
+    <string name="back_height">Randberührungsbereich</string>
 </resources>

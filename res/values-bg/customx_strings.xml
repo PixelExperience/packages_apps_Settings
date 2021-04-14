@@ -38,6 +38,9 @@
     <string name="display_rotation_180_title">180 градуса</string>
     <string name="display_rotation_270_title">270 градуса</string>
     <string name="data_usage_app_restrict_all">Разреши достъп до мрежата</string>
+    <string name="data_usage_app_restrict_all_summary">Следене на достъпа до мрежа</string>
+    <string name="data_usage_app_restrict_mobile">Мобилни данни</string>
+    <string name="data_usage_app_restrict_mobile_summary">Разреши използването на мобилни данни</string>
     <string name="data_usage_app_restrict_vpn">VPN данни</string>
     <string name="data_usage_app_restrict_vpn_summary">Активиране използването на VPN данни</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi данни</string>
@@ -56,6 +59,9 @@
     <string name="incall_feeedback_vibrate_title">Вибриране за показване състоянието на повикването</string>
     <string name="status_bar_title">Лента на състоянието</string>
     <string name="status_bar_quick_qs_pulldown_title">Бързи настройки</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Левия край на статус бара сваля бързите настройки</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">Десния край на статус бара сваля бързите настройки</string>
+    <string name="status_bar_quick_qs_pulldown_off">Изключен</string>
     <string name="status_bar_quick_qs_pulldown_left">Вляво</string>
     <string name="status_bar_quick_qs_pulldown_right">Вдясно</string>
     <string name="status_bar_icons_title">Икони на лентата</string>
@@ -157,6 +163,8 @@
     <string name="adj_contrast_title">Контраст</string>
     <string name="proximity_wake_title">Предотвратяване на случайно събуждане</string>
     <string name="proximity_wake_summary">Провери сензора за близост преди събуждане на екрана</string>
+    <string name="show_navbar_gesture_bar_title">Жестов индикатор</string>
+    <string name="show_navbar_gesture_bar_summary">Показване на жестовия индикатор в долната част на екрана</string>
     <string name="navigation_bar_title">Бутони и оформление</string>
     <string name="hardware_keys_power_key_title">Бутон \"Захранване\"</string>
     <string name="hardware_keys_volume_keys_title">Бутони за сила на звука</string>
@@ -188,8 +196,8 @@
     <string name="torch_long_press_power_timeout_2min">2 минути</string>
     <string name="torch_long_press_power_timeout_5min">5 минути</string>
     <string name="torch_long_press_power_timeout_10min">10 минути</string>
-    <string name="others_settings_title">Други настройки</string>
-    <string name="additional_buttons_title">Допълнителни бутони</string>
+    <string name="click_partial_screenshot_title">Натисни за частична екранна снимка</string>
+    <string name="click_partial_screenshot_summary">Кратко натискане на бутона за намаляване на звука за частична екранна снимка</string>
     <string name="back_height_low_label">Заредена</string>
     <string name="back_height_high_label">Долна зона</string>
     <string name="back_options_dialog_title">Настройки</string>

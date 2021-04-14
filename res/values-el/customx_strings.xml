@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 μοίρες</string>
     <string name="data_usage_app_restrict_all">Αποδοχή χρήσης δικτύου</string>
     <string name="data_usage_app_restrict_all_summary">Επιτρέψτε τη χρήση δικτύου στην εφαρμογή</string>
+    <string name="data_usage_app_restrict_mobile">Δεδομένα κινητής τηλεφωνίας</string>
+    <string name="data_usage_app_restrict_mobile_summary">Ενεργοποίηση χρήσης δεδομένων κινητής τηλεφωνίας</string>
     <string name="data_usage_app_restrict_vpn">Δεδομένα VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Ενεργοποίηση χρήσης δεδομένων VPN</string>
     <string name="data_usage_app_restrict_wifi">Δεδομένα Wi\u2011Fi</string>
@@ -161,6 +163,8 @@
     <string name="adj_contrast_title">Αντίθεση</string>
     <string name="proximity_wake_title">Αποτροπή τυχαίας ενεργοποίησης </string>
     <string name="proximity_wake_summary">Έλεγχος τον αισθητήρα εγγύτητας πριν την αφύπνιση της οθόνης</string>
+    <string name="show_navbar_gesture_bar_title">Ένδειξη χειρονομίας</string>
+    <string name="show_navbar_gesture_bar_summary">Εμφάνιση ένδειξης χειρονομίας στο κάτω μέρος της οθόνης</string>
     <string name="navigation_bar_title">Γραμμή πλοήγησης</string>
     <string name="hardware_keys_power_key_title">Πλήκτρο Ενεργοποίησης/Απενεργοποίησης</string>
     <string name="hardware_keys_volume_keys_title">Πλήκτρα έντασης</string>
@@ -192,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 λεπτά</string>
     <string name="torch_long_press_power_timeout_5min">5 λεπτά</string>
     <string name="torch_long_press_power_timeout_10min">10 λεπτά</string>
-    <string name="others_settings_title">Άλλες ρυθμίσεις</string>
-    <string name="additional_buttons_title">Πρόσθετα πλήκτρα</string>
+    <string name="click_partial_screenshot_title">Πιέστε για λήψη μερικού στιγμιότυπο οθόνης</string>
+    <string name="click_partial_screenshot_summary">Πιέστε το πλήκτρο μείωσης του ήχου και το κουμπί εκκίνησης για να ληφθεί στιγμιότυπο οθόνης</string>
     <string name="back_height_low_label">Πλήρης</string>
     <string name="back_height_high_label">Περιοχή κουμπιού </string>
     <string name="back_options_dialog_title">Επιλογές</string>
+    <string name="back_height">Περιοχή αφής Edge</string>
 </resources>

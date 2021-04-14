@@ -42,10 +42,13 @@
     <string name="display_cutout_mode_hidden">Gömd</string>
     <string name="display_cutout_force_fullscreen_title">Fullskärms-appar</string>
     <string name="status_bar_title">Statusfält</string>
+    <string name="status_bar_quick_qs_pulldown_off">Av</string>
     <string name="status_bar_quick_qs_pulldown_left">Vänster</string>
     <string name="status_bar_quick_qs_pulldown_right">Höger</string>
     <string name="status_bar_icons_title">Statusfältsikoner</string>
+    <string name="status_bar_system_icons_title">Systemikoner</string>
     <string name="status_bar_clock_title">Klocka</string>
+    <string name="status_bar_clock_show_seconds_summary">Visa timmar, minuter och sekunder</string>
     <string name="status_bar_clock_position_title">Klockans position</string>
     <string name="status_bar_clock_position_right">Höger</string>
     <string name="status_bar_clock_position_left">Vänster</string>
@@ -69,6 +72,8 @@
     <string name="network_traffic_autohide">Göm automatiskt</string>
     <string name="live_display_mode">Visningsläge</string>
     <string name="live_display_color_temperature_title">Färgtemperatur</string>
+    <string name="live_display_color_temperature_summary">Dag: <xliff:g id="day_temperature">%1$d</xliff:g>K
+Natt: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
     <string name="live_display_day">Dag</string>
     <string name="live_display_night">Natt</string>
@@ -105,5 +110,4 @@
     <string name="torch_long_press_power_timeout_2min">2 minuter</string>
     <string name="torch_long_press_power_timeout_5min">5 minuter</string>
     <string name="torch_long_press_power_timeout_10min">10 minuter</string>
-    <string name="additional_buttons_title">Fler knappar</string>
 </resources>

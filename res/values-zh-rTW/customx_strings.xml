@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 度</string>
     <string name="data_usage_app_restrict_all">允許網路存取</string>
     <string name="data_usage_app_restrict_all_summary">允許應用程式存取網路</string>
+    <string name="data_usage_app_restrict_mobile">行動數據</string>
+    <string name="data_usage_app_restrict_mobile_summary">啟用行動網路</string>
     <string name="data_usage_app_restrict_vpn">VPN 資料</string>
     <string name="data_usage_app_restrict_vpn_summary">啟用 VPN 資料用量</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi 數據</string>
@@ -59,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">快速下拉</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">狀態列的左邊緣下拉快速設定</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">狀態列的右邊緣下拉快速設定</string>
+    <string name="status_bar_quick_qs_pulldown_off">關閉</string>
     <string name="status_bar_quick_qs_pulldown_left">左</string>
     <string name="status_bar_quick_qs_pulldown_right">右</string>
     <string name="status_bar_icons_title">狀態列圖示</string>
@@ -160,6 +163,8 @@
     <string name="adj_contrast_title">對比</string>
     <string name="proximity_wake_title">防止意外喚醒</string>
     <string name="proximity_wake_summary">在喚醒螢幕之前檢查距離傳感器</string>
+    <string name="show_navbar_gesture_bar_title">手勢指示</string>
+    <string name="show_navbar_gesture_bar_summary">在螢幕底部顯示手勢指示</string>
     <string name="navigation_bar_title">導航欄</string>
     <string name="hardware_keys_power_key_title">電源鍵</string>
     <string name="hardware_keys_volume_keys_title">音量鍵</string>
@@ -191,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 分鐘</string>
     <string name="torch_long_press_power_timeout_5min">5 分鐘</string>
     <string name="torch_long_press_power_timeout_10min">10 分鐘</string>
-    <string name="others_settings_title">其他設定</string>
-    <string name="additional_buttons_title">附加按鍵</string>
+    <string name="click_partial_screenshot_title">點擊查看部分截圖</string>
+    <string name="click_partial_screenshot_summary">短按“音量減鍵”和“電源鍵”以截取部分屏幕截圖</string>
     <string name="back_height_low_label">全部區域</string>
     <string name="back_height_high_label">底部區域</string>
     <string name="back_options_dialog_title">選項</string>
+    <string name="back_height">側屏幕觸控區域</string>
 </resources>

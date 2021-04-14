@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 градусов</string>
     <string name="data_usage_app_restrict_all">Разрешить доступ к сети</string>
     <string name="data_usage_app_restrict_all_summary">Разрешить приложению доступ к сети</string>
+    <string name="data_usage_app_restrict_mobile">Передача данных</string>
+    <string name="data_usage_app_restrict_mobile_summary">Включить передачу данных</string>
     <string name="data_usage_app_restrict_vpn">Данные VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Включить использование данных VPN</string>
     <string name="data_usage_app_restrict_wifi">Данные Wi\u2011Fi</string>
@@ -99,7 +101,7 @@
     <string name="network_traffic_settings_title">Индикатор сетевого трафика</string>
     <string name="network_traffic_settings_summary">Отображать текущую скорость соединения в строке состояния</string>
     <string name="network_traffic_mode_title">Режим отображения</string>
-    <string name="network_traffic_mode_disable">Выключена</string>
+    <string name="network_traffic_mode_disable">Выключено</string>
     <string name="network_traffic_mode_status_bar">Строка состояния</string>
     <string name="network_traffic_mode_qs">Быстрые настройки</string>
     <string name="network_traffic_autohide">Автоскрытие</string>
@@ -161,6 +163,8 @@
     <string name="adj_contrast_title">Контраст</string>
     <string name="proximity_wake_title">Предотвращать случайное включение экрана</string>
     <string name="proximity_wake_summary">Проверять датчик приближения при выходе из режима сна</string>
+    <string name="show_navbar_gesture_bar_title">Значок управления жестами</string>
+    <string name="show_navbar_gesture_bar_summary">Показывать значок жеста в нижней части экрана</string>
     <string name="navigation_bar_title">Панель навигации</string>
     <string name="hardware_keys_power_key_title">Кнопка питания</string>
     <string name="hardware_keys_volume_keys_title">Кнопки громкости</string>
@@ -175,7 +179,7 @@
     <string name="volume_answer_call_title">Ответ на вызов</string>
     <string name="volume_answer_call_summary">Отвечать на входящие вызовы нажатием кнопок громкости</string>
     <string name="volbtn_cursor_control_title">Перемещение курсо­­­­­­ра</string>
-    <string name="volbtn_cursor_control_off">Выключена</string>
+    <string name="volbtn_cursor_control_off">Выключено</string>
     <string name="volbtn_cursor_control_on">Кнопка «+» двигает курсор влево, «-» — вправо</string>
     <string name="volbtn_cursor_control_on_reverse">Кнопка «+» двигает курсор вправо, «-» — влево</string>
     <string name="swap_volume_buttons_title">Автоповорот</string>
@@ -192,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 минуты</string>
     <string name="torch_long_press_power_timeout_5min">5 минут</string>
     <string name="torch_long_press_power_timeout_10min">10 минут</string>
-    <string name="others_settings_title">Другие настройки</string>
-    <string name="additional_buttons_title">Дополнительные кнопки</string>
+    <string name="click_partial_screenshot_title">Нажмите, чтобы сделать скриншот части экрана</string>
+    <string name="click_partial_screenshot_summary">Нажмите кнопку уменьшения громкости и кнопку питания, чтобы сделать скриншот части экрана</string>
     <string name="back_height_low_label">Полный</string>
     <string name="back_height_high_label">Нижняя область</string>
     <string name="back_options_dialog_title">Параметры</string>
+    <string name="back_height">Сенсорная область по краю экрана</string>
 </resources>

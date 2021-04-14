@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="status_bar_double_tap_to_sleep_title">Toque duplo para desligar o ecrã</string>
+    <string name="status_bar_double_tap_to_sleep_title">Toque para desligar o ecrã</string>
     <string name="status_bar_double_tap_to_sleep_summary">Toque duplo na barra de estado ou no ecrã de bloqueio para desligar o ecrã</string>
-    <string name="wake_when_plugged_or_unplugged_title">Ligar ecrã inserir o carregador</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Ativar ecrã quando conectar ou desconectar uma fonte de energia</string>
+    <string name="wake_when_plugged_or_unplugged_title">Ligar ecrã ao inserir o carregador</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Ativar ecrã ao conectar ou desconectar uma fonte de energia</string>
     <string name="app_notification_sound_timeout_title">Tempo mínimo entre os sons de notificação</string>
     <string name="app_notification_sound_timeout_summary_template">Permitir sons ou vibrações, apenas uma vez, a cada <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Sem restrição</string>
@@ -14,9 +14,9 @@
     <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
     <string name="unlock_scramble_pin_layout_title">Disposição aleatória</string>
-    <string name="unlock_scramble_pin_layout_summary">Apresentar aleatoriamente a disposição do teclado ao desbloquear com PIN</string>
+    <string name="unlock_scramble_pin_layout_summary">Disposição aleatória de PIN ao debloquear o dispositivo</string>
     <string name="volume_link_notification_title">Associar volumes de toque e notificação</string>
-    <string name="heads_up_notifications_enabled_title">Notificação de pop-up</string>
+    <string name="heads_up_notifications_enabled_title">Notificação pop-up</string>
     <string name="heads_up_notifications_enabled_summary">Mostrar notificações prioritárias numa pequena janela flutuante</string>
     <string name="increasing_ring_volume_option_title">Toque crescente</string>
     <string name="increasing_ring_min_volume_title">Volume inicial</string>
@@ -38,7 +38,9 @@
     <string name="display_rotation_180_title">180 graus</string>
     <string name="display_rotation_270_title">270 graus</string>
     <string name="data_usage_app_restrict_all">Permitir ligação à rede</string>
-    <string name="data_usage_app_restrict_all_summary">Permitir que as aplicações se liguem à rede</string>
+    <string name="data_usage_app_restrict_all_summary">Ativar utilização de redes</string>
+    <string name="data_usage_app_restrict_mobile">Dados móveis</string>
+    <string name="data_usage_app_restrict_mobile_summary">Ativar utilização de dados móveis</string>
     <string name="data_usage_app_restrict_vpn">Dados VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Ativar utilização de dados VPN</string>
     <string name="data_usage_app_restrict_wifi">Dados Wi\u2011Fi</string>
@@ -59,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">Definições rápidas</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">A margem esquerda da barra de estado mostra as definições rápidas</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">A margem direita da barra de estado mostra as definições rápidas</string>
+    <string name="status_bar_quick_qs_pulldown_off">Desligado</string>
     <string name="status_bar_quick_qs_pulldown_left">Esquerda</string>
     <string name="status_bar_quick_qs_pulldown_right">Direita</string>
     <string name="status_bar_icons_title">Ícones na barra de estado</string>
@@ -98,7 +101,7 @@
     <string name="network_traffic_settings_title">Monitor de tráfego de rede</string>
     <string name="network_traffic_settings_summary">Mostrar na barra de estado os níveis de tráfego atuais</string>
     <string name="network_traffic_mode_title">Modo de exibição</string>
-    <string name="network_traffic_mode_disable">Inativa</string>
+    <string name="network_traffic_mode_disable">Desativada</string>
     <string name="network_traffic_mode_status_bar">Barra de estado</string>
     <string name="network_traffic_mode_qs">Definições rápidas</string>
     <string name="network_traffic_autohide">Ocultar automaticamente</string>
@@ -107,8 +110,8 @@
     <string name="qs_title">Definições rápidas</string>
     <string name="qs_rows_portrait_title">Linhas (retrato)</string>
     <string name="qs_rows_landscape_title">Linhas (paisagem)</string>
-    <string name="qs_columns_portrait_title">Colunas (retrato)</string>
-    <string name="qs_columns_landscape_title">Colunas (paisagem)</string>
+    <string name="qs_columns_portrait_title">Colunas (vertical)</string>
+    <string name="qs_columns_landscape_title">Colunas (horizontal)</string>
     <string name="live_display_summary">Otimiza o ecrã com base na hora do dia e nas condições ambiente para melhorar a legibilidade e reduzir a fadiga ocular</string>
     <string name="live_display_mode">Modo de exibição</string>
     <string name="live_display_color_temperature_title">Temperatura da cor</string>
@@ -160,6 +163,8 @@
     <string name="adj_contrast_title">Contraste</string>
     <string name="proximity_wake_title">Impedir que o ecrã se ligue acidentalmente</string>
     <string name="proximity_wake_summary">Verificar sensor de proximidade antes de ligar o ecrã</string>
+    <string name="show_navbar_gesture_bar_title">Indicador de gestos</string>
+    <string name="show_navbar_gesture_bar_summary">Mostrar indicador de gesto na parte inferior do ecrã</string>
     <string name="navigation_bar_title">Barra de navegação</string>
     <string name="hardware_keys_power_key_title">Botão ligar/desligar</string>
     <string name="hardware_keys_volume_keys_title">Botões de volume</string>
@@ -174,7 +179,7 @@
     <string name="volume_answer_call_title">Atender chamada</string>
     <string name="volume_answer_call_summary">Atender chamadas premindo os botões de volume</string>
     <string name="volbtn_cursor_control_title">Controlo do cursor de teclado</string>
-    <string name="volbtn_cursor_control_off">Inativa</string>
+    <string name="volbtn_cursor_control_off">Desativada</string>
     <string name="volbtn_cursor_control_on">Volume para cima/baixo move o cursor para a esquerda/direita</string>
     <string name="volbtn_cursor_control_on_reverse">Volume para cima/baixo move o cursor para a direita/esquerda</string>
     <string name="swap_volume_buttons_title">Reorientar</string>
@@ -191,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 minutos</string>
     <string name="torch_long_press_power_timeout_5min">5 minutos</string>
     <string name="torch_long_press_power_timeout_10min">10 minutos</string>
-    <string name="others_settings_title">Outras definições</string>
-    <string name="additional_buttons_title">Botões adicionais</string>
+    <string name="click_partial_screenshot_title">Clique para captura de ecrã parcial</string>
+    <string name="click_partial_screenshot_summary">Clique rápido nos botões de Baixar volume e Ligar/Desligar para obter uma captura parcial</string>
     <string name="back_height_low_label">Total</string>
     <string name="back_height_high_label">Área inferior</string>
     <string name="back_options_dialog_title">Opções</string>
+    <string name="back_height">Ativar área de toque</string>
 </resources>

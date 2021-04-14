@@ -39,17 +39,19 @@
     <string name="display_rotation_270_title">270 degrés</string>
     <string name="data_usage_app_restrict_all">Permettre l\'accès au réseau</string>
     <string name="data_usage_app_restrict_all_summary">Permettre l\'application à accéder au réseau</string>
+    <string name="data_usage_app_restrict_mobile">Données mobiles</string>
+    <string name="data_usage_app_restrict_mobile_summary">Activer l\'utilisation des données mobiles</string>
     <string name="data_usage_app_restrict_vpn">Données VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Activer les données VPN</string>
-    <string name="data_usage_app_restrict_wifi">Données Wi\u2011-Fi</string>
-    <string name="data_usage_app_restrict_wifi_summary">Activer les données Wi\u2011-Fi</string>
+    <string name="data_usage_app_restrict_wifi">Données Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Activer l\'utilisation des données Wi\u2011Fi</string>
     <string name="tethering_allow_vpn_upstreams_title">Autoriser les clients à utiliser des VPNs</string>
     <string name="tethering_allow_vpn_upstreams_summary">Permettre aux clients de point d\'accès d\'utiliser les connexions VPN de cet appareil\u2019 pour la connectivité en amont</string>
     <string name="display_cutout_mode_title">Comportement de l\'encoche</string>
     <string name="display_cutout_mode_normal">Par défaut</string>
     <string name="display_cutout_mode_hidden">Cachée</string>
     <string name="display_cutout_force_fullscreen_title">Applications en plein écran</string>
-    <string name="display_cutout_force_fullscreen_summary">Forcer les applications à ignorer l\'emplacement du notch</string>
+    <string name="display_cutout_force_fullscreen_summary">Forcer les applications à ignorer l\'emplacement de l\'encoche</string>
     <string name="display_cutout_force_fullscreen_restart_app">Merci de redémarrer l\'application pour appliquer les changements.</string>
     <string name="cutout_force_fullscreen_no_apps">Aucune application</string>
     <string name="swipe_to_screenshot_gesture_title">Glisser pour prendre une capture d\'écran</string>
@@ -161,6 +163,8 @@
     <string name="adj_contrast_title">Contraste</string>
     <string name="proximity_wake_title">Éviter l\'allumage de l\'écran accidentellement</string>
     <string name="proximity_wake_summary">Vérifier le capteur de proximité avant d\'allumer l\'écran </string>
+    <string name="show_navbar_gesture_bar_title">Indicateur de gestes</string>
+    <string name="show_navbar_gesture_bar_summary">Afficher l\'indicateur de gestes en bas de l\'écran</string>
     <string name="navigation_bar_title">Barre de navigation</string>
     <string name="hardware_keys_power_key_title">Bouton d\'alimentation</string>
     <string name="hardware_keys_volume_keys_title">Boutons de volume</string>
@@ -192,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 minutes</string>
     <string name="torch_long_press_power_timeout_5min">5 minutes</string>
     <string name="torch_long_press_power_timeout_10min">10 minutes</string>
-    <string name="others_settings_title">Autres paramètres</string>
-    <string name="additional_buttons_title">Boutons supplémentaires</string>
+    <string name="click_partial_screenshot_title">Cliquer pour capturer l\'écran partiellement</string>
+    <string name="click_partial_screenshot_summary">Presser brièvement Volume Bas et Marche/Arrêt pour une capture d\'écran partielle</string>
     <string name="back_height_low_label">Complet</string>
     <string name="back_height_high_label">Barre de navigation</string>
     <string name="back_options_dialog_title">Paramètres</string>
+    <string name="back_height">Zone tactile sur les bords</string>
 </resources>

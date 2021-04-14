@@ -101,7 +101,7 @@
     <string name="network_traffic_settings_title">Monitor de tráfico de red</string>
     <string name="network_traffic_settings_summary">Muestra los niveles de tráfico de red actuales en la barra de estado</string>
     <string name="network_traffic_mode_title">Modo de visualización</string>
-    <string name="network_traffic_mode_disable">Desactivado</string>
+    <string name="network_traffic_mode_disable">Deshabilitado</string>
     <string name="network_traffic_mode_status_bar">Barra de estado</string>
     <string name="network_traffic_mode_qs">Ajustes rápidos</string>
     <string name="network_traffic_autohide">Ocultar automáticamente</string>
@@ -179,7 +179,7 @@
     <string name="volume_answer_call_title">Contestar la llamada</string>
     <string name="volume_answer_call_summary">Contestar llamadas entrantes presionando los botones de volumen</string>
     <string name="volbtn_cursor_control_title">Control del cursor</string>
-    <string name="volbtn_cursor_control_off">Desactivado</string>
+    <string name="volbtn_cursor_control_off">Deshabilitado</string>
     <string name="volbtn_cursor_control_on">Los botones subir y bajar volumen moverán el cursor a izquierda y derecha, respectivamente</string>
     <string name="volbtn_cursor_control_on_reverse">Los botones subir y bajar volumen moverán el cursor a derecha e izquierda, respectivamente</string>
     <string name="swap_volume_buttons_title">Reorientar botones</string>
@@ -196,8 +196,6 @@
     <string name="torch_long_press_power_timeout_2min">2 minutos</string>
     <string name="torch_long_press_power_timeout_5min">5 minutos</string>
     <string name="torch_long_press_power_timeout_10min">10 minutos</string>
-    <string name="others_settings_title">Otros ajustes</string>
-    <string name="additional_buttons_title">Botones adicionales</string>
     <string name="click_partial_screenshot_title">Toque para hacer una captura de pantalla parcial</string>
     <string name="click_partial_screenshot_summary">Pulse el botón de bajar volumen y el de encendido para tomar una captura de pantalla parcial</string>
     <string name="back_height_low_label">Completo</string>

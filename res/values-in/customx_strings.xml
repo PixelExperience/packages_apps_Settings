@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 derajat</string>
     <string name="data_usage_app_restrict_all">Izinkan akses jaringan</string>
     <string name="data_usage_app_restrict_all_summary">Izinkan aplikasi untuk mengakses jaringan</string>
+    <string name="data_usage_app_restrict_mobile">Data Seluler</string>
+    <string name="data_usage_app_restrict_mobile_summary">Aktifkan penggunaan data seluler</string>
     <string name="data_usage_app_restrict_vpn">Data VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Aktifkan penggunaan data VPN</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
@@ -161,6 +163,8 @@
     <string name="adj_contrast_title">Kontras</string>
     <string name="proximity_wake_title">Cegah bangun yang tak disengaja</string>
     <string name="proximity_wake_summary">Periksa sensor jarak sebelum membangunkan layar</string>
+    <string name="show_navbar_gesture_bar_title">Indikator gestur</string>
+    <string name="show_navbar_gesture_bar_summary">Tampilkan indikator gestur di bagian bawah layar</string>
     <string name="navigation_bar_title">Bilah navigasi</string>
     <string name="hardware_keys_power_key_title">Tombol daya</string>
     <string name="hardware_keys_volume_keys_title">Tombol volume</string>
@@ -192,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 menit</string>
     <string name="torch_long_press_power_timeout_5min">5 menit</string>
     <string name="torch_long_press_power_timeout_10min">10 menit</string>
-    <string name="others_settings_title">Seting lainnya</string>
-    <string name="additional_buttons_title">Tombol tambahan</string>
+    <string name="click_partial_screenshot_title">Klik untuk tangkapan layar sebagian</string>
+    <string name="click_partial_screenshot_summary">Klik pendek Volume Turun dan Daya untuk mengambil tangkapan layar sebagian</string>
     <string name="back_height_low_label">Penuh</string>
     <string name="back_height_high_label">Area bawah</string>
     <string name="back_options_dialog_title">Opsi</string>
+    <string name="back_height">Area sentuh tepi</string>
 </resources>

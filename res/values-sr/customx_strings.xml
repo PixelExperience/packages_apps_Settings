@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 степени</string>
     <string name="data_usage_app_restrict_all">Дозволи мрежни приступ</string>
     <string name="data_usage_app_restrict_all_summary">Дозволи апликацијама да приступе интернет мрежи</string>
+    <string name="data_usage_app_restrict_mobile">Мобилни подаци</string>
+    <string name="data_usage_app_restrict_mobile_summary">Омогући употребу мобилних података</string>
     <string name="data_usage_app_restrict_vpn">ВПН подаци</string>
     <string name="data_usage_app_restrict_vpn_summary">Дозволи употребу података преко ВПН-а</string>
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi подаци</string>
@@ -161,6 +163,7 @@
     <string name="adj_contrast_title">Контраст</string>
     <string name="proximity_wake_title">Спречити случајна паљења</string>
     <string name="proximity_wake_summary">Провери сензор близине пре паљења екрана</string>
+    <string name="show_navbar_gesture_bar_title">Индикатор потеза</string>
     <string name="navigation_bar_title">Навигациона трака</string>
     <string name="hardware_keys_power_key_title">Дугме за укључивање</string>
     <string name="hardware_keys_volume_keys_title">Дугмад за јачину звука</string>
@@ -192,8 +195,8 @@
     <string name="torch_long_press_power_timeout_2min">2 минута</string>
     <string name="torch_long_press_power_timeout_5min">5 минута</string>
     <string name="torch_long_press_power_timeout_10min">10 минута</string>
-    <string name="others_settings_title">Друга подешавања</string>
-    <string name="additional_buttons_title">Додатна дугмад</string>
+    <string name="click_partial_screenshot_title">Кликни за делимично сликање екрана</string>
+    <string name="click_partial_screenshot_summary">Кратко притисни дугме за смањивање звука и за закључавање екрана да би сликао делимично екран</string>
     <string name="back_height_low_label">Пуна</string>
     <string name="back_height_high_label">На дну</string>
     <string name="back_options_dialog_title">Опције</string>

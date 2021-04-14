@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 градусів</string>
     <string name="data_usage_app_restrict_all">Дозволити доступ до мережі</string>
     <string name="data_usage_app_restrict_all_summary">Дозволити додатку доступ до мережі</string>
+    <string name="data_usage_app_restrict_mobile">Мобільний Інтернет</string>
+    <string name="data_usage_app_restrict_mobile_summary">Ввімкнути мобільні данні</string>
     <string name="data_usage_app_restrict_vpn">Дані VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Увімкнути використання даних VPN</string>
     <string name="data_usage_app_restrict_wifi">Дані Wi\u2011Fi</string>
@@ -59,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">Швидкий доступ</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Лівий край рядка панелі стану при опусканні вниз відкриває Швидкі Налаштування</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">Правий край рядка панелі стану при опусканні вниз відкриває Швидкі Налаштування</string>
+    <string name="status_bar_quick_qs_pulldown_off">Вимкнено</string>
     <string name="status_bar_quick_qs_pulldown_left">Зліва</string>
     <string name="status_bar_quick_qs_pulldown_right">Справа</string>
     <string name="status_bar_icons_title">Значки в рядку стану</string>
@@ -160,6 +163,8 @@
     <string name="adj_contrast_title">Контраст</string>
     <string name="proximity_wake_title">Запобігання випадкового пробудження</string>
     <string name="proximity_wake_summary">Перевіряти датчик наближення перед розблокуванням екрану</string>
+    <string name="show_navbar_gesture_bar_title">Індикатор жестів</string>
+    <string name="show_navbar_gesture_bar_summary">Показувати індикатор жестів внизу екрану</string>
     <string name="navigation_bar_title">Навігаційна панель</string>
     <string name="hardware_keys_power_key_title">Кнопка живлення</string>
     <string name="hardware_keys_volume_keys_title">Кнопки гучності</string>
@@ -191,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 хвилини</string>
     <string name="torch_long_press_power_timeout_5min">5 хвилин</string>
     <string name="torch_long_press_power_timeout_10min">10 хвилин</string>
-    <string name="others_settings_title">Інші налаштування</string>
-    <string name="additional_buttons_title">Додаткові кнопки</string>
+    <string name="click_partial_screenshot_title">Натисніть для часткового знімку екрану</string>
+    <string name="click_partial_screenshot_summary">Коротко натисніть кнопку зменшення гучності та живлення, для знімку частини екрану</string>
     <string name="back_height_low_label">Повна</string>
     <string name="back_height_high_label">Нижня область</string>
     <string name="back_options_dialog_title">Параметри</string>
+    <string name="back_height">Область торкання краю</string>
 </resources>

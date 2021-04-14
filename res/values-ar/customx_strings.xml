@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 درجة</string>
     <string name="data_usage_app_restrict_all">السماح بالوصول للشبكة</string>
     <string name="data_usage_app_restrict_all_summary">السماح للتطبيق بالوصول إلى الشبكة</string>
+    <string name="data_usage_app_restrict_mobile">بيانات الاتصال </string>
+    <string name="data_usage_app_restrict_mobile_summary">تفعيل استخدام بيانات الهاتف</string>
     <string name="data_usage_app_restrict_vpn">بيانات الـ VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">تمكين استخدام بيانات الـ VPN</string>
     <string name="data_usage_app_restrict_wifi">‏بيانات Wi‑Fi</string>
@@ -59,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">السحب السريع لأسفل</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">سحب الحافة اليسرى من شريط الحالة الى الأسفل يظهر الإعدادات السريعة</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">سحب الحافة اليمنى من شريط الحالة الى الأسفل يظهر الإعدادات السريعة</string>
+    <string name="status_bar_quick_qs_pulldown_off">مغلق</string>
     <string name="status_bar_quick_qs_pulldown_left">اليسار</string>
     <string name="status_bar_quick_qs_pulldown_right">إيقاف</string>
     <string name="status_bar_icons_title">أيقونات شريط الحالة</string>
@@ -160,6 +163,8 @@
     <string name="adj_contrast_title">التباين</string>
     <string name="proximity_wake_title">منع الاستيقاظ بالخطأ</string>
     <string name="proximity_wake_summary">التحقق من مستشعر القرب قبل إيقاظ الشاشة</string>
+    <string name="show_navbar_gesture_bar_title">رمز البطارية</string>
+    <string name="show_navbar_gesture_bar_summary">إظهار شريط التنقل أسفل الشاشة</string>
     <string name="navigation_bar_title">شريط التنقل</string>
     <string name="hardware_keys_power_key_title">زر الطاقة</string>
     <string name="hardware_keys_volume_keys_title">مُعدل مستوى الصوت</string>
@@ -191,9 +196,10 @@
     <string name="torch_long_press_power_timeout_2min">2 دقائق</string>
     <string name="torch_long_press_power_timeout_5min">5 دقائق</string>
     <string name="torch_long_press_power_timeout_10min">10 دقائق</string>
-    <string name="others_settings_title">إعدادات أخرى</string>
-    <string name="additional_buttons_title">أزرار إضافية</string>
+    <string name="click_partial_screenshot_title">اضغط لالتقاط لقطة جزئية للشاشة</string>
+    <string name="click_partial_screenshot_summary">اضغط لفترة وجيزة زري خفض الصوت والطاقة لأخذ لقطة شاشة جزئية</string>
     <string name="back_height_low_label">كاملة</string>
     <string name="back_height_high_label">المنطقة السفلية</string>
     <string name="back_options_dialog_title">خيارات</string>
+    <string name="back_height">منطقة لمس الاطراف</string>
 </resources>
