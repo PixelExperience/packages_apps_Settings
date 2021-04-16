@@ -121,6 +121,7 @@
     <string name="live_display_night">夜間</string>
     <string name="live_display_outdoor_mode_title">自動戶外模式</string>
     <string name="live_display_outdoor_mode_summary">在陽光下自動提升亮度和飽和度</string>
+    <string name="live_display_anti_flicker_title">防閃爍</string>
     <string name="live_display_low_power_title">降低耗電</string>
     <string name="live_display_low_power_summary">在不降低亮度的情況下調整顯示以降低耗電</string>
     <string name="live_display_enhance_color_title">增強色彩</string>

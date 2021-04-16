@@ -121,6 +121,7 @@
     <string name="live_display_night">Ноћ</string>
     <string name="live_display_outdoor_mode_title">Аутоматски режим „на отвореном“</string>
     <string name="live_display_outdoor_mode_summary">Аутоматски повећајте осветљеност и засићеност под јаким светлом.</string>
+    <string name="live_display_anti_flicker_title">Анти фликер</string>
     <string name="live_display_low_power_title">Смањи потрошњу енергије</string>
     <string name="live_display_low_power_summary">Прилагодите екран за најнижу потрошњу енергије без погоршања квалитета.</string>
     <string name="live_display_enhance_color_title">Побољшање боја</string>

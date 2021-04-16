@@ -37,6 +37,7 @@
     <string name="live_display_night">रात</string>
     <string name="live_display_outdoor_mode_title">स्वचालित आउटडोर मोड</string>
     <string name="live_display_outdoor_mode_summary">सूरज की तेज़ रौशनी में चमक और संतृप्ति को स्वचालित रूप से बढ़ाएं</string>
+    <string name="live_display_anti_flicker_title">Anti kerlip</string>
     <string name="live_display_low_power_title">बिजली की खपत कम करें</string>
     <string name="live_display_low_power_summary">बिजली की निम्नतम खपत के लिए बिना गिरावट के डिस्प्ले समायोजित करें</string>
     <string name="live_display_enhance_color_title">रंगों को निखारें</string>

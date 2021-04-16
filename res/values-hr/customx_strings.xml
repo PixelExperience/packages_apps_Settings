@@ -118,6 +118,7 @@
     <string name="live_display_night">Noć</string>
     <string name="live_display_outdoor_mode_title">Automatski vanjski način</string>
     <string name="live_display_outdoor_mode_summary">Automatski povećaj svjetlinu i zasićenost pod jakim svjetlom</string>
+    <string name="live_display_anti_flicker_title">Bez treperenja</string>
     <string name="live_display_low_power_title">Smanji potrošnju energije</string>
     <string name="live_display_low_power_summary">Prilagodite prikaz za najnižu potrošnju energije bez degradacije</string>
     <string name="live_display_enhance_color_title">Poboljšanje boje</string>

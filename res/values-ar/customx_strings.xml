@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="status_bar_double_tap_to_sleep_title">اضغط للنوم</string>
-    <string name="status_bar_double_tap_to_sleep_summary">ضغطتين على شريط الحالة لإطفاء الشاشة</string>
+    <string name="status_bar_double_tap_to_sleep_summary">النقر المزدوج على شريط الحالة او شاشة القفل لإطفاء الشاشة</string>
     <string name="wake_when_plugged_or_unplugged_title">الإيقاظ عند التوصيل</string>
     <string name="wake_when_plugged_or_unplugged_summary">تشغيل الشاشة عند الاتصال أو قطع اتصال مصدر الطاقة</string>
     <string name="app_notification_sound_timeout_title">الحد الأدنى من الوقت بين أصوات الإشعار</string>
@@ -15,20 +15,20 @@
     <string name="app_notification_sound_timeout_value_30_minutes">30 دقيقة</string>
     <string name="unlock_scramble_pin_layout_title">ترتيب عشوائي</string>
     <string name="unlock_scramble_pin_layout_summary">ترتيب أزرار الأرقام لرمز PIN بصورة عشوائية عند فك قفل الجهاز</string>
-    <string name="volume_link_notification_title">ربط حجم صوت النغمة وصوت الإشعارات</string>
+    <string name="volume_link_notification_title">ربط مستوى صوت نغمة الرنين &amp; مع صوت الاشعارات</string>
     <string name="heads_up_notifications_enabled_title">إشعارات منبثقة</string>
     <string name="heads_up_notifications_enabled_summary">عرض الإشعارات ذات الأولوية في نافذة عائمة صغيرة</string>
-    <string name="increasing_ring_volume_option_title">حجم الصوت متزايد</string>
-    <string name="increasing_ring_min_volume_title">حجم الصوت البدئيّ</string>
-    <string name="increasing_ring_ramp_up_time_title">زمن التدرج</string>
+    <string name="increasing_ring_volume_option_title">تزايد صوت الرنين</string>
+    <string name="increasing_ring_min_volume_title">بداية مستوى الصوت</string>
+    <string name="increasing_ring_ramp_up_time_title">زيادة الوقت</string>
     <string name="lockscreen_media_art_title">عرض الغلاف الفني للوسائط</string>
-    <string name="lockscreen_visualizer_title">مرئيات الموسيقى</string>
+    <string name="lockscreen_visualizer_title">إظهار العرض المتحرك للموسيقى</string>
     <string name="lock_settings_picker_pattern_size_message">اختر حجم النمط</string>
     <string name="lockpattern_settings_enable_error_path_title">إظهار خطأ النمط</string>
     <string name="lockpattern_settings_enable_dots_title">إظهار نقاط النمط</string>
     <string name="advanced_reboot_title">إعادة تشغيل متقدمة</string>
-    <string name="advanced_reboot_summary">عند إلغاء القفل، ستتضمن خيارات قائمة إعادة التشغيل الذهاب الى وضع الاسترداد او وضع محمل الاقلاع</string>
-    <string name="display_rotation_title">إعدادات التدوير</string>
+    <string name="advanced_reboot_summary">عند إلغاء القفل، ستتضمن خيارات قائمة إعادة التشغيل الذهاب الى وضع ال Recovery او وضع ال Bootloader</string>
+    <string name="display_rotation_title">إعدادات تدوير الشاشة</string>
     <string name="display_rotation_enabled">التدوير التلقائي مُفعل</string>
     <string name="display_rotation_disabled">التدوير التلقائي مُعطل</string>
     <string name="display_rotation_unit">الدرجات</string>
@@ -121,6 +121,7 @@
     <string name="live_display_night">الليل</string>
     <string name="live_display_outdoor_mode_title">وضع في الخارج التلقائي</string>
     <string name="live_display_outdoor_mode_summary">زيادة الإضاءة والإشباع تلقائياً تحت أشعة الشمس</string>
+    <string name="live_display_anti_flicker_title">مضاد الوميض</string>
     <string name="live_display_low_power_title">تقليل استهلاك الطاقة</string>
     <string name="live_display_low_power_summary">ضبط العرض لاستهلاك أقل للطاقة دون تشويش ما يُعرض</string>
     <string name="live_display_enhance_color_title">تحسين الألوان</string>

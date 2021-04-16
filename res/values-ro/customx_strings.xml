@@ -120,6 +120,7 @@
     <string name="live_display_night">Noapte</string>
     <string name="live_display_outdoor_mode_title">Mod automat aer liber</string>
     <string name="live_display_outdoor_mode_summary">Crește luminozitatea și saturația automat în lumina strălucitoare a soarelui</string>
+    <string name="live_display_anti_flicker_title">Anti-pâlpâire</string>
     <string name="live_display_low_power_title">Redu consumul de energie</string>
     <string name="live_display_low_power_summary">Reglează afişajul pentru cel mai mic consum de energie fără degradare</string>
     <string name="live_display_enhance_color_title">Sporește culorile</string>

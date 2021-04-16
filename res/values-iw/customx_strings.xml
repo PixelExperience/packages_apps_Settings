@@ -121,6 +121,7 @@
     <string name="live_display_night">לילה</string>
     <string name="live_display_outdoor_mode_title">מצב מחוץ לבית אוטומטית</string>
     <string name="live_display_outdoor_mode_summary">הגבר את הבהירות ורווית צבע באופן אוטומטי תחת אור שמש חזק</string>
+    <string name="live_display_anti_flicker_title">אנטי-הבהוב</string>
     <string name="live_display_low_power_title">הפחת צריכת אנרגיה</string>
     <string name="live_display_low_power_summary">התאם את התצוגה עבור צריכת האנרגיה הנמוכה ביותר ללא פגיעה באיכות</string>
     <string name="live_display_enhance_color_title">שפר צבעים</string>

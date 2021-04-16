@@ -118,6 +118,7 @@
     <string name="live_display_night">Naktis</string>
     <string name="live_display_outdoor_mode_title">Automatinis lauko režimas</string>
     <string name="live_display_outdoor_mode_summary">Padidinkite ryškumą ir sodrumą ryškioje saulės šviesoje</string>
+    <string name="live_display_anti_flicker_title">Nemirksėjimo režimas</string>
     <string name="live_display_low_power_title">Sumažinkite energijos suvartojimą</string>
     <string name="live_display_low_power_summary">Sureguliuokite ekraną mažam energijos suvartojimui be pablogėjimo</string>
     <string name="live_display_enhance_color_title">Patobulinkite spalvas</string>

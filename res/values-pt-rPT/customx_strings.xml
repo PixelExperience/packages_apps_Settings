@@ -121,6 +121,7 @@
     <string name="live_display_night">Noite</string>
     <string name="live_display_outdoor_mode_title">Modo exterior automático</string>
     <string name="live_display_outdoor_mode_summary">Aumentar brilho e saturação automaticamente sob luz solar intensa</string>
+    <string name="live_display_anti_flicker_title">Anti Cintilação</string>
     <string name="live_display_low_power_title">Reduzir consumo de energia</string>
     <string name="live_display_low_power_summary">Ajustar ecrã para consumir menos energia, sem degradação</string>
     <string name="live_display_enhance_color_title">Realçar cores</string>

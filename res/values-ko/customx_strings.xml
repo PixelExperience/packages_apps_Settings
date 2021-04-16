@@ -121,6 +121,7 @@
     <string name="live_display_night">야간</string>
     <string name="live_display_outdoor_mode_title">자동 야외 모드</string>
     <string name="live_display_outdoor_mode_summary">밝은 햇빛 아래에서 자동으로 밝기와 채도 증가</string>
+    <string name="live_display_anti_flicker_title">깜박임 방지</string>
     <string name="live_display_low_power_title">전력 소모 절약</string>
     <string name="live_display_low_power_summary">열화 없는 한도 내에서 화면을 조정하여 전력 소모 감소</string>
     <string name="live_display_enhance_color_title">색상 향상</string>

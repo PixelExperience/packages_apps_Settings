@@ -121,6 +121,7 @@
     <string name="live_display_night">Malam</string>
     <string name="live_display_outdoor_mode_title">Mode luar ruangan otomatis</string>
     <string name="live_display_outdoor_mode_summary">Meningkatkan kecerahan dan saturasi otomatis saat dibawah sinar matahari</string>
+    <string name="live_display_anti_flicker_title">Anti kerlip</string>
     <string name="live_display_low_power_title">Mengurangi konsumsi daya</string>
     <string name="live_display_low_power_summary">Menyesuaikan tampilan untuk konsumsi daya terendah tanpa degradasi</string>
     <string name="live_display_enhance_color_title">Meningkatkan warna</string>

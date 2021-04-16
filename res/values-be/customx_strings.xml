@@ -118,6 +118,7 @@
     <string name="live_display_night">Ноч</string>
     <string name="live_display_outdoor_mode_title">Аўтаматычны рэжым для вуліцы</string>
     <string name="live_display_outdoor_mode_summary">Павялічыць яркасць і насычанасць аўтаматычна пры яркім сонечным святле</string>
+    <string name="live_display_anti_flicker_title">Анты-мігаценне</string>
     <string name="live_display_low_power_title">Знізіць энергаспажыванне</string>
     <string name="live_display_low_power_summary">Падладжваць экран для нізкага энергаспажывання без пагаршэння якасці</string>
     <string name="live_display_enhance_color_title">Паляпшэнне колераперадачы</string>

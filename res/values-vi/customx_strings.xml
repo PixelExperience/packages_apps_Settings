@@ -121,6 +121,7 @@
     <string name="live_display_night">Ban đêm</string>
     <string name="live_display_outdoor_mode_title">Chế độ ngoài trời tự động</string>
     <string name="live_display_outdoor_mode_summary">Tự động tăng độ sáng và độ bão hòa dưới ánh sáng mặt trời</string>
+    <string name="live_display_anti_flicker_title">Chống nháy ánh sáng</string>
     <string name="live_display_low_power_title">Giảm tiêu thụ pin</string>
     <string name="live_display_low_power_summary">Điều chỉnh hiển thị để tiêu thụ pin thấp nhất mà không làm giảm chất lượng</string>
     <string name="live_display_enhance_color_title">Tăng cường màu sắc</string>
