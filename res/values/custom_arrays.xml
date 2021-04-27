@@ -288,4 +288,8 @@
         <item>2</item>
     </string-array>
 
+    <!-- Override supported color modes.
+         NOTE: All color modes need to be in config_availableColorModes -->
+    <string-array name="available_vendor_color_modes" translatable="false" />
+
 </resources>
