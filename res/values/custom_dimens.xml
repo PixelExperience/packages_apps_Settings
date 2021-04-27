@@ -2,4 +2,6 @@
 <resources>
     <!-- Fingerprint -->
     <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
+
+    <dimen name="color_mode_preview_height">320dp</dimen>
 </resources>
