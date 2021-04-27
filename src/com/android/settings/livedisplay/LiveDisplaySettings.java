@@ -34,6 +34,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.android.internal.util.ArrayUtils;
+import com.android.settingslib.widget.LayoutPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
@@ -146,6 +147,13 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements
         mConfig = mLiveDisplayManager.getConfig();
 
         addPreferencesFromResource(R.xml.livedisplay);
+
+        PreferenceScreen screen = getPreferenceScreen();
+        LayoutPreference preview = new LayoutPreference(screen.getContext(),
+                R.layout.color_mode_preview);
+        preview.setOrder(-1);
+        preview.setSelectable(false);
+        screen.addPreference(preview);
 
         PreferenceScreen liveDisplayPrefs = findPreference(KEY_SCREEN_LIVE_DISPLAY);
         PreferenceCategory advancedPrefs = findPreference(KEY_CATEGORY_ADVANCED);
