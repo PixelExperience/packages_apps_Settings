@@ -682,19 +682,42 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
         }
         if (homeCategory != null) {
-            homeCategory.setEnabled(!navbarEnabled);
+            if (mHomeAnswerCall != null) {
+                mHomeAnswerCall.setEnabled(!navbarEnabled);
+            }
+            if (mHomeLongPressAction != null) {
+                mHomeLongPressAction.setEnabled(!navbarEnabled);
+            }
+            if (mHomeDoubleTapAction != null) {
+                mHomeDoubleTapAction.setEnabled(!navbarEnabled);
+            }
         }
         if (backCategory != null) {
             backCategory.setEnabled(!navbarEnabled);
         }
         if (menuCategory != null) {
-            menuCategory.setEnabled(!navbarEnabled);
+            if (mMenuPressAction != null) {
+                mMenuPressAction.setEnabled(!navbarEnabled);
+            }
+            if (mMenuLongPressAction != null) {
+                mMenuLongPressAction.setEnabled(!navbarEnabled);
+            }
         }
         if (assistCategory != null) {
-            assistCategory.setEnabled(!navbarEnabled);
+            if (mAssistPressAction != null) {
+                mAssistPressAction.setEnabled(!navbarEnabled);
+            }
+            if (mAssistLongPressAction != null) {
+                mAssistLongPressAction.setEnabled(!navbarEnabled);
+            }
         }
         if (appSwitchCategory != null) {
-            appSwitchCategory.setEnabled(!navbarEnabled);
+            if (mAppSwitchPressAction != null) {
+                mAppSwitchPressAction.setEnabled(!navbarEnabled);
+            }
+            if (mAppSwitchLongPressAction != null) {
+                mAppSwitchLongPressAction.setEnabled(!navbarEnabled);
+            }
         }
         if (mSwapCapacitiveKeys != null){
             mSwapCapacitiveKeys.setEnabled(!navbarEnabled);
