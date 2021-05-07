@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Automatischer Außen-Modus</string>
     <string name="live_display_outdoor_mode_summary">Bei grellem Sonnenlicht Helligkeit und Sättigung automatisch erhöhen</string>
     <string name="live_display_anti_flicker_title">Anti-Flimmern</string>
+    <string name="live_display_anti_flicker_summary">Verhindern Sie starkes Flackern und reduzieren Sie die Belastung der Augen bei schlechten Lichtverhältnissen. Es kann die Farbgenauigkeit verschlechtern und die Art und Weise, wie einige Elemente angezeigt werden, beeinträchtigen.</string>
     <string name="live_display_low_power_title">Akkuverbrauch reduzieren</string>
     <string name="live_display_low_power_summary">Anpassen der Anzeige für den geringsten Akkuverbrauch ohne Beeinträchtigungen</string>
     <string name="live_display_enhance_color_title">Farben verbessern</string>

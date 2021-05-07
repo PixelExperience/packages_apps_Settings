@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Automatický režim vonku</string>
     <string name="live_display_outdoor_mode_summary">Automaticky zvýšiť jas a sýtosť za jasného slnečného svetla</string>
     <string name="live_display_anti_flicker_title">Eliminácia blikania</string>
+    <string name="live_display_anti_flicker_summary">Zabrániť rozsiahlemu blikaniu a znížiť námahu očí v slabých svetelných podmienkach. Môže degradovať presnosť farieb a ovplyvniť zobrazenie niektorých položiek.</string>
     <string name="live_display_low_power_title">Znížiť spotrebu energie</string>
     <string name="live_display_low_power_summary">Nastaviť zobrazenie pre najnižšiu spotrebu energie bez zhoršenia čitateľnosti</string>
     <string name="live_display_enhance_color_title">Vylepšiť farby</string>

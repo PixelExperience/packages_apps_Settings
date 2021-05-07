@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">自动户外模式</string>
     <string name="live_display_outdoor_mode_summary">在强烈的阳光下自动增加屏幕亮度和饱和度</string>
     <string name="live_display_anti_flicker_title">防闪烁</string>
+    <string name="live_display_anti_flicker_summary">在低亮度条件下，可防止闪烁并减少眼睛疲劳。 此模式可能降低色彩精度，并影响部分内容的显示效果。</string>
     <string name="live_display_low_power_title">降低耗电</string>
     <string name="live_display_low_power_summary">在不降低亮度的情况下调整屏幕使耗电最低</string>
     <string name="live_display_enhance_color_title">增强色彩</string>

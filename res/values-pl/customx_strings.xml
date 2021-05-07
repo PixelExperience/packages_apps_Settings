@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Automatyczny tryb na zewnątrz</string>
     <string name="live_display_outdoor_mode_summary">Automatycznie zwiększ jasność i nasycenie w jasnym świetle słonecznym</string>
     <string name="live_display_anti_flicker_title">Przeciwdoblaskowy</string>
+    <string name="live_display_anti_flicker_summary">Zapobieganie rozległe migotanie i zmniejszyć zmęczenie oczu w warunkach słabego oświetlenia. Może to pogorszyć dokładność kolorów i wpłynąć na sposób wyświetlania niektórych elementów.</string>
     <string name="live_display_low_power_title">Redukcja zużycia energii</string>
     <string name="live_display_low_power_summary">Dostosuj sposób wyświetlania do najniższego zużycia energii bez utraty jakości</string>
     <string name="live_display_enhance_color_title">Wzmocnienie kolorów</string>

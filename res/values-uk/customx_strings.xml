@@ -121,7 +121,8 @@
     <string name="live_display_night">Ніч</string>
     <string name="live_display_outdoor_mode_title">Автоматичний режим «На вулиці»</string>
     <string name="live_display_outdoor_mode_summary">Збільшувати яскравість та насиченість автоматично при яскравому світлі</string>
-    <string name="live_display_anti_flicker_title">Фільтр мерехтіння</string>
+    <string name="live_display_anti_flicker_title">Анти мерехтіння</string>
+    <string name="live_display_anti_flicker_summary">Запобігає надмірному мерехтінню та зменшує напруження очей в умовах недостатнього освітлення. Це може погіршити точність кольоропередачі та вплинути на відображення деяких елементів.</string>
     <string name="live_display_low_power_title">Зменшення споживання енергії</string>
     <string name="live_display_low_power_summary">Налаштування екрану для найнижчого енергоспоживання без погіршення зображення</string>
     <string name="live_display_enhance_color_title">Покращити кольори</string>

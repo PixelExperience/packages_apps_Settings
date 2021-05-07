@@ -121,7 +121,8 @@
     <string name="live_display_night">Ночь</string>
     <string name="live_display_outdoor_mode_title">Автоматический режим для улицы</string>
     <string name="live_display_outdoor_mode_summary">Автоматическое увеличение яркости и насыщенности при ярком солнечном свете</string>
-    <string name="live_display_anti_flicker_title">Фильтр мерцания</string>
+    <string name="live_display_anti_flicker_title">Защита от мерцания</string>
+    <string name="live_display_anti_flicker_summary">Не допускайте сильного мерцания и снизьте нагрузку на глаза в условиях низкой освещенности. Это может снизить точность цветопередачи и повлиять на отображение некоторых элементов. </string>
     <string name="live_display_low_power_title">Снизить энергопотребление</string>
     <string name="live_display_low_power_summary">Подстраивать экран для низкого энергопотребления без ухудшения качества</string>
     <string name="live_display_enhance_color_title">Улучшение цветопередачи</string>

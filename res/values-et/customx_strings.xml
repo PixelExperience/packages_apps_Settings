@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Automaatne õuerežiim</string>
     <string name="live_display_outdoor_mode_summary">Suurenda ereda päikesevalgusega automaatselt heledust ja küllastust</string>
     <string name="live_display_anti_flicker_title">Virvendusfilter</string>
+    <string name="live_display_anti_flicker_summary">Vältige liigset värelust ja vähendage silmade koormust vähese valguse tingimustes. See võib vähendada värvitruudust ja mõjutada mõnede üksuste kuvamist. </string>
     <string name="live_display_low_power_title">Vähenda energiatarbimist</string>
     <string name="live_display_low_power_summary">Kohanda ekraani madalaimale energiatarbimisele ilma, et see ekraani kahjustaks</string>
     <string name="live_display_enhance_color_title">Parenda värve</string>

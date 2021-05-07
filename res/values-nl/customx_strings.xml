@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Automatische buitenshuismodus</string>
     <string name="live_display_outdoor_mode_summary">Helderheid en verzadiging automatisch verhogen bij helder zonlicht</string>
     <string name="live_display_anti_flicker_title">Anti-flicker</string>
+    <string name="live_display_anti_flicker_summary">Voorkom sterke flickering en verminder oogvermoeidheid bij weinig licht. Het kan de zuiverheid van kleuren aantasten en kan invloed hebben op de wijze waarop sommige items weergegeven worden.</string>
     <string name="live_display_low_power_title">Energieverbruik verminderen</string>
     <string name="live_display_low_power_summary">Scherm aanpassen voor laagst mogelijke energieverbruik zonder kwaliteitsverlies</string>
     <string name="live_display_enhance_color_title">Kleuren verbeteren</string>

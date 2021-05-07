@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Modo automático ao ar livre</string>
     <string name="live_display_outdoor_mode_summary">Aumentar o brilho e a saturação automaticamente sob luz solar intensa</string>
     <string name="live_display_anti_flicker_title">Modo anti cintilação</string>
+    <string name="live_display_anti_flicker_summary">Reduzir a fadiga ocular em condições de pouca luz. Isso pode degradar a precisão das cores e afetar a forma como certos elementos da tela são exibidos.</string>
     <string name="live_display_low_power_title">Reduzir o consumo de energia</string>
     <string name="live_display_low_power_summary">Ajustar exibição para menor consumo de energia sem degradação</string>
     <string name="live_display_enhance_color_title">Realçar cores</string>

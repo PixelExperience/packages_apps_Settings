@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">自動戶外模式</string>
     <string name="live_display_outdoor_mode_summary">自動在陽光下提高亮度和飽和度</string>
     <string name="live_display_anti_flicker_title">防閃爍</string>
+    <string name="live_display_anti_flicker_summary">在缺乏光線下，防止大量閃爍並減少眼睛疲勞。 這可能會降低色彩準確性，並影響某些項目的顯示方式。</string>
     <string name="live_display_low_power_title">降低耗電</string>
     <string name="live_display_low_power_summary">在不降低亮度的情況下調整顯示即可降低耗電</string>
     <string name="live_display_enhance_color_title">增強色彩</string>

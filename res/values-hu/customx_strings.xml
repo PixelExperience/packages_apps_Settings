@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Automatikus kültéri mód</string>
     <string name="live_display_outdoor_mode_summary">Fényerő és színtelítettség automatikus növelése erős napsütésben</string>
     <string name="live_display_anti_flicker_title">Vibrálásmentesítés</string>
+    <string name="live_display_anti_flicker_summary">Gyenge fényviszonyok között megakadályozza az erőteljes vilbrálást és csökkenti a szemek megerőltetését. A funkció ronthatja a színpontosságot, és befolyásolhatja egyes elemek megjelenítését.</string>
     <string name="live_display_low_power_title">Csökkentett energiafogyasztás</string>
     <string name="live_display_low_power_summary">Kijelző beállítása a legkisebb energiafogyasztásra, minőségromlás nélkül</string>
     <string name="live_display_enhance_color_title">Színélénkítés</string>

@@ -75,7 +75,7 @@
     <string name="status_bar_clock_position_left">Izquierda</string>
     <string name="status_bar_clock_position_center">Centrado</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">Reloj 24 horas habilitado</string>
+    <string name="status_bar_am_pm_info">Reloj de 24 horas habilitado</string>
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Pequeño</string>
     <string name="status_bar_am_pm_hidden">Oculto</string>
@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Modo exterior automático</string>
     <string name="live_display_outdoor_mode_summary">Aumentar automáticamente el brillo y la saturación bajo la luz del sol</string>
     <string name="live_display_anti_flicker_title">Anti parpadeo</string>
+    <string name="live_display_anti_flicker_summary">Evita el parpadeo y reduce la tensión de los ojos en condiciones de poca luz. Esto puede degradar la precisión del color y afectar la manera en la que se muestran algunos elementos.</string>
     <string name="live_display_low_power_title">Reducir el consumo de energía</string>
     <string name="live_display_low_power_summary">Ajustar pantalla para el consumo mínimo de energía sin degradación</string>
     <string name="live_display_enhance_color_title">Mejorar colores</string>
@@ -163,7 +164,7 @@
     <string name="adj_intensity_title">Intensidad</string>
     <string name="adj_contrast_title">Contraste</string>
     <string name="proximity_wake_title">Evitar el encendido accidental</string>
-    <string name="proximity_wake_summary">Comprobar el sensor de proximidad antes de encender la pantalla</string>
+    <string name="proximity_wake_summary">Comprueba el sensor de proximidad antes de encender la pantalla</string>
     <string name="show_navbar_gesture_bar_title">Navegación por gestos </string>
     <string name="show_navbar_gesture_bar_summary">Mostrar indicador de gestos en la parte inferior de la pantalla</string>
     <string name="navigation_bar_title">Barra de navegación</string>

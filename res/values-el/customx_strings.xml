@@ -121,7 +121,8 @@
     <string name="live_display_night">Νύχτα</string>
     <string name="live_display_outdoor_mode_title">Αυτόματη λειτουργία εξωτερικού χώρου</string>
     <string name="live_display_outdoor_mode_summary">Αυτόματη αύξηση της φωτεινότητας και του κορεσμού κάτω από έντονο ηλιακό φως</string>
-    <string name="live_display_anti_flicker_title">Αντι-τρεμόσβυμα</string>
+    <string name="live_display_anti_flicker_title">Αντι τρεμόπαιγμα</string>
+    <string name="live_display_anti_flicker_summary">Αποτρέψτε το εκτεταμένο τρεμόπαιγμα και μειώστε την καταπόνηση των ματιών σε συνθήκες χαμηλού φωτισμού. Μπορεί να υποβαθμίσει την ακρίβεια των χρωμάτων και να επηρεάσει τον τρόπο εμφάνισης ορισμένων στοιχείων.</string>
     <string name="live_display_low_power_title">Μείωση της κατανάλωσης ενέργειας</string>
     <string name="live_display_low_power_summary">Προσαρμογή της οθόνης για χαμηλότερη κατανάλωση ισχύος χωρίς υποβάθμιση των χρωμάτων</string>
     <string name="live_display_enhance_color_title">Βελτίωση χρωμάτων</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="status_bar_double_tap_to_sleep_title">اضغط للنوم</string>
+    <string name="status_bar_double_tap_to_sleep_title">الضغط للنوم</string>
     <string name="status_bar_double_tap_to_sleep_summary">النقر المزدوج على شريط الحالة او شاشة القفل لإطفاء الشاشة</string>
     <string name="wake_when_plugged_or_unplugged_title">الإيقاظ عند التوصيل</string>
     <string name="wake_when_plugged_or_unplugged_summary">تشغيل الشاشة عند الاتصال أو قطع اتصال مصدر الطاقة</string>
@@ -15,12 +15,12 @@
     <string name="app_notification_sound_timeout_value_30_minutes">30 دقيقة</string>
     <string name="unlock_scramble_pin_layout_title">ترتيب عشوائي</string>
     <string name="unlock_scramble_pin_layout_summary">ترتيب أزرار الأرقام لرمز PIN بصورة عشوائية عند فك قفل الجهاز</string>
-    <string name="volume_link_notification_title">ربط مستوى صوت نغمة الرنين &amp; مع صوت الاشعارات</string>
+    <string name="volume_link_notification_title">ربط مستوى صوت نغمة الرنين مع صوت الاشعارات</string>
     <string name="heads_up_notifications_enabled_title">إشعارات منبثقة</string>
     <string name="heads_up_notifications_enabled_summary">عرض الإشعارات ذات الأولوية في نافذة عائمة صغيرة</string>
     <string name="increasing_ring_volume_option_title">تزايد صوت الرنين</string>
     <string name="increasing_ring_min_volume_title">بداية مستوى الصوت</string>
-    <string name="increasing_ring_ramp_up_time_title">زيادة الوقت</string>
+    <string name="increasing_ring_ramp_up_time_title">تزايد الوقت</string>
     <string name="lockscreen_media_art_title">عرض الغلاف الفني للوسائط</string>
     <string name="lockscreen_visualizer_title">إظهار العرض المتحرك للموسيقى</string>
     <string name="lock_settings_picker_pattern_size_message">اختر حجم النمط</string>
@@ -39,20 +39,20 @@
     <string name="display_rotation_270_title">270 درجة</string>
     <string name="data_usage_app_restrict_all">السماح بالوصول للشبكة</string>
     <string name="data_usage_app_restrict_all_summary">السماح للتطبيق بالوصول إلى الشبكة</string>
-    <string name="data_usage_app_restrict_mobile">بيانات الاتصال </string>
+    <string name="data_usage_app_restrict_mobile">بيانات الهاتف</string>
     <string name="data_usage_app_restrict_mobile_summary">تفعيل استخدام بيانات الهاتف</string>
     <string name="data_usage_app_restrict_vpn">بيانات الـ VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">تمكين استخدام بيانات الـ VPN</string>
     <string name="data_usage_app_restrict_wifi">‏بيانات Wi‑Fi</string>
     <string name="data_usage_app_restrict_wifi_summary">تمكين استخدام بيانات WiFi</string>
-    <string name="tethering_allow_vpn_upstreams_title">السماح للعملاء باستخدام الـ VPN</string>
-    <string name="tethering_allow_vpn_upstreams_summary">السماح لعملاء نقطة الاتصال باستخدام اتصالات الـVPN لهذا الجهاز\u2019</string>
+    <string name="tethering_allow_vpn_upstreams_title">السماح للمتصلين باستخدام الـ VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">السماح للمتصلين بنقطة الاتصال باستخدام اتصالات VPN لجهاز\u2019 من أجل الإرسال</string>
     <string name="display_cutout_mode_title">سلوك نتوء الشاشة</string>
     <string name="display_cutout_mode_normal">التطبيقات التلقائية</string>
     <string name="display_cutout_mode_hidden">مخفية</string>
     <string name="display_cutout_force_fullscreen_title">تطبيقات الشاشة الكاملة</string>
     <string name="display_cutout_force_fullscreen_summary">إجبار التطبيقات على تجاهل مساحة الحز</string>
-    <string name="display_cutout_force_fullscreen_restart_app">يرجى إعادة تشغيل التطبيق لتطبيق التغييرات.</string>
+    <string name="display_cutout_force_fullscreen_restart_app">يرجى إعادة تشغيل التطبيق لاجراء التغييرات.</string>
     <string name="cutout_force_fullscreen_no_apps">ليس هناك أي تطبيقات</string>
     <string name="swipe_to_screenshot_gesture_title">اسحب لأخذ لقطة للشاشة</string>
     <string name="swipe_to_screenshot_gesture_summary">السحب بثلاثة أصابع لأخذ لقطة للشاشة</string>
@@ -121,7 +121,8 @@
     <string name="live_display_night">الليل</string>
     <string name="live_display_outdoor_mode_title">وضع في الخارج التلقائي</string>
     <string name="live_display_outdoor_mode_summary">زيادة الإضاءة والإشباع تلقائياً تحت أشعة الشمس</string>
-    <string name="live_display_anti_flicker_title">مضاد الوميض</string>
+    <string name="live_display_anti_flicker_title">مضاد رعش الشاشة </string>
+    <string name="live_display_anti_flicker_summary">تقوم بمنع الرعش الشديد للشاشة وتقليل اجهاد العين في ظروف الاضاءة المنخفضة. ولكن  قد تؤثر على درجة الالوان و طريقة عرض بعض العناصر.</string>
     <string name="live_display_low_power_title">تقليل استهلاك الطاقة</string>
     <string name="live_display_low_power_summary">ضبط العرض لاستهلاك أقل للطاقة دون تشويش ما يُعرض</string>
     <string name="live_display_enhance_color_title">تحسين الألوان</string>

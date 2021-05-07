@@ -106,6 +106,7 @@
     <string name="live_display_night">شب</string>
     <string name="live_display_outdoor_mode_title">حالت خودکار فضای باز</string>
     <string name="live_display_outdoor_mode_summary">افزایش خودکار روشنایی و اشباع رنگ در هنگام قرارگیری زیر نور خورشید</string>
+    <string name="live_display_anti_flicker_title">ضد پرش تصویر</string>
     <string name="live_display_low_power_title">کاهش مصرف نیرو</string>
     <string name="live_display_low_power_summary">تنظیم صفحه نمایش برای کمترین مصرف نیرو بدون کاهش کارایی</string>
     <string name="live_display_enhance_color_title">بهبود رنگ‌ها</string>

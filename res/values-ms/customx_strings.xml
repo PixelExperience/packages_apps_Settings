@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Mod luar automatik</string>
     <string name="live_display_outdoor_mode_summary">Tingkatkan kecerahan dan kepekatan secara automatik ketika cahaya matahari cerah</string>
     <string name="live_display_anti_flicker_title">Anti kerlipan</string>
+    <string name="live_display_anti_flicker_summary">Mencegah kerlipan yang meluas dan mengurangkan ketegangan mata dalam keadaan cahaya rendah. Ini mungkin menurunkan ketepatan warna dan mempengaruhi cara beberapa item dipaparkan.</string>
     <string name="live_display_low_power_title">Kurangkan penggunaan bateri</string>
     <string name="live_display_low_power_summary">Laraskan paparan untuk pengunaan bateri yang terendah tanpa kemerosotan</string>
     <string name="live_display_enhance_color_title">Tingkatkan warna</string>

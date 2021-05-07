@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Automatisk utendørsmodus</string>
     <string name="live_display_outdoor_mode_summary">Øk lysstyrke og metning automatisk under sterkt sollys</string>
     <string name="live_display_anti_flicker_title">Antiflimmer</string>
+    <string name="live_display_anti_flicker_summary">Forhindre omfattende flimmer og reduser øyebelastning i mørke omgivelser. Det kan føre til dårligere fargegjengivelse og påvirke visningen av enkelte elementer.</string>
     <string name="live_display_low_power_title">Reduser strømforbruk</string>
     <string name="live_display_low_power_summary">Justere skjermen for laveste strømforbruk uten degradering</string>
     <string name="live_display_enhance_color_title">Forbedre farger</string>

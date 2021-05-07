@@ -120,6 +120,7 @@
     <string name="live_display_outdoor_mode_title">Automaattinen ulkoilmatila</string>
     <string name="live_display_outdoor_mode_summary">Lisää kirkkautta ja värikylläisyyttä automaattisesti kirkkaassa auringonvalossa</string>
     <string name="live_display_anti_flicker_title">Vilkkumisen esto</string>
+    <string name="live_display_anti_flicker_summary">Vältä vilkkumista ja vähennä silmien väsymistä vähässä valossa. Vähentää värien tarkkuutta ja vaikuttaa joihinkin käytettäviin kohteisiin.</string>
     <string name="live_display_low_power_title">Vähennä virrankulutusta</string>
     <string name="live_display_low_power_summary">Säädä näyttö alhaisimpaan virrankäyttötilaan ilman heikentymistä</string>
     <string name="live_display_enhance_color_title">Korosta värejä</string>

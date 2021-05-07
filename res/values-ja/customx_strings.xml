@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">自動屋外モード</string>
     <string name="live_display_outdoor_mode_summary">明るい日差しが照射する環境下で明るさと彩度を自動的に向上させる</string>
     <string name="live_display_anti_flicker_title">アンチフリッカー</string>
+    <string name="live_display_anti_flicker_summary">幅広いちらつきを防ぎ、暗い環境での目への負担を軽減します。色の再現度が低下したり、いくつかの項目の表示に影響する可能性があります。</string>
     <string name="live_display_low_power_title">消費電力を削減</string>
     <string name="live_display_low_power_summary">性能を低下させずにディスプレイを最低の消費電力に調整する</string>
     <string name="live_display_enhance_color_title">色を補正</string>

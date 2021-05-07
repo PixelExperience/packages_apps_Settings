@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="status_bar_double_tap_to_sleep_title">הקש בכדי לכבות את המסך</string>
-    <string name="status_bar_double_tap_to_sleep_summary">הקש פעמיים על שורת המצב או על מסך נעילה בכדי לכבות את המסך</string>
+    <string name="status_bar_double_tap_to_sleep_title">הקש כדי לכבות את המסך</string>
+    <string name="status_bar_double_tap_to_sleep_summary">הקש פעמיים על שורת המצב או על מסך הנעילה כדי לכבות את המסך</string>
     <string name="wake_when_plugged_or_unplugged_title">הער מסך בעת חיבור</string>
     <string name="wake_when_plugged_or_unplugged_summary">הפעל את המסך כאשר מקור חשמל מתחבר או מתנתק מהמכשיר</string>
     <string name="app_notification_sound_timeout_title">זמן מינימלי בין צלילי התראות</string>
@@ -9,7 +9,7 @@
     <string name="app_notification_sound_timeout_value_none">ללא מגבלה</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 שניות</string>
     <string name="app_notification_sound_timeout_value_30_seconds">30 שניות</string>
-    <string name="app_notification_sound_timeout_value_1_minute">דקה 1</string>
+    <string name="app_notification_sound_timeout_value_1_minute">דקה</string>
     <string name="app_notification_sound_timeout_value_5_minutes">5 דקות</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 דקות</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 דקות</string>
@@ -17,7 +17,7 @@
     <string name="unlock_scramble_pin_layout_summary">ערבב את סדר לוח המקשים של הקוד בפתיחת המכשיר</string>
     <string name="volume_link_notification_title">קשר את עוצמות הצלצול וההתראות</string>
     <string name="heads_up_notifications_enabled_title">התראות קופצות</string>
-    <string name="heads_up_notifications_enabled_summary">הראה התראות חשובות בחלון צף קטן</string>
+    <string name="heads_up_notifications_enabled_summary">הצג התראות חשובות בחלון צף קטן</string>
     <string name="increasing_ring_volume_option_title">עוצמת צלצול מתגברת</string>
     <string name="increasing_ring_min_volume_title">עוצמה התחלתית</string>
     <string name="increasing_ring_ramp_up_time_title">אורך זמן ההגברה</string>
@@ -121,7 +121,8 @@
     <string name="live_display_night">לילה</string>
     <string name="live_display_outdoor_mode_title">מצב מחוץ לבית אוטומטית</string>
     <string name="live_display_outdoor_mode_summary">הגבר את הבהירות ורווית צבע באופן אוטומטי תחת אור שמש חזק</string>
-    <string name="live_display_anti_flicker_title">אנטי-הבהוב</string>
+    <string name="live_display_anti_flicker_title">אנטי־הבהוב</string>
+    <string name="live_display_anti_flicker_summary">מניעת הבהוב נרחב והפחתת העומס על העיניים בתנאי תאורה נמוכים. עלול להשפיע על דיוק הצבעים ועל אופן הצגתם של פריטים מסוימים.</string>
     <string name="live_display_low_power_title">הפחת צריכת אנרגיה</string>
     <string name="live_display_low_power_summary">התאם את התצוגה עבור צריכת האנרגיה הנמוכה ביותר ללא פגיעה באיכות</string>
     <string name="live_display_enhance_color_title">שפר צבעים</string>
@@ -193,7 +194,7 @@
     <string name="torch_long_press_power_gesture_desc">הפעל את הפנס על ידי לחיצה ארוכה על מקש ההפעלה כשהמסך כבוי</string>
     <string name="torch_long_press_power_timeout_title">כבה את הפנס אוטומטית</string>
     <string name="torch_long_press_power_timeout_never">לעולם לא</string>
-    <string name="torch_long_press_power_timeout_1min">דקה 1</string>
+    <string name="torch_long_press_power_timeout_1min">דקה</string>
     <string name="torch_long_press_power_timeout_2min">2 דקות</string>
     <string name="torch_long_press_power_timeout_5min">5 דקות</string>
     <string name="torch_long_press_power_timeout_10min">10 דקות</string>

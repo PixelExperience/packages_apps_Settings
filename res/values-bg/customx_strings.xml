@@ -121,6 +121,8 @@
     <string name="live_display_night">Нощен</string>
     <string name="live_display_outdoor_mode_title">Автоматичен режим на открито</string>
     <string name="live_display_outdoor_mode_summary">Автоматично увеличаване на яркостта и наситеността при ярка слънчева светлина</string>
+    <string name="live_display_anti_flicker_title">Анти трептене</string>
+    <string name="live_display_anti_flicker_summary">Предотвратете силно трептене и намалете напрежението на очите при условия на слаба светлина. Това може да влоши точността на цветовете и да повлияе на начина на показване на някои елементи.</string>
     <string name="live_display_low_power_title">Намали консумацията на енергия</string>
     <string name="live_display_low_power_summary">Настройка на дисплея за ниска консумация на енергия без влошаване</string>
     <string name="live_display_enhance_color_title">Подобряване на цветовете</string>
@@ -201,4 +203,5 @@
     <string name="back_height_low_label">Заредена</string>
     <string name="back_height_high_label">Долна зона</string>
     <string name="back_options_dialog_title">Настройки</string>
+    <string name="back_height">Област на докосване на ръба</string>
 </resources>

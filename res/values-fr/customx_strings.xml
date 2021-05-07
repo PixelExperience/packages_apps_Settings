@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Mode extérieur automatique</string>
     <string name="live_display_outdoor_mode_summary">Augmenter la luminosité et la saturation automatiquement sous la lumière du soleil</string>
     <string name="live_display_anti_flicker_title">Anti-scintillement</string>
+    <string name="live_display_anti_flicker_summary">Évite le scintillement et réduit la fatigue oculaire par faible luminosité. La précision des couleurs et la manière dont les éléments sont affichés peuvent être affectés.</string>
     <string name="live_display_low_power_title">Réduire la consommation d\'énergie</string>
     <string name="live_display_low_power_summary">Régler l\'affichage pour une plus faible consommation sans dégradation</string>
     <string name="live_display_enhance_color_title">Améliorer les couleurs</string>
