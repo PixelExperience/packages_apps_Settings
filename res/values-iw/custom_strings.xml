@@ -82,4 +82,6 @@
     <string name="fast_charging_summary">השבת עבור הפחתת חימום המכשיר בזמן טעינה או כדי להאריך את חיי הסוללה</string>
     <string name="others_settings_title">הגדרות נוספות</string>
     <string name="additional_buttons_title">מקשים נוספים</string>
+    <string name="keyboard_extras_title">תוספות</string>
+    <string name="advanced_keyboard_settings_title">הגדרות מתקדמות</string>
 </resources>

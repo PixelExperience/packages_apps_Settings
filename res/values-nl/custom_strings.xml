@@ -82,4 +82,6 @@
     <string name="fast_charging_summary">Schakel uit om de warmteproductie van het apparaat te verminderen tijdens het opladen of om de levensduur van de batterij te verlengen</string>
     <string name="others_settings_title">Overige instellingen</string>
     <string name="additional_buttons_title">Extra knoppen</string>
+    <string name="keyboard_extras_title">Extra\'s</string>
+    <string name="advanced_keyboard_settings_title">Geavanceerde instellingen</string>
 </resources>

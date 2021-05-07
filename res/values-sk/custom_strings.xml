@@ -80,7 +80,7 @@
     <string name="face_redo_warning_msg">Chcete odstrániť existujúcu naskenovanú tvár a vytvoriť nový sken?</string>
     <string name="fast_charging_title">Rýchle nabíjanie</string>
     <string name="fast_charging_summary">Vypnutím znížite teplo produkované zariadením počas nabíjania alebo predĺžite životnosť batérie</string>
-    <string name="others_settings_title">Ostatné nastavenia</string>
+    <string name="others_settings_title">Ďalšie nastavenia</string>
     <string name="additional_buttons_title">Ďalšie tlačidlá</string>
     <string name="keyboard_extras_title">Doplnky</string>
     <string name="advanced_keyboard_settings_title">Pokročilé nastavenia</string>
