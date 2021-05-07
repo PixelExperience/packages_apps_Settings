@@ -58,7 +58,7 @@
         android:key="fod_gesture"
         android:title="@string/fod_gesture_title"
         android:summary="@string/fod_gesture_summary"
-        android:defaultValue="true"
+        android:defaultValue="false"
         settings:controller="com.android.settings.security.FodGesturePreferenceController" />
 
 </PreferenceScreen>
