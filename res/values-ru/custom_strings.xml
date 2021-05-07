@@ -30,7 +30,7 @@
     <string name="hardware_keys_back_key_title">Кнопка «Назад»</string>
     <string name="hardware_keys_menu_key_title">Кнопка «Меню»</string>
     <string name="hardware_keys_assist_key_title">Кнопка «Поиск»</string>
-    <string name="hardware_keys_appswitch_key_title">Кнопка «Обзор»</string>
+    <string name="hardware_keys_appswitch_key_title">Кнопка \"Недавние\"</string>
     <string name="hardware_keys_camera_key_title">Кнопка «Камера»</string>
     <string name="hardware_keys_short_press_title">Действие при кратковременном нажатии</string>
     <string name="hardware_keys_long_press_title">Действие при длительном нажатии</string>

@@ -20,9 +20,9 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Localiza el sensor de huella en el frente de la tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localiza el sensor de huella en el lado izquierdo de la tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localiza el sensor de huella en el lado derecho de la tablet.</string>
-    <string name="battery_light_title">Encender luz LED cuando el dispositivo se esté cargando</string>
+    <string name="battery_light_title">Encender el indicador LED cuando el dispositivo se esté cargando</string>
     <string name="refresh_rate_title">Tasa de refresco de la pantalla</string>
-    <string name="mobile_data_settings_summary_unavailable">No hay tarjeta SIM disponible</string>
+    <string name="mobile_data_settings_summary_unavailable">No hay una tarjeta SIM disponible</string>
     <string name="connected_tws_device_saved_title">Auriculares guardados</string>
     <string name="reset">Restablecer</string>
     <string name="button_pref_title">Botones</string>
@@ -54,7 +54,7 @@
     <string name="camera_sleep_on_release_summary">Una leve pulsación mantendrá la pantalla encendida hasta que éste sea soltado</string>
     <string name="camera_launch_title">Abrir cámara</string>
     <string name="camera_launch_summary">Una pulsación larga abrirá la cámara</string>
-    <string name="button_backlight_title">Contraluz</string>
+    <string name="button_backlight_title">Retroiluminación</string>
     <string name="button_backlight_enabled">Iluminar botones</string>
     <string name="button_backlight_only_when_pressed_title">Iluminar los botones únicamente cuando se presionan</string>
     <string name="keyboard_backlight_enabled">Iluminar teclado</string>

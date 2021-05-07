@@ -22,7 +22,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Tìm cảm biến vân tay ở phía bên phải của máy tính bảng của bạn.</string>
     <string name="battery_light_title">Đèn báo pin</string>
     <string name="refresh_rate_title">Tốc độ làm tươi màn hình</string>
-    <string name="mobile_data_settings_summary_unavailable">Hiện thị không có SIM</string>
+    <string name="mobile_data_settings_summary_unavailable">Hiện không có thẻ SIM</string>
     <string name="connected_tws_device_saved_title">Tai nghe đã lưu</string>
     <string name="reset">Thiết lập lại</string>
     <string name="button_pref_title">Phím</string>
@@ -41,7 +41,7 @@
     <string name="hardware_keys_action_search">Trợ lý tìm kiếm</string>
     <string name="hardware_keys_action_voice_search">Tìm kiếm bằng giọng nói</string>
     <string name="hardware_keys_action_in_app_search">Tìm kiếm trong ứng dụng</string>
-    <string name="hardware_keys_action_launch_camera">Mở camera</string>
+    <string name="hardware_keys_action_launch_camera">Mở máy ảnh</string>
     <string name="hardware_keys_action_sleep">Tắt màn hình</string>
     <string name="hardware_keys_action_split_screen">Chia màn hình</string>
     <string name="hardware_keys_swipe_right_key_title">Vuốt sang phải</string>
@@ -52,7 +52,7 @@
     <string name="button_wake_title">Đánh thức thiết bị</string>
     <string name="camera_sleep_on_release_title">Liếc màn hình</string>
     <string name="camera_sleep_on_release_summary">Nhấn nửa chừng sẽ giữ màn hình bật trong khi còn giữ nút</string>
-    <string name="camera_launch_title">Mở camera</string>
+    <string name="camera_launch_title">Mở máy ảnh</string>
     <string name="camera_launch_summary">Nhấn giữ và thả sẽ mở máy ảnh</string>
     <string name="button_backlight_title">Đèn nền</string>
     <string name="button_backlight_enabled">Phát sáng các phím</string>
@@ -78,8 +78,9 @@
     <string name="security_dashboard_summary_face_and_fingerprint">Khóa màn hình, vân tay, mở khóa bằng khuôn mặt</string>
     <string name="face_redo_confirm_btn">Làm lại</string>
     <string name="face_redo_warning_msg">Bạn có muốn xóa quét khuôn mặt hiện có và tạo quét khuôn mặt mới không?</string>
-    <string name="fast_charging_title">Đang sạc nhanh</string>
+    <string name="fast_charging_title">Sạc nhanh</string>
     <string name="fast_charging_summary">Tắt để giảm nhiệt do thiết bị tạo ra trong khi sạc hoặc để kéo dài tuổi thọ của pin</string>
     <string name="others_settings_title">Các cài đặt khác</string>
     <string name="additional_buttons_title">Nút bổ sung</string>
+    <string name="advanced_keyboard_settings_title">Cài đặt nâng cao</string>
 </resources>

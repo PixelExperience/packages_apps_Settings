@@ -56,6 +56,7 @@
     <string name="button_backlight_title">نور پس زمینه</string>
     <string name="button_backlight_enabled">روشن کردن دکمه ها</string>
     <string name="button_backlight_only_when_pressed_title">دکمه ها را تنها زمانی که لمس شدند، روشن کن</string>
+    <string name="keyboard_backlight_enabled">صفحه کلید نورانی</string>
     <string name="button_backlight_seekbar_title">روشنایی دکمه</string>
     <string name="backlight_timeout_title">زمان قطعی نور</string>
     <string name="backlight_timeout_unlimited">خاموش نکنید</string>
@@ -64,6 +65,7 @@
     <string name="backlight_summary_enabled">فعال شده</string>
     <string name="disable_navkeys_title">فعال کردن نوار پیمایش بر روی صفحه</string>
     <string name="disable_navkeys_summary">فعال کردن نوار پیمایش بر روی صفحه و غیرفعال کردن دکمه‌های سخت‌افزاری</string>
+    <string name="swap_capacitive_keys_title">جابجایی دکمه‌های خازنی</string>
     <string name="high_touch_sensitivity_title">حساسیت بالا به لمس</string>
     <string name="high_touch_sensitivity_summary">افزایش حساسیت صفحه به لمس تا هنگام پوشیدن دستکش نیز قابل استفاده باشد</string>
     <string name="touchscreen_hovering_title">لمس شناور صفحه</string>
@@ -73,6 +75,7 @@
     <string name="security_dashboard_summary_face_and_fingerprint">قفل صفحه، اثر انگشت، بازگشایی قفل با صورت</string>
     <string name="face_redo_confirm_btn">انجام مجدد</string>
     <string name="face_redo_warning_msg">مایلید اسکن موجود صورت را حذف کرده و یک اسکن جدید ایجاد کنید؟</string>
+    <string name="fast_charging_summary">برای کاهش دمای تولید شده توسط دستگاه در هنگام شارژ یا برای افزایش طول عمر باتری غیر فعال کنید</string>
     <string name="others_settings_title">تنظیمات دیگر</string>
     <string name="additional_buttons_title">دکمه های اضافی</string>
 </resources>

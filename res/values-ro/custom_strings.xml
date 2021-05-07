@@ -82,4 +82,6 @@
     <string name="fast_charging_summary">Dezactivează pentru a reduce căldura produsă de dispozitiv în timpul încărcări pentru a extinde durata de viață a bateriei</string>
     <string name="others_settings_title">Alte setări</string>
     <string name="additional_buttons_title">Butoane suplimentare</string>
+    <string name="keyboard_extras_title">Extra</string>
+    <string name="advanced_keyboard_settings_title">Setări avansate</string>
 </resources>
