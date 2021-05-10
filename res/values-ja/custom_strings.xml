@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">追加のボタン</string>
     <string name="keyboard_extras_title">その他</string>
     <string name="advanced_keyboard_settings_title">高度な設定</string>
+    <string name="fod_gesture_title">画面消灯時に指紋でロック解除</string>
+    <string name="fod_gesture_summary">画面点灯なしでの端末の復帰を許可する</string>
 </resources>

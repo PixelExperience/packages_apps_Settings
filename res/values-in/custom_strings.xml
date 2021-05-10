@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Tombol tambahan</string>
     <string name="keyboard_extras_title">Tambahan</string>
     <string name="advanced_keyboard_settings_title">Pengaturan lanjutan</string>
+    <string name="fod_gesture_title">Buka kunci dengan sidik jari saat layar mati</string>
+    <string name="fod_gesture_summary">Izinkan membuka kunci tanpa harus mengaktifkan layar terlebih dahulu</string>
 </resources>

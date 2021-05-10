@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Πρόσθετα πλήκτρα</string>
     <string name="keyboard_extras_title">Πρόσθετα</string>
     <string name="advanced_keyboard_settings_title">Προηγμένες ρυθμίσεις</string>
+    <string name="fod_gesture_title">Ξεκλειδώστε με δακτυλικό αποτύπωμα όταν η οθόνη είναι απενεργοποιημένη</string>
+    <string name="fod_gesture_summary">Επιτρέπει το ξεκλείδωμα της συσκευής χωρίς να χρειάζεται να ενεργοποιήσετε πρώτα την οθόνη</string>
 </resources>

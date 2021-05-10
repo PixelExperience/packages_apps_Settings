@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Täiendavad nupud</string>
     <string name="keyboard_extras_title">Lisad</string>
     <string name="advanced_keyboard_settings_title">Lisasätted</string>
+    <string name="fod_gesture_title">Avage sõrmejäljega, kui ekraan on välja lülitatud</string>
+    <string name="fod_gesture_summary">Võimaldab seadme lukust lahti võtta, ilma et peaksite kõigepealt ekraani üles äratama</string>
 </resources>

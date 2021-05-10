@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Ek tuşlar</string>
     <string name="keyboard_extras_title">Ek özellikler</string>
     <string name="advanced_keyboard_settings_title">Gelişmiş ayarlar</string>
+    <string name="fod_gesture_title">Ekran kapalıyken parmak iziyle kilidi açın</string>
+    <string name="fod_gesture_summary">Önce ekranı uyandırmak zorunda kalmadan cihazın kilidini açmaya izin verir</string>
 </resources>

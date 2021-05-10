@@ -20,7 +20,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Löydä sormenjälkitunnistin tablettisi etuosasta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Löydä sormenjälkitunnistin tablettisi vasemmasta reunasta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Löydä sormenjälkitunnistin tablettisi oikeasta reunasta.</string>
-    <string name="battery_light_title">Akun valo</string>
+    <string name="battery_light_title">Latausvalo ladattaessa</string>
     <string name="refresh_rate_title">Näytön virkistystaajuus</string>
     <string name="mobile_data_settings_summary_unavailable">Ei SIM-korttia saatavilla</string>
     <string name="connected_tws_device_saved_title">Tallennetut kuulokkeet</string>
@@ -56,7 +56,7 @@
     <string name="camera_launch_summary">Pitkä painallus ja vapautus avaa kameran</string>
     <string name="button_backlight_title">Taustavalo</string>
     <string name="button_backlight_enabled">Valaise painikkeet</string>
-    <string name="button_backlight_only_when_pressed_title">Valaise painikkeita vain painettuna</string>
+    <string name="button_backlight_only_when_pressed_title">Valaise painikkeita vain painettaessa</string>
     <string name="keyboard_backlight_enabled">Valaise näppäimistö</string>
     <string name="button_backlight_seekbar_title">Painikkeen kirkkaus</string>
     <string name="keyboard_backlight_seekbar_title">Näppäimistön kirkkaus</string>
@@ -83,4 +83,7 @@
     <string name="others_settings_title">Muut asetukset</string>
     <string name="additional_buttons_title">Lisänäppäimet</string>
     <string name="keyboard_extras_title">Näppäimistön extra asetukset</string>
+    <string name="advanced_keyboard_settings_title">Lisäasetukset</string>
+    <string name="fod_gesture_title">Avaa sormenjäljellä, kun näyttö on pois päältä.</string>
+    <string name="fod_gesture_summary">Sallii laitteen lukituksen avaamisen ilman näytön herätystä.</string>
 </resources>

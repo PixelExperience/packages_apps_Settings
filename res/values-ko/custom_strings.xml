@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">추가 버튼</string>
     <string name="keyboard_extras_title">부가 기능</string>
     <string name="advanced_keyboard_settings_title">고급 설정</string>
+    <string name="fod_gesture_title">화면이 꺼져있어도 지문인식으로 잠금해제</string>
+    <string name="fod_gesture_summary">화면을 켜지 않고 잠금해제 허용</string>
 </resources>

@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Další tlačítka</string>
     <string name="keyboard_extras_title">Doplňky</string>
     <string name="advanced_keyboard_settings_title">Pokročilá nastavení</string>
+    <string name="fod_gesture_title">Odemčení otiskem prstu při vypnuté obrazovce</string>
+    <string name="fod_gesture_summary">Umožňuje odemykat zařízení, aniž by bylo nutné nejprve probouzet obrazovku</string>
 </resources>

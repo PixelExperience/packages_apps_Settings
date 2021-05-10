@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Botões adicionais</string>
     <string name="keyboard_extras_title">Extras</string>
     <string name="advanced_keyboard_settings_title">Configurações avançadas</string>
+    <string name="fod_gesture_title">Desbloquear com impressão digital quando a tela estiver desligada</string>
+    <string name="fod_gesture_summary">Permite desbloquear o dispositivo sem ter que ligar a tela primeiro</string>
 </resources>

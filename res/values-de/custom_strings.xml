@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Weitere Tasten</string>
     <string name="keyboard_extras_title">Extras</string>
     <string name="advanced_keyboard_settings_title">Erweiterte Einstellungen</string>
+    <string name="fod_gesture_title">Mit Fingerabdruck entsperren wenn der Bildschirm ausgeschaltet ist</string>
+    <string name="fod_gesture_summary">Ermöglicht das Entsperren des Geräts, ohne vorher den Bildschirm einzuschalten</string>
 </resources>
