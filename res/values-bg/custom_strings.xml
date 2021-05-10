@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Допълнителни бутони</string>
     <string name="keyboard_extras_title">Екстри</string>
     <string name="advanced_keyboard_settings_title">Разширени настройки</string>
+    <string name="fod_gesture_title">Отключване с пръстов отпечатък, при загасен екран</string>
+    <string name="fod_gesture_summary">Позволява отключването на устройството без да се налага събуждането на екрана преди това</string>
 </resources>

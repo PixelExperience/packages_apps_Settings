@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">附加按鍵</string>
     <string name="keyboard_extras_title">額外功能</string>
     <string name="advanced_keyboard_settings_title">進階設定</string>
+    <string name="fod_gesture_title">螢幕關閉時以指紋解鎖</string>
+    <string name="fod_gesture_summary">無需先喚醒螢幕才能解鎖裝置</string>
 </resources>

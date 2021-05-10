@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Butoane suplimentare</string>
     <string name="keyboard_extras_title">Extra</string>
     <string name="advanced_keyboard_settings_title">Setări avansate</string>
+    <string name="fod_gesture_title">Deblocare prin amprentă când ecranul este închis</string>
+    <string name="fod_gesture_summary">Permite deblocarea dispozitivului fără a porni ecranul</string>
 </resources>

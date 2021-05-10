@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Planşetinizin sol tərəfindəki barmaq izi sensorunu tapın.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Planşetinizin sağ tərəfindəki barmaq izi sensorunu tapın.</string>
     <string name="battery_light_title">Enerji yığarkən işığı yandırın</string>
-    <string name="refresh_rate_title">Ekran təzələmə əmsalı</string>
+    <string name="refresh_rate_title">Ekran təzələnmə sürəti</string>
     <string name="mobile_data_settings_summary_unavailable">Mövcud SIM kart yoxdur</string>
     <string name="connected_tws_device_saved_title">Saxlanılmış Qulaqlıqlar</string>
     <string name="reset">Sıfırla</string>
@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Əlavə düymələr</string>
     <string name="keyboard_extras_title">Əlavələr</string>
     <string name="advanced_keyboard_settings_title">Qabaqcıl tənzimləmələr</string>
+    <string name="fod_gesture_title">Ekran sönülü ikən barmaq izi ilə kilidi açın</string>
+    <string name="fod_gesture_summary">Ekranı oyandırmağa ehtiyac olmadan cihazın kilidini açmağa icazə verər</string>
 </resources>

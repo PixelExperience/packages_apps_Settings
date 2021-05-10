@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">További gombok</string>
     <string name="keyboard_extras_title">Extrák</string>
     <string name="advanced_keyboard_settings_title">Haladó beállítások</string>
+    <string name="fod_gesture_title">Képernyő-feloldás ujjlenyomattal</string>
+    <string name="fod_gesture_summary">Fel tudja oldani a készüléket anélkül, hogy előbb bekapcsolná a képernyőt</string>
 </resources>

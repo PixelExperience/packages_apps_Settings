@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Botones adicionales</string>
     <string name="keyboard_extras_title">Extra</string>
     <string name="advanced_keyboard_settings_title">Configuración avanzada</string>
+    <string name="fod_gesture_title">Desbloquear con huella dactilar cuando la pantalla está apagada</string>
+    <string name="fod_gesture_summary">Permitir desbloquear el dispositivo sin tener que despertar primero la pantalla</string>
 </resources>

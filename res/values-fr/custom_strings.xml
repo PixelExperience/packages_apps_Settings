@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Boutons supplémentaires</string>
     <string name="keyboard_extras_title">Paramètres supplémentaires</string>
     <string name="advanced_keyboard_settings_title">Paramètres avancés</string>
+    <string name="fod_gesture_title">Déverrouiller avec l\'empreinte digitale quand l\'écran est éteint</string>
+    <string name="fod_gesture_summary">Autorise le déverrouillage de l\'appareil sans devoir allumer l\'écran d’abord</string>
 </resources>

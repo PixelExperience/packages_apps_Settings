@@ -70,4 +70,6 @@
     <string name="touchscreen_hovering_summary">Leidžia slankioti ekraną kaip pelę internetinėse naršyklėse, nuotoliniuose staliniuose kompiuteriuose ir kt.</string>
     <string name="others_settings_title">Kiti nustatymai</string>
     <string name="additional_buttons_title">Papildomi mygtukai</string>
+    <string name="fod_gesture_title">Atrakinkite pirštų atspaudu, kai ekranas išjungtas</string>
+    <string name="fod_gesture_summary">Leidžia atrakinti įrenginį, prieš tai neįjungiant ekrano</string>
 </resources>

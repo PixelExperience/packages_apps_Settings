@@ -38,7 +38,7 @@
     <string name="hardware_keys_action_nothing">Geen actie</string>
     <string name="hardware_keys_action_menu">Menu openen/sluiten</string>
     <string name="hardware_keys_action_app_switch">Recente apps</string>
-    <string name="hardware_keys_action_search">Zoek-app</string>
+    <string name="hardware_keys_action_search">Zoekassistent</string>
     <string name="hardware_keys_action_voice_search">Spraakgestuurd zoeken</string>
     <string name="hardware_keys_action_in_app_search">Zoeken in apps</string>
     <string name="hardware_keys_action_launch_camera">Camera openen</string>
@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Extra knoppen</string>
     <string name="keyboard_extras_title">Extra\'s</string>
     <string name="advanced_keyboard_settings_title">Geavanceerde instellingen</string>
+    <string name="fod_gesture_title">Met vingerafdruk ontgrendelen wanneer scherm uitstaat</string>
+    <string name="fod_gesture_summary">Staat ontgrendelen toe zonder eerst het scherm te activeren</string>
 </resources>
