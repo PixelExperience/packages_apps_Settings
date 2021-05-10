@@ -40,6 +40,7 @@
     <string name="data_usage_app_restrict_all">Permiteți accesul la rețea</string>
     <string name="data_usage_app_restrict_all_summary">Permiteți aplicației să acceseze rețeaua</string>
     <string name="data_usage_app_restrict_mobile">Date mobile</string>
+    <string name="data_usage_app_restrict_mobile_summary">Permite utilizarea datelor mobile</string>
     <string name="data_usage_app_restrict_vpn">Date VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Activați utilizarea datelor VPN</string>
     <string name="data_usage_app_restrict_wifi">Date Wi\u2011Fi</string>
@@ -121,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Mod automat aer liber</string>
     <string name="live_display_outdoor_mode_summary">Crește luminozitatea și saturația automat în lumina strălucitoare a soarelui</string>
     <string name="live_display_anti_flicker_title">Anti-pâlpâire</string>
+    <string name="live_display_anti_flicker_summary">Prevenirea pâlpâirii extinse și reducerea oboselii ochilor în condiții de lumină slabă. E posibil degradarea culorii și afectarea modulului în care sunt afișate unele elemente.</string>
     <string name="live_display_low_power_title">Redu consumul de energie</string>
     <string name="live_display_low_power_summary">Reglează afişajul pentru cel mai mic consum de energie fără degradare</string>
     <string name="live_display_enhance_color_title">Sporește culorile</string>
@@ -163,6 +165,8 @@
     <string name="adj_contrast_title">Contrast</string>
     <string name="proximity_wake_title">Prevenire trezire accidentală</string>
     <string name="proximity_wake_summary">Se verifică senzorul de proximitate înainte de trezirea ecranului</string>
+    <string name="show_navbar_gesture_bar_title">Bara de navigare</string>
+    <string name="show_navbar_gesture_bar_summary">Arată indiciul bării de navigare în partea de jos a ecranului</string>
     <string name="navigation_bar_title">Bară de navigare</string>
     <string name="hardware_keys_power_key_title">Butonul de pornire</string>
     <string name="hardware_keys_volume_keys_title">Butoane Volum</string>
@@ -194,7 +198,10 @@
     <string name="torch_long_press_power_timeout_2min">2 minute</string>
     <string name="torch_long_press_power_timeout_5min">5 minute</string>
     <string name="torch_long_press_power_timeout_10min">10 minute</string>
+    <string name="click_partial_screenshot_title">Click pentru captură parţială de ecran</string>
+    <string name="click_partial_screenshot_summary">Click scurt pe Volum Jos și but. Pornire pentru screenshot parțial</string>
     <string name="back_height_low_label">Complet</string>
     <string name="back_height_high_label">Zona de jos</string>
     <string name="back_options_dialog_title">Opţiuni</string>
+    <string name="back_height">Zona de atingere a marginii</string>
 </resources>

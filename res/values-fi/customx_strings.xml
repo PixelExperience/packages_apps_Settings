@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 astetta</string>
     <string name="data_usage_app_restrict_all">Salli verkkoyhteys</string>
     <string name="data_usage_app_restrict_all_summary">Salli ohjelmalle pääsy verkkoon</string>
+    <string name="data_usage_app_restrict_mobile">Mobiilidata</string>
+    <string name="data_usage_app_restrict_mobile_summary">Ota mobiilidata käyttöön</string>
     <string name="data_usage_app_restrict_vpn">VPN data</string>
     <string name="data_usage_app_restrict_vpn_summary">Ota VPN data käyttöön</string>
     <string name="data_usage_app_restrict_wifi">Wi‑Fi-data</string>
@@ -163,6 +165,7 @@
     <string name="adj_contrast_title">Kontrasti</string>
     <string name="proximity_wake_title">Estä vahinkoheräämiset</string>
     <string name="proximity_wake_summary">Tarkista läheisyysanturi ennen näytön herättämistä</string>
+    <string name="show_navbar_gesture_bar_title">Kosketuseleiden vihjeet</string>
     <string name="show_navbar_gesture_bar_summary">Näytä toiminto indikaattori näytön alareunassa.</string>
     <string name="navigation_bar_title">Näppäimet ja sijainti</string>
     <string name="hardware_keys_power_key_title">Virtapainike</string>
@@ -195,6 +198,8 @@
     <string name="torch_long_press_power_timeout_2min">2 minuuttia</string>
     <string name="torch_long_press_power_timeout_5min">5 minuuttia</string>
     <string name="torch_long_press_power_timeout_10min">10 minuuttia</string>
+    <string name="click_partial_screenshot_title">Klikkaa ottaaksesi osittaisen kuvakaappauksen</string>
+    <string name="click_partial_screenshot_summary">Napauta Vol - ja virtanäppäintä nopeasti ottaaksesi osittaisen kuvakaappauksen</string>
     <string name="back_height_low_label">Täysi</string>
     <string name="back_height_high_label">Alaosa</string>
     <string name="back_options_dialog_title">Asetukset</string>
