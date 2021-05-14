@@ -18,8 +18,6 @@ package com.android.settings.livedisplay;
 
 import androidx.fragment.app.DialogFragment;
 import android.content.Context;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.hardware.display.ColorDisplayManager;
 import android.net.Uri;
@@ -230,8 +228,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements
 
         mReadingMode = findPreference(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
         if (liveDisplayPrefs != null && mReadingMode != null &&
-                (!mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT) ||
-                    isWellbeingEnabled(getActivity()))) {
+                !mHardware.isSupported(LineageHardwareManager.FEATURE_READING_ENHANCEMENT)) {
             liveDisplayPrefs.removePreference(mReadingMode);
             mReadingMode = null;
         } else {
@@ -441,18 +438,6 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements
         onDialogShowing();
     }
 
-    private static boolean isWellbeingEnabled(Context context) {
-        String packageName = context.getString(com.android.internal.R.string.config_defaultWellbeingPackage);
-        final PackageManager packageManager = context.getPackageManager();
-        ApplicationInfo info;
-        try {
-            info = packageManager.getApplicationInfo(packageName, 0);
-        } catch (PackageManager.NameNotFoundException e) {
-            info = null;
-        }
-        return info != null && info.enabled;
-    }
-
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
 
@@ -479,8 +464,7 @@ public class LiveDisplaySettings extends SettingsPreferenceFragment implements
             if (!config.hasFeature(FEATURE_PICTURE_ADJUSTMENT)) {
                 result.add(KEY_PICTURE_ADJUSTMENT);
             }
-            if (!config.hasFeature(FEATURE_READING_ENHANCEMENT) ||
-                    isWellbeingEnabled(context)) {
+            if (!config.hasFeature(FEATURE_READING_ENHANCEMENT)) {
                 result.add(KEY_LIVE_DISPLAY_READING_ENHANCEMENT);
             }
             if (ColorDisplayManager.isNightDisplayAvailable(context)) {
