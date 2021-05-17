@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0f97474_7af93ef5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000061
+      },
+      "writtenOn": "2021-05-17T07:15:16Z",
+      "side": 1,
+      "message": "screen flickering while refresh rate switch from 120 to 60",
+      "revId": "c07955203155f90947e8176c34bc40a67a16bc55",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    }
+  ]
+}
