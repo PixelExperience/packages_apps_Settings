@@ -33,6 +33,24 @@
       "message": "Everything working fine on gauguin, don\u0027t have any flickering",
       "revId": "c07955203155f90947e8176c34bc40a67a16bc55",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ace3b8bc_222e6df0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2021-05-19T18:24:26Z",
+      "side": 1,
+      "message": "Yeah, but yet from device to device it will differ the way that it will behaviour. Just like FOD. Although yes, I do agree that it needs to be checked on the device side first before saying that a patch or impl on ROM side is bad or not working as intended.",
+      "parentUuid": "b433dfc9_c7d47d2e",
+      "revId": "c07955203155f90947e8176c34bc40a67a16bc55",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
