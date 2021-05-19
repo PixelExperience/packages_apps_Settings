@@ -16,6 +16,23 @@
       "message": "screen flickering while refresh rate switch from 120 to 60",
       "revId": "c07955203155f90947e8176c34bc40a67a16bc55",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b433dfc9_c7d47d2e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000507
+      },
+      "writtenOn": "2021-05-19T11:51:11Z",
+      "side": 1,
+      "message": "Everything working fine on gauguin, don\u0027t have any flickering",
+      "revId": "c07955203155f90947e8176c34bc40a67a16bc55",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
