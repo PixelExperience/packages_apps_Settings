@@ -31,6 +31,12 @@
         android:summary="@string/advanced_reboot_summary"
         android:defaultValue="false" />
 
+    <Preference
+        android:key="power_menu_shortcuts"
+        android:title="@string/power_menu_shortcuts_title"
+        android:summary="@string/power_menu_shortcuts_summary"
+        android:fragment="com.android.settings.custom.buttons.PowerMenuActions" />
+
     <SwitchPreference
         android:key="gesture_power_menu_long_press_for_assist"
         android:title="@string/power_menu_long_press_for_assist"

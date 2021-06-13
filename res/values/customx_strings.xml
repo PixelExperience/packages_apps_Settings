@@ -56,4 +56,15 @@
     <string name="advanced_reboot_title">Advanced restart</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
 
+    <!-- Power menu actions -->
+    <string name="power_menu_shortcuts_title">Menu shortcuts</string>
+    <string name="power_menu_shortcuts_summary">Customize power menu shortcuts</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
+    <string name="power_menu_airplane_title">Airplane mode</string>
+    <string name="power_menu_users_title">User switcher</string>
+    <string name="power_menu_lockdown_title">Lockdown</string>
+    <string name="power_menu_shortcut_unavailable">Disabled because lock screen is not protected</string>
+    <string name="power_menu_emergency_title">Emergency</string>
+
 </resources>

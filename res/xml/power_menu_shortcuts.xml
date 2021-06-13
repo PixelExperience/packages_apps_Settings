@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="power_menu_shortcuts"
+    android:title="@string/power_menu_shortcuts_title">
+
+    <CheckBoxPreference
+        android:key="screenshot"
+        android:title="@string/power_menu_screenshot_title"
+        android:summary="@string/power_menu_screenshot_summary"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="airplane"
+        android:title="@string/power_menu_airplane_title"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="users"
+        android:title="@string/power_menu_users_title"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="lockdown"
+        android:title="@string/power_menu_lockdown_title"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="emergency"
+        android:title="@string/power_menu_emergency_title"
+        android:defaultValue="false" />
+</PreferenceScreen>
