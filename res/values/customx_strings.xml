@@ -291,4 +291,13 @@
     <string name="back_options_dialog_title">Options</string>
     <string name="back_height">Edge touch area</string>
 
+    <!-- Power menu actions -->
+    <string name="power_menu_shortcuts_title">Menu shortcuts</string>
+    <string name="power_menu_shortcuts_summary">Customize power menu shortcuts</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_screenshot_summary">Long-press for partial screenshot</string>
+    <string name="power_menu_airplane_title">Airplane mode</string>
+    <string name="power_menu_users_title">User switcher</string>
+    <string name="power_menu_lockdown_title">Lockdown</string>
+
 </resources>

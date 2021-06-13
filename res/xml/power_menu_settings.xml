@@ -26,6 +26,12 @@
         android:summary="@string/advanced_reboot_summary"
         android:defaultValue="false" />
 
+    <PreferenceScreen
+        android:key="power_menu_shortcuts"
+        android:title="@string/power_menu_shortcuts_title"
+        android:summary="@string/power_menu_shortcuts_summary"
+        android:fragment="com.android.settings.custom.buttons.PowerMenuActions" />
+
     <Preference
         android:key="gesture_global_actions_panel_summary"
         android:title="@string/cards_passes_sentence"
@@ -46,4 +52,5 @@
             android:title="@string/power_menu_privacy"
             settings:controller="com.android.settings.gestures.PowerMenuPrivacyPreferenceController" />
     </PreferenceCategory>
+
 </PreferenceScreen>
