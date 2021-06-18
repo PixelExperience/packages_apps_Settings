@@ -175,7 +175,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mLockDownPref.setSummary(null);
             } else {
                 mLockDownPref.setChecked(false);
-                mLockDownPref.setSummary(R.string.power_menu_lockdown_unavailable);
+                mLockDownPref.setSummary(R.string.power_menu_shortcut_unavailable);
             }
         }
     }
