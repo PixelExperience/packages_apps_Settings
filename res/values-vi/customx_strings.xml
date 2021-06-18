@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="status_bar_double_tap_to_sleep_title">Chạm hai lần để tắt màn hình</string>
+    <string name="status_bar_double_tap_to_sleep_title">Nhấn đúp màn hình để Ngủ</string>
     <string name="status_bar_double_tap_to_sleep_summary">Chạm hai lần vào thanh trạng thái hoặc màn hình khoá để tắt màn hình</string>
-    <string name="wake_when_plugged_or_unplugged_title">Sáng màn hình khi cắm sạc</string>
+    <string name="wake_when_plugged_or_unplugged_title">Thức dậy thiết bị khi được cắm</string>
     <string name="wake_when_plugged_or_unplugged_summary">Bật màn hình khi kết nối hoặc ngắt kết nối nguồn điện</string>
     <string name="app_notification_sound_timeout_title">Thời gian tối thiểu giữa các âm thanh thông báo</string>
     <string name="app_notification_sound_timeout_summary_template">Cho phép âm thanh hoặc rung không nhiều hơn một lần mỗi <xliff:g id="duration">%1$s</xliff:g></string>
@@ -122,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Chế độ ngoài trời tự động</string>
     <string name="live_display_outdoor_mode_summary">Tự động tăng độ sáng và độ bão hòa dưới ánh sáng mặt trời</string>
     <string name="live_display_anti_flicker_title">Chống nháy ánh sáng</string>
+    <string name="live_display_anti_flicker_summary">Ngăn ngừa nhấp nháy trong thời gian dài và giảm mỏi mắt trong điều kiện ánh sáng thấp. Nó có thể làm giảm độ chính xác của màu và ảnh hưởng cách mà một số mục được hiển thị.</string>
     <string name="live_display_low_power_title">Giảm tiêu thụ pin</string>
     <string name="live_display_low_power_summary">Điều chỉnh hiển thị để tiêu thụ pin thấp nhất mà không làm giảm chất lượng</string>
     <string name="live_display_enhance_color_title">Tăng cường màu sắc</string>

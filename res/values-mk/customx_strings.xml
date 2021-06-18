@@ -15,6 +15,7 @@
     <string name="display_cutout_mode_hidden">Скриено</string>
     <string name="status_bar_title">Статусна лента</string>
     <string name="status_bar_quick_qs_pulldown_title">Брз пристап</string>
+    <string name="status_bar_quick_qs_pulldown_off">Исклучено</string>
     <string name="status_bar_quick_qs_pulldown_left">Леви</string>
     <string name="status_bar_quick_qs_pulldown_right">Десни</string>
     <string name="status_bar_icons_title">Икони на статусната лента</string>

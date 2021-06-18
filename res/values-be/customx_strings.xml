@@ -39,10 +39,12 @@
     <string name="display_rotation_270_title">270 градусаў</string>
     <string name="data_usage_app_restrict_all">Дазволіць доступ да сеткі</string>
     <string name="data_usage_app_restrict_all_summary">Дазволіць праграме доступ да сеткі</string>
-    <string name="data_usage_app_restrict_vpn">Дадзеныя VPN</string>
-    <string name="data_usage_app_restrict_vpn_summary">Уключыць выкарыстанне дадзеных VPN</string>
-    <string name="data_usage_app_restrict_wifi">Дадзеныя Wi\u2011Fi</string>
-    <string name="data_usage_app_restrict_wifi_summary">Уключыць выкарыстанне дадзеных Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_mobile">Мабільныя даныя</string>
+    <string name="data_usage_app_restrict_mobile_summary">Уключыць выкарыстанне мабільнай перадачы даных</string>
+    <string name="data_usage_app_restrict_vpn">Даныя VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Уключыць выкарыстанне даных VPN</string>
+    <string name="data_usage_app_restrict_wifi">Даныя Wi\u2011Fi</string>
+    <string name="data_usage_app_restrict_wifi_summary">Уключыць выкарыстанне даных Wi\u2011Fi</string>
     <string name="tethering_allow_vpn_upstreams_title">Дазволіць кліентам выкарыстоўваць VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Дазволіць кліентам пункта доступу выкарыстоўваць VPN-злучэнні гэтай прылады для падлучэння да сеткі</string>
     <string name="display_cutout_mode_title">Параметры выразу</string>
@@ -59,6 +61,7 @@
     <string name="status_bar_quick_qs_pulldown_title">Хуткі доступ</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Левы край радка стану выцягвае ўніз хуткія налады</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">Правы край радка стану выцягвае хуткія налады</string>
+    <string name="status_bar_quick_qs_pulldown_off">Адключана</string>
     <string name="status_bar_quick_qs_pulldown_left">Улева</string>
     <string name="status_bar_quick_qs_pulldown_right">Управа</string>
     <string name="status_bar_icons_title">Значкі ў радку стану</string>
@@ -119,6 +122,7 @@
     <string name="live_display_outdoor_mode_title">Аўтаматычны рэжым для вуліцы</string>
     <string name="live_display_outdoor_mode_summary">Павялічыць яркасць і насычанасць аўтаматычна пры яркім сонечным святле</string>
     <string name="live_display_anti_flicker_title">Анты-мігаценне</string>
+    <string name="live_display_anti_flicker_summary">Прадухіліце моцнае мігаценне і паменшыце напружанне вачэй ва ўмовах нізкай асветленасці. Гэта можа пагоршыць дакладнасць колеру і паўплываць на спосаб адлюстравання некаторых элементаў.</string>
     <string name="live_display_low_power_title">Знізіць энергаспажыванне</string>
     <string name="live_display_low_power_summary">Падладжваць экран для нізкага энергаспажывання без пагаршэння якасці</string>
     <string name="live_display_enhance_color_title">Паляпшэнне колераперадачы</string>
@@ -161,6 +165,8 @@
     <string name="adj_contrast_title">Кантраснасць</string>
     <string name="proximity_wake_title">Прадухіляць выпадковае ўключэнне экрана</string>
     <string name="proximity_wake_summary">Правяраць датчык набліжэння перад уключэннем экрана</string>
+    <string name="show_navbar_gesture_bar_title">Індыкатар жэстаў</string>
+    <string name="show_navbar_gesture_bar_summary">Паказаць індыкатар жэстаў знізу экрана</string>
     <string name="navigation_bar_title">Кнопкі і іх месцазнаходжанне</string>
     <string name="hardware_keys_power_key_title">Кнопка ўключэння</string>
     <string name="hardware_keys_volume_keys_title">Кнопкі гучнасці</string>
@@ -192,7 +198,10 @@
     <string name="torch_long_press_power_timeout_2min">2 хвіліны</string>
     <string name="torch_long_press_power_timeout_5min">5 хвілін</string>
     <string name="torch_long_press_power_timeout_10min">10 хвілін</string>
+    <string name="click_partial_screenshot_title">Націсніце для здымка часткі экрана</string>
+    <string name="click_partial_screenshot_summary">Націсніце кнопку гучнасці і кнопку сілкавання, каб зрабіць здымак часткі экрана</string>
     <string name="back_height_low_label">Поўны</string>
     <string name="back_height_high_label">Нiжняя вобласць</string>
     <string name="back_options_dialog_title">Параметры</string>
+    <string name="back_height">Сэнсарная вобласць экрана</string>
 </resources>
