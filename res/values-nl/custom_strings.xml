@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Geavanceerde instellingen</string>
     <string name="fod_gesture_title">Met vingerafdruk ontgrendelen wanneer scherm uitstaat</string>
     <string name="fod_gesture_summary">Staat ontgrendelen toe zonder eerst het scherm te activeren</string>
+    <string name="face_unlock_method_title">Gezichtsherkenning toestaan op vergrendelscherm</string>
+    <string name="face_unlock_method_default">Wanneer het scherm is ingeschakeld</string>
+    <string name="face_unlock_method_swipe">Bij vegen over het vergrendelscherm</string>
 </resources>

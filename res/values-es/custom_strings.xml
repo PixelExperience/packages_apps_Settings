@@ -86,4 +86,6 @@
     <string name="advanced_keyboard_settings_title">Configuración avanzada</string>
     <string name="fod_gesture_title">Desbloquear con la huella dactilar cuando la pantalla está apagada</string>
     <string name="fod_gesture_summary">Permitir desbloquear el dispositivo sin tener que despertar primero la pantalla</string>
+    <string name="face_unlock_method_default">Cuando la pantalla esté encendida</string>
+    <string name="face_unlock_method_swipe">Al deslizar el dedo en la pantalla de bloqueo</string>
 </resources>
