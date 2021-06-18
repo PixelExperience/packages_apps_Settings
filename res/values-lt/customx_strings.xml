@@ -195,4 +195,36 @@
     <string name="back_height_low_label">pilnas</string>
     <string name="back_height_high_label">Apatinė sritis</string>
     <string name="back_options_dialog_title">Nustatymai</string>
+    <string name="power_menu_shortcuts_title">Meniu nuorodos</string>
+    <string name="power_menu_shortcuts_summary">Tinkinkite maitinimo meniu sparčiuosius klavišus </string>
+    <string name="power_menu_screenshot_title">Ekrano kopija</string>
+    <string name="power_menu_screenshot_summary">Ilgai paspauskite, jei norite peržiūrėti dalinę ekrano kopiją </string>
+    <string name="power_menu_airplane_title">Lėktuvo režimas</string>
+    <string name="power_menu_users_title">Vartotojo perjungiklis</string>
+    <string name="power_menu_lockdown_title">Blokavimas </string>
+    <string name="power_menu_emergency_title">Skubus atvejis</string>
+    <string name="applock_title">Programų užraktas</string>
+    <string name="applock_locked">Užrakinta</string>
+    <string name="applock_unlocked">Atrakinta</string>
+    <string name="applock_locked_apps">Užrakintos programos</string>
+    <string name="applock_unlocked_apps">Atrakintos programos</string>
+    <string name="applock_lock_after_title">Užrakinti programą po</string>
+    <string name="applock_lock_after_instantly">Akimirksniu</string>
+    <string name="applock_lock_after_15_seconds">15 sekundžių</string>
+    <string name="applock_lock_after_screen_off">Ekranas išjungtas</string>
+    <string name="applock_lock_after_summary">Po pasirinkto skirtojo laiko programa bus užrakinta</string>
+    <string name="applock_lock_after_instantly_summary">Uždarius programa bus iškart užrakinta</string>
+    <string name="applock_lock_after_15_seconds_summary">Programa bus užrakinta praėjus 15 sekundžių po uždarymo</string>
+    <string name="applock_lock_after_screen_off_summary">Programa bus užrakinta, kai ekranas bus išjungtas</string>
+    <string name="applock_show_notif">Rodomas pranešimų turinys</string>
+    <string name="applock_hide_notif">Slėpti pranešimų turinį</string>
+    <string name="applock_setup">Programos užrakto konfigūravimas</string>
+    <string name="applock_overlay_summary">Ši funkcija negalima, nes ši programa yra užrakinta</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 programa užrakinta</item>
+        <item quantity="few">%d programos užrakintos</item>
+        <item quantity="many">%d programos užrakintos</item>
+        <item quantity="other">%d programos užrakintos</item>
+    </plurals>
+    <string name="keywords_applock_settings">užraktas, programos blokatorius, programos užraktas</string>
 </resources>

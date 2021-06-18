@@ -204,4 +204,34 @@
     <string name="back_height_high_label">Alsó terület</string>
     <string name="back_options_dialog_title">Beállítások</string>
     <string name="back_height">Oldalsó érintési terület</string>
+    <string name="power_menu_shortcuts_title">Kikapcsolómenü-elemek</string>
+    <string name="power_menu_shortcuts_summary">A Kikapcsoló-menü testreszabható</string>
+    <string name="power_menu_screenshot_title">Képernyőmentés</string>
+    <string name="power_menu_screenshot_summary">Részleges képernyőmentésért nyomja hosszan</string>
+    <string name="power_menu_airplane_title">Repülőgép üzemmód</string>
+    <string name="power_menu_users_title">Felhasználóváltás</string>
+    <string name="power_menu_lockdown_title">Lezárás</string>
+    <string name="power_menu_emergency_title">Vészhelyzet</string>
+    <string name="applock_title">Alkalmazás-zár</string>
+    <string name="applock_locked">Zárolt</string>
+    <string name="applock_unlocked">Feloldott</string>
+    <string name="applock_locked_apps">Zárolt alkalmazások</string>
+    <string name="applock_unlocked_apps">Feloldott alkalmazások</string>
+    <string name="applock_lock_after_title">Lezárás a következő után: </string>
+    <string name="applock_lock_after_instantly">Azonnal</string>
+    <string name="applock_lock_after_15_seconds">15 másodperc</string>
+    <string name="applock_lock_after_screen_off">Képernyő kikapcsolódásakor</string>
+    <string name="applock_lock_after_summary">A megadott idő után fog zárolni az alkalmazás</string>
+    <string name="applock_lock_after_instantly_summary">Azonnal zárulni fog az alkalmazás kilépéskor</string>
+    <string name="applock_lock_after_15_seconds_summary">15 másodperc elteltével fog zárulni az alkalmazás</string>
+    <string name="applock_lock_after_screen_off_summary">A képernyő kikapcsolás után fog zárulni az alkalmazás</string>
+    <string name="applock_show_notif">Értesítéstartalmak megjelenítése</string>
+    <string name="applock_hide_notif">Értesítéstartalmak elrejtése</string>
+    <string name="applock_setup">Az alkalmazás-zár beállításai</string>
+    <string name="applock_overlay_summary">Nem érhető el ez a funkció, mert az alkalmazás zárolva van</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 alkalmazás zárolva</item>
+        <item quantity="other">%d alkalmazás zárolva</item>
+    </plurals>
+    <string name="keywords_applock_settings">alkalmazás-zár, zárolás, alkalmazás zár, alkalmazás zárolása</string>
 </resources>

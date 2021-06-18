@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="status_bar_double_tap_to_sleep_title">Выключать экран при двойном нажатии</string>
+    <string name="status_bar_double_tap_to_sleep_title">Нажмите на экран для сна</string>
     <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния, чтобы перевести устройство в спящий режим</string>
     <string name="wake_when_plugged_or_unplugged_title">Включение экрана при подключении зарядки</string>
     <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении зарядного устройства</string>
@@ -204,4 +204,30 @@
     <string name="back_height_high_label">Нижняя область</string>
     <string name="back_options_dialog_title">Параметры</string>
     <string name="back_height">Сенсорная область по краю экрана</string>
+    <string name="power_menu_shortcuts_title">Быстрый вызов меню</string>
+    <string name="power_menu_shortcuts_summary">Настройка меню кнопки питания</string>
+    <string name="power_menu_screenshot_title">Скриншот</string>
+    <string name="power_menu_screenshot_summary">Долгое нажатие для частичного скриншота</string>
+    <string name="power_menu_airplane_title">Режим полёта</string>
+    <string name="power_menu_users_title">Переключение пользователей</string>
+    <string name="power_menu_lockdown_title">Блокировка</string>
+    <string name="power_menu_emergency_title">Emergency</string>
+    <string name="applock_title">Блокировка приложений</string>
+    <string name="applock_locked">Locked</string>
+    <string name="applock_unlocked">разблокировать</string>
+    <string name="applock_locked_apps">Заблокированные приложения</string>
+    <string name="applock_unlocked_apps">Разблокированные приложения</string>
+    <string name="applock_lock_after_title">Блокировка приложения после</string>
+    <string name="applock_lock_after_instantly">Сразу же</string>
+    <string name="applock_lock_after_15_seconds">15 секунд</string>
+    <string name="applock_lock_after_screen_off">Экран выкл</string>
+    <string name="applock_lock_after_summary">Приложение будет заблокировано по истечении выбранного времени</string>
+    <string name="applock_lock_after_instantly_summary">Приложение будет немедленно заблокировано после закрытия</string>
+    <string name="applock_lock_after_15_seconds_summary">Приложение будет заблокировано через 15 секунд после закрытия</string>
+    <string name="applock_lock_after_screen_off_summary">Приложение будет заблокировано после выключении экрана</string>
+    <string name="applock_show_notif">Отображать содержимое уведомления</string>
+    <string name="applock_hide_notif">Скрывать содержимое уведомлений</string>
+    <string name="applock_setup">Настройка блокировки приложений</string>
+    <string name="applock_overlay_summary">Эта функция недоступна, так как приложение заблокировано</string>
+    <string name="keywords_applock_settings">блокировка, блокировщик приложений, блокировка приложения, блокировка приложений</string>
 </resources>

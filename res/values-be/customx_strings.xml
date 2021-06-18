@@ -204,4 +204,36 @@
     <string name="back_height_high_label">Нiжняя вобласць</string>
     <string name="back_options_dialog_title">Параметры</string>
     <string name="back_height">Сэнсарная вобласць экрана</string>
+    <string name="power_menu_shortcuts_title">Хуткі выклік меню</string>
+    <string name="power_menu_shortcuts_summary">Наладзіць меню кнопкі сілкавання</string>
+    <string name="power_menu_screenshot_title">Здымак экрана</string>
+    <string name="power_menu_screenshot_summary">Утрымлівайце, каб вылучыць вобласць для здымка экрана</string>
+    <string name="power_menu_airplane_title">Рэжым палёту</string>
+    <string name="power_menu_users_title">Змяніць карыстальніка</string>
+    <string name="power_menu_lockdown_title">Блакіроўка</string>
+    <string name="power_menu_emergency_title">Экстраны выклік</string>
+    <string name="applock_title">Блакіроўка праграм</string>
+    <string name="applock_locked">Заблакіравана</string>
+    <string name="applock_unlocked">Разблакіравана</string>
+    <string name="applock_locked_apps">Заблакіраваныя праграмы</string>
+    <string name="applock_unlocked_apps">Разблакіраваныя праграмы</string>
+    <string name="applock_lock_after_title">Блакіраваць праграму пасля</string>
+    <string name="applock_lock_after_instantly">Імгненна</string>
+    <string name="applock_lock_after_15_seconds">15 секунд</string>
+    <string name="applock_lock_after_screen_off">Выключаны экран</string>
+    <string name="applock_lock_after_summary">Праграма будзе заблакіравана пасля выбранага часу чакання</string>
+    <string name="applock_lock_after_instantly_summary">Праграма будзе заблакіравана імгненна пры закрыцці</string>
+    <string name="applock_lock_after_15_seconds_summary">Праграма будзе заблакіравана праз 15 секунд пасля закрыцця</string>
+    <string name="applock_lock_after_screen_off_summary">Праграма будзе заблакіравана да выключэння экрана</string>
+    <string name="applock_show_notif">Паказваць змест апавяшчэнняў</string>
+    <string name="applock_hide_notif">Схаваць змест апавяшчэнняў</string>
+    <string name="applock_setup">Настройка блакіроўкі праграм</string>
+    <string name="applock_overlay_summary">Гэта функцыя недаступна, бо праграма заблакіравана</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 праграма заблакіравана</item>
+        <item quantity="few">%d праграмы заблакіраваныя</item>
+        <item quantity="many">%d праграм заблакіравана</item>
+        <item quantity="other">%d праграм заблакіравана</item>
+    </plurals>
+    <string name="keywords_applock_settings">блакіроўка, блакіроўшчык праграм, блакіраванне праграм</string>
 </resources>

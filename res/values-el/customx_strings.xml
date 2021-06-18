@@ -204,4 +204,36 @@
     <string name="back_height_high_label">Περιοχή κουμπιού </string>
     <string name="back_options_dialog_title">Επιλογές</string>
     <string name="back_height">Περιοχή αφής Edge</string>
+    <string name="power_menu_shortcuts_title">Συντομεύσεις μενού</string>
+    <string name="power_menu_shortcuts_summary">Προσαρμογή συντομεύσεων μενού ενέργειας</string>
+    <string name="power_menu_screenshot_title">Στιγμιότυπο οθόνης</string>
+    <string name="power_menu_screenshot_summary">Πιέστε παρατεταμένα για μερικό στιγμιότυπο οθόνης</string>
+    <string name="power_menu_airplane_title">Λειτουργία πτήσης</string>
+    <string name="power_menu_users_title">Εναλλαγή χρήστη</string>
+    <string name="power_menu_lockdown_title">Κλείδωμα</string>
+    <string name="power_menu_shortcut_unavailable">Απενεργοποιήθηκε επειδή η οθόνη κλειδώματος δεν προστατεύεται</string>
+    <string name="power_menu_emergency_title">Έκτακτη ανάγκη</string>
+    <string name="applock_title">Εφαρμογή κλειδώματος</string>
+    <string name="applock_locked">Κλειδωμένο</string>
+    <string name="applock_unlocked">Ξεκλείδωτο</string>
+    <string name="applock_locked_apps">Κλειδωμένες εφαρμογές</string>
+    <string name="applock_unlocked_apps">Ξεκλείδωτες εφαρμογές</string>
+    <string name="applock_lock_after_title">Κλείδωμα εφαρμογής μετά από</string>
+    <string name="applock_lock_after_instantly">Αμέσως</string>
+    <string name="applock_lock_after_15_seconds">15 δευτερόλεπτα</string>
+    <string name="applock_lock_after_screen_off">Απενεργοποίηση οθόνης</string>
+    <string name="applock_lock_after_summary">Η εφαρμογή θα κλειδωθεί μετά το επιλεγμένο χρονικό όριο</string>
+    <string name="applock_lock_after_instantly_summary">Η εφαρμογή θα κλειδωθεί αμέσως όταν κλείσει</string>
+    <string name="applock_lock_after_15_seconds_summary">Η εφαρμογή θα κλειδωθεί 15 δευτερόλεπτα μετά το κλείσιμο</string>
+    <string name="applock_lock_after_screen_off_summary">Η εφαρμογή θα κλειδωθεί όταν η οθόνη απενεργοποιηθεί</string>
+    <string name="applock_notification_info">Η ορατότητα του περιεχομένου ειδοποιήσεων μπορεί να αλλάξει εάν κάνετε κλικ στο εικονίδιο κλειδώματος</string>
+    <string name="applock_show_notif">Εμφάνιση περιεχομένου ειδοποιήσεων</string>
+    <string name="applock_hide_notif">Απόκρυψη περιεχομένου ειδοποιήσεων</string>
+    <string name="applock_setup">Ρύθμιση εφαρμογής κλειδώματος</string>
+    <string name="applock_overlay_summary">Αυτή η λειτουργία δεν είναι διαθέσιμη επειδή αυτή η εφαρμογή είναι κλειδωμένη</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 εφαρμογή κλειδωμένη</item>
+        <item quantity="other">%d εφαρμογές κλειδωμένες</item>
+    </plurals>
+    <string name="keywords_applock_settings">κλείδωμα εφαρμογής, κλείδωμα εφαρμογών, κλείδωμα,</string>
 </resources>

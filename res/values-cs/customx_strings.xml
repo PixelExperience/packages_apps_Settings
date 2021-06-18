@@ -204,4 +204,36 @@
     <string name="back_height_high_label">Spodní oblast</string>
     <string name="back_options_dialog_title">Možnosti</string>
     <string name="back_height">Plocha rohového dotyku</string>
+    <string name="power_menu_shortcuts_title">Zkratky menu</string>
+    <string name="power_menu_shortcuts_summary">Přizpůsobit možnosti zkratek menu napájení</string>
+    <string name="power_menu_screenshot_title">Snímek obrazovky</string>
+    <string name="power_menu_screenshot_summary">Dlouhým stiskem zhotovit částečný snímek obrazovky</string>
+    <string name="power_menu_airplane_title">Režim Letadlo</string>
+    <string name="power_menu_users_title">Přepnutí uživatele</string>
+    <string name="power_menu_lockdown_title">Uzamčení</string>
+    <string name="power_menu_emergency_title">Stav nouze</string>
+    <string name="applock_title">Zámek aplikací</string>
+    <string name="applock_locked">Uzamčeno</string>
+    <string name="applock_unlocked">Odemčeno</string>
+    <string name="applock_locked_apps">Uzamčené aplikace</string>
+    <string name="applock_unlocked_apps">Odemčené aplikace</string>
+    <string name="applock_lock_after_title">Zamknout aplikaci po</string>
+    <string name="applock_lock_after_instantly">Okamžitě</string>
+    <string name="applock_lock_after_15_seconds">15 sekund</string>
+    <string name="applock_lock_after_screen_off">Po vypnutí obrazovky</string>
+    <string name="applock_lock_after_summary">Po zvoleném časovém limitu bude aplikace uzamčena</string>
+    <string name="applock_lock_after_instantly_summary">Po zavření bude aplikace okamžitě uzamčena</string>
+    <string name="applock_lock_after_15_seconds_summary">15 sekund po ukončení bude aplikace uzamčena</string>
+    <string name="applock_lock_after_screen_off_summary">Po vypnutí obrazovky bude aplikace uzamčena</string>
+    <string name="applock_show_notif">Obsah oznámení je zobrazován</string>
+    <string name="applock_hide_notif">Obsah oznámení je skrýván</string>
+    <string name="applock_setup">Nastavení zámku aplikací</string>
+    <string name="applock_overlay_summary">Tato funkce není k dispozici, protože tato aplikace je uzamčena</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 aplikace uzamčena</item>
+        <item quantity="few">%d aplikace uzamčeny</item>
+        <item quantity="many">%d aplikací uzamčeno</item>
+        <item quantity="other">%d aplikací uzamčeno</item>
+    </plurals>
+    <string name="keywords_applock_settings">uzamknout aplikaci, uzamykání aplikace, uzamčení aplikace, zámek aplikací</string>
 </resources>

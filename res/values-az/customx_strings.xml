@@ -204,4 +204,34 @@
     <string name="back_height_high_label">Alt sahə</string>
     <string name="back_options_dialog_title">Seçimlər</string>
     <string name="back_height">Kənar toxunuş sahəsi</string>
+    <string name="power_menu_shortcuts_title">Menyu qısayolları</string>
+    <string name="power_menu_shortcuts_summary">Güc menyusu qısayollarını özəlləşdir</string>
+    <string name="power_menu_screenshot_title">Ekran şəkli</string>
+    <string name="power_menu_screenshot_summary">Ekranın bir hisəsini çəkmək üçün basılı tutun</string>
+    <string name="power_menu_airplane_title">Təyyarə rejimi</string>
+    <string name="power_menu_users_title">İstifadəçi dəyişdirici</string>
+    <string name="power_menu_lockdown_title">Kilidlə</string>
+    <string name="power_menu_emergency_title">Fövqəladə</string>
+    <string name="applock_title">Tətbiq kilidləyici</string>
+    <string name="applock_locked">Kilidlənib</string>
+    <string name="applock_unlocked">Kilidi açılıb</string>
+    <string name="applock_locked_apps">Kilidli tətbiqlər</string>
+    <string name="applock_unlocked_apps">Kilidi açılmış tətbiqlər</string>
+    <string name="applock_lock_after_title">Bundan sonra tətbiqi kilidlə</string>
+    <string name="applock_lock_after_instantly">Dərhal</string>
+    <string name="applock_lock_after_15_seconds">15 saniyə</string>
+    <string name="applock_lock_after_screen_off">Ekran bağlananda</string>
+    <string name="applock_lock_after_summary">Tətbiq seçilən vaxtdan sonra kilidlənəcək</string>
+    <string name="applock_lock_after_instantly_summary">Tətbiq bağlanandan dərhal sonra kilidlənəcək</string>
+    <string name="applock_lock_after_15_seconds_summary">Tətbiq bağlanandan 15 saniyə sonra kilidlənəcək</string>
+    <string name="applock_lock_after_screen_off_summary">Tətbiq ekran söndürülən kimi kilidlənəcək</string>
+    <string name="applock_show_notif">Bildiriş məzmununu göstər</string>
+    <string name="applock_hide_notif">Bildiriş məzmununu gizlət</string>
+    <string name="applock_setup">Tətbiq kilidləyicini quraşdır</string>
+    <string name="applock_overlay_summary">Tətbiq kilidli olduğu üçün bu özəllik əlçatan deyil</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 tətbiq kilidlənib</item>
+        <item quantity="other">%d tətbiq kilidləndi</item>
+    </plurals>
+    <string name="keywords_applock_settings">tətbiq kilidi, tətbiq kilidləyici, tətbiq kilidləmə</string>
 </resources>

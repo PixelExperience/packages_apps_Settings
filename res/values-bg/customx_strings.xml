@@ -204,4 +204,34 @@
     <string name="back_height_high_label">Долна зона</string>
     <string name="back_options_dialog_title">Настройки</string>
     <string name="back_height">Област на докосване на ръба</string>
+    <string name="power_menu_shortcuts_title">Пряк път на Меню</string>
+    <string name="power_menu_shortcuts_summary">Персонализиране на преките пътища на менюто за захранване</string>
+    <string name="power_menu_screenshot_title">Снимка на екрана</string>
+    <string name="power_menu_screenshot_summary">Продължително натискане за частична екранна снимка</string>
+    <string name="power_menu_airplane_title">Самолетен режим</string>
+    <string name="power_menu_users_title">Превключване на потребител</string>
+    <string name="power_menu_lockdown_title">Блокиране</string>
+    <string name="power_menu_emergency_title">Извънредна ситуация</string>
+    <string name="applock_title">Блокировка на приложения</string>
+    <string name="applock_locked">Заключен</string>
+    <string name="applock_unlocked">Отключен</string>
+    <string name="applock_locked_apps">Заключени приложения</string>
+    <string name="applock_unlocked_apps">Отключени приложения</string>
+    <string name="applock_lock_after_title">Блокиране на приложение след</string>
+    <string name="applock_lock_after_instantly">Instantly</string>
+    <string name="applock_lock_after_15_seconds">15 секунди</string>
+    <string name="applock_lock_after_screen_off">Изключване на екрана</string>
+    <string name="applock_lock_after_summary">Приложението ще бъде заключено след избрано време</string>
+    <string name="applock_lock_after_instantly_summary">Приложението ще бъде заключено незабавно след затварянето му</string>
+    <string name="applock_lock_after_15_seconds_summary">Приложението ще бъде заключено 15 секунди след затварянето му</string>
+    <string name="applock_lock_after_screen_off_summary">Приложението ще бъде заключено след загасването на екрана</string>
+    <string name="applock_show_notif">Показване на съдържанието на известието</string>
+    <string name="applock_hide_notif">Скриване на съдържанието на известието</string>
+    <string name="applock_setup">Настройка на блокирането на приложения</string>
+    <string name="applock_overlay_summary">Тази функция е недостъпна, защото приложението е блокирано</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 приложение е блокирано</item>
+        <item quantity="other">%d приложения са блокирани</item>
+    </plurals>
+    <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
 </resources>

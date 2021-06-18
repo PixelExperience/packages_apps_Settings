@@ -204,4 +204,21 @@
     <string name="back_height_high_label">Área inferior</string>
     <string name="back_options_dialog_title">Opciones</string>
     <string name="back_height">Altura de gestos</string>
+    <string name="power_menu_shortcuts_title">Atajos del menú</string>
+    <string name="power_menu_shortcuts_summary">Personalizar los atajos del menú de energía</string>
+    <string name="power_menu_screenshot_title">Captura de pantalla</string>
+    <string name="power_menu_screenshot_summary">Mantener presionado para hacer una captura de pantalla parcial</string>
+    <string name="power_menu_airplane_title">Modo avión</string>
+    <string name="power_menu_users_title">Cambio de usuario</string>
+    <string name="power_menu_lockdown_title">Bloqueo seguro</string>
+    <string name="power_menu_emergency_title">Emergencia</string>
+    <string name="applock_title">Bloqueador de aplicación</string>
+    <string name="applock_locked">Bloqueado</string>
+    <string name="applock_unlocked">Desbloqueado</string>
+    <string name="applock_locked_apps">Aplicaciones bloqueadas</string>
+    <string name="applock_unlocked_apps">Aplicaciones desbloqueadas</string>
+    <string name="applock_lock_after_title">Bloquear aplicación después de</string>
+    <string name="applock_lock_after_instantly">Al instante</string>
+    <string name="applock_lock_after_15_seconds">15 segundos</string>
+    <string name="applock_lock_after_screen_off">Pantalla apagada</string>
 </resources>

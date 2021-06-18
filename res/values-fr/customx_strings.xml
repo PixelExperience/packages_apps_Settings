@@ -204,4 +204,36 @@
     <string name="back_height_high_label">Barre de navigation</string>
     <string name="back_options_dialog_title">Paramètres</string>
     <string name="back_height">Zone tactile sur les bords</string>
+    <string name="power_menu_shortcuts_title">Raccourcis du menu</string>
+    <string name="power_menu_shortcuts_summary">Personnaliser les raccourcis du menu Marche/Arrêt</string>
+    <string name="power_menu_screenshot_title">Capture d\'écran</string>
+    <string name="power_menu_screenshot_summary">Maintenir appuyé pour effectuer une capture d\'écran partielle</string>
+    <string name="power_menu_airplane_title">Mode Avion</string>
+    <string name="power_menu_users_title">Changer d\'utilisateur</string>
+    <string name="power_menu_lockdown_title">Verrouillage</string>
+    <string name="power_menu_shortcut_unavailable">Désactivé car l\'écran de verrouillage n\'est pas protégé</string>
+    <string name="power_menu_emergency_title">Urgences</string>
+    <string name="applock_title">Verrouillage d\'applications</string>
+    <string name="applock_locked">Verrouillé</string>
+    <string name="applock_unlocked">Déverrouillé</string>
+    <string name="applock_locked_apps">Applications verrouillées</string>
+    <string name="applock_unlocked_apps">Applications déverrouillées</string>
+    <string name="applock_lock_after_title">Verrouiller l\'application après</string>
+    <string name="applock_lock_after_instantly">Immédiatement</string>
+    <string name="applock_lock_after_15_seconds">15 secondes</string>
+    <string name="applock_lock_after_screen_off">Écran éteint</string>
+    <string name="applock_lock_after_summary">L\'application sera verrouillée après le temps sélectionné</string>
+    <string name="applock_lock_after_instantly_summary">L\'application sera verrouillée instantanément après sa fermeture</string>
+    <string name="applock_lock_after_15_seconds_summary">L\'application sera verrouillée 15 secondes après sa fermeture</string>
+    <string name="applock_lock_after_screen_off_summary">L\'application sera verrouillée quand l\'écran sera éteint</string>
+    <string name="applock_notification_info">La visibilité du contenu d\'une notification peut être modifiée en cliquant à côté de l\'icône de verrouillage.</string>
+    <string name="applock_show_notif">Afficher le contenu de la notification</string>
+    <string name="applock_hide_notif">Masquer le contenu des notifications</string>
+    <string name="applock_setup">Configurer le verrouillage de l\'application</string>
+    <string name="applock_overlay_summary">Cette fonctionnalité n\'est pas disponible car cette application est verrouillée</string>
+    <plurals name="applock_summary">
+        <item quantity="one">1 application verrouillée</item>
+        <item quantity="other">%d applications verrouillées</item>
+    </plurals>
+    <string name="keywords_applock_settings">applock, applocker, verrou d\'application, verrouillage d\'applications</string>
 </resources>

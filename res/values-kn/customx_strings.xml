@@ -29,6 +29,7 @@
     <string name="display_cutout_mode_hidden">ಅಡಗಿದೆ</string>
     <string name="status_bar_title">ಸ್ಥಿತಿ ಪಟ್ಟಿ</string>
     <string name="status_bar_quick_qs_pulldown_title">ತ್ವರಿತ ಕೆಳಸೆಳೆತ</string>
+    <string name="status_bar_quick_qs_pulldown_off">ಆಫ್</string>
     <string name="status_bar_quick_qs_pulldown_left">ಎಡ</string>
     <string name="status_bar_quick_qs_pulldown_right">ಬಲ</string>
     <string name="status_bar_icons_title">ಸ್ಥಿತಿ ಪಟ್ಟಿ ಚಿಹ್ನೆಗಳು</string>

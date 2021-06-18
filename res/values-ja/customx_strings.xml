@@ -204,4 +204,33 @@
     <string name="back_height_high_label">下部</string>
     <string name="back_options_dialog_title">オプション</string>
     <string name="back_height">タッチ範囲の縁</string>
+    <string name="power_menu_shortcuts_title">メニューショートカット</string>
+    <string name="power_menu_shortcuts_summary">電源メニューのショートカットを編集する</string>
+    <string name="power_menu_screenshot_title">スクリーンショット</string>
+    <string name="power_menu_screenshot_summary">長押しして指定した範囲を撮影する</string>
+    <string name="power_menu_airplane_title">機内モード</string>
+    <string name="power_menu_users_title">ユーザーの切り替え</string>
+    <string name="power_menu_lockdown_title">画面ロック</string>
+    <string name="power_menu_emergency_title">緊急通報</string>
+    <string name="applock_title">アプリロッカー</string>
+    <string name="applock_locked">ロック済み</string>
+    <string name="applock_unlocked">ロック解除中</string>
+    <string name="applock_locked_apps">ロックしたアプリ</string>
+    <string name="applock_unlocked_apps">未ロックのアプリ</string>
+    <string name="applock_lock_after_title">以下の後にアプリをロック</string>
+    <string name="applock_lock_after_instantly">ただちに</string>
+    <string name="applock_lock_after_15_seconds">15秒</string>
+    <string name="applock_lock_after_screen_off">画面を消灯</string>
+    <string name="applock_lock_after_summary">選択した制限時間後にアプリはロックされます</string>
+    <string name="applock_lock_after_instantly_summary">アプリを終了すると即座にロックされます</string>
+    <string name="applock_lock_after_15_seconds_summary">アプリは終了から15秒後にロックされます</string>
+    <string name="applock_lock_after_screen_off_summary">アプリは画面消灯時にロックされます</string>
+    <string name="applock_show_notif">通知の内容を表示中です</string>
+    <string name="applock_hide_notif">通知の内容を非表示中です</string>
+    <string name="applock_setup">アプリのロックを設定</string>
+    <string name="applock_overlay_summary">このアプリはロックされているためこの機能は利用できません</string>
+    <plurals name="applock_summary">
+        <item quantity="other">%d個のアプリがロックされました</item>
+    </plurals>
+    <string name="keywords_applock_settings">アプリロック、アプリブロッカー、アプリ ロック、アプリ ロッカー</string>
 </resources>
