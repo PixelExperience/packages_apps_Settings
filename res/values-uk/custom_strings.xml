@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Додаткові кнопки</string>
     <string name="keyboard_extras_title">Додатково</string>
     <string name="advanced_keyboard_settings_title">Додаткові налаштування</string>
+    <string name="fod_gesture_title">Розблокування за відбитком пальця, коли екран вимкнено</string>
+    <string name="fod_gesture_summary">Дозволяє розблокувати пристрій без попереднього пробудження екрану</string>
 </resources>

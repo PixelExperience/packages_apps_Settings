@@ -18,6 +18,8 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Lokalisera fingeravtrycks-sensorn på vänster sidan av din mobil.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Leta reda på fingeravtryckssensorn på höger sida av mobilen.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Lokalisera fingeravtryckssensorn på din enhets framsida.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Leta reda på fingeravtryckssensorn på vänster sida av mobilen.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Leta reda på fingeravtryckssensorn på höger sida av mobilen.</string>
     <string name="battery_light_title">Batteriljus</string>
     <string name="refresh_rate_title">Skärm uppdateringsfrekvens</string>
     <string name="mobile_data_settings_summary_unavailable">Inget SIM-kort tillgängligt</string>
@@ -55,6 +57,7 @@
     <string name="button_backlight_title">Bakgrundsbelysning</string>
     <string name="button_backlight_enabled">Knappljus</string>
     <string name="button_backlight_only_when_pressed_title">Tänd bara knapparna när de trycks ned</string>
+    <string name="keyboard_backlight_enabled">Lys upp tangentbord</string>
     <string name="button_backlight_seekbar_title">Knappljusstyrka</string>
     <string name="keyboard_backlight_seekbar_title">Tangetbordsljusstyrka</string>
     <string name="backlight_timeout_title">Belysningens tidsgräns</string>
@@ -64,6 +67,8 @@
     <string name="backlight_summary_enabled">Aktiverad</string>
     <string name="disable_navkeys_title">Aktivera navigeringsfält på skärmen</string>
     <string name="disable_navkeys_summary">Aktivera navigeringsfältet på skärmen och inaktivera hårdvaruknapparna</string>
+    <string name="swap_capacitive_keys_title">Kapacitiva knappar</string>
+    <string name="swap_capacitive_keys_summary">Byt ordning på senaste och tillbaka knapparna</string>
     <string name="high_touch_sensitivity_title">Hög fingerkänslighet</string>
     <string name="high_touch_sensitivity_summary">Öka tryckskärmens känslighet så att den kan användas samtidigt som du bär handskar</string>
     <string name="touchscreen_hovering_title">Tryckskärm-hovring</string>
@@ -73,5 +78,12 @@
     <string name="security_dashboard_summary_face_and_fingerprint">Skärmlås, fingeravtryck, ansiktslås</string>
     <string name="face_redo_confirm_btn">Gör om</string>
     <string name="face_redo_warning_msg">Vill du ta du bort den befintliga ansiktsavläsningen och skapa en ny avläsning?</string>
+    <string name="fast_charging_title">Snabbladdning</string>
+    <string name="fast_charging_summary">Deaktivera för att minska värmen som genereras när enheten laddar eller för att utöka batteriets livslängd</string>
+    <string name="others_settings_title">Övriga inställningar</string>
     <string name="additional_buttons_title">Fler knappar</string>
+    <string name="keyboard_extras_title">Övrigt</string>
+    <string name="advanced_keyboard_settings_title">Avancerade inställningar</string>
+    <string name="fod_gesture_title">Lås upp med fingeravtryck när skärmen är av</string>
+    <string name="fod_gesture_summary">Tillåter att enheten låses upp utan att du först behöver tända skärmen</string>
 </resources>

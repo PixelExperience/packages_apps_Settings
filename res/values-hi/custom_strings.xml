@@ -18,9 +18,14 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">अपने डिवाइस के बाईं ओर फिंगरप्रिंट सेंसर का पता लगाएँ</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">अपने फोन के दांए तरफ फिंगरप्रिंट सेंसर को ढूंडें</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">अपने टैबलेट आगे की और फिंगप्रिंट सेंसर को खोजें</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">सुरक्षा सेटिंग्स फ़िंगरप्रिंट नामांकन सेंसर संदेश ढूंढें शेष फ़ाइल: कस्टम स्ट्रिंग्स.xml</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">अपने टेबलेट के दाईं ओर फ़िंगरप्रिंट सेंसर की स्थिति जानें।</string>
     <string name="battery_light_title">Acenda a luz ao carregar</string>
     <string name="refresh_rate_title">स्क्रीन रिफ्रेश दर</string>
+    <string name="mobile_data_settings_summary_unavailable">मोबाइल डेटा_सेटिंग_समरी_अनुपलब्ध
+मोबाइल नेटवर्क सेटिंग स्क्रीन, नेटवर्क होने पर मोबाइल डेटा स्विच वरीयता का सारांश
+अनुपलब्ध है, वरीयता चयन अक्षम कर दिया जाएगा। [चार सीमा = कोई नहीं]
+फ़ाइल: कस्टम स्ट्रिंग्स.xml</string>
     <string name="connected_tws_device_saved_title">सहेजे गए इयरबड्स</string>
     <string name="reset">रीसेट</string>
     <string name="button_pref_title">बटन</string>
@@ -55,6 +60,7 @@
     <string name="button_backlight_title">बैकलाइट</string>
     <string name="button_backlight_enabled">प्रकाश बटन</string>
     <string name="button_backlight_only_when_pressed_title">बटन दबाए जाने पर ही रोशन करें</string>
+    <string name="keyboard_backlight_enabled">कीबोर्ड बैकलाइट सक्षम फ़ाइल: कस्टम स्ट्रिंग्स.xml</string>
     <string name="button_backlight_seekbar_title">बटन चमक</string>
     <string name="backlight_timeout_title">रोशनी का समय</string>
     <string name="backlight_timeout_unlimited">बंद नही करें</string>

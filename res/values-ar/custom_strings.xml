@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">أزرار إضافية</string>
     <string name="keyboard_extras_title">إضافات</string>
     <string name="advanced_keyboard_settings_title">الإعدادات المتقدمة</string>
+    <string name="fod_gesture_title">إلغاء القفل بواسطة بصمة الإصبع عندما تكون الشاشة مقفلة</string>
+    <string name="fod_gesture_summary">تمكين إلغاء قفل الجهاز بدون الحاجة إلى إيقاظ الشاشة أولا</string>
 </resources>

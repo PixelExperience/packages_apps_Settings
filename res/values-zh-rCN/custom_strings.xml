@@ -78,10 +78,12 @@
     <string name="security_dashboard_summary_face_and_fingerprint">屏幕锁定、指纹、人脸解锁</string>
     <string name="face_redo_confirm_btn">重做</string>
     <string name="face_redo_warning_msg">是否要移除现有的人脸数据并重新录入？</string>
-    <string name="fast_charging_title">正在快速充电</string>
+    <string name="fast_charging_title">快速充电中</string>
     <string name="fast_charging_summary">禁用以减少设备在充电时产生的热量或延长电池的使用寿命</string>
     <string name="others_settings_title">其他设置</string>
     <string name="additional_buttons_title">附加按钮</string>
     <string name="keyboard_extras_title">附加功能</string>
     <string name="advanced_keyboard_settings_title">高级设置</string>
+    <string name="fod_gesture_title">允许屏幕关闭时使用指纹解锁</string>
+    <string name="fod_gesture_summary">无需唤醒屏幕即可解锁设备</string>
 </resources>
