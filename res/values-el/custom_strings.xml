@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Προηγμένες ρυθμίσεις</string>
     <string name="fod_gesture_title">Ξεκλειδώστε με δακτυλικό αποτύπωμα όταν η οθόνη είναι απενεργοποιημένη</string>
     <string name="fod_gesture_summary">Επιτρέπει το ξεκλείδωμα της συσκευής χωρίς να χρειάζεται να ενεργοποιήσετε πρώτα την οθόνη</string>
+    <string name="face_unlock_method_title">Επιτρέψτε το ξεκλείδωμα προσώπου στην οθόνη κλειδώματος</string>
+    <string name="face_unlock_method_default">Όταν η οθόνη είναι ενεργοποιημένη</string>
+    <string name="face_unlock_method_swipe">Κατά την ολίσθηση στην οθόνη κλειδώματος</string>
 </resources>

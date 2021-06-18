@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Configurações avançadas</string>
     <string name="fod_gesture_title">Desbloquear com impressão digital quando a tela estiver desligada</string>
     <string name="fod_gesture_summary">Permite desbloquear o dispositivo sem ter que ligar a tela primeiro</string>
+    <string name="face_unlock_method_title">Permitir o desbloqueio facial na tela de bloqueio</string>
+    <string name="face_unlock_method_default">Quando a tela estiver ligada</string>
+    <string name="face_unlock_method_swipe">Quando deslizar na tela de bloqueio</string>
 </resources>

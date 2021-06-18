@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Paramètres avancés</string>
     <string name="fod_gesture_title">Déverrouiller avec l\'empreinte digitale quand l\'écran est éteint</string>
     <string name="fod_gesture_summary">Autorise le déverrouillage de l\'appareil sans devoir allumer l\'écran d’abord</string>
+    <string name="face_unlock_method_title">Autoriser le déverrouillage par reconnaissance faciale lorsque</string>
+    <string name="face_unlock_method_default">Quand l\'écran est allumé</string>
+    <string name="face_unlock_method_swipe">En faisant glisser sur l\'écran de verrouillage</string>
 </resources>
