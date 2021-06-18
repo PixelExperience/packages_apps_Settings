@@ -125,4 +125,9 @@
     <string name="fod_gesture_title">Unlock with fingerprint when the screen is off</string>
     <string name="fod_gesture_summary">Allows unlocking the device without having to wake up the screen first</string>
 
+    <!-- Face Unlock -->
+    <string name="face_unlock_method_title">Face unlock method when locked</string>
+    <string name="face_unlock_method_default">Turn screen on</string>
+    <string name="face_unlock_method_swipe">Swipe on lock screen</string>
+
 </resources>
