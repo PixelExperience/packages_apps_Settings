@@ -82,5 +82,8 @@
     <string name="fast_charging_summary">Tắt để giảm nhiệt do thiết bị tạo ra trong khi sạc hoặc để kéo dài tuổi thọ của pin</string>
     <string name="others_settings_title">Các cài đặt khác</string>
     <string name="additional_buttons_title">Nút bổ sung</string>
+    <string name="keyboard_extras_title">Tính năng bổ sung</string>
     <string name="advanced_keyboard_settings_title">Cài đặt nâng cao</string>
+    <string name="fod_gesture_title">Mở khóa bằng vân tay khi màn hình tắt</string>
+    <string name="fod_gesture_summary">Cho phép mở khóa thiết bị mà không cần phải đánh thức màn hình trước</string>
 </resources>

@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Ďalšie tlačidlá</string>
     <string name="keyboard_extras_title">Doplnky</string>
     <string name="advanced_keyboard_settings_title">Pokročilé nastavenia</string>
+    <string name="fod_gesture_title">Odomknúť s otlačkom prsta pri zhasnutom displeji</string>
+    <string name="fod_gesture_summary">Povolí odomknúť zariadenie bez nutnosti ho prebudiť</string>
 </resources>

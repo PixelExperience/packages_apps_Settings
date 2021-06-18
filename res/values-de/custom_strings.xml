@@ -48,9 +48,9 @@
     <string name="hardware_keys_swipe_left_key_title">Nach links wischen</string>
     <string name="hardware_keys_long_tap_key_title">Lange drücken</string>
     <string name="hardware_keys_swipe_tap_title">Wischgeste</string>
-    <string name="hardware_keys_long_tap_title">Langes Drücken (Aktion)</string>
+    <string name="hardware_keys_long_tap_title">Aktion bei langem Drücken</string>
     <string name="button_wake_title">Gerät aufwecken</string>
-    <string name="camera_sleep_on_release_title">Kurzer Blick</string>
+    <string name="camera_sleep_on_release_title">Bilschirm-Vorschau</string>
     <string name="camera_sleep_on_release_summary">Der Bildschirm bleibt aktiviert, solange die Kamera-Taste halb durchgedrückt gehalten wird.</string>
     <string name="camera_launch_title">Kamera starten</string>
     <string name="camera_launch_summary">Langes Drücken und Loslassen startet die Kamera</string>

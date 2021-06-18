@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localiza el sensor de huella en el lado izquierdo de la tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localiza el sensor de huella en el lado derecho de la tablet.</string>
     <string name="battery_light_title">Encender el indicador LED cuando el dispositivo se esté cargando</string>
-    <string name="refresh_rate_title">Tasa de refresco de la pantalla</string>
+    <string name="refresh_rate_title">Frecuencia de actualización de la pantalla</string>
     <string name="mobile_data_settings_summary_unavailable">No hay una tarjeta SIM disponible</string>
     <string name="connected_tws_device_saved_title">Auriculares guardados</string>
     <string name="reset">Restablecer</string>
@@ -84,6 +84,6 @@
     <string name="additional_buttons_title">Botones adicionales</string>
     <string name="keyboard_extras_title">Extra</string>
     <string name="advanced_keyboard_settings_title">Configuración avanzada</string>
-    <string name="fod_gesture_title">Desbloquear con huella dactilar cuando la pantalla está apagada</string>
+    <string name="fod_gesture_title">Desbloquear con la huella dactilar cuando la pantalla está apagada</string>
     <string name="fod_gesture_summary">Permitir desbloquear el dispositivo sin tener que despertar primero la pantalla</string>
 </resources>
