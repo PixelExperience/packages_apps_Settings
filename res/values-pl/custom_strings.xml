@@ -37,7 +37,7 @@
     <string name="hardware_keys_double_tap_title">Akcja podwójnego naciśnięcia</string>
     <string name="hardware_keys_action_nothing">Brak akcji</string>
     <string name="hardware_keys_action_menu">Otwórz/zamknij menu</string>
-    <string name="hardware_keys_action_app_switch">Przełącznik ostatnich aplikacji</string>
+    <string name="hardware_keys_action_app_switch">Przełącznik ostatnich aplikacji.</string>
     <string name="hardware_keys_action_search">Asystent wyszukiwania</string>
     <string name="hardware_keys_action_voice_search">Wyszukiwanie głosowe</string>
     <string name="hardware_keys_action_in_app_search">Wyszukiwanie w aplikacji</string>
