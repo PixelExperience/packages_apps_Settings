@@ -15,7 +15,6 @@
  */
 package com.android.settings.applications.appinfo;
 
-import android.app.AppLockManager;
 import android.app.AppOpsManager;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
@@ -51,7 +50,6 @@ public class DrawOverlayDetails extends AppInfoWithHeader implements OnPreferenc
     // TODO: Break out this functionality into its own class.
     private AppStateOverlayBridge mOverlayBridge;
     private AppOpsManager mAppOpsManager;
-    private AppLockManager mAppLockManager;
     private SwitchPreference mSwitchPref;
     private OverlayState mOverlayState;
 
@@ -62,10 +60,8 @@ public class DrawOverlayDetails extends AppInfoWithHeader implements OnPreferenc
         Context context = getActivity();
         mOverlayBridge = new AppStateOverlayBridge(context, mState, null);
         mAppOpsManager = (AppOpsManager) context.getSystemService(Context.APP_OPS_SERVICE);
-        mAppLockManager = Utils.getAppLockManager(context);
 
-        if (!Utils.isSystemAlertWindowEnabled(context) || mAppLockManager.isAppLocked(
-                mPackageInfo.packageName)) {
+        if (!Utils.isSystemAlertWindowEnabled(context)) {
             mPackageInfo = null;
             return;
         }

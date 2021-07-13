@@ -292,18 +292,6 @@
          NOTE: This list must have the exact same items count as config_availableColorModes -->
     <string-array name="available_vendor_color_modes" translatable="false" />
 
-    <!-- App Lock -->
-    <string-array name="applock_lock_after_entries">
-        <item>@string/applock_lock_after_instantly</item>
-        <item>@string/applock_lock_after_15_seconds</item>
-        <item>@string/applock_lock_after_screen_off</item>
-    </string-array>
-    <string-array name="applock_lock_after_values">
-        <item>0</item>
-        <item>15</item>
-        <item>-1</item>
-    </string-array>
-
     <!-- Face Unlock -->
     <string-array name="face_unlock_method_entries">
         <item>@string/face_unlock_method_default</item>
