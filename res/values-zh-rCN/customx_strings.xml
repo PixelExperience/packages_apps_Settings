@@ -204,4 +204,13 @@
     <string name="back_height_high_label">底部</string>
     <string name="back_options_dialog_title">选项</string>
     <string name="back_height">边缘触摸区域</string>
+    <string name="power_menu_shortcuts_title">菜单快捷键</string>
+    <string name="power_menu_shortcuts_summary">自定义电源菜单选项</string>
+    <string name="power_menu_screenshot_title">屏幕截图</string>
+    <string name="power_menu_screenshot_summary">长按以进行局部截图</string>
+    <string name="power_menu_airplane_title">飞行模式</string>
+    <string name="power_menu_users_title">用户切换</string>
+    <string name="power_menu_lockdown_title">锁定</string>
+    <string name="power_menu_shortcut_unavailable">已禁用，屏幕锁定不受保护</string>
+    <string name="power_menu_emergency_title">紧急情况</string>
 </resources>

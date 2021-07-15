@@ -213,27 +213,4 @@
     <string name="power_menu_lockdown_title">Bloqueio total</string>
     <string name="power_menu_shortcut_unavailable">Desativado porque a tela de bloqueio não está protegida</string>
     <string name="power_menu_emergency_title">Emergência</string>
-    <string name="applock_title">Bloqueio de aplicativos</string>
-    <string name="applock_locked">Bloqueado</string>
-    <string name="applock_unlocked">Desbloqueado</string>
-    <string name="applock_locked_apps">Aplicativos bloqueados</string>
-    <string name="applock_unlocked_apps">Aplicativos desbloqueados</string>
-    <string name="applock_lock_after_title">Bloquear aplicativo após</string>
-    <string name="applock_lock_after_instantly">Imediatamente</string>
-    <string name="applock_lock_after_15_seconds">15 segundos</string>
-    <string name="applock_lock_after_screen_off">Tela desligada</string>
-    <string name="applock_lock_after_summary">O aplicativo será bloqueado após o tempo selecionado</string>
-    <string name="applock_lock_after_instantly_summary">O aplicativo será bloqueado instantaneamente quando fechado</string>
-    <string name="applock_lock_after_15_seconds_summary">O aplicativo será bloqueado 15 segundos após fechado</string>
-    <string name="applock_lock_after_screen_off_summary">O aplicativo será bloqueado quando a tela for desligada</string>
-    <string name="applock_notification_info">A visibilidade do conteúdo da notificação pode ser alterada se você clicar ao lado do ícone de cadeado.</string>
-    <string name="applock_show_notif">Mostrando o conteúdo das notificações</string>
-    <string name="applock_hide_notif">Ocultando o conteúdo das notificações</string>
-    <string name="applock_setup">Configurar bloqueio de aplicativos</string>
-    <string name="applock_overlay_summary">Este recurso não está disponível porque este aplicativo está bloqueado</string>
-    <plurals name="applock_summary">
-        <item quantity="one">1 aplicativo bloqueado</item>
-        <item quantity="other">%d aplicativos bloqueados</item>
-    </plurals>
-    <string name="keywords_applock_settings">bloqueio de app, bloqueador de apps, bloquear app, bloquear aplicativo, bloqueio de aplicativos</string>
 </resources>

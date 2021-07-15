@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="status_bar_double_tap_to_sleep_title">Tikken voor slaapstand</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Dubbeltik op de statusbalk om het scherm uit te schakelen</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Dubbeltik op de statusbalk of schermvergrendeling om het scherm uit te schakelen</string>
     <string name="wake_when_plugged_or_unplugged_title">Ontwaken door aansluiten op lader</string>
     <string name="wake_when_plugged_or_unplugged_summary">Scherm aan bij het aansluiten of loskoppelen van een lader</string>
     <string name="app_notification_sound_timeout_title">Minimale tijd tussen meldingsgeluiden</string>
@@ -211,27 +211,6 @@
     <string name="power_menu_airplane_title">Vliegtuigmodus</string>
     <string name="power_menu_users_title">Gebruiker wisselen</string>
     <string name="power_menu_lockdown_title">Vergrendeling</string>
+    <string name="power_menu_shortcut_unavailable">Uitgeschakeld omdat schermvergrendeling niet beschermd is</string>
     <string name="power_menu_emergency_title">Noodgeval</string>
-    <string name="applock_title">App vergrendeling</string>
-    <string name="applock_locked">Vergrendeld</string>
-    <string name="applock_unlocked">Ontgrendeld</string>
-    <string name="applock_locked_apps">Vergrendelde apps</string>
-    <string name="applock_unlocked_apps">Ontgrendelde apps</string>
-    <string name="applock_lock_after_title">Vergrendel app na</string>
-    <string name="applock_lock_after_instantly">Onmiddellijk</string>
-    <string name="applock_lock_after_15_seconds">15 seconden</string>
-    <string name="applock_lock_after_screen_off">Scherm uit</string>
-    <string name="applock_lock_after_summary">App zal vergrendeld worden na ingestelde timeout</string>
-    <string name="applock_lock_after_instantly_summary">App zal onmiddellijk vergrendeld worden bij afsluiten</string>
-    <string name="applock_lock_after_15_seconds_summary">App zal 15 seconden na afsluiten vergrendeld worden</string>
-    <string name="applock_lock_after_screen_off_summary">App zal vergrendeld worden wanneer scherm uitgeschakeld wordt</string>
-    <string name="applock_show_notif">Inhoud van meldingen weergeven</string>
-    <string name="applock_hide_notif">Inhoud van meldingen verbergen</string>
-    <string name="applock_setup">App-vergrendeling instellen</string>
-    <string name="applock_overlay_summary">Deze functie is niet beschikbaar omdat de app vergrendeld is</string>
-    <plurals name="applock_summary">
-        <item quantity="one">1 app vergrendeld</item>
-        <item quantity="other">%d apps vergrendeld</item>
-    </plurals>
-    <string name="keywords_applock_settings">applock, app vergrendelen, app lock, vergrendelen</string>
 </resources>

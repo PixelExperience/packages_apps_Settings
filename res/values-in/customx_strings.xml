@@ -211,26 +211,6 @@
     <string name="power_menu_airplane_title">Mode pesawat</string>
     <string name="power_menu_users_title">Beralih pengguna</string>
     <string name="power_menu_lockdown_title">Mengunci</string>
+    <string name="power_menu_shortcut_unavailable">Dimatikan karena layar kunci tidak terlindungi</string>
     <string name="power_menu_emergency_title">Darurat</string>
-    <string name="applock_title">Pengunci Aplikasi</string>
-    <string name="applock_locked">Terkunci</string>
-    <string name="applock_unlocked">Tidak terkunci</string>
-    <string name="applock_locked_apps">Aplikasi terkunci</string>
-    <string name="applock_unlocked_apps">Aplikasi tidak terkunci</string>
-    <string name="applock_lock_after_title">Kunci aplikasi setelah</string>
-    <string name="applock_lock_after_instantly">Segera</string>
-    <string name="applock_lock_after_15_seconds">15 detik</string>
-    <string name="applock_lock_after_screen_off">Layar mati</string>
-    <string name="applock_lock_after_summary">Aplikasi akan dikunci setelah waktu habis yang dipilih</string>
-    <string name="applock_lock_after_instantly_summary">Aplikasi akan langsung dikunci saat ditutup</string>
-    <string name="applock_lock_after_15_seconds_summary">Aplikasi akan dikunci 15 detik setelah ditutup</string>
-    <string name="applock_lock_after_screen_off_summary">Aplikasi akan dikunci saat layar dimatikan</string>
-    <string name="applock_show_notif">Menampilkan konten notifikasi</string>
-    <string name="applock_hide_notif">Menyembunyikan konten notifikasi</string>
-    <string name="applock_setup">Siapkan pengunci aplikasi</string>
-    <string name="applock_overlay_summary">Fitur ini tidak tersedia karena aplikasi ini terkunci</string>
-    <plurals name="applock_summary">
-        <item quantity="other">%d aplikasi terkunci</item>
-    </plurals>
-    <string name="keywords_applock_settings">kunci aplikasi, pengunci aplikasi</string>
 </resources>

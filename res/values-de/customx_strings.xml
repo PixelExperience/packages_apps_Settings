@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="status_bar_double_tap_to_sleep_title">Doppeltippen für Standby (DT2S)</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Doppeltippe auf Statusleiste oder Sperrbildschirm, um das Display auszuschalten</string>
-    <string name="wake_when_plugged_or_unplugged_title">Beim Anschließen aufwecken</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen einer Stromquelle den Bildschirm einschalten</string>
+    <string name="status_bar_double_tap_to_sleep_title">Doppeltippen für Standby</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doppeltippen auf Statusleiste oder Sperrbildschirm, um das Display auszuschalten</string>
+    <string name="wake_when_plugged_or_unplugged_title">Beim Anschließen des Ladekabels aufwecken</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen von einer Stromquelle den Bildschirm einschalten</string>
     <string name="app_notification_sound_timeout_title">Minimale Zeit zwischen Benachrichtigungstönen</string>
     <string name="app_notification_sound_timeout_summary_template">Töne und Vibrationen nur alle <xliff:g id="duration">%1$s</xliff:g> zulassen</string>
     <string name="app_notification_sound_timeout_value_none">Keine Beschränkung</string>
@@ -204,4 +204,13 @@
     <string name="back_height_high_label">unterer Bereich</string>
     <string name="back_options_dialog_title">Optionen</string>
     <string name="back_height">Randberührungsbereich</string>
+    <string name="power_menu_shortcuts_title">Münu Shortcuts</string>
+    <string name="power_menu_shortcuts_summary">Die Optionen des Power-Menüs anpassen</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_screenshot_summary">Für zugeschnittenen Screenshot gedrückt halten</string>
+    <string name="power_menu_airplane_title">Flugmodus</string>
+    <string name="power_menu_users_title">Benutzer wechseln</string>
+    <string name="power_menu_lockdown_title">Sperren</string>
+    <string name="power_menu_shortcut_unavailable">Deaktiviert, weil der Sperrbildschirm nicht geschützt ist</string>
+    <string name="power_menu_emergency_title">Notfall</string>
 </resources>

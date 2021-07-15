@@ -211,23 +211,6 @@
     <string name="power_menu_airplane_title">Режим полёта</string>
     <string name="power_menu_users_title">Переключение пользователей</string>
     <string name="power_menu_lockdown_title">Блокировка</string>
+    <string name="power_menu_shortcut_unavailable">Отключено, так как защита экрана блокировки не включена</string>
     <string name="power_menu_emergency_title">Emergency</string>
-    <string name="applock_title">Блокировка приложений</string>
-    <string name="applock_locked">Locked</string>
-    <string name="applock_unlocked">разблокировать</string>
-    <string name="applock_locked_apps">Заблокированные приложения</string>
-    <string name="applock_unlocked_apps">Разблокированные приложения</string>
-    <string name="applock_lock_after_title">Блокировка приложения после</string>
-    <string name="applock_lock_after_instantly">Сразу же</string>
-    <string name="applock_lock_after_15_seconds">15 секунд</string>
-    <string name="applock_lock_after_screen_off">Экран выкл</string>
-    <string name="applock_lock_after_summary">Приложение будет заблокировано по истечении выбранного времени</string>
-    <string name="applock_lock_after_instantly_summary">Приложение будет немедленно заблокировано после закрытия</string>
-    <string name="applock_lock_after_15_seconds_summary">Приложение будет заблокировано через 15 секунд после закрытия</string>
-    <string name="applock_lock_after_screen_off_summary">Приложение будет заблокировано после выключении экрана</string>
-    <string name="applock_show_notif">Отображать содержимое уведомления</string>
-    <string name="applock_hide_notif">Скрывать содержимое уведомлений</string>
-    <string name="applock_setup">Настройка блокировки приложений</string>
-    <string name="applock_overlay_summary">Эта функция недоступна, так как приложение заблокировано</string>
-    <string name="keywords_applock_settings">блокировка, блокировщик приложений, блокировка приложения, блокировка приложений</string>
 </resources>

@@ -204,4 +204,13 @@
     <string name="back_height_high_label">Alt bölge</string>
     <string name="back_options_dialog_title">Seçenekler</string>
     <string name="back_height">Kenar dokunma alanı</string>
+    <string name="power_menu_shortcuts_title">Menü kısayolları</string>
+    <string name="power_menu_shortcuts_summary">Güç menüsü kısayollarını özelleştir</string>
+    <string name="power_menu_screenshot_title">Ekran görüntüsü</string>
+    <string name="power_menu_screenshot_summary">Kısmi ekran görüntüsü için uzun basın</string>
+    <string name="power_menu_airplane_title">Uçak modu</string>
+    <string name="power_menu_users_title">Kullanıcı değiştirici</string>
+    <string name="power_menu_lockdown_title">Kilitle</string>
+    <string name="power_menu_shortcut_unavailable">Kilit ekranı korunmadığı için devre dışı bırakıldı</string>
+    <string name="power_menu_emergency_title">Acil durum</string>
 </resources>

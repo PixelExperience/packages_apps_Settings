@@ -213,27 +213,4 @@
     <string name="power_menu_lockdown_title">Verrouillage</string>
     <string name="power_menu_shortcut_unavailable">Désactivé car l\'écran de verrouillage n\'est pas protégé</string>
     <string name="power_menu_emergency_title">Urgences</string>
-    <string name="applock_title">Verrouillage d\'applications</string>
-    <string name="applock_locked">Verrouillé</string>
-    <string name="applock_unlocked">Déverrouillé</string>
-    <string name="applock_locked_apps">Applications verrouillées</string>
-    <string name="applock_unlocked_apps">Applications déverrouillées</string>
-    <string name="applock_lock_after_title">Verrouiller l\'application après</string>
-    <string name="applock_lock_after_instantly">Immédiatement</string>
-    <string name="applock_lock_after_15_seconds">15 secondes</string>
-    <string name="applock_lock_after_screen_off">Écran éteint</string>
-    <string name="applock_lock_after_summary">L\'application sera verrouillée après le temps sélectionné</string>
-    <string name="applock_lock_after_instantly_summary">L\'application sera verrouillée instantanément après sa fermeture</string>
-    <string name="applock_lock_after_15_seconds_summary">L\'application sera verrouillée 15 secondes après sa fermeture</string>
-    <string name="applock_lock_after_screen_off_summary">L\'application sera verrouillée quand l\'écran sera éteint</string>
-    <string name="applock_notification_info">La visibilité du contenu d\'une notification peut être modifiée en cliquant à côté de l\'icône de verrouillage.</string>
-    <string name="applock_show_notif">Afficher le contenu de la notification</string>
-    <string name="applock_hide_notif">Masquer le contenu des notifications</string>
-    <string name="applock_setup">Configurer le verrouillage de l\'application</string>
-    <string name="applock_overlay_summary">Cette fonctionnalité n\'est pas disponible car cette application est verrouillée</string>
-    <plurals name="applock_summary">
-        <item quantity="one">1 application verrouillée</item>
-        <item quantity="other">%d applications verrouillées</item>
-    </plurals>
-    <string name="keywords_applock_settings">applock, applocker, verrou d\'application, verrouillage d\'applications</string>
 </resources>

@@ -204,4 +204,13 @@
     <string name="back_height_high_label">바닥 면적</string>
     <string name="back_options_dialog_title">생성 옵션 변경</string>
     <string name="back_height">가장자리 터치 구간</string>
+    <string name="power_menu_shortcuts_title">메뉴 바로가기</string>
+    <string name="power_menu_shortcuts_summary">전원 메뉴 바로가기 사용자 지정</string>
+    <string name="power_menu_screenshot_title">스크린샷</string>
+    <string name="power_menu_screenshot_summary">길게 눌러 부분 스크린샷 촬영</string>
+    <string name="power_menu_airplane_title">비행기 모드</string>
+    <string name="power_menu_users_title">사용자 전환</string>
+    <string name="power_menu_lockdown_title">잠금</string>
+    <string name="power_menu_shortcut_unavailable">잠금화면이 보호되지 않아 비활성화됨</string>
+    <string name="power_menu_emergency_title">긴급 전화</string>
 </resources>

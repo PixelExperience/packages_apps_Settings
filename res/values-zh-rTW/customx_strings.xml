@@ -213,26 +213,4 @@
     <string name="power_menu_lockdown_title">鎖定</string>
     <string name="power_menu_shortcut_unavailable">因鎖定畫面無保護方式而停用</string>
     <string name="power_menu_emergency_title">緊急情況</string>
-    <string name="applock_title">App 保險箱</string>
-    <string name="applock_locked">已上鎖</string>
-    <string name="applock_unlocked">已解鎖</string>
-    <string name="applock_locked_apps">上鎖的 App</string>
-    <string name="applock_unlocked_apps">解鎖的 App</string>
-    <string name="applock_lock_after_title">上鎖 App 前間隔時間</string>
-    <string name="applock_lock_after_instantly">立即</string>
-    <string name="applock_lock_after_15_seconds">15 秒</string>
-    <string name="applock_lock_after_screen_off">關閉螢幕</string>
-    <string name="applock_lock_after_summary">App 會在指定時間後上鎖。</string>
-    <string name="applock_lock_after_instantly_summary">App 會在螢幕關閉後立刻上鎖。</string>
-    <string name="applock_lock_after_15_seconds_summary">App 會在螢幕關閉後 15 秒後上鎖。</string>
-    <string name="applock_lock_after_screen_off_summary">App 會在螢幕關閉時上鎖。</string>
-    <string name="applock_notification_info">按下旁邊的鎖頭圖示，即可更改通知內容的可見狀態。</string>
-    <string name="applock_show_notif">顯示通知內容</string>
-    <string name="applock_hide_notif">隱藏通知內容</string>
-    <string name="applock_setup">設定 App 保險箱</string>
-    <string name="applock_overlay_summary">鑑於 App 已經上鎖，無法使用本功能</string>
-    <plurals name="applock_summary">
-        <item quantity="other">已鎖上 %d 個 App</item>
-    </plurals>
-    <string name="keywords_applock_settings">applock, applocker, app lock, app locker, 保險箱, 安全鎖, 鎖, 上鎖, app 鎖, app 鎖定, app 保險箱, 應用程式鎖, 應用程式鎖定</string>
 </resources>
