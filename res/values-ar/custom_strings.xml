@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">الإعدادات المتقدمة</string>
     <string name="fod_gesture_title">إلغاء القفل بواسطة بصمة الإصبع عندما تكون الشاشة مقفلة</string>
     <string name="fod_gesture_summary">تمكين إلغاء قفل الجهاز بدون الحاجة إلى إيقاظ الشاشة أولا</string>
+    <string name="face_unlock_method_title">فتح القفل باستخدام الوجه</string>
+    <string name="face_unlock_method_default">على الفور </string>
+    <string name="face_unlock_method_swipe">مع السحب </string>
 </resources>

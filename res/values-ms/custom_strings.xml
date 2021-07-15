@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Butang tambahan</string>
     <string name="keyboard_extras_title">Tambahan</string>
     <string name="advanced_keyboard_settings_title">Tetapan lanjutan</string>
+    <string name="fod_gesture_title">Buka kunci dengan cap jari semasa skrin dimatikan</string>
+    <string name="fod_gesture_summary">Membolehkan membuka kunci peranti tanpa perlu mengaktifkan skrin terlebih dahulu</string>
 </resources>

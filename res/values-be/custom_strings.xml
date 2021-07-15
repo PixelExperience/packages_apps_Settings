@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Дадатковыя налады</string>
     <string name="fod_gesture_title">Разблакуйце адбіткам пальца, калі экран выключаны</string>
     <string name="fod_gesture_summary">Дазваляе разблакіраваць прыладу без папярэдняга ўключэння экрана</string>
+    <string name="face_unlock_method_title">Дазволіць разблакіроўку тварам на экране блакіроўкі</string>
+    <string name="face_unlock_method_default">Калі экран уключаны</string>
+    <string name="face_unlock_method_swipe">Пры дакрананні да экрана блакіроўкі</string>
 </resources>

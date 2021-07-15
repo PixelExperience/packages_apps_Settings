@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Lisasätted</string>
     <string name="fod_gesture_title">Avage sõrmejäljega, kui ekraan on välja lülitatud</string>
     <string name="fod_gesture_summary">Võimaldab seadme lukust lahti võtta, ilma et peaksite kõigepealt ekraani üles äratama</string>
+    <string name="face_unlock_method_title">Luba näoga avamine lukustuskuval</string>
+    <string name="face_unlock_method_default">Kui ekraan on sisse lülitatud</string>
+    <string name="face_unlock_method_swipe">Lukustuskuval libistades</string>
 </resources>

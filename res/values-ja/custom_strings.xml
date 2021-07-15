@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">高度な設定</string>
     <string name="fod_gesture_title">画面消灯時に指紋でロック解除</string>
     <string name="fod_gesture_summary">画面点灯なしでの端末の復帰を許可する</string>
+    <string name="face_unlock_method_title">ロック画面での顔認証ロック解除を許可</string>
+    <string name="face_unlock_method_default">画面が点灯した時</string>
+    <string name="face_unlock_method_swipe">ロック画面をスワイプした時</string>
 </resources>

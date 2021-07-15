@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Додаткові налаштування</string>
     <string name="fod_gesture_title">Розблокування за відбитком пальця, коли екран вимкнено</string>
     <string name="fod_gesture_summary">Дозволяє розблокувати пристрій без попереднього пробудження екрану</string>
+    <string name="face_unlock_method_title">Дозволити розблокування по обличчю на заблокованому екрані</string>
+    <string name="face_unlock_method_default">Коли екран увімкнено</string>
+    <string name="face_unlock_method_swipe">Коли ви проводите пальцем на заблокованому екрані </string>
 </resources>

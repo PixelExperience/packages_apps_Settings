@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Pengaturan lanjutan</string>
     <string name="fod_gesture_title">Buka kunci dengan sidik jari saat layar mati</string>
     <string name="fod_gesture_summary">Izinkan membuka kunci tanpa harus mengaktifkan layar terlebih dahulu</string>
+    <string name="face_unlock_method_title">Izinkan face unlock di layar kunci</string>
+    <string name="face_unlock_method_default">Saat layar dihidupkan</string>
+    <string name="face_unlock_method_swipe">Saat mengusap layar kunci</string>
 </resources>
