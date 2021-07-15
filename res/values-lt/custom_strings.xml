@@ -72,4 +72,7 @@
     <string name="additional_buttons_title">Papildomi mygtukai</string>
     <string name="fod_gesture_title">Atrakinkite pirštų atspaudu, kai ekranas išjungtas</string>
     <string name="fod_gesture_summary">Leidžia atrakinti įrenginį, prieš tai neįjungiant ekrano</string>
+    <string name="face_unlock_method_title">Leiskite atrakinti veido atpažinimo funkcija užrakinimo ekrane</string>
+    <string name="face_unlock_method_default">Įjungus ekraną </string>
+    <string name="face_unlock_method_swipe">Perbraukus užrakto ekrane</string>
 </resources>

@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Haladó beállítások</string>
     <string name="fod_gesture_title">Képernyő-feloldás ujjlenyomattal</string>
     <string name="fod_gesture_summary">Fel tudja oldani a készüléket anélkül, hogy előbb bekapcsolná a képernyőt</string>
+    <string name="face_unlock_method_title">Arcalapú feloldás engedélyezése a záróképernyőn</string>
+    <string name="face_unlock_method_default">Ha a képernyő be van kapcsolva</string>
+    <string name="face_unlock_method_swipe">Ha csúsztatja a záróképernyőt</string>
 </resources>

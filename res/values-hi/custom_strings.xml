@@ -62,6 +62,7 @@
     <string name="button_backlight_only_when_pressed_title">बटन दबाए जाने पर ही रोशन करें</string>
     <string name="keyboard_backlight_enabled">कीबोर्ड बैकलाइट सक्षम फ़ाइल: कस्टम स्ट्रिंग्स.xml</string>
     <string name="button_backlight_seekbar_title">बटन चमक</string>
+    <string name="keyboard_backlight_seekbar_title">कुंजीपटल चमक</string>
     <string name="backlight_timeout_title">रोशनी का समय</string>
     <string name="backlight_timeout_unlimited">बंद नही करें</string>
     <string name="backlight_summary_disabled">असक्षम</string>
@@ -69,6 +70,8 @@
     <string name="backlight_summary_enabled">सक्षम</string>
     <string name="disable_navkeys_title">ऑन-स्क्रीन नेविगेशन पट्टी सक्षम करें</string>
     <string name="disable_navkeys_summary">ऑनस्क्रीन नाविगेशन बार शुरू करें और हार्डवेअर बटन बंद करें</string>
+    <string name="swap_capacitive_keys_title">कपैसिटिव बटनो का क्रम बदलें </string>
+    <string name="swap_capacitive_keys_summary">रीसेन्ट और बैक बटन का क्रम बदलें </string>
     <string name="high_touch_sensitivity_title">उच्च स्पर्श संवेदनशीलता</string>
     <string name="high_touch_sensitivity_summary">स्पर्श स्क्रीन संवेदनशीलता को बढ़ाएँ ताकि दस्ताने पहने हुए हाथ से उसका उपयोग किया जा सके</string>
     <string name="touchscreen_hovering_title">स्पर्श स्क्रीन मँडराना</string>
@@ -78,4 +81,15 @@
     <string name="security_dashboard_summary_face_and_fingerprint">स्क्रीन लॉक, फ़िंगरप्रिंट, चेहरे से अनलॉक</string>
     <string name="face_redo_confirm_btn">फिर से करें</string>
     <string name="face_redo_warning_msg">क्या आप मौजूदा फ़ेस स्कैन को हटाना चाहते हैं और एक नया फ़ेस स्कैन बनाना चाहते हैं?</string>
+    <string name="fast_charging_title">त्वरित चार्जिंग </string>
+    <string name="fast_charging_summary">चार्ज करते समय या बैटरी के जीवनकाल को बढ़ाने के लिए डिवाइस द्वारा उत्पादित गर्मी को कम करने में अक्षम करें</string>
+    <string name="others_settings_title">अन्य सेटिंग्स</string>
+    <string name="additional_buttons_title">अतिरिक्त बटन </string>
+    <string name="keyboard_extras_title">अतिरिक्त</string>
+    <string name="advanced_keyboard_settings_title">एडवांस सेटिंग</string>
+    <string name="fod_gesture_title">स्क्रीन बंद होने पर फिंगरप्रिंट से  खोलें </string>
+    <string name="fod_gesture_summary">स्क्रीन ऑन किये बिना अनलॉक करें </string>
+    <string name="face_unlock_method_title">लॉक स्क्रीन पे चेहरे की पहचान लागू करें </string>
+    <string name="face_unlock_method_default">जब स्क्रीन चालू हो </string>
+    <string name="face_unlock_method_swipe">जब लॉक स्क्रीन पे स्वाइप कर रहे हों </string>
 </resources>

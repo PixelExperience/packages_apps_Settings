@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Qabaqcıl tənzimləmələr</string>
     <string name="fod_gesture_title">Ekran sönülü ikən barmaq izi ilə kilidi açın</string>
     <string name="fod_gesture_summary">Ekranı oyandırmağa ehtiyac olmadan cihazın kilidini açmağa icazə verər</string>
+    <string name="face_unlock_method_title">Kilid ekranında üzlə kilid açmağa icazə ver</string>
+    <string name="face_unlock_method_default">Ekran yandırılanda</string>
+    <string name="face_unlock_method_swipe">Kilid ekranında sürüşdürəndə</string>
 </resources>

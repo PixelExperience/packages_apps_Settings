@@ -86,4 +86,5 @@
     <string name="advanced_keyboard_settings_title">Cài đặt nâng cao</string>
     <string name="fod_gesture_title">Mở khóa bằng vân tay khi màn hình tắt</string>
     <string name="fod_gesture_summary">Cho phép mở khóa thiết bị mà không cần phải đánh thức màn hình trước</string>
+    <string name="face_unlock_method_swipe">Khi vuốt trên màn hình khóa</string>
 </resources>

@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Gelişmiş ayarlar</string>
     <string name="fod_gesture_title">Ekran kapalıyken parmak iziyle kilidi açın</string>
     <string name="fod_gesture_summary">Ekranı uyandırmak zorunda kalmadan önce cihazın kilidini açmaya izin verir</string>
+    <string name="face_unlock_method_title">Kilit ekranında yüz kilidi açmaya izin ver</string>
+    <string name="face_unlock_method_default">Ekran açıldığında</string>
+    <string name="face_unlock_method_swipe">Kilit ekranında kaydırırken</string>
 </resources>

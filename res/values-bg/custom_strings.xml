@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Разширени настройки</string>
     <string name="fod_gesture_title">Отключване с пръстов отпечатък, при загасен екран</string>
     <string name="fod_gesture_summary">Позволява отключването на устройството без да се налага събуждането на екрана преди това</string>
+    <string name="face_unlock_method_title">Разрешете лицево отключване на заключен екран</string>
+    <string name="face_unlock_method_default">Когато екранът е включен</string>
+    <string name="face_unlock_method_swipe">При плъзгане на заключен екран</string>
 </resources>

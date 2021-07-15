@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Erweiterte Einstellungen</string>
     <string name="fod_gesture_title">Mit Fingerabdruck entsperren wenn der Bildschirm ausgeschaltet ist</string>
     <string name="fod_gesture_summary">Ermöglicht das Entsperren des Geräts, ohne vorher den Bildschirm einzuschalten</string>
+    <string name="face_unlock_method_title">Gesichtsentsperrung auf Sperrbildschirm zulassen</string>
+    <string name="face_unlock_method_default">Wenn der Bildschirm aktiviert ist</string>
+    <string name="face_unlock_method_swipe">Beim Wischen auf dem Sperrbildschirm</string>
 </resources>

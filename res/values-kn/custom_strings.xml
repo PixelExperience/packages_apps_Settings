@@ -22,6 +22,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್ ನ ಎಡಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಗುರುತಿಸಿರಿ.</string>
     <string name="battery_light_title">ಮಿಂತಿಣಿ ಬೆಳಕು</string>
     <string name="refresh_rate_title">ಪರದೆ ರಿಫ್ರೆಶ್ ಸಂಖ್ಯೆ</string>
+    <string name="mobile_data_settings_summary_unavailable">ಸಿಮ್ ಕಾರ್ಡ್ ಲಭ್ಯವಿಲ್ಲ</string>
     <string name="connected_tws_device_saved_title">ಶೇಖರಿತ ಇಯರ್ ಬಡ್ ಗಳು</string>
     <string name="reset">ಮರುಹೊಂದಿಸು</string>
     <string name="button_pref_title">ಗುಂಡಿಗಳು</string>
@@ -66,11 +67,22 @@
     <string name="backlight_summary_enabled">ಸಶಕ್ತ</string>
     <string name="disable_navkeys_title">ಪರದೆ ಸಂಚರಣೆಪಟ್ಟಿ ಸಶಕ್ತಿಸು</string>
     <string name="disable_navkeys_summary">ಪರದೆ ಸಂಚರಣೆಪಟ್ಟಿ ಸಶಕ್ತಿಸಿ, ಯಂತ್ರಾಂಶ ಗುಂಡಿಗಳನ್ನು ಅಶಕ್ತಿಸು</string>
+    <string name="swap_capacitive_keys_title">ಕಾಪಸಿಟಿವ್ ಗುಂಡಿ ಬದಲಾಯಿಸಿ</string>
+    <string name="swap_capacitive_keys_summary">ಇತ್ತೀಚಿನ ಮತ್ತು ಹಿನ್ನಲೆ ಗುಂಡಿಗಳ ಕ್ರಮವನ್ನು ಅದಲು ಬದಲಿಸು</string>
     <string name="high_touch_sensitivity_title">ಅಧಿಕ ಸ್ಪರ್ಶ ಸಂವೇದನೆ</string>
     <string name="high_touch_sensitivity_summary">ಸ್ಪರ್ಶಪರದೆ ಸಂವೇದನೆಯನ್ನು ವೃದ್ಧಿಸುವುದರಿಂದ ಕೈಗವಸನ್ನು ಧರಿಸಿದಾಗಲೂ ಸಹ ಇದನ್ನು ಉಪಯೋಗಿಸಬಹುದು</string>
     <string name="touchscreen_hovering_title">ಸ್ಪರ್ಶಪರದೆ ಹರಿದಾಡುವಿಕೆ</string>
     <string name="touchscreen_hovering_summary">ವೆಬ್ ಬ್ರೌಸರ್ಸ್, ರಿಮೋಟ್ ಡೆಸ್ಕ್ ಟಾಪ್ಸ್, ಇತರೆಗಳಲ್ಲಿ ಮೌಸ್‍ನ ಹಾಗೆ ಪರದೆಯನ್ನು ಹರಿದಾಡಲು ನಿಮಗೆ ಅನುವುಮಾಡುತ್ತದೆ</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಮುಖದ ಗುರುತನ್ನು ತೆಗೆದು ಹೊಸದನ್ನು ಸೇರಿಸಿ</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">ಮುಖವನ್ನು ಮತ್ತೊಮ್ಮೆ ಗುರುತಿಸಿ</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">ಸ್ಕ್ರೀನ್ ಲಾಕ್, ಬೆರಳಚ್ಚು, ಫೇಸ್ ಅನ್ಲಾಕ್</string>
+    <string name="face_redo_confirm_btn">ಮತ್ತೆಮಾಡು</string>
+    <string name="face_redo_warning_msg">ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಮುಖದ ಗುರುತನ್ನು ಅಳಿಸಿ ಹೊಸದೊಂದನ್ನು ಸೇರಿಸಲು ಬಯಸುವಿರ?</string>
+    <string name="fast_charging_title">ವೇಗದ ಚಾರ್ಜಿಂಗ್</string>
+    <string name="others_settings_title">ಇತರೆ ಸೆಟ್ಟಿಂಗ್ಗಳು</string>
     <string name="additional_buttons_title">ಹೆಚ್ಚುವರಿ ಗುಂಡಿಗಳು</string>
+    <string name="keyboard_extras_title">ಎಕ್ಸಟ್ರಾಸ್</string>
+    <string name="advanced_keyboard_settings_title">ಸುಧಾರಿತ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
     <string name="fod_gesture_title">ಪರದೆ  ನಿಷ್ಕ್ರಯವಾಗಿರುವಾಗ ಬೆರಳಚ್ಚು ಸಂವೇದಕದಿಂದ ಅನ್ಲಾಕ್ ಮಾಡಿ</string>
     <string name="fod_gesture_summary">ಪರದೆಯನ್ನು ಎಚ್ಚರಿಸದೆ ಅನ್ಲಾಕ್ ಮಾಡಲು ಅನುಮತಿಸಿ</string>
 </resources>

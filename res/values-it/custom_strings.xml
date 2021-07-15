@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Impostazioni avanzate</string>
     <string name="fod_gesture_title">Sblocca con l\'impronta digitale quando lo schermo è spento</string>
     <string name="fod_gesture_summary">Consente di sbloccare il dispositivo senza dover prima accendere lo schermo</string>
+    <string name="face_unlock_method_title">Consenti lo sblocco facciale sulla schermata di blocco</string>
+    <string name="face_unlock_method_default">Quando lo schermo è acceso</string>
+    <string name="face_unlock_method_swipe">Durante lo scorrimento sulla schermata di blocco</string>
 </resources>

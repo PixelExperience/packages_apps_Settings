@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Definições avançadas</string>
     <string name="fod_gesture_title">Desbloquear ecrã com impressão digital</string>
     <string name="fod_gesture_summary">Permite desbloquear o o dispositivo quando o ecrã está bloqueado</string>
+    <string name="face_unlock_method_title">Permitir desbloqueio facial no ecrã de bloqueio</string>
+    <string name="face_unlock_method_default">Se o ecrã estiver ligado</string>
+    <string name="face_unlock_method_swipe">Ao deslizar no ecrã de bloqueio</string>
 </resources>
