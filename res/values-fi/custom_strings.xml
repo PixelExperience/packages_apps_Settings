@@ -86,6 +86,7 @@
     <string name="advanced_keyboard_settings_title">Lisäasetukset</string>
     <string name="fod_gesture_title">Avaa sormenjäljellä, kun näyttö on pois päältä.</string>
     <string name="fod_gesture_summary">Sallii laitteen lukituksen avaamisen ilman näytön herätystä.</string>
+    <string name="face_unlock_method_title">Salli naamalla avaus lukitus näytöltä</string>
     <string name="face_unlock_method_default">Kun näyttö on päällä</string>
     <string name="face_unlock_method_swipe">Kun pyyhitään lukitusnäyttöä</string>
 </resources>

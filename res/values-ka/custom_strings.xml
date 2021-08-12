@@ -47,8 +47,10 @@
     <string name="hardware_keys_swipe_right_key_title">გაუსვით მარჯვნივ</string>
     <string name="hardware_keys_swipe_left_key_title">გაუსვით მარცხნივ</string>
     <string name="hardware_keys_long_tap_key_title">დიდხანს დაჭერა</string>
+    <string name="hardware_keys_swipe_tap_title">გადაფურცვლის აქტივობები</string>
     <string name="hardware_keys_long_tap_title">მოქმედება, დიდხნიანი დაჭერისას</string>
     <string name="button_wake_title">მოწყობილობის გაღვიძება</string>
+    <string name="camera_sleep_on_release_title">სწრაფი ნახვა</string>
     <string name="camera_sleep_on_release_summary">ნახევრად დაჭერა დატოვებს ეკრანს ჩართულად მხოლოდ იმ დროის განმავლობაში როდესაც ღილაკზე თითი გიჭირავთ</string>
     <string name="camera_launch_title">კამერის გაშვება</string>
     <string name="camera_launch_summary">ხანგრძლივი დაჭერა და გაშვება ჩართავს კამერას</string>
@@ -65,19 +67,26 @@
     <string name="backlight_summary_enabled">ჩართული</string>
     <string name="disable_navkeys_title">ეკრანზე ნავიგაციის პანელის ჩართვა</string>
     <string name="disable_navkeys_summary">ეკრანზე ნავიგაციის პანელის ჩართვა და ფიზიკური ღილაკების გათიშვა</string>
+    <string name="swap_capacitive_keys_title">შეცვალეთ ტევადობის ღილაკები</string>
     <string name="swap_capacitive_keys_summary">ბოლოს გამოყენებული პროგრამებისა და უკუსვლის ღილაკებისთვის, ადგილის გაცვლა</string>
     <string name="high_touch_sensitivity_title">მაღალი შეხების მგრძნობიარობა</string>
     <string name="high_touch_sensitivity_summary">გაზარდეთ ეკრანის მგრძნობელობა, რათა ხელთათმანით გამოყენებაც შეძლოთ</string>
+    <string name="touchscreen_hovering_title">შეხების ეკრანის დაფარვა</string>
+    <string name="touchscreen_hovering_summary">საშუალებას გაძლევთ ეკრანს შეეხოთ როგორც მაუსით ბრაუზერებში, დისტანციური სამუშაო მაგიდაზე და ა.შ.</string>
     <string name="security_settings_face_unlock_redo_face_scan_summary">არსებული სახის ანაბეჭდის მოცილება და ახლის შექმნა</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">სახის სკანირების აღდგენა</string>
     <string name="security_dashboard_summary_face_and_fingerprint">ეკრანის ბლოკირება, თითის ანაბეჭდი, სახით განბლოკვა</string>
     <string name="face_redo_confirm_btn">აღდგენა</string>
     <string name="face_redo_warning_msg">გსურთ რომ წაიშალოს არსებული სახის ანაბეჭდი და შეიქმნას ახალი?</string>
     <string name="fast_charging_title">სწრაფი დამუხტვა</string>
+    <string name="fast_charging_summary">გამორთეთ გამოყოფილი სითბოს შესამცირებლად მოწყობილობის დამუხტვისას ან ბატარეის სიცოცხლის გასახანგრძლივებლად.</string>
     <string name="others_settings_title">სხვა პარამეტრები</string>
     <string name="additional_buttons_title">დამატებითი ღილაკები</string>
     <string name="keyboard_extras_title">დამატებითი</string>
     <string name="advanced_keyboard_settings_title">სხვა პარამეტრები</string>
     <string name="fod_gesture_title">განბლოკეთ თითის ანაბეჭდით როდესაც ეკრანი გამორთულია</string>
     <string name="fod_gesture_summary">გრთავთ ნებას განბლოკოთ მოწყობილობა ეკრანის ანთების გარეშე</string>
+    <string name="face_unlock_method_title">დაბლოკვის ეკრანზე სახით განბლოკვის დაშვება</string>
+    <string name="face_unlock_method_default">როდესაც ეკრანი ჩართულია</string>
+    <string name="face_unlock_method_swipe">დაბლოკვის ეკრანზე გადაფურცვლისას</string>
 </resources>

@@ -86,4 +86,6 @@
     <string name="advanced_keyboard_settings_title">Pokročilé nastavenia</string>
     <string name="fod_gesture_title">Odomknúť s otlačkom prsta pri zhasnutom displeji</string>
     <string name="fod_gesture_summary">Povolí odomknúť zariadenie bez nutnosti ho prebudiť</string>
+    <string name="face_unlock_method_title">Povoliť odomknutie tvárou na obrazovke uzamknutia</string>
+    <string name="face_unlock_method_default">Keď je obrazovka zapnutá</string>
 </resources>

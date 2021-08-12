@@ -22,6 +22,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">سنسور اثر انگشت را در کناره سمت راست تبلت خود پیدا کنید.</string>
     <string name="battery_light_title">روشن کردن چراغ اعلان هنگام شارژ شدن </string>
     <string name="refresh_rate_title">نرخ تجدید صفحه</string>
+    <string name="mobile_data_settings_summary_unavailable">سیم کارت پیدا نشد</string>
     <string name="connected_tws_device_saved_title">هدست‌های ذخیره شده</string>
     <string name="reset">بازنشانی</string>
     <string name="button_pref_title">دکمه‌ها</string>
@@ -58,6 +59,7 @@
     <string name="button_backlight_only_when_pressed_title">دکمه ها را تنها زمانی که لمس شدند، روشن کن</string>
     <string name="keyboard_backlight_enabled">صفحه کلید نورانی</string>
     <string name="button_backlight_seekbar_title">روشنایی دکمه</string>
+    <string name="keyboard_backlight_seekbar_title">روشنایی صفحه کلید</string>
     <string name="backlight_timeout_title">زمان قطعی نور</string>
     <string name="backlight_timeout_unlimited">خاموش نکنید</string>
     <string name="backlight_summary_disabled">غیرفعال</string>
@@ -66,6 +68,7 @@
     <string name="disable_navkeys_title">فعال کردن نوار پیمایش بر روی صفحه</string>
     <string name="disable_navkeys_summary">فعال کردن نوار پیمایش بر روی صفحه و غیرفعال کردن دکمه‌های سخت‌افزاری</string>
     <string name="swap_capacitive_keys_title">جابجایی دکمه‌های خازنی</string>
+    <string name="swap_capacitive_keys_summary">عوض کردن ترتیب دکمه های بازگشت و برنامه های اخیر</string>
     <string name="high_touch_sensitivity_title">حساسیت بالا به لمس</string>
     <string name="high_touch_sensitivity_summary">افزایش حساسیت صفحه به لمس تا هنگام پوشیدن دستکش نیز قابل استفاده باشد</string>
     <string name="touchscreen_hovering_title">لمس شناور صفحه</string>
@@ -75,7 +78,11 @@
     <string name="security_dashboard_summary_face_and_fingerprint">قفل صفحه، اثر انگشت، بازگشایی قفل با صورت</string>
     <string name="face_redo_confirm_btn">انجام مجدد</string>
     <string name="face_redo_warning_msg">مایلید اسکن موجود صورت را حذف کرده و یک اسکن جدید ایجاد کنید؟</string>
+    <string name="fast_charging_title">شارژ سریع</string>
     <string name="fast_charging_summary">برای کاهش دمای تولید شده توسط دستگاه در هنگام شارژ یا برای افزایش طول عمر باتری غیر فعال کنید</string>
     <string name="others_settings_title">تنظیمات دیگر</string>
     <string name="additional_buttons_title">دکمه های اضافی</string>
+    <string name="keyboard_extras_title">موارد اضافی</string>
+    <string name="advanced_keyboard_settings_title">تنظیمات پیشرفته</string>
+    <string name="fod_gesture_title">بازگشایی قفل توسط اثر انگشت زمانی که صفحه نمایش خاموش است </string>
 </resources>
