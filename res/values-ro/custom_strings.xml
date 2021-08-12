@@ -86,4 +86,5 @@
     <string name="advanced_keyboard_settings_title">Setări avansate</string>
     <string name="fod_gesture_title">Deblocare prin amprentă când ecranul este închis</string>
     <string name="fod_gesture_summary">Permite deblocarea dispozitivului fără a porni ecranul</string>
+    <string name="face_unlock_method_default">Cînd ecranul este pornit</string>
 </resources>

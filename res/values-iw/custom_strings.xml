@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">הגדרות מתקדמות</string>
     <string name="fod_gesture_title">ביטול נעילה עם טביעת אצבע כשהמסך נעול</string>
     <string name="fod_gesture_summary">אפשר לבטל את נעילת המכשיר מבלי הצורך להעיר תחילה את המסך</string>
+    <string name="face_unlock_method_title">אפשר נעילת פנים במסך הנעילה</string>
+    <string name="face_unlock_method_default">כאשר המסך פועל</string>
+    <string name="face_unlock_method_swipe">בעת החלקה על מסך הנעילה</string>
 </resources>

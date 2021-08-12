@@ -22,6 +22,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localitzeu el sensor d’empremtes dactilars al costat dret del tablet.</string>
     <string name="battery_light_title">Llum de la bateria</string>
     <string name="refresh_rate_title">Freqüència d\'actualització de la pantalla </string>
+    <string name="mobile_data_settings_summary_unavailable">No hi ha cap targeta SIM disponible</string>
     <string name="connected_tws_device_saved_title">Intraauriculars desats</string>
     <string name="reset">Restableix</string>
     <string name="button_pref_title">Botons</string>
@@ -75,6 +76,14 @@
     <string name="security_dashboard_summary_face_and_fingerprint">Bloqueig pantalla, empremta dactilar, desbloqueig facial</string>
     <string name="face_redo_confirm_btn">Refés</string>
     <string name="face_redo_warning_msg">Vols suprimir l\'escaneig facial actual i crear-ne un altre?</string>
+    <string name="fast_charging_title">Carregant ràpidament</string>
     <string name="others_settings_title">Configuració d\'altres</string>
     <string name="additional_buttons_title">Botons addicionals</string>
+    <string name="keyboard_extras_title">Extres</string>
+    <string name="advanced_keyboard_settings_title">Configuració avançada</string>
+    <string name="fod_gesture_title">Desbloquejar amb l\'empremta quan la pantalla és apagada</string>
+    <string name="fod_gesture_summary">Permet desbloquejar el mòbil sense haver d\'encendre la pantalla abans</string>
+    <string name="face_unlock_method_title">Permetre desbloqueig facial a la pantalla de bloqueig</string>
+    <string name="face_unlock_method_default">Quan la pantalla estigui activada.</string>
+    <string name="face_unlock_method_swipe">Quan llisquis a la pantalla de bloqueig</string>
 </resources>

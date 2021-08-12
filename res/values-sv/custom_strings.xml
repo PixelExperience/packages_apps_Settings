@@ -86,4 +86,7 @@
     <string name="advanced_keyboard_settings_title">Avancerade inställningar</string>
     <string name="fod_gesture_title">Lås upp med fingeravtryck när skärmen är av</string>
     <string name="fod_gesture_summary">Tillåter att enheten låses upp utan att du först behöver tända skärmen</string>
+    <string name="face_unlock_method_title">Tillåt ansiktsupplåsning på låsskärmen</string>
+    <string name="face_unlock_method_default">När skärmen är på</string>
+    <string name="face_unlock_method_swipe">När du sveper på låsskärmen</string>
 </resources>
