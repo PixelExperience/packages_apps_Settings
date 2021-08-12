@@ -203,7 +203,11 @@
     <string name="back_height_low_label">Täysi</string>
     <string name="back_height_high_label">Alaosa</string>
     <string name="back_options_dialog_title">Asetukset</string>
+    <string name="back_height">Reuna kosketus alue</string>
+    <string name="power_menu_shortcuts_title">Menu oikotiet</string>
+    <string name="power_menu_shortcuts_summary">Muokkaa virtavalikon asetuksia</string>
     <string name="power_menu_screenshot_title">Kuvakaappaus</string>
+    <string name="power_menu_screenshot_summary">Ositttainen kuvakaappaus pitkällä painalluksella</string>
     <string name="power_menu_airplane_title">Lentokonetila</string>
     <string name="power_menu_users_title">Käyttäjän vaihto</string>
     <string name="power_menu_lockdown_title">Lukitus</string>

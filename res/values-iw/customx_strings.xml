@@ -211,5 +211,6 @@
     <string name="power_menu_airplane_title">מצב טיסה</string>
     <string name="power_menu_users_title">מחליף המשתמשים</string>
     <string name="power_menu_lockdown_title">נעילה</string>
+    <string name="power_menu_shortcut_unavailable">מושבת כי מסך הנעילה אינו מוגן</string>
     <string name="power_menu_emergency_title">חירום</string>
 </resources>

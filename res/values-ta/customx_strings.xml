@@ -17,6 +17,7 @@ powermenu_restart_recovery
     <string name="display_cutout_mode_hidden">மறைந்துள்ள</string>
     <string name="status_bar_title">நிலை பட்டை</string>
     <string name="status_bar_quick_qs_pulldown_title">விரைவான கீழிறக்கும்</string>
+    <string name="status_bar_quick_qs_pulldown_off">நிறுத்து</string>
     <string name="status_bar_am_pm_hidden">மறைந்துள்ள</string>
     <string name="status_bar_battery_percentage_default">மறைந்துள்ள</string>
     <string name="network_traffic_mode_status_bar">நிலை பட்டை</string>

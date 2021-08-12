@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="display_cutout_mode_normal">Әдепкі</string>
+    <string name="status_bar_quick_qs_pulldown_off">Өшр.</string>
     <string name="live_display_day">Күн</string>
     <string name="live_display_night">Түн</string>
 </resources>

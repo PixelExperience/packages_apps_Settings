@@ -158,8 +158,8 @@
     <string name="color_green_title">緑</string>
     <string name="color_blue_title">青</string>
     <string name="picture_adjustment_title">画像調整</string>
-    <string name="picture_adjustment_summary">色彩、彩度、輝度、コントラストを調整する</string>
-    <string name="adj_hue_title">色彩</string>
+    <string name="picture_adjustment_summary">色相・彩度・輝度・コントラストを調整する</string>
+    <string name="adj_hue_title">色相</string>
     <string name="adj_saturation_title">彩度</string>
     <string name="adj_intensity_title">輝度</string>
     <string name="adj_contrast_title">コントラスト</string>

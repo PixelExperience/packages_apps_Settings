@@ -204,4 +204,13 @@
     <string name="back_height_high_label">Khu vực phía dưới</string>
     <string name="back_options_dialog_title">Tùy chọn</string>
     <string name="back_height">Khu vực cảm ứng cạnh</string>
+    <string name="power_menu_shortcuts_title">Lối tắt Trình đơn Menu</string>
+    <string name="power_menu_shortcuts_summary">Tùy chỉnh lối tắt trình đơn nguồn</string>
+    <string name="power_menu_screenshot_title">Chụp ảnh màn hình</string>
+    <string name="power_menu_screenshot_summary">Giữ lâu để chụp một phần ảnh chụp màn hình</string>
+    <string name="power_menu_airplane_title">Chế độ trên máy bay</string>
+    <string name="power_menu_users_title">Chuyển người dùng</string>
+    <string name="power_menu_lockdown_title">Khóa phong tỏa</string>
+    <string name="power_menu_shortcut_unavailable">Bị vô hiệu hóa vì màn hình khóa không được bảo vệ</string>
+    <string name="power_menu_emergency_title">Khẩn cấp</string>
 </resources>

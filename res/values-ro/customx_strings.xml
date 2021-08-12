@@ -204,4 +204,5 @@
     <string name="back_height_high_label">Zona de jos</string>
     <string name="back_options_dialog_title">Opţiuni</string>
     <string name="back_height">Zona de atingere a marginii</string>
+    <string name="power_menu_screenshot_title">Captură de ecran</string>
 </resources>

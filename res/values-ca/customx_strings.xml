@@ -39,6 +39,8 @@
     <string name="display_rotation_270_title">270 graus</string>
     <string name="data_usage_app_restrict_all">Permet l\'accés a la xarxa</string>
     <string name="data_usage_app_restrict_all_summary">Permet a l\'aplicació accedir a la xarxa</string>
+    <string name="data_usage_app_restrict_mobile">Dades mòbils</string>
+    <string name="data_usage_app_restrict_mobile_summary">Activa l\'ús de dades mòbils</string>
     <string name="data_usage_app_restrict_vpn">Dades VPN</string>
     <string name="data_usage_app_restrict_vpn_summary">Activa l\'ús de dades via VPN</string>
     <string name="data_usage_app_restrict_wifi">Dades Wi\u2011Fi</string>
@@ -195,4 +197,10 @@
     <string name="back_height_low_label">Completa</string>
     <string name="back_height_high_label">Zona inferior</string>
     <string name="back_options_dialog_title">Opcions</string>
+    <string name="power_menu_shortcuts_summary">Personalitza les opcions del menú d\'apagat</string>
+    <string name="power_menu_screenshot_title">Captura de pantalla</string>
+    <string name="power_menu_airplane_title">Mode d\'avió</string>
+    <string name="power_menu_users_title">Selector d\'usuaris</string>
+    <string name="power_menu_lockdown_title">Bloqueig de seguretat</string>
+    <string name="power_menu_emergency_title">Emergència</string>
 </resources>

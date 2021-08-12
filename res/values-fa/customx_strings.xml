@@ -16,6 +16,7 @@
     <string name="unlock_scramble_pin_layout_title">چینش درهم</string>
     <string name="unlock_scramble_pin_layout_summary">چینش درهم پین هنگام باز کردن قفل دستگاه</string>
     <string name="volume_link_notification_title">یکی شدن میزان صدای زنگ و اعلان</string>
+    <string name="heads_up_notifications_enabled_summary">نمایش اعلان‌های مهم در یک پنجرهٔ شناور کوچک</string>
     <string name="increasing_ring_volume_option_title">صدای صعودی زنگ</string>
     <string name="increasing_ring_min_volume_title">میزان صدا هنگام شروع</string>
     <string name="increasing_ring_ramp_up_time_title">زمان افزایش صدا</string>
@@ -35,6 +36,14 @@
     <string name="display_rotation_90_title">90 درجه</string>
     <string name="display_rotation_180_title">180 درجه</string>
     <string name="display_rotation_270_title">270 درجه</string>
+    <string name="data_usage_app_restrict_all">اجازه‌ی دسترسی به شبکه</string>
+    <string name="data_usage_app_restrict_all_summary">فعال‌کردن استفاده از شبکه</string>
+    <string name="data_usage_app_restrict_mobile">داده‌های همراه</string>
+    <string name="data_usage_app_restrict_mobile_summary">فعال‌کردن استفاده از داده همراه</string>
+    <string name="data_usage_app_restrict_vpn">داده‌ وی پی ان</string>
+    <string name="data_usage_app_restrict_vpn_summary">فعال کردن استفاده از داده وی پی ان</string>
+    <string name="data_usage_app_restrict_wifi">داده وای فای</string>
+    <string name="data_usage_app_restrict_wifi_summary">فعال کردن استفاده از داده وای فای</string>
     <string name="tethering_allow_vpn_upstreams_title">اجازه دادن به کاربران برای استفاده از وی پی ان</string>
     <string name="tethering_allow_vpn_upstreams_summary">به کاربران هات‌اسپات اجازه دهید تا از وی پی ان این دستگاه برای آپلود استفاده کنند</string>
     <string name="display_cutout_mode_title">رفتار ناچ</string>
@@ -81,6 +90,8 @@
     <string name="status_bar_brightness_slider_summary">تنظیم روشنایی از طریق تنظیمات سریع</string>
     <string name="status_bar_brightness_slider_auto_title">روشنایی خودکار</string>
     <string name="status_bar_brightness_slider_auto_summary">نمایش مبدّل برای روشنایی تطبیقی نزدیک لغزنده</string>
+    <string name="status_bar_brightness_slider_show_never">هرگز نمایش نده</string>
+    <string name="status_bar_brightness_slider_show_always">همیشه نمایش بده</string>
     <string name="status_bar_toggle_brightness">کنترل روشنایی</string>
     <string name="status_bar_toggle_brightness_summary">با کشیدن در نوار وضعیت، روشنایی را تنظیم کنید</string>
     <string name="network_traffic_settings_title">نمایش سرعت تبادل شبکه</string>
@@ -183,4 +194,7 @@
     <string name="back_height_low_label">پر</string>
     <string name="back_height_high_label">لبه پایینی </string>
     <string name="back_options_dialog_title">گزینه ها</string>
+    <string name="power_menu_screenshot_title">اسکرین شات</string>
+    <string name="power_menu_airplane_title">حالت پرواز</string>
+    <string name="power_menu_emergency_title">اضطراری</string>
 </resources>
