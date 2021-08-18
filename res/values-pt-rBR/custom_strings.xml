@@ -89,4 +89,11 @@
     <string name="face_unlock_method_title">Permitir o desbloqueio facial na tela de bloqueio</string>
     <string name="face_unlock_method_default">Quando a tela estiver ligada</string>
     <string name="face_unlock_method_swipe">Quando deslizar na tela de bloqueio</string>
+
+    <!-- Refresh rate -->
+    <string name="min_refresh_rate_title">Taxa mínima de atualização</string>
+    <string name="max_refresh_rate_title">Taxa máxima de atualização</string>
+    <string name="battery_saver_refresh_rate_title">Reduza a taxa de atualização</string>
+    <string name="battery_saver_refresh_rate_summary">Use 60 Hz como taxa de atualização máxima para economizar energia quando a Economia de bateria estiver ativada</string>
+
 </resources>
