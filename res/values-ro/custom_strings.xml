@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Găsiți senzorul de amprentă pe partea stângă a tabletei.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Găsiți senzorul de amprentă pe partea dreaptă a tabletei.</string>
     <string name="battery_light_title">Lumină baterie</string>
-    <string name="refresh_rate_title">Rata de actualizare a ecranului</string>
+    <string name="min_refresh_rate_title">Rata minimă de reîmprospătare</string>
     <string name="mobile_data_settings_summary_unavailable">Nicio cartelă SIM disponibilă</string>
     <string name="connected_tws_device_saved_title">Căşti intraauriculare salvate</string>
     <string name="reset">Resetați</string>

@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Знайдіть сканер відбитків пальців на лівій грані вашого планшета.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Знайдіть сканер відбитків пальців на правій грані вашого планшета.</string>
     <string name="battery_light_title">Індикація батареї</string>
-    <string name="refresh_rate_title">Частота оновлення екрана</string>
+    <string name="min_refresh_rate_title">Найменша частота оновлення</string>
     <string name="mobile_data_settings_summary_unavailable">Немає SIM-карти</string>
     <string name="connected_tws_device_saved_title">Збережені навушники</string>
     <string name="reset">Скинути</string>

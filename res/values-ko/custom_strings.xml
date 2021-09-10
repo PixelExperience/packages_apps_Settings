@@ -21,7 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">태블릿 왼쪽 옆면에 있는 지문 센서를 찾으세요.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">태블릿 오른쪽 옆면에 있는 지문 센서를 찾으세요.</string>
     <string name="battery_light_title">배터리 표시등</string>
-    <string name="refresh_rate_title">화면 재생 빈도</string>
+    <string name="min_refresh_rate_title">최소 재생률</string>
+    <string name="max_refresh_rate_title">최대 화면 재생률</string>
+    <string name="battery_saver_refresh_rate_title">배터리 절약 화면 재생률</string>
+    <string name="battery_saver_refresh_rate_summary">배터리 절약이 켜져 있으면 전력 소모를 줄이기 위해 최대 60 Hz 화면 재생률 사용</string>
     <string name="mobile_data_settings_summary_unavailable">사용할 수 있는 SIM 카드 없음</string>
     <string name="connected_tws_device_saved_title">저장된 이어폰</string>
     <string name="reset">초기화</string>

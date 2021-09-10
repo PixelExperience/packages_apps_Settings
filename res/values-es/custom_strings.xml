@@ -21,7 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localiza el sensor de huella en el lado izquierdo de la tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localiza el sensor de huella en el lado derecho de la tablet.</string>
     <string name="battery_light_title">Encender el indicador LED cuando el dispositivo se esté cargando</string>
-    <string name="refresh_rate_title">Frecuencia de actualización de la pantalla</string>
+    <string name="min_refresh_rate_title">Tasa de refresco mínima</string>
+    <string name="max_refresh_rate_title">Tasa de refresco máxima</string>
+    <string name="battery_saver_refresh_rate_title">Reducir tasa de refresco</string>
+    <string name="battery_saver_refresh_rate_summary">Usar velocidad de refresco de la pantalla de 60 Hz para ahorrar energía cuando el Ahorro de batería está encendido</string>
     <string name="mobile_data_settings_summary_unavailable">No hay una tarjeta SIM disponible</string>
     <string name="connected_tws_device_saved_title">Auriculares guardados</string>
     <string name="reset">Restablecer</string>

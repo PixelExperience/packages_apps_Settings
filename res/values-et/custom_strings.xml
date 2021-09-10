@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Leidke enda tahvelarvuti vasakul küljel olev sõrmejäljeandur.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Leidke enda tahvelarvuti paremal küljel olev sõrmejäljeandur.</string>
     <string name="battery_light_title">Aku märgutuli</string>
-    <string name="refresh_rate_title">Ekraani värskenduskiirus</string>
+    <string name="min_refresh_rate_title">Minimaalne värskendussagedus</string>
     <string name="mobile_data_settings_summary_unavailable">SIM-kaart pole saadaval</string>
     <string name="connected_tws_device_saved_title">Salvestatud nööpkuularid</string>
     <string name="reset">Lähtesta</string>

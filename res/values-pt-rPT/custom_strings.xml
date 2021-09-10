@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localize o sensor de impressões digitais na lateral esquerda do seu tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localize o sensor de impressões digitais na lateral direita do seu tablet.</string>
     <string name="battery_light_title">Ativar luz de carregamento</string>
-    <string name="refresh_rate_title">Taxa de atualização do ecrã</string>
+    <string name="min_refresh_rate_title">Taxa mínima de atualização</string>
     <string name="mobile_data_settings_summary_unavailable">Cartão SIM não detetado</string>
     <string name="connected_tws_device_saved_title">Auriculares guardados</string>
     <string name="reset">Repor</string>

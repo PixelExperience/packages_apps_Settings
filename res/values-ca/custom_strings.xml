@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localitzeu el sensor d’empremtes dactilars al costat esquerre del tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localitzeu el sensor d’empremtes dactilars al costat dret del tablet.</string>
     <string name="battery_light_title">Llum de la bateria</string>
-    <string name="refresh_rate_title">Freqüència d\'actualització de la pantalla </string>
+    <string name="min_refresh_rate_title">Freqüència de refresc mínima</string>
     <string name="mobile_data_settings_summary_unavailable">No hi ha cap targeta SIM disponible</string>
     <string name="connected_tws_device_saved_title">Intraauriculars desats</string>
     <string name="reset">Restableix</string>

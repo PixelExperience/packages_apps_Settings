@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Finn fingeravtrykksleseren på venstre side av nettbrettet ditt.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Finn fingeravtrykksleseren på høyre side av nettbrettet ditt.</string>
     <string name="battery_light_title">Skru på lyset under lading</string>
-    <string name="refresh_rate_title">Skjermoppdateringsfrekvens</string>
+    <string name="min_refresh_rate_title">Minste oppdateringsfrekvens</string>
     <string name="mobile_data_settings_summary_unavailable">Ingen SIM-kort tilgjengelig</string>
     <string name="connected_tws_device_saved_title">Lagrede ørepropper</string>
     <string name="reset">Nullstill</string>
@@ -84,4 +84,6 @@
     <string name="additional_buttons_title">Ytterligere knapper</string>
     <string name="keyboard_extras_title">Ekstra</string>
     <string name="advanced_keyboard_settings_title">Avanserte innstillinger</string>
+    <string name="fod_gesture_title">Lås opp med fingeravtrykk når skjermen er av</string>
+    <string name="fod_gesture_summary">Lar deg låse opp enheten uten å måtte slå på skjermen først</string>
 </resources>

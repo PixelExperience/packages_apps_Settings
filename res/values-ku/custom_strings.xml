@@ -21,7 +21,6 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">هەستەوەی پەنجەمۆر لەلای چەپی تابلێتەکەتدا دیاری بکە.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">هەستەوەی پەنجەمۆر لەلای ڕاستی تابلێتەکەتدا دیاری بکە.</string>
     <string name="battery_light_title">هەڵبوونی ڕووناکی لەکاتی بارگاویکردنەوە</string>
-    <string name="refresh_rate_title">ڕێژەی نوێبوونەوەی ڕوونما</string>
     <string name="connected_tws_device_saved_title">بیستۆکە خەزنکراوەکان</string>
     <string name="reset">ڕێکخستنەوە</string>
     <string name="button_pref_title">دوگمەکان</string>

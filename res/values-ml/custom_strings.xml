@@ -15,7 +15,6 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">നിങ്ങളുടെ ഫോണിന്റെ ഇടത് ഭാഗത്ത് ഫിംഗർപ്രിന്റ് സെൻസർ കണ്ടെത്തുക.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">നിങ്ങളുടെ ഫോണിന്റെ വലത് ഭാഗത്ത് ഫിംഗർപ്രിന്റ് സെൻസർ കണ്ടെത്തുക.</string>
     <string name="battery_light_title">ചാർജ് ചെയ്യുമ്പോൾ ലൈറ്റ് ഓണാക്കുക</string>
-    <string name="refresh_rate_title">സ്‌ക്രീൻ റിഫ്രഷ് റേറ്റ്</string>
     <string name="connected_tws_device_saved_title">സേവ് ചെയ്തിട്ടുള്ള ഇയർബഡ്ഡുകൾ</string>
     <string name="reset">പുനഃക്രമീകരിക്കുക</string>
     <string name="button_pref_title">ബട്ടണുകൾ</string>

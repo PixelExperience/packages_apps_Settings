@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">حدد موقع مستشعر البصمة على الجانب الأيسر من جهازك اللوحي.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">حدد موقع مستشعر البصمة على الجانب الأيمن من جهازك اللوحي.</string>
     <string name="battery_light_title">تشغيل ضوء التنبيهات عند توصيل الشاحن</string>
-    <string name="refresh_rate_title">معدل تحديث الشاشة</string>
+    <string name="min_refresh_rate_title">معدل التحديث الأدنى</string>
     <string name="mobile_data_settings_summary_unavailable">لا يوجد شريحة اتصال</string>
     <string name="connected_tws_device_saved_title">سماعات الأذن المسجلة</string>
     <string name="reset">إعادة تعيين</string>

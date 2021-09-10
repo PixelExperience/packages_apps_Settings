@@ -14,7 +14,6 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">اپنے فون کے سامنے کے حصّہ میں فنگرپرنٹ سینسر تلاش کریں.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">اپنے فون کی بائیں جانب فنگرپرنٹ سینسر تلاش کریں.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">اپنے فون کی دائیں جانب فنگرپرنٹ سینسر تلاش کریں.</string>
-    <string name="refresh_rate_title">اسکرین ریفرش ریٹ</string>
     <string name="connected_tws_device_saved_title">ایئربڈز محفوظ ہوگئے</string>
     <string name="reset">ری سیٹ کریں</string>
     <string name="button_pref_title">بٹن</string>

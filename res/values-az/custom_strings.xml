@@ -21,7 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Planşetinizin sol tərəfindəki barmaq izi sensorunu tapın.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Planşetinizin sağ tərəfindəki barmaq izi sensorunu tapın.</string>
     <string name="battery_light_title">Enerji yığarkən işığı yandırın</string>
-    <string name="refresh_rate_title">Ekran təzələnmə sürəti</string>
+    <string name="min_refresh_rate_title">Minimum təzələnmə sürəti</string>
+    <string name="max_refresh_rate_title">Minimum təzələnmə sürəti</string>
+    <string name="battery_saver_refresh_rate_title">Təzələmə sürətini azalt</string>
+    <string name="battery_saver_refresh_rate_summary">Batereyaya Qənaət açıq olanda enerjiyə qənaət etmək üçün 60 Hz-i maksimum təzələnmə sürəti kimi istifadə edin</string>
     <string name="mobile_data_settings_summary_unavailable">Mövcud SIM kart yoxdur</string>
     <string name="connected_tws_device_saved_title">Saxlanılmış Qulaqlıqlar</string>
     <string name="reset">Sıfırla</string>

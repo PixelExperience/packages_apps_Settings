@@ -21,7 +21,6 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Find fingeraftrykslæseren på tablet\'ens venstre side.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Find fingeraftrykslæseren på tablet\'ens højre side.</string>
     <string name="battery_light_title">Batteri-LED</string>
-    <string name="refresh_rate_title">Skærmopdateringsfrekvens</string>
     <string name="connected_tws_device_saved_title">Gemte øresnegle</string>
     <string name="reset">Nulstil</string>
     <string name="button_pref_title">Knapper</string>

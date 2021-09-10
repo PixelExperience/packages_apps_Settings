@@ -21,7 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Tìm cảm biến vân tay ở bên trái của máy tính bảng của bạn.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Tìm cảm biến vân tay ở phía bên phải của máy tính bảng của bạn.</string>
     <string name="battery_light_title">Bật đèn báo lên khi sạc pin</string>
-    <string name="refresh_rate_title">Tốc độ làm mới màn hình</string>
+    <string name="min_refresh_rate_title">Tốc độ làm mới tối thiểu</string>
+    <string name="max_refresh_rate_title">Tốc độ làm mới tối đa</string>
+    <string name="battery_saver_refresh_rate_title">Giảm độ làm mới màn hình</string>
+    <string name="battery_saver_refresh_rate_summary">Sử dụng 60 Hz như là tốc độ làm mới màn hình cao nhất để tiết kiệm điện khi trình tiết kiệm pin được bật</string>
     <string name="mobile_data_settings_summary_unavailable">Hiện không có thẻ SIM</string>
     <string name="connected_tws_device_saved_title">Tai nghe đã lưu</string>
     <string name="reset">Đặt lại</string>

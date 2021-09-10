@@ -20,7 +20,6 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">விரல்ரேகை உணர்வானை கைபேசியின் முன் பக்கத்தில் கண்டறி</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">விரல்ரேகை உணர்வானை கைபேசியின் ‍இடது பக்கத்தில் கண்டறி</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">விரல்ரேகை உணர்வானை கைபேசியின் வலது பக்கத்தில் கண்டறி</string>
-    <string name="refresh_rate_title">திறை புதுப்பிப்பு விகிதம்</string>
     <string name="connected_tws_device_saved_title">சேமித்த இயர்பட்கள்</string>
     <string name="reset">மீட்டமை</string>
     <string name="button_pref_title">பட்டன்கள்</string>

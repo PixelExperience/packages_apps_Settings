@@ -21,7 +21,6 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">सुरक्षा सेटिंग्स फ़िंगरप्रिंट नामांकन सेंसर संदेश ढूंढें शेष फ़ाइल: कस्टम स्ट्रिंग्स.xml</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">अपने टेबलेट के दाईं ओर फ़िंगरप्रिंट सेंसर की स्थिति जानें।</string>
     <string name="battery_light_title">Acenda a luz ao carregar</string>
-    <string name="refresh_rate_title">स्क्रीन रिफ्रेश दर</string>
     <string name="mobile_data_settings_summary_unavailable">मोबाइल डेटा_सेटिंग_समरी_अनुपलब्ध
 मोबाइल नेटवर्क सेटिंग स्क्रीन, नेटवर्क होने पर मोबाइल डेटा स्विच वरीयता का सारांश
 अनुपलब्ध है, वरीयता चयन अक्षम कर दिया जाएगा। [चार सीमा = कोई नहीं]
