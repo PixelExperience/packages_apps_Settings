@@ -21,7 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Vyhledejte snímač otisků prstů na levé straně tabletu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Vyhledejte snímač otisků prstů na pravé straně tabletu.</string>
     <string name="battery_light_title">Zapnout kontrolku baterie při nabíjení</string>
-    <string name="refresh_rate_title">Obnovovací frekvence obrazovky</string>
+    <string name="min_refresh_rate_title">Minimální obnovovací frekvence</string>
+    <string name="max_refresh_rate_title">Maximální obnovovací frekvence</string>
+    <string name="battery_saver_refresh_rate_title">Snížit obnovovací frekvenci</string>
+    <string name="battery_saver_refresh_rate_summary">Použít maximální obnovovací frekvenci 60\u00a0Hz pro úsporu energie, když je zapnut spořič baterie</string>
     <string name="mobile_data_settings_summary_unavailable">Není k dispozici žádná SIM karta</string>
     <string name="connected_tws_device_saved_title">Uložená sluchátka</string>
     <string name="reset">Restartovat</string>

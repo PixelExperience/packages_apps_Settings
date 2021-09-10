@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Leta reda på fingeravtryckssensorn på vänster sida av mobilen.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Leta reda på fingeravtryckssensorn på höger sida av mobilen.</string>
     <string name="battery_light_title">Batteriljus</string>
-    <string name="refresh_rate_title">Skärm uppdateringsfrekvens</string>
+    <string name="min_refresh_rate_title">Lägsta uppdateringsfrekvens</string>
     <string name="mobile_data_settings_summary_unavailable">Inget SIM-kort tillgängligt</string>
     <string name="connected_tws_device_saved_title">Sparade öronsnäckor</string>
     <string name="reset">Återställ</string>

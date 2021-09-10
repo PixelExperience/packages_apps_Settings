@@ -21,7 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localisez le lecteur d\'empreintes digitales sur la tranche gauche de votre tablette.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localisez le lecteur d\'empreintes digitales sur la tranche droite de votre tablette.</string>
     <string name="battery_light_title">Allumer la LED pendant la charge</string>
-    <string name="refresh_rate_title">Taux de rafraîchissement de l\'écran </string>
+    <string name="min_refresh_rate_title">Taux de rafraîchissement minimum</string>
+    <string name="max_refresh_rate_title">Taux de rafraîchissement maximum</string>
+    <string name="battery_saver_refresh_rate_title">Réduire le taux de rafraîchissement</string>
+    <string name="battery_saver_refresh_rate_summary">Utilisez un taux de rafraîchissement de 60 Hz pour économiser de l\'énergie lorsque l\'économiseur de batterie est activé</string>
     <string name="mobile_data_settings_summary_unavailable">Aucune carte SIM disponible</string>
     <string name="connected_tws_device_saved_title">Écouteurs enregistrés</string>
     <string name="reset">Réinitialiser</string>

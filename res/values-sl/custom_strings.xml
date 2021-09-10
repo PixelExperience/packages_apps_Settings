@@ -21,7 +21,6 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Poiščite tipalo za prstne odtise na levi strani vašega tabličnega računalnika.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Poiščite tipalo za prstne odtise na desni strani vašega tabličnega računalnika.</string>
     <string name="battery_light_title">Lučka za akumulator</string>
-    <string name="refresh_rate_title">Hitrost osveževanja zaslona</string>
     <string name="connected_tws_device_saved_title">Shranjene ušesne slušalke</string>
     <string name="reset">Ponastavi</string>
     <string name="button_pref_title">Gumbi</string>

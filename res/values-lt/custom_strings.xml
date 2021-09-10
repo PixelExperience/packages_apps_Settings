@@ -21,7 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Kairėje planšetinio kompiuterio pusėje raskite pirštų atspaudų jutiklį.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Dešinėje planšetinio kompiuterio pusėje raskite pirštų atspaudų jutiklį.</string>
     <string name="battery_light_title">Įjunkite šviesos indikatorių,akumuliatoriaus įkrovimo metu</string>
-    <string name="refresh_rate_title">Ekrano atnaujinimo dažnis</string>
+    <string name="min_refresh_rate_title">Mažiausias atnaujinimo dažnis</string>
+    <string name="max_refresh_rate_title">Maksimalus atnaujinimo dažnis</string>
+    <string name="battery_saver_refresh_rate_title">Sumažinkite atnaujinimo dažnį</string>
+    <string name="battery_saver_refresh_rate_summary">Naudokite 60 Hz kaip maksimalų atnaujinimo dažnį, kad sutaupytumėte energijos, kai įjungta akumuliatoriaus tausojimo priemonė</string>
     <string name="connected_tws_device_saved_title">Išsaugotos ausinės</string>
     <string name="reset">Nustatyti iš naujo</string>
     <string name="button_pref_title">Mygtukai</string>

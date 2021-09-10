@@ -21,7 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Temukan pemindai sidik jari di sisi kiri tablet Anda.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Temukan pemindai sidik jari di sisi kanan tablet Anda.</string>
     <string name="battery_light_title">Nyalakan lampu saat mengisi daya</string>
-    <string name="refresh_rate_title">Kecepatan refresh layar</string>
+    <string name="min_refresh_rate_title">Kecepatan refresh minimum</string>
+    <string name="max_refresh_rate_title">Kecepatan refresh maksimum</string>
+    <string name="battery_saver_refresh_rate_title">Kurangi kecepatan refresh</string>
+    <string name="battery_saver_refresh_rate_summary">Gunakan kecepatan refresh layar 60 Hz untuk menghemat daya saat Penghemat Baterai aktif</string>
     <string name="mobile_data_settings_summary_unavailable">Tidak tersedia kartu SIM</string>
     <string name="connected_tws_device_saved_title">Earbud tersimpan</string>
     <string name="reset">Setel ulang</string>

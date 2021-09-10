@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Nutzen Sie den Fingerabdrucksensor auf der linken Seite des Tablets.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Nutzen Sie den Fingerabdrucksensor auf der rechten Seite des Tablets.</string>
     <string name="battery_light_title">Licht beim Laden aktivieren</string>
-    <string name="refresh_rate_title">Bildwiederholrate</string>
+    <string name="min_refresh_rate_title">Minimale Aktualisierungsrate</string>
     <string name="mobile_data_settings_summary_unavailable">Es wurden keine SIM Karte(n) erkannt </string>
     <string name="connected_tws_device_saved_title">Gespeicherte Ohrhörer </string>
     <string name="reset">Zurücksetzen</string>

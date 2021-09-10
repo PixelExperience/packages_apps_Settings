@@ -21,7 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Εντοπίστε τον αισθητήρα δακτυλικού αποτυπώματος στην αριστερή πλευρά του τηλεφώνου σας.</string>
     <string name="battery_light_title">Ενεργοποίση φωτισμού κατά τη φόρτιση</string>
-    <string name="refresh_rate_title">Συχνότητα ανανέωσης οθόνης</string>
+    <string name="min_refresh_rate_title">Ελάχιστος ρυθμός ανανέωσης</string>
+    <string name="max_refresh_rate_title">Μέγιστος ρυθμός ανανέωσης</string>
+    <string name="battery_saver_refresh_rate_title">Μείωση ρυθμού ανανέωσης</string>
+    <string name="battery_saver_refresh_rate_summary">Χρησιμοποιήστε 60 Hz ως μέγιστο ρυθμό ανανέωσης για εξοικονόμηση ενέργειας όταν είναι ενεργοποιημένη η Εξοικονόμηση Μπαταρίας</string>
     <string name="mobile_data_settings_summary_unavailable">Δεν υπάρχει διαθέσιμη κάρτα SIM</string>
     <string name="connected_tws_device_saved_title">Αποθηκευμένα ακουστικά</string>
     <string name="reset">Επαναφορά</string>

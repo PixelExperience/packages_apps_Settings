@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">আপনার ট্যাবলেটের বাম দিকে আঙ্গুলের ছাপ দেয়ার জায়গাটি খুঁজুন।</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">আপনার ট্যাবলেটের ডান দিকে আঙ্গুলের ছাপ দেয়ার জায়গাটি খুঁজুন।</string>
     <string name="battery_light_title">চার্জিং চলাকালীন আলো জ্বালিয়ে রাখুন</string>
-    <string name="refresh_rate_title">স্ক্রিন রিফ্রেশ রেট</string>
+    <string name="min_refresh_rate_title">সর্বনিম্ন রিফ্রেশ রেট</string>
     <string name="mobile_data_settings_summary_unavailable">কোনো সিম কার্ড উপলব্ধ নেই</string>
     <string name="connected_tws_device_saved_title">ইয়ারবাডগুলো সংরক্ষণ করা হয়েছে</string>
     <string name="reset">রিসেট করুন</string>
@@ -84,4 +84,9 @@
     <string name="additional_buttons_title">অতিরিক্ত বোতামসমূহ</string>
     <string name="keyboard_extras_title">অতিরিক্ত</string>
     <string name="advanced_keyboard_settings_title">অ্যাডভান্সড সেটিংস</string>
+    <string name="fod_gesture_title">স্ক্রিন বন্ধ থাকার সময় আঙ্গুলের ছাপ দিয়ে আনলক করুন</string>
+    <string name="fod_gesture_summary">প্রথমে স্ক্রিনটি জাগ্রত না করে ডিভাইসটি আনলক করার অনুমতি দেয়</string>
+    <string name="face_unlock_method_title">ফেসলক দ্বারা লক স্ক্রিনকে আনলক করার অনুমতি</string>
+    <string name="face_unlock_method_default">কখন স্ক্রিন বন্ধ থাকবে</string>
+    <string name="face_unlock_method_swipe">কখন লক স্ক্রিন টেনে দেয়া হবে</string>
 </resources>

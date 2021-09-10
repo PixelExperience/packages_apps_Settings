@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Vyhľadajte snímač odtlačkov prstov na ľavej strane tabletu.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Vyhľadajte snímač odtlačkov prstov na pravej strane tabletu.</string>
     <string name="battery_light_title">Zapnúť LED kontrolku batérie pri nabíjaní</string>
-    <string name="refresh_rate_title">Obnovovacia frekvencia obrazovky</string>
+    <string name="min_refresh_rate_title">Minimálna obnovovacia frekvencia</string>
     <string name="mobile_data_settings_summary_unavailable">SIM karta nie je k dispozícii</string>
     <string name="connected_tws_device_saved_title">Uložené slúchadlá</string>
     <string name="reset">Resetovať</string>
@@ -88,4 +88,5 @@
     <string name="fod_gesture_summary">Povolí odomknúť zariadenie bez nutnosti ho prebudiť</string>
     <string name="face_unlock_method_title">Povoliť odomknutie tvárou na obrazovke uzamknutia</string>
     <string name="face_unlock_method_default">Keď je obrazovka zapnutá</string>
+    <string name="face_unlock_method_swipe">Keď posúvate prstom na zamknutej obrazovke</string>
 </resources>

@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Pronađite senzor otiska prsta na lijevoj strani tableta.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Pronađite senzor otiska prsta na desnoj strani tableta.</string>
     <string name="battery_light_title">Baterijsko svjetlo</string>
-    <string name="refresh_rate_title">Brzina osvježavanja zaslona</string>
+    <string name="min_refresh_rate_title">Minimalna brzina osvježavanja</string>
     <string name="connected_tws_device_saved_title">Spremljene slušalice</string>
     <string name="reset">Poništi</string>
     <string name="button_pref_title">Tipke</string>

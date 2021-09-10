@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Знайдзіце сканер адбіткаў пальцаў на левай паверхні планшэта.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Знайдзіце сканер адбіткаў пальцаў на правай паверхні планшэта.</string>
     <string name="battery_light_title">Уключыць светлавы індыкатар падчас зарадкі</string>
-    <string name="refresh_rate_title">Частата абнаўлення экрана</string>
+    <string name="min_refresh_rate_title">Мінімальная частата абнаўлення экрана</string>
     <string name="mobile_data_settings_summary_unavailable">SIM-карта недаступна</string>
     <string name="connected_tws_device_saved_title">Захаваныя навушнікі</string>
     <string name="reset">Скінуць налады</string>

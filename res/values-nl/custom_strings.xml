@@ -21,7 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Zoek de vingerafdrukscanner aan de linkerkant van uw tablet.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Zoek de vingerafdrukscanner aan de rechterkant van uw tablet.</string>
     <string name="battery_light_title">Acculed</string>
-    <string name="refresh_rate_title">Scherm verversingsfrequentie</string>
+    <string name="min_refresh_rate_title">Minimum vernieuwingsfrequentie</string>
+    <string name="max_refresh_rate_title">Maximum vernieuwingsfrequentie</string>
+    <string name="battery_saver_refresh_rate_title">Verlaag vernieuwingsfrequentie</string>
+    <string name="battery_saver_refresh_rate_summary">Gebruik 60Hz als max vernieuwingsfrequentie om energie te besparen in Spaarstand</string>
     <string name="mobile_data_settings_summary_unavailable">Geen SIM-kaart beschikbaar</string>
     <string name="connected_tws_device_saved_title">Oordoppen opgeslagen</string>
     <string name="reset">Opnieuw instellen</string>

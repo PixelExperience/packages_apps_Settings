@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Localizar o sensor de pegadas dixitais no lado esquerdo da súa tableta. </string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Localiza o sensor da pegada dixital no lado dereito da súa tableta. </string>
     <string name="battery_light_title">Luz da batería</string>
-    <string name="refresh_rate_title">Tasa de refresco da pantalla</string>
+    <string name="min_refresh_rate_title">Taxa mínima de actualización </string>
     <string name="connected_tws_device_saved_title">Auriculares gardados</string>
     <string name="reset">Restabelecer</string>
     <string name="button_pref_title">Botóns</string>

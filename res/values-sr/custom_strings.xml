@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Пронађите сензор за отиске прстију са леве стране вашег таблета.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Пронађите сензор за отиске прстију са десне стране вашег таблета.</string>
     <string name="battery_light_title">Индикатор батерије</string>
-    <string name="refresh_rate_title">Освежавање екрана</string>
+    <string name="min_refresh_rate_title">Минимална вредност освежавања</string>
     <string name="connected_tws_device_saved_title">Сачуване слушалице</string>
     <string name="reset">Поништи</string>
     <string name="button_pref_title">Дугмад</string>
