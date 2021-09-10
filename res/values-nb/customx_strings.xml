@@ -204,4 +204,9 @@
     <string name="back_height_high_label">Nedre del</string>
     <string name="back_options_dialog_title">Alternativer</string>
     <string name="back_height">Kantberøringsområde</string>
+    <string name="power_menu_screenshot_title">Skjermbilde</string>
+    <string name="power_menu_screenshot_summary">Langt trykk for delvis skjermbilde</string>
+    <string name="power_menu_airplane_title">Flymodus</string>
+    <string name="power_menu_users_title">Brukerbytter</string>
+    <string name="power_menu_emergency_title">Nødsituasjon</string>
 </resources>

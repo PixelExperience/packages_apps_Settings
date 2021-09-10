@@ -204,4 +204,13 @@
     <string name="back_height_high_label">Spodná oblasť</string>
     <string name="back_options_dialog_title">Možnosti</string>
     <string name="back_height">Plocha rohového dotyku</string>
+    <string name="power_menu_shortcuts_title">Skratky menu</string>
+    <string name="power_menu_shortcuts_summary">Prispôsobiť možnosti skratiek menu napájania</string>
+    <string name="power_menu_screenshot_title">Snímka obrazovky</string>
+    <string name="power_menu_screenshot_summary">Dlhé stlačenie pre získanie čiastočnej snímky obrazovky</string>
+    <string name="power_menu_airplane_title">Režim v lietadle</string>
+    <string name="power_menu_users_title">Prepínač používateľov</string>
+    <string name="power_menu_lockdown_title">Uzamknutie</string>
+    <string name="power_menu_shortcut_unavailable">Vypnuté, pretože zamykaciaobrazovka nie je zabezpečená</string>
+    <string name="power_menu_emergency_title">Núdzový režim</string>
 </resources>

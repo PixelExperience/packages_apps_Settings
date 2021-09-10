@@ -204,4 +204,13 @@
     <string name="back_height_high_label">নিচের অঞ্চল</string>
     <string name="back_options_dialog_title">বিকল্পসমূহ</string>
     <string name="back_height">প্রান্তের টাচ অঞ্চল</string>
+    <string name="power_menu_shortcuts_title">মেনু শর্টকাট</string>
+    <string name="power_menu_shortcuts_summary">পাওয়ার মেনু শর্টকাট সাজান</string>
+    <string name="power_menu_screenshot_title">স্ক্রিনশট</string>
+    <string name="power_menu_screenshot_summary">আংশিক স্ক্রিনশটের জন্য দীর্ঘ চাপ দিন</string>
+    <string name="power_menu_airplane_title">এয়ারপ্লেন মোড</string>
+    <string name="power_menu_users_title">ব্যবহারকারী পরিবর্তনকারী</string>
+    <string name="power_menu_lockdown_title">লকডাউন</string>
+    <string name="power_menu_shortcut_unavailable">লক স্ক্রিন সুরক্ষিত না থাকায় নিষ্ক্রিয় করা হয়েছে</string>
+    <string name="power_menu_emergency_title">জরুরি</string>
 </resources>
