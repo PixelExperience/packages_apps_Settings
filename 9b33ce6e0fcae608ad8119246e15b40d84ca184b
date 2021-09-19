@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "750eca6a_63111850",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000243
+      },
+      "writtenOn": "2021-09-19T13:35:20Z",
+      "side": 1,
+      "message": "Tested on OnePlus Nord",
+      "revId": "9b33ce6e0fcae608ad8119246e15b40d84ca184b",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    }
+  ]
+}
