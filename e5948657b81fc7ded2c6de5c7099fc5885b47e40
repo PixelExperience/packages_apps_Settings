@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3d487b6_502b224e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000126
+      },
+      "writtenOn": "2021-09-29T10:35:03Z",
+      "side": 1,
+      "message": "Why would you revert an intended security decision? The purpose of an \"Enterprise\" WiFi network is to have enterprise-level security. If the system does not validate the CA certificate, the user is essentially opening up a huge window for man-in-the-middle attack. It is the network admin\u0027s responsibility to set up a WiFi network with properly signed certificate, and guide the user to install the certificate. In fact, most companies and academic institutes already have some sort of web portal or mobile app to help with the initial setup. ",
+      "revId": "e5948657b81fc7ded2c6de5c7099fc5885b47e40",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    }
+  ]
+}
