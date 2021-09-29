@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e7e4e45_c42da373",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000126
+      },
+      "writtenOn": "2021-09-29T10:36:17Z",
+      "side": 1,
+      "message": "See discussions under https://gerrit.pixelexperience.org/c/packages_apps_Settings/+/13447",
+      "revId": "4916df22e5e7210a6ccf556813371c7512b9948a",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    }
+  ]
+}
