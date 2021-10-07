@@ -21,6 +21,10 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">سنسور اثر انگشت را در کناره سمت چپ تبلت خود پیدا کنید.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">سنسور اثر انگشت را در کناره سمت راست تبلت خود پیدا کنید.</string>
     <string name="battery_light_title">روشن کردن چراغ اعلان هنگام شارژ شدن </string>
+    <string name="min_refresh_rate_title">حداقل نرخ تازه سازی</string>
+    <string name="max_refresh_rate_title">حداکثر نرخ تازه سازی</string>
+    <string name="battery_saver_refresh_rate_title">کاهش نرخ تازه سازی</string>
+    <string name="battery_saver_refresh_rate_summary">برای صرفه جویی در مصرف برق هنگام صرفه جویی در باتری ، از 60 هرتز به عنوان حداکثر نرخ تازه سازی استفاده میکند</string>
     <string name="mobile_data_settings_summary_unavailable">سیم کارت پیدا نشد</string>
     <string name="connected_tws_device_saved_title">هدست‌های ذخیره شده</string>
     <string name="reset">بازنشانی</string>
@@ -84,4 +88,8 @@
     <string name="keyboard_extras_title">موارد اضافی</string>
     <string name="advanced_keyboard_settings_title">تنظیمات پیشرفته</string>
     <string name="fod_gesture_title">بازگشایی قفل توسط اثر انگشت زمانی که صفحه نمایش خاموش است </string>
+    <string name="fod_gesture_summary">به شما اجازه می دهد قفل دستگاه را بدون نیاز به بیدار کردن صفحه اول ، باز کنید</string>
+    <string name="face_unlock_method_title">اجازه باز کردن قفل با چهره روی صفحه قفل</string>
+    <string name="face_unlock_method_default">وقتی صفحه نمایش روشن است</string>
+    <string name="face_unlock_method_swipe">هنگام کشیدن روی قفل صفحه</string>
 </resources>

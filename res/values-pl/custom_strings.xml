@@ -22,6 +22,9 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Zlokalizuj czytnik linii papilarnych po prawej stronie twojego tabletu.</string>
     <string name="battery_light_title">Dioda baterii</string>
     <string name="min_refresh_rate_title">Minimalna szybkość odświeżania</string>
+    <string name="max_refresh_rate_title">Maksymalna częstotliwość odświeżania</string>
+    <string name="battery_saver_refresh_rate_title">Zmniejsz częstotliwość odświeżania</string>
+    <string name="battery_saver_refresh_rate_summary">Użyj 60 Hz, aby zaoszczędzić energię, gdy oszczędzanie baterii jest włączone</string>
     <string name="mobile_data_settings_summary_unavailable">Brak dostępnej karty SIM</string>
     <string name="connected_tws_device_saved_title">Zapamiętane słuchawki</string>
     <string name="reset">Resetuj</string>
