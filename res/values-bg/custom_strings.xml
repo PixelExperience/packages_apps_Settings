@@ -22,6 +22,9 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Намерете сензора за пръстови отпечатъци от дясната страна на вашият таблет.</string>
     <string name="battery_light_title">Включете светлината при зареждане</string>
     <string name="min_refresh_rate_title">Минимална честота на опресняване</string>
+    <string name="max_refresh_rate_title">Максимална честота на опресняване</string>
+    <string name="battery_saver_refresh_rate_title">Намаляване на честотата на опресняване</string>
+    <string name="battery_saver_refresh_rate_summary">Използвайте 60 Hz като максимална честота на опресняване, за пестене на енергия в режим Пестене на батерия</string>
     <string name="mobile_data_settings_summary_unavailable">Няма налична SIM карта</string>
     <string name="connected_tws_device_saved_title">Запазени слушалки</string>
     <string name="reset">Нулиране</string>

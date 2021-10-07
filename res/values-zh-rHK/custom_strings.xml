@@ -22,6 +22,8 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">指紋感應器位於平板右側。</string>
     <string name="battery_light_title">充電時保持指示燈開啟</string>
     <string name="min_refresh_rate_title">最低刷新率</string>
+    <string name="max_refresh_rate_title">最大刷新率</string>
+    <string name="battery_saver_refresh_rate_title">降低刷新率</string>
     <string name="mobile_data_settings_summary_unavailable">沒有可用的 SIM 卡</string>
     <string name="connected_tws_device_saved_title">已儲存的耳塞式耳機</string>
     <string name="reset">重設</string>
@@ -84,4 +86,6 @@
     <string name="additional_buttons_title">附加按鍵</string>
     <string name="keyboard_extras_title">額外功能</string>
     <string name="advanced_keyboard_settings_title">進階設定</string>
+    <string name="face_unlock_method_default">螢幕開啟時</string>
+    <string name="face_unlock_method_swipe">在鎖定螢幕滑動時</string>
 </resources>
