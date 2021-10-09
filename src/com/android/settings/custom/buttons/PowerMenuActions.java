@@ -48,7 +48,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private CheckBoxPreference mScreenshotPref;
     private CheckBoxPreference mAirplanePref;
     private CheckBoxPreference mUsersPref;
-    private CheckBoxPreference mLockDownPref;
     private CheckBoxPreference mEmergencyPref;
 
     private CustomGlobalActions mCustomGlobalActions;
@@ -75,8 +74,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mAirplanePref = findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
             } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
                 mUsersPref = findPreference(GLOBAL_ACTION_KEY_USERS);
-            } else if (action.equals(GLOBAL_ACTION_KEY_LOCKDOWN)) {
-                mLockDownPref = findPreference(GLOBAL_ACTION_KEY_LOCKDOWN);
             } else if (action.equals(GLOBAL_ACTION_KEY_EMERGENCY)) {
                 mEmergencyPref = findPreference(GLOBAL_ACTION_KEY_EMERGENCY);
             }
@@ -97,11 +94,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         if (mAirplanePref != null) {
             mAirplanePref.setChecked(mCustomGlobalActions.userConfigContains(
                     GLOBAL_ACTION_KEY_AIRPLANE));
-        }
-
-        if (mLockDownPref != null) {
-            mLockDownPref.setChecked(mCustomGlobalActions.userConfigContains(
-                    GLOBAL_ACTION_KEY_LOCKDOWN));
         }
 
         if (mUsersPref != null) {
@@ -147,12 +139,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             value = mUsersPref.isChecked();
             mCustomGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_USERS);
 
-        } else if (preference == mLockDownPref) {
-            value = mLockDownPref.isChecked();
-            mCustomGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_LOCKDOWN);
-            Settings.Secure.putIntForUser(getContentResolver(),
-                    Settings.Secure.LOCKDOWN_IN_POWER_MENU, value ? 1 : 0, UserHandle.USER_CURRENT);
-
         } else if (preference == mEmergencyPref) {
             value = mEmergencyPref.isChecked();
             mCustomGlobalActions.updateUserConfig(value, GLOBAL_ACTION_KEY_EMERGENCY);
@@ -164,20 +150,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     }
 
     private void updatePreferences() {
-        boolean isKeyguardSecure = mLockPatternUtils.isSecure(UserHandle.myUserId());
-        boolean lockdown = Settings.Secure.getIntForUser(
-                getContentResolver(), Settings.Secure.LOCKDOWN_IN_POWER_MENU, 0,
-                UserHandle.USER_CURRENT) == 1;
-        if (mLockDownPref != null) {
-            mLockDownPref.setEnabled(isKeyguardSecure);
-            if (isKeyguardSecure) {
-                mLockDownPref.setChecked(lockdown);
-                mLockDownPref.setSummary(null);
-            } else {
-                mLockDownPref.setChecked(false);
-                mLockDownPref.setSummary(R.string.power_menu_shortcut_unavailable);
-            }
-        }
     }
 
     @Override
