@@ -107,8 +107,8 @@ public class NetworkProviderSimListController extends AbstractPreferenceControll
         final Map<Integer, Preference> existingPreferences = mPreferences;
         mPreferences = new ArrayMap<>();
 
-        final List<SubscriptionInfo> subscriptions = getAvailablePhysicalSubscription();
-        for (SubscriptionInfo info : subscriptions) {
+        for (SubscriptionInfo info :
+                SubscriptionUtil.getActiveSubscriptions(mSubscriptionManager)) {
             final int subId = info.getSubscriptionId();
             Preference pref = existingPreferences.remove(subId);
             if (pref == null) {
@@ -160,22 +160,10 @@ public class NetworkProviderSimListController extends AbstractPreferenceControll
 
     @Override
     public boolean isAvailable() {
-        if (!getAvailablePhysicalSubscription().isEmpty()) {
+        if (!SubscriptionUtil.getActiveSubscriptions(mSubscriptionManager).isEmpty()) {
             return true;
         }
         return false;
-    }
-
-    @VisibleForTesting
-    protected List<SubscriptionInfo> getAvailablePhysicalSubscription() {
-        List<SubscriptionInfo> subList = new ArrayList<>();
-        for (SubscriptionInfo info : SubscriptionUtil.getAvailableSubscriptions(mContext)) {
-            if (!info.isEmbedded()) {
-                subList.add(info);
-                break;
-            }
-        }
-        return subList;
     }
 
     @Override
