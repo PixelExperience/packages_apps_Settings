@@ -47,6 +47,12 @@
             android:entries="@array/status_bar_am_pm_entries"
             android:entryValues="@array/status_bar_am_pm_values"
             android:defaultValue="2" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="status_bar_clock_auto_hide"
+            android:title="@string/status_bar_clock_auto_hide_title"
+            android:summary="@string/status_bar_clock_auto_hide_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
