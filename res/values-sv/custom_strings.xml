@@ -11,19 +11,22 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Leta reda på fingeravtryckssensorn på baksidan av din telefon.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Lokalisera fingeravtrycks-sensorn på vänster sidan av din mobilen.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Lokalisera fingeravtrycks-sensorn på högre sidan av din mobil.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Lokalisera fingeravtryckssensorn på din enhets framsida.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Lokalisera fingeravtrycks-sensorn på vänster sidan av din mobil.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Leta reda på fingeravtryckssensorn på höger sida av mobilen.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Lokalisera fingeravtryckssensorn på din enhets framsida.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Leta reda på fingeravtryckssensorn på vänster sida av mobilen.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Leta reda på fingeravtryckssensorn på höger sida av mobilen.</string>
-    <string name="battery_light_title">Batteriljus</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Hitta fingeravtryckssensorn på din telefons framsida.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Hitta fingeravtryckssensorn på din telefons vänstra sida.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Hitta fingeravtryckssensorn på din telefons högra sida.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Hitta fingeravtryckssensorn på din enhets framsida.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Hitta fingeravtryckssensorn på din enhets vänstra sida.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Hitta fingeravtryckssensorn på din enhets högra sida.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Hitta fingeravtryckssensorn på din plattas framsida.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Hitta fingeravtryckssensorn på din plattas vänstra sida.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Hitta fingeravtryckssensorn på din plattas högra sida.</string>
+    <string name="battery_light_title">Ljussätt när laddning pågår</string>
     <string name="min_refresh_rate_title">Lägsta uppdateringsfrekvens</string>
+    <string name="max_refresh_rate_title">Maximala uppdateringsfrekvensen</string>
+    <string name="battery_saver_refresh_rate_title">Minska uppdateringsfrekvensen</string>
+    <string name="battery_saver_refresh_rate_summary">Använd 60 Hz som maximal uppdateringsfrekvens för att spara ström när batterisparläge är aktiverat</string>
     <string name="mobile_data_settings_summary_unavailable">Inget SIM-kort tillgängligt</string>
-    <string name="connected_tws_device_saved_title">Sparade öronsnäckor</string>
+    <string name="connected_tws_device_saved_title">Sparade Öronsnäckor</string>
     <string name="reset">Återställ</string>
     <string name="button_pref_title">Knappar</string>
     <string name="hardware_keys_home_key_title">Hemknapp</string>
@@ -51,15 +54,15 @@
     <string name="hardware_keys_long_tap_title">Långtrycks åtgärd</string>
     <string name="button_wake_title">Väck enhet</string>
     <string name="camera_sleep_on_release_title">Tjuvkika</string>
-    <string name="camera_sleep_on_release_summary">Ett halvtryck kommer att slå på skärmen medan knappen är nedtryckt</string>
+    <string name="camera_sleep_on_release_summary">Ett halvtryck kommer att hålla skärmen påslagen så länge knappen är nedtryckt</string>
     <string name="camera_launch_title">Öppna kamera</string>
     <string name="camera_launch_summary">Ett långtryck och släpp kommer att starta kameran</string>
     <string name="button_backlight_title">Bakgrundsbelysning</string>
-    <string name="button_backlight_enabled">Knappljus</string>
-    <string name="button_backlight_only_when_pressed_title">Tänd bara knapparna när de trycks ned</string>
-    <string name="keyboard_backlight_enabled">Lys upp tangentbord</string>
-    <string name="button_backlight_seekbar_title">Knappljusstyrka</string>
-    <string name="keyboard_backlight_seekbar_title">Tangetbordsljusstyrka</string>
+    <string name="button_backlight_enabled">Knappbelysning</string>
+    <string name="button_backlight_only_when_pressed_title">Belys bara knapparna när de trycks ned</string>
+    <string name="keyboard_backlight_enabled">Belys tangentbord</string>
+    <string name="button_backlight_seekbar_title">Styrka på knappbelysning</string>
+    <string name="keyboard_backlight_seekbar_title">Styrka på tangentbordsbelysning</string>
     <string name="backlight_timeout_title">Belysningens tidsgräns</string>
     <string name="backlight_timeout_unlimited">Stäng inte av</string>
     <string name="backlight_summary_disabled">Avaktiverad</string>
@@ -67,7 +70,7 @@
     <string name="backlight_summary_enabled">Aktiverad</string>
     <string name="disable_navkeys_title">Aktivera navigeringsfält på skärmen</string>
     <string name="disable_navkeys_summary">Aktivera navigeringsfältet på skärmen och inaktivera hårdvaruknapparna</string>
-    <string name="swap_capacitive_keys_title">Kapacitiva knappar</string>
+    <string name="swap_capacitive_keys_title">Växla kapacitiva knappar</string>
     <string name="swap_capacitive_keys_summary">Byt ordning på senaste och tillbaka knapparna</string>
     <string name="high_touch_sensitivity_title">Hög fingerkänslighet</string>
     <string name="high_touch_sensitivity_summary">Öka tryckskärmens känslighet så att den kan användas samtidigt som du bär handskar</string>

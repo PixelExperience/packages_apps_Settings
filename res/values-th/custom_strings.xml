@@ -21,6 +21,11 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">ค้นหาเซ็นเซอร์ลายนิ้วมือที่ด้านซ้ายของแท็บเล็ต</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">ค้นหาเซ็นเซอร์ลายนิ้วมือที่ด้านขวาของแท็บเล็ต</string>
     <string name="battery_light_title">ไฟแบตเตอรี่</string>
+    <string name="min_refresh_rate_title">อัตรารีเฟรชต่ำสุด</string>
+    <string name="max_refresh_rate_title">อัตรารีเฟรชสูงสุด</string>
+    <string name="battery_saver_refresh_rate_title">ลดอัตราการรีเฟรช</string>
+    <string name="battery_saver_refresh_rate_summary">ใช้อัตราการรีเฟรชหน้าจอ 60 Hz เพื่อประหยัดพลังงานเมื่อเปิดโหมดประหยัดแบตเตอรี่</string>
+    <string name="mobile_data_settings_summary_unavailable">ไม่มีซิมการ์ด</string>
     <string name="connected_tws_device_saved_title">หูฟังที่บันทึก</string>
     <string name="reset">รีเซ็ต</string>
     <string name="button_pref_title">ปุ่ม</string>
@@ -65,6 +70,8 @@
     <string name="backlight_summary_enabled">เปิดใช้งาน</string>
     <string name="disable_navkeys_title">เปิดใช้งานแถบนำทางบนหน้าจอ</string>
     <string name="disable_navkeys_summary">เปิดใช้งานแถบนำทางบนหน้าจอและปิดการใช้งานปุ่มฮาร์ดแวร์</string>
+    <string name="swap_capacitive_keys_title">สลับปุ่มสัมผัส</string>
+    <string name="swap_capacitive_keys_summary">สลับตำแหน่งของปุ่มรายการล่าสุดและปุ่มย้อนกลับ</string>
     <string name="high_touch_sensitivity_title">ความไวต่อสัมผัสสูง</string>
     <string name="high_touch_sensitivity_summary">เพิ่มความไวของหน้าจอสัมผัสเพื่อสามารถใช้ขณะสวมถุงมือ</string>
     <string name="touchscreen_hovering_title">วางนิ้วเหนือจอ</string>
@@ -74,6 +81,15 @@
     <string name="security_dashboard_summary_face_and_fingerprint">ล็อกหน้าจอ,ปลดล็อกด้วยใบหน้า,ลายนิ้วมือ</string>
     <string name="face_redo_confirm_btn">ทำซ้ำ</string>
     <string name="face_redo_warning_msg">คุณต้องการลบการสแกนใบหน้าที่มีอยู่แล้วสร้างการสแกนใหม่ใช่หรือไม่</string>
+    <string name="fast_charging_title">ชาร์จเร็ว</string>
+    <string name="fast_charging_summary">ปิดใช้งานเพื่อลดความร้อนที่เกิดจากอุปกรณ์ขณะชาร์จ หรือเพื่อยืดอายุการใช้งานของแบตเตอรี่</string>
     <string name="others_settings_title">การตั้งค่าอื่น ๆ</string>
     <string name="additional_buttons_title">ปุ่มเพิ่มเติม</string>
+    <string name="keyboard_extras_title">เพิ่มเติม</string>
+    <string name="advanced_keyboard_settings_title">การตั้งค่าขั้นสูง</string>
+    <string name="fod_gesture_title">ปลดล็อคด้วยลายนิ้วมือเมื่อหน้าจอถูกปิดอยู่</string>
+    <string name="fod_gesture_summary">ยอมให้ปลดล็อคอุปกรณ์โดยที่ไม่ต้องปลุกหน้าจอขึ้นมาก่อน</string>
+    <string name="face_unlock_method_title">ยอมให้ปลดล็อคด้วยใบหน้าในขณะที่หน้าจอถูกล็อค</string>
+    <string name="face_unlock_method_default">เมื่อเปิดหน้าจอ</string>
+    <string name="face_unlock_method_swipe">เมื่อปัดบนหน้าจอขณะล็อค</string>
 </resources>

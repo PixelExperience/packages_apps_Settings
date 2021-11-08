@@ -66,7 +66,7 @@
     <string name="backlight_timeout_title">Tiempo de iluminación</string>
     <string name="backlight_timeout_unlimited">No apagar</string>
     <string name="backlight_summary_disabled">Desactivado</string>
-    <string name="backlight_summary_enabled_with_timeout">Activado durante <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled_with_timeout">Habilitado durante <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Habilitado</string>
     <string name="disable_navkeys_title">Habilitar barra de navegación</string>
     <string name="disable_navkeys_summary">Habilitar la barra de navegación en pantalla y deshabilitar los botones físicos</string>
