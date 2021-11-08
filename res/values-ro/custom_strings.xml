@@ -24,6 +24,7 @@
     <string name="min_refresh_rate_title">Rata minimă de reîmprospătare</string>
     <string name="max_refresh_rate_title">Rata maximă de reîmprospătare</string>
     <string name="battery_saver_refresh_rate_title">Reduceți rata reîmprospătarii</string>
+    <string name="battery_saver_refresh_rate_summary">Utilizați 60 Hz ca rată maximă de reîmprospătare pentru a economisi energie atunci când economisirea bateriei este activată</string>
     <string name="mobile_data_settings_summary_unavailable">Nicio cartelă SIM disponibilă</string>
     <string name="connected_tws_device_saved_title">Căşti intraauriculare salvate</string>
     <string name="reset">Resetați</string>
@@ -88,5 +89,7 @@
     <string name="advanced_keyboard_settings_title">Setări avansate</string>
     <string name="fod_gesture_title">Deblocare prin amprentă când ecranul este închis</string>
     <string name="fod_gesture_summary">Permite deblocarea dispozitivului fără a porni ecranul</string>
+    <string name="face_unlock_method_title">Permiteți deblocarea facială pe ecranul de blocare</string>
     <string name="face_unlock_method_default">Cînd ecranul este pornit</string>
+    <string name="face_unlock_method_swipe">Când glisați pe ecranul de blocare</string>
 </resources>

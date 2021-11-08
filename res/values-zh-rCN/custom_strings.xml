@@ -21,7 +21,7 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">您可以在平板左侧找到指纹传感器。</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">您可以在平板右侧找到指纹传感器。</string>
     <string name="battery_light_title">在充电时开启指示灯</string>
-    <string name="min_refresh_rate_title">低刷新率</string>
+    <string name="min_refresh_rate_title">最低刷新率</string>
     <string name="max_refresh_rate_title">最高刷新率</string>
     <string name="battery_saver_refresh_rate_title">降低刷新率</string>
     <string name="battery_saver_refresh_rate_summary">省电模式开启时，限制屏幕刷新率为最高 60 Hz 以节省电量</string>
@@ -78,7 +78,7 @@
     <string name="touchscreen_hovering_summary">允许您将手指悬停在屏幕上作为浏览器、远程桌面等处的鼠标指针</string>
     <string name="security_settings_face_unlock_redo_face_scan_summary">移除现有的人脸数据并重新录入</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">重新录入人脸数据</string>
-    <string name="security_dashboard_summary_face_and_fingerprint">屏幕锁定、指纹、面容解锁</string>
+    <string name="security_dashboard_summary_face_and_fingerprint">屏幕锁定、指纹、人脸解锁</string>
     <string name="face_redo_confirm_btn">重做</string>
     <string name="face_redo_warning_msg">是否要移除现有的人脸数据并重新录入？</string>
     <string name="fast_charging_title">快速充电中</string>
