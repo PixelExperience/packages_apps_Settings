@@ -17,6 +17,7 @@
     <string name="lockpattern_settings_enable_dots_title">ପାଟର୍ଣ୍ଣ ଡ୍ଟ୍ସ ଦେଖାନ୍ତୁ</string>
     <string name="display_cutout_mode_normal">ଡିଫଲ୍ଟ</string>
     <string name="status_bar_title">ସ୍ଥିତି ଦଣ୍ଡିକା</string>
+    <string name="status_bar_quick_qs_pulldown_off">ବନ୍ଦ</string>
     <string name="status_bar_quick_qs_pulldown_left">ବାମ</string>
     <string name="status_bar_quick_qs_pulldown_right">ଡାହାଣ</string>
     <string name="status_bar_clock_title">ଘଣ୍ଟା</string>
@@ -25,9 +26,14 @@
     <string name="status_bar_clock_position_left">ବାମ</string>
     <string name="status_bar_clock_position_center">କେନ୍ଦ୍ର</string>
     <string name="status_bar_am_pm_title">AM/PM ଶୈଳୀ</string>
+    <string name="status_bar_battery_title">ବ୍ୟାଟେରୀ ସୂଚକ</string>
+    <string name="status_bar_battery_style_title">ବ୍ୟାଟେରୀ ସ୍ଥିତି ଶୈଳୀ</string>
+    <string name="status_bar_battery_percentage_default">ଲୁକ୍କାୟିତ</string>
+    <string name="status_bar_brightness_category">ଉଜ୍ଜ୍ୱଳତା</string>
     <string name="network_traffic_mode_status_bar">ସ୍ଥିତି ଦଣ୍ଡିକା</string>
     <string name="live_display_day">ଦିନ</string>
     <string name="live_display_night">ରାତ୍ରି</string>
+    <string name="live_display_reading_mode_title">ପଠନ ମୋଡ୍‍</string>
     <string name="torch_long_press_power_timeout_1min">୧ ମିନିଟ୍‌</string>
     <string name="torch_long_press_power_timeout_2min">୨ ମିନିଟ୍</string>
     <string name="torch_long_press_power_timeout_5min">୫ ମିନିଟ୍‌</string>
