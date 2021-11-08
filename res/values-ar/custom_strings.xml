@@ -22,6 +22,9 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">حدد موقع مستشعر البصمة على الجانب الأيمن من جهازك اللوحي.</string>
     <string name="battery_light_title">تشغيل ضوء التنبيهات عند توصيل الشاحن</string>
     <string name="min_refresh_rate_title">معدل التحديث الأدنى</string>
+    <string name="max_refresh_rate_title">معدل تحديث الشاشة الأدنى</string>
+    <string name="battery_saver_refresh_rate_title">تقليل معدل تحديث الشاشة</string>
+    <string name="battery_saver_refresh_rate_summary">استخدم 60 هرتز كحد اقصى لتحديث الشاشة لتوفير الطاقة عندما يكون موفر الطاقة مفعل</string>
     <string name="mobile_data_settings_summary_unavailable">لا يوجد شريحة اتصال</string>
     <string name="connected_tws_device_saved_title">سماعات الأذن المسجلة</string>
     <string name="reset">إعادة تعيين</string>

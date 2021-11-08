@@ -57,7 +57,7 @@
     <string name="camera_sleep_on_release_summary">Scherm aan tijdens half indrukken knop</string>
     <string name="camera_launch_title">Camera openen</string>
     <string name="camera_launch_summary">Lang indrukken en loslaten om camera te openen</string>
-    <string name="button_backlight_title">Verlichting</string>
+    <string name="button_backlight_title">Achtergrondverlichting</string>
     <string name="button_backlight_enabled">Knoppen verlichten</string>
     <string name="button_backlight_only_when_pressed_title">Alleen knoppen laten oplichten wanneer u erop drukt</string>
     <string name="keyboard_backlight_enabled">Toetsenbord verlichten</string>
