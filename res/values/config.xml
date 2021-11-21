@@ -548,4 +548,7 @@
 
     <!-- Whether to aggregate for network selection list-->
     <bool name="config_network_selection_list_aggregation_enabled">false</bool>
+
+    <!-- Whether to show or hide sensitive info (like IMEI and Phone Number) on About phone -->
+    <bool name="configShowDeviceSensitiveInfo">false</bool>
 </resources>
