@@ -5,4 +5,6 @@
     <bool name="config_show_refresh_rate_controls">false</bool>
     <bool name="config_supports_dynamic_refresh_rate_controls">true</bool>
 
+    <!-- Whether to show or hide sensitive info (like IMEI and Phone Number) on About phone -->
+    <bool name="configShowDeviceSensitiveInfo">false</bool>
 </resources>
