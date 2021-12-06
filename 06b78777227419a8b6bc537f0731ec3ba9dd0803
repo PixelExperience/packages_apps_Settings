@@ -16,6 +16,23 @@
       "message": "IMHO this should be default even on aosp",
       "revId": "06b78777227419a8b6bc537f0731ec3ba9dd0803",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb327c1c_39fdd9b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-12-06T17:20:07Z",
+      "side": 1,
+      "message": "Please use custom_strings instead",
+      "revId": "06b78777227419a8b6bc537f0731ec3ba9dd0803",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
