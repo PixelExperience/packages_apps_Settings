@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8cdf5b50_5ba56530",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000548
+      },
+      "writtenOn": "2021-12-07T19:01:46Z",
+      "side": 1,
+      "message": "Use this instead https://github.com/ArrowOS/android_packages_apps_Settings/commit/cc4298a4581f9c894213f6857bc033228a59dac9, or wait for Dec 2021 tags, it should be fixed.",
+      "revId": "8a544b95436c7fbe4f8636de04998541809a71a8",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    }
+  ]
+}
