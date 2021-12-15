@@ -24,6 +24,7 @@
     <string name="min_refresh_rate_title">最低刷新率</string>
     <string name="max_refresh_rate_title">最大刷新率</string>
     <string name="battery_saver_refresh_rate_title">降低刷新率</string>
+    <string name="battery_saver_refresh_rate_summary">當省電模式開啟時，使用 60 Hz 作為最大刷新率以節省電量</string>
     <string name="mobile_data_settings_summary_unavailable">沒有可用的 SIM 卡</string>
     <string name="connected_tws_device_saved_title">已儲存的耳塞式耳機</string>
     <string name="reset">重設</string>
@@ -86,6 +87,9 @@
     <string name="additional_buttons_title">附加按鍵</string>
     <string name="keyboard_extras_title">額外功能</string>
     <string name="advanced_keyboard_settings_title">進階設定</string>
+    <string name="fod_gesture_title">屏幕關閉時使用指紋解鎖</string>
+    <string name="fod_gesture_summary">無需先喚醒屏幕即可解鎖設備</string>
+    <string name="face_unlock_method_title">允許在鎖定屏幕上進行人臉解鎖</string>
     <string name="face_unlock_method_default">螢幕開啟時</string>
     <string name="face_unlock_method_swipe">在鎖定螢幕滑動時</string>
 </resources>
