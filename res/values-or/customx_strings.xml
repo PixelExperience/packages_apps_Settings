@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="status_bar_double_tap_to_sleep_title">ସୁପ୍ତ କରିବାକୁ ଟ୍ୟାପ୍ କରିବା</string>
     <string name="wake_when_plugged_or_unplugged_title">ପ୍ଲଗ୍‍କୁ ଉଠାନ୍ତୁ</string>
     <string name="wake_when_plugged_or_unplugged_summary">ଏକ ପାୱାର୍‍ ଉତ୍ସ ସଂଯୋଗ ବା ବିଛିନ୍ନ କରିବା ସମୟରେ ସ୍କ୍ରିନ୍‍ ଅନ୍‍ କରନ୍ତୁ</string>
     <string name="app_notification_sound_timeout_value_10_seconds">୧୦ ସେକେଣ୍ଡ</string>

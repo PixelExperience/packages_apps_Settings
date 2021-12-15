@@ -204,7 +204,7 @@
     <string name="back_height_high_label">unterer Bereich</string>
     <string name="back_options_dialog_title">Optionen</string>
     <string name="back_height">Randberührungsbereich</string>
-    <string name="power_menu_shortcuts_title">Münu Shortcuts</string>
+    <string name="power_menu_shortcuts_title">Menü Shortcuts</string>
     <string name="power_menu_shortcuts_summary">Die Optionen des Power-Menüs anpassen</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_screenshot_summary">Für zugeschnittenen Screenshot gedrückt halten</string>

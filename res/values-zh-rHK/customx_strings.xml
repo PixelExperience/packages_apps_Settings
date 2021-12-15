@@ -204,4 +204,13 @@
     <string name="back_height_high_label">底部區域</string>
     <string name="back_options_dialog_title">選項</string>
     <string name="back_height">側屏幕觸控區域</string>
+    <string name="power_menu_shortcuts_title">菜單快捷鍵</string>
+    <string name="power_menu_shortcuts_summary">自定電源菜單捷徑</string>
+    <string name="power_menu_screenshot_title">截圖</string>
+    <string name="power_menu_screenshot_summary">長按即可擷取部分螢幕</string>
+    <string name="power_menu_airplane_title">飛行模式</string>
+    <string name="power_menu_users_title">使用者切換器</string>
+    <string name="power_menu_lockdown_title">鎖定</string>
+    <string name="power_menu_shortcut_unavailable">已禁用，因為鎖定屏幕不受保護</string>
+    <string name="power_menu_emergency_title">緊急</string>
 </resources>
