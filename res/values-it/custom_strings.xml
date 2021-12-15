@@ -11,15 +11,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Si trova sulla parte anteriore del telefono.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Si trova sul lato sinistro del telefono.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Individua il sensore d\'impronte digitali sul lato destro del tuo telefono.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Individua il sensore d\'impronte digitali sulla parte anteriore del tuo telefono.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Individua il sensore d\'impronte digitali sulla parte sinistra del tuo telefono.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Si trova sul lato destro del dispositivo.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Si trova sulla parte anteriore del tablet.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Si trova sul lato sinistro del tablet.</string>
-    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Si trova sul lato destro del tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Individua il sensore d\'impronte digitali sulla parte anteriore del tuo telefono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="default">Individua il sensore d\'impronte digitali sulla parte sinistra del tuo telefono.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="default">Individua il sensore d\'impronte digitali sulla parte destra del tuo dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="device">Individua il sensore d\'impronte digitali sulla parte anteriore del tuo dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="device">Individua il sensore d\'impronte digitali sulla parte sinistra del tuo dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="device">Individua il sensore d\'impronte digitali sulla parte destra del tuo dispositivo.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="tablet">Individua il sensore d\'impronte digitali sulla parte anteriore del tuo tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_left" product="tablet">Individua il sensore d\'impronte digitali sulla parte sinistra del tuo tablet.</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Individua il sensore d\'impronte digitali sulla parte destra del tuo tablet.</string>
     <string name="battery_light_title">Indicatore batteria</string>
     <string name="min_refresh_rate_title">Refresh rate minimo</string>
     <string name="max_refresh_rate_title">Refresh rate massimo</string>
