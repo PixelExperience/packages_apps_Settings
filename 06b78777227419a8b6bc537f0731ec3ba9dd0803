@@ -33,6 +33,24 @@
       "message": "Please use custom_strings instead",
       "revId": "06b78777227419a8b6bc537f0731ec3ba9dd0803",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2962e42d_5ea7071d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000463
+      },
+      "writtenOn": "2021-12-22T02:29:23Z",
+      "side": 1,
+      "message": "Done sir.",
+      "parentUuid": "eb327c1c_39fdd9b6",
+      "revId": "06b78777227419a8b6bc537f0731ec3ba9dd0803",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
