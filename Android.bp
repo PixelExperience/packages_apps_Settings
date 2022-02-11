@@ -105,6 +105,7 @@ android_library {
         "androidx.room_room-runtime",
         "SystemUIUnfoldLib",
         "custom-preference",
+        "faceunlock_framework",
     ],
 
     plugins: ["androidx.room_room-compiler-plugin"],

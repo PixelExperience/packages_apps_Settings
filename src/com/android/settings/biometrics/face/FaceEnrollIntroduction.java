@@ -22,6 +22,7 @@ import static com.android.settings.biometrics.BiometricUtils.GatekeeperCredentia
 
 import android.app.admin.DevicePolicyManager;
 import android.app.settings.SettingsEnums;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.hardware.SensorPrivacyManager;
@@ -51,6 +52,7 @@ import com.android.settings.Utils;
 import com.android.settings.biometrics.BiometricEnrollActivity;
 import com.android.settings.biometrics.BiometricEnrollIntroduction;
 import com.android.settings.biometrics.BiometricUtils;
+import com.android.settings.biometrics.BiometricUtils.GatekeeperCredentialNotMatchException;
 import com.android.settings.biometrics.MultiBiometricEnrollHelper;
 import com.android.settings.password.ChooseLockSettingsHelper;
 import com.android.settings.password.SetupSkipDialog;
@@ -65,6 +67,8 @@ import com.google.android.setupdesign.span.LinkSpan;
 
 import java.util.List;
 
+import com.android.settings.custom.biometrics.FaceUtils;
+
 /**
  * Provides introductory info about face unlock and prompts the user to agree before starting face
  * enrollment.
@@ -77,6 +81,8 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
     @Nullable private FooterButton mSecondaryFooterButton;
     @Nullable private SensorPrivacyManager mSensorPrivacyManager;
     private boolean mIsFaceStrong;
+
+    private boolean mForRedo;
 
     @Override
     protected void onCancelButtonClick(View view) {
@@ -116,11 +122,52 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
                 mDevicePostureState, mLaunchedPostureGuidance);
     }
 
+    private void initDefaultLayout(){
+        // Apply extracted theme color to icons.
+        final ImageView iconGlasses = findViewById(R.id.icon_glasses);
+        final ImageView iconLooking = findViewById(R.id.icon_looking);
+        iconGlasses.getBackground().setColorFilter(getIconColorFilter());
+        iconLooking.getBackground().setColorFilter(getIconColorFilter());
+
+        // Set text for views with multiple variations.
+        final TextView infoMessageGlasses = findViewById(R.id.info_message_glasses);
+        final TextView infoMessageLooking = findViewById(R.id.info_message_looking);
+        final TextView howMessage = findViewById(R.id.how_message);
+        final TextView inControlTitle = findViewById(R.id.title_in_control);
+        final TextView inControlMessage = findViewById(R.id.message_in_control);
+        final TextView lessSecure = findViewById(R.id.info_message_less_secure);
+        infoMessageGlasses.setText(getInfoMessageGlasses());
+        infoMessageLooking.setText(getInfoMessageLooking());
+        inControlTitle.setText(getInControlTitle());
+        howMessage.setText(getHowMessage());
+        inControlMessage.setText(Html.fromHtml(getString(getInControlMessage()),
+                Html.FROM_HTML_MODE_LEGACY));
+        inControlMessage.setMovementMethod(LinkMovementMethod.getInstance());
+        if (lessSecure != null) {
+            lessSecure.setText(getLessSecureMessage());
+        }
+
+        // Set up and show the "require eyes" info section if necessary.
+        if (getResources().getBoolean(R.bool.config_face_intro_show_require_eyes)) {
+            final LinearLayout infoRowRequireEyes = findViewById(R.id.info_row_require_eyes);
+            final ImageView iconRequireEyes = findViewById(R.id.icon_require_eyes);
+            final TextView infoMessageRequireEyes = findViewById(R.id.info_message_require_eyes);
+            infoRowRequireEyes.setVisibility(View.VISIBLE);
+            iconRequireEyes.getBackground().setColorFilter(getIconColorFilter());
+            infoMessageRequireEyes.setText(getInfoMessageRequireEyes());
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mFaceManager = getFaceManager();
 
         super.onCreate(savedInstanceState);
+
+        if (!FaceUtils.isFaceUnlockSupported()) {
+            initDefaultLayout();
+        }
+        mForRedo = getIntent().getBooleanExtra("for_redo", false);
 
         if (savedInstanceState == null
                 && !WizardManagerHelper.isAnySetupWizard(getIntent())
@@ -158,7 +205,9 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
         inControlMessage.setText(Html.fromHtml(getString(getInControlMessage()),
                 Html.FROM_HTML_MODE_LEGACY));
         inControlMessage.setMovementMethod(LinkMovementMethod.getInstance());
-        lessSecure.setText(getLessSecureMessage());
+        if (lessSecure != null) {
+            lessSecure.setText(getLessSecureMessage());
+        }
 
         // Set up and show the "require eyes" info section if necessary.
         if (getResources().getBoolean(R.bool.config_face_intro_show_require_eyes)) {
@@ -222,6 +271,10 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
         final boolean cameraPrivacyEnabled = helper
                 .isSensorBlocked(SensorPrivacyManagerHelper.SENSOR_CAMERA);
         Log.v(TAG, "cameraPrivacyEnabled : " + cameraPrivacyEnabled);
+
+        if (FaceUtils.isFaceUnlockSupported() && mHasPassword && mToken != null) {
+            openCustomFaceUnlockPackage();
+        }
     }
 
     private void launchFaceSettingsActivity() {
@@ -319,6 +372,11 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (FaceUtils.isFaceUnlockSupported()) {
+            onActivityResultCustom(requestCode, resultCode, data);
+            return;
+        }
+
         if (requestCode == REQUEST_POSTURE_GUIDANCE) {
             mLaunchedPostureGuidance = false;
             if (resultCode == RESULT_CANCELED || resultCode == RESULT_SKIP) {
@@ -349,6 +407,66 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
             data = setSkipPendingEnroll(data);
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    void onActivityResultCustom(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode != CHOOSE_LOCK_GENERIC_REQUEST) {
+            if (requestCode != CONFIRM_REQUEST) {
+                if (requestCode == ENROLL_REQUEST) {
+                    if (resultCode == RESULT_FIRST_USER || resultCode == RESULT_OK) {
+                        setResult(RESULT_FIRST_USER);
+                        finish();
+                        return;
+                    }
+                    setResult(RESULT_CANCELED);
+                    finish();
+                }
+            } else if (resultCode == RESULT_OK && data != null) {
+                checkTokenAndOpenCustomFaceUnlockPackage(data);
+            }
+        } else if (resultCode == RESULT_FIRST_USER) {
+            checkTokenAndOpenCustomFaceUnlockPackage(data);
+        }
+    }
+
+    private void openCustomFaceUnlockPackage() {
+        ComponentName componentName;
+        Intent intent = new Intent();
+        intent.putExtra(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN, mToken);
+        if (mUserId != -10000) {
+            intent.putExtra("android.intent.extra.USER_ID", mUserId);
+        }
+        if (mForRedo) {
+            componentName = new ComponentName(
+                "org.pixelexperience.faceunlock",
+                "org.pixelexperience.faceunlock.FaceEnrollActivity");
+        } else {
+            componentName = new ComponentName(
+                "org.pixelexperience.faceunlock",
+                "org.pixelexperience.faceunlock.SetupFaceIntroActivity");
+        }
+        intent.setComponent(componentName);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(intent, ENROLL_REQUEST);
+        }
+    }
+
+    private void checkTokenAndOpenCustomFaceUnlockPackage(Intent intent) {
+        if (mToken == null) {
+            mFaceManager.generateChallenge(mUserId, (sensorId, userId, challenge) -> {
+                if (mToken == null) {
+                    mToken = BiometricUtils.requestGatekeeperHat(this, intent, mUserId,
+                            challenge);
+                    mSensorId = sensorId;
+                    mChallenge = challenge;
+                    BiometricUtils.removeGatekeeperPasswordHandle(this, intent);
+                    openCustomFaceUnlockPackage();
+                }
+            });
+        }else{
+            openCustomFaceUnlockPackage();
+        }
     }
 
     protected boolean generateChallengeOnCreate() {
@@ -398,6 +516,9 @@ public class FaceEnrollIntroduction extends BiometricEnrollIntroduction {
 
     @Override
     protected int getLayoutResource() {
+        if (FaceUtils.isFaceUnlockSupported()) {
+            return R.layout.face_enroll_introduction_invisible;
+        }
         return R.layout.face_enroll_introduction;
     }
 

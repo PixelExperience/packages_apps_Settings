@@ -61,7 +61,7 @@ public abstract class BiometricEnrollIntroduction extends BiometricEnrollBase
 
     private GatekeeperPasswordProvider mGatekeeperPasswordProvider;
     private UserManager mUserManager;
-    private boolean mHasPassword;
+    protected boolean mHasPassword;
     private boolean mBiometricUnlockDisabledByAdmin;
     private TextView mErrorText;
     protected boolean mConfirmingCredentials;

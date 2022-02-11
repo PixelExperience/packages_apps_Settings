@@ -27,6 +27,8 @@ import com.android.settings.core.TogglePreferenceController;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedLockUtilsInternal;
 
+import com.android.settings.custom.biometrics.FaceUtils;
+
 /**
  * Preference controller that controls whether the biometrics authentication to unlock the device.
  */
@@ -69,7 +71,7 @@ public class BiometricSettingsKeyguardPreferenceController extends TogglePrefere
         if (activeUnlockStatusUtils.isAvailable()) {
             return getAvailabilityFromRestrictingAdmin();
         }
-        if (!Utils.isMultipleBiometricsSupported(mContext)) {
+        if (FaceUtils.isFaceUnlockSupported() || !Utils.isMultipleBiometricsSupported(mContext)) {
             return UNSUPPORTED_ON_DEVICE;
         }
         return getAvailabilityFromRestrictingAdmin();
