@@ -80,6 +80,7 @@ android_library {
         "windowExtLib",
         "custom-preference",
         "vendor.lineage.fastcharge-V1.0-java",
+        "faceunlock_framework",
     ],
 
     libs: [
