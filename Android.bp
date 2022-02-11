@@ -83,6 +83,7 @@ android_library {
         "SettingsLibActivityEmbedding",
         "custom-preference",
         "vendor.lineage.fastcharge-V1.0-java",
+        "faceunlock_framework",
     ],
 
     libs: [
