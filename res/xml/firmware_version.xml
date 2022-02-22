@@ -29,7 +29,15 @@
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
-
+    
+	<!-- Raised Maintainer  -->
+    <Preference
+        android:key="Raised_maintainer"
+        android:title="@string/Raised_maintainer"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.RaisedMaintainerPreferenceController"/>
+		
     <!-- Security patch -->
     <Preference
         android:key="security_key"

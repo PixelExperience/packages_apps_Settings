@@ -85,5 +85,8 @@
     <!-- Advanced keyboard settings -->
     <string name="keyboard_extras_title">Extras</string>
     <string name="advanced_keyboard_settings_title">Advanced settings</string>
+	
+	<!-- Raised Maintainer -->
+    <string name="Raised_maintainer">Raised Maintainer</string>
 
 </resources>
