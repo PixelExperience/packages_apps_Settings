@@ -28,6 +28,7 @@ import android.provider.Settings;
 
 import androidx.preference.CheckBoxPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 
 import com.android.settings.R;
 
@@ -39,11 +40,16 @@ import com.android.internal.util.custom.globalactions.PowerMenuConstants;
 import com.android.internal.widget.LockPatternUtils;
 
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 public class PowerMenuActions extends SettingsPreferenceFragment {
     final static String TAG = "PowerMenuActions";
+
+    private static final String CATEGORY_POWER_MENU_ITEMS = "power_menu_items";
+
+    private PreferenceCategory mPowerMenuItemsCategory;
 
     private CheckBoxPreference mScreenshotPref;
     private CheckBoxPreference mAirplanePref;
@@ -67,6 +73,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         mLockPatternUtils = new LockPatternUtils(mContext);
         mUserManager = UserManager.get(mContext);
 
+        mPowerMenuItemsCategory = findPreference(CATEGORY_POWER_MENU_ITEMS);
+
         for (String action : PowerMenuConstants.getAllActions()) {
             if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
@@ -77,6 +85,11 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             } else if (action.equals(GLOBAL_ACTION_KEY_EMERGENCY)) {
                 mEmergencyPref = findPreference(GLOBAL_ACTION_KEY_EMERGENCY);
             }
+        }
+
+        if (!Utils.isVoiceCapable(getActivity())) {
+            mPowerMenuItemsCategory.removePreference(mEmergencyPref);
+            mEmergencyPref = null;
         }
 
         mLocalUserConfig = mCustomGlobalActions.getLocalUserConfig();
@@ -98,7 +111,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
         if (mUsersPref != null) {
             if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
-                getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
+                mPowerMenuItemsCategory.removePreference(mUsersPref);
                 mUsersPref = null;
             } else {
                 List<UserInfo> users = mUserManager.getUsers();
