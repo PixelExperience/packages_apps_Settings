@@ -64,6 +64,7 @@
     <string name="power_menu_airplane_title">Airplane mode</string>
     <string name="power_menu_users_title">User switcher</string>
     <string name="power_menu_emergency_title">Emergency</string>
+    <string name="power_menu_devicecontrols_title">Device controls</string>
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation settings</string>
