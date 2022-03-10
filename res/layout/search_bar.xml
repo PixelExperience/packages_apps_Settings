@@ -31,7 +31,7 @@
             android:id="@+id/search_action_bar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/search_bar_height"
-            android:paddingStart="4dp"
+            android:paddingStart="0dp"
             android:background="@drawable/search_bar_selected_background"
             android:contentInsetStartWithNavigation="@dimen/search_bar_content_inset"
             android:navigationIcon="@drawable/ic_homepage_search">
