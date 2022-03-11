@@ -195,4 +195,6 @@
     <string name="app_volume">Volume de aplicativos</string>
     <string name="enable_fingerprint_ripple_effect_title">Efeito cascata</string>
     <string name="enable_fingerprint_ripple_effect_summary">Mostrar efeito cascata no desbloqueio com impressão digital</string>
+    <string name="hide_lockscreen_status_bar_title">Ocultar barra de status</string>
+    <string name="hide_lockscreen_status_bar_summary">Ocultar a barra de status quando a tela estiver bloqueada</string>
 </resources>
