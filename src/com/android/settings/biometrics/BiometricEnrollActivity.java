@@ -62,6 +62,8 @@ import com.google.android.setupdesign.transition.TransitionHelper;
 
 import java.util.List;
 
+import com.android.settings.custom.biometrics.FaceUtils;
+
 /**
  * Trampoline activity launched by the {@code android.settings.BIOMETRIC_ENROLL} action which
  * shows the user an appropriate enrollment flow depending on the device's biometric hardware.
@@ -245,6 +247,11 @@ public class BiometricEnrollActivity extends InstrumentedActivity {
                 }
             }
         }
+        
+        if (FaceUtils.isFaceUnlockSupported() && isSetupWizard){
+            mIsFaceEnrollable = false;
+        }
+
         updateFingerprintEnrollable(isSetupWizard);
 
         // TODO(b/195128094): remove this restriction
