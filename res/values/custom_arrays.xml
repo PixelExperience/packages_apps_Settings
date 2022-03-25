@@ -207,46 +207,4 @@
         <item>0</item>
         <item>1</item>
     </string-array>
-
-    <!-- QS customization -->
-    <string-array name="qs_rows_portrait_values" translatable="false">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-    <string-array name="qs_rows_landscape_values" translatable="false">
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="qs_columns_portrait_values" translatable="false">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-    <string-array name="qs_columns_landscape_values" translatable="false">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-    </string-array>
-
-    <!-- Statusbar brightness -->
-    <string-array name="status_bar_brightness_slider_entries" translatable="false">
-        <item>@string/status_bar_brightness_slider_show_never</item>
-        <item>@string/status_bar_brightness_slider_show_expanded</item>
-        <item>@string/status_bar_brightness_slider_show_always</item>
-    </string-array>
-
-    <string-array name="status_bar_brightness_slider_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
 </resources>

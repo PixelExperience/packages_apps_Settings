@@ -126,13 +126,6 @@
 
     <!-- Status bar - Brightness -->
     <string name="status_bar_brightness_category">Brightness</string>
-    <string name="status_bar_brightness_slider_title">Brightness slider</string>
-    <string name="status_bar_brightness_slider_summary">Adjust brightness from the Quick Settings</string>
-    <string name="status_bar_brightness_slider_auto_title">Auto brightness</string>
-    <string name="status_bar_brightness_slider_auto_summary">Show toggle for adaptive brightness near the slider</string>
-    <string name="status_bar_brightness_slider_show_never">Never show</string>
-    <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
-    <string name="status_bar_brightness_slider_show_always">Show always</string>
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
@@ -151,8 +144,4 @@
 
     <!-- QS settings -->
     <string name="qs_title">Quick settings</string>
-    <string name="qs_rows_portrait_title">Rows (portrait)</string>
-    <string name="qs_rows_landscape_title">Rows (landscape)</string>
-    <string name="qs_columns_portrait_title">Columns (portrait)</string>
-    <string name="qs_columns_landscape_title">Columns (landscape)</string>
 </resources>

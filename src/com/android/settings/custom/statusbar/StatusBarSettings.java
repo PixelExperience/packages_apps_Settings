@@ -45,7 +45,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     private static final String CATEGORY_BATTERY = "status_bar_battery_key";
     private static final String CATEGORY_CLOCK = "status_bar_clock_key";
-    private static final String CATEGORY_BRIGHTNESS = "status_bar_brightness_category";
 
     private static final String ICON_BLACKLIST = "icon_blacklist";
 
@@ -54,12 +53,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
-    private static final String STATUS_BAR_QUICK_QS_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
-    private static final String STATUS_BAR_QUICK_QS_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
 
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 2;
-
-    private static final int STATUS_BAR_QS_BRIGHTNESS_NEVER_SHOW = 0;
 
     private static final int PULLDOWN_DIR_NONE = 0;
     private static final int PULLDOWN_DIR_RIGHT = 1;
@@ -71,12 +66,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private SystemSettingListPreference mStatusBarBattery;
     private SystemSettingListPreference mStatusBarBatteryShowPercent;
 
-    private SecureSettingListPreference mStatusBarQsShowBrightnessSlider;
-    private SwitchPreference mStatusBarQsShowAutoBrightness;
-
     private PreferenceCategory mStatusBarBatteryCategory;
     private PreferenceCategory mStatusBarClockCategory;
-    private PreferenceCategory mStatusBarBrightnessCategory;
 
     private static boolean sHasCenteredNotch;
 
@@ -103,17 +94,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mQuickPulldown = findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
-
-        mStatusBarBrightnessCategory = getPreferenceScreen().findPreference(CATEGORY_BRIGHTNESS);
-        mStatusBarQsShowBrightnessSlider = mStatusBarBrightnessCategory.findPreference(STATUS_BAR_QUICK_QS_SHOW_BRIGHTNESS_SLIDER);
-        mStatusBarQsShowBrightnessSlider.setOnPreferenceChangeListener(this);
-        mStatusBarQsShowAutoBrightness = mStatusBarBrightnessCategory.findPreference(STATUS_BAR_QUICK_QS_SHOW_AUTO_BRIGHTNESS);
-        if (!getResources().getBoolean(
-                com.android.internal.R.bool.config_automatic_brightness_available)){
-            mStatusBarBrightnessCategory.removePreference(mStatusBarQsShowAutoBrightness);
-            mStatusBarQsShowAutoBrightness = null;
-        }
-        enableStatusBarQsBrightnessDependents(mStatusBarQsShowBrightnessSlider.getIntValue(1));
     }
 
     @Override
@@ -173,21 +153,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             case STATUS_BAR_BATTERY_STYLE:
                 enableStatusBarBatteryDependents(value);
                 break;
-            case STATUS_BAR_QUICK_QS_SHOW_BRIGHTNESS_SLIDER:
-                enableStatusBarQsBrightnessDependents(value);
-                break;
         }
         return true;
     }
 
     private void enableStatusBarBatteryDependents(int batteryIconStyle) {
         mStatusBarBatteryShowPercent.setEnabled(batteryIconStyle != STATUS_BAR_BATTERY_STYLE_TEXT);
-    }
-
-    private void enableStatusBarQsBrightnessDependents(int qsBrightnessType) {
-        if (mStatusBarQsShowAutoBrightness != null){
-            mStatusBarQsShowAutoBrightness.setEnabled(qsBrightnessType != STATUS_BAR_QS_BRIGHTNESS_NEVER_SHOW);
-        }
     }
 
     private void updateQuickPulldownSummary(int value) {
