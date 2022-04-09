@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lockpattern_settings_enable_error_path_title">ئەندىزە خاتالىقىنى كۆرسىتىش</string>
+    <string name="lockpattern_settings_enable_dots_title">ئەندىزە نۇقتىسىنى كۆرسىتىش</string>
+    <string name="wake_when_plugged_or_unplugged_title">چېتىلغاندا ئويغات</string>
+    <string name="wake_when_plugged_or_unplugged_summary">توكقا چېتىلغان ياكى ئۈزۈلگەندە ئېكراننى ئاچىدۇ</string>
+    <string name="unlock_scramble_pin_layout_title">قالايمىقان جايلاشتۇرۇش</string>
+    <string name="unlock_scramble_pin_layout_summary">ئۈسكۈنە قۇلۇپىنى ئاچقاندا قالايمىقان تەرتىپتىكى PIN جايلاشتۇرۇشنى ئىشلىتىدۇ</string>
+    <string name="increasing_ring_volume_option_title">قوڭغۇراق ئاۋازىنى تەدرىجىي كۈچەيتىش</string>
+    <string name="increasing_ring_min_volume_title">باشلاش ئاۋازى</string>
+    <string name="increasing_ring_ramp_up_time_title">كۈچەيتىش ۋاقتى</string>
+    <string name="live_display_day">كۈن</string>
+    <string name="live_display_night">كېچە</string>
+    <string name="display_cutout_mode_normal">سۈكۈتتىكى ئەپ</string>
+</resources>

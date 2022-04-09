@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lockpattern_settings_enable_error_path_title">પૅટર્ન ખામી દર્શાવો</string>
+    <string name="lockpattern_settings_enable_dots_title">પૅટર્ન ડોટ્સ દર્શાવો</string>
+    <string name="wake_when_plugged_or_unplugged_title">વેક ઑન પ્લગ</string>
+    <string name="wake_when_plugged_or_unplugged_summary">પાવર સ્ત્રોત જોડો અથવા પરવાનગીું પાડો ત્યારે સ્ક્રીન ચાલુ કરો</string>
+    <string name="unlock_scramble_pin_layout_title">લેઆઉટ આમતેમ કરો</string>
+    <string name="unlock_scramble_pin_layout_summary">ડિવાઇસ અનલૉક કરો ત્યારે PIN લેઆઉટ આમતેમ કરો</string>
+    <string name="increasing_ring_volume_option_title">રિંગ વૉલ્યુમ વધારી રહ્યા છે</string>
+    <string name="increasing_ring_min_volume_title">શરૂઆતનું વૉલ્યુમ</string>
+    <string name="increasing_ring_ramp_up_time_title">રૅમ્પ-અપ સમય</string>
+    <string name="network_traffic_mode_disable">અક્ષમ કરેલું</string>
+    <string name="volbtn_cursor_control_off">અક્ષમ કરેલું</string>
+    <string name="live_display_day">દિવસ</string>
+    <string name="live_display_night">રાત્રિ</string>
+    <string name="display_cutout_mode_normal">ડિફોલ્ટ</string>
+</resources>

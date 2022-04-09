@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lockpattern_settings_enable_error_path_title">నమూనా దోషాన్ని చూపుము</string>
+    <string name="lockpattern_settings_enable_dots_title">నమూనా చుక్కలను చూపుము</string>
+    <string name="wake_when_plugged_or_unplugged_title">మేల్కొలుపు ప్లగ్</string>
+    <string name="wake_when_plugged_or_unplugged_summary">విద్యుత్ ఆధారాన్ని అనుసంధానం చేసేటప్పుడు లేదా తొలిగించేటప్పుడు స్క్రీనును ఆన్ చేయండి</string>
+    <string name="unlock_scramble_pin_layout_title">క్రమరాహిత్య లేఅవుట్</string>
+    <string name="unlock_scramble_pin_layout_summary">పరికరాన్ని అన్లాక్ చేసేటప్పుడు PIN లేఅవుట్ ను క్రమరాహిత్యం చేయండి</string>
+    <string name="increasing_ring_volume_option_title">రింగ్ వాల్యూమును పెంచడం</string>
+    <string name="increasing_ring_min_volume_title">ప్రారంభ వాల్యూమ్</string>
+    <string name="increasing_ring_ramp_up_time_title">రాంప్-అప్ సమయం</string>
+    <string name="live_display_day">పగలు</string>
+    <string name="live_display_night">రాత్రి</string>
+    <string name="display_cutout_mode_normal">డిఫాల్ట్</string>
+</resources>
