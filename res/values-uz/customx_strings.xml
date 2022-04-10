@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="navigation_bar_title">Navigatsiya qatori</string>
+    <string name="hardware_keys_volume_keys_title">Ovoz balandligi tugmalari</string>
+    <string name="display_cutout_mode_normal">Birlamchi</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lockpattern_settings_enable_error_path_title">பேட்டர்ன் பிழையை காட்டு</string>
+    <string name="lockpattern_settings_enable_dots_title">பேட்டர்ன் புள்ளிகளை காட்டு</string>
+    <string name="wake_when_plugged_or_unplugged_title">பிளக் செய்தால் விழி</string>
+    <string name="wake_when_plugged_or_unplugged_summary">ஒரு மின் வளத்தை இணைத்தல் அல்லது துண்டித்தலின் போது திரையை ஆன் செய்க</string>
+    <string name="unlock_scramble_pin_layout_title">ஸ்க்ராம்பில் லேயவுட்</string>
+    <string name="unlock_scramble_pin_layout_summary">கருவியை திறக்கும்போது PIN லேயவுட்டை ஸ்க்ராம்பில் செய்</string>
+    <string name="increasing_ring_volume_option_title">ரிங் வால்யூமை அதிகரித்தல்</string>
+    <string name="increasing_ring_min_volume_title">வால்யூமை தொடங்கு</string>
+    <string name="increasing_ring_ramp_up_time_title">ராம்ப்-அப் நேரம்</string>
+    <string name="advanced_reboot_title">மேம்பட்ட மறுதொடக்கம்
+
+powermenu_restart_recovery
+கோப்பு: strings. xml</string>
+    <string name="status_bar_title">நிலை பட்டை</string>
+    <string name="status_bar_quick_qs_pulldown_title">விரைவான கீழிறக்கும்</string>
+    <string name="status_bar_quick_qs_pulldown_off">நிறுத்து</string>
+    <string name="status_bar_am_pm_hidden">மறைந்துள்ள</string>
+    <string name="status_bar_battery_percentage_default">மறைந்துள்ள</string>
+    <string name="network_traffic_mode_status_bar">நிலை பட்டை</string>
+    <string name="navigation_bar_title">வழிநடத்தும் பட்டன்கள்</string>
+    <string name="hardware_keys_power_key_title">பவர் பட்டன்</string>
+    <string name="hardware_keys_volume_keys_title">ஒலியளவு பொத்தான்கள்</string>
+    <string name="torch_long_press_power_timeout_never">எப்போதும் வேண்டாம்</string>
+    <string name="torch_long_press_power_timeout_2min">2 நிமிடங்கள்</string>
+    <string name="others_settings_title">பிற அமைப்புகள்</string>
+    <string name="additional_buttons_title">கூடுதல் பொத்தான்கள்</string>
+    <string name="live_display_day">பகல்</string>
+    <string name="live_display_night">இரவு</string>
+    <string name="live_display_reading_mode_title">வாசிக்கும் முறை</string>
+    <string name="display_cutout_mode_normal">இயல்பு</string>
+    <string name="display_cutout_mode_hidden">மறைந்துள்ள</string>
+</resources>

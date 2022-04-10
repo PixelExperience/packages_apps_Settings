@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lockpattern_settings_enable_error_path_title">Musterfeeler uweisen</string>
+    <string name="lockpattern_settings_enable_dots_title">Musterpunkten uweisen</string>
+    <string name="wake_when_plugged_or_unplugged_title">Beim Astieche waakreg maachen</string>
+    <string name="wake_when_plugged_or_unplugged_summary">De Schierm uschalte wann eng Stroumquell ugeschloss oder getrennt gëtt</string>
+    <string name="unlock_scramble_pin_layout_title">Zoufälleg Unuerdnung</string>
+    <string name="unlock_scramble_pin_layout_summary">Bei all Entspärversuch d\'Zifferereiefolleg zoufälleg nei wielen</string>
+    <string name="increasing_ring_volume_option_title">Usteigend Schelltounlautstäerkt</string>
+    <string name="increasing_ring_min_volume_title">Start-Lautstäerkt</string>
+    <string name="increasing_ring_ramp_up_time_title">Ulafzäit</string>
+    <string name="live_display_day">Dag</string>
+    <string name="live_display_night">Nuecht</string>
+</resources>

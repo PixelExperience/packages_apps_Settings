@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="heads_up_notifications_enabled_title">पप-अप सूचना</string>
+    <string name="status_bar_quick_qs_pulldown_off">अफ </string>
+    <string name="network_traffic_mode_disable">निस्क्रिय</string>
+    <string name="navigation_bar_title">नेभिगेसन बार</string>
+    <string name="hardware_keys_power_key_title">पावर बटन</string>
+    <string name="volbtn_cursor_control_off">निस्क्रिय</string>
+    <string name="live_display_day">दिन</string>
+    <string name="live_display_night">राती</string>
+    <string name="live_display_reading_mode_title">पढ्ने मोड</string>
+    <string name="display_cutout_mode_normal">पूर्वनिर्धारित</string>
+</resources>

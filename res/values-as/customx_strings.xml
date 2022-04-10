@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lockpattern_settings_enable_error_path_title">পেটাৰ্ণৰ ত্ৰুটি প্ৰদৰ্শন কৰক</string>
+    <string name="lockpattern_settings_enable_dots_title">পেটাৰ্ণৰ ডটবোৰ প্ৰদৰ্শন কৰক</string>
+    <string name="wake_when_plugged_or_unplugged_title">প্লাগ কৰিলে ৱেক কৰক</string>
+    <string name="wake_when_plugged_or_unplugged_summary">পাৱাৰ উৎসৰ সৈতে সংযোগ কৰিলে বা সংযোগহীন কৰিলে স্ক্ৰীণ অন কৰক</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 মিনিট</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 মিনিট</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 মিনিট</string>
+    <string name="unlock_scramble_pin_layout_title">স্ক্ৰেম্বল লেআউট</string>
+    <string name="unlock_scramble_pin_layout_summary">ডিভাইচ আনলকিং কৰোতে PIN লেআউট স্ক্ৰেম্বল কৰক</string>
+    <string name="heads_up_notifications_enabled_title">হেডছ আপ</string>
+    <string name="increasing_ring_volume_option_title">ৰিং ভলিউম বৃদ্ধি কৰক</string>
+    <string name="increasing_ring_min_volume_title">ৰিং ভলিউম</string>
+    <string name="increasing_ring_ramp_up_time_title">ৰেম্প-আপ সময়</string>
+    <string name="incall_feeedback_vibrate_title">কল আহোঁতে ভাইভ্রেত কৰিব</string>
+    <string name="status_bar_title">ষ্টেটাচ বাৰ</string>
+    <string name="status_bar_am_pm_hidden">অদৃচ্ছ</string>
+    <string name="status_bar_battery_percentage_default">অদৃচ্ছ</string>
+    <string name="network_traffic_mode_status_bar">ষ্টেটাচ বাৰ</string>
+    <string name="torch_long_press_power_timeout_5min">5 মিনিট</string>
+    <string name="torch_long_press_power_timeout_10min">10 মিনিট</string>
+    <string name="live_display_day">দিন</string>
+    <string name="live_display_night">নাইট</string>
+    <string name="swipe_to_screenshot_gesture_title">স্ক্ৰীণ-শ্বট লবলৈ আঙুলিৰে স্বাইপ কৰক</string>
+    <string name="swipe_to_screenshot_gesture_summary">স্ক্ৰীণ-শ্বট লবলৈ তিনিটা আঙুলিৰে স্বাইপ কৰক</string>
+    <string name="display_cutout_mode_normal">ডিফ\'ল্ট</string>
+    <string name="display_cutout_mode_hidden">অদৃচ্ছ</string>
+</resources>

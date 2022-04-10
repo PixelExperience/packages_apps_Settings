@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_notification_sound_timeout_value_10_seconds">10 سیکنڈ</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 سیکنڈ</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 منٹ</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 منٹ</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 منٹ</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 منٹ</string>
+    <string name="network_traffic_mode_disable">غیر فعال</string>
+    <string name="volbtn_cursor_control_off">غیر فعال</string>
+    <string name="torch_long_press_power_timeout_1min">1 منٹ</string>
+    <string name="torch_long_press_power_timeout_5min">5 منٹ</string>
+    <string name="torch_long_press_power_timeout_10min">10 منٹ</string>
+    <string name="live_display_day">دن</string>
+    <string name="live_display_night">رات</string>
+    <string name="display_cutout_mode_normal">پہلے سے طے شدہ</string>
+</resources>

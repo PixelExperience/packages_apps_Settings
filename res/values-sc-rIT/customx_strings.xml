@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minutu</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
+    <string name="display_rotation_unit">grados</string>
+    <string name="display_rotation_0_title">0 grados</string>
+    <string name="display_rotation_90_title">90 grados</string>
+    <string name="display_rotation_180_title">180 grados</string>
+    <string name="display_rotation_270_title">270 grados</string>
+    <string name="status_bar_clock_title">Relògiu</string>
+    <string name="status_bar_clock_position_title">Positzione de su relògiu</string>
+    <string name="status_bar_am_pm_normal">Normale</string>
+    <string name="status_bar_am_pm_small">Minore</string>
+    <string name="status_bar_am_pm_hidden">Cuada</string>
+    <string name="status_bar_battery_percentage_default">Cuada</string>
+    <string name="network_traffic_mode_disable">Disabilitadu</string>
+    <string name="volbtn_cursor_control_off">Disabilitadu</string>
+    <string name="power_end_call_title">Acabba sa mutida</string>
+    <string name="torch_long_press_power_timeout_never">Mai</string>
+    <string name="torch_long_press_power_timeout_1min">1 minutu</string>
+    <string name="torch_long_press_power_timeout_2min">2 minutos</string>
+    <string name="torch_long_press_power_timeout_5min">5 minutos</string>
+    <string name="torch_long_press_power_timeout_10min">10 minutos</string>
+    <string name="live_display_color_temperature_summary">Die: <xliff:g id="day_temperature">%1$d</xliff:g>K Note: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_day">Die</string>
+    <string name="live_display_night">Note</string>
+    <string name="live_display_color_profile_standard_title">Istandard</string>
+    <string name="live_display_color_profile_natural_title">Naturale</string>
+    <string name="live_display_color_profile_cinema_title">Tzìnema</string>
+    <string name="live_display_color_profile_astronomy_title">Astronomia</string>
+    <string name="live_display_color_profile_photography_title">Fotografia</string>
+    <string name="color_red_title">Ruju</string>
+    <string name="color_green_title">Birde</string>
+    <string name="color_blue_title">Biaitu</string>
+    <string name="adj_saturation_title">Saturatzione</string>
+    <string name="adj_intensity_title">Intensidade</string>
+    <string name="adj_contrast_title">Cuntrastu</string>
+    <string name="display_cutout_mode_hidden">Cuada</string>
+</resources>

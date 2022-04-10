@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="heads_up_notifications_enabled_title">Ելնող պատուհանով ծանուցում</string>
+    <string name="status_bar_title">Կարգավիճակի վահանակ</string>
+    <string name="status_bar_quick_qs_pulldown_left">Ձախ</string>
+    <string name="status_bar_quick_qs_pulldown_right">Աջ</string>
+    <string name="status_bar_clock_position_right">Աջ</string>
+    <string name="status_bar_clock_position_left">Ձախ</string>
+    <string name="status_bar_am_pm_hidden">Թաքցված</string>
+    <string name="status_bar_battery_percentage_default">Թաքցված</string>
+    <string name="network_traffic_mode_disable">Անջատված է</string>
+    <string name="network_traffic_mode_status_bar">Կարգավիճակի վահանակ</string>
+    <string name="hardware_keys_volume_keys_title">Ձայնի կոճակներ</string>
+    <string name="volbtn_music_controls_title">Կառավարել նվագարկումը</string>
+    <string name="volbtn_cursor_control_off">Անջատված է</string>
+    <string name="torch_long_press_power_timeout_never">Երբեք</string>
+    <string name="torch_long_press_power_timeout_2min">2 րոպե</string>
+    <string name="live_display_day">Ցերեկը</string>
+    <string name="live_display_night">Գիշերը</string>
+    <string name="live_display_reading_mode_title">Կարդալու ռեժիմ</string>
+    <string name="display_cutout_mode_normal">Կանխադրված</string>
+    <string name="display_cutout_mode_hidden">Թաքցված</string>
+</resources>
