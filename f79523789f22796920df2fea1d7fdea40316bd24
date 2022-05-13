@@ -16,6 +16,24 @@
       "message": "Please add checks, like if device has fingerprint and the sensor is udfps.",
       "revId": "f79523789f22796920df2fea1d7fdea40316bd24",
       "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c20ec2da_17dbd468",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000610
+      },
+      "writtenOn": "2022-05-13T07:15:53Z",
+      "side": 1,
+      "message": "\u003e Please add checks, like if device has fingerprint and the sensor is udfps.\n\nAdded.",
+      "parentUuid": "0fe78ce0_fe2e9f2e",
+      "revId": "f79523789f22796920df2fea1d7fdea40316bd24",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
     }
   ]
 }
