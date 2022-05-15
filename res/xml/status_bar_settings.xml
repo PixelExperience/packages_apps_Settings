@@ -88,6 +88,19 @@
     <PreferenceCategory
         android:title="@string/status_bar_brightness_category"
         android:key="status_bar_brightness_category">
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="qs_show_brightness_slider"
+            android:title="@string/status_bar_brightness_slider_title"
+            android:summary="@string/status_bar_brightness_slider_summary"
+            android:defaultValue="true" />
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="qs_show_auto_brightness"
+            android:title="@string/status_bar_brightness_slider_auto_title"
+            android:summary="@string/status_bar_brightness_slider_auto_summary"
+            android:dependency="qs_show_brightness_slider"
+            android:defaultValue="true" />
+
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="status_bar_brightness_control"
             android:title="@string/status_bar_toggle_brightness"
@@ -103,6 +116,7 @@
             android:entries="@array/status_bar_quick_qs_pulldown_entries"
             android:entryValues="@array/status_bar_quick_qs_pulldown_values"
             android:defaultValue="0" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
