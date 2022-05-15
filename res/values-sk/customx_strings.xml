@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Počiatočná hlasitosť</string>
     <string name="increasing_ring_ramp_up_time_title">Doba zvyšovania</string>
     <string name="lockscreen_media_art_title">Zobraziť obal médií</string>
-    <string name="lockscreen_visualizer_title">Hudobné vizualizácie</string>
     <string name="advanced_reboot_title">Rozšířený reštart</string>
     <string name="advanced_reboot_summary">Ak je povolené, do ponuky tlačidla Napájanie budú pridané ďalšie voľby pre reštart do Recovery alebo Bootloadera</string>
     <string name="power_menu_shortcuts_title">Skratky menu</string>
@@ -35,6 +34,7 @@
     <string name="power_menu_airplane_title">Režim v lietadle</string>
     <string name="power_menu_users_title">Prepínač používateľov</string>
     <string name="power_menu_emergency_title">Núdzový režim</string>
+    <string name="power_menu_devicecontrols_title">Ovládanie zariadenia</string>
     <string name="display_rotation_title">Nastavenia otáčania</string>
     <string name="display_rotation_enabled">Automatické otáčanie je povolené</string>
     <string name="display_rotation_disabled">Automatické otáčanie je zakázané</string>
@@ -68,6 +68,7 @@
     <string name="status_bar_am_pm_small">Malý</string>
     <string name="status_bar_am_pm_hidden">Skryté</string>
     <string name="status_bar_clock_auto_hide_title">Automatické skrývanie</string>
+    <string name="status_bar_clock_auto_hide_summary">Skryť hodiny, pokiaľ je spúšťač viditeľný</string>
     <string name="status_bar_battery_title">Indikátor stavu batérie</string>
     <string name="status_bar_battery_style_title">Zobrazenie stavu batérie</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona na výšku</string>
@@ -125,6 +126,7 @@
     <string name="additional_buttons_title">Ďalšie tlačidlá</string>
     <string name="click_partial_screenshot_title">Kliknutím vytvorte čiastočný snímok obrazovky</string>
     <string name="click_partial_screenshot_summary">Krátkym súčasným stlačením tlačidiel zníženia hlasitosti a napájanie zhotoviť čiastočnú snímku obrazovky</string>
+    <string name="navigation_bar_edge_long_swipe_title">Akcia dlhým prejdením na okraji</string>
     <string name="live_display_summary">Optimalizovať vašu obrazovku na základe dennej doby a podmienok okolia na zlepšenie čitateľnosti a zníženia únavy očí</string>
     <string name="live_display_mode">Režim zobrazenia</string>
     <string name="live_display_color_temperature_title">Teplota farieb</string>
@@ -184,8 +186,10 @@
     <string name="display_cutout_mode_normal">Predvolené</string>
     <string name="display_cutout_mode_hidden">Skryté</string>
     <string name="back_height_low_label">Úplná</string>
+    <string name="back_height_high_label">Naspodku</string>
     <string name="back_options_dialog_title">Možnosti</string>
     <string name="back_height">Plocha rohového dotyku</string>
     <string name="tethering_allow_vpn_upstreams_title">Povoliť klientom používanie sietí VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Povoliť hotspot klientom pripojenie cez VPN</string>
+    <string name="app_volume">Hlasitosť aplikácie</string>
 </resources>

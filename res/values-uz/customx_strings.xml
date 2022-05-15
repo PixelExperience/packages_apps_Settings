@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="power_menu_devicecontrols_title">Qurilma boshqaruvlari</string>
+    <string name="status_bar_clock_auto_hide_title">Avtomatik yashirish</string>
+    <string name="status_bar_clock_auto_hide_summary">Agar ishga tushirish moslamasi ko\'rinsa, soatni yashiring</string>
     <string name="navigation_bar_title">Navigatsiya qatori</string>
     <string name="hardware_keys_volume_keys_title">Ovoz balandligi tugmalari</string>
+    <string name="others_settings_title">Boshqa Sozlamalar</string>
+    <string name="additional_buttons_title">Qo\'shimcha tugmalar</string>
     <string name="display_cutout_mode_normal">Birlamchi</string>
+    <string name="back_height_high_label">Pastki</string>
 </resources>

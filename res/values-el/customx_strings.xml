@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Αρχική ένταση</string>
     <string name="increasing_ring_ramp_up_time_title">Χρονικό διάστημα αύξησης</string>
     <string name="lockscreen_media_art_title">Προβολή εξώφυλλου άλμπουμ</string>
-    <string name="lockscreen_visualizer_title">Visualizer μουσικής</string>
     <string name="advanced_reboot_title">Προηγμένη επανεκκίνηση</string>
     <string name="advanced_reboot_summary">Όταν είναι ενεργή, περιλαμβάνονται στο μενού πλήκτρου απενεργοποίησης οι επιλογές επανεκκίνησης σε λειτουργία recovery ή bootloader</string>
     <string name="power_menu_shortcuts_title">Συντομεύσεις μενού</string>
@@ -127,6 +126,7 @@
     <string name="additional_buttons_title">Πρόσθετα πλήκτρα</string>
     <string name="click_partial_screenshot_title">Πιέστε για λήψη μερικού στιγμιότυπο οθόνης</string>
     <string name="click_partial_screenshot_summary">Πιέστε το πλήκτρο μείωσης του ήχου και το κουμπί εκκίνησης για να ληφθεί στιγμιότυπο οθόνης</string>
+    <string name="navigation_bar_edge_long_swipe_title">Ενέργεια μακράς κίνησης από την άκρη της οθόνης</string>
     <string name="live_display_summary">Βελτιστοποίηση της οθόνης σας με βάση την ώρα της ημέρας και τις συνθήκες περιβάλλοντος για βελτίωση της αναγνωσιμότητας και μείωση της καταπόνησης των ματιών</string>
     <string name="live_display_mode">Λειτουργία προβολής</string>
     <string name="live_display_color_temperature_title">Θερμοκρασία χρώματος</string>

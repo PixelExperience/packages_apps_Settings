@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Âm lượng khởi động</string>
     <string name="increasing_ring_ramp_up_time_title">Tăng dần theo thời gian</string>
     <string name="lockscreen_media_art_title">Hiển thị ảnh bìa phương tiện</string>
-    <string name="lockscreen_visualizer_title">Hiển thị trình trực quan âm nhạc</string>
     <string name="advanced_reboot_title">Khởi động lại nâng cao</string>
     <string name="advanced_reboot_summary">Khi mở khóa, bao gồm các tùy chọn trong trình đơn nguồn để khởi động lại vào phục hồi hoặc trình nạp khởi động</string>
     <string name="power_menu_shortcuts_title">Lối tắt trình đơn</string>
@@ -123,7 +122,7 @@
     <string name="torch_long_press_power_timeout_2min">2 phút</string>
     <string name="torch_long_press_power_timeout_5min">5 phút</string>
     <string name="torch_long_press_power_timeout_10min">10 phút</string>
-    <string name="others_settings_title">Các cài đặt khác</string>
+    <string name="others_settings_title">Cài đặt khác</string>
     <string name="additional_buttons_title">Phím bổ sung</string>
     <string name="click_partial_screenshot_title">Nhấn để chụp một phần màn hình</string>
     <string name="click_partial_screenshot_summary">Ấn nhanh nút Giảm âm lượng cùng với nút Nguồn để chụp một phần màn hình</string>

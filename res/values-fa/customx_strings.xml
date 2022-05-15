@@ -19,17 +19,22 @@
     <string name="unlock_scramble_pin_layout_title">چینش درهم</string>
     <string name="unlock_scramble_pin_layout_summary">چینش درهم پین هنگام باز کردن قفل دستگاه</string>
     <string name="volume_link_notification_title">یکی شدن میزان صدای زنگ و اعلان</string>
+    <string name="heads_up_notifications_enabled_title">اعلان فوری</string>
     <string name="heads_up_notifications_enabled_summary">نمایش اعلان‌های مهم در یک پنجرهٔ شناور کوچک</string>
     <string name="increasing_ring_volume_option_title">صدای صعودی زنگ</string>
     <string name="increasing_ring_min_volume_title">میزان صدا هنگام شروع</string>
     <string name="increasing_ring_ramp_up_time_title">زمان افزایش صدا</string>
     <string name="lockscreen_media_art_title">نمایش پوسته هنری رسانه</string>
-    <string name="lockscreen_visualizer_title">نمایش رقص نور موسیقی</string>
     <string name="advanced_reboot_title">ریستارت پیشرفته</string>
     <string name="advanced_reboot_summary">هنگام باز بودن گوشی ، شامل گزینه های در منوی پاور برای رفتن به بوت لودر و ریکاوری است</string>
+    <string name="power_menu_shortcuts_title">میانبرهای تنظیمات</string>
+    <string name="power_menu_shortcuts_summary">شخصی‌سازی میانبرهای تنظیمات دکمه Power</string>
     <string name="power_menu_screenshot_title">اسکرین شات</string>
+    <string name="power_menu_screenshot_summary">برای ثبت تصویر قسمتی از صفحه نمایش، فشرده و نگه دارید</string>
     <string name="power_menu_airplane_title">حالت پرواز</string>
+    <string name="power_menu_users_title">تغییر کاربر دستگاه</string>
     <string name="power_menu_emergency_title">اضطراری</string>
+    <string name="power_menu_devicecontrols_title">تنظیمات دستگاه</string>
     <string name="display_rotation_title">تنظیمات چرخش</string>
     <string name="display_rotation_enabled">چرخش خودکار فعّال است</string>
     <string name="display_rotation_disabled">چرخش خودکار غیرفعّال است</string>
@@ -42,6 +47,8 @@
     <string name="incall_feeedback_vibrate_title">لرزش برای مشخص کردن وضع تماس</string>
     <string name="status_bar_title">نوار وضعیت</string>
     <string name="status_bar_quick_qs_pulldown_title">پایین کشیدن سریع</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">پایین کشیدن لبه سمت چپ نوار وضعیت، منوی تنظیمات سریع را نمایش می‌دهد</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right_edge">پایین کشیدن لبه سمت راست نوار وضعیت، منوی تنظیمات سریع را نمایش می‌دهد</string>
     <string name="status_bar_quick_qs_pulldown_off">خاموش</string>
     <string name="status_bar_quick_qs_pulldown_left">چپ</string>
     <string name="status_bar_quick_qs_pulldown_right">راست</string>
@@ -61,6 +68,7 @@
     <string name="status_bar_am_pm_small">کوچک</string>
     <string name="status_bar_am_pm_hidden">مخفی</string>
     <string name="status_bar_clock_auto_hide_title">مخفی‌کردن خودکار</string>
+    <string name="status_bar_clock_auto_hide_summary">اگر لانچر قابل مشاهده است ساعت را پنهان کن</string>
     <string name="status_bar_battery_title">نشانگر باتری</string>
     <string name="status_bar_battery_style_title">سبک وضعیت باتری</string>
     <string name="status_bar_battery_style_icon_portrait">آیکون عمودی</string>
@@ -116,6 +124,9 @@
     <string name="torch_long_press_power_timeout_10min">10 دقیقه</string>
     <string name="others_settings_title">تنظیمات دیگر</string>
     <string name="additional_buttons_title">دکمه های اضافی</string>
+    <string name="click_partial_screenshot_title">برای ثبت تصویر قسمتی از صفحه نمایش، ضربه بزنید</string>
+    <string name="click_partial_screenshot_summary">برای ثبت تصویر قسمتی از صفحه نمایش، دکمه‌های Power و Volume Down را کوتاه فشار دهید</string>
+    <string name="navigation_bar_edge_long_swipe_title">عملکرد مربوط به کشیدن طولانی لبه‌ها</string>
     <string name="live_display_summary">بهینه‌سازی صفحه‌نمایش بر اساس زمانِ روز و شرایط محیطی برای افزایش خوانایی و کاهش خستگی چشم</string>
     <string name="live_display_mode">حالت نمایش</string>
     <string name="live_display_color_temperature_title">دمای رنگ</string>
@@ -126,6 +137,7 @@
     <string name="live_display_outdoor_mode_title">حالت خودکار فضای باز</string>
     <string name="live_display_outdoor_mode_summary">افزایش خودکار روشنایی و اشباع رنگ در هنگام قرارگیری زیر نور خورشید</string>
     <string name="live_display_anti_flicker_title">ضد پرش تصویر</string>
+    <string name="live_display_anti_flicker_summary">از پرش تصویر زیاد جلوگیری کرده و خستگی چشم را در میحط‌های کم‌نور کاهش می‌دهد. این قابلیت ممکن است دقت رنگ را کاهش داده و بر نحوه نمایش برخی موارد تأثیر بگذارد.</string>
     <string name="live_display_low_power_title">کاهش مصرف نیرو</string>
     <string name="live_display_low_power_summary">تنظیم صفحه نمایش برای کمترین مصرف نیرو بدون کاهش کارایی</string>
     <string name="live_display_enhance_color_title">بهبود رنگ‌ها</string>
@@ -166,13 +178,18 @@
     <string name="adj_saturation_title">اشباع رنگ</string>
     <string name="adj_intensity_title">پرده</string>
     <string name="adj_contrast_title">سایه‌روشن</string>
+    <string name="show_navbar_gesture_bar_title">نشان‌گر ژست‌های حرکتی</string>
+    <string name="show_navbar_gesture_bar_summary">نمایش نشان‌گر ژست‌های حرکتی در انتهای صفحه</string>
     <string name="swipe_to_screenshot_gesture_title">کشیدن برای گرفتن عکس از صفحه نمایش</string>
     <string name="swipe_to_screenshot_gesture_summary">با سه انگشت روی صفحه کشیدن برای گرفتن عکس از صفحه دستگاه</string>
     <string name="display_cutout_mode_title">رفتار ناچ</string>
     <string name="display_cutout_mode_normal">پیش‌فرض</string>
     <string name="display_cutout_mode_hidden">مخفی</string>
     <string name="back_height_low_label">پر</string>
+    <string name="back_height_high_label">پایین</string>
     <string name="back_options_dialog_title">گزینه ها</string>
+    <string name="back_height">محدوده حساس به لمس لبه‌ها</string>
     <string name="tethering_allow_vpn_upstreams_title">اجازه دادن به کاربران برای استفاده از وی پی ان</string>
     <string name="tethering_allow_vpn_upstreams_summary">به کاربران هات‌اسپات اجازه دهید تا از وی پی ان این دستگاه برای آپلود استفاده کنند</string>
+    <string name="app_volume">میزان صدای برنامه</string>
 </resources>

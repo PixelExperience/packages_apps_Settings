@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">起始音量</string>
     <string name="increasing_ring_ramp_up_time_title">漸強時間</string>
     <string name="lockscreen_media_art_title">顯示媒體封面</string>
-    <string name="lockscreen_visualizer_title">顯示音樂視覺化效果</string>
     <string name="advanced_reboot_title">進階重新啟動</string>
     <string name="advanced_reboot_summary">解鎖後，在電源選單中加入重啟至恢復模式 (Recovery) 和重啟至載入模式 (Bootloader)</string>
     <string name="power_menu_shortcuts_title">菜單快捷鍵</string>

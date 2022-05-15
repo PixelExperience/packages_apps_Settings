@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">بداية مستوى الصوت</string>
     <string name="increasing_ring_ramp_up_time_title">تزايد الوقت</string>
     <string name="lockscreen_media_art_title">عرض الغلاف الفني للوسائط</string>
-    <string name="lockscreen_visualizer_title">إظهار العرض المتحرك للموسيقى</string>
     <string name="advanced_reboot_title">إعادة تشغيل متقدمة</string>
     <string name="advanced_reboot_summary">عند إلغاء القفل، ستتضمن خيارات قائمة إعادة التشغيل الذهاب الى وضع ال Recovery او وضع ال Bootloader</string>
     <string name="power_menu_shortcuts_title">اختصارات قائمه زر التشغيل</string>

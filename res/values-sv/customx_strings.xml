@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Startvolym</string>
     <string name="increasing_ring_ramp_up_time_title">Upprampningstid</string>
     <string name="lockscreen_media_art_title">Visa mediets albumbild</string>
-    <string name="lockscreen_visualizer_title">Visa musikvisualisering</string>
     <string name="advanced_reboot_title">Avancerad omstart</string>
     <string name="advanced_reboot_summary">Lägg till alternativ för recovery- och bootloaderläge i omstartsmenyn när enheten är upplåst</string>
     <string name="power_menu_shortcuts_title">Genvägar-menyn</string>

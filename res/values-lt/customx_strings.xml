@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Pradinis garsumas</string>
     <string name="increasing_ring_ramp_up_time_title">Didėjimo laikas</string>
     <string name="lockscreen_media_art_title">Rodyti medijos viršelius</string>
-    <string name="lockscreen_visualizer_title">Rodyti muzikos vizualizaciją</string>
     <string name="advanced_reboot_title">Išplėstinis paleidimas iš naujo</string>
     <string name="advanced_reboot_summary">Jei atrakinta, įjunkite maitinimo meniu parinktis, kad iš naujo paleistumėte į atkūrimo arba įkrovos programą</string>
     <string name="power_menu_shortcuts_title">Meniu nuorodos</string>

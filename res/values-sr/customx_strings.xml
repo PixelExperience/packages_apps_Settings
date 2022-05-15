@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Почетна јачина звука</string>
     <string name="increasing_ring_ramp_up_time_title">Време појачавања</string>
     <string name="lockscreen_media_art_title">Прикажи омот медија</string>
-    <string name="lockscreen_visualizer_title">Прикажи визуализатор музике</string>
     <string name="advanced_reboot_title">Напредно поновно покретање</string>
     <string name="advanced_reboot_summary">Када је уређај откључан, прикажи опције у менију поновног покретања, за рестарт у \'recovery\' или \'bootloader\'</string>
     <string name="display_rotation_title">Подешавања ротације</string>

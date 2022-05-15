@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Начална сила на звука</string>
     <string name="increasing_ring_ramp_up_time_title">Време на увеличение</string>
     <string name="lockscreen_media_art_title">Показване на артистична обложка</string>
-    <string name="lockscreen_visualizer_title">Покажи музикален визуализатор</string>
     <string name="advanced_reboot_title">Рестартиране за напреднали</string>
     <string name="advanced_reboot_summary">Когато е отключена, включете опциите в менюто за захранване, за да рестартирате във възстановяване или буутлоудър</string>
     <string name="power_menu_shortcuts_title">Пряк път на Меню</string>

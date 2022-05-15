@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Startvolume</string>
     <string name="increasing_ring_ramp_up_time_title">Ophoogtijd</string>
     <string name="lockscreen_media_art_title">Albumhoezen weergeven</string>
-    <string name="lockscreen_visualizer_title">Muziek visualizer</string>
     <string name="advanced_reboot_title">Geavanceerd herstarten</string>
     <string name="advanced_reboot_summary">Indien ontgrendeld, opties tonen in het aan/uit-knopmenu voor herstarten naar recovery of bootloader</string>
     <string name="power_menu_shortcuts_title">Menu snelkoppelingen</string>

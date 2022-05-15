@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">初始音量</string>
     <string name="increasing_ring_ramp_up_time_title">渐强时间</string>
     <string name="lockscreen_media_art_title">显示媒体封面艺术</string>
-    <string name="lockscreen_visualizer_title">音乐可视化</string>
     <string name="advanced_reboot_title">高级重启</string>
     <string name="advanced_reboot_summary">设备已解锁时，在电源菜单中添加重启至恢复模式或引导程序的选项</string>
     <string name="power_menu_shortcuts_title">菜单快捷键</string>

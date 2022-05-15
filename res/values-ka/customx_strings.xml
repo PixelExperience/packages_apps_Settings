@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">საწყისი ხმა</string>
     <string name="increasing_ring_ramp_up_time_title">დაძაბვის დრო</string>
     <string name="lockscreen_media_art_title">ფაილის გარეკანის ჩვენება</string>
-    <string name="lockscreen_visualizer_title">მუსიკის ვიზუალის გამოჩენა</string>
     <string name="advanced_reboot_title">გაფართოებული გადატვირთვა</string>
     <string name="advanced_reboot_summary">ეკრანი როცა არაა დაბლოკილი, ჩამრთველ მენიუში დაემატება აღმდგენ მოდაში ან ჩამტვირთავ მოდაში გადასვლის შესაძლებლობა</string>
     <string name="power_menu_shortcuts_title">მენიუს მალსახმობები</string>
@@ -35,6 +34,7 @@
     <string name="power_menu_airplane_title">ფრენის რეჟიმი</string>
     <string name="power_menu_users_title">მომხმარებლის გადამრთველი</string>
     <string name="power_menu_emergency_title">გადაუდებელი</string>
+    <string name="power_menu_devicecontrols_title">მოწყობილობის მაკონტროლებლები</string>
     <string name="display_rotation_title">შებრუნების პარამეტრები</string>
     <string name="display_rotation_enabled">თვითშებრუნება ჩართულია</string>
     <string name="display_rotation_disabled">თვითშებრუნება გამორთულია</string>
@@ -68,6 +68,7 @@
     <string name="status_bar_am_pm_small">პატარა</string>
     <string name="status_bar_am_pm_hidden">დამალული</string>
     <string name="status_bar_clock_auto_hide_title">ავტომატურად დამალვა</string>
+    <string name="status_bar_clock_auto_hide_summary">დამალე საათი თუ ჩამრთველი ხილვადია</string>
     <string name="status_bar_battery_title">ბატარეის მაჩვენებელი</string>
     <string name="status_bar_battery_style_title">ბატარეის მდგომარეობის გაფორმება</string>
     <string name="status_bar_battery_style_icon_portrait">შვეული ხატულა</string>
@@ -125,6 +126,7 @@
     <string name="additional_buttons_title">დამატებითი ღილაკები</string>
     <string name="click_partial_screenshot_title">დააჭირეთ ეკრანის ნაწილობრივი სურათისთვის</string>
     <string name="click_partial_screenshot_summary">მოკლე დაჭერა ხმის დამწევსა და ჩამრთველზე ნაწილობრივი ეკრანის სურათისთვის</string>
+    <string name="navigation_bar_edge_long_swipe_title">კიდეზე ხანგრძლივი გადასმა</string>
     <string name="live_display_summary">თქვენი ეკრანის ოპტიმიზაცია დღისა და გარემო პირობების გათვალისწინებით, კითხვის გასაუმჯობესებლად და თვალების დაძაბვის შესამცირებლად</string>
     <string name="live_display_mode">ჩვენების რეჟიმი</string>
     <string name="live_display_color_temperature_title">ფერების ტემპერატურა</string>
@@ -184,8 +186,10 @@
     <string name="display_cutout_mode_normal">ნაგულისხმევი</string>
     <string name="display_cutout_mode_hidden">დამალული</string>
     <string name="back_height_low_label">სრული</string>
+    <string name="back_height_high_label">ქვედა</string>
     <string name="back_options_dialog_title">Პარამეტრები</string>
     <string name="back_height">კუთხის შეხების არე</string>
     <string name="tethering_allow_vpn_upstreams_title">კლიენტებს მიეცით საშუალება გამოიყენონ VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">ნება დართეთ Hotspot კლიენტებს გამოიყენონ ამ მოწყობილობის VPN კავშირები ზედა დინების კავშირით</string>
+    <string name="app_volume">აპლიკაციის ხმა</string>
 </resources>

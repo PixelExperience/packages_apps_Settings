@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Volume de démarrage</string>
     <string name="increasing_ring_ramp_up_time_title">Durée de progression</string>
     <string name="lockscreen_media_art_title">Afficher la couverture du média</string>
-    <string name="lockscreen_visualizer_title">Afficher le visualiseur de musique</string>
     <string name="advanced_reboot_title">Redémarrage avancé</string>
     <string name="advanced_reboot_summary">Inclure les options de redémarrage en mode recovery et bootloader dans le menu Marche/Arrêt lorsque l\'appareil est déverrouillé</string>
     <string name="power_menu_shortcuts_title">Raccourcis du menu</string>
@@ -35,6 +34,7 @@
     <string name="power_menu_airplane_title">Mode Avion</string>
     <string name="power_menu_users_title">Changer d\'utilisateur</string>
     <string name="power_menu_emergency_title">Urgences</string>
+    <string name="power_menu_devicecontrols_title">Commandes de l\'appareil</string>
     <string name="display_rotation_title">Paramètres de rotation</string>
     <string name="display_rotation_enabled">Rotation automatique activée</string>
     <string name="display_rotation_disabled">Rotation automatique désactivée</string>
@@ -68,6 +68,7 @@
     <string name="status_bar_am_pm_small">Petit</string>
     <string name="status_bar_am_pm_hidden">Cachée</string>
     <string name="status_bar_clock_auto_hide_title">Masquer automatiquement</string>
+    <string name="status_bar_clock_auto_hide_summary">Masquer l\'horloge si le launcher est visible</string>
     <string name="status_bar_battery_title">Niveau de la batterie</string>
     <string name="status_bar_battery_style_title">Style du niveau de batterie</string>
     <string name="status_bar_battery_style_icon_portrait">Icône portrait</string>
@@ -125,6 +126,7 @@
     <string name="additional_buttons_title">Boutons supplémentaires</string>
     <string name="click_partial_screenshot_title">Cliquer pour capturer l\'écran partiellement</string>
     <string name="click_partial_screenshot_summary">Presser brièvement Volume Bas et Marche/Arrêt pour une capture d\'écran partielle</string>
+    <string name="navigation_bar_edge_long_swipe_title">Action de balayage long sur le bord</string>
     <string name="live_display_summary">Optimiser votre écran en fonction de l\'heure et des conditions ambiantes pour améliorer la lisibilité et réduire la fatigue oculaire</string>
     <string name="live_display_mode">Mode d\'affichage</string>
     <string name="live_display_color_temperature_title">Température de la couleur</string>
@@ -184,8 +186,10 @@
     <string name="display_cutout_mode_normal">Par défaut</string>
     <string name="display_cutout_mode_hidden">Cachée</string>
     <string name="back_height_low_label">Complet</string>
+    <string name="back_height_high_label">Dessous</string>
     <string name="back_options_dialog_title">Paramètres</string>
     <string name="back_height">Zone tactile sur les bords</string>
     <string name="tethering_allow_vpn_upstreams_title">Autoriser les clients à utiliser des VPNs</string>
     <string name="tethering_allow_vpn_upstreams_summary">Permettre aux clients de point d\'accès d\'utiliser les connexions VPN de cet appareil\u2019 pour la connectivité en amont</string>
+    <string name="app_volume">Volume de l\'application</string>
 </resources>

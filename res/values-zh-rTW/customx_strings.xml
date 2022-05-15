@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">開始音量</string>
     <string name="increasing_ring_ramp_up_time_title">漸強時間</string>
     <string name="lockscreen_media_art_title">顯示媒體封面藝術</string>
-    <string name="lockscreen_visualizer_title">顯示音樂視覺效果</string>
     <string name="advanced_reboot_title">進階重新啟動</string>
     <string name="advanced_reboot_summary">解鎖後，在電源選單加入重新啟動進入 recovery 或 bootloader 的選項</string>
     <string name="power_menu_shortcuts_title">選單快速功能</string>
@@ -35,6 +34,7 @@
     <string name="power_menu_airplane_title">飛航模式</string>
     <string name="power_menu_users_title">切換使用者</string>
     <string name="power_menu_emergency_title">緊急情況</string>
+    <string name="power_menu_devicecontrols_title">裝置控制</string>
     <string name="display_rotation_title">旋轉設定</string>
     <string name="display_rotation_enabled">已啟用自動旋轉</string>
     <string name="display_rotation_disabled">已停用自動旋轉</string>
@@ -68,6 +68,7 @@
     <string name="status_bar_am_pm_small">小</string>
     <string name="status_bar_am_pm_hidden">隱藏</string>
     <string name="status_bar_clock_auto_hide_title">自動隱藏</string>
+    <string name="status_bar_clock_auto_hide_summary">在主畫面時自動隱藏時鐘</string>
     <string name="status_bar_battery_title">電池指示器</string>
     <string name="status_bar_battery_style_title">電池狀態樣式</string>
     <string name="status_bar_battery_style_icon_portrait">直立圖示</string>
@@ -125,6 +126,7 @@
     <string name="additional_buttons_title">附加按鍵</string>
     <string name="click_partial_screenshot_title">點擊查看部分截圖</string>
     <string name="click_partial_screenshot_summary">短按“音量減鍵”和“電源鍵”以截取部分屏幕截圖</string>
+    <string name="navigation_bar_edge_long_swipe_title">邊緣長滑動作</string>
     <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
     <string name="live_display_mode">顯示模式</string>
     <string name="live_display_color_temperature_title">色溫</string>
@@ -184,8 +186,10 @@
     <string name="display_cutout_mode_normal">預設</string>
     <string name="display_cutout_mode_hidden">隱藏</string>
     <string name="back_height_low_label">全部區域</string>
+    <string name="back_height_high_label">底部</string>
     <string name="back_options_dialog_title">選項</string>
     <string name="back_height">側屏幕觸控區域</string>
     <string name="tethering_allow_vpn_upstreams_title">允許客戶端使用 VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">允許熱點客戶端使用此裝置的 VPN 連線進行上游連線</string>
+    <string name="app_volume">應用程式音量</string>
 </resources>

@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">ಆರಂಭ ವಾಲ್ಯೂಂ</string>
     <string name="increasing_ring_ramp_up_time_title">ಚಲನಶೀಲ ಅವಧಿ</string>
     <string name="lockscreen_media_art_title">ಮಾಧ್ಯಮದ ಕವರ್ ಆರ್ಟ್ ಅನ್ನು ಪ್ರದರ್ಶಿಸಿ</string>
-    <string name="lockscreen_visualizer_title">ಸಂಗೀತ ದೃಶ್ಯೀಕರಣ ಪ್ರದರ್ಶಿಸು</string>
     <string name="advanced_reboot_title">ವಿಸ್ತ್ರತ ಪುನರಾರಂಭ</string>
     <string name="advanced_reboot_summary">ಬೀಗ ತೆಗೆದ ನಂತರ, ಮರುಚೇತರಿಕೆ ಅಥವಾ Bootloaderನಲ್ಲಿ ಪುನರಾರಂಭಿಸುವ ಆಯ್ಕೆಗಳನ್ನು ಶಕ್ತಿ-ಪಟ್ಟಿಯಲ್ಲಿ ಸೇರಿಸು</string>
     <string name="power_menu_shortcuts_title">ಮೆನು ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು</string>

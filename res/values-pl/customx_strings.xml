@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Głośność początkowa</string>
     <string name="increasing_ring_ramp_up_time_title">Wydłużenie odstępu</string>
     <string name="lockscreen_media_art_title">Wyświetlanie okładki albumu</string>
-    <string name="lockscreen_visualizer_title">Wizualizator muzyki</string>
     <string name="advanced_reboot_title">Zaawansowany restart</string>
     <string name="advanced_reboot_summary">Kiedy urządzenie jest odblokowane, dodaj opcję ponownego uruchomienia w trybie recovery lub bootloadera do menu zasilania</string>
     <string name="power_menu_shortcuts_title">Skróty menu</string>
@@ -35,6 +34,7 @@
     <string name="power_menu_airplane_title">Tryb samolotowy </string>
     <string name="power_menu_users_title">Przełącz użytkownika</string>
     <string name="power_menu_emergency_title">Tryb awaryjny</string>
+    <string name="power_menu_devicecontrols_title">Sterowanie urządzeniami</string>
     <string name="display_rotation_title">Ustawienia obracania</string>
     <string name="display_rotation_enabled">Automatyczna rotacja jest włączona</string>
     <string name="display_rotation_disabled">Automatyczna rotacja jest wyłączona</string>
@@ -68,6 +68,7 @@
     <string name="status_bar_am_pm_small">Mały</string>
     <string name="status_bar_am_pm_hidden">Ukryty</string>
     <string name="status_bar_clock_auto_hide_title">Autoukrywanie</string>
+    <string name="status_bar_clock_auto_hide_summary">Ukryj zegar, jeśli widoczny jest launcher</string>
     <string name="status_bar_battery_title">Ikona baterii</string>
     <string name="status_bar_battery_style_title">Styl wskaźnika baterii</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona pionowo</string>
@@ -125,6 +126,7 @@
     <string name="additional_buttons_title">Dodatkowe przyciski.</string>
     <string name="click_partial_screenshot_title">Kliknij, aby wykonać częściowy zrzut ekranu</string>
     <string name="click_partial_screenshot_summary">Kliknij krótko przycisk zmniejszania głośności i zasilania, aby wykonać częściowy zrzut ekranu</string>
+    <string name="navigation_bar_edge_long_swipe_title">Akcja długiego przeciągnięcia krawędzi</string>
     <string name="live_display_summary">Zoptymalizuj swój ekran w zależności od pory dnia, aby poprawić czytelność i zredukować zmęczenie oczu</string>
     <string name="live_display_mode">Tryb wyświetlania</string>
     <string name="live_display_color_temperature_title">Temperatura barw</string>
@@ -184,8 +186,10 @@
     <string name="display_cutout_mode_normal">Domyślne</string>
     <string name="display_cutout_mode_hidden">Ukryty</string>
     <string name="back_height_low_label">Pełna</string>
+    <string name="back_height_high_label">Dół</string>
     <string name="back_options_dialog_title">Ustawienia</string>
     <string name="back_height">Obszar dotyku krawędzi</string>
     <string name="tethering_allow_vpn_upstreams_title">Zezwól podłączonym urządzeniom na korzystanie z VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Zezwól urządzeniom, podłączonym do udostępnionej sieci, na wysyłanie pakietów, poprzez VPN tego urządzenia</string>
+    <string name="app_volume">Głośność aplikacji</string>
 </resources>

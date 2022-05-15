@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Kezdeti hangerő</string>
     <string name="increasing_ring_ramp_up_time_title">Felfutási idő</string>
     <string name="lockscreen_media_art_title">Médiaborító megjelenítése</string>
-    <string name="lockscreen_visualizer_title">A zene vizuális megjelenítése</string>
     <string name="advanced_reboot_title">Speciális újraindítás</string>
     <string name="advanced_reboot_summary">Feloldott kijelzőnél a Recovery és a Bootloader újraindítási mód is jelenjen meg a kikapcsoló menüben</string>
     <string name="power_menu_shortcuts_title">Kikapcsolómenü-elemek</string>

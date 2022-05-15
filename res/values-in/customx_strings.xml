@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Volume awal</string>
     <string name="increasing_ring_ramp_up_time_title">Waktu penguatan</string>
     <string name="lockscreen_media_art_title">Tampilkan sampul media</string>
-    <string name="lockscreen_visualizer_title">Tampilkan visualisasi musik</string>
     <string name="advanced_reboot_title">Mulai ulang lanjutan</string>
     <string name="advanced_reboot_summary">Ketika tidak terkunci, berisi pilihan pada menu daya untuk mulai ulang ke recovery atau bootloader</string>
     <string name="power_menu_shortcuts_title">Menu pintasan</string>

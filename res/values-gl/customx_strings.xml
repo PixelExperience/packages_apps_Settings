@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Volume inicial</string>
     <string name="increasing_ring_ramp_up_time_title">Intervalo de aumento</string>
     <string name="lockscreen_media_art_title">Amosar a portada do álbum</string>
-    <string name="lockscreen_visualizer_title">Amosar visualizador de música</string>
     <string name="advanced_reboot_title">Reinicio avanzado</string>
     <string name="advanced_reboot_summary">Desbloqueado, inclúe opcións no menú de apagado para reiniciar no modo recuperación ou cargador de arranque</string>
     <string name="display_rotation_title">Axustes de rotación</string>

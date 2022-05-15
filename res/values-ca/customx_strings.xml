@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Volum inicial</string>
     <string name="increasing_ring_ramp_up_time_title">Durada del crescendo</string>
     <string name="lockscreen_media_art_title">Mostra la coberta de l\'àlbum</string>
-    <string name="lockscreen_visualizer_title">Mostra la visualització de la música</string>
     <string name="advanced_reboot_title">Reinici avançat</string>
     <string name="advanced_reboot_summary">Quan està desbloquejat, inclou opcions al menú d\'apagat per reiniciar en mode recuperació o al bootloader</string>
     <string name="power_menu_shortcuts_title">Menú de dreceres</string>

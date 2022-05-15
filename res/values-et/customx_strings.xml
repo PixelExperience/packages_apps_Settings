@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Lähtevaljusus</string>
     <string name="increasing_ring_ramp_up_time_title">Käivitamisetapi aeg</string>
     <string name="lockscreen_media_art_title">Näita meedia kaanepilti</string>
-    <string name="lockscreen_visualizer_title">Näita muusika visualiseerijat</string>
     <string name="advanced_reboot_title">Täiustatud taaskäivitamine</string>
     <string name="advanced_reboot_summary">Kui lukustamata, lisa toitemenüüsse valikud taastusrežiimi või käivituslaadurisse taaskäivitamiseks</string>
     <string name="power_menu_shortcuts_title">Menüü otseteed</string>
@@ -35,6 +34,7 @@
     <string name="power_menu_airplane_title">Lennurežiim</string>
     <string name="power_menu_users_title">Kasutaja vahetaja</string>
     <string name="power_menu_emergency_title">Hädaabi</string>
+    <string name="power_menu_devicecontrols_title">Seadme juhtnupud</string>
     <string name="display_rotation_title">Pööramise seaded</string>
     <string name="display_rotation_enabled">Automaatne pööramine lubatud</string>
     <string name="display_rotation_disabled">Automaatne pööramine keelatud</string>
@@ -68,6 +68,7 @@
     <string name="status_bar_am_pm_small">Väike</string>
     <string name="status_bar_am_pm_hidden">Peidetud</string>
     <string name="status_bar_clock_auto_hide_title">Peida automaatselt</string>
+    <string name="status_bar_clock_auto_hide_summary">Peida kell, kui avakuva on nähtaval</string>
     <string name="status_bar_battery_title">Akuindikaator</string>
     <string name="status_bar_battery_style_title">Aku oleku stiil</string>
     <string name="status_bar_battery_style_icon_portrait">Ikooni püstasend</string>
@@ -125,6 +126,7 @@
     <string name="additional_buttons_title">Täiendavad nupud</string>
     <string name="click_partial_screenshot_title">Klõpsa osalise ekraanipildi tegemiseks</string>
     <string name="click_partial_screenshot_summary">Osalise ekraanipildi tegemiseks klõpsa lühidalt helitugevust alla ja toitenuppu</string>
+    <string name="navigation_bar_edge_long_swipe_title">Serva pikk pühkimine</string>
     <string name="live_display_summary">Optimeeri oma ekraani vastavalt kellaajale ja keskkonnavalgusele, parandamaks loetavust ja vähendamaks silmade pinget</string>
     <string name="live_display_mode">Kuvamise režiim</string>
     <string name="live_display_color_temperature_title">Värvitemperatuur</string>
@@ -184,8 +186,10 @@
     <string name="display_cutout_mode_normal">Vaikeseade</string>
     <string name="display_cutout_mode_hidden">Peidetud</string>
     <string name="back_height_low_label">Täielik</string>
+    <string name="back_height_high_label">All</string>
     <string name="back_options_dialog_title">Seaded</string>
     <string name="back_height">Serva puuteala</string>
     <string name="tethering_allow_vpn_upstreams_title">Luba klientidel kasutada VPN-e</string>
     <string name="tethering_allow_vpn_upstreams_summary">Luba kuumkoha klientidel kasutada selle seadme VPN-ühendusi ülesvoolu ühenduvuseks</string>
+    <string name="app_volume">Rakenduse helitugevus</string>
 </resources>

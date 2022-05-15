@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Početna jačina zvuka</string>
     <string name="increasing_ring_ramp_up_time_title">Vrijeme podizanja</string>
     <string name="lockscreen_media_art_title">Prikazuj poster melodije</string>
-    <string name="lockscreen_visualizer_title">Prikaži vizualizator glazbe</string>
     <string name="advanced_reboot_title">Prošireni restart</string>
     <string name="advanced_reboot_summary">Kada je otključan, dodaje opcije za restartovanje u mod oporavka ili mod Butlodera</string>
     <string name="display_rotation_title">Postavke okretanja</string>

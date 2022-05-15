@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Başlanğıc səsi</string>
     <string name="increasing_ring_ramp_up_time_title">Artma vaxtı</string>
     <string name="lockscreen_media_art_title">Medianın qapaq üzünü göstər</string>
-    <string name="lockscreen_visualizer_title">Musiqi vizuallaşdırıcını görüntülə</string>
     <string name="advanced_reboot_title">Qabaqcıl yenidən başlatma</string>
     <string name="advanced_reboot_summary">Kilid açılanda, bərpa və ya ön yükləmə rejimində yenidən başlatmaq üçün güc düyməsinə seçimlər əlavə edir</string>
     <string name="power_menu_shortcuts_title">Menyu qısayolları</string>
@@ -35,6 +34,7 @@
     <string name="power_menu_airplane_title">Təyyarə rejimi</string>
     <string name="power_menu_users_title">İstifadəçi dəyişdirici</string>
     <string name="power_menu_emergency_title">Fövqəladə</string>
+    <string name="power_menu_devicecontrols_title">Cihaz kontrolları</string>
     <string name="display_rotation_title">Döndərmə tənzimləmələri</string>
     <string name="display_rotation_enabled">Avto-döndərmə fəaldır</string>
     <string name="display_rotation_disabled">Avto-döndərmə sıradan çıxarıldı</string>
@@ -68,6 +68,7 @@
     <string name="status_bar_am_pm_small">Kiçik</string>
     <string name="status_bar_am_pm_hidden">Gizli</string>
     <string name="status_bar_clock_auto_hide_title">Avtomatik gizlət</string>
+    <string name="status_bar_clock_auto_hide_summary">Başladıcı görünsə saatı gizlət</string>
     <string name="status_bar_battery_title">Batereya göstəricisi</string>
     <string name="status_bar_battery_style_title">Batereya vəziyyət stili</string>
     <string name="status_bar_battery_style_icon_portrait">Şaquli nişan</string>
@@ -125,6 +126,7 @@
     <string name="additional_buttons_title">Əlavə düymələr</string>
     <string name="click_partial_screenshot_title">Qismən ekran şəkli üçün klikləyin</string>
     <string name="click_partial_screenshot_summary">Qismən ekran şəklini çəkmək üçün Səs Azaltma və Güc düyməsinə uzun basın</string>
+    <string name="navigation_bar_edge_long_swipe_title">Kənar boyunca sürüşdürmə hərəkəti</string>
     <string name="live_display_summary">Oxunaqlılığı artırmaq və göz yorğunluğu azaltmaq üçün ekranınızı günün saatına və mühit şərtlərinə görə optimallaşdırın</string>
     <string name="live_display_mode">Görüntü rejimi</string>
     <string name="live_display_color_temperature_title">Rəng hərarəti</string>
@@ -184,8 +186,10 @@
     <string name="display_cutout_mode_normal">İlkin</string>
     <string name="display_cutout_mode_hidden">Gizli</string>
     <string name="back_height_low_label">Tam</string>
+    <string name="back_height_high_label">Alt</string>
     <string name="back_options_dialog_title">Seçimlər</string>
     <string name="back_height">Kənar toxunuş sahəsi</string>
     <string name="tethering_allow_vpn_upstreams_title">Müştərilərin VPN istifadəsinə icazə ver</string>
     <string name="tethering_allow_vpn_upstreams_summary">Hotspot istifadəçilərinin bağlantıları arasında bu cihazın VPN bağlantısını istifadə etməsinə icazə ver</string>
+    <string name="app_volume">Tətbiq səsi</string>
 </resources>

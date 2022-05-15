@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Початкова гучність</string>
     <string name="increasing_ring_ramp_up_time_title">Час збільшення</string>
     <string name="lockscreen_media_art_title">Показувати обкладинку мультимедіа</string>
-    <string name="lockscreen_visualizer_title">Візуалізація під час програвання музики</string>
     <string name="advanced_reboot_title">Розширене перезавантаження</string>
     <string name="advanced_reboot_summary">Коли пристрій розблоковано, в меню живлення доступні опції перезавантаження у Recovery та Bootloader</string>
     <string name="power_menu_shortcuts_title">Ярлики меню</string>
@@ -35,6 +34,7 @@
     <string name="power_menu_airplane_title">Режим \"У літаку\"</string>
     <string name="power_menu_users_title">Зміна користувача</string>
     <string name="power_menu_emergency_title">Екстрений виклик</string>
+    <string name="power_menu_devicecontrols_title">Елементи керування пристроєм</string>
     <string name="display_rotation_title">Параметри обертання</string>
     <string name="display_rotation_enabled">Автоповорот увімкнуто</string>
     <string name="display_rotation_disabled">Автоповорот вимкнуто</string>
@@ -68,6 +68,7 @@
     <string name="status_bar_am_pm_small">Маленький</string>
     <string name="status_bar_am_pm_hidden">Приховати</string>
     <string name="status_bar_clock_auto_hide_title">Приховувати автоматично</string>
+    <string name="status_bar_clock_auto_hide_summary">Приховати годинник, якщо панель запуску видима</string>
     <string name="status_bar_battery_title">Індикатор батареї</string>
     <string name="status_bar_battery_style_title">Стиль індикатора батареї</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикальний значок</string>
@@ -125,6 +126,7 @@
     <string name="additional_buttons_title">Додаткові кнопки</string>
     <string name="click_partial_screenshot_title">Натисніть для часткового знімку екрану</string>
     <string name="click_partial_screenshot_summary">Коротко натисніть кнопку зменшення гучності та живлення, для знімку частини екрану</string>
+    <string name="navigation_bar_edge_long_swipe_title">Дія по довгому свайпу по краю</string>
     <string name="live_display_summary">Налаштовувати екран залежно від часу доби і умов освітлення для підвищення зручності читання і зменшення втоми очей</string>
     <string name="live_display_mode">Режим відображення</string>
     <string name="live_display_color_temperature_title">Колірна температура</string>
@@ -184,8 +186,10 @@
     <string name="display_cutout_mode_normal">Типово</string>
     <string name="display_cutout_mode_hidden">Приховати</string>
     <string name="back_height_low_label">Повна</string>
+    <string name="back_height_high_label">Низ</string>
     <string name="back_options_dialog_title">Параметри</string>
     <string name="back_height">Область торкання краю</string>
     <string name="tethering_allow_vpn_upstreams_title">Дозволити клієнтам використовувати VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Дозволити клієнтам точки доступу використовувати VPN-з\'єднання цього пристрою для підключення до потоку</string>
+    <string name="app_volume">Гучність додатка</string>
 </resources>

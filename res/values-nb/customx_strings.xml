@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Startvolum</string>
     <string name="increasing_ring_ramp_up_time_title">Opprampingstid</string>
     <string name="lockscreen_media_art_title">Vis medieomslag</string>
-    <string name="lockscreen_visualizer_title">Vis musikkvisualiserer</string>
     <string name="advanced_reboot_title">Avansert omstart</string>
     <string name="advanced_reboot_summary">Når ulåst, inkluder alternativer i strøm-menyen for omstart til gjenoppretting eller bootloader</string>
     <string name="power_menu_screenshot_title">Skjermbilde</string>

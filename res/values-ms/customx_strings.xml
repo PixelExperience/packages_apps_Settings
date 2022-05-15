@@ -25,9 +25,9 @@
     <string name="increasing_ring_min_volume_title">Kelantangan mula</string>
     <string name="increasing_ring_ramp_up_time_title">Masa peningkatan</string>
     <string name="lockscreen_media_art_title">Paparkan seni cover media</string>
-    <string name="lockscreen_visualizer_title">Paparkan visualizer muzik</string>
     <string name="advanced_reboot_title">Pilihan memulakan semula pelbagai</string>
     <string name="advanced_reboot_summary">Apabila kunci dibuka, masukkan pilihan dalam menu kuasa untuk memulakan semula ke \"recovery\" atau \"bootloader\"</string>
+    <string name="power_menu_devicecontrols_title">Kawalan peranti</string>
     <string name="display_rotation_title">Tetapan putaran</string>
     <string name="display_rotation_enabled">Putaran automatik diaktifkan</string>
     <string name="display_rotation_disabled">Auto-putar dinyahdayakan.</string>
@@ -61,6 +61,7 @@
     <string name="status_bar_am_pm_small">Kecil</string>
     <string name="status_bar_am_pm_hidden">Potongan_paparan_disembunyikan</string>
     <string name="status_bar_clock_auto_hide_title">Sembunyikan auto</string>
+    <string name="status_bar_clock_auto_hide_summary">Sembunyi jam sekiranya pelancar kelihatan</string>
     <string name="status_bar_battery_title">Penunjuk bateri</string>
     <string name="status_bar_battery_style_title">Cara status bateri</string>
     <string name="status_bar_battery_style_icon_portrait">Potret ikon</string>
@@ -118,6 +119,7 @@
     <string name="additional_buttons_title">Butang tambahan</string>
     <string name="click_partial_screenshot_title">Klik untuk tangkapan skrin separa</string>
     <string name="click_partial_screenshot_summary">Klik Volume Turun dan Kuasa untuk mengambil tangkapan skrin separa</string>
+    <string name="navigation_bar_edge_long_swipe_title">Tindakan geser panjang dari tepi</string>
     <string name="live_display_summary">Optimalkan skrin anda berdasarkan waktu harian dan keadaan sekitar untuk meningkatkan kebolehbacaan dan mengurangkan ketegangan mata</string>
     <string name="live_display_mode">Mod Paparan</string>
     <string name="live_display_color_temperature_title">Suhu warna</string>
@@ -177,8 +179,10 @@
     <string name="display_cutout_mode_normal">Lalai</string>
     <string name="display_cutout_mode_hidden">Potongan_paparan_disembunyikan</string>
     <string name="back_height_low_label">Penuh</string>
+    <string name="back_height_high_label">Bawah</string>
     <string name="back_options_dialog_title">Pilihan</string>
     <string name="back_height">Area Sentuhan tepi</string>
     <string name="tethering_allow_vpn_upstreams_title">Benarkan pelanggan menggunakan VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Benarkan klien hotspot untuk menggunakan sambungan VPN peranti ini\u2019 untuk sambungan huluan</string>
+    <string name="app_volume">Laras bunyi aplikasi</string>
 </resources>

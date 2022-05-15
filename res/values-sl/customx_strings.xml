@@ -23,7 +23,6 @@
     <string name="increasing_ring_min_volume_title">Začetna glasnost</string>
     <string name="increasing_ring_ramp_up_time_title">Čas povečanja</string>
     <string name="lockscreen_media_art_title">Prikaži naslovnico večpredstavnosti</string>
-    <string name="lockscreen_visualizer_title">Prikaži predočilnik glasbe</string>
     <string name="advanced_reboot_title">Napredni vnovičen zagon</string>
     <string name="advanced_reboot_summary">Ko je odklenjeno, v meni za izklop vključi možnosti za vnovičen zagon v obnovitev ali zagonski nalagalnik</string>
     <string name="display_rotation_title">Nastavitve sukanja</string>

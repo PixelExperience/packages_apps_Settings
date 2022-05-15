@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Počáteční hlasitost</string>
     <string name="increasing_ring_ramp_up_time_title">Doba zesilování</string>
     <string name="lockscreen_media_art_title">Zobrazit obal médií</string>
-    <string name="lockscreen_visualizer_title">Hudební vizualizace</string>
     <string name="advanced_reboot_title">Rozšířený restart</string>
     <string name="advanced_reboot_summary">Pokud je povoleno, v Menu napájení jsou také zahrnuty možnosti restartovat zařízení do recovery nebo bootloaderu</string>
     <string name="power_menu_shortcuts_title">Zkratky menu</string>
@@ -35,6 +34,7 @@
     <string name="power_menu_airplane_title">Režim Letadlo</string>
     <string name="power_menu_users_title">Přepnutí uživatele</string>
     <string name="power_menu_emergency_title">Stav nouze</string>
+    <string name="power_menu_devicecontrols_title">Ovládání zařízení</string>
     <string name="display_rotation_title">Nastavení otáčení</string>
     <string name="display_rotation_enabled">Automatické otáčení povoleno</string>
     <string name="display_rotation_disabled">Automatické otáčení zakázáno</string>
@@ -68,6 +68,7 @@
     <string name="status_bar_am_pm_small">Malé</string>
     <string name="status_bar_am_pm_hidden">Skrytý</string>
     <string name="status_bar_clock_auto_hide_title">Automatické skrytí</string>
+    <string name="status_bar_clock_auto_hide_summary">Skrýt hodiny, pokud je spouštěč viditelný</string>
     <string name="status_bar_battery_title">Indikátor baterie</string>
     <string name="status_bar_battery_style_title">Styl baterie ve stavovém řádku</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona na výšku</string>
@@ -125,6 +126,7 @@
     <string name="additional_buttons_title">Další tlačítka</string>
     <string name="click_partial_screenshot_title">Stisknutím vytvořit částečný snímek obrazovky</string>
     <string name="click_partial_screenshot_summary">Krátkým současným stiskem tlačítek snížení hlasitosti a napájení pořídit částečný snímek obrazovky</string>
+    <string name="navigation_bar_edge_long_swipe_title">Akce dlouhým přejetím po okraji</string>
     <string name="live_display_summary">Optimalizovat obrazovku podle denní doby a okolních podmínek pro lepší čitelnost a snížení namáhání očí</string>
     <string name="live_display_mode">Režim zobrazení</string>
     <string name="live_display_color_temperature_title">Teplota barev</string>
@@ -184,8 +186,10 @@
     <string name="display_cutout_mode_normal">Výchozí</string>
     <string name="display_cutout_mode_hidden">Skrytý</string>
     <string name="back_height_low_label">Celá</string>
+    <string name="back_height_high_label">Dole</string>
     <string name="back_options_dialog_title">Možnosti</string>
     <string name="back_height">Plocha rohového dotyku</string>
     <string name="tethering_allow_vpn_upstreams_title">Umožnit klientům používat VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Povolit klientům hotspotu používat připojení VPN tohoto zařízení pro odchozí připojení</string>
+    <string name="app_volume">Hlasitost aplikace</string>
 </resources>

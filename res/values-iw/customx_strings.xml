@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">עוצמה התחלתית</string>
     <string name="increasing_ring_ramp_up_time_title">אורך זמן ההגברה</string>
     <string name="lockscreen_media_art_title">הצג תמונת אלבום/מדיה</string>
-    <string name="lockscreen_visualizer_title">הצג אפקטים בעת השמעת מוזיקה</string>
     <string name="advanced_reboot_title">אתחול מתקדם</string>
     <string name="advanced_reboot_summary">כאשר המכשיר לא נעול, אפשר הפעלה מחדש ל־Recovery או Bootloader מתפריט הכיבוי</string>
     <string name="power_menu_shortcuts_title">תפריט קיצורי דרך</string>
@@ -35,6 +34,7 @@
     <string name="power_menu_airplane_title">מצב טיסה</string>
     <string name="power_menu_users_title">מחליף המשתמשים</string>
     <string name="power_menu_emergency_title">חירום</string>
+    <string name="power_menu_devicecontrols_title">בקרי המכשיר</string>
     <string name="display_rotation_title">הגדרות סיבוב</string>
     <string name="display_rotation_enabled">סיבוב אוטומטי מופעל</string>
     <string name="display_rotation_disabled">סיבוב אוטומטי כבוי</string>
@@ -68,6 +68,7 @@
     <string name="status_bar_am_pm_small">קטן</string>
     <string name="status_bar_am_pm_hidden">מוסתר</string>
     <string name="status_bar_clock_auto_hide_title">הסתרה אוטומטית</string>
+    <string name="status_bar_clock_auto_hide_summary">הסתרת שעון במסך דף הבית</string>
     <string name="status_bar_battery_title">חיווי סוללה</string>
     <string name="status_bar_battery_style_title">סגנון הצגת סוללה</string>
     <string name="status_bar_battery_style_icon_portrait">סמל עומד</string>
@@ -125,6 +126,7 @@
     <string name="additional_buttons_title">מקשים נוספים</string>
     <string name="click_partial_screenshot_title">לחץ לצילום מסך חלקי</string>
     <string name="click_partial_screenshot_summary">לחיצה קצרה על כפתור ההדלקה והנמכת צליל ביחד לצילום מסך חלקי</string>
+    <string name="navigation_bar_edge_long_swipe_title">פעולת החלקה ארוכה מקצוות המכשיר</string>
     <string name="live_display_summary">התאם את מסך מכשירך בהתאם לשעה ולתנאי הסביבה על מנת לשפר את נוחות הקריאה ולהפחית את עייפות העין</string>
     <string name="live_display_mode">מצב תצוגה</string>
     <string name="live_display_color_temperature_title">טמפרטורת צבע</string>
@@ -184,6 +186,7 @@
     <string name="display_cutout_mode_normal">ברירת מחדל</string>
     <string name="display_cutout_mode_hidden">מוסתר</string>
     <string name="back_height_low_label">מלא</string>
+    <string name="back_height_high_label">קצה תחתון</string>
     <string name="back_options_dialog_title">אפשרויות</string>
     <string name="back_height">קצה אזור מגע</string>
     <string name="tethering_allow_vpn_upstreams_title">אפשר ללקוחות להשתמש ב- VPNs</string>

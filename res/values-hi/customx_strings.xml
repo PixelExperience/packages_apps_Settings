@@ -11,7 +11,6 @@
     <string name="increasing_ring_volume_option_title">रिंग वॉल्यूम बढ़ाना</string>
     <string name="increasing_ring_min_volume_title">वॉल्यूम शुरू करें</string>
     <string name="increasing_ring_ramp_up_time_title">रैंप-अप समय</string>
-    <string name="lockscreen_visualizer_title">संगीत विज़ुअलाइज़र प्रदर्शित करें</string>
     <string name="advanced_reboot_title">उन्नत पुनरारंभ</string>
     <string name="advanced_reboot_summary">अनलॉक होने पर, पुनर्प्राप्ति या बूटलोडर में पुनरारंभ करने के लिए पावर मेनू में विकल्प शामिल करें</string>
     <string name="incall_feeedback_vibrate_title">कॉल की स्थिति दर्शाने के लिए कंपन करें</string>

@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">শুরুর সময় আওয়াজের তীব্রতা</string>
     <string name="increasing_ring_ramp_up_time_title">র‍্যাম্প-আপ সময়</string>
     <string name="lockscreen_media_art_title">মিডিয়ার প্রচ্ছদ ছবিটি দেখান</string>
-    <string name="lockscreen_visualizer_title">মিউজিকের ভিজ্যুয়ালাইজার প্রদর্শন করুন</string>
     <string name="advanced_reboot_title">অ্যাডভান্সড রিস্টার্ট</string>
     <string name="advanced_reboot_summary">আনলক করা হলে, পাওয়ার মেনুতে রিকভারি বা বুটলোডার মোডে রিস্টার্ট করার অপশনগুলি অন্তর্ভুক্ত করুন</string>
     <string name="power_menu_shortcuts_title">মেনু শর্টকাট</string>

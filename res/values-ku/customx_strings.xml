@@ -24,7 +24,6 @@
     <string name="increasing_ring_min_volume_title">دەستپێکردنی دەنگ</string>
     <string name="increasing_ring_ramp_up_time_title">هەڵسانی کات</string>
     <string name="lockscreen_media_art_title">پیشاندانی وێنەی میدیایی</string>
-    <string name="lockscreen_visualizer_title">پیشاندانی جوڵەی مۆسیقا</string>
     <string name="advanced_reboot_title">هەڵکردنەوەی پێشکەوتوو</string>
     <string name="advanced_reboot_summary">کاتێ کە کرایەوە، لەنێویدا بژاردە هەیە لە دوگمەی ئەرک بۆ چوونە نێو دۆخی ڕیکەڤری یان بووت لۆدەر</string>
     <string name="display_rotation_title">ڕێکخستنەکانی لاربوونەوە</string>

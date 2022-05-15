@@ -25,7 +25,6 @@
     <string name="increasing_ring_min_volume_title">Aloitusvoimakkuus</string>
     <string name="increasing_ring_ramp_up_time_title">Nousun aika</string>
     <string name="lockscreen_media_art_title">Näytä median kansikuva</string>
-    <string name="lockscreen_visualizer_title">Näytä musiikin visualisointi</string>
     <string name="advanced_reboot_title">Edistynyt uudelleenkäynnistys</string>
     <string name="advanced_reboot_summary">Lisää mahdollisuuden käynnistää uudelleenkäynnistämisen yhteydessä recovery- tai bootloader-tilaan</string>
     <string name="power_menu_shortcuts_title">Valikon pikakuvakkeet</string>

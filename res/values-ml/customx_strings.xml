@@ -22,7 +22,6 @@
     <string name="increasing_ring_volume_option_title">വര്‍ദ്ധിക്കുന്ന റിംഗ് വോളിയം</string>
     <string name="increasing_ring_min_volume_title">വോളിയം ആരംഭിക്കുക</string>
     <string name="increasing_ring_ramp_up_time_title">റാംപ്-അപ്പ് സമയം</string>
-    <string name="lockscreen_visualizer_title">സംഗീതം വിഷ്വലൈസർ പ്രദര്‍ശനം ചെയ്യുക</string>
     <string name="advanced_reboot_title">മറ്റു റീസ്റ്റാർട്ട് തരങ്ങൾ</string>
     <string name="advanced_reboot_summary">ഫോൺ ലോക്ക് അല്ല എങ്കിൽ, പവർ മെനുവിൽ recovery- യിലേക്കും, bootloader - ലേക്കും പോകുവാനുള്ള ഓപ്ഷൻസ്‌ കാണിക്കുക</string>
     <string name="display_rotation_disabled">ഓട്ടോ റൊട്ടേറ്റ് അപ്രാപ്തമാക്കി.</string>
