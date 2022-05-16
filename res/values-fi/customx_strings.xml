@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">Kuvakkeen sisällä</string>
     <string name="status_bar_battery_percentage_text_next">Kuvakkeen vieressä</string>
     <string name="status_bar_brightness_category">Kirkkaus</string>
+    <string name="status_bar_brightness_slider_title">Kirkkauden säädin</string>
+    <string name="status_bar_brightness_slider_summary">Säädä kirkkautta Pika-asetuksista</string>
+    <string name="status_bar_brightness_slider_auto_title">Automaattinen kirkkaus</string>
+    <string name="status_bar_brightness_slider_auto_summary">Näytä automaattisen kirkkauden valinta liukusäätimen vieressä</string>
     <string name="status_bar_toggle_brightness">Kirkkauden säätö</string>
     <string name="status_bar_toggle_brightness_summary">Säädä kirkkautta liu\'ttamalla tilapalkkia pitkin</string>
     <string name="network_traffic_settings_title">Verkkoliikenteen seuranta</string>
@@ -191,5 +195,23 @@
     <string name="back_height">Reunan kosketusalue</string>
     <string name="tethering_allow_vpn_upstreams_title">Salli asiakkaan käyttää VPN:ää</string>
     <string name="tethering_allow_vpn_upstreams_summary">Salli hotspot yhteyksien kayttää tämän laitteen VPN yhteyksiä yhteyden muodostamiseen</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Piilotettu verkko</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Mobiiliyhteyspisteesi nimi ei näy saatavilla olevien WLAN-verkkojen listalla.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Älä koskaan sammuta yhteyspistettä</string>
+    <string name="wifi_hotspot_client_manager_title">Yhdistetyt laitteet</string>
+    <string name="wifi_hotspot_client_manager_summary">Listaa ja hallitse yhteyspisteeseen yhdistettyjä laitteita</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Listaa yhteyspisteeseen yhdistetyt laitteet</string>
+    <string name="wifi_hotspot_client_limit_title">Yhdistettyjen laitteiden raja</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Estetyt laitteet</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Yhdistetyt laitteet</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Estä laite</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Tämä toiminto katkaisee laitteen \"<xliff:g id="device_name">%1$s</xliff:g>\" yhteyden tästä laitteesta ja lisää sen estolistalle</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Kumoa laitteen esto</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Laite \"<xliff:g id="device_name">%1$s</xliff:g>\" pystyy yhdistymään tähän yhteyspisteeseen</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Yhteyksiä ei ole tällä hetkellä saatavilla. Yhdistetyt ja estetyt laitteet luetellaan tässä, kun niitä on saatavilla.</string>
     <string name="app_volume">Sovelluksen äänenvoimakkuus</string>
+    <string name="auto_brightness_one_shot_summary">Kirkkauden säätö tapahtuu vain sillä hetkellä, kun näyttö kytketään päälle</string>
+    <string name="package_details_group_title">Paketin tiedot</string>
+    <string name="package_name">Paketin nimi</string>
+    <string name="package_version">Paketin versio</string>
 </resources>

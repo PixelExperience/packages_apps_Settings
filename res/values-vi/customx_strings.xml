@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">Bên trong biểu tượng</string>
     <string name="status_bar_battery_percentage_text_next">Bên cạnh biểu tượng</string>
     <string name="status_bar_brightness_category">Độ sáng</string>
+    <string name="status_bar_brightness_slider_title">Thanh trượt độ sáng</string>
+    <string name="status_bar_brightness_slider_summary">Điều chỉnh độ sáng từ Cài đặt nhanh</string>
+    <string name="status_bar_brightness_slider_auto_title">Độ sáng tự động</string>
+    <string name="status_bar_brightness_slider_auto_summary">Hiển thị chuyển đổi cho độ sáng thích nghi gần thanh trượt</string>
     <string name="status_bar_toggle_brightness">Điều khiển độ sáng</string>
     <string name="status_bar_toggle_brightness_summary">Điều chỉnh độ sáng bằng cách trượt trên thanh trạng thái</string>
     <string name="network_traffic_settings_title">Bộ đo lưu lượng mạng</string>
@@ -191,5 +195,24 @@
     <string name="back_height">Khu vực cảm ứng cạnh</string>
     <string name="tethering_allow_vpn_upstreams_title">Cho phép máy khách sử dụng Mạng riêng ảo</string>
     <string name="tethering_allow_vpn_upstreams_summary">Cho phép các máy khách sử dụng các kết nối Mạng riêng ảo của thiết bị\u2019 này để kết nối ngược lại</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Mạng ẩn</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Tên điểm phát sóng di động của bạn sẽ không xuất hiện trong danh sách các mạng WLAN khả dụng.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Không bao giờ tắt điểm phát sóng</string>
+    <string name="wifi_hotspot_client_manager_title">Các thiết bị đã được kết nối</string>
+    <string name="wifi_hotspot_client_manager_summary">Liệt kê và quản lý các thiết bị được kết nối với điểm phát sóng</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Liệt kê các thiết bị được kết nối với điểm phát sóng</string>
+    <string name="wifi_hotspot_client_limit_title">Giới hạn thiết bị được kết nối</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Thiết Bị Đã Chặn</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Thiết Bị Đã Kết Nối</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Chặn thiết bị</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Hành động này sẽ ngắt kết nối \"<xliff:g id="device_name">%1$s</xliff:g>\" khỏi thiết bị này và thêm thiết bị vào danh sách chặn</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Bỏ chặn thiết bị</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Thiết bị \"<xliff:g id="device_name">%1$s</xliff:g>\" sẽ có thể kết nối với điểm phát sóng này</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Không có máy khách hiện có sẵn. Các thiết bị đã kết nối và bị chặn sẽ được liệt kê ở đây khi có sẵn.</string>
     <string name="app_volume">Âm thanh ứng dụng</string>
+    <string name="auto_brightness_one_shot_title">Độ sáng tự động một lần</string>
+    <string name="auto_brightness_one_shot_summary">Điều chỉnh độ sáng sẽ chỉ thực hiện tại thời điểm màn hình được bật</string>
+    <string name="package_details_group_title">Chi tiết gói</string>
+    <string name="package_name">Tên gói</string>
+    <string name="package_version">Phiên bản gói</string>
 </resources>

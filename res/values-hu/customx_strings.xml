@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">Az ikon belsejében</string>
     <string name="status_bar_battery_percentage_text_next">Az ikon mellett</string>
     <string name="status_bar_brightness_category">Fényerő</string>
+    <string name="status_bar_brightness_slider_title">Fényerőszabályzó-csúszka</string>
+    <string name="status_bar_brightness_slider_summary">A fényerő állítható a Gyorsbeállításokból</string>
+    <string name="status_bar_brightness_slider_auto_title">Automatikus fényerő</string>
+    <string name="status_bar_brightness_slider_auto_summary">A csúszka mellett kapcsolót jelenít meg az alkalmazkodó fényerőhöz</string>
     <string name="status_bar_toggle_brightness">Fényerő-szabályozás</string>
     <string name="status_bar_toggle_brightness_summary">Lehetővé teszi, hogy az állapotsoron az ujjaival szabályozhassa a fényerőt</string>
     <string name="network_traffic_settings_title">Hálózatiforgalom-figyelő</string>
@@ -191,5 +195,6 @@
     <string name="back_height">Oldalsó érintési terület</string>
     <string name="tethering_allow_vpn_upstreams_title">Kliens VPN-használat-engedélyezés</string>
     <string name="tethering_allow_vpn_upstreams_summary">Engedélyezze a hotspot-klienseknek, hogy a készülék VPN-kapcsolatait felfelé csatlakoztathassák</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Rejtett hálózat</string>
     <string name="app_volume">Alkalmazásonkénti hangerő</string>
 </resources>

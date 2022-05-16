@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Tutup bila tiada peranti yang bersambung selama <xliff:g id="DURATION">%1$d</xliff:g> minit</item>
+    </plurals>
+</resources>
