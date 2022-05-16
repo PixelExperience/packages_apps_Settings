@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Vypnúť, keď sa na <xliff:g id="DURATION">%1$d</xliff:g> minútu nepripojí žiadne zariadenie
+Vypnúť, keď sa na <xliff:g id="DURATION">%1$d</xliff:g> min. nepripojí žiadne zariadenie</item>
+        <item quantity="one">Vypnúť, keď sa na <xliff:g id="DURATION">%1$d</xliff:g> minútu nepripojí žiadne zariadenie</item>
+        <item quantity="few">Vypnúť, keď sa na <xliff:g id="DURATION">%1$d</xliff:g> minútu nepripojí žiadne zariadenie
+Vypnúť, keď sa na <xliff:g id="DURATION">%1$d</xliff:g> min. nepripojí žiadne zariadenie</item>
+        <item quantity="many">Vypnúť, keď sa na <xliff:g id="DURATION">%1$d</xliff:g> minútu nepripojí žiadne zariadenie
+Vypnúť, keď sa na <xliff:g id="DURATION">%1$d</xliff:g> min. nepripojí žiadne zariadenie</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadenie
+K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadení</item>
+        <item quantity="one">Toto zariadenie „<xliff:g id="device_name">%1$s</xliff:g>“ sa bude môcť pripojiť k tomuto hotspotu</item>
+        <item quantity="few">K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadenie
+K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadení</item>
+        <item quantity="many">K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadenie
+K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadení</item>
+    </plurals>
+</resources>

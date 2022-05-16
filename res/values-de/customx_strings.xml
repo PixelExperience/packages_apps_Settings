@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
     <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
     <string name="status_bar_brightness_category">Helligkeit</string>
+    <string name="status_bar_brightness_slider_title">Helligkeitsregler</string>
+    <string name="status_bar_brightness_slider_summary">Helligkeit in den Schnelleinstellungen anpassen</string>
+    <string name="status_bar_brightness_slider_auto_title">Automatische Helligkeit</string>
+    <string name="status_bar_brightness_slider_auto_summary">Umschalter für adaptive Helligkeit neben dem Schieberegler anzeigen</string>
     <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
     <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste anpassen</string>
     <string name="network_traffic_settings_title">Datenverkehr-Anzeige</string>
@@ -191,5 +195,12 @@
     <string name="back_height">Randberührungsbereich</string>
     <string name="tethering_allow_vpn_upstreams_title">Clients erlauben VPN zu verwenden</string>
     <string name="tethering_allow_vpn_upstreams_summary">Erlaubt Hotspot-Clients die VPN-Verbindungen dieses Gerätes für die Upstream-Konnektivität zu verwenden</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Der Name deines mobilen Hotspots erscheint nicht in der Liste der verfügbaren WLAN-Netzwerke.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Hotspot nie ausschalten</string>
+    <string name="wifi_hotspot_client_manager_title">Verbundene Geräte</string>
+    <string name="wifi_hotspot_client_manager_summary">Mit dem Hotspot verbundene Geräte auflisten und verwalten</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Mit dem Hotspot verbundene Geräte auflisten</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Verbundene Geräte</string>
     <string name="app_volume">App Lautstärke</string>
+    <string name="auto_brightness_one_shot_summary">Helligkeitsanpassung erfolgt nur beim Einschalten des Bildschirms</string>
 </resources>

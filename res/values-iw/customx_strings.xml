@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">בתוך הסמל</string>
     <string name="status_bar_battery_percentage_text_next">ליד הסמל</string>
     <string name="status_bar_brightness_category">בהירות</string>
+    <string name="status_bar_brightness_slider_title"> מחוון בהירות</string>
+    <string name="status_bar_brightness_slider_summary">שינוי בהירות מהגדרות מהירות</string>
+    <string name="status_bar_brightness_slider_auto_title">בהירות אוטומוטית</string>
+    <string name="status_bar_brightness_slider_auto_summary">הראה כפתור להפעלת בהירות אוטומטית ליד המחוון</string>
     <string name="status_bar_toggle_brightness">בקרת בהירות</string>
     <string name="status_bar_toggle_brightness_summary">שנה הבהירות על ידי הזזת האצבע על שורת המצב</string>
     <string name="network_traffic_settings_title">ניטור תעבורת רשת</string>
@@ -191,4 +195,24 @@
     <string name="back_height">קצה אזור מגע</string>
     <string name="tethering_allow_vpn_upstreams_title">אפשר ללקוחות להשתמש ב- VPNs</string>
     <string name="tethering_allow_vpn_upstreams_summary">הרשה ללקוחות נקודה חמה להשתמש במכשיר זה\u2019s VPN בחיבורים עבור קישוריות במעלה הזרם</string>
+    <string name="wifi_hotspot_hidden_ssid_title">רשת מוסתרת</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">שם נקודת הגישה הסלולרית שלך לא יופיע ברשימת הרשתות הזמינות</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">לעולם אל תדליק נקודת גישה סלולרית</string>
+    <string name="wifi_hotspot_client_manager_title">התקנים מחוברים</string>
+    <string name="wifi_hotspot_client_manager_summary">ציין ונהל מכשירים המחוברים בנקודת הגלישה הסלולרית</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">ציין ונהל מכשירים המחוברים לנקודת הגלישה הסלולרית</string>
+    <string name="wifi_hotspot_client_limit_title">מגבלת התקנים מחוברים</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">מכשירים חסומים</string>
+    <string name="wifi_hotspot_connected_clients_list_title">התקנים מחוברים</string>
+    <string name="wifi_hotspot_block_client_dialog_title">חסום מכשיר</string>
+    <string name="wifi_hotspot_block_client_dialog_text">הפעולה הזאת תנתק את <xliff:g id="device_name">%1$s</xliff:g> מהמכשיר הזה ותוסיף אותו לרשימת החסומים</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">פתח נעילת מכשיר</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">המכשיר <xliff:g id="device_name">%1$s</xliff:g> יהיה מסוגל להתחבר לנקודת הגלישה הסלולרית הזאת</string>
+    <string name="wifi_hotspot_client_manager_footer_text">אין רשתות זמינות כרגע. מכשירים מחוברים וחסומים יצוינו כאן כשיהיו זמינים</string>
+    <string name="app_volume">עוצמת שמע של האפליקציה</string>
+    <string name="auto_brightness_one_shot_title">בהירות אוטומטית של צילום אחד</string>
+    <string name="auto_brightness_one_shot_summary">שינוי בהירות יתרחש רק ברגע שהמסך דלוק</string>
+    <string name="package_details_group_title">פרטי חבילה</string>
+    <string name="package_name">שם החבילה</string>
+    <string name="package_version">גרסת החבילה</string>
 </resources>

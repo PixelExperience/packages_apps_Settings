@@ -49,6 +49,7 @@
     <string name="status_bar_battery_percentage_text_inside">ଆଇକନ୍ ଭିତରେ</string>
     <string name="status_bar_battery_percentage_text_next">ଆଇକନ୍ ପାଖରେ</string>
     <string name="status_bar_brightness_category">ଉଜ୍ଜ୍ୱଳତା</string>
+    <string name="status_bar_brightness_slider_title">ଉଜ୍ଜ୍ୱଳତା ସ୍ଲାଇଡର୍</string>
     <string name="status_bar_toggle_brightness">ଉଜ୍ଜ୍ୱଳତା ନିୟନ୍ତ୍ରଣ</string>
     <string name="network_traffic_mode_status_bar">ସ୍ଥିତି ଦଣ୍ଡିକା</string>
     <string name="hardware_keys_power_key_title">ପାୱାର୍ ବଟନ୍</string>

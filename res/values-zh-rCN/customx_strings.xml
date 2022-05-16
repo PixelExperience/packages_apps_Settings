@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">图标内</string>
     <string name="status_bar_battery_percentage_text_next">图标旁</string>
     <string name="status_bar_brightness_category">亮度</string>
+    <string name="status_bar_brightness_slider_title">亮度滑块</string>
+    <string name="status_bar_brightness_slider_summary">从快速设置中调整亮度</string>
+    <string name="status_bar_brightness_slider_auto_title">自动亮度</string>
+    <string name="status_bar_brightness_slider_auto_summary">在亮度滑块附近显示自适应亮度的切换键</string>
     <string name="status_bar_toggle_brightness">亮度控制</string>
     <string name="status_bar_toggle_brightness_summary">通过在状态栏上滑动调整亮度</string>
     <string name="network_traffic_settings_title">网络流量监视</string>
@@ -191,5 +195,24 @@
     <string name="back_height">边缘触摸区域</string>
     <string name="tethering_allow_vpn_upstreams_title">允许客户端使用 VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">允许热点客户端使用此设备\u2019的 VPN 连接到上游连接</string>
+    <string name="wifi_hotspot_hidden_ssid_title">隐藏的网络</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">您的移动热点名称将不会出现在可用的 WLAN 网络列表中。</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">永不关闭热点</string>
+    <string name="wifi_hotspot_client_manager_title">已连接的设备</string>
+    <string name="wifi_hotspot_client_manager_summary">列出并管理连接到热点的设备</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">列出连接到热点的设备</string>
+    <string name="wifi_hotspot_client_limit_title">已连接设备的限制</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">被阻止的设备</string>
+    <string name="wifi_hotspot_connected_clients_list_title">已连接的设备</string>
+    <string name="wifi_hotspot_block_client_dialog_title">阻止设备</string>
+    <string name="wifi_hotspot_block_client_dialog_text">此操作将断开 \"<xliff:g id="device_name">%1$s</xliff:g>\" 与该设备的连接，并将其添加到阻止列表中</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">解封设备</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">该设备 \"<xliff:g id="device_name">%1$s</xliff:g>\" 将能够连接到这个热点</string>
+    <string name="wifi_hotspot_client_manager_footer_text">目前没有客户端可用。当可用时，已连接和被阻止的设备将在此列出。</string>
     <string name="app_volume">应用独立音量</string>
+    <string name="auto_brightness_one_shot_title">一键自动亮度</string>
+    <string name="auto_brightness_one_shot_summary">亮度调整仅在屏幕打开的那一刻进行</string>
+    <string name="package_details_group_title">软件包的内容</string>
+    <string name="package_name">软件包的名称</string>
+    <string name="package_version">软件包的版本</string>
 </resources>

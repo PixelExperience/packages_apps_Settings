@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">În interiorul pictogramei</string>
     <string name="status_bar_battery_percentage_text_next">Lângă pictogramă</string>
     <string name="status_bar_brightness_category">Luminozitate</string>
+    <string name="status_bar_brightness_slider_title">Cursor luminozitate</string>
+    <string name="status_bar_brightness_slider_summary">Reglați luminozitatea din Setările Rapide</string>
+    <string name="status_bar_brightness_slider_auto_title">Luminozitate automată</string>
+    <string name="status_bar_brightness_slider_auto_summary">Arată comutatorul pentru luminozitate adaptivă lângă glisor</string>
     <string name="status_bar_toggle_brightness">Control luminozitate</string>
     <string name="status_bar_toggle_brightness_summary">Reglați luminozitatea prin alunecarea peste bara de stare</string>
     <string name="network_traffic_settings_title">Monitorizare trafic rețea</string>
@@ -191,5 +195,15 @@
     <string name="back_height">Zona de atingere a marginii</string>
     <string name="tethering_allow_vpn_upstreams_title">Permite clienților să utilizeze VPN-uri</string>
     <string name="tethering_allow_vpn_upstreams_summary">Permite clienților hotspot-ului să utilizeze conexiunile VPN ale acestui dispozitiv pentru conexiunea upstream</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Rețea ascunsă</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Numele hotspot-ului dvs. mobil nu va apărea în lista rețelelor WiFi disponibile.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Nu se dezactivează niciodată hotspot-ul</string>
+    <string name="wifi_hotspot_client_manager_title">Dispozitive conectate</string>
+    <string name="wifi_hotspot_client_manager_summary">Listați și gestionați dispozitivele conectate la hotspot</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Listați dispozitivele conectate la hotspot</string>
+    <string name="wifi_hotspot_client_limit_title">Limita de dispozitive conectate</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Dispozitive blocate</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Dispozitive conectate</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Blocare dispozitiv</string>
     <string name="app_volume">Volum aplicație</string>
 </resources>

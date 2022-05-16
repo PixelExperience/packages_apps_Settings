@@ -72,6 +72,9 @@
     <string name="status_bar_battery_percentage_text_inside">Di dalam ikon</string>
     <string name="status_bar_battery_percentage_text_next">Sebelah ikon</string>
     <string name="status_bar_brightness_category">Keterangan</string>
+    <string name="status_bar_brightness_slider_title">Gelintar Kecerahan</string>
+    <string name="status_bar_brightness_slider_summary">Ubah kecerahan daripada Tetapan Segera</string>
+    <string name="status_bar_brightness_slider_auto_title">Kecerahan Auto</string>
     <string name="status_bar_toggle_brightness">Kawalan kecerahan</string>
     <string name="status_bar_toggle_brightness_summary">Ubah kecerahan dengan slide di status bar</string>
     <string name="network_traffic_settings_title">Pemantauan rangkaian trafik</string>
@@ -184,5 +187,16 @@
     <string name="back_height">Area Sentuhan tepi</string>
     <string name="tethering_allow_vpn_upstreams_title">Benarkan pelanggan menggunakan VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Benarkan klien hotspot untuk menggunakan sambungan VPN peranti ini\u2019 untuk sambungan huluan</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Rangkaian yang tersembunyi</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Nama hotspot anda tidak akan kelihatan dalam senarai rangkaian WLAN yang tersedia.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Jangan tutup hotspot</string>
+    <string name="wifi_hotspot_client_manager_title">Peranti yang bersambung</string>
+    <string name="wifi_hotspot_client_manager_summary">Senarai dan atur peranti yang bersambung dengan hotspot</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Peranti yang Bersambung</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Buka peranti</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Peranti \"<xliff:g id="device_name">%1$s</xliff:g>\" akan boleh bersambung pada hotspot ini</string>
     <string name="app_volume">Laras bunyi aplikasi</string>
+    <string name="package_details_group_title">Perincian pakej</string>
+    <string name="package_name">Nama pakej</string>
+    <string name="package_version">Versi pakej</string>
 </resources>

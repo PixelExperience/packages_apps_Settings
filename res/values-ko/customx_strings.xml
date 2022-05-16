@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">아이콘 안에</string>
     <string name="status_bar_battery_percentage_text_next">아이콘 바깥에</string>
     <string name="status_bar_brightness_category">밝기</string>
+    <string name="status_bar_brightness_slider_title">밝기 슬라이더</string>
+    <string name="status_bar_brightness_slider_summary">빠른 설정에서 밝기 조절</string>
+    <string name="status_bar_brightness_slider_auto_title">자동 밝기</string>
+    <string name="status_bar_brightness_slider_auto_summary">슬라이더 옆쪽에 밝기 자동 조절 토글 표시</string>
     <string name="status_bar_toggle_brightness">밝기 조절</string>
     <string name="status_bar_toggle_brightness_summary">상태 표시줄을 슬라이드하여 화면 밝기 조절</string>
     <string name="network_traffic_settings_title">네트워크 트래픽 모니터</string>
@@ -191,5 +195,6 @@
     <string name="back_height">가장자리 터치 구간</string>
     <string name="tethering_allow_vpn_upstreams_title">클라이언트가 VPN을 사용하도록 허용</string>
     <string name="tethering_allow_vpn_upstreams_summary">핫스팟 클라이언트가 연결성 향상을 위해 이 기기의 VPN 연결을 사용하도록 허용</string>
+    <string name="wifi_hotspot_hidden_ssid_title">숨겨진 네트워크</string>
     <string name="app_volume">앱 음량</string>
 </resources>
