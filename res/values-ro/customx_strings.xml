@@ -205,5 +205,14 @@
     <string name="wifi_hotspot_blocked_clients_list_title">Dispozitive blocate</string>
     <string name="wifi_hotspot_connected_clients_list_title">Dispozitive conectate</string>
     <string name="wifi_hotspot_block_client_dialog_title">Blocare dispozitiv</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Această acțiune se va deconecta \"<xliff:g id="device_name">%1$s</xliff:g>\" de la acest dispozitiv și-l va adăuga în lista blocărilor</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Deblocare dispozitiv</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Dispozitivul \"<xliff:g id="device_name">%1$s</xliff:g>\" se va putea conecta la acest hotspot</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Nu sunt clienți disponibili momentan. Dispozitivele conectate și blocate vor fi listate aici atunci când sunt disponibile.</string>
     <string name="app_volume">Volum aplicație</string>
+    <string name="auto_brightness_one_shot_title">Luminozitate automată instantă</string>
+    <string name="auto_brightness_one_shot_summary">Ajustarea luminozității va avea loc doar în momentul în care ecranul este pornit</string>
+    <string name="package_details_group_title">Detalii aplicație</string>
+    <string name="package_name">Nume pachet</string>
+    <string name="package_version">Versiune aplicație</string>
 </resources>

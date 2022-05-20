@@ -196,5 +196,23 @@
     <string name="tethering_allow_vpn_upstreams_title">클라이언트가 VPN을 사용하도록 허용</string>
     <string name="tethering_allow_vpn_upstreams_summary">핫스팟 클라이언트가 연결성 향상을 위해 이 기기의 VPN 연결을 사용하도록 허용</string>
     <string name="wifi_hotspot_hidden_ssid_title">숨겨진 네트워크</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">내 모바일 핫스팟의 이름을 사용 가능한 무선랜 목록에 표시하지 않게 합니다.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">핫스팟 끄지 않기</string>
+    <string name="wifi_hotspot_client_manager_title">연결된 기기</string>
+    <string name="wifi_hotspot_client_manager_summary">핫스팟에 연결된 기기 목록 및 관리</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">핫스팟에 연결된 기기 목록</string>
+    <string name="wifi_hotspot_client_limit_title">기기 연결 제한</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">차단한 기기</string>
+    <string name="wifi_hotspot_connected_clients_list_title">연결된 기기</string>
+    <string name="wifi_hotspot_block_client_dialog_title">기기 차단</string>
+    <string name="wifi_hotspot_block_client_dialog_text">이 기기와 \"<xliff:g id="device_name">%1$s</xliff:g>\"의 연결을 끊고 기기를 차단 목록에 추가합니다</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">기기 차단 해제</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">\"<xliff:g id="device_name">%1$s</xliff:g>\" 기기가 이 핫스팟에 연결할 수 있게 됩니다</string>
+    <string name="wifi_hotspot_client_manager_footer_text">표시할 클라이언트가 없습니다. 연결된 기기와 차단한 기기가 여기에 표시됩니다.</string>
     <string name="app_volume">앱 음량</string>
+    <string name="auto_brightness_one_shot_title">화면이 켜질 때 1회 밝기 조절</string>
+    <string name="auto_brightness_one_shot_summary">밝기 조절을 화면이 켜질 때 단 한 번만 실행</string>
+    <string name="package_details_group_title">패키지 세부 정보</string>
+    <string name="package_name">패키지 이름</string>
+    <string name="package_version">패키지 버전</string>
 </resources>

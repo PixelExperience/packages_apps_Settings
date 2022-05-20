@@ -3,7 +3,7 @@
     <string name="lock_settings_picker_pattern_size_message">Chọn một kích cỡ mẫu hình</string>
     <string name="lockpattern_settings_enable_error_path_title">Hiển thị lỗi mẫu hình</string>
     <string name="lockpattern_settings_enable_dots_title">Hiện dấu chấm mẫu hình</string>
-    <string name="status_bar_double_tap_to_sleep_title">Chạm để tắt màn hình</string>
+    <string name="status_bar_double_tap_to_sleep_title">Chạm để ngủ</string>
     <string name="status_bar_double_tap_to_sleep_summary">Chạm hai lần vào thanh trạng thái hoặc màn hình khoá để tắt màn hình</string>
     <string name="wake_when_plugged_or_unplugged_title">Sáng màn hình khi cắm sạc</string>
     <string name="wake_when_plugged_or_unplugged_summary">Bật màn hình khi kết nối hoặc ngắt kết nối nguồn điện</string>
@@ -140,7 +140,7 @@
     <string name="live_display_night">Đêm</string>
     <string name="live_display_outdoor_mode_title">Chế độ ngoài trời tự động</string>
     <string name="live_display_outdoor_mode_summary">Tự động tăng độ sáng và độ bão hòa dưới ánh sáng mặt trời</string>
-    <string name="live_display_anti_flicker_title">Chống nháy ánh sáng</string>
+    <string name="live_display_anti_flicker_title">Chống nhấp nháy</string>
     <string name="live_display_anti_flicker_summary">Ngăn chặn hiện tượng nhấp nháy trên diện rộng và giảm mỏi mắt trong điều kiện ánh sáng yếu. Nó có thể làm giảm độ chính xác của màu sắc và ảnh hưởng đến cách một số mục được hiển thị.</string>
     <string name="live_display_low_power_title">Giảm tiêu thụ điện năng</string>
     <string name="live_display_low_power_summary">Điều chỉnh hiển thị cho tiêu thụ điện năng thấp nhất mà không làm giảm chất lượng</string>

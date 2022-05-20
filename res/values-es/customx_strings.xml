@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
     <string name="status_bar_battery_percentage_text_next">Junto al icono</string>
     <string name="status_bar_brightness_category">Brillo</string>
+    <string name="status_bar_brightness_slider_title">Barra de brillo</string>
+    <string name="status_bar_brightness_slider_summary">Ajuste el brillo desde los ajustes rápidos</string>
+    <string name="status_bar_brightness_slider_auto_title">Brillo automático</string>
+    <string name="status_bar_brightness_slider_auto_summary">Mostrar el interruptor de brillo adaptativo al lado de la barra de brillo</string>
     <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
     <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
     <string name="network_traffic_settings_title">Monitor de tráfico de red</string>
@@ -191,5 +195,24 @@
     <string name="back_height">Altura de gestos</string>
     <string name="tethering_allow_vpn_upstreams_title">Permitir a los clientes usar VPNs</string>
     <string name="tethering_allow_vpn_upstreams_summary">Permitir a los clientes de hotspot usar las conexiones VPN de este dispositivo\u2019 como conectividad principal</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Red oculta</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">El nombre de tu punto de acceso no aparecerá en la lista de redes WLAN disponibles.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Nunca apagar el punto de acceso</string>
+    <string name="wifi_hotspot_client_manager_title">Dispositivos conectados</string>
+    <string name="wifi_hotspot_client_manager_summary">Enumerar y gestionar dispositivos conectados al punto de acceso</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Lista de dispositivos conectados al punto de acceso</string>
+    <string name="wifi_hotspot_client_limit_title">Límite de dispositivos conectados</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Dispositivos bloqueados</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Dispositivos conectados</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Bloquear dispositivo</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Esta acción desconectará \"<xliff:g id="device_name">%1$s</xliff:g>\" de este dispositivo y lo añadirá a la lista de bloqueados</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Desbloquear dispositivo</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Este dispositivo \"<xliff:g id="device_name">%1$s</xliff:g>\" podrá conectarse a este punto de acceso</string>
+    <string name="wifi_hotspot_client_manager_footer_text">No hay clientes disponibles. Los dispositivos conectados y bloqueados aparecerán aquí cuando estén disponibles.</string>
     <string name="app_volume">Volumen de la aplicación</string>
+    <string name="auto_brightness_one_shot_title">Ajustar el brillo automáticamente una sola vez</string>
+    <string name="auto_brightness_one_shot_summary">El ajuste de brillo solo se producirá en el momento en que la pantalla esté encendida</string>
+    <string name="package_details_group_title">Detalles del paquete</string>
+    <string name="package_name">Nombre del paquete</string>
+    <string name="package_version">Versión del paquete</string>
 </resources>

@@ -191,5 +191,10 @@
     <string name="back_height">Сэнсарная вобласць экрана</string>
     <string name="tethering_allow_vpn_upstreams_title">Дазволіць кліентам выкарыстоўваць VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Дазволіць кліентам пункта доступу выкарыстоўваць VPN-злучэнні гэтай прылады для падлучэння да сеткі</string>
+    <string name="wifi_hotspot_client_manager_title">Падлучаныя прылады</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Заблакіяваць прыладу</string>
     <string name="app_volume">Гучнасць праграм</string>
+    <string name="package_details_group_title">Інфармацыя аб пакеце</string>
+    <string name="package_name">Назва пакета</string>
+    <string name="package_version">Версія пакета</string>
 </resources>

@@ -205,5 +205,14 @@
     <string name="wifi_hotspot_blocked_clients_list_title">Αποκλεισμένες συσκευές</string>
     <string name="wifi_hotspot_connected_clients_list_title">Συνδεδεμένες συσκευές</string>
     <string name="wifi_hotspot_block_client_dialog_title">Αποκλεισμένες συσκευές</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Αυτή η ενέργεια θα αποσυνδέσει το \"<xliff:g id="device_name">%1$s</xliff:g>\" από αυτήν τη συσκευή και θα το προσθέσει στη λίστα αποκλεισμού</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Ξεμπλοκάρισμα συσκευής</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Η συσκευή \"<xliff:g id="device_name">%1$s</xliff:g>\" θα μπορεί να συνδεθεί σε αυτό το hotspot</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Δεν υπάρχουν διαθέσιμοι πελάτες αυτήν τη στιγμή. Οι συνδεδεμένες και αποκλεισμένες συσκευές θα εμφανίζονται εδώ όταν είναι διαθέσιμες.</string>
     <string name="app_volume">Ένταση ήχου εφαρμογής</string>
+    <string name="auto_brightness_one_shot_title">Αυτόματη φωτεινότητα μιας φοράς</string>
+    <string name="auto_brightness_one_shot_summary">Η ρύθμιση της φωτεινότητας θα πραγματοποιηθεί μόνο τη στιγμή που η οθόνη είναι ενεργοποιημένη</string>
+    <string name="package_details_group_title">Λεπτομέρειες πακέτου</string>
+    <string name="package_name">Όνομα πακέτου</string>
+    <string name="package_version">Έκδοση πακέτου</string>
 </resources>

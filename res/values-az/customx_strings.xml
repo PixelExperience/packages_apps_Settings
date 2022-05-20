@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">Nişan içində</string>
     <string name="status_bar_battery_percentage_text_next">Nişanın yanında</string>
     <string name="status_bar_brightness_category">Parlaqlıq</string>
+    <string name="status_bar_brightness_slider_title">Parlaqlıq diyircəyini göstər</string>
+    <string name="status_bar_brightness_slider_summary">Cəld Tənzimləmələrdən parlaqlığı nizamla</string>
+    <string name="status_bar_brightness_slider_auto_title">Avto parlaqlıq</string>
+    <string name="status_bar_brightness_slider_auto_summary">Avtomatik parlaqlıq nişanını diyircəyin yanında göstər</string>
     <string name="status_bar_toggle_brightness">Parlaqlıq nəzarəti</string>
     <string name="status_bar_toggle_brightness_summary">Vəziyyət sətrinin üzərində sürüşdürərək parlaqlığı nizamla</string>
     <string name="network_traffic_settings_title">Şəbəkə trafik göstəricisi</string>
@@ -191,5 +195,24 @@
     <string name="back_height">Kənar toxunuş sahəsi</string>
     <string name="tethering_allow_vpn_upstreams_title">Müştərilərin VPN istifadəsinə icazə ver</string>
     <string name="tethering_allow_vpn_upstreams_summary">Hotspot istifadəçilərinin bağlantıları arasında bu cihazın VPN bağlantısını istifadə etməsinə icazə ver</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Gizli şəbəkə</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Mobil \"Hotspot\"unuzun adı mövcud WLAN şəbəkələri siyahısından görünməyəcək.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">\"Hotspot\"u heç vaxt söndürmə</string>
+    <string name="wifi_hotspot_client_manager_title">Bağlantı qurulmuş cihazlar</string>
+    <string name="wifi_hotspot_client_manager_summary">\"Hotspot\"a bağlanmış cihazları siyahılayın və idarə edin</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">\"Hotspot\"a bağlanmış cihazları siyahılayın</string>
+    <string name="wifi_hotspot_client_limit_title">Bağlantı qurulmuş cihaz limiti</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Əngəllənən cihazlar</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Bağlantı qurulmuş cihazlar</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Cihazı əngəllə</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Bu əməliyyat \"<xliff:g id="device_name">%1$s</xliff:g>\" ilə bağlantını kəsəcək. Cihaz əngəllənənlər siyahısına əlavə ediləcək</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Cihazı əngəllənmişlərdən çıxart</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">\"<xliff:g id="device_name">%1$s</xliff:g>\" cihazı bu hotspot ilə bağlantı qura biləcək</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Hazırda heç bir müştəri (client) yoxdur. Bağlantı qurulmuş və əngəllənmiş cihazlar mövcud olanda burada siyahılanacaq.</string>
     <string name="app_volume">Tətbiq səsi</string>
+    <string name="auto_brightness_one_shot_title">Tək çəkilişdə avto-parlaqlıq</string>
+    <string name="auto_brightness_one_shot_summary">Parlaqlıq nizamı yalnız ekran açıq olanda həyata keçirilir</string>
+    <string name="package_details_group_title">Paket təfsilatları</string>
+    <string name="package_name">Paket adı</string>
+    <string name="package_version">Paket versiyası</string>
 </resources>

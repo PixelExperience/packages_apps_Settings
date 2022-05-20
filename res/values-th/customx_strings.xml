@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">ภายในไอคอน</string>
     <string name="status_bar_battery_percentage_text_next">ถัดจากไอคอน</string>
     <string name="status_bar_brightness_category">ความสว่าง</string>
+    <string name="status_bar_brightness_slider_title">แถบเลื่อนความสว่าง</string>
+    <string name="status_bar_brightness_slider_summary">ปรับความสว่างจากการตั้งค่าด่วน</string>
+    <string name="status_bar_brightness_slider_auto_title">ความสว่างอัตโนมัติ</string>
+    <string name="status_bar_brightness_slider_auto_summary">แสดงการปุ่มสลับเพื่อปรับความสว่างใกล้แถบเลื่อน</string>
     <string name="status_bar_toggle_brightness">ควบคุมความสว่าง</string>
     <string name="status_bar_toggle_brightness_summary">ปรับความสว่างหน้าจอโดยการเลื่อนแถบสถานะ</string>
     <string name="network_traffic_settings_title">ตรวจสอบการรับส่งข้อมูลเครือข่าย</string>
@@ -191,5 +195,24 @@
     <string name="back_height">พื้นที่สัมผัสบริเวณขอบ</string>
     <string name="tethering_allow_vpn_upstreams_title">อนุญาตให้ไคลเอ็นต์ใช้ VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">อนุญาตให้ไคลเอ็นต์ฮอตสปอตเชื่อมต่อ VPN ของอุปกรณ์นี้ สำหรับการเชื่อมต่ออัปสตรีม</string>
+    <string name="wifi_hotspot_hidden_ssid_title">เครือข่ายที่ซ่อนอยู่</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">ชื่อของฮอตสปอตมือถือของคุณจะไม่ปรากฏในรายการเครือข่าย WLAN ที่พร้อมใช้งาน</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">ไม่มีการปิดฮอตสปอต</string>
+    <string name="wifi_hotspot_client_manager_title">อุปกรณ์ที่เชื่อมต่อ</string>
+    <string name="wifi_hotspot_client_manager_summary">แสดงรายการและจัดการอุปกรณ์ที่เชื่อมต่อกับฮอตสปอต</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">แสดงชื่ออุปกรณ์ที่เชื่อมต่อกับฮอตสปอต</string>
+    <string name="wifi_hotspot_client_limit_title">ขีดจำกัดของอุปกรณ์ที่เชื่อมต่อ</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">อุปกรณ์ที่ถูกบล็อก</string>
+    <string name="wifi_hotspot_connected_clients_list_title">อุปกรณ์ที่เชื่อมต่อ</string>
+    <string name="wifi_hotspot_block_client_dialog_title">บล็อกอุปกรณ์</string>
+    <string name="wifi_hotspot_block_client_dialog_text">การดำเนินการนี้จะตัดการเชื่อมต่อ \"<xliff:g id="device_name">%1$s</xliff:g>\" จากอุปกรณ์นี้และเพิ่มลงในรายการที่ถูกบล็อก</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">เลิกบล็อกอุปกรณ์</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">อุปกรณ์ \"<xliff:g id="device_name">%1$s</xliff:g>\" จะสามารถเชื่อมต่อกับฮอตสปอตนี้ได้</string>
+    <string name="wifi_hotspot_client_manager_footer_text">ไม่มีอุปกรณ์อยู่ในขณะนี้ อุปกรณ์ที่เชื่อมต่อและถูกบล็อกจะแสดงขึ้นที่นี่เมื่อมีให้ใช้งาน</string>
     <string name="app_volume">ระดับเสียงของแอป</string>
+    <string name="auto_brightness_one_shot_title">ความสว่างอัตโนมัติในครั้งเดียว</string>
+    <string name="auto_brightness_one_shot_summary">การปรับความสว่างจะเกิดขึ้นในขณะที่หน้าจอเปิดอยู่เท่านั้น</string>
+    <string name="package_details_group_title">รายละเอียดแพ็กเกจ</string>
+    <string name="package_name">ชื่อแพคเกจ</string>
+    <string name="package_version">รุ่นแพ็คเกจ</string>
 </resources>

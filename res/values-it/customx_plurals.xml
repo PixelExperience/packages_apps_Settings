@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Disattiva quando non ci sono dispositivi connessi per <xliff:g id="DURATION">%1$d</xliff:g> minuti</item>
+        <item quantity="one">Disattiva quando non ci sono dispositivi connessi per <xliff:g id="DURATION">%1$d</xliff:g> minuto</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Possono connettersi massimo <xliff:g id="device_num">%1$d</xliff:g> dispositivi a questo hotspot</item>
+        <item quantity="one">Può connettersi massimo <xliff:g id="device_num">%1$d</xliff:g> dispositivo a questo hotspot</item>
+    </plurals>
+</resources>

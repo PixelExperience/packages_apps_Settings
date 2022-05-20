@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">ხატულას შიგნით</string>
     <string name="status_bar_battery_percentage_text_next">ხატულას გვერდით</string>
     <string name="status_bar_brightness_category">სიკაშკაშე</string>
+    <string name="status_bar_brightness_slider_title">სიკაშკაშის რეგულატორი</string>
+    <string name="status_bar_brightness_slider_summary">სიკაშკაშის შერჩევა სწრაფი პარამეტრებიდან</string>
+    <string name="status_bar_brightness_slider_auto_title">ავტო სიკაშკაშე</string>
+    <string name="status_bar_brightness_slider_auto_summary">ადაპტიური სიკაშკაშის გადამრთველის ჩვენება რეგულატორის გვერდზე</string>
     <string name="status_bar_toggle_brightness">სიკაშკაშის მართვა</string>
     <string name="status_bar_toggle_brightness_summary">სიკაშკაშის რეგულირება მდგომარეობის პანელის გასწვრივ გადასმით</string>
     <string name="network_traffic_settings_title">ქსელის ტრაფიკის მონიტორი</string>
@@ -191,5 +195,19 @@
     <string name="back_height">კუთხის შეხების არე</string>
     <string name="tethering_allow_vpn_upstreams_title">კლიენტებს მიეცით საშუალება გამოიყენონ VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">ნება დართეთ Hotspot კლიენტებს გამოიყენონ ამ მოწყობილობის VPN კავშირები ზედა დინების კავშირით</string>
+    <string name="wifi_hotspot_hidden_ssid_title">დამალული ქსელი</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">არასდროს გამორთა hotspot</string>
+    <string name="wifi_hotspot_client_manager_title">დაკავშირებული მოწყობილობები</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">hotspot-ზე დაკავშირებული მოწყობილობების სია</string>
+    <string name="wifi_hotspot_client_limit_title">დაკავშირებულ მოწყობილობათა ლიმიტი</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">დაბლოკილი მოწყობილობები</string>
+    <string name="wifi_hotspot_connected_clients_list_title">დაკავშირებული მოწყობილობები</string>
+    <string name="wifi_hotspot_block_client_dialog_title">მოწყობილობის დაბლოკვა</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">მოწყობილობის განბლოკვა</string>
     <string name="app_volume">აპლიკაციის ხმა</string>
+    <string name="auto_brightness_one_shot_title">სიკაშკაშის ერთჯერადი თვითგასწორება</string>
+    <string name="auto_brightness_one_shot_summary">სიკაშკაშე გასწორდება, მხოლოდ ეკრანის ჩართვისას</string>
+    <string name="package_details_group_title">პაკეტის დეტალები</string>
+    <string name="package_name">პაკეტის სახელი</string>
+    <string name="package_version">პაკეტის ვერსია</string>
 </resources>

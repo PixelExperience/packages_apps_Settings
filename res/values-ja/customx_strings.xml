@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">アイコンの中</string>
     <string name="status_bar_battery_percentage_text_next">アイコンの隣</string>
     <string name="status_bar_brightness_category">画面の明るさ</string>
+    <string name="status_bar_brightness_slider_title">明るさスライダー</string>
+    <string name="status_bar_brightness_slider_summary">クイック設定で明るさを調節する</string>
+    <string name="status_bar_brightness_slider_auto_title">明るさの自動調節</string>
+    <string name="status_bar_brightness_slider_auto_summary">スライダーの近くに明るさの自動調節のトグルを表示する</string>
     <string name="status_bar_toggle_brightness">明るさコントロール</string>
     <string name="status_bar_toggle_brightness_summary">ステータスバー上でスライドして明るさを調整します</string>
     <string name="network_traffic_settings_title">ネットワークトラフィックモニター</string>
@@ -191,5 +195,9 @@
     <string name="back_height">タッチ範囲の縁</string>
     <string name="tethering_allow_vpn_upstreams_title">クライアントの VPN 使用の許可</string>
     <string name="tethering_allow_vpn_upstreams_summary">この端末の VPN 接続をホットスポットのクライアントが送信接続に使うことを許可する</string>
+    <string name="wifi_hotspot_hidden_ssid_title">非公開ネットワーク</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">お使いのモバイルホットスポット名は利用可能な WLAN ネットワークのリスト内から消えます</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">ホットスポットを維持</string>
+    <string name="wifi_hotspot_client_manager_title">接続されているデバイス</string>
     <string name="app_volume">アプリの音量</string>
 </resources>

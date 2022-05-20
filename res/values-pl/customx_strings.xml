@@ -79,6 +79,8 @@
     <string name="status_bar_battery_percentage_text_inside">Wewnątrz ikony</string>
     <string name="status_bar_battery_percentage_text_next">Obok ikony</string>
     <string name="status_bar_brightness_category">Jasność</string>
+    <string name="status_bar_brightness_slider_title">Suwak jasności</string>
+    <string name="status_bar_brightness_slider_auto_title">Automatyczna jasność</string>
     <string name="status_bar_toggle_brightness">Sterowanie jasnością</string>
     <string name="status_bar_toggle_brightness_summary">Dostosuj jasność, przeciągając palcem po pasku stanu</string>
     <string name="network_traffic_settings_title">Monitor ruchu sieciowego</string>
@@ -191,5 +193,14 @@
     <string name="back_height">Obszar dotyku krawędzi</string>
     <string name="tethering_allow_vpn_upstreams_title">Zezwól podłączonym urządzeniom na korzystanie z VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Zezwól urządzeniom, podłączonym do udostępnionej sieci, na wysyłanie pakietów, poprzez VPN tego urządzenia</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Sieć ukryta</string>
+    <string name="wifi_hotspot_client_manager_title">Podłączone urządzenia</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Zablokowane urządzenia</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Podłączone urządzenia</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Zablokuj urządzenie</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Odblokuj urządzenie</string>
     <string name="app_volume">Głośność aplikacji</string>
+    <string name="package_details_group_title">Szczegóły pakietu</string>
+    <string name="package_name">Nazwa pakietu</string>
+    <string name="package_version">Wersja pakietu</string>
 </resources>

@@ -79,6 +79,9 @@
     <string name="status_bar_battery_percentage_text_inside">داخل الرمز</string>
     <string name="status_bar_battery_percentage_text_next">بجانب الرمز</string>
     <string name="status_bar_brightness_category">السطوع</string>
+    <string name="status_bar_brightness_slider_title">مزلاق السطوع</string>
+    <string name="status_bar_brightness_slider_summary">ضبط السطوع من الإعدادات السريعة</string>
+    <string name="status_bar_brightness_slider_auto_summary">إظهار رمز السطوع التلقائي قرب شريط تمرير السطوع</string>
     <string name="status_bar_toggle_brightness">التحكم بالسطوع</string>
     <string name="status_bar_toggle_brightness_summary">التحكم بالسطوع عبر السحب على شريط الحالة</string>
     <string name="network_traffic_settings_title">مراقبة حركة مرور الشبكة</string>
@@ -191,6 +194,9 @@
     <string name="back_height">منطقة لمس الاطراف</string>
     <string name="tethering_allow_vpn_upstreams_title">السماح للمتصلين باستخدام الـ VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">السماح للمتصلين بنقطة الاتصال باستخدام اتصالات VPN لجهاز\u2019 من أجل الإرسال</string>
+    <string name="wifi_hotspot_hidden_ssid_title">شبكة مخفية</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">لن يظهر اسم نقطة اتصال هاتفك المحمول في قائمة شبكات WLAN المتاحة.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">لا تقم أبدًا بإيقاف تشغيل نقطة الاتصال</string>
     <string name="wifi_hotspot_client_manager_summary">قائمة بالأجهزة المتصلة بنقطة الاتصال وإدارتها</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">هذا الجهاز\"<xliff:g id="device_name">%1$s</xliff:g>\" سيكون قادرا على الاتصال بنقطة الاتصال هذه</string>
     <string name="app_volume">صوت التطبيق</string>

@@ -26,7 +26,7 @@
     <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
     <string name="lockscreen_media_art_title">Отображать обложку мультимедиа</string>
     <string name="advanced_reboot_title">Расширенная перезагрузка</string>
-    <string name="advanced_reboot_summary">Когда устройство разблокировано, в меню питания доступны опции перезагрузки в рекавери и загрузчик</string>
+    <string name="advanced_reboot_summary">Когда устройство разблокировано, в меню питания доступны опции перезагрузки в режим восстановления и загрузчик</string>
     <string name="power_menu_shortcuts_title">Быстрый вызов меню</string>
     <string name="power_menu_shortcuts_summary">Настройка меню кнопки питания</string>
     <string name="power_menu_screenshot_title">Скриншот</string>
@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
     <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
     <string name="status_bar_brightness_category">Яркость</string>
+    <string name="status_bar_brightness_slider_title">Ползунок яркости</string>
+    <string name="status_bar_brightness_slider_summary">Регулировка яркости в Быстрых настройках</string>
+    <string name="status_bar_brightness_slider_auto_title">Автояркость</string>
+    <string name="status_bar_brightness_slider_auto_summary">Показывать переключатель для адаптивной яркости рядом с ползунком</string>
     <string name="status_bar_toggle_brightness">Управление яркостью</string>
     <string name="status_bar_toggle_brightness_summary">Регулировать яркость экрана движением пальца по строке состояния</string>
     <string name="network_traffic_settings_title">Индикатор сетевого трафика</string>
@@ -191,5 +195,24 @@
     <string name="back_height">Сенсорная область по краю экрана</string>
     <string name="tethering_allow_vpn_upstreams_title">Разрешить клиентам использовать VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Разрешить клиентам точки доступа использовать VPN-соединения этого устройства для подключения к сети</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Скрытая сеть</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Имя вашей мобильной точки доступа не появится в списке доступных сетей WLAN.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Не выключать точку доступа</string>
+    <string name="wifi_hotspot_client_manager_title">Подключенные устройства</string>
+    <string name="wifi_hotspot_client_manager_summary">Список и управление устройствами, подключенными к точке доступа</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Список устройств, подключенных к точке доступа</string>
+    <string name="wifi_hotspot_client_limit_title">Предел подключенных устройств</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Заблокированные устройства</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Подключенные устройства</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Заблокировать устройство</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Это действие отключит \"<xliff:g id="device_name">%1$s</xliff:g>\" от этого устройства и добавит его в список блокировки</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Разблокировать устройство</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Это устройство \"<xliff:g id="device_name">%1$s</xliff:g>\" сможет подключиться к этой точке доступа</string>
+    <string name="wifi_hotspot_client_manager_footer_text">В настоящее время нет доступных клиентов. Подключенные и заблокированные устройства будут перечислены здесь, когда они станут доступны.</string>
     <string name="app_volume">Громкость приложения</string>
+    <string name="auto_brightness_one_shot_title">Однократная автоматическая яркость</string>
+    <string name="auto_brightness_one_shot_summary">Регулировка яркости будет происходить только в момент включения экрана</string>
+    <string name="package_details_group_title">Информация о пакете</string>
+    <string name="package_name">Имя пакета</string>
+    <string name="package_version">Версия пакета</string>
 </resources>

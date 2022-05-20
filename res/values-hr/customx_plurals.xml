@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Isključi kada nije povezan nijedan uređaj <xliff:g id="DURATION">%1$d</xliff:g> minuta</item>
+        <item quantity="one">Isključi  kada nijedan uređaj nije povezan <xliff:g id="DURATION">%1$d</xliff:g> minutu</item>
+        <item quantity="few">Isključi  kada nijedan uređaj nije povezan <xliff:g id="DURATION">%1$d</xliff:g> minuta</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Na ovu pristupnu točku može se povezati najviše <xliff:g id="device_num">%1$d</xliff:g> uređaja</item>
+        <item quantity="one">Na ovu pristupnu točku može se povezati najviše <xliff:g id="device_num">%1$d</xliff:g> uređaj</item>
+        <item quantity="few">Na ovu pristupnu točku može se povezati najviše <xliff:g id="device_num">%1$d</xliff:g> uređaja</item>
+    </plurals>
+</resources>

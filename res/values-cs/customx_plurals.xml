@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Vypnout, když není po dobu <xliff:g id="DURATION">%1$d</xliff:g> minut připojeno žádné zařízení</item>
+        <item quantity="one">Vypnout, když není po dobu <xliff:g id="DURATION">%1$d</xliff:g> minuty připojeno žádné zařízení</item>
+        <item quantity="few">Vypnout, když není po dobu <xliff:g id="DURATION">%1$d</xliff:g> minut připojeno žádné zařízení</item>
+        <item quantity="many">Vypnout, když není po dobu <xliff:g id="DURATION">%1$d</xliff:g> minut připojeno žádné zařízení</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">K tomuto hotspotu se může připojit až <xliff:g id="device_num">%1$d</xliff:g> zařízení</item>
+        <item quantity="one">K tomuto hotspotu se může připojit až <xliff:g id="device_num">%1$d</xliff:g> zařízení</item>
+        <item quantity="few">K tomuto hotspotu se může připojit až <xliff:g id="device_num">%1$d</xliff:g> zařízení</item>
+        <item quantity="many">K tomuto hotspotu se může připojit až <xliff:g id="device_num">%1$d</xliff:g> zařízení</item>
+    </plurals>
+</resources>
