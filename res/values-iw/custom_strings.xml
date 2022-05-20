@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">בעת החלקה על מסך הנעילה</string>
     <string name="high_touch_polling_rate_title">קצב רענון מגע גבוה</string>
     <string name="high_touch_polling_rate_summary">הגברת קצב הרענון של מסך המגע </string>
+    <string name="screen_off_fod_title">טביעת אצבע על מסך כבוי (FOD)</string>
+    <string name="screen_off_fod_summary">השאר את טביעת האצבע על המסך פועלת כשהמכשיר כבוי</string>
 </resources>

@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">Când glisați pe ecranul de blocare</string>
     <string name="high_touch_polling_rate_title">Rată ridicată de sondare la atingere</string>
     <string name="high_touch_polling_rate_summary">Creșteți rata de interogare a ecranului tactil</string>
+    <string name="screen_off_fod_title">Deblocare cu amprentă pe ecran stins</string>
+    <string name="screen_off_fod_summary">Păstrează senzor amprentă activat când ecranul este oprit</string>
 </resources>
