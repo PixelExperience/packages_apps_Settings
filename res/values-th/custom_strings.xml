@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">เมื่อปัดบนหน้าจอขณะล็อค</string>
     <string name="high_touch_polling_rate_title">อัตราการตอบสนองต่อการสัมผัสสูง</string>
     <string name="high_touch_polling_rate_summary">เพิ่มอัตราการตอบสนองหน้าจอสัมผัส</string>
+    <string name="screen_off_fod_title">FOD ขณะปิดหน้าจอ</string>
+    <string name="screen_off_fod_summary">ให้การสแกนนิ้วมือบนหน้าจอทำงานเมื่อจอปิดอยู่</string>
 </resources>

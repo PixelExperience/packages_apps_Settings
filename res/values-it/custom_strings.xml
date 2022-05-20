@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">Durante lo scorrimento sulla schermata di blocco</string>
     <string name="high_touch_polling_rate_title">Elevato tasso di polling del touch</string>
     <string name="high_touch_polling_rate_summary">Aumenta il tasso di polling del touchscreen</string>
+    <string name="screen_off_fod_title">Impronta digitale a schermo spento</string>
+    <string name="screen_off_fod_summary">Mantiene abilitata l\'impronta digitale quando lo schermo è spento</string>
 </resources>

@@ -69,4 +69,6 @@
     <string name="face_unlock_method_title">Дазволіць разблакіроўку тварам на экране блакіроўкі</string>
     <string name="face_unlock_method_default">Калі экран уключаны</string>
     <string name="face_unlock_method_swipe">Пры дакрананні да экрана блакіроўкі</string>
+    <string name="screen_off_fod_title">Адбітак на выключаным экране</string>
+    <string name="screen_off_fod_summary">Выкарыстоўваць сканер адбіткаў пальцаў пры выключаным экране</string>
 </resources>

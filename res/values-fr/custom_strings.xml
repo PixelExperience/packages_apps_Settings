@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">En faisant glisser sur l\'écran de verrouillage</string>
     <string name="high_touch_polling_rate_title">Taux de rafraîchissement tactile élevé</string>
     <string name="high_touch_polling_rate_summary">Augmenter le taux de rafraîchissement tactile de l\'écran</string>
+    <string name="screen_off_fod_title">Reconnaissance d\'empreinte écran éteint</string>
+    <string name="screen_off_fod_summary">Garder la reconnaissance d\'empreinte activée lorsque l\'écran est éteint</string>
 </resources>

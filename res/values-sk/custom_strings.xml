@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">Keď posúvate prstom na zamknutej obrazovke</string>
     <string name="high_touch_polling_rate_title">Vysoká vzorkovacia frekvencia pre dotyk</string>
     <string name="high_touch_polling_rate_summary">Zvýšenie vzorkovacej frekvencie dotykovej obrazovky</string>
+    <string name="screen_off_fod_title">Rozpoznávanie odtlačkov prstov pri vypnutej obrazovke</string>
+    <string name="screen_off_fod_summary">Nechať snímač odtlačkov prstov aktivovaný, keď je obrazovka vypnutá</string>
 </resources>

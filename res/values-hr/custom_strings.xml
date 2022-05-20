@@ -61,10 +61,20 @@
     <string name="keyboard_extras_title">Dodaci</string>
     <string name="advanced_keyboard_settings_title">Napredne postavke</string>
     <string name="fingerprint_enroll_find_sensor_message_front">Pronađite senzor otiska prsta na prednjoj strani telefona.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear">Pronađite senzor otiska prsta na stražnjoj strani telefona.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side">Pronađite senzor otiska prsta na bočnoj strani telefona.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front">Dodirnite senzor na prednjoj strani telefona.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear">Dodirnite senzor na stražnjoj strani telefona.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side">Dodirnite senzor na bočnoj strani telefona.</string>
+    <string name="fast_charging_title">Brzo punjenje</string>
+    <string name="fast_charging_summary">Onemogućite kako biste smanjili toplinu koju uređaj proizvodi tijekom punjenja ili produljili vijek trajanja baterije</string>
     <string name="security_settings_face_unlock_redo_face_scan_summary">Izbriši postojeći sken lica i kreiraj novi</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">Ponovi skeniranje lica</string>
     <string name="face_redo_confirm_btn">Ponovi</string>
     <string name="face_redo_warning_msg">Želite li izbrisati postojeći sken lica i kreirati novi?</string>
+    <string name="face_unlock_method_title">Omogući odključavanje licem kod zakljućanog zaslona</string>
+    <string name="face_unlock_method_default">Kada je zaslon uključen</string>
+    <string name="face_unlock_method_swipe">Prilikom povlačenja po zaključanom zaslonu</string>
     <string name="high_touch_polling_rate_title">Visoka stopa prozivanja dodirom</string>
     <string name="high_touch_polling_rate_summary">Povećaj stopu prozivanja zaslona osjetljivog na dodir</string>
 </resources>

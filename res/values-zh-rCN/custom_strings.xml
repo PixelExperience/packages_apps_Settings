@@ -74,7 +74,9 @@
     <string name="face_redo_warning_msg">是否要移除现有的人脸数据并重新录入？</string>
     <string name="face_unlock_method_title">允许在锁定屏幕使用人脸识别解锁</string>
     <string name="face_unlock_method_default">当屏幕开启时</string>
-    <string name="face_unlock_method_swipe">在锁定屏幕滑动时</string>
-    <string name="high_touch_polling_rate_title">高触控轮询率</string>
-    <string name="high_touch_polling_rate_summary">提高触摸屏的轮询频率</string>
+    <string name="face_unlock_method_swipe">在锁定屏幕上滑动时</string>
+    <string name="high_touch_polling_rate_title">高触控采样率</string>
+    <string name="high_touch_polling_rate_summary">提高触摸屏采样率</string>
+    <string name="screen_off_fod_title">息屏指纹</string>
+    <string name="screen_off_fod_summary">当屏幕关闭时，保持屏下指纹启用</string>
 </resources>

@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">При свайпе на экране блокировки</string>
     <string name="high_touch_polling_rate_title">Высокая частота опроса касаний</string>
     <string name="high_touch_polling_rate_summary">Увеличить частоту опроса экрана</string>
+    <string name="screen_off_fod_title">Отпечаток на выключенном экране</string>
+    <string name="screen_off_fod_summary">Использовать сканер отпечатков пальцев при выключенном экране</string>
 </resources>
