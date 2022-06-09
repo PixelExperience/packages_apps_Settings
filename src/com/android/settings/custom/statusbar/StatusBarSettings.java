@@ -73,14 +73,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private PreferenceCategory mStatusBarClockCategory;
     private PreferenceCategory mStatusBarBrightnessCategory;
 
-    private static boolean sHasCenteredNotch;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
-
-        sHasCenteredNotch = CutoutUtils.hasCenteredCutout(getActivity());
 
         mStatusBarAmPm = findPreference(STATUS_BAR_AM_PM);
         mStatusBarClock = findPreference(STATUS_BAR_CLOCK_STYLE);
@@ -111,6 +107,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     public void onResume() {
         super.onResume();
 
+        final boolean disableCenteredClock = CutoutUtils.hasCenteredCutout(getActivity()) || isNetworkTrafficOnStatusBar();
+
         final String curIconBlacklist = Settings.Secure.getString(getContext().getContentResolver(),
                 ICON_BLACKLIST);
 
@@ -131,11 +129,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         }
 
-        final boolean disallowCenteredClock = sHasCenteredNotch;
-
         // Adjust status bar preferences for RTL
         if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-            if (disallowCenteredClock) {
+            if (disableCenteredClock) {
                 mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
             } else {
@@ -144,7 +140,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             }
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
             mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values);
-        } else if (disallowCenteredClock) {
+        } else if (disableCenteredClock) {
             mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
             mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
         } else {
@@ -196,6 +192,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 break;
         }
         mQuickPulldown.setSummary(summary);
+    }
+
+    private boolean isNetworkTrafficOnStatusBar(){
+        int mode = Settings.System.getInt(getContext().getContentResolver(),
+                Settings.System.NETWORK_TRAFFIC_LOCATION, 0);
+        return mode == 1;
     }
 
     @Override
