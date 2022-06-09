@@ -73,14 +73,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private PreferenceCategory mStatusBarClockCategory;
     private PreferenceCategory mStatusBarBrightnessCategory;
 
-    private static boolean sHasCenteredNotch;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
-
-        sHasCenteredNotch = CutoutUtils.hasCenteredCutout(getActivity());
 
         mStatusBarAmPm = findPreference(STATUS_BAR_AM_PM);
         mStatusBarClock = findPreference(STATUS_BAR_CLOCK_STYLE);
@@ -131,25 +127,34 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         }
 
-        final boolean disallowCenteredClock = sHasCenteredNotch;
-
-        // Adjust status bar preferences for RTL
-        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-            if (disallowCenteredClock) {
-                mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
+        if (isNetworkTrafficOnStatusBar()){
+            mStatusBarClock.setEnabled(false);
+            mStatusBarClock.setSummary(R.string.status_bar_clock_position_disabled_summary);
+        }else{
+            int value = Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_CLOCK, 2);
+            mStatusBarClock.setEnabled(true);
+            mStatusBarClock.setValue(String.valueOf(value));
+            mStatusBarClock.setSummary(getClockPositionSummary(value));
+            boolean disallowCenteredClock = CutoutUtils.hasCenteredCutout(getActivity());
+            // Adjust status bar preferences for RTL
+            if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+                if (disallowCenteredClock) {
+                    mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
+                    mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
+                } else {
+                    mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_rtl);
+                    mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values);
+                }
+                mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
+                mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values);
+            } else if (disallowCenteredClock) {
+                mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
             } else {
-                mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_rtl);
+                mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries);
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values);
             }
-            mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
-            mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values);
-        } else if (disallowCenteredClock) {
-            mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
-            mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
-        } else {
-            mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries);
-            mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values);
         }
     }
 
@@ -196,6 +201,22 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 break;
         }
         mQuickPulldown.setSummary(summary);
+    }
+
+    private String getClockPositionSummary(int value){
+        if (value == 0){
+            return getContext().getString(R.string.status_bar_clock_position_right);
+        }else if (value == 1){
+            return getContext().getString(R.string.status_bar_clock_position_center);
+        }else{
+            return getContext().getString(R.string.status_bar_clock_position_left); 
+        }
+    }
+
+    private boolean isNetworkTrafficOnStatusBar(){
+        int mode = Settings.System.getInt(getContentResolver(),
+                Settings.System.NETWORK_TRAFFIC_LOCATION, 0);
+        return mode == 1;
     }
 
     @Override
