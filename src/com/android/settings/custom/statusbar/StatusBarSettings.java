@@ -141,13 +141,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
                 if (disallowCenteredClock) {
                     mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
-                    mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
+                    mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch_rtl);
                 } else {
                     mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_rtl);
-                    mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values);
+                    mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_rtl);
                 }
                 mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
-                mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values);
+                mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
             } else if (disallowCenteredClock) {
                 mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch);
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
