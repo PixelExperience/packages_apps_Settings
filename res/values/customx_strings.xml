@@ -109,6 +109,7 @@
     <string name="status_bar_am_pm_hidden">Hidden</string>
     <string name="status_bar_clock_auto_hide_title">Auto hide</string>
     <string name="status_bar_clock_auto_hide_summary">Hide clock if launcher is visible</string>
+    <string name="status_bar_clock_position_disabled_summary">Position cannot be changed because traffic indicator is showing in the status bar</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Battery indicator</string>
