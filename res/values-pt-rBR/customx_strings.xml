@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Escondido</string>
     <string name="status_bar_clock_auto_hide_title">Ocultar automaticamente</string>
     <string name="status_bar_clock_auto_hide_summary">Ocultar o relógio se a tela inicial estiver visível</string>
+    <string name="status_bar_clock_position_disabled_summary">A posição não pode ser alterada porque o indicador de tráfego está sendo exibido na barra de status</string>
     <string name="status_bar_battery_title">Ícone da bateria</string>
     <string name="status_bar_battery_style_title">Estilo do status da bateria</string>
     <string name="status_bar_battery_style_icon_portrait">Ícone retrato</string>

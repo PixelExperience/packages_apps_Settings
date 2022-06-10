@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Ẩn</string>
     <string name="status_bar_clock_auto_hide_title">Tự động ẩn</string>
     <string name="status_bar_clock_auto_hide_summary">Ẩn đồng hồ nếu trình khởi chạy hiển thị</string>
+    <string name="status_bar_clock_position_disabled_summary">Không thể thay đổi vị trí vì chỉ báo lưu lượng đang hiển thị trên thanh trạng thái</string>
     <string name="status_bar_battery_title">Chỉ báo pin</string>
     <string name="status_bar_battery_style_title">Kiểu trạng thái pin</string>
     <string name="status_bar_battery_style_icon_portrait">Biểu tượng đứng</string>

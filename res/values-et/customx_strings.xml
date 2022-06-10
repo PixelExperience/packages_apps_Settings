@@ -79,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">Ikooni sees</string>
     <string name="status_bar_battery_percentage_text_next">Ikooni kõrval</string>
     <string name="status_bar_brightness_category">Heledus</string>
+    <string name="status_bar_brightness_slider_title">Heleduse liugur</string>
+    <string name="status_bar_brightness_slider_summary">Määra heledust kiirseadetest</string>
+    <string name="status_bar_brightness_slider_auto_title">Automaatne heledus</string>
+    <string name="status_bar_brightness_slider_auto_summary">Kuva kohanduva heleduse lülitit liuguri lähedal</string>
     <string name="status_bar_toggle_brightness">Heleduse reguleerimine</string>
     <string name="status_bar_toggle_brightness_summary">Reguleeri heledust, libistades mööda ülariba</string>
     <string name="network_traffic_settings_title">Võrguliikluse jälgija</string>
@@ -191,5 +195,24 @@
     <string name="back_height">Serva puuteala</string>
     <string name="tethering_allow_vpn_upstreams_title">Luba klientidel kasutada VPN-e</string>
     <string name="tethering_allow_vpn_upstreams_summary">Luba kuumkoha klientidel kasutada selle seadme VPN-ühendusi ülesvoolu ühenduvuseks</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Peidetud võrk</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Teie mobiilse leviala nime ei kuvata saadaolevate WLAN-võrkude loendis.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Ärge kunagi lülitage leviala välja</string>
+    <string name="wifi_hotspot_client_manager_title">Ühendatud seadmed</string>
+    <string name="wifi_hotspot_client_manager_summary">Loetlege ja hallake levialaga ühendatud seadmeid</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Loetlege levialaga ühendatud seadmed</string>
+    <string name="wifi_hotspot_client_limit_title">Ühendatud seadmete limiit</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Blokeeritud seadmed</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Ühendatud seadmed</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Blokeeri seade</string>
+    <string name="wifi_hotspot_block_client_dialog_text">See toiming katkestab \"<xliff:g id="device_name">%1$s</xliff:g>\" ühenduse selle seadmega ja lisab selle blokeerimisloendisse</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Lõpeta seadme blokeerimine</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Seade \"<xliff:g id="device_name">%1$s</xliff:g>\" saab selle levialaga ühenduse luua</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Hetkel pole ühtegi klienti saadaval. Ühendatud ja blokeeritud seadmed kuvatakse siin, kui need on saadaval.</string>
     <string name="app_volume">Rakenduse helitugevus</string>
+    <string name="auto_brightness_one_shot_title">Ühekordne automaatne heledus</string>
+    <string name="auto_brightness_one_shot_summary">Heledust reguleeritakse vaid hetkel, mil ekraan sisse lülitatakse</string>
+    <string name="package_details_group_title">Pakendi üksikasjad</string>
+    <string name="package_name">Pakendi nimi</string>
+    <string name="package_version">Pakendi versioon</string>
 </resources>

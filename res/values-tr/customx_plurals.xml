@@ -5,7 +5,7 @@
         <item quantity="one"><xliff:g id="DURATION">%1$d</xliff:g> dakika boyunca hiçbir cihaz bağlı olmadığında kapatın</item>
     </plurals>
     <plurals name="wifi_hotspot_client_limit_summary">
-        <item quantity="other">Bu cihaz \"<xliff:g id="device_num">%1$d</xliff:g>\" bu hotspot\'a bağlanabilecek</item>
+        <item quantity="other">Bu etkin noktaya en fazla <xliff:g id="device_num">%1$d</xliff:g> cihaz bağlanabilir</item>
         <item quantity="one">Bu cihaz \"<xliff:g id="device_num">%1$d</xliff:g>\" bu hotspot\'a bağlanabilecek</item>
     </plurals>
 </resources>

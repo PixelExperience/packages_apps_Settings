@@ -12,7 +12,7 @@ Vypnúť, keď sa na <xliff:g id="DURATION">%1$d</xliff:g> min. nepripojí žiad
     <plurals name="wifi_hotspot_client_limit_summary">
         <item quantity="other">K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadenie
 K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadení</item>
-        <item quantity="one">Toto zariadenie „<xliff:g id="device_name">%1$s</xliff:g>“ sa bude môcť pripojiť k tomuto hotspotu</item>
+        <item quantity="one">Toto zariadenie „<xliff:g id="device_name">%1$d</xliff:g>“ sa bude môcť pripojiť k tomuto hotspotu</item>
         <item quantity="few">K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadenie
 K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadení</item>
         <item quantity="many">K tomuto hotspotu sa môže pripojiť až <xliff:g id="device_num">%1$d</xliff:g> zariadenie

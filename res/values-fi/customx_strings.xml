@@ -208,8 +208,9 @@
     <string name="wifi_hotspot_block_client_dialog_text">Tämä toiminto katkaisee laitteen \"<xliff:g id="device_name">%1$s</xliff:g>\" yhteyden tästä laitteesta ja lisää sen estolistalle</string>
     <string name="wifi_hotspot_unblock_client_dialog_title">Kumoa laitteen esto</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">Laite \"<xliff:g id="device_name">%1$s</xliff:g>\" pystyy yhdistymään tähän yhteyspisteeseen</string>
-    <string name="wifi_hotspot_client_manager_footer_text">Yhteyksiä ei ole tällä hetkellä saatavilla. Yhdistetyt ja estetyt laitteet luetellaan tässä, kun niitä on saatavilla.</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Yhteyksiä ei ole tällä hetkellä saatavilla. Yhdistetyt ja estetyt laitteet näkyvät täällä kun ne ovat saatavilla.</string>
     <string name="app_volume">Sovelluksen äänenvoimakkuus</string>
+    <string name="auto_brightness_one_shot_title">\"One shot\" automaattinen kirkkauden säätö</string>
     <string name="auto_brightness_one_shot_summary">Kirkkauden säätö tapahtuu vain sillä hetkellä, kun näyttö kytketään päälle</string>
     <string name="package_details_group_title">Paketin tiedot</string>
     <string name="package_name">Paketin nimi</string>

@@ -27,6 +27,14 @@
     <string name="lockscreen_media_art_title">Прикажи омот медија</string>
     <string name="advanced_reboot_title">Напредно поновно покретање</string>
     <string name="advanced_reboot_summary">Када је уређај откључан, прикажи опције у менију поновног покретања, за рестарт у \'recovery\' или \'bootloader\'</string>
+    <string name="power_menu_shortcuts_title">Пречице менија</string>
+    <string name="power_menu_shortcuts_summary">Прилагоди пречице менија напајања</string>
+    <string name="power_menu_screenshot_title">Снимак екрана</string>
+    <string name="power_menu_screenshot_summary">Додирните и задржите за делимични снимак екрана</string>
+    <string name="power_menu_airplane_title">Режим рада у авиону</string>
+    <string name="power_menu_users_title">Пребацивач корисника</string>
+    <string name="power_menu_emergency_title">Хитно</string>
+    <string name="power_menu_devicecontrols_title">Контроле уређаја</string>
     <string name="display_rotation_title">Подешавања ротације</string>
     <string name="display_rotation_enabled">Аутоматска ротација је омогућена.</string>
     <string name="display_rotation_disabled">Аутоматска ротација је онемогућена.</string>
@@ -60,6 +68,7 @@
     <string name="status_bar_am_pm_small">Мали</string>
     <string name="status_bar_am_pm_hidden">Скривено</string>
     <string name="status_bar_clock_auto_hide_title">Аутоматски сакриј</string>
+    <string name="status_bar_clock_auto_hide_summary">Сакриј сат ако је покретач видљив</string>
     <string name="status_bar_battery_title">Индикатор батерије</string>
     <string name="status_bar_battery_style_title">Стил индикатора батерије</string>
     <string name="status_bar_battery_style_icon_portrait">Усправна икона</string>
@@ -70,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">Унутар иконе</string>
     <string name="status_bar_battery_percentage_text_next">Поред иконе</string>
     <string name="status_bar_brightness_category">Осветљеност</string>
+    <string name="status_bar_brightness_slider_title">Клизач осветљења</string>
+    <string name="status_bar_brightness_slider_summary">Прилагодите осветљеност из Брзих Подешавања.</string>
+    <string name="status_bar_brightness_slider_auto_title">Аутоматска осветљеност</string>
+    <string name="status_bar_brightness_slider_auto_summary">Прикажи тастер за прилагодљиву осветљености поред клизача</string>
     <string name="status_bar_toggle_brightness">Управљање осветљеношћу</string>
     <string name="status_bar_toggle_brightness_summary">Прилагодите осветљеност померањем прста по статусној траци.</string>
     <string name="network_traffic_settings_title">Контролор мрежног саобраћаја</string>
@@ -117,6 +130,7 @@
     <string name="additional_buttons_title">Додатна дугмад</string>
     <string name="click_partial_screenshot_title">Кликни за делимично сликање екрана</string>
     <string name="click_partial_screenshot_summary">Кратко притисни дугме за смањивање звука и за закључавање екрана да би сликао делимично екран</string>
+    <string name="navigation_bar_edge_long_swipe_title">Радња при дугом превлачењу на ивици</string>
     <string name="live_display_summary">Прилагодите екран на основу доба дана и осветљености, како би се повећала читљивост и смањило напрезање очију.</string>
     <string name="live_display_mode">Режим приказа</string>
     <string name="live_display_color_temperature_title">Температура боје</string>
@@ -127,6 +141,7 @@
     <string name="live_display_outdoor_mode_title">Аутоматски режим „на отвореном“</string>
     <string name="live_display_outdoor_mode_summary">Аутоматски повећајте осветљеност и засићеност под јаким светлом.</string>
     <string name="live_display_anti_flicker_title">Спречавање треперења</string>
+    <string name="live_display_anti_flicker_summary">Спречите опсежно треперење и смањите напрезање очију у условима слабог осветљења. То може смањити прецизност боја и погоршати начин на који су приказане неке ставке.</string>
     <string name="live_display_low_power_title">Смањи потрошњу енергије</string>
     <string name="live_display_low_power_summary">Прилагодите екран за најнижу потрошњу енергије без погоршања квалитета.</string>
     <string name="live_display_enhance_color_title">Побољшање боја</string>
@@ -168,13 +183,29 @@
     <string name="adj_intensity_title">Интензитет</string>
     <string name="adj_contrast_title">Контраст</string>
     <string name="show_navbar_gesture_bar_title">Индикатор потеза</string>
+    <string name="show_navbar_gesture_bar_summary">Прикажи индикатор потеза на дну екрана</string>
     <string name="swipe_to_screenshot_gesture_title">Потез за снимак екрана</string>
     <string name="swipe_to_screenshot_gesture_summary">Потез са три прста за снимак екрана</string>
     <string name="display_cutout_mode_title">Понашање зареза</string>
     <string name="display_cutout_mode_normal">Подразумевана</string>
     <string name="display_cutout_mode_hidden">Скривено</string>
     <string name="back_height_low_label">Пуна</string>
+    <string name="back_height_high_label">Дно</string>
     <string name="back_options_dialog_title">Опције</string>
+    <string name="back_height">Простор додира на ивици</string>
     <string name="tethering_allow_vpn_upstreams_title">Дозволи клијентима да користе VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Дозволите клијентима хотспота да користе VPN везе овог уређаја за повезивање на интернет</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Скривена мрежа</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Назив вашег мобилног хотспота неће се приказати на списку доступних WLAN мрежа</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Никад искључити хотспот</string>
+    <string name="wifi_hotspot_client_manager_title">Повезани уређаји</string>
+    <string name="wifi_hotspot_client_manager_summary">Наведи и управљај повезаним уређајима хотспоту</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Наведи повезане уређаје хотспоту</string>
+    <string name="wifi_hotspot_client_limit_title">Ограничење повезаних уређаја</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Блокирани уређаји</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Повезани уређаји</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Блокирај уређај</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Ова радња ће прекинути везу \"<xliff:g id="device_name">%1$s</xliff:g>\" из овог уређаја и ће додати га на црну листу</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Одблокирај уређај</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Нема доступних клијента. Повезани и блокирани уређаји ће се приказати овде када ће бити доступни.</string>
 </resources>

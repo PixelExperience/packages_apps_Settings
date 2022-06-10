@@ -79,10 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">Simgenin içinde</string>
     <string name="status_bar_battery_percentage_text_next">Simgenin yanında</string>
     <string name="status_bar_brightness_category">Parlaklık</string>
-    <string name="status_bar_brightness_slider_title">Parlaklık Çubuğu</string>
-    <string name="status_bar_brightness_slider_summary">Hızlı ayarlar panelinde parlaklık çubuğu</string>
+    <string name="status_bar_brightness_slider_title">Parlaklık kaydırıcı</string>
+    <string name="status_bar_brightness_slider_summary">Hızlı ayarlardan parlaklığı ayarlayın</string>
     <string name="status_bar_brightness_slider_auto_title">Otomatik parlaklık</string>
-    <string name="status_bar_brightness_slider_auto_summary">Hızlı ayarlar panelinde otomatik parlaklık simgesini göster</string>
+    <string name="status_bar_brightness_slider_auto_summary">Otomatik parlaklık simgesini hızlı ayarlarda göster</string>
     <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
     <string name="status_bar_toggle_brightness_summary">Durum çubuğu üzerinde kaydırarak parlaklığı ayarla</string>
     <string name="network_traffic_settings_title">Ağ trafiği göstergesi</string>
@@ -130,7 +130,7 @@
     <string name="additional_buttons_title">Ek tuşlar</string>
     <string name="click_partial_screenshot_title">Kısmi ekran görüntüsü için tıklayın</string>
     <string name="click_partial_screenshot_summary">Kısmi ekran görüntüsü almak için Sesi kısma ve Güç tuşuna kısa basın</string>
-    <string name="navigation_bar_edge_long_swipe_title">Kenar boyunca kaydırma eylemi</string>
+    <string name="navigation_bar_edge_long_swipe_title">Yan kenarlardan uzun kaydırma eylemi</string>
     <string name="live_display_summary">Okunabilirliği artırmak ve göz yorgunluğunu azaltmak için ekranınızı günün zamanına ve ortam koşullarına göre optimize edin</string>
     <string name="live_display_mode">Görüntüleme modu</string>
     <string name="live_display_color_temperature_title">Renk sıcaklığı</string>
@@ -139,7 +139,7 @@
     <string name="live_display_day">Gün</string>
     <string name="live_display_night">Gece</string>
     <string name="live_display_outdoor_mode_title">Otomatik dış mekan modu</string>
-    <string name="live_display_outdoor_mode_summary">Parlak güneş ışığı altında parlaklığı ve doygunluğu otomatik olarak arttırır</string>
+    <string name="live_display_outdoor_mode_summary">Parlak gün ışığı altında parlaklığı ve doygunluğu otomatik olarak arttırır</string>
     <string name="live_display_anti_flicker_title">Titreme önleme</string>
     <string name="live_display_anti_flicker_summary">Düşük ışık koşullarında aşırı titremeyi önleyin ve göz yorgunluğunu azaltın. Bu ayar renk doğruluğunu düşürebilir ve bazı öğelerin görüntülenme şeklini etkileyebilir.</string>
     <string name="live_display_low_power_title">Güç tüketimini azalt</string>
@@ -213,6 +213,6 @@
     <string name="auto_brightness_one_shot_title">Tek seferlik otomatik parlaklık</string>
     <string name="auto_brightness_one_shot_summary">Parlaklık ayarı yalnızca ekran açıldığında gerçekleşir</string>
     <string name="package_details_group_title">Paket ayrıntıları</string>
-    <string name="package_name">Paket ismi</string>
+    <string name="package_name">Paket adı</string>
     <string name="package_version">Paket versionu</string>
 </resources>

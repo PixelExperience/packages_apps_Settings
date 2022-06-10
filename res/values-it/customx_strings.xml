@@ -209,7 +209,7 @@ Recovery o Bootloader nel menù di accensione</string>
     <string name="wifi_hotspot_block_client_dialog_text">Questa azione disconnetterà \"<xliff:g id="device_name">%1$s</xliff:g>\" da questo dispositivo e la aggiungerà alla lista di blocco</string>
     <string name="wifi_hotspot_unblock_client_dialog_title">Sblocca dispositivo</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">The device \"\"<xliff:g id="device_name">%1$s</xliff:g>\" will be able toconnect to this hotspot</string>
-    <string name="wifi_hotspot_client_manager_footer_text">Nessun client è attualmente disponibile. Dispositivi connessi saranno elencati qui quando disponibile.</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Nessun client è al momento disponibile. I dispositivi connessi e bloccati saranno mostrati qui quando disponibili.</string>
     <string name="app_volume">Volume app</string>
     <string name="auto_brightness_one_shot_title">Luminosità automatica singola </string>
     <string name="auto_brightness_one_shot_summary">La regolazione della luminosità avverrà solo nel momento in cui lo schermo è acceso</string>

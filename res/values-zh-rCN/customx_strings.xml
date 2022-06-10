@@ -5,7 +5,7 @@
     <string name="lockpattern_settings_enable_dots_title">显示图案圆点</string>
     <string name="status_bar_double_tap_to_sleep_title">点按休眠</string>
     <string name="status_bar_double_tap_to_sleep_summary">在状态栏或锁屏界面点按两次即可关闭屏幕</string>
-    <string name="wake_when_plugged_or_unplugged_title">连接或移除电源时唤醒</string>
+    <string name="wake_when_plugged_or_unplugged_title">连接或断开电源时唤醒</string>
     <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时点亮屏幕</string>
     <string name="app_notification_sound_timeout_title">最短通知铃声间隔</string>
     <string name="app_notification_sound_timeout_summary_template">每 <xliff:g id="duration">%1$s</xliff:g> 允许一次响铃或振动</string>
@@ -127,7 +127,7 @@
     <string name="torch_long_press_power_timeout_5min">5 分钟</string>
     <string name="torch_long_press_power_timeout_10min">10 分钟</string>
     <string name="others_settings_title">其他设置</string>
-    <string name="additional_buttons_title">附加按钮</string>
+    <string name="additional_buttons_title">更多按键</string>
     <string name="click_partial_screenshot_title">点按以进行局部截图</string>
     <string name="click_partial_screenshot_summary">同时按音量下和电源键以截取局部截图</string>
     <string name="navigation_bar_edge_long_swipe_title">边缘上的长滑动作</string>
@@ -208,7 +208,7 @@
     <string name="wifi_hotspot_block_client_dialog_text">此操作将断开 \"<xliff:g id="device_name">%1$s</xliff:g>\" 与该设备的连接，并将其添加到阻止列表中</string>
     <string name="wifi_hotspot_unblock_client_dialog_title">解封设备</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">该设备 \"<xliff:g id="device_name">%1$s</xliff:g>\" 将能够连接到这个热点</string>
-    <string name="wifi_hotspot_client_manager_footer_text">当前没有可用的客户端。 如果可用，将在此处列出已连接和已阻止的设备。</string>
+    <string name="wifi_hotspot_client_manager_footer_text">当前没有可用的客户端。如果可用，将在此处列出已连接和已阻止的设备。</string>
     <string name="app_volume">应用独立音量</string>
     <string name="auto_brightness_one_shot_title">单次自动亮度</string>
     <string name="auto_brightness_one_shot_summary">亮度调整仅在屏幕打开的那一刻进行</string>

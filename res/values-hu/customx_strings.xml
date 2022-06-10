@@ -196,7 +196,20 @@
     <string name="tethering_allow_vpn_upstreams_title">Kliens VPN-használat-engedélyezés</string>
     <string name="tethering_allow_vpn_upstreams_summary">Engedélyezze a hotspot-klienseknek, hogy a készülék VPN-kapcsolatait felfelé csatlakoztathassák</string>
     <string name="wifi_hotspot_hidden_ssid_title">Rejtett hálózat</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">A hordozható hotspot neve nem fog megjelenni az elérhető WLAN hálózatok listájában.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Soha ne kapcsolja ki a hotspotot.</string>
+    <string name="wifi_hotspot_client_manager_title">Csatlakoztatott készülékek</string>
     <string name="wifi_hotspot_client_manager_summary">A csatlakoztatott készülékek listája és kezelése</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">A csatlakoztatott készülékek listája és kezelése</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Tiltott készülékek</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Csatlakoztatott készülékek</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Készülék tiltása</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Készülék feloldása</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">\"<xliff:g id="device_name">%1$s</xliff:g>\"-készülék kapcsolódhat ehhez a hotspothoz</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Jelenleg nincs elérhető kliens. Amint lesz akár csatlakoztatott, akár letiltott, az itt fog megjelenni.</string>
     <string name="app_volume">Alkalmazásonkénti hangerő</string>
+    <string name="auto_brightness_one_shot_summary">A fényerőbeállítás csak a képernyő bekapcsolásának pillanatában történik</string>
+    <string name="package_details_group_title">Csomag részletei</string>
+    <string name="package_name">Csomag neve</string>
+    <string name="package_version">Csomag verziója</string>
 </resources>

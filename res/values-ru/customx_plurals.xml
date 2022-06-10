@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Выключить, если устройство не подключилось в течении <xliff:g id="DURATION">%1$d</xliff:g> минут</item>
+        <item quantity="one">Выключить, если устройство не подключилось в течение <xliff:g id="DURATION">%1$d</xliff:g> минуты</item>
+        <item quantity="few">Выключить, если устройство не подключилось в течение <xliff:g id="DURATION">%1$d</xliff:g> минут</item>
+        <item quantity="many">Выключить, если устройство не подключилось в течение <xliff:g id="DURATION">%1$d</xliff:g> минут</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Всего <xliff:g id="device_num">%1$d</xliff:g> устройств сможет подключиться к этой точке доступа</item>
+        <item quantity="one">Всего <xliff:g id="device_num">%1$d</xliff:g> устройство сможет подключиться к этой точке доступа</item>
+        <item quantity="few">Всего <xliff:g id="device_num">%1$d</xliff:g> устройства сможет подключиться к этой точке доступа</item>
+        <item quantity="many">Всего <xliff:g id="device_num">%1$d</xliff:g> устройств сможет подключиться к этой точке доступа</item>
+    </plurals>
+</resources>

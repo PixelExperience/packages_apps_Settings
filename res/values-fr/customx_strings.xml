@@ -208,7 +208,7 @@
     <string name="wifi_hotspot_block_client_dialog_text">Cette action déconnectera \"<xliff:g id="device_name">%1$s</xliff:g>\" de cet appareil et l\'ajoutera à la liste de blocage</string>
     <string name="wifi_hotspot_unblock_client_dialog_title">Débloquer l\'appareil</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">L\'appareil \"<xliff:g id="device_name">%1$s</xliff:g>\" devrait être capable de se connecter au point d\'accès </string>
-    <string name="wifi_hotspot_client_manager_footer_text">Aucun client n\'est actuellement disponible.  Les appareils connectés et bloqués seront répertoriés ici lorsqu\'ils seront disponibles.</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Aucun utilisateur n\'est actuellement disponible.  Les appareils connectés et bloqués seront répertoriés ici lorsqu\'ils seront disponibles.</string>
     <string name="app_volume">Volume de l\'application</string>
     <string name="auto_brightness_one_shot_title">Luminosité automatique rapide</string>
     <string name="auto_brightness_one_shot_summary">La luminosité ne s\'ajustera qu\'au moment où l\'écran s\'allume</string>

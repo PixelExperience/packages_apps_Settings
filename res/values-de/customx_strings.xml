@@ -4,9 +4,9 @@
     <string name="lockpattern_settings_enable_error_path_title">Sperrmuster-Fehler anzeigen</string>
     <string name="lockpattern_settings_enable_dots_title">Sperrmuster-Punkte anzeigen</string>
     <string name="status_bar_double_tap_to_sleep_title">Doppeltippen für Standby</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Doppeltippen auf Statusleiste oder Sperrbildschirm, um das Display auszuschalten</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doppeltippen auf Statusleiste oder Sperrbildschirm, um den Bildschrim auszuschalten</string>
     <string name="wake_when_plugged_or_unplugged_title">Beim Anschließen des Ladekabels aufwecken</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen von einer Stromquelle den Bildschirm einschalten</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen einer Stromquelle den Bildschirm einschalten</string>
     <string name="app_notification_sound_timeout_title">Mindestzeit zwischen Benachrichtigungstönen</string>
     <string name="app_notification_sound_timeout_summary_template">Töne und Vibrationen nur einmal alle <xliff:g id="duration">%1$s</xliff:g> zulassen</string>
     <string name="app_notification_sound_timeout_value_none">Keine Einschränkung</string>
@@ -20,7 +20,7 @@
     <string name="unlock_scramble_pin_layout_summary">PIN-Layout zufällig neu anordnen, wenn das Gerät entsperrt wird</string>
     <string name="volume_link_notification_title">Klingelton- und Benachrichtigungslautstärke verknüpfen</string>
     <string name="heads_up_notifications_enabled_title">Pop-up Benachrichtigungen</string>
-    <string name="heads_up_notifications_enabled_summary">Wichtige Benachrichtigungen in einem kleinen, schwebenden Fenster anzeigen</string>
+    <string name="heads_up_notifications_enabled_summary">Wichtige Benachrichtigungen in einem kleinen Popup anzeigen</string>
     <string name="increasing_ring_volume_option_title">Ansteigende Klingeltonlautstärke</string>
     <string name="increasing_ring_min_volume_title">Anfangslautstärke</string>
     <string name="increasing_ring_ramp_up_time_title">Anstiegszeit</string>
@@ -36,8 +36,8 @@
     <string name="power_menu_emergency_title">Notfall</string>
     <string name="power_menu_devicecontrols_title">Gerätesteuerung</string>
     <string name="display_rotation_title">Bildschirmausrichtung</string>
-    <string name="display_rotation_enabled">Automatische Bildschirmausrichtung ist aktiviert</string>
-    <string name="display_rotation_disabled">Automatische Bildschirmausrichtung ist deaktiviert</string>
+    <string name="display_rotation_enabled">Automatische Bildschirmausrichtung aktiviert</string>
+    <string name="display_rotation_disabled">Automatische Bildschirmausrichtung deaktiviert</string>
     <string name="display_rotation_unit">Grad</string>
     <string name="display_rotation_category_title">Bildschirmausrichtung bei</string>
     <string name="display_rotation_0_title">0 Grad</string>
@@ -208,8 +208,9 @@
     <string name="wifi_hotspot_block_client_dialog_text">\"<xliff:g id="device_name">%1$s</xliff:g>\" wird von diesem Gerät getrennt und blockiert</string>
     <string name="wifi_hotspot_unblock_client_dialog_title">Blockierung aufheben</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">\"<xliff:g id="device_name">%1$s</xliff:g>\" wird nicht mehr blockiert und kann sich wieder mit diesem Gerät verbinden</string>
-    <string name="wifi_hotspot_client_manager_footer_text">Aktuell sind keine Geräte verfügbar. Verbundene und blockierte Geräte werden hier angezeigt, wenn sie verfügbar sind</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Derzeit keine Clients verfügbar. Verbundene und blockierte Geräte werden hier aufgelistet, sobald sie verfügbar sind.</string>
     <string name="app_volume">App Lautstärke</string>
+    <string name="auto_brightness_one_shot_title">One-Shot-Auto-Helligkeit</string>
     <string name="auto_brightness_one_shot_summary">Helligkeitsanpassung erfolgt nur beim Einschalten des Bildschirms</string>
     <string name="package_details_group_title">Paketdetails</string>
     <string name="package_name">Paketname</string>
