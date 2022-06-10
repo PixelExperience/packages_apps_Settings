@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">Quando deslizar na tela de bloqueio</string>
     <string name="high_touch_polling_rate_title">Melhorar sensibilidade de toque</string>
     <string name="high_touch_polling_rate_summary">Aumentar taxa de resposta ao tocar na tela</string>
+    <string name="screen_off_fod_title">Impressão digital com a tela apagada</string>
+    <string name="screen_off_fod_summary">Permitir o desbloqueio por impressão digital com a tela apagada</string>
 </resources>

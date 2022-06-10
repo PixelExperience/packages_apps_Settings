@@ -7,7 +7,7 @@
     <string name="battery_saver_refresh_rate_summary">Использовать частоту обновления экрана 60 Гц для экономии энергии при включенном режиме экономии заряда батареи</string>
     <string name="battery_light_title">Включить световой индикатор во время зарядки</string>
     <string name="connected_tws_device_saved_title">Сохраненные наушники</string>
-    <string name="reset">Сброс</string>
+    <string name="reset">Сбросить</string>
     <string name="button_pref_title">Кнопки</string>
     <string name="hardware_keys_home_key_title">Кнопка «Домой»</string>
     <string name="hardware_keys_back_key_title">Кнопка «Назад»</string>

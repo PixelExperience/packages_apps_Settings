@@ -53,7 +53,7 @@
     <string name="swap_capacitive_keys_title">交换电容按钮</string>
     <string name="swap_capacitive_keys_summary">交换最近任务与返回按键的位置</string>
     <string name="others_settings_title">其他设置</string>
-    <string name="additional_buttons_title">附加按钮</string>
+    <string name="additional_buttons_title">更多按键</string>
     <string name="high_touch_sensitivity_title">高触摸灵敏度</string>
     <string name="high_touch_sensitivity_summary">提高触摸灵敏度，以便在戴手套时使用</string>
     <string name="touchscreen_hovering_title">悬空操作</string>

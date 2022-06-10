@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">Kilid ekranında sürüşdürəndə</string>
     <string name="high_touch_polling_rate_title">Yüksək toxunuş yoxlama dərəcəsi</string>
     <string name="high_touch_polling_rate_summary">Toxunaqlı ekran yoxlama dərəcəsini artırın</string>
+    <string name="screen_off_fod_title">Screen off FOD</string>
+    <string name="screen_off_fod_summary">Ekran sönülü ikən FOD-u fəal saxla</string>
 </resources>

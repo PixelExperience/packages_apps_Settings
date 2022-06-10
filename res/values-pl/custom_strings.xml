@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">Kiedy przesuwasz na ekranie blokady</string>
     <string name="high_touch_polling_rate_title">Wysoka szybkość próbkowania dotykowego</string>
     <string name="high_touch_polling_rate_summary">Zwiększ szybkości próbkowania ekranu dotykowego</string>
+    <string name="screen_off_fod_title">FOD przy wyłączonym ekranie</string>
+    <string name="screen_off_fod_summary">Czytnik pod ekranem pozostanie włączony po wyłączeniu ekranu</string>
 </resources>

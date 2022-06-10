@@ -77,5 +77,6 @@
     <string name="face_unlock_method_swipe">Коли ви проводите пальцем на заблокованому екрані </string>
     <string name="high_touch_polling_rate_title">Висока швидкість опитування на дотик</string>
     <string name="high_touch_polling_rate_summary">Підвищити частоту опитування сенсорного екрана</string>
+    <string name="screen_off_fod_title">Відбиток пальця на вимкненому екрані</string>
     <string name="screen_off_fod_summary">Розпізнавати відбиток пальця з вимкненим екраном</string>
 </resources>

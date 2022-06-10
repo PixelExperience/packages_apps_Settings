@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">Kilit ekranında kaydırırken</string>
     <string name="high_touch_polling_rate_title">Yüksek dokunmatik yoklama oranı</string>
     <string name="high_touch_polling_rate_summary">Dokunmatik ekran yoklama oranını artırın</string>
+    <string name="screen_off_fod_title">Ekran kapalı FOD</string>
+    <string name="screen_off_fod_summary">Ekran kapalıyken FOD\'u etkin tutun</string>
 </resources>
