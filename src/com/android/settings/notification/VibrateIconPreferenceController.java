@@ -37,6 +37,7 @@ public class VibrateIconPreferenceController extends SettingPrefController {
 
     @Override
     public boolean isAvailable() {
-        return true;
+        return !mContext.getResources().getBoolean(
+            com.android.internal.R.bool.config_forceShowVibrateIconOnStatusBar);
     }
 }
