@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">Kapag nag-swipe sa lock screen</string>
     <string name="high_touch_polling_rate_title">Mataas na touch polling rate</string>
     <string name="high_touch_polling_rate_summary">Taasan ang touchscreen polling rate</string>
+    <string name="screen_off_fod_title">Screen off FOD</string>
+    <string name="screen_off_fod_summary">I-on lang ang FOD habang naka-off ang screen</string>
 </resources>

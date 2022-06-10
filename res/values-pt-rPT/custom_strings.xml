@@ -63,6 +63,9 @@
     <string name="fingerprint_enroll_find_sensor_message_front">Localize o sensor de impressões digitais na parte frontal do seu telemóvel.</string>
     <string name="fingerprint_enroll_find_sensor_message_rear">Localize o sensor de impressões digitais na parte de trás do seu telemóvel.</string>
     <string name="fingerprint_enroll_find_sensor_message_side">Localize o sensor de impressões digitais na lateral esquerda do seu telemóvel.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front">Toque no sensor na parte frontal do seu telefone.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear">Toque no sensor na parte traseira do seu telefone.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side">Toque no sensor na parte lateral do seu telefone.</string>
     <string name="fast_charging_title">Carregamento rápido</string>
     <string name="fast_charging_summary">Desative para reduzir a temperatura produzida pelo dispositivo enquanto carrega ou para aumentar a duração da bateria</string>
     <string name="security_settings_face_unlock_redo_face_scan_summary">Remover análise de face existente e criar uma nova</string>
@@ -72,4 +75,8 @@
     <string name="face_unlock_method_title">Permitir desbloqueio facial no ecrã de bloqueio</string>
     <string name="face_unlock_method_default">Se o ecrã estiver ligado</string>
     <string name="face_unlock_method_swipe">Ao deslizar no ecrã de bloqueio</string>
+    <string name="high_touch_polling_rate_title">Alta taxa de amostragem de toque</string>
+    <string name="high_touch_polling_rate_summary">Aumentar a taxa de amostragem de toque do ecrã</string>
+    <string name="screen_off_fod_title">FOD com ecrã desligado</string>
+    <string name="screen_off_fod_summary">Manter o sensor de impressão digital ativado quando o ecrã estiver desligado</string>
 </resources>

@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">Lukustuskuval libistades</string>
     <string name="high_touch_polling_rate_title">Kõrge puuteküsitluse määr</string>
     <string name="high_touch_polling_rate_summary">Suurendage puuteekraani valimismäära</string>
+    <string name="screen_off_fod_title">Sõrmejäljelugeja ekraanil, kui ekraan on suletud</string>
+    <string name="screen_off_fod_summary">Kasutage sõrmejäljeskannerit, kui ekraan on välja lülitatud</string>
 </resources>

@@ -77,4 +77,6 @@
     <string name="face_unlock_method_swipe">ロック画面をスワイプした時</string>
     <string name="high_touch_polling_rate_title">ポーリング速度の高速化</string>
     <string name="high_touch_polling_rate_summary">タッチ画面のタッチサンプリングレートを向上させる</string>
+    <string name="screen_off_fod_title">画面消灯時の画面内指紋認証</string>
+    <string name="screen_off_fod_summary">画面消灯時も画面内指紋認証を使用する</string>
 </resources>

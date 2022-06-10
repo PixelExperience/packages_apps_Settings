@@ -44,7 +44,7 @@
     <string name="button_backlight_seekbar_title">Tasten-Helligkeit</string>
     <string name="keyboard_backlight_seekbar_title">Tastaturhelligkeit</string>
     <string name="backlight_timeout_title">Automatisch abschalten nach</string>
-    <string name="backlight_timeout_unlimited">Nie ausschalten</string>
+    <string name="backlight_timeout_unlimited">Nicht ausschalten</string>
     <string name="backlight_summary_disabled">Deaktiviert</string>
     <string name="backlight_summary_enabled_with_timeout">Für <xliff:g id="timeout">%s</xliff:g> aktiviert</string>
     <string name="backlight_summary_enabled">Aktiviert</string>
@@ -73,8 +73,10 @@
     <string name="face_redo_confirm_btn">Wiederholen</string>
     <string name="face_redo_warning_msg">Möchten Sie den vorhandenen Gesichtsscan löschen und einen neuen Scan erstellen?</string>
     <string name="face_unlock_method_title">Gesichtsentsperrung auf Sperrbildschirm zulassen</string>
-    <string name="face_unlock_method_default">Wenn der Bildschirm aktiviert ist</string>
+    <string name="face_unlock_method_default">Wenn der Bildschirm eingeschaltet ist</string>
     <string name="face_unlock_method_swipe">Beim Wischen auf dem Sperrbildschirm</string>
     <string name="high_touch_polling_rate_title">Hohe Touchscreen-Abtastrate</string>
     <string name="high_touch_polling_rate_summary">Touchscreen-Abtastrate erhöhen</string>
+    <string name="screen_off_fod_title">Bildschirm aus FOD</string>
+    <string name="screen_off_fod_summary">FOD aktiviert lassen, wenn der Bildschirm aus ist</string>
 </resources>
