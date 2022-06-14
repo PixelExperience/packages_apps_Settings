@@ -8,6 +8,7 @@
     <!-- Fingerprint -->
     <bool name="config_is_front_facing_fps" translatable="false">false</bool>
 
+<<<<<<< HEAD   (a9e660 Fix NPE on isUdfps)
     <!-- The position of the volume rocker, as opposed to the natural
          orientation of the display.
          Currently used for the volume button re-orient functionality.
@@ -19,5 +20,9 @@
              relative to the natural orientation of the display
              (true for some tablets) -->
     <integer name="config_volumeRockerVsDisplayOrientation">1</integer>
+=======
+    <!-- Max network scan search time in seconds -->
+    <integer name="config_network_scan_helper_max_search_time_sec">300</integer>
+>>>>>>> CHANGE (ee20de Settings: Make NetworkScanHelper max search time customizabl)
 
 </resources>
