@@ -20,4 +20,7 @@
              (true for some tablets) -->
     <integer name="config_volumeRockerVsDisplayOrientation">1</integer>
 
+    <!-- Max network scan search time in seconds -->
+    <integer name="config_network_scan_helper_max_search_time_sec">300</integer>
+
 </resources>
