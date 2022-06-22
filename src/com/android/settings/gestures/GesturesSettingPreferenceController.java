@@ -77,7 +77,12 @@ public class GesturesSettingPreferenceController extends BasePreferenceControlle
         controllers.add(new DoubleTapScreenPreferenceController(context, FAKE_PREF_KEY)
                 .setConfig(ambientDisplayConfiguration));
         controllers.add(new PreventRingingParentPreferenceController(context, FAKE_PREF_KEY));
+<<<<<<< HEAD   (80c530 Revert "Allow toggling screen off fod [2/2]")
         controllers.add(new SwipeToScreenshotPreferenceController(context, FAKE_PREF_KEY));
+=======
+        controllers.add(new ScreenOffUdfpsPreferenceController(context, FAKE_PREF_KEY)
+                .setConfig(ambientDisplayConfiguration));
+>>>>>>> CHANGE (902bfa Settings: gestures: Add page for Screen-Off UDFPS)
         return controllers;
     }
 }
