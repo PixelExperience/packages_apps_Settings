@@ -19,4 +19,9 @@
     <!-- Battery light -->
     <string name="battery_light_title">Turn on the light when charging</string>
 
+    <!-- Preference and settings suggestion title text for screen off UDFPS  (device) [CHAR LIMIT=60]-->
+    <string name="ambient_display_screen_off_udfps_title">Long press on fingerprint sensor to unlock device</string>
+    <!-- Summary text for screen off UDFPS [CHAR LIMIT=NONE]-->
+    <string name="ambient_display_screen_off_udfps_summary">To wake up your screen and unlock, long press your under-display fingerprint sensor.</string>
+
 </resources>
