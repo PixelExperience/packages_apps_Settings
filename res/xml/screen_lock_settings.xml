@@ -48,10 +48,19 @@
         android:key="power_button_instantly_locks"
         android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" />
 
+<<<<<<< HEAD   (ba3032 SettingsGoogle: Restore AOSP vibration intensity prefs)
     <!-- Custom additions, available in pin/pattern/password/slide -->
     <SwitchPreference
         android:key="lockscreen_scramble_pin_layout"
         android:title="@string/unlock_scramble_pin_layout_title"
         android:summary="@string/unlock_scramble_pin_layout_summary" />
+=======
+    <!-- Fingerprint wake-and-unlock toggle -->
+    <SwitchPreference
+        android:key="fingerprint_wake_unlock"
+        android:title="@string/fingerprint_wake_unlock_title"
+        android:summaryOn="@string/fingerprint_wake_unlock_touch"
+        android:summaryOff="@string/fingerprint_wake_unlock_press" />
+>>>>>>> CHANGE (034173 Settings: Allow user configurable fingerprint wake-and-unloc)
 
 </PreferenceScreen>
