@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Rejtett</string>
     <string name="status_bar_clock_auto_hide_title">Automatikus elrejtés</string>
     <string name="status_bar_clock_auto_hide_summary">Óraelrejtés, ha a Launcher látszik</string>
+    <string name="status_bar_clock_position_disabled_summary">Nem változtatható meg a pozició, mert az adatforgalom-jelzés látszik az állapotsoron</string>
     <string name="status_bar_battery_title">Akkumulátorikon</string>
     <string name="status_bar_battery_style_title">Az akkumulátorállapot-jelző stílusa</string>
     <string name="status_bar_battery_style_icon_portrait">Álló ikon</string>
@@ -197,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Engedélyezze a hotspot-klienseknek, hogy a készülék VPN-kapcsolatait felfelé csatlakoztathassák</string>
     <string name="wifi_hotspot_hidden_ssid_title">Rejtett hálózat</string>
     <string name="wifi_hotspot_hidden_ssid_summary">A hordozható hotspot neve nem fog megjelenni az elérhető WLAN hálózatok listájában.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Soha ne kapcsolja ki a hotspotot.</string>
     <string name="wifi_hotspot_client_manager_title">Csatlakoztatott készülékek</string>
     <string name="wifi_hotspot_client_manager_summary">A csatlakoztatott készülékek listája és kezelése</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">A csatlakoztatott készülékek listája és kezelése</string>

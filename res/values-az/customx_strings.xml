@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Gizli</string>
     <string name="status_bar_clock_auto_hide_title">Avtomatik gizlət</string>
     <string name="status_bar_clock_auto_hide_summary">Başladıcı görünsə saatı gizlət</string>
+    <string name="status_bar_clock_position_disabled_summary">Vəziyyət sətrində şəbəkə trafiki göründüyü üçün mövqe dəyişdirilə bilmir</string>
     <string name="status_bar_battery_title">Batereya göstəricisi</string>
     <string name="status_bar_battery_style_title">Batereya vəziyyət stili</string>
     <string name="status_bar_battery_style_icon_portrait">Şaquli nişan</string>
@@ -197,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Hotspot istifadəçilərinin bağlantıları arasında bu cihazın VPN bağlantısını istifadə etməsinə icazə ver</string>
     <string name="wifi_hotspot_hidden_ssid_title">Gizli şəbəkə</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Mobil \"Hotspot\"unuzun adı mövcud WLAN şəbəkələri siyahısından görünməyəcək.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">\"Hotspot\"u heç vaxt söndürmə</string>
     <string name="wifi_hotspot_client_manager_title">Bağlantı qurulmuş cihazlar</string>
     <string name="wifi_hotspot_client_manager_summary">\"Hotspot\"a bağlanmış cihazları siyahılayın və idarə edin</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">\"Hotspot\"a bağlanmış cihazları siyahılayın</string>

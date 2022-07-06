@@ -73,6 +73,7 @@
     <string name="live_display_day">ଦିନ</string>
     <string name="live_display_night">ରାତ୍ରି</string>
     <string name="live_display_low_power_title">ପାୱାର୍ ବ୍ୟବହାର ହ୍ରାସ କରିବା</string>
+    <string name="live_display_color_profile_basic_title">ମୌଳିକ</string>
     <string name="live_display_color_profile_adaptive_title">ଆଡାପ୍ଟିଭ୍</string>
     <string name="live_display_color_profile_reading_title">ପଠନ</string>
     <string name="live_display_reading_mode_title">ପଠନ ମୋଡ୍</string>

@@ -70,6 +70,7 @@ Recovery o Bootloader nel menù di accensione</string>
     <string name="status_bar_am_pm_hidden">Nascosto</string>
     <string name="status_bar_clock_auto_hide_title">Nascondi automaticamente</string>
     <string name="status_bar_clock_auto_hide_summary">Nascondi l\'orologio se il Launcher è visibile</string>
+    <string name="status_bar_clock_position_disabled_summary">Impossibile modificare la posizione perché l\'indicatore del traffico è visualizzato nella barra di stato</string>
     <string name="status_bar_battery_title">Icona della batteria</string>
     <string name="status_bar_battery_style_title">Stile indicatore batteria</string>
     <string name="status_bar_battery_style_icon_portrait">Icona verticale</string>
@@ -198,7 +199,6 @@ Recovery o Bootloader nel menù di accensione</string>
     <string name="tethering_allow_vpn_upstreams_summary">Consenti ai dispositivi connessi all\'Hotspot di utilizzare le connessioni VPN di questo dispositivo</string>
     <string name="wifi_hotspot_hidden_ssid_title">Rete nascosta</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Il nome del tuo hotspot mobile non apparirà nella lista dei network WLAN disponibili</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Non spegnere mai hotspot</string>
     <string name="wifi_hotspot_client_manager_title">Dispositivi connessi</string>
     <string name="wifi_hotspot_client_manager_summary">Elenca e gestisci i dispositivi connessi all\'hotspot</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Elenca i dispositivi connessi all\'hotspot</string>

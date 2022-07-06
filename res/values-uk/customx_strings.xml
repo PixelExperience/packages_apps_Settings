@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Приховати</string>
     <string name="status_bar_clock_auto_hide_title">Приховувати автоматично</string>
     <string name="status_bar_clock_auto_hide_summary">Приховати годинник, якщо панель запуску видима</string>
+    <string name="status_bar_clock_position_disabled_summary">Положення не може бути змінено, так як в рядку стану відображається індикатор трафіку</string>
     <string name="status_bar_battery_title">Індикатор батареї</string>
     <string name="status_bar_battery_style_title">Стиль індикатора батареї</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикальний значок</string>
@@ -197,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Дозволити клієнтам точки доступу використовувати VPN-з\'єднання цього пристрою для підключення до потоку</string>
     <string name="wifi_hotspot_hidden_ssid_title">Прихована мережа</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Назва вашої точки доступу не буде відображатися в списку доступних мереж WLAN.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Ніколи не вимикати точку доступу</string>
     <string name="wifi_hotspot_client_manager_title">Під\'єднані пристрої</string>
     <string name="wifi_hotspot_client_manager_summary">Список і керування пристроями підключених до точки доступу</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Список пристроїв підключених до точки доступу</string>

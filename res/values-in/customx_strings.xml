@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Tersembunyi</string>
     <string name="status_bar_clock_auto_hide_title">Sembunyikan otomatis</string>
     <string name="status_bar_clock_auto_hide_summary">Sembunyikan jam jika peluncur terlihat</string>
+    <string name="status_bar_clock_position_disabled_summary">Posisi tidak dapat diubah karena indikator jaringan ditampilkan di bilah status</string>
     <string name="status_bar_battery_title">Indikator Baterai</string>
     <string name="status_bar_battery_style_title">Gaya status baterai</string>
     <string name="status_bar_battery_style_icon_portrait">Ikon potret</string>
@@ -197,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Izinkan klien hotspot untuk menggunakan koneksi VPN perangkat\u2019 ini untuk konektivitas upstream</string>
     <string name="wifi_hotspot_hidden_ssid_title">Jaringan tersembunyi</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Nama hotspot seluler Anda tidak akan muncul dalam daftar jaringan WiFi yang tersedia.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Jangan pernah mematikan hotspot</string>
     <string name="wifi_hotspot_client_manager_title">Perangkat terhubung</string>
     <string name="wifi_hotspot_client_manager_summary">Daftar dan kelola perangkat yang terhubung ke hotspot</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Daftar perangkat yang terhubung ke hotspot</string>

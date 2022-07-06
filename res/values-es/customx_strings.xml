@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lock_settings_picker_pattern_size_message">Elije un tamaño de patrón</string>
-    <string name="lockpattern_settings_enable_error_path_title">Mostrar patrón erróneo</string>
+    <string name="lock_settings_picker_pattern_size_message">Elige un tamaño de patrón</string>
+    <string name="lockpattern_settings_enable_error_path_title">Mostrar error de patrón</string>
     <string name="lockpattern_settings_enable_dots_title">Mostrar puntos de patrón</string>
     <string name="status_bar_double_tap_to_sleep_title">Tocar para apagar pantalla</string>
     <string name="status_bar_double_tap_to_sleep_summary">Doble toque en la barra de estado o pantalla de bloqueo para apagar la pantalla</string>
@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Oculto</string>
     <string name="status_bar_clock_auto_hide_title">Ocultar automáticamente</string>
     <string name="status_bar_clock_auto_hide_summary">Ocultar reloj si la pantalla de inicio está visible</string>
+    <string name="status_bar_clock_position_disabled_summary">La posición no puede ser cambiada porque el indicador de tráfico se muestra en la barra de estado</string>
     <string name="status_bar_battery_title">Icono de batería</string>
     <string name="status_bar_battery_style_title">Estilo del icono de batería</string>
     <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
@@ -197,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Permitir a los clientes de hotspot usar las conexiones VPN de este dispositivo\u2019 como conectividad principal</string>
     <string name="wifi_hotspot_hidden_ssid_title">Red oculta</string>
     <string name="wifi_hotspot_hidden_ssid_summary">El nombre de tu punto de acceso no aparecerá en la lista de redes WLAN disponibles.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Nunca apagar el punto de acceso</string>
     <string name="wifi_hotspot_client_manager_title">Dispositivos conectados</string>
     <string name="wifi_hotspot_client_manager_summary">Enumerar y gestionar dispositivos conectados al punto de acceso</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Lista de dispositivos conectados al punto de acceso</string>

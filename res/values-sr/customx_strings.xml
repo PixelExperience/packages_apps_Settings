@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Скривено</string>
     <string name="status_bar_clock_auto_hide_title">Аутоматски сакриј</string>
     <string name="status_bar_clock_auto_hide_summary">Сакриј сат ако је покретач видљив</string>
+    <string name="status_bar_clock_position_disabled_summary">Не може се променити позицију јер индикатор саобраћаја се приказује на статусној траци</string>
     <string name="status_bar_battery_title">Индикатор батерије</string>
     <string name="status_bar_battery_style_title">Стил индикатора батерије</string>
     <string name="status_bar_battery_style_icon_portrait">Усправна икона</string>
@@ -197,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Дозволите клијентима хотспота да користе VPN везе овог уређаја за повезивање на интернет</string>
     <string name="wifi_hotspot_hidden_ssid_title">Скривена мрежа</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Назив вашег мобилног хотспота неће се приказати на списку доступних WLAN мрежа</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Никад искључити хотспот</string>
     <string name="wifi_hotspot_client_manager_title">Повезани уређаји</string>
     <string name="wifi_hotspot_client_manager_summary">Наведи и управљај повезаним уређајима хотспоту</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Наведи повезане уређаје хотспоту</string>
@@ -207,5 +207,8 @@
     <string name="wifi_hotspot_block_client_dialog_title">Блокирај уређај</string>
     <string name="wifi_hotspot_block_client_dialog_text">Ова радња ће прекинути везу \"<xliff:g id="device_name">%1$s</xliff:g>\" из овог уређаја и ће додати га на црну листу</string>
     <string name="wifi_hotspot_unblock_client_dialog_title">Одблокирај уређај</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Уређај \"<xliff:g id="device_name">%1$s</xliff:g>\" биће у могућности да се повеже са хотспотом</string>
     <string name="wifi_hotspot_client_manager_footer_text">Нема доступних клијента. Повезани и блокирани уређаји ће се приказати овде када ће бити доступни.</string>
+    <string name="app_volume">Апликација јачина звука</string>
+    <string name="auto_brightness_one_shot_title">Моментално аутоматско осветљење</string>
 </resources>

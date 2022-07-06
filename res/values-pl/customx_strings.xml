@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Ukryty</string>
     <string name="status_bar_clock_auto_hide_title">Autoukrywanie</string>
     <string name="status_bar_clock_auto_hide_summary">Ukryj zegar, jeśli widoczny jest launcher</string>
+    <string name="status_bar_clock_position_disabled_summary">Nie można zmienić pozycji, ponieważ wskaźnik ruchu jest wyświetlany na pasku stanu</string>
     <string name="status_bar_battery_title">Ikona baterii</string>
     <string name="status_bar_battery_style_title">Styl wskaźnika baterii</string>
     <string name="status_bar_battery_style_icon_portrait">Ikona pionowo</string>
@@ -197,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Zezwól urządzeniom, podłączonym do udostępnionej sieci, na wysyłanie pakietów, poprzez VPN tego urządzenia</string>
     <string name="wifi_hotspot_hidden_ssid_title">Sieć ukryta</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Nazwa Twojego mobilnego punktu dostępu nie pojawi się na liście dostępnych sieci WLAN.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Nigdy nie wyłączaj punktu dostępu</string>
     <string name="wifi_hotspot_client_manager_title">Podłączone urządzenia</string>
     <string name="wifi_hotspot_client_manager_summary">Pokaż i zarządzaj urządzeniami podłączonymi do punktu dostępu</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Pokaż urządzenia podłączone do punktu dostępu</string>

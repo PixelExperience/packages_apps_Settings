@@ -189,7 +189,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Benarkan klien hotspot untuk menggunakan sambungan VPN peranti ini\u2019 untuk sambungan huluan</string>
     <string name="wifi_hotspot_hidden_ssid_title">Rangkaian yang tersembunyi</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Nama hotspot anda tidak akan kelihatan dalam senarai rangkaian WLAN yang tersedia.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Jangan tutup hotspot</string>
     <string name="wifi_hotspot_client_manager_title">Peranti yang bersambung</string>
     <string name="wifi_hotspot_client_manager_summary">Senarai dan atur peranti yang bersambung dengan hotspot</string>
     <string name="wifi_hotspot_connected_clients_list_title">Peranti yang Bersambung</string>

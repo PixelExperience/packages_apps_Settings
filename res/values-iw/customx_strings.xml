@@ -197,7 +197,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">הרשה ללקוחות נקודה חמה להשתמש במכשיר זה\u2019s VPN בחיבורים עבור קישוריות במעלה הזרם</string>
     <string name="wifi_hotspot_hidden_ssid_title">רשת מוסתרת</string>
     <string name="wifi_hotspot_hidden_ssid_summary">שם נקודת הגישה הסלולרית שלך לא יופיע ברשימת הרשתות הזמינות</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">לעולם אל תדליק נקודת גישה סלולרית</string>
     <string name="wifi_hotspot_client_manager_title">התקנים מחוברים</string>
     <string name="wifi_hotspot_client_manager_summary">ציין ונהל מכשירים המחוברים בנקודת הגלישה הסלולרית</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">ציין ונהל מכשירים המחוברים לנקודת הגלישה הסלולרית</string>

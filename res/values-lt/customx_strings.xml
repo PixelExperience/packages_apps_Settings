@@ -67,6 +67,7 @@
     <string name="status_bar_am_pm_small">Mažas</string>
     <string name="status_bar_am_pm_hidden">Paslėptas</string>
     <string name="status_bar_clock_auto_hide_title">Automatiškai slėpti</string>
+    <string name="status_bar_clock_position_disabled_summary">Padėties pakeisti negalima, nes būsenos juostoje rodomas tinklo indikatorius</string>
     <string name="status_bar_battery_title">Akumuliatoriaus indikatorius</string>
     <string name="status_bar_battery_style_title">Akumuliatoriaus būsenos stilius</string>
     <string name="status_bar_battery_style_icon_portrait">Piktograma</string>

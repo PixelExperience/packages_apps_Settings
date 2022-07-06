@@ -68,7 +68,8 @@
     <string name="status_bar_am_pm_small">Klein</string>
     <string name="status_bar_am_pm_hidden">Ausgeblendet</string>
     <string name="status_bar_clock_auto_hide_title">Automatisch ausblenden</string>
-    <string name="status_bar_clock_auto_hide_summary">Uhr auf dem Startbildschirm ausblenden</string>
+    <string name="status_bar_clock_auto_hide_summary">Uhr auf Startbildschirm ausblenden</string>
+    <string name="status_bar_clock_position_disabled_summary">Position kann nicht geändert werden, da die Anzeige für Datenverkehr in der Statusleiste angezeigt wird</string>
     <string name="status_bar_battery_title">Akku-Symbol</string>
     <string name="status_bar_battery_style_title">Anzeigeformat</string>
     <string name="status_bar_battery_style_icon_portrait">Symbol (Hochformat)</string>
@@ -197,21 +198,20 @@
     <string name="tethering_allow_vpn_upstreams_summary">Erlaubt Hotspot-Clients die VPN-Verbindungen dieses Gerätes für die Upstream-Konnektivität zu verwenden</string>
     <string name="wifi_hotspot_hidden_ssid_title">Verstecktes Netzwerk</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Der Name deines mobilen Hotspots erscheint nicht in der Liste der verfügbaren WLAN-Netzwerke.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Hotspot nie ausschalten</string>
     <string name="wifi_hotspot_client_manager_title">Verbundene Geräte</string>
     <string name="wifi_hotspot_client_manager_summary">Mit dem Hotspot verbundene Geräte auflisten und verwalten</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Mit dem Hotspot verbundene Geräte auflisten</string>
-    <string name="wifi_hotspot_client_limit_title">Maximale Anzahl an verbundenen Geräten</string>
+    <string name="wifi_hotspot_client_limit_title">Max. Anzahl verbundener Geräte</string>
     <string name="wifi_hotspot_blocked_clients_list_title">Blockierte Geräte</string>
     <string name="wifi_hotspot_connected_clients_list_title">Verbundene Geräte</string>
     <string name="wifi_hotspot_block_client_dialog_title">Gerät Blockieren</string>
-    <string name="wifi_hotspot_block_client_dialog_text">\"<xliff:g id="device_name">%1$s</xliff:g>\" wird von diesem Gerät getrennt und blockiert</string>
-    <string name="wifi_hotspot_unblock_client_dialog_title">Blockierung aufheben</string>
-    <string name="wifi_hotspot_unblock_client_dialog_text">\"<xliff:g id="device_name">%1$s</xliff:g>\" wird nicht mehr blockiert und kann sich wieder mit diesem Gerät verbinden</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Aktion trennt \"<xliff:g id="device_name">%1$s</xliff:g>\"-Verbindung von diesem Gerät und fügt es der Sperrliste hinzu</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Gerät entsperren</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Das Gerät \"<xliff:g id="device_name">%1$s</xliff:g>\" wird sich mit diesem Hotspot verbinden können</string>
     <string name="wifi_hotspot_client_manager_footer_text">Derzeit keine Clients verfügbar. Verbundene und blockierte Geräte werden hier aufgelistet, sobald sie verfügbar sind.</string>
-    <string name="app_volume">App Lautstärke</string>
+    <string name="app_volume">App-Lautstärke</string>
     <string name="auto_brightness_one_shot_title">One-Shot-Auto-Helligkeit</string>
-    <string name="auto_brightness_one_shot_summary">Helligkeitsanpassung erfolgt nur beim Einschalten des Bildschirms</string>
+    <string name="auto_brightness_one_shot_summary">Helligkeit wird nur beim Einschalten des Bildschirms eingestellt</string>
     <string name="package_details_group_title">Paketdetails</string>
     <string name="package_name">Paketname</string>
     <string name="package_version">Paketversion</string>

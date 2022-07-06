@@ -198,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Cho phép các máy khách sử dụng các kết nối Mạng riêng ảo của thiết bị\u2019 này để kết nối ngược lại</string>
     <string name="wifi_hotspot_hidden_ssid_title">Mạng ẩn</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Tên điểm phát sóng di động của bạn sẽ không xuất hiện trong danh sách các mạng WLAN khả dụng.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Không bao giờ tắt điểm phát sóng</string>
     <string name="wifi_hotspot_client_manager_title">Các thiết bị đã được kết nối</string>
     <string name="wifi_hotspot_client_manager_summary">Liệt kê và quản lý các thiết bị được kết nối với điểm phát sóng</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Liệt kê các thiết bị được kết nối với điểm phát sóng</string>

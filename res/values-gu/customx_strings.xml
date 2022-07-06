@@ -9,6 +9,7 @@
     <string name="increasing_ring_volume_option_title">રિંગ વૉલ્યુમ વધારી રહ્યા છે</string>
     <string name="increasing_ring_min_volume_title">શરૂઆતનું વૉલ્યુમ</string>
     <string name="increasing_ring_ramp_up_time_title">રૅમ્પ-અપ સમય</string>
+    <string name="status_bar_quick_qs_pulldown_off">બંધ</string>
     <string name="network_traffic_mode_disable">અક્ષમ કરેલું</string>
     <string name="volbtn_cursor_control_off">અક્ષમ કરેલું</string>
     <string name="live_display_day">દિવસ</string>

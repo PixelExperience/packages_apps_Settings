@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Gizli</string>
     <string name="status_bar_clock_auto_hide_title">Otomatik gizle</string>
     <string name="status_bar_clock_auto_hide_summary">Başlatıcı görünürse saati gizle</string>
+    <string name="status_bar_clock_position_disabled_summary">Durum çubuğunda ağ trafiği göründüğü için konum değiştirilemiyor</string>
     <string name="status_bar_battery_title">Pil göstergesi</string>
     <string name="status_bar_battery_style_title">Pil durumu stili</string>
     <string name="status_bar_battery_style_icon_portrait">Dikey simge</string>
@@ -197,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Hotspot kullanıcılarının, bağlantıları sırasında bu cihazın VPN bağlantısını kullanmasına izin ver</string>
     <string name="wifi_hotspot_hidden_ssid_title">Gizli ağ</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Hotspot isminiz uygun WLAN ağları listesinde görünmeyecek.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Hotspot asla kapanmasın</string>
     <string name="wifi_hotspot_client_manager_title">Bağlı cihazlar </string>
     <string name="wifi_hotspot_client_manager_summary">Hotspot\'a bağlı cihazları listeleyin ve yönetin</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Hotspot\'a bağlı cihazları listeleyin</string>

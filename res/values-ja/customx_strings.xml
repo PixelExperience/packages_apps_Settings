@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">非表示</string>
     <string name="status_bar_clock_auto_hide_title">自動的に隠す</string>
     <string name="status_bar_clock_auto_hide_summary">ホームアプリ表示時は時計を隠す</string>
+    <string name="status_bar_clock_position_disabled_summary">ステータスバーに通信速度が表示中のため、位置を変更できません。</string>
     <string name="status_bar_battery_title">バッテリーアイコン</string>
     <string name="status_bar_battery_style_title">電池の状態のスタイル</string>
     <string name="status_bar_battery_style_icon_portrait">縦向きのアイコン</string>
@@ -197,8 +198,10 @@
     <string name="tethering_allow_vpn_upstreams_summary">この端末の VPN 接続をホットスポットのクライアントが送信接続に使うことを許可する</string>
     <string name="wifi_hotspot_hidden_ssid_title">非公開ネットワーク</string>
     <string name="wifi_hotspot_hidden_ssid_summary">お使いのモバイルホットスポット名は利用可能な WLAN ネットワークのリスト内から消えます</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">ホットスポットを維持</string>
     <string name="wifi_hotspot_client_manager_title">接続されているデバイス</string>
+    <string name="wifi_hotspot_client_manager_summary">ホットスポットに接続されているデバイスのリストを表示して管理する</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">ホットスポットに接続された端末一覧</string>
+    <string name="wifi_hotspot_client_limit_title">接続する端末の上限数</string>
     <string name="wifi_hotspot_blocked_clients_list_title">ブロックされたデバイス</string>
     <string name="wifi_hotspot_connected_clients_list_title">接続されたデバイス</string>
     <string name="wifi_hotspot_block_client_dialog_title">端末をブロック</string>
@@ -207,6 +210,8 @@
     <string name="wifi_hotspot_unblock_client_dialog_text">端末 \"<xliff:g id="device_name">%1$s</xliff:g>\" はこのホットスポットへ接続可能になります</string>
     <string name="wifi_hotspot_client_manager_footer_text">利用可能なクライアントは現在ありません。利用可能になった時に接続済みまたはブロック済みの端末はこのリストに表示されます。</string>
     <string name="app_volume">アプリの音量</string>
+    <string name="auto_brightness_one_shot_title">自動明るさを復帰時のみ実行</string>
+    <string name="auto_brightness_one_shot_summary">画面点灯時の周囲の明るさで1度のみ自動で明るさを変更し、以降は変更しない。</string>
     <string name="package_details_group_title">パッケージの詳細</string>
     <string name="package_name">パッケージ名</string>
     <string name="package_version">パッケージのバージョン</string>

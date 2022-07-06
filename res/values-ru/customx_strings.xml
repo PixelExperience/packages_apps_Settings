@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">Скрыть вырез</string>
     <string name="status_bar_clock_auto_hide_title">Автоскрытие</string>
     <string name="status_bar_clock_auto_hide_summary">Скрыть часы, если открыт рабочий стол</string>
+    <string name="status_bar_clock_position_disabled_summary">Позиция не может быть изменена, так как индикатор трафика отображается в строке состояния</string>
     <string name="status_bar_battery_title">Значок батареи</string>
     <string name="status_bar_battery_style_title">Индикатор батареи</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикальный значок</string>
@@ -197,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">Разрешить клиентам точки доступа использовать VPN-соединения этого устройства для подключения к сети</string>
     <string name="wifi_hotspot_hidden_ssid_title">Скрытая сеть</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Имя вашей мобильной точки доступа не появится в списке доступных сетей WLAN.</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">Не выключать точку доступа</string>
     <string name="wifi_hotspot_client_manager_title">Подключенные устройства</string>
     <string name="wifi_hotspot_client_manager_summary">Список и управление устройствами, подключенными к точке доступа</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Список устройств, подключенных к точке доступа</string>

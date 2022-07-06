@@ -69,6 +69,7 @@
     <string name="status_bar_am_pm_hidden">隱藏</string>
     <string name="status_bar_clock_auto_hide_title">自動隱藏</string>
     <string name="status_bar_clock_auto_hide_summary">在主畫面時自動隱藏時鐘</string>
+    <string name="status_bar_clock_position_disabled_summary">無法更改位置因為流量指示已顯示在狀態欄中</string>
     <string name="status_bar_battery_title">電池指示器</string>
     <string name="status_bar_battery_style_title">電池狀態樣式</string>
     <string name="status_bar_battery_style_icon_portrait">直立圖示</string>
@@ -197,7 +198,6 @@
     <string name="tethering_allow_vpn_upstreams_summary">允許熱點客戶端使用此裝置的 VPN 連線進行上游連線</string>
     <string name="wifi_hotspot_hidden_ssid_title">隱藏的網路</string>
     <string name="wifi_hotspot_hidden_ssid_summary">您的行動無線基地台名稱不會出現在可用 WLAN 網路清單中</string>
-    <string name="wifi_hotspot_auto_off_timeout_never">永不關閉無線基地台</string>
     <string name="wifi_hotspot_client_manager_title">已連線的裝置</string>
     <string name="wifi_hotspot_client_manager_summary">列出並管理已連線到無線基地台的裝置</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">列出已連線到無線基地台的裝置</string>

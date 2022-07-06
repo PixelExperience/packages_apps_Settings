@@ -11,6 +11,7 @@
     <string name="display_rotation_90_title">90 grados</string>
     <string name="display_rotation_180_title">180 grados</string>
     <string name="display_rotation_270_title">270 grados</string>
+    <string name="status_bar_quick_qs_pulldown_off">Studau</string>
     <string name="status_bar_clock_title">Relògiu</string>
     <string name="status_bar_clock_position_title">Positzione de su relògiu</string>
     <string name="status_bar_am_pm_normal">Normale</string>
