@@ -52,6 +52,7 @@
     <!-- Advanced restart options -->
     <string name="advanced_reboot_title">Advanced restart</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">Emergency affordance is enabled</string>
 
     <!-- Power menu actions -->
     <string name="power_menu_shortcuts_title">Menu shortcuts</string>

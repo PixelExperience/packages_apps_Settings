@@ -39,6 +39,7 @@ import java.util.List;
 
 import com.android.internal.util.custom.globalactions.CustomGlobalActions;
 import com.android.internal.util.custom.globalactions.PowerMenuConstants;
+import com.android.internal.util.EmergencyAffordanceManager;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settingslib.applications.ServiceListing;
 
@@ -62,6 +63,9 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
     private CustomGlobalActions mCustomGlobalActions;
 
+    private EmergencyAffordanceManager mEmergencyAffordanceManager;
+    private boolean mForceEmergCheck = false;
+
     Context mContext;
     private LockPatternUtils mLockPatternUtils;
     private UserManager mUserManager;
@@ -74,6 +78,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.power_menu_shortcuts);
         mContext = getActivity().getApplicationContext();
         mCustomGlobalActions = CustomGlobalActions.getInstance(mContext);
+        mEmergencyAffordanceManager = new EmergencyAffordanceManager(mContext);
         mLockPatternUtils = new LockPatternUtils(mContext);
         mUserManager = UserManager.get(mContext);
 
@@ -129,8 +134,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         }
 
         if (mEmergencyPref != null) {
+            mForceEmergCheck = mEmergencyAffordanceManager.needsEmergencyAffordance();
             mEmergencyPref.setChecked(mCustomGlobalActions.userConfigContains(
-                    GLOBAL_ACTION_KEY_EMERGENCY));
+                    GLOBAL_ACTION_KEY_EMERGENCY) || mForceEmergCheck);
+            mEmergencyPref.setEnabled(!mForceEmergCheck);
         }
 
         if (mDeviceControlsPref != null) {
@@ -190,6 +197,13 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     }
 
     private void updatePreferences() {
+        if (mEmergencyPref != null) {
+            if (mForceEmergCheck) {
+                mEmergencyPref.setSummary(R.string.power_menu_emergency_affordance_enabled);
+            } else {
+                mEmergencyPref.setSummary(null);
+            }
+        }
     }
 
     @Override
