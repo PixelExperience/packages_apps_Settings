@@ -50,7 +50,9 @@ public class ScreenOffUdfpsPreferenceController extends GesturePreferenceControl
     }
 
     private static boolean screenOffUdfpsAvailable(AmbientDisplayConfiguration config) {
-        return !TextUtils.isEmpty(config.udfpsLongPressSensorType());
+        return mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_supportsScreenOffUdfps) ||
+                    !TextUtils.isEmpty(config.udfpsLongPressSensorType());
     }
 
     public static boolean isSuggestionComplete(Context context, SharedPreferences prefs) {
