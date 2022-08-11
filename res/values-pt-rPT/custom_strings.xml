@@ -77,6 +77,4 @@
     <string name="face_unlock_method_swipe">Ao deslizar no ecrã de bloqueio</string>
     <string name="high_touch_polling_rate_title">Alta taxa de amostragem de toque</string>
     <string name="high_touch_polling_rate_summary">Aumentar a taxa de amostragem de toque do ecrã</string>
-    <string name="screen_off_fod_title">FOD com ecrã desligado</string>
-    <string name="screen_off_fod_summary">Manter o sensor de impressão digital ativado quando o ecrã estiver desligado</string>
 </resources>

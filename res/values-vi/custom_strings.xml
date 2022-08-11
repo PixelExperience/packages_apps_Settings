@@ -77,6 +77,4 @@
     <string name="face_unlock_method_swipe">Khi vuốt trên màn hình khóa</string>
     <string name="high_touch_polling_rate_title">Tỷ lệ làm mới cảm ứng cao</string>
     <string name="high_touch_polling_rate_summary">Tăng tỷ lệ làm mới trên màn hình cảm ứng</string>
-    <string name="screen_off_fod_title">Tắt màn hình vân tay trên màn hình</string>
-    <string name="screen_off_fod_summary">Luôn bật vân tay trên màn hình khi màn hình tắt</string>
 </resources>
