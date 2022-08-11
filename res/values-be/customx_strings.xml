@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lock_settings_picker_pattern_size_message">Абяры памер графічнага ключа</string>
+    <string name="lock_settings_picker_pattern_size_message">Абярыце памер графічнага ключа</string>
     <string name="lockpattern_settings_enable_error_path_title">Паказваць няправільны ўвод</string>
-    <string name="lockpattern_settings_enable_dots_title">Паказваць кропкі</string>
-    <string name="status_bar_double_tap_to_sleep_title">Націсніце на экран блакавання для сну</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Двойчы дакраніцеся радка стану або заблакаваны экран, каб перавесці прыладу ў спячы рэжым</string>
-    <string name="wake_when_plugged_or_unplugged_title">Улучэнне пры зарадцы</string>
-    <string name="wake_when_plugged_or_unplugged_summary">Улучаць экран пры падлучэнні ці адключэнні крыніцы сілкавання</string>
+    <string name="lockpattern_settings_enable_dots_title">Паказваць кропкі ўзору</string>
+    <string name="status_bar_double_tap_to_sleep_title">Дакраніцеся двойчы для сну</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Двойчы дакраніцеся радка стану або заблакаванага экрану, каб перавесці прыладу ў спячы рэжым</string>
+    <string name="wake_when_plugged_or_unplugged_title">Уключэнне экрана пры падключэнні зарадкі</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Уключаць экран пры падлучэнні ці адключэнні крыніцы сілкавання</string>
     <string name="app_notification_sound_timeout_title">Частата гукавых апавяшчэнняў</string>
     <string name="app_notification_sound_timeout_summary_template">Дазволіць гукі ці вібрацыю не больш чым адзін раз у <xliff:g id="duration">%1$s</xliff:g></string>
     <string name="app_notification_sound_timeout_value_none">Без абмежаванняў</string>
@@ -18,15 +18,15 @@
     <string name="app_notification_sound_timeout_value_30_minutes">30 хвілін</string>
     <string name="unlock_scramble_pin_layout_title">Змешваць кнопкі</string>
     <string name="unlock_scramble_pin_layout_summary">Перастаўляць кнопкі ўводу PIN-кода ў выпадковым парадку</string>
-    <string name="volume_link_notification_title">Звязаць гучнасць выкліку і апавяшчэнняў</string>
-    <string name="heads_up_notifications_enabled_title">Ўсплывальныя апавяшчэнні</string>
-    <string name="heads_up_notifications_enabled_summary">Паказвайце апавяшчэнні аб прыярытэце ў невялікім плаваючым акне</string>
+    <string name="volume_link_notification_title">Звязаць гучнасць выкліку і паведамленняў</string>
+    <string name="heads_up_notifications_enabled_title">Ўсплывальныя паведамленні</string>
+    <string name="heads_up_notifications_enabled_summary">Паказвайце прыярытэтныя паведамленні ў невялікім плаваючым акне</string>
     <string name="increasing_ring_volume_option_title">Нарастальная гучнасць званку</string>
     <string name="increasing_ring_min_volume_title">Пачатковая гучнасць</string>
     <string name="increasing_ring_ramp_up_time_title">Час павелічэння</string>
     <string name="lockscreen_media_art_title">Адлюстроўваць вокладку мультымедыя</string>
     <string name="advanced_reboot_title">Варыянты перазагрузкі</string>
-    <string name="advanced_reboot_summary">Калі прылада разблакавана, у меню сілкавання даступны опцыі перазагрузкі ў рэжым аднаўлення і ў загрузчыка</string>
+    <string name="advanced_reboot_summary">Калі прылада разблакавана, у меню сілкавання даступны опцыі перазагрузкі ў рэжым аднаўлення і загрузчыку</string>
     <string name="power_menu_shortcuts_title">Хуткі выклік меню</string>
     <string name="power_menu_shortcuts_summary">Наладзіць меню кнопкі сілкавання</string>
     <string name="power_menu_screenshot_title">Здымак экрана</string>
@@ -47,7 +47,7 @@
     <string name="incall_feeedback_vibrate_title">Вібрацыя для індыкацыі статусу выкліку</string>
     <string name="status_bar_title">Радок стану</string>
     <string name="status_bar_quick_qs_pulldown_title">Хуткі доступ</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Левы край радка стану выцягвае ўніз хуткія налады</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left_edge">Левы край радка стану выцягвае хуткія налады</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">Правы край радка стану выцягвае хуткія налады</string>
     <string name="status_bar_quick_qs_pulldown_off">Адключана</string>
     <string name="status_bar_quick_qs_pulldown_left">Улева</string>
@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">Нармальна</string>
     <string name="status_bar_am_pm_small">Маленькі</string>
     <string name="status_bar_am_pm_hidden">Схаваць</string>
-    <string name="status_bar_clock_auto_hide_title">Хаваць аўтаматычна</string>
-    <string name="status_bar_clock_auto_hide_summary">Схаваць гадзіннік, калі адкрыты працоўны стол</string>
     <string name="status_bar_battery_title">Індыкатар батарэі</string>
     <string name="status_bar_battery_style_title">Варыянт адлюстроўвання батарэі</string>
     <string name="status_bar_battery_style_icon_portrait">Вертыкальны значок</string>
@@ -79,6 +77,10 @@
     <string name="status_bar_battery_percentage_text_inside">Унутры значка</string>
     <string name="status_bar_battery_percentage_text_next">Побач са значком</string>
     <string name="status_bar_brightness_category">Яркасць</string>
+    <string name="status_bar_brightness_slider_title">Паўзунок яркасці</string>
+    <string name="status_bar_brightness_slider_summary">Налада яркасці ў хуткіх наладах</string>
+    <string name="status_bar_brightness_slider_auto_title">Аўтаяркасць</string>
+    <string name="status_bar_brightness_slider_auto_summary">Паказаць перамыкач адаптыўнай яркасці побач з паўзунком</string>
     <string name="status_bar_toggle_brightness">Кіраваньне яскравасьцьцю</string>
     <string name="status_bar_toggle_brightness_summary">Рэгуляваць яскравасьць экрану рухам пальца, па радку стану</string>
     <string name="network_traffic_settings_title">Індыкатар сеткавага трафіку</string>
@@ -191,9 +193,19 @@
     <string name="back_height">Сэнсарная вобласць экрана</string>
     <string name="tethering_allow_vpn_upstreams_title">Дазволіць кліентам выкарыстоўваць VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Дазволіць кліентам пункта доступу выкарыстоўваць VPN-злучэнні гэтай прылады для падлучэння да сеткі</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Схаваная сетка</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Імя вашага хот-споту не з\'явіцца ў спісе даступных сетак WLAN.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Не выключаць хот-спот</string>
     <string name="wifi_hotspot_client_manager_title">Падлучаныя прылады</string>
+    <string name="wifi_hotspot_client_manager_summary">Спіс і кіраванне прыладамі, падлучанымі да хот-споту</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Спіс прылад, падлучаных да хот-споту</string>
+    <string name="wifi_hotspot_client_limit_title">Ліміт падлучаных прылад</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Заблакаваныя прылады</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Падлучаныя прылады</string>
     <string name="wifi_hotspot_block_client_dialog_title">Заблакіяваць прыладу</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Разблакаваць прыладу</string>
     <string name="app_volume">Гучнасць праграм</string>
+    <string name="auto_brightness_one_shot_summary">Карэкціроўка яркасці будзе адбывацца толькі ў момант уключэння экрана</string>
     <string name="package_details_group_title">Інфармацыя аб пакеце</string>
     <string name="package_name">Назва пакета</string>
     <string name="package_version">Версія пакета</string>

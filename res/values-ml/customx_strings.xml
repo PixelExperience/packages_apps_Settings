@@ -37,7 +37,6 @@
     <string name="status_bar_clock_position_right">വലത്</string>
     <string name="status_bar_clock_position_left">ഇടത്</string>
     <string name="status_bar_am_pm_hidden">മറച്ചുവെക്കുക</string>
-    <string name="status_bar_clock_auto_hide_title">തനിയെ മറയ്ക്കുക</string>
     <string name="status_bar_battery_percentage_default">മറച്ചുവെക്കുക</string>
     <string name="status_bar_brightness_category">ബ്രൈറ്റ്നസ്</string>
     <string name="status_bar_toggle_brightness">തെളിച്ച നിയന്ത്രണം</string>

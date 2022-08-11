@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">Normálny</string>
     <string name="status_bar_am_pm_small">Malý</string>
     <string name="status_bar_am_pm_hidden">Skryté</string>
-    <string name="status_bar_clock_auto_hide_title">Automatické skrývanie</string>
-    <string name="status_bar_clock_auto_hide_summary">Skryť hodiny, pokiaľ je spúšťač viditeľný</string>
     <string name="status_bar_clock_position_disabled_summary">Pozíciu hodín nie je možné zmeniť, pretože sa v stavovom riadku zobrazuje indikátor dátovej prevádzky</string>
     <string name="status_bar_battery_title">Indikátor stavu batérie</string>
     <string name="status_bar_battery_style_title">Zobrazenie stavu batérie</string>
@@ -198,6 +196,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">Povoliť hotspot klientom pripojenie cez VPN</string>
     <string name="wifi_hotspot_hidden_ssid_title">Skrytá sieť</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Názov vášho mobilného hotspotu sa nezobrazí v zozname dostupných sietí WLAN.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Nikdy nevypínať hotspot</string>
     <string name="wifi_hotspot_client_manager_title">Pripojené zariadenia</string>
     <string name="wifi_hotspot_client_manager_summary">Zoznam zariadení pripojených k hotspotu</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Zoznam zariadení pripojených k hotspotu</string>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">I-off kapag walang naka-connect na device sa <xliff:g id="DURATION">%1$d</xliff:g> minuto</item>
+        <item quantity="one">I-off kapag walang naka-connect na device sa <xliff:g id="DURATION">%1$d</xliff:g> minuto</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Hanggang <xliff:g id="device_num">%1$d</xliff:g> na mga device ang pwedeng mag-connect sa hotspot na ito</item>
+        <item quantity="one">Hanggang <xliff:g id="device_num">%1$d</xliff:g> na device ang pwedeng mag-connect sa hotspot na ito</item>
+    </plurals>
+</resources>

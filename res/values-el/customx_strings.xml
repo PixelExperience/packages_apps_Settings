@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">Κανονικό</string>
     <string name="status_bar_am_pm_small">Μικρό</string>
     <string name="status_bar_am_pm_hidden">Κρυφό</string>
-    <string name="status_bar_clock_auto_hide_title">Αυτόματη απόκρυψη</string>
-    <string name="status_bar_clock_auto_hide_summary">Απόκρυψη ρολογιού αν ο launcher είναι ορατός</string>
     <string name="status_bar_clock_position_disabled_summary">Η θέση δεν μπορεί να αλλάξει επειδή η ένδειξη κυκλοφορίας εμφανίζεται στη γραμμή κατάστασης</string>
     <string name="status_bar_battery_title">Ένδειξη μπαταρίας</string>
     <string name="status_bar_battery_style_title">Στυλ επιπέδου μπαταρίας</string>
@@ -198,6 +196,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">Επιτρέψτε στους πελάτες σημείου πρόσβασης να χρησιμοποιούν τις συνδέσεις VPN αυτής της συσκευής για σύνδεση upstream</string>
     <string name="wifi_hotspot_hidden_ssid_title">Κρυφό δίκτυο</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Το όνομα του φορητού σημείου πρόσβασης δεν θα εμφανίζεται όταν τα υπάρχουν διαθέσιμα WLAN δίκτυα </string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Να μην απενεργοποιείται ποτέ το hotspot</string>
     <string name="wifi_hotspot_client_manager_title">Συνδεδεμένες συσκευές</string>
     <string name="wifi_hotspot_client_manager_summary">Λίστα και διαχείριση συνδεδεμένων συσκευών στο σημείο πρόσβασης </string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Λίστα συνδεδεμένων συσκευών </string>

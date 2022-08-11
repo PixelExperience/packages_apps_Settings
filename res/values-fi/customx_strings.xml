@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">Normaali</string>
     <string name="status_bar_am_pm_small">Pieni</string>
     <string name="status_bar_am_pm_hidden">Piilotettu</string>
-    <string name="status_bar_clock_auto_hide_title">Piilota automaattisesti</string>
-    <string name="status_bar_clock_auto_hide_summary">Piilota kello, jos aloitusnäyttö on näkyvissä</string>
     <string name="status_bar_clock_position_disabled_summary">Paikkaa ei voi vaihtaa, koska tietoliikenteen ilmaisin on näkyvissä tilapalkissa.</string>
     <string name="status_bar_battery_title">Akun varaus</string>
     <string name="status_bar_battery_style_title">Akkunäytön ulkoasu</string>
@@ -198,6 +196,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">Salli hotspot yhteyksien kayttää tämän laitteen VPN yhteyksiä yhteyden muodostamiseen</string>
     <string name="wifi_hotspot_hidden_ssid_title">Piilotettu verkko</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Mobiiliyhteyspisteesi nimi ei näy saatavilla olevien WLAN-verkkojen listalla.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Älä koskaan sammuta yhteyspistettä</string>
     <string name="wifi_hotspot_client_manager_title">Yhdistetyt laitteet</string>
     <string name="wifi_hotspot_client_manager_summary">Listaa ja hallitse yhteyspisteeseen yhdistettyjä laitteita</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Listaa yhteyspisteeseen yhdistetyt laitteet</string>

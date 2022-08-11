@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Wyłącz, gdy żadne urządzenie nie było podłączone od <xliff:g id="DURATION">%1$d</xliff:g> minut</item>
+        <item quantity="one">Wyłącz, gdy żadne urządzenie nie było podłączone od <xliff:g id="DURATION">%1$d</xliff:g> minut</item>
+        <item quantity="few">Wyłącz, gdy żadne urządzenie nie było podłączone od <xliff:g id="DURATION">%1$d</xliff:g> minut</item>
+        <item quantity="many">Wyłącz, gdy żadne urządzenie nie było podłączone od <xliff:g id="DURATION">%1$d</xliff:g> minut</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">\"<xliff:g id="device_num">%1$d</xliff:g>\" urządzeń będzie mogło się połączyć do tego punktu dostępu</item>
+        <item quantity="one">\"<xliff:g id="device_num">%1$d</xliff:g>\" urządzenie będzie mogło się połączyć do tego punktu dostępu</item>
+        <item quantity="few">\"<xliff:g id="device_num">%1$d</xliff:g>\" urządzenia będą mogły się połączyć do tego punktu dostępu</item>
+        <item quantity="many">\"<xliff:g id="device_num">%1$d</xliff:g>\" urządzeń będzie mogło się połączyć do tego punktu dostępu</item>
+    </plurals>
+</resources>

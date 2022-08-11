@@ -49,7 +49,6 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">I vogël</string>
     <string name="status_bar_am_pm_hidden">I fshehur</string>
-    <string name="status_bar_clock_auto_hide_title">Vetëfshehje</string>
     <string name="status_bar_battery_title">Treguesi i baterisë</string>
     <string name="status_bar_battery_style_title">Stili i treguesit të baterisë</string>
     <string name="status_bar_battery_style_icon_portrait">Ikonë vertikalisht</string>

@@ -66,7 +66,6 @@
     <string name="status_bar_am_pm_normal">正常</string>
     <string name="status_bar_am_pm_small">小</string>
     <string name="status_bar_am_pm_hidden">隱藏</string>
-    <string name="status_bar_clock_auto_hide_title">自動隱藏</string>
     <string name="status_bar_battery_title">電池指示器</string>
     <string name="status_bar_battery_style_title">電池狀態風格</string>
     <string name="status_bar_battery_style_icon_portrait">直立圖示</string>

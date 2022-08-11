@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">ปกติ</string>
     <string name="status_bar_am_pm_small">เล็ก</string>
     <string name="status_bar_am_pm_hidden">ซ่อน</string>
-    <string name="status_bar_clock_auto_hide_title">ซ่อนอัตโนมัติ</string>
-    <string name="status_bar_clock_auto_hide_summary">ซ่อนนาฬิกาหากมองเห็นตัวเรียกใช้งาน</string>
     <string name="status_bar_clock_position_disabled_summary">ไม่สามารถเปลี่ยนตําแหน่งได้ เนื่องจากตัวบ่งชี้ทราฟฟิกแสดงอยู่ในแถบสถานะ</string>
     <string name="status_bar_battery_title">ไฟแสดงสถานะแบตเตอรี่</string>
     <string name="status_bar_battery_style_title">รูปแบบสถานะแบตเตอรี่</string>
@@ -198,6 +196,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">อนุญาตให้ไคลเอ็นต์ฮอตสปอตเชื่อมต่อ VPN ของอุปกรณ์นี้ สำหรับการเชื่อมต่ออัปสตรีม</string>
     <string name="wifi_hotspot_hidden_ssid_title">เครือข่ายที่ซ่อนอยู่</string>
     <string name="wifi_hotspot_hidden_ssid_summary">ชื่อของฮอตสปอตมือถือของคุณจะไม่ปรากฏในรายการเครือข่าย WLAN ที่พร้อมใช้งาน</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">จะไม่ปิดฮอตสปอตเลย</string>
     <string name="wifi_hotspot_client_manager_title">อุปกรณ์ที่เชื่อมต่อ</string>
     <string name="wifi_hotspot_client_manager_summary">แสดงรายการและจัดการอุปกรณ์ที่เชื่อมต่อกับฮอตสปอต</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">แสดงชื่ออุปกรณ์ที่เชื่อมต่อกับฮอตสปอต</string>

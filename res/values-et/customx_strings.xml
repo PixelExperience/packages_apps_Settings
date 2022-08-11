@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">Tavaline</string>
     <string name="status_bar_am_pm_small">Väike</string>
     <string name="status_bar_am_pm_hidden">Peidetud</string>
-    <string name="status_bar_clock_auto_hide_title">Peida automaatselt</string>
-    <string name="status_bar_clock_auto_hide_summary">Peida kell, kui avakuva on nähtaval</string>
     <string name="status_bar_clock_position_disabled_summary">Asendit ei saa muuta, sest olekuribal kuvatakse liiklusindikaator</string>
     <string name="status_bar_battery_title">Akuindikaator</string>
     <string name="status_bar_battery_style_title">Aku oleku stiil</string>
@@ -198,6 +196,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">Luba kuumkoha klientidel kasutada selle seadme VPN-ühendusi ülesvoolu ühenduvuseks</string>
     <string name="wifi_hotspot_hidden_ssid_title">Peidetud võrk</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Teie mobiilse leviala nime ei kuvata saadaolevate WLAN-võrkude loendis.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Ärge kunagi lülitage leviala välja</string>
     <string name="wifi_hotspot_client_manager_title">Ühendatud seadmed</string>
     <string name="wifi_hotspot_client_manager_summary">Loetlege ja hallake levialaga ühendatud seadmeid</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Loetlege levialaga ühendatud seadmed</string>

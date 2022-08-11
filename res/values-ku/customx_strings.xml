@@ -57,7 +57,6 @@
     <string name="status_bar_am_pm_normal">ئاسایی</string>
     <string name="status_bar_am_pm_small">بچووک</string>
     <string name="status_bar_am_pm_hidden">نادیار</string>
-    <string name="status_bar_clock_auto_hide_title">شاردنەوەی خۆکار</string>
     <string name="status_bar_battery_title">نیشاندەری ووزە</string>
     <string name="status_bar_battery_style_title">شێوازی نیشاندانی ووزە</string>
     <string name="status_bar_battery_style_icon_portrait">وێنۆچکەی درێژ</string>

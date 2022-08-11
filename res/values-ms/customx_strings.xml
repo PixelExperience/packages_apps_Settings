@@ -60,8 +60,6 @@
     <string name="status_bar_am_pm_normal">Biasa</string>
     <string name="status_bar_am_pm_small">Kecil</string>
     <string name="status_bar_am_pm_hidden">Potongan_paparan_disembunyikan</string>
-    <string name="status_bar_clock_auto_hide_title">Sembunyikan auto</string>
-    <string name="status_bar_clock_auto_hide_summary">Sembunyi jam sekiranya pelancar kelihatan</string>
     <string name="status_bar_battery_title">Penunjuk bateri</string>
     <string name="status_bar_battery_style_title">Cara status bateri</string>
     <string name="status_bar_battery_style_icon_portrait">Potret ikon</string>

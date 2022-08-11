@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">標準</string>
     <string name="status_bar_am_pm_small">小さい</string>
     <string name="status_bar_am_pm_hidden">非表示</string>
-    <string name="status_bar_clock_auto_hide_title">自動的に隠す</string>
-    <string name="status_bar_clock_auto_hide_summary">ホームアプリ表示時は時計を隠す</string>
     <string name="status_bar_clock_position_disabled_summary">ステータスバーに通信速度が表示中のため、位置を変更できません。</string>
     <string name="status_bar_battery_title">バッテリーアイコン</string>
     <string name="status_bar_battery_style_title">電池の状態のスタイル</string>
@@ -198,6 +196,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">この端末の VPN 接続をホットスポットのクライアントが送信接続に使うことを許可する</string>
     <string name="wifi_hotspot_hidden_ssid_title">非公開ネットワーク</string>
     <string name="wifi_hotspot_hidden_ssid_summary">お使いのモバイルホットスポット名は利用可能な WLAN ネットワークのリスト内から消えます</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">ホットスポットを維持</string>
     <string name="wifi_hotspot_client_manager_title">接続されているデバイス</string>
     <string name="wifi_hotspot_client_manager_summary">ホットスポットに接続されているデバイスのリストを表示して管理する</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">ホットスポットに接続された端末一覧</string>

@@ -53,7 +53,6 @@
     <string name="status_bar_am_pm_normal">Arferol</string>
     <string name="status_bar_am_pm_small">Bach</string>
     <string name="status_bar_am_pm_hidden">Cudd</string>
-    <string name="status_bar_clock_auto_hide_title">Cuddio\'n awtomatig</string>
     <string name="status_bar_battery_title">Dangosydd batri</string>
     <string name="status_bar_battery_style_title">Arddull statws batri</string>
     <string name="status_bar_battery_style_icon_portrait">Eicon darlun</string>

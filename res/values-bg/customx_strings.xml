@@ -66,7 +66,6 @@
     <string name="status_bar_am_pm_normal">Нормален</string>
     <string name="status_bar_am_pm_small">Малък</string>
     <string name="status_bar_am_pm_hidden">Скрит</string>
-    <string name="status_bar_clock_auto_hide_title">Автоматично скриване</string>
     <string name="status_bar_battery_title">Батерия</string>
     <string name="status_bar_battery_style_title">Икона на батерията</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикална икона</string>

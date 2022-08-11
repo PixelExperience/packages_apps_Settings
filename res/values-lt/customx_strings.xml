@@ -34,6 +34,7 @@
     <string name="power_menu_airplane_title">Lėktuvo režimas</string>
     <string name="power_menu_users_title">Vartotojo perjungiklis</string>
     <string name="power_menu_emergency_title">Skubus atvejis</string>
+    <string name="power_menu_devicecontrols_title">Įrenginio valdikliai</string>
     <string name="display_rotation_title">Sukimo nustatymai</string>
     <string name="display_rotation_enabled">Automatinis sukimas įjungtas</string>
     <string name="display_rotation_disabled">Automatinis sukimas išjungtas</string>
@@ -66,7 +67,6 @@
     <string name="status_bar_am_pm_normal">Normalus</string>
     <string name="status_bar_am_pm_small">Mažas</string>
     <string name="status_bar_am_pm_hidden">Paslėptas</string>
-    <string name="status_bar_clock_auto_hide_title">Automatiškai slėpti</string>
     <string name="status_bar_clock_position_disabled_summary">Padėties pakeisti negalima, nes būsenos juostoje rodomas tinklo indikatorius</string>
     <string name="status_bar_battery_title">Akumuliatoriaus indikatorius</string>
     <string name="status_bar_battery_style_title">Akumuliatoriaus būsenos stilius</string>
@@ -78,6 +78,10 @@
     <string name="status_bar_battery_percentage_text_inside">Piktogramos viduje</string>
     <string name="status_bar_battery_percentage_text_next">Šalia piktogramos</string>
     <string name="status_bar_brightness_category">Ryškumas</string>
+    <string name="status_bar_brightness_slider_title">Ryškumo slankiklis</string>
+    <string name="status_bar_brightness_slider_summary">Reguliuoti šviesumą iš greitųjų nustatymų</string>
+    <string name="status_bar_brightness_slider_auto_title">Automatinis ryškumas</string>
+    <string name="status_bar_brightness_slider_auto_summary">Adaptyvus ryškumo valdymo jungiklis šalia slankiklio</string>
     <string name="status_bar_toggle_brightness">Ryškumo valdymas</string>
     <string name="status_bar_toggle_brightness_summary">Sureguliuokite ryškumą slinkdami per būsenos juostą</string>
     <string name="network_traffic_settings_title">Tinklo srauto monitorius</string>
@@ -123,6 +127,9 @@
     <string name="torch_long_press_power_timeout_10min">10 minučių</string>
     <string name="others_settings_title">Kiti nustatymai</string>
     <string name="additional_buttons_title">Papildomi mygtukai</string>
+    <string name="click_partial_screenshot_title">Spustelėkite, kad padarytumėte dalinę ekrano kopiją</string>
+    <string name="click_partial_screenshot_summary">Trumpai spustelti garsumo mažinimo ir maitinimo mygtukus, kad būtų padaryta dalinė ekrano kopija</string>
+    <string name="navigation_bar_edge_long_swipe_title">Ilgo braukimo kraštu veiksmas</string>
     <string name="live_display_summary">Optimizuoti ekraną remiantis paros metu ir aplinkos sąlygomis, siekiant pagerinti įskaitomumą ir sumažinti akių įtampą</string>
     <string name="live_display_mode">Ekrano režimas</string>
     <string name="live_display_color_temperature_title">Spalvos temperatūra</string>
@@ -133,6 +140,7 @@
     <string name="live_display_outdoor_mode_title">Automatinis lauko režimas</string>
     <string name="live_display_outdoor_mode_summary">Padidinkite ryškumą ir sodrumą ryškioje saulės šviesoje</string>
     <string name="live_display_anti_flicker_title">Nemirksėjimo režimas</string>
+    <string name="live_display_anti_flicker_summary">Apsaugo nuo didelio mirgėjimo ir sumažina akių nuovargį prasto apšvietimo sąlygomis. Tai gali pabloginti spalvų tikslumą ir turėti įtakos kai kurių elementų rodymo būdui.</string>
     <string name="live_display_low_power_title">Sumažinkite energijos suvartojimą</string>
     <string name="live_display_low_power_summary">Sureguliuokite ekraną mažam energijos suvartojimui be pablogėjimo</string>
     <string name="live_display_enhance_color_title">Patobulinkite spalvas</string>
@@ -173,16 +181,37 @@
     <string name="adj_saturation_title">Spalvų sodrumas</string>
     <string name="adj_intensity_title">Intensyvumas</string>
     <string name="adj_contrast_title">Kontrastas</string>
+    <string name="show_navbar_gesture_bar_title">Gestų indikatorius</string>
+    <string name="show_navbar_gesture_bar_summary">Rodyti gestų indikatorių ekrano apačioje</string>
     <string name="swipe_to_screenshot_gesture_title">Braukite ekrano kopijai</string>
     <string name="swipe_to_screenshot_gesture_summary">Jie norite padaryti ekrano kopiją, braukite trim pirštais</string>
     <string name="display_cutout_mode_title">Žiedų elgesys</string>
     <string name="display_cutout_mode_normal">Numatytieji</string>
     <string name="display_cutout_mode_hidden">Paslėptas</string>
     <string name="back_height_low_label">pilnas</string>
+    <string name="back_height_high_label">Apačia</string>
     <string name="back_options_dialog_title">Nustatymai</string>
+    <string name="back_height">Krašto lietimo sritis</string>
     <string name="tethering_allow_vpn_upstreams_title">Leisti klientams naudoti VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Leisti prieigos taško klientams prisijungti prie tinklo naudojant šio prietaiso VPN ryšius</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Paslėptas tinklas</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Jūsų mobiliojo viešojo interneto prieigos taško pavadinimas nebus rodomas galimų WLAN tinklų sąraše.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Niekada neišjungti viešojo interneto prieigos taško</string>
+    <string name="wifi_hotspot_client_manager_title">Prijungti įrenginiai</string>
     <string name="wifi_hotspot_client_manager_summary">Sudarykite sąrašą ir tvarkykite įrenginius, prijungtus prie viešosios interneto prieigos taško</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Rodykite prijungtų prie viešosios interneto prieigos taško įrenginių sąrašą</string>
+    <string name="wifi_hotspot_client_limit_title">Prisijungusių įrenginių limitas</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Užblokuoti įrenginiai</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Prijungti įrenginiai</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Blokuoti įrenginį</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Šis veiksmas atjungs \"<xliff:g id="device_name">%1$s</xliff:g>\" nuo šio įrenginio ir įtrauks jį į užblokuotų įrenginių sąrašą</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Atblokuoti įrenginį</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">Įrenginys „<xliff:g id="device_name">%1$s</xliff:g>“ galės prisijungti prie šios viešosios interneto prieigos taško</string>
     <string name="wifi_hotspot_client_manager_footer_text">Šiuo metu klientų nėra. Prijungti ir užblokuoti įrenginiai bus išvardyti čia, kai bus pasiekiami.</string>
+    <string name="app_volume">Programos garsumas</string>
+    <string name="auto_brightness_one_shot_title">Vieno kadro automatinis ryškumas</string>
+    <string name="auto_brightness_one_shot_summary">Ryškumo reguliavimas bus atliktas tik tuo metu, kai įjungsite ekraną</string>
+    <string name="package_details_group_title">Paketo informacija</string>
+    <string name="package_name">Paketo pavadinimas</string>
+    <string name="package_version">Paketo versija</string>
 </resources>

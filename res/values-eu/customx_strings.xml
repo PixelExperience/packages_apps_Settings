@@ -54,7 +54,6 @@
     <string name="status_bar_am_pm_normal">Arrunta</string>
     <string name="status_bar_am_pm_small">Txikia</string>
     <string name="status_bar_am_pm_hidden">Ezkututa</string>
-    <string name="status_bar_clock_auto_hide_title">Ezkutatu automatikoki</string>
     <string name="status_bar_battery_title">Bateriaren adierazlea</string>
     <string name="status_bar_battery_style_title">Bateria-egoeraren estiloa</string>
     <string name="status_bar_battery_style_icon_portrait">Ikono bertikala</string>

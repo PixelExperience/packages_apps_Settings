@@ -67,8 +67,7 @@
     <string name="status_bar_am_pm_normal">기본</string>
     <string name="status_bar_am_pm_small">작게</string>
     <string name="status_bar_am_pm_hidden">숨김</string>
-    <string name="status_bar_clock_auto_hide_title">자동 숨기기</string>
-    <string name="status_bar_clock_auto_hide_summary">런처가 보이면 시계 숨김</string>
+    <string name="status_bar_clock_position_disabled_summary">상태 표시줄에 트래픽 아이콘이 표시되고 있어 위치를 변경할 수 없습니다</string>
     <string name="status_bar_battery_title">배터리 표시기</string>
     <string name="status_bar_battery_style_title">배터리 상태 스타일</string>
     <string name="status_bar_battery_style_icon_portrait">세로 아이콘</string>
@@ -197,6 +196,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">핫스팟 클라이언트가 연결성 향상을 위해 이 기기의 VPN 연결을 사용하도록 허용</string>
     <string name="wifi_hotspot_hidden_ssid_title">숨겨진 네트워크</string>
     <string name="wifi_hotspot_hidden_ssid_summary">내 모바일 핫스팟의 이름을 사용 가능한 무선랜 목록에 표시하지 않게 합니다.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">핫스팟 끄지 않기</string>
     <string name="wifi_hotspot_client_manager_title">연결된 기기</string>
     <string name="wifi_hotspot_client_manager_summary">핫스팟에 연결된 기기 목록 및 관리</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">핫스팟에 연결된 기기 목록</string>

@@ -73,11 +73,15 @@
     <string name="live_display_day">ଦିନ</string>
     <string name="live_display_night">ରାତ୍ରି</string>
     <string name="live_display_low_power_title">ପାୱାର୍ ବ୍ୟବହାର ହ୍ରାସ କରିବା</string>
+    <string name="live_display_color_profile_natural_title">ପ୍ରାକୃତିକ</string>
+    <string name="live_display_color_profile_cinema_title">ସିନେମା</string>
+    <string name="live_display_color_profile_astronomy_title">ଖଗୋଳ</string>
     <string name="live_display_color_profile_basic_title">ମୌଳିକ</string>
-    <string name="live_display_color_profile_adaptive_title">ଆଡାପ୍ଟିଭ୍</string>
+    <string name="live_display_color_profile_adaptive_title">ଆଡାପ୍ଟିଵ୍</string>
     <string name="live_display_color_profile_reading_title">ପଠନ</string>
     <string name="live_display_reading_mode_title">ପଠନ ମୋଡ୍</string>
     <string name="swipe_to_screenshot_gesture_title">ସ୍କ୍ରିନସଟ୍ ନେବାକୁ ସ୍ଵାଇପ୍ କରନ୍ତୁ</string>
     <string name="swipe_to_screenshot_gesture_summary">ସ୍କ୍ରିନସଟ୍ ନେବାକୁ ତିନି ଆଙ୍ଗୁଠି ସ୍ଵାଇପ୍ କରନ୍ତୁ</string>
     <string name="display_cutout_mode_normal">ଡିଫଲ୍ଟ</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">ହଟସ୍ପଟ୍ କେବେ ବି ବନ୍ଦ କରନ୍ତୁନି</string>
 </resources>

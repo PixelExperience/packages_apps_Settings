@@ -58,7 +58,6 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Pequeno</string>
     <string name="status_bar_am_pm_hidden">Agochados</string>
-    <string name="status_bar_clock_auto_hide_title">Ocultar automáticamente</string>
     <string name="status_bar_battery_title">Indicador da batería</string>
     <string name="status_bar_battery_style_title">Estilo do estado da batería</string>
     <string name="status_bar_battery_style_icon_portrait">Icona vertical</string>

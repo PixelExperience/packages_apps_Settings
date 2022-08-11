@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">רגיל</string>
     <string name="status_bar_am_pm_small">קטן</string>
     <string name="status_bar_am_pm_hidden">מוסתר</string>
-    <string name="status_bar_clock_auto_hide_title">הסתרה אוטומטית</string>
-    <string name="status_bar_clock_auto_hide_summary">הסתרת שעון במסך דף הבית</string>
     <string name="status_bar_battery_title">חיווי סוללה</string>
     <string name="status_bar_battery_style_title">סגנון הצגת סוללה</string>
     <string name="status_bar_battery_style_icon_portrait">סמל עומד</string>

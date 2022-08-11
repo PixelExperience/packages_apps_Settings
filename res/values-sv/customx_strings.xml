@@ -34,6 +34,7 @@
     <string name="power_menu_airplane_title">Flygplansläge</string>
     <string name="power_menu_users_title">Användarbytare</string>
     <string name="power_menu_emergency_title">Nödsituation</string>
+    <string name="power_menu_devicecontrols_title">Enhetsinställningar</string>
     <string name="display_rotation_title">Rotationsinställningar</string>
     <string name="display_rotation_enabled">Automatisk rotation är aktiverat</string>
     <string name="display_rotation_disabled">Auto-rotation är inaktiverat</string>
@@ -66,7 +67,7 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Liten</string>
     <string name="status_bar_am_pm_hidden">Gömd</string>
-    <string name="status_bar_clock_auto_hide_title">Göm automatiskt</string>
+    <string name="status_bar_clock_position_disabled_summary">Position kan ej ändras p.g.a. trafikindikator är synlig i statusbaren</string>
     <string name="status_bar_battery_title">Batteriindikator</string>
     <string name="status_bar_battery_style_title">Batteristatusstil</string>
     <string name="status_bar_battery_style_icon_portrait">Ikon i porträttläge</string>
@@ -77,6 +78,10 @@
     <string name="status_bar_battery_percentage_text_inside">Inuti ikonen</string>
     <string name="status_bar_battery_percentage_text_next">Bredvid ikonen</string>
     <string name="status_bar_brightness_category">Ljusstyrka</string>
+    <string name="status_bar_brightness_slider_title">Reglage för ljusstyrka</string>
+    <string name="status_bar_brightness_slider_summary">Justera ljusstyrka från snabbinställningarna</string>
+    <string name="status_bar_brightness_slider_auto_title">Automatisk ljusstyrka</string>
+    <string name="status_bar_brightness_slider_auto_summary">Visa knapp för automatisk ljusstyrka nära reglaget</string>
     <string name="status_bar_toggle_brightness">Ljusstyrkekontroll</string>
     <string name="status_bar_toggle_brightness_summary">Justera ljusstyrkan genom att svepa över statusfältet</string>
     <string name="network_traffic_settings_title">Nätverkstrafikmonitor</string>
@@ -124,6 +129,7 @@
     <string name="additional_buttons_title">Fler knappar</string>
     <string name="click_partial_screenshot_title">Klicka för att fånga delvis skärmbild</string>
     <string name="click_partial_screenshot_summary">Snabbklicka på Volym Ner och Strömknapp för att ta partiell skärmdump</string>
+    <string name="navigation_bar_edge_long_swipe_title">Lång swipe gest från kant</string>
     <string name="live_display_summary">Optimera din skärm beroende på tidpunkt och omgivning för att förbättra läsbarheten och minska belastningen på ögonen</string>
     <string name="live_display_mode">Visningsläge</string>
     <string name="live_display_color_temperature_title">Färgtemperatur</string>
@@ -184,8 +190,29 @@ Natt: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
     <string name="display_cutout_mode_normal">Standardinställning</string>
     <string name="display_cutout_mode_hidden">Gömd</string>
     <string name="back_height_low_label">Full</string>
+    <string name="back_height_high_label">Botten</string>
     <string name="back_options_dialog_title">Alternativ</string>
     <string name="back_height">Vidröringsområde för kanter</string>
     <string name="tethering_allow_vpn_upstreams_title">Tillåt klienter att använda VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Tillåt hotspot-klienter att använda den här enheten\u2019s VPN-anslutningar för uppströmsanslutning</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Dolt nätverk</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Din mobila hotspots namn kommer ej visas i listan av tillgängliga WLAN nätverk.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Stäng aldrig av hotspot</string>
+    <string name="wifi_hotspot_client_manager_title">Anslutna tjänster</string>
+    <string name="wifi_hotspot_client_manager_summary">Lista och hantera enheter anslutna till hotspoten</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Lista enheter anslutna till hotspoten</string>
+    <string name="wifi_hotspot_client_limit_title">Gräns av anslutna enheter</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Blockerade enheter</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Anslutna enheter</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Blockera enhet</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Detta val kommer att frånkoppla \"<xliff:g id="device_name">%1$s</xliff:g>\" från denna enhet</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Avblockera enhet</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Enheten \"<xliff:g id="device_name">%1$s</xliff:g>\" kommer kunna ansluta till denna hotspot</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Inga klienter är nuvarande tillgängliga. Anslutna och blockerade enheter kommer att listas här när tillgängliga.</string>
+    <string name="app_volume">App volym</string>
+    <string name="auto_brightness_one_shot_title">Automatisk ljusstyrka med en bild</string>
+    <string name="auto_brightness_one_shot_summary">Justering av ljusstyrkan kommer endast att ske när skärmen slås på</string>
+    <string name="package_details_group_title">Detaljer om paketet</string>
+    <string name="package_name">Paketets namn</string>
+    <string name="package_version">Paketets version</string>
 </resources>

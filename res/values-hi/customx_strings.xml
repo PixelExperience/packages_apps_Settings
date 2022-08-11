@@ -20,7 +20,6 @@
     <string name="status_bar_am_pm_title">AM/PM शैली</string>
     <string name="status_bar_am_pm_info">24 घंटे की घड़ी सक्षम है</string>
     <string name="status_bar_am_pm_hidden">छुपा हुआ</string>
-    <string name="status_bar_clock_auto_hide_title">खुद से छिपना</string>
     <string name="status_bar_battery_title">बैटरी सूचक</string>
     <string name="status_bar_battery_percentage_default">छुपा हुआ</string>
     <string name="network_traffic_mode_disable">असक्षम</string>

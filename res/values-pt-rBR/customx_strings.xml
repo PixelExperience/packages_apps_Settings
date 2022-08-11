@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Pequeno</string>
     <string name="status_bar_am_pm_hidden">Escondido</string>
-    <string name="status_bar_clock_auto_hide_title">Ocultar automaticamente</string>
-    <string name="status_bar_clock_auto_hide_summary">Ocultar o relógio se a tela inicial estiver visível</string>
     <string name="status_bar_clock_position_disabled_summary">A posição não pode ser alterada porque o indicador de tráfego está sendo exibido na barra de status</string>
     <string name="status_bar_battery_title">Ícone da bateria</string>
     <string name="status_bar_battery_style_title">Estilo do status da bateria</string>
@@ -198,6 +196,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">Permitir que os clientes de hotspot usem este dispositivo para conexões VPN de alta velocidade</string>
     <string name="wifi_hotspot_hidden_ssid_title">Rede oculta</string>
     <string name="wifi_hotspot_hidden_ssid_summary">O nome do seu ponto de acesso não aparecerá na lista de redes wi-fi disponíveis.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Nunca desativar o ponto de acesso</string>
     <string name="wifi_hotspot_client_manager_title">Dispositivos conectados</string>
     <string name="wifi_hotspot_client_manager_summary">Listar e gerenciar dispositivos conectados ao ponto de acesso</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Listar dispositivos conectados ao ponto de acesso</string>

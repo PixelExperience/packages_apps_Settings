@@ -42,7 +42,6 @@
     <string name="status_bar_am_pm_normal">Àbhaisteach</string>
     <string name="status_bar_am_pm_small">Beag</string>
     <string name="status_bar_am_pm_hidden">Falaichte</string>
-    <string name="status_bar_clock_auto_hide_title">Falaich gu fèin-obrachail</string>
     <string name="status_bar_battery_title">Taisbeanair a’ bhataraidh</string>
     <string name="status_bar_battery_style_title">An stoidhle air staid a’ bhataraidh</string>
     <string name="status_bar_battery_style_icon_portrait">Ìomhaigheag portraide</string>

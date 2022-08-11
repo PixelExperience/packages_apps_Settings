@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Mic</string>
     <string name="status_bar_am_pm_hidden">Ascuns</string>
-    <string name="status_bar_clock_auto_hide_title">Ascundere automată</string>
-    <string name="status_bar_clock_auto_hide_summary">Ascunde ceasul dacă lansatorul este vizibil</string>
     <string name="status_bar_clock_position_disabled_summary">Poziția nu poate fi schimbată deoarece indicatorul de trafic este afișat în bara de stare</string>
     <string name="status_bar_battery_title">Indicator baterie</string>
     <string name="status_bar_battery_style_title">Stilul stării bateriei</string>
@@ -198,6 +196,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">Permite clienților hotspot-ului să utilizeze conexiunile VPN ale acestui dispozitiv pentru conexiunea upstream</string>
     <string name="wifi_hotspot_hidden_ssid_title">Rețea ascunsă</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Numele hotspot-ului dvs. mobil nu va apărea în lista rețelelor WiFi disponibile.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Nu se dezactivează niciodată hotspot-ul</string>
     <string name="wifi_hotspot_client_manager_title">Dispozitive conectate</string>
     <string name="wifi_hotspot_client_manager_summary">Listați și gestionați dispozitivele conectate la hotspot</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Listați dispozitivele conectate la hotspot</string>

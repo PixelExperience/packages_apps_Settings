@@ -66,7 +66,6 @@
     <string name="status_bar_am_pm_normal">স্বাভাবিক</string>
     <string name="status_bar_am_pm_small">ছোট</string>
     <string name="status_bar_am_pm_hidden">লুকানো</string>
-    <string name="status_bar_clock_auto_hide_title">স্বয়ংক্রিয়ভাবে লুকান</string>
     <string name="status_bar_battery_title">ব্যাটারি সূচক</string>
     <string name="status_bar_battery_style_title">ব্যাটারি স্ট্যাটাস স্টাইল</string>
     <string name="status_bar_battery_style_icon_portrait">আইকন পোট্রেট</string>

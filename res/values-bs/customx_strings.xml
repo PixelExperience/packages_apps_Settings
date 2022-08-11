@@ -58,7 +58,6 @@
     <string name="status_bar_am_pm_normal">Normalno</string>
     <string name="status_bar_am_pm_small">Mali</string>
     <string name="status_bar_am_pm_hidden">Skriveno</string>
-    <string name="status_bar_clock_auto_hide_title">Automatski sakrij</string>
     <string name="status_bar_battery_title">Pokazivač baterije</string>
     <string name="status_bar_battery_style_title">Izgled stanja baterije</string>
     <string name="status_bar_battery_style_icon_portrait">Okomita ikona</string>

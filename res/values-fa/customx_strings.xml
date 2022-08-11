@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">عادی</string>
     <string name="status_bar_am_pm_small">کوچک</string>
     <string name="status_bar_am_pm_hidden">مخفی</string>
-    <string name="status_bar_clock_auto_hide_title">مخفی‌کردن خودکار</string>
-    <string name="status_bar_clock_auto_hide_summary">اگر لانچر قابل مشاهده است ساعت را پنهان کن</string>
     <string name="status_bar_battery_title">نشانگر باتری</string>
     <string name="status_bar_battery_style_title">سبک وضعیت باتری</string>
     <string name="status_bar_battery_style_icon_portrait">آیکون عمودی</string>

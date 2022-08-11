@@ -4,7 +4,7 @@
     <string name="lockpattern_settings_enable_error_path_title">Afficher l\'erreur de schéma</string>
     <string name="lockpattern_settings_enable_dots_title">Afficher les points du schéma</string>
     <string name="status_bar_double_tap_to_sleep_title">Tapoter pour mettre en veille</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Appui double sur la barre d\'état pour éteindre l\'écran</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Appuyer deux fois sur la barre d\'état ou sur l\'écran de verrouillage pour éteindre l\'écran</string>
     <string name="wake_when_plugged_or_unplugged_title">Réveiller au branchement</string>
     <string name="wake_when_plugged_or_unplugged_summary">Allumer l\'écran lorsque l\'appareil est connecté à une source d\'alimentation</string>
     <string name="app_notification_sound_timeout_title">Temps minimum entre les sons de notification</string>
@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Petit</string>
     <string name="status_bar_am_pm_hidden">Cachée</string>
-    <string name="status_bar_clock_auto_hide_title">Masquer automatiquement</string>
-    <string name="status_bar_clock_auto_hide_summary">Masquer l\'horloge si le launcher est visible</string>
     <string name="status_bar_clock_position_disabled_summary">Impossible de modifier la position car l\'indicateur de trafic est affiché dans la barre d\'état</string>
     <string name="status_bar_battery_title">Niveau de la batterie</string>
     <string name="status_bar_battery_style_title">Style du niveau de batterie</string>
@@ -198,8 +196,9 @@
     <string name="tethering_allow_vpn_upstreams_summary">Permettre aux clients de point d\'accès d\'utiliser les connexions VPN de cet appareil\u2019 pour la connectivité en amont</string>
     <string name="wifi_hotspot_hidden_ssid_title">Réseau masqué</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Le nom de votre point d\'accès mobile n\'apparaîtra pas dans la liste des réseaux WLAN disponibles.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Ne jamais désactiver le point d\'accès</string>
     <string name="wifi_hotspot_client_manager_title">Appareils connectés</string>
-    <string name="wifi_hotspot_client_manager_summary">Lister et gérer les appareils connectés au hotspot</string>
+    <string name="wifi_hotspot_client_manager_summary">Lister et gérer les appareils connectés au point d\'accès</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Lister les appareils connectés au point d\'accès</string>
     <string name="wifi_hotspot_client_limit_title">Limite d\'appareils pouvant se connecter</string>
     <string name="wifi_hotspot_blocked_clients_list_title">Appareils bloqués</string>

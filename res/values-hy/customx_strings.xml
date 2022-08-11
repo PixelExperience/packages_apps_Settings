@@ -2,6 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="heads_up_notifications_enabled_title">Ելնող պատուհանով ծանուցում</string>
     <string name="status_bar_title">Կարգավիճակի վահանակ</string>
+    <string name="status_bar_quick_qs_pulldown_off">Անջ</string>
     <string name="status_bar_quick_qs_pulldown_left">Ձախ</string>
     <string name="status_bar_quick_qs_pulldown_right">Աջ</string>
     <string name="status_bar_clock_position_right">Աջ</string>
@@ -17,6 +18,7 @@
     <string name="torch_long_press_power_timeout_2min">2 րոպե</string>
     <string name="live_display_day">Ցերեկը</string>
     <string name="live_display_night">Գիշերը</string>
+    <string name="live_display_anti_flicker_title">Պաշտպանություն թարթումից</string>
     <string name="live_display_reading_mode_title">Կարդալու ռեժիմ</string>
     <string name="display_cutout_mode_normal">Կանխադրված</string>
     <string name="display_cutout_mode_hidden">Թաքցված</string>

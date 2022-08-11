@@ -38,7 +38,6 @@
     <string name="status_bar_quick_qs_pulldown_left">ဘယ်ဘက်</string>
     <string name="status_bar_clock_position_left">ဘယ်ဘက်</string>
     <string name="status_bar_am_pm_hidden">ဖျောက်ထားသော</string>
-    <string name="status_bar_clock_auto_hide_title">အလိုအလျောက် ဖျောက်</string>
     <string name="status_bar_battery_percentage_default">ဖျောက်ထားသော</string>
     <string name="status_bar_toggle_brightness">အလင်းပမာဏ ထိန်းချုပ်မှု</string>
     <string name="status_bar_toggle_brightness_summary">အလင်းပမာဏ ချိန်ညှိရန် ဘားတစ်လျှောက် ပွတ်ဆွဲပါ</string>

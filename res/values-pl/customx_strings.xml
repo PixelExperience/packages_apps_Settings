@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">Normalny</string>
     <string name="status_bar_am_pm_small">Mały</string>
     <string name="status_bar_am_pm_hidden">Ukryty</string>
-    <string name="status_bar_clock_auto_hide_title">Autoukrywanie</string>
-    <string name="status_bar_clock_auto_hide_summary">Ukryj zegar, jeśli widoczny jest launcher</string>
     <string name="status_bar_clock_position_disabled_summary">Nie można zmienić pozycji, ponieważ wskaźnik ruchu jest wyświetlany na pasku stanu</string>
     <string name="status_bar_battery_title">Ikona baterii</string>
     <string name="status_bar_battery_style_title">Styl wskaźnika baterii</string>
@@ -197,17 +195,18 @@
     <string name="tethering_allow_vpn_upstreams_title">Zezwól podłączonym urządzeniom na korzystanie z VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Zezwól urządzeniom, podłączonym do udostępnionej sieci, na wysyłanie pakietów, poprzez VPN tego urządzenia</string>
     <string name="wifi_hotspot_hidden_ssid_title">Sieć ukryta</string>
-    <string name="wifi_hotspot_hidden_ssid_summary">Nazwa Twojego mobilnego punktu dostępu nie pojawi się na liście dostępnych sieci WLAN.</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Nazwa Twojego mobilnego hotspotu nie pojawi się na liście dostępnych sieci WLAN.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Nigdy nie wyłączaj hotspotu</string>
     <string name="wifi_hotspot_client_manager_title">Podłączone urządzenia</string>
-    <string name="wifi_hotspot_client_manager_summary">Pokaż i zarządzaj urządzeniami podłączonymi do punktu dostępu</string>
-    <string name="wifi_hotspot_client_manager_list_only_summary">Pokaż urządzenia podłączone do punktu dostępu</string>
+    <string name="wifi_hotspot_client_manager_summary">Pokaż i zarządzaj urządzeniami podłączonymi do hotspotu</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Pokaż urządzenia podłączone do hotspotu</string>
     <string name="wifi_hotspot_client_limit_title">Maksymalna liczba podłączonych urządzeń</string>
     <string name="wifi_hotspot_blocked_clients_list_title">Zablokowane urządzenia</string>
     <string name="wifi_hotspot_connected_clients_list_title">Podłączone urządzenia</string>
     <string name="wifi_hotspot_block_client_dialog_title">Zablokuj urządzenie</string>
     <string name="wifi_hotspot_block_client_dialog_text">Ta czynność rozłączy \"<xliff:g id="device_name">%1$s</xliff:g>\" z tego urządzenia i doda go do listy zablokowanych</string>
     <string name="wifi_hotspot_unblock_client_dialog_title">Odblokuj urządzenie</string>
-    <string name="wifi_hotspot_unblock_client_dialog_text">Urządzenie \"<xliff:g id="device_name">%1$s</xliff:g>\" będzie mogło się połączyć do tego punktu dostępu</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Urządzenie \"<xliff:g id="device_name">%1$s</xliff:g>\" będzie mogło się połączyć do tego hotspotu</string>
     <string name="wifi_hotspot_client_manager_footer_text">Aktualnie brak dostępnych urządzeń. Połączone i zablokowane urządzenia zostaną wyświetlone tutaj, jeśli będą dostępne.</string>
     <string name="app_volume">Głośność aplikacji</string>
     <string name="auto_brightness_one_shot_title">Zastosuj tylko, gdy ekran jest włączony</string>

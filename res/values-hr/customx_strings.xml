@@ -67,8 +67,6 @@
     <string name="status_bar_am_pm_normal">Normalan</string>
     <string name="status_bar_am_pm_small">Malen</string>
     <string name="status_bar_am_pm_hidden">Skriveno</string>
-    <string name="status_bar_clock_auto_hide_title">Automatski sakrij</string>
-    <string name="status_bar_clock_auto_hide_summary">Sakrij sat ako je launcher vidljiv</string>
     <string name="status_bar_clock_position_disabled_summary">Položaj se ne može promijeniti jer se indikator prometa prikazuje u statusnoj traci</string>
     <string name="status_bar_battery_title">Pokazivač baterije</string>
     <string name="status_bar_battery_style_title">Stil baterije</string>
@@ -198,6 +196,7 @@
     <string name="tethering_allow_vpn_upstreams_summary">Dopustite klijentima žarišne točke da koriste VPN\u2019 vezu ovog uređaja za povezivanje</string>
     <string name="wifi_hotspot_hidden_ssid_title">Skrivena mreža</string>
     <string name="wifi_hotspot_hidden_ssid_summary">Naziv vaše mobilne pristupne točke neće se pojaviti na popisu dostupnih Wi-Fi mreža.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Nikada nemoj isključivati pristupnu točku</string>
     <string name="wifi_hotspot_client_manager_title">Povezani uređaji</string>
     <string name="wifi_hotspot_client_manager_summary">Popis i upravljanje uređajima povezanih na pristupnu točku</string>
     <string name="wifi_hotspot_client_manager_list_only_summary">Popis uređaja povezanih na žarišnu točku</string>
