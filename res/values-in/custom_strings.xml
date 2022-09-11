@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Saat mengusap layar kunci</string>
     <string name="high_touch_polling_rate_title">Tingkat polling sentuh tinggi</string>
     <string name="high_touch_polling_rate_summary">Tingkatkan tingkat polling layar sentuh</string>
+    <string name="ambient_display_screen_off_udfps_title">Tekan lama pada sensor sidik jari untuk membuka kunci perangkat</string>
+    <string name="ambient_display_screen_off_udfps_summary">Untuk mengaktifkan layar dan membuka kunci, tekan lama sensor sidik jari di bawah layar.</string>
+    <string name="fingerprint_wake_unlock_title">Sentuk sidik jari untuk membuka kunci</string>
+    <string name="fingerprint_wake_unlock_touch">Mendeteksi saat layar mati</string>
+    <string name="fingerprint_wake_unlock_press">Hanya mendeteksi setelah layar menyala</string>
 </resources>

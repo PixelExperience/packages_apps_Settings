@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Când glisați pe ecranul de blocare</string>
     <string name="high_touch_polling_rate_title">Rată ridicată de sondare la atingere</string>
     <string name="high_touch_polling_rate_summary">Creșteți rata de interogare a ecranului tactil</string>
+    <string name="ambient_display_screen_off_udfps_title">Apăsați lung pe senzorul de amprentă pentru a debloca dispozitivul</string>
+    <string name="ambient_display_screen_off_udfps_summary">Pentru a porni și debloca ecranul, țineți apăsat senzorul de amprentă de sub ecran.</string>
+    <string name="fingerprint_wake_unlock_title">Atingeți amprenta pentru a debloca</string>
+    <string name="fingerprint_wake_unlock_touch">Ascultă evenimente în timp ce ecranul este oprit</string>
+    <string name="fingerprint_wake_unlock_press">Ascultă evenimente numai după ce ecranul este pornit</string>
 </resources>

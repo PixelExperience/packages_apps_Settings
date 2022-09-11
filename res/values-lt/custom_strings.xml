@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Perbraukus užrakto ekrane</string>
     <string name="high_touch_polling_rate_title">Didelis lietimo jautrumas</string>
     <string name="high_touch_polling_rate_summary">Padidinkite jutiklinio ekrano apklausų dažnį</string>
+    <string name="ambient_display_screen_off_udfps_title">Norėdami atrakinti įrenginį, ilgai paspauskite pirštų atspaudų jutiklį</string>
+    <string name="ambient_display_screen_off_udfps_summary">Norėdami pažadinti ekraną ir atrakinti, ilgai paspauskite pirštų atspaudų jutiklį po ekranu.</string>
+    <string name="fingerprint_wake_unlock_title">Palieskite piršto atspaudą, kad atrakintumėte</string>
+    <string name="fingerprint_wake_unlock_touch">Klausyti įvykius,išjungtame ekrane</string>
+    <string name="fingerprint_wake_unlock_press">Įvykių klausymas tik tada, kai įjungtas ekranas</string>
 </resources>

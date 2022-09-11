@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">在锁定屏幕上滑动时</string>
     <string name="high_touch_polling_rate_title">高触控采样率</string>
     <string name="high_touch_polling_rate_summary">提高屏幕的触控采样率</string>
+    <string name="ambient_display_screen_off_udfps_title">长按指纹传感器以解锁设备</string>
+    <string name="ambient_display_screen_off_udfps_summary">要唤醒您的屏幕并解锁，长按您的屏下指纹传感器。</string>
+    <string name="fingerprint_wake_unlock_title">触摸指纹解锁</string>
+    <string name="fingerprint_wake_unlock_touch">在屏幕关闭时监听事件</string>
+    <string name="fingerprint_wake_unlock_press">仅在屏幕开启后监听事件</string>
 </resources>

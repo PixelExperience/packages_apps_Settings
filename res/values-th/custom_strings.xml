@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">เมื่อปัดบนหน้าจอขณะล็อค</string>
     <string name="high_touch_polling_rate_title">อัตราการตอบสนองต่อการสัมผัสสูง</string>
     <string name="high_touch_polling_rate_summary">เพิ่มอัตราการตอบสนองหน้าจอสัมผัส</string>
+    <string name="ambient_display_screen_off_udfps_title">กดเซ็นเซอร์ลายนิ้วมือค้างไว้เพื่อปลดล็อกอุปกรณ์</string>
+    <string name="ambient_display_screen_off_udfps_summary">หากต้องการปลุกหน้าจอและปลดล็อก ให้กดเซ็นเซอร์สแกนลายนิ้วมือใต้หน้าจอค้างไว้</string>
+    <string name="fingerprint_wake_unlock_title">สัมผัสที่ลอยนิ้วมือเพื่อปลดล็อค</string>
+    <string name="fingerprint_wake_unlock_touch">ฟังอีเวนต์ต่าง ๆ ขณะปิดหน้าจอ</string>
+    <string name="fingerprint_wake_unlock_press">ฟังอีเวนต์ต่าง ๆ เฉพาะตอนเปิดหน้าจอ</string>
 </resources>

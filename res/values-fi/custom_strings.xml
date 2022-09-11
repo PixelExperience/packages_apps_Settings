@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Kun pyyhitään lukitusnäyttöä</string>
     <string name="high_touch_polling_rate_title">Nopea kosketuksen päivitystiheys</string>
     <string name="high_touch_polling_rate_summary">Lisää kosketusnäytön päivitysnopeutta</string>
+    <string name="ambient_display_screen_off_udfps_title">Pitkä painallus sormenjälkitunnistajaan poistaa lukituksen.</string>
+    <string name="ambient_display_screen_off_udfps_summary">Näyttö avautuu pitkällä painalluksella sormenjälkitunnistajaan.</string>
+    <string name="fingerprint_wake_unlock_title">Kosketa sormenjälkitunnistajaan avataksesi.</string>
+    <string name="fingerprint_wake_unlock_touch">Kuuntele tapahtumia kun näyttö on poissa </string>
+    <string name="fingerprint_wake_unlock_press">Kuuntele tapahtumia vain kun näyttö on päällä</string>
 </resources>

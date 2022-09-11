@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Κατά την ολίσθηση στην οθόνη κλειδώματος</string>
     <string name="high_touch_polling_rate_title">Υψηλός ρυθμός ανάγνωσης αφής</string>
     <string name="high_touch_polling_rate_summary">Αύξηση της ταχύτητας ανάγνωσης της αφής</string>
+    <string name="ambient_display_screen_off_udfps_title">Πατήστε παρατεταμένα τον αισθητήρα δακτυλικών αποτυπωμάτων για να ξεκλειδώσετε τη συσκευή</string>
+    <string name="ambient_display_screen_off_udfps_summary">Για να ενεργοποιηθεί η οθόνη σας και να ξεκλειδώσετε, πατήστε παρατεταμένα τον αισθητήρα δακτυλικών αποτυπωμάτων κάτω από την οθόνη.</string>
+    <string name="fingerprint_wake_unlock_title">Αγγίξτε το δακτυλικό αποτύπωμα για να ξεκλειδώσετε</string>
+    <string name="fingerprint_wake_unlock_touch">Ακούει συμβάντα ενώ η οθόνη είναι απενεργοποιημένη</string>
+    <string name="fingerprint_wake_unlock_press">Ακούει συμβάντα μόνο όταν είναι ενεργοποιημένη η οθόνη</string>
 </resources>

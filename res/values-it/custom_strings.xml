@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Durante lo scorrimento sulla schermata di blocco</string>
     <string name="high_touch_polling_rate_title">Elevato tasso di polling del touch</string>
     <string name="high_touch_polling_rate_summary">Aumenta il tasso di polling del touchscreen</string>
+    <string name="ambient_display_screen_off_udfps_title">Pressione prolungata sul sensore d\'impronte digitali per sbloccare il dispositivo</string>
+    <string name="ambient_display_screen_off_udfps_summary">Per accendere lo schermo e sbloccare, premere a lungo il sensore d\'impronte digitali sotto al display.</string>
+    <string name="fingerprint_wake_unlock_title">Tocca le impronte digitali per sbloccare</string>
+    <string name="fingerprint_wake_unlock_touch">Ascolta gli eventi mentre lo schermo è spento</string>
+    <string name="fingerprint_wake_unlock_press">Ascolta gli eventi solo quando lo schermo è acceso</string>
 </resources>

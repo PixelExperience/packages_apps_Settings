@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">잠금 화면에서 스와이프할 때</string>
     <string name="high_touch_polling_rate_title">고속 터치 샘플링</string>
     <string name="high_touch_polling_rate_summary">터치 스크린의 터치 샘플링 속도 증가</string>
+    <string name="ambient_display_screen_off_udfps_title">기기를 잠금 해제하려면 지문을 센서에 길게 인식시켜 주세요</string>
+    <string name="ambient_display_screen_off_udfps_summary">화면을 켜고 잠금을 해제하려면, 화면 아래에 있는 지문 인식 센서를 길게 누르세요.</string>
+    <string name="fingerprint_wake_unlock_title">지문을 센서에 인식시켜 잠금 해제하세요</string>
+    <string name="fingerprint_wake_unlock_touch">화면이 꺼져도 이벤트 수신</string>
+    <string name="fingerprint_wake_unlock_press">화면이 켜진 경우에만 이벤트 수신</string>
 </resources>

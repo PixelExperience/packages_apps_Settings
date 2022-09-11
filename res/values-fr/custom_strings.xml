@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">En faisant glisser sur l\'écran de verrouillage</string>
     <string name="high_touch_polling_rate_title">Taux de rafraîchissement tactile élevé</string>
     <string name="high_touch_polling_rate_summary">Augmenter le taux de rafraîchissement tactile de l\'écran</string>
+    <string name="ambient_display_screen_off_udfps_title">Appui long sur le capteur d\'empreintes pour déverrouiller l\'appareil</string>
+    <string name="ambient_display_screen_off_udfps_summary">Pour réveiller et déverrouiller l\'appareil, appuyez longuement sur le capteur d\'empreintes.</string>
+    <string name="fingerprint_wake_unlock_title">Touchez le lecteur d\'empreinte digitale pour déverrouiller</string>
+    <string name="fingerprint_wake_unlock_touch">Attendre les événements lorsque l\'écran est éteint</string>
+    <string name="fingerprint_wake_unlock_press">N\'attendre les événements qu\'une fois l\'écran allumé</string>
 </resources>

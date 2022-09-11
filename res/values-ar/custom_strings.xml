@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">مع السحب </string>
     <string name="high_touch_polling_rate_title">حساسية اللمس العالية</string>
     <string name="high_touch_polling_rate_summary">زيادة حساسية لمس الشاشة</string>
+    <string name="ambient_display_screen_off_udfps_title">اضغط مطولا على مستشعر البصمة لفتح الهاتف</string>
+    <string name="ambient_display_screen_off_udfps_summary">اضغط مطولا على مستشعر البصمة لفتح الهاتف.</string>
+    <string name="fingerprint_wake_unlock_title">إضافة بصمة الإصبع لإلغاء القفل</string>
+    <string name="fingerprint_wake_unlock_touch">الاستماع للأحداث أثناء إيقاف تشغيل الشاشة</string>
+    <string name="fingerprint_wake_unlock_press">فقط يستمع للأحداث بمجرد تشغيل الشاشة</string>
 </resources>

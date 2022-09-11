@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Lukustuskuval libistades</string>
     <string name="high_touch_polling_rate_title">Kõrge puuteküsitluse määr</string>
     <string name="high_touch_polling_rate_summary">Suurendage puuteekraani valimismäära</string>
+    <string name="ambient_display_screen_off_udfps_title">Seadme avamiseks vajutage pikalt sõrmejäljeandurile</string>
+    <string name="ambient_display_screen_off_udfps_summary">Ekraani äratamiseks ja avamiseks vajutage pikalt ekraanialust sõrmejäljeandurit.</string>
+    <string name="fingerprint_wake_unlock_title">Avamiseks puudutage sõrmejäle lugejat</string>
+    <string name="fingerprint_wake_unlock_touch">Kuulab sündmusi ka siis, kui ekraan on välja lülitatud</string>
+    <string name="fingerprint_wake_unlock_press">Kuulab sündmusi ainult siis, kui ekraan on sisse lülitatud</string>
 </resources>
