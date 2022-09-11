@@ -26,7 +26,8 @@
     <string name="increasing_ring_ramp_up_time_title">Anstiegszeit</string>
     <string name="lockscreen_media_art_title">Albumcover anzeigen</string>
     <string name="advanced_reboot_title">Erweitertes Neustartmenü</string>
-    <string name="advanced_reboot_summary">Bei entsperrtem Bildschirm dem Neustartmenü Optionen für \"Neustart in Recovery oder in Bootloader\" hinzufügen</string>
+    <string name="advanced_reboot_summary">Bei entsperrtem Bildschirm dem Neustartmenü Optionen für \"Neustart in Recovery\" oder in \"Bootloader\" hinzufügen</string>
+    <string name="power_menu_emergency_affordance_enabled">Notfallausstattung ist aktiviert</string>
     <string name="power_menu_shortcuts_title">Power-Menü Schnellzugriffe</string>
     <string name="power_menu_shortcuts_summary">Schnellzugriffe im Power-Menü anpassen</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
@@ -46,7 +47,7 @@
     <string name="display_rotation_270_title">270 Grad</string>
     <string name="incall_feeedback_vibrate_title">Vibrieren, um den Anrufstatus anzuzeigen</string>
     <string name="status_bar_title">Statusleiste</string>
-    <string name="status_bar_quick_qs_pulldown_title">Schnelles Öffnen</string>
+    <string name="status_bar_quick_qs_pulldown_title">Schnelles Herunterziehen</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Am linken Rand der Statusleiste werden die Schnelleinstellungen geöffnet</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">Der rechte Rand der Statusleiste öffnet die Schnelleinstellungen</string>
     <string name="status_bar_quick_qs_pulldown_off">Aus</string>

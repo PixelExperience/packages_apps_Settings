@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">عرض الغلاف الفني للوسائط</string>
     <string name="advanced_reboot_title">إعادة تشغيل متقدمة</string>
     <string name="advanced_reboot_summary">عند إلغاء القفل، ستتضمن خيارات قائمة إعادة التشغيل الذهاب الى وضع ال Recovery او وضع ال Bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">تمكين الطواري ء مفعل</string>
     <string name="power_menu_shortcuts_title">اختصارات قائمه زر التشغيل</string>
     <string name="power_menu_shortcuts_summary">تخصيص الاختصارات في قائمة زر التشغيل</string>
     <string name="power_menu_screenshot_title">لقطة شاشة</string>

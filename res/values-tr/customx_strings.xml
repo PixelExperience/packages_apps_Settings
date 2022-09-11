@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Medya kapak resmini göster</string>
     <string name="advanced_reboot_title">Gelişmiş yeniden başlatma</string>
     <string name="advanced_reboot_summary">Kilit açıldığında kurtarma veya önyükleme modunda yeniden başlatmak için güç menüsüne seçenekler ekler</string>
+    <string name="power_menu_emergency_affordance_enabled">Acil durum ortamı etkinleştirildi</string>
     <string name="power_menu_shortcuts_title">Menü kısayolları</string>
     <string name="power_menu_shortcuts_summary">Güç menüsü kısayollarını özelleştir</string>
     <string name="power_menu_screenshot_title">Ekran görüntüsü</string>

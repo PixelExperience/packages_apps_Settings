@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">メディアのカバーアートを表示</string>
     <string name="advanced_reboot_title">高度な再起動</string>
     <string name="advanced_reboot_summary">ロック解除時にリカバリーやブートローダーで再起動するオプションを電源メニューに含める</string>
+    <string name="power_menu_emergency_affordance_enabled">緊急時機能が有効です</string>
     <string name="power_menu_shortcuts_title">メニューショートカット</string>
     <string name="power_menu_shortcuts_summary">電源メニューのショートカットを編集する</string>
     <string name="power_menu_screenshot_title">スクリーンショット</string>

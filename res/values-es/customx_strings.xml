@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Mostrar portada del álbum</string>
     <string name="advanced_reboot_title">Reinicio avanzado</string>
     <string name="advanced_reboot_summary">Al desbloquear, incluir las opciones de reiniciar en el modo recovery o en el bootloader del menú de apagado</string>
+    <string name="power_menu_emergency_affordance_enabled">La funcionalidad de emergencia está habilitada</string>
     <string name="power_menu_shortcuts_title">Atajos del menú</string>
     <string name="power_menu_shortcuts_summary">Personalizar los atajos del menú de energía</string>
     <string name="power_menu_screenshot_title">Captura de pantalla</string>

@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">顯示媒體封面藝術</string>
     <string name="advanced_reboot_title">進階重新啟動</string>
     <string name="advanced_reboot_summary">解鎖後，在電源選單加入重新啟動進入 recovery 或 bootloader 的選項</string>
+    <string name="power_menu_emergency_affordance_enabled">緊急供能已啟用</string>
     <string name="power_menu_shortcuts_title">選單快速功能</string>
     <string name="power_menu_shortcuts_summary">自訂電源選單快速功能</string>
     <string name="power_menu_screenshot_title">螢幕擷取</string>
@@ -130,7 +131,7 @@
     <string name="click_partial_screenshot_title">點擊查看部分截圖</string>
     <string name="click_partial_screenshot_summary">短按“音量減鍵”和“電源鍵”以截取部分屏幕截圖</string>
     <string name="navigation_bar_edge_long_swipe_title">邊緣長滑動作</string>
-    <string name="live_display_summary">根據日夜和環境條件調整您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
+    <string name="live_display_summary">根據日夜和環境條件最佳化您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
     <string name="live_display_mode">顯示模式</string>
     <string name="live_display_color_temperature_title">色溫</string>
     <string name="live_display_color_temperature_summary">日間：<xliff:g id="day_temperature">%1$d</xliff:g>K 夜間：<xliff:g id="night_temperature">%2$d</xliff:g>K</string>

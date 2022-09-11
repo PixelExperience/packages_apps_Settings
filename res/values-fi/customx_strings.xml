@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Näytä median kansikuva</string>
     <string name="advanced_reboot_title">Edistynyt uudelleenkäynnistys</string>
     <string name="advanced_reboot_summary">Lisää mahdollisuuden käynnistää uudelleenkäynnistämisen yhteydessä recovery- tai bootloader-tilaan</string>
+    <string name="power_menu_emergency_affordance_enabled">Hätä mahdollisuus on päällä</string>
     <string name="power_menu_shortcuts_title">Valikon pikakuvakkeet</string>
     <string name="power_menu_shortcuts_summary">Muokkaa virtavalikon asetuksia</string>
     <string name="power_menu_screenshot_title">Kuvakaappaus</string>

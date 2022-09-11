@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Zobrazit obal médií</string>
     <string name="advanced_reboot_title">Rozšířený restart</string>
     <string name="advanced_reboot_summary">Pokud je povoleno, v Menu napájení jsou také zahrnuty možnosti restartovat zařízení do recovery nebo bootloaderu</string>
+    <string name="power_menu_emergency_affordance_enabled">Nouzové funkce jsou povoleny</string>
     <string name="power_menu_shortcuts_title">Zkratky menu</string>
     <string name="power_menu_shortcuts_summary">Přizpůsobit možnosti zkratek menu napájení</string>
     <string name="power_menu_screenshot_title">Snímek obrazovky</string>

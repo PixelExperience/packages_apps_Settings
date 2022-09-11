@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Näita meedia kaanepilti</string>
     <string name="advanced_reboot_title">Täiustatud taaskäivitamine</string>
     <string name="advanced_reboot_summary">Kui lukustamata, lisa toitemenüüsse valikud taastusrežiimi või käivituslaadurisse taaskäivitamiseks</string>
+    <string name="power_menu_emergency_affordance_enabled">Kaasa arvatud hädaolukorra valikud</string>
     <string name="power_menu_shortcuts_title">Menüü otseteed</string>
     <string name="power_menu_shortcuts_summary">Kohandage toitemenüü otseteed</string>
     <string name="power_menu_screenshot_title">Kuvatõmmis</string>

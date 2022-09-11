@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">显示媒体封面艺术</string>
     <string name="advanced_reboot_title">高级重启</string>
     <string name="advanced_reboot_summary">设备已解锁时，在电源菜单中添加重启至恢复模式或引导程序的选项</string>
+    <string name="power_menu_emergency_affordance_enabled">紧急呼叫能力已启用</string>
     <string name="power_menu_shortcuts_title">菜单快捷键</string>
     <string name="power_menu_shortcuts_summary">自定义电源菜单选项</string>
     <string name="power_menu_screenshot_title">屏幕截图</string>

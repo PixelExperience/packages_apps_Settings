@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Hiển thị ảnh bìa phương tiện</string>
     <string name="advanced_reboot_title">Khởi động lại nâng cao</string>
     <string name="advanced_reboot_summary">Khi mở khóa, bao gồm các tùy chọn trong trình đơn nguồn để khởi động lại vào phục hồi hoặc trình nạp khởi động</string>
+    <string name="power_menu_emergency_affordance_enabled">Hỗ trợ khẩn cấp được bật</string>
     <string name="power_menu_shortcuts_title">Lối tắt trình đơn</string>
     <string name="power_menu_shortcuts_summary">Tùy chỉnh lối tắt trình đơn nguồn</string>
     <string name="power_menu_screenshot_title">Chụp ảnh màn hình</string>

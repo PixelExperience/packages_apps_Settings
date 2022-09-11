@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Médiaborító megjelenítése</string>
     <string name="advanced_reboot_title">Speciális újraindítás</string>
     <string name="advanced_reboot_summary">Feloldott kijelzőnél a Recovery és a Bootloader újraindítási mód is jelenjen meg a kikapcsoló menüben</string>
+    <string name="power_menu_emergency_affordance_enabled">A vészhelyzeti szolgáltatás engedélyezve van</string>
     <string name="power_menu_shortcuts_title">Kikapcsolómenü-elemek</string>
     <string name="power_menu_shortcuts_summary">A Kikapcsoló-menü testreszabható</string>
     <string name="power_menu_screenshot_title">Képernyőmentés</string>
@@ -199,16 +200,19 @@
     <string name="wifi_hotspot_auto_off_timeout_never">Soha ne kapcsolja ki a hotspotot.</string>
     <string name="wifi_hotspot_client_manager_title">Csatlakoztatott készülékek</string>
     <string name="wifi_hotspot_client_manager_summary">A csatlakoztatott készülékek listája és kezelése</string>
-    <string name="wifi_hotspot_client_manager_list_only_summary">A csatlakoztatott készülékek listája és kezelése</string>
-    <string name="wifi_hotspot_blocked_clients_list_title">Tiltott készülékek</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">A hotspothoz csatlakoztatott eszközök megjelenítése</string>
+    <string name="wifi_hotspot_client_limit_title">Maximálisan csatlakoztatható készülék </string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Blokkolt készülékek</string>
     <string name="wifi_hotspot_connected_clients_list_title">Csatlakoztatott készülékek</string>
-    <string name="wifi_hotspot_block_client_dialog_title">Készülék tiltása</string>
-    <string name="wifi_hotspot_unblock_client_dialog_title">Készülék feloldása</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Készüléktiltás</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Ez a művelet lecsatlakoztatja \"<xliff:g id="device_name">%1$s</xliff:g>\" készüléket erről az eszközről és tiltólistához adja</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Készülékfeloldás</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">\"<xliff:g id="device_name">%1$s</xliff:g>\"-készülék kapcsolódhat ehhez a hotspothoz</string>
     <string name="wifi_hotspot_client_manager_footer_text">Jelenleg nincs elérhető kliens. Amint lesz akár csatlakoztatott, akár letiltott, az itt fog megjelenni.</string>
     <string name="app_volume">Alkalmazásonkénti hangerő</string>
+    <string name="auto_brightness_one_shot_title">Egylövéses automata-fényerő</string>
     <string name="auto_brightness_one_shot_summary">A fényerőbeállítás csak a képernyő bekapcsolásának pillanatában történik</string>
-    <string name="package_details_group_title">Csomag részletei</string>
-    <string name="package_name">Csomag neve</string>
-    <string name="package_version">Csomag verziója</string>
+    <string name="package_details_group_title">Csomagadatok</string>
+    <string name="package_name">Csomagnév</string>
+    <string name="package_version">Csomagverzió</string>
 </resources>

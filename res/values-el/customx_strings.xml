@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Προβολή εξώφυλλου άλμπουμ</string>
     <string name="advanced_reboot_title">Προηγμένη επανεκκίνηση</string>
     <string name="advanced_reboot_summary">Όταν είναι ενεργή, περιλαμβάνονται στο μενού πλήκτρου απενεργοποίησης οι επιλογές επανεκκίνησης σε λειτουργία recovery ή bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">Η δυνατότητα έκτακτης ανάγκης είναι ενεργοποιημένη</string>
     <string name="power_menu_shortcuts_title">Συντομεύσεις μενού</string>
     <string name="power_menu_shortcuts_summary">Προσαρμογή συντομεύσεων μενού ενέργειας</string>
     <string name="power_menu_screenshot_title">Στιγμιότυπο οθόνης</string>

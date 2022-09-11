@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Tampilkan sampul media</string>
     <string name="advanced_reboot_title">Mulai ulang lanjutan</string>
     <string name="advanced_reboot_summary">Ketika tidak terkunci, berisi pilihan pada menu daya untuk mulai ulang ke recovery atau bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">Keterjangkauan darurat diaktifkan</string>
     <string name="power_menu_shortcuts_title">Menu pintasan</string>
     <string name="power_menu_shortcuts_summary">Sesuaikan pintasan menu daya</string>
     <string name="power_menu_screenshot_title">Tangkapan layar</string>

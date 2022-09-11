@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Адлюстроўваць вокладку мультымедыя</string>
     <string name="advanced_reboot_title">Варыянты перазагрузкі</string>
     <string name="advanced_reboot_summary">Калі прылада разблакавана, у меню сілкавання даступны опцыі перазагрузкі ў рэжым аднаўлення і загрузчыку</string>
+    <string name="power_menu_emergency_affordance_enabled">Аварыйныя функцыі ўключаны</string>
     <string name="power_menu_shortcuts_title">Хуткі выклік меню</string>
     <string name="power_menu_shortcuts_summary">Наладзіць меню кнопкі сілкавання</string>
     <string name="power_menu_screenshot_title">Здымак экрана</string>
@@ -67,6 +68,7 @@
     <string name="status_bar_am_pm_normal">Нармальна</string>
     <string name="status_bar_am_pm_small">Маленькі</string>
     <string name="status_bar_am_pm_hidden">Схаваць</string>
+    <string name="status_bar_clock_position_disabled_summary">Пазіцыя не можа быць зменена, бо індыкатар трафіку адлюстроўваецца ў радку стану</string>
     <string name="status_bar_battery_title">Індыкатар батарэі</string>
     <string name="status_bar_battery_style_title">Варыянт адлюстроўвання батарэі</string>
     <string name="status_bar_battery_style_icon_portrait">Вертыкальны значок</string>
@@ -203,7 +205,10 @@
     <string name="wifi_hotspot_blocked_clients_list_title">Заблакаваныя прылады</string>
     <string name="wifi_hotspot_connected_clients_list_title">Падлучаныя прылады</string>
     <string name="wifi_hotspot_block_client_dialog_title">Заблакіяваць прыладу</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Гэта дзеянне адключыць \"<xliff:g id="device_name">%1$s</xliff:g>\" ад гэтай прылады і дадасць яго ў спіс блакавання</string>
     <string name="wifi_hotspot_unblock_client_dialog_title">Разблакаваць прыладу</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">Гэтая прылада \"<xliff:g id="device_name">%1$s</xliff:g>\" зможа падлучыцца да гэтай кропкі доступу</string>
+    <string name="wifi_hotspot_client_manager_footer_text">У гэты час няма даступных кліентаў. Падлучаныя і заблакаваныя прылады будуць пералічаны тут, калі яны стануць даступныя.</string>
     <string name="app_volume">Гучнасць праграм</string>
     <string name="auto_brightness_one_shot_summary">Карэкціроўка яркасці будзе адбывацца толькі ў момант уключэння экрана</string>
     <string name="package_details_group_title">Інфармацыя аб пакеце</string>

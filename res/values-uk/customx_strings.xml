@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Показувати обкладинку мультимедіа</string>
     <string name="advanced_reboot_title">Розширене перезавантаження</string>
     <string name="advanced_reboot_summary">Коли пристрій розблоковано, в меню живлення доступні опції перезавантаження у Recovery та Bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">Ввімкнено екстрену доступність</string>
     <string name="power_menu_shortcuts_title">Ярлики меню</string>
     <string name="power_menu_shortcuts_summary">Налаштування опцій меню живлення</string>
     <string name="power_menu_screenshot_title">Знімок екрану</string>

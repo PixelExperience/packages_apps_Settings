@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">แสดงหน้าปกสื่อ</string>
     <string name="advanced_reboot_title">เริ่มระบบใหม่แบบขั้นสูง</string>
     <string name="advanced_reboot_summary">เมื่อปลดล็อค รวมตัวเลือกในเมนูปิดระบบเครื่องเพื่อเริ่มใหม่ในโหมดกู้คืนหรือโหมดดาวน์โหลด</string>
+    <string name="power_menu_emergency_affordance_enabled">ความช่วยเหลือฉุกเฉินเปิดอยู่</string>
     <string name="power_menu_shortcuts_title">เมนูทางลัด</string>
     <string name="power_menu_shortcuts_summary">ปรับแต่งทางลัดที่เมนู เปิด-ปิด</string>
     <string name="power_menu_screenshot_title">ถ่ายภาพหน้าจอ</string>

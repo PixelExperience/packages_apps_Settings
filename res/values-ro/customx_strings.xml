@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Afișează coperta artistică a piesei</string>
     <string name="advanced_reboot_title">Repornire avansată</string>
     <string name="advanced_reboot_summary">La deblocare, se includ opțiuni în meniul butonului de alimentare pentru repornire în modurile recuperare sau bootloader</string>
+    <string name="power_menu_emergency_affordance_enabled">Accesibilitatea de urgență este activată</string>
     <string name="power_menu_shortcuts_title">Scurtăturile meniului</string>
     <string name="power_menu_shortcuts_summary">Personalizare scurtături pentru meniul de oprire</string>
     <string name="power_menu_screenshot_title">Captură de ecran</string>

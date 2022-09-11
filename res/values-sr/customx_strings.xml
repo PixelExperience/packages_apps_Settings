@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Прикажи омот медија</string>
     <string name="advanced_reboot_title">Напредно поновно покретање</string>
     <string name="advanced_reboot_summary">Када је уређај откључан, прикажи опције у менију поновног покретања, за рестарт у \'recovery\' или \'bootloader\'</string>
+    <string name="power_menu_emergency_affordance_enabled">Приступачност ванредног стања је укључена</string>
     <string name="power_menu_shortcuts_title">Пречице менија</string>
     <string name="power_menu_shortcuts_summary">Прилагоди пречице менија напајања</string>
     <string name="power_menu_screenshot_title">Снимак екрана</string>
@@ -210,6 +211,7 @@
     <string name="wifi_hotspot_client_manager_footer_text">Нема доступних клијента. Повезани и блокирани уређаји ће се приказати овде када ће бити доступни.</string>
     <string name="app_volume">Апликација јачина звука</string>
     <string name="auto_brightness_one_shot_title">Моментално аутоматско осветљење</string>
+    <string name="auto_brightness_one_shot_summary">Подешавање осветљења ће се десити само у моменту кад је екран укључен</string>
     <string name="package_details_group_title">Детаљи о пакету</string>
     <string name="package_name">Име пакета</string>
     <string name="package_version">Верзија пакета</string>

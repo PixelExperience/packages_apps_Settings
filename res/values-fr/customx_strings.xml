@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Afficher la couverture du média</string>
     <string name="advanced_reboot_title">Redémarrage avancé</string>
     <string name="advanced_reboot_summary">Inclure les options de redémarrage en mode recovery et bootloader dans le menu Marche/Arrêt lorsque l\'appareil est déverrouillé</string>
+    <string name="power_menu_emergency_affordance_enabled">L\'accès rapide aux urgences est activé</string>
     <string name="power_menu_shortcuts_title">Raccourcis du menu</string>
     <string name="power_menu_shortcuts_summary">Personnaliser les raccourcis du menu Marche/Arrêt</string>
     <string name="power_menu_screenshot_title">Capture d\'écran</string>

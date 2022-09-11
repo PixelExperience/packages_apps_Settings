@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Medianın qapaq üzünü göstər</string>
     <string name="advanced_reboot_title">Qabaqcıl yenidən başlatma</string>
     <string name="advanced_reboot_summary">Kilid açılanda, bərpa və ya ön yükləmə rejimində yenidən başlatmaq üçün güc düyməsinə seçimlər əlavə edir</string>
+    <string name="power_menu_emergency_affordance_enabled">Fövqəladə vəziyyət təminatı fəaldır</string>
     <string name="power_menu_shortcuts_title">Menyu qısayolları</string>
     <string name="power_menu_shortcuts_summary">Güc menyusu qısayollarını özəlləşdir</string>
     <string name="power_menu_screenshot_title">Ekran şəkli</string>

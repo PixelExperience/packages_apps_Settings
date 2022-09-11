@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">앨범 커버 이미지 표시</string>
     <string name="advanced_reboot_title">고급 다시 시작</string>
     <string name="advanced_reboot_summary">잠금 해제되어 있을 때, 전원 메뉴에 리커버리 모드 및 부트로더로 다시 시작하는 옵션 추가</string>
+    <string name="power_menu_emergency_affordance_enabled">긴급 상황 어포던스를 사용합니다</string>
     <string name="power_menu_shortcuts_title">메뉴 바로가기</string>
     <string name="power_menu_shortcuts_summary">전원 메뉴 바로가기 사용자 지정</string>
     <string name="power_menu_screenshot_title">스크린샷</string>

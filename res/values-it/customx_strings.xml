@@ -28,6 +28,7 @@
     <string name="advanced_reboot_title">Riavvio avanzato</string>
     <string name="advanced_reboot_summary">Quando sbloccato, mostra le opzioni per il riavvio
 Recovery o Bootloader nel menù di accensione</string>
+    <string name="power_menu_emergency_affordance_enabled">Il servizio di emergenza è attivato</string>
     <string name="power_menu_shortcuts_title">Scorciatoie Menù</string>
     <string name="power_menu_shortcuts_summary">Imposta le scorciatoie del menù di spegnimento</string>
     <string name="power_menu_screenshot_title">Screenshot</string>

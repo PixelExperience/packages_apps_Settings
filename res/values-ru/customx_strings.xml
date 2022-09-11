@@ -27,6 +27,7 @@
     <string name="lockscreen_media_art_title">Отображать обложку мультимедиа</string>
     <string name="advanced_reboot_title">Расширенная перезагрузка</string>
     <string name="advanced_reboot_summary">Когда устройство разблокировано, в меню питания доступны опции перезагрузки в режим восстановления и загрузчик</string>
+    <string name="power_menu_emergency_affordance_enabled">Аварийные функции включены</string>
     <string name="power_menu_shortcuts_title">Быстрый вызов меню</string>
     <string name="power_menu_shortcuts_summary">Настройка меню кнопки питания</string>
     <string name="power_menu_screenshot_title">Скриншот</string>
