@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Khi vuốt trên màn hình khóa</string>
     <string name="high_touch_polling_rate_title">Tỷ lệ làm mới cảm ứng cao</string>
     <string name="high_touch_polling_rate_summary">Tăng tỷ lệ làm mới trên màn hình cảm ứng</string>
+    <string name="ambient_display_screen_off_udfps_title">Nhấn và giữ cảm biến vân tay để mở khóa thiết bị</string>
+    <string name="ambient_display_screen_off_udfps_summary">Để đánh thức màn hình và mở khóa, hãy nhấn và giữ cảm biến vân tay dưới màn hình của bạn</string>
+    <string name="fingerprint_wake_unlock_title">Chạm cảm biến vân tay để mở khoá</string>
+    <string name="fingerprint_wake_unlock_touch">Quét vân tay ngay cả khi màn hình tắt</string>
+    <string name="fingerprint_wake_unlock_press">Chỉ quét vân tay khi màn hình bật</string>
 </resources>

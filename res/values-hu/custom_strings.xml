@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Ha csúsztatja a záróképernyőt</string>
     <string name="high_touch_polling_rate_title">Magas értékű képernyő-lekérdezés</string>
     <string name="high_touch_polling_rate_summary">Az érintőképernyő lekérdezési értékének növelése</string>
+    <string name="ambient_display_screen_off_udfps_title">Az ujjlenyomat-olvasó hosszannyomásával feloldható a készülék</string>
+    <string name="ambient_display_screen_off_udfps_summary">A képernyő felébresztéséhez és feloldásához nyomja meg hosszan a képernyőbe épitett ujjlenyomat-olvasót.</string>
+    <string name="fingerprint_wake_unlock_title">Ébresztés ujjlenyomattal</string>
+    <string name="fingerprint_wake_unlock_touch">Eseményfigyelés kikapcsolt képernyőn</string>
+    <string name="fingerprint_wake_unlock_press">Eseményfigyelés csak bekapcsolt képernyőn</string>
 </resources>

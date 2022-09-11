@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Beim Wischen auf dem Sperrbildschirm</string>
     <string name="high_touch_polling_rate_title">Hohe Touchscreen-Abtastrate</string>
     <string name="high_touch_polling_rate_summary">Touchscreen-Abtastrate erhöhen</string>
+    <string name="ambient_display_screen_off_udfps_title">Fingerabdrucksensor lange drücken, um das Gerät zu entsperren</string>
+    <string name="ambient_display_screen_off_udfps_summary">Um Ihren Bildschirm aufzuwecken und zu entsperren, lange auf Ihren Fingerabdrucksensor unter dem Bildschirm drücken.</string>
+    <string name="fingerprint_wake_unlock_title">Zum Entsperren Fingerabdruck berühren</string>
+    <string name="fingerprint_wake_unlock_touch">Hört auf Ereignisse, während der Bildschirm aus ist</string>
+    <string name="fingerprint_wake_unlock_press">Hört nur auf Ereignisse, wenn der Bildschirm an ist</string>
 </resources>

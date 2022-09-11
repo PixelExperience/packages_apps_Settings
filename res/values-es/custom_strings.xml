@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="wifi_do_not_validate_eap_server_warning">No se ha especificado ningún certificado. La conexión no será privada.</string>
-    <string name="min_refresh_rate_title">Tasa de refresco mínima</string>
-    <string name="max_refresh_rate_title">Tasa de refresco máxima</string>
-    <string name="battery_saver_refresh_rate_title">Reducir tasa de refresco</string>
-    <string name="battery_saver_refresh_rate_summary">Usar velocidad de refresco de la pantalla de 60 Hz para ahorrar energía cuando el Ahorro de batería está encendido</string>
+    <string name="wifi_do_not_validate_eap_server_warning">No se ha especificado ningún certificado. La conexión de internet no será privada.</string>
+    <string name="min_refresh_rate_title">Tasa de actualización mínima</string>
+    <string name="max_refresh_rate_title">Tasa de actualización máxima</string>
+    <string name="battery_saver_refresh_rate_title">Reducir tasa de actualización </string>
+    <string name="battery_saver_refresh_rate_summary">Utilizar tasa de actualización de la pantalla de 60 Hercios para ahorrar energía cuando el Ahorro de batería está activado </string>
     <string name="battery_light_title">Encender el indicador LED cuando el dispositivo se esté cargando</string>
     <string name="connected_tws_device_saved_title">Auriculares guardados</string>
     <string name="reset">Restablecer</string>
@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Cuando deslizas en la pantalla de bloqueo</string>
     <string name="high_touch_polling_rate_title">Tasa de muestreo táctil alta</string>
     <string name="high_touch_polling_rate_summary">Aumentar la tasa de muestreo táctil</string>
+    <string name="ambient_display_screen_off_udfps_title">Mantén presionado el sensor de huella digital para desbloquear el dispositivo</string>
+    <string name="ambient_display_screen_off_udfps_summary">Mantén pulsado el sensor de huella digital para encender la pantalla y desbloquear el dispositivo.</string>
+    <string name="fingerprint_wake_unlock_title">Usa tu huella digital para desbloquear</string>
+    <string name="fingerprint_wake_unlock_touch">Escucha de eventos con pantalla apagada</string>
+    <string name="fingerprint_wake_unlock_press">A la escucha de eventos con pantalla apagada</string>
 </resources>

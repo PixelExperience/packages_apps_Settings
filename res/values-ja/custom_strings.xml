@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">ロック画面をスワイプした時</string>
     <string name="high_touch_polling_rate_title">ポーリング速度の高速化</string>
     <string name="high_touch_polling_rate_summary">タッチ画面のタッチサンプリングレートを向上させる</string>
+    <string name="ambient_display_screen_off_udfps_title">指紋センサー長押しでロック解除</string>
+    <string name="ambient_display_screen_off_udfps_summary">画面を起動してロックを解除するには、画面内指紋センサーを長押しして下さい。</string>
+    <string name="fingerprint_wake_unlock_title">指紋タッチでロック解除</string>
+    <string name="fingerprint_wake_unlock_touch">画面消灯中に外部操作を受け付ける</string>
+    <string name="fingerprint_wake_unlock_press">画面点灯時にのみ1回だけ外部操作を受け付ける</string>
 </resources>

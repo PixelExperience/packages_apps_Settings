@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Kiedy przesuwasz na ekranie blokady</string>
     <string name="high_touch_polling_rate_title">Wysoka szybkość próbkowania dotykowego</string>
     <string name="high_touch_polling_rate_summary">Zwiększ szybkości próbkowania ekranu dotykowego</string>
+    <string name="ambient_display_screen_off_udfps_title">Odblokuj urządzenie, trzymając dłużej czujnik linii papilarnych</string>
+    <string name="ambient_display_screen_off_udfps_summary">Aby wybudzić i odblokować ekran, przytrzymaj dłużej czujnik linii papilarnych, który się znajduje pod wyświetlaczem</string>
+    <string name="fingerprint_wake_unlock_title">Użyj czytnika linii papilarnych, aby odblokować</string>
+    <string name="fingerprint_wake_unlock_touch">Nasłuchuj wydarzeń, gdy ekran jest wyłączony</string>
+    <string name="fingerprint_wake_unlock_press">Tylko raz nasłuchuj wydarzeń, gdy ekran jest włączony</string>
 </resources>

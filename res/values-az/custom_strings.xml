@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Kilid ekranında sürüşdürəndə</string>
     <string name="high_touch_polling_rate_title">Yüksək toxunuş yoxlama dərəcəsi</string>
     <string name="high_touch_polling_rate_summary">Toxunaqlı ekran yoxlama dərəcəsini artırın</string>
+    <string name="ambient_display_screen_off_udfps_title">Cihazın kilidini açmaq üçün barmaq izi sensoruna uzun basın</string>
+    <string name="ambient_display_screen_off_udfps_summary">Ekranı oyandırmaq və kilidi açmaq üçün, ekran altındakı barmaq izi sensoruna uzun basın.</string>
+    <string name="fingerprint_wake_unlock_title">Kilidi açmaq üçün barmaz izinə toxunun</string>
+    <string name="fingerprint_wake_unlock_touch">Ekran sönülü ikən tədbirləri dinləyir</string>
+    <string name="fingerprint_wake_unlock_press">Yalnız ekran açıq ikən tədbirləri dinləyir</string>
 </resources>

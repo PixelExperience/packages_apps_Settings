@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Při přejetí prstem na uzamčené obrazovce</string>
     <string name="high_touch_polling_rate_title">Vysoká vzorkovací frekvence pro dotyk</string>
     <string name="high_touch_polling_rate_summary">Zvýšení vzorkovací frekvence dotykové obrazovky</string>
+    <string name="ambient_display_screen_off_udfps_title">Dlouhým stisknutím snímače otisků prstů odemknout zařízení</string>
+    <string name="ambient_display_screen_off_udfps_summary">Chcete-li obrazovku probudit a odemknout, dlouze stiskněte snímač otisků prstů v displeji.</string>
+    <string name="fingerprint_wake_unlock_title">Pro odemknutí použít otisk prstu</string>
+    <string name="fingerprint_wake_unlock_touch">Naslouchá událostem, když je obrazovka vypnutá</string>
+    <string name="fingerprint_wake_unlock_press">Naslouchá událostem, pouze když je obrazovka zapnutá</string>
 </resources>

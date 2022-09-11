@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">在鎖定畫面滑動時</string>
     <string name="high_touch_polling_rate_title">高觸控輪詢率</string>
     <string name="high_touch_polling_rate_summary">提高觸控輪詢率</string>
+    <string name="ambient_display_screen_off_udfps_title">在指紋感應器上長按以解鎖裝置</string>
+    <string name="ambient_display_screen_off_udfps_summary">要喚醒您的螢幕並解鎖，請長按螢幕下指紋感應器。</string>
+    <string name="fingerprint_wake_unlock_title">使用指紋解除鎖定</string>
+    <string name="fingerprint_wake_unlock_touch">螢幕關閉時聆聽活動</string>
+    <string name="fingerprint_wake_unlock_press">螢幕開啟時僅聆聽一次活動</string>
 </resources>

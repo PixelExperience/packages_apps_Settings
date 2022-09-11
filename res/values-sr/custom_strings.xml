@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_do_not_validate_eap_server_warning">Није наведен никакав сертификат. Веза неће бити приватна.</string>
     <string name="min_refresh_rate_title">Минимална брзина освежавања</string>
     <string name="max_refresh_rate_title">Максимална брзина освежавања</string>
     <string name="battery_saver_refresh_rate_title">Смањи брзину освежавања</string>
@@ -60,6 +61,11 @@
     <string name="keyboard_extras_title">Додаци</string>
     <string name="advanced_keyboard_settings_title">Напредна подешавања</string>
     <string name="fingerprint_enroll_find_sensor_message_front">Пронађите сензор за отиске прстију са предње стране вашег телефона.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear">Пронађите сензор за отиске прстију у позадини вашег телефона.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side">Пронађите сензор за отиске прстију са стране вашег телефона.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front">Додирните сензор за отиске прстију с предње стране вашег телефона.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear">Додирните сензор за отиске прстију у позадини вашег телефона.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side">Додирните сензор за отиске прстију са стране вашег телефона.</string>
     <string name="fast_charging_title">Брзо пуњење</string>
     <string name="fast_charging_summary">Онемогући да би смањили топлоту коју уређај производи током пуњења или продужили век трајања батерије</string>
     <string name="security_settings_face_unlock_redo_face_scan_summary">Уклоните постојеће скенирање лица и направите ново</string>
@@ -69,4 +75,11 @@
     <string name="face_unlock_method_title">Омогући откључавање лицем у закљученом екрану</string>
     <string name="face_unlock_method_default">Када је екран укључен</string>
     <string name="face_unlock_method_swipe">Код превлачења преко закључаног екрана</string>
+    <string name="high_touch_polling_rate_title">Висока стопа прозивања додиром</string>
+    <string name="high_touch_polling_rate_summary">Повећај стопу прозивања екрана</string>
+    <string name="ambient_display_screen_off_udfps_title">Дуги притисак на сензор за отиске прстију за откључаваање</string>
+    <string name="ambient_display_screen_off_udfps_summary">За пробуђење и откључавања екрана, дуги притисак на сензор за отиске прстију испод екрана.</string>
+    <string name="fingerprint_wake_unlock_title">Додирните сензор за отиске прстију за откључавање</string>
+    <string name="fingerprint_wake_unlock_touch">Слушања додађаја кад је екран искључен</string>
+    <string name="fingerprint_wake_unlock_press">Слушања догађаја само кад је екран укључен</string>
 </resources>
