@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "47047591_0c22d9a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000411
+      },
+      "writtenOn": "2022-10-03T12:59:06Z",
+      "side": 1,
+      "message": "This changes makes setting show `config_defaultRefreshRate` as default peak refresh rate on first boot but it doesn\u0027t apply until manually changed \n\nSame change used to work in A12 but not working now (atleast for me)\nIn my case it shows `120-60` though refresh rate actually is `60-60` (can be checked via dumpsys)\n\nroot cause is yet to be debugged",
+      "revId": "49b748579683f27914b719259617d47508240682",
+      "serverId": "8ba0da3e-d57f-4bbe-ac74-faf358ba962a"
+    }
+  ]
+}
