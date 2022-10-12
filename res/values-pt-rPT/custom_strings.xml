@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">Ao deslizar no ecrã de bloqueio</string>
     <string name="high_touch_polling_rate_title">Alta taxa de amostragem de toque</string>
     <string name="high_touch_polling_rate_summary">Aumentar a taxa de amostragem de toque do ecrã</string>
+    <string name="ambient_display_screen_off_udfps_title">Pressione o sensor de impressão digital para desbloquear</string>
+    <string name="ambient_display_screen_off_udfps_summary">Para ligar o ecrã e desbloquear, mantenha premido o sensor de impressão digital.</string>
+    <string name="fingerprint_wake_unlock_title">Tocar na impressão digital para desbloquear</string>
+    <string name="fingerprint_wake_unlock_touch">Detetar eventos enquanto o ecrã está desligado</string>
+    <string name="fingerprint_wake_unlock_press">Detetar eventos apenas com o ecrã ligado</string>
 </resources>
