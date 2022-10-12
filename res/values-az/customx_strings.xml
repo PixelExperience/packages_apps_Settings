@@ -207,7 +207,7 @@
     <string name="wifi_hotspot_block_client_dialog_title">Cihazı əngəllə</string>
     <string name="wifi_hotspot_block_client_dialog_text">Bu əməliyyat \"<xliff:g id="device_name">%1$s</xliff:g>\" ilə bağlantını kəsəcək. Cihaz əngəllənənlər siyahısına əlavə ediləcək</string>
     <string name="wifi_hotspot_unblock_client_dialog_title">Cihazı əngəllənmişlərdən çıxart</string>
-    <string name="wifi_hotspot_unblock_client_dialog_text">\"<xliff:g id="device_name">%1$s</xliff:g>\" cihazı bu hotspot ilə bağlantı qura biləcək</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">\"<xliff:g id="device_name">%1$s</xliff:g>\" cihazı bu \"hotspot\"a bağlana biləcək</string>
     <string name="wifi_hotspot_client_manager_footer_text">Hazırda heç bir müştəri (client) yoxdur. Bağlantı qurulmuş və əngəllənmiş cihazlar mövcud olanda burada siyahılanacaq.</string>
     <string name="app_volume">Tətbiq səsi</string>
     <string name="auto_brightness_one_shot_title">Tək çəkilişdə avto-parlaqlıq</string>

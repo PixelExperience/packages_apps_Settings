@@ -14,8 +14,9 @@
     <string name="app_notification_sound_timeout_value_30_minutes">୩୦ ମିନିଟ୍</string>
     <string name="unlock_scramble_pin_layout_title">ସ୍କ୍ରାମେବୁଲ୍‍ ଲେଆଉଟ୍‍</string>
     <string name="unlock_scramble_pin_layout_summary">ଡିଭାଇସ୍‍ ଅ୍ନ୍‍ଲକ୍‍ କରିବା ସମୟରେ ସ୍କ୍ରାମେବୁଲ୍ PIN ଲେଆଉଟ୍‍</string>
-    <string name="increasing_ring_volume_option_title">ରିଙ୍ଗ୍‍ ଭୋଲ୍ୟୁମ୍‍ ବଢାଯାଉଛି</string>
-    <string name="increasing_ring_min_volume_title">ପ୍ରାରମ୍ଭିକ ଭଲ୍ୟୁମ୍</string>
+    <string name="volume_link_notification_title">ରିଙ୍ଗ୍ ଓ ଵିଜ୍ଞପ୍ତି ଵଲ୍ୟୁମ୍ ଲିଙ୍କ୍ କରିବା</string>
+    <string name="increasing_ring_volume_option_title">ରିଙ୍ଗ୍ ଵଲ୍ୟୁମ୍ ବଢ଼ାଯାଉଛି</string>
+    <string name="increasing_ring_min_volume_title">ପ୍ରାରମ୍ଭିକ ଵଲ୍ୟୁମ୍</string>
     <string name="increasing_ring_ramp_up_time_title">ସମୟ ରାମ୍ପ୍‍-ଅପ୍‍ କରନ୍ତୁ</string>
     <string name="advanced_reboot_title">ଉନ୍ନତ ପୁନଃଆରମ୍ଭ</string>
     <string name="power_menu_screenshot_title">ସ୍କ୍ରିନସଟ୍</string>
@@ -44,6 +45,8 @@
     <string name="status_bar_battery_title">ବ୍ୟାଟେରୀ ସୂଚକ</string>
     <string name="status_bar_battery_style_title">ବ୍ୟାଟେରୀ ସ୍ଥିତି ଶୈଳୀ</string>
     <string name="status_bar_battery_style_icon_portrait">ଆଇକନ୍ ପୋର୍ଟ୍ରେଟ୍</string>
+    <string name="status_bar_battery_style_circle">ଵୃତ୍ତ</string>
+    <string name="status_bar_battery_style_text">ପାଠ୍ୟ</string>
     <string name="status_bar_battery_percentage_title">ବ୍ୟାଟେରୀ ଶତକଡ଼ା</string>
     <string name="status_bar_battery_percentage_default">ଲୁକ୍କାୟିତ</string>
     <string name="status_bar_battery_percentage_text_inside">ଆଇକନ୍ ଭିତରେ</string>
@@ -53,13 +56,13 @@
     <string name="status_bar_toggle_brightness">ଉଜ୍ଜ୍ୱଳତା ନିୟନ୍ତ୍ରଣ</string>
     <string name="network_traffic_mode_status_bar">ସ୍ଥିତି ଦଣ୍ଡିକା</string>
     <string name="hardware_keys_power_key_title">ପାୱାର୍ ବଟନ୍</string>
-    <string name="hardware_keys_volume_keys_title">ଭଲ୍ୟୁମ୍ ବଟନ୍</string>
+    <string name="hardware_keys_volume_keys_title">ଵଲ୍ୟୁମ୍ ବଟନ୍</string>
     <string name="volume_answer_call_title">କଲ୍ ଉଠାନ୍ତୁ</string>
-    <string name="volume_answer_call_summary">ଭଲ୍ୟୁମ୍ ବଟନ୍ ଦବାଇ ଆଗମନ କଲ୍ ଉଠାନ୍ତୁ</string>
-    <string name="volbtn_cursor_control_on">ଭଲ୍ୟୁମ୍ ବୃଦ୍ଧି/ହ୍ରାସ କର୍ସର୍ କୁ ବାମକୁ/ଡାହାଣକୁ ଘୁଞ୍ଚାଏ</string>
-    <string name="volbtn_cursor_control_on_reverse">ଭଲ୍ୟୁମ୍ ବୃଦ୍ଧି/ହ୍ରାସ କର୍ସର୍ କୁ ଡାହାଣକୁ/ବାମକୁ ଘୁଞ୍ଚାଏ</string>
+    <string name="volume_answer_call_summary">ଵଲ୍ୟୁମ୍ ବଟନ୍ ଦବାଇ ଆଗମନ କଲ୍ ଉଠାନ୍ତୁ</string>
+    <string name="volbtn_cursor_control_on">ଵଲ୍ୟୁମ୍ ଵୃଦ୍ଧି/ହ୍ରାସ କର୍ସର୍ କୁ ବାମକୁ/ଡାହାଣକୁ ଘୁଞ୍ଚାଏ</string>
+    <string name="volbtn_cursor_control_on_reverse">ଵଲ୍ୟୁମ୍ ଵୃଦ୍ଧି/ହ୍ରାସ କର୍ସର୍ କୁ ଡାହାଣକୁ/ବାମକୁ ଘୁଞ୍ଚାଏ</string>
     <string name="swap_volume_buttons_title">ଆଭିମୁଖ୍ୟ ବଦଳାନ୍ତୁ</string>
-    <string name="swap_volume_buttons_summary">ସ୍କ୍ରିନ୍ ଘୁରାଇଲେ ଭଲ୍ୟୁମ୍ ବଟନ୍ ଅଦଳବଦଳ କରନ୍ତୁ</string>
+    <string name="swap_volume_buttons_summary">ସ୍କ୍ରିନ୍ ଘୁରାଇଲେ ଵଲ୍ୟୁମ୍ ବଟନ୍ ଅଦଳବଦଳ କରନ୍ତୁ</string>
     <string name="home_answer_call_title">କଲ୍ ଉଠାନ୍ତୁ</string>
     <string name="home_answer_call_summary">ଗୃହ ବଟନ୍ ଦବାଇ ଆଗମନ କଲ୍ ଉଠାନ୍ତୁ</string>
     <string name="power_end_call_title">କଲ୍ ଶେଷ କରନ୍ତୁ</string>
@@ -84,4 +87,5 @@
     <string name="swipe_to_screenshot_gesture_summary">ସ୍କ୍ରିନସଟ୍ ନେବାକୁ ତିନି ଆଙ୍ଗୁଠି ସ୍ଵାଇପ୍ କରନ୍ତୁ</string>
     <string name="display_cutout_mode_normal">ଡିଫଲ୍ଟ</string>
     <string name="wifi_hotspot_auto_off_timeout_never">ହଟସ୍ପଟ୍ କେବେ ବି ବନ୍ଦ କରନ୍ତୁନି</string>
+    <string name="app_volume">ଆପ୍ ଵଲ୍ୟୁମ୍</string>
 </resources>
