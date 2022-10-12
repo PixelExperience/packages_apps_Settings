@@ -53,7 +53,7 @@
     <string name="swap_capacitive_keys_title">Zamień przyciski pojemnościowe</string>
     <string name="swap_capacitive_keys_summary">Zamień kolejność przycisków odtwarzania i cofania</string>
     <string name="others_settings_title">Inne ustawienia.</string>
-    <string name="additional_buttons_title">Dodatkowe przyciski.</string>
+    <string name="additional_buttons_title">Dodatkowe przyciski</string>
     <string name="high_touch_sensitivity_title">Wysoka czułość dotyku</string>
     <string name="high_touch_sensitivity_summary">Zwiększa czułość ekranu dotykowego, więc możesz go używać podczas noszenia rękawiczek</string>
     <string name="touchscreen_hovering_title">Wskazywanie ekranu dotykowego</string>

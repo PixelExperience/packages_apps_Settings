@@ -81,5 +81,5 @@
     <string name="ambient_display_screen_off_udfps_summary">Para ativar sua tela e desbloquear, pressione e segure o sensor de impressão digital sob a tela.</string>
     <string name="fingerprint_wake_unlock_title">Toque na impressão digital para desbloquear</string>
     <string name="fingerprint_wake_unlock_touch">Aguarda por eventos enquanto a tela está desligada</string>
-    <string name="fingerprint_wake_unlock_press">Aguarda por eventos somente quando a tela está ligada</string>
+    <string name="fingerprint_wake_unlock_press">Desbloquear apenas com a tela ligada</string>
 </resources>

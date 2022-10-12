@@ -77,4 +77,9 @@
     <string name="face_unlock_method_swipe">هنگام کشیدن روی قفل صفحه</string>
     <string name="high_touch_polling_rate_title">کاهش تاخیر لمسی</string>
     <string name="high_touch_polling_rate_summary">کاهش دادن تاخیر در لمس صفحه</string>
+    <string name="ambient_display_screen_off_udfps_title">برای باز کردن قفل دستگاه،حسگر اثراگشت را طولانی فشار دهید</string>
+    <string name="ambient_display_screen_off_udfps_summary">برای روشن کردن صفحه و بازکردن قفل،حسگر اثرانگشت زیر صفحه را به مدت طولانی فشار دهید</string>
+    <string name="fingerprint_wake_unlock_title">برای باز کردن قفل، اثر انگشت را لمس کنید</string>
+    <string name="fingerprint_wake_unlock_touch">در حالی که صفحه خاموش است به رویدادها گوش می دهد</string>
+    <string name="fingerprint_wake_unlock_press">فقط زمانی که صفحه روشن است به رویدادها گوش می دهد</string>
 </resources>

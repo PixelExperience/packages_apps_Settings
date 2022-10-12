@@ -3,7 +3,7 @@
     <string name="wifi_do_not_validate_eap_server_warning">Hech qanday sertifikat belgilanmagan. Sizning ulanishingiz maxfiy bo\'lmaydi.</string>
     <string name="min_refresh_rate_title">Minimal yangilanish tezligi</string>
     <string name="max_refresh_rate_title">Maksimal yangilanish tezligi</string>
-    <string name="battery_saver_refresh_rate_title">Yangilanish tezligini kamaytiring</string>
+    <string name="battery_saver_refresh_rate_title">Yangilanish tezligini kamaytirish</string>
     <string name="battery_saver_refresh_rate_summary">Batareyani tejash rejimi yoqilganda quvvatni tejash uchun maksimal yangilanish tezligi sifatida 60 Gts dan foydalaning</string>
     <string name="battery_light_title">Zaryad olayotganda chiroqni yoqing</string>
     <string name="connected_tws_device_saved_title">Saqlangan quloqchinlar</string>
@@ -70,4 +70,16 @@
     <string name="fast_charging_summary">Quvvat olayotganda qurilma tomonidan ishlab chiqarilgan issiqlikni kamaytirish yoki batareyaning ishlash muddatini uzaytirish uchun o\'chiring</string>
     <string name="security_settings_face_unlock_redo_face_scan_summary">Eski yuz skanerini olib tashlang va yangisi yarating</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">Yuzni skanerlashni qayta bajarish</string>
+    <string name="face_redo_confirm_btn">Qaytarish</string>
+    <string name="face_redo_warning_msg">Mavjud yuzni o\'chirib o\'rniga boshqa bittasini yaratishni hohlaysizmi?</string>
+    <string name="face_unlock_method_title">Ximoya oynasida yuz orqali ochish uchun ruxsat berish</string>
+    <string name="face_unlock_method_default">Ekran yoniqligida</string>
+    <string name="face_unlock_method_swipe">Ximoya oynasini surganda</string>
+    <string name="high_touch_polling_rate_title">Yuqori bosimlar so\'rovlari chastotasi </string>
+    <string name="high_touch_polling_rate_summary">Sensor ekranining sezuvchanligini oshirish</string>
+    <string name="ambient_display_screen_off_udfps_title">Qurilmani ochish uchun barmoq izi sezgichini uzoq ushlab turish</string>
+    <string name="ambient_display_screen_off_udfps_summary">Qurilmangizni yoqish va ochish uchun displey tagidagi barmoq izi sezgichini uzoq ushlab turing.</string>
+    <string name="fingerprint_wake_unlock_title">Ochish uchun barmoq izi</string>
+    <string name="fingerprint_wake_unlock_touch">Ekran o\'chiqligida xabarlarni eshitish</string>
+    <string name="fingerprint_wake_unlock_press">Xabarlarni ekran yonganidan so\'ng eshitish</string>
 </resources>
