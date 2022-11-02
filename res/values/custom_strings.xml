@@ -49,7 +49,6 @@
     <string name="hardware_keys_action_in_app_search">In-app search</string>
     <string name="hardware_keys_action_launch_camera">Launch camera</string>
     <string name="hardware_keys_action_sleep">Turn screen off</string>
-    <string name="hardware_keys_action_split_screen">Split screen</string>
     <string name="hardware_keys_swipe_right_key_title">Swipe right</string>
     <string name="hardware_keys_swipe_left_key_title">Swipe left</string>
     <string name="hardware_keys_long_tap_key_title">Long tap</string>
