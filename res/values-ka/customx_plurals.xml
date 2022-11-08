@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">გამორთე როდესაც მოწყობილობა არ არის დაკავშირებული <xliff:g id="DURATION">%1$d</xliff:g> წუთის განმავლობაში</item>
+        <item quantity="one">გამორთე როდესაც მოწყობილობა არ არის დაკავშირებული <xliff:g id="DURATION">%1$d</xliff:g> წუთის განმავლობაში</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other"><xliff:g id="device_num">%1$d</xliff:g> ზე მეტ მოწყობილობას შეუძლია დაუკავშირდეს ამ hotspot-ს</item>
+        <item quantity="one"><xliff:g id="device_num">%1$d</xliff:g> ზე მეტ მოწყობილობას შეუძლია დაუკავშირდეს ამ hotspot-ს</item>
+    </plurals>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wake_when_plugged_or_unplugged_title">පේණුගත කලවිට ඇහැරවන්න</string>
+    <string name="wake_when_plugged_or_unplugged_summary">බල මූලාශ්‍රය සම්බන්ධ කිරීමේදී හෝ විසන්ධි කිරීමේදී තිරය ඇහැරවන්න</string>
+    <string name="unlock_scramble_pin_layout_title">සැලැස්ම පටලවන්න</string>
+    <string name="unlock_scramble_pin_layout_summary">උපාංගය අගුළු අරින විට PIN සැලැස්ම පටලවන්න</string>
+    <string name="network_traffic_mode_disable">අක්‍රීයයි</string>
+    <string name="navigation_bar_title">සංචලන තීරුව</string>
+    <string name="hardware_keys_power_key_title">බල බොත්තම</string>
+    <string name="hardware_keys_volume_keys_title">ශබ්ද බොත්තම්</string>
+    <string name="volbtn_cursor_control_off">අක්‍රීයයි</string>
+    <string name="live_display_day">දවස</string>
+    <string name="live_display_night">රාත්‍රිය</string>
+</resources>

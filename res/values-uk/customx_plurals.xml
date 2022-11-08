@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Вимикати якщо ніхто не під\'єднаний понад <xliff:g id="DURATION">%1$d</xliff:g> хвилин</item>
+        <item quantity="one">Вимикати якщо ніхто не під\'єднаний понад <xliff:g id="DURATION">%1$d</xliff:g> хвилину</item>
+        <item quantity="few">Вимикати якщо ніхто не під\'єднаний понад <xliff:g id="DURATION">%1$d</xliff:g> хвилини</item>
+        <item quantity="many">Вимикати якщо ніхто не під\'єднаний понад <xliff:g id="DURATION">%1$d</xliff:g> хвилин</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">До цієї точки доступу можна під\'єднати <xliff:g id="device_num">%1$d</xliff:g> пристроїв</item>
+        <item quantity="one">До цієї точки доступу можна під\'єднати <xliff:g id="device_num">%1$d</xliff:g> пристрій</item>
+        <item quantity="few">До цієї точки доступу можна під\'єднати <xliff:g id="device_num">%1$d</xliff:g> пристрої</item>
+        <item quantity="many">До цієї точки доступу можна під\'єднати <xliff:g id="device_num">%1$d</xliff:g> пристроїв</item>
+    </plurals>
+</resources>

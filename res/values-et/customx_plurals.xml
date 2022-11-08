@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Lülitage välja, kui ükski seade pole <xliff:g id="DURATION">%1$d</xliff:g> minuti jooksul ühendatud</item>
+        <item quantity="one">Lülitage välja, kui ükski seade pole <xliff:g id="DURATION">%1$d</xliff:g> minuti jooksul ühendatud</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Selle levialaga saab ühenduse luua kuni <xliff:g id="device_num">%1$d</xliff:g> seadet</item>
+        <item quantity="one">Selle levialaga saab ühenduse luua <xliff:g id="device_num">%1$d</xliff:g> seade</item>
+    </plurals>
+</resources>

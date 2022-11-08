@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 минут</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 mınýt</string>
+    <string name="status_bar_quick_qs_pulldown_off">Өшр.</string>
+    <string name="live_display_day">Күн</string>
+    <string name="live_display_night">Түн</string>
+    <string name="display_cutout_mode_normal">Әдепкі</string>
+    <string name="wifi_hotspot_timeout_summary_30secs">30 секунд</string>
+    <string name="wifi_hotspot_timeout_summary_1min">1 минут</string>
+    <string name="wifi_hotspot_timeout_summary_5mins">5 mınýt</string>
+    <string name="torch_long_press_power_timeout_1min">1 минут</string>
+    <string name="torch_long_press_power_timeout_5min">5 mınýt</string>
+    <string name="adaptive_playback_disabled_summary">Өшр.</string>
+    <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
+    <string name="adaptive_playback_timeout_1_min">1 минут</string>
+    <string name="adaptive_playback_timeout_5_min">5 mınýt</string>
+</resources>

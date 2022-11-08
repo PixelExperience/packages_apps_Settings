@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">ปิดการใช้งานเมื่อไม่มีอุปกรณ์เชื่อมต่ออยู่เป็นเวลา <xliff:g id="DURATION">%1$d</xliff:g> นาที</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">มากถึง <xliff:g id="device_num">%1$d</xliff:g> อุปกรณ์ที่สามารถเชื่อมต่อกับ hotspot นี้ได้</item>
+    </plurals>
+</resources>
