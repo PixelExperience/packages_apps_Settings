@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Sammuta, kun laitteita ei ole yhdistettynä <xliff:g id="DURATION">%1$d</xliff:g> minuuttiin</item>
+        <item quantity="one">Sammuta, kun laitteita ei ole yhdistettynä <xliff:g id="DURATION">%1$d</xliff:g> minuuttiin</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Jopa <xliff:g id="device_num">%1$d</xliff:g> laitetta voi yhdistyä tähän yhteyspisteeseen</item>
+        <item quantity="one">Vain <xliff:g id="device_num">%1$d</xliff:g> laite voi yhdistyä tähän yhteyspisteeseen</item>
+    </plurals>
+</resources>

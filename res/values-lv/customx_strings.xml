@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wake_when_plugged_or_unplugged_title">Pamodināt, iespraužot vadu</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Pievienojot, vai atvienojot no barošanas avota, ieslēgt ekrānu</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 sekundes</string>
+    <string name="unlock_scramble_pin_layout_title">Samaisīt izkārtojumu</string>
+    <string name="unlock_scramble_pin_layout_summary">Atslēdzot iekārtu, samaisīt PIN izkārtojumu</string>
+    <string name="live_display_day">Diena</string>
+    <string name="live_display_night">Nakts</string>
+    <string name="live_display_reading_mode_title">Lasīšanas režīms</string>
+    <string name="display_cutout_mode_normal">Noklusējuma</string>
+</resources>

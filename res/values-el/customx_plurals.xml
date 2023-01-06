@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Απενεργοποίηση όταν δεν είναι συνδεδεμένη συσκευή για <xliff:g id="DURATION">%1$d</xliff:g> λεπτά</item>
+        <item quantity="one">Απενεργοποίηση όταν δεν είναι συνδεδεμένη συσκευή για <xliff:g id="DURATION">%1$d</xliff:g> λεπτό</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Έως και <xliff:g id="device_num">%1$d</xliff:g> συσκευές μπορούν να συνδεθούν σε αυτό το hotspot</item>
+        <item quantity="one">Έως και <xliff:g id="device_num">%1$d</xliff:g> συσκευή μπορεί να συνδεθεί σε αυτό το hotspot</item>
+    </plurals>
+</resources>

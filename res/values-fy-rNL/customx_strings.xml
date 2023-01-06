@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="network_traffic_mode_disable">Utskeakele</string>
+    <string name="volbtn_cursor_control_off">Utskeakele</string>
+    <string name="live_display_reading_mode_title">Lêsmodus</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Uitschakelen wanneer er langer dan <xliff:g id="DURATION">%1$d</xliff:g> minuten geen apparaat verbonden is</item>
+        <item quantity="one">Uitschakelen wanneer er langer dan <xliff:g id="DURATION">%1$d</xliff:g> minuut geen apparaat verbonden is</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Er kunnen maximaal <xliff:g id="device_num">%1$d</xliff:g> apparaten verbonden zijn met deze hotspot</item>
+        <item quantity="one">Er kan maximaal <xliff:g id="device_num">%1$d</xliff:g> apparaat verbonden zijn met deze hotspot</item>
+    </plurals>
+</resources>
