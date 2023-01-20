@@ -19,7 +19,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="16dp"
-    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingStart="@dimen/preference_no_icon_padding_start"
     android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
     android:orientation="vertical">
 
@@ -36,7 +36,7 @@
     <com.android.settings.widget.UsageView
         android:id="@+id/battery_usage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="141dp"
         android:layout_marginBottom="16dp"
         settings:sideLabels="@array/battery_labels"
         android:colorAccent="?android:attr/colorAccent"
