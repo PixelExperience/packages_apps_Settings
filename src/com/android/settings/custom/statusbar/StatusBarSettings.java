@@ -127,7 +127,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         }
 
-        if (isNetworkTrafficOnStatusBar()){
+        if (isNetworkTrafficEnabled()){
             mStatusBarClock.setEnabled(false);
             mStatusBarClock.setSummary(R.string.status_bar_clock_position_disabled_summary);
         }else{
@@ -220,10 +220,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         }
     }
 
-    private boolean isNetworkTrafficOnStatusBar(){
-        int mode = Settings.System.getInt(getContentResolver(),
-                Settings.System.NETWORK_TRAFFIC_LOCATION, 0);
-        return mode == 1;
+    private boolean isNetworkTrafficEnabled(){
+        return Settings.System.getInt(getContentResolver(),
+                Settings.System.NETWORK_TRAFFIC_ENABLED, 0) == 1;
     }
 
     @Override
