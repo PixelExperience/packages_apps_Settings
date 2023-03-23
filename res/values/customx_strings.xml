@@ -134,10 +134,6 @@
     <!-- Status bar - Network Traffic -->
     <string name="network_traffic_settings_title">Network traffic monitor</string>
     <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>
-    <string name="network_traffic_mode_title">Display mode</string>
-    <string name="network_traffic_mode_disable">Disabled</string>
-    <string name="network_traffic_mode_status_bar">Status bar</string>
-    <string name="network_traffic_mode_qs">Quick settings</string>
     <string name="network_traffic_autohide">Auto hide</string>
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_units_title">Traffic measurement units</string>

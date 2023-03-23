@@ -34,7 +34,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
 
     private static final String TAG = "NetworkTrafficSettings";
 
-    private DropDownPreference mNetTrafficMode;
     private SwitchPreference mNetTrafficAutohide;
     private DropDownPreference mNetTrafficUnitType;
 
@@ -44,12 +43,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.network_traffic_settings);
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        mNetTrafficMode = findPreference(Settings.System.NETWORK_TRAFFIC_LOCATION);
-        mNetTrafficMode.setOnPreferenceChangeListener(this);
-        int mode = Settings.System.getInt(resolver,
-                Settings.System.NETWORK_TRAFFIC_LOCATION, 0);
-        mNetTrafficMode.setValue(String.valueOf(mode));
-
         mNetTrafficAutohide = findPreference(Settings.System.NETWORK_TRAFFIC_AUTOHIDE);
         mNetTrafficAutohide.setOnPreferenceChangeListener(this);
 
@@ -58,41 +51,16 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         int units = Settings.System.getInt(resolver,
                 Settings.System.NETWORK_TRAFFIC_UNIT_TYPE, /* Bytes */ 0);
         mNetTrafficUnitType.setValue(String.valueOf(units));
-
-        boolean allowedOnStatusBar = getResources().getBoolean(
-            com.android.internal.R.bool.config_supportsNetworkTrafficOnStatusBar);
-        if (!allowedOnStatusBar){
-            String[] locationEntriesNoStatusBar = getResources().getStringArray(R.array.network_traffic_mode_entries_no_statusbar);
-            String[] locationEntriesNoStatusBarValues = getResources().getStringArray(R.array.network_traffic_mode_values_no_statusbar);
-            mNetTrafficMode.setEntries(locationEntriesNoStatusBar);
-            mNetTrafficMode.setEntryValues(locationEntriesNoStatusBarValues);
-            if (mode == 1){
-                mNetTrafficMode.setValue("2");
-            }
-        }
-
-        updateEnabledStates(mode);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mNetTrafficMode) {
-            int mode = Integer.valueOf((String) newValue);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NETWORK_TRAFFIC_LOCATION, mode);
-            updateEnabledStates(mode);
-        } else if (preference == mNetTrafficUnitType) {
+        if (preference == mNetTrafficUnitType) {
             int unitType = Integer.valueOf((String) newValue);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_UNIT_TYPE, unitType);
         }
         return true;
-    }
-
-    private void updateEnabledStates(int mode) {
-        final boolean enabled = mode != 0;
-        mNetTrafficAutohide.setEnabled(enabled);
-        mNetTrafficUnitType.setEnabled(enabled);
     }
 
     @Override
