@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Stäng av när ingen enhet är ansluten efter <xliff:g id="DURATION">%1$d</xliff:g> minuter</item>
+        <item quantity="one">Stäng av när ingen enhet är ansluten efter <xliff:g id="DURATION">%1$d</xliff:g> minut</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Upp till <xliff:g id="device_num">%1$d</xliff:g> enheter kan vara anslutna till denna surfzon</item>
+        <item quantity="one">Upp till <xliff:g id="device_num">%1$d</xliff:g> enhet kan vara ansluten till denna surfzon</item>
+    </plurals>
+</resources>

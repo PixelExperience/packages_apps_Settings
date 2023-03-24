@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Անջատեք, երբ սարքը միացված չէ <xliff:g id="DURATION">%1$d</xliff:g> րոպեով</item>
+        <item quantity="one">Անջատեք, երբ սարքը միացված չէ <xliff:g id="DURATION">%1$d</xliff:g> րոպեի ընթացքում</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Մինչև <xliff:g id="device_num">%1$d</xliff:g> սարքեր կարող են միանալ այս թեժ կետին</item>
+        <item quantity="one">Մինչև <xliff:g id="device_num">%1$d</xliff:g> սարքը կարող է միանալ այս թեժ կետին</item>
+    </plurals>
+</resources>
