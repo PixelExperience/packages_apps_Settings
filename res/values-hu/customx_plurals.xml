@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Ha nincs eszköz csatlakoztatva <xliff:g id="DURATION">%1$d</xliff:g> perc mulva kikapcsol</item>
+        <item quantity="one">Ha nincs eszköz csatlakoztatva <xliff:g id="DURATION">%1$d</xliff:g> perc mulva kikapcsol</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Maximum <xliff:g id="device_num">%1$d</xliff:g> eszköz csatlakozhat erre a hostpothoz</item>
+        <item quantity="one">Maximum <xliff:g id="device_num">%1$d</xliff:g> eszköz csatlakozhat erre a hostpothoz</item>
+    </plurals>
+</resources>

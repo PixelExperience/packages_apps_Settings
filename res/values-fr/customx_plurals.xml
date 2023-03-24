@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Éteindre quand aucun appareil n\'est connecté depuis  <xliff:g id="DURATION">%1$d</xliff:g> minutes</item>
+        <item quantity="one">Éteindre quand aucun appareil n\'est connecté depuis <xliff:g id="DURATION">%1$d</xliff:g> minute</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Plus de <xliff:g id="device_num">%1$d</xliff:g> appareils peuvent se connecter au point d\'accès</item>
+        <item quantity="one">Plus de <xliff:g id="device_num">%1$d</xliff:g> appareil peut se connecter au point d\'accès</item>
+    </plurals>
+</resources>

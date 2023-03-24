@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="live_display_day">ថ្ងៃ</string>
+    <string name="live_display_night">ពេល​រាត្រី</string>
+    <string name="live_display_reading_mode_title">ម៉ូដការអាន</string>
+    <string name="display_cutout_mode_normal">លំនាំដើម</string>
+</resources>
