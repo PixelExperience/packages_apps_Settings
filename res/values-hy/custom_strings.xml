@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Հպվեք հեռախոսի հետևում գտնվող մատնահետքի տվիչին:</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Հպվեք հեռախոսի կողքին գտնվող մատնահետքի տվիչին:</string>
     <string name="battery_light_title">Լիցքավորելիս միացնել լույսը</string>
-    <string name="fingerprint_wake_unlock_title">Հպեք մատնահետքի սենսորին՝ ապակողպելու համար</string>
-    <string name="fingerprint_wake_unlock_touch">Հաշվի առնել, երբ էկրանն անջատված է</string>
-    <string name="fingerprint_wake_unlock_press">Հաշվի առնել միայն էկրանը միացնելուց հետո</string>
     <string name="ambient_display_screen_off_udfps_title">Սարքն ապակողպվում է՝ մատնահետքի սենսորը երկար սեղմելով</string>
     <string name="ambient_display_screen_off_udfps_summary">Էկրանը միացնելու և ապակողպելու համար մատով երկար սեղմեք էկրանի տակ գտնվող մատնահետքի սենսորին:</string>
     <string name="storage_warning_internal">Զգուշացում. Այս կայանքը կարող է ճիշտ չաշխատել կամ հանգեցնել տվյալների կորստի, ուստի խորհուրդ չի տրվում:</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Որոնել հավելվածում</string>
     <string name="hardware_keys_action_launch_camera">Գործարկել տեսախցիկը</string>
     <string name="hardware_keys_action_sleep">Անջատել էկրանը</string>
-    <string name="hardware_keys_action_split_screen">Էկրանի բաժանում</string>
     <string name="hardware_keys_swipe_right_key_title">Սահեցնել աջ</string>
     <string name="hardware_keys_swipe_left_key_title">Սահեցնել ձախ</string>
     <string name="hardware_keys_long_tap_key_title">Երկար հպում</string>

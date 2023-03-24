@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_do_not_validate_eap_server_warning">Inget certifikat angivet. Din anslutning kommer inte att vara privat.</string>
     <string name="min_refresh_rate_title">Lägsta uppdateringsfrekvens</string>
     <string name="max_refresh_rate_title">Maximala uppdateringsfrekvensen</string>
     <string name="fingerprint_enroll_find_sensor_message_front">Hitta fingeravtryckssensorn på din telefons framsida.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear">Lokalisera fingeravtryckssensorn på baksidan av din telefon.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front">Rör sensorn på framsidan av din telefon.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear">Rör sensorn på baksidan av din telefon.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side">Rör sensorn på sidan av din telefon.</string>
     <string name="battery_light_title">Ljussätt när laddning pågår</string>
+    <string name="ambient_display_screen_off_udfps_title">Långtryck på fingeravtryckssensorn för att låsa upp enheten</string>
+    <string name="ambient_display_screen_off_udfps_summary">För att väcka skärmen och låsa upp trycker du länge på fingeravtryckssensorn under skärmen.</string>
     <string name="reset">Återställ</string>
     <string name="button_pref_title">Knappar</string>
     <string name="hardware_keys_home_key_title">Hemknapp</string>

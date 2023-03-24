@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Dotkněte se senzoru na zadní straně telefonu.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Dotkněte se senzoru na boční straně telefonu.</string>
     <string name="battery_light_title">Zapnout kontrolku baterie při nabíjení</string>
-    <string name="fingerprint_wake_unlock_title">Pro odemknutí použít otisk prstu</string>
-    <string name="fingerprint_wake_unlock_touch">Naslouchá událostem, když je obrazovka vypnutá</string>
-    <string name="fingerprint_wake_unlock_press">Naslouchá událostem, pouze když je obrazovka zapnutá</string>
     <string name="ambient_display_screen_off_udfps_title">Dlouhým stisknutím snímače otisků prstů odemknout zařízení</string>
     <string name="ambient_display_screen_off_udfps_summary">Chcete-li obrazovku probudit a odemknout, dlouze stiskněte snímač otisků prstů v displeji.</string>
     <string name="storage_warning_internal">Varování: Tato možnost nemusí fungovat správně nebo může vést ke ztrátě dat, proto se nedoporučuje!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Hledat v aplikacích</string>
     <string name="hardware_keys_action_launch_camera">Spustit fotoaparát</string>
     <string name="hardware_keys_action_sleep">Vypnout obrazovku</string>
-    <string name="hardware_keys_action_split_screen">Rozdělená obrazovka</string>
     <string name="hardware_keys_swipe_right_key_title">Přejetí vpravo</string>
     <string name="hardware_keys_swipe_left_key_title">Přejetí vlevo</string>
     <string name="hardware_keys_long_tap_key_title">Dlouhý stisk</string>

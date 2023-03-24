@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">휴대전화 뒷면에 있는 센서를 누르세요.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">휴대전화 옆면에 있는 센서를 누르세요.</string>
     <string name="battery_light_title">배터리 표시등</string>
-    <string name="fingerprint_wake_unlock_title">지문을 센서에 인식시켜 잠금 해제하세요</string>
-    <string name="fingerprint_wake_unlock_touch">화면이 꺼져도 이벤트 수신</string>
-    <string name="fingerprint_wake_unlock_press">화면이 켜진 경우에만 이벤트 수신</string>
     <string name="ambient_display_screen_off_udfps_title">기기를 잠금 해제하려면 지문을 센서에 길게 인식시켜 주세요</string>
     <string name="ambient_display_screen_off_udfps_summary">화면을 켜고 잠금을 해제하려면, 화면 아래에 있는 지문 인식 센서를 길게 누르세요.</string>
     <string name="storage_warning_internal">경고: 이 옵션은 제대로 작동하지 않거나 데이터 손실이 일어날 가능성이 있으므로 권장하지 않습니다!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">앱에서 검색</string>
     <string name="hardware_keys_action_launch_camera">카메라 실행</string>
     <string name="hardware_keys_action_sleep">화면 끄기</string>
-    <string name="hardware_keys_action_split_screen">화면 분할</string>
     <string name="hardware_keys_swipe_right_key_title">오른쪽으로 스와이프</string>
     <string name="hardware_keys_swipe_left_key_title">왼쪽으로 스와이프</string>
     <string name="hardware_keys_long_tap_key_title">길게 탭</string>

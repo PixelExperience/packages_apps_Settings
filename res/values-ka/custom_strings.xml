@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">შეეხეთ სენსორს ტელეფონის უკანა მხარეს.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">შეეხეთ სენსორს ტელეფონის გვერდითა მხარეს.</string>
     <string name="battery_light_title">ბატარეის განათება</string>
-    <string name="fingerprint_wake_unlock_title">თითის ანაბეჭდით გახსნა</string>
-    <string name="fingerprint_wake_unlock_touch">ელოდება მოქმედებას, როცა ეკრანი ჩამქრალია</string>
-    <string name="fingerprint_wake_unlock_press">ელოდება მოქმედებას მხოლოდ ანთებული ეკრანის დროს</string>
     <string name="ambient_display_screen_off_udfps_title">მოწყობილობის გახსნა თითის ანაბეჭდის აღმქმელზე დიდხანს დაჭერით</string>
     <string name="ambient_display_screen_off_udfps_summary">ეკრანის ჩასართავად და გასახსნელად დიდხანს დააჭირეთ თითის ანაბეჭდის ეკრანქვეშა აღმქმელს.</string>
     <string name="storage_warning_internal">გაფრთხილება: ამ პარამეტრმა შეიძლება ვერ იმუშაოს სათანადოდ ან მონაცემთა დაკარგვა გამოიწვიოს, შესაბამისად არასასურველია!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">აპის შიგნით ძიება</string>
     <string name="hardware_keys_action_launch_camera">კამერის გაშვება</string>
     <string name="hardware_keys_action_sleep">ეკრანის გამორთვა</string>
-    <string name="hardware_keys_action_split_screen">ეკრანის გაყოფა</string>
     <string name="hardware_keys_swipe_right_key_title">გაუსვით მარჯვნივ</string>
     <string name="hardware_keys_swipe_left_key_title">გაუსვით მარცხნივ</string>
     <string name="hardware_keys_long_tap_key_title">დიდხანს დაჭერა</string>

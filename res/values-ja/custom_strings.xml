@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">スマートフォン背面にある指紋認証センサーをタッチします</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">スマートフォン側面にある指紋認証センサーをタッチします</string>
     <string name="battery_light_title">電池のライト</string>
-    <string name="fingerprint_wake_unlock_title">指紋タッチでロック解除</string>
-    <string name="fingerprint_wake_unlock_touch">画面消灯中に外部操作を受け付ける</string>
-    <string name="fingerprint_wake_unlock_press">画面点灯時にのみ1回だけ外部操作を受け付ける</string>
     <string name="ambient_display_screen_off_udfps_title">指紋センサー長押しでロック解除</string>
     <string name="ambient_display_screen_off_udfps_summary">画面を起動してロックを解除するには、画面内指紋センサーを長押しして下さい。</string>
     <string name="storage_warning_internal">警告: このオプションは正常に動作しなかったりデータの消失に繋がる可能性がありますので、推奨いたしません。</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">アプリ内検索</string>
     <string name="hardware_keys_action_launch_camera">カメラを起動</string>
     <string name="hardware_keys_action_sleep">画面を消灯</string>
-    <string name="hardware_keys_action_split_screen">画面分割</string>
     <string name="hardware_keys_swipe_right_key_title">右にスワイプ</string>
     <string name="hardware_keys_swipe_left_key_title">左にスワイプ</string>
     <string name="hardware_keys_long_tap_key_title">長押し</string>

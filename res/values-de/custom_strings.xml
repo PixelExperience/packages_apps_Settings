@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Sensor auf der Rückseite Ihres Telefons berühren.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Sensor an der Seite Ihres Telefons berühren.</string>
     <string name="battery_light_title">Licht beim Laden aktivieren</string>
-    <string name="fingerprint_wake_unlock_title">Zum Entsperren Fingerabdruck berühren</string>
-    <string name="fingerprint_wake_unlock_touch">Hört auf Ereignisse, während der Bildschirm aus ist</string>
-    <string name="fingerprint_wake_unlock_press">Hört nur auf Ereignisse, wenn der Bildschirm an ist</string>
     <string name="ambient_display_screen_off_udfps_title">Fingerabdrucksensor lange drücken, um das Gerät zu entsperren</string>
     <string name="ambient_display_screen_off_udfps_summary">Um Ihren Bildschirm aufzuwecken und zu entsperren, lange auf Ihren Fingerabdrucksensor unter dem Bildschirm drücken.</string>
     <string name="storage_warning_internal">Warnung: Diese Option kann zu Fehlern führen bis hin zum Datenverlust und wird deshalb nicht empfohlen!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">In-App-Suche</string>
     <string name="hardware_keys_action_launch_camera">Kamera starten</string>
     <string name="hardware_keys_action_sleep">Bildschirm ausschalten</string>
-    <string name="hardware_keys_action_split_screen">Geteilter Bildschirm</string>
     <string name="hardware_keys_swipe_right_key_title">Nach rechts wischen</string>
     <string name="hardware_keys_swipe_left_key_title">Nach links wischen</string>
     <string name="hardware_keys_long_tap_key_title">Lange drücken</string>

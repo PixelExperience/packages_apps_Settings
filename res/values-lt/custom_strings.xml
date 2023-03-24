@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Palieskite jutiklį telefono gale.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Palieskite jutiklį telefono šone.</string>
     <string name="battery_light_title">Įjunkite šviesos indikatorių,akumuliatoriaus įkrovimo metu</string>
-    <string name="fingerprint_wake_unlock_title">Palieskite piršto atspaudą, kad atrakintumėte</string>
-    <string name="fingerprint_wake_unlock_touch">Klausyti įvykius,išjungtame ekrane</string>
-    <string name="fingerprint_wake_unlock_press">Įvykių klausymas tik tada, kai įjungtas ekranas</string>
     <string name="ambient_display_screen_off_udfps_title">Norėdami atrakinti įrenginį, ilgai paspauskite pirštų atspaudų jutiklį</string>
     <string name="ambient_display_screen_off_udfps_summary">Norėdami pažadinti ekraną ir atrakinti, ilgai paspauskite pirštų atspaudų jutiklį po ekranu.</string>
     <string name="storage_warning_internal">Įspėjimas: ši parinktis gali neveikti tinkamai arba prarasti duomenis, todėl nerekomenduojama!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Paieška programoje</string>
     <string name="hardware_keys_action_launch_camera">Įjungti kamerą</string>
     <string name="hardware_keys_action_sleep">Išjungti ekraną</string>
-    <string name="hardware_keys_action_split_screen">Padalintas ekranas</string>
     <string name="hardware_keys_swipe_right_key_title">Braukti į dešinę</string>
     <string name="hardware_keys_swipe_left_key_title">Brauti į kairę</string>
     <string name="hardware_keys_long_tap_key_title">Ilgas bakstelėjimas</string>

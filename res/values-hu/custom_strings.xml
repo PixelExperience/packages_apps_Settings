@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Érintse meg a szenzort készüléke hátlapján.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Érintse meg a szenzort készüléke oldalán.</string>
     <string name="battery_light_title">Töltés közbeni fényjelzés bekapcsolva</string>
-    <string name="fingerprint_wake_unlock_title">Ébresztés ujjlenyomattal</string>
-    <string name="fingerprint_wake_unlock_touch">Eseményfigyelés kikapcsolt képernyőn</string>
-    <string name="fingerprint_wake_unlock_press">Eseményfigyelés csak bekapcsolt képernyőn</string>
     <string name="ambient_display_screen_off_udfps_title">Az ujjlenyomat-olvasó hosszannyomásával feloldható a készülék</string>
     <string name="ambient_display_screen_off_udfps_summary">A képernyő felébresztéséhez és feloldásához nyomja meg hosszan a képernyőbe épitett ujjlenyomat-olvasót.</string>
     <string name="storage_warning_internal">Figyelmeztetés: Előfordulhat, hogy ez nem működik megfelelően, vagy adatvesztéshez vezethet, ezért nem ajánlott!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Alkalmazáson belüli keresés</string>
     <string name="hardware_keys_action_launch_camera">Kameraindítás</string>
     <string name="hardware_keys_action_sleep">Képernyő-kikapcsolás</string>
-    <string name="hardware_keys_action_split_screen">Osztott képernyő</string>
     <string name="hardware_keys_swipe_right_key_title">Csúsztatás jobbra</string>
     <string name="hardware_keys_swipe_left_key_title">Csúsztatás balra</string>
     <string name="hardware_keys_long_tap_key_title">Hosszú érintés</string>

@@ -9,11 +9,9 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Dotknite sa senzora na zadnej strane telefónu.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Dotknite sa senzora na bočnej strane telefónu.</string>
     <string name="battery_light_title">Zapnúť LED kontrolku batérie pri nabíjaní</string>
-    <string name="fingerprint_wake_unlock_title">Odomknúť použitím odtlačku prstu</string>
-    <string name="fingerprint_wake_unlock_touch">Načúva udalostiam keď je obrazovka vypnutá</string>
-    <string name="fingerprint_wake_unlock_press">Načúva udalostiam iba keď je obrazovka zapnutá</string>
     <string name="ambient_display_screen_off_udfps_title">Dlhým stlačením snímača odtlačkov prstov odomknete zariadenie</string>
     <string name="ambient_display_screen_off_udfps_summary">Ak chcete prebudiť obrazovku a odomknúť, dlho stlačte snímač odtlačkov prstov v displeji.</string>
+    <string name="storage_warning_internal">Varovanie: Táto možnosť nemusí fungovať správne alebo môže viesť k strate dát, preto se neodporúča!</string>
     <string name="reset">Resetovať</string>
     <string name="button_pref_title">Tlačidlá</string>
     <string name="hardware_keys_home_key_title">Tlačidlo Domov</string>

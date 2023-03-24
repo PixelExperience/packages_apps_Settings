@@ -3,17 +3,14 @@
     <string name="wifi_do_not_validate_eap_server_warning">Nu s-a specificat niciun certificat. Conexiunea nu va fi privată.</string>
     <string name="min_refresh_rate_title">Rata minimă de reîmprospătare</string>
     <string name="max_refresh_rate_title">Rata maximă de reîmprospătare</string>
-    <string name="fingerprint_enroll_find_sensor_message_front">Găsiți senzorul de amprentă pe partea din față a telefonului.</string>
-    <string name="fingerprint_enroll_find_sensor_message_rear">Găsiți senzorul de amprentă pe partea din spate a telefonului.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_front">Atingeți senzorul de pe partea frontală a telefonului.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_rear">Atingeți senzorul din partea din spate a telefonului.</string>
-    <string name="fingerprint_enroll_touch_dialog_message_side">Atingeți senzorul de pe partea laterală a telefonului.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front">Găsește senzorul de amprentă pe partea din față a telefonului.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear">Găsește senzorul de amprentă pe partea din spate a telefonului.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front">Atinge senzorul de pe partea frontală a telefonului.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear">Atinge senzorul din partea din spate a telefonului.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side">Atinge senzorul de pe partea laterală a telefonului.</string>
     <string name="battery_light_title">Se pornește LED-ul la încărcare</string>
-    <string name="fingerprint_wake_unlock_title">Atingeți amprenta pentru a debloca</string>
-    <string name="fingerprint_wake_unlock_touch">Ascultă evenimente în timp ce ecranul este oprit</string>
-    <string name="fingerprint_wake_unlock_press">Ascultă evenimente numai după ce ecranul este pornit</string>
-    <string name="ambient_display_screen_off_udfps_title">Apăsați lung pe senzorul de amprentă pentru a debloca dispozitivul</string>
-    <string name="ambient_display_screen_off_udfps_summary">Pentru a porni și debloca ecranul, țineți apăsat senzorul de amprentă de sub ecran.</string>
+    <string name="ambient_display_screen_off_udfps_title">Apasă lung pe senzorul de amprentă pentru a debloca dispozitivul</string>
+    <string name="ambient_display_screen_off_udfps_summary">Pentru a porni și debloca ecranul, ține apăsat senzorul de amprentă de sub ecran.</string>
     <string name="storage_warning_internal">Atenție: Este posibil ca această opțiune să nu funcționeze corect sau să ducă la pierderea datelor și, prin urmare, nu este recomandată!</string>
     <string name="reset">Resetare</string>
     <string name="button_pref_title">Butoane</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Căutare în aplicație</string>
     <string name="hardware_keys_action_launch_camera">Lansare cameră foto</string>
     <string name="hardware_keys_action_sleep">Oprire ecran</string>
-    <string name="hardware_keys_action_split_screen">Ecran divizat</string>
     <string name="hardware_keys_swipe_right_key_title">Glisare spre dreapta</string>
     <string name="hardware_keys_swipe_left_key_title">Glisare spre stânga</string>
     <string name="hardware_keys_long_tap_key_title">Atingere îndelungată</string>
@@ -65,7 +61,7 @@
     <string name="high_touch_sensitivity_title">Sensibilitate tactilă înaltă </string>
     <string name="high_touch_sensitivity_summary">Crește sensibilitatea ecranului tactil, astfel încât acesta poate fi utilizat în timp ce se poartă mănuși</string>
     <string name="touchscreen_hovering_title">Plutire peste ecran</string>
-    <string name="touchscreen_hovering_summary">Vă permite să plutiți degetul peste ecran ca un mouse în browserele web, remote desktop-uri etc</string>
+    <string name="touchscreen_hovering_summary">Permite plutirea degetului peste ecran ca un mouse în browserele web, desktop-uri la distanță, etc</string>
     <string name="high_touch_polling_rate_title">Rată ridicată de sondare la atingere</string>
     <string name="high_touch_polling_rate_summary">Crește rata de interogare a ecranului tactil</string>
     <string name="keyboard_extras_title">Extra</string>
@@ -76,7 +72,7 @@
     <string name="security_settings_face_unlock_redo_face_scan_title">Refaceți scanarea facială</string>
     <string name="face_redo_confirm_btn">Refacere</string>
     <string name="face_redo_warning_msg">Doriți să ștergeți scanarea existentă a feței și să creați una nouă?</string>
-    <string name="face_unlock_method_title">Permiteți deblocarea facială pe ecranul de blocare</string>
+    <string name="face_unlock_method_title">Permite deblocarea facială pe ecranul de blocare</string>
     <string name="face_unlock_method_default">Când ecranul este pornit</string>
-    <string name="face_unlock_method_swipe">Când glisați pe ecranul de blocare</string>
+    <string name="face_unlock_method_swipe">La glisare pe ecranul de blocare</string>
 </resources>

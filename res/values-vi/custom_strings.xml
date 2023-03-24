@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Chạm vào cảm biến ở mặt sau điện thoại của bạn.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Chạm vào cảm biến ở cạnh bên điện thoại của bạn.</string>
     <string name="battery_light_title">Bật đèn báo khi sạc </string>
-    <string name="fingerprint_wake_unlock_title">Chạm cảm biến vân tay để mở khoá</string>
-    <string name="fingerprint_wake_unlock_touch">Quét vân tay ngay cả khi màn hình tắt</string>
-    <string name="fingerprint_wake_unlock_press">Chỉ quét vân tay khi màn hình bật</string>
     <string name="ambient_display_screen_off_udfps_title">Nhấn và giữ cảm biến vân tay để mở khóa thiết bị</string>
     <string name="ambient_display_screen_off_udfps_summary">Để đánh thức màn hình và mở khóa, hãy nhấn và giữ cảm biến vân tay dưới màn hình của bạn</string>
     <string name="storage_warning_internal">Cảnh báo: Tùy chọn này có thể không hoạt động bình thường hoặc dẫn đến mất dữ liệu và do đó không được khuyến nghị</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Tìm kiếm trong ứng dụng</string>
     <string name="hardware_keys_action_launch_camera">Mở máy ảnh</string>
     <string name="hardware_keys_action_sleep">Tắt màn hình</string>
-    <string name="hardware_keys_action_split_screen">Chia đôi màn hình</string>
     <string name="hardware_keys_swipe_right_key_title">Vuốt sang phải</string>
     <string name="hardware_keys_swipe_left_key_title">Vuốt sang trái</string>
     <string name="hardware_keys_long_tap_key_title">Chạm giữ</string>

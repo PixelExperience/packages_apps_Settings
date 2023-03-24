@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Telefoningiz orqa tomonidagi sensorga teging </string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Telefoningiz yon tomonidagi sensorga teging </string>
     <string name="battery_light_title">Zaryad olayotganda chiroqni yoqing</string>
-    <string name="fingerprint_wake_unlock_title">Ochish uchun barmoq izi</string>
-    <string name="fingerprint_wake_unlock_touch">Ekran o\'chiqligida xabarlarni eshitish</string>
-    <string name="fingerprint_wake_unlock_press">Xabarlarni ekran yonganidan so\'ng eshitish</string>
     <string name="ambient_display_screen_off_udfps_title">Qurilmani ochish uchun barmoq izi sezgichini uzoq ushlab turish</string>
     <string name="ambient_display_screen_off_udfps_summary">Qurilmangizni yoqish va ochish uchun displey tagidagi barmoq izi sezgichini uzoq ushlab turing.</string>
     <string name="reset">Qayta o\'rnatish</string>

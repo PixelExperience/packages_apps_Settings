@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Αγγίξτε τον αισθητήρα στο πίσω μέρος του τηλεφώνου σας.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Αγγίξτε τον αισθητήρα στο πλάι του τηλεφώνου σας.</string>
     <string name="battery_light_title">Ενεργοποίση φωτισμού κατά τη φόρτιση</string>
-    <string name="fingerprint_wake_unlock_title">Αγγίξτε το δακτυλικό αποτύπωμα για να ξεκλειδώσετε</string>
-    <string name="fingerprint_wake_unlock_touch">Ακούει συμβάντα ενώ η οθόνη είναι απενεργοποιημένη</string>
-    <string name="fingerprint_wake_unlock_press">Ακούει συμβάντα μόνο όταν είναι ενεργοποιημένη η οθόνη</string>
     <string name="ambient_display_screen_off_udfps_title">Πατήστε παρατεταμένα τον αισθητήρα δακτυλικών αποτυπωμάτων για να ξεκλειδώσετε τη συσκευή</string>
     <string name="ambient_display_screen_off_udfps_summary">Για να ενεργοποιηθεί η οθόνη σας και να ξεκλειδώσετε, πατήστε παρατεταμένα τον αισθητήρα δακτυλικών αποτυπωμάτων κάτω από την οθόνη.</string>
     <string name="storage_warning_internal">Προειδοποίηση: Αυτή η επιλογή μπορεί να μη λειτουργήσει σωστά ή να οδηγήσει σε απώλεια δεδομένων και επομένως δε συνιστάται!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Αναζήτηση μέσα στην εφαρμογή</string>
     <string name="hardware_keys_action_launch_camera">Εκκίνηση φωτογραφικής μηχανής</string>
     <string name="hardware_keys_action_sleep">Απενεργοποίηση οθόνης</string>
-    <string name="hardware_keys_action_split_screen">Διαχωρισμός οθόνης</string>
     <string name="hardware_keys_swipe_right_key_title">Σύρετε δεξιά</string>
     <string name="hardware_keys_swipe_left_key_title">Σύρετε αριστερά</string>
     <string name="hardware_keys_long_tap_key_title">Παρατεταμένο πάτημα</string>

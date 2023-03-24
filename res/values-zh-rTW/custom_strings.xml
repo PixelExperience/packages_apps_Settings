@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">輕觸位於手機背面的感應器。</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">輕觸位於手機側面的感應器。</string>
     <string name="battery_light_title">電量指示燈</string>
-    <string name="fingerprint_wake_unlock_title">使用指紋解除鎖定</string>
-    <string name="fingerprint_wake_unlock_touch">螢幕關閉時聆聽活動</string>
-    <string name="fingerprint_wake_unlock_press">螢幕開啟時僅聆聽一次活動</string>
     <string name="ambient_display_screen_off_udfps_title">在指紋感應器上長按以解鎖裝置</string>
     <string name="ambient_display_screen_off_udfps_summary">要喚醒您的螢幕並解鎖，請長按螢幕下指紋感應器。</string>
     <string name="storage_warning_internal">警告：此選項可能無法正常運作或導致資料遺失，因此並不建議使用。</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">應用程式內搜尋</string>
     <string name="hardware_keys_action_launch_camera">啟動相機</string>
     <string name="hardware_keys_action_sleep">關閉螢幕</string>
-    <string name="hardware_keys_action_split_screen">分割畫面</string>
     <string name="hardware_keys_swipe_right_key_title">向右滑動</string>
     <string name="hardware_keys_swipe_left_key_title">向左滑動</string>
     <string name="hardware_keys_long_tap_key_title">長按</string>

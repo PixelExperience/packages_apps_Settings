@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Sentuh pengesan di belakang telefon anda.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Sentuh pengesan di tepi telefon anda.</string>
     <string name="battery_light_title">Hidupkan lampu semasa mengecas.</string>
-    <string name="fingerprint_wake_unlock_title">Sentuh pengesan cap jari untuk membuka kunci</string>
-    <string name="fingerprint_wake_unlock_touch">Mendengar sebarang situasi ketika skrin ditutup</string>
-    <string name="fingerprint_wake_unlock_press">Hanya mendengar situasi ketika skrin dibuka</string>
     <string name="ambient_display_screen_off_udfps_title">Tekan lama pada pengimbas cap jari untuk membuka peranti</string>
     <string name="ambient_display_screen_off_udfps_summary">Untuk menghidupkan skrin dan mengunci, tekan lama di kawasan sensor pengimbas cap jari.</string>
     <string name="storage_warning_internal">Amaran: Pilihan ini mungkin tidak akan berfungsi dengan baik atau akan membawa kepada kehilangan data dan ia tidak disyorkan!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Carian dalam aplikasi</string>
     <string name="hardware_keys_action_launch_camera">Mulakan kamera</string>
     <string name="hardware_keys_action_sleep">Padamkan skrin</string>
-    <string name="hardware_keys_action_split_screen">Paparan terpisah</string>
     <string name="hardware_keys_swipe_right_key_title">Leret ke kanan</string>
     <string name="hardware_keys_swipe_left_key_title">Leret ke kiri</string>
     <string name="hardware_keys_long_tap_key_title">Ketik dengan lama</string>
