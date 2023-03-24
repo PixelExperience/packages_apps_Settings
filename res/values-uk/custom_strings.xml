@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Торкніть сканер ззаду телефона.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Торкніть сканер збоку телефона.</string>
     <string name="battery_light_title">Індикація батареї</string>
-    <string name="fingerprint_wake_unlock_title">Торкніться сенсор відбитка пальців, щоб розблокувати</string>
-    <string name="fingerprint_wake_unlock_touch">Слухає події, коли екран вимкнено</string>
-    <string name="fingerprint_wake_unlock_press">Прослуховує події, лише коли екран увімкнено</string>
     <string name="ambient_display_screen_off_udfps_title">Утримувати сканер відбитків пальців, щоб розблокувати пристрій</string>
     <string name="ambient_display_screen_off_udfps_summary">Щоб увімкнути екран та розблокувати, затисніть сенсор відбитків пальців.</string>
     <string name="storage_warning_internal">Попередження: Ця опція може працювати неправильно або призвести до втрати даних і тому не рекомендується!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Пошук в додатку</string>
     <string name="hardware_keys_action_launch_camera">Запустити камеру</string>
     <string name="hardware_keys_action_sleep">Вимкнути екран</string>
-    <string name="hardware_keys_action_split_screen">Розділений екран</string>
     <string name="hardware_keys_swipe_right_key_title">Свайп вправо</string>
     <string name="hardware_keys_swipe_left_key_title">Свайп вліво</string>
     <string name="hardware_keys_long_tap_key_title">Довгий дотик</string>

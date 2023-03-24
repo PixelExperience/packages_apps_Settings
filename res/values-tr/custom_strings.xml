@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Telefonunuzun arkasında bulunan parmak izi sensörüne dokunun.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Telefonunuzun yan tarafında bulunan parmak izi sensörüne dokunun.</string>
     <string name="battery_light_title">Şarj ederken ışığı aç</string>
-    <string name="fingerprint_wake_unlock_title">Kilidi açmak için parmak izine dokunun</string>
-    <string name="fingerprint_wake_unlock_touch">Ekran kapalıyken olayları dinler</string>
-    <string name="fingerprint_wake_unlock_press">Olayları yalnızca ekran açıkken dinler</string>
     <string name="ambient_display_screen_off_udfps_title">Cihazın kilidini açmak için parmak izi sensörüne uzun basın</string>
     <string name="ambient_display_screen_off_udfps_summary">Ekranınızı uyandırmak ve kilidini açmak için ekranın altındaki parmak izi sensörünüze uzun basın.</string>
     <string name="storage_warning_internal">Uyarı: Bu özellik düzgün çalışmayabilir veya veri kaybına neden olabilir ve bu nedenle önerilmez!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Uygulama içi arama</string>
     <string name="hardware_keys_action_launch_camera">Kamerayı başlat</string>
     <string name="hardware_keys_action_sleep">Ekranı kapat</string>
-    <string name="hardware_keys_action_split_screen">Bölünmüş ekran</string>
     <string name="hardware_keys_swipe_right_key_title">Sağa kaydır</string>
     <string name="hardware_keys_swipe_left_key_title">Sola kaydır</string>
     <string name="hardware_keys_long_tap_key_title">Uzun basma</string>

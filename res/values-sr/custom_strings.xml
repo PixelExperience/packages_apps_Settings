@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Додирните сензор за отиске прстију у позадини вашег телефона.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Додирните сензор за отиске прстију са стране вашег телефона.</string>
     <string name="battery_light_title">Индикатор батерије</string>
-    <string name="fingerprint_wake_unlock_title">Додирните сензор за отиске прстију за откључавање</string>
-    <string name="fingerprint_wake_unlock_touch">Слушања додађаја кад је екран искључен</string>
-    <string name="fingerprint_wake_unlock_press">Слушања догађаја само кад је екран укључен</string>
     <string name="ambient_display_screen_off_udfps_title">Дуги притисак на сензор за отиске прстију за откључаваање</string>
     <string name="ambient_display_screen_off_udfps_summary">За пробуђење и откључавања екрана, дуги притисак на сензор за отиске прстију испод екрана.</string>
     <string name="reset">Ресетуј</string>

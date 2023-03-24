@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Touchez le capteur à l\'arrière de votre téléphone.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Touchez le capteur sur le côté de votre téléphone.</string>
     <string name="battery_light_title">Allumer la LED pendant la charge</string>
-    <string name="fingerprint_wake_unlock_title">Touchez le lecteur d\'empreinte digitale pour déverrouiller</string>
-    <string name="fingerprint_wake_unlock_touch">Attendre les événements lorsque l\'écran est éteint</string>
-    <string name="fingerprint_wake_unlock_press">N\'attendre les événements qu\'une fois l\'écran allumé</string>
     <string name="ambient_display_screen_off_udfps_title">Appui long sur le capteur d\'empreintes pour déverrouiller l\'appareil</string>
     <string name="ambient_display_screen_off_udfps_summary">Pour réveiller et déverrouiller l\'appareil, appuyez longuement sur le capteur d\'empreintes.</string>
     <string name="storage_warning_internal">Attention: Cette option peut ne pas fonctionner correctement ou entraîner une perte de données et n\'est donc pas recommandée!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Recherche dans les applications</string>
     <string name="hardware_keys_action_launch_camera">Ouvrir l\'appareil photo</string>
     <string name="hardware_keys_action_sleep">Éteindre l\'écran</string>
-    <string name="hardware_keys_action_split_screen">Écran partagé</string>
     <string name="hardware_keys_swipe_right_key_title">Balayage à droite</string>
     <string name="hardware_keys_swipe_left_key_title">Balayage à gauche</string>
     <string name="hardware_keys_long_tap_key_title">Appui long</string>

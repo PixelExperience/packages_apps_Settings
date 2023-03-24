@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">سنسور پشت گوشی را لمس کنید.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">سنسور کناری گوشی را لمس کنید.</string>
     <string name="battery_light_title">روشن کردن چراغ اعلان هنگام شارژ شدن </string>
-    <string name="fingerprint_wake_unlock_title">برای باز کردن قفل، اثر انگشت را لمس کنید</string>
-    <string name="fingerprint_wake_unlock_touch">در حالی که صفحه خاموش است به رویدادها گوش می دهد</string>
-    <string name="fingerprint_wake_unlock_press">فقط زمانی که صفحه روشن است به رویدادها گوش می دهد</string>
     <string name="ambient_display_screen_off_udfps_title">برای باز کردن قفل دستگاه،حسگر اثراگشت را طولانی فشار دهید</string>
     <string name="ambient_display_screen_off_udfps_summary">برای روشن کردن صفحه و بازکردن قفل،حسگر اثرانگشت زیر صفحه را به مدت طولانی فشار دهید</string>
     <string name="reset">بازنشانی</string>
@@ -33,7 +30,6 @@
     <string name="hardware_keys_action_in_app_search">جستجوی درون‌ برنامه‌ای</string>
     <string name="hardware_keys_action_launch_camera">اجرای دوربین</string>
     <string name="hardware_keys_action_sleep">خاموش کردن صفحه</string>
-    <string name="hardware_keys_action_split_screen">تقسیم صفحه</string>
     <string name="hardware_keys_swipe_right_key_title">کشیدن به راست</string>
     <string name="hardware_keys_swipe_left_key_title">کشیدن به چپ</string>
     <string name="hardware_keys_long_tap_key_title">ضربه‌ی طولانی</string>

@@ -9,10 +9,7 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Коснитесь сенсора на задней панели телефона.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Коснитесь сенсора на боковой стороне телефона.</string>
     <string name="battery_light_title">Включить световой индикатор во время зарядки</string>
-    <string name="fingerprint_wake_unlock_title">Для разблокировки прикоснетесь к датчику отпечатка пальца.</string>
-    <string name="fingerprint_wake_unlock_touch">Считывать при выключенном экране</string>
-    <string name="fingerprint_wake_unlock_press">Считывать только после включения экрана</string>
-    <string name="ambient_display_screen_off_udfps_title">Удерживайте палец в районе датчика отпечатка для разблокировки устройства</string>
+    <string name="ambient_display_screen_off_udfps_title">Удерживайте палец на сканере отпечатка для разблокировки устройства</string>
     <string name="ambient_display_screen_off_udfps_summary">Чтобы включить экран и разблокировать его, удерживайте палец в районе датчика отпечатка пальца под дисплеем.</string>
     <string name="storage_warning_internal">Внимание: эта опция может работать неправильно или может привести к потере данных, поэтому не рекомендуется ее использовать!</string>
     <string name="reset">Сбросить</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Поиск в приложении</string>
     <string name="hardware_keys_action_launch_camera">Запуск камеры</string>
     <string name="hardware_keys_action_sleep">Выключить экран</string>
-    <string name="hardware_keys_action_split_screen">Разделение экрана</string>
     <string name="hardware_keys_swipe_right_key_title">Провести вправо</string>
     <string name="hardware_keys_swipe_left_key_title">Провести влево</string>
     <string name="hardware_keys_long_tap_key_title">Долгое нажатие</string>

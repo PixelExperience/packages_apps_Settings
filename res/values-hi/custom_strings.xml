@@ -9,7 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">अपने फोन के पीछे वाले सेंसर को छुएं।</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">अपने फोन के साइड वाले सेंसर को छुएं।</string>
     <string name="battery_light_title">Acenda a luz ao carregar</string>
-    <string name="fingerprint_wake_unlock_title">अनलॉक करने के लिए अपना फ़िंगरप्रिंट स्कैन करें।</string>
     <string name="ambient_display_screen_off_udfps_title">डिवाइस अनलॉक करने के लिए फिंगरप्रिंट सेंसर को देर तक दबाएं</string>
     <string name="ambient_display_screen_off_udfps_summary">फ़ोन की स्क्रीन सक्रिय व अनलॉक करने के लिए को स्क्रीन में स्तिथ फिंगरप्रिंट सेंसर को देर तक दबाएं।</string>
     <string name="storage_warning_internal">चेतावनी: हो सकता है कि यह ऑप्शन निर्धारित रूप से काम न करे या आपके डेटा को हानि पहुंचाए और इसलिए इसका उपयोग करना उचित नहीं है</string>
@@ -32,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">ऐप्प के अंदर खोज</string>
     <string name="hardware_keys_action_launch_camera">कैमरा चालू करे</string>
     <string name="hardware_keys_action_sleep">स्क्रीन बंद करें</string>
-    <string name="hardware_keys_action_split_screen">स्क्रीन विभाजन करें</string>
     <string name="hardware_keys_swipe_right_key_title">स्वाइप राइट</string>
     <string name="hardware_keys_swipe_left_key_title">स्वाइप लेफ्ट</string>
     <string name="hardware_keys_long_tap_key_title">लंबा दबाएँ</string>

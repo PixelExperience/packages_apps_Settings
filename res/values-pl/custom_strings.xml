@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Dotknij czytnia linii papilarnych z tyłu twojego telefonu.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Dotknij czytnia linii papilarnych po twojej stronie telefonu.</string>
     <string name="battery_light_title">Dioda baterii</string>
-    <string name="fingerprint_wake_unlock_title">Użyj czytnika linii papilarnych, aby odblokować</string>
-    <string name="fingerprint_wake_unlock_touch">Nasłuchuj wydarzeń, gdy ekran jest wyłączony</string>
-    <string name="fingerprint_wake_unlock_press">Tylko raz nasłuchuj wydarzeń, gdy ekran jest włączony</string>
     <string name="ambient_display_screen_off_udfps_title">Odblokuj urządzenie, trzymając dłużej czujnik linii papilarnych</string>
     <string name="ambient_display_screen_off_udfps_summary">Aby wybudzić i odblokować ekran, przytrzymaj dłużej czujnik linii papilarnych, który się znajduje pod wyświetlaczem</string>
     <string name="storage_warning_internal">Uwaga: Ta opcja może nie działać poprawnie bądź prowadzi do utraty danych i nie jest ona zalecana!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Wyszukiwanie w aplikacji</string>
     <string name="hardware_keys_action_launch_camera">Włącz aparat</string>
     <string name="hardware_keys_action_sleep">Wyłączenie ekranu</string>
-    <string name="hardware_keys_action_split_screen">Podziel ekran</string>
     <string name="hardware_keys_swipe_right_key_title">Przesuń w prawo</string>
     <string name="hardware_keys_swipe_left_key_title">Przesuń w lewo</string>
     <string name="hardware_keys_long_tap_key_title">Długie naciśnięcie</string>

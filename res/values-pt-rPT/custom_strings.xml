@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Toque no sensor na parte traseira do seu telefone.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Toque no sensor na parte lateral do seu telefone.</string>
     <string name="battery_light_title">Ativar luz de carregamento</string>
-    <string name="fingerprint_wake_unlock_title">Tocar na impressão digital para desbloquear</string>
-    <string name="fingerprint_wake_unlock_touch">Detetar eventos enquanto o ecrã está desligado</string>
-    <string name="fingerprint_wake_unlock_press">Detetar eventos apenas com o ecrã ligado</string>
     <string name="ambient_display_screen_off_udfps_title">Pressione o sensor de impressão digital para desbloquear</string>
     <string name="ambient_display_screen_off_udfps_summary">Para ligar o ecrã e desbloquear, mantenha premido o sensor de impressão digital.</string>
     <string name="storage_warning_internal">Aviso: Esta opção pode não funcionar corretamente ou levar à perda de dados, não sendo, portanto, recomendada!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Pesquisa na aplicação</string>
     <string name="hardware_keys_action_launch_camera">Iniciar câmara</string>
     <string name="hardware_keys_action_sleep">Desligar ecrã</string>
-    <string name="hardware_keys_action_split_screen">Dividir ecrã</string>
     <string name="hardware_keys_swipe_right_key_title">Deslizar para a direita</string>
     <string name="hardware_keys_swipe_left_key_title">Deslizar para a esquerda</string>
     <string name="hardware_keys_long_tap_key_title">Toque longo</string>

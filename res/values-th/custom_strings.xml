@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">แตะเซนเซอร์ที่ด้านหลังโทรศัพท์ของคุณ</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">แตะเซนเซอร์ที่ด้านข้างโทรศัพท์ของคุณ</string>
     <string name="battery_light_title">เปิดแสงไฟเมื่อชาร์จแบตเตอรี่</string>
-    <string name="fingerprint_wake_unlock_title">สัมผัสที่ลอยนิ้วมือเพื่อปลดล็อค</string>
-    <string name="fingerprint_wake_unlock_touch">ฟังอีเวนต์ต่าง ๆ ขณะปิดหน้าจอ</string>
-    <string name="fingerprint_wake_unlock_press">ฟังอีเวนต์ต่าง ๆ เฉพาะตอนเปิดหน้าจอ</string>
     <string name="ambient_display_screen_off_udfps_title">กดเซ็นเซอร์ลายนิ้วมือค้างไว้เพื่อปลดล็อกอุปกรณ์</string>
     <string name="ambient_display_screen_off_udfps_summary">หากต้องการปลุกหน้าจอและปลดล็อก ให้กดเซ็นเซอร์สแกนลายนิ้วมือใต้หน้าจอค้างไว้</string>
     <string name="storage_warning_internal">คำเตือน: ตัวเลือกนี้อาจทำงานไม่ถูกต้องหรือทำให้ข้อมูลสูญหาย ดังนั้นจึงไม่แนะนำ!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">ค้นหาในแอป</string>
     <string name="hardware_keys_action_launch_camera">เปิดกล้อง</string>
     <string name="hardware_keys_action_sleep">ปิดหน้าจอ</string>
-    <string name="hardware_keys_action_split_screen">แบ่งหน้าจอ</string>
     <string name="hardware_keys_swipe_right_key_title">ปัดไปทางขวา</string>
     <string name="hardware_keys_swipe_left_key_title">ปัดไปทางซ้าย</string>
     <string name="hardware_keys_long_tap_key_title">แตะค้างไว้</string>

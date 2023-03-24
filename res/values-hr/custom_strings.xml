@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Dodirnite senzor na stražnjoj strani telefona.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Dodirnite senzor na bočnoj strani telefona.</string>
     <string name="battery_light_title">Baterijsko svjetlo</string>
-    <string name="fingerprint_wake_unlock_title">Koristi otisak prsta za otključavanje</string>
-    <string name="fingerprint_wake_unlock_touch">Osluškujte događaje dok je ekran isključen</string>
-    <string name="fingerprint_wake_unlock_press">Osluškujte događaje dok je ekran isključen</string>
     <string name="ambient_display_screen_off_udfps_title">Dugo pritisnite na senzor otiska prsta za otklj. uređaja</string>
     <string name="ambient_display_screen_off_udfps_summary">Da biste probudili zaslon i otključali uređaj, dugo pritisnite senzor otiska prsta ispod zaslona.</string>
     <string name="storage_warning_internal">Upozorenje: ova opcija možda neće raditi ispravno ili dovesti do gubitka podataka i stoga se ne preporučuje!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Traženje unutar aplikacije</string>
     <string name="hardware_keys_action_launch_camera">Pokreni kameru</string>
     <string name="hardware_keys_action_sleep">Isključi zaslon</string>
-    <string name="hardware_keys_action_split_screen">Podijeljeni zaslon</string>
     <string name="hardware_keys_swipe_right_key_title">Povuci desno</string>
     <string name="hardware_keys_swipe_left_key_title">Povuci lijevo</string>
     <string name="hardware_keys_long_tap_key_title">Dugi dodir</string>

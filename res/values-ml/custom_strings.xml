@@ -21,7 +21,6 @@
     <string name="hardware_keys_action_in_app_search">ആപ്പിനുള്ളിൽ തിരയുക</string>
     <string name="hardware_keys_action_launch_camera">ക്യാമറ സമാരംഭിക്കുക</string>
     <string name="hardware_keys_action_sleep">സ്ക്രീൻ ഓഫ്‌ ചെയ്യുക</string>
-    <string name="hardware_keys_action_split_screen">സ്പ്ലിറ്റ് സ്ക്രീൻ</string>
     <string name="hardware_keys_swipe_right_key_title">വലത്തേക്ക് സ്വൈപ്പ് ചെയ്യുക</string>
     <string name="hardware_keys_swipe_left_key_title">ഇടത്തേക്ക് സ്വൈപ് ചെയ്യുക</string>
     <string name="hardware_keys_long_tap_key_title">നീട്ടി അമർത്തുക</string>

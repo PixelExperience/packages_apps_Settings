@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Puudutage telefoni tagaküljel olevat andurit.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Puudutage telefoni küljel olevat andurit.</string>
     <string name="battery_light_title">Aku märgutuli</string>
-    <string name="fingerprint_wake_unlock_title">Avamiseks puudutage sõrmejäle lugejat</string>
-    <string name="fingerprint_wake_unlock_touch">Kuulab sündmusi ka siis, kui ekraan on välja lülitatud</string>
-    <string name="fingerprint_wake_unlock_press">Kuulab sündmusi ainult siis, kui ekraan on sisse lülitatud</string>
     <string name="ambient_display_screen_off_udfps_title">Seadme avamiseks vajutage pikalt sõrmejäljeandurile</string>
     <string name="ambient_display_screen_off_udfps_summary">Ekraani äratamiseks ja avamiseks vajutage pikalt ekraanialust sõrmejäljeandurit.</string>
     <string name="storage_warning_internal">Hoiatus: see valik ei pruugi korralikult töötada või põhjustab andmete kadumist ja seetõttu pole see soovitatav!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Rakenduse sisene otsing</string>
     <string name="hardware_keys_action_launch_camera">Käivita kaamera</string>
     <string name="hardware_keys_action_sleep">Lülita ekraan välja</string>
-    <string name="hardware_keys_action_split_screen">Jagatud ekraan</string>
     <string name="hardware_keys_swipe_right_key_title">Viipamine paremale</string>
     <string name="hardware_keys_swipe_left_key_title">Viipamine vasakule</string>
     <string name="hardware_keys_long_tap_key_title">Pikk puudutus</string>

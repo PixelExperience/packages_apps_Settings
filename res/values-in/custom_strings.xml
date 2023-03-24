@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Sentuh sensor di bagian belakang ponsel Anda.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Sentuh sensor di bagian samping ponsel Anda.</string>
     <string name="battery_light_title">Nyalakan lampu LED saat mengisi daya</string>
-    <string name="fingerprint_wake_unlock_title">Sentuk sidik jari untuk membuka kunci</string>
-    <string name="fingerprint_wake_unlock_touch">Mendeteksi saat layar mati</string>
-    <string name="fingerprint_wake_unlock_press">Hanya mendeteksi setelah layar menyala</string>
     <string name="ambient_display_screen_off_udfps_title">Tekan lama pada sensor sidik jari untuk membuka kunci perangkat</string>
     <string name="ambient_display_screen_off_udfps_summary">Untuk mengaktifkan layar dan membuka kunci, tekan lama sensor sidik jari di bawah layar.</string>
     <string name="storage_warning_internal">Peringatan: Opsi ini mungkin tidak berfungsi dengan baik atau menyebabkan hilangnya data dan oleh karena itu tidak disarankan!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Penelusuran dalam aplikasi</string>
     <string name="hardware_keys_action_launch_camera">Buka kamera</string>
     <string name="hardware_keys_action_sleep">Matikan layar</string>
-    <string name="hardware_keys_action_split_screen">Belah layar</string>
     <string name="hardware_keys_swipe_right_key_title">Usap ke kanan</string>
     <string name="hardware_keys_swipe_left_key_title">Usap ke kiri</string>
     <string name="hardware_keys_long_tap_key_title">Tekan lama</string>

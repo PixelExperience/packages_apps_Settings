@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Toque el sensor en la parte posterior de su teléfono.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Toque el sensor en el costado de su teléfono.</string>
     <string name="battery_light_title">Encender luz LED cuando el dispositivo se esté cargando</string>
-    <string name="fingerprint_wake_unlock_title">Usa tu huella digital para desbloquear</string>
-    <string name="fingerprint_wake_unlock_touch">Escucha de eventos con pantalla apagada</string>
-    <string name="fingerprint_wake_unlock_press">A la escucha de eventos con pantalla apagada</string>
     <string name="ambient_display_screen_off_udfps_title">Mantén presionado el sensor de huella digital para desbloquear el dispositivo</string>
     <string name="ambient_display_screen_off_udfps_summary">Mantén pulsado el sensor de huella digital para encender la pantalla y desbloquear el dispositivo.</string>
     <string name="storage_warning_internal">¡Precaución: esta opción podría no funcionar correctamente y podría causar perdida de datos, por lo tanto no está recomendado!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Búsqueda dentro de la aplicación</string>
     <string name="hardware_keys_action_launch_camera">Abrir cámara</string>
     <string name="hardware_keys_action_sleep">Apagar pantalla</string>
-    <string name="hardware_keys_action_split_screen">Pantalla dividida</string>
     <string name="hardware_keys_swipe_right_key_title">Deslizar a la derecha</string>
     <string name="hardware_keys_swipe_left_key_title">Deslizar a la izquierda</string>
     <string name="hardware_keys_long_tap_key_title">Mantener pulsado</string>

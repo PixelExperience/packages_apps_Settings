@@ -9,7 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Raak de sensor aan op de achterkant van de telefoon.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Raak de sensor aan op de zijkant van de telefoon.</string>
     <string name="battery_light_title">Acculed</string>
-    <string name="fingerprint_wake_unlock_title">Scan je vingerafdruk om te ontgrendelen.</string>
     <string name="ambient_display_screen_off_udfps_title">Houdt de vingerafdruksensor lang ingedrukt om het apparaat te ontgrendelen</string>
     <string name="ambient_display_screen_off_udfps_summary">Houdt de vingerafdruksensor lang ingedrukt om het scherm aan te zetten en deze te ontgrendelen.</string>
     <string name="reset">Opnieuw instellen</string>

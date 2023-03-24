@@ -9,9 +9,6 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">Tocca il sensore sul retro del telefono.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Tocca il sensore sul lato del telefono.</string>
     <string name="battery_light_title">Indicatore batteria</string>
-    <string name="fingerprint_wake_unlock_title">Tocca le impronte digitali per sbloccare</string>
-    <string name="fingerprint_wake_unlock_touch">Ascolta gli eventi mentre lo schermo è spento</string>
-    <string name="fingerprint_wake_unlock_press">Ascolta gli eventi solo quando lo schermo è acceso</string>
     <string name="ambient_display_screen_off_udfps_title">Pressione prolungata sul sensore d\'impronte digitali per sbloccare il dispositivo</string>
     <string name="ambient_display_screen_off_udfps_summary">Per accendere lo schermo e sbloccare, premere a lungo il sensore d\'impronte digitali sotto al display.</string>
     <string name="storage_warning_internal">Attenzione: questa opzione potrebbe non funzionare correttamente, o portare alla perdita di dati, e perciò non è raccomandata!</string>
@@ -34,7 +31,6 @@
     <string name="hardware_keys_action_in_app_search">Ricerca in app</string>
     <string name="hardware_keys_action_launch_camera">Avvia fotocamera</string>
     <string name="hardware_keys_action_sleep">Spegni lo schermo</string>
-    <string name="hardware_keys_action_split_screen">Dividi Schermo</string>
     <string name="hardware_keys_swipe_right_key_title">Scorri verso destra</string>
     <string name="hardware_keys_swipe_left_key_title">Scorri verso sinistra</string>
     <string name="hardware_keys_long_tap_key_title">Tocco prolungato</string>
