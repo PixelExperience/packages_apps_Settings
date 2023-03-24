@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="zero">إيقاف التشغيل عند عدم توصيل أي جهاز لمدة <xliff:g id="DURATION">%1$d</xliff:g> دقيقة</item>
+        <item quantity="other">إيقاف التشغيل عند عدم توصيل أي جهاز لمدة <xliff:g id="DURATION">%1$d</xliff:g> دقيقة</item>
+        <item quantity="one">إيقاف التشغيل عند عدم توصيل أي جهاز لمدة <xliff:g id="DURATION">%1$d</xliff:g> دقيقة</item>
+        <item quantity="two">إيقاف التشغيل عند عدم توصيل أي جهاز لمدة <xliff:g id="DURATION">%1$d</xliff:g> دقيقة</item>
+        <item quantity="few">إيقاف التشغيل عند عدم توصيل أي جهاز لمدة <xliff:g id="DURATION">%1$d</xliff:g> دقيقة</item>
+        <item quantity="many">إيقاف التشغيل عند عدم توصيل أي جهاز لمدة <xliff:g id="DURATION">%1$d</xliff:g> دقيقة</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="zero">يمكن لعدد من \"<xliff:g id="device_num">%1$d</xliff:g>\" جهاز التوصيل بنقطة الاتصال هذه</item>
+        <item quantity="other">يمكن لعدد من \"<xliff:g id="device_num">%1$d</xliff:g>\" جهاز التوصيل بنقطة الاتصال هذه</item>
+        <item quantity="one">يمكن لعدد من \"<xliff:g id="device_num">%1$d</xliff:g>\" جهاز التوصيل بنقطة الاتصال هذه</item>
+        <item quantity="two">يمكن لعدد من \"<xliff:g id="device_num">%1$d</xliff:g>\" جهاز التوصيل بنقطة الاتصال هذه</item>
+        <item quantity="few">يمكن لعدد من \"<xliff:g id="device_num">%1$d</xliff:g>\" جهاز التوصيل بنقطة الاتصال هذه</item>
+        <item quantity="many">يمكن لعدد من \"<xliff:g id="device_num">%1$d</xliff:g>\" جهاز التوصيل بنقطة الاتصال هذه</item>
+    </plurals>
+</resources>
