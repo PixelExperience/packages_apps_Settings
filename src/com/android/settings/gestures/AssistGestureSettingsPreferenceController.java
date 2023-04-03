@@ -22,6 +22,7 @@ import static android.provider.Settings.Secure.ASSIST_GESTURE_SILENCE_ALERTS_ENA
 import android.content.Context;
 import android.provider.Settings;
 import android.util.Log;
+import android.os.SystemProperties;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
@@ -57,9 +58,16 @@ public class AssistGestureSettingsPreferenceController extends GesturePreference
 
     @Override
     public int getAvailabilityStatus() {
+        final boolean isAssistOnlyEnabled = SystemProperties.getBoolean(
+            "ro.sysui.enable_assistonly_gesture", true);
         final boolean isSupported = mFeatureProvider.isSupported(mContext);
         final boolean isSensorAvailable = mFeatureProvider.isSensorAvailable(mContext);
-        final boolean isAvailable = mAssistOnly ? isSupported : isSensorAvailable;
+        final boolean isAvailable;
+        if (isAssistOnlyEnabled) {
+            isAvailable = mAssistOnly ? isSupported : isSensorAvailable;
+        } else {
+            isAvailable = false;
+        }
         Log.d(TAG, "mAssistOnly:" + mAssistOnly + ", isSupported:" + isSupported
                 + ", isSensorAvailable:" + isSensorAvailable);
         return isAvailable ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
