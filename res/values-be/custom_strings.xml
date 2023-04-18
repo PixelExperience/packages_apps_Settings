@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_do_not_validate_eap_server_warning">Сертыфікат не пазначаны. Ваша падлучэнне не будзе прыватным.</string>
     <string name="min_refresh_rate_title">Мінімальная частата абнаўлення экрана</string>
     <string name="max_refresh_rate_title">Максімальная частата абнаўлення экрана</string>
     <string name="fingerprint_enroll_find_sensor_message_front">Знайдзіце сканер адбіткаў пальцаў на задняй паверхні тэлефона.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear">Знайдзіце датчык адбіткаў пальцаў на задняй панэлі тэлефона.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front">Дакраніцеся да сканеру адбіткаў пальцаў на пярэдняй панэлі тэлефона.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear">Дакраніцеся да сканеру адбіткаў пальцаў на задняй панэлі тэлефона.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side">Дакраніцеся да сканеру адбіткаў пальцаў на бакавой панэлі тэлефона.</string>
     <string name="battery_light_title">Уключыць светлавы індыкатар падчас зарадкі</string>
     <string name="ambient_display_screen_off_udfps_title">Доўгі націск на сканер адбіткаў пальцаў для разблакіроўкі</string>
+    <string name="ambient_display_screen_off_udfps_summary">Для абуджэння экрана і разблакіроўкі прылады, утрымлівайце сканер адбіткаў пальцаў пад экранам.</string>
+    <string name="storage_warning_internal">Папярэджанне: гэты параметр можа працаваць няправільна або стаць прычынай страты даных і таму, яго не рэкамендавана ўключаць!</string>
     <string name="reset">Скінуць налады</string>
     <string name="button_pref_title">Кнопкі</string>
     <string name="hardware_keys_home_key_title">Хатоўка</string>
@@ -55,6 +62,8 @@
     <string name="high_touch_sensitivity_summary">Павялічваць адчувальнасць экрана для магчымасці працы ў пальчатках</string>
     <string name="touchscreen_hovering_title">Навядзенне пальца</string>
     <string name="touchscreen_hovering_summary">Распазнаваць набліжэнне пальца да экрана для падзей навядзення курсора ў браўзары ці іншых дадатках</string>
+    <string name="high_touch_polling_rate_title">Высокая частата апытання дотыку</string>
+    <string name="high_touch_polling_rate_summary">Павялічыць частату апытання дотыку</string>
     <string name="keyboard_extras_title">Дадаткова</string>
     <string name="advanced_keyboard_settings_title">Дадатковыя налады</string>
     <string name="fast_charging_title">Хуткая зарадка</string>

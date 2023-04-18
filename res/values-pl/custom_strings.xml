@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="wifi_do_not_validate_eap_server_warning">Nie określono certyfikatu. Twoje połączenie nie będzie prywatne. </string>
-    <string name="min_refresh_rate_title">Minimalna szybkość odświeżania</string>
+    <string name="min_refresh_rate_title">Minimalna częstotliwość odświeżania</string>
     <string name="max_refresh_rate_title">Maksymalna częstotliwość odświeżania</string>
     <string name="fingerprint_enroll_find_sensor_message_front">Zlokalizuj czytnik linii papilarnych z przodu twojego telefonu.</string>
     <string name="fingerprint_enroll_find_sensor_message_rear">Zlokalizuj czytnik linii papilarnych z tyłu Twojego telefonu.</string>
