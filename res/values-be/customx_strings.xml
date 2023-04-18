@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="device_info_protected_single_press">Націсніце, каб паказаць інфармацыю</string>
     <string name="lock_settings_picker_pattern_size_message">Абярыце памер графічнага ключа</string>
     <string name="lockpattern_settings_enable_error_path_title">Паказваць няправільны ўвод</string>
     <string name="lockpattern_settings_enable_dots_title">Паказваць кропкі ўзору</string>
@@ -117,6 +118,7 @@
     <string name="additional_buttons_title">Дадатковыя кнопкі</string>
     <string name="click_partial_screenshot_title">Націсніце для здымка часткі экрана</string>
     <string name="click_partial_screenshot_summary">Націсніце кнопку гучнасці і кнопку сілкавання, каб зрабіць здымак часткі экрана</string>
+    <string name="auto_brightness_one_shot_title">Аднаразовая аўтаматычная яркасць</string>
     <string name="auto_brightness_one_shot_summary">Карэкціроўка яркасці будзе адбывацца толькі ў момант уключэння экрана</string>
     <string name="navigation_bar_edge_long_swipe_title">Дзеянне па доўгаму свайпу</string>
     <string name="live_display_summary">Аптымізацыя вашага экрана ў залежнасці ад часу сутак і ўмоў навакольнага асяроддзя для паляпшэння чытальнасці тэксту і зніжэння стамляльнасці вачэй</string>
@@ -206,16 +208,30 @@
     <string name="wifi_hotspot_timeout_summary_5mins">5 хвілін</string>
     <string name="wifi_hotspot_timeout_summary_10mins">10 хвілін</string>
     <string name="wifi_hotspot_timeout_summary_30mins">30 хвілін</string>
+    <string name="wifi_hotspot_timeout_summary_1hour">1 гадзіна</string>
+    <string name="power_button_torch_title">Хуткі ліхтарык</string>
+    <string name="power_button_torch_summary">Калі экран выключаны, доўгі націск кнопкі сілкавання ўключыць ліхтарык</string>
     <string name="torch_long_press_power_timeout_title">Аўтаматычнае выключэнне ліхтарыка</string>
     <string name="torch_long_press_power_timeout_never">Ніколі</string>
     <string name="torch_long_press_power_timeout_1min">1 хвіліна</string>
     <string name="torch_long_press_power_timeout_2min">2 хвіліны</string>
     <string name="torch_long_press_power_timeout_5min">5 хвілін</string>
     <string name="torch_long_press_power_timeout_10min">10 хвілін</string>
+    <string name="adaptive_playback_screen_title">Адаптыўнае прайграванне</string>
+    <string name="adaptive_playback_enabled">Выкарыстоўваць адаптыўнае прайграванне</string>
     <string name="adaptive_playback_disabled_summary">Адключана</string>
+    <string name="adaptive_playback_intro_text">Адаптыўнае прайграванне аўтаматычна прыпыняе медыя калі гук выключаны, і адновіцца аўтаматычна пры аднаўленні гучнасці на працягу зададзенага часу.</string>
+    <string name="adaptive_playback_timeout_title">Выкарыстоўваць тайм-аўт</string>
+    <string name="adaptive_playback_timeout_none">Бесперапынна</string>
+    <string name="adaptive_playback_timeout_none_summary">Укл. (без тайм-аўта)</string>
     <string name="adaptive_playback_timeout_30_secs">30 секунд</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Укл. (30 секунд)</string>
     <string name="adaptive_playback_timeout_1_min">1 хвіліна</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Укл. (1 хвіліна)</string>
     <string name="adaptive_playback_timeout_2_min">2 хвіліны</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Укл. (2 хвілін)</string>
     <string name="adaptive_playback_timeout_5_min">5 хвілін</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Укл. (5 хвілін)</string>
     <string name="adaptive_playback_timeout_10_min">10 хвілін</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Укл. (10 хвілін)</string>
 </resources>

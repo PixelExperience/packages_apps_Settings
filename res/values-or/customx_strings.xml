@@ -3,7 +3,7 @@
     <string name="lock_settings_picker_pattern_size_message">ଏକ ପ୍ୟାଟର୍ନର ଆକାର ବାଛନ୍ତୁ</string>
     <string name="lockpattern_settings_enable_error_path_title">ପ୍ୟାଟର୍ନ ତ୍ରୁଟି ଦେଖାନ୍ତୁ</string>
     <string name="lockpattern_settings_enable_dots_title">ପ୍ୟାଟର୍ନର ବିନ୍ଦୁ ଦେଖାନ୍ତୁ</string>
-    <string name="display_rotation_title">ଘୂର୍ଣ୍ଣନ ସେଟିଂସ୍</string>
+    <string name="display_rotation_title">ଘୂର୍ଣ୍ଣନ ସେଟିଂ</string>
     <string name="display_rotation_enabled">ସ୍ଵତଃ-ଘୂର୍ଣ୍ଣନ ସକ୍ଷମ ହୋଇଛି</string>
     <string name="display_rotation_disabled">ସ୍ଵତଃ-ଘୂର୍ଣ୍ଣନ ଅକ୍ଷମ ହୋଇଛି</string>
     <string name="display_rotation_unit">ଡିଗ୍ରୀ</string>
