@@ -11,6 +11,7 @@
     <!-- Max network scan search time in seconds -->
     <integer name="config_network_scan_helper_max_search_time_sec">300</integer>
 
+<<<<<<< HEAD   (f0ba14 Merge "Automatic translation import" into thirteen-plus)
     <!-- The position of the volume rocker, as opposed to the natural
          orientation of the display.
          Currently used for the volume button re-orient functionality.
@@ -22,5 +23,10 @@
              relative to the natural orientation of the display
              (true for some tablets) -->
     <integer name="config_volumeRockerVsDisplayOrientation">1</integer>
+=======
+    <!-- Indicates whether device has a side mounted fingerprint sensor,
+         but a dedicated one, i.e. not embedded in the power button. -->
+    <bool name="config_is_side_fps" translatable="false">false</bool>
+>>>>>>> CHANGE (f8bacc FingerprintEnroll: Add config for dedicated side mounted fps)
 
 </resources>
