@@ -39,6 +39,7 @@
     <string name="status_bar_quick_qs_pulldown_title">خێرا ڕاکێشان بۆ خوارەوە</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">لە لێواری شریتی زانیارییەکان بۆ خوارەوە ڕابکێشرێت بۆ ڕێکخستنی خێرا</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">لە لێواری شریتی زانیارییەکان بۆ خوارەوە ڕابکێشرێت بۆ ڕێکخستنی خێرا</string>
+    <string name="status_bar_quick_qs_pulldown_off">کوژاوە</string>
     <string name="status_bar_quick_qs_pulldown_left">چەپ</string>
     <string name="status_bar_quick_qs_pulldown_right">ڕاست</string>
     <string name="status_bar_icons_title">وێنۆچکەکانی شریتی زانیاری</string>
@@ -169,6 +170,7 @@
     <string name="torch_long_press_power_timeout_2min">٢ خولەک</string>
     <string name="torch_long_press_power_timeout_5min">٥ خوله‌ک</string>
     <string name="torch_long_press_power_timeout_10min">١٠ خولەک</string>
+    <string name="adaptive_playback_disabled_summary">کوژاوە</string>
     <string name="adaptive_playback_timeout_30_secs">٣٠ چرکە</string>
     <string name="adaptive_playback_timeout_1_min">١ خولەک</string>
     <string name="adaptive_playback_timeout_2_min">٢ خولەک</string>

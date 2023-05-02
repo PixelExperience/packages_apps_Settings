@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="device_info_protected_single_press">ಮಾಹಿತಿಯನ್ನು ತೋರಿಸಲು ಒತ್ತಿ </string>
     <string name="lock_settings_picker_pattern_size_message">ರೂಪಿಕೆಯ ಗಾತ್ರವನ್ನು ಆರಿಸು</string>
     <string name="lockpattern_settings_enable_error_path_title">ನಮೂನೆ ದೋಷವನ್ನು ಪ್ರದರ್ಶಿಸು</string>
     <string name="lockpattern_settings_enable_dots_title">ನಮೂನೆ ಚುಕ್ಕಿಗಳನ್ನು ಪ್ರದರ್ಶಿಸು</string>
@@ -36,6 +37,7 @@
     <string name="incall_feeedback_vibrate_title">ಕರೆ ಸ್ಥಿತಿಯನ್ನು ಸೂಚಿಸಲು ವೈಬ್ರೇಟ್ ಮಾಡಿ</string>
     <string name="advanced_reboot_title">ವಿಸ್ತ್ರತ ಪುನರಾರಂಭ</string>
     <string name="advanced_reboot_summary">ಬೀಗ ತೆಗೆದ ನಂತರ, ಮರುಚೇತರಿಕೆ ಅಥವಾ Bootloaderನಲ್ಲಿ ಪುನರಾರಂಭಿಸುವ ಆಯ್ಕೆಗಳನ್ನು ಶಕ್ತಿ-ಪಟ್ಟಿಯಲ್ಲಿ ಸೇರಿಸು</string>
+    <string name="power_menu_emergency_affordance_enabled">ತುರ್ತು ಕೈಗೆಟುಕುವಿಕೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ</string>
     <string name="power_menu_shortcuts_title">ಮೆನು ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು</string>
     <string name="power_menu_shortcuts_summary">ಪವರ್ ಮೆನು ಶಾರ್ಟ್‌ಕಟ್‌ಗಳನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಿ</string>
     <string name="power_menu_screenshot_title">ಸ್ಕ್ರೀನ್‍ಶಾಟ್</string>
@@ -206,16 +208,30 @@
     <string name="wifi_hotspot_timeout_summary_5mins">5 ನಿಮಿಷಗಳು</string>
     <string name="wifi_hotspot_timeout_summary_10mins">10 ನಿಮಿಷಗಳು</string>
     <string name="wifi_hotspot_timeout_summary_30mins">30 ನಿಮಿಷಗಳು</string>
+    <string name="wifi_hotspot_timeout_summary_1hour">೧ ಗಂಟೆ</string>
+    <string name="power_button_torch_title">ತ್ವರಿತ ಬೆಳಕು</string>
+    <string name="power_button_torch_summary">ಪರದೆಯು ಆಫ್ ಆಗಿರುವಾಗ, ಪವರ್ ಬಟನ್ ದೀರ್ಘವಾಗಿ ಒತ್ತಿದಾಗ  ಟಾರ್ಚ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ</string>
     <string name="torch_long_press_power_timeout_title">ಸ್ವಯಂ ಪಂಜನ್ನು ನಂದಿಸು</string>
     <string name="torch_long_press_power_timeout_never">ಎಂದಿಗೂ ಬೇಡ</string>
     <string name="torch_long_press_power_timeout_1min">1 ನಿಮಿಷ</string>
     <string name="torch_long_press_power_timeout_2min">೨ ನಿಮಿಷಗಳು</string>
     <string name="torch_long_press_power_timeout_5min">5 ನಿಮಿಷಗಳು</string>
     <string name="torch_long_press_power_timeout_10min">10 ನಿಮಿಷಗಳು</string>
+    <string name="adaptive_playback_screen_title">ಚುರುಕಾದ ತಡೆ</string>
+    <string name="adaptive_playback_enabled">ಚುರುಕಾದ ತಡೆಯನ್ನು ಬಳಸು</string>
     <string name="adaptive_playback_disabled_summary">ಆಫ್</string>
+    <string name="adaptive_playback_intro_text">ಧ್ವನಿಯ ಮಟ್ಟ ಅನ್ನು ನಿಶ್ಯಬ್ದ ಮಾಡಿದಾಗ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮಾಧ್ಯಮವನ್ನು ವಿರಾಮಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ನಿಗದಿತ ಸಮಯದೊಳಗೆ ಧ್ವನಿಯ ಮಟ್ಟವನ್ನು ಮರುಸ್ಥಾಪಿಸಿದಾಗ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪುನರಾರಂಭವಾಗುತ್ತದೆ.</string>
+    <string name="adaptive_playback_timeout_title">ಕಾಲಾವಧಿ ಮೀರುವುದಕ್ಕಾಗಿ ಇದನ್ನು ಬಳಸಿ</string>
+    <string name="adaptive_playback_timeout_none">ಸಮಯ ಮೀರುವುದು ಬೇಡ</string>
+    <string name="adaptive_playback_timeout_none_summary">ಸಮಯ ಮೀರುವುದು ಚಾಲ್ತಿ ಮಾಡು </string>
     <string name="adaptive_playback_timeout_30_secs">30 ಸೆಕೆಂಡುಗಳು</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">30 ಸೆಕೆಂಡ್ ಗಾಗಿ ಆನ್ ಮಾಡಿ</string>
     <string name="adaptive_playback_timeout_1_min">1 ನಿಮಿಷ</string>
+    <string name="adaptive_playback_timeout_1_min_summary">1 ನಿಮಿಷಕ್ಕೆ ಆನ್ ಮಾಡಿ</string>
     <string name="adaptive_playback_timeout_2_min">೨ ನಿಮಿಷಗಳು</string>
+    <string name="adaptive_playback_timeout_2_min_summary">2 ನಿಮಿಷಕ್ಕೆ ಆನ್ ಮಾಡಿ</string>
     <string name="adaptive_playback_timeout_5_min">5 ನಿಮಿಷಗಳು</string>
+    <string name="adaptive_playback_timeout_5_min_summary">5 ನಿಮಿಷಕ್ಕೆ ಆನ್ ಮಾಡಿ</string>
     <string name="adaptive_playback_timeout_10_min">10 ನಿಮಿಷಗಳು</string>
+    <string name="adaptive_playback_timeout_10_min_summary">10 ನಿಮಿಷಕ್ಕೆ ಆನ್ ಮಾಡಿ</string>
 </resources>

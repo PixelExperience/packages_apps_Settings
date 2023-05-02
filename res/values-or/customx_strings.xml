@@ -77,6 +77,7 @@
     <string name="live_display_color_profile_adaptive_title">ଆଡାପ୍ଟିଵ୍</string>
     <string name="live_display_color_profile_reading_title">ପଠନ</string>
     <string name="live_display_reading_mode_title">ପଠନ ମୋଡ୍</string>
+    <string name="picture_adjustment_title">ଛଵି ସମାଯୋଜନ</string>
     <string name="swipe_to_screenshot_gesture_title">ସ୍କ୍ରିନସଟ୍ ନେବାକୁ ସ୍ଵାଇପ୍ କରନ୍ତୁ</string>
     <string name="swipe_to_screenshot_gesture_summary">ସ୍କ୍ରିନସଟ୍ ନେବାକୁ ତିନି ଆଙ୍ଗୁଠି ସ୍ଵାଇପ୍ କରନ୍ତୁ</string>
     <string name="display_cutout_mode_normal">ଡିଫଲ୍ଟ</string>
