@@ -9,6 +9,8 @@
     <string name="fingerprint_enroll_touch_dialog_message_rear">ನಿಮ್ಮ ಫೋನಿನ ಮು೦ಭಾಗದಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಸ್ಪರ್ಶಿಸಿ</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">ನಿಮ್ಮ ಫೋನಿನ ಬದಿಯಲ್ಲಿರುವ ಬೆರಳಚ್ಚು ಸೆನ್ಸಾರ್ ಅನ್ನು ಸ್ಪರ್ಶಿಸಿ</string>
     <string name="battery_light_title">ಚಾರ್ಜ್ ಮಾಡುವಾಗ ಲೈಟ್ ಆನ್ ಮಾಡಿ</string>
+    <string name="ambient_display_screen_off_udfps_title">ಸಾಧನವನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಬೆರಳಚ್ಚು ಸಂವೇದಕದ ಮೇಲೆ ದೀರ್ಘವಾಗಿ ಒತ್ತಿರಿ</string>
+    <string name="ambient_display_screen_off_udfps_summary">ನಿಮ್ಮ ಪರದೆಯನ್ನು ಎಚ್ಚರಗೊಳಿಸಲು ಮತ್ತು ಅನ್‌ಲಾಕ್ ಮಾಡಲು, ನಿಮ್ಮ ಪರದೆ ಮೇಲಿರುವ ಬೆರಳಚ್ಚು ಸಂವೇದಕವನ್ನು ದೀರ್ಘವಾಗಿ ಒತ್ತಿರಿ</string>
     <string name="reset">ರೀಸೆಟ್</string>
     <string name="button_pref_title">ಬಟನ್ ಗಳು</string>
     <string name="hardware_keys_home_key_title">ಹೋಮ್ ಬಟನ್</string>

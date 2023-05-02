@@ -5,7 +5,13 @@
     <string name="max_refresh_rate_title">最大刷新率</string>
     <string name="fingerprint_enroll_find_sensor_message_front">指紋感應器位於手機正面</string>
     <string name="fingerprint_enroll_find_sensor_message_rear">指紋感應器位於手機背面。</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front">觸摸手機正面的傳感器。</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear">觸摸手機背部的傳感器。</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side">觸摸手機側面的傳感器。</string>
     <string name="battery_light_title">充電時保持指示燈開啟</string>
+    <string name="ambient_display_screen_off_udfps_title">長按指紋傳感器解鎖設備</string>
+    <string name="ambient_display_screen_off_udfps_summary">要喚醒屏幕並解鎖，請長按屏下指紋傳感器。</string>
+    <string name="storage_warning_internal">警告：此選項可能無法正常工作或導致數據丟失，因此不推薦使用！</string>
     <string name="reset">重設</string>
     <string name="button_pref_title">按鍵</string>
     <string name="hardware_keys_home_key_title">主畫面鍵</string>
@@ -56,6 +62,8 @@
     <string name="high_touch_sensitivity_summary">增加觸控螢幕的靈敏度，戴著手套也可以使用手機</string>
     <string name="touchscreen_hovering_title">觸控螢幕懸浮</string>
     <string name="touchscreen_hovering_summary">允許您把手指懸浮在螢幕上，像滑鼠般控制瀏覽器、遠程桌面等</string>
+    <string name="high_touch_polling_rate_title">高觸摸輪詢率</string>
+    <string name="high_touch_polling_rate_summary">提高觸摸屏輪詢率</string>
     <string name="keyboard_extras_title">額外功能</string>
     <string name="advanced_keyboard_settings_title">進階設定</string>
     <string name="fast_charging_title">快速充電中</string>
