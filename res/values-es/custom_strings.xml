@@ -5,7 +5,7 @@
     <string name="max_refresh_rate_title">Tasa de actualización máxima</string>
     <string name="fingerprint_enroll_find_sensor_message_front">Localiza el sensor de huella digital en el frente del teléfono.</string>
     <string name="fingerprint_enroll_find_sensor_message_rear">Localiza el sensor de huellas digitales en la parte trasera de tu teléfono.</string>
-    <string name="fingerprint_enroll_find_sensor_message_side">Ubique el sensor de huellas dactilares en el costado de su teléfono.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side">Localiza el sensor de huellas digitales en el lateral de tu teléfono.</string>
     <string name="fingerprint_enroll_touch_dialog_message_front">Localiza el sensor de huella digital en el frontal del teléfono.</string>
     <string name="fingerprint_enroll_touch_dialog_message_rear">Toque el sensor en la parte posterior de su teléfono.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Toque el sensor en el costado de su teléfono.</string>

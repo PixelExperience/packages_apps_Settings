@@ -5,6 +5,7 @@
     <string name="max_refresh_rate_title">განახლების უდიდესი სიჩქარე</string>
     <string name="fingerprint_enroll_find_sensor_message_front">იპოვეთ თქვენი ტელეფონის უკანა ნაწილზე მდებარე თითის ანაბეჭდების სენსორი.</string>
     <string name="fingerprint_enroll_find_sensor_message_rear">იპოვეთ თქვენი ტელეფონის უკანა ნაწილზე მდებარე თითის ანაბეჭდების სენსორი.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side">იპოვეთ თქვენს ტელეფონზე მდებარე თითის ანაბეჭდის სენსორი.</string>
     <string name="fingerprint_enroll_touch_dialog_message_front">შეეხეთ სენსორს ტელეფონის წინა მხარეს.</string>
     <string name="fingerprint_enroll_touch_dialog_message_rear">შეეხეთ სენსორს ტელეფონის უკანა მხარეს.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">შეეხეთ სენსორს ტელეფონის გვერდითა მხარეს.</string>
