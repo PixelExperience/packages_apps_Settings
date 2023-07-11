@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Feu un clic curt a abaixar el volum i encendre per fer una captura de pantalla parcial</string>
     <string name="auto_brightness_one_shot_title">Ajusta la brillantor una sola vegada</string>
     <string name="auto_brightness_one_shot_summary">L\'ajust de la brillantor només es produirà en el moment en què s\'encén la pantalla</string>
-    <string name="navigation_bar_edge_long_swipe_title">Acció de lliscament llarg a la vora</string>
     <string name="live_display_summary">Optimitza la teva pantalla basant-se en l\'hora del dia i les condicions ambientals per millorar la llegibilitat i reduir la fatiga ocular</string>
     <string name="live_display_mode">Mode de pantalla</string>
     <string name="live_display_color_temperature_title">Temperatura del color</string>

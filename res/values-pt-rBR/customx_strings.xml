@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Clique brevemente no botão de diminuir o volume e o botão de energia ao mesmo tempo para uma captura de tela parcial</string>
     <string name="auto_brightness_one_shot_title">Brilho automático ao ligar a tela</string>
     <string name="auto_brightness_one_shot_summary">O ajuste de brilho ocorrerá somente no momento em que a tela for ligada</string>
-    <string name="navigation_bar_edge_long_swipe_title">Ação de deslize longo na borda</string>
     <string name="live_display_summary">Otimiza sua tela com base na hora do dia e condições do ambiente para melhorar a legibilidade e reduzir o cansaço visual</string>
     <string name="live_display_mode">Modo de exibição</string>
     <string name="live_display_color_temperature_title">Temperatura da cor</string>

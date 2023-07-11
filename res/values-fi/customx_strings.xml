@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Napauta Vol - ja virtanäppäintä nopeasti ottaaksesi osittaisen kuvakaappauksen</string>
     <string name="auto_brightness_one_shot_title">\"One shot\" automaattinen kirkkauden säätö</string>
     <string name="auto_brightness_one_shot_summary">Kirkkauden säätö tapahtuu vain sillä hetkellä, kun näyttö kytketään päälle</string>
-    <string name="navigation_bar_edge_long_swipe_title">Reunan pitkän pyyhkäisyn toiminto</string>
     <string name="live_display_summary">Optimoi näyttösi kellonajan ja ympäristöolosuhteiden perusteella parantaaksesi luettavuutta ja vähentääksesi silmien rasitusta</string>
     <string name="live_display_mode">Näyttötila</string>
     <string name="live_display_color_temperature_title">Värilämpötila</string>

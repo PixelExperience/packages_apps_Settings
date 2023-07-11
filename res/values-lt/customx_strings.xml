@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Trumpai spustelti garsumo mažinimo ir maitinimo mygtukus, kad būtų padaryta dalinė ekrano kopija</string>
     <string name="auto_brightness_one_shot_title">Vieno kadro automatinis ryškumas</string>
     <string name="auto_brightness_one_shot_summary">Ryškumo reguliavimas bus atliktas tik tuo metu, kai įjungsite ekraną</string>
-    <string name="navigation_bar_edge_long_swipe_title">Ilgo braukimo kraštu veiksmas</string>
     <string name="live_display_summary">Optimizuoti ekraną remiantis paros metu ir aplinkos sąlygomis, siekiant pagerinti įskaitomumą ir sumažinti akių įtampą</string>
     <string name="live_display_mode">Ekrano režimas</string>
     <string name="live_display_color_temperature_title">Spalvos temperatūra</string>

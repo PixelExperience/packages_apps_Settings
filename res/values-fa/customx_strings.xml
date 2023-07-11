@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">برای ثبت تصویر قسمتی از صفحه نمایش، دکمه‌های Power و Volume Down را کوتاه فشار دهید</string>
     <string name="auto_brightness_one_shot_title">روشنایی خودکار یک ضرب</string>
     <string name="auto_brightness_one_shot_summary">تنظیم روشنایی فقط در لحظه روشن شدن صفحه نمایش انجام می شود</string>
-    <string name="navigation_bar_edge_long_swipe_title">عملکرد مربوط به کشیدن طولانی لبه‌ها</string>
     <string name="live_display_summary">بهینه‌سازی صفحه‌نمایش بر اساس زمانِ روز و شرایط محیطی برای افزایش خوانایی و کاهش خستگی چشم</string>
     <string name="live_display_mode">حالت نمایش</string>
     <string name="live_display_color_temperature_title">دمای رنگ</string>

@@ -119,7 +119,6 @@
     <string name="click_partial_screenshot_summary">Snabbklicka på Volym Ner och Strömknapp för att ta partiell skärmdump</string>
     <string name="auto_brightness_one_shot_title">Automatisk ljusstyrka med en bild</string>
     <string name="auto_brightness_one_shot_summary">Justering av ljusstyrkan kommer endast att ske när skärmen slås på</string>
-    <string name="navigation_bar_edge_long_swipe_title">Lång swipe gest från kant</string>
     <string name="live_display_summary">Optimera din skärm beroende på tidpunkt och omgivning för att förbättra läsbarheten och minska belastningen på ögonen</string>
     <string name="live_display_mode">Visningsläge</string>
     <string name="live_display_color_temperature_title">Färgtemperatur</string>

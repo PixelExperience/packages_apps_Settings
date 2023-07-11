@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">音量ダウンと電源ボタンを短くクリックして部分スクリーンショットを取得する</string>
     <string name="auto_brightness_one_shot_title">自動明るさを復帰時のみ実行</string>
     <string name="auto_brightness_one_shot_summary">画面点灯時の周囲の明るさで1度のみ自動で明るさを変更し、以降は変更しない。</string>
-    <string name="navigation_bar_edge_long_swipe_title">エッジのロングスワイプアクション</string>
     <string name="live_display_summary">画面を見やすく、目の疲れを軽減するために、時間と周囲の環境に合わせて画面を最適化する</string>
     <string name="live_display_mode">表示モード</string>
     <string name="live_display_color_temperature_title">色温度</string>

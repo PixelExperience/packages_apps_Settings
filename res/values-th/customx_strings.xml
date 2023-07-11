@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">กดปุ่มลดระดับเสียงและปุ่มเปิดเครื่องเพื่อจับภาพหน้าจอบางส่วน</string>
     <string name="auto_brightness_one_shot_title">ความสว่างอัตโนมัติในครั้งเดียว</string>
     <string name="auto_brightness_one_shot_summary">การปรับความสว่างจะเกิดขึ้นในขณะที่หน้าจอเปิดอยู่เท่านั้น</string>
-    <string name="navigation_bar_edge_long_swipe_title">ท่าทางการปัดยาวจากขอบ </string>
     <string name="live_display_summary">ปรับหน้าความสว่างหน้าจอตามเวลาและแสงโดยรอบเพื่อทำให้อ่านได้ง่ายขึ้นและลดอาการปวดตา</string>
     <string name="live_display_mode">โหมดการแสดงผล</string>
     <string name="live_display_color_temperature_title">อุณหภูมิสี</string>

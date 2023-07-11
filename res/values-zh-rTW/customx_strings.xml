@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">短按“音量減鍵”和“電源鍵”以截取部分屏幕截圖</string>
     <string name="auto_brightness_one_shot_title">單次自動亮度</string>
     <string name="auto_brightness_one_shot_summary">亮度只會在螢幕開啟後自動調整一次</string>
-    <string name="navigation_bar_edge_long_swipe_title">邊緣長滑動作</string>
     <string name="live_display_summary">根據日夜和環境條件最佳化您的螢幕色溫，即可改善可讀性和減少眼睛疲勞</string>
     <string name="live_display_mode">顯示模式</string>
     <string name="live_display_color_temperature_title">色溫</string>

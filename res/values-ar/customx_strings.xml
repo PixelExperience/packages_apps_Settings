@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">اضغط لفترة وجيزة زري خفض الصوت والطاقة لأخذ لقطة شاشة جزئية</string>
     <string name="auto_brightness_one_shot_title">السطوع التلقائي لقطة واحدة</string>
     <string name="auto_brightness_one_shot_summary">سيتم تعديل السطوع فقط في اللحظة التي يتم فيها تشغيل الشاشة</string>
-    <string name="navigation_bar_edge_long_swipe_title">إجراء السحب الطويل من الحافة</string>
     <string name="live_display_summary">تحسين الشاشة استناداً إلى الوقت من اليوم والظروف المحيطة لتحسين قابلية القراءة وتقليل إجهاد العين</string>
     <string name="live_display_mode">وضع العرض</string>
     <string name="live_display_color_temperature_title">درجة حرارة اللون</string>

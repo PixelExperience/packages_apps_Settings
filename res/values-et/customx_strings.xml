@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Osalise ekraanipildi tegemiseks klõpsa lühidalt helitugevust alla ja toitenuppu</string>
     <string name="auto_brightness_one_shot_title">Ühekordne automaatne heledus</string>
     <string name="auto_brightness_one_shot_summary">Heledust reguleeritakse vaid hetkel, mil ekraan sisse lülitatakse</string>
-    <string name="navigation_bar_edge_long_swipe_title">Serva pikk pühkimine</string>
     <string name="live_display_summary">Optimeeri oma ekraani vastavalt kellaajale ja keskkonnavalgusele, parandamaks loetavust ja vähendamaks silmade pinget</string>
     <string name="live_display_mode">Kuvamise režiim</string>
     <string name="live_display_color_temperature_title">Värvitemperatuur</string>

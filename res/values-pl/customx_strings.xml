@@ -29,8 +29,8 @@
     <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
     <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
     <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
-    <string name="unlock_scramble_pin_layout_title">Wymieszany układ</string>
-    <string name="unlock_scramble_pin_layout_summary">Wymieszany układ cyfr przy odblokowywaniu urządzenia kodem PIN</string>
+    <string name="unlock_scramble_pin_layout_title">Wymieszaj układ</string>
+    <string name="unlock_scramble_pin_layout_summary">Wymieszaj układ cyfr przy odblokowywaniu urządzenia kodem PIN</string>
     <string name="heads_up_notifications_enabled_title">Wyskakujące powiadomienia</string>
     <string name="heads_up_notifications_enabled_summary">Wyświetlaj powiadomienia priorytetowe w małym ruchomym oknie</string>
     <string name="lockscreen_media_art_title">Wyświetlanie okładki albumu</string>
@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Kliknij krótko przycisk zmniejszania głośności i zasilania, aby wykonać częściowy zrzut ekranu</string>
     <string name="auto_brightness_one_shot_title">Zastosuj tylko, gdy ekran jest włączony</string>
     <string name="auto_brightness_one_shot_summary">Regulacja jasności nastąpi tylko w momencie włączenia ekranu</string>
-    <string name="navigation_bar_edge_long_swipe_title">Akcja długiego przeciągnięcia krawędzi</string>
     <string name="live_display_summary">Zoptymalizuj swój ekran w zależności od pory dnia, aby poprawić czytelność i zredukować zmęczenie oczu</string>
     <string name="live_display_mode">Tryb wyświetlania</string>
     <string name="live_display_color_temperature_title">Temperatura barw</string>

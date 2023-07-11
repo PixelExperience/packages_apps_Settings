@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Kısmi ekran görüntüsü almak için Sesi kısma ve Güç tuşuna kısa basın</string>
     <string name="auto_brightness_one_shot_title">Tek seferlik otomatik parlaklık</string>
     <string name="auto_brightness_one_shot_summary">Parlaklık ayarı yalnızca ekran açıldığında gerçekleşir</string>
-    <string name="navigation_bar_edge_long_swipe_title">Yan kenarlardan uzun kaydırma eylemi</string>
     <string name="live_display_summary">Okunabilirliği artırmak ve göz yorgunluğunu azaltmak için ekranınızı günün zamanına ve ortam koşullarına göre optimize edin</string>
     <string name="live_display_mode">Görüntüleme modu</string>
     <string name="live_display_color_temperature_title">Renk sıcaklığı</string>

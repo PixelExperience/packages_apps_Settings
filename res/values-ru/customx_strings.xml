@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Нажмите кнопку уменьшения громкости и кнопку питания, чтобы сделать скриншот части экрана</string>
     <string name="auto_brightness_one_shot_title">Однократная автоматическая яркость</string>
     <string name="auto_brightness_one_shot_summary">Регулировка яркости будет происходить только в момент включения экрана</string>
-    <string name="navigation_bar_edge_long_swipe_title">Действие по долгому свайпу</string>
     <string name="live_display_summary">Подстраивать экран на основе времени суток и освещения, чтобы повысить удобочитаемость и снизить нагрузку на глаза</string>
     <string name="live_display_mode">Режим отображения</string>
     <string name="live_display_color_temperature_title">Цветовая температура</string>

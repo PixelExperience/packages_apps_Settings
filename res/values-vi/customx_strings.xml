@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Ấn nhanh nút Giảm âm lượng cùng với nút Nguồn để chụp một phần màn hình</string>
     <string name="auto_brightness_one_shot_title">Tự động điều chỉnh độ sáng một lần</string>
     <string name="auto_brightness_one_shot_summary">Điều chỉnh độ sáng sẽ chỉ thực hiện tại thời điểm màn hình được bật</string>
-    <string name="navigation_bar_edge_long_swipe_title">Hành động vuốt giữ ở cạnh</string>
     <string name="live_display_summary">Tối ưu hóa màn hình dựa trên điều kiện môi trường và thời gian trong ngày để cải thiện khả năng đọc và giảm mỏi mắt</string>
     <string name="live_display_mode">Chế độ hiển thị</string>
     <string name="live_display_color_temperature_title">Nhiệt độ màu</string>

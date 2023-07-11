@@ -119,7 +119,6 @@
     <string name="click_partial_screenshot_summary">Кратко притисни дугме за смањивање звука и за закључавање екрана да би сликао делимично екран</string>
     <string name="auto_brightness_one_shot_title">Моментално аутоматско осветљење</string>
     <string name="auto_brightness_one_shot_summary">Подешавање осветљења ће се десити само у моменту кад је екран укључен</string>
-    <string name="navigation_bar_edge_long_swipe_title">Радња при дугом превлачењу на ивици</string>
     <string name="live_display_summary">Прилагодите екран на основу доба дана и осветљености, како би се повећала читљивост и смањило напрезање очију.</string>
     <string name="live_display_mode">Режим приказа</string>
     <string name="live_display_color_temperature_title">Температура боје</string>

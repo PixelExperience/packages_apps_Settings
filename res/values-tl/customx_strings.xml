@@ -115,7 +115,6 @@
     <string name="click_partial_screenshot_title">Pindutin para sa bahagyang screenshot</string>
     <string name="click_partial_screenshot_summary">Pindutin ng saglit lang Volume Down at Power para kumuha ng bahagyang screenshot</string>
     <string name="auto_brightness_one_shot_summary">Ang pagbabago ng liwanag ay mangyayari lamang kapag naka-on ang screen</string>
-    <string name="navigation_bar_edge_long_swipe_title">Aksyon sa matagal na swipe sa gilid</string>
     <string name="live_display_summary">I-optimize ang iyong screen base sa oras ng araw at kondisyon ng paligid para mapabuti ang pagbabasa at mabawasan ang pagsakit ng mata</string>
     <string name="live_display_mode">Display mode</string>
     <string name="live_display_color_temperature_title">Temperatura ng kulay</string>

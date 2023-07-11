@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Krátkým současným stiskem tlačítek snížení hlasitosti a napájení pořídit částečný snímek obrazovky</string>
     <string name="auto_brightness_one_shot_title">Rychlé nastavení automatického jasu</string>
     <string name="auto_brightness_one_shot_summary">K úpravě jasu dojde pouze v\u00a0okamžiku zapnutí obrazovky</string>
-    <string name="navigation_bar_edge_long_swipe_title">Akce dlouhým přejetím po okraji</string>
     <string name="live_display_summary">Optimalizovat obrazovku podle denní doby a okolních podmínek pro lepší čitelnost a snížení namáhání očí</string>
     <string name="live_display_mode">Režim zobrazení</string>
     <string name="live_display_color_temperature_title">Teplota barev</string>

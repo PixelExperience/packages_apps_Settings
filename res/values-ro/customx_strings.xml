@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Click scurt pe Volum Jos și butonul Pornire pentru captură de ecran parțială</string>
     <string name="auto_brightness_one_shot_title">Luminozitate automată instantă</string>
     <string name="auto_brightness_one_shot_summary">Ajustarea luminozității va avea loc doar în momentul în care ecranul este pornit</string>
-    <string name="navigation_bar_edge_long_swipe_title">Acțiune glisare lungă de la margine</string>
     <string name="live_display_summary">Optimizare ecran bazat pe timpul zilei și condițiile mediului ambient pentru a îmbunătăți lizibilitatea și a reduce oboseala ochilor</string>
     <string name="live_display_mode">Mod de afișare</string>
     <string name="live_display_color_temperature_title">Temperatura culorii</string>

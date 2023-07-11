@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">ಭಾಗಶಃ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆದುಕೊಳ್ಳಲು ವಾಲ್ಯೂಮ್ ಡೌನ್ ಮತ್ತು ಪವರ್ ಅನ್ನು ಶಾರ್ಟ್ ಕ್ಲಿಕ್ ಮಾಡಿ</string>
     <string name="auto_brightness_one_shot_title">ಒಂದು ಶಾಟ್ ಸ್ವಯಂ ಪ್ರಕಾಶಮಾನತೆ</string>
     <string name="auto_brightness_one_shot_summary">ಪರದೆಯನ್ನು ಆನ್ ಮಾಡಿದ ಕ್ಷಣದಲ್ಲಿ ಮಾತ್ರ ಪ್ರಕಾಶಮಾನ ಹೊಂದಾಣಿಕೆ ಸಂಭವಿಸುತ್ತದೆ</string>
-    <string name="navigation_bar_edge_long_swipe_title">ಎಡ್ಜ್  ಉದ್ದ ಸ್ವೈಪ್  ಕ್ರಿಯೆ</string>
     <string name="live_display_summary">ದಿನದ ಸಮಯ ಮತ್ತು ಪರಿಸರದ ಪರಿಸ್ಥಿತಿ ಆಧಾರಿಸಿ ನಿಮ್ಮ ಪರದೆಯನ್ನು ಉತ್ತಮವಾಗಿಸಿ ವಾಚನೀಯತೆ ಉತ್ತಮಗೊಳಿಸಿ ಕಣ್ಣಿನ ಆಯಾಸ ಕಡಿಮೆ ಮಾಡು</string>
     <string name="live_display_mode">ಪ್ರದರ್ಶನ ರೀತಿ</string>
     <string name="live_display_color_temperature_title">ಬಣ್ಣದ ತಾಪಮಾನ</string>

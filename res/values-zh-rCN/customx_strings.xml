@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">同时按音量下和电源键以截取局部截图</string>
     <string name="auto_brightness_one_shot_title">单次自动调节亮度</string>
     <string name="auto_brightness_one_shot_summary">仅在点亮屏幕的那一刻调节一次亮度</string>
-    <string name="navigation_bar_edge_long_swipe_title">边缘上的长滑动作</string>
     <string name="live_display_summary">基于当前时间和环境条件来优化您的屏幕以改善可读性和减少视疲劳</string>
     <string name="live_display_mode">显示模式</string>
     <string name="live_display_color_temperature_title">色温</string>

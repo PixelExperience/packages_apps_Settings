@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">볼륨 아래와 전원 버튼을 짧게 눌러 부분 스크린샷을 캡처</string>
     <string name="auto_brightness_one_shot_title">화면이 켜질 때 1회 밝기 조절</string>
     <string name="auto_brightness_one_shot_summary">밝기 조절을 화면이 켜질 때 단 한 번만 실행</string>
-    <string name="navigation_bar_edge_long_swipe_title">가장자리 길게 밀 때 동작</string>
     <string name="live_display_summary">가독성을 향상시키고 눈의 피로를 줄이기 위해 시간과 주변 환경에 따라 화면 최적화</string>
     <string name="live_display_mode">표시 모드</string>
     <string name="live_display_color_temperature_title">색온도</string>

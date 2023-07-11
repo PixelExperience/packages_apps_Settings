@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Pencet singkat Volume Turun dan Daya untuk menangkap layar sebagian</string>
     <string name="auto_brightness_one_shot_title">Kecerahan otomatis satu bidikan</string>
     <string name="auto_brightness_one_shot_summary">Penyesuaian kecerahan hanya akan terjadi pada saat layar dihidupkan</string>
-    <string name="navigation_bar_edge_long_swipe_title">Tindakan geser panjang dari tepi</string>
     <string name="live_display_summary">Optimalkan layar Anda berdasarkan waktu dan kondisi sekitar untuk meningkatkan keterbacaan dan mengurangi kelelahan mata</string>
     <string name="live_display_mode">Mode tampilan</string>
     <string name="live_display_color_temperature_title">Suhu pada warna</string>

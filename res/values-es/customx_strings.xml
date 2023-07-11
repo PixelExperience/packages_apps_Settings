@@ -42,11 +42,11 @@
     <string name="power_menu_shortcuts_summary">Personalizar los atajos del menú de energía</string>
     <string name="power_menu_screenshot_title">Captura de pantalla</string>
     <string name="power_menu_screenshot_summary">Mantener presionado para hacer una captura de pantalla parcial</string>
-    <string name="power_menu_airplane_title">Modo de avión</string>
+    <string name="power_menu_airplane_title">Modo avión</string>
     <string name="power_menu_users_title">Cambio de usuario</string>
     <string name="power_menu_emergency_title">Emergencia</string>
     <string name="power_menu_devicecontrols_title">Controles del dispositivo</string>
-    <string name="status_bar_title">Estado bar</string>
+    <string name="status_bar_title">Barra de estado</string>
     <string name="status_bar_quick_qs_pulldown_title">Desplegado rápido</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">El borde izquierdo de la barra de notificaciones despliega los ajustes rápidos</string>
     <string name="status_bar_quick_qs_pulldown_summary_right_edge">El borde derecho de la barra de notificaciones despliega hacia abajo los ajustes rápidos</string>
@@ -120,8 +120,7 @@
     <string name="click_partial_screenshot_summary">Pulse el botón de bajar volumen y el de encendido para tomar una captura de pantalla parcial</string>
     <string name="auto_brightness_one_shot_title">Ajustar el brillo automáticamente una sola vez</string>
     <string name="auto_brightness_one_shot_summary">El ajuste de brillo solo se producirá en el momento en que la pantalla esté encendida</string>
-    <string name="navigation_bar_edge_long_swipe_title">Acción larga al deslizar desde el borde de la pantalla</string>
-    <string name="live_display_summary">Optimiza tu pantalla basado en la hora del día y las condiciones ambientales para mejorar la legibilidad y reducir la fatiga visual</string>
+    <string name="live_display_summary">Optimiza tu pantalla basándose en la hora del día y las condiciones ambientales para mejorar la lectura y reducir la fatiga visual</string>
     <string name="live_display_mode">Modo de visualización</string>
     <string name="live_display_color_temperature_title">Temperatura del color</string>
     <string name="live_display_color_temperature_summary">Día: <xliff:g id="day_temperature">%1$d</xliff:g>K Noche: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
@@ -184,7 +183,7 @@
     <string name="back_options_dialog_title">Opciones</string>
     <string name="back_height">Altura de gestos</string>
     <string name="tethering_allow_vpn_upstreams_title">Permitir a los clientes usar VPNs</string>
-    <string name="tethering_allow_vpn_upstreams_summary">Permitir a los clientes de hotspot usar las conexiones VPN de este dispositivo\u2019 como conectividad principal</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permitir a los clientes del punto de acceso usar las conexiones VPN de este dispositivo\u2019 como conectividad principal</string>
     <string name="package_details_group_title">Detalles del paquete</string>
     <string name="package_name">Nombre del paquete</string>
     <string name="package_version">Versión del paquete</string>

@@ -69,7 +69,6 @@
     <string name="volbtn_cursor_control_off">निस्क्रिय</string>
     <string name="click_partial_screenshot_summary">संक्षेपित स्क्रिनशट लिनका लागि भोल्यूम डाउन र पावरलाई एकैपटक  थिच्नुहोस् ।</string>
     <string name="auto_brightness_one_shot_summary">प्रकाशता समायोजन केवल स्क्रिन सक्रिय गरिएको समयमा मात्र हुनेछ</string>
-    <string name="navigation_bar_edge_long_swipe_title">किनारा लामो स्वाइप कार्य</string>
     <string name="live_display_summary">कृपया आफ्नो स्क्रिनलाई दिनको समय र पर्यावरणीय स्थितिमा आधारित रूपमा समुचित बनाउनुहोस्, जसले पठनीयतालाई सुधार्न र आँखाको थकानलाई कम गर्नेछ</string>
     <string name="live_display_mode">प्रदर्शन मोड</string>
     <string name="live_display_color_temperature_title">रंग तापमान</string>

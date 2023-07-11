@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Lautstärketaste nach unten und Powertaste kurz drücken, um einen partiellen Screenshot zu erstellen</string>
     <string name="auto_brightness_one_shot_title">One-Shot-Auto-Helligkeit</string>
     <string name="auto_brightness_one_shot_summary">Helligkeit wird nur beim Einschalten des Bildschirms eingestellt</string>
-    <string name="navigation_bar_edge_long_swipe_title">Aktion bei langem Wischen am Rand</string>
     <string name="live_display_summary">Optimiert Ihren Bildschirm basierend auf der Tageszeit und den Umgebungsbedingungen, um die Lesbarkeit zu verbessern und die Ermüdung der Augen zu mildern</string>
     <string name="live_display_mode">Anzeigemodus</string>
     <string name="live_display_color_temperature_title">Farbtemperatur</string>

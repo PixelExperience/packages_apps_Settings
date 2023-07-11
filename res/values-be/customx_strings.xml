@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Націсніце кнопку гучнасці і кнопку сілкавання, каб зрабіць здымак часткі экрана</string>
     <string name="auto_brightness_one_shot_title">Аднаразовая аўтаматычная яркасць</string>
     <string name="auto_brightness_one_shot_summary">Карэкціроўка яркасці будзе адбывацца толькі ў момант уключэння экрана</string>
-    <string name="navigation_bar_edge_long_swipe_title">Дзеянне па доўгаму свайпу</string>
     <string name="live_display_summary">Аптымізацыя вашага экрана ў залежнасці ад часу сутак і ўмоў навакольнага асяроддзя для паляпшэння чытальнасці тэксту і зніжэння стамляльнасці вачэй</string>
     <string name="live_display_mode">Рэжым прагляду</string>
     <string name="live_display_color_temperature_title">Каляровая тэмпература</string>

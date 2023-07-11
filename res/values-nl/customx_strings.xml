@@ -116,7 +116,6 @@
     <string name="click_partial_screenshot_title">Klik voor een gedeeltelijk screenshot</string>
     <string name="click_partial_screenshot_summary">Korte klik Volume - en Power om een gedeeltelijk screenshot te maken</string>
     <string name="auto_brightness_one_shot_summary">Helderheid aanpassing zal alleen plaatsvinden op het moment dat het scherm is ingeschakeld</string>
-    <string name="navigation_bar_edge_long_swipe_title">Actie bij vegen en vasthouden</string>
     <string name="live_display_summary">Uw scherm optimaliseren aan de hand van tijdstip op de dag en lichtomstandigheden om de leesbaarheid te verbeteren en oogvermoeidheid te verminderen</string>
     <string name="live_display_mode">Weergave</string>
     <string name="live_display_color_temperature_title">Kleurtemperatuur</string>

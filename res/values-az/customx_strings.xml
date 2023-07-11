@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Qismən ekran şəklini çəkmək üçün Səs Azaltma və Güc düyməsinə uzun basın</string>
     <string name="auto_brightness_one_shot_title">Tək çəkilişdə avto-parlaqlıq</string>
     <string name="auto_brightness_one_shot_summary">Parlaqlıq nizamı yalnız ekran açıq olanda həyata keçirilir</string>
-    <string name="navigation_bar_edge_long_swipe_title">Kənar boyunca sürüşdürmə hərəkəti</string>
     <string name="live_display_summary">Oxunaqlılığı artırmaq və göz yorğunluğu azaltmaq üçün ekranınızı günün saatına və mühit şərtlərinə görə optimallaşdırın</string>
     <string name="live_display_mode">Görüntü rejimi</string>
     <string name="live_display_color_temperature_title">Rəng hərarəti</string>

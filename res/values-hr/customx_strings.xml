@@ -120,7 +120,6 @@
     <string name="click_partial_screenshot_summary">Kratko pritisnite Volume Down i Power da biste snimili djelomičnu snimku zaslona</string>
     <string name="auto_brightness_one_shot_title">Jednokratna automatska svjetlina</string>
     <string name="auto_brightness_one_shot_summary">Podešavanje svjetline dogodit će se samo u trenutku kada se zaslon uključi</string>
-    <string name="navigation_bar_edge_long_swipe_title">Radnja dugim prijelazom po rubu</string>
     <string name="live_display_summary">Prilagođuje zaslon prema vremenu dana i okolini za poboljšanje čitljivosti i smanjenje naprezanja očiju</string>
     <string name="live_display_mode">Način prikaza</string>
     <string name="live_display_color_temperature_title">Temperatura boje</string>
