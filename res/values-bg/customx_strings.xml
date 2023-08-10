@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="device_info_protected_single_press">Докоснете за показване не информацията</string>
     <string name="lock_settings_picker_pattern_size_message">Изберете размера на шаблона</string>
-    <string name="lockpattern_settings_enable_error_path_title">Покажи модела на грешката</string>
-    <string name="lockpattern_settings_enable_dots_title">Покажи точките на модела</string>
+    <string name="lockpattern_settings_enable_error_path_title">Покажи грешките на шаблона</string>
+    <string name="lockpattern_settings_enable_dots_title">Покажи точките на шаблона</string>
     <string name="display_rotation_title">Настройки на завъртане</string>
     <string name="display_rotation_enabled">Автоматичното завъртене е активирано</string>
     <string name="display_rotation_disabled">Автоматичното завъртене е деактивирано</string>
@@ -36,6 +37,7 @@
     <string name="incall_feeedback_vibrate_title">Вибриране за показване състоянието на повикването</string>
     <string name="advanced_reboot_title">Рестартиране за напреднали</string>
     <string name="advanced_reboot_summary">Когато е отключена, включете опциите в менюто за захранване, за да рестартирате във възстановяване или буутлоудър</string>
+    <string name="power_menu_emergency_affordance_enabled">Аварийната достъпност е включена</string>
     <string name="power_menu_shortcuts_title">Пряк път на Меню</string>
     <string name="power_menu_shortcuts_summary">Персонализиране на преките пътища на менюто за захранване</string>
     <string name="power_menu_screenshot_title">Снимка на екрана</string>
@@ -43,6 +45,7 @@
     <string name="power_menu_airplane_title">Самолетен режим</string>
     <string name="power_menu_users_title">Превключване на потребител</string>
     <string name="power_menu_emergency_title">Извънредна ситуация</string>
+    <string name="power_menu_devicecontrols_title">Контроли за устройства</string>
     <string name="status_bar_title">Лента на състоянието</string>
     <string name="status_bar_quick_qs_pulldown_title">Бързи настройки</string>
     <string name="status_bar_quick_qs_pulldown_summary_left_edge">Левия край на статус бара сваля бързите настройки</string>
@@ -65,6 +68,7 @@
     <string name="status_bar_am_pm_normal">Нормален</string>
     <string name="status_bar_am_pm_small">Малък</string>
     <string name="status_bar_am_pm_hidden">Скрит</string>
+    <string name="status_bar_clock_position_disabled_summary">Позицията не може да бъде променена заради видимостта на Трафик индикаторът в лентата за състояние.</string>
     <string name="status_bar_battery_title">Батерия</string>
     <string name="status_bar_battery_style_title">Икона на батерията</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикална икона</string>
@@ -75,6 +79,10 @@
     <string name="status_bar_battery_percentage_text_inside">В иконата</string>
     <string name="status_bar_battery_percentage_text_next">До иконата</string>
     <string name="status_bar_brightness_category">Яркост</string>
+    <string name="status_bar_brightness_slider_title">Плъзгач за яркост</string>
+    <string name="status_bar_brightness_slider_summary">Настройте яркостта от менюто за Бързи Настройки</string>
+    <string name="status_bar_brightness_slider_auto_title">Авто яркост</string>
+    <string name="status_bar_brightness_slider_auto_summary">Покажи превключвач за автоматичната яркост около плъзгача</string>
     <string name="status_bar_toggle_brightness">Контрол на яркостта</string>
     <string name="status_bar_toggle_brightness_summary">Настройване на яркостта чрез плъзгане в лентата на състоянието</string>
     <string name="network_traffic_settings_title">Монитор на Мрежовия трафик</string>
@@ -110,6 +118,7 @@
     <string name="additional_buttons_title">Допълнителни бутони</string>
     <string name="click_partial_screenshot_title">Натисни за частична екранна снимка</string>
     <string name="click_partial_screenshot_summary">Кратко натискане на бутона за намаляване на звука за частична екранна снимка</string>
+    <string name="auto_brightness_one_shot_summary">Настройката на яркостта ще се установи в момента на включване на екрана</string>
     <string name="live_display_summary">Оптимизира настройките на дисплея, въз основа на времето от деня и условията на околната среда за да се подобри четливостта и да намали умората на очите</string>
     <string name="live_display_mode">Режим на екрана</string>
     <string name="live_display_color_temperature_title">Температура на цвета</string>
@@ -169,26 +178,58 @@
     <string name="display_cutout_mode_normal">По подразбиране</string>
     <string name="display_cutout_mode_hidden">Скрит</string>
     <string name="back_height_low_label">Заредена</string>
+    <string name="back_height_high_label">Отдолу</string>
     <string name="back_options_dialog_title">Настройки</string>
     <string name="back_height">Област на докосване на ръба</string>
     <string name="tethering_allow_vpn_upstreams_title">Разрешете на клиентите да използват VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Разрешете на клиентите на точка за достъп да използват VPN връзките на това устройство, за да се свържат с мрежата</string>
+    <string name="package_details_group_title">Подробности за пакета</string>
+    <string name="package_name">Име на пакета</string>
+    <string name="package_version">Версия на пакета</string>
+    <string name="wifi_hotspot_hidden_ssid_title">Скрита мрежа</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Името на вашата безжична точка за достъп няма да излиза в списъка с налични WLAN мрежи.</string>
+    <string name="wifi_hotspot_auto_off_timeout_never">Никога не изключвай безжичната точка за достъп</string>
+    <string name="wifi_hotspot_client_manager_title">Свързани устройства</string>
+    <string name="wifi_hotspot_client_manager_summary">Изреди и управлявай свързаните към точката за достъп устройства</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">Изреди и управлявай свързаните към точката за достъп устройства</string>
+    <string name="wifi_hotspot_client_limit_title">Лимит на свързани устройства</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Блокирани устройства</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Свързани устройства</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Блокирай устройството</string>
+    <string name="wifi_hotspot_block_client_dialog_text">Действието ще отвърже \"<xliff:g id="device_name">%1$s</xliff:g>\" от устройството и ще го добави в списъка с блокирани устройства</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Деблокирай устройството</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text"><xliff:g id="device_name">%1$s</xliff:g> ще има възможността да се свърже към безжичната точка за достъп</string>
+    <string name="wifi_hotspot_client_manager_footer_text">Няма налични устройства до момента. Свързани и блокирани устройства ще бъдат изредени тук.</string>
     <string name="wifi_hotspot_timeout_summary_never">Никога</string>
     <string name="wifi_hotspot_timeout_summary_30secs">30 секунди</string>
     <string name="wifi_hotspot_timeout_summary_1min">1 минута</string>
     <string name="wifi_hotspot_timeout_summary_5mins">5 минути</string>
     <string name="wifi_hotspot_timeout_summary_10mins">10 минути</string>
     <string name="wifi_hotspot_timeout_summary_30mins">30 минути</string>
+    <string name="wifi_hotspot_timeout_summary_1hour">1 час</string>
+    <string name="power_button_torch_title">Бързо фенерче</string>
+    <string name="power_button_torch_summary">Когато екранът е изключен, задържането на бутона за включване ще активира фенерчето</string>
     <string name="torch_long_press_power_timeout_title">Автоматично изключване на фенерчето</string>
     <string name="torch_long_press_power_timeout_never">Никога</string>
     <string name="torch_long_press_power_timeout_1min">1 минута</string>
     <string name="torch_long_press_power_timeout_2min">2 минути</string>
     <string name="torch_long_press_power_timeout_5min">5 минути</string>
     <string name="torch_long_press_power_timeout_10min">10 минути</string>
+    <string name="adaptive_playback_screen_title">Умна Пауза</string>
+    <string name="adaptive_playback_enabled">Използвай \"Умна Пауза\"</string>
     <string name="adaptive_playback_disabled_summary">Изключен</string>
+    <string name="adaptive_playback_intro_text">Автоматично поставя на пауза мултимедията, когато звукът е заглушен, и възобновява автоматично, когато звукът се увеличи в рамките на зададеното време.</string>
+    <string name="adaptive_playback_timeout_title">Използвай интервал от</string>
+    <string name="adaptive_playback_timeout_none">Без интервал</string>
+    <string name="adaptive_playback_timeout_none_summary">Включено (без интервал)</string>
     <string name="adaptive_playback_timeout_30_secs">30 секунди</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">Включено (30 секунди)</string>
     <string name="adaptive_playback_timeout_1_min">1 минута</string>
+    <string name="adaptive_playback_timeout_1_min_summary">Включено (1 минута)</string>
     <string name="adaptive_playback_timeout_2_min">2 минути</string>
+    <string name="adaptive_playback_timeout_2_min_summary">Включено (2 минути)</string>
     <string name="adaptive_playback_timeout_5_min">5 минути</string>
+    <string name="adaptive_playback_timeout_5_min_summary">Включено (5 минути)</string>
     <string name="adaptive_playback_timeout_10_min">10 минути</string>
+    <string name="adaptive_playback_timeout_10_min_summary">Включено (10 минути)</string>
 </resources>

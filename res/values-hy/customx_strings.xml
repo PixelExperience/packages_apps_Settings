@@ -19,6 +19,8 @@
     <string name="status_bar_double_tap_to_sleep_title">Հպվեք քնի համար</string>
     <string name="status_bar_double_tap_to_sleep_summary">Երկու անգամ հպվեք վիճակի վահանակին կամ կողպէկրանին՝ էկրանը անջատելու համար</string>
     <string name="wake_when_plugged_or_unplugged_title">Միացնել էկրանը՝ լիցքավորումը սկսելու դեպքում</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Միացնել էկրանը հոսանքի աղբյուրը միացնելիս կամ անջատելիս</string>
+    <string name="app_notification_sound_timeout_title">Ձայնային ծանուցումների հաճախականությունը</string>
     <string name="app_notification_sound_timeout_value_none">Առանց սահմանափակումների</string>
     <string name="app_notification_sound_timeout_value_10_seconds">10 վայրկյան</string>
     <string name="app_notification_sound_timeout_value_30_seconds">30 վայրկյան</string>
