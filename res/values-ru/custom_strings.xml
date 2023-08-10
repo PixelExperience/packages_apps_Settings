@@ -39,7 +39,7 @@
     <string name="hardware_keys_long_tap_title">Действие при долгом нажатии</string>
     <string name="button_wake_title">Выход из режима сна</string>
     <string name="camera_sleep_on_release_title">Быстрый просмотр</string>
-    <string name="camera_sleep_on_release_summary">Легкое нажатие и удержание кнопки будет пробуждать дисплей</string>
+    <string name="camera_sleep_on_release_summary">Лёгкое нажатие и удержание кнопки будет пробуждать дисплей</string>
     <string name="camera_launch_title">Запуск камеры</string>
     <string name="camera_launch_summary">Длительное нажатие и удержание кнопки запустит камеру</string>
     <string name="button_backlight_title">Подсветка</string>

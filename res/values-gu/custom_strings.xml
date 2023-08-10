@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wifi_do_not_validate_eap_server_warning">કોઇ પ્રમાણપત્ર સ્પષ્ટ કરેલ નથી. તમારું કનેક્શન ખાનગી રહેશે નહીં.</string>
     <string name="fingerprint_enroll_find_sensor_message_front">તમારા ફોન ની પાછળ આવેલું ફિંગરપ્રિન્ટ સેન્સર શોધો.</string>
     <string name="reset">ફરીથી સેટ કરો</string>
     <string name="button_pref_title">બટનો</string>
