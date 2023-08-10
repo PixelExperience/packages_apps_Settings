@@ -5,6 +5,7 @@
     <string name="max_refresh_rate_title">Էկրանի թարմացման առավելագույն արժեքը</string>
     <string name="fingerprint_enroll_find_sensor_message_front">Գտեք հեռախոսի հետևում գտնվող մատնահետքի սենսորը:</string>
     <string name="fingerprint_enroll_find_sensor_message_rear">Մատնահետքի տվիչը գտնվում է հեռախոսի հետևում։</string>
+    <string name="fingerprint_enroll_find_sensor_message_side">Մատնահետքի սենսորը տեղադրված է ձեր հեռախոսի կողային մասում:</string>
     <string name="fingerprint_enroll_touch_dialog_message_front">Հպվեք հեռախոսի հետևում գտնվող մատնահետքի սենսորը:</string>
     <string name="fingerprint_enroll_touch_dialog_message_rear">Հպվեք հեռախոսի հետևում գտնվող մատնահետքի տվիչին:</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Հպվեք հեռախոսի կողքին գտնվող մատնահետքի տվիչին:</string>
