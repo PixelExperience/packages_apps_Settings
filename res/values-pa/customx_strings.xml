@@ -34,6 +34,7 @@
     <string name="status_bar_clock_position_left">ਖੱਬੇ</string>
     <string name="live_display_day">ਦਿਨ</string>
     <string name="live_display_night">ਰਾਤ</string>
+    <string name="live_display_reading_mode_title">ਰੀਡਿੰਗ ਮੋਡ</string>
     <string name="display_cutout_mode_normal">ਪੂਰਵ-ਨਿਰਧਾਰਤ</string>
     <string name="wifi_hotspot_timeout_summary_30secs">30 ਸਕਿੰਟ</string>
     <string name="wifi_hotspot_timeout_summary_1min">1 ਮਿੰਟ</string>

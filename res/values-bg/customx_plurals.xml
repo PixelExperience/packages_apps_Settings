@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="wifi_hotspot_auto_off_timeout">
+        <item quantity="other">Изключи, когато няма свързано устройство за <xliff:g id="DURATION">%1$d</xliff:g> минути</item>
+        <item quantity="one">Изключи, когато няма свързано устройство за <xliff:g id="DURATION">%1$d</xliff:g> минута.</item>
+    </plurals>
+    <plurals name="wifi_hotspot_client_limit_summary">
+        <item quantity="other">Само до <xliff:g id="device_num">%1$d</xliff:g> устройства могат да се свържат към безжичната точка за достъп.</item>
+        <item quantity="one">Само <xliff:g id="device_num">%1$d</xliff:g> устройство може да се свърже към безжичната точка за достъп.</item>
+    </plurals>
+</resources>
