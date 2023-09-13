@@ -9,7 +9,7 @@
     <string name="fingerprint_enroll_touch_dialog_message_front">Telefonunuzun ön tərəfindəki sensora toxunun.</string>
     <string name="fingerprint_enroll_touch_dialog_message_rear">Telefonunuzun arxa tərəfindəki sensora toxunun.</string>
     <string name="fingerprint_enroll_touch_dialog_message_side">Telefonunuzun yan tərəfindəki sensora toxunun.</string>
-    <string name="battery_light_title">Enerji yığarkən işığı yandırın</string>
+    <string name="battery_light_title">Doldurarkən işığı yandır</string>
     <string name="ambient_display_screen_off_udfps_title">Cihazın kilidini açmaq üçün barmaq izi sensoruna uzun basın</string>
     <string name="ambient_display_screen_off_udfps_summary">Ekranı oyandırmaq və kilidi açmaq üçün, ekran altındakı barmaq izi sensoruna uzun basın.</string>
     <string name="storage_warning_internal">Xəbərdarlıq: Bu seçim düzgün işləməyə və ya məlumat itkisinə səbəb ola bilər, buna görə də tövsiyə edilmir!</string>
@@ -67,8 +67,8 @@
     <string name="high_touch_polling_rate_summary">Toxunaqlı ekran yoxlama dərəcəsini artırın</string>
     <string name="keyboard_extras_title">Əlavələr</string>
     <string name="advanced_keyboard_settings_title">Qabaqcıl tənzimləmələr</string>
-    <string name="fast_charging_title">Sürətli enerji yığma</string>
-    <string name="fast_charging_summary">Cihazın enerji yığarkən istehsal etdiyi istiliyi azaltmaq və ya batereyanın ömrünü uzatmaq üçün sıradan çıxardın</string>
+    <string name="fast_charging_title">Sürətli doldurma</string>
+    <string name="fast_charging_summary">Doldurarkən cihazın istehsal etdiyi istiliyi azaltmaq və ya batereyanın ömrünü uzatmaq üçün sıradan çıxardın</string>
     <string name="security_settings_face_unlock_redo_face_scan_summary">Mövcud üz skanını çıxart və yeni bir skan yarat</string>
     <string name="security_settings_face_unlock_redo_face_scan_title">Üz skanını geri qaytar</string>
     <string name="face_redo_confirm_btn">Yenidən et</string>
