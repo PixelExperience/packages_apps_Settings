@@ -131,8 +131,8 @@
     <string name="live_display_outdoor_mode_summary">Parlaq günəş işığı altında parlaqlığı və doydurmanı avtomatik artırar</string>
     <string name="live_display_anti_flicker_title">Titrəməyə qarşı</string>
     <string name="live_display_anti_flicker_summary">Zəif işıq şərtlərində həddən çox titrəmənin qarşısını alın və göz yorğunluğunu azaldın. Bu, rəng dəqiqliyini azalda bilər və bəzi elementlərin görüntülənmə formasına təsir edə bilər.</string>
-    <string name="live_display_low_power_title">Enerji istehlakını azalt</string>
-    <string name="live_display_low_power_summary">Ekranda xarablaşma olmadan ekranı ən aşağı enerji istehlakı üçün nizamlayın</string>
+    <string name="live_display_low_power_title">Enerji sərfiyyatını azalt</string>
+    <string name="live_display_low_power_summary">Xarablaşma olmadan ən aşağı enerji sərfiyyatı üçün ekranı tənzimlə</string>
     <string name="live_display_enhance_color_title">Rəngləri artır</string>
     <string name="live_display_enhance_color_summary">Dəri tonu, səhnə və digər təsvirlərin rəng titrəməsini təkmilləşdirər</string>
     <string name="live_display_color_profile_title">Rəng profili</string>

@@ -36,7 +36,7 @@
     <string name="lockscreen_media_art_title">顯示媒體封面藝術</string>
     <string name="incall_feeedback_vibrate_title">震動以指示通話狀態</string>
     <string name="advanced_reboot_title">進階重新啟動</string>
-    <string name="advanced_reboot_summary">解鎖後，在電源選單加入重新啟動進入 recovery 或 bootloader 的選項</string>
+    <string name="advanced_reboot_summary">開啟後，在電源選單的重新啟動內新增進入 Recovery 或 Bootloader 的選項</string>
     <string name="power_menu_emergency_affordance_enabled">緊急供能已啟用</string>
     <string name="power_menu_shortcuts_title">選單快速功能</string>
     <string name="power_menu_shortcuts_summary">自訂電源選單快速功能</string>
@@ -181,7 +181,7 @@
     <string name="back_height_low_label">全部區域</string>
     <string name="back_height_high_label">底部</string>
     <string name="back_options_dialog_title">選項</string>
-    <string name="back_height">側屏幕觸控區域</string>
+    <string name="back_height">側邊螢幕觸控區域</string>
     <string name="tethering_allow_vpn_upstreams_title">允許客戶端使用 VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">允許熱點客戶端使用此裝置的 VPN 連線進行上游連線</string>
     <string name="package_details_group_title">套件詳細資料</string>
