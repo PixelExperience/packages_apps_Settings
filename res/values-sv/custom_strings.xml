@@ -63,6 +63,7 @@
     <string name="high_touch_sensitivity_summary">Öka tryckskärmens känslighet så att den kan användas samtidigt som du bär handskar</string>
     <string name="touchscreen_hovering_title">Tryckskärm-hovring</string>
     <string name="touchscreen_hovering_summary">Låter dig hovra över skärmen som en mus i webbläsare, fjärrskrivbord, etc</string>
+    <string name="high_touch_polling_rate_title">Hög beröringsfrågefrekvens</string>
     <string name="high_touch_polling_rate_summary">Öka skärmens responstid</string>
     <string name="keyboard_extras_title">Övrigt</string>
     <string name="advanced_keyboard_settings_title">Avancerade inställningar</string>
