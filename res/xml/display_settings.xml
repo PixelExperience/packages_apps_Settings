@@ -105,6 +105,12 @@
     <PreferenceCategory
         android:title="@string/category_name_display_controls">
 
+        <Preference
+            android:key="advanced_freeform_entry"
+            android:title="@string/advanced_freeform_settings_title"
+            android:fragment="com.android.settings.display.AdvancedFreeformSettings"
+            settings:controller="com.android.settings.display.AdvancedFreeformPreferenceController" />
+
         <com.android.settingslib.PrimarySwitchPreference
             android:fragment="com.android.settings.display.SmartAutoRotatePreferenceFragment"
             android:key="auto_rotate"
