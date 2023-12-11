@@ -326,4 +326,9 @@
     <string name="adaptive_playback_timeout_10_min">10 minutes</string>
     <string name="adaptive_playback_timeout_10_min_summary">On (10 minutes)</string>
 
+    <!-- Advanced Freeform -->
+    <string name="advanced_freeform_settings_title">Advanced Freeform Window</string>
+    <string name="advanced_freeform_enabled_title">Advanced Freeform Window Enabled</string>
+    <string name="advanced_freeform_enabled_summary">Android freeform multi-window function</string>
+
 </resources>

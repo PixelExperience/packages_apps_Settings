@@ -4270,6 +4270,18 @@
                 android:value="com.android.settings.livedisplay.LiveDisplaySettings" />
         </activity>
 
+        <!-- Advanced Freeform -->
+        <activity android:name=".Settings$AdvancedFreeformSettingsActivity"
+            android:label="@string/advanced_freeform_settings_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.settings.ADVANCED_FREEFORM_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.display.AdvancedFreeformSettings"/>
+        </activity>
+
         <provider android:name=".slices.SettingsSliceProvider"
                   android:authorities="com.android.settings.slices;android.settings.slices"
                   android:exported="true"
